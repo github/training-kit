@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+export CC=gcc
+
+_buildscripts/bootstrap
+
+echo "==> The app is now ready to go!"

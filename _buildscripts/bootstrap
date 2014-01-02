@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+export CC=gcc
+
+echo "==> Installing gem dependencies…"
+
+bundle check --path vendor/gems 2>&1 > /dev/null || {
+  bundle install --binstubs bin --path vendor/gems
+}
+
+echo "==> Cloning into submodules"
+git submodule init
+git submodule update
