@@ -18,112 +18,112 @@ This outline will be your companion for the cheat sheet and slides of the GitHub
 ###  Git version
 
 ## Config
-### user information
-### scopes
-### viewing all
-### useful settings
-### settings video
+### User information
+### Scopes
+### Viewing all
+### Useful settings
+### Settings video
 
 ## Init
-### repository from scratch
-### repository from existing dir
+### Repository from scratch
+### Repository from existing dir
 
 ## Commit
-### three stage thinking
-### shopping cart
-### your first commit
-### what is a commit
-### versions and files
-### current branch tip
-### parent reference
-### ancestor reference
+### Three stage thinking
+### Shopping cart
+### Your first commit
+### What is a commit
+### Versions and files
+### Current branch tip
+### Parent reference
+### Ancestor reference
 
 ## Diff
-### comparing changes
-### comparing to staged
-### comparing to repo
-### useful options
+### Comparing changes
+### Comparing to staged
+### Comparing to repo
+### Useful options
 
 ## Log
-### show all history
-### show history patches
-### history formatting
-### limiting output
-### additional options
-### searching commits
+### Show all history
+### Show history patches
+### History formatting
+### Limiting output
+### Additional options
+### Searching commits
 
 ## Remove & Move
-### tracking states map
-### tracking states in motion
-### deleting files
-### stop tracking
-### move and stage
-### similarity index
+### Tracking states map
+### Tracking states in motion
+### Deleting files
+### Stop tracking
+### Move and stage
+### Similarity index
 
 ## Ignore
-### ignoring files
-### ignore patterns
-### controlling ignores
-### excludes file
-### excludes file
+### Ignoring files
+### Ignore patterns
+### Controlling ignores
+### Excludes file
+### Excludes file
 
 ## Checkout
-### purpose of checkout
-### discarding changes
-### switching branches
-### exploring history
+### Purpose of checkout
+### Discarding changes
+### Switching branches
+### Exploring history
 
 ## Branch
-### flexibility
-### listing
-### creating
-### deleting
-### renaming
+### Flexibility
+### Listing
+### Creating
+### Deleting
+### Renaming
 
 ## Merge
-### basics
-### recursive
-### fast forward
-### conflicting merges
-### resolution selection
+### Basics
+### Recursive
+### Fast forward
+### Conflicting merges
+### Resolution selection
 
 ## Rebase
-### reasons
-### fast forward
-### against a branch
-### interactive
-### interactive command
+### Reasons
+### Fast forward
+### Against a branch
+### Interactive
+### Interactive command
 
 ## Network
-### remotes
-### adding a remote
-### remotes are immutable
-### listing remote branches
-### sharing with a push
-### pull vs fetch
+### Remotes
+### Adding a remote
+### Remotes are immutable
+### Listing remote branches
+### Sharing with a push
+### Pull vs fetch
 
 ## GitHub
-### github hosted repo
-### cloning from github
+### GitHub hosted repo
+### Cloning from github
 
 ## Forking
-### purpose of forking
+### Purpose of forking
 
 ## Pull Requests
-### promoting collaboration
-### forks and pull requests
+### Promoting collaboration
+### Forks and pull requests
 
 ## Reset
-### losing data is difficult
-### recover from history
-### hard reset warning
+### Losing data is difficult
+### Recover from history
+### Hard reset warning
 
 ## GUIs
-### native tools
-### other tools
-### diff tool
-### merge tool
+### Native tools
+### Other tools
+### Diff tool
+### Merge tool
 
 ## Reflog
-### restoring by action
-### reflog video
+### Restoring by action
+### Reflog video
