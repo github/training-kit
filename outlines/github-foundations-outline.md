@@ -65,7 +65,6 @@ This outline will be your companion for the cheat sheet and slides of the GitHub
 ### Ignore patterns
 ### Controlling ignores
 ### Excludes file
-### Excludes file
 
 ## Checkout
 ### Purpose of checkout
@@ -104,7 +103,7 @@ This outline will be your companion for the cheat sheet and slides of the GitHub
 
 ## GitHub
 ### GitHub hosted repo
-### Cloning from github
+### Cloning from GitHub
 
 ## Forking
 ### Purpose of forking
