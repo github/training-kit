@@ -7,7 +7,7 @@ description: A quick reference to commands use in the GitHub Foundations class.
 This quick reference guide will be your companion for the outline and slides of the GitHub Foundations class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups.
 
 ## Conventions
-* `<varaible>` is value you replace
+* `<variable>` is value you replace
 * `$` is your command prompt
 * Indented lines after the `$` line are the command's expected response
 * `#` is a comment within the command example
