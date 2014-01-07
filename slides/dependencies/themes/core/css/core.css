@@ -1,0 +1,7 @@
+@import "../../../revealjs/css/reveal.min.css";
+@import "../../../revealjs/lib/css/zenburn.css";
+
+/* Global Styles Generic to Slide Deck */
+.hidden{
+	display: none;
+}

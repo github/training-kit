@@ -1,27 +1,62 @@
+---
+
+---
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    {% endif %}
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<head lang"en-US" dir="ltr">
+		<meta charset="utf-8" />
+		<title>{{ page.title }}</title>
+		<!--Style-->
+		<link rel="stylesheet" href="dependencies/themes/{{ page.theme }}/css/theme.css">
+		{% include analytics.html %}
 
-	  <link rel="stylesheet" media="screen" href="/_stylesheets/slide.css" type="text/css" />
 
-    {% include analytics.html %}
-  </head>
-  <body>
-    <div class="top">
-      <header>
-        <div class="logo"><a href ="/">GitHub Training</a></div>
-        <a href="https://github.com/github/training-materials" class="mini-button"><span>R</span>Source on GitHub</a>
-      </header>
-    </div>
+		{% if page.deck_type == "revealjs" %}
+				{% include hydeslides/revealjs/head %}
+			</head>
+			<body>
+				{% include hydeslides/revealjs/slidedeck %}
+				{% include hydeslides/revealjs/scripts %}
+			</body>
+		{% endif %}
 
-    <div id="content-wrapper">
-      <h1>{{ page.title }}</h1>
-      {{ content }}
-    </div>
-  </body>
+		{% if page.deck_type == "revealjs-diagrams-only" %}
+				{% include hydeslides/revealjs/head %}
+			</head>
+			<body>
+				{% include hydeslides/revealjs/slidedeck-diagrams %}
+				{% include hydeslides/revealjs/scripts %}
+			</body>
+		{% endif %}
+
+		{% if page.deck_type == "impressjs" %}
+				<meta name="viewport" content="width=1024" />
+				<link rel="stylesheet" href="dependencies/themes/core/css/core-impressjs.css">
+			</head>
+			<body class="impress-not-supported">
+				<div class="fallback-message">
+					<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+					<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+				</div>
+
+				{% include hydeslides/impressjs/slidedeck %}
+
+				<div class="hint">
+						<p>Use a spacebar or arrow keys to navigate</p>
+				</div>
+				<script>
+				if ("ontouchstart" in document.documentElement) {
+						document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+				}
+				</script>
+
+				<script src="dependencies/impressjs/js/impress.js"></script>
+				<script>impress().init();</script>
+
+				<script src="dependencies/plugins/launcher/launcher.js"></script>
+			</body>
+		{% endif %}
+
+
 </html>

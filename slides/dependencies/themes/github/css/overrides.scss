@@ -1,0 +1,135 @@
+$font-default: "Helvetica Neue", Helvetica;
+
+/* Override to resolve Font-Awesome and RevealJS styling on icon- */
+i[class^="icon-"]{
+	font-family: FontAwesome;
+	font-style: normal;
+}
+
+html, body{
+	background: #ffffff;
+}
+html, body, .reveal{
+	font-family: $font-default;
+	font-size: 30px;
+	line-height: 1.35em;
+}
+
+img{
+	height: auto !important;
+	width: 100% !important;
+
+}
+
+.reveal .roll span:after{
+	content: none;
+}
+.reveal .roll:hover span{
+	background: $brand-darkGrey;
+	border-radius: .25em;
+	color: #ffffff;
+	box-shadow: 0 0 0 2px $brand-darkGrey;
+
+	-webkit-transform: none;
+	       -moz-transform: none;
+	        -ms-transform: none;
+	            transform: none;
+}
+
+::selection {
+  color: #ffffff;
+  background: $brand-orange;
+  text-shadow: none;
+}
+
+/* Background Watermark */
+body::before{
+	content: "";
+  -webkit-mask-box-image: url(../backgrounds/github-mark.png) 100% 100% 0 0;
+  background: $brand-linkBlue;
+  position: absolute;
+  opacity: .08;
+  height: 30%;
+  width: 7%;
+  left: 91%;
+  top: 2%;
+}
+
+/* Authorship/Info footer*/
+body::after{
+	content: $config-attribution;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 5000;
+	height: 1em;
+	width: 100%;
+	text-align: center;
+	font-size: .3em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	opacity: .4;
+}
+
+a{
+	color: $brand-linkBlue;
+	text-decoration: none;
+	line-height: auto !important;
+	overflow: visible !important;
+	vertical-align: baseline !important;
+}
+/* Fixes text duplication/mistaken inactive hover state rendering */
+a.roll{
+	-webkit-perspective: 0 !important;
+	-moz-perspective: 0 !important;
+	-ms-perspective: 0 !important;
+	perspective: 0 !important;
+	margin-top: auto !important;
+}
+
+hgroup{
+	margin: auto auto 1em auto !important;
+}
+
+
+pre{
+	box-shadow: 0 0 0 3px $brand-lightGrey;
+	border-radius: .25em;
+	font-size: 1em !important;
+}
+pre code{
+	display: block;
+	background: $brand-darkGrey;
+	padding: 1em 1em !important;
+	font-family: $codeFont;
+	color: $brand-green !important;
+	line-height: 1.5em !important;
+	word-wrap: break-word;
+}
+
+h1{
+	font-family: "Apex New", $font-default !important;
+	font-weight: bold !important;
+	color: $brand-darkGrey !important;
+	font-size: 1.5em !important;
+	display: inline !important;
+	line-height: 2em !important;
+	text-align: center;
+}
+	.cover h1{
+		display: block;
+		font-size: 3.5em;
+	}
+h2{
+	font-family: "Apex New", $font-default !important;
+	font-weight: book !important;
+	color: $brand-darkGrey !important;
+	font-size: 1.5em !important;
+	display: inline !important;
+	margin-bottom: 1em !important;
+	text-align: center;
+}
+
+h3{
+	line-height: 1.5em !important;
+}

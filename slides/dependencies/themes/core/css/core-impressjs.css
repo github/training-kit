@@ -1,0 +1,7 @@
+@import "../../../impressjs/css/impress-demo.css";
+@import "../../../font-awesome/css/font-awesome.min.css";
+
+/* Global Styles Generic to Slide Deck */
+.hidden{
+	display: none;
+}
