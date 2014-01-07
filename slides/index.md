@@ -1,5 +1,5 @@
 ---
-layout: categorycontents
+layout: page
 title: List of Presentations
 description: Posts on presentations for GitHub and Git classes.
 categories: ['presentations']

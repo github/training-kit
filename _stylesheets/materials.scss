@@ -1,0 +1,286 @@
+/* Color Definitions */
+$color-dark: #1875c6;
+$color-bright: #00a5ea;
+
+/* Imports */
+@import "octicons.css";
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* Old browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* Basic Elements */
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	background: #fff;
+}
+a {
+  color: $color-dark;
+  text-decoration: none;
+}
+h1{
+	font-size: 300%;
+	text-align: center;
+}
+h2{
+	font-size: 200%;
+	text-align: center;
+	line-height: 150%;
+}
+h2+p{
+	font-size: 125%;
+	font-weight: 200;
+	text-rendering: optimizeLegibility;
+	text-align: center;
+	line-height: 150%;
+	opacity: .65;
+	margin: auto auto;
+}
+h3{
+}
+
+section{
+	width: 100%;
+	float: left;
+}
+.container{
+	width: 830px;
+	margin: 40px auto auto;
+}
+
+.logo-training-materials{
+	display: inline-block;
+	height: 26px;
+	width: 237px;
+
+	&:before{
+		content: "";
+		background: url(../images/training-materials-2x.png) no-repeat top left;
+		background-size: contain;
+		height: 32px;
+		width: 237px;
+		display: block;
+	}
+}
+
+.hero{
+	background: $color-dark;
+	color: #fff;
+	text-align: center;
+	box-shadow: inset 0 -20px 30px rgba(0,0,0,.08);
+	border-bottom: solid 1px #fff;
+
+	h1{
+		margin-top: 40px;
+		font-weight: 200;
+		line-height: 140%;
+	}
+
+	p{
+		font-weight: 200;
+		font-size: 110%;
+		text-rendering: optimizeLegibility;
+		opacity: .85;
+		margin-bottom: 40px;
+	}
+}
+
+.blurb{
+	background: $color-dark;
+	background: -moz-linear-gradient(4deg,  #1a7ed6 43%, #1875c6 43%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(43%,#1a7ed6), color-stop(43%,#1875c6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(4deg,  #1a7ed6 43%,#1875c6 43%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(4deg,  #1a7ed6 43%,#1875c6 43%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(4deg,  #1a7ed6 43%,#1875c6 43%); /* IE10+ */
+	background: linear-gradient(4deg,  #1a7ed6 43%,#1875c6 43%); /* W3C */
+
+	color: #fff;
+	padding: 0 0 40px;
+	font-size: 80%;
+	margin-top: 40px;
+
+	h2{
+		text-align: left;
+	}
+	p{
+		text-align: left;
+	}
+}
+
+
+.professortocat{
+	height: 100px;
+	width: 100px;
+	float: left;
+	background: url(../images/professortocat.png) no-repeat;
+	background-size: contain;
+	& + .group{
+		float: left;
+		margin-left: 20px;
+		width: 700px; /* Weird 10px less hack. Don't know why. */
+	}
+}
+
+.tab-panel{
+	background: #fff;
+	position: block;
+	margin: 30px auto;
+	height: 170px;
+	width: 360px;
+	position: relative;
+
+	label{
+		background: #eee;
+		-webkit-transition: background 250ms ease-in-out;
+
+		&:hover{
+			background: #fff;
+
+		}
+	}
+
+	.panel-tab{
+		float: left;
+		width: 118px;
+		border: solid 1px #dfdfdf;
+
+
+		label > span{
+			font-size: 80%;
+		}
+
+		&.first{
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			border-right: none;
+		}
+
+		&.last{
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border-left: none;
+		}
+
+		& > span{
+			display: block;
+			text-align: center;
+			margin: 10px;
+			opacity: .6;
+		}
+	}
+
+	.panel-content{
+		height: 140px;
+		width: 355px;
+		visibility: hidden;
+		position: absolute;
+		left: 0;
+
+		.octicon-hero{
+			display: inline-block;
+			padding: 0 10px;
+			color: #ddd;
+		}
+
+		p{
+			margin: 20px 0;
+			font-weight: 200;
+		}
+
+		ul{
+			text-align: center;
+		}
+
+		li{
+			display: inline-block;
+		}
+	}
+
+	input.material-type{
+		position: absolute;
+		left: -999px;
+
+		&:checked + label{
+			background: $color-bright;
+
+			& > span{
+				color: #fff;
+				opacity: 1;
+			}
+
+
+		}
+
+		&:checked + label.panel-tab > div.panel-content{
+			visibility: visible;
+		}
+	}
+}
+
+
+
+
+
+
+footer {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #777;
+  clear: both;
+  width: 980px;
+  padding: 40px 0;
+  margin: 70px auto 0 auto;
+  border-top: 1px solid #eee;
+}
+
+.site-footer-links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.site-footer-links li:first-child {
+  margin-left: 0;
+}
+
+footer .octicon-mark-github {
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  color: #ccc;
+  height: 24px;
+  width: 24px;
+  margin-left: -12px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+footer .right {
+  float: right;
+  margin: 0;
+}
