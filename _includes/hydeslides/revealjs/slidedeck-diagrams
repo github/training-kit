@@ -1,0 +1,18 @@
+<div class="reveal" id="reveal">
+	<div class="slides">
+		{% for ch in page.chapters %}
+			{% for section in site.tags[ch] reversed %}
+				{% for tag in section.tags %}
+	                {% if tag contains "diagram" %}
+						{% include hydeslides/revealjs/slide-open %}
+							<h1 {% if section.heading == false %}class="hidden"{% endif %}>{{ section.chapter }}</h1>
+							<h2 {% if section.heading == false %}class="hidden"{% endif %}>{{ section.title }}</h2>
+							<div class="clear-all"></div>		
+							{{ section.content }}
+						{% include hydeslides/revealjs/slide-close %}
+	                {% endif %}
+	            {% endfor %}
+			{% endfor %}
+		{% endfor %}
+	</div>
+</div>

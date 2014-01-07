@@ -1,0 +1,226 @@
+@import url(revealjs.css);
+@import url(octicons.css);
+/*
+  Custom variant to avoid font-overrides
+  when using Octicons
+*/
+/*
+  Octicons
+*/
+/*
+  Overrides, Design, Theme
+*/
+/* Override to resolve Font-Awesome and RevealJS styling on icon- */
+i[class^="icon-"] {
+  font-family: FontAwesome;
+  font-style: normal; }
+
+html, body {
+  background: #ffffff; }
+
+html, body, .reveal {
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 30px;
+  line-height: 1.35em; }
+
+img {
+  height: auto !important;
+  width: 100% !important; }
+
+.reveal .roll span:after {
+  content: none; }
+
+.reveal .roll:hover span {
+  background: #333333;
+  border-radius: .25em;
+  color: #ffffff;
+  box-shadow: 0 0 0 2px #333333;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  transform: none; }
+
+::selection {
+  color: #ffffff;
+  background: #ff9933;
+  text-shadow: none; }
+
+/* Background Watermark */
+body::before {
+  content: "";
+  -webkit-mask-box-image: url(../backgrounds/github-mark.png) 100% 100% 0 0;
+  background: #4183c4;
+  position: absolute;
+  opacity: .08;
+  height: 30%;
+  width: 7%;
+  left: 91%;
+  top: 2%; }
+
+/* Authorship/Info footer*/
+body::after {
+  content: "Official GitHub training curriculum v4.1.0";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5000;
+  height: 1em;
+  width: 100%;
+  text-align: center;
+  font-size: .3em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  opacity: .4; }
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+  line-height: auto !important;
+  overflow: visible !important;
+  vertical-align: baseline !important; }
+
+/* Fixes text duplication/mistaken inactive hover state rendering */
+a.roll {
+  -webkit-perspective: 0 !important;
+  -moz-perspective: 0 !important;
+  -ms-perspective: 0 !important;
+  perspective: 0 !important;
+  margin-top: auto !important; }
+
+hgroup {
+  margin: auto auto 1em auto !important; }
+
+pre {
+  box-shadow: 0 0 0 3px #999999;
+  border-radius: .25em;
+  font-size: 1em !important; }
+
+pre code {
+  display: block;
+  background: #333333;
+  padding: 1em 1em !important;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  color: #6cc644 !important;
+  line-height: 1.5em !important;
+  word-wrap: break-word; }
+
+h1 {
+  font-family: "Apex New", "Helvetica Neue", Helvetica !important;
+  font-weight: bold !important;
+  color: #333333 !important;
+  font-size: 1.5em !important;
+  display: inline !important;
+  line-height: 2em !important;
+  text-align: center; }
+
+.cover h1 {
+  display: block;
+  font-size: 3.5em; }
+
+h2 {
+  font-family: "Apex New", "Helvetica Neue", Helvetica !important;
+  font-weight: book !important;
+  color: #333333 !important;
+  font-size: 1.5em !important;
+  display: inline !important;
+  margin-bottom: 1em !important;
+  text-align: center; }
+
+h3 {
+  line-height: 1.5em !important; }
+
+/* Branding & Logos */
+.brand {
+  background: url(../branding/github-black.png) no-repeat center;
+  background-size: contain;
+  height: 6em;
+  width: 98%;
+  margin: auto auto 1em auto; }
+
+.git {
+  background: url(../branding/git-logo-black.png) no-repeat center;
+  background-size: contain;
+  height: 6em;
+  width: 98%;
+  margin: auto auto 1em auto; }
+
+/* Special */
+.hidden {
+  visibility: hidden;
+  display: block !important;
+  height: 0;
+  width: 0; }
+
+.clear-all {
+  display: block;
+  clear: both; }
+
+.cover h1 {
+  font-size: 4em !important; }
+
+/* Cover Slide */
+.cover-title {
+  display: block !important;
+  font-size: 4em !important; }
+
+/* Sticky Notes */
+.sticky {
+  font-size: 1.25em !important;
+  background: #fffab4;
+  box-shadow: 1px 1px 0.09em #232322, 0px -1px 0.15em #e1e1e1, inset 0 0 3em #e5cd62;
+  border-radius: 5em 10em .25em 1.5em / 0.25em 0.25em 1em .25em;
+  width: 60%;
+  margin: 0 auto !important;
+  padding: 1em 1em 1em 1em;
+  background: #fefcea;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #fffab4 0%, #fff799 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fffab4), color-stop(100%, #fff799));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #fffab4 0%, #fff799 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #fffab4 0%, #fff799 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #fffab4 0%, #fff799 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #fffab4 0%, #fff799 100%);
+  /* W3C */
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  text-align: center; }
+
+.sticky i[class^="icon-"] {
+  color: #000;
+  font-size: 5em;
+  display: block;
+  line-height: 1.2em; }
+
+/*Stage Building Diagrams*/
+.diagram-group {
+  position: relative;
+  overflow: hidden; }
+
+.reveal section .fragment.diagram {
+  position: absolute;
+  background: #fff;
+  width: 95% !important;
+  max-height: 100% !important;
+  max-width: 95% !important;
+  left: 2.5%; }
+
+.reveal section .fragment.diagram:nth-child(n+2) {
+  transition: all 700ms;
+  opacity: 0; }
+
+.reveal section .fragment.diagram.visible:nth-child(n+2) {
+  display: block;
+  opacity: 1;
+  position: absolute; }
+
+/* Octicon Title Slide */
+.title-icon {
+  font-size: 300% !important;
+  opacity: .3; }

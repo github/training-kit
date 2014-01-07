@@ -1,0 +1,231 @@
+---
+theme: github
+layout: hydeslides-impressjs
+title: GitHub Foundations
+chapters: [
+  'preroll', 
+  'intro',
+  'git',
+  'setup', 
+  'config', 
+  'init', 
+  'commit', 
+  'diff', 
+  'log', 
+  'rm-mv', 
+  'ignore', 
+  'checkout', 
+  'branch', 
+  'merge', 
+  'rebase', 
+  'network', 
+  'github/intro', 
+  'github/forking', 
+  'github/pull-request',  
+  'reset',
+  'gui',
+  'reflog',
+  'goodbye']
+categories: ['presentations']
+---
+
+# Git Foundations
+
+
+# Getting Started
+## Intro
+* Git: version control system
+* GitHub: store code, share code
+
+## Preparation
+* Installing git
+* Verifying & checking version
+  * `git --version`
+
+## config
+* 3 tiers of config
+  * `--global`
+  * `--system`
+  * `--local (default)`
+* `git config --list`
+* `git config user.name`
+* `git config user.email`
+* `git config --global core.autocrlf <value>`
+* `git config --global color.ui auto`
+
+
+## commit
+* `git status`
+  * Reviewing help on status output
+* `git add <filename>`
+* `git commit` or `git commit -m"<message>"`
+
+
+## diff
+* `git diff`
+  * Working copy to staging
+* `git diff --staged`
+  * Staged to commit
+* `git diff HEAD`
+  * Working copy to commit
+
+### Decorating diffs
+  * `git diff --color-words`
+  * `git diff --word-diff`
+
+## log
+* `log`
+  * commit history
+* `git log -<n>`
+* `git log --author=<committer>`
+  * Querying for patch author
+* `git log -S=<StringInPatch>`
+  * Search for string match _in_ patch
+* `git log --stat`
+  * Listing files of patch
+* `git log --patch`
+  * Listing patch change sets
+* `git log --word-diff --patch`
+* `git log --graph`
+
+## rm
+* Git interacting with filesystem
+* Removes (deletes!) the file, stages deletion
+  * `git rm <file>`
+
+* Un-tracking tracked files
+  * `git rm --cached -- <filename>`
+
+## mv
+* Moving generates new tree, not a new blob
+  * Hash will be different
+  * `git mv <file> <file>`
+
+### Similarity Index
+* Noting "100%" on commit output?
+  * `git log --stat -M`
+  * `git log --follow <file>`
+
+## ignore
+* Creating a .gitignore
+* Adding patterns
+* Global/external ignore
+  * `git config --global core.excludesfile`
+
+
+## branch
+* Creating feature or prototype
+* Showing local branches
+  * `git branch` 
+* Showing remote branches
+  * `git branch -r`
+* Showing all branches
+  * `git branch -a`
+* Creating a branch
+  * `git branch <name> <ref>`
+* Deleting a branch
+  * `git branch -d <name>`
+* Show all branches sorted by the ones that were most recently changed.
+  * `git for-each-ref --sort=committerdate refs/heads/ --format="%(committerdate) %09 %(committerdate:relative) %09 %(refname:short)"`
+
+## merge
+* Folding in branches
+  * `git merge` or `git merge -m<message>`
+* Conflicting merges
+  * Resolving file
+  * `git add <file>`
+  * `git rebase --continue`
+
+
+## rebase
+### branch preparation
+* Explaining fast-forward
+* Rebasing __is not__ merging!
+  * `git checkout <featurebranch>`
+  * `git rebase master`
+
+### interactive
+* `git rebase -i <REF>`
+
+## reflog
+* Tracing Git action "history"
+
+## reset
+* Losing data with Git is difficult (but possible)
+* Clearing index and working directory
+  * `git reset --hard`
+* Reseting index, updating working directory
+  * `git reset --mixed`
+* Reseting index only
+  * `git reset --soft`
+
+## revert
+* Generating commit to restore past patch set
+  * `git revert <REF>`
+
+# GitHub
+
+## Basic Interaction
+* Creating an account
+* Reviewing UI
+* Deciding on protocol
+  * https
+  * ssh
+* Creating a new _repo_
+
+
+## Repo Retrieval
+* Using `git clone`
+* Understanding remotes
+
+## Network
+* `git remote add origin <url>`
+* show how `origin` will be setup
+
+## remote
+* Aliasing to server paths
+  * `git remote add <name> <path>`
+* Removing connections
+  * `git remote -d <name>`
+
+## push
+* Publishing commit history
+  * `git push -u origin master`
+
+## pull
+* Automatically fold-in/merge remote's commits
+  * `git pull origin`
+
+## fetch
+* Comparing without merging
+* Merging selectively
+* Rebasing with respect to published
+  * `git fetch <URL> <branch>`
+  * `FETCH_HEAD`
+
+## Pull Request
+* Pushing branch to repo
+* Creating GH pull request
+
+### Automatic Merge
+* Using GH Interface
+
+### Manual Merge
+* Using `FETCH_HEAD` approach
+* Using GitHub tip approach
+
+
+# Bonus Material
+
+## stash
+* `git stash`
+* `git stash list`
+* `git stash pop <name>`
+* `git stash drop <name>`
+* `git stash apply`
+
+## tag
+* `git tag -m<message>  <NAME>`
+* `git tag -a -m<message> <NAME>`
+* `git tag`
+

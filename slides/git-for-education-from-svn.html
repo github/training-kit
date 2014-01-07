@@ -1,0 +1,55 @@
+---
+theme: cobalt
+layout: hydeslides-revealjs
+title: GitHub Education Foundations
+chapters: [
+  'education/preroll', 
+  'intro',
+  'education/git',
+  'education/setup', 
+  'init', 
+  'config', 
+  'education/commit', 
+  'diff', 
+  'log', 
+  'education/branch', 
+  'merge', 
+  'github/intro', 
+  'github/pull-request',  
+  'reset',
+  'goodbye']
+categories: ['presentations']
+---
+
+# Git For Education
+Learning Git in your CS program can be hard, and sometimes you come from SVN!
+
+This should help.
+
+* Getting started
+  * what is DVCS
+  * how are changes stored
+    * Data structure of git
+    * Hashing
+  * 90% of work done without internet connection
+    * Only sharing when you decide to (push/pull/fetch, etc)
+* Init
+  * .git/ at top level
+  * watches everything below it.
+    * don't need to ensure "checkins" are done at different folders
+  * git config
+* 3 stage thinking
+  * Shopping Cart
+    * Bi-directional
+    * `git status` helps you put things in, and take things out
+  * Add
+  * Commit
+* Log/diff ( Optional )
+  * Do a pull on the git project live
+  * `git log -S <string-in-patch>`
+  * `git log -g <regex-for-message>`
+  * `git log --author=peff`
+* BRANCHES. ALL THE TIME.
+* Fast merges (heavy "read more after" material) for experiments.
+* Push/Pull
+  * could try to avoid showing "out of date from origin/master by n-commits"
