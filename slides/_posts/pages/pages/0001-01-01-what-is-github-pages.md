@@ -2,7 +2,7 @@
 chapter: "GitHub Pages"
 cover: true
 heading: false
-layout: hydeslides
+layout: slide
 tags:
   - "pages/pages"
 ---

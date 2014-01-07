@@ -1,6 +1,6 @@
 ---
 theme: github
-layout: hydeslides-revealjs
+layout: slide-revealjs
 title: GitHub Pages, Jekyll, and You!
 chapters:
   - "pages/title"
