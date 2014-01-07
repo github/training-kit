@@ -4,7 +4,7 @@ set -e
 
 # setup environment
 export PATH="/usr/share/rbenv/shims:$PATH"
-export RBENV_VERSION="2.0.0"
+export RBENV_VERSION="2.0.0-github6"
 
 # write some debug info
 ruby -v
