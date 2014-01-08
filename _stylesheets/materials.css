@@ -139,21 +139,21 @@ section {
     -webkit-transition: background 250ms ease-in-out; }
     .tab-panel label:hover {
       background: #fff; }
-  .tab-panel .panel-tab {
+  .tab-panel .tab {
     float: left;
     width: 118px;
     border: solid 1px #dfdfdf; }
-    .tab-panel .panel-tab label > span {
+    .tab-panel .tab label > span {
       font-size: 80%; }
-    .tab-panel .panel-tab.first {
+    .tab-panel .tab.first {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
       border-right: none; }
-    .tab-panel .panel-tab.last {
+    .tab-panel .tab.last {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       border-left: none; }
-    .tab-panel .panel-tab > span {
+    .tab-panel .tab > span {
       display: block;
       text-align: center;
       margin: 10px;
@@ -183,7 +183,7 @@ section {
       .tab-panel input.material-type:checked + label > span {
         color: #fff;
         opacity: 1; }
-    .tab-panel input.material-type:checked + label.panel-tab > div.panel-content {
+    .tab-panel input.material-type:checked + label.tab > div.panel-content {
       visibility: visible; }
 
 footer {

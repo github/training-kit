@@ -61,8 +61,6 @@ h2+p{
 	opacity: .65;
 	margin: auto auto;
 }
-h3{
-}
 
 section{
 	width: 100%;
@@ -139,6 +137,7 @@ section{
 	float: left;
 	background: url(../images/professortocat.png) no-repeat;
 	background-size: contain;
+
 	& + .group{
 		float: left;
 		margin-left: 20px;
@@ -164,28 +163,24 @@ section{
 		}
 	}
 
-	.panel-tab{
+	.tab{
 		float: left;
 		width: 118px;
 		border: solid 1px #dfdfdf;
 
-
 		label > span{
 			font-size: 80%;
 		}
-
 		&.first{
 			border-top-left-radius: 5px;
 			border-bottom-left-radius: 5px;
 			border-right: none;
 		}
-
 		&.last{
 			border-top-right-radius: 5px;
 			border-bottom-right-radius: 5px;
 			border-left: none;
 		}
-
 		& > span{
 			display: block;
 			text-align: center;
@@ -206,16 +201,13 @@ section{
 			padding: 0 10px;
 			color: #ddd;
 		}
-
 		p{
 			margin: 20px 0;
 			font-weight: 200;
 		}
-
 		ul{
 			text-align: center;
 		}
-
 		li{
 			display: inline-block;
 		}
@@ -232,20 +224,13 @@ section{
 				color: #fff;
 				opacity: 1;
 			}
-
-
 		}
 
-		&:checked + label.panel-tab > div.panel-content{
+		&:checked + label.tab > div.panel-content{
 			visibility: visible;
 		}
 	}
 }
-
-
-
-
-
 
 footer {
   position: relative;
