@@ -18,9 +18,9 @@ We’re eager to have your help in improving these materials. If you have an ide
 
 The educational content exists in three top level directories:
 
-1. `outlines`
-2. `slides`
-3. `cheatsheets`
+1. [`outlines`](https://github.com/github/training-materials/tree/master/outlines)
+2. [`slides`](https://github.com/github/training-materials/tree/master/slides)
+3. [`cheatsheets`](https://github.com/github/training-materials/tree/master/cheatsheets)
 
 
 ## File Format
