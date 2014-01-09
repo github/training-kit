@@ -34,8 +34,22 @@ body {
   background: #fff; }
 
 a {
-  color: #1875c6;
-  text-decoration: none; }
+  color: #00a5ea;
+  text-decoration: none;
+  -webkit-transition: color 200ms;
+  transition: color border 200ms; }
+  a:hover {
+    color: #1875c6; }
+  a.marker:after {
+    content: "\203A";
+    border: solid 1px #00a5ea;
+    border-radius: 50%;
+    display: inline-block;
+    height: .8em;
+    width: .8em;
+    margin: 0 0 0 10px;
+    line-height: .7;
+    font-size: 120%; }
 
 h1 {
   font-size: 300%;
@@ -59,6 +73,9 @@ p {
   text-rendering: optimizeLegibility;
   line-height: 150%;
   opacity: .7; }
+
+.center {
+  text-align: center; }
 
 section {
   width: 100%;
