@@ -137,24 +137,19 @@ section{
 }
 
 .blurb{
-	background: $color-dark;
-	background: -moz-linear-gradient(4deg,  #1a7ed6 43%, #1875c6 43%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(43%,#1a7ed6), color-stop(43%,#1875c6)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(4deg,  #1a7ed6 43%,#1875c6 43%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(4deg,  #1a7ed6 43%,#1875c6 43%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(4deg,  #1a7ed6 43%,#1875c6 43%); /* IE10+ */
-	background: linear-gradient(4deg,  #1a7ed6 43%,#1875c6 43%); /* W3C */
-
-	color: #fff;
+	background: #f5f5f5;
+	color: #000;
 	padding: 0 0 40px;
 	font-size: 80%;
 	margin-top: 40px;
 
 	h2{
 		text-align: left;
+		opacity: .6;
 	}
 	p{
 		text-align: left;
+		opacity: .7;
 	}
 }
 
@@ -192,7 +187,7 @@ section{
 	position: relative;
 
 	label{
-		background: #eee;
+		background: #f5f5f5;
 		-webkit-transition: background 250ms ease-in-out;
 
 		&:hover{
