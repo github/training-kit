@@ -1,0 +1,112 @@
+---
+layout: bare
+title: GitHub Training Materials
+description: Open source materials for teaching GitHub and Git skills.
+---
+
+{% if page.path != "index.html" %}
+  <header>
+    <nav></nav>
+    <div class="logo">GitHub</div>
+  </header>
+{% endif %}
+
+<section class="hero">
+  <div class="container">
+    <hgroup>
+      <span class="mega-octicon octicon-logo-github"></span>
+      <span class="logo-training-materials"></span>
+
+      <h1>Open source training</h1>
+      <p>Present, share, and contribute your way to better version control</p>
+    </hgroup>
+  </div>
+</section>
+
+<section class="materials">
+  <div class="container">
+    <h2>Materials</h2>
+
+      <p>
+        We've created an outline, a cheat sheet, and a slide deck for each class we offer. These are the same materials the <a href="http://training.github.com">GitHub Training Team</a> uses in the classes we teach.
+      </p>
+
+      <div class="tab-panel">
+        <input type="radio" class="material-type" name="material-list" id="material-foundations" value="Foundations" checked="checked">
+        <label class="tab first" for="material-foundations">
+          <span>Foundations</span>
+
+          <div class="panel-content">
+            <p>A thorough introduction to all things GitHub and Git. Core concept knowledge and commands.</p>
+
+            <ul>
+              <li><span class="octicon-hero"><span class="octicon octicon-file-text"></span></span><a href="outlines/github-foundations.html">Outline</a></li>
+              <li><span class="octicon-hero"><span class="octicon octicon-megaphone"></span></span><a href="slides/github-foundations.html">Slides</a></li>
+              <li><span class="octicon-hero"><span class="octicon octicon-book"></span></span><a href="cheatsheets/github-foundations.html">Cheatsheet</a></li>
+            </ul>
+          </div>
+        </label>
+
+        <input type="radio" class="material-type" name="material-list" id="material-intermediate" value="Intermediate">
+        <label class="tab" for="material-intermediate">
+          <span>Intermediate</span>
+
+          <div class="panel-content">
+            <p>Discover useful shortcuts and option switches and more advanced GitHub features.</p>
+
+            <ul>
+              <li><span class="octicon-hero"><span class="octicon octicon-file-text"></span></span><a href="outlines/github-intermediate.html">Outline</a></li>
+              <li><span class="octicon-hero"><span class="octicon octicon-megaphone"></span></span><a href="slides/github-intermediate.html">Slides</a></li>
+              <li><span class="octicon-hero"><span class="octicon octicon-book"></span></span><a href="cheatsheets/github-intermediate.html">Cheatsheet</a></li>
+            </ul>
+          </div>
+        </label>
+
+        <input type="radio" class="material-type" name="material-list" id="material-advanced" value="Advanced">
+        <label class="tab last" for="material-advanced">
+          <span>Advanced</span>
+
+          <div class="panel-content">
+            <p>Dive deep into Git's functionality, solving complex situations and pursuing tighter integration with GitHub.</p>
+
+            <ul>
+              <li><span class="octicon-hero"><span class="octicon octicon-file-text"></span></span><a href="outlines/github-advanced.html">Outline</a></li>
+              <li><span class="octicon-hero"><span class="octicon octicon-megaphone"></span></span><a href="slides/github-advanced.html">Slides</a></li>
+              <li><span class="octicon-hero"><span class="octicon octicon-book"></span></span><a href="cheatsheets/github-advanced.html">Cheatsheet</a></li>
+            </ul>
+          </div>
+        </label>
+      </div>
+
+
+  </div>
+</section>
+
+<section class="blurb">
+  <div class="container">
+    <span class="professortocat"></span>
+    <span class="group">
+      <h2>Teach like a GitHubber</h2>
+      <p>
+        To teach a class, just review the Outline for the class of interest,
+        open up a web browser to the slide deck, and share the Cheat Sheet
+        with participants for an easy-to-follow learning experience.
+      </p>
+    </span>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Contributing to these materials</h2>
+    <p>
+      Notice a typo or something that needs to be clarified in the slides,
+      outlines, or cheat sheets? Just create a fork, make your changes, and
+      submit a Pull Request.
+    </p>
+    <p class="center"><a href="https://github.com/github/training-materials/" class="marker">Head on over to the
+    github/training-materials repository</a></p>
+  </div>
+</section>
+
+{% include footer.html %}
