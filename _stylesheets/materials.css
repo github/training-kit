@@ -179,7 +179,7 @@ section {
       font-size: 80%; }
   .tab-panel .panel-content {
     width: 200%;
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
     left: -50%;
     -webkit-transition: opacity 400ms;
@@ -206,7 +206,7 @@ section {
         color: #fff;
         opacity: 1; }
     .tab-panel input.material-type:checked + label.tab > div.panel-content {
-      opacity: 1; }
+      visibility: visible; }
 
 footer {
   float: left;

@@ -221,8 +221,8 @@ section{
 
 	.panel-content{
 		width: 200%;
-		// visibility: hidden;
-		opacity: 0;
+		visibility: hidden;
+		// opacity: 0;
 		position: absolute;
 		left: -50%;
 
@@ -262,8 +262,8 @@ section{
 		}
 
 		&:checked + label.tab > div.panel-content{
-			// visibility: visible;
-			opacity: 1;
+			visibility: visible;
+			// opacity: 1;
 		}
 	}
 }
