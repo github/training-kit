@@ -179,9 +179,11 @@ section {
       font-size: 80%; }
   .tab-panel .panel-content {
     width: 200%;
-    visibility: hidden;
+    opacity: 0;
     position: absolute;
-    left: -50%; }
+    left: -50%;
+    -webkit-transition: opacity 400ms;
+    transition: opacity 400ms; }
     .tab-panel .panel-content .octicon-hero {
       display: inline-block;
       padding: 0 10px;
@@ -204,7 +206,7 @@ section {
         color: #fff;
         opacity: 1; }
     .tab-panel input.material-type:checked + label.tab > div.panel-content {
-      visibility: visible; }
+      opacity: 1; }
 
 footer {
   float: left;

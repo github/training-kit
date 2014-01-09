@@ -221,9 +221,13 @@ section{
 
 	.panel-content{
 		width: 200%;
-		visibility: hidden;
+		// visibility: hidden;
+		opacity: 0;
 		position: absolute;
 		left: -50%;
+
+		-webkit-transition: opacity 400ms;
+		transition: opacity 400ms;
 
 		.octicon-hero{
 			display: inline-block;
@@ -258,7 +262,8 @@ section{
 		}
 
 		&:checked + label.tab > div.panel-content{
-			visibility: visible;
+			// visibility: visible;
+			opacity: 1;
 		}
 	}
 }
