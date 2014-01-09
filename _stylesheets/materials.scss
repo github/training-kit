@@ -69,6 +69,7 @@ section{
 .container{
 	width: 830px;
 	margin: 40px auto auto;
+	position: relative;
 }
 
 .logo-training-materials{
@@ -233,15 +234,32 @@ section{
 }
 
 footer {
-  position: relative;
+  float: left;
+	position: relative;
   font-size: 12px;
   line-height: 1.5;
   color: #777;
   clear: both;
-  width: 980px;
-  padding: 40px 0;
-  margin: 70px auto 0 auto;
+  width: 100%;
+  margin: 40px auto 40px auto;
   border-top: 1px solid #eee;
+
+	.right {
+		float: right;
+		margin: 0;
+	}
+
+	.octicon-mark-github {
+		position: absolute;
+		// top: 38px;
+		left: 50%;
+		color: #ccc;
+		height: 24px;
+		width: 24px;
+		margin-left: -12px;
+		font-size: 24px;
+		line-height: 1;
+	}
 }
 
 .site-footer-links li {
@@ -251,21 +269,4 @@ footer {
 
 .site-footer-links li:first-child {
   margin-left: 0;
-}
-
-footer .octicon-mark-github {
-  position: absolute;
-  top: 38px;
-  left: 50%;
-  color: #ccc;
-  height: 24px;
-  width: 24px;
-  margin-left: -12px;
-  font-size: 24px;
-  line-height: 1;
-}
-
-footer .right {
-  float: right;
-  margin: 0;
 }
