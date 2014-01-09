@@ -61,6 +61,11 @@ h2+p{
 	opacity: .65;
 	margin: auto auto;
 }
+p{
+	text-rendering: optimizeLegibility;
+	line-height: 150%;
+	opacity: .7;
+}
 
 section{
 	width: 100%;
@@ -131,6 +136,16 @@ section{
 	}
 }
 
+.grid2col{
+	float: left;
+	width: 49%;
+	text-align: left;
+
+	p{
+		padding-right: 10%;
+	}
+}
+
 
 .professortocat{
 	height: 100px;
@@ -149,8 +164,8 @@ section{
 .tab-panel{
 	background: #fff;
 	position: block;
-	margin: 30px auto;
-	height: 170px;
+	margin: 30px auto 0 auto;
+	height: 120px;
 	width: 360px;
 	position: relative;
 
@@ -160,7 +175,6 @@ section{
 
 		&:hover{
 			background: #fff;
-
 		}
 	}
 
@@ -169,9 +183,6 @@ section{
 		width: 118px;
 		border: solid 1px #dfdfdf;
 
-		label > span{
-			font-size: 80%;
-		}
 		&.first{
 			border-top-left-radius: 5px;
 			border-bottom-left-radius: 5px;
@@ -187,15 +198,15 @@ section{
 			text-align: center;
 			margin: 10px;
 			opacity: .6;
+			font-size: 80%;
 		}
 	}
 
 	.panel-content{
-		height: 140px;
-		width: 355px;
+		width: 200%;
 		visibility: hidden;
 		position: absolute;
-		left: 0;
+		left: -50%;
 
 		.octicon-hero{
 			display: inline-block;
@@ -203,6 +214,8 @@ section{
 			color: #ddd;
 		}
 		p{
+			font-size: 80%;
+			text-align: center;
 			margin: 20px 0;
 			font-weight: 200;
 		}
