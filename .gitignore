@@ -6,3 +6,4 @@ _site/
 /.bundle/
 .sass-cache/
 *.*~
+_release
