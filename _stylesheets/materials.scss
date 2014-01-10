@@ -195,10 +195,19 @@ section{
 		}
 	}
 
+	.column-2up{
+		width: 50%;
+	}
+	.column-3up{
+		width: 33%;
+	}
+	.column-4up{
+		width: 25%;
+	}
+
 	.tab{
 		float: left;
-		width: 118px;
-		border: solid 1px #dfdfdf;
+		box-shadow: 0 0 0 1px #dfdfdf;
 
 		&.first{
 			border-top-left-radius: 5px;
