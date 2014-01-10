@@ -1,14 +1,11 @@
 ---
 layout: outline
-title: GitHub Foundations Course Outline
+title: Foundations Course Outline
 description: A student and teacher outline to the GitHub Foundations class.
 ---
 
-This outline will be your companion for the cheat sheet and slides of the GitHub Foundations class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups.
-
-
 ## Introduction
-In this GitHub Training course, you'll learn all the necessary skills to be productive with Git and GitHub in your open source work or daily job assignments.
+This outline will be your companion for the cheat sheet and slides of the GitHub Foundations class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this GitHub Training course, you'll learn all the necessary skills to be productive with Git and GitHub in your open source work or daily job assignments.
 
 ###  Git
 <a href="http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git" class="booklink">Pro Git Book: The History of Git</a>
