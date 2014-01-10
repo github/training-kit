@@ -159,10 +159,15 @@ section {
     -webkit-transition: background 250ms ease-in-out; }
     .tab-panel label:hover {
       background: #fff; }
+  .tab-panel .column-2up {
+    width: 50%; }
+  .tab-panel .column-3up {
+    width: 33%; }
+  .tab-panel .column-4up {
+    width: 25%; }
   .tab-panel .tab {
     float: left;
-    width: 118px;
-    border: solid 1px #dfdfdf; }
+    box-shadow: 0 0 0 1px #dfdfdf; }
     .tab-panel .tab.first {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
