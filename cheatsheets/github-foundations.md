@@ -21,6 +21,8 @@ Git is an open source distributed version control system invented by Linus Torva
 GitHub is a Git repository hosting and code collaboration platform for both open source and private projects.
 
 ###  A Brief Tour of Git
+<a href="https://help.github.com/articles/github-glossary#clone" class="glossarylink">Glossary: Clone</a>
+
 Git has a unique twist on version control in which each _cloned_ copy of the repository contains all branches, tags, and commits ever saved to the project. This provides local-disk speed for almost any operation. Network operations are performed in batch and compressed before sending, thus making over-the-wire operations seem incredible fast.
 
 ## Setup
