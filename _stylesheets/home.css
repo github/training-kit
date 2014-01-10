@@ -1,5 +1,4 @@
 @import url(octicons.css);
-/* Color Definitions */
 /* Imports */
 /* Reset */
 html, body, div, span, applet, object, iframe,
@@ -27,42 +26,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
-footer {
-  float: left;
-  position: relative;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #777;
-  clear: both;
-  width: 100%;
-  margin: 40px auto 40px auto;
-  border-top: 1px solid #eee; }
-  footer .right {
-    float: right;
-    margin: 0; }
-  footer .octicon-mark-github {
-    position: absolute;
-    left: 50%;
-    color: #ccc;
-    height: 24px;
-    width: 24px;
-    margin-left: -12px;
-    font-size: 24px;
-    line-height: 1; }
-
-.site-footer-links li {
-  display: inline-block;
-  margin-left: 10px; }
-
-.site-footer-links li:first-child {
-  margin-left: 0; }
-
-/* Basic Elements */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   background: #fff; }
 
+/* Color Definitions */
 a {
   color: #00a5ea;
   text-decoration: none;
@@ -104,8 +73,17 @@ p {
   line-height: 150%;
   opacity: .7; }
 
-.center {
+header {
+  background: #222;
+  color: #fff;
+  padding: 15px;
   text-align: center; }
+  header a {
+    color: #fff; }
+    header a:hover {
+      color: #fff; }
+      header a:hover .logo {
+        margin-top: -32px; }
 
 section {
   width: 100%;
@@ -115,6 +93,21 @@ section {
   width: 830px;
   margin: 40px auto auto;
   position: relative; }
+  header .container {
+    margin: 0 auto; }
+
+.center {
+  text-align: center; }
+
+.logo-group {
+  height: 32px;
+  overflow: hidden; }
+  .logo-group .description {
+    line-height: 32px; }
+
+.logo {
+  -webkit-transition: margin 300ms;
+  transition: margin 300ms; }
 
 .logo-training-materials {
   display: inline-block;
@@ -127,6 +120,36 @@ section {
     height: 32px;
     width: 237px;
     display: block; }
+
+footer {
+  float: left;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #777;
+  clear: both;
+  width: 100%;
+  margin: 40px auto 40px auto;
+  border-top: 1px solid #eee; }
+  footer .right {
+    float: right;
+    margin: 0; }
+  footer .octicon-mark-github {
+    position: absolute;
+    left: 50%;
+    color: #ccc;
+    height: 24px;
+    width: 24px;
+    margin-left: -12px;
+    font-size: 24px;
+    line-height: 1; }
+
+.site-footer-links li {
+  display: inline-block;
+  margin-left: 10px; }
+
+.site-footer-links li:first-child {
+  margin-left: 0; }
 
 .hero {
   background: #1875c6;
