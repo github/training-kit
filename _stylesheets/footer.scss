@@ -1,0 +1,37 @@
+footer {
+  float: left;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #777;
+  clear: both;
+  width: 100%;
+  margin: 40px auto 40px auto;
+  border-top: 1px solid #eee;
+
+  .right {
+    float: right;
+    margin: 0;
+  }
+
+  .octicon-mark-github {
+    position: absolute;
+    // top: 38px;
+    left: 50%;
+    color: #ccc;
+    height: 24px;
+    width: 24px;
+    margin-left: -12px;
+    font-size: 24px;
+    line-height: 1;
+  }
+}
+
+.site-footer-links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.site-footer-links li:first-child {
+  margin-left: 0;
+}
