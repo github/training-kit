@@ -1,0 +1,78 @@
+h1 {
+  font-size: 46px;
+  font-weight: 200;
+  text-rendering: optimizeLegibility; }
+
+h2 {
+  font-size: 200%;
+  line-height: 150%; }
+
+h2 + p {
+  font-size: 125%;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+  line-height: 150%;
+  opacity: .65;
+  margin: auto auto; }
+
+h3 {
+  margin-top: 24px; }
+
+p {
+  text-rendering: optimizeLegibility;
+  line-height: 150%;
+  opacity: .7; }
+
+header {
+  background: #fff;
+  color: #ddd;
+  padding: 15px; }
+  header nav {
+    float: right;
+    font-size: 14px;
+    line-height: 26px; }
+  header .octicon {
+    font-size: 26px; }
+  header .logo-training-materials {
+    display: inline-block;
+    height: 20px;
+    width: 178px; }
+    header .logo-training-materials:before {
+      content: "";
+      background: url(../images/training-materials-dark-2x.png) no-repeat top left;
+      background-size: contain;
+      height: 24px;
+      width: 178px;
+      display: block;
+      opacity: .15; }
+  header a {
+    color: #d9d9d9; }
+    header a:hover {
+      color: #d9d9d9; }
+      header a:hover .logo {
+        margin-top: -32px;
+        opacity: 0; }
+
+section {
+  width: 100%;
+  float: left; }
+
+.container {
+  width: 830px;
+  margin: 40px auto auto;
+  position: relative; }
+  header .container {
+    margin: 0 auto; }
+
+.center {
+  text-align: center; }
+
+.logo-group {
+  height: 25px;
+  overflow: hidden; }
+  .logo-group .description {
+    line-height: 32px; }
+
+.logo {
+  -webkit-transition: margin 600ms, opacity 300ms;
+  transition: margin 600ms, opacity 300ms; }
