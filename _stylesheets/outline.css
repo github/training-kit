@@ -68,13 +68,16 @@ h2 + p {
   opacity: .65;
   margin: auto auto; }
 
+h3 {
+  margin-top: 24px; }
+
 p {
   text-rendering: optimizeLegibility;
   line-height: 150%;
   opacity: .7; }
 
 header {
-  background: #222;
+  background: #1875c6;
   color: #fff;
   padding: 15px;
   text-align: center; }
@@ -150,3 +153,45 @@ footer {
 
 .site-footer-links li:first-child {
   margin-left: 0; }
+
+.booklink, .githublink {
+  font: normal normal 32px octicons;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  overflow: hidden;
+  font-size: 22px; }
+
+.booklink:before {
+  content: "\f007";
+  line-height: 1; }
+
+.githublink:before {
+  content: "\f008";
+  line-height: 1; }
+
+blockquote {
+  font-size: 12px;
+  line-height: 140%;
+  margin: 30px 140px;
+  text-align: justify; }
+  blockquote:before {
+    content: "\f063";
+    font: normal normal 32px octicons;
+    position: absolute;
+    font-size: 76px;
+    opacity: .1;
+    left: 60px;
+    margin-top: -18px; }
+  blockquote:after {
+    content: "\f063";
+    font: normal normal 32px octicons;
+    position: absolute;
+    font-size: 76px;
+    opacity: .1;
+    right: 60px;
+    margin-top: -48px;
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }

@@ -1,70 +1,64 @@
-h1 {
-  font-size: 300%;
-  text-align: center; }
+/*
+Syntax error: Undefined variable: "$color-dark".
+        on line 28 of _stylesheets/core.scss
 
-h2 {
-  font-size: 200%;
-  text-align: center;
-  line-height: 150%; }
+23:   text-rendering: optimizeLegibility;
+24:   line-height: 150%;
+25:   opacity: .7;
+26: }
+27: header{
+28:   background: $color-dark;
+29:   color: #fff;
+30:   padding: 15px;
+31:   text-align: center;
+32: 
+33:   a{
 
-h2 + p {
-  font-size: 125%;
-  font-weight: 200;
-  text-rendering: optimizeLegibility;
-  text-align: center;
-  line-height: 150%;
-  opacity: .65;
-  margin: auto auto; }
-
-p {
-  text-rendering: optimizeLegibility;
-  line-height: 150%;
-  opacity: .7; }
-
-header {
-  background: #222;
-  color: #fff;
-  padding: 15px;
-  text-align: center; }
-  header a {
-    color: #fff; }
-    header a:hover {
-      color: #fff; }
-      header a:hover .logo {
-        margin-top: -32px; }
-
-section {
-  width: 100%;
-  float: left; }
-
-.container {
-  width: 830px;
-  margin: 40px auto auto;
-  position: relative; }
-  header .container {
-    margin: 0 auto; }
-
-.center {
-  text-align: center; }
-
-.logo-group {
-  height: 32px;
-  overflow: hidden; }
-  .logo-group .description {
-    line-height: 32px; }
-
-.logo {
-  -webkit-transition: margin 300ms;
-  transition: margin 300ms; }
-
-.logo-training-materials {
-  display: inline-block;
-  height: 26px;
-  width: 237px; }
-  .logo-training-materials:before {
-    content: "";
-    background: url(../images/training-materials-2x.png) no-repeat top left;
-    background-size: contain;
-    height: 32px;
-    width: 237px;
-    display: block; }
+Backtrace:
+_stylesheets/core.scss:28
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/script/variable.rb:49:in `_perform'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/script/node.rb:40:in `perform'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/root_node.rb:20:in `render'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/engine.rb:315:in `_render'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/engine.rb:262:in `render'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$color-dark\".\A         on line 28 of _stylesheets/core.scss\A \A 23:   text-rendering: optimizeLegibility;\A 24:   line-height: 150%;\A 25:   opacity: .7;\A 26: }\A 27: header{\A 28:   background: $color-dark;\A 29:   color: #fff;\A 30:   padding: 15px;\A 31:   text-align: center;\A 32: \A 33:   a{"; }

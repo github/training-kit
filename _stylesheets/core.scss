@@ -16,13 +16,16 @@ h2+p{
   opacity: .65;
   margin: auto auto;
 }
+h3{
+  margin-top: 24px;
+}
 p{
   text-rendering: optimizeLegibility;
   line-height: 150%;
   opacity: .7;
 }
 header{
-  background: #222;
+  background: $color-dark;
   color: #fff;
   padding: 15px;
   text-align: center;
