@@ -13,7 +13,6 @@
   .container{
     margin: 40px auto;
   }
-
   .octicon{
     color: #fff;
     background: rgba(0,0,0,.15);
@@ -27,7 +26,6 @@
     text-align: center;
     float: left;
   }
-
 }
 
 .booklink, .githublink{ //a[href*="github.com"]
@@ -55,7 +53,7 @@
 }
 
 blockquote{
-  font-size: 12px;
+  width: 70%;
   line-height: 140%;
   margin: 30px 140px;
   text-align: justify;

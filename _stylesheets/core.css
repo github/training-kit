@@ -57,6 +57,33 @@ section {
   width: 100%;
   float: left; }
 
+code {
+  font-family: "Courier New", Courier, monospace;
+  color: #6CC644;
+  background: #222;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 2px 4px; }
+
+pre {
+  width: 70%;
+  background: #222;
+  line-height: 140%;
+  margin: 30px 140px;
+  border-radius: 3px; }
+
+table {
+  font-size: 14px;
+  width: 70%;
+  background: #eee;
+  line-height: 140%;
+  margin: 30px 140px;
+  padding: 20px;
+  border-radius: 3px; }
+  table th {
+    text-align: left;
+    border-bottom: solid 1px #fff; }
+
 .container {
   width: 830px;
   margin: 40px auto auto;
