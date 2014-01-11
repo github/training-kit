@@ -6,6 +6,29 @@
 @import "footer.scss";
 @import "octicons.css";
 
+.hero{
+  background: $color-dark;
+  color: #fff;
+
+  .container{
+    margin: 40px auto;
+  }
+
+  .octicon{
+    color: #fff;
+    background: rgba(0,0,0,.15);
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    padding: 16px;
+    margin-right: 20px;
+    margin-left: -86px;
+    font-size: 26px;
+    text-align: center;
+    float: left;
+  }
+
+}
 
 .booklink, .githublink{ //a[href*="github.com"]
   font: normal normal 32px octicons;
@@ -13,14 +36,14 @@
   height: 1em;
   width: 1em;
   overflow: hidden;
-  font-size: 22px;
+  font-size: 16px;
+  margin-left: 8px;
 }
 
 .booklink{
   &:before{
     content: "\f007";
     line-height: 1;
-
   }
 }
 
@@ -28,7 +51,6 @@
   &:before{
     content: "\f008";
     line-height: 1;
-
   }
 }
 
