@@ -1,17 +1,19 @@
 h1{
-  font-size: 300%;
-  text-align: center;
+  font-size: 46px;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+  // text-align: center;
 }
 h2{
   font-size: 200%;
-  text-align: center;
+  // text-align: center;
   line-height: 150%;
 }
 h2+p{
   font-size: 125%;
   font-weight: 200;
   text-rendering: optimizeLegibility;
-  text-align: center;
+  // text-align: center;
   line-height: 150%;
   opacity: .65;
   margin: auto auto;
@@ -25,19 +27,44 @@ p{
   opacity: .7;
 }
 header{
-  background: $color-dark;
-  color: #fff;
+  background: #fff;
+  color: #ddd;
   padding: 15px;
-  text-align: center;
+
+  nav{
+    float: right;
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .octicon{
+    font-size: 26px;
+  }
+  .logo-training-materials{
+    display: inline-block;
+    height: 20px;
+    width: 178px;
+
+    &:before{
+      content: "";
+      background: url(../images/training-materials-dark-2x.png) no-repeat top left;
+      background-size: contain;
+      height: 24px;
+      width: 178px;
+      display: block;
+      opacity: .15;
+    }
+  }
 
   a{
-    color: #fff;
+    color: #d9d9d9;
 
     &:hover{
-      color: #fff;
+      color: #d9d9d9;
 
       & .logo{
         margin-top: -32px;
+        opacity: 0;
       }
     }
   }
@@ -61,7 +88,7 @@ section{
 }
 
 .logo-group{
-  height: 32px;
+  height: 25px;
   overflow: hidden;
 
   .description{
@@ -70,21 +97,6 @@ section{
 }
 
 .logo{
-  -webkit-transition: margin 300ms;
-  transition: margin 300ms;
-}
-
-.logo-training-materials{
-  display: inline-block;
-  height: 26px;
-  width: 237px;
-
-  &:before{
-    content: "";
-    background: url(../images/training-materials-2x.png) no-repeat top left;
-    background-size: contain;
-    height: 32px;
-    width: 237px;
-    display: block;
-  }
+  -webkit-transition: margin 600ms, opacity 300ms;
+  transition: margin 600ms, opacity 300ms;
 }
