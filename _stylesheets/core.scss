@@ -94,24 +94,28 @@ code{
   padding: 2px 4px;
 }
 pre{
-  width: 70%;
+  width: 100%;
   background: #222;
   line-height: 140%;
-  margin: 30px 140px;
+  margin: 30px 0;
   border-radius: 3px;
 }
 table{
-  font-size: 14px;
-  width: 70%;
+  width: 100%;
   background: #eee;
   line-height: 140%;
-  margin: 30px 140px;
+  margin: 30px 0;
   padding: 20px;
   border-radius: 3px;
+  border-spacing:0;
 
   th{
+    font-size: 18px;
+    font-weight: 200;
     text-align: left;
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px #bfbfbf;
+    opacity: .5;
+    padding: 0 0 10px;
   }
   td{
 

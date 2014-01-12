@@ -52,9 +52,9 @@
 }
 
 blockquote{
-  width: 70%;
+  width: 80%;
   line-height: 140%;
-  margin: 30px 140px;
+  margin: 30px 10%;
   text-align: justify;
 
   &:before{
@@ -63,8 +63,8 @@ blockquote{
     position: absolute;
     font-size: 76px;
     opacity: .1;
-    left: 60px;
-    margin-top: -18px;
+    left: 0;
+    margin-top: -.5em;
   }
   &:after{
     content: "\f063";
@@ -72,8 +72,8 @@ blockquote{
     position: absolute;
     font-size: 76px;
     opacity: .1;
-    right: 60px;
-    margin-top: -48px;
+    right: 0;
+    margin-top: -.25em;
 
     -ms-transform:rotate(180deg); /* IE 9 */
     -webkit-transform:rotate(180deg);

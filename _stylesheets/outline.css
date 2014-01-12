@@ -125,23 +125,27 @@ code {
   padding: 2px 4px; }
 
 pre {
-  width: 70%;
+  width: 100%;
   background: #222;
   line-height: 140%;
-  margin: 30px 140px;
+  margin: 30px 0;
   border-radius: 3px; }
 
 table {
-  font-size: 14px;
-  width: 70%;
+  width: 100%;
   background: #eee;
   line-height: 140%;
-  margin: 30px 140px;
+  margin: 30px 0;
   padding: 20px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  border-spacing: 0; }
   table th {
+    font-size: 18px;
+    font-weight: 200;
     text-align: left;
-    border-bottom: solid 1px #fff; }
+    border-bottom: solid 1px #bfbfbf;
+    opacity: .5;
+    padding: 0 0 10px; }
 
 .container {
   width: 830px;
@@ -228,9 +232,9 @@ footer {
   line-height: 1; }
 
 blockquote {
-  width: 70%;
+  width: 80%;
   line-height: 140%;
-  margin: 30px 140px;
+  margin: 30px 10%;
   text-align: justify; }
   blockquote:before {
     content: "\f063";
@@ -238,16 +242,16 @@ blockquote {
     position: absolute;
     font-size: 76px;
     opacity: .1;
-    left: 60px;
-    margin-top: -18px; }
+    left: 0;
+    margin-top: -.5em; }
   blockquote:after {
     content: "\f063";
     font: normal normal 32px octicons;
     position: absolute;
     font-size: 76px;
     opacity: .1;
-    right: 60px;
-    margin-top: -48px;
+    right: 0;
+    margin-top: -.25em;
     -ms-transform: rotate(180deg);
     /* IE 9 */
     -webkit-transform: rotate(180deg);
