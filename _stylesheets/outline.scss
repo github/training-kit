@@ -6,6 +6,22 @@
 @import "footer.scss";
 @import "octicons.css";
 
+h2{
+  border-top: solid 1px #e5e5e5;
+  padding: 10px 0;
+  margin: 20px 0 0 0;
+}
+
+p:first-child{
+  font-size: 125%;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+  line-height: 150%;
+  opacity: .65;
+  margin: auto auto 20px auto;
+
+}
+
 .hero{
   background: $color-dark;
   color: #fff;
