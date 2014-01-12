@@ -58,9 +58,6 @@ h1 {
 h2 {
   font-size: 200%;
   line-height: 150%;
-  border-top: solid 1px #e5e5e5;
-  padding: 10px 0;
-  margin: 20px 0 0 0;
   color: #222; }
 
 h2 + p {
@@ -204,6 +201,19 @@ footer {
 
 .site-footer-links li:first-child {
   margin-left: 0; }
+
+h2 {
+  border-top: solid 1px #e5e5e5;
+  padding: 10px 0;
+  margin: 20px 0 0 0; }
+
+p:first-child {
+  font-size: 125%;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+  line-height: 150%;
+  opacity: .65;
+  margin: auto auto 20px auto; }
 
 .hero {
   background: #1875c6;

@@ -58,9 +58,6 @@ h1 {
 h2 {
   font-size: 200%;
   line-height: 150%;
-  border-top: solid 1px #e5e5e5;
-  padding: 10px 0;
-  margin: 20px 0 0 0;
   color: #222; }
 
 h2 + p {
