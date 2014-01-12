@@ -57,7 +57,11 @@ h1 {
 
 h2 {
   font-size: 200%;
-  line-height: 150%; }
+  line-height: 150%;
+  border-top: solid 1px #e5e5e5;
+  padding: 10px 0;
+  margin: 20px 0 0 0;
+  color: #222; }
 
 h2 + p {
   font-size: 125%;
@@ -65,24 +69,39 @@ h2 + p {
   text-rendering: optimizeLegibility;
   line-height: 150%;
   opacity: .65;
-  margin: auto auto; }
+  margin: auto auto 20px auto; }
 
 h3 {
-  margin-top: 24px; }
+  font-size: 125%;
+  margin: 20px 0 0 0;
+  color: #222; }
 
 p {
   text-rendering: optimizeLegibility;
-  line-height: 150%;
-  opacity: .7; }
+  line-height: 150%; }
 
 header {
   background: #fff;
   color: #ddd;
   padding: 15px; }
+  header a {
+    color: #d9d9d9; }
+    header a:hover {
+      color: #d9d9d9; }
+      header a:hover .logo {
+        margin-top: -32px;
+        opacity: 0; }
   header nav {
     float: right;
     font-size: 14px;
     line-height: 26px; }
+    header nav ul li {
+      display: inline-block;
+      margin-left: 10px; }
+    header nav .button {
+      padding: 8px;
+      border: solid 1px #eee;
+      border-radius: 5px; }
   header .octicon {
     font-size: 26px; }
   header .logo-training-materials {
@@ -97,17 +116,44 @@ header {
       width: 178px;
       display: block;
       opacity: .15; }
-  header a {
-    color: #d9d9d9; }
-    header a:hover {
-      color: #d9d9d9; }
-      header a:hover .logo {
-        margin-top: -32px;
-        opacity: 0; }
 
 section {
   width: 100%;
   float: left; }
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  color: #63b83e;
+  border-radius: 3px; }
+
+pre {
+  width: 100%;
+  background: #222;
+  line-height: 140%;
+  margin: 30px 0;
+  border-radius: 3px; }
+  pre code {
+    display: block;
+    padding: 10px; }
+
+table {
+  width: 100%;
+  background: #eee;
+  line-height: 140%;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 3px;
+  border-spacing: 0; }
+  table th {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: left;
+    border-bottom: solid 1px #bfbfbf;
+    opacity: .5;
+    padding: 0 0 10px; }
+
+ul {
+  margin: 0 0 0 1.5em; }
 
 .container {
   width: 830px;
