@@ -31,10 +31,34 @@ header{
   color: #ddd;
   padding: 15px;
 
+  a{
+    color: #d9d9d9;
+
+    &:hover{
+      color: #d9d9d9;
+      & .logo{
+        margin-top: -32px;
+        opacity: 0;
+      }
+    }
+  }
   nav{
     float: right;
     font-size: 14px;
     line-height: 26px;
+
+    ul{
+      li{
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+
+    .button{
+      padding: 8px;
+      border: solid 1px #eee;
+      border-radius: 5px;
+    }
   }
 
   .octicon{
@@ -53,19 +77,6 @@ header{
       width: 178px;
       display: block;
       opacity: .15;
-    }
-  }
-
-  a{
-    color: #d9d9d9;
-
-    &:hover{
-      color: #d9d9d9;
-
-      & .logo{
-        margin-top: -32px;
-        opacity: 0;
-      }
     }
   }
 }
