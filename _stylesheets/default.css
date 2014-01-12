@@ -79,10 +79,24 @@ header {
   background: #fff;
   color: #ddd;
   padding: 15px; }
+  header a {
+    color: #d9d9d9; }
+    header a:hover {
+      color: #d9d9d9; }
+      header a:hover .logo {
+        margin-top: -32px;
+        opacity: 0; }
   header nav {
     float: right;
     font-size: 14px;
     line-height: 26px; }
+    header nav ul li {
+      display: inline-block;
+      margin-left: 10px; }
+    header nav .button {
+      padding: 8px;
+      border: solid 1px #eee;
+      border-radius: 5px; }
   header .octicon {
     font-size: 26px; }
   header .logo-training-materials {
@@ -97,13 +111,6 @@ header {
       width: 178px;
       display: block;
       opacity: .15; }
-  header a {
-    color: #d9d9d9; }
-    header a:hover {
-      color: #d9d9d9; }
-      header a:hover .logo {
-        margin-top: -32px;
-        opacity: 0; }
 
 section {
   width: 100%;
