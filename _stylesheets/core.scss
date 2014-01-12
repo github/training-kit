@@ -2,29 +2,32 @@ h1{
   font-size: 46px;
   font-weight: 200;
   text-rendering: optimizeLegibility;
-  // text-align: center;
 }
 h2{
   font-size: 200%;
-  // text-align: center;
   line-height: 150%;
+  border-top: solid 1px #e5e5e5;
+  padding: 10px 0;
+  margin: 20px 0 0 0;
+  color: #222;
 }
 h2+p{
   font-size: 125%;
   font-weight: 200;
   text-rendering: optimizeLegibility;
-  // text-align: center;
   line-height: 150%;
   opacity: .65;
-  margin: auto auto;
+  margin: auto auto 20px auto;
 }
 h3{
-  margin-top: 24px;
+  font-size: 125%;
+  margin: 20px 0 0 0;
+  color: #222;
 }
 p{
   text-rendering: optimizeLegibility;
   line-height: 150%;
-  opacity: .7;
+  // opacity: .7;
 }
 header{
   background: #fff;
@@ -87,11 +90,8 @@ section{
 
 code{
   font-family: "Courier New", Courier, monospace;
-  color: #6CC644;
-  background: #222;
+  color: #63b83e;
   border-radius: 3px;
-  font-size: 12px;
-  padding: 2px 4px;
 }
 pre{
   width: 100%;
@@ -99,6 +99,11 @@ pre{
   line-height: 140%;
   margin: 30px 0;
   border-radius: 3px;
+
+  code{
+    display: block;
+    padding: 10px;
+  }
 }
 table{
   width: 100%;
@@ -121,6 +126,11 @@ table{
 
   }
 }
+
+ul{
+  margin: 0 0 0 1.5em
+}
+
 .container{
   width: 830px;
   margin: 40px auto auto;
