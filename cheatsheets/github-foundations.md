@@ -1,6 +1,6 @@
 ---
 layout: cheatsheet
-title: GitHub Foundations Cheat Sheet
+title: Foundations Cheat Sheet
 description: A quick reference to commands use in the GitHub Foundations class.
 ---
 
