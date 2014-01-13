@@ -1,0 +1,61 @@
+/*
+Syntax error: Undefined variable: "$color-bright".
+        on line 2 of _stylesheets/links.scss
+
+1: a {
+2:   color: $color-bright;
+3:   text-decoration: none;
+4:   -webkit-transition: color 200ms;
+5:   transition: color border 200ms;
+6: 
+7:   &:hover{
+
+Backtrace:
+_stylesheets/links.scss:2
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/script/variable.rb:49:in `_perform'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/script/node.rb:40:in `perform'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/tree/root_node.rb:20:in `render'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/engine.rb:315:in `_render'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/engine.rb:262:in `render'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:235:in `watch'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/plugin.rb:107:in `method_missing'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/exec.rb:463:in `watch_or_update'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/exec.rb:326:in `process_result'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/exec.rb:41:in `parse'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/lib/sass/exec.rb:21:in `parse!'
+/Users/jmccullough/github/training-materials/vendor/gems/ruby/2.0.0/gems/sass-3.2.13/bin/sass:13:in `<top (required)>'
+bin/sass:16:in `load'
+bin/sass:16:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$color-bright\".\A         on line 2 of _stylesheets/links.scss\A \A 1: a {\A 2:   color: $color-bright;\A 3:   text-decoration: none;\A 4:   -webkit-transition: color 200ms;\A 5:   transition: color border 200ms;\A 6: \A 7:   &:hover{"; }

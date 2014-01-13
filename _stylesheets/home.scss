@@ -1,0 +1,185 @@
+/* Imports */
+@import "reset.scss";
+@import "colors.scss";
+@import "links.scss";
+@import "core.scss";
+@import "footer.scss";
+@import "octicons.css";
+
+.hero{
+  background: $color-dark;
+  color: #fff;
+  text-align: center;
+  box-shadow: inset 0 -20px 30px rgba(0,0,0,.08);
+  border-bottom: solid 1px #fff;
+
+  h1{
+    margin-top: 40px;
+    font-weight: 200;
+    line-height: 140%;
+  }
+
+  p{
+    font-weight: 200;
+    font-size: 110%;
+    text-rendering: optimizeLegibility;
+    opacity: .85;
+    margin-bottom: 40px;
+  }
+
+  .logo-training-materials{
+    display: inline-block;
+    height: 26px;
+    width: 237px;
+
+    &:before{
+      content: "";
+      background: url(../images/training-materials-2x.png) no-repeat top left;
+      background-size: contain;
+      height: 32px;
+      width: 237px;
+      display: block;
+    }
+  }
+}
+
+.blurb{
+  background: #f5f5f5;
+  color: #000;
+  padding: 0 0 40px;
+  font-size: 80%;
+  margin-top: 40px;
+
+  h2{
+    text-align: left;
+    opacity: .6;
+  }
+  p{
+    text-align: left;
+    opacity: .7;
+  }
+}
+
+.grid2col{
+  float: left;
+  width: 49%;
+  text-align: left;
+
+  p{
+    padding-right: 10%;
+  }
+}
+
+
+.professortocat{
+  height: 100px;
+  width: 100px;
+  float: left;
+  background: url(../images/professortocat.png) no-repeat;
+  background-size: contain;
+
+  & + .group{
+    float: left;
+    margin-left: 20px;
+    width: 700px; /* Weird 10px less hack. Don't know why. */
+  }
+}
+
+.tab-panel{
+  background: #fff;
+  position: block;
+  margin: 30px auto 0 auto;
+  height: 120px;
+  width: 360px;
+  position: relative;
+
+  label{
+    background: #f5f5f5;
+    -webkit-transition: background 250ms ease-in-out;
+
+    &:hover{
+      background: #fff;
+    }
+  }
+
+  .column-2up{
+    width: 50%;
+  }
+  .column-3up{
+    width: 33%;
+  }
+  .column-4up{
+    width: 25%;
+  }
+
+  .tab{
+    float: left;
+    box-shadow: 0 0 0 1px #dfdfdf;
+
+    &.first{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-right: none;
+    }
+    &.last{
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-left: none;
+    }
+    & > span{
+      display: block;
+      text-align: center;
+      margin: 10px;
+      opacity: .6;
+      font-size: 80%;
+    }
+  }
+
+  .panel-content{
+    width: 200%;
+    visibility: hidden;
+    // opacity: 0;
+    position: absolute;
+    left: -50%;
+
+    -webkit-transition: opacity 400ms;
+    transition: opacity 400ms;
+
+    .octicon-hero{
+      display: inline-block;
+      padding: 0 10px;
+      color: #ddd;
+    }
+    p{
+      font-size: 80%;
+      text-align: center;
+      margin: 20px 0;
+      font-weight: 200;
+    }
+    ul{
+      text-align: center;
+    }
+    li{
+      display: inline-block;
+    }
+  }
+
+  input.material-type{
+    position: absolute;
+    left: -999px;
+
+    &:checked + label{
+      background: $color-bright;
+
+      & > span{
+        color: #fff;
+        opacity: 1;
+      }
+    }
+
+    &:checked + label.tab > div.panel-content{
+      visibility: visible;
+      // opacity: 1;
+    }
+  }
+}
