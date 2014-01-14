@@ -172,6 +172,15 @@ ul {
   -webkit-transition: margin 600ms, opacity 300ms;
   transition: margin 600ms, opacity 300ms; }
 
+.license {
+  color: #00a5ea;
+  font-size: 12px; }
+  .license a {
+    color: #00a5ea; }
+  .license .container {
+    margin: 0 auto;
+    padding: 5px; }
+
 footer {
   float: left;
   position: relative;
@@ -219,7 +228,7 @@ p:first-child {
   background: #1875c6;
   color: #fff; }
   .hero .container {
-    margin: 40px auto; }
+    margin: 40px auto 28px auto; }
   .hero .octicon {
     color: #fff;
     background: rgba(0, 0, 0, 0.15);
