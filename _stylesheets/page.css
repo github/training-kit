@@ -1,0 +1,229 @@
+@import url(octicons.css);
+/* Imports */
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* Old browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  background: #fff; }
+
+/* Color Definitions */
+a {
+  color: #00a5ea;
+  text-decoration: none;
+  -webkit-transition: color 200ms;
+  transition: color border 200ms; }
+  a:hover {
+    color: #1875c6; }
+  a.marker:after {
+    content: "\203A";
+    border: solid 1px #00a5ea;
+    border-radius: 50%;
+    display: inline-block;
+    height: .8em;
+    width: .8em;
+    margin: 0 0 0 10px;
+    line-height: .7;
+    font-size: 120%; }
+
+h1 {
+  font-size: 46px;
+  font-weight: 200;
+  text-rendering: optimizeLegibility; }
+
+h2 {
+  font-size: 200%;
+  line-height: 150%;
+  color: #222; }
+
+h2 + p {
+  font-size: 125%;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+  line-height: 150%;
+  opacity: .65;
+  margin: auto auto 20px auto; }
+
+h3 {
+  font-size: 125%;
+  margin: 20px 0 0 0;
+  color: #222; }
+
+p {
+  text-rendering: optimizeLegibility;
+  line-height: 150%; }
+
+header {
+  background: #fff;
+  color: #ddd;
+  padding: 15px; }
+  header a {
+    color: #d9d9d9; }
+    header a:hover {
+      color: #d9d9d9; }
+      header a:hover .logo {
+        margin-top: -32px;
+        opacity: 0; }
+  header nav {
+    float: right;
+    font-size: 14px;
+    line-height: 26px; }
+    header nav ul li {
+      display: inline-block;
+      margin-left: 10px; }
+    header nav .button {
+      padding: 8px;
+      border: solid 1px #eee;
+      border-radius: 5px; }
+  header .octicon {
+    font-size: 26px; }
+  header .logo-training-materials {
+    display: inline-block;
+    height: 20px;
+    width: 178px; }
+    header .logo-training-materials:before {
+      content: "";
+      background: url(../images/training-materials-dark-2x.png) no-repeat top left;
+      background-size: contain;
+      height: 24px;
+      width: 178px;
+      display: block;
+      opacity: .15; }
+
+section {
+  width: 100%;
+  float: left; }
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  color: #63b83e;
+  border-radius: 3px; }
+
+pre {
+  width: 100%;
+  background: #222;
+  line-height: 140%;
+  margin: 30px 0;
+  border-radius: 3px; }
+  pre code {
+    display: block;
+    padding: 10px; }
+
+table {
+  width: 100%;
+  background: #eee;
+  line-height: 140%;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 3px;
+  border-spacing: 0; }
+  table th {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: left;
+    border-bottom: solid 1px #bfbfbf;
+    opacity: .5;
+    padding: 0 0 10px; }
+
+ul {
+  margin: 0 0 0 1.5em; }
+
+.container {
+  width: 830px;
+  margin: 40px auto auto;
+  position: relative; }
+  header .container {
+    margin: 0 auto; }
+
+.center {
+  text-align: center; }
+
+.logo-group {
+  height: 25px;
+  overflow: hidden; }
+  .logo-group .description {
+    line-height: 32px; }
+
+.logo {
+  -webkit-transition: margin 600ms, opacity 300ms;
+  transition: margin 600ms, opacity 300ms; }
+
+.license {
+  color: #00a5ea;
+  font-size: 12px; }
+  .license a {
+    color: #00a5ea; }
+  .license .container {
+    margin: 0 auto;
+    padding: 5px; }
+
+footer {
+  float: left;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #777;
+  clear: both;
+  width: 100%;
+  margin: 40px auto 40px auto;
+  border-top: 1px solid #eee; }
+  footer .right {
+    float: right;
+    margin: 0; }
+  footer .octicon-mark-github {
+    position: absolute;
+    left: 50%;
+    color: #ccc;
+    height: 24px;
+    width: 24px;
+    margin-left: -12px;
+    font-size: 24px;
+    line-height: 1; }
+
+.site-footer-links li {
+  display: inline-block;
+  margin-left: 10px; }
+
+.site-footer-links li:first-child {
+  margin-left: 0; }
+
+.hero {
+  background: #222;
+  color: #fff; }
+  .hero .container {
+    margin: 40px auto; }
+  .hero .octicon {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    padding: 16px;
+    margin-right: 20px;
+    font-size: 26px;
+    text-align: center;
+    float: left; }

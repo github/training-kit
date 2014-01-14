@@ -1,0 +1,28 @@
+/* Imports */
+@import "reset.scss";
+@import "colors.scss";
+@import "links.scss";
+@import "core.scss";
+@import "footer.scss";
+@import "octicons.css";
+
+.hero{
+  background: #222;
+  color: #fff;
+
+  .container{
+    margin: 40px auto;
+  }
+  .octicon{
+    color: #fff;
+    background: rgba(0,0,0,.15);
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    padding: 16px;
+    margin-right: 20px;
+    font-size: 26px;
+    text-align: center;
+    float: left;
+  }
+}
