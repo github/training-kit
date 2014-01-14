@@ -172,6 +172,15 @@ ul {
   -webkit-transition: margin 600ms, opacity 300ms;
   transition: margin 600ms, opacity 300ms; }
 
+.license {
+  color: #00a5ea;
+  font-size: 12px; }
+  .license a {
+    color: #00a5ea; }
+  .license .container {
+    margin: 0 auto;
+    padding: 5px; }
+
 footer {
   float: left;
   position: relative;

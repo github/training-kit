@@ -24,7 +24,6 @@ h3{
 p{
   text-rendering: optimizeLegibility;
   line-height: 150%;
-  // opacity: .7;
 }
 header{
   background: #fff;
@@ -154,4 +153,17 @@ ul{
 .logo{
   -webkit-transition: margin 600ms, opacity 300ms;
   transition: margin 600ms, opacity 300ms;
+}
+
+.license{
+  color: $color-bright;
+  font-size: 12px;
+
+  a{
+    color: $color-bright;
+  }
+  .container{
+    margin: 0 auto;
+    padding: 5px;
+  }
 }
