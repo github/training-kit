@@ -15,13 +15,13 @@
       media="screen"
       href=
         {% if page.theme %}
-          {% if page.theme != "home" %}
-            "../_stylesheets/{{ page.theme }}.css"
+          {% if page.theme == "home" %}
+            "_stylesheets/home.css"
           {% else %}
-            "_stylesheets/{{ page.theme }}.css"
+            "../_stylesheets/{{ page.theme }}.css"
           {% endif %}
         {% else %}
-          "_stylesheets/default.css"
+          "_stylesheets/page.css"
         {% endif %}
       type="text/css" />
 
