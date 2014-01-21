@@ -2,16 +2,16 @@
 layout: bare
 ---
 
-<div class="top">
-  <header>
-    <div class="logo"><a href ="/">GitHub Training</a></div>
-    <a href="https://github.com/github/training-materials" class="mini-button"><span>R</span>Source on GitHub</a>
-  </header>
-</div>
+<section class="hero">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
 
-<div id="content-wrapper">
-  <h1>{{ page.title }}</h1>
-  {{ content }}
-</div>
+<section>
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
 
 {% include footer.html %}
