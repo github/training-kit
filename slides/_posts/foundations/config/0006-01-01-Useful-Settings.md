@@ -4,13 +4,13 @@ layout: slide
 tags: ['config']
 ---
 
-	#Colorize console output for legibility
+	# Colorize console output
 	git config --global color.ui auto
 
-	#Force files to be LF on Mac/Linux
+	# Force files to be LF on Mac/Linux
 	git config --global core.autocrlf input
 
-	#Force Windows to convert to CRLF
+	# Force Windows to convert to CRLF
 	# on checkout and to LF on `add`
 	git config --global core.autocrlf true
 
