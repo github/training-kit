@@ -4,15 +4,15 @@ layout: slide
 tags: ['network']
 ---
 
-	#List remote branches
+	# List remote branches
 	git branch -r
 
-	#List all branches
+	# List all branches
 	git branch -a
 
 
 
 <!--
-	#List upstream branches
+	# List upstream branches
 	git ls-remote origin
 -->
