@@ -11,4 +11,5 @@ tags: ['setup']
 
 	<a href="http://mac.github.com">mac.github.com</a>
 	<a href="http://windows.github.com">windows.github.com</a>
+	<p>sudo apt-get install git</p>
 </div>
