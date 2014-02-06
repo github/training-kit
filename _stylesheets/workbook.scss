@@ -96,3 +96,19 @@ blockquote{
     transform:rotate(180deg);
   }
 }
+
+/* Content Scope */
+.outline, .summary, .details{
+  display: block;
+  -webkit-transition: all 400ms;
+}
+
+.scope-visible{
+
+}
+.scope-hidden{
+  height: 0;
+  margin-top: -1em;
+  line-height: 0;
+  opacity: 0;
+}
