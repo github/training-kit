@@ -12,8 +12,34 @@ theme: workbook
 
 <section>
   <div class="container">
+
+    <div class="tab-panel">
+      <input type="radio" class="material-type" name="material-scope" id="outline" value="outline" checked="checked">
+      <label class="tab column-3up" for="outline">
+        <span>Outline</span>
+      </label>
+
+      <input type="radio" class="material-type" name="material-scope" id="summary" value="summary">
+      <label class="tab column-3up" for="summary">
+        <span>Summary</span>
+      </label>
+
+      <input type="radio" class="material-type" name="material-scope" id="details" value="details">
+      <label class="tab column-3up" for="details">
+        <span>Details</span>
+      </label>
+    </div>
+
+<!--     <nav class="toc">
+      TOC
+    </nav> -->
+
+
     {{ content }}
   </div>
 </section>
 
 {% include footer.html %}
+
+
+<script src="../_javascript/workbook.js"></script>

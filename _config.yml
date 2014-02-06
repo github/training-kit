@@ -22,5 +22,6 @@ exclude:
 
 include:
 - _stylesheets
+- _javascript
 
 markdown: rdiscount
