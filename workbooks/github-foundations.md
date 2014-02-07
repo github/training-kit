@@ -222,48 +222,63 @@ git init <projectname>
 
 
 ## network
+### Remotes
+### Push
+### Fetch
+### Pull
 
 
-## github/intro
+## GitHub
+### Centralized Repository
+### Cloning
+### Forking
+### Pull Request
+
+## Diff
+### Comparing changes
+### Comparing to staging area
+### Useful options
+
+## Log
 
 
-## github/forking
+## Remove
+### Entirely eliminating paths
+### Stopping tracking
 
+## Move
+### Functionality
+### Similarity index
+### Following history
 
-## github/pull-request
+## Ignore
+### Basic setup
+### Standard patterns
+### Global configuration
 
+## Branch
+### Creating
+### Deleting
+### Renaming
 
-## diff
+## Checkout
+### Switching branches
+### Discarding changes
+### Exploring History
 
-
-## log
-
-
-## rm
-
-
-## mv
-
-
-## ignore
-
-
-## branch
-
-
-## checkout
-
-
-## merge
-
+## Merge
+### Basics
+### Conflicts
 
 ## rebase
-
+### Merge preparation
+### Interactive
 
 ## reset
-
+### Hard
+### Mixed
+### Soft
 
 ## gui
-
 
 ## reflog
