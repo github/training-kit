@@ -14,11 +14,11 @@ h2+p{
   text-rendering: optimizeLegibility;
   line-height: 150%;
   opacity: .65;
-  margin: auto auto 20px auto;
+  // margin: auto auto 20px auto;
 }
 h3{
   font-size: 125%;
-  margin: 20px 0 0 0;
+  // margin: 20px 0 0 0;
   color: #222;
 }
 p{
@@ -92,13 +92,10 @@ code{
 pre{
   width: 100%;
   background: #222;
-  line-height: 140%;
-  margin: 30px 0;
   border-radius: 3px;
+  padding: 0 10px;
 
   code{
-    display: block;
-    padding: 10px;
   }
 }
 table{

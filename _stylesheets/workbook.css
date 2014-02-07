@@ -65,12 +65,10 @@ h2 + p {
   font-weight: 200;
   text-rendering: optimizeLegibility;
   line-height: 150%;
-  opacity: .65;
-  margin: auto auto 20px auto; }
+  opacity: .65; }
 
 h3 {
   font-size: 125%;
-  margin: 20px 0 0 0;
   color: #222; }
 
 p {
@@ -126,12 +124,8 @@ code {
 pre {
   width: 100%;
   background: #222;
-  line-height: 140%;
-  margin: 30px 0;
-  border-radius: 3px; }
-  pre code {
-    display: block;
-    padding: 10px; }
+  border-radius: 3px;
+  padding: 0 10px; }
 
 table {
   width: 100%;
@@ -277,19 +271,6 @@ footer {
 .site-footer-links li:first-child {
   margin-left: 0; }
 
-h2 {
-  border-top: solid 1px #e5e5e5;
-  padding: 10px 0;
-  margin: 20px 0 0 0; }
-
-p:first-child {
-  font-size: 125%;
-  font-weight: 200;
-  text-rendering: optimizeLegibility;
-  line-height: 150%;
-  opacity: .65;
-  margin: auto auto 20px auto; }
-
 .hero {
   background: #1875c6;
   color: #fff; }
@@ -357,6 +338,7 @@ blockquote {
 
 .scope-hidden {
   height: 0;
-  margin-top: -1em;
+  margin: 0;
+  padding: 0;
   line-height: 0;
   opacity: 0; }
