@@ -8,7 +8,7 @@ end
 task :test do
   sh 'bundle exec sass _stylesheets/page.scss:_stylesheets/page.css'
   sh 'bundle exec sass _stylesheets/home.scss:_stylesheets/home.css'
-  sh 'bundle exec sass _stylesheets/outline.scss:_stylesheets/outline.css'
+  sh 'bundle exec sass _stylesheets/outline.scss:_stylesheets/workbook.css'
 
   sh 'bundle exec jekyll build'
 
