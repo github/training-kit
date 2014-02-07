@@ -36,8 +36,8 @@
         hideSet("details");
         break;
       case "details":
-        showSet("outline");
-        showSet("summary");
+        hideSet("outline");
+        hideSet("summary");
         showSet("details");
         break;
     }
