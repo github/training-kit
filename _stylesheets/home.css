@@ -57,7 +57,7 @@ h1 {
 
 h2 {
   font-size: 200%;
-  line-height: 150%;
+  margin: 20px 0 0 0;
   color: #222; }
 
 h2 + p {
@@ -69,6 +69,7 @@ h2 + p {
 
 h3 {
   font-size: 125%;
+  margin: 20px 0 0 0;
   color: #222; }
 
 p {
@@ -123,7 +124,7 @@ code {
 
 pre {
   width: 100%;
-  background: #222;
+  background: rgba(0, 0, 0, 0.04);
   border-radius: 3px;
   padding: 0 10px; }
 
@@ -179,7 +180,7 @@ ul {
   background: #fff;
   position: block;
   margin: 30px auto 0 auto;
-  height: 120px;
+  height: 2em;
   width: 360px;
   position: relative; }
   .tab-panel label {
