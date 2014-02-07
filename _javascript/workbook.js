@@ -7,10 +7,22 @@
 
   for(var i=0; i<scopeRadios.length; i++){
     scopeRadios[i].addEventListener("click", switchScope);
+
+    if(scopeRadios[i].checked){
+      switchScope(false, scopeRadios[i].id);
+    }
   }
 
-  function switchScope(event){
-    var activeId = event.target.id;
+  function switchScope(event, id){
+    var activeId;
+
+    if(event){
+      activeId = event.target.id;
+    }
+    else if (id){
+      activeId = id;
+    }
+
 
     switch(activeId){
       case "outline":
