@@ -6,10 +6,10 @@
   scopeRadios.push(document.getElementById("details"));
 
   for(var i=0; i<scopeRadios.length; i++){
-    scopeRadios[i].addEventListener("click", kaboom);
+    scopeRadios[i].addEventListener("click", switchScope);
   }
 
-  function kaboom(event){
+  function switchScope(event){
     var activeId = event.target.id;
 
     switch(activeId){
