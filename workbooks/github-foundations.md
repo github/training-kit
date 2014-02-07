@@ -93,9 +93,11 @@ Verifying that Git is installed and operational can be done by requesting Git to
 Verifying that Git is installed and operational can be done by requesting Git to display its current version using this command:
 </span>
 
-```
+<pre class="summary">
+<code>
 $ git --version
-```
+</code>
+</pre>
 
 
 ## config
@@ -130,22 +132,26 @@ Your name and email address are configured locally in Git and are attached to ea
 To inspect the current settings, individually query two configuration values:
 </span>
 
-```
+<pre class="summary">
+<code>
 $ git config user.name
-  Firstname Lastname
+Firstname Lastname
 
 $ git config user.email
-  someaccount@example.com
-```
+someaccount@example.com
+</code>
+</pre>
 
 <span class="summary">
 To set the same values to apply to any of your repositories:
 </span>
 
-```
+<pre class="summary">
+<code>
 $ git config --global user.name "<Firstname Lastname>"
 $ git config --global user.email "<someaccount@example.com>"
-```
+</code>
+</pre>
 
 ### Scopes
 <span class="summary">
@@ -161,9 +167,11 @@ Level | Precedence | Location
 </span>
 
 ### Viewing all
-```
+<pre class="summary">
+<code>
 $ git config --list
-```
+</code>
+</pre>
 
 ### Useful settings
 
@@ -171,20 +179,19 @@ $ git config --list
 Line endings and color display are two of the most common settings users choose to set early in their use of Git.
 </span>
 
-```
+<pre class="summary">
+<code>
 # Set line endings to LF for Mac and Linux
 $ git config --global core.autocrlf input
-```
 
-```
 # Set line endings to CRLF for Windows
 $ git config --global core.autocrlf auto
-```
 
-```
 # Set color display in the command prompt
 $ git config --global color.ui auto
-```
+</code>
+</pre>
+
 
 ### Settings video
 [This video](TODO) demonstrates setting configuration values.
@@ -197,16 +204,19 @@ $ git config --global color.ui auto
 Create a repository in the current directory of an existing project:
 </span>
 
-```
+<pre class="summary">
 git init
-```
+</code>
+</pre>
 
 ### Repository from existing directory
 
 Create a repository in a brand new subdirectory:
-```
+<pre class="summary">
+<code>
 git init <projectname>
-```
+</code>
+</pre>
 
 ## commit
 
