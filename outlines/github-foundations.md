@@ -44,7 +44,7 @@ $ git --version
 
 
 ## Config
-Git stores all its configuration in plain test files. This makes configuration easy to read with a text editor and portable across machines by simply copying the configuration file.
+Git stores all its configuration in plain text files. This makes configuration easy to read with a text editor and portable across machines by simply copying the configuration file.
 
 Git's configuration is saved at one of three levels:
 
