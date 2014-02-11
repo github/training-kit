@@ -74,7 +74,8 @@ h3 {
 
 p {
   text-rendering: optimizeLegibility;
-  line-height: 150%; }
+  line-height: 150%;
+  margin-bottom: 1em; }
 
 header {
   background: #fff;
@@ -272,6 +273,17 @@ footer {
 .site-footer-links li:first-child {
   margin-left: 0; }
 
+/* Scopes wrapper */
+.outline h2 + p, .outline h2 + p ~ p, .outline h2 + p ~ blockquote, .outline h2 + p ~ ul, .outline h2 + p ~ pre, .outline h2 + p ~ h3 {
+  display: none; }
+.outline h3 + p, .outline h3 + p ~ table {
+  display: none; }
+
+.summary h3 {
+  display: none; }
+  .summary h3 + * {
+    display: none; }
+
 .hero {
   background: #1875c6;
   color: #fff; }
@@ -331,15 +343,3 @@ blockquote {
     /* IE 9 */
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg); }
-
-/* Content Scope */
-.outline, .summary, .details {
-  display: block;
-  -webkit-transition: all 400ms; }
-
-.scope-hidden {
-  height: 0;
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-  opacity: 0; }
