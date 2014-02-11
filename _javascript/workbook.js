@@ -23,38 +23,26 @@
       activeId = id;
     }
 
+    console.log("ActiveId: " + activeId);
+
+    var scopeWrapper = document.getElementById("scope");
 
     switch(activeId){
       case "outline":
-        showSet("outline");
-        hideSet("summary");
-        hideSet("details");
+        showSet(scopeWrapper, "outline");
         break;
       case "summary":
-        hideSet("outline");
-        showSet("summary");
-        hideSet("details");
+        showSet(scopeWrapper, "summary");
         break;
       case "details":
-        hideSet("outline");
-        hideSet("summary");
-        showSet("details");
+        showSet(scopeWrapper, "details");
         break;
     }
   }
-  function hideSet(id){
-    var allEl = selection(id);
-        hideClassNames = id + " scope-hidden";
-    for(var e=0; e<allEl.length; e++){
-      allEl[e].className = hideClassNames;
-    }
-  }
-  function showSet(id){
-    var allEl = selection(id),
-        showClassNames = id + " scope-visible";
-    for(var e=0; e<allEl.length; e++){
-      allEl[e].className = showClassNames;
-    }
+
+  function showSet(wrapper, scope){
+    console.log("Changing scope");
+    wrapper.className = scope;
   }
   function selection(identifier){
     var allEl = document.getElementsByClassName(identifier);
