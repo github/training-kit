@@ -99,7 +99,7 @@ $ git config --global color.ui auto
 ```
 
 ### Settings video
-[This video](TODO) demonstrates setting configuration values.
+[This video](http://www.youtube.com/watch?v=ZChtKFLiaNw) demonstrates setting configuration values.
 
 ## Init
 ### Repository from scratch
