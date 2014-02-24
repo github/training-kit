@@ -6,20 +6,48 @@
 @import "footer.scss";
 @import "octicons.css";
 
-h2{
-  border-top: solid 1px #e5e5e5;
-  padding: 10px 0;
-  margin: 20px 0 0 0;
+@mixin hidden{
+  display: none;
 }
 
-p:first-child{
-  font-size: 125%;
-  font-weight: 200;
-  text-rendering: optimizeLegibility;
-  line-height: 150%;
-  opacity: .65;
-  margin: auto auto 20px auto;
+/* Scopes wrapper */
 
+.outline{
+  h2{
+    & + p,
+    & + p ~ p,
+    & + p ~ blockquote,
+    & + p ~ ul,
+    & + p ~ pre,
+    & + p ~ h3
+    {
+      @include hidden;
+    }
+  }
+  h3{
+    & + p,
+    & + p ~ table
+    {
+      @include hidden;
+    }
+  }
+}
+
+.summary{
+  h3{
+    @include hidden;
+
+    & + *
+    {
+      @include hidden;
+    }
+  }
+}
+
+.details{
+  h3{
+    display: none;
+  }
 }
 
 .hero{
