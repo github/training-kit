@@ -284,6 +284,9 @@ footer {
   .summary h3 + * {
     display: none; }
 
+.details h3 {
+  display: none; }
+
 .hero {
   background: #1875c6;
   color: #fff; }
