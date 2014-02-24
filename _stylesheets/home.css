@@ -74,7 +74,8 @@ h3 {
 
 p {
   text-rendering: optimizeLegibility;
-  line-height: 150%; }
+  line-height: 150%;
+  margin-bottom: 1em; }
 
 header {
   background: #fff;
@@ -319,6 +320,21 @@ footer {
   text-align: left; }
   .grid2col p {
     padding-right: 10%; }
+
+.curriculum th {
+  text-align: center; }
+.curriculum th, .curriculum td {
+  padding: 10px; }
+.curriculum p {
+  text-align: left; }
+.curriculum ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .curriculum ul li {
+    display: inline-block; }
+    .curriculum ul li a {
+      margin: auto 30px auto 10px; }
 
 .professortocat {
   height: 100px;
