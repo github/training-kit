@@ -275,48 +275,65 @@ git log --graph --all --decorate --oneline
 ```
 
 ## GitHub
-### Centralized Repository
-### Cloning
-### Forking
-### Pull Request
+TBD
 
-
+* Centralized Repository
+* Cloning
+* Forking
+* Pull Request
 
 ## Remove
-### Entirely eliminating paths
-### Stopping tracking
+TBD
+
+* Entirely eliminating paths
+* Stopping tracking
 
 ## Move
-### Functionality
-### Similarity index
-### Following history
+TBD
+
+* Functionality
+* Similarity index
+* Following history
 
 ## Ignore
-### Basic setup
-### Standard patterns
-### Global configuration
+TBD
+
+* Basic setup
+* Standard patterns
+* Global configuration
 
 
 ## Checkout
-### Switching branches
-### Discarding changes
-### Exploring History
+TBD
+
+* Switching branches
+* Discarding changes
+* Exploring History
 
 ## Merge
-### Basics
-### Conflicts
+TBD
 
-## rebase
-### Merge preparation
-### Interactive
+* Basics
+* Conflicts
 
-## reset
-### Hard
-### Mixed
-### Soft
+## Rebase
+TBD
+
+* Merge preparation
+* Interactive
+
+## Reset
+TBD
+
+* Hard
+* Mixed
+* Soft
 
 ## Revert
+TBD
 
-## gui
+## GUIs
+TBD
 
-## reflog
+## Reflog
+TBD
