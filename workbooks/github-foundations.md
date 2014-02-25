@@ -1,7 +1,7 @@
 ---
 layout: workbook
 title: Foundations Workbook
-description: This workbook will be your companion for the slides of the GitHub Foundations class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this GitHub Training course, you'll learn all the necessary skills to be productive with Git and GitHub in your open source work or daily job assignments.
+description: This workbook will be your companion for the slides of the GitHub Foundations class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this GitHub Training course, you'll learn all the necessary skills to be productive with GitHub and Git in your open source work or daily job assignments.
 ---
 
 ##  Git <a href="http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git" class="booklink">Pro Git Book: The History of Git</a>
