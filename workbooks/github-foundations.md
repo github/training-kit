@@ -14,7 +14,7 @@ __Git is an open source distributed__ version control system invented by Linus T
 Git is the open source, command line tool that forms a part of the workflows we'll cover in this course.  It has been called the successor to CVS and Subversion by many users, and maintains some similarity in behavior to these historical open source version control tools.
 
 ### Details
-Maintaining a current version of Git is important. While you'll accurately hear that Git is generously backwards-compatible, the latest versions offer error message enhancements, performance tunings, and usability features that make using Git ever more quick and plesant.
+Maintaining a current version of Git is important. While you'll accurately hear that Git is generously backwards-compatible, the latest versions offer error message enhancements, performance tunings, and usability features that make using Git ever more quick and pleasant.
 
 Verifying that Git is installed and operational can be done by requesting Git to display its current version using this command:
 
@@ -26,33 +26,32 @@ $ git --version
 
 GitHub accounts are free. Sign up for one at [github.com/join](https://github.com/join).
 
-GitHub is a Git repository hosting and code collaboration platform for both open source and private projects.</span>
+GitHub is a Git repository hosting and code collaboration platform for both open source and private projects.
 
 ### Details
 GitHub accounts are free for an unlimited quantity of public repositories. Only private repositories cost to host on the service. Private repositories are typically used for closed-source consulting client or corporate products, whereas public repositories are typically used for open source.
 
 Sign up for a free GitHub account at https://github.com/join.
 
-Git can be installed as a unified GitHub GUI and command line or merely via a stand-alone command line.
+Git can be installed as a unified GitHub GUI and command line or merely via a stand-alone command line interface.
 
 ##  GitHub Installers <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git" class="booklink">Pro Git Book: Installing Git</a>
 
-The command line verison of Git has a very light footprint. For most platforms, you can simply copy the binaries to a folder that is on the executable search $PATH. Git is primarily written in C, which means there is a unique installer for each operating system.
+The command line version of Git has a very light footprint. For most platforms, you can simply copy the binaries to a folder that is on the executable search $PATH. Git is primarily written in C, which means there is a unique installer for each operating system.
 
 * **Windows**: The GitHub for Windows installer can be found at http://windows.github.com.
 * **Mac**: The GitHub for Mac installer can be found at http://mac.github.com.
 * **Linux**: Git's source code and a listing of supported package managers can be found at http://git-scm.com/download/linux.
 
 ### Details
-GitHub is the repository hosting, collaboration, deployment, and distribution platform for your software applications.  It facilitates discussing changes-in-progress through the concepts of Issues and Pull Requests and provides a web user interface to much of Git. The web flow made possible by GitHub brings a much wider range of contributors, including documentation specialists, designers, and ops engineers into the flow of contributing to your application's lifecycle.
+GitHub is the repository hosting, collaboration, deployment, and distribution platform for your software applications.  It facilitates discussing changes-in-progress through the concepts of Issues and Pull Requests and provides a web user interface to much of Git. The web flow made possible by GitHub brings a much wider range of contributors, including documentation specialists, designers, and ops engineers into the flow of contributing to your application's life cycle.
 
 ##  A Brief Tour of Git <a href="http://git-scm.com/book/en/Getting-Started-Git-Basics" class="booklink">Pro Git Book: Git Basics</a>
 
 Git has a unique twist on version control in which each _cloned_ copy of the repository contains all branches, tags, and commits ever saved to the project. This provides local-disk speed for almost any operation. Network operations are performed in batch and compressed before sending, thus making over-the-wire operations seem incredibly fast.
 
 ### Details
-Git is an open source version control system that was built by Linus Torvals and used to version the Linux kernel in 2005.  It has gained in popularity ever since and is now the leading version control system for open source projects by some surveys.  It shares some behavioral similarities to CVS and Subversion, though departs from their centralized form by its distributed nature.
-</span>
+Git is an open source version control system that was built by Linus Torvalds and used to version the Linux kernel in 2005.  It has gained in popularity ever since and is now the leading version control system for open source projects by some surveys.  It shares some behavioral similarities to CVS and Subversion, though departs from their centralized form by its distributed nature.
 
 ### Details
 <blockquote class="studentquestion">
@@ -146,7 +145,7 @@ cd local-project-name
 ## Versioning changes
 By staging (preparing) paths
 
-Any time a change is to be commited, or preserved in history, it must first be _staged_.
+Any time a change is to be committed, or preserved in history, it must first be _staged_.
 
 ``` shell
 git add path-file
@@ -168,10 +167,10 @@ git commit --amend -m "updated message"
 Wrapping commits, or Git version history, within branches is a fast, local, and easy way to focus work and commits within a repository.
 
 
-### by branching per work endeavor
+### By branching per work endeavor
 Create a new branch from your current commit
 
-``` shwll
+``` shell
 git branch your-topic-name
 ```
 
@@ -256,7 +255,7 @@ git diff [commit-ref/branch-name]
 Inspect the full history of a specific branch, limit the output, or graphically diagram the relationship of commits.
 
 
-List all commits of current branch in decending order.
+List all commits of current branch in descending order.
 
 ``` shell
 git log
