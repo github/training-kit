@@ -308,8 +308,8 @@ footer {
   font-size: 80%;
   margin-top: 40px; }
   .blurb h2 {
-    text-align: left;
-    opacity: .6; }
+    opacity: .6;
+    text-align: center; }
   .blurb p {
     text-align: left;
     opacity: .7; }
@@ -329,12 +329,17 @@ footer {
   text-align: left; }
 .curriculum ul {
   list-style: none;
+  text-align: center;
   margin: 0;
   padding: 0; }
   .curriculum ul li {
     display: inline-block; }
     .curriculum ul li a {
       margin: auto 30px auto 10px; }
+
+.octicon-jumbo {
+  float: left;
+  font-size: 6em; }
 
 .professortocat {
   height: 100px;

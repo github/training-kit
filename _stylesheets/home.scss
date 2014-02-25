@@ -51,8 +51,8 @@
   margin-top: 40px;
 
   h2{
-    text-align: left;
     opacity: .6;
+    text-align: center;
   }
   p{
     text-align: left;
@@ -85,7 +85,7 @@
 
   ul{
     list-style: none;
-
+    text-align: center;
     margin: 0;
     padding: 0;
 
@@ -98,6 +98,11 @@
     }
 
   }
+}
+
+.octicon-jumbo{
+  float: left;
+  font-size: 6em;
 }
 
 .professortocat{
