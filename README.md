@@ -1,6 +1,6 @@
 # GitHub Training Materials
 
-This is the official courseware for the [GitHub Training Team](http://training.github.com). This repository provides open source outlines, slides, and cheat sheets for teaching GitHub Classes under the [_CC BY 3.0_ license](http://creativecommons.org/licenses/by/3.0/).
+This is the official courseware for the [GitHub Training Team](http://training.github.com). This repository provides open source materials and slides for teaching GitHub Classes under the [_CC BY 3.0_ license](http://creativecommons.org/licenses/by/3.0/).
 
 We know that part of effectively sharing GitHub and Git with the world goes beyond our team's course offerings. We are excited to provide you with training materials that you can also use to teach these same concepts at your company, for a user group, or even at a conference.
 
@@ -14,13 +14,12 @@ We know that many of the users of this repository are just focused on getting th
 
 ## Contribute
 
-We’re eager to have your help in improving these materials. If you have an idea for a change, start by opening a new [Issue](https://github.com/github/training-materials/issues) so we can discuss and help guide your contribution to the right location. If you have corrections or materials contributions, we'd be glad to receive them via a [Pull Request](https://help.github.com/articles/using-pull-requests). For materials contributions, we ask you to share in our mindset of minimalism.  We aim to keep the outlines, slides, and cheat sheets as synchronized triads.
+We’re eager to have your help in improving these materials. If you have an idea for a change, start by opening a new [Issue](https://github.com/github/training-materials/issues) so we can discuss and help guide your contribution to the right location. If you have corrections or materials contributions, we'd be glad to receive them via a [Pull Request](https://help.github.com/articles/using-pull-requests). For materials contributions, we ask you to share in our mindset of minimalism.  We aim to keep the workbook and slides a synchronized pair.
 
-The educational content exists in three top level directories:
+The educational content exists in two top level directories:
 
-1. [`outlines`](https://github.com/github/training-materials/tree/master/outlines)
-2. [`slides`](https://github.com/github/training-materials/tree/master/slides)
-3. [`cheatsheets`](https://github.com/github/training-materials/tree/master/cheatsheets)
+1. [`slides`](https://github.com/github/training-materials/tree/master/slides)
+2. [`workbooks`](https://github.com/github/training-materials/tree/master/workbooks)
 
 
 ## File Format
