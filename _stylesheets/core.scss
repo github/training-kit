@@ -150,7 +150,7 @@ nav{
   font-size: 12px;
 
   a{
-    color: $color-bright;
+    color: lighten($color-dark, 20%);
   }
   .container{
     margin: 0 auto;
