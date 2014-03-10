@@ -82,8 +82,6 @@ section{
   }
 }
 
-
-
 .platforms{
   background: url(../images/platforms.png) no-repeat center top;
   background-size: 600px 300px;
@@ -123,6 +121,7 @@ section{
 
 .grey{
   background: lighten($mono-light, 5%);
+  border-top: solid 1px $mono-light;
   border-bottom: solid 1px $mono-light;
 }
 

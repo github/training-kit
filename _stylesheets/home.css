@@ -318,6 +318,7 @@ section .container {
 
 .grey {
   background: #f5f5f6;
+  border-top: solid 1px #e8e8ea;
   border-bottom: solid 1px #e8e8ea; }
 
 .segment-content {
