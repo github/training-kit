@@ -15,63 +15,10 @@
   clear:right;
 }
 
-nav{
-  hgroup{
-    float: left;
-  }
-
-  .logo-training-materials{
-    display: inline-block;
-    height: 26px;
-    width: 237px;
-
-    &:before{
-      content: "";
-      background: url(../images/training-materials-dark-2x.png) no-repeat top left;
-      background-size: contain;
-      height: 32px;
-      width: 237px;
-      display: block;
-    }
-  }
-
-  ul{
-    float: right;
-    margin: 0;
-    padding: 0;
-    height: 26px;
-    font-size: 14px;
-    line-height: 26px;
-
-    li{
-      display: inline-block;
-      margin-left: 16px;
-    }
-  }
-
-  a{
-    color: inherit;
-    font-weight: 500;
-
-    &:hover{
-      color: $mono-bright;
-      border-bottom: solid 2px $mono-bright;
-    }
-    &.button:hover{
-      border: solid 1px $color-bright;
-    }
-  }
-}
-
 section{
   & .container{
-    padding: 40px 0;
-
     &.hero{
-      // padding: 0 0 200px;
       margin: 70px auto 70px auto;
-      // background: url(../images/platforms.png) no-repeat center bottom;
-      // background-size: $width-desktop/3 auto;
 
       p{
         font-size: 125%;
@@ -107,18 +54,6 @@ section{
   font-size: 70%;
 }
 
-.colorful{
-  background: $color-dark;
-  color: $mono-bright;
-  p{
-    // color: darken($mono-light, 10%);
-  }
-
-  a{
-    color: $mono-bright;
-  }
-}
-
 .grey{
   background: lighten($mono-light, 5%);
   border-top: solid 1px $mono-light;
@@ -144,19 +79,18 @@ section{
     box-shadow: 0 0 0 1px $color-bright;
     padding: 20px;
     -webkit-transition: box-shadow 150ms, color 150ms, background 150ms;
+    transition: box-shadow 150ms, color 150ms, background 150ms;
 
     &:hover{
-      box-shadow: 0 0 0 2px $color-bright;
+      box-shadow: 0 0 0 2px $color-dark;
       color: $mono-bright;
-      background: $color-bright;
-
+      background: $color-dark;
     }
 
     color: $color-bright;
   }
 
   .octicon{
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.25)));
     height: 50px;
     width: 50px;
     font-size: 30px;

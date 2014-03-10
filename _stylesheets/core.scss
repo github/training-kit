@@ -32,9 +32,14 @@ p{
   border: solid 1px $mono-light;
   border-radius: 5px;
 }
+
 section{
   width: 100%;
   float: left;
+
+  & .container{
+    padding: 20px 0;
+  }
 }
 
 code{
@@ -78,6 +83,54 @@ ul{
   margin: 0 0 0 1.5em
 }
 
+nav{
+  hgroup{
+    float: left;
+  }
+
+  .logo-training-materials{
+    display: inline-block;
+    height: 26px;
+    width: 237px;
+
+    &:before{
+      content: "";
+      background: url(../images/training-materials-dark-2x.png) no-repeat top left;
+      background-size: contain;
+      height: 32px;
+      width: 237px;
+      display: block;
+    }
+  }
+
+  ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 26px;
+    font-size: 14px;
+    line-height: 26px;
+
+    li{
+      display: inline-block;
+      margin-left: 16px;
+    }
+
+    a{
+      color: inherit;
+      font-weight: 500;
+
+      &:hover{
+        color: $mono-bright;
+        border-bottom: solid 2px $mono-bright;
+      }
+      &.button:hover{
+        border: solid 1px $color-bright;
+      }
+    }
+  }
+}
+
 .container{
   width: $width-desktop;
   margin: 0 auto auto;
@@ -90,20 +143,6 @@ ul{
 
 .center{
   text-align: center;
-}
-
-.logo-group{
-  height: 25px;
-  overflow: hidden;
-
-  .description{
-    line-height: 32px;
-  }
-}
-
-.logo{
-  -webkit-transition: margin 600ms, opacity 300ms;
-  transition: margin 600ms, opacity 300ms;
 }
 
 .license{
@@ -212,5 +251,17 @@ ul{
     &:checked + label.tab > div.panel-content{
       visibility: visible;
     }
+  }
+}
+
+.colorful{
+  background: $color-dark;
+  color: $mono-bright;
+  p{
+    // color: darken($mono-light, 10%);
+  }
+
+  a{
+    color: $mono-bright;
   }
 }
