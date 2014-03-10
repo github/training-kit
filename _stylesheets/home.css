@@ -358,8 +358,8 @@ section .container {
 
 .workbook {
   background: url(../images/screen-shot-workbook.png) no-repeat bottom center #f5f5f6;
-  background-size: 800px;
-  padding-bottom: 240px; }
+  background-size: 700px;
+  padding-bottom: 400px; }
 
 .downloads {
   background: url(../images/screen-shot-pdf.png) no-repeat bottom center;
