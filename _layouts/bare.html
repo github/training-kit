@@ -29,20 +29,7 @@
   </head>
   <body>
     {% if page.path != "index.html" %}
-      <section class="colorful">
-        <nav class="container">
-          <hgroup>
-            <a href="../">
-              <span class="mega-octicon octicon-logo-github"></span>
-              <span class="logo-training-materials"></span>
-            </a>
-          </hgroup>
-          <ul>
-            <li><a href="../">Materials</a></li>
-            <li><a class="button" href="https://training.github.com">Join an Event</a></li>
-          </ul>
-        </nav>
-      </section>
+      {% include navigation.html %}
     {% endif %}
 
     {{ content }}
