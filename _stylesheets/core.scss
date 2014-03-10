@@ -6,7 +6,7 @@ h1{
 h2{
   font-size: 250%;
   font-weight: 200;
-  margin: 0;
+  margin: 20px 0 0 0;
   color: lighten($mono-dark, 10%);
 }
 h2+p{
@@ -15,7 +15,7 @@ h2+p{
   text-rendering: optimizeLegibility;
   line-height: 150%;
   color: lighten($mono-dark, 30%);
-  margin: 20px auto 40px;
+  margin: 10px auto 20px;
 }
 h3{
   font-size: 125%;
@@ -162,7 +162,7 @@ nav{
   background: #fff;
   position: block;
   margin: 30px auto 0 auto;
-  height: 2em;
+  height: 3em;
   width: 360px;
   position: relative;
 
