@@ -235,11 +235,73 @@ nav ul {
     .tab-panel input.material-type:checked + label.tab > div.panel-content {
       visibility: visible; }
 
+/* Colorization */
 .colorful {
   background: #1875c6;
   color: white; }
   .colorful a {
     color: white; }
+
+.invert {
+  background: #222222;
+  border-bottom: solid 1px #e8e8ea;
+  color: white; }
+  .invert h2, .invert h3, .invert p {
+    color: #cdcdd2; }
+  .invert a {
+    color: white; }
+
+.grey {
+  background: #f5f5f6;
+  border-top: solid 1px #e8e8ea;
+  border-bottom: solid 1px #e8e8ea; }
+
+/* Alignment */
+.left {
+  float: left;
+  clear: left; }
+
+.right {
+  float: right;
+  clear: right; }
+
+/* Layout */
+section .container.hero {
+  margin: 70px auto 70px auto; }
+  section .container.hero p {
+    font-size: 125%;
+    color: #b4d7f6;
+    margin: 20px 0; }
+
+.segment-content {
+  width: 613.8px;
+  display: inline-block; }
+
+.segment-icon {
+  width: 288.3px;
+  padding: 9.3px;
+  display: inline-block;
+  text-align: center;
+  font-size: 80%;
+  color: #555555; }
+  .segment-icon a {
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #00a5ea;
+    padding: 20px;
+    -webkit-transition: box-shadow 150ms, color 150ms, background 150ms;
+    transition: box-shadow 150ms, color 150ms, background 150ms;
+    color: #00a5ea; }
+    .segment-icon a:hover {
+      box-shadow: 0 0 0 2px #1875c6;
+      color: white;
+      background: #1875c6; }
+  .segment-icon .octicon {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center; }
 
 footer {
   float: left;
