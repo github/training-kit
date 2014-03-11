@@ -1,120 +1,119 @@
 /* Imports */
+@import "variables.scss";
 @import "reset.scss";
-@import "colors.scss";
 @import "links.scss";
 @import "core.scss";
 @import "footer.scss";
 @import "octicons.css";
 
-.hero{
-  background: $color-dark;
-  color: #fff;
-  text-align: center;
-  box-shadow: inset 0 -20px 30px rgba(0,0,0,.08);
-  border-bottom: solid 1px #fff;
-
-  h1{
-    margin-top: 40px;
-    font-weight: 200;
-    line-height: 140%;
-  }
-
-  p{
-    font-weight: 200;
-    font-size: 110%;
-    text-rendering: optimizeLegibility;
-    opacity: .85;
-    margin-bottom: 40px;
-  }
-
-  .logo-training-materials{
-    display: inline-block;
-    height: 26px;
-    width: 237px;
-
-    &:before{
-      content: "";
-      background: url(../images/training-materials-2x.png) no-repeat top left;
-      background-size: contain;
-      height: 32px;
-      width: 237px;
-      display: block;
-    }
-  }
+.left{
+  float:left;
+  clear:left;
+}
+.right{
+  float:right;
+  clear:right;
 }
 
-.blurb{
-  background: #f5f5f5;
-  color: #000;
-  padding: 0 0 40px;
-  font-size: 80%;
-  margin-top: 40px;
+section{
+  & .container{
+    &.hero{
+      margin: 70px auto 70px auto;
 
-  h2{
-    opacity: .6;
-    text-align: center;
-  }
-  p{
-    text-align: left;
-    opacity: .7;
-  }
-}
-
-.grid2col{
-  float: left;
-  width: 49%;
-  text-align: left;
-
-  p{
-    padding-right: 10%;
-  }
-}
-
-
-.curriculum{
-  th{
-    text-align: center;
-  }
-  th,td{
-    padding: 10px;
-  }
-
-  p{
-    text-align: left;
-  }
-
-  ul{
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-
-    li{
-      display: inline-block;
-
-      a{
-        margin: auto 30px auto 10px;
+      p{
+        font-size: 125%;
+        color: lighten($color-dark, 40%);
+        margin: 20px 0;
       }
     }
-
   }
 }
 
-.octicon-jumbo{
+.platforms{
+  background: url(../images/platforms.png) no-repeat center top;
+  background-size: 600px 300px;
+  height: 300px;
+  width: 100%;
   float: left;
-  font-size: 6em;
 }
 
-.professortocat{
-  height: 100px;
-  width: 100px;
-  float: left;
-  background: url(../images/professortocat.png) no-repeat;
-  background-size: contain;
-
-  & + .group{
-    float: left;
-    margin-left: 20px;
-    width: 700px; /* Weird 10px less hack. Don't know why. */
+.invert{
+  background: $mono-dark;
+  border-bottom: solid 1px $mono-light;
+  color: $mono-bright;
+  h2,h3,p{
+    color: darken($mono-light, 10%);
   }
+
+  a{
+    color: $mono-bright;
+  }
+}
+
+.diminish{
+  font-size: 70%;
+}
+
+.grey{
+  background: lighten($mono-light, 5%);
+  border-top: solid 1px $mono-light;
+  border-bottom: solid 1px $mono-light;
+}
+
+.segment-content{
+  width: $width-desktop*.66;
+  display: inline-block;
+}
+
+.segment-icon{
+  width: $width-desktop*0.31;
+  padding: $width-desktop*0.01;
+  display: inline-block;
+  text-align: center;
+  font-size: 80%;
+  color: lighten($mono-dark, 20%);
+
+  a{
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px $color-bright;
+    padding: 20px;
+    -webkit-transition: box-shadow 150ms, color 150ms, background 150ms;
+    transition: box-shadow 150ms, color 150ms, background 150ms;
+
+    &:hover{
+      box-shadow: 0 0 0 2px $color-dark;
+      color: $mono-bright;
+      background: $color-dark;
+    }
+
+    color: $color-bright;
+  }
+
+  .octicon{
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+
+
+.screen-shot{
+  background: url(../images/screen-shot-slide.png) no-repeat bottom center;
+  background-size: 800px;
+  padding-bottom: 350px;
+}
+
+.workbook{
+  background: url(../images/screen-shot-workbook.png) no-repeat bottom center lighten($mono-light, 5%);
+  background-size: 700px;
+  padding-bottom: 400px;
+}
+
+.downloads{
+  background: url(../images/screen-shot-pdf.png) no-repeat bottom center;
+  background-size: 800px;
+  padding-bottom: 400px;
 }
