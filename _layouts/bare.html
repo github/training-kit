@@ -14,7 +14,7 @@
     <link rel="stylesheet" media="all" href=
       {% if page.theme == "home" %}
         "_stylesheets/page.css"
-      {% elsif page.theme %}
+      {% else page.theme %}
         "../_stylesheets/page.css"
       {% endif %}
     />
