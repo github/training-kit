@@ -26,6 +26,11 @@ footer {
     font-size: 24px;
     line-height: 1;
   }
+
+  a{
+    color: $color-dark;
+    text-decoration: none;
+  }
 }
 
 .site-footer-links li {
