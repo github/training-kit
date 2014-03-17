@@ -12,10 +12,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <link rel="stylesheet" media="all" href=
-    {% if page.theme %}
-      "../_stylesheets/page.css"
-    {% endif %}
-    "_stylesheets/page.css"
+      {% if page.theme == "home" %}
+        "_stylesheets/page.css"
+      {% else page.theme %}
+        "../_stylesheets/page.css"
+      {% endif %}
     />
 
     <link rel="stylesheet"
