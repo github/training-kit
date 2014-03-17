@@ -11,6 +11,8 @@ section {
     padding: 20px 0 0 0; }
     section .hero hgroup {
       margin-top: 60px; }
+    section .hero a {
+      text-decoration: none; }
     section .hero p {
       font-size: 112.5%;
       color: #0d3f6b;
