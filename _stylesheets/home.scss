@@ -11,8 +11,9 @@ section{
 
   /* Layout */
   .hero{
-    height: 485px;
+    height: 445px;
     padding: 20px 0 0 0;
+
 
     hgroup{
       margin-top: 60px;
@@ -25,9 +26,15 @@ section{
     }
 
     .octicon{
-      font-size: 300px;
+      font-size: 200px;
+      margin-top: 52px;
     }
   }
+}
+
+.figures{
+  background: url(../images/hero-home.png) no-repeat bottom center $color-dark;
+  background-size: 1350px;
 }
 
 .screen-shot{

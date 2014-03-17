@@ -7,7 +7,7 @@ section {
   section .container {
     padding: 50px 0 50px 0; }
   section .hero {
-    height: 485px;
+    height: 445px;
     padding: 20px 0 0 0; }
     section .hero hgroup {
       margin-top: 60px; }
@@ -16,7 +16,12 @@ section {
       color: #0d3f6b;
       margin-bottom: 30px; }
     section .hero .octicon {
-      font-size: 300px; }
+      font-size: 200px;
+      margin-top: 52px; }
+
+.figures {
+  background: url(../images/hero-home.png) no-repeat bottom center #1875c6;
+  background-size: 1350px; }
 
 .screen-shot {
   background: url(../images/screen-shot-slide.png) no-repeat bottom center;
