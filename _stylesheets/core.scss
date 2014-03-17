@@ -1,16 +1,16 @@
 h1{
-  font-size: 350%;
+  font-size: 300%;
   font-weight: 200;
   text-rendering: optimizeLegibility;
 }
 h2{
   font-size: 250%;
   font-weight: 200;
-  margin: 20px 0 0 0;
+  margin: 0 0 0 0;
   color: lighten($mono-dark, 10%);
 }
 h2+p{
-  font-size: 115%;
+  // font-size: 112.5%;
   font-weight: 200;
   text-rendering: optimizeLegibility;
   line-height: 150%;
@@ -24,21 +24,40 @@ h3{
 p{
   text-rendering: optimizeLegibility;
   line-height: 150%;
-  // margin-bottom: 1em;
 }
-
-.button{
-  padding: 8px;
-  border: solid 1px $mono-light;
-  border-radius: 5px;
+a{
+  color: lighten($mono-dark, 15%);
 }
-
 section{
   width: 100%;
   float: left;
 
   & .container{
-    padding: 20px 0;
+    padding: 30px 0 30px 0;
+  }
+
+  /* Layout */
+  .hero{
+    // height: 485px;
+
+    & .container{
+      padding: 0;
+      margin: 0 0 0 0;
+    }
+
+    hgroup{
+      margin-top: 60px;
+    }
+
+    p{
+      font-size: 112.5%;
+      color: darken($color-dark, 20%);
+      margin-bottom: 30px;
+    }
+
+    .octicon{
+      font-size: 300px;
+    }
   }
 }
 
@@ -84,23 +103,21 @@ ul{
 }
 
 nav{
+  height: 46px;
+  width: $width-desktop;
+  margin: 18px auto 0 auto;
+
+  a{
+    text-decoration: none;
+  }
+
   hgroup{
     float: left;
   }
 
-  .logo-training-materials{
-    display: inline-block;
-    height: 26px;
-    width: 237px;
+  .button{
+    padding: 8px;
 
-    &:before{
-      content: "";
-      background: url(../images/training-materials-dark-2x.png) no-repeat top left;
-      background-size: contain;
-      height: 32px;
-      width: 237px;
-      display: block;
-    }
   }
 
   ul{
@@ -125,7 +142,8 @@ nav{
         border-bottom: solid 2px $mono-bright;
       }
       &.button:hover{
-        border: solid 1px $color-bright;
+        border: none;
+        box-shadow: 0 0 0 1px $mono-bright;
       }
     }
   }
@@ -272,12 +290,19 @@ nav{
   background: $mono-dark;
   border-bottom: solid 1px $mono-light;
   color: $mono-bright;
-  h2,h3,p{
-    color: darken($mono-light, 10%);
+  h2{
+    color: darken($mono-light, 20%);
+  }
+  h3,p{
+    color: darken($mono-bright, 0%);
   }
 
   a{
-    color: $mono-bright;
+    color: darken($mono-light, 10%);
+
+    &:hover{
+      color: $mono-bright;
+    }
   }
 }
 
@@ -297,20 +322,7 @@ nav{
   clear:right;
 }
 
-/* Layout */
-section{
-  & .container{
-    &.hero{
-      margin: 70px auto 70px auto;
 
-      p{
-        font-size: 125%;
-        color: lighten($color-dark, 40%);
-        margin: 20px 0;
-      }
-    }
-  }
-}
 
 .segment-content{
   width: $width-desktop*.66;
@@ -321,23 +333,15 @@ section{
   width: $width-desktop*0.31;
   padding: $width-desktop*0.01;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   font-size: 80%;
   color: lighten($mono-dark, 20%);
 
   a{
     display: block;
-    border-radius: 3px;
-    box-shadow: 0 0 0 1px $color-bright;
-    padding: 20px;
+    text-decoration: none;
     -webkit-transition: box-shadow 150ms, color 150ms, background 150ms;
     transition: box-shadow 150ms, color 150ms, background 150ms;
-
-    &:hover{
-      box-shadow: 0 0 0 2px $color-dark;
-      color: $mono-bright;
-      background: $color-dark;
-    }
 
     color: $color-bright;
   }
@@ -348,5 +352,89 @@ section{
     font-size: 30px;
     border-radius: 50%;
     text-align: center;
+  }
+}
+
+.button{
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px $color-bright;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+
+  &:hover{
+    box-shadow: 0 0 0 1px $color-dark;
+    color: $mono-bright;
+    background: $color-dark;
+  }
+}
+
+.big-link{
+  display: block;
+  text-align: center;
+  font-size: 120%;
+  text-decoration: none;
+  color: $color-dark;
+  font-weight: 200;
+}
+
+.logo-training{
+  display: inline-block;
+  height: 26px;
+  width: 108px;
+
+  &:before{
+    content: "";
+    background: url(../images/training-materials-dark-2x.png) no-repeat top left;
+    background-size: contain;
+    height: 32px;
+    width: 237px;
+    display: block;
+  }
+}
+
+.see-thru{
+  opacity: .9;
+}
+
+#floating-nav{
+  position: fixed;
+  display: none;
+  z-index: 100;
+}
+
+.mild{
+  border-top: solid 2px $color-mild;
+
+  h3,.octicon{
+    color: $color-mild;
+  }
+  h3{
+
+    padding: 20px 0 0 0;
+  }
+}
+
+.medium{
+  border-top: solid 2px $color-medium;
+
+  h3,.octicon{
+    color: $color-medium;
+  }
+  h3{
+
+    padding: 20px 0 0 0;
+  }
+}
+
+.hot{
+  border-top: solid 2px $color-hot;
+
+  h3,.octicon{
+    color: $color-hot;
+  }
+  h3{
+
+    padding: 20px 0 0 0;
   }
 }

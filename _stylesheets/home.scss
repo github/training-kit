@@ -1,6 +1,42 @@
 /* Imports */
 @import "variables.scss";
 
+section{
+  width: 100%;
+  float: left;
+
+  & .container{
+    padding: 50px 0 50px 0;
+  }
+
+  /* Layout */
+  .hero{
+    height: 445px;
+    padding: 20px 0 0 0;
+
+
+    hgroup{
+      margin-top: 60px;
+    }
+
+    p{
+      font-size: 112.5%;
+      color: darken($color-dark, 20%);
+      margin-bottom: 30px;
+    }
+
+    .octicon{
+      font-size: 200px;
+      margin-top: 52px;
+    }
+  }
+}
+
+.figures{
+  background: url(../images/hero-home.png) no-repeat bottom center $color-dark;
+  background-size: 1350px;
+}
+
 .screen-shot{
   background: url(../images/screen-shot-slide.png) no-repeat bottom center;
   background-size: 800px;

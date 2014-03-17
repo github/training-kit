@@ -34,18 +34,17 @@ body {
   color: #222222; }
 
 h1 {
-  font-size: 350%;
+  font-size: 300%;
   font-weight: 200;
   text-rendering: optimizeLegibility; }
 
 h2 {
   font-size: 250%;
   font-weight: 200;
-  margin: 20px 0 0 0;
+  margin: 0 0 0 0;
   color: #3c3c3c; }
 
 h2 + p {
-  font-size: 115%;
   font-weight: 200;
   text-rendering: optimizeLegibility;
   line-height: 150%;
@@ -60,16 +59,26 @@ p {
   text-rendering: optimizeLegibility;
   line-height: 150%; }
 
-.button {
-  padding: 8px;
-  border: solid 1px #e8e8ea;
-  border-radius: 5px; }
+a {
+  color: #484848; }
 
 section {
   width: 100%;
-  float: left; }
+  float: left;
+  /* Layout */ }
   section .container {
-    padding: 20px 0; }
+    padding: 30px 0 30px 0; }
+  section .hero .container {
+    padding: 0;
+    margin: 0 0 0 0; }
+  section .hero hgroup {
+    margin-top: 60px; }
+  section .hero p {
+    font-size: 112.5%;
+    color: #0d3f6b;
+    margin-bottom: 30px; }
+  section .hero .octicon {
+    font-size: 300px; }
 
 code {
   font-family: "Courier New", Courier, monospace;
@@ -101,37 +110,35 @@ table {
 ul {
   margin: 0 0 0 1.5em; }
 
-nav hgroup {
-  float: left; }
-nav .logo-training-materials {
-  display: inline-block;
-  height: 26px;
-  width: 237px; }
-  nav .logo-training-materials:before {
-    content: "";
-    background: url(../images/training-materials-dark-2x.png) no-repeat top left;
-    background-size: contain;
-    height: 32px;
-    width: 237px;
-    display: block; }
-nav ul {
-  float: right;
-  margin: 0;
-  padding: 0;
-  height: 26px;
-  font-size: 14px;
-  line-height: 26px; }
-  nav ul li {
-    display: inline-block;
-    margin-left: 16px; }
-  nav ul a {
-    color: inherit;
-    font-weight: 500; }
-    nav ul a:hover {
-      color: white;
-      border-bottom: solid 2px white; }
-    nav ul a.button:hover {
-      border: solid 1px #00a5ea; }
+nav {
+  height: 46px;
+  width: 930px;
+  margin: 18px auto 0 auto; }
+  nav a {
+    text-decoration: none; }
+  nav hgroup {
+    float: left; }
+  nav .button {
+    padding: 8px; }
+  nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 26px;
+    font-size: 14px;
+    line-height: 26px; }
+    nav ul li {
+      display: inline-block;
+      margin-left: 16px; }
+    nav ul a {
+      color: inherit;
+      font-weight: 500; }
+      nav ul a:hover {
+        color: white;
+        border-bottom: solid 2px white; }
+      nav ul a.button:hover {
+        border: none;
+        box-shadow: 0 0 0 1px white; }
 
 .container {
   width: 930px;
@@ -228,10 +235,14 @@ nav ul {
   background: #222222;
   border-bottom: solid 1px #e8e8ea;
   color: white; }
-  .invert h2, .invert h3, .invert p {
-    color: #cdcdd2; }
-  .invert a {
+  .invert h2 {
+    color: #b3b3b9; }
+  .invert h3, .invert p {
     color: white; }
+  .invert a {
+    color: #cdcdd2; }
+    .invert a:hover {
+      color: white; }
 
 .grey {
   background: #f5f5f6;
@@ -247,14 +258,6 @@ nav ul {
   float: right;
   clear: right; }
 
-/* Layout */
-section .container.hero {
-  margin: 70px auto 70px auto; }
-  section .container.hero p {
-    font-size: 125%;
-    color: #b4d7f6;
-    margin: 20px 0; }
-
 .segment-content {
   width: 613.8px;
   display: inline-block; }
@@ -263,27 +266,81 @@ section .container.hero {
   width: 288.3px;
   padding: 9.3px;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   font-size: 80%;
   color: #555555; }
   .segment-icon a {
     display: block;
-    border-radius: 3px;
-    box-shadow: 0 0 0 1px #00a5ea;
-    padding: 20px;
+    text-decoration: none;
     -webkit-transition: box-shadow 150ms, color 150ms, background 150ms;
     transition: box-shadow 150ms, color 150ms, background 150ms;
     color: #00a5ea; }
-    .segment-icon a:hover {
-      box-shadow: 0 0 0 2px #1875c6;
-      color: white;
-      background: #1875c6; }
   .segment-icon .octicon {
     height: 50px;
     width: 50px;
     font-size: 30px;
     border-radius: 50%;
     text-align: center; }
+
+.button {
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #00a5ea;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none; }
+  .button:hover {
+    box-shadow: 0 0 0 1px #1875c6;
+    color: white;
+    background: #1875c6; }
+
+.big-link {
+  display: block;
+  text-align: center;
+  font-size: 120%;
+  text-decoration: none;
+  color: #1875c6;
+  font-weight: 200; }
+
+.logo-training {
+  display: inline-block;
+  height: 26px;
+  width: 108px; }
+  .logo-training:before {
+    content: "";
+    background: url(../images/training-materials-dark-2x.png) no-repeat top left;
+    background-size: contain;
+    height: 32px;
+    width: 237px;
+    display: block; }
+
+.see-thru {
+  opacity: .9; }
+
+#floating-nav {
+  position: fixed;
+  display: none;
+  z-index: 100; }
+
+.mild {
+  border-top: solid 2px #56c7e3; }
+  .mild h3, .mild .octicon {
+    color: #56c7e3; }
+  .mild h3 {
+    padding: 20px 0 0 0; }
+
+.medium {
+  border-top: solid 2px #53cda4; }
+  .medium h3, .medium .octicon {
+    color: #53cda4; }
+  .medium h3 {
+    padding: 20px 0 0 0; }
+
+.hot {
+  border-top: solid 2px #99d487; }
+  .hot h3, .hot .octicon {
+    color: #99d487; }
+  .hot h3 {
+    padding: 20px 0 0 0; }
 
 footer {
   float: left;
@@ -308,6 +365,9 @@ footer {
     margin-left: -12px;
     font-size: 24px;
     line-height: 1; }
+  footer a {
+    color: #1875c6;
+    text-decoration: none; }
 
 .site-footer-links li {
   display: inline-block;
