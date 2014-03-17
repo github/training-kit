@@ -98,30 +98,35 @@ table {
 ul {
   margin: 0 0 0 1.5em; }
 
-nav hgroup {
-  float: left; }
-nav .button {
-  padding: 8px;
-  border: solid 1px #e8e8ea;
-  border-radius: 5px; }
-nav ul {
-  float: right;
-  margin: 0;
-  padding: 0;
-  height: 26px;
-  font-size: 14px;
-  line-height: 26px; }
-  nav ul li {
-    display: inline-block;
-    margin-left: 16px; }
-  nav ul a {
-    color: inherit;
-    font-weight: 500; }
-    nav ul a:hover {
-      color: white;
-      border-bottom: solid 2px white; }
-    nav ul a.button:hover {
-      border: solid 1px #00a5ea; }
+nav {
+  height: 46px;
+  width: 930px;
+  margin: 18px auto 0 auto; }
+  nav a {
+    text-decoration: none; }
+  nav hgroup {
+    float: left; }
+  nav .button {
+    padding: 8px; }
+  nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 26px;
+    font-size: 14px;
+    line-height: 26px; }
+    nav ul li {
+      display: inline-block;
+      margin-left: 16px; }
+    nav ul a {
+      color: inherit;
+      font-weight: 500; }
+      nav ul a:hover {
+        color: white;
+        border-bottom: solid 2px white; }
+      nav ul a.button:hover {
+        border: none;
+        box-shadow: 0 0 0 1px white; }
 
 .container {
   width: 930px;
@@ -281,7 +286,7 @@ nav ul {
   padding: 20px;
   text-decoration: none; }
   .button:hover {
-    box-shadow: 0 0 0 2px #1875c6;
+    box-shadow: 0 0 0 1px #1875c6;
     color: white;
     background: #1875c6; }
 
@@ -307,13 +312,6 @@ nav ul {
 
 .see-thru {
   opacity: .9; }
-
-nav {
-  height: 46px;
-  width: 930px;
-  margin: 18px auto 0 auto; }
-  nav a {
-    text-decoration: none; }
 
 #floating-nav {
   position: fixed;

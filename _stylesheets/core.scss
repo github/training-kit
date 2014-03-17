@@ -79,14 +79,21 @@ ul{
 }
 
 nav{
+  height: 46px;
+  width: $width-desktop;
+  margin: 18px auto 0 auto;
+
+  a{
+    text-decoration: none;
+  }
+
   hgroup{
     float: left;
   }
 
   .button{
     padding: 8px;
-    border: solid 1px $mono-light;
-    border-radius: 5px;
+
   }
 
   ul{
@@ -111,7 +118,8 @@ nav{
         border-bottom: solid 2px $mono-bright;
       }
       &.button:hover{
-        border: solid 1px $color-bright;
+        border: none;
+        box-shadow: 0 0 0 1px $mono-bright;
       }
     }
   }
@@ -343,7 +351,7 @@ nav{
   text-decoration: none;
 
   &:hover{
-    box-shadow: 0 0 0 2px $color-dark;
+    box-shadow: 0 0 0 1px $color-dark;
     color: $mono-bright;
     background: $color-dark;
   }
@@ -375,16 +383,6 @@ nav{
 
 .see-thru{
   opacity: .9;
-}
-
-nav{
-  height: 46px;
-  width: $width-desktop;
-  margin: 18px auto 0 auto;
-
-  a{
-    text-decoration: none;
-  }
 }
 
 #floating-nav{
