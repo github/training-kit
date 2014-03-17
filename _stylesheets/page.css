@@ -64,9 +64,21 @@ a {
 
 section {
   width: 100%;
-  float: left; }
+  float: left;
+  /* Layout */ }
   section .container {
-    padding: 40px 0 40px 0; }
+    padding: 50px 0 50px 0; }
+  section .hero {
+    height: 485px;
+    padding: 40px 0 0 0; }
+    section .hero hgroup {
+      margin-top: 60px; }
+    section .hero p {
+      font-size: 112.5%;
+      color: #0d3f6b;
+      margin-bottom: 30px; }
+    section .hero .octicon {
+      font-size: 300px; }
 
 code {
   font-family: "Courier New", Courier, monospace;
@@ -245,15 +257,6 @@ nav {
 .right {
   float: right;
   clear: right; }
-
-/* Layout */
-.hero {
-  height: 445px; }
-  .hero hgroup {
-    margin-top: 60px; }
-  .hero p {
-    font-size: 112.5%;
-    color: #0d3f6b; }
 
 .segment-content {
   width: 613.8px;
