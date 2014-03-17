@@ -17,8 +17,6 @@
 .hero {
   background: #1875c6;
   color: #fff; }
-  .hero .container {
-    margin: 40px auto 28px auto; }
   .hero .octicon {
     color: #fff;
     background: rgba(0, 0, 0, 0.15);

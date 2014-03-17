@@ -1,5 +1,23 @@
 /* Imports */
 /* Color Definitions */
+section {
+  width: 100%;
+  float: left;
+  /* Layout */ }
+  section .container {
+    padding: 50px 0 50px 0; }
+  section .hero {
+    height: 485px;
+    padding: 20px 0 0 0; }
+    section .hero hgroup {
+      margin-top: 60px; }
+    section .hero p {
+      font-size: 112.5%;
+      color: #0d3f6b;
+      margin-bottom: 30px; }
+    section .hero .octicon {
+      font-size: 300px; }
+
 .screen-shot {
   background: url(../images/screen-shot-slide.png) no-repeat bottom center;
   background-size: 800px;
