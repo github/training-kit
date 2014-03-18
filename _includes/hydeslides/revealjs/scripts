@@ -16,7 +16,8 @@
 		// Optional libraries used to extend on reveal.js
 		dependencies: [
 			{ src: 'dependencies/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-			{ src: 'dependencies/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			{ src: 'dependencies/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'dependencies/revealjs/plugin/zoom-js/zoom.js', condition: function() { return !!document.body.classList; } }
 		]
 	});
 
