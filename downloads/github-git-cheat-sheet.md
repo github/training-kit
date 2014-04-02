@@ -20,10 +20,10 @@ http://git-scm.com
 Configure user information for all local repositories
 
 ```git config --global user.name "[name]"```
-Set your name that will be recorded in commit transactions
+Set the name you want attached to your commit transactions
 
 ```git config --global user.email "[email address]"```
-Set your email address that will be  saved in commit transitions
+Set the email you want attached to your commit transactions
 
 ```git config --global color.ui auto```
 Enable helpful colorization of command line output
