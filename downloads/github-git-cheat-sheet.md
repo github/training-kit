@@ -6,24 +6,24 @@ Git is the open source distributed version control system that facilitates GitHu
 GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced  scenarios.
 
 ### GitHub for Windows
-https://windows.github.com
+http://windows.github.com
 
 ### GitHub for Mac
-https://mac.github.com
+http://mac.github.com
 
 Git distributions for Linux and POSIX systems are available on the official Git SCM web site.
 
-###Git for All Platforms
+###Git for all platforms
 http://git-scm.com
 
 ## Configure tooling
 Configure user information for all local repositories
 
 ```git config --global user.name "[name]"```
-Set your name that will be recorded for commit transactions
+Set the name you want attached to your commit transactions
 
 ```git config --global user.email "[email address]"```
-Set your email address that will be  saved for commit transations
+Set the email you want attached to your commit transactions
 
 ```git config --global color.ui auto```
 Enable helpful colorization of command line output
@@ -54,7 +54,7 @@ Snapshot the file in preparation for versioning
 Show file differences between staging and the last file version
 
 ```git reset [file]```
-Remove the file from the staging area
+Unstage the file, but preserve its contents
 
 ```git commit -m"[descriptive message]"```
 Record file snapshots permanently in version history
@@ -63,16 +63,16 @@ Record file snapshots permanently in version history
 Name a series of commits and combine completed efforts
 
 ```git branch```
-List all local branches to the current repository
+List all local branches in the current repository
 
 ```git branch [branch-name]```
 Create a new branch
 
 ```git checkout [branch-name]```
-Switch branches with respect to its specific commits
+Switch to the specified branch and update working directory
 
 ```git merge [branch-name]```
-Combine the specified branch’s history into the current one
+Combine the specified branch’s history into the current branch
 
 ```git branch -d [branch-name]```
 Delete the specified branch
@@ -82,10 +82,10 @@ Delete the specified branch
 Relocate and remove versioned files
 
 ```git rm [file]```
-Delete the file from the project prepare the removal for commit
+Delete the file from the working directory and stage the deletion
 
 ```git rm --cached [file]```
-Remove the file from version control but keep in project directory
+Remove from version control but preserve the file locally
 
 ```git mv [file-original] [file-renamed]```
 Change the filename and prepare it for commit
@@ -98,49 +98,49 @@ Exclude temporary files and paths
 build/
 temp-*
 ```
-Create a _.gitignore_ text file supress accidental versioning of files and paths matching the specified glob patterns
+A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
 
 ```git ls-files --other --ignored --exclude-standard```
-List all ignore pattern matched files in project
+List all ignored files in this project
 
 ## Save fragments
 Shelve and restore incomplete changes
 
 ```git stash```
-Temporarily store all modified, tracked files
+Temporarily store all modified tracked files
 
 ```git stash pop```
-Restore the most recent stashed files
+Restore the most recently stashed files
 
 ```git stash list```
-List all shelved changes
+List all stashed changesets
 
 ```git stash drop```
-Discard the most recent stashed files
+Discard the most recently stashed changeset
 
 ## Review history
 Browse and inspect the evolution of project files
 
 ```git log```
-List all version history for the current branch
+List version history for the current branch
 
 ```git log --follow [file]```
-List version history for a file and possible renames
+List version history for a file, including renames
 
 ```git diff [first-branch]...[second-branch]```
 Show content differences between two branches
 
 ```git show [commit]```
-Output all details of the specified commit
+Output metadata and content changes of the specified commit
 
 ## Redo commits
 Erase mistakes and craft replacement history
 
 ```git reset [commit]```
-Undo all commits after commit while preserving changes
+Undo all commits after [commit], preserving changes locally
 
 ```git reset --hard [commit]```
-Discard all history and changes back to specified commit
+Discard all history and changes back to the specified commit
 
 ## Synchronize changes
 Register a repository bookmark and exchange version history
@@ -155,7 +155,7 @@ Combine bookmark’s branch into into current local brancha
 Upload all local branch commits to GitHub
 
 ```git pull```
-Sychronize bookmark history and current branch all at once
+Sychronize bookmark history and incorporate current branch changes
 
 ---
 
