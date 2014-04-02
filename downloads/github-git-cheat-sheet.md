@@ -149,13 +149,13 @@ Register a repository bookmark and exchange version history
 Download all history from the repository bookmark
 
 ```git merge [bookmark]/[branch]```
-Combine bookmark’s branch into into current local brancha
+Combine bookmark’s branch into into current local branch
 
 ```git push [alias] [branch]```
 Upload all local branch commits to GitHub
 
 ```git pull```
-Sychronize bookmark history and incorporate current branch changes
+Synchronize bookmark history and incorporate current branch changes
 
 ---
 
