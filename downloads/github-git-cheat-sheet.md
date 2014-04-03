@@ -224,7 +224,7 @@ Uploads all local branch commits to GitHub
 
 ```$ git pull```
 
-Synchronizes bookmark history and incorporates current branch changes
+Downloads bookmark history and incorporates changes
 
 ---
 
