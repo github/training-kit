@@ -1,9 +1,9 @@
 # GitHub Git Cheat Sheet
 
-Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly-used Git command line instructions for quick reference.
+Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
 
 ## Install git
-GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced  scenarios.
+GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
 
 ### GitHub for Windows
 http://windows.github.com
@@ -19,78 +19,116 @@ http://git-scm.com
 ## Configure tooling
 Configure user information for all local repositories
 
-```git config --global user.name "[name]"```
-Set the name you want attached to your commit transactions
 
-```git config --global user.email "[email address]"```
-Set the email you want attached to your commit transactions
+```$ git config --global user.name "[name]"```
 
-```git config --global color.ui auto```
-Enable helpful colorization of command line output
+Sets the name you want attached to your commit transactions
+
+
+```$ git config --global user.email "[email address]"```
+
+Sets the email you want attached to your commit transactions
+
+
+```$ git config --global color.ui auto```
+
+Enables helpful colorization of command line output
 
 
 ## Create repositories
 Start a new repository or obtain one from an existing URL
 
-```git init [project-name]```
-Create a new local repository with the specified name
 
-```git clone [url]```
-Download a project and its entire version history
+```$ git init [project-name]```
+
+Creates a new local repository with the specified name
+
+
+```$ git clone [url]```
+
+Downloads a project and its entire version history
 
 ## Make changes
 Review edits and craft a commit transaction
 
-```git status```
-List all new or modified files to be committed
 
-```git diff```
-Show file differences not yet staged
+```$ git status```
 
-```git add [file]```
-Snapshot the file in preparation for versioning
+Lists all new or modified files to be committed
 
-```git diff --staged```
-Show file differences between staging and the last file version
 
-```git reset [file]```
-Unstage the file, but preserve its contents
+```$ git diff```
 
-```git commit -m"[descriptive message]"```
-Record file snapshots permanently in version history
+Shows file differences not yet staged
+
+
+```$ git add [file]```
+
+Snapshots the file in preparation for versioning
+
+
+```$ git diff --staged```
+
+Shows file differences between staging and the last file version
+
+
+```$ git reset [file]```
+
+Unstages the file, but preserves its contents
+
+
+```$ git commit -m"[descriptive message]"```
+
+Records file snapshots permanently in version history
 
 ## Group changes
 Name a series of commits and combine completed efforts
 
-```git branch```
-List all local branches in the current repository
 
-```git branch [branch-name]```
-Create a new branch
+```$ git branch```
 
-```git checkout [branch-name]```
-Switch to the specified branch and update working directory
-
-```git merge [branch-name]```
-Combine the specified branch’s history into the current branch
-
-```git branch -d [branch-name]```
-Delete the specified branch
+Lists all local branches in the current repository
 
 
-## Refactor filenames
+```$ git branch [branch-name]```
+
+Creates a new branch
+
+
+```$ git checkout [branch-name]```
+
+Switches to the specified branch and updates working directory
+
+
+```$ git merge [branch-name]```
+
+Combines the specified branch’s history into the current branch
+
+
+```$ git branch -d [branch-name]```
+
+Deletes the specified branch
+
+
+## Refactor file names
 Relocate and remove versioned files
 
-```git rm [file]```
-Delete the file from the working directory and stage the deletion
 
-```git rm --cached [file]```
-Remove from version control but preserve the file locally
+```$ git rm [file]```
 
-```git mv [file-original] [file-renamed]```
-Change the filename and prepare it for commit
+Deletes the file from the working directory and stages the deletion
 
-## Supress tracking
+
+```$ git rm --cached [file]```
+
+Removes from version control but preserves the file locally
+
+
+```$ git mv [file-original] [file-renamed]```
+
+Changes the file name and prepare it for commit
+
+## Suppress tracking
 Exclude temporary files and paths
 
 ```
@@ -98,64 +136,95 @@ Exclude temporary files and paths
 build/
 temp-*
 ```
+
 A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
 
-```git ls-files --other --ignored --exclude-standard```
-List all ignored files in this project
+
+```$ git ls-files --other --ignored --exclude-standard```
+
+Lists all ignored files in this project
 
 ## Save fragments
 Shelve and restore incomplete changes
 
-```git stash```
-Temporarily store all modified tracked files
 
-```git stash pop```
-Restore the most recently stashed files
+```$ git stash```
 
-```git stash list```
-List all stashed changesets
+Temporarily stores all modified tracked files
 
-```git stash drop```
-Discard the most recently stashed changeset
+
+```$ git stash pop```
+
+Restores the most recent stashed files
+
+
+```$ git stash list```
+
+Lists all stashed changesets
+
+
+```$ git stash drop```
+
+Discards the most recently stashed changeset
 
 ## Review history
 Browse and inspect the evolution of project files
 
-```git log```
-List version history for the current branch
 
-```git log --follow [file]```
-List version history for a file, including renames
+```$ git log```
 
-```git diff [first-branch]...[second-branch]```
-Show content differences between two branches
+Lists version history for the current branch
 
-```git show [commit]```
-Output metadata and content changes of the specified commit
+
+```$ git log --follow [file]```
+
+Lists version history for a file, including renames
+
+
+```$ git diff [first-branch]...[second-branch]```
+
+Shows content differences between two branches
+
+
+```$ git show [commit]```
+
+Outputs metadata and content changes of the specified commit
 
 ## Redo commits
 Erase mistakes and craft replacement history
 
-```git reset [commit]```
-Undo all commits after [commit], preserving changes locally
 
-```git reset --hard [commit]```
-Discard all history and changes back to the specified commit
+```$ git reset [commit]```
+
+Undoes all commits after [commit], preserving changes locally
+
+
+```$ git reset --hard [commit]```
+
+Discards all history and changes back to the specified commit
 
 ## Synchronize changes
 Register a repository bookmark and exchange version history
 
-```git fetch [bookmark]```
-Download all history from the repository bookmark
 
-```git merge [bookmark]/[branch]```
-Combine bookmark’s branch into into current local branch
+```$ git fetch [bookmark]```
 
-```git push [alias] [branch]```
-Upload all local branch commits to GitHub
+Downloads all history from the repository bookmark
 
-```git pull```
-Synchronize bookmark history and incorporate current branch changes
+
+```$ git merge [bookmark]/[branch]```
+
+Combines bookmark’s branch into current local branch
+
+
+```$ git push [alias] [branch]```
+
+Uploads all local branch commits to GitHub
+
+
+```$ git pull```
+
+Synchronizes bookmark history and incorporates current branch changes
 
 ---
 
