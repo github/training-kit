@@ -3,7 +3,7 @@
 Git is the open-source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
 
 ## Install git
-GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced  scenarios.
+GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
 
 ### GitHub for Windows
 http://windows.github.com
@@ -36,7 +36,7 @@ Enables helpful colorization of command line output
 
 
 ## Create repositories
-Starts a new repository or obtain one from an existing URL
+Start a new repository or obtain one from an existing URL
 
 
 ```$ git init [project-name]```
@@ -49,7 +49,7 @@ Creates a new local repository with the specified name
 Downloads a project and its entire version history
 
 ## Make changes
-Reviews edits and craft a commit transaction
+Review edits and craft a commit transaction
 
 
 ```$ git status```
@@ -74,7 +74,7 @@ Shows file differences between staging and the last file version
 
 ```$ git reset [file]```
 
-Unstages the file, but preserve its contents
+Unstages the file, but preserves its contents
 
 
 ```$ git commit -m"[descriptive message]"```
@@ -82,7 +82,7 @@ Unstages the file, but preserve its contents
 Records file snapshots permanently in version history
 
 ## Group changes
-Names a series of commits and combine completed efforts
+Name a series of commits and combine completed efforts
 
 
 ```$ git branch```
@@ -97,7 +97,7 @@ Creates a new branch
 
 ```$ git checkout [branch-name]```
 
-Switches to the specified branch and update working directory
+Switches to the specified branch and updates working directory
 
 
 ```$ git merge [branch-name]```
@@ -111,25 +111,25 @@ Deletes the specified branch
 
 
 ## Refactor file names
-Relocates and removes versioned files
+Relocate and remove versioned files
 
 
 ```$ git rm [file]```
 
-Deletes the file from the working directory and stage the deletion
+Deletes the file from the working directory and stages the deletion
 
 
 ```$ git rm --cached [file]```
 
-Removes from version control but preserve the file locally
+Removes from version control but preserves the file locally
 
 
 ```$ git mv [file-original] [file-renamed]```
 
 Changes the file name and prepare it for commit
 
-## Supress tracking
-Excludes temporary files and paths
+## Suppress tracking
+Exclude temporary files and paths
 
 ```
 *.log
@@ -168,7 +168,7 @@ Lists all stashed changesets
 Discards the most recently stashed changeset
 
 ## Review history
-Browses and inspect the evolution of project files
+Browse and inspect the evolution of project files
 
 
 ```$ git log```
@@ -191,7 +191,7 @@ Shows content differences between two branches
 Outputs metadata and content changes of the specified commit
 
 ## Redo commits
-Erases mistakes and craft replacement history
+Erase mistakes and craft replacement history
 
 
 ```$ git reset [commit]```
@@ -204,7 +204,7 @@ Undoes all commits after [commit], preserving changes locally
 Discards all history and changes back to the specified commit
 
 ## Synchronize changes
-Registers a repository bookmark and exchange version history
+Register a repository bookmark and exchange version history
 
 
 ```$ git fetch [bookmark]```
@@ -214,7 +214,7 @@ Downloads all history from the repository bookmark
 
 ```$ git merge [bookmark]/[branch]```
 
-Combines bookmark’s branch into into current local branch
+Combines bookmark’s branch into current local branch
 
 
 ```$ git push [alias] [branch]```
@@ -224,7 +224,7 @@ Uploads all local branch commits to GitHub
 
 ```$ git pull```
 
-Synchronizes bookmark history and incorporate current branch changes
+Synchronizes bookmark history and incorporates current branch changes
 
 ---
 
