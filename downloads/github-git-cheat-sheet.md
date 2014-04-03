@@ -110,7 +110,7 @@ Combines the specified branch’s history into the current branch
 Deletes the specified branch
 
 
-## Refactor filenames
+## Refactor file names
 Relocates and removes versioned files
 
 
@@ -126,7 +126,7 @@ Removes from version control but preserve the file locally
 
 ```$ git mv [file-original] [file-renamed]```
 
-Changes the filename and prepare it for commit
+Changes the file name and prepare it for commit
 
 ## Supress tracking
 Excludes temporary files and paths
@@ -155,7 +155,7 @@ Temporarily stores all modified tracked files
 
 ```$ git stash pop```
 
-Restores the most recently stashed files
+Restores the most recent stashed files
 
 
 ```$ git stash list```
