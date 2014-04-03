@@ -121,7 +121,7 @@ Deletes the file from the working directory and stages the deletion
 
 ```$ git rm --cached [file]```
 
-Removes from version control but preserves the file locally
+Removes the file from version control but preserves the file locally
 
 
 ```$ git mv [file-original] [file-renamed]```
