@@ -111,7 +111,7 @@ Deletes the specified branch
 
 
 ## Refactor filenames
-Relocates and remove versioned files
+Relocates and removes versioned files
 
 
 ```$ git rm [file]```
