@@ -19,75 +19,75 @@ http://git-scm.com
 ## Configure tooling
 Configure user information for all local repositories
 
-```git config --global user.name "[name]"```
+```$ git config --global user.name "[name]"```
 Set the name you want attached to your commit transactions
 
-```git config --global user.email "[email address]"```
+```$ git config --global user.email "[email address]"```
 Set the email you want attached to your commit transactions
 
-```git config --global color.ui auto```
+```$ git config --global color.ui auto```
 Enable helpful colorization of command line output
 
 
 ## Create repositories
 Start a new repository or obtain one from an existing URL
 
-```git init [project-name]```
+```$ git init [project-name]```
 Create a new local repository with the specified name
 
-```git clone [url]```
+```$ git clone [url]```
 Download a project and its entire version history
 
 ## Make changes
 Review edits and craft a commit transaction
 
-```git status```
+```$ git status```
 List all new or modified files to be committed
 
-```git diff```
+```$ git diff```
 Show file differences not yet staged
 
-```git add [file]```
+```$ git add [file]```
 Snapshot the file in preparation for versioning
 
-```git diff --staged```
+```$ git diff --staged```
 Show file differences between staging and the last file version
 
-```git reset [file]```
+```$ git reset [file]```
 Unstage the file, but preserve its contents
 
-```git commit -m"[descriptive message]"```
+```$ git commit -m"[descriptive message]"```
 Record file snapshots permanently in version history
 
 ## Group changes
 Name a series of commits and combine completed efforts
 
-```git branch```
+```$ git branch```
 List all local branches in the current repository
 
-```git branch [branch-name]```
+```$ git branch [branch-name]```
 Create a new branch
 
-```git checkout [branch-name]```
+```$ git checkout [branch-name]```
 Switch to the specified branch and update working directory
 
-```git merge [branch-name]```
+```$ git merge [branch-name]```
 Combine the specified branch’s history into the current branch
 
-```git branch -d [branch-name]```
+```$ git branch -d [branch-name]```
 Delete the specified branch
 
 
 ## Refactor filenames
 Relocate and remove versioned files
 
-```git rm [file]```
+```$ git rm [file]```
 Delete the file from the working directory and stage the deletion
 
-```git rm --cached [file]```
+```$ git rm --cached [file]```
 Remove from version control but preserve the file locally
 
-```git mv [file-original] [file-renamed]```
+```$ git mv [file-original] [file-renamed]```
 Change the filename and prepare it for commit
 
 ## Supress tracking
@@ -100,61 +100,61 @@ temp-*
 ```
 A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
 
-```git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --other --ignored --exclude-standard```
 List all ignored files in this project
 
 ## Save fragments
 Shelve and restore incomplete changes
 
-```git stash```
+```$ git stash```
 Temporarily store all modified tracked files
 
-```git stash pop```
+```$ git stash pop```
 Restore the most recently stashed files
 
-```git stash list```
+```$ git stash list```
 List all stashed changesets
 
-```git stash drop```
+```$ git stash drop```
 Discard the most recently stashed changeset
 
 ## Review history
 Browse and inspect the evolution of project files
 
-```git log```
+```$ git log```
 List version history for the current branch
 
-```git log --follow [file]```
+```$ git log --follow [file]```
 List version history for a file, including renames
 
-```git diff [first-branch]...[second-branch]```
+```$ git diff [first-branch]...[second-branch]```
 Show content differences between two branches
 
-```git show [commit]```
+```$ git show [commit]```
 Output metadata and content changes of the specified commit
 
 ## Redo commits
 Erase mistakes and craft replacement history
 
-```git reset [commit]```
+```$ git reset [commit]```
 Undo all commits after [commit], preserving changes locally
 
-```git reset --hard [commit]```
+```$ git reset --hard [commit]```
 Discard all history and changes back to the specified commit
 
 ## Synchronize changes
 Register a repository bookmark and exchange version history
 
-```git fetch [bookmark]```
+```$ git fetch [bookmark]```
 Download all history from the repository bookmark
 
-```git merge [bookmark]/[branch]```
+```$ git merge [bookmark]/[branch]```
 Combine bookmark’s branch into into current local branch
 
-```git push [alias] [branch]```
+```$ git push [alias] [branch]```
 Upload all local branch commits to GitHub
 
-```git pull```
+```$ git pull```
 Synchronize bookmark history and incorporate current branch changes
 
 ---
