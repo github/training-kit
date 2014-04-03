@@ -116,12 +116,12 @@ Relocate and remove versioned files
 
 ```$ git rm [file]```
 
-Deletes the `[file]` from the working directory and stages the deletion
+Deletes the file from the working directory and stages the deletion
 
 
 ```$ git rm --cached [file]```
 
-Removes the `[file]` from version control but preserves the file locally
+Removes the file from version control but preserves the file locally
 
 
 ```$ git mv [file-original] [file-renamed]```
@@ -178,7 +178,7 @@ Lists version history for the current branch
 
 ```$ git log --follow [file]```
 
-Lists version history for a file, including renames
+Lists version history for the file, including renames
 
 
 ```$ git diff [first-branch]...[second-branch]```
@@ -196,7 +196,7 @@ Erase mistakes and craft replacement history
 
 ```$ git reset [commit]```
 
-Undoes all commits after [commit], preserving changes locally
+Undoes all commits after `[commit]`, preserving changes locally
 
 
 ```$ git reset --hard [commit]```
