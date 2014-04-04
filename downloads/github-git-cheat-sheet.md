@@ -13,7 +13,7 @@ http://mac.github.com
 
 Git distributions for Linux and POSIX systems are available on the official Git SCM web site.
 
-###Git for all platforms
+### Git for all platforms
 http://git-scm.com
 
 ## Configure tooling
@@ -232,4 +232,4 @@ Downloads bookmark history and incorporates changes
 Learn more about using GitHub and Git. Email the Training Team or visit our web site for learning event schedules and private class availability.
 
 * training@github.com
-* trianing.github.com
+* training.github.com
