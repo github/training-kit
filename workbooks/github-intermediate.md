@@ -1,11 +1,13 @@
 ---
 layout: workbook
-title: GitHub Intermediate Workbook: Leveraging Git and GitHub from the command line
+title: GitHub Intermediate Workbook • Leveraging Git and GitHub from the command line
 description: A student and teacher outline to the GitHub Advanced class.
 ---
 
 
 ## Git Configuration
+
+### Summary
 * Scopes
 * Excludesfile
 
@@ -18,6 +20,8 @@ git config --global color.ui auto
 ```
 
 ## Starting on the command line
+
+### Summary
 * New project
 * Existing project
 * Cloning
@@ -32,6 +36,8 @@ git clone [url] [optional-name]
 ```
 
 ## Repository internals
+
+### Summary
 * Exploring fundamentals
   * `.git`
     * All history stored locally
@@ -44,6 +50,8 @@ git clone [url] [optional-name]
 * Efficiency of storage (zlib)
 
 ## Commits at the command line
+
+### Summary
 * Three stage thinking
 
 ```
@@ -54,6 +62,8 @@ git commit -m"<message>"
 ```
 
 ## Comparing changes
+
+### Summary
 * Basic diff command
 * Compare only a subset of paths
 * Compare against specific revision
@@ -69,6 +79,8 @@ git diff --stat -w --color-words
 ```
 
 ## Reviewing history
+
+### Summary
 * Basic review
 * Narrowing results
 * Filtering by message
@@ -91,6 +103,8 @@ git log --decorate
 ```
 
 ## Branching on the command line
+
+### Summary
 * Creating feature or prototype
 * Showing local branches
 * Creating
@@ -107,6 +121,8 @@ git branch --no-merged
 ```
 
 ## Switching branches & discarding changes
+
+### Summary
 * `Checkout` as a multi-use command
 * Changing branches
 * Exploring detached `HEAD`s
@@ -120,6 +136,8 @@ git checkout [ref]
 ```
 
 ## Remotes
+
+### Summary
 * Explain convention of `origin`
 * Aliasing, bookmark to server URL
 * Removing connections
@@ -132,6 +150,8 @@ git remote rm <name>
 ```
 
 ## Publishing changes
+
+### Summary
 * Publishing commit history
 * Showing remote branches
 * Showing all branches
@@ -145,6 +165,8 @@ git branch -a`
 ```
 
 ## Merging at the command line
+
+### Summary
 * Folding in branches
 * Resolving conflicting merges (manually edit)
 * Resolving file with shortcuts
@@ -166,6 +188,8 @@ git commit
 ```
 
 ## Fetching changes
+
+### Summary
 * Comparing without merge
 * Merging selectively
 
@@ -175,6 +199,8 @@ git branch -a
 ```
 
 ## Removing files
+
+### Summary
 * Git observation of filesystem removals
 * Removing files
 * Un-tracking files
@@ -186,6 +212,8 @@ git rm --cached -- <filename>
 ```
 
 ## Moving files
+
+### Summary
 * Moving generates new tree, not a new blob
 * Similarity Index engaged when committing
 
@@ -199,6 +227,8 @@ git log --follow <file>
 ```
 
 ## Undoing commits
+
+### Summary
 * Generating commit to restore past patch set
 * Clearing index and working directory
 * Reseting index, updating working directory
@@ -215,6 +245,8 @@ git reset --soft
 ```
 
 ## Ignoring temporary files
+
+### Summary
 * Creating a .gitignore
 * Adding patterns
 * Within _sub directories_
@@ -226,6 +258,8 @@ git config --global core.excludesfile
 ```
 
 ## Stashing in-progress changes
+
+### Summary
 * Temporarily store tracked changes
 * Restoring by popping
 * Move aside untracked files
@@ -237,6 +271,8 @@ git stash --include-untracked
 ```
 
 ## Recovering almost anything
+
+### Summary
 * Tracing Git action "history"
 * Explore last actions
 
@@ -248,14 +284,20 @@ git checkout HEAD@{1}
 ```
 
 ## Pull requests
+
+### Summary
 * Pushing branch to repo
 * Creating GH pull request
 
 ## GitHub Issues
+
+### Summary
 * Basic use cases
 * Cross referencing with `#` and `username/reponame#ISSUE`
 
 ## Command shortcut aliases
+
+### Summary
 * Faster to type
 * Quicker access to complex commands
 * Compatible with zsh completions

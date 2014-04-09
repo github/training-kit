@@ -1,11 +1,13 @@
 ---
 layout: workbook
-title: GitHub Advanced Workbook: Mastering all of Git and GitHub
+title: GitHub Advanced Workbook • Mastering all of Git and GitHub
 description: A student and teacher outline to the GitHub Advanced class.
 ---
 
 
 ## Tagging and releases
+
+### Summary
 * Why create a tag through the web UI?
 * Not a branch HEAD. Points to a specific commit.
 * Attaching binaries to releases (Web UI and API)
@@ -35,6 +37,8 @@ git push origin :<tag-name-to-delete>
 
 
 ## Project management on GitHub
+
+### Summary
 * Effective milestone
 * Links to Milestones
 * Pulse
@@ -43,6 +47,8 @@ git push origin :<tag-name-to-delete>
 * Issue dashboard (cross-repo view)
 
 ## Visualizations on GitHub
+
+### Summary
 * Branches page
 * Compare view
 * Compare with `master@{yesterday}` refs
@@ -50,18 +56,24 @@ git push origin :<tag-name-to-delete>
 * Network members
 
 ## Advanced Pull Request use
+
+### Summary
 * PRs to horizontal contributors
 * PRs multiple levels up
 * Converting issues to PRs
 * PRs as Issues with code
 
 ## GitHub API
+
+### Summary
 * Requests
 * Authorization
 * Octokit wrappers
 * Hypermedia as the Engine of Application State (HATEOS)
 
 ## Service hooks and Webhooks
+
+### Summary
 * Pre-built service hooks
 * Custom webhooks
 * Specifying webhook events
@@ -69,9 +81,16 @@ git push origin :<tag-name-to-delete>
 
 ## Staging Shortcuts
 
+### Summary
+* Add parts of files
+* Add files interactively
+
 ```
 # Add in patch mode
 git add -p
+
+# Add interactively
+git add -i
 
 # The GitHub for Mac desktop client
 github
@@ -79,12 +98,18 @@ github
 
 ## Committing Efficiencies
 
+### Summary
+* Add and commit
+* Amend existing commit
+
 ```
 git commit -a -m"message"
 git commit --amend
 ```
 
 ## GitHub
+
+### Summary
 * Closing Issues and PR by commit number
 * Retrieving PRs locally to resolve conflicts
 (without locally merging to target branch)
@@ -94,6 +119,11 @@ git commit -m "Your message closes #[issue]"
 ```
 
 ## Stashing with precision
+
+### Summary
+* Name your stash
+* List stashes
+* Use specific stashes
 
 ```
 git stash save "<description>"
@@ -107,6 +137,8 @@ git stash -p
 ```
 
 ## Cherry-pick
+
+### Summary
 * Why you want to
 * What happens
 * Tracing any cherry-picks
@@ -118,6 +150,7 @@ git branch --contains
 
 ## History analysis
 
+### Summary
 * Commit ranges to review branch differences
 * Verifying merges have completed
 
@@ -129,6 +162,8 @@ git name-rev [commit-ref]
 ```
 
 ## Remote reviewing, synchronization
+
+### Summary
 * Determine what's on the upstream
 * Identify out-of-date branches
 * Review Pull Requests
@@ -159,6 +194,7 @@ git branch <newbranchname> FETCH_HEAD
 
 ## Upstream maintenance
 
+### Summary
 * Remove non-matching _local_ remote branches
 * Remove non-matching remote upstream branches
 * Remove only remote upstream branch
@@ -171,6 +207,8 @@ git push origin :<branch-name>
 ```
 
 ## Rebasing
+
+### Summary
 * Branch Preparation
 * Rebasing __is not__ merging
 
@@ -192,6 +230,8 @@ git rebase --continue
 ```
 
 ## Interactive Rebasing
+
+### Summary
 * Reorder commits
 * Rewrite history entirely
 * Discard commits
@@ -205,6 +245,7 @@ git rebase -i [remote]/[branch]
 
 ## Rebasing and beyond
 
+### Summary
 * Changing where branch history begins
 * Moving history around
 
@@ -229,6 +270,8 @@ merge --squash [branch]
 ```
 
 ## Revising history safely
+
+### Summary
 * Safely resetting local history
 * Guaranteeing remote history is not lost
 
@@ -237,6 +280,8 @@ git reset --[option] [remote]/[branch]
 ```
 
 ## Cleaning
+
+### Summary
 * Purge untracked in working dir
 * for directories
 * for removing ignored files (useful for tidying build artifacts)
@@ -248,6 +293,8 @@ git clean -fx
 ```
 
 ## Treeish / commitish
+
+### Summary
 * Simple ways of describing history points
 * Easier-to-describe and understand numerically
 
@@ -259,7 +306,13 @@ HEAD~2
 
 ## Diff Tool
 
+### Summary
 * [P4Merge](http://www.perforce.com/downloads/Perforce-Software-Version-Management/complete_list/Free%2020-User%20Edition#10)
+* Opendiff
+* KDiff
+* Kaleidoscope
+* Vimdiff
+* Meld
 
 ```
 git difftool --tool-help
@@ -282,6 +335,9 @@ git config difftool.<tool-name>.cmd "<path [args]>"
 
 ## Merge Tool
 
+### Summary
+* Same as difftool, but 3-way
+
 ```
 git config --global merge.tool p4mergetool
 
@@ -302,6 +358,7 @@ git config --global mergetool.keepBackup false
 
 ## GitHub CLI
 
+### Summary
 * API for interfacing with your repos
 * Where config/credentials are stored
 * Reasons for usage
@@ -316,11 +373,17 @@ gh browse
 
 ## ReReRe
 
+### Summary
+* Reuse recorded resolution
+
 ```
 git config rerere.enable true
 ```
 
 ## Credential Caching
+
+### Summary
+* Save passwords securely
 
 ```
 git config --global credential.helper cache
@@ -331,7 +394,10 @@ git credential-cache exit
 
 ## SSH Key (Optional)
 
-* Upload to GitHub
+### Summary
+* Classic authentication with GitHub
+* Generate key
+* Upload public key to GitHub
 
 ```
 ssh-keygen -t rsa -C"Anything..."
@@ -340,6 +406,7 @@ ssh -T git@github.com
 
 ## Default/Out-of-Box GUIs
 
+### Summary
 * for staging, committing
 * for browsing history
 
