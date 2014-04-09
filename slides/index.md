@@ -31,7 +31,7 @@ showinnav: true
 
 <section>
 <p>
-<a href="git-advanced.html">Git Advanced</a></br>
+<a href="github-advanced.html">Git Advanced</a></br>
   <em>Advanced Git techniques for the experienced Git user</em>
 </p>
 </section>
