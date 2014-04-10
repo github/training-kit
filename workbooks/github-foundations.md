@@ -107,6 +107,7 @@ Git can be installed as a unified GitHub GUI and command line or merely via a st
 
 ### Summary
 * Forking
+    * <a href="https://guides.github.com/overviews/forking/" class="Guide to Forking</a>
     * Reason for forks
     * What it encourages
     * How it insulates

@@ -5,6 +5,131 @@ description: This student and teacher workbook will be your companion to the Git
 
 ---
 
+## Common branching strategies
+
+### Summary
+* GitHub Flow
+* Branch-per-feature
+* Compatibility with Pull Requests
+* git-flow
+* Long-term release support
+
+#### Details
+These are called Branching Strategies, but are just as easily called *Team Collaboration Techniques* in an abstract discussion of version control.
+
+* Branch by feature
+* git-flow
+    *  Made popular on Git by Vincent Driessen and his NVIE site
+    * [Git-Flow: A Successful Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
+    * [Git-Flow Source](https://github.com/nvie/gitflow)
+    * Too many levels?
+    * GH prefers Simplest thing that works.
+* GitHub Flow
+    * [How GitHub Develops](https://github.com/blog/919-how-github-develops)
+    * [GitHub Flow blog post](http://scottchacon.com/2011/08/31/github-flow.html)
+    * Works well with Pull Requests when one-layer deep
+    * Think of features much smaller than typical
+* Git's Model
+    * [Git Maintenance Notes](https://sites.google.com/site/maintnotes/)
+    * [Git Workflows](http://www.kernel.org/pub/software/scm/git/docs/gitworkflows.html)
+    * [Git's Source Code](https://github.com/git/git)
+    * Branches
+        * master
+        * maint
+        * next (graduation from pu)
+        * pu (can be rebased)
+        * html
+        * man
+    * _"A trivial and safe enhancement goes directly on top of 'master'."_
+    * _"The two branches "master" and "maint" are never rewound, and "next" usually will not be either"_
+    * _"When a topic that was in 'pu' proves to be in testable shape, it graduates to 'next'."_
+* Version numbers
+    * `major.minor.fix`
+    * [Semantic versioning](http://semver.org)
+* Rebase before sharing (sending a Pull Request)
+    * [Contributing to Spring Social](https://github.com/SpringSource/spring-social/wiki/Contributing)
+    * [How To Merge Without Fear](http://blog.springsource.org/2010/12/21/git-and-social-coding-how-to-merge-without-fear/)
+    * [What to do when things get complicated](http://blog.springsource.org/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/)
+
+## Applying branching patterns
+
+### Summary
+* Breaking features down into pieces
+* Feedback early on Pull Requests
+* @mentioning teams instead of individuals
+* Continuous integration
+
+## Branch pull options
+### Summary
+* Fetch single branch
+* Merge on pull
+* Rebase on pull
+* `FETCH_HEAD`
+* `MERGE_HEAD`
+
+## Inserting Commits Into Existing History
+### Summary
+* Rebase interactive
+* Can include cherry-pick
+* Must remember to continue the rebase
+* Alters history
+
+## Undoing and Re-doing Almost Anything
+### Summary
+* The reflog for hard resets
+* Cherry-pick for retrival from the trash
+* Amending a commit
+* Rebasing a commit
+* Resetting to a past commit (mixed, soft, hard)
+* Resetting to an upstream point
+* Aborting a merge
+* Aborting a rebase
+
+#### Details
+
+To correct the prior commit:
+
+```
+$ git commit --amend -m "updated message"
+```
+
+
+## History searches with log
+### Summary
+* Log is like a search engine
+* Search for person, time, change, contents, message
+* Dramatically narrows search time
+
+#### Details
+```
+$ git log --author Matthew
+$ git log --since 2.days.ago
+$ git log -S myvar
+$ git log --grep=Fix
+$ git log --follow --stat --diff-filter=A -- <filename>
+```
+
+## Commit data structure internals
+### Summary
+* Directed acyclic graph
+* Parent references (0, 1, many)
+* Similar to a linked list
+* Orphans (and garbage collection)
+* Visualizing orphans
+* Garbage collection triggers
+
+## Building Custom Commands via Aliases
+### Summary
+* Git-specific aliases are portable
+* Auto-completion on some shells
+* Can be Git commands or shell commands
+* [Matthew's `.gitconfig`](https://github.com/matthewmccullough/dotfiles/blob/master/gitconfig#L41-L182)
+
+#### Details
+
+```
+$ git config --global alias.s 'status -s'
+```
 
 ## Tagging and releases
 
@@ -107,20 +232,54 @@ github
 
 #### Details
 ```
-git commit -a -m"message"
-git commit --amend
+$ git commit -a -m"message"
+$ git commit --amend
 ```
 
-## GitHub
+## Advanced GitHub Issues
 
 ### Summary
-* Closing Issues and PR by commit number
+* <a href="https://guides.github.com/overviews/issues/" class="githublink">Guide to Mastering Issues</a>
+* <a href="https://help.github.com/articles/closing-issues-via-commit-messages" class="githublink">Automatic closing of Issues by commit</a>
+* Symmetric cross-links of issue mentions
+* Cross-repo Issue mentions
+
+#### Details
+* Issues can auto-close when merged to the _default_ branch
+* [Keywords](https://help.github.com/articles/closing-issues-via-commit-messages) to close issues:
+  * `close`
+  * `closes`
+  * `closed`
+  * `fix`
+  * `fixes`
+  * `fixed`
+  * `resolve`
+  * `resolves`
+  * `resolved`
+
+```
+$ git commit -m "This fixes #[issue]"
+$ git commit -m "This closes #[issue]"
+$ git commit -m "This resolves #[issue]"
+```
+
+
+## Advanced GitHub Pull Requests
+* Automatic closing of PRs by local merges
+* Merges must be _made by recursive_
 * Retrieving PRs locally to resolve conflicts
 (without locally merging to target branch)
 
 #### Details
 ```
-git commit -m "Your message closes #[issue]"
+$ git ls-remote origin
+$ git fetch origin refs/pull/1/head
+
+From github.com:youruser/somereponame
+ * branch            refs/pull/1/head -> FETCH_HEAD
+
+$ git show FETCH_HEAD
+$ git merge --no-commit --no-ff FETCH_HEAD
 ```
 
 ## Stashing with precision
@@ -142,17 +301,29 @@ git stash clear
 git stash -p
 ```
 
-## Cherry-pick
+## Reusing small pieces of code with `cherry-pick`
 
 ### Summary
-* Why you want to
-* What happens
-* Tracing any cherry-picks
+* Why use `cherry-pick` instead of `merge`?
+* What happens when you `cherry-pick`?
+* Maintaining `author` and `committer` fields
+* Tracing any cherry-picks with `-x` commit message metadata
+* `-x` metadata hyperlinked on GitHub
+* `git cherry` to view absent commits
 
 #### Details
 ```
-git cherry-pick [ref]
-git branch --contains
+$ git cherry-pick [ref]
+$ git cherry-pick [ref1] [ref2]
+
+$ git branch --contains [noncherrypickedref]
+$ git cherry [upstreambranch]
+
++ bd650366fa8c39f03cfc9dd5290f60e7331a631d
++ ea62f9f6a7cef55a8a3028e617d28819408a63c4
++ 874628c0e405390130d6457776273451bb66d3a8
++ 046a9b8d0f2363361e45cfbc7e0f6d82968f2f9f
++ 315fe16408f9a9080527e00df3d9a8c1ba0dc97a
 ```
 
 ## History analysis
@@ -163,10 +334,10 @@ git branch --contains
 
 #### Details
 ```
-git log --left-right branchA...branchB
-git branch --contains [ref]
+$ git log --left-right branchA...branchB
+$ git branch --contains [ref]
 
-git name-rev [commit-ref]
+$ git name-rev [commit-ref]
 ```
 
 ## Remote reviewing, synchronization
@@ -178,26 +349,26 @@ git name-rev [commit-ref]
 
 #### Details
 ```
-git remote -v
-git remote show <remote-name>
-git ls-remote
-git branch -vv
+$ git remote -v
+$ git remote show <remote-name>
+$ git ls-remote
+$ git branch -vv
 ```
 
 Retrieving a Pull Request branch (does not matter if it is a fork or on same repo):
 
 ```
-git pull [remote] [pull-request-namespace]
+$ git pull [remote] [pull-request-namespace]
 
-git fetch [remote] [pull-request-namespace]
+$ git fetch [remote] [pull-request-namespace]
 ```
 
 Obtaining any repository's branch:
 
 ```
-git fetch <URL> <branch>
-git checkout FETCH_HEAD
-git branch <newbranchname> FETCH_HEAD
+$ git fetch <URL> <branch>
+$ git checkout FETCH_HEAD
+$ git branch <newbranchname> FETCH_HEAD
 ```
 
 ## Upstream maintenance
@@ -209,13 +380,13 @@ git branch <newbranchname> FETCH_HEAD
 
 #### Details
 ```
-git remote update --prune
-git push <remote> --prune
-git push origin :<branch-name>
+$ git remote update --prune
+$ git push <remote> --prune
+$ git push origin :<branch-name>
 
 ```
 
-## Rebasing
+## Rebasing basics
 
 ### Summary
 * Branch Preparation
@@ -223,11 +394,11 @@ git push origin :<branch-name>
 
 #### Details
 ```
-git checkout <featurebranch>
-git rebase master
+$ git checkout <featurebranch>
+$ git rebase master
 
-git config branch.autosetuprebase
-git config branch.[master].rebase true
+$ git config branch.autosetuprebase
+$ git config branch.[master].rebase true
 ```
 
 * Conflicts can occur
@@ -235,11 +406,11 @@ git config branch.[master].rebase true
 * Small variation to merge conflict
 
 ```
-git add [conflicting-file]
-git rebase --continue
+$ git add [conflicting-file]
+$ git rebase --continue
 ```
 
-## Interactive Rebasing
+## Interactive rebasing
 
 ### Summary
 * Reorder commits
@@ -247,22 +418,26 @@ git rebase --continue
 * Discard commits
 * Revise/edit commits
 * Safe patterns for rebasing local history
+* Verbs (cheat sheet of commands)
 
 #### Details
 ```
-git rebase -i <REF>
-git rebase -i [remote]/[branch]
+$ git rebase -i <REF>
+$ git rebase -i [remote]/[branch]
 ```
 
-## Rebasing and beyond
+## Advanced rebasing
 
 ### Summary
+* <a href="http://git-scm.com/book/ch3-6.html" class="booklink">Rebasing chapter of Pro Git book</a>
+* <a href="http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases" class="booklink">Git rebase --onto section of Pro Git book</a>
 * Changing where branch history begins
-* Moving history around
+* Moving blocks of history around
+* Breadcrumbs for later fixups and squashes
 
 #### Details
 ```
-rebase --onto <new> <old> <target>
+$ git rebase --onto <newbase> <upstream> <branch>
 ```
 
 * Important of commit message prefix
@@ -270,14 +445,17 @@ rebase --onto <new> <old> <target>
 * `squash! [common-pattern]`
 
 ```
-rebase --autosquash
+$ git rebase --autosquash [ref]
 ```
 
+## Squash merging
+### Summary
 * Collapsing commits during merge
-* Pros/cons
+* Pros/cons (loss of granularity)
+* Relation to branching strategies and deliverable expectations
 
 ```
-merge --squash [branch]
+$ git merge --squash [branch]
 ```
 
 ## Revising history safely
@@ -288,7 +466,7 @@ merge --squash [branch]
 
 #### Details
 ```
-git reset --[option] [remote]/[branch]
+$ git reset --[option] [remote]/[branch]
 ```
 
 ## Cleaning
@@ -300,9 +478,9 @@ git reset --[option] [remote]/[branch]
 
 #### Details
 ```
-git clean -f
-git clean -fd
-git clean -fx
+$ git clean -f
+$ git clean -fd
+$ git clean -fx
 ```
 
 ## Treeish / commitish
@@ -332,13 +510,10 @@ HEAD~2
 Difftool execution:
 
 ```
-git difftool --tool-help
-
-git config diff.tool <tool-name-in-config>
-
-git config difftool.prompt false
-
-git config difftool.<tool-name>.cmd "<path [args]>"
+$ git difftool --tool-help
+$ git config diff.tool <tool-name-in-config>
+$ git config difftool.prompt false
+$ git config difftool.<tool-name>.cmd "<path [args]>"
 ```
 
 A sample `.gitconfig` file:
@@ -362,13 +537,13 @@ A sample `.gitconfig` file:
 Mergetool execution:
 
 ```
-git config --global merge.tool p4mergetool
+$ git config --global merge.tool p4mergetool
 
-git config --global mergetool.p4mergetool.cmd "/Applications/p4merge.app/Contents/Resources/launchp4merge \$PWD/\$BASE \$PWD/\$REMOTE \$PWD/\$LOCAL \$PWD/\$MERGED"
+$ git config --global mergetool.p4mergetool.cmd "/Applications/p4merge.app/Contents/Resources/launchp4merge \$PWD/\$BASE \$PWD/\$REMOTE \$PWD/\$LOCAL \$PWD/\$MERGED"
 
-git config --global mergetool.p4mergetool.trustExitCode false
+$ git config --global mergetool.p4mergetool.trustExitCode false
 
-git config --global mergetool.keepBackup false
+$ git config --global mergetool.keepBackup false
 ```
 
 A sample `.gitconfig` file:
@@ -390,21 +565,25 @@ A sample `.gitconfig` file:
 
 #### Details
 ```
-gh create
-gh pull-request
-gh fork
-gh compare
-gh browse
+$ gh create
+$ gh pull-request
+$ gh fork
+$ gh compare
+$ gh browse
 ```
 
-## ReReRe
+## Minimizing repetitive conflict resolution with ReReRe
 
 ### Summary
 * Reuse recorded resolution
+* Stores solutions for a limited period of time
+* Machine-local storage
+* Based on diffs (not heuristics)
+* Helps with "trial merges"
 
 #### Details
 ```
-git config rerere.enable true
+$ git config rerere.enable true
 ```
 
 ## Credential Caching
@@ -414,23 +593,30 @@ git config rerere.enable true
 
 #### Details
 ```
-git config --global credential.helper cache
-git config credential.helper 'osxkeychain'
-git config credential.helper 'wincred'
-git credential-cache exit
+$ git config --global credential.helper cache
+$ git config credential.helper 'osxkeychain'
+$ git config credential.helper 'wincred'
+$ git credential-cache exit
 ```
 
-## SSH Key (Optional)
+## SSH keys
 
 ### Summary
 * Classic authentication with GitHub
-* Generate key
-* Upload public key to GitHub
+* Diminishing in use at HTTPS increases
+* Blocked by more firewalls
+* <a href="https://help.github.com/articles/generating-ssh-keys" class="booklink">Generate SSH key</a>
+* <a href="https://github.com/settings/ssh" class="githublink">Upload public key to GitHub</a>
+* <a href="https://github.com/settings/ssh" class="githublink">Audit SSH key use</a>
+
 
 #### Details
 ```
-ssh-keygen -t rsa -C"Anything..."
-ssh -T git@github.com
+# Generate the key
+$ ssh-keygen -t rsa -C"Anything..."
+
+# Verify that the key works
+$ ssh -T git@github.com
 ```
 
 ## Git-core GUIs
@@ -438,11 +624,14 @@ ssh -T git@github.com
 ### Summary
 * for staging, committing
 * for browsing history
+* Tcl/Tk based
 
 #### Details
 ```
-git gui
-gitk
+$ git gui
+$ gitk
+$ gitk&
+$ gitk --all
 ```
 
 ## Widely used GUIs
@@ -451,3 +640,17 @@ gitk
 * <a href="http://git-scm.com/downloads/guis" class="weblink">Listing of GUIs</a>
 * <a href="http://eclipse.github.com" class="weblink">eGit for Eclipse</a>
 * <a href="http://www.syntevo.com/smartgithg/" class="weblink">SmartGit for Windows, Mac, Linux</a>
+
+## Refspecs
+### Summary
+* Specification for retrival and pushing
+* Implied on fetch, pull, and push
+* Altered by option switches like `--tags`
+* Stored in `.git/config`
+
+## Git Notes
+### Summary
+* Supplemental commits
+* Parallel graph
+* Not cryptographically as truthworthy as the commits
+* Displayed in the GitHub web UI

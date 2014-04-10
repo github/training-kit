@@ -5,19 +5,76 @@ description: This student and teacher workbook will be your companion to the Git
 ---
 
 
-## Git Configuration
+## Git configuration basics
 
 ### Summary
 * Scopes
 * Excludesfile
 
 #### Details
+
+Git's configuration is saved in one of three plain text files and one of three levels and is easily editable with a text editor and portable to other machines by copying the configuration files.
+
+Level | Precedence | Location
+--- | --- | ---
+`system` | lowest | alongside the `git` binary
+`global` | middle | in your home directory as `.gitconfig`
+`local` | highest | in your project's `.git/config` file
+
 ```
 git config --list
 git config user.name
 git config user.email
 git config --global core.autocrlf <value>
 git config --global color.ui auto
+```
+
+
+## Configuing the Git User
+### Summary
+* <a href="http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup" class="booklink">Pro Git Book: First Time Git Setup</a>
+* Username
+* Email address
+* No password
+
+#### Details
+Your name and email address are configured locally in Git and are attached to each commit. Set these accurately to receive proper attribution for your work.
+
+To inspect the current settings, individually query two configuration values:
+
+``` shell
+$ git config user.name
+Firstname Lastname
+
+$ git config user.email
+someaccount@example.com
+```
+
+To set the same values to apply to any of your repositories:
+
+``` shell
+git config --global user.name "your name"
+git config --global user.email "your@email"
+```
+
+Line endings and color display are two of the most common settings users choose to set early in their use of Git.
+</span>
+
+``` shell
+# Set line endings to LF for Mac and Linux
+$ git config --global core.autocrlf input
+
+# Set line endings to CRLF for Windows
+$ git config --global core.autocrlf auto
+
+# Set color display in the command prompt
+$ git config --global color.ui auto
+```
+
+Reviewing all configuration
+
+``` shell
+$ git config --list
 ```
 
 ## Starting on the command line

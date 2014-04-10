@@ -10,62 +10,6 @@ Git is an open source version control system that was built by Linus Torvalds an
 It is common to get a request for a table of Subversion-to-Git command comparisons. We caution against this conceptual one-to-one mapping because it is most effective to understand Git's unique three-stage thinking from the ground up. Files are chosen, via the `add` command, to participate in the repository and explicitly asked to participate in each commit (transaction), also by the `add` command. Grouped transactions of changes to files are permanently recorded by the `commit` command. Local storage of commits are distinct from transmitting them over the network, thus providing the ability to use Git fully offline. Commits are sent via the `push` command when ready to be sent to the central server.
 </blockquote>
 
-## Git Setup & Configuration
-Git's configuration is saved in one of three plain text files and is easily editable with a text editor and portable to other machines by copying the configuration files.
-
-### Details
-Git stores all its configuration in plain text files. This makes configuration easy to read with a text editor and portable across machines by simply copying the configuration file.
-
-Git's configuration is saved at one of three levels:
-
-Level | Precedence | Location
---- | --- | ---
-`system` | lowest | alongside the `git` binary
-`global` | middle | in your home directory as `.gitconfig`
-`local` | highest | in your project's `.git/config` file
-
-
-## User information <a href="http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup" class="booklink">Pro Git Book: First Time Git Setup</a>
-
-Your name and email address are configured locally in Git and are attached to each commit. Set these accurately to receive proper attribution for your work.
-
-To inspect the current settings, individually query two configuration values:
-
-``` shell
-$ git config user.name
-Firstname Lastname
-
-$ git config user.email
-someaccount@example.com
-```
-
-To set the same values to apply to any of your repositories:
-
-``` shell
-git config --global user.name "your name"
-git config --global user.email "your@email"
-```
-
-### Details
-Line endings and color display are two of the most common settings users choose to set early in their use of Git.
-</span>
-
-``` shell
-# Set line endings to LF for Mac and Linux
-$ git config --global core.autocrlf input
-
-# Set line endings to CRLF for Windows
-$ git config --global core.autocrlf auto
-
-# Set color display in the command prompt
-$ git config --global color.ui auto
-```
-
-Reviewing all configuration
-
-``` shell
-$ git config --list
-```
 
 ## Beginning version control
 
@@ -109,11 +53,6 @@ git add path-file
 git commit -m "your commit message"
 ```
 
-### To correct the prior commit
-
-``` shell
-git commit --amend -m "updated message"
-```
 
 ## Containing work in context
 Wrapping commits, or Git version history, within branches is a fast, local, and easy way to focus work and commits within a repository.
