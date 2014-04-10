@@ -1,51 +1,3 @@
----
-layout: workbook
-title: Foundations Workbook
-description: This workbook will be your companion for the slides of the GitHub Foundations class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this GitHub Training course, you'll learn all the necessary skills to be productive with GitHub and Git in your open source work or daily job assignments.
----
-
-##  Git <a href="http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git" class="booklink">Pro Git Book: The History of Git</a>
-
-[git-scm.com](http://git-scm.com)
-
-__Git is an open source distributed__ version control system invented by Linus Torvalds in 2005.  It is used to version the Linux kernel and is shown to be, by some research, the most popular modern version control system.
-
-### Details
-Git is the open source, command line tool that forms a part of the workflows we'll cover in this course.  It has been called the successor to CVS and Subversion by many users, and maintains some similarity in behavior to these historical open source version control tools.
-
-### Details
-Maintaining a current version of Git is important. While you'll accurately hear that Git is generously backwards-compatible, the latest versions offer error message enhancements, performance tunings, and usability features that make using Git ever more quick and pleasant.
-
-Verifying that Git is installed and operational can be done by requesting Git to display its current version using this command:
-
-``` shell
-$ git --version
-```
-
-##  GitHub <a href="https://github.com/features" class="githublink">GitHub.com: Feature List</a>
-
-GitHub accounts are free. Sign up for one at [github.com/join](https://github.com/join).
-
-GitHub is a Git repository hosting and code collaboration platform for both open source and private projects.
-
-### Details
-GitHub accounts are free for an unlimited quantity of public repositories. Only private repositories cost to host on the service. Private repositories are typically used for closed-source consulting client or corporate products, whereas public repositories are typically used for open source.
-
-Sign up for a free GitHub account at https://github.com/join.
-
-Git can be installed as a unified GitHub GUI and command line or merely via a stand-alone command line interface.
-
-##  GitHub Installers <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git" class="booklink">Pro Git Book: Installing Git</a>
-
-The command line version of Git has a very light footprint. For most platforms, you can simply copy the binaries to a folder that is on the executable search $PATH. Git is primarily written in C, which means there is a unique installer for each operating system.
-
-* **Windows**: The GitHub for Windows installer can be found at http://windows.github.com.
-* **Mac**: The GitHub for Mac installer can be found at http://mac.github.com.
-* **Linux**: Git's source code and a listing of supported package managers can be found at http://git-scm.com/download/linux.
-
-### Details
-GitHub is the repository hosting, collaboration, deployment, and distribution platform for your software applications.  It facilitates discussing changes-in-progress through the concepts of Issues and Pull Requests and provides a web user interface to much of Git. The web flow made possible by GitHub brings a much wider range of contributors, including documentation specialists, designers, and ops engineers into the flow of contributing to your application's life cycle.
-
 ##  A Brief Tour of Git <a href="http://git-scm.com/book/en/Getting-Started-Git-Basics" class="booklink">Pro Git Book: Git Basics</a>
 
 Git has a unique twist on version control in which each _cloned_ copy of the repository contains all branches, tags, and commits ever saved to the project. This provides local-disk speed for almost any operation. Network operations are performed in batch and compressed before sending, thus making over-the-wire operations seem incredibly fast.
@@ -58,62 +10,6 @@ Git is an open source version control system that was built by Linus Torvalds an
 It is common to get a request for a table of Subversion-to-Git command comparisons. We caution against this conceptual one-to-one mapping because it is most effective to understand Git's unique three-stage thinking from the ground up. Files are chosen, via the `add` command, to participate in the repository and explicitly asked to participate in each commit (transaction), also by the `add` command. Grouped transactions of changes to files are permanently recorded by the `commit` command. Local storage of commits are distinct from transmitting them over the network, thus providing the ability to use Git fully offline. Commits are sent via the `push` command when ready to be sent to the central server.
 </blockquote>
 
-## Git Setup & Configuration
-Git's configuration is saved in one of three plain text files and is easily editable with a text editor and portable to other machines by copying the configuration files.
-
-### Details
-Git stores all its configuration in plain text files. This makes configuration easy to read with a text editor and portable across machines by simply copying the configuration file.
-
-Git's configuration is saved at one of three levels:
-
-Level | Precedence | Location
---- | --- | ---
-`system` | lowest | alongside the `git` binary
-`global` | middle | in your home directory as `.gitconfig`
-`local` | highest | in your project's `.git/config` file
-
-
-## User information <a href="http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup" class="booklink">Pro Git Book: First Time Git Setup</a>
-
-Your name and email address are configured locally in Git and are attached to each commit. Set these accurately to receive proper attribution for your work.
-
-To inspect the current settings, individually query two configuration values:
-
-``` shell
-$ git config user.name
-Firstname Lastname
-
-$ git config user.email
-someaccount@example.com
-```
-
-To set the same values to apply to any of your repositories:
-
-``` shell
-git config --global user.name "your name"
-git config --global user.email "your@email"
-```
-
-### Details
-Line endings and color display are two of the most common settings users choose to set early in their use of Git.
-</span>
-
-``` shell
-# Set line endings to LF for Mac and Linux
-$ git config --global core.autocrlf input
-
-# Set line endings to CRLF for Windows
-$ git config --global core.autocrlf auto
-
-# Set color display in the command prompt
-$ git config --global color.ui auto
-```
-
-Reviewing all configuration
-
-``` shell
-$ git config --list
-```
 
 ## Beginning version control
 
@@ -157,11 +53,6 @@ git add path-file
 git commit -m "your commit message"
 ```
 
-### To correct the prior commit
-
-``` shell
-git commit --amend -m "updated message"
-```
 
 ## Containing work in context
 Wrapping commits, or Git version history, within branches is a fast, local, and easy way to focus work and commits within a repository.
@@ -294,20 +185,6 @@ TBD
 * Similarity index
 * Following history
 
-## Ignore
-TBD
-
-* Basic setup
-* Standard patterns
-* Global configuration
-
-
-## Checkout
-TBD
-
-* Switching branches
-* Discarding changes
-* Exploring History
 
 ## Merge
 TBD
@@ -320,19 +197,3 @@ TBD
 
 * Merge preparation
 * Interactive
-
-## Reset
-TBD
-
-* Hard
-* Mixed
-* Soft
-
-## Revert
-TBD
-
-## GUIs
-TBD
-
-## Reflog
-TBD

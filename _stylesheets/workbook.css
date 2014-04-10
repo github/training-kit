@@ -3,15 +3,41 @@
 /* Scopes wrapper */
 .outline h2 + p, .outline h2 + p ~ p, .outline h2 + p ~ blockquote, .outline h2 + p ~ ul, .outline h2 + p ~ pre, .outline h2 + p ~ h3 {
   display: none; }
-.outline h3 + p, .outline h3 + p ~ table {
+.outline h3 {
+  display: none; }
+  .outline h3 + *, .outline h3 > * {
+    display: none; }
+.outline h4 {
+  display: none; }
+  .outline h4 + *, .outline h4 > * {
+    display: none; }
+.outline pre {
+  display: none; }
+.outline p {
+  display: none; }
+.outline ul {
+  display: none; }
+.outline table {
   display: none; }
 
 .summary h3 {
   display: none; }
-  .summary h3 + * {
+.summary h4 {
+  display: none; }
+  .summary h4 + *, .summary h4 > * {
     display: none; }
+  .summary h4 + p + ul {
+    display: none; }
+.summary pre {
+  display: none; }
+.summary p {
+  display: none; }
+.summary table {
+  display: none; }
 
 .details h3 {
+  display: none; }
+.details h4 {
   display: none; }
 
 .hero {
@@ -29,22 +55,65 @@
     text-align: center;
     float: left; }
 
-.booklink, .githublink {
-  font: normal normal 32px octicons;
-  display: inline-block;
-  height: 1em;
-  width: 1em;
-  overflow: hidden;
-  font-size: 16px;
-  margin-left: 8px; }
+.booklink, .githublink, .weblink, .videolink {
+  font: normal normal 1em octicons;
+  text-decoration: none;
+  color: #1875c6; }
+  .booklink:hover, .githublink:hover, .weblink:hover, .videolink:hover {
+    color: #00a5ea; }
 
 .booklink:before {
   content: "\f007";
-  line-height: 1; }
+  margin-right: 5px; }
 
 .githublink:before {
   content: "\f008";
-  line-height: 1; }
+  margin-right: 5px; }
+
+.weblink:before {
+  content: "\f0b6";
+  margin-right: 5px; }
+
+.videolink:before {
+  content: "\f0b9";
+  margin-right: 5px; }
+
+h2 {
+  padding-top: 15px; }
+
+h2:before {
+  padding: 5px;
+  color: #CCCCCC;
+  content: "\f078";
+  font: normal normal 40px octicons; }
+
+pre {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  /* To ensure scrolling of long code lines */
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre; }
+
+pre:before {
+  content: "\f0c8";
+  font: normal normal 32px octicons;
+  float: right;
+  font-size: 50px;
+  opacity: .4; }
+
+ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 40px; }
+
+p {
+  text-indent: 5px;
+  margin-left: 30px;
+  margin-bottom: 20px; }
 
 blockquote {
   width: 80%;
