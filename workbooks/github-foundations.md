@@ -6,28 +6,28 @@ description: This workbook will be your companion for the slides of the GitHub F
 
 ## Version control concepts
 
-### DETAILS
+### Summary
 * Git, the information tracker
 * GitHub, the collaboration platform
 * Distributed version control
 
 ## Ways of interacting with repositories
 
-### DETAILS
+### Summary
 * GitHub web flow
 * GitHub GUIs for Mac, Windows
 * Command line
 
 ## Getting to know GitHub
 
-### DETAILS
+### Summary
 * Repository initialization
 * Actionable steps (Create, Edit, Remove, Move)
 * Commits (page)
 
 ## Version control basics
 
-### DETAILS
+### Summary
 * Commits
   * Line-level tracking
     * Commit messages
@@ -39,14 +39,14 @@ description: This workbook will be your companion for the slides of the GitHub F
 
 ## Acquiring repos
 
-### DETAILS
+### Summary
 * Clone from web (Clone in Desktop button)
 * Clone via personal repo list in GitHub Desktop
 * Complete "copy" explanation
 
 ## Local repository interaction
 
-### DETAILS
+### Summary
 * Changes (with text editor)
 * Comparison (diff via GHfD)
 * Commits
@@ -56,7 +56,7 @@ description: This workbook will be your companion for the slides of the GitHub F
 
 ## GitHub Workflows
 
-### DETAILS
+### Summary
 * Forking
     * Reason for forks
     * What it encourages
@@ -75,7 +75,7 @@ description: This workbook will be your companion for the slides of the GitHub F
 
 ## GitHub Visualizations
 
-### DETAILS
+### Summary
 * Comparing/Diff-ing
   * Code
     * Prose
@@ -91,7 +91,7 @@ description: This workbook will be your companion for the slides of the GitHub F
 
 ## Project Management
 
-### DETAILS
+### Summary
 * GitHub Issues
 * Milestones
 * Pulse

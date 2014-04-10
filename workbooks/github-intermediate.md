@@ -11,6 +11,7 @@ description: A student and teacher outline to the GitHub Advanced class.
 * Scopes
 * Excludesfile
 
+#### Details
 ```
 git config --list
 git config user.name
@@ -26,6 +27,7 @@ git config --global color.ui auto
 * Existing project
 * Cloning
 
+#### Details
 ```
 git init [project-name]
 
@@ -38,14 +40,14 @@ git clone [url] [optional-name]
 ## Repository internals
 
 ### Summary
-* Exploring fundamentals
-  * `.git`
-    * All history stored locally
-    * Distributed nature, simultaneous changes
-    * No locking
-    * Optimized for text, small files
-* HEAD
-* Index/Staging
+* Exploring the fundamentals
+* `.git` folder
+* All history stored locally
+* Distributed nature, simultaneous changes
+* No locking
+* Optimized for text, small files
+* `HEAD` symbol
+* Staging area (index file)
 * `refs/heads/`
 * Efficiency of storage (zlib)
 
@@ -53,7 +55,9 @@ git clone [url] [optional-name]
 
 ### Summary
 * Three stage thinking
+* edit, select, save
 
+#### Details
 ```
 git status
 git add <filename>
@@ -70,6 +74,7 @@ git commit -m"<message>"
 * Dependent upon file state
 * Useful option switches
 
+#### Details
 ```
 git diff
 git diff --staged
@@ -86,6 +91,7 @@ git diff --stat -w --color-words
 * Filtering by message
 * Filtering by patch
 
+#### Details
 ```
 git log
 git log -<n>`
@@ -111,6 +117,7 @@ git log --decorate
 * Deleting
 * Renaming
 
+#### Details
 ```
 git branch
 git branch <name> <ref>
@@ -128,6 +135,7 @@ git branch --no-merged
 * Exploring detached `HEAD`s
 * Discarding dirty working tree paths
 
+#### Details
 ```
 git checkout [branch]
 git checkout -- [file]
@@ -142,6 +150,7 @@ git checkout [ref]
 * Aliasing, bookmark to server URL
 * Removing connections
 
+#### Details
 ```
 git clone -o github <URL>
 git remote add <name> <path>
@@ -156,6 +165,7 @@ git remote rm <name>
 * Showing remote branches
 * Showing all branches
 
+#### Details
 ```
 git push -u origin master
 git config --global push.default matching
@@ -171,6 +181,7 @@ git branch -a`
 * Resolving conflicting merges (manually edit)
 * Resolving file with shortcuts
 
+#### Details
 ```
 git pull origin
 git pull
@@ -193,6 +204,7 @@ git commit
 * Comparing without merge
 * Merging selectively
 
+#### Details
 ```
 git fetch [remote]
 git branch -a
@@ -205,6 +217,7 @@ git branch -a
 * Removing files
 * Un-tracking files
 
+#### Details
 ```shell
 git add -u .
 git rm <file>
@@ -217,6 +230,7 @@ git rm --cached -- <filename>
 * Moving generates new tree, not a new blob
 * Similarity Index engaged when committing
 
+#### Details
 ```shell
 mv <file> <newfilename>
 git add -A .
@@ -236,12 +250,12 @@ git log --follow <file>
 * By commit ref, branch name, remote
 * Why the different flavors (deep dive)
 
+#### Details
 ```shell
 git revert <REF>
 git reset --hard
 git reset --mixed
 git reset --soft
-
 ```
 
 ## Ignoring temporary files
@@ -253,6 +267,7 @@ git reset --soft
 * Negation of ignore pattern
 * Global/external ignore
 
+#### Details
 ```
 git config --global core.excludesfile
 ```
@@ -264,6 +279,7 @@ git config --global core.excludesfile
 * Restoring by popping
 * Move aside untracked files
 
+#### Details
 ```
 git stash
 git pop
@@ -276,6 +292,7 @@ git stash --include-untracked
 * Tracing Git action "history"
 * Explore last actions
 
+#### Details
 ```
 git reflog
 git reflog --all
@@ -302,6 +319,7 @@ git checkout HEAD@{1}
 * Quicker access to complex commands
 * Compatible with zsh completions
 
+#### Details
 ```
 git config --global alias.l "log --oneline --stat"
 git config alias.s "status -s"
