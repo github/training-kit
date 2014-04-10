@@ -328,7 +328,7 @@ HEAD~2
 * Meld
 
 #### Details
-Difftool Execution:
+Difftool execution:
 
 ```
 git difftool --tool-help
@@ -357,6 +357,9 @@ A sample `.gitconfig` file:
 * Same as difftool, but 3-way comparison
 
 #### Details
+
+Mergetool execution:
+
 ```
 git config --global merge.tool p4mergetool
 
@@ -366,6 +369,8 @@ git config --global mergetool.p4mergetool.trustExitCode false
 
 git config --global mergetool.keepBackup false
 ```
+
+A sample `.gitconfig` file:
 
 ```
 [merge]
