@@ -123,6 +123,35 @@
   }
 }
 
+h2{
+  padding-top: 15px;
+}
+
+pre{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+
+  /* To ensure scrolling of long code lines */
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+ul{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 40px;
+}
+
+p{
+  margin-left: 30px;
+}
+
+
+
 blockquote{
   width: 80%;
   line-height: 140%;
