@@ -14,7 +14,7 @@
     <link rel="stylesheet" media="all" href=
       {% if page.theme == "home" %}
         "_stylesheets/page.css"
-      {% else page.theme %}
+      {% else %}
         "../_stylesheets/page.css"
       {% endif %}
     />
@@ -36,7 +36,11 @@
     {% include analytics.html %}
 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="_javascript/page.js"></script>
+    {% if page.theme == "home" %}
+      <script src="_javascript/page.js"></script>
+    {% else %}
+      <script src="../_javascript/page.js"></script>
+    {% endif %}
   </head>
   <body>
     {% if page.path != "index.html" %}
