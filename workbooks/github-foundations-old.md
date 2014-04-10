@@ -4,47 +4,6 @@ title: Foundations Workbook
 description: This workbook will be your companion for the slides of the GitHub Foundations class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this GitHub Training course, you'll learn all the necessary skills to be productive with GitHub and Git in your open source work or daily job assignments.
 ---
 
-##  Git <a href="http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git" class="booklink">Pro Git Book: The History of Git</a>
-
-[git-scm.com](http://git-scm.com)
-
-__Git is an open source distributed__ version control system invented by Linus Torvalds in 2005.  It is used to version the Linux kernel and is shown to be, by some research, the most popular modern version control system.
-
-### Details
-Git is the open source, command line tool that forms a part of the workflows we'll cover in this course.  It has been called the successor to CVS and Subversion by many users, and maintains some similarity in behavior to these historical open source version control tools.
-
-### Details
-Maintaining a current version of Git is important. While you'll accurately hear that Git is generously backwards-compatible, the latest versions offer error message enhancements, performance tunings, and usability features that make using Git ever more quick and pleasant.
-
-Verifying that Git is installed and operational can be done by requesting Git to display its current version using this command:
-
-``` shell
-$ git --version
-```
-
-##  GitHub <a href="https://github.com/features" class="githublink">GitHub.com: Feature List</a>
-
-GitHub accounts are free. Sign up for one at [github.com/join](https://github.com/join).
-
-GitHub is a Git repository hosting and code collaboration platform for both open source and private projects.
-
-### Details
-GitHub accounts are free for an unlimited quantity of public repositories. Only private repositories cost to host on the service. Private repositories are typically used for closed-source consulting client or corporate products, whereas public repositories are typically used for open source.
-
-Sign up for a free GitHub account at https://github.com/join.
-
-Git can be installed as a unified GitHub GUI and command line or merely via a stand-alone command line interface.
-
-##  GitHub Installers <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git" class="booklink">Pro Git Book: Installing Git</a>
-
-The command line version of Git has a very light footprint. For most platforms, you can simply copy the binaries to a folder that is on the executable search $PATH. Git is primarily written in C, which means there is a unique installer for each operating system.
-
-* **Windows**: The GitHub for Windows installer can be found at http://windows.github.com.
-* **Mac**: The GitHub for Mac installer can be found at http://mac.github.com.
-* **Linux**: Git's source code and a listing of supported package managers can be found at http://git-scm.com/download/linux.
-
-### Details
-GitHub is the repository hosting, collaboration, deployment, and distribution platform for your software applications.  It facilitates discussing changes-in-progress through the concepts of Issues and Pull Requests and provides a web user interface to much of Git. The web flow made possible by GitHub brings a much wider range of contributors, including documentation specialists, designers, and ops engineers into the flow of contributing to your application's life cycle.
 
 ##  A Brief Tour of Git <a href="http://git-scm.com/book/en/Getting-Started-Git-Basics" class="booklink">Pro Git Book: Git Basics</a>
 
