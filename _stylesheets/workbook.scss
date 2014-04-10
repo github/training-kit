@@ -20,27 +20,63 @@
     }
   }
   h3{
-    & + p,
-    & + p ~ table
+    display: none;
+
+    & + *,
+    & > *
     {
       @include hidden;
     }
+  }
+  h4{
+    display: none;
+
+    & + *,
+    & > *
+    {
+      @include hidden;
+    }
+  }
+
+  pre{
+    display: none;
+  }
+  p{
+    display: none;
+  }
+  ul{
+    display: none;
   }
 }
 
 .summary{
   h3{
-    @include hidden;
+    display: none;
+  }
 
-    & + *
+  h4{
+    display: none;
+
+    & + *,
+    & > *,
     {
       @include hidden;
     }
+  }
+
+  pre{
+    display: none;
+  }
+  p{
+    display: none;
   }
 }
 
 .details{
   h3{
+    display: none;
+  }
+  h4{
     display: none;
   }
 }

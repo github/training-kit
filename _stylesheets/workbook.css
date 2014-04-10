@@ -3,15 +3,35 @@
 /* Scopes wrapper */
 .outline h2 + p, .outline h2 + p ~ p, .outline h2 + p ~ blockquote, .outline h2 + p ~ ul, .outline h2 + p ~ pre, .outline h2 + p ~ h3 {
   display: none; }
-.outline h3 + p, .outline h3 + p ~ table {
+.outline h3 {
+  display: none; }
+  .outline h3 + *, .outline h3 > * {
+    display: none; }
+.outline h4 {
+  display: none; }
+  .outline h4 + *, .outline h4 > * {
+    display: none; }
+.outline pre {
+  display: none; }
+.outline p {
+  display: none; }
+.outline ul {
   display: none; }
 
 .summary h3 {
   display: none; }
-  .summary h3 + * {
+.summary h4 {
+  display: none; }
+  .summary h4 + *, .summary h4 > * {
     display: none; }
+.summary pre {
+  display: none; }
+.summary p {
+  display: none; }
 
 .details h3 {
+  display: none; }
+.details h4 {
   display: none; }
 
 .hero {
