@@ -51,7 +51,10 @@
 
 .booklink, .githublink, .weblink, .videolink {
   font: normal normal 1em octicons;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #1875c6; }
+  .booklink:hover, .githublink:hover, .weblink:hover, .videolink:hover {
+    color: #00a5ea; }
 
 .booklink:before {
   content: "\f007";
@@ -102,7 +105,9 @@ ul {
   margin-left: 40px; }
 
 p {
-  margin-left: 30px; }
+  text-indent: 5px;
+  margin-left: 30px;
+  margin-bottom: 20px; }
 
 blockquote {
   width: 80%;

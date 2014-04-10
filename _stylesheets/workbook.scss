@@ -102,6 +102,11 @@
 .booklink, .githublink, .weblink, .videolink {
   font: normal normal 1em octicons;
   text-decoration: none;
+  color: $color-dark;
+
+  &:hover {
+    color: $color-bright;
+  }
 }
 
 .booklink{
@@ -171,7 +176,9 @@ ul{
 }
 
 p{
+  text-indent: 5px;
   margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 
