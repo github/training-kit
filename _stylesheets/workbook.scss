@@ -47,6 +47,9 @@
   ul{
     display: none;
   }
+  table{
+    display: none;
+  }
 }
 
 .summary{
@@ -58,7 +61,12 @@
     display: none;
 
     & + *,
-    & > *,
+    & > *
+    {
+      @include hidden;
+    }
+
+    & + p + ul
     {
       @include hidden;
     }
@@ -68,6 +76,9 @@
     display: none;
   }
   p{
+    display: none;
+  }
+  table{
     display: none;
   }
 }

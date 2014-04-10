@@ -17,6 +17,8 @@
   display: none; }
 .outline ul {
   display: none; }
+.outline table {
+  display: none; }
 
 .summary h3 {
   display: none; }
@@ -24,9 +26,13 @@
   display: none; }
   .summary h4 + *, .summary h4 > * {
     display: none; }
+  .summary h4 + p + ul {
+    display: none; }
 .summary pre {
   display: none; }
 .summary p {
+  display: none; }
+.summary table {
   display: none; }
 
 .details h3 {
