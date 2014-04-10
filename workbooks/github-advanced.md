@@ -19,6 +19,7 @@ description: A student and teacher outline to the GitHub Advanced class.
 * Deleting a tag locally
 * Deleting tag on a remote
 
+#### Details
 ```
 git tag
 git tag -a
@@ -85,6 +86,7 @@ git push origin :<tag-name-to-delete>
 * Add parts of files
 * Add files interactively
 
+#### Details
 ```
 # Add in patch mode
 git add -p
@@ -102,6 +104,7 @@ github
 * Add and commit
 * Amend existing commit
 
+#### Details
 ```
 git commit -a -m"message"
 git commit --amend
@@ -114,6 +117,7 @@ git commit --amend
 * Retrieving PRs locally to resolve conflicts
 (without locally merging to target branch)
 
+#### Details
 ```
 git commit -m "Your message closes #[issue]"
 ```
@@ -125,6 +129,7 @@ git commit -m "Your message closes #[issue]"
 * List stashes
 * Use specific stashes
 
+#### Details
 ```
 git stash save "<description>"
 git stash --include-untracked
@@ -143,6 +148,7 @@ git stash -p
 * What happens
 * Tracing any cherry-picks
 
+#### Details
 ```
 git cherry-pick [ref]
 git branch --contains
@@ -154,6 +160,7 @@ git branch --contains
 * Commit ranges to review branch differences
 * Verifying merges have completed
 
+#### Details
 ```
 git log --left-right branchA...branchB
 git branch --contains [ref]
@@ -168,6 +175,7 @@ git name-rev [commit-ref]
 * Identify out-of-date branches
 * Review Pull Requests
 
+#### Details
 ```
 git remote -v
 git remote show <remote-name>
@@ -175,8 +183,7 @@ git ls-remote
 git branch -vv
 ```
 
-* Retrieving a Pull Request branch
-* Does not matter if it is a fork or on same repo
+Retrieving a Pull Request branch (does not matter if it is a fork or on same repo):
 
 ```
 git pull [remote] [pull-request-namespace]
@@ -184,7 +191,7 @@ git pull [remote] [pull-request-namespace]
 git fetch [remote] [pull-request-namespace]
 ```
 
-* Obtaining any Repository's Branch
+Obtaining any repository's branch:
 
 ```
 git fetch <URL> <branch>
@@ -199,6 +206,7 @@ git branch <newbranchname> FETCH_HEAD
 * Remove non-matching remote upstream branches
 * Remove only remote upstream branch
 
+#### Details
 ```
 git remote update --prune
 git push <remote> --prune
@@ -212,6 +220,7 @@ git push origin :<branch-name>
 * Branch Preparation
 * Rebasing __is not__ merging
 
+#### Details
 ```
 git checkout <featurebranch>
 git rebase master
@@ -238,6 +247,7 @@ git rebase --continue
 * Revise/edit commits
 * Safe patterns for rebasing local history
 
+#### Details
 ```
 git rebase -i <REF>
 git rebase -i [remote]/[branch]
@@ -249,9 +259,9 @@ git rebase -i [remote]/[branch]
 * Changing where branch history begins
 * Moving history around
 
+#### Details
 ```
 rebase --onto <new> <old> <target>
-
 ```
 
 * Important of commit message prefix
@@ -275,6 +285,7 @@ merge --squash [branch]
 * Safely resetting local history
 * Guaranteeing remote history is not lost
 
+#### Details
 ```
 git reset --[option] [remote]/[branch]
 ```
@@ -286,6 +297,7 @@ git reset --[option] [remote]/[branch]
 * for directories
 * for removing ignored files (useful for tidying build artifacts)
 
+#### Details
 ```
 git clean -f
 git clean -fd
@@ -298,6 +310,7 @@ git clean -fx
 * Simple ways of describing history points
 * Easier-to-describe and understand numerically
 
+#### Details
 ```
 HEAD
 HEAD^^
@@ -314,6 +327,9 @@ HEAD~2
 * Vimdiff
 * Meld
 
+#### Details
+Difftool Execution:
+
 ```
 git difftool --tool-help
 
@@ -323,6 +339,8 @@ git config difftool.prompt false
 
 git config difftool.<tool-name>.cmd "<path [args]>"
 ```
+
+A sample `.gitconfig` file:
 
 ```
 [diff]
@@ -336,8 +354,9 @@ git config difftool.<tool-name>.cmd "<path [args]>"
 ## Merge Tool
 
 ### Summary
-* Same as difftool, but 3-way
+* Same as difftool, but 3-way comparison
 
+#### Details
 ```
 git config --global merge.tool p4mergetool
 
@@ -363,6 +382,7 @@ git config --global mergetool.keepBackup false
 * Where config/credentials are stored
 * Reasons for usage
 
+#### Details
 ```
 gh create
 gh pull-request
@@ -376,6 +396,7 @@ gh browse
 ### Summary
 * Reuse recorded resolution
 
+#### Details
 ```
 git config rerere.enable true
 ```
@@ -385,6 +406,7 @@ git config rerere.enable true
 ### Summary
 * Save passwords securely
 
+#### Details
 ```
 git config --global credential.helper cache
 git config credential.helper 'osxkeychain'
@@ -399,17 +421,19 @@ git credential-cache exit
 * Generate key
 * Upload public key to GitHub
 
+#### Details
 ```
 ssh-keygen -t rsa -C"Anything..."
 ssh -T git@github.com
 ```
 
-## Default/Out-of-Box GUIs
+## Git-core GUIs
 
 ### Summary
 * for staging, committing
 * for browsing history
 
+#### Details
 ```
 git gui
 gitk
