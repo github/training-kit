@@ -69,6 +69,12 @@
 h2 {
   padding-top: 15px; }
 
+h2:before {
+  padding: 5px;
+  color: #CCCCCC;
+  content: "\f078";
+  font: normal normal 40px octicons; }
+
 pre {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -79,6 +85,13 @@ pre {
   overflow: auto;
   word-wrap: normal;
   white-space: pre; }
+
+pre:before {
+  content: "\f0c8";
+  font: normal normal 32px octicons;
+  float: right;
+  font-size: 50px;
+  opacity: .4; }
 
 ul {
   padding-top: 10px;
