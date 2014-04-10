@@ -1,7 +1,7 @@
 ---
 layout: workbook
-title: GitHub Intermediate Workbook • Leveraging Git and GitHub from the command line
-description: A student and teacher outline to the GitHub Advanced class.
+title: GitHub Intermediate Workbook
+description: This student and teacher workbook will be your companion to the GitHub Intermediate class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this course, you'll learn how to extensively leverage Git and GitHub from the command line.
 ---
 
 
@@ -132,8 +132,9 @@ git branch --no-merged
 ### Summary
 * `Checkout` as a multi-use command
 * Changing branches
-* Exploring detached `HEAD`s
+* Exploring history (detached`HEAD`)
 * Discarding dirty working tree paths
+
 
 #### Details
 ```
@@ -240,7 +241,7 @@ git log --stat -M
 git log --follow <file>
 ```
 
-## Undoing commits
+## Undoing commits with `revert` and `reset`
 
 ### Summary
 * Generating commit to restore past patch set
@@ -253,6 +254,7 @@ git log --follow <file>
 #### Details
 ```shell
 git revert <REF>
+
 git reset --hard
 git reset --mixed
 git reset --soft
@@ -261,15 +263,24 @@ git reset --soft
 ## Ignoring temporary files
 
 ### Summary
-* Creating a .gitignore
-* Adding patterns
-* Within _sub directories_
-* Negation of ignore pattern
-* Global/external ignore
+* Create a `.gitignore` file
+* Add ignore patterns to the file
+* `.gitignore` files can also live in _subdirectories_
+* `!` is a negation of ignore pattern
+* Global ignore with `core.excludesfile` configuration
 
 #### Details
 ```
-git config --global core.excludesfile
+touch .gitignore
+echo '*.log' >> .gitignore
+git add .gitignore
+git commit -m "Ignoring log files"
+```
+
+Global ignore file configuration:
+
+```
+git config --global core.excludesfile <filepathandname>
 ```
 
 ## Stashing in-progress changes
@@ -286,7 +297,7 @@ git pop
 git stash --include-untracked
 ```
 
-## Recovering almost anything
+## Recovering almost anything with the `reflog`
 
 ### Summary
 * Tracing Git action "history"

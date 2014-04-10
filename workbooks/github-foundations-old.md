@@ -1,10 +1,3 @@
----
-layout: workbook
-title: Foundations Workbook
-description: This workbook will be your companion for the slides of the GitHub Foundations class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this GitHub Training course, you'll learn all the necessary skills to be productive with GitHub and Git in your open source work or daily job assignments.
----
-
-
 ##  A Brief Tour of Git <a href="http://git-scm.com/book/en/Getting-Started-Git-Basics" class="booklink">Pro Git Book: Git Basics</a>
 
 Git has a unique twist on version control in which each _cloned_ copy of the repository contains all branches, tags, and commits ever saved to the project. This provides local-disk speed for almost any operation. Network operations are performed in batch and compressed before sending, thus making over-the-wire operations seem incredibly fast.
@@ -253,20 +246,6 @@ TBD
 * Similarity index
 * Following history
 
-## Ignore
-TBD
-
-* Basic setup
-* Standard patterns
-* Global configuration
-
-
-## Checkout
-TBD
-
-* Switching branches
-* Discarding changes
-* Exploring History
 
 ## Merge
 TBD
@@ -279,19 +258,3 @@ TBD
 
 * Merge preparation
 * Interactive
-
-## Reset
-TBD
-
-* Hard
-* Mixed
-* Soft
-
-## Revert
-TBD
-
-## GUIs
-TBD
-
-## Reflog
-TBD

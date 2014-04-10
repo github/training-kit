@@ -1,7 +1,8 @@
 ---
 layout: workbook
-title: GitHub Advanced Workbook • Mastering all of Git and GitHub
-description: A student and teacher outline to the GitHub Advanced class.
+title: GitHub Advanced Workbook
+description: This student and teacher workbook will be your companion to the GitHub Advanced class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this course, you'll learn how to leverage all of the shortcuts, commands and advanced workflows of both Git and GitHub.
+
 ---
 
 
@@ -443,3 +444,10 @@ ssh -T git@github.com
 git gui
 gitk
 ```
+
+## Widely used GUIs
+
+### Summary
+* <a href="http://git-scm.com/downloads/guis" class="weblink">Listing of GUIs</a>
+* <a href="http://eclipse.github.com" class="weblink">eGit for Eclipse</a>
+* <a href="http://www.syntevo.com/smartgithg/" class="weblink">SmartGit for Windows, Mac, Linux</a>
