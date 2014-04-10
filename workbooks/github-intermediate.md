@@ -1,7 +1,7 @@
 ---
 layout: workbook
 title: GitHub Intermediate Workbook
-description: This student and teacher workbook will be your companion to the GitHub Intermediate class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this course, you'll learn how to extensively leverage Git and GitHub from the command line.
+description: This student and teacher workbook will be your companion to the GitHub Intermediate class taught by the GitHub Training Team and other educational groups. In this course, you'll learn how to extensively leverage Git and GitHub from the command line.
 ---
 
 

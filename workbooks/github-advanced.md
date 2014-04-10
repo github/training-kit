@@ -1,7 +1,7 @@
 ---
 layout: workbook
 title: GitHub Advanced Workbook
-description: This student and teacher workbook will be your companion to the GitHub Advanced class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this course, you'll learn how to leverage all of the shortcuts, commands and advanced workflows of both Git and GitHub.
+description: This student and teacher workbook will be your companion to the GitHub Advanced class taught by the GitHub Training Team and other educational groups. In this course, you'll learn how to leverage all of the shortcuts, commands and advanced workflows of both Git and GitHub.
 
 ---
 

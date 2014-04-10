@@ -1,7 +1,7 @@
 ---
 layout: workbook
 title: GitHub Foundations Workbook
-description: This student and teacher workbook will be your companion to the GitHub Foundations class taught by the [GitHub Training Team](http://training.github.com/) and other educational groups. In this course, you'll learn basic collaboration skills towards a productive use of Git and GitHub in your open source work and daily job assignments.
+description: This student and teacher workbook will be your companion to the GitHub Foundations class taught by the GitHub Training Team and other educational groups. In this course, you'll learn basic collaboration skills towards a productive use of Git and GitHub in your open source work and daily job assignments.
 
 
 ---
