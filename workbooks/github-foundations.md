@@ -51,12 +51,11 @@ GitHub accounts are free. Sign up for one at [github.com/join](https://github.co
 
 GitHub is the repository hosting, collaboration, deployment, and distribution platform for both open source and private software projects.  It facilitates discussing changes-in-progress through the concepts of Issues and Pull Requests and provides a web user interface to much of Git. The web flow made possible by GitHub brings a much wider range of contributors, including documentation specialists, designers, and ops engineers into the flow of contributing to your application's life cycle.
 
-
 GitHub accounts are free for an unlimited quantity of public repositories. Only private repositories cost to host on the service. Private repositories are typically used for closed-source consulting client or corporate products, whereas public repositories are typically used for open source.
 
 Sign up for a free GitHub account at https://github.com/join.
 
-Git can be installed as a unified GitHub GUI and command line or merely via a stand-alone command line interface.
+Git can be installed as a unified GitHub GUI and command line or merely as a stand-alone command line interface.
 
 
 ## Ways of interacting with repositories
@@ -107,7 +106,7 @@ Git can be installed as a unified GitHub GUI and command line or merely via a st
 
 ### Summary
 * Forking
-    * <a href="https://guides.github.com/overviews/forking/" class="Guide to Forking</a>
+    * <a href="https://guides.github.com/overviews/forking/" class="booklink">Guide to Forking</a>
     * Reason for forks
     * What it encourages
     * How it insulates
@@ -119,7 +118,7 @@ Git can be installed as a unified GitHub GUI and command line or merely via a st
     * Compare
     * Pull Request
     * Discuss
-    * Animated Gif
+    * Animated GIF
     * Line by line code review conversation
     * Clone locally with GHfD (optional)
 
