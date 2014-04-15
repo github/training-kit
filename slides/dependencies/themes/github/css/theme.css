@@ -27,6 +27,9 @@ img {
   height: auto !important;
   width: 100% !important; }
 
+img.headshot {
+  max-width: 50%; }
+
 .reveal .roll span:after {
   content: none; }
 
