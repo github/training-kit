@@ -22,11 +22,11 @@ Level | Precedence | Location
 `local` | highest | in your project's `.git/config` file
 
 ```
-git config --list
-git config user.name
-git config user.email
-git config --global core.autocrlf <value>
-git config --global color.ui auto
+$ git config --list
+$ git config user.name
+$ git config user.email
+$ git config --global core.autocrlf <value>
+$ git config --global color.ui auto
 ```
 
 
@@ -53,8 +53,8 @@ someaccount@example.com
 To set the same values to apply to any of your repositories:
 
 ``` shell
-git config --global user.name "your name"
-git config --global user.email "your@email"
+$ git config --global user.name "your name"
+$ git config --global user.email "your@email"
 ```
 
 Line endings and color display are two of the most common settings users choose to set early in their use of Git.
@@ -86,12 +86,16 @@ $ git config --list
 
 #### Details
 ```
-git init [project-name]
+# Create a new project directory
+$ git init [projectname]
+$ cd [projectname]
 
-cd [dir]
-git init
+# or initialize an existing directory
+$ cd [existingprojectname]
+$ git init
 
-git clone [url] [optional-name]
+# or clone an existing repository
+$ git clone [url] [optional-name]
 ```
 
 ## Repository internals
@@ -116,10 +120,10 @@ git clone [url] [optional-name]
 
 #### Details
 ```
-git status
-git add <filename>
-git commit
-git commit -m"<message>"
+$ git status
+$ git add <filename>
+$ git commit
+$ git commit -m"<message>"
 ```
 
 ## Comparing changes
@@ -133,11 +137,11 @@ git commit -m"<message>"
 
 #### Details
 ```
-git diff
-git diff --staged
-git diff HEAD
-git diff [file]
-git diff --stat -w --color-words
+$ git diff
+$ git diff --staged
+$ git diff HEAD
+$ git diff [file]
+$ git diff --stat -w --color-words
 ```
 
 ## Reviewing history
@@ -150,19 +154,22 @@ git diff --stat -w --color-words
 
 #### Details
 ```
-git log
-git log -<n>
-git log --stat
-git log --patch
-git log --all
-git log --author=<committer>
-git log --format= full, fuller, raw
-git log --diff-filter=[A|M|D]
-git log -S<StringInPatch> Search for string match _in_ patch
-git log -G="<pattern>" Listing patch change sets
-git log --word-diff --patch
-git log --graph
-git log --decorate
+$ git log
+$ git log -<n>
+$ git log --stat
+$ git log --patch
+$ git log --all
+$ git log --author=<author>
+$ git log --committer=<committer>
+$ git log --format=full
+$ git log --format=fuller
+$ git log --format=raw
+$ git log --diff-filter=[A|M|D]
+$ git log -S<StringInPatch>
+$ git log -G="<regexpattern>"
+$ git log --word-diff --patch
+$ git log --graph
+$ git log --decorate
 ```
 
 ## Branching on the command line
@@ -176,12 +183,12 @@ git log --decorate
 
 #### Details
 ```
-git branch
-git branch <name> <ref>
-git branch -d <name>
-git branch -m <old> <new>
-git branch --merged
-git branch --no-merged
+$ git branch
+$ git branch <name> <ref>
+$ git branch -d <name>
+$ git branch -m <old> <new>
+$ git branch --merged
+$ git branch --no-merged
 ```
 
 ## Switching branches & discarding changes
@@ -195,10 +202,14 @@ git branch --no-merged
 
 #### Details
 ```
-git checkout [branch]
-git checkout -- [file]
-git checkout [ref]
+# Check out (toggle to) an existing branch
+$ git checkout [branch]
 
+# Check out a single file from HEAD
+$ git checkout -- [file]
+
+# Check out a detatched HEAD (unnamed point in time)
+$ git checkout [ref]
 ```
 
 ## Remotes
@@ -210,10 +221,10 @@ git checkout [ref]
 
 #### Details
 ```
-git clone -o github <URL>
-git remote add <name> <path>
-git ls-remote <name>
-git remote rm <name>
+$ git clone -o github <URL>
+$ git remote add <name> <path>
+$ git ls-remote <name>
+$ git remote rm <name>
 ```
 
 ## Publishing changes
@@ -225,11 +236,11 @@ git remote rm <name>
 
 #### Details
 ```
-git push -u origin master
-git config --global push.default matching
-git config --global push.default simple
-git branch -r
-git branch -a`
+$ git push -u origin master
+$ git config --global push.default matching
+$ git config --global push.default simple
+$ git branch -r
+$ git branch -a
 ```
 
 ## Merging at the command line
@@ -241,19 +252,18 @@ git branch -a`
 
 #### Details
 ```
-git pull origin
-git pull
-git pull --rebase
+$ git pull origin
+$ git pull
+$ git pull --rebase
 
-git merge
-git merge -m<message>
+$ git merge
+$ git merge -m<message>
 
-git checkout --ours [file]
-git checkout --theirs [file]
+$ git checkout --ours [file]
+$ git checkout --theirs [file]
 
-git add [file]
-git commit
-
+$ git add [file]
+$ git commit
 ```
 
 ## Fetching changes
@@ -264,8 +274,8 @@ git commit
 
 #### Details
 ```
-git fetch [remote]
-git branch -a
+$ git fetch [remote]
+$ git branch -a
 ```
 
 ## Removing files
@@ -277,9 +287,9 @@ git branch -a
 
 #### Details
 ```shell
-git add -u .
-git rm <file>
-git rm --cached -- <filename>
+$ git add -u .
+$ git rm <file>
+$ git rm --cached -- <filename>
 ```
 
 ## Moving files
@@ -290,12 +300,12 @@ git rm --cached -- <filename>
 
 #### Details
 ```shell
-mv <file> <newfilename>
-git add -A .
+$ mv <file> <newfilename>
+$ git add -A .
 # or
-git mv <file> <file>
-git log --stat -M
-git log --follow <file>
+$ git mv <file> <file>
+$ git log --stat -M
+$ git log --follow <file>
 ```
 
 ## Undoing commits with `revert` and `reset`
@@ -310,11 +320,11 @@ git log --follow <file>
 
 #### Details
 ```shell
-git revert <REF>
+$ git revert <REF>
 
-git reset --hard
-git reset --mixed
-git reset --soft
+$ git reset --hard
+$ git reset --mixed
+$ git reset --soft
 ```
 
 ## Ignoring temporary files
@@ -328,16 +338,16 @@ git reset --soft
 
 #### Details
 ```
-touch .gitignore
-echo '*.log' >> .gitignore
-git add .gitignore
-git commit -m "Ignoring log files"
+$ touch .gitignore
+$ echo '*.log' >> .gitignore
+$ git add .gitignore
+$ git commit -m "Ignoring log files"
 ```
 
 Global ignore file configuration:
 
 ```
-git config --global core.excludesfile <filepathandname>
+$ git config --global core.excludesfile <filepathandname>
 ```
 
 ## Stashing in-progress changes
@@ -349,9 +359,9 @@ git config --global core.excludesfile <filepathandname>
 
 #### Details
 ```
-git stash
-git pop
-git stash --include-untracked
+$ git stash
+$ git pop
+$ git stash --include-untracked
 ```
 
 ## Recovering almost anything with the `reflog`
@@ -362,10 +372,10 @@ git stash --include-untracked
 
 #### Details
 ```
-git reflog
-git reflog --all
-git config --global alias.undo "reset HEAD@{1}"
-git checkout HEAD@{1}
+$ git reflog
+$ git reflog --all
+$ git config --global alias.undo "reset HEAD@{1}"
+$ git checkout HEAD@{1}
 ```
 
 ## Pull requests
@@ -389,7 +399,7 @@ git checkout HEAD@{1}
 
 #### Details
 ```
-git config --global alias.l "log --oneline --stat"
-git config alias.s "status -s"
-git s
+$ git config --global alias.l "log --oneline --stat"
+$ git config alias.s "status -s"
+$ git s
 ```
