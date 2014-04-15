@@ -151,15 +151,15 @@ git diff --stat -w --color-words
 #### Details
 ```
 git log
-git log -<n>`
-git log --stat`
-git log --patch`
-git log --all`
+git log -<n>
+git log --stat
+git log --patch
+git log --all
 git log --author=<committer>
-git log --format=` full, fuller, raw
+git log --format= full, fuller, raw
 git log --diff-filter=[A|M|D]
-git log -S<StringInPatch>` Search for string match _in_ patch
-git log -G="<pattern">` Listing patch change sets
+git log -S<StringInPatch> Search for string match _in_ patch
+git log -G="<pattern>" Listing patch change sets
 git log --word-diff --patch
 git log --graph
 git log --decorate
@@ -189,7 +189,7 @@ git branch --no-merged
 ### Summary
 * `Checkout` as a multi-use command
 * Changing branches
-* Exploring history (detached`HEAD`)
+* Exploring history (detached `HEAD`)
 * Discarding dirty working tree paths
 
 
