@@ -1,0 +1,6 @@
+
+sass --style compressed _stylesheets/page.scss _stylesheets/page.css
+sass --style compressed _stylesheets/home.scss _stylesheets/home.css
+sass --style compressed _stylesheets/workbook.scss _stylesheets/workbook.css
+
+echo "Completed SASS compiling and CSS compression!"
