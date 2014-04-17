@@ -24,11 +24,11 @@ chapters: [
   'branch',
   'checkout',
   'merge',
+  'gui',
+  'advanced/github-way',
   'rebase',
   'reset',
   'reflog',
-  'gui',
-  'advanced/github-way',
   'advanced/bisecta
   'advanced/cherry-pick',
   'advanced/collaboration',
