@@ -25,3 +25,6 @@ include:
 - _javascript
 
 markdown: rdiscount
+
+# Custom site configuration
+lang: en
