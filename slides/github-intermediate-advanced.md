@@ -29,7 +29,7 @@ chapters: [
   'rebase',
   'reset',
   'reflog',
-  'advanced/bisecta
+  'advanced/bisecta',
   'advanced/cherry-pick',
   'advanced/collaboration',
   'advanced/remote',
