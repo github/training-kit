@@ -1,135 +1,135 @@
-# GitHub Git Cheat Sheet
+# GitHub Git チートシート
 
-Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
+Gitはオープンソースとして配布されているバージョンコントロールシステムです。Gitを使うと、あなたのラップトップまたはデスクトップから、GitHub上のアクティビティーを楽に操作できます。このチートシートは、コマンドラインを使ったよく使われているGitの命令のクイックリファレンスです。
 
-## Install git
-GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
+## gitのインストール
+GitHubは、利用頻度の高いリポジトリへのアクションを可能にするグラフィカルユーザーインターフェースを提供し、同時に自動的にアップデートされる高度なシナリオにおけるGitのコマンドライン版を含むデスクトップクライアントを提供しています。
 
-### GitHub for Windows
+### GitHub Windows版
 http://windows.github.com
 
-### GitHub for Mac
+### GitHub Mac版
 http://mac.github.com
 
-Git distributions for Linux and POSIX systems are available on the official Git SCM web site.
+LinuxまたはPOSIXシステムのためのGitディストリビューションはオフィシャルのGit SCMウェブサイトから入手できます。
 
-### Git for all platforms
+### Git 全プラットフォーム版
 http://git-scm.com
 
-## Configure tooling
-Configure user information for all local repositories
+## ツールの設定
+すべてのローカルリポジトリのために、ユーザー情報を設定してください
 
 
 ```$ git config --global user.name "[name]"```
 
-Sets the name you want attached to your commit transactions
+コミット操作に付加されるあなたの名前を設定します
 
 
 ```$ git config --global user.email "[email address]"```
 
-Sets the email you want attached to your commit transactions
+コミット操作に付加されるあなたのeメールアドレスを設定します
 
 
 ```$ git config --global color.ui auto```
 
-Enables helpful colorization of command line output
+コマンドラインの出力を見やすくするため色を設定できます
 
 
-## Create repositories
-Start a new repository or obtain one from an existing URL
+## リポジトリの作成
+新規リポジトリの作成もしくは既存のURLから取得します
 
 
 ```$ git init [project-name]```
 
-Creates a new local repository with the specified name
+指定した名前のローカルリポジトリを作成します
 
 
 ```$ git clone [url]```
 
-Downloads a project and its entire version history
+プロジェクトとすべてのバージョン履歴をダウンロードします
 
-## Make changes
-Review edits and craft a commit transaction
+## 変更の作成
+変更をレビューしコミット操作ログを作成します
 
 
 ```$ git status```
 
-Lists all new or modified files to be committed
+コミット可能なすべての新規ファイルまたは変更のあるファイルを一覧で表示します
 
 
 ```$ git diff```
 
-Shows file differences not yet staged
+まだステージされていないファイルの差分を表示します
 
 
 ```$ git add [file]```
 
-Snapshots the file in preparation for versioning
+バージョン管理のためにファイルのスナップショットを作成します
 
 
 ```$ git diff --staged```
 
-Shows file differences between staging and the last file version
+ステージングと最後のファイルバージョンとの差分を表示します
 
 
 ```$ git reset [file]```
 
-Unstages the file, but preserves its contents
+ファイルをステージングから外しますが、その内容は保持します
 
 
 ```$ git commit -m"[descriptive message]"```
 
-Records file snapshots permanently in version history
+ファイルのスナップショットをバージョン履歴内に恒久的に記録します
 
-## Group changes
-Name a series of commits and combine completed efforts
+## 変更の整理
+一連のコミットに名前をつけ、完了した成果を結合します
 
 
 ```$ git branch```
 
-Lists all local branches in the current repository
+現在のリポジトリ上のすべてのローカルブランチを一覧で表示します
 
 
 ```$ git branch [branch-name]```
 
-Creates a new branch
+新規ブランチを作成します
 
 
 ```$ git checkout [branch-name]```
 
-Switches to the specified branch and updates working directory
+指定されたブランチに切り替え、作業ディレクトリを更新します
 
 
 ```$ git merge [branch-name]```
 
-Combines the specified branch’s history into the current branch
+指定されたブランチの履歴を現在のブランチに統合します
 
 
 ```$ git branch -d [branch-name]```
 
-Deletes the specified branch
+指定されたブランチを削除します
 
 
-## Refactor file names
-Relocate and remove versioned files
+## ファイル名の整理
+バージョン管理されているファイルの移動、または削除を行ないます
 
 
 ```$ git rm [file]```
 
-Deletes the file from the working directory and stages the deletion
+作業ディレクトリからファイルを削除し、削除をステージします
 
 
 ```$ git rm --cached [file]```
 
-Removes the file from version control but preserves the file locally
+バージョン管理からファイルを削除しますが、ローカルのファイルは保持します
 
 
 ```$ git mv [file-original] [file-renamed]```
 
-Changes the file name and prepare it for commit
+ファイル名を変更し、コミットします
 
-## Suppress tracking
-Exclude temporary files and paths
+## トラッキングの制限
+一時ファイルやパスを除外します
 
 ```
 *.log
@@ -137,99 +137,99 @@ build/
 temp-*
 ```
 
-A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
+`.gitignore` という名前のテキストファイルで、指定されたパターンに該当するファイルやパスを誤ってバージョン管理してしまうことを防げます
 
 
 ```$ git ls-files --other --ignored --exclude-standard```
 
-Lists all ignored files in this project
+プロジェクト内のすべての除外されたファイルを一覧で表示します
 
-## Save fragments
-Shelve and restore incomplete changes
+## 断片の保存
+未完成の変更を一時的に退避し、復旧させることができます
 
 
 ```$ git stash```
 
-Temporarily stores all modified tracked files
+すべての変更のあるトラックされているファイルを一時的に保存します
 
 
 ```$ git stash pop```
 
-Restores the most recent stashed files
+直近に一時保存されたファイルを復旧します
 
 
 ```$ git stash list```
 
-Lists all stashed changesets
+すべての一時保存された変更セットを一覧で表示します
 
 
 ```$ git stash drop```
 
-Discards the most recently stashed changeset
+直近に一時保存された変更セットを破棄します
 
-## Review history
-Browse and inspect the evolution of project files
+## 履歴の確認
+プロジェクトファイルの進展を確認します
 
 
 ```$ git log```
 
-Lists version history for the current branch
+現在のブランチのバージョン履歴を一覧で表示します
 
 
 ```$ git log --follow [file]```
 
-Lists version history for the file, including renames
+ファイル名の変更を含む指定したファイルのバージョン履歴を一覧で表示します
 
 
 ```$ git diff [first-branch]...[second-branch]```
 
-Shows content differences between two branches
+２つのブランチ間の差分を表示します
 
 
 ```$ git show [commit]```
 
-Outputs metadata and content changes of the specified commit
+指定されたコミットのメタ情報と変更内容を出力します
 
-## Redo commits
-Erase mistakes and craft replacement history
+## コミットの修正
+ミスの削除と履歴の置き換え
 
 
 ```$ git reset [commit]```
 
-Undoes all commits after `[commit]`, preserving changes locally
+`[commit]`以降のすべてのコミットを取り消し、ローカルでは変更を保持します
 
 
 ```$ git reset --hard [commit]```
 
-Discards all history and changes back to the specified commit
+指定されたコミットに戻り、それ以降のすべての変更を破棄します
 
-## Synchronize changes
-Register a repository bookmark and exchange version history
+## 変更の同期
+リポジトリのブックマークを登録し、バージョン履歴を交換します
 
 
 ```$ git fetch [bookmark]```
 
-Downloads all history from the repository bookmark
+リポジトリブックマークからすべての履歴をダウンロードします
 
 
 ```$ git merge [bookmark]/[branch]```
 
-Combines bookmark’s branch into current local branch
+ブックマークのブランチを現在のローカルブランチに統合します
 
 
 ```$ git push [alias] [branch]```
 
-Uploads all local branch commits to GitHub
+すべてのローカルブランチのコミットをGitHubにアップロードします
 
 
 ```$ git pull```
 
-Downloads bookmark history and incorporates changes
+ブックマークの履歴をダウンロードし、変更を統合します
 
 ---
 
-## GitHub Training
-Learn more about using GitHub and Git. Email the Training Team or visit our web site for learning event schedules and private class availability.
+## GitHub トレーニング
+より詳しくGitHubとGitの使い方を知るには、トレーニングチームにメールするか、イベントスケジュールや受講可能なプライベート講義を知るために私たちのウェブサイトをご覧ください。
 
 * training@github.com
 * training.github.com
