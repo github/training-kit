@@ -37,7 +37,7 @@
 		c1.3,1.4,2.1,3.3,2.1,5.5c0,7.9-4.8,9.6-9.5,10.1c0.7,0.6,1.4,1.9,1.4,3.8c0,2.7,0,5,0,5.6c0,0.5,0.4,1.2,1.4,1
 		c8.2-2.7,14.2-10.4,14.2-19.5C458.5,10.7,449.2,1.5,437.8,1.5z"/>
 </g>
-<g id="step-2_1_">
+<g id="step-2-in-out">
 	<g id="XMLID_5_">
 		<g>
 			<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
@@ -57,7 +57,7 @@
 		<path display="none" fill="none" stroke="#ED358C" stroke-miterlimit="10" d="M354.5,84.3c0,0,0,1.8,0,4.3c0,4.7,0,12.1,0,16.4
 			c0,2,0,3.3,0,3.3"/>
 	</g>
-	<text transform="matrix(1.0483 0 0 1 250.4707 86.3652)" fill="#231F20" font-family="'ApexNew-Book'" font-size="14">push</text>
+	<text transform="matrix(1.0483 0 0 1 250.4707 86.3652)" fill="#231F20" font-family="'ApexNew-Book'" font-size="18">push</text>
 	<g>
 		<g opacity="0.4">
 			<polygon fill="#FFFFFF" points="263.1,135.8 245.3,135.8 245.3,114.4 258.6,114.4 259.7,115.8 263.1,119 			"/>
@@ -131,7 +131,7 @@
 	</g>
 </g>
 <g id="step-4-in-out">
-	<text transform="matrix(1.0483 0 0 1 290.9092 212.645)" fill="#231F20" font-family="'ApexNew-Book'" font-size="14">pull</text>
+	<text transform="matrix(1.0483 0 0 1 290.9092 212.645)" fill="#231F20" font-family="'ApexNew-Book'" font-size="18">pull</text>
 	<g id="XMLID_1_">
 		<g>
 			<path fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
@@ -151,12 +151,9 @@
 		<path display="none" fill="none" stroke="#ED358C" stroke-miterlimit="10" d="M82.2,126.3c0,0,1.8,0,4.3,0c4.7,0,12.1,0,16.4,0
 			c2,0,3.3,0,3.3,0"/>
 	</g>
-	<text transform="matrix(1.0483 0 0 1 105.0415 166.9785)" fill="#FFFFFF" font-family="'ApexNew-Book'" font-size="14">merge (automatic)</text>
-	
-		<text transform="matrix(1.0483 0 0 1 105.0415 166.9785)" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" font-family="'ApexNew-Book'" font-size="14">merge (automatic)</text>
-	<text transform="matrix(1.0483 0 0 1 105.0415 166.9785)" fill="#231F20" font-family="'ApexNew-Book'" font-size="14">merge (automatic)</text>
+	<text transform="matrix(1.0483 0 0 1 105.0415 166.9785)" fill="#231F20" font-family="'ApexNew-Book'" font-size="14">merge</text>
 </g>
 <g id="step-5">
-	<text transform="matrix(1.0483 0 0 1 290.9092 212.645)" fill="#231F20" font-family="'ApexNew-Book'" font-size="14">fetch</text>
+	<text transform="matrix(1.0483 0 0 1 290.9092 212.645)" fill="#231F20" font-family="'ApexNew-Book'" font-size="18">fetch</text>
 </g>
 </svg>
