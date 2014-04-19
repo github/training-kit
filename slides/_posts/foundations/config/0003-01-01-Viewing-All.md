@@ -4,7 +4,7 @@ layout: slide
 tags: ['config']
 ---
 
-	git config --list
+	$ git config --list
 
 {% capture notes %}
 

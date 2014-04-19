@@ -4,9 +4,9 @@ layout: slide
 tags: ['network']
 ---
 
-	git pull <remote> <branch>
+	$ git pull <remote> <branch>
 
-	git fetch <remote> <branch>
+	$ git fetch <remote> <branch>
 
 
 {% capture notes %}

@@ -4,9 +4,9 @@ layout: slide
 tags: ['log']
 ---
 
-	git log -S <string-in-patch>
+	$ git log -S <string-in-patch>
 
-	git log --grep="regex-pattern"
+	$ git log --grep="regex-pattern"
 
 
 {% capture notes %}

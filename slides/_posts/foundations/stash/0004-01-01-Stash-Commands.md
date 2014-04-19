@@ -6,10 +6,10 @@ tags: ['stash']
 ---
 
 	# Diff stashed patches
-	git stash show -p
+	$ git stash show -p
 
 	# Remove a stash
-	git stash drop <name>
+	$ git stash drop <name>
 
 	# Drop all stashes
-	git stash clear
+	$ git stash clear

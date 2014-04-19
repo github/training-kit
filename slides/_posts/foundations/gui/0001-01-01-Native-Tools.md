@@ -5,7 +5,7 @@ tags: ['gui']
 ---
 
 	# Committing
-	git gui
+	$ git gui
 
 	# Browsing
-	gitk -a
+	$ gitk -a

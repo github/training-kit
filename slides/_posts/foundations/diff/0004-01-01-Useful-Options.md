@@ -4,9 +4,9 @@ layout: slide
 tags: ['diff']
 ---
 
-	git diff --color-words
-	git diff --word-diff
-	git diff --stat
+	$ git diff --color-words
+	$ git diff --word-diff
+	$ git diff --stat
 
 
 
@@ -21,6 +21,6 @@ tags: ['diff']
 	# Unknown (X)
 	# Pairing Broken (B)
 	# Only show changes in modified files
-	git diff --diff-filter=M
+	$ git diff --diff-filter=M
 {% endcapture %}
 {% include hydeslides/core/notes %}

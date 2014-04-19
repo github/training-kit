@@ -5,10 +5,10 @@ tags: ['network']
 ---
 
 	# List remote branches
-	git branch -r
+	$ git branch -r
 
 	# List all branches
-	git branch -a
+	$ git branch -a
 
 
 

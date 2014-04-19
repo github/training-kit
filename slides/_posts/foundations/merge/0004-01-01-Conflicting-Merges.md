@@ -5,5 +5,5 @@ tags:
 - merge
 - short-merge
 ---
-	git add <conflicting-file>
-	git commit -m"<commit-message>"
+	$ git add <conflicting-file>
+	$ git commit -m"<commit-message>"

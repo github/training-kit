@@ -6,5 +6,5 @@ tags:
 - short-log
 ---
 
-	git log --word-diff --patch
-	git log --graph
+	$ git log --word-diff --patch
+	$ git log --graph

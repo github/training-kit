@@ -17,8 +17,8 @@ tags: ['init']
 If you already have an existing repository:
 
 * Change directory into the root project
-* type git init
-*  Add all files
+* Type `git init`
+* Add all files
 
 {% endcapture %}
 {% include hydeslides/core/notes %}

@@ -4,6 +4,6 @@ layout: slide
 tags: ['preparation']
 ---
 
-* Installing git
+* Installing Git
 * Verifying & checking version
-  * `git --version`
+  * `$ git --version`

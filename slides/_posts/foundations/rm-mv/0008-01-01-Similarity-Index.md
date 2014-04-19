@@ -5,10 +5,10 @@ tags: ['rm-mv']
 ---
 
 	# Renames shown
-	git log --stat -M
+	$ git log --stat -M
 
 	# Show commits from previous filename
-	git log --follow <file>
+	$ git log --follow <file>
 
 
 

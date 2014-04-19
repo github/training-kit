@@ -12,8 +12,8 @@ Command shortcuts
 
 Alias for status as 's'
 
-	git config --global alias.s "status -u -s"
+	$ git config --global alias.s "status -u -s"
 
 Alias showing all branches to 'br'
 
-	git config --global alias.br "branch -a"
+	$ git config --global alias.br "branch -a"

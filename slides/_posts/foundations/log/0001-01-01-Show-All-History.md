@@ -6,5 +6,5 @@ tags:
 - short-log
 ---
 
-	git log
+	$ git log
 
