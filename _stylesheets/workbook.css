@@ -80,6 +80,12 @@
   content: "\f0b9";
   margin-right: 5px; }
 
+.summary h2:before, .outline h2:before, .details h2:before {
+  padding: 5px;
+  color: #CCCCCC;
+  content: "\f078";
+  font: normal normal 20px octicons; }
+
 pre {
   padding-top: 10px;
   padding-bottom: 10px;

@@ -154,6 +154,16 @@
   }
 }
 
+
+.summary, .outline, .details{
+  h2:before{
+    padding: 5px;
+    color: #CCCCCC;
+    content: "\f078";
+    font: normal normal 20px octicons;
+  }
+}
+
 pre{
   padding-top: 10px;
   padding-bottom: 10px;
