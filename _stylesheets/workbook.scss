@@ -19,6 +19,7 @@
       @include hidden;
     }
   }
+
   h3{
     display: none;
 
@@ -146,17 +147,6 @@
     content: "\f0b9";
     margin-right: 5px;
   }
-}
-
-
-h2{
-  padding-top: 15px;
-}
-h2:before{
-  padding: 5px;
-  color: #CCCCCC;
-  content: "\f078";
-  font: normal normal 40px octicons;
 }
 
 pre{
