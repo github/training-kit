@@ -4,22 +4,10 @@ h1{
   text-rendering: optimizeLegibility;
 }
 h2{
-  font-size: 250%;
-  font-weight: 200;
-  margin: 0 0 0 0;
-  color: lighten($mono-dark, 10%);
-}
-h2+p{
-  // font-size: 112.5%;
-  font-weight: 200;
-  text-rendering: optimizeLegibility;
-  line-height: 150%;
-  color: lighten($mono-dark, 30%);
-  margin: 10px auto 20px;
+  font-size: 1.4em;
 }
 h3{
-  font-size: 125%;
-  margin: 0;
+  font-size: 1.2em;
 }
 p{
   text-rendering: optimizeLegibility;
@@ -32,13 +20,12 @@ section{
   width: 100%;
   float: left;
 
-  & .container{
-    padding: 30px 0 30px 0;
+  .content.container{
+    padding: 50px 0 50px 0;
   }
 
   /* Layout */
   .hero{
-    // height: 485px;
 
     & .container{
       padding: 0;
@@ -126,7 +113,7 @@ nav{
     padding: 0;
     height: 26px;
     font-size: 14px;
-    line-height: 26px;
+    // line-height: 26px;
 
     li{
       display: inline-block;
@@ -332,6 +319,7 @@ nav{
 .segment-icon{
   width: $width-desktop*0.31;
   padding: $width-desktop*0.01;
+  margin-top: 1.5em;
   display: inline-block;
   text-align: left;
   font-size: 80%;
@@ -410,8 +398,8 @@ nav{
     color: $color-mild;
   }
   h3{
-
-    padding: 20px 0 0 0;
+    margin-top: 5px;
+    padding: 5px 0 0 0;
   }
 }
 
@@ -422,8 +410,8 @@ nav{
     color: $color-medium;
   }
   h3{
-
-    padding: 20px 0 0 0;
+    margin-top: 5px;
+    padding: 5px 0 0 0;
   }
 }
 
@@ -434,7 +422,7 @@ nav{
     color: $color-hot;
   }
   h3{
-
-    padding: 20px 0 0 0;
+    margin-top: 5px;
+    padding: 5px 0 0 0;
   }
 }

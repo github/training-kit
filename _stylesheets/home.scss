@@ -1,40 +1,40 @@
 /* Imports */
 @import "variables.scss";
 
-section{
-  width: 100%;
-  float: left;
-
-  & .container{
-    padding: 50px 0 50px 0;
-  }
-
-  /* Layout */
-  .hero{
-    height: 445px;
-    padding: 20px 0 0 0;
-
-
-    hgroup{
-      margin-top: 60px;
-    }
-
-    a{
-      text-decoration: none;
-    }
-
-    p{
-      font-size: 112.5%;
-      color: darken($color-dark, 20%);
-      margin-bottom: 30px;
-    }
-
-    .octicon{
-      font-size: 200px;
-      margin-top: 52px;
-    }
-  }
-}
+// section{
+//   width: 100%;
+//   float: left;
+//
+//   & .container{
+//     padding: 50px 0 50px 0;
+//   }
+//
+//   /* Layout */
+//   .hero{
+//     height: 445px;
+//     padding: 20px 0 0 0;
+//
+//
+//     hgroup{
+//       margin-top: 60px;
+//     }
+//
+//     a{
+//       text-decoration: none;
+//     }
+//
+//     p{
+//       font-size: 112.5%;
+//       color: darken($color-dark, 20%);
+//       margin-bottom: 30px;
+//     }
+//
+//     .octicon{
+//       font-size: 200px;
+//       margin-top: 52px;
+//     }
+//   }
+// }
 
 .figures{
   background: url(../images/hero-home.png) no-repeat bottom center $color-dark;
@@ -44,7 +44,7 @@ section{
 .screen-shot{
   background: url(../images/screen-shot-slide.png) no-repeat bottom center;
   background-size: 800px;
-  padding-bottom: 350px;
+  padding-bottom: 380px;
 }
 
 .workbook{
@@ -56,5 +56,5 @@ section{
 .downloads{
   background: url(../images/screen-shot-pdf.png) no-repeat bottom center;
   background-size: 800px;
-  padding-bottom: 400px;
+  padding-bottom: 440px;
 }
