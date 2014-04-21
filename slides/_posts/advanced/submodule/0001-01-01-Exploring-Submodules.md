@@ -6,4 +6,4 @@ tags: ['advanced/submodule']
 
 * Super Repo tracking Subordinate Repo
 * Version control commit point
-* Compononentize Dependencies
+* Componentize Dependencies
