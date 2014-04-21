@@ -4,7 +4,7 @@ layout: slide
 tags: ['network']
 ---
 
-	git push <remote> <branch>
+	$ git push <remote> <branch>
 
 {% capture notes %}
 * Send code to an upstream server

@@ -4,7 +4,7 @@ layout: slide
 tags: ['reflog']
 ---
 
-	git reflog -<n>
+	$ git reflog -<n>
 
 
 {% capture notes %}

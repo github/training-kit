@@ -6,7 +6,7 @@ tags: ['revert']
 
 Restore past patch set via new commit
 
-	git revert <REF>
+	$ git revert <REF>
 
 {% capture notes %}
 Not to be confused with `reset`

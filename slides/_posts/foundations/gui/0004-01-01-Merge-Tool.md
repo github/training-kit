@@ -5,6 +5,6 @@ tags: ['gui']
 ---
 
 	# Merge Tool
-	git config merge.tool "araxis"
-	git config mergetool.prompt false
+	$ git config merge.tool "araxis"
+	$ git config mergetool.prompt false
 	

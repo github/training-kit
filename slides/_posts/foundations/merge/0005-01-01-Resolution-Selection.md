@@ -4,5 +4,5 @@ layout: slide
 tags: ['merge']
 ---
 
-	git checkout --ours <file>
-	git checkout --theirs <file>
+	$ git checkout --ours <file>
+	$ git checkout --theirs <file>
