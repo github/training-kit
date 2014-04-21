@@ -1,14 +1,29 @@
-<section class="colorful">
-	<nav>
-		<hgroup>
-			<a href="https://training.github.com">
-				<span class="mega-octicon octicon-logo-github"></span>
-				<span class="logo-training"></span>
-			</a>
-		</hgroup>
-		<ul>
-			<li><a href="../">Materials</a></li>
-			<li><a class="button" href="https://training.github.com">Join an Event</a></li>
-		</ul>
-	</nav>
-</section>
+<header class="colorful">
+	<div class="container">
+		<h1 id="logo" class="content">
+			<a href="{{ site.url }}/" data-escp="">GitHub Training</a>
+		</h1>
+		<nav id="nav">
+			<ul class="content">
+				<li{% if page.body_class == 'trainers' %} class="current"{% endif %}>
+					<a href="{{ site.url }}/trainers/">Trainers</a>
+				</li>
+				<li{% if page.body_class == 'web' %} class="current"{% endif %}>
+					<a href="{{ site.url }}/web/">Web-based</a>
+				</li>
+				<li{% if page.body_class == 'in-person' %} class="current"{% endif %}>
+					<a href="{{ site.url }}/in-person/">In-person</a>
+				</li>
+				<li{% if page.body_class == 'kit' %} class="current"{% endif %}>
+					<a href="{{ site.url }}/resources/">Kit</a>
+				</li>
+				<li{% if page.body_class == 'resources' %} class="current"{% endif %}>
+					<a href="{{ site.url }}/resources/">Resources</a>
+				</li>
+				<li{% if page.body_class == 'contact' %} class="current"{% endif %}>
+					<a href="{{ site.url }}/contact/">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
