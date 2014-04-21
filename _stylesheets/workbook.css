@@ -39,6 +39,8 @@
   display: none; }
 .details h4 {
   display: none; }
+.details table th, .details table td {
+  padding: 10px; }
 
 .hero {
   background: #1875c6;
@@ -83,7 +85,7 @@ pre {
   padding-bottom: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 25px;
+  width: auto;
   /* To ensure scrolling of long code lines */
   overflow: auto;
   word-wrap: normal;
