@@ -98,24 +98,6 @@
   }
 }
 
-.hero{
-  background: $color-dark;
-  color: #fff;
-
-  .octicon{
-    color: #fff;
-    background: rgba(0,0,0,.15);
-    border-radius: 50%;
-    height: 1em;
-    width: 1em;
-    padding: 16px;
-    margin-right: 20px;
-    font-size: 26px;
-    text-align: center;
-    float: left;
-  }
-}
-
 .booklink, .githublink, .weblink, .videolink {
   font: normal normal 1em octicons;
   text-decoration: none;
