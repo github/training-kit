@@ -71,6 +71,11 @@
   content: "\f078";
   font: normal normal 20px octicons; }
 
+table, pre {
+  background: #e8e8ea;
+  padding: 20px;
+  display: block; }
+
 pre {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -84,9 +89,8 @@ pre {
 
 pre:before {
   content: "\f0c8";
-  font: normal normal 32px octicons;
+  font: normal normal 22px octicons;
   float: right;
-  font-size: 50px;
   opacity: .4; }
 
 ul {
