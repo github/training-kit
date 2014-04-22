@@ -4,7 +4,7 @@ layout: slide
 tags: ['network']
 ---
 
-	git remote add <name> <url>
+	$ git remote add <name> <url>
 
 
 {% capture notes %}

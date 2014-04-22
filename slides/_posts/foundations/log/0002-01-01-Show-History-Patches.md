@@ -5,7 +5,7 @@ tags: ['log']
 ---
 
 	# Show all history with filenames
-	git log --stat
+	$ git log --stat
 
 	# Show all history with patches
-	git log --patch
+	$ git log --patch

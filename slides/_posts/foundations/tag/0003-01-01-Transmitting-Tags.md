@@ -5,10 +5,10 @@ tags: ['tag']
 ---
 
 	# Push specific tag
-	git push <remote> <tag>
+	$ git push <remote> <tag>
 
 	# Push all tags
-	git push --tags
+	$ git push --tags
 	
 
 {% capture notes %}	

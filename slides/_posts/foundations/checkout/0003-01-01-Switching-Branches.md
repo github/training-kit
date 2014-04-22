@@ -4,7 +4,7 @@ layout: slide
 tags: ['checkout']
 ---
 
-    $ git checkout <branch-name>
+  $ git checkout <branch-name>
 
 
 
