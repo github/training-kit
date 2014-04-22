@@ -1,0 +1,123 @@
+/* Header */
+
+#logo {
+  position: relative;
+  height: 30px;
+  width: 183px;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
+#logo a {
+  display: block;
+  height: 30px;
+  width: 183px;
+  text-indent: -999px;
+  overflow: hidden;
+  background: url('../images/gh-training-logo-1x.png') no-repeat;
+
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  filter: alpha(opacity=85);
+  opacity: 0.90;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  #logo a {
+    background: url('../images/gh-training-logo-2x.png') no-repeat;
+    background-size: 183px 30px;
+  }
+}
+
+#logo a:hover {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+header {
+  text-align: center;
+}
+
+header .container {
+  padding: 22px 0 0px;
+}
+
+header .content {
+  padding: 0px 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+#nav li {
+  display: inline-block;
+  margin: .4em .15em;
+}
+
+#nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 0 .6em 0;
+}
+
+#nav li a:hover {
+  border-bottom: solid 2px #ffffff;
+}
+
+#nav li.current a, #nav li.current a:hover {
+  border-bottom: solid 2px #ffffff;
+  border-bottom-color: #0383c0;
+}
+
+@media screen and (min-width: 960px) {
+  #logo {
+    float: left;
+    width: 20%;
+  }
+  #nav {
+    float: right;
+    width: 75%;
+    margin-top: 2px;
+    text-align: right;
+  }
+  header .content {
+    padding: 0 20px;
+  }
+  header {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  #logo {
+    margin: 0 auto;
+  }
+
+  #nav .content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #nav li {
+    margin: .4em 0;
+  }
+  #nav li a {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #nav li a {
+    font-size: 12px;
+  }
+}

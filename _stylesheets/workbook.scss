@@ -19,6 +19,7 @@
       @include hidden;
     }
   }
+
   h3{
     display: none;
 
@@ -90,23 +91,10 @@
   h4{
     display: none;
   }
-}
-
-.hero{
-  background: $color-dark;
-  color: #fff;
-
-  .octicon{
-    color: #fff;
-    background: rgba(0,0,0,.15);
-    border-radius: 50%;
-    height: 1em;
-    width: 1em;
-    padding: 16px;
-    margin-right: 20px;
-    font-size: 26px;
-    text-align: center;
-    float: left;
+  table{
+    th, td{
+      padding: 10px;
+    }
   }
 }
 
@@ -149,14 +137,19 @@
 }
 
 
-h2{
-  padding-top: 15px;
+.summary, .outline, .details{
+  h2:before{
+    padding: 5px;
+    color: #CCCCCC;
+    content: "\f078";
+    font: normal normal 20px octicons;
+  }
 }
-h2:before{
-  padding: 5px;
-  color: #CCCCCC;
-  content: "\f078";
-  font: normal normal 40px octicons;
+
+table, pre{
+  background: $mono-light;
+  padding: 20px;
+  display: block;
 }
 
 pre{
@@ -164,7 +157,7 @@ pre{
   padding-bottom: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 25px;
+  width: auto;
 
   /* To ensure scrolling of long code lines */
   overflow: auto;
@@ -174,9 +167,8 @@ pre{
 
 pre:before {
   content: "\f0c8";
-  font: normal normal 32px octicons;
+  font: normal normal 22px octicons;
   float: right;
-  font-size: 50px;
   opacity: .4;
 }
 

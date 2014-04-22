@@ -1,0 +1,526 @@
+@import "normalize.css";
+@import "grid.css";
+@import "general.css";
+@import "header.css";
+@import "footer.css";
+@import "hero.css";
+@import "testimonials.css";
+@import "subpage-list.css";
+
+/* Trainers */
+
+.trainer {
+  overflow: hidden;
+}
+
+.trainer .fifth .content {
+  padding-right: 0;
+}
+
+.trainer .content {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.trainer .avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 959px){
+  .trainer .avatar {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 568px){
+  .trainer .content,
+  .trainer .fifth .content {
+    padding: 0 20px;
+  }
+  .trainer {
+    margin-bottom: 30px;
+  }
+  .trainer .testimonial {
+    padding: 0;
+    margin: 0;
+  }
+  .trainer .social {
+    display: block;
+  }
+}
+
+.main .trainer h3 {
+  margin: .5em 0 0;
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+.trainer .social a {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  opacity: .7;
+}
+
+.trainer .social a:hover {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.trainer .testimonial {
+  margin-top: 10px;
+}
+
+/* HTML Elements */
+
+p.more {
+  margin-bottom: 0;
+}
+
+a {
+  color: #00a5ea;
+  text-decoration: none;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  -ms-transition: all .25s;
+  transition: all .25s;
+}
+
+a:hover {
+  color: #0383c0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.main h2 {
+  color: #333;
+}
+
+.main h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.main h4 {
+  margin: 0;
+}
+
+/* Classes and resources */
+
+.help-box p {
+  margin-bottom: 0;
+}
+
+.resource-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.resource {
+  margin-bottom: 30px;
+}
+
+.resource:last-child {
+  margin-bottom: 0;
+}
+
+.resource h4,
+.resource p {
+  margin: 0;
+}
+
+.class-list .class {
+  margin: 15px 0;
+  padding: 0;
+  background: #F1F1F1;
+  background: -webkit-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -moz-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -o-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -ms-linear-gradient(#FAFAFA, #F1F1F1);
+  background: linear-gradient(#FAFAFA, #F1F1F1);
+  border: 1px solid #DDD;
+  border-bottom: 1px solid #CCC;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white, 0 1px 5px #F1F1F1;
+}
+
+.class h4 {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: .25em 0;
+}
+
+
+.class .summary {
+  padding: 10px 12px;
+}
+
+.class .details {
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.details .icon {
+  position: relative;
+  top: 3px;
+}
+
+.details span {
+  margin-right: 5px;
+}
+
+.button {
+  border-radius: 3px;
+  padding: 0 10px 0 10px;
+  line-height: 24px;
+  display: inline-block;
+  background: #0acef2;
+  background: -webkit-linear-gradient(#0acef2, #059ce5);
+  background: -moz-linear-gradient(#0acef2, #059ce5);
+  background: -o-linear-gradient(#0acef2, #059ce5);
+  background: -ms-linear-gradient(#0acef2, #059ce5);
+  background: linear-gradient(#0acef2, #059ce5);
+  border: 1px solid #0071B9;
+  -webkit-box-shadow: 0 1px 0 #FFFFFF, inset 0 1px 0 rgba(255,255,255,.5);
+  box-shadow: 0 1px 0 #FFFFFF, inset 0 1px 0 rgba(255,255,255,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+
+.button:hover {
+  color: #fff;
+  background: -webkit-linear-gradient(#07d7ff, #059ce5);
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+.class .actions {
+  float: right;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.small-class .actions {
+  margin-top: 3px;
+}
+
+.actions .cost {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0;
+}
+
+p.register {
+  text-align: right;
+}
+
+
+
+.resource img {
+  border: 3px solid #ccc;
+  width: 85%;
+  max-width: 200px;
+  border-radius: 3px;
+}
+
+.video, .repo, .book, .other {
+  margin: 15px 0;
+  padding: 10px 12px;
+  background: #F1F1F1;
+  background: -webkit-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -moz-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -o-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -ms-linear-gradient(#FAFAFA, #F1F1F1);
+  background: linear-gradient(#FAFAFA, #F1F1F1);
+  border: 1px solid #DDD;
+  border-bottom: 1px solid #CCC;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white, 0 1px 5px #F1F1F1;
+}
+
+.resource h4 {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: .25em 0;
+}
+
+.repo img, .class img {
+  border: none;
+  width: auto;
+}
+
+.repo img {
+  float: left;
+  margin-right: 8px;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  opacity: .7;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  -ms-transition: all .25s;
+  transition: all .25s;
+}
+
+.repo:hover img {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.repo .summary {
+  display: inline-block;
+  width: 80%;
+}
+
+.repo .name {
+  font-size: 1.2em;
+  margin: .15em 0;
+}
+
+.book img {
+  max-width: 120px;
+}
+
+@media screen and (max-width: 568px){
+  .video, .book, .other {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .repo img {
+    width: 16px;
+    height: 16px;
+    margin-top: 6px;
+  }
+  .repo .name {
+    font-size: 1em;
+  }
+}
+
+.pres-wrapper {
+  padding-right: 10px;
+}
+
+.pres-wrapper .container {
+  background: #F1F1F1;
+  background: -webkit-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -moz-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -o-linear-gradient(#FAFAFA, #F1F1F1);
+  background: -ms-linear-gradient(#FAFAFA, #F1F1F1);
+  background: linear-gradient(#FAFAFA, #F1F1F1);
+  border: 1px solid #DDD;
+  border-bottom: 1px solid #CCC;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 white;
+  box-shadow: inset 0 1px 0 white, 0 1px 5px #F1F1F1;
+}
+
+.pres-wrapper .container .inner-padding {
+  padding: 10px 12px;
+}
+
+.pres-wrapper .inner-padding img {
+  width: 95%;
+}
+
+@media screen and (min-width: 361px) and (max-width: 568px){
+  .pres-wrapper .inner-padding img {
+    width: 36%;
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+  .pres-wrapper .inner-padding h4 {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .pres-wrapper .inner-padding {
+    text-align: center;
+  }
+}
+
+/* Contact page */
+
+.contact .main {
+  padding-top: 10px;
+}
+
+.email-button {
+  display: inline-block;
+  padding: .5em .8em .6em;
+  border-radius: 5px;
+  font-size: 1.8em;
+  font-weight: 300;
+  background: #0acef2;
+  background: -webkit-linear-gradient(#0acef2, #059ce5);
+  background: -moz-linear-gradient(#0acef2, #059ce5);
+  background: -o-linear-gradient(#0acef2, #059ce5);
+  background: -ms-linear-gradient(#0acef2, #059ce5);
+  background: linear-gradient(#0acef2, #059ce5);
+  border: 1px solid #0071B9;
+  -webkit-box-shadow: 0 1px 0 #FFFFFF, inset 0 1px 0 rgba(255,255,255,.5);
+  box-shadow: 0 1px 3px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+  -webkit-animation-name: buttonglow;
+  -moz-animation-name: buttonglow;
+  -ms-animation-name: buttonglow;
+  -o-animation-name: buttonglow;
+  animation-name: buttonglow;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes buttonglow {
+  from { -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.5); }
+  36% { -webkit-box-shadow: 0 0 20px #00b1ff, inset 0 1px 0 rgba(255,255,255,.5); }
+  to { -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.5); }
+}
+
+.email-button:hover {
+  color: #fff;
+  background: -webkit-linear-gradient(#07d7ff, #059ce5);
+}
+
+.email-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.email-button img {
+  position: relative;
+  top: 2px;
+  left: -3px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 480px){
+  .email-button {
+    font-size: 1.25em;
+  }
+  .email-button img {
+    width: 24px;
+    height: 17px;
+  }
+
+  .day{
+      display: block;
+  }
+
+  .class-list .class{
+    text-align: center;
+  }
+
+  .class .actions{
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  p.register{
+    text-align: center;
+  }
+
+  .date:nth-child(n+2){
+    border-top: solid 1px #ccc;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .email-button {
+    font-weight: normal;
+  }
+}
+
+.try-git-banner {
+  text-align: center;
+  margin: 20px 0;
+  background-color: #EFEFEF;
+  background-image: -o-linear-gradient(#EFEFEF, #FCFCFC);
+  background-image: -moz-linear-gradient(#EFEFEF, #FCFCFC);
+  background-image: -webkit-linear-gradient(#EFEFEF, #FCFCFC);
+  background-image: -ms-linear-gradient(#EFEFEF, #FCFCFC);
+  background-image: linear-gradient(#EFEFEF, #FCFCFC);
+  -moz-box-shadow:    inset 0px 1px 5px 0 rgba(0,0,0,.2);
+  -webkit-box-shadow: inset 0px 1px 5px 0 rgba(0,0,0,.2);
+  box-shadow:         inset 0px 1px 5px 0 rgba(0,0,0,.2);
+}
+
+.try-git-banner span, .try-git-banner a {
+  padding: 5px 12px;
+  line-height: 32px;
+}
+
+.try-git-banner span {
+  color: #666;
+  text-shadow: 0 1px 0 #FFFFFF;
+}
+
+.try-git-banner a {
+  margin: 0 0 10px;
+}
+
+.try-git-banner img {
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 460px){
+  .try-git-banner span, .try-git-banner a {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 568px){
+  .container .content.try-git-banner {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .try-git-banner a {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 960px){
+  .try-git-banner {
+    border-radius: 5px;
+  }
+  .try-git-banner span {
+    font-size: 28px;
+  }
+  .try-git-banner a {
+    font-size: 21px;
+  }
+}
+
+/* Utility classes */
+
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }

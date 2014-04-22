@@ -1,0 +1,57 @@
+/* General */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $mono-medium;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+header, section, footer {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+.center{
+  text-align: center;
+}
+
+section.main {
+  padding: 30px 0 10px;
+}
+
+/* Sticky footer */
+
+.page {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -100px;
+}
+
+footer, .push {
+  margin: 0;
+  padding: 20px 0 0;
+  clear: both;
+  position: relative;
+}
+
+@media screen and (max-width: 380px){
+  .page {
+    margin-bottom: -154px;
+  }
+  footer, .push {
+    height: 154px;
+  }
+}
