@@ -39,17 +39,6 @@ body {
   background: #fff;
   color: #222222; }
 
-h1 {
-  font-size: 300%;
-  font-weight: 200;
-  text-rendering: optimizeLegibility; }
-
-h2 {
-  font-size: 1.4em; }
-
-h3 {
-  font-size: 1.2em; }
-
 p {
   text-rendering: optimizeLegibility;
   line-height: 150%; }
@@ -68,8 +57,9 @@ section {
     margin: 0 0 0 0; }
   section .hero hgroup {
     margin-top: 60px; }
-  section .hero p {
+  section .hero p, section .hero a {
     font-size: 112.5%;
+    text-decoration: none;
     color: #0d3f6b;
     margin-bottom: 30px; }
   section .hero .octicon {

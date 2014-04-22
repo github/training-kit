@@ -13,10 +13,12 @@
   margin: 0;
 }
 
-.hero p {
+.hero p, .hero a {
   font-weight: 300;
+  text-decoration: none;
   margin: 0 0 1em;
   opacity: .7;
+  color: #ffffff;
 }
 
 .hero .content {
