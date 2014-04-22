@@ -7,19 +7,19 @@
 }
 
 .screen-shot{
-  background: url(../images/screen-shot-slide.png) no-repeat bottom center;
+  background: url(../images/screen-shot-slidedeck.png) no-repeat bottom center;
   background-size: contain;
-  padding-bottom: 350px;
+  padding-bottom: 300px;
 }
 
 .workbook{
-  background: url(../images/screen-shot-workbook.png) no-repeat bottom center lighten($mono-light, 5%);
-  background-size: 700px;
-  padding-bottom: 400px;
+  background: url(../images/screen-shot-workbook.png) no-repeat 0px 25px lighten($mono-light, 5%);
+  background-size: contain;
+  padding-bottom: 270px;
 }
 
 .downloads{
-  background: url(../images/screen-shot-pdf.png) no-repeat bottom center;
-  background-size: 800px;
-  padding-bottom: 440px;
+  background: url(../images/screen-shot-pdf.png) no-repeat 0px 25px;
+  background-size: contain;
+  padding-bottom: 230px;
 }
