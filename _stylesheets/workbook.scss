@@ -17,30 +17,33 @@
   }
 }
 
-/* General external link */
-a[href^="http://"] {
-  @include octicon-link("\f0b6");
-}
+.workbook{
+  /* General external link */
+  a[href^="http://"] {
+    @include octicon-link("\f0b6");
+  }
 
-/* GitHub Links */
-a[href^="https://github.com"],
-a[href^="https://www.github.com"]
-{
-  @include octicon-link("\f008");
-}
+  /* GitHub Links */
+  a[href^="https://github.com"],
+  a[href^="https://www.github.com"],
+  a[href^="https://help.github.com"]
+  {
+    @include octicon-link("\f008");
+  }
 
-/* GitHub Book Links, Guide Links */
-a[href^="http://git-scm.com/book"],
-a[href^="https://guides.github.com"]
-{
-  @include octicon-link("\f007");
-}
+  /* GitHub Book Links, Guide Links */
+  a[href^="http://git-scm.com/book"],
+  a[href^="https://guides.github.com"]
+  {
+    @include octicon-link("\f007");
+  }
 
 
-/* YouTube Links */
-a[href^="https://youtube.com"],
-a[href^="https://www.youtube.com"] {
-  @include octicon-link("\f0b9");
+  /* YouTube Links */
+  a[href^="https://youtube.com"],
+  a[href^="https://www.youtube.com"] {
+    @include octicon-link("\f0b9");
+  }
 }
 
 /* Scopes wrapper */
