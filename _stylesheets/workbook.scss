@@ -5,6 +5,44 @@
   display: none;
 }
 
+
+@mixin octicon-link($char){
+  font: normal normal 1em octicons;
+  text-decoration: none;
+  color: $color-dark;
+
+  &:before{
+    content: $char;
+    margin-right: 5px;
+  }
+}
+
+/* General external link */
+a[href^="http://"] {
+  @include octicon-link("\f0b6");
+}
+
+/* GitHub Links */
+a[href^="https://github.com"],
+a[href^="https://www.github.com"]
+{
+  @include octicon-link("\f008");
+}
+
+/* GitHub Book Links, Guide Links */
+a[href^="http://git-scm.com/book"],
+a[href^="https://guides.github.com"]
+{
+  @include octicon-link("\f007");
+}
+
+
+/* YouTube Links */
+a[href^="https://youtube.com"],
+a[href^="https://www.youtube.com"] {
+  @include octicon-link("\f0b9");
+}
+
 /* Scopes wrapper */
 
 .outline{
@@ -108,33 +146,6 @@
   }
 }
 
-.booklink{
-  &:before{
-    content: "\f007";
-    margin-right: 5px;
-  }
-}
-
-.githublink{
-  &:before{
-    content: "\f008";
-    margin-right: 5px;
-  }
-}
-
-.weblink{
-  &:before{
-    content: "\f0b6";
-    margin-right: 5px;
-  }
-}
-
-.videolink{
-  &:before{
-    content: "\f0b9";
-    margin-right: 5px;
-  }
-}
 
 
 .summary, .outline, .details{

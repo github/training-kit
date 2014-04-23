@@ -12,8 +12,8 @@ description: This student and teacher workbook will be your companion to the Git
 * Git, the information tracker
 * GitHub, the collaboration platform
 * Distributed version control
-* <a href="http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git" class="booklink">A short history of Git</a>
-* <a href="http://git-scm.com" class="weblink">The Git project homepage</a>
+* [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
+* [The Git project homepage](http://git-scm.com)
 
 #### Details
 __Git is an open source distributed__ version control system invented by Linus Torvalds in 2005.  It is used to version the Linux kernel and is shown to be, by some research, the most popular modern version control system.
@@ -31,9 +31,9 @@ git version 1.8.2
 ```
 
 ##  GitHub Installers
-* <a href="http://windows.github.com" class="weblink">GitHub for Windows installer</a>
-* <a href="http://mac.github.com" class="weblink">GitHub for Mac installer</a>
-* <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git" class="booklink">Pro Git Book: Installing Git</a>
+* [GitHub for Windows installer](http://windows.github.com)
+* [GitHub for Mac installer](http://mac.github.com)
+* [Pro Git Book: Installing Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
 * **Windows**: The GitHub for Windows installer can be found at http://windows.github.com.
 * **Mac**: The GitHub for Mac installer can be found at http://mac.github.com.
 * **Linux**: Git's source code and a listing of supported package managers can be found at http://git-scm.com/download/linux.
@@ -43,8 +43,8 @@ The command line version of Git has a very light footprint. For most platforms, 
 
 
 ## The GitHub platform
-*  <a href="https://github.com/features" class="githublink">GitHub.com feature list</a>
-* <a href="https://www.youtube.com/watch?v=ezxRcdJ8glM&list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx" class="videolink">How to sign up for GitHub</a>
+* [GitHub.com feature list](https://github.com/features)
+* [How to sign up for GitHub](https://www.youtube.com/watch?v=ezxRcdJ8glM&list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx)
 
 ### Details
 GitHub accounts are free. Sign up for one at [github.com/join](https://github.com/join).
@@ -61,7 +61,7 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 ## Ways of interacting with repositories
 
 ### Summary
-* <a href="https://guides.github.com/overviews/flow/" class="booklink">GitHub web flow</a>
+* [GitHub web flow](https://guides.github.com/overviews/flow/)
 * GitHub GUIs for Mac, Windows
 * Command line
 
@@ -106,7 +106,7 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 
 ### Summary
 * Forking
-    * <a href="https://guides.github.com/overviews/forking/" class="booklink">Guide to Forking</a>
+    * [Guide to Forking](https://guides.github.com/overviews/forking/)
     * Reason for forks
     * What it encourages
     * How it insulates
