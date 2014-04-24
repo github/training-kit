@@ -148,6 +148,14 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 * Network graph
 * Activity graph
 
+## GitHub shortcuts
+
+### Summary
+
+* `/` command bar
+* `?` help
+* `t` fuzzy file search
+
 ## Project management basics
 
 ### Summary
