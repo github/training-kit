@@ -2,7 +2,7 @@
 
 Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
 
-## Install git
+## Install Git
 GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
 
 ### GitHub for Windows
@@ -11,7 +11,7 @@ http://windows.github.com
 ### GitHub for Mac
 http://mac.github.com
 
-Git distributions for Linux and POSIX systems are available on the official Git SCM web site.
+Git distributions for Linux and POSIX systems are available on the official Git SCM website.
 
 ### Git for all platforms
 http://git-scm.com
@@ -155,7 +155,7 @@ Temporarily stores all modified tracked files
 
 ```$ git stash pop```
 
-Restores the most recent stashed files
+Restores the most recently stashed files
 
 
 ```$ git stash list```
@@ -229,7 +229,7 @@ Downloads bookmark history and incorporates changes
 ---
 
 ## GitHub Training
-Learn more about using GitHub and Git. Email the Training Team or visit our web site for learning event schedules and private class availability.
+Learn more about using GitHub and Git. Email the Training Team or visit our website for learning event schedules and private class availability.
 
 * training@github.com
 * training.github.com
