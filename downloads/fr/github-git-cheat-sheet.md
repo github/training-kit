@@ -1,39 +1,38 @@
-# GitHub Git Cheat Sheet
+# Aide-mémoire GitHub Git
 
-Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
+Git est le sytème de gestion de version décentralisé open source qui facilite les activités GitHub sur votre ordinateur. Cet aide-mémoire permet un accès rapide aux instructions des commandes Git les plus utilisées.
 
-## Install git
-GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
+## Installer git
+GitHub fournit des clients desktop qui incluent une interface graphique pour les manipulations les plus courantes et une "an automatically updating command line edition of Git" pour les scénari avancés.
 
-### GitHub for Windows
+### GitHub pour Windows
 http://windows.github.com
 
-### GitHub for Mac
+### GitHub pour Mac
 http://mac.github.com
 
-Git distributions for Linux and POSIX systems are available on the official Git SCM web site.
+Les distributions de Git pour Linux et les systèmes POSIX sont disponibles sur le site web officiel de Git SCM.
 
-### Git for all platforms
+###Git pour toutes les plate-formes
 http://git-scm.com
 
-## Configure tooling
-Configure user information for all local repositories
+## Configuration des outils
+Configurer les informations de l'utilisateur pour tous les dépôts locaux
 
 
-```$ git config --global user.name "[name]"```
+```git config --global user.name "[name]"```
 
-Sets the name you want attached to your commit transactions
+Définir le nom que vous voulez associer à toutes vos opérations de commit
 
 
 ```$ git config --global user.email "[email address]"```
 
-Sets the email you want attached to your commit transactions
+Définir l'email que vous voulez associer à toutes vos opérations de commit
 
 
 ```$ git config --global color.ui auto```
 
-Enables helpful colorization of command line output
-
+Activer la colorisation de la sortie en ligne de commande
 
 ## Create repositories
 Start a new repository or obtain one from an existing URL
