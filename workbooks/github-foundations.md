@@ -164,3 +164,7 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 * Milestones
 * Pulse
 * Tags, Releases
+* Collaborators
+* Organizations
+* Teams
+
