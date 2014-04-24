@@ -22,95 +22,94 @@ Configurer les informations de l'utilisateur pour tous les dépôts locaux
 
 ```git config --global user.name "[name]"```
 
-Définir le nom que vous voulez associer à toutes vos opérations de commit
+Définit le nom que vous voulez associer à toutes vos opérations de commit
 
 
 ```$ git config --global user.email "[email address]"```
 
-Définir l'email que vous voulez associer à toutes vos opérations de commit
+Définit l'email que vous voulez associer à toutes vos opérations de commit
 
 
 ```$ git config --global color.ui auto```
 
-Activer la colorisation de la sortie en ligne de commande
+Active la colorisation de la sortie en ligne de commande
 
-## Create repositories
-Start a new repository or obtain one from an existing URL
+## Créer des dépôts
+Démarrer un nouveau dépôt ou en obtenir un depuis une URL existante
 
 
 ```$ git init [project-name]```
 
-Creates a new local repository with the specified name
+Crée un dépôt local à partir du nom spécifié
 
 
 ```$ git clone [url]```
 
-Downloads a project and its entire version history
+Télécharge un projet et tout son historique de versions
 
-## Make changes
-Review edits and craft a commit transaction
+## Effectuer des changements
+Consulter les modifications et effectuer une opération de commit
 
 
 ```$ git status```
 
-Lists all new or modified files to be committed
+Liste tous les nouveaux fichiers et les fichiers modifiés à commiter
 
 
 ```$ git diff```
 
-Shows file differences not yet staged
+Montre les modifications de fichier qui ne sont pas encore indexées
 
 
 ```$ git add [file]```
 
-Snapshots the file in preparation for versioning
+Ajoute un instantané du fichier, en préparation pour le suivi de version
 
 
 ```$ git diff --staged```
 
-Shows file differences between staging and the last file version
+Montre les différences de fichier entre la version indexée et la dernière version
 
 
 ```$ git reset [file]```
 
-Unstages the file, but preserves its contents
+Enleve le fichier de l'index, mais préserve son contenu
 
 
 ```$ git commit -m"[descriptive message]"```
 
-Records file snapshots permanently in version history
+Enregistre des instantanés de fichiers de façon permanente dans l'historique des versions
 
-## Group changes
-Name a series of commits and combine completed efforts
+## Grouper des changements
+Nommer une série de commits et combiner les résultats de travaux terminés
 
 
 ```$ git branch```
 
-Lists all local branches in the current repository
+Liste toutes les branches locales dans le dépôt courant
 
 
 ```$ git branch [branch-name]```
 
-Creates a new branch
+Crée une nouvelle branche
 
 
 ```$ git checkout [branch-name]```
 
-Switches to the specified branch and updates working directory
+Bascule sur la branche spécifiée et met à jour le répertoire de travail (working directory)
 
 
 ```$ git merge [branch-name]```
 
-Combines the specified branch’s history into the current branch
+Combine dans la branche courante l'historique de la branche spécifiée
 
 
 ```$ git branch -d [branch-name]```
 
-Deletes the specified branch
+Supprime la branche spécifiée
 
-
-## Refactor file names
-Relocate and remove versioned files
+## Changements au niveau des noms de fichiers
+Déplacer et supprimer des fichiers sous suivi de version
 
 
 ```$ git rm [file]```
