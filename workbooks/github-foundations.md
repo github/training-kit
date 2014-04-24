@@ -168,3 +168,8 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 * Organizations
 * Teams
 
+## Special Repository Features of GitHub
+* Contributing.md
+* License.md (and GitHub special dropdown)
+* .gitignore (and GitHub special dropdown)
+* Readme.md (in root, in subfolders)
