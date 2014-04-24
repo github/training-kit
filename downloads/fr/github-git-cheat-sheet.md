@@ -96,7 +96,7 @@ Crée une nouvelle branche
 
 ```$ git checkout [branch-name]```
 
-Bascule sur la branche spécifiée et met à jour le répertoire de travail (working directory)
+Bascule sur la branche spécifiée et met à jour le répertoire de travail
 
 
 ```$ git merge [branch-name]```
@@ -114,17 +114,17 @@ Déplacer et supprimer des fichiers sous suivi de version
 
 ```$ git rm [file]```
 
-Deletes the file from the working directory and stages the deletion
+Supprime le fichier du répertoire de travail et met à jour l'index
 
 
 ```$ git rm --cached [file]```
 
-Removes the file from version control but preserves the file locally
+Supprime le fichier du système de suivi de version mais le préserve localement 
 
 
 ```$ git mv [file-original] [file-renamed]```
 
-Changes the file name and prepare it for commit
+Renomme le fichier et prépare le changement pour un commit 
 
 ## Suppress tracking
 Exclude temporary files and paths
