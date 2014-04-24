@@ -89,7 +89,8 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
   * Line-level tracking
   * Commit messages
   * Grouping files (with desktop clients)
-  * .com Commits page
+  * Distinction of commit process on GitHub
+  * Listing page on GitHub
 * Branches (general)
   * Container for grouped commits
   * Simpler means to integrate change
