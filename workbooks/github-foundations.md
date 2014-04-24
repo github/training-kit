@@ -65,12 +65,22 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 * GitHub GUIs for Mac, Windows
 * Command line
 
-## Getting to know GitHub
+## Getting to know Git & GitHub
 
 ### Summary
 * Repository initialization
+  * New project and new repository
+  * Repository based on existing content
+  * Through web interface
+  * Web interface and GUI client
 * Actionable steps (Create, Edit, Remove, Move)
-* Commits (page)
+
+## Acquiring repos
+
+### Summary
+* Clone from web (Clone in Desktop button)
+* Clone via personal repo list in GitHub Desktop
+* Complete "copy" explanation
 
 ## Version control basics
 
@@ -79,18 +89,19 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
   * Line-level tracking
   * Commit messages
   * Grouping files (with desktop clients)
-* Branching
-  * Branching concepts
-  * Branch selection menu
-  * Branch listing page
-  * Branch comparison view
-
-## Acquiring repos
-
-### Summary
-* Clone from web (Clone in Desktop button)
-* Clone via personal repo list in GitHub Desktop
-* Complete "copy" explanation
+  * .com Commits page
+* Branches (general)
+  * Container for grouped commits
+  * Simpler means to integrate change
+  * Cleaner code review possibilities
+* Branches (GitHub.com)
+  * Selection menu
+  * Listing page
+  * Comparison view
+* Branches (GitHub for Desktop)
+  * Create
+  * Change
+  * Publish
 
 ## Local repository interaction
 
