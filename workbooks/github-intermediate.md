@@ -32,7 +32,7 @@ $ git config --global color.ui auto
 
 ## Configuing the Git User
 ### Summary
-* <a href="http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup" class="booklink">Pro Git Book: First Time Git Setup</a>
+* [Pro Git Book: First Time Git Setup](http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup)
 * Username
 * Email address
 * No password

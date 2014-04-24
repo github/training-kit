@@ -239,8 +239,8 @@ $ git commit --amend
 ## Advanced GitHub Issues
 
 ### Summary
-* <a href="https://guides.github.com/overviews/issues/" class="githublink">Guide to Mastering Issues</a>
-* <a href="https://help.github.com/articles/closing-issues-via-commit-messages" class="githublink">Automatic closing of Issues by commit</a>
+* [Guide to Mastering Issues](https://guides.github.com/overviews/issues/)
+* [Automatic closing of Issues by commit](https://help.github.com/articles/closing-issues-via-commit-messages)
 * Symmetric cross-links of issue mentions
 * Cross-repo Issue mentions
 
@@ -429,8 +429,8 @@ $ git rebase -i [remote]/[branch]
 ## Advanced rebasing
 
 ### Summary
-* <a href="http://git-scm.com/book/ch3-6.html" class="booklink">Rebasing chapter of Pro Git book</a>
-* <a href="http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases" class="booklink">Git rebase --onto section of Pro Git book</a>
+* [Rebasing chapter of Pro Git book](http://git-scm.com/book/ch3-6.html)
+* [Git rebase --onto section of Pro Git book](http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases)
 * Changing where branch history begins
 * Moving blocks of history around
 * Breadcrumbs for later fixups and squashes
@@ -605,9 +605,9 @@ $ git credential-cache exit
 * Classic authentication with GitHub
 * Diminishing in use at HTTPS increases
 * Blocked by more firewalls
-* <a href="https://help.github.com/articles/generating-ssh-keys" class="booklink">Generate SSH key</a>
-* <a href="https://github.com/settings/ssh" class="githublink">Upload public key to GitHub</a>
-* <a href="https://github.com/settings/ssh" class="githublink">Audit SSH key use</a>
+* [Generate SSH key](https://help.github.com/articles/generating-ssh-keys)
+* [Upload public key to GitHub](https://github.com/settings/ssh)
+* [Audit SSH key use](https://github.com/settings/ssh)
 
 
 #### Details
@@ -637,9 +637,9 @@ $ gitk --all
 ## Widely used GUIs
 
 ### Summary
-* <a href="http://git-scm.com/downloads/guis" class="weblink">Listing of GUIs</a>
-* <a href="http://eclipse.github.com" class="weblink">eGit for Eclipse</a>
-* <a href="http://www.syntevo.com/smartgithg/" class="weblink">SmartGit for Windows, Mac, Linux</a>
+* [Listing of GUIs](http://git-scm.com/downloads/guis)
+* [eGit for Eclipse](http://eclipse.github.com)
+* [SmartGit for Windows, Mac, Linux](http://www.syntevo.com/smartgithg/)
 
 ## Refspecs
 ### Summary
