@@ -249,6 +249,8 @@ $ git branch -a
 * Folding in branches
 * Resolving conflicting merges (manually edit)
 * Resolving file with shortcuts
+* Updating topic branch from a base branch
+* Integrating separate repo history
 
 #### Details
 ```
@@ -264,6 +266,10 @@ $ git checkout --theirs [file]
 
 $ git add [file]
 $ git commit
+
+$ git merge [base]
+
+$ git pull [repository] [branch]
 ```
 
 ## Fetching changes
@@ -271,11 +277,15 @@ $ git commit
 ### Summary
 * Comparing without merge
 * Merging selectively
+* Retrieving from other repositories
 
 #### Details
 ```
 $ git fetch [remote]
 $ git branch -a
+
+$ git fetch [repository] [branch]
+$ git show FETCH_HEAD
 ```
 
 ## Removing files
@@ -302,13 +312,15 @@ $ git rm --cached -- <filename>
 ```shell
 $ mv <file> <newfilename>
 $ git add -A .
+
 # or
+
 $ git mv <file> <file>
 $ git log --stat -M
 $ git log --follow <file>
 ```
 
-## Undoing commits with `revert` and `reset`
+## Undoing commits
 
 ### Summary
 * Generating commit to restore past patch set
@@ -364,7 +376,7 @@ $ git pop
 $ git stash --include-untracked
 ```
 
-## Recovering almost anything with the `reflog`
+## Recovering almost anything
 
 ### Summary
 * Tracing Git action "history"
@@ -376,13 +388,24 @@ $ git reflog
 $ git reflog --all
 $ git config --global alias.undo "reset HEAD@{1}"
 $ git checkout HEAD@{1}
+
+$ git reset --hard HEAD@{1}
+
+$ git branch [name] HEAD@{1}
 ```
 
 ## Pull requests
 
 ### Summary
 * Pushing branch to repo
-* Creating GH pull request
+* Using GitHub interface
+* Retrieving locally
+
+```
+$ git push -u [remote] [branch]
+
+$ git fetch [remote] refs/pull/[issue-number]/head
+```
 
 ## GitHub Issues
 
@@ -399,6 +422,7 @@ $ git checkout HEAD@{1}
 
 #### Details
 ```
+$ git config --global alias.lol "log --graph --all --oneline --decorate"
 $ git config --global alias.l "log --oneline --stat"
 $ git config alias.s "status -s"
 $ git s
