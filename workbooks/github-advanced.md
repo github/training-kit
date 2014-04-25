@@ -52,12 +52,12 @@ These are called Branching Strategies, but are just as easily called *Team Colla
     * [What to do when things get complicated](http://blog.springsource.org/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/)
 
 ## Applying branching patterns
-
 ### Summary
 * Breaking features down into pieces
 * Feedback early on Pull Requests
 * @mentioning teams instead of individuals
 * Continuous integration
+
 
 ## Branch pull options
 ### Summary
@@ -67,12 +67,36 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 * `FETCH_HEAD`
 * `MERGE_HEAD`
 
+
 ## Inserting Commits Into Existing History
 ### Summary
+* Reusing small pieces of code with `cherry-pick`
+  * Why use `cherry-pick` instead of `merge`?
+  * What happens when you `cherry-pick`?
+  * Maintaining `author` and `committer` fields
+  * Tracing any cherry-picks with `-x` commit message metadata
+  * `-x` metadata hyperlinked on GitHub
+  * `git cherry` to view absent commits
 * Rebase interactive
-* Can include cherry-pick
-* Must remember to continue the rebase
-* Alters history
+  * Can include cherry-pick
+  * Must remember to continue the rebase
+  * Alters history
+
+#### Details
+```
+$ git cherry-pick [ref]
+$ git cherry-pick [ref1] [ref2]
+
+$ git branch --contains [noncherrypickedref]
+$ git cherry [upstreambranch]
+
++ bd650366fa8c39f03cfc9dd5290f60e7331a631d
++ ea62f9f6a7cef55a8a3028e617d28819408a63c4
++ 874628c0e405390130d6457776273451bb66d3a8
++ 046a9b8d0f2363361e45cfbc7e0f6d82968f2f9f
++ 315fe16408f9a9080527e00df3d9a8c1ba0dc97a
+```
+
 
 ## Undoing and Re-doing Almost Anything
 ### Summary
@@ -189,6 +213,23 @@ git push origin :<tag-name-to-delete>
 * PRs multiple levels up
 * Converting issues to PRs
 * PRs as Issues with code
+* Automatic closing of PRs by local merges
+* Merges must be _made by recursive_
+* Retrieving PRs locally to resolve conflicts
+(without locally merging to target branch)
+
+#### Details
+```
+$ git ls-remote origin
+$ git fetch origin refs/pull/1/head
+
+From github.com:youruser/somereponame
+ * branch            refs/pull/1/head -> FETCH_HEAD
+
+$ git show FETCH_HEAD
+$ git merge --no-commit --no-ff FETCH_HEAD
+```
+
 
 ## GitHub API
 
@@ -215,13 +256,32 @@ git push origin :<tag-name-to-delete>
 #### Details
 ```
 # Add in patch mode
-git add -p
+$ git add -p
 
 # Add interactively
-git add -i
+$ git add -i
 
 # The GitHub for Mac desktop client
-github
+$ github
+```
+
+## Stashing with precision
+
+### Summary
+* Name your stash
+* List stashes
+* Use specific stashes
+
+#### Details
+```
+$ git stash save "<description>"
+$ git stash --include-untracked
+$ git stash list
+$ git stash pop <name>
+$ git stash drop <name>
+$ git stash apply
+$ git stash clear
+$ git stash -p
 ```
 
 ## Committing Efficiencies
@@ -264,70 +324,7 @@ $ git commit -m "This resolves #[issue]"
 ```
 
 
-## Advanced GitHub Pull Requests
-* Automatic closing of PRs by local merges
-* Merges must be _made by recursive_
-* Retrieving PRs locally to resolve conflicts
-(without locally merging to target branch)
-
-#### Details
-```
-$ git ls-remote origin
-$ git fetch origin refs/pull/1/head
-
-From github.com:youruser/somereponame
- * branch            refs/pull/1/head -> FETCH_HEAD
-
-$ git show FETCH_HEAD
-$ git merge --no-commit --no-ff FETCH_HEAD
-```
-
-## Stashing with precision
-
-### Summary
-* Name your stash
-* List stashes
-* Use specific stashes
-
-#### Details
-```
-git stash save "<description>"
-git stash --include-untracked
-git stash list
-git stash pop <name>
-git stash drop <name>
-git stash apply
-git stash clear
-git stash -p
-```
-
-## Reusing small pieces of code with `cherry-pick`
-
-### Summary
-* Why use `cherry-pick` instead of `merge`?
-* What happens when you `cherry-pick`?
-* Maintaining `author` and `committer` fields
-* Tracing any cherry-picks with `-x` commit message metadata
-* `-x` metadata hyperlinked on GitHub
-* `git cherry` to view absent commits
-
-#### Details
-```
-$ git cherry-pick [ref]
-$ git cherry-pick [ref1] [ref2]
-
-$ git branch --contains [noncherrypickedref]
-$ git cherry [upstreambranch]
-
-+ bd650366fa8c39f03cfc9dd5290f60e7331a631d
-+ ea62f9f6a7cef55a8a3028e617d28819408a63c4
-+ 874628c0e405390130d6457776273451bb66d3a8
-+ 046a9b8d0f2363361e45cfbc7e0f6d82968f2f9f
-+ 315fe16408f9a9080527e00df3d9a8c1ba0dc97a
-```
-
 ## History analysis
-
 ### Summary
 * Commit ranges to review branch differences
 * Verifying merges have completed
@@ -397,7 +394,7 @@ $ git push origin :<branch-name>
 $ git checkout <featurebranch>
 $ git rebase master
 
-$ git config branch.autosetuprebase
+$ git config branch.autosetuprebase always
 $ git config branch.[master].rebase true
 ```
 
@@ -643,7 +640,7 @@ $ gitk --all
 
 ## Refspecs
 ### Summary
-* Specification for retrival and pushing
+* Specification for retrieval and pushing
 * Implied on fetch, pull, and push
 * Altered by option switches like `--tags`
 * Stored in `.git/config`
