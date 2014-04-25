@@ -58,7 +58,7 @@ Sign up for a free GitHub account at https://github.com/join.
 Git can be installed as a unified GitHub GUI and command line or merely as a stand-alone command line interface.
 
 
-## Ways of interacting with repositories
+## Interacting with repositories
 
 ### Summary
 * [GitHub web flow](https://guides.github.com/overviews/flow/)
@@ -73,7 +73,6 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
   * Repository based on existing content
   * Through web interface
   * Web interface and GUI client
-* Actionable steps (Create, Edit, Remove, Move)
 
 ## Acquiring repos
 
@@ -85,12 +84,15 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 ## Version control basics
 
 ### Summary
-* Commits
-  * Line-level tracking
+* Commits (GitHub.com)
+  * Actionable steps (Create, Edit, Remove, Move)
   * Commit messages
-  * Grouping files (with desktop clients)
-  * Distinction of commit process on GitHub
   * Listing page on GitHub
+* Commits (GitHub for Desktop)
+  * Managing file on system, reviewing results
+  * Line-level tracking
+  * Grouping files
+  * Synchronizing local commits
 * Branches (general)
   * Container for grouped commits
   * Simpler means to integrate change
