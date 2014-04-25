@@ -84,27 +84,26 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 ## Version control basics
 
 ### Summary
+* Commits
+  * History marker for file(s), change(s)
+  * Record of author, time, and message
+* Branches
+  * Container for grouped commits
+  * Simpler means to integrate change
+  * Cleaner code review possibilities
+* GitHub, local repositories
+
+## GitHub repository interaction
+
+### Summary
 * Commits (GitHub.com)
   * Actionable steps (Create, Edit, Remove, Move)
   * Commit messages
   * Listing page on GitHub
-* Commits (GitHub for Desktop)
-  * Managing file on system, reviewing results
-  * Line-level tracking
-  * Grouping files
-  * Synchronizing local commits
-* Branches (general)
-  * Container for grouped commits
-  * Simpler means to integrate change
-  * Cleaner code review possibilities
 * Branches (GitHub.com)
   * Selection menu
   * Listing page
   * Comparison view
-* Branches (GitHub for Desktop)
-  * Create
-  * Change
-  * Publish
 
 ## Local repository interaction
 
@@ -115,6 +114,16 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 * Branches
 * History
 * Syncing (GHfD)
+
+* Commits (GitHub for Desktop)
+  * Managing file on system, reviewing results
+  * Line-level tracking
+  * Grouping files
+  * Synchronizing local commits
+* Branches (GitHub for Desktop)
+  * Create
+  * Change
+  * Publish
 
 ## GitHub workflows
 
@@ -151,6 +160,20 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 * Network graph
 * Activity graph
 
+## GitHub Wikis
+
+### Summary
+* Fast documentation authoring for repositories
+* Standalone repository
+* Easy access from repository navigation
+
+## GitHub Pages
+
+### Summary
+* Web page for your repository
+* Web page for your account
+* Author, edit, launch from GitHub
+
 ## GitHub shortcuts
 
 ### Summary
@@ -164,6 +187,7 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 ### Summary
 * GitHub Issues
 * Milestones
+* Network
 * Pulse
 * Tags, Releases
 * Collaborators
