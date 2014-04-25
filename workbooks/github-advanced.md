@@ -640,7 +640,7 @@ $ gitk --all
 
 ## Refspecs
 ### Summary
-* Specification for retrival and pushing
+* Specification for retrieval and pushing
 * Implied on fetch, pull, and push
 * Altered by option switches like `--tags`
 * Stored in `.git/config`
