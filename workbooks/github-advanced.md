@@ -256,13 +256,13 @@ $ git merge --no-commit --no-ff FETCH_HEAD
 #### Details
 ```
 # Add in patch mode
-git add -p
+$ git add -p
 
 # Add interactively
-git add -i
+$ git add -i
 
 # The GitHub for Mac desktop client
-github
+$ github
 ```
 
 ## Stashing with precision
@@ -274,14 +274,14 @@ github
 
 #### Details
 ```
-git stash save "<description>"
-git stash --include-untracked
-git stash list
-git stash pop <name>
-git stash drop <name>
-git stash apply
-git stash clear
-git stash -p
+$ git stash save "<description>"
+$ git stash --include-untracked
+$ git stash list
+$ git stash pop <name>
+$ git stash drop <name>
+$ git stash apply
+$ git stash clear
+$ git stash -p
 ```
 
 ## Committing Efficiencies
