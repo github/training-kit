@@ -1,135 +1,135 @@
-# GitHub Git Cheat Sheet
+# GitHub Folha de dicas de Git
 
-Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
+Git é um sistema de controle de versão distribuído open source que facilita ações com o GitHub em seu notebook ou desktop. Esta folha de dicas resume instruções comumente usadas via linha de comando do Git para referência rápida.
 
-## Install git
-GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
+## Instale o git
+GitHub fornece clientes desktop que incluem uma interface gráfica para as ações mais comuns em um repositório e atualiza automaticamente para a linha de comando do Git para cenários avançados.
 
-### GitHub for Windows
+### GitHub para Windows
 http://windows.github.com
 
-### GitHub for Mac
+### GitHub para Mac
 http://mac.github.com
 
-Git distributions for Linux and POSIX systems are available on the official Git SCM web site.
+Distribuições do Git para Linux e sistemas POSIX são disponíveis no site oficial do Git SCM.
 
-### Git for all platforms
+### Git para todas plataformas
 http://git-scm.com
 
-## Configure tooling
-Configure user information for all local repositories
+## Configure a ferramenta
+Configure informações de usuário para todos os repositórios locais
 
 
-```$ git config --global user.name "[name]"```
+```$ git config --global user.name "[nome]"```
 
-Sets the name you want attached to your commit transactions
+Configura o nome que você quer ligado as suas transações de commit
 
 
-```$ git config --global user.email "[email address]"```
+```$ git config --global user.email "[endereco-de-email]"```
 
-Sets the email you want attached to your commit transactions
+Configura o email que você quer ligado as suas transações de commit
 
 
 ```$ git config --global color.ui auto```
 
-Enables helpful colorization of command line output
+Habilita a colorização para a saída da linha de comando
 
 
-## Create repositories
-Start a new repository or obtain one from an existing URL
+## Crie repositórios
+Inicie um novo repositório ou obtenha de uma URL existente
 
 
-```$ git init [project-name]```
+```$ git init [nome-do-projeto]```
 
-Creates a new local repository with the specified name
+Cria um novo repositório local com um nome específico
 
 
 ```$ git clone [url]```
 
-Downloads a project and its entire version history
+Baixa um projeto e seu histórico de versão inteiro
 
-## Make changes
-Review edits and craft a commit transaction
+## Faça mudanças
+Revise edições e crie uma transação de commit
 
 
 ```$ git status```
 
-Lists all new or modified files to be committed
+Lista todos os arquivos novos ou modificados para serem commitados
 
 
 ```$ git diff```
 
-Shows file differences not yet staged
+Mostra diferenças no arquivo que não foram realizadas
 
 
-```$ git add [file]```
+```$ git add [arquivo]```
 
-Snapshots the file in preparation for versioning
+Faz o snapshot de um arquivo na preparação para versionamento
 
 
 ```$ git diff --staged```
 
-Shows file differences between staging and the last file version
+Mostra a diferença entre arquivos selecionados e a suas últimas versões
 
 
-```$ git reset [file]```
+```$ git reset [arquivo]```
 
-Unstages the file, but preserves its contents
+Deseleciona o arquivo, mas preserva seu conteúdo
 
 
-```$ git commit -m"[descriptive message]"```
+```$ git commit -m "[mensagem descritiva]"```
 
-Records file snapshots permanently in version history
+Grava o snapshot permanentemente do arquivo no histórico de versão
 
-## Group changes
-Name a series of commits and combine completed efforts
+## Mudanças em grupo
+Nomeie uma série de commits e combine os esforços completos
 
 
 ```$ git branch```
 
-Lists all local branches in the current repository
+Lista todos os branches locais no repositório atual
 
 
-```$ git branch [branch-name]```
+```$ git branch [nome-do-branch]```
 
-Creates a new branch
-
-
-```$ git checkout [branch-name]```
-
-Switches to the specified branch and updates working directory
+Cria um novo branch
 
 
-```$ git merge [branch-name]```
+```$ git checkout [nome-do-branch]```
 
-Combines the specified branch’s history into the current branch
-
-
-```$ git branch -d [branch-name]```
-
-Deletes the specified branch
+Muda para o branch específico e atualiza o diretório de trabalho
 
 
-## Refactor file names
-Relocate and remove versioned files
+```$ git merge [nome-do-branch]```
+
+Combina o histórico do branch específico com o branch atual
 
 
-```$ git rm [file]```
+```$ git branch -d [nome-do-branch]```
 
-Deletes the file from the working directory and stages the deletion
-
-
-```$ git rm --cached [file]```
-
-Removes the file from version control but preserves the file locally
+Exclui o branch específico
 
 
-```$ git mv [file-original] [file-renamed]```
+## Refatore nomes dos arquivos
+Mude e remova os arquivos versionados
 
-Changes the file name and prepare it for commit
 
-## Suppress tracking
-Exclude temporary files and paths
+```$ git rm [arquivo]```
+
+Remove o arquivo do diretório de trabalho e o seleciona para remoção
+
+
+```$ git rm --cached [arquivo]```
+
+Remove o arquivo do controle de versão mas preserva o arquivo localmente
+
+
+```$ git mv [arquivo-original] [arquivo-renomeado]```
+
+Muda o nome do arquivo e o seleciona para o commit
+
+## Suprima o rastreamento
+Exclua arquivos e diretórios temporários
 
 ```
 *.log
@@ -137,99 +137,99 @@ build/
 temp-*
 ```
 
-A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
+Um arquivo de texto chamado `.gitignore` suprime o versionamento acidental de arquivos e diretórios correspondentes aos padrões específicados
 
 
 ```$ git ls-files --other --ignored --exclude-standard```
 
-Lists all ignored files in this project
+Lista todos os arquivos ignorados neste projeto
 
-## Save fragments
-Shelve and restore incomplete changes
+## Salve fragmentos
+Arquive e restaure mudanças incompletas
 
 
 ```$ git stash```
 
-Temporarily stores all modified tracked files
+Armazena temporariamente todos os arquivos rastreados modificados
 
 
 ```$ git stash pop```
 
-Restores the most recent stashed files
+Restaura os arquivos recentes em stash
 
 
 ```$ git stash list```
 
-Lists all stashed changesets
+Lista todos os conjuntos de alterações em stash
 
 
 ```$ git stash drop```
 
-Discards the most recently stashed changeset
+Descarta os conjuntos de alterações mais recentes em stash
 
-## Review history
-Browse and inspect the evolution of project files
+## Revise histórico
+Navegue e inspecione a evolução dos arquivos do projeto
 
 
 ```$ git log```
 
-Lists version history for the current branch
+Lista o histórico de versões para o branch atual
 
 
-```$ git log --follow [file]```
+```$ git log --follow [arquivo]```
 
-Lists version history for the file, including renames
+Lista o histórico de versões para um arquivo, incluindo mudanças de nome
 
 
-```$ git diff [first-branch]...[second-branch]```
+```$ git diff [primerio-branch]...[segundo-branch]```
 
-Shows content differences between two branches
+Mostra a diferença de conteúdo entre dois branches
 
 
 ```$ git show [commit]```
 
-Outputs metadata and content changes of the specified commit
+Retorna mudanças de metadata e conteúdo para o commit especificado
 
-## Redo commits
-Erase mistakes and craft replacement history
+## Desfaça commits
+Apague enganos e crie um histórico substituto
 
 
 ```$ git reset [commit]```
 
-Undoes all commits after `[commit]`, preserving changes locally
+Desfaz todos os commits depois de `[commit]`, preservando mudanças locais
 
 
 ```$ git reset --hard [commit]```
 
-Discards all history and changes back to the specified commit
+Descarta todo histórico e mudanças para o commit especificado
 
-## Synchronize changes
-Register a repository bookmark and exchange version history
-
-
-```$ git fetch [bookmark]```
-
-Downloads all history from the repository bookmark
+## Sincronize mudanças
+Registre um marcador de repositório e troque o histórico de versão
 
 
-```$ git merge [bookmark]/[branch]```
+```$ git fetch [marcador]```
 
-Combines bookmark’s branch into current local branch
+Baixe todo o histórico de um marcador de repositório
+
+
+```$ git merge [marcador]/[branch]```
+
+Combina o marcador do branch no branch local
 
 
 ```$ git push [alias] [branch]```
 
-Uploads all local branch commits to GitHub
+Envia todos os commits do branch local para o GitHub
 
 
 ```$ git pull```
 
-Downloads bookmark history and incorporates changes
+Baixa o histórico e incorpora as mudanças
 
 ---
 
 ## GitHub Training
-Learn more about using GitHub and Git. Email the Training Team or visit our web site for learning event schedules and private class availability.
+Aprenda mais sobre o uso do GitHub e do Git. Envie um email para a Equipe de Treinamentos ou visite nosso site para ver a agenda de eventos ou a disponibilidade de cursos particulares.
 
 * training@github.com
 * training.github.com
