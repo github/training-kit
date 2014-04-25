@@ -208,6 +208,12 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 
 ## Special Repository Features of GitHub
 * Contributing.md
-* License.md (and GitHub special dropdown)
-* .gitignore (and GitHub special dropdown)
-* Readme.md (in root, in subfolders)
+* License.md
+  * During repository creation
+  * `+` a file with existing repository (special dropdown)
+* .gitignore
+  * During repository creation
+  * `+` a file with existing repository (special dropdown)
+* Readme.md
+  * In root
+  * In subfolders
