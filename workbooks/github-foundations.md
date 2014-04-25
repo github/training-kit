@@ -174,6 +174,18 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 * Web page for your account
 * Author, edit, launch from GitHub
 
+## GitHub Features
+
+### Summary
+* Notifications
+* Watching repositories
+* Starring repositories
+* Gist
+* GitHub Flavored Markdown
+  * Basics
+  * Emoji
+  * Checklists (Issues, Gists)
+
 ## GitHub shortcuts
 
 ### Summary
