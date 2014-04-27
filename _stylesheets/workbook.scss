@@ -19,7 +19,8 @@
 
 .workbook{
   /* General external link */
-  a[href^="http://"] {
+  a[href^="http://"],
+  a[href^="https://"] {
     @include octicon-link("\f0b6");
   }
 
