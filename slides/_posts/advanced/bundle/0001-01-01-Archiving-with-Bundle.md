@@ -1,7 +1,7 @@
 ---
 chapter: Bundle
 layout: slide
-tags: ['advanced/bundle']
+tags: ['bundle']
 ---
 
 Aggregate commits and objects

@@ -1,7 +1,7 @@
 ---
 chapter: Bundle
 layout: slide
-tags: ['advanced/bundle']
+tags: ['bundle']
 ---
 
 Create a new repo from archive file

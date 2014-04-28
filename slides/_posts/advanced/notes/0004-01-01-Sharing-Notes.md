@@ -1,7 +1,7 @@
 ---
 chapter: Notes
 layout: slide
-tags: ['advanced/notes']
+tags: ['notes']
 ---
 
     # Push with a One-Time Refspec

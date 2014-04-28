@@ -1,7 +1,7 @@
 ---
 chapter: Submodule
 layout: slide
-tags: ['advanced/submodule']
+tags: ['submodule']
 ---
 
 * Super Repo tracking Subordinate Repo

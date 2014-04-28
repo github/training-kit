@@ -1,7 +1,7 @@
 ---
 chapter: Customizing Remotes
 layout: slide
-tags: ['advanced/remote']
+tags: ['remote']
 ---
 
 	# Delete a remote branch with a refspec

@@ -1,7 +1,7 @@
 ---
 chapter: Bundle
 layout: slide
-tags: ['advanced/bundle']
+tags: ['bundle']
 ---
 
 Retrieve branches and new incremental bundle changes
