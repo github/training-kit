@@ -22,43 +22,43 @@ This is the connection of a repository hosted on a server, most likely GitHub.co
 The first thing to setup when using Git is two important fields about the user. This allows appropriate credit and traceability for project contributions.
 
 ```
-git config --global user.name "Mona Lisa Octocat"
-git config --global user.email "mona@github.com"
+$ git config --global user.name "Mona Lisa Octocat"
+$ git config --global user.email "mona@github.com"
 ```
 
 ## Versioning Files
 Versioning project files begins by initializing Git from within the directory and the first commit consisting of all content.
 
 ```
-git init
-git add .
-git commit -m 'initial commit'
+$ git init
+$ git add .
+$ git commit -m 'initial commit'
 ```
 
 Traditional  development effort consists of a short-lived branch which will ultimately be merged into a production-worthy branch.
 
 ```
-git branch feature-enhancement
-git checkout feature-enhancement
-git add [files]
-git commit -m 'Add feature enhancement'
+$ git branch feature-enhancement
+$ git checkout feature-enhancement
+$ git add [files]
+$ git commit -m 'Add feature enhancement'
 
 ```
 
 As commits can be efficiently made, the state of any new, modified, or missing files can be verified and quickly validated.
 
 ```
-git status
-git diff [modified-file]
+$ git status
+$ git diff [modified-file]
 ```
 
 ## Integrating Changes
 Commits can be made against any branch and in any order. Commonly, this is performed against the  master branch as means of feature or bug-fix integration.
 
 ```
-git checkout master
-git merge feature-enhancement
-git branch -d feature-enhancement
+$ git checkout master
+$ git merge feature-enhancement
+$ git branch -d feature-enhancement
 ```
 
 [PLACEHOLDER - Recursive Merge Diagram]
@@ -70,8 +70,8 @@ The last step deletes the branch. Merges result in all commit history becoming t
 Sharing commit history requires only a destination repository, one on GitHub.com, and a single setup step.
 
 ```
-git remote add origin [repo-url]
-git remote -v
+$ git remote add origin [repo-url]
+$ git remote -v
 ```
 
 [PLACEHOLDER - Local-Upstream Diagram]
@@ -79,14 +79,14 @@ git remote -v
 With a remote setup, and the traditional name of "origin" aliased to the URL, publishing local commits is simple.
 
 ```
-git push origin [branch-name]
+$ git push origin [branch-name]
 ```
 
 Retrieving changes from a shared repository and automatically merging in any new commits locally is performed in a multi-step operation run by one command.
 
 ```
-git checkout [target-branch]
-git pull origin [upstream-branch]
+$ git checkout [target-branch]
+$ git pull origin [upstream-branch]
 ```
 
 ## Bonus Materials
