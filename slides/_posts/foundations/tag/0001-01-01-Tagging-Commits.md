@@ -14,7 +14,7 @@ tags: ['tag']
 	# List known tags
 	git tag
 
-	# Show a tag’s contents
+	# Show a tag's contents
 	git show tag
 
 	* Tag a revision
