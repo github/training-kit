@@ -10,7 +10,7 @@ tags: ['init']
 
 	# Add all the code
 	$ git add .
-	$ git commit -m ”Initial import” 
+	$ git commit -m "Initial import"
 
 {% capture notes %}
 
