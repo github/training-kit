@@ -10,6 +10,6 @@ tags: ['network']
 {% capture notes %}
 * Remotes are symbolic names
 * Create as many as you like
-* Default is `origin` (if you’ve cloned)
+* Default is `origin` (if you've cloned)
 {% endcapture %}
 {% include hydeslides/core/notes %}

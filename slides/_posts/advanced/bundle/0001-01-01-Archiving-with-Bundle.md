@@ -22,5 +22,5 @@ Tag the last archive snapshot
 
 	git bundle create <file> <git-rev-list-args>
 	git bundle verify <file>
-	git bundle list-heads <file> [<rev>…]
-	git bundle unbundle <file> [<rev>…]
+	git bundle list-heads <file> [<rev>]
+	git bundle unbundle <file> [<rev>]
