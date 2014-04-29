@@ -1,6 +1,6 @@
 # GitHub Git Concepts
 
-Git is an open source, distributed version control system founded in command line interction. This guide provides the day-to-day setup and commands to utilize Git locally and connecting repositories  to GitHub.com for a complete collaboration workflow.
+Git is an open source, distributed version control system founded in command line interaction. This guide provides the day-to-day setup and commands to utilize Git locally and connecting repositories  to GitHub.com for a complete collaboration workflow.
 
 ## Understanding terms & Processes descriptions of GitHub and Git
 
