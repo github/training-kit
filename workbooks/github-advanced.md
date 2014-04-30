@@ -598,10 +598,27 @@ git config --add remote.[upstream].fetch ""+refs/pull/*/head:refs/remotes/[upstr
 
 ## Git Notes
 ### Summary
-* Supplemental commits
+* Supplements commit message and description
 * Parallel graph
-* Not cryptographically as truthworthy as the commits
+* Not cryptographically as trustworthy as the commits
 * Displayed in the GitHub web UI
+* Ability to namespace
+* Manual publishing
+* Manual retrieval
+
+```
+git notes add [commit]
+git notes edit [commit]
+
+git notes --ref=[namespace] add [commit]
+git log --show-notes=[namespace]
+
+git push [remote] refs/notes/*
+git push [remote] refs/notes/[namespace]
+
+git fetch [remote] refs/notes/*:refs/notes/*
+
+```
 
 ## Credential Caching
 
