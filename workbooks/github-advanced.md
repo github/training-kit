@@ -583,6 +583,43 @@ $ gh browse
 $ git config rerere.enable true
 ```
 
+## Refspecs
+### Summary
+* Specification for retrieval and pushing
+* Implied on fetch, pull, and push
+* Altered by option switches like `--tags`
+* Stored in `.git/config`
+* Ability to retrieve Pull Request branches
+
+```
+git fetch [repo-url] [source]:[destination]
+git config --add remote.[upstream].fetch ""+refs/pull/*/head:refs/remotes/[upstream]/pull/*""
+```
+
+## Git Notes
+### Summary
+* Supplements commit message and description
+* Parallel graph
+* Not cryptographically as trustworthy as the commits
+* Displayed in the GitHub web UI
+* Ability to namespace
+* Manual publishing
+* Manual retrieval
+
+```
+git notes add [commit]
+git notes edit [commit]
+
+git notes --ref=[namespace] add [commit]
+git log --show-notes=[namespace]
+
+git push [remote] refs/notes/*
+git push [remote] refs/notes/[namespace]
+
+git fetch [remote] refs/notes/*:refs/notes/*
+
+```
+
 ## Credential Caching
 
 ### Summary
@@ -637,17 +674,3 @@ $ gitk --all
 * [Listing of GUIs](http://git-scm.com/downloads/guis)
 * [eGit for Eclipse](http://eclipse.github.com)
 * [SmartGit for Windows, Mac, Linux](http://www.syntevo.com/smartgithg/)
-
-## Refspecs
-### Summary
-* Specification for retrieval and pushing
-* Implied on fetch, pull, and push
-* Altered by option switches like `--tags`
-* Stored in `.git/config`
-
-## Git Notes
-### Summary
-* Supplemental commits
-* Parallel graph
-* Not cryptographically as truthworthy as the commits
-* Displayed in the GitHub web UI
