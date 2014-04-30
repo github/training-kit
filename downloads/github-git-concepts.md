@@ -1,4 +1,4 @@
-# GitHub Git Concepts
+# GitHub Repository Fundamentals
 
 Git is an open source, distributed version control system founded in command line interaction. This guide provides the day-to-day setup and commands to utilize Git locally and connecting repositories  to GitHub.com for a complete collaboration workflow.
 
@@ -27,22 +27,30 @@ $ git config --global user.email "mona@github.com"
 ```
 
 ## Versioning Files
-Versioning project files begins by initializing Git from within the directory and the first commit consisting of all content.
+
+Versioning files begins by creating a repository on your GitHub account. File authoring and editing can be performed through the web interface or by acquiring the repository locally from the command line.
 
 ```
-$ git init
-$ git add .
-$ git commit -m 'initial commit'
+$ git clone [url] [project-name]
+$ cd [project-name]
 ```
 
-Traditional  development effort consists of a short-lived branch which will ultimately be merged into a production-worthy branch.
+Repository contributions are commonly made through branches and commits focused on small pieces of work.
 
 ```
-$ git branch feature-enhancement
-$ git checkout feature-enhancement
-$ git add [files]
-$ git commit -m 'Add feature enhancement'
+git branch [name]
+git checkout [name]
+git add [file]
+git commit -m [commit message]
+```
 
+When the feature work reaches completion, the branch can be merged locally or pushed to GitHub for code review.
+
+```
+git checkout master
+git merge [branch]
+
+git push -u origin [branch]
 ```
 
 As commits can be efficiently made, the state of any new, modified, or missing files can be verified and quickly validated.
