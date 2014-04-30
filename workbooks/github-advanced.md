@@ -583,6 +583,26 @@ $ gh browse
 $ git config rerere.enable true
 ```
 
+## Refspecs
+### Summary
+* Specification for retrieval and pushing
+* Implied on fetch, pull, and push
+* Altered by option switches like `--tags`
+* Stored in `.git/config`
+* Ability to retrieve Pull Request branches
+
+```
+git fetch [repo-url] [source]:[destination]
+git config --add remote.[upstream].fetch ""+refs/pull/*/head:refs/remotes/[upstream]/pull/*""
+```
+
+## Git Notes
+### Summary
+* Supplemental commits
+* Parallel graph
+* Not cryptographically as truthworthy as the commits
+* Displayed in the GitHub web UI
+
 ## Credential Caching
 
 ### Summary
@@ -637,17 +657,3 @@ $ gitk --all
 * [Listing of GUIs](http://git-scm.com/downloads/guis)
 * [eGit for Eclipse](http://eclipse.github.com)
 * [SmartGit for Windows, Mac, Linux](http://www.syntevo.com/smartgithg/)
-
-## Refspecs
-### Summary
-* Specification for retrieval and pushing
-* Implied on fetch, pull, and push
-* Altered by option switches like `--tags`
-* Stored in `.git/config`
-
-## Git Notes
-### Summary
-* Supplemental commits
-* Parallel graph
-* Not cryptographically as truthworthy as the commits
-* Displayed in the GitHub web UI
