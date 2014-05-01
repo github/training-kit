@@ -6,8 +6,6 @@ title: GitHub Intermediate Course Slides
 description: A slide deck to the GitHub Intermediate class.
 chapters: [
   'preroll',
-  'trainers/matt-graham',
-  'trainers/alex-southgate',
   'intro',
   'setup',
   'config',
