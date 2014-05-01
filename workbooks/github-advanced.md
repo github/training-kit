@@ -76,7 +76,7 @@ These are called Branching Strategies, but are just as easily called *Team Colla
   * Maintaining `author` and `committer` fields
   * Tracing any cherry-picks with `-x` commit message metadata
   * `-x` metadata hyperlinked on GitHub
-  * `git cherry` to view absent commits
+  * `$ git cherry` to view absent commits
 * Rebase interactive
   * Can include cherry-pick
   * Must remember to continue the rebase
@@ -164,26 +164,26 @@ $ git config --global alias.s 'status -s'
 * Tag with message (defaults to annotated)
 * Force existing tag to new ref
 * Delete a tag
-* `git describe` to name the most recent reachable tag
+* `$ git describe` to name the most recent reachable tag
 * Tag types (reference, annotated, signed)
 * Deleting a tag locally
 * Deleting tag on a remote
 
 #### Details
 ```
-git tag
-git tag -a
-git tag -a -m
+$ git tag
+$ git tag -a
+$ git tag -a -m
 
-git tag -m<message> <TAGNAME>
-git tag -a -m<message> <TAGNAME>
-git tag -s -m<message> <TAGNAME>
-git tag -f <TAGNAME>
-git tag -d <TAGNAME>
-git describe
-git describe <SHA>
-git tag -d 12345
-git push origin :<tag-name-to-delete>
+$ git tag -m<message> <TAGNAME>
+$ git tag -a -m<message> <TAGNAME>
+$ git tag -s -m<message> <TAGNAME>
+$ git tag -f <TAGNAME>
+$ git tag -d <TAGNAME>
+$ git describe
+$ git describe <SHA>
+$ git tag -d 12345
+$ git push origin :<tag-name-to-delete>
 ```
 
 
@@ -592,8 +592,8 @@ $ git config rerere.enable true
 * Ability to retrieve Pull Request branches
 
 ```
-git fetch [repo-url] [source]:[destination]
-git config --add remote.[upstream].fetch ""+refs/pull/*/head:refs/remotes/[upstream]/pull/*""
+$ git fetch [repo-url] [source]:[destination]
+$ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
 ```
 
 ## Git Notes
@@ -607,16 +607,16 @@ git config --add remote.[upstream].fetch ""+refs/pull/*/head:refs/remotes/[upstr
 * Manual retrieval
 
 ```
-git notes add [commit]
-git notes edit [commit]
+$ git notes add [commit]
+$ git notes edit [commit]
 
-git notes --ref=[namespace] add [commit]
-git log --show-notes=[namespace]
+$ git notes --ref=[namespace] add [commit]
+$ git log --show-notes=[namespace]
 
-git push [remote] refs/notes/*
-git push [remote] refs/notes/[namespace]
+$ git push [remote] refs/notes/*
+$ git push [remote] refs/notes/[namespace]
 
-git fetch [remote] refs/notes/*:refs/notes/*
+$ git fetch [remote] refs/notes/*:refs/notes/*
 
 ```
 
