@@ -1,60 +1,25 @@
 /* Imports */
 @import "variables.scss";
 
-section{
-  width: 100%;
-  float: left;
-
-  & .container{
-    padding: 50px 0 50px 0;
-  }
-
-  /* Layout */
-  .hero{
-    height: 445px;
-    padding: 20px 0 0 0;
-
-
-    hgroup{
-      margin-top: 60px;
-    }
-
-    a{
-      text-decoration: none;
-    }
-
-    p{
-      font-size: 112.5%;
-      color: darken($color-dark, 20%);
-      margin-bottom: 30px;
-    }
-
-    .octicon{
-      font-size: 200px;
-      margin-top: 52px;
-    }
-  }
-}
-
 .figures{
   background: url(../images/hero-home.png) no-repeat bottom center $color-dark;
   background-size: 1350px;
 }
 
 .screen-shot{
-  background: url(../images/screen-shot-slide.png) no-repeat bottom center;
-  background-size: 800px;
-  padding-bottom: 350px;
+  background: url(../images/screen-shot-slidedeck.png) no-repeat bottom center;
+  background-size: contain;
+  padding-bottom: 300px;
 }
 
 .workbook{
-  background: url(../images/screen-shot-workbook.png) no-repeat bottom center lighten($mono-light, 5%);
-  background-size: 700px;
-  padding-bottom: 400px;
+  background: url(../images/screen-shot-workbook.png) no-repeat 0px 25px lighten($mono-light, 5%);
+  background-size: contain;
+  padding-bottom: 270px;
 }
 
 .downloads{
-  background: url(../images/screen-shot-pdf.png) no-repeat bottom center;
-  background-size: 800px;
-  padding-bottom: 400px;
+  background: url(../images/screen-shot-pdf.png) no-repeat 0px 25px;
+  background-size: contain;
+  padding-bottom: 230px;
 }

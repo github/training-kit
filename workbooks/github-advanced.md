@@ -52,12 +52,12 @@ These are called Branching Strategies, but are just as easily called *Team Colla
     * [What to do when things get complicated](http://blog.springsource.org/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/)
 
 ## Applying branching patterns
-
 ### Summary
 * Breaking features down into pieces
 * Feedback early on Pull Requests
 * @mentioning teams instead of individuals
 * Continuous integration
+
 
 ## Branch pull options
 ### Summary
@@ -67,12 +67,36 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 * `FETCH_HEAD`
 * `MERGE_HEAD`
 
+
 ## Inserting Commits Into Existing History
 ### Summary
+* Reusing small pieces of code with `cherry-pick`
+  * Why use `cherry-pick` instead of `merge`?
+  * What happens when you `cherry-pick`?
+  * Maintaining `author` and `committer` fields
+  * Tracing any cherry-picks with `-x` commit message metadata
+  * `-x` metadata hyperlinked on GitHub
+  * `$ git cherry` to view absent commits
 * Rebase interactive
-* Can include cherry-pick
-* Must remember to continue the rebase
-* Alters history
+  * Can include cherry-pick
+  * Must remember to continue the rebase
+  * Alters history
+
+#### Details
+```
+$ git cherry-pick [ref]
+$ git cherry-pick [ref1] [ref2]
+
+$ git branch --contains [noncherrypickedref]
+$ git cherry [upstreambranch]
+
++ bd650366fa8c39f03cfc9dd5290f60e7331a631d
++ ea62f9f6a7cef55a8a3028e617d28819408a63c4
++ 874628c0e405390130d6457776273451bb66d3a8
++ 046a9b8d0f2363361e45cfbc7e0f6d82968f2f9f
++ 315fe16408f9a9080527e00df3d9a8c1ba0dc97a
+```
+
 
 ## Undoing and Re-doing Almost Anything
 ### Summary
@@ -140,26 +164,26 @@ $ git config --global alias.s 'status -s'
 * Tag with message (defaults to annotated)
 * Force existing tag to new ref
 * Delete a tag
-* `git describe` to name the most recent reachable tag
+* `$ git describe` to name the most recent reachable tag
 * Tag types (reference, annotated, signed)
 * Deleting a tag locally
 * Deleting tag on a remote
 
 #### Details
 ```
-git tag
-git tag -a
-git tag -a -m
+$ git tag
+$ git tag -a
+$ git tag -a -m
 
-git tag -m<message> <TAGNAME>
-git tag -a -m<message> <TAGNAME>
-git tag -s -m<message> <TAGNAME>
-git tag -f <TAGNAME>
-git tag -d <TAGNAME>
-git describe
-git describe <SHA>
-git tag -d 12345
-git push origin :<tag-name-to-delete>
+$ git tag -m<message> <TAGNAME>
+$ git tag -a -m<message> <TAGNAME>
+$ git tag -s -m<message> <TAGNAME>
+$ git tag -f <TAGNAME>
+$ git tag -d <TAGNAME>
+$ git describe
+$ git describe <SHA>
+$ git tag -d 12345
+$ git push origin :<tag-name-to-delete>
 ```
 
 
@@ -189,6 +213,23 @@ git push origin :<tag-name-to-delete>
 * PRs multiple levels up
 * Converting issues to PRs
 * PRs as Issues with code
+* Automatic closing of PRs by local merges
+* Merges must be _made by recursive_
+* Retrieving PRs locally to resolve conflicts
+(without locally merging to target branch)
+
+#### Details
+```
+$ git ls-remote origin
+$ git fetch origin refs/pull/1/head
+
+From github.com:youruser/somereponame
+ * branch            refs/pull/1/head -> FETCH_HEAD
+
+$ git show FETCH_HEAD
+$ git merge --no-commit --no-ff FETCH_HEAD
+```
+
 
 ## GitHub API
 
@@ -215,13 +256,32 @@ git push origin :<tag-name-to-delete>
 #### Details
 ```
 # Add in patch mode
-git add -p
+$ git add -p
 
 # Add interactively
-git add -i
+$ git add -i
 
 # The GitHub for Mac desktop client
-github
+$ github
+```
+
+## Stashing with precision
+
+### Summary
+* Name your stash
+* List stashes
+* Use specific stashes
+
+#### Details
+```
+$ git stash save "<description>"
+$ git stash --include-untracked
+$ git stash list
+$ git stash pop <name>
+$ git stash drop <name>
+$ git stash apply
+$ git stash clear
+$ git stash -p
 ```
 
 ## Committing Efficiencies
@@ -239,8 +299,8 @@ $ git commit --amend
 ## Advanced GitHub Issues
 
 ### Summary
-* <a href="https://guides.github.com/overviews/issues/" class="githublink">Guide to Mastering Issues</a>
-* <a href="https://help.github.com/articles/closing-issues-via-commit-messages" class="githublink">Automatic closing of Issues by commit</a>
+* [Guide to Mastering Issues](https://guides.github.com/overviews/issues/)
+* [Automatic closing of Issues by commit](https://help.github.com/articles/closing-issues-via-commit-messages)
 * Symmetric cross-links of issue mentions
 * Cross-repo Issue mentions
 
@@ -264,70 +324,7 @@ $ git commit -m "This resolves #[issue]"
 ```
 
 
-## Advanced GitHub Pull Requests
-* Automatic closing of PRs by local merges
-* Merges must be _made by recursive_
-* Retrieving PRs locally to resolve conflicts
-(without locally merging to target branch)
-
-#### Details
-```
-$ git ls-remote origin
-$ git fetch origin refs/pull/1/head
-
-From github.com:youruser/somereponame
- * branch            refs/pull/1/head -> FETCH_HEAD
-
-$ git show FETCH_HEAD
-$ git merge --no-commit --no-ff FETCH_HEAD
-```
-
-## Stashing with precision
-
-### Summary
-* Name your stash
-* List stashes
-* Use specific stashes
-
-#### Details
-```
-git stash save "<description>"
-git stash --include-untracked
-git stash list
-git stash pop <name>
-git stash drop <name>
-git stash apply
-git stash clear
-git stash -p
-```
-
-## Reusing small pieces of code with `cherry-pick`
-
-### Summary
-* Why use `cherry-pick` instead of `merge`?
-* What happens when you `cherry-pick`?
-* Maintaining `author` and `committer` fields
-* Tracing any cherry-picks with `-x` commit message metadata
-* `-x` metadata hyperlinked on GitHub
-* `git cherry` to view absent commits
-
-#### Details
-```
-$ git cherry-pick [ref]
-$ git cherry-pick [ref1] [ref2]
-
-$ git branch --contains [noncherrypickedref]
-$ git cherry [upstreambranch]
-
-+ bd650366fa8c39f03cfc9dd5290f60e7331a631d
-+ ea62f9f6a7cef55a8a3028e617d28819408a63c4
-+ 874628c0e405390130d6457776273451bb66d3a8
-+ 046a9b8d0f2363361e45cfbc7e0f6d82968f2f9f
-+ 315fe16408f9a9080527e00df3d9a8c1ba0dc97a
-```
-
 ## History analysis
-
 ### Summary
 * Commit ranges to review branch differences
 * Verifying merges have completed
@@ -397,7 +394,7 @@ $ git push origin :<branch-name>
 $ git checkout <featurebranch>
 $ git rebase master
 
-$ git config branch.autosetuprebase
+$ git config branch.autosetuprebase always
 $ git config branch.[master].rebase true
 ```
 
@@ -429,8 +426,8 @@ $ git rebase -i [remote]/[branch]
 ## Advanced rebasing
 
 ### Summary
-* <a href="http://git-scm.com/book/ch3-6.html" class="booklink">Rebasing chapter of Pro Git book</a>
-* <a href="http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases" class="booklink">Git rebase --onto section of Pro Git book</a>
+* [Rebasing chapter of Pro Git book](http://git-scm.com/book/ch3-6.html)
+* [Git rebase --onto section of Pro Git book](http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases)
 * Changing where branch history begins
 * Moving blocks of history around
 * Breadcrumbs for later fixups and squashes
@@ -586,6 +583,43 @@ $ gh browse
 $ git config rerere.enable true
 ```
 
+## Refspecs
+### Summary
+* Specification for retrieval and pushing
+* Implied on fetch, pull, and push
+* Altered by option switches like `--tags`
+* Stored in `.git/config`
+* Ability to retrieve Pull Request branches
+
+```
+$ git fetch [repo-url] [source]:[destination]
+$ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
+```
+
+## Git Notes
+### Summary
+* Supplements commit message and description
+* Parallel graph
+* Not cryptographically as trustworthy as the commits
+* Displayed in the GitHub web UI
+* Ability to namespace
+* Manual publishing
+* Manual retrieval
+
+```
+$ git notes add [commit]
+$ git notes edit [commit]
+
+$ git notes --ref=[namespace] add [commit]
+$ git log --show-notes=[namespace]
+
+$ git push [remote] refs/notes/*
+$ git push [remote] refs/notes/[namespace]
+
+$ git fetch [remote] refs/notes/*:refs/notes/*
+
+```
+
 ## Credential Caching
 
 ### Summary
@@ -605,9 +639,9 @@ $ git credential-cache exit
 * Classic authentication with GitHub
 * Diminishing in use at HTTPS increases
 * Blocked by more firewalls
-* <a href="https://help.github.com/articles/generating-ssh-keys" class="booklink">Generate SSH key</a>
-* <a href="https://github.com/settings/ssh" class="githublink">Upload public key to GitHub</a>
-* <a href="https://github.com/settings/ssh" class="githublink">Audit SSH key use</a>
+* [Generate SSH key](https://help.github.com/articles/generating-ssh-keys)
+* [Upload public key to GitHub](https://github.com/settings/ssh)
+* [Audit SSH key use](https://github.com/settings/ssh)
 
 
 #### Details
@@ -637,20 +671,6 @@ $ gitk --all
 ## Widely used GUIs
 
 ### Summary
-* <a href="http://git-scm.com/downloads/guis" class="weblink">Listing of GUIs</a>
-* <a href="http://eclipse.github.com" class="weblink">eGit for Eclipse</a>
-* <a href="http://www.syntevo.com/smartgithg/" class="weblink">SmartGit for Windows, Mac, Linux</a>
-
-## Refspecs
-### Summary
-* Specification for retrival and pushing
-* Implied on fetch, pull, and push
-* Altered by option switches like `--tags`
-* Stored in `.git/config`
-
-## Git Notes
-### Summary
-* Supplemental commits
-* Parallel graph
-* Not cryptographically as truthworthy as the commits
-* Displayed in the GitHub web UI
+* [Listing of GUIs](http://git-scm.com/downloads/guis)
+* [eGit for Eclipse](http://eclipse.github.com)
+* [SmartGit for Windows, Mac, Linux](http://www.syntevo.com/smartgithg/)

@@ -5,6 +5,48 @@
   display: none;
 }
 
+
+@mixin octicon-link($char){
+  font: normal normal 1em octicons;
+  text-decoration: none;
+  color: $color-dark;
+
+  &:before{
+    content: $char;
+    margin-right: 5px;
+  }
+}
+
+.workbook{
+  /* General external link */
+  a[href^="http://"],
+  a[href^="https://"] {
+    @include octicon-link("\f0b6");
+  }
+
+  /* GitHub Links */
+  a[href^="https://github.com"],
+  a[href^="https://www.github.com"],
+  a[href^="https://help.github.com"]
+  {
+    @include octicon-link("\f008");
+  }
+
+  /* GitHub Book Links, Guide Links */
+  a[href^="http://git-scm.com/book"],
+  a[href^="https://guides.github.com"]
+  {
+    @include octicon-link("\f007");
+  }
+
+
+  /* YouTube Links */
+  a[href^="https://youtube.com"],
+  a[href^="https://www.youtube.com"] {
+    @include octicon-link("\f0b9");
+  }
+}
+
 /* Scopes wrapper */
 
 .outline{
@@ -19,6 +61,7 @@
       @include hidden;
     }
   }
+
   h3{
     display: none;
 
@@ -90,23 +133,10 @@
   h4{
     display: none;
   }
-}
-
-.hero{
-  background: $color-dark;
-  color: #fff;
-
-  .octicon{
-    color: #fff;
-    background: rgba(0,0,0,.15);
-    border-radius: 50%;
-    height: 1em;
-    width: 1em;
-    padding: 16px;
-    margin-right: 20px;
-    font-size: 26px;
-    text-align: center;
-    float: left;
+  table{
+    th, td{
+      padding: 10px;
+    }
   }
 }
 
@@ -120,43 +150,21 @@
   }
 }
 
-.booklink{
-  &:before{
-    content: "\f007";
-    margin-right: 5px;
+
+
+.summary, .outline, .details{
+  h2:before{
+    padding: 5px;
+    color: #CCCCCC;
+    content: "\f078";
+    font: normal normal 20px octicons;
   }
 }
 
-.githublink{
-  &:before{
-    content: "\f008";
-    margin-right: 5px;
-  }
-}
-
-.weblink{
-  &:before{
-    content: "\f0b6";
-    margin-right: 5px;
-  }
-}
-
-.videolink{
-  &:before{
-    content: "\f0b9";
-    margin-right: 5px;
-  }
-}
-
-
-h2{
-  padding-top: 15px;
-}
-h2:before{
-  padding: 5px;
-  color: #CCCCCC;
-  content: "\f078";
-  font: normal normal 40px octicons;
+table, pre{
+  background: $mono-light;
+  padding: 20px;
+  display: block;
 }
 
 pre{
@@ -164,7 +172,7 @@ pre{
   padding-bottom: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 25px;
+  width: auto;
 
   /* To ensure scrolling of long code lines */
   overflow: auto;
@@ -174,25 +182,10 @@ pre{
 
 pre:before {
   content: "\f0c8";
-  font: normal normal 32px octicons;
+  font: normal normal 22px octicons;
   float: right;
-  font-size: 50px;
   opacity: .4;
 }
-
-ul{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 40px;
-}
-
-p{
-  text-indent: 5px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-}
-
-
 
 blockquote{
   width: 80%;

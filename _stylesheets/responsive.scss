@@ -1,0 +1,87 @@
+@media screen and (max-width: 760px){
+	.try-git-banner{
+		display: none;
+		a{
+			display: block;
+		}
+	}
+	.golden-small{
+		text-align: center;
+	}
+
+	.testimonial{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 960px){
+	nav{
+		width: 96%;
+		height: auto;
+		margin: 0 0 10px 0;
+		text-align: center;
+		height: auto;
+		overflow: hidden;
+
+		hgroup{
+			width: 202px;
+			float: none;
+			display: block;
+			text-align: center;
+			margin: 15px auto 0;
+			padding: 0;
+		}
+		ul{
+			text-align: center;
+			width: 100%;
+			float: none;
+			height: auto;
+
+			a{
+				&:hover{
+					border: none;
+				}
+				&.button{
+					border-radius: 0;
+					width: 100%;
+					box-shadow: none;
+					margin: 0;
+					padding: 0;
+					&:hover{
+						box-shadow: none;
+					}
+				}
+			}
+		}
+		.current a.button{
+			border-bottom: solid 2px #ffffff;
+		}
+	}
+
+	.hero{
+		padding: 0;
+		display: none;
+	}
+
+	section.main {
+		padding: 0px 0 10px;
+	}
+
+	.container{
+		width: 96%;
+
+		.third{
+			text-align: center;
+		}
+	}
+
+	.class-list .class .actions{
+		float: none;
+		margin: 0 0 15px;
+	}
+
+	footer{
+		display: none;
+	}
+}
