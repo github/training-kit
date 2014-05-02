@@ -216,7 +216,7 @@ Combina la rama del marcador con la rama local actual
 
 ```$ git push [alias] [branch]```
 
-Uploads all local branch commits to GitHub
+Carga todos los commits de la rama local al GitHub
 
 
 ```$ git pull```
