@@ -15,7 +15,7 @@ description: This student and teacher workbook will be your companion to the Git
 * [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
 * [The Git project homepage](http://git-scm.com)
 
-#### Details
+### Details
 __Git is an open source distributed__ version control system invented by Linus Torvalds in 2005.  It is used to version the Linux kernel and is shown to be, by some research, the most popular modern version control system.
 
 Git is the open source, command line tool that forms a part of the workflows we'll cover in this course.  It has been called the successor to CVS and Subversion by many users, and maintains some similarity in behavior to these historical open source version control tools.
@@ -58,32 +58,21 @@ Sign up for a free GitHub account at https://github.com/join.
 Git can be installed as a unified GitHub GUI and command line or merely as a stand-alone command line interface.
 
 
-## Ways of interacting with repositories
+## Interacting with repositories
 
 ### Summary
 * [GitHub web flow](https://guides.github.com/overviews/flow/)
 * GitHub GUIs for Mac, Windows
 * Command line
 
-## Getting to know GitHub
+## Getting to know Git & GitHub
 
 ### Summary
 * Repository initialization
-* Actionable steps (Create, Edit, Remove, Move)
-* Commits (page)
-
-## Version control basics
-
-### Summary
-* Commits
-  * Line-level tracking
-  * Commit messages
-  * Grouping files (with desktop clients)
-* Branching
-  * Branching concepts
-  * Branch selection menu
-  * Branch listing page
-  * Branch comparison view
+  * New project and new repository
+  * Repository based on existing content
+  * Through web interface
+  * Web interface and GUI client
 
 ## Acquiring repos
 
@@ -91,6 +80,30 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 * Clone from web (Clone in Desktop button)
 * Clone via personal repo list in GitHub Desktop
 * Complete "copy" explanation
+
+## Version control basics
+
+### Summary
+* Commits
+  * History marker for file(s), change(s)
+  * Record of author, time, and message
+* Branches
+  * Container for grouped commits
+  * Simpler means to integrate change
+  * Cleaner code review possibilities
+* GitHub, local repositories
+
+## GitHub repository interaction
+
+### Summary
+* Commits (GitHub.com)
+  * Actionable steps (Create, Edit, Remove, Move)
+  * Commit messages
+  * Listing page on GitHub
+* Branches (GitHub.com)
+  * Selection menu
+  * Listing page
+  * Comparison view
 
 ## Local repository interaction
 
@@ -101,6 +114,16 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 * Branches
 * History
 * Syncing (GHfD)
+
+* Commits (GitHub for Desktop)
+  * Managing file on system, reviewing results
+  * Line-level tracking
+  * Grouping files
+  * Synchronizing local commits
+* Branches (GitHub for Desktop)
+  * Create
+  * Change
+  * Publish
 
 ## GitHub workflows
 
@@ -137,10 +160,60 @@ Git can be installed as a unified GitHub GUI and command line or merely as a sta
 * Network graph
 * Activity graph
 
+## GitHub Wikis
+
+### Summary
+* Fast documentation authoring for repositories
+* Standalone repository
+* Easy access from repository navigation
+
+## GitHub Pages
+
+### Summary
+* Web page for your repository
+* Web page for your account
+* Author, edit, launch from GitHub
+
+## GitHub Features
+
+### Summary
+* Notifications
+* Watching repositories
+* Starring repositories
+* Gist
+* GitHub Flavored Markdown
+  * Basics
+  * Emoji
+  * Checklists (Issues, Gists)
+
+## GitHub shortcuts
+
+### Summary
+
+* `/` command bar
+* `?` help
+* `t` fuzzy file search
+
 ## Project management basics
 
 ### Summary
 * GitHub Issues
 * Milestones
+* Network
 * Pulse
 * Tags, Releases
+* Collaborators
+* Organizations
+* Teams
+
+## Special Repository Features of GitHub
+* Contributing.md
+* License.md
+  * During repository creation
+  * `+` a file with existing repository (special dropdown)
+* .gitignore
+  * During repository creation
+  * `+` a file with existing repository (special dropdown)
+* Readme.md
+  * In root
+  * In subfolders
