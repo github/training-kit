@@ -320,7 +320,7 @@ $ git log --stat -M
 $ git log --follow <file>
 ```
 
-## Undoing commits
+## Undoing commits with `revert` and `reset`
 
 ### Summary
 * Generating commit to restore past patch set
@@ -376,7 +376,7 @@ $ git pop
 $ git stash --include-untracked
 ```
 
-## Recovering almost anything
+## Recovering almost anything with `reflog`
 
 ### Summary
 * Tracing Git action "history"
@@ -397,8 +397,8 @@ $ git branch [name] HEAD@{1}
 ## Pull requests
 
 ### Summary
-* Pushing branch to repo
-* Using GitHub interface
+* Pushing a branch to GitHub
+* Using the GitHub interface
 * Retrieving locally
 
 ```
