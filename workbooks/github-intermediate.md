@@ -26,7 +26,6 @@ $ git config --list
 $ git config user.name
 $ git config user.email
 $ git config --global core.autocrlf <value>
-$ git config --global color.ui auto
 ```
 
 
@@ -66,9 +65,6 @@ $ git config --global core.autocrlf input
 
 # Set line endings to CRLF for Windows
 $ git config --global core.autocrlf auto
-
-# Set color display in the command prompt
-$ git config --global color.ui auto
 ```
 
 Reviewing all configuration

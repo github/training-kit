@@ -30,11 +30,6 @@ Sets the name you want attached to your commit transactions
 Sets the email you want attached to your commit transactions
 
 
-```$ git config --global color.ui auto```
-
-Enables helpful colorization of command line output
-
-
 ## Create repositories
 Start a new repository or obtain one from an existing URL
 
