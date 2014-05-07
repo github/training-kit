@@ -1,7 +1,7 @@
 ---
 chapter: Customizing
 layout: slide
-tags: ['advanced/customizing']
+tags: ['customizing']
 ---
 
 	git branch --set-upstream-to <remote>/<branch-name>

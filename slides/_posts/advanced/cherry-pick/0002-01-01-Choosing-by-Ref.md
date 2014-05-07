@@ -1,7 +1,7 @@
 ---
 chapter: Cherry-Pick
 layout: slide
-tags: ['advanced/cherry-pick']
+tags: ['cherry-pick']
 ---
 
 	# Create a new commit at HEAD from specified rev
