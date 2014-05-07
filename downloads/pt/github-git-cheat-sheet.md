@@ -30,11 +30,6 @@ Configura o nome que você quer ligado as suas transações de commit
 Configura o email que você quer ligado as suas transações de commit
 
 
-```$ git config --global color.ui auto```
-
-Habilita a colorização para a saída da linha de comando
-
-
 ## Crie repositórios
 Inicie um novo repositório ou obtenha de uma URL existente
 
