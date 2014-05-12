@@ -394,8 +394,7 @@ $ git push origin :<branch-name>
 $ git checkout <featurebranch>
 $ git rebase master
 
-$ git config branch.autosetuprebase always
-$ git config branch.[master].rebase true
+$ git config pull.rebase true
 ```
 
 * Conflicts can occur
