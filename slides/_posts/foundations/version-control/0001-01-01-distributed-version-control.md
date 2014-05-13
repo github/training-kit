@@ -1,8 +1,8 @@
 ---
-chapter: Commit
+chapter: Version Control
 layout: slide
 tags:
-- dvcs
+- version-control
 - diagram
 diagram_svg_path: "assets/diagrams/distributed-version-control.svg"
 ---

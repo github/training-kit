@@ -6,10 +6,9 @@ title: GitHub Foundations Course Slides
 description: A slide deck to the GitHub Foundations class.
 chapters: [
   'preroll',
-  'dvcs',
-  'clone',
-  'what-is-a-commit-',
-  'what-is-a-branch',
   'intro',
+  'version-control',
+  'branch-basics',
+  'commit-basics',
   'goodbye']
 ---
