@@ -1,7 +1,7 @@
 ---
 chapter: Service Hooks
 layout: slide
-tags: ['advanced/service-hooks']
+tags: ['service-hooks']
 ---
 
 * Build Status on Pull Requests

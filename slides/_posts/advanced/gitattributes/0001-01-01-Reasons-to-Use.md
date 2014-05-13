@@ -1,7 +1,7 @@
 ---
 chapter: GitAttributes
 layout: slide
-tags: ['advanced/gitattributes']
+tags: ['gitattributes']
 ---
 
 * Establishes Path-Specific Settings

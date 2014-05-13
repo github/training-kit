@@ -1,7 +1,7 @@
 ---
 chapter: The GitHub Way
 layout: slide
-tags: ['advanced/github-way']
+tags: ['github-way']
 ---
 
 `master` branch is deployable

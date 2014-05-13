@@ -1,7 +1,7 @@
 ---
 chapter: Internals
 layout: slide
-tags: ['advanced/internals']
+tags: ['internals']
 ---
 
 
