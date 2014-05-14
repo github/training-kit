@@ -7,5 +7,9 @@ description: A slide deck to the GitHub Foundations class.
 chapters: [
   'preroll',
   'intro',
+  'version-control',
+  'commit-basics',
+  'branch-basics',
+  'tag-basics',
   'goodbye']
 ---
