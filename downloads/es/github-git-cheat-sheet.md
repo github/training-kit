@@ -29,11 +29,6 @@ Establece el nombre que desea esté anexado a sus transacciones de commit
 Establece el e-mail que desea esté anexado a sus transacciones de commit
 
 
-```$ git config --global color.ui auto```
-
-Habilita la útil colorización del producto de la línea de comando
-
-
 ## Crear repositorios
 Inicia un nuevo repositorio u obtiene uno de una URL existente
 
