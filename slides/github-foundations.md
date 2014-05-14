@@ -8,7 +8,8 @@ chapters: [
   'preroll',
   'intro',
   'version-control',
-  'branch-basics',
   'commit-basics',
+  'branch-basics',
+  'tag-basics',
   'goodbye']
 ---
