@@ -4,9 +4,6 @@ layout: slide
 tags: ['config']
 ---
 
-	# Colorize console output
-	$ git config --global color.ui auto
-
 	# Force files to be LF on Mac/Linux
 	$ git config --global core.autocrlf input
 
