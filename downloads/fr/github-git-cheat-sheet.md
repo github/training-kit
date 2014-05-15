@@ -122,7 +122,7 @@ Supprime le fichier du répertoire de travail et met à jour l'index
 Supprime le fichier du système de suivi de version mais le préserve localement 
 
 
-```$ git mv [fichier-nom-d-origine] [fichier-nouveau-nom]```
+```$ git mv [fichier-nom] [fichier-nouveau-nom]```
 
 Renomme le fichier et prépare le changement pour un commit 
 
@@ -202,27 +202,27 @@ Annule tous les commits après `[commit]`, en conservant les modifications local
 Supprime tout l'historique et les modifications effectuées après le commit spécifié
 
 ## Synchroniser les changements
-Register a repository bookmark and exchange version history
+Référencer un dépôt distant avec un nom et synchroniser l'historique de versions
 
 
-```$ git fetch [bookmark]```
+```$ git fetch [nom-de-depot]```
 
-Downloads all history from the repository bookmark
+Récupère tout l'historique du dépôt nommé
 
 
-```$ git merge [bookmark]/[branche]```
+```$ git merge [nom-de-depot]/[branche]```
 
-Combines bookmark’s branch into current local branch
+Incorpore les modifications de la branche spécifiée du dépôt dans la branche locale courante
 
 
 ```$ git push [alias] [branche]```
 
-Uploads all local branch commits to GitHub
+Envoie tous les commits de la branche locale vers GitHub
 
 
 ```$ git pull```
 
-Downloads bookmark history and incorporates changes
+Récupère tout l'historique du dépôt nommé et incorpore les modifications
 
 ---
 
