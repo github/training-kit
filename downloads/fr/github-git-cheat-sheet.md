@@ -20,12 +20,12 @@ http://git-scm.com
 Configurer les informations de l'utilisateur pour tous les dépôts locaux
 
 
-```git config --global user.name "[name]"```
+```git config --global user.name "[nom]"```
 
 Définit le nom que vous voulez associer à toutes vos opérations de commit
 
 
-```$ git config --global user.email "[email address]"```
+```$ git config --global user.email "[adresse email]"```
 
 Définit l'email que vous voulez associer à toutes vos opérations de commit
 
@@ -38,7 +38,7 @@ Active la colorisation de la sortie en ligne de commande
 Démarrer un nouveau dépôt ou en obtenir un depuis une URL existante
 
 
-```$ git init [project-name]```
+```$ git init [nom-du-projet]```
 
 Crée un dépôt local à partir du nom spécifié
 
@@ -61,7 +61,7 @@ Liste tous les nouveaux fichiers et les fichiers modifiés à commiter
 Montre les modifications de fichier qui ne sont pas encore indexées
 
 
-```$ git add [file]```
+```$ git add [fichier]```
 
 Ajoute un instantané du fichier, en préparation pour le suivi de version
 
@@ -71,12 +71,12 @@ Ajoute un instantané du fichier, en préparation pour le suivi de version
 Montre les différences de fichier entre la version indexée et la dernière version
 
 
-```$ git reset [file]```
+```$ git reset [fichier]```
 
-Enleve le fichier de l'index, mais préserve son contenu
+Enleve le fichier de l'index, mais conserve son contenu
 
 
-```$ git commit -m"[descriptive message]"```
+```$ git commit -m"[message descriptif]"```
 
 Enregistre des instantanés de fichiers de façon permanente dans l'historique des versions
 
@@ -89,22 +89,22 @@ Nommer une série de commits et combiner les résultats de travaux terminés
 Liste toutes les branches locales dans le dépôt courant
 
 
-```$ git branch [branch-name]```
+```$ git branch [nom-de-branche]```
 
 Crée une nouvelle branche
 
 
-```$ git checkout [branch-name]```
+```$ git checkout [nom-de-branche]```
 
 Bascule sur la branche spécifiée et met à jour le répertoire de travail
 
 
-```$ git merge [branch-name]```
+```$ git merge [nom-de-branche]```
 
 Combine dans la branche courante l'historique de la branche spécifiée
 
 
-```$ git branch -d [branch-name]```
+```$ git branch -d [nom-de-branche]```
 
 Supprime la branche spécifiée
 
@@ -112,22 +112,22 @@ Supprime la branche spécifiée
 Déplacer et supprimer des fichiers sous suivi de version
 
 
-```$ git rm [file]```
+```$ git rm [fichier]```
 
 Supprime le fichier du répertoire de travail et met à jour l'index
 
 
-```$ git rm --cached [file]```
+```$ git rm --cached [fichier]```
 
 Supprime le fichier du système de suivi de version mais le préserve localement 
 
 
-```$ git mv [file-original] [file-renamed]```
+```$ git mv [fichier-nom-d-origine] [fichier-nouveau-nom]```
 
 Renomme le fichier et prépare le changement pour un commit 
 
-## Suppress tracking
-Exclude temporary files and paths
+## Exclure du suivi de version
+Exclure des fichiers et chemins temporaires
 
 ```
 *.log
@@ -135,73 +135,73 @@ build/
 temp-*
 ```
 
-A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
+Un fichier texte nommé `.gitignore` permet d'éviter le suivi de version accidentel pour les fichiers et chemins correspondant aux patterns spécifiés
 
 
 ```$ git ls-files --other --ignored --exclude-standard```
 
-Lists all ignored files in this project
+Liste tous les fichiers exclus du suivi de version dans ce projet
 
-## Save fragments
-Shelve and restore incomplete changes
+## Enregistrer des fragments
+Mettre en suspens des modifications non finies pour y revenir plus tard
 
 
 ```$ git stash```
 
-Temporarily stores all modified tracked files
+Enregistre de manière temporaire tous les fichiers sous suivi de version qui ont été modifiés ("remiser son travail")
 
 
 ```$ git stash pop```
 
-Restores the most recent stashed files
+Applique une remise et la supprime immédiatement
 
 
 ```$ git stash list```
 
-Lists all stashed changesets
+Liste toutes les remises
 
 
 ```$ git stash drop```
 
-Discards the most recently stashed changeset
+Supprime la remise la plus récente
 
-## Review history
-Browse and inspect the evolution of project files
+## Vérifier l'historique des versions
+Suivre et inspecter l'évolution des fichiers du projet
 
 
 ```$ git log```
 
-Lists version history for the current branch
+Montre l'historique des versions pour la branche courante
 
 
-```$ git log --follow [file]```
+```$ git log --follow [fichier]```
 
-Lists version history for the file, including renames
+Montre l'historique des versions, y compris les actions de renommage, pour le fichier spécifié
 
 
-```$ git diff [first-branch]...[second-branch]```
+```$ git diff [premiere-branche]...[deuxieme-branche]```
 
-Shows content differences between two branches
+Montre les différences de contenu entre deux branches
 
 
 ```$ git show [commit]```
 
-Outputs metadata and content changes of the specified commit
+Montre les modifications de métadonnées et de contenu inclues dans le commit spécifié
 
-## Redo commits
-Erase mistakes and craft replacement history
+## Refaire des commits
+Corriger des erreurs et gérer l'historique des corrections
 
 
 ```$ git reset [commit]```
 
-Undoes all commits after `[commit]`, preserving changes locally
+Annule tous les commits après `[commit]`, en conservant les modifications localement
 
 
 ```$ git reset --hard [commit]```
 
-Discards all history and changes back to the specified commit
+Supprime tout l'historique et les modifications effectuées après le commit spécifié
 
-## Synchronize changes
+## Synchroniser les changements
 Register a repository bookmark and exchange version history
 
 
@@ -210,12 +210,12 @@ Register a repository bookmark and exchange version history
 Downloads all history from the repository bookmark
 
 
-```$ git merge [bookmark]/[branch]```
+```$ git merge [bookmark]/[branche]```
 
 Combines bookmark’s branch into current local branch
 
 
-```$ git push [alias] [branch]```
+```$ git push [alias] [branche]```
 
 Uploads all local branch commits to GitHub
 
@@ -226,8 +226,9 @@ Downloads bookmark history and incorporates changes
 
 ---
 
-## GitHub Training
-Learn more about using GitHub and Git. Email the Training Team or visit our web site for learning event schedules and private class availability.
+## Formations GitHub
+Formez-vous à l'utilisation de GitHub et Git. Contactez l'équipe de formation ou visitez notre site web pour connaître les dates de formation 
+et les disponibilités pour des cours privés.
 
 * training@github.com
 * training.github.com
