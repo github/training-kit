@@ -17,7 +17,7 @@ La configuracióm de Git es almacenada en uno de tres archivos de texto plano y 
 
 Nivel | Precedencia | Ubicación
 --- | --- | ---
-`system` | la más baja | alongside the `git` binary
+`system` | la más baja | junto al archivo binario de `git`
 `global` | media | en tu directorio de usuario como `.gitconfig`
 `local` | la más alta | en el archivo `.git/config` de tu proyecto 
 
