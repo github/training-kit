@@ -51,11 +51,11 @@ La versión de línea de comandos de Git tiene una huella muy ligera. Para la ma
 
 Las cuentas de GitHub son gratuitas. Regístrate por una en [github.com/join](https://github.com/join).
 
-GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código abierto y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub conlleva a un rango más extenso de contribuciones, incluyendo especialistas de documentación, diseñadores, e ingenieros operación dentro del flujo de contribución al ciclo de vida de tu proyecto.
+GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código abierto y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub conlleva a un rango más extenso de contribuciones, incluyendo especialistas de documentación, diseñadores, e ingenieros de operación dentro del flujo de contribución al ciclo de vida de tu proyecto.
 
 Las cuentas de GitHub son gratuitas para una ilimitada cantidad de repositorios. Sólo los repositorios privados tienen un costo para hospedarse en el servicio. Los repositorios privados son típicamente usados para consultoría de código cerrado del cliente o productos corporativos, mientras que los repositorios públicos son comúnmente utilizados para código abierto.
 
-Registrate por una cuenta gratuita de Github en https://github.com/join.
+Regístrate por una cuenta gratuita de Github en https://github.com/join.
 
 Git puede ser instalado como una línea de comandos GUI unificada de GitHub o simplemente como una interfaz de línea de comandos autónoma.
 
@@ -78,7 +78,7 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 ## Adquiriendo repos
 
 ### Resumen
-* Clonar desde la web (Clonar en botón de Escritorio)
+* Clonar desde la web (botón de Clonar en Escritorio)
 * Clonar a través de lista de repositorio personal en GitHub de Escritorio
 * Explicación completa de "copy"
 
@@ -87,14 +87,14 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 ### Resumen
 * Commits
   * Marcador de historial para archivo(s), cambio(s)
-  * Registro de autor, tiempo ymensaje
+  * Registro de autor, tiempo y mensaje
 * Ramas
   * Contenedor para commits agrupados
   * Medios simples para integrar cambios
-  * Posibilidades de revision de codigo mas limpias
+  * Posibilidades de revisión de código maás limpias
 * GitHub, repositorios locales
 
-## Interacción con repositorio GitHub
+## Interacción con repositorios de GitHub
 
 ### Resumen
 * Commits (GitHub.com)
@@ -102,7 +102,7 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
   * Mensajes de commit
   * Página de listado en GitHub
 * Ramas (GitHub.com)
-  * Menú de seleccion
+  * Menú de selección
   * Página de listado
   * Vista de comparación
 
@@ -113,11 +113,11 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 * Comparación (diff mediante GHfD)
 * Commits
 * Ramas
-* Historia
+* Historial
 * Sincronizando (GHfD)
 
 * Commits (GitHub para Escritorio)
-  * Administrando archivo en el sistema, revisando resultados.
+  * Administrando archivo en el sistema, revisando resultados
   * Rastreo a nivel de línea
   * Agrupando archivos
   * Sincronizando commits locales
@@ -143,10 +143,10 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
     * Pull Request
     * Discusión
     * GIF Animado
-    * conversación de revisión linea por linea
+    * Revisión linea por linea
     * Clona localmente con GHfD (opcional)
 
-## Visualizaciones GitHub
+## Visualizaciones en GitHub
 
 ### Resumen
 * Comparando/Diff-ing
@@ -157,7 +157,7 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
   * Hojas de cálculo
   * Modelos 3D
 * Vista de rama
-* Posiciones adelante/atrás de Rama
+* Posiciones delante/detrás de Rama
 * Gráfica de red de trabajo
 * Gráfica de actividad
 
@@ -173,7 +173,7 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 ### Resumen
 * Página Web para tu repositorio
 * Página Web para tu cuenta
-* Author, editar, lanzar desde GitHub
+* Crear, editar, lanzar desde GitHub
 
 ## Características de GitHub
 
@@ -182,7 +182,7 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 * Observando repositorios
 * Starring repositories
 * Gist
-* Markdown con sabor a GitHub
+* Markdown al estilo GitHub
   * Lo esencial
   * Emoji
   * Lista de verificación (Issues, Gists)
@@ -207,7 +207,7 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 * Organizaciones
 * Equipos
 
-## Características Especiales de repositorio de GitHub
+## Características especiales de repositorio de GitHub
 * Contributing.md
 * License.md
   * Durante la creación de un repositorio
