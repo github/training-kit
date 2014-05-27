@@ -49,7 +49,7 @@ Nombre Apellido
 $ git config user.email
 tucuenta@ejemplo.com
 ```
-Para hacer que los mismos valores se aplique a todos tus repositorios:
+Para hacer que los mismos valores se apliquen a todos tus repositorios:
 
 ``` shell
 $ git config --global user.name "tu nombre"
@@ -76,7 +76,7 @@ $ git config --list
 ## Iniciar con la linea de comandos
 
 ### Resumen
-* Neuevo proyecto
+* Nuevo proyecto
 * Proyecto existente
 * Clonar
 
@@ -99,7 +99,7 @@ $ git clone [url] [nombre-opcional]
 ### Resumen
 * Explorando los fundamentos
 * La carpeta `.git`
-* Toda el historial almacenado localmente
+* Todo el historial almacenado localmente
 * Naturaleza distribuída, cambios simultáneos
 * No bloqueante
 * Optimizado para pequeños archivos de texto
@@ -129,7 +129,7 @@ $ git commit -m"<mensaje>"
 * Comparar sólo un subconjunto de rutas
 * Comparar contra versiones específicas
 * Depender del estado de un archivo
-* Útiles opciones modificadores
+* Útiles opciones de modificación
 
 #### Detalles
 ```
