@@ -1,6 +1,6 @@
 #Hoja de referencia para Git de Github
 
-Git es el sistema de control de versiones distribuido que facilita actividades de Github en tu computadora portátil o de escritorio. Esta hoja de referencia resume las instrucciones de línea de comandos comúnmente usadas para una rápida referencia.
+Git es el sistema de control de versiones distribuido de código abierto que facilita realizar actividades de Github en tu computadora portátil o de escritorio. Esta hoja de referencia resume las instrucciones de línea de comandos comúnmente usadas para una rápida referencia.
 
 ## Instalar Git
 
@@ -14,7 +14,7 @@ http://mac.github.com
 
 Distribuciones de Git para sistemas Linux y POSIX se encuentran disponibles en el sitio web oficial Git SCM.
 
-### Git para todas plataformas
+### Git para todas las plataformas
 http://git-scm.com
 
 ## Configurar herramientas
@@ -22,7 +22,7 @@ Configura la información del usuario para todos los respositorios locales
 
 ```$ git config --global user.name "[name]"```
 
-Establece el nombre que estará asociado a sus commits
+Establece el nombre que estará asociado a tus commits
 
 
 ```$ git config --global user.email "[email address]"```
