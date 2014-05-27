@@ -11,9 +11,9 @@ description: Este libro de trabajo para estudiantes y maestro será tu compañí
 * Scopes
 * Excludesfile
 
-#### Details
+#### Detalles
 
-La configuracióm de Git es almacenada en uno de tres archivos de texto plano y en uno de tres niveles y es fácilmente editable con un editor de texto y portable a otras máquinas mediante la copia de los archivos de configuración.
+La configuración de Git es almacenada en uno de tres archivos de texto plano y en uno de tres niveles y es fácilmente editable con un editor de texto y portable a otras máquinas mediante la copia de los archivos de configuración.
 
 Nivel | Precedencia | Ubicación
 --- | --- | ---
@@ -56,14 +56,14 @@ $ git config --global user.name "tu nombre"
 $ git config --global user.email "tu@correo"
 ```
 
-El manejo de fin de linea y agregar colores a la terminal son dos de las configuraciones más comunes que los usuario agregan la primera vez que usan Git
+El manejo de fin de línea y agregar colores a la terminal son dos de las configuraciones más comunes que los usuario agregan la primera vez que usan Git
 </span>
-
+línea
 ``` shell
-# Configurar fin de linea a LF para Mac y Linux
+# Configurar fin de línea a LF para Mac y Linux
 $ git config --global core.autocrlf input
 
-# Configurar fin de linea a CRLF para Windows
+# Configurar fin de línea a CRLF para Windows
 $ git config --global core.autocrlf auto
 ```
 
@@ -73,7 +73,7 @@ Revisar todas las configuraciones
 $ git config --list
 ```
 
-## Iniciar con la linea de comandos
+## Iniciar con la línea de comandos
 
 ### Resumen
 * Nuevo proyecto
@@ -102,16 +102,16 @@ $ git clone [url] [nombre-opcional]
 * Todo el historial almacenado localmente
 * Naturaleza distribuída, cambios simultáneos
 * No bloqueante
-* Optimizado para pequeños archivos de texto
+* Optimizado para texto y archivos pequeños
 * Símbolo `HEAD`
 * Área de staging (archivo índice)
 * `refs/heads/`
 * Eficiencia de almacenamiento (zlib)
 
-## Commits en la linea de comandos
+## Commits en la línea de comandos
 
 ### Resumen
-* Pensamiento en tres escenarios
+* Pensamiento en tres etapas
 * Editar, seleccionar, guardar
 
 #### Detalles
@@ -168,7 +168,7 @@ $ git log --graph
 $ git log --decorate
 ```
 
-## Ramas en la linea de comandos
+## Ramas en la línea de comandos
 
 ### Resumen
 * Creaar una funcionalidad o un prototipo
@@ -238,7 +238,7 @@ $ git branch -r
 $ git branch -a
 ```
 
-## Mezclar en la linea de comandos
+## Mezclar en la línea de comandos
 
 ### Resumen
 * Desplegarse entre las ramas
