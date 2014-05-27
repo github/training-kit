@@ -171,7 +171,7 @@ $ git log --decorate
 ## Ramas en la línea de comandos
 
 ### Resumen
-* Creaar una funcionalidad o un prototipo
+* Crear una funcionalidad o un prototipo
 * Mostrar ramas locales
 * Crear
 * Borrar
@@ -212,7 +212,7 @@ $ git checkout [referencia]
 ### Resumen
 * Explicar la convensión de `origin`
 * Aliases, marcadores para URL de un servidor
-* Remover conecciones
+* Remover conexiones
 
 #### Detalles
 ```
@@ -319,8 +319,8 @@ $ git log --follow <archivo>
 
 ### Resumen
 * Generar un commit para restaurar un conjunto de parches pasado
-* Limpiar el íncide y el directorio de trabajo
-* Restaurar el indice, actualizar el directorio de trabajo
+* Limpiar el índice y el directorio de trabajo
+* Restaurar el índice, actualizar el directorio de trabajo
 * Restaurar únicamente el índice
 * Por referencia del commit, nombre de la rama, remoto
 * ¿Por qué las diferentes opciones? (más a fondo)
