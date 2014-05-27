@@ -1,7 +1,7 @@
 ---
 layout: workbook
 title: Libro de trabajo de Fundamentos de GitHub
-description: Este libro de trabajo para estudiantes y maestros será tu compañero para la clase de Fundamentos de GitHub impartida por el equipo de entrenamiento de GitHub y otros grupos educacionales. En este curso, aprenderás habilidades básicas de colaboración a través del productivo uso de Git y GitHub en tu trabajo de código libre diario y asignaciones de trabajo.
+description: Este libro de trabajo para estudiantes y maestros será tu compañero para la clase de Fundamentos de GitHub impartida por el equipo de entrenamiento de GitHub y otros grupos educacionales. En este curso, aprenderás habilidades básicas de colaboración a través del productivo uso de Git y GitHub en tu trabajo de código abierto diario y asignaciones de trabajo.
 
 
 ---
@@ -16,9 +16,9 @@ description: Este libro de trabajo para estudiantes y maestros será tu compañe
 * [La pagina principal del proyecto de github](http://git-scm.com)
 
 ### Detalles 
-__Git es un sistema de código libre y distribuido__ de control de versiones inventado por Linus Torvalds en 2005. Se utiliza para versionar el kernel de Linux y se demuestra que es, por un poco de investigación, el sistema de control de versiones modernas más popular.
+__Git es un sistema de código abierto y distribuido__ de control de versiones inventado por Linus Torvalds en 2005. Se utiliza para versionar el kernel de Linux y se demuestra que es, por un poco de investigación, el sistema de control de versiones modernas más popular.
 
-Git es la herramienta de código libre, de línea de comandos que forma parte de los flujos de trabajo que cubriremos en este curso. Se le ha llamado el sucesor de CVS y Subversion por muchos usuarios, y mantiene cierta similitud en el comportamiento de estas herramientas de control de versiones históricas de código abierto.
+Git es la herramienta de código abierto, de línea de comandos que forma parte de los flujos de trabajo que cubriremos en este curso. Se le ha llamado el sucesor de CVS y Subversion por muchos usuarios, y mantiene cierta similitud en el comportamiento de estas herramientas de control de versiones históricas de código abierto.
 
 El mantenimiento de una versión actual de Git es importante. Mientras se escucha con precisión que Git es generosamente compatible con versiones anteriores, las últimas versiones ofrecen mejoras de mensajes de error, afinaciones de rendimiento y características de usabilidad que hacen que usar Git cada vez más rápido y agradable.
 
@@ -51,9 +51,9 @@ La versión de línea de comandos de Git tiene una huella muy ligera. Para la ma
 
 Las cuentas de GitHub son gratuitas. Regístrate por una en [github.com/join](https://github.com/join).
 
-GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código libre y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub conlleva a un rango más extenso de contribuciones, incluyendo especialistas de documentación, diseñadores, e ingenieros ops dentro del flujo de contribución al ciclo de vida de tu proyecto.
+GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código abierto y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub conlleva a un rango más extenso de contribuciones, incluyendo especialistas de documentación, diseñadores, e ingenieros ops dentro del flujo de contribución al ciclo de vida de tu proyecto.
 
-Las cuentas de GitHub son gratuitas para una ilimitada cantidad de repositorios. Solo los repositorios privados tienen un costo para hospedarse en el servicio. Los repositorios privados son típicamente usados para consultoría de código cerrado del cliente o productos corporativos, mientras que los repositorios públicos son comúnmente utilizados para código libre.
+Las cuentas de GitHub son gratuitas para una ilimitada cantidad de repositorios. Solo los repositorios privados tienen un costo para hospedarse en el servicio. Los repositorios privados son típicamente usados para consultoría de código cerrado del cliente o productos corporativos, mientras que los repositorios públicos son comúnmente utilizados para código abierto.
 
 Registrate por una cuenta gratuita de Github en https://github.com/join.
 
