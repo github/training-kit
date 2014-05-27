@@ -22,16 +22,16 @@ Configura la información del usuario para todos los respositorios locales
 
 ```$ git config --global user.name "[name]"```
 
-Establece el nombre que desea esté anexado a sus transacciones de commit
+Establece el nombre que estará asociado a sus commits
 
 
 ```$ git config --global user.email "[email address]"```
 
-Establece el e-mail que desea esté anexado a sus transacciones de commit
+Establece el e-mail que estará asociado a sus commits
 
 
 ## Crear repositorios
-Inicia un nuevo repositorio u obtiene uno de una URL existente
+Inicializa un nuevo repositorio u obtiene uno de una URL existente
 
 
 ```$ git init [project-name]```
@@ -41,25 +41,25 @@ Crea un nuevo repositorio local con el nombre especificado
 
 ```$ git clone [url]```
 
-Descarga un proyecto y toda su historia de versión
+Descarga un proyecto y toda su historial de versiones
 
 ## Efectuar cambios
-Revisa las ediciones y elabora una transacción de commit
+Revisa cambios y crea un commit
 
 
 ```$ git status```
 
-Enumera todos los archivos nuevos o modificados que se deben confirmar
+Enumera todos los archivos nuevos o modificados de los cuales se van a guardar cambios
 
 
 ```$ git diff```
 
-Muestra las diferencias de archivos que no se han enviado aún al área de espera
+Muestra las diferencias entre archivos que no se han enviado aún al área de espera
 
 
 ```$ git add [file]```
 
-Toma una instantánea del archivo para preparar la versión
+Guarda el estado del archivo en preparación para guardar su estado
 
 
 ```$ git diff --staged```
@@ -74,10 +74,10 @@ Mueve el archivo del área de espera, pero preserva su contenido
 
 ```$ git commit -m"[descriptive message]"```
 
-Registra las instantáneas del archivo permanentemente en el historial de versión
+Registra los cambios del archivo permanentemente en el historial de versiones
 
 ## Cambios grupales
-Nombra una serie de commits y combina esfuerzos ya culminados
+Nombra una serie de commits y combina esfuerzos ya completados
 
 
 ```$ git branch```
@@ -104,26 +104,25 @@ Combina el historial de la rama especificada con la rama actual
 
 Borra la rama especificada
 
-
-## Nombres del archivo de refactorización
-Reubicay retira los archivos con versión
+## Refactorización de archivos
+Reubica y retira los archivos de los cuales se tiene una versión
 
 
 ```$ git rm [file]```
 
-Borra el archivo del directorio activo y pone en el área de espera el archivo borrado
+Borra el archivo del directorio activo y lo pone en el área de espera en un estado de eliminación
 
 
 ```$ git rm --cached [file]```
 
-Retira el archivo del control de versiones, pero preserva el archivo a nivel local
+Retira el archivo del historial de control de versiones, pero preserva el archivo a nivel local
 
 
 ```$ git mv [file-original] [file-renamed]```
 
-Cambia el nombre del archivo y lo prepara para commit
+Cambia el nombre del archivo y lo prepara para ser guardado
 
-## Suprimir tracking
+## Suprimir el seguimiento de cambios
 Excluye los archivos temporales y las rutas
 
 ```
@@ -132,7 +131,7 @@ build/
 temp-*
 ```
 
-Un archivo de texto llamado `.gitignore` suprime la creación accidental de versiones de archivos y rutas que concuerdan con los patrones especificados
+Un archivo de texto llamado `.gitignore` suprime la creación accidental de versiones para archivos y rutas que concuerdan con los patrones especificados
 
 
 ```$ git ls-files --other --ignored --exclude-standard```
@@ -145,7 +144,7 @@ Almacena y restaura cambios incompletos
 
 ```$ git stash```
 
-Almacena temporalmente todos los archivos tracked modificados
+Almacena temporalmente todos los archivos modificados de los cuales se tiene al menos una versión guardada
 
 
 ```$ git stash pop```
@@ -155,12 +154,12 @@ Restaura los archivos guardados más recientemente
 
 ```$ git stash list```
 
-Enumera todos los sets de cambios en guardado rápido
+Enumera todos los grupos de cambios que estan guardados temporalmente
 
 
 ```$ git stash drop```
 
-Elimina el set de cambios en guardado rápido más reciente
+Elimina el grupo de cambios más reciente que se encuentra guardado temporalmente
 
 ## Repasar historial
 Navega e inspecciona la evolución de los archivos de proyecto
@@ -168,12 +167,12 @@ Navega e inspecciona la evolución de los archivos de proyecto
 
 ```$ git log```
 
-Enumera el historial de la versión para la rama actual
+Enumera el historial de versiones para la rama actual
 
 
 ```$ git log --follow [file]```
 
-Enumera el historial de versión para el archivo, incluidos los cambios de nombre
+Enumera el historial de versiones para el archivo, incluidos los cambios de nombre
 
 
 ```$ git diff [first-branch]...[second-branch]```
@@ -186,7 +185,7 @@ Muestra las diferencias de contenido entre dos ramas
 Produce metadatos y cambios de contenido del commit especificado
 
 ## Rehacer commits
-Borra errores y elabora historial de reemplazo
+Borra errores y elabora un historial de reemplazo
 
 
 ```$ git reset [commit]```
@@ -198,7 +197,7 @@ Deshace todos los commits después de `[commit]`, preservando los cambios localm
 Desecha todo el historial y regresa al commit especificado
 
 ## Sincronizar cambios
-Registrar un marcador de repositorio e intercambiar historial de versión
+Registrar un marcador para un repositorio e intercambiar historial de versiones
 
 
 ```$ git fetch [bookmark]```
@@ -212,7 +211,7 @@ Combina la rama del marcador con la rama local actual
 
 ```$ git push [alias] [branch]```
 
-Carga todos los commits de la rama local al GitHub
+Sube todos los commits de la rama local a GitHub
 
 
 ```$ git pull```
@@ -222,7 +221,7 @@ Descarga el historial del marcador e incorpora cambios
 ---
 
 ## GitHub Training
-Obtenga más información sobre el uso de GitHub y Git.Envíe un e-mail al Equipo de Capacitación o visite nuestro sitio web para informarse sobre los horarios de eventos y la disponibilidad de clases privadas.
+Obtenga más información sobre el uso de GitHub y Git. Envíe un e-mail al Equipo de Capacitación o visite nuestro sitio web para informarse sobre los horarios de eventos y la disponibilidad de clases privadas.
 
 * training@github.com
 * training.github.com
