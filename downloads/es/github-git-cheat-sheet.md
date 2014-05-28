@@ -59,7 +59,7 @@ Muestra las diferencias entre archivos que no se han enviado aún al área de es
 
 ```$ git add [file]```
 
-Guarda el estado del archivo en preparación para guardar su estado
+Guarda el estado del archivo en preparación para realizar un commit
 
 
 ```$ git diff --staged```
