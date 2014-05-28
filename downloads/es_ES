@@ -1,9 +1,9 @@
 # Hoja de referencia para GitHub Git
 
-Git es el sistema de control de versiones distribuido de fuente abierta que facilita las actividades de GitHub en su computadora portátil o de escritorio.Esta hoja de referencia rápida resume las instrucciones de las líneas de comando de Git más comúnmente usadas.
+Git es el sistema de control de versiones distribuido, y de código bierto, que facilita las actividades de GitHub en su computadora portátil o de escritorio. Esta hoja de referencia rápida resume las instrucciones de línea de comandos de Git más comunes.
 
 ## Instalar Git
-GitHub le ofrece a los clientes de computadoras de escritorio que incluye una interfaz gráfica de usuario para las acciones de repositorio más comunes y una edición de línea de comando de actualización automática de Git para escenarios avanzados.
+GitHub ofrece herramientas gráficas para usuarios the ordenadores con interfaz gráfica, y una versión de línea de comandos para entornos avanzados.
 
 ### GitHub para Windows
 http://windows.github.com
@@ -21,12 +21,12 @@ Configura la información del usuario para todos los respositorios locales
 
 ```$ git config --global user.name "[name]"```
 
-Establece el nombre que desea esté anexado a sus transacciones de commit
+Establece el nombre anexado a tus transacciones de commit
 
 
 ```$ git config --global user.email "[email address]"```
 
-Establece el e-mail que desea esté anexado a sus transacciones de commit
+Establece el e-mail anexado a tus transacciones de commit
 
 
 ## Crear repositorios
@@ -40,7 +40,7 @@ Crea un nuevo repositorio local con el nombre especificado
 
 ```$ git clone [url]```
 
-Descarga un proyecto y toda su historia de versión
+Descarga un proyecto y todo su historial de versiones
 
 ## Efectuar cambios
 Revisa las ediciones y elabora una transacción de commit
@@ -48,32 +48,32 @@ Revisa las ediciones y elabora una transacción de commit
 
 ```$ git status```
 
-Enumera todos los archivos nuevos o modificados que se deben confirmar
+Enumera todas las modificaciones en el repositorio. Incluyendo archivos modificados, añadidos o eliminados.
 
 
 ```$ git diff```
 
-Muestra las diferencias de archivos que no se han enviado aún al área de espera
+Muestra las diferencias que no se han enviado aún al área de staging.
 
 
 ```$ git add [file]```
 
-Toma una instantánea del archivo para preparar la versión
+Añade un archivo al área de staging.
 
 
 ```$ git diff --staged```
 
-Muestra las diferencias del archivo entre el área de espera y la última versión del archivo
+Muestra las diferencias entre el área de staging y la última versión del repositorio.
 
 
 ```$ git reset [file]```
 
-Mueve el archivo del área de espera, pero preserva su contenido
+Mueve el archivo fuera del área de staging, pero preserva su contenido
 
 
 ```$ git commit -m"[descriptive message]"```
 
-Registra las instantáneas del archivo permanentemente en el historial de versión
+Registra los cambios en el archivo permanentemente en el historial de versiones
 
 ## Cambios grupales
 Nombra una serie de commits y combina esfuerzos ya culminados
