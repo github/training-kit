@@ -21,12 +21,12 @@ Configura la información del usuario para todos los respositorios locales
 
 ```$ git config --global user.name "[name]"```
 
-Establece el nombre que desea esté anexado a sus transacciones de commit
+Establece el nombre que se usará en sus transacciones de commit.
 
 
 ```$ git config --global user.email "[email address]"```
 
-Establece el e-mail que desea esté anexado a sus transacciones de commit
+Establece el e-mail que se usará en sus transacciones de commit.
 
 
 ## Crear repositorios
@@ -53,7 +53,7 @@ Enumera todos los archivos nuevos o modificados que se deben confirmar
 
 ```$ git diff```
 
-Muestra las diferencias de archivos que no se han enviado aún al área de espera
+Muestra las diferencias en archivos que no están en el área de espera.
 
 
 ```$ git add [file]```
@@ -63,7 +63,7 @@ Toma una instantánea del archivo para preparar la versión
 
 ```$ git diff --staged```
 
-Muestra las diferencias del archivo entre el área de espera y la última versión del archivo
+Muestra las diferencias en archivos incluidos en el área de espera.
 
 
 ```$ git reset [file]```
@@ -73,7 +73,7 @@ Mueve el archivo del área de espera, pero preserva su contenido
 
 ```$ git commit -m"[descriptive message]"```
 
-Registra las instantáneas del archivo permanentemente en el historial de versión
+Guarda el estado actual del archivo en el historial de versiones.
 
 ## Cambios grupales
 Nombra una serie de commits y combina esfuerzos ya culminados
@@ -110,12 +110,12 @@ Reubicay retira los archivos con versión
 
 ```$ git rm [file]```
 
-Borra el archivo del directorio activo y pone en el área de espera el archivo borrado
+Borra el archivo del directorio y añade el cambio al área de espera.
 
 
 ```$ git rm --cached [file]```
 
-Retira el archivo del control de versiones, pero preserva el archivo a nivel local
+Borra el historial del archivo del control de versiones, preservando el archivo.
 
 
 ```$ git mv [file-original] [file-renamed]```
@@ -172,7 +172,7 @@ Enumera el historial de la versión para la rama actual
 
 ```$ git log --follow [file]```
 
-Enumera el historial de versión para el archivo, incluidos los cambios de nombre
+Enumera el historial del archivo, incluyendo renombrados.
 
 
 ```$ git diff [first-branch]...[second-branch]```
@@ -190,7 +190,7 @@ Borra errores y elabora historial de reemplazo
 
 ```$ git reset [commit]```
 
-Deshace todos los commits después de `[commit]`, preservando los cambios localmente
+Deshace los commits después de `[commit]`, preservando cambios locales.
 
 ```$ git reset --hard [commit]```
 
