@@ -7,6 +7,6 @@ tags:
 ---
 
 ```bash
-$ git config user.name
-$ git config user.email
+$ git config user.name "[name]"
+$ git config user.email "octocat@github.com"
 ```

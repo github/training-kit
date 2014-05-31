@@ -7,5 +7,5 @@ tags:
 ---
 
 ```bash
-$ git commit -m"[your messag]e"
+$ git commit -m"[message]"
 ```
