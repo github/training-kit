@@ -10,7 +10,6 @@ chapters: [
   'setup-foundations',
   'getting-started',
   'reviewing-changes',
-  'distributed-repositories',
   'utilities',
   'workflows',
   'undoing-changes',
