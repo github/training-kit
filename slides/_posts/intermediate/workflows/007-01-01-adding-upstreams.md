@@ -1,15 +1,15 @@
 ---
-chapter: Distributed Repositories
+chapter: Workflows
 layout: slide
 tags:
-- distributed-repositories
+- workflows
 - diagram
 ---
 
 ```bash
+# Create new upstream bookmark
 git remote add origin [repo-url]
 
-git remote set-url origin [repo-url]
-
+# List remotes and URLs
 git remote -v
 ```

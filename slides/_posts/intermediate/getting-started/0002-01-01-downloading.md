@@ -1,9 +1,8 @@
 ---
-chapter: Distributed Repositories
+chapter: Getting Started
 layout: slide
 tags:
-- distributed-repositories
-- diagram
+- getting-started
 ---
 
 ```bash

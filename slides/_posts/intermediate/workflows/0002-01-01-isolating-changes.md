@@ -8,6 +8,4 @@ tags:
 
 ```bash
 $ git branch [name]
-
-$ git branch [name] [base]
 ```
