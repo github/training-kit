@@ -7,5 +7,6 @@ tags:
 ---
 
 ```bash
-git fetch
+git checkout [target]
+git merge [feature]
 ```
