@@ -112,12 +112,13 @@ pre code{
 
 h1{
 	font-family: "Apex New", $font-default !important;
-	font-weight: bold !important;
+	font-weight: normal !important;
 	color: $brand-darkGrey !important;
-	font-size: 1.5em !important;
-	display: inline !important;
+	font-size: .8em !important;
+	// display: inline !important;
 	line-height: 2em !important;
 	text-align: center;
+	display: block !important;
 }
 	.cover h1{
 		display: block;
