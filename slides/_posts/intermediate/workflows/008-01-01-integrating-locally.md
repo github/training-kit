@@ -7,7 +7,6 @@ tags:
 ---
 
 ```bash
-$ git branch [name]
-
-$ git branch [name] [base]
+git checkout [target]
+git merge [feature]
 ```

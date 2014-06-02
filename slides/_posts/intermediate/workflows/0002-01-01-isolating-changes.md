@@ -7,5 +7,5 @@ tags:
 ---
 
 ```bash
-git fetch
+$ git branch [name]
 ```

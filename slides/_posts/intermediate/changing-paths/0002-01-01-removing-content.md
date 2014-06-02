@@ -1,5 +1,5 @@
 ---
-chapter: Changing Paths
+chapter: File Lifecycle
 layout: slide
 tags:
 - changing-paths

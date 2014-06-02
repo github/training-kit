@@ -1,8 +1,8 @@
 ---
-chapter: Workflows
+chapter: Getting Started
 layout: slide
 tags:
-- workflows
+- getting-started
 ---
 
 ```bash

@@ -1,5 +1,5 @@
 ---
-chapter: Utilties
+chapter: Utilities
 layout: slide
 tags:
 - utilities

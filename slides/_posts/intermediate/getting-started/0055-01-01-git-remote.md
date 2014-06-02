@@ -1,9 +1,8 @@
 ---
-chapter: Workflows
+chapter: Distributed Repositories
 layout: slide
 tags:
-- workflows
-- diagram
+- getting-started
 ---
 
 ```bash
