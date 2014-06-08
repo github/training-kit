@@ -15,7 +15,7 @@ description: Este libro de trabajo para estudiantes y maestros será tu compañe
 * [Una breve historia de Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
 * [La página principal del proyecto de github](http://git-scm.com)
 
-### Detalles 
+### Detalles
 __Git es un sistema de código abierto y distribuido__ de control de versiones inventado por Linus Torvalds en 2005. Se utiliza para versionar el kernel de Linux y se demuestra que es, por un poco de investigación, el sistema de control de versiones modernas más popular.
 
 Git es la herramienta de código abierto, de línea de comandos que forma parte de los flujos de trabajo que cubriremos en este curso. Se le ha llamado el sucesor de CVS y Subversion por muchos usuarios, y mantiene cierta similitud con el comportamiento de estas herramientas de control de versiones históricas de código abierto.
@@ -30,8 +30,8 @@ $ git --version
 git version 1.8.2
 ```
 
-##  Instaladores de GitHub
-* [Instalador de GitHub para Windows ](http://windows.github.com)
+## Instaladores de GitHub
+* [Instalador de GitHub para Windows](http://windows.github.com)
 * [Instalador de GitHub para Mac](http://mac.github.com)
 * [Libro Pro Git: Instalando Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
 * **Windows**: El instalador de GitHub para Windows puede ser encontrado en http://windows.github.com.
@@ -218,4 +218,3 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 * Readme.md
   * En raíz
   * En subdirectorios
-
