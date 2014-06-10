@@ -1,7 +1,7 @@
 ---
 chapter: Hot Tips
 layout: slide
-tags: ['advanced/hot-tips']
+tags: ['hot-tips']
 ---
 
 	# Use HEAD as conflict resolution reference

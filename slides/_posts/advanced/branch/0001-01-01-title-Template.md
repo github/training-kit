@@ -1,7 +1,7 @@
 ---
 chapter: Rebase
 layout: slide
-tags: ['advanced/branch']
+tags: ['branch']
 ---
 
 	git branch -vv

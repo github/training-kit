@@ -1,7 +1,7 @@
 ---
 chapter: Customizing
 layout: slide
-tags: ['advanced/customizing']
+tags: ['customizing']
 ---
 
 Push _only_ current HEAD ref to upstream

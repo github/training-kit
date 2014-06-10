@@ -1,12 +1,12 @@
-@import url(revealjs.css);
-@import url(octicons.css);
 /*
   Custom variant to avoid font-overrides
   when using Octicons
 */
+@import url(revealjs.css);
 /*
   Octicons
 */
+@import url(octicons.css);
 /*
   Overrides, Design, Theme
 */
@@ -109,12 +109,12 @@ pre code {
 
 h1 {
   font-family: "Apex New", "Helvetica Neue", Helvetica !important;
-  font-weight: bold !important;
+  font-weight: normal !important;
   color: #333333 !important;
-  font-size: 1.5em !important;
-  display: inline !important;
+  font-size: .8em !important;
   line-height: 2em !important;
-  text-align: center; }
+  text-align: center;
+  display: block !important; }
 
 .cover h1 {
   display: block;

@@ -1,7 +1,7 @@
 ---
 chapter: Filter-Branch
 layout: slide
-tags: ['advanced/filter-branch']
+tags: ['filter-branch']
 ---
 
 ### By Directory Structure

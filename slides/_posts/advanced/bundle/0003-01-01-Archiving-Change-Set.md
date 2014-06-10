@@ -1,7 +1,7 @@
 ---
 chapter: Bundle
 layout: slide
-tags: ['advanced/bundle']
+tags: ['bundle']
 ---
 
 Update archive, additional changes from main repo

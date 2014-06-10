@@ -1,7 +1,7 @@
 ---
 chapter: Customizing Remotes
 layout: slide
-tags: ['advanced/remote']
+tags: ['remote']
 ---
  
 	# Name Spacing Branches for Fetch
