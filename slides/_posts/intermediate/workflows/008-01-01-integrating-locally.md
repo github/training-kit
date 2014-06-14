@@ -7,6 +7,6 @@ tags:
 ---
 
 ```bash
-git checkout [target]
-git merge [feature]
+$ git checkout [target]
+$ git merge [feature]
 ```

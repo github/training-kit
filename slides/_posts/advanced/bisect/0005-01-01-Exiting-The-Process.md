@@ -5,4 +5,4 @@ tags: ['bisect']
 ---
 
 	# Upon completion, restore to HEAD
-	git bisect reset
+	$ git bisect reset

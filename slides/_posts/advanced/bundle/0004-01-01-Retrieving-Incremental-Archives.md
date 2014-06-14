@@ -6,7 +6,7 @@ tags: ['bundle']
 
 Retrieve branches and new incremental bundle changes
 
-	git fetch <filename>
+	$ git fetch <filename>
 
 {% capture notes %}
 

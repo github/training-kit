@@ -7,10 +7,10 @@ tags: ['hot-tips']
 Making Sense of Commit Hash
 
 	# List "friendly name" for commit
-	git name-rev <ref>
+	$ git name-rev <ref>
 	
 	# List commit for "friendly name"
-	git rev-parse <refname>
+	$ git rev-parse <refname>
 
 
 {% capture notes %}

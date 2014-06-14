@@ -5,7 +5,7 @@ tags: ['cherry-pick']
 ---
 
 	# List commits cherry-picked, based on patch-id comparison
-	git cherry <branch>
+	$ git cherry <branch>
     
 
 {% capture notes %}

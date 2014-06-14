@@ -4,7 +4,7 @@ layout: slide
 tags: ['submodule']
 ---
 
-`git submodule add <url>`
+    $ git submodule add <url>
     
 {% capture notes %}
 git submodule update --init --recursive

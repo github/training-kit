@@ -6,4 +6,4 @@ tags: ['filter-branch']
 
 ### By Directory Structure
 
-	git filter-branch --subdirectory-filter <dir-name> -- --all
+	$ git filter-branch --subdirectory-filter <dir-name> -- --all

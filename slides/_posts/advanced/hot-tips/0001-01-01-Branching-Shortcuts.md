@@ -5,16 +5,16 @@ tags: ['hot-tips']
 ---
 
     # Branches Merged with HEAD
-    git branch --merged
+    $ git branch --merged
     
     # Branches Not Merged with HEAD
-    git branch --no-merge
+    $ git branch --no-merge
 
     # Branch Containing a Commit
-    git branch --contains <ref>
+    $ git branch --contains <ref>
 
     # Branch Rename
-    git branch -m <oldbranch> <newbranch>
+    $ git branch -m <oldbranch> <newbranch>
 
 
 

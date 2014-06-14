@@ -5,10 +5,10 @@ tags: ['bisect']
 ---
 
 	# Begin process
-	git bisect start
+	$ git bisect start
 
 	# Denote known bad commit
-	git bisect bad <rev>
+	$ git bisect bad <rev>
 
 	# Flag good commit
-	git bisect good <rev>
+	$ git bisect good <rev>

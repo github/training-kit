@@ -5,6 +5,6 @@ tags: ['customizing']
 ---
 
 	# Always rebase HEAD 
-	git config pull.rebase true
+	$ git config pull.rebase true
 
 {% include hydeslides/core/notes %}
