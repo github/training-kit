@@ -35,10 +35,11 @@
 
     {% include analytics.html %}
 
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     {% if page.theme == "home" %}
+      <script src="_javascript/jquery-1.11.0.min.js"></script>
       <script src="_javascript/page.js"></script>
     {% else %}
+      <script src="../_javascript/jquery-1.11.0.min.js"></script>
       <script src="../_javascript/page.js"></script>
     {% endif %}
   </head>
