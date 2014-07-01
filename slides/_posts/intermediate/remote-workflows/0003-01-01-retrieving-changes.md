@@ -3,7 +3,7 @@ chapter: Distributed repositories
 layout: slide
 title: ''
 tags:
-- distributed-repositories
+- remote-workflows
 ---
 
 ```bash
