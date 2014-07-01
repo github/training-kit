@@ -5,3 +5,7 @@ title: ''
 tags:
 - recovering-anything
 ---
+
+```bash
+git checkout HEAD@{[n]} -- [path]
+```
