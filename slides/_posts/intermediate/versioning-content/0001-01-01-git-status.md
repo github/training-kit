@@ -5,3 +5,7 @@ title: ''
 tags:
 - versioning-content
 ---
+
+```bash
+git status
+```
