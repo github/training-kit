@@ -5,3 +5,7 @@ title: ''
 tags:
 - reviewing-modifications
 ---
+
+```bash
+git diff --staged
+```
