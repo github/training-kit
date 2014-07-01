@@ -5,3 +5,8 @@ title: ''
 tags:
 - file-lifecycle
 ---
+
+```bash
+# Stop version tracking, stage for commit
+git rm --cached [file]
+```
