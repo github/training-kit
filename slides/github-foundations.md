@@ -5,13 +5,18 @@ theme: github
 title: GitHub Foundations Course Slides
 description: A slide deck to the GitHub Foundations class.
 chapters: [
-  'preroll',
-  'version-control',
-  'commit-basics',
-  'branch-basics',
-  'tag-basics',
-  'github/pull-requests',
-  'github/contributors',
-  'github/organizations',
-  'goodbye']
+- version-control-concepts
+- getting-to-know-git-github
+- repository-creation
+- web-flow
+- local-repository
+- history-synchronization
+- branches
+- merges
+- collaboration
+- project-management-basics
+- github-features
+- gh-pages
+- github-wikis
+]
 ---
