@@ -7,5 +7,11 @@ tags:
 ---
 
 ```bash
-git clone [repository-url]
+# List remote "bookmarks", if any
+git remote
+```
+
+```bash
+# Add a remote "bookmark"
+git remote add [name] [url]
 ```
