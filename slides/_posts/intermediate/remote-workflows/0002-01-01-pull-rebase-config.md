@@ -5,3 +5,7 @@ title: ''
 tags:
 - remote-workflows
 ---
+
+```bash
+git config --[scope] pull.rebase true
+```
