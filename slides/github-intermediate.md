@@ -13,7 +13,6 @@ chapters:
 - local-workflows
 - distributed-repositories
 - remote-workflows
-- synchronization
 - utilities-shortcuts
 - file-lifecycle
 - undoing-changes
