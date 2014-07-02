@@ -14,7 +14,10 @@ tags:
 {% include hydeslides/core/notes %}
 
 ```bash
-$ git remote update --prune
-$ git push <remote> --prune
-$ git push origin :<branch-name>
+# Discard remote local branches
+# not present on upstream
+git fetch --prune
+
+# Delete an upstream branch
+git push origin :<branch-name>
 ```
