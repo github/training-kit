@@ -12,9 +12,13 @@ Notes placeholder
 {% include hydeslides/core/notes %}
 
 ```
-git filter-branch --subdirectory-filter [dir] -- --all
+git filter-branch
+	--subdirectory-filter [dir]
+	-- --all
 ```
 
 ```
-git filter-branch --index-filter 'git rm --cached --ignore-unmatch [file]' HEAD
+git filter-branch --index-filter
+	'git rm --cached
+	--ignore-unmatch [file]' HEAD
 ```
