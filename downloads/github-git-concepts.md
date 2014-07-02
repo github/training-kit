@@ -75,7 +75,7 @@ The last step deletes the branch. Merges result in all commit history becoming t
 
 
 ## Sharing & Retrieving
-Sharing commit history requires only a destination repository, one on GitHub.com, and a single setup step.
+Sharing commit history requires only a destination repository, one on GitHub, and a single setup step.
 
 ```
 $ git remote add origin [repo-url]
