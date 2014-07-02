@@ -1,6 +1,6 @@
 # GitHub Repository Fundamentals
 
-Git is an open source, distributed version control system founded in command line interaction. This guide provides the day-to-day setup and commands to use Git locally and connect repositories to GitHub.com for a complete collaboration workflow.
+Git is an open source, distributed version control system founded in command line interaction. This guide provides the day-to-day setup and commands to use Git locally and connect repositories to GitHub for a complete collaboration workflow.
 
 ## Understanding terms & Processes descriptions of GitHub and Git
 
@@ -16,7 +16,7 @@ An individual change to a file (or set of files). With Git, every time you save 
 A parallel version of repository. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version.
 
 ### Remote
-The connection of a local repository with one on GitHub.com. It permits revision history to be synchronized by publishing local commits and downloading any new changes from GitHub.
+The connection of a local repository with one on GitHub. It permits revision history to be synchronized by publishing local commits and downloading any new changes from GitHub.
 
 ## Configuring
 The first thing to setup when using Git is two important fields about the user. This allows appropriate credit and traceability for project contributions.
