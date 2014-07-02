@@ -7,9 +7,9 @@ description: A slide deck to the GitHub Advanced class.
 chapters:
 - mastering-shortcuts
 - isolating-work
-- git-data-structure
+- understanding-git
 - best-practices
-- git-ignore
+- ignore
 - navigating-history
 - temporary-changes
 - incorporating-history
