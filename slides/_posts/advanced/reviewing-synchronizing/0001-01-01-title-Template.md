@@ -25,22 +25,3 @@ git fetch origin refs/pull/1/head
 git show FETCH_HEAD
 git merge --no-commit --no-ff FETCH_HEAD
 ```
-
-```bash
-$ git remote -v
-$ git remote show <remote-name>
-$ git ls-remote
-$ git branch -vv
-```
-
-```bash
-$ git pull [remote] [pull-request-namespace]
-
-$ git fetch [remote] [pull-request-namespace]
-```
-
-```bash
-$ git fetch <URL> <branch>
-$ git checkout FETCH_HEAD
-$ git branch <newbranchname> FETCH_HEAD
-```
