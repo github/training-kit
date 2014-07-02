@@ -18,7 +18,7 @@ A parallel version of repository. It is contained within the repository, but doe
 ### Remote
 The connection of a local repository with one on GitHub. It permits revision history to be synchronized by publishing local commits and downloading any new changes from GitHub.
 
-## Pull Request
+### Pull Request
 A  feature on GitHub which provides conversation, line-by-line code review, change history analysis, and summaries of modified files.
 
 ## Configuring
