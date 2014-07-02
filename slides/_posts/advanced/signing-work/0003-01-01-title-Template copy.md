@@ -11,9 +11,16 @@ Notes placeholder
 {% endcapture %}
 {% include hydeslides/core/notes %}
 
-Using an auto-inserted text block to commit messages
+```
+git config --global user.signingkey
+```
 
 ```
-git commit -s
-git commit --signoff
+git merge --verify-signatures
+```
+
+```
+git tag -s [tag-name] [commit]
+
+git tag -v [tag-name]
 ```

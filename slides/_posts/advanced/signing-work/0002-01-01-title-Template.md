@@ -11,9 +11,10 @@ Notes placeholder
 {% endcapture %}
 {% include hydeslides/core/notes %}
 
-Using an auto-inserted text block to commit messages
+Using GPG
 
 ```
-git commit -s
-git commit --signoff
+git commit -S
+
+git log --show-signature
 ```
