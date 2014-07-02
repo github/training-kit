@@ -15,10 +15,4 @@ tags:
 
 ```bash
 vi .gitignore
-
-git config core.excludesfile [path]
-
-git config alias.show-ignored "ls-files --exclude-standard --others --ignored"
-
-git add -f [path]
 ```
