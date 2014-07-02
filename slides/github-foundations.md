@@ -4,9 +4,9 @@ deck_type: revealjs
 theme: github
 title: GitHub Foundations Course Slides
 description: A slide deck to the GitHub Foundations class.
-chapters: [
+chapters:
 - version-control-concepts
-- getting-to-know-git-github
+- git-github
 - repository-creation
 - web-flow
 - local-repository
@@ -14,9 +14,6 @@ chapters: [
 - branches
 - merges
 - collaboration
-- project-management-basics
+- project-management
 - github-features
-- gh-pages
-- github-wikis
-]
 ---
