@@ -22,9 +22,8 @@ tags:
 {% include hydeslides/core/notes %}
 
 ```bash
+# Generate new commit on current branch
+# with patch of specified commit
+
 git cherry-pick [commit]
-
-git branch --contains [non-cherry-picked-ref]
-
-git cherry [upstream-branch]
 ```
