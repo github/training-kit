@@ -14,7 +14,6 @@ tags:
 {% include hydeslides/core/notes %}
 
 ```bash
-git add -p [file]
-
+# Unstage by patch
 git reset -p [file]
 ```
