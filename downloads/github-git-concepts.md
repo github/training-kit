@@ -16,7 +16,7 @@ An individual change to a file (or set of files). With Git, every time you save 
 A parallel version of repository. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version.
 
 ### Remote
-This is the connection of a repository hosted on a server, most likely GitHub.com. It can be connected to local repositories so that changes can be synchronized.
+The connection of a local repository with one on GitHub.com. It permits revision history to be synchronized by publishing local commits and downloading any new changes from GitHub.
 
 ## Configuring
 The first thing to setup when using Git is two important fields about the user. This allows appropriate credit and traceability for project contributions.
