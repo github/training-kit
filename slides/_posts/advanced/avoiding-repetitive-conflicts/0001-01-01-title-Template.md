@@ -5,3 +5,13 @@ title: ''
 tags:
 - avoiding-repetitive-conflicts
 ---
+
+{% capture notes %}
+* *Re*use *re*corded *re*solution
+* Preserves pre-image to simplify conflicts
+{% endcapture %}
+{% include hydeslides/core/notes %}
+
+```
+git config rerere.enable true
+```

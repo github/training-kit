@@ -5,3 +5,19 @@ title: ''
 tags:
 - temporary-changes
 ---
+
+{% capture notes %}
+* Name your stash
+* List stashes
+* Use specific stashes
+{% endcapture %}
+{% include hydeslides/core/notes %}
+
+```bash
+git stash
+git stash list
+git stash pop
+git stash drop
+git stash clear
+git stash -p
+```
