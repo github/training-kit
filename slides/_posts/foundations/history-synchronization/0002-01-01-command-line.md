@@ -1,12 +1,18 @@
 ---
-chapter: Git & GitHub
+chapter: History synchronization
 layout: slide
 title: ''
 tags:
-- git-github
+- history-synchronization
 ---
 
 {% capture notes %}
 Notes placeholder
 {% endcapture %}
 {% include hydeslides/core/notes %}
+
+
+```
+git pull --rebase
+git push origin [master|branch]
+```
