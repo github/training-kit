@@ -202,17 +202,17 @@ Discards all history and changes back to the specified commit
 Register a repository bookmark and exchange version history
 
 
-```$ git fetch [bookmark]```
+```$ git fetch [remote]```
 
 Downloads all history from the repository bookmark
 
 
-```$ git merge [bookmark]/[branch]```
+```$ git merge [remote]/[branch]```
 
 Combines bookmark’s branch into current local branch
 
 
-```$ git push [alias] [branch]```
+```$ git push [remote] [branch]```
 
 Uploads all local branch commits to GitHub
 
