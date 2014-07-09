@@ -4,4 +4,4 @@ layout: slide
 tags: ['branch']
 ---
 
-	git branch -vv
+	$ git branch -vv

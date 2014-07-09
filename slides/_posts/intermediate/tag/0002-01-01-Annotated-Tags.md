@@ -4,9 +4,9 @@ layout: slide
 tags: ['tag']
 ---
 
-	git tag -a <TAGNAME>
-	git show <TAGNAME>
+	$ git tag -a <TAGNAME>
+	$ git show <TAGNAME>
 
 
 	# Signed tag
-	git tag -s <TAGNAME>
+	$ git tag -s <TAGNAME>

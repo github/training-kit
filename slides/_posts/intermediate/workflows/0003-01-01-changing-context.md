@@ -7,5 +7,5 @@ tags:
 ---
 
 ```bash
-git checkout [branch]
+$ git checkout [branch]
 ```

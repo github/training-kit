@@ -6,8 +6,8 @@ tags: ['customizing']
 
 Push _only_ current HEAD ref to upstream
 
-	git config <scope> push.default simple
+	$ git config <scope> push.default simple
 
 Push _all_ refs that have a configured upstream
 
-	git config <scope> push.default matching
+	$ git config <scope> push.default matching

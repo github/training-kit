@@ -5,10 +5,10 @@ tags: ['notes']
 ---
 
     # Namespacing (multiple notes per "ref")
-    git notes --ref=<namespace> add <ref>
+    $ git notes --ref=<namespace> add <ref>
     
     # Edit a namespaced note
-    git notes --ref=<namespace> edit <ref>
+    $ git notes --ref=<namespace> edit <ref>
 
     # Showing namespaced or all notes
-    git log --show-notes="[<namespace>][*]"
+    $ git log --show-notes="[<namespace>][*]"

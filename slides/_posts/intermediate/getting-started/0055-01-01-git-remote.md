@@ -6,9 +6,9 @@ tags:
 ---
 
 ```bash
-git remote add origin [repo-url]
+$ git remote add origin [repo-url]
 
-git remote set-url origin [repo-url]
+$ git remote set-url origin [repo-url]
 
-git remote -v
+$ git remote -v
 ```

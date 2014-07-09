@@ -6,11 +6,11 @@ tags: ['bundle']
 
 Create a new repo from archive file
 
-	git clone -b <main-branch> <archive-path> <repo-name>
+	$ git clone -b <main-branch> <archive-path> <repo-name>
 
 Verify remote setup to archive path
 
-	git remote -v
+	$ git remote -v
 
 {% capture notes %}
 	git bundle list-heads <filepath>

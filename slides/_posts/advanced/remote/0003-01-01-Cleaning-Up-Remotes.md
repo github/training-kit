@@ -5,14 +5,14 @@ tags: ['remote']
 ---
 
 	# Delete a remote branch with a refspec
-	git push <remote> :<branch>
+	$ git push <remote> :<branch>
 
 	# Review remote tracking
-	git remote show <remotename>
+	$ git remote show <remotename>
 
 	# Tidy remote (local) tracking branches
-	git remote prune
-	git fetch --prune
+	$ git remote prune
+	$ git fetch --prune
 
 	# Delete remote branches not local
-	git push --prune
+	$ git push --prune

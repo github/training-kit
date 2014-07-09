@@ -8,8 +8,8 @@ tags:
 
 ```bash
 # Upstream specified
-git push origin [branch]
+$ git push origin [branch]
 
 # Upstream setup for tracking
-git push -u origin [branch]
+$ git push -u origin [branch]
 ```
