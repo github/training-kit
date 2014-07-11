@@ -3,6 +3,7 @@ layout: slide
 deck_type: revealjs
 theme: github
 title: GitHub Foundations Course Slides
+deck_title: Intermediate Class
 description: A slide deck to the GitHub Foundations class.
 chapters:
 - setup

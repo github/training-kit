@@ -3,6 +3,7 @@ layout: slide
 deck_type: revealjs
 theme: github
 title: GitHub Advanced Course Slides
+deck_title: Advanced Class
 description: A slide deck to the GitHub Advanced class.
 chapters:
 - mastering-shortcuts
