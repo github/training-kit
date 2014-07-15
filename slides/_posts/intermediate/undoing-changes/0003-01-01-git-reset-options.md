@@ -8,11 +8,11 @@ tags:
 
 ```bash
 # Move HEAD, keep changes in staging
-git reset --soft [commit|branch|tag]
+$ git reset --soft [commit|branch|tag]
 
 # Move HEAD, keep changes, clear staging area
-git reset --mixed [commit|branch|tag]
+$ git reset --mixed [commit|branch|tag]
 
 ## Move HEAD, discard all uncommited changes
-git reset --hard [commit|branch|tag]
+$ git reset --hard [commit|branch|tag]
 ```

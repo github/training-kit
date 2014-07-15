@@ -7,5 +7,5 @@ tags:
 ---
 
 ```bash
-git checkout HEAD@{[n]} -- [path]
+$ git checkout HEAD@{[n]} -- [path]
 ```

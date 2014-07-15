@@ -8,10 +8,10 @@ tags:
 
 ```bash
 # List remote "bookmarks", if any
-git remote
+$ git remote
 ```
 
 ```bash
 # Add a remote "bookmark"
-git remote add [name] [url]
+$ git remote add [name] [url]
 ```

@@ -7,5 +7,5 @@ tags:
 ---
 
 ```bash
-git commit -m "[your description]"
+$ git commit -m "[your description]"
 ```

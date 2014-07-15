@@ -8,12 +8,12 @@ tags:
 
 ```bash
 # Retrieve remote history and update working tree
-git pull
+$ git pull
 ```
 
 ```bash
 # Only retrieve remote history
-git fetch
+$ git fetch
 
-git branch -r
+$ git branch -r
 ```

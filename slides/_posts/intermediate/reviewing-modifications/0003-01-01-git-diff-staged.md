@@ -7,5 +7,5 @@ tags:
 ---
 
 ```bash
-git diff --staged
+$ git diff --staged
 ```

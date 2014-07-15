@@ -7,5 +7,5 @@ tags:
 ---
 
 ```bash
-git config --[scope] pull.rebase true
+$ git config --[scope] pull.rebase true
 ```

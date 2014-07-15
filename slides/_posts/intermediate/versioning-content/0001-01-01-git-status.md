@@ -7,5 +7,5 @@ tags:
 ---
 
 ```bash
-git status
+$ git status
 ```
