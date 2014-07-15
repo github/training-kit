@@ -15,5 +15,5 @@ tags:
 
 ```bash
 # Stage by patch
-git add -p [file]
+$ git add -p [file]
 ```

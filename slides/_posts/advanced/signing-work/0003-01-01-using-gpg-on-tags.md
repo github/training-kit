@@ -12,15 +12,15 @@ Notes placeholder
 {% include hydeslides/core/notes %}
 
 ```
-git config --global user.signingkey
+$ git config --global user.signingkey
 ```
 
 ```
-git merge --verify-signatures
+$ git merge --verify-signatures
 ```
 
 ```
-git tag -s [tag-name] [commit]
+$ git tag -s [tag-name] [commit]
 
-git tag -v [tag-name]
+$ git tag -v [tag-name]
 ```

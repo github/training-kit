@@ -25,5 +25,5 @@ tags:
 # Generate new commit on current branch
 # with patch of specified commit
 
-git cherry-pick [commit]
+$ git cherry-pick [commit]
 ```

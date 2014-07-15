@@ -19,9 +19,9 @@ tags:
 {% include hydeslides/core/notes %}
 
 ```bash
-git ls-remote origin
-git fetch origin refs/pull/1/head
+$ git ls-remote origin
+$ git fetch origin refs/pull/1/head
 
-git show FETCH_HEAD
-git merge --no-commit --no-ff FETCH_HEAD
+$ git show FETCH_HEAD
+$ git merge --no-commit --no-ff FETCH_HEAD
 ```

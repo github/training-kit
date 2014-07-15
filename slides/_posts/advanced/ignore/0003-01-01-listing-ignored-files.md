@@ -12,7 +12,7 @@ Placeholder
 {% include hydeslides/core/notes %}
 
 ```bash
-git config alias.show-ignored
+$ git config alias.show-ignored
 	"ls-files --exclude-standard
 	--others --ignored"
 ```

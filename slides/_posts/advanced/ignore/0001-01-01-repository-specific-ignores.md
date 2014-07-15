@@ -14,5 +14,5 @@ tags:
 {% include hydeslides/core/notes %}
 
 ```bash
-vi .gitignore
+$ vi .gitignore
 ```

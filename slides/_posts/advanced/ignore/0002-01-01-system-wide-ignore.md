@@ -12,5 +12,5 @@ Placeholder
 {% include hydeslides/core/notes %}
 
 ```bash
-git config core.excludesfile [path]
+$ git config core.excludesfile [path]
 ```
