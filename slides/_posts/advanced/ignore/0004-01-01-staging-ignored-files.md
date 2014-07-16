@@ -12,5 +12,5 @@ Placeholder
 {% include hydeslides/core/notes %}
 
 ```bash
-git add -f [path]
+$ git add -f [path]
 ```

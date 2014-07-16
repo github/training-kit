@@ -8,11 +8,11 @@ tags:
 
 ```bash
 # List branches, identify current brach
-git branch
+$ git branch
 
 # Create a new branch from current branch
-git branch [name]
+$ git branch [name]
 
 # Switch to a different branch
-git checkout [name]
+$ git checkout [name]
 ```

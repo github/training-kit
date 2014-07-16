@@ -18,5 +18,5 @@ tags:
 Change which base a branch belongs to
 
 ```bash
-git rebase --onto <newbase> <upstream> <HEAD|branch>
+$ git rebase --onto <newbase> <upstream> <HEAD|branch>
 ```

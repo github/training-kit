@@ -8,5 +8,5 @@ tags:
 
 ```bash
 # Create a new commit undoing the patch in that specified
-git revert [commit]
+$ git revert [commit]
 ```

@@ -14,7 +14,7 @@ Notes placeholder
 Using GPG
 
 ```
-git commit -S
+$ git commit -S
 
-git log --show-signature
+$ git log --show-signature
 ```

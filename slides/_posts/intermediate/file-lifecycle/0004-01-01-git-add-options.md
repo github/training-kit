@@ -8,9 +8,9 @@ tags:
 
 ```bash
 # Stage all updated files
-git add -u [file|pattern]
+$ git add -u [file|pattern]
 
 # Stage all files no matter the state
-git add -A [file|pattern]
+$ git add -A [file|pattern]
 
 ```

@@ -13,9 +13,9 @@ tags:
 {% include hydeslides/core/notes %}
 
 ```bash
-git commit -a -m"[message]"
+$ git commit -a -m"[message]"
 
-git commit --amend -m "[updated message]"
+$ git commit --amend -m "[updated message]"
 
-git checkout -b [branch] [base]
+$ git checkout -b [branch] [base]
 ```

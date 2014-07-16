@@ -8,9 +8,9 @@ tags:
 
 ```bash
 # Retrieve all remote branches, then list them
-git fetch
-git branch -a
+$ git fetch
+$ git branch -a
 
 # Temporarily retrieve a repository's branch
-git fetch [remote] [branch]
+$ git fetch [remote] [branch]
 ```

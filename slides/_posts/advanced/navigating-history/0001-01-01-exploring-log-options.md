@@ -7,25 +7,25 @@ tags:
 ---
 
 ```bash
-git log --author [author-name]
+$ git log --author [author-name]
 
 $ git log --since [integer].days.ago
 
-git log -S [string-in-patch]
+$ git log -S [string-in-patch]
 
-git log -G [regex-pattern-in-patch]
+$ git log -G [regex-pattern-in-patch]
 
-git log --grep=[regex-in-message]
+$ git log --grep=[regex-in-message]
 
-git log --diff-filter=[A|M|D]
+$ git log --diff-filter=[A|M|D]
 
-git log --follow --stat --diff-filter=[A|M|D] -- <filename>
+$ git log --follow --stat --diff-filter=[A|M|D] -- <filename>
 
-git log --oneline --left-right master..other
+$ git log --oneline --left-right master..other
 
-git log --oneline --left-right master...other
+$ git log --oneline --left-right master...other
 
-git name-rev [commit-ref]
+$ git name-rev [commit-ref]
 ```
 
 {% capture notes %}

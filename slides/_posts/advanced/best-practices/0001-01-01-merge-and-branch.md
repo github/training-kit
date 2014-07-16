@@ -14,11 +14,11 @@ tags:
 {% include hydeslides/core/notes %}
 
 ```bash
-git merge --squash [branch]
+$ git merge --squash [branch]
 
-git branch --contains [commit]
+$ git branch --contains [commit]
 
-git branch --merged [commit]
+$ git branch --merged [commit]
 
-git branch --no-merged [commit]
+$ git branch --no-merged [commit]
 ```

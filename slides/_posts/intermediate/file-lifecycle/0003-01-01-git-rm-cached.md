@@ -8,5 +8,5 @@ tags:
 
 ```bash
 # Stop version tracking, stage for commit
-git rm --cached [file]
+$ git rm --cached [file]
 ```

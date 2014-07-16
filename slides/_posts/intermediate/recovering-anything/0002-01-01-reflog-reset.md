@@ -7,5 +7,5 @@ tags:
 ---
 
 ```bash
-git reset --[option] HEAD@{[n]}
+$ git reset --[option] HEAD@{[n]}
 ```

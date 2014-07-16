@@ -8,11 +8,11 @@ tags:
 
 ```bash
 # Limit history from HEAD
-git log -[n]
+$ git log -[n]
 ```
 
 ```bash
-git --author [author-name]
-git -S [string-in-patch]
-git -G [regex-matching-commit-message]
+$ git --author [author-name]
+$ git -S [string-in-patch]
+$ git -G [regex-matching-commit-message]
 ```

@@ -15,12 +15,12 @@ tags:
 First a remote connecting to the dependency and a branch in which to read from is needed.
 
 ```
-git remote add
+$ git remote add
 	[dependency-bookmark]
 	[repository-url]
 
-git fetch [dependency-bookmark]
+$ git fetch [dependency-bookmark]
 
-git branch [branch]
+$ git branch [branch]
 	[dependency-bookmark]/[branch]
 ```

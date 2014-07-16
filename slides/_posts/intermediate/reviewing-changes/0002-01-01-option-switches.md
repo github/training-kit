@@ -9,11 +9,11 @@ tags:
 
 ```bash
 # Simple commit summaries
-git log --oneline
+$ git log --oneline
 ```
 
 
 ```bash
 # Option switches common with `diff`
-git log --patch --color-words
+$ git log --patch --color-words
 ```

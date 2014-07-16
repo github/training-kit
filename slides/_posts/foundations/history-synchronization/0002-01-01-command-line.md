@@ -13,6 +13,6 @@ Notes placeholder
 
 
 ```
-git pull --rebase
-git push origin [master|branch]
+$ git pull --rebase
+$ git push origin [master|branch]
 ```

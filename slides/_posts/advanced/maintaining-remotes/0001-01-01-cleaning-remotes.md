@@ -16,8 +16,8 @@ tags:
 ```bash
 # Discard remote local branches
 # not present on upstream
-git fetch --prune
+$ git fetch --prune
 
 # Delete an upstream branch
-git push origin :<branch-name>
+$ git push origin :<branch-name>
 ```

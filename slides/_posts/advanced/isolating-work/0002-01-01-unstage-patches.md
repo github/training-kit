@@ -15,5 +15,5 @@ tags:
 
 ```bash
 # Unstage by patch
-git reset -p [file]
+$ git reset -p [file]
 ```
