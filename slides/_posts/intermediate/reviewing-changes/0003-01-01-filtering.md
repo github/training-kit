@@ -12,7 +12,7 @@ $ git log -[n]
 ```
 
 ```bash
-$ git --author [author-name]
-$ git -S [string-in-patch]
-$ git -G [regex-matching-commit-message]
+$ git log --author [author-name]
+$ git log -S [string-in-patch]
+$ git log -G [regex-matching-commit-message]
 ```
