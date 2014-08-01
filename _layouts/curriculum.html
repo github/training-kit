@@ -1,0 +1,20 @@
+---
+layout: bare
+---
+
+<section class="hero overview">
+  <div class="container">
+    <div class="content">
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.description }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="curriculum">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
+
+{% include footer.html %}
