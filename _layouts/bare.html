@@ -13,29 +13,12 @@
 
     <link rel="stylesheet" media="all" href="{{ site.url }}/_stylesheets/page.css" />
 
-    <link rel="stylesheet"
-      media="screen"
-      href=
-        {% if page.theme %}
-          {% if page.theme == "home" %}
-            "_stylesheets/home.css"
-          {% else %}
-            "../_stylesheets/{{ page.theme }}.css"
-          {% endif %}
-        {% else %}
-          "_stylesheets/page.css"
-        {% endif %}
-      type="text/css" />
+    <link rel="stylesheet" media="screen" href="{{ site.url }}/_stylesheets/page.css" type="text/css" />
 
     {% include analytics.html %}
 
-    {% if page.theme == "home" %}
-      <script src="_javascript/jquery-1.11.0.min.js"></script>
-      <script src="_javascript/page.js"></script>
-    {% else %}
-      <script src="../_javascript/jquery-1.11.0.min.js"></script>
-      <script src="../_javascript/page.js"></script>
-    {% endif %}
+      <script src="{{ site.url }}/_javascript/jquery-1.11.0.min.js"></script>
+      <script src="{{ site.url }}/_javascript/page.js"></script>
   </head>
   <body>
     {% include navigation.html %}
