@@ -11,10 +11,21 @@ layout: bare
   </div>
 </section>
 
-<section class="curriculum">
-  <div class="container">
-    {{ content }}
+<section class="">
+  <div class="container curriculum">
+
+    <nav id="toc">
+      <ul id="toc-list">
+      </ul>
+    </nav>
+
+    <div class="content">
+      {{ content }}
+    </div>
   </div>
 </section>
 
 {% include footer.html %}
+
+<script src="{{ site.url }}/_javascript/snap-svg/dist/snap.svg-min.js"></script>
+<script src="{{ site.url }}/_javascript/curriculum.js"></script>
