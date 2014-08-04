@@ -12,8 +12,8 @@
 @import "general.scss";
 @import "header.css";
 @import "hero.css";
-@import "testimonials.css";
-@import "subpage-list.css";
+
+@import "curriculum.scss";
 
 /* Trainers */
 
@@ -212,7 +212,6 @@ ul {
 p.register {
 	text-align: right;
 }
-
 
 @media screen and (max-width: 568px){
 	.video, .book, .other {
