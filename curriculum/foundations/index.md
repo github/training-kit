@@ -4,62 +4,58 @@ title: GitHub Foundations
 description: Discovering the GitHub collaboration platform
 ---
 
-### Git configuration
+### Git Concepts
 
-Git's configuration is saved in one of three plain text files and one of three levels and is easily editable with a text editor and portable to other machines by copying the configuration files.
+{% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
+{% include svg %}
 
-Level | Precedence | Location
---- | --- | ---
-`system` | lowest | alongside the `git` binary
-`global` | middle | in your home directory as `.gitconfig`
-`local` | highest | in your project's `.git/config` file
+* Repository
+* Commit
+* Branch
 
-```
-$ git config --list
-$ git config user.name
-$ git config user.email
-$ git config --global core.autocrlf <value>
-```
+### GitHub Concepts
 
-<svg version="1.1"
-	width="100%"
-	height="100%"
-	data-path="diagrams/commit-data-structure.svg"
-	id="canvas-123"
-	viewBox="0 0 100 100"></svg>
+* Repository
+* Branch
+* Pull Request
+* Issues
+* Organizations
+* Teams
 
-``` shell
-# Set line endings to LF for Mac and Linux
-$ git config --global core.autocrlf input
+### Repository Creation
 
-# Set line endings to CRLF for Windows
-$ git config --global core.autocrlf auto
-```
+* Via GitHub
+* With GUI
+* On command line
+
+{% capture svg_path %}../assets/diagrams/repo-clone.svg{% endcapture %}
+{% include svg %}
 
 #### Lab
 
-* Check that Git is installed on your system
-* Configure your user.name for the global scope
-* Configure your user.email to match your GitHub.com account
-* Review all configuration with the `--list` switch
+* Hosting repositories
+* Collaborating on code, documents, text
+* Controlling access & contributions
+	* Permissions
+	* Forks
+	* Users
+	* Organizations
+* Tracking assignments, tickets, bugs
+* Hosting supporting documentation (GH-Pages)
+	* https://pages.github.com/
+* Discovering trending technology (Explore)
+	* https://github.com/explore
+* Tracking favorite projects (Stars)
+	* https://github.com/stars
 
-### File lifecycle
+* Visit GitHub.com
+* Project access control (public/private)
+* Repository creation
+* Seed files (`README`, `.gitignore`, `license.md`)
+* Edits/commits through web interface
+* Concepts of hosted repository
+* Repository based on existing content
+* Web interface and GUI client
+* Clone command explanation
 
-```bash
-# Permanently delete file, stage for commit
-$ git rm [file]
-```
-
-```bash
-# Stage all updated files
-$ git add -u [file|pattern]
-
-# Stage all files no matter the state
-$ git add -A [file|pattern]
-
-```
-
-```bash
-# Change the path of a file
-$ git mv [path]
-```
+---
