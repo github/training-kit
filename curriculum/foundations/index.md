@@ -5,7 +5,6 @@ description: Discovering the GitHub collaboration platform
 ---
 
 ### Git Concepts
-
 {% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
 {% include svg %}
 
@@ -14,7 +13,6 @@ description: Discovering the GitHub collaboration platform
 * Branch
 
 ### GitHub Concepts
-
 * Repository
 * Branch
 * Pull Request
@@ -23,13 +21,57 @@ description: Discovering the GitHub collaboration platform
 * Teams
 
 ### Repository Creation
-
 * Via GitHub
 * With GUI
 * On command line
 
 {% capture svg_path %}../assets/diagrams/repo-clone.svg{% endcapture %}
 {% include svg %}
+
+### Web Flow
+* Browse projects
+* Start branches
+* Create files
+* Edit content
+* Change paths
+* Open Pull Requests
+
+### Local Repository
+* Initialize repositories
+* Craft file versions
+* Create branches
+
+### History Synchronization
+```
+$ git pull --rebase
+$ git push origin [master|branch]
+```
+
+### Branches
+{% capture svg_path %}../assets/diagrams/what-is-a-branch.svg{% endcapture %}
+{% include svg %}
+
+
+### Merges
+* Integrate with Pull Requests
+* Combine locally with GUIs
+
+### Collaboration
+{% capture svg_path %}../assets/diagrams/fork-structure.svg{% endcapture %}
+{% include svg %}
+
+{% capture svg_path %}../assets/diagrams/direct-contribution.svg{% endcapture %}
+{% include svg %}
+
+### Project Management
+* GitHub Issues
+* Milestones
+* Network
+* Pulse
+* Tags, Releases
+* Collaborators
+* Organizations
+* Teams
 
 #### Lab
 
