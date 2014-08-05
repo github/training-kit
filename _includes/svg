@@ -5,7 +5,4 @@
 	data-path="{{ svg_path }}"
 	id="{{ svg_path | remove: '/' | remove: '.' | remove: '..' }}"
 	viewBox="0 0 100 100"></svg>
-
-	MD5
-	{{ svg_path | md5 }}
 {% endif %}
