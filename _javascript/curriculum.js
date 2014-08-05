@@ -8,27 +8,20 @@ loadAllSvg();
 
 
 function buildToc(){
-	var headings = $("h3");
-	var toc = $("#toc-list");
-
-	console.log("headings.length:" + headings.length);
+	var headings = $("h3"),
+			toc = $("#toc-list");
 
 	for(var h=0; h<headings.length; h++){
-
-		console.log(h);
-		console.log(headings[h].innerHTML);
-
 		var item = $("<li>" + headings[h].innerHTML+ "</li>");
 		toc.append(item);
-
-		console.log(headings);
 	}
 }
 
 function loadAllSvg(){
-	var els = document.getElementsByTagName("svg");
+	var els = document.getElementsByTagName("svg"),
+			elCount = 0;
 
-	for(var elCount = 0; elCount < els.length; elCount++){
+	for(elCount = 0; elCount < els.length; elCount++){
 			injectSvg(els[elCount]);
 	}
 }
