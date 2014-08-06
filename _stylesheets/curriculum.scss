@@ -7,9 +7,9 @@
   text-decoration: none;
   color: $color-dark;
 
-  &:before{
+  &:after{
     content: $char;
-    margin-right: 5px;
+    margin-left: 5px;
   }
 }
 
@@ -125,14 +125,4 @@
   // margin-right: -200px;
   border-radius: 3px;
   background: #f3f3f3;
-}
-
-.booklink, .githublink, .weblink, .videolink {
-  font: normal normal 1em octicons;
-  text-decoration: none;
-  color: $color-dark;
-
-  &:hover {
-    color: $color-bright;
-  }
 }
