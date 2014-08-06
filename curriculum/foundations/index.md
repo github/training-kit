@@ -8,11 +8,28 @@ description: Discovering the GitHub collaboration platform
 {% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
 {% include svg %}
 
+* Git, the information tracker
+* GitHub, the collaboration platform
+* Distributed version control
+* [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
+* [The Git project homepage](http://git-scm.com)
+
+* [GitHub for Windows installer](http://windows.github.com)
+* [GitHub for Mac installer](http://mac.github.com)
+* [Pro Git Book: Installing Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
+* **Windows**: The GitHub for Windows installer can be found at http://windows.github.com.
+* **Mac**: The GitHub for Mac installer can be found at http://mac.github.com.
+* **Linux**: Git's source code and a listing of supported package managers can be found at http://git-scm.com/download/linux.
+
 * Repository
 * Commit
 * Branch
 
 ### GitHub Concepts
+
+* [GitHub.com feature list](https://github.com/features)
+* [How to sign up for GitHub](https://www.youtube.com/watch?v=ezxRcdJ8glM&list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx)
+
 * Repository
 * Branch
 * Pull Request
@@ -57,6 +74,24 @@ $ git push origin [master|branch]
 * Combine locally with GUIs
 
 ### Collaboration
+
+* Forking
+	* [Guide to Forking](https://guides.github.com/overviews/forking/)
+	* Reason for forks
+	* What it encourages
+	* How it insulates
+	* Keeping up to date (too advanced?)
+	* Original (base) and Fork (individual copy)
+* The GitHub Flow
+	* Branch
+	* Commit
+	* Compare
+	* Pull Request
+	* Discuss
+	* Animated GIF
+	* Line by line code review conversation
+	* Clone locally with GHfD (optional)
+
 {% capture svg_path %}../assets/diagrams/fork-structure.svg{% endcapture %}
 {% include svg %}
 
