@@ -163,44 +163,48 @@ footer, .push {
     font: normal normal 1em octicons;
     text-decoration: none;
     color: #1875c6; }
-    .curriculum a[href^="http://"]:before,
-    .curriculum a[href^="https://"]:before {
+    .curriculum a[href^="http://"]:after,
+    .curriculum a[href^="https://"]:after {
       content: "\f0b6";
-      margin-right: 5px; }
+      margin-left: 5px; }
   .curriculum a[href^="https://github.com"],
   .curriculum a[href^="https://www.github.com"],
   .curriculum a[href^="https://help.github.com"] {
     font: normal normal 1em octicons;
     text-decoration: none;
     color: #1875c6; }
-    .curriculum a[href^="https://github.com"]:before,
-    .curriculum a[href^="https://www.github.com"]:before,
-    .curriculum a[href^="https://help.github.com"]:before {
+    .curriculum a[href^="https://github.com"]:after,
+    .curriculum a[href^="https://www.github.com"]:after,
+    .curriculum a[href^="https://help.github.com"]:after {
       content: "\f008";
-      margin-right: 5px; }
+      margin-left: 5px; }
   .curriculum a[href^="http://git-scm.com/book"],
   .curriculum a[href^="https://guides.github.com"] {
     font: normal normal 1em octicons;
     text-decoration: none;
     color: #1875c6; }
-    .curriculum a[href^="http://git-scm.com/book"]:before,
-    .curriculum a[href^="https://guides.github.com"]:before {
+    .curriculum a[href^="http://git-scm.com/book"]:after,
+    .curriculum a[href^="https://guides.github.com"]:after {
       content: "\f007";
-      margin-right: 5px; }
+      margin-left: 5px; }
   .curriculum a[href^="https://youtube.com"],
   .curriculum a[href^="https://www.youtube.com"] {
     font: normal normal 1em octicons;
     text-decoration: none;
     color: #1875c6; }
-    .curriculum a[href^="https://youtube.com"]:before,
-    .curriculum a[href^="https://www.youtube.com"]:before {
+    .curriculum a[href^="https://youtube.com"]:after,
+    .curriculum a[href^="https://www.youtube.com"]:after {
       content: "\f0b9";
-      margin-right: 5px; }
+      margin-left: 5px; }
   .curriculum .summary h2:before, .curriculum .outline h2:before, .curriculum .details h2:before {
     padding: 5px;
     color: #CCCCCC;
     content: "\f078";
     font: normal normal 20px octicons; }
+  .curriculum .diagram {
+    background: #f3f3f3;
+    border-radius: 5px;
+    height: 300px; }
   .curriculum table, .curriculum pre {
     background: #e8e8ea;
     padding: 20px;
@@ -252,14 +256,6 @@ footer, .push {
   width: 200px;
   border-radius: 3px;
   background: #f3f3f3; }
-
-/* Scopes wrapper */
-.booklink, .githublink, .weblink, .videolink {
-  font: normal normal 1em octicons;
-  text-decoration: none;
-  color: #1875c6; }
-  .booklink:hover, .githublink:hover, .weblink:hover, .videolink:hover {
-    color: #00a5ea; }
 
 /* Trainers */
 .trainer {
