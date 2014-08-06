@@ -1,10 +1,6 @@
 /* Imports */
 @import "variables.scss";
 
-@mixin hidden{
-  display: none;
-}
-
 
 @mixin octicon-link($char){
   font: normal normal 1em octicons;
@@ -124,101 +120,6 @@
   border-radius: 3px;
   background: #f3f3f3;
 }
-
-
-
-/* Scopes wrapper */
-
-// .outline{
-//   h2{
-//     & + p,
-//     & + p ~ p,
-//     & + p ~ blockquote,
-//     & + p ~ ul,
-//     & + p ~ pre,
-//     & + p ~ h3
-//     {
-//       @include hidden;
-//     }
-//   }
-//
-//   h3{
-//     display: none;
-//
-//     & + *,
-//     & > *
-//     {
-//       @include hidden;
-//     }
-//   }
-//   h4{
-//     display: none;
-//
-//     & + *,
-//     & > *
-//     {
-//       @include hidden;
-//     }
-//   }
-//
-//   pre{
-//     display: none;
-//   }
-//   p{
-//     display: none;
-//   }
-//   ul{
-//     display: none;
-//   }
-//   table{
-//     display: none;
-//   }
-// }
-
-// .summary{
-//   h3{
-//     display: none;
-//   }
-//
-//   h4{
-//     display: none;
-//
-//     & + *,
-//     & > *
-//     {
-//       @include hidden;
-//     }
-//
-//     & + p + ul
-//     {
-//       @include hidden;
-//     }
-//   }
-//
-//   pre{
-//     display: none;
-//   }
-//   p{
-//     display: none;
-//   }
-//   table{
-//     display: none;
-//   }
-// }
-//
-// .details{
-//   h3{
-//     display: none;
-//   }
-//   h4{
-//     display: none;
-//   }
-//   table{
-//     th, td{
-//       padding: 10px;
-//     }
-//   }
-// }
 
 .booklink, .githublink, .weblink, .videolink {
   font: normal normal 1em octicons;
