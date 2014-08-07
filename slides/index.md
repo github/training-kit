@@ -25,7 +25,7 @@ showinnav: true
 <section>
 <p>
 <a href="github-pages.html">GitHub Pages</a></br>
-  <em>Thorough coverage of what GitHub pages are and how to get started using them</em>
+  <em>Thorough coverage of what GitHub Pages are and how to get started using them</em>
 </p>
 </section>
 
