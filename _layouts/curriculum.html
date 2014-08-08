@@ -11,18 +11,23 @@ layout: bare
   </div>
 </section>
 
-<section class="">
+<!-- <section class=""> -->
   <div class="container curriculum">
-    <div id="toc">
-      <ul id="toc-list" class="nav nav-list" role="tablist">
-      </ul>
-    </div>
 
-    <div class="content">
+    <div class="two-thirds markdown-content">
       {{ content }}
     </div>
+
+    <div class="third">
+      <div id="toc" data-spy="affix" data-offset-top="165">
+        <ul id="toc-list" class="nav nav-list" role="tablist"></ul>
+      </div>
+    </div>
+
+
+
   </div>
-</section>
+<!-- </section> -->
 
 {% include footer.html %}
 
