@@ -13,7 +13,6 @@
   }
 }
 
-
 .curriculum{
   position: relative;
 
@@ -118,11 +117,27 @@
 
 }
 
+#toc-wrapper{
+
+}
+
 #toc{
-  position: fixed;
-  right: 0;
+
+  // right: 0
+  top: 0;
   width: 200px;
-  // margin-right: -200px;
   border-radius: 3px;
   background: #f3f3f3;
+}
+
+.affix-top{
+  
+}
+
+.affix{
+  position: fixed;
+}
+
+.affix-bottom{
+
 }

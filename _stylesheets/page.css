@@ -251,11 +251,13 @@ footer, .push {
       transform: rotate(180deg); }
 
 #toc {
-  position: fixed;
-  right: 0;
+  top: 0;
   width: 200px;
   border-radius: 3px;
   background: #f3f3f3; }
+
+.affix {
+  position: fixed; }
 
 /* Trainers */
 .trainer {
