@@ -1,8 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'octicons';
-  src: font-url("octicons.eot");
-  src: font-url("octicons.eot#iefix") format("embedded-opentype"), font-url("octicons.woff") format("woff"), font-url("octicons.ttf") format("truetype"), font-url("octicons.svg#octicons") format("svg");
+  src: font-url("octicons.eot?#iefix") format("embedded-opentype"), font-url("octicons.woff") format("woff"), font-url("octicons.ttf") format("truetype"), font-url("octicons.svg#octicons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -11,14 +10,24 @@
   line-height: 1;
   display: inline-block;
   text-decoration: none;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 .mega-octicon {
   font: normal normal 32px octicons;
   line-height: 1;
   display: inline-block;
   text-decoration: none;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 .octicon-alert:before {
   content: '\f02d'; }
@@ -80,10 +89,18 @@
   content: '\f07b'; }
 
 /*  */
+.octicon-briefcase:before {
+  content: '\f0d3'; }
+
+/*  */
 .octicon-broadcast:before {
   content: '\f048'; }
 
 /*  */
+.octicon-browser:before {
+  content: '\f0c5'; }
+
+/*  */
 .octicon-bug:before {
   content: '\f091'; }
 
@@ -120,6 +137,10 @@
   content: '\f084'; }
 
 /*  */
+.octicon-circuit-board:before {
+  content: '\f0d6'; }
+
+/*  */
 .octicon-clippy:before {
   content: '\f035'; }
 
@@ -144,14 +165,11 @@
   content: '\f065'; }
 
 /*  */
+.octicon-comment-add:before,
 .octicon-comment:before {
   content: '\f02b'; }
 
 /*  */
-.octicon-comment-add:before {
-  content: '\f06f'; }
-
-/*  */
 .octicon-comment-discussion:before {
   content: '\f04f'; }
 
@@ -160,6 +178,10 @@
   content: '\f045'; }
 
 /*  */
+.octicon-dash:before {
+  content: '\f0ca'; }
+
+/*  */
 .octicon-dashboard:before {
   content: '\f07d'; }
 
@@ -212,22 +234,12 @@
   content: '\f09a'; }
 
 /*  */
+.octicon-eye-unwatch:before,
+.octicon-eye-watch:before,
 .octicon-eye:before {
   content: '\f04e'; }
 
 /*  */
-.octicon-eye-unwatch:before {
-  content: '\f01e'; }
-
-/*  */
-.octicon-eye-watch:before {
-  content: '\f01d'; }
-
-/*  */
-.octicon-file-add:before {
-  content: '\f086'; }
-
-/*  */
 .octicon-file-binary:before {
   content: '\f094'; }
 
@@ -240,10 +252,6 @@
   content: '\f016'; }
 
 /*  */
-.octicon-file-directory-create:before {
-  content: '\f095'; }
-
-/*  */
 .octicon-file-media:before {
   content: '\f012'; }
 
@@ -272,6 +280,14 @@
   content: '\f013'; }
 
 /*  */
+.octicon-flame:before {
+  content: '\f0d2'; }
+
+/*  */
+.octicon-fold:before {
+  content: '\f0cc'; }
+
+/*  */
 .octicon-gear:before {
   content: '\f02f'; }
 
@@ -284,34 +300,16 @@
   content: '\f00e'; }
 
 /*  */
-.octicon-gist-fork:before {
-  content: '\f079'; }
-
-/*  */
-.octicon-gist-new:before {
-  content: '\f07a'; }
-
-/*  */
-.octicon-gist-private:before {
-  content: '\f00f'; }
-
-/*  */
 .octicon-gist-secret:before {
   content: '\f08c'; }
 
 /*  */
+.octicon-git-branch-create:before,
+.octicon-git-branch-delete:before,
 .octicon-git-branch:before {
   content: '\f020'; }
 
 /*  */
-.octicon-git-branch-create:before {
-  content: '\f098'; }
-
-/*  */
-.octicon-git-branch-delete:before {
-  content: '\f09b'; }
-
-/*  */
 .octicon-git-commit:before {
   content: '\f01f'; }
 
@@ -320,22 +318,15 @@
   content: '\f0ac'; }
 
 /*  */
-.octicon-git-fork-private:before {
-  content: '\f021'; }
-
-/*  */
 .octicon-git-merge:before {
   content: '\f023'; }
 
 /*  */
+.octicon-git-pull-request-abandoned:before,
 .octicon-git-pull-request:before {
   content: '\f009'; }
 
 /*  */
-.octicon-git-pull-request-abandoned:before {
-  content: '\f090'; }
-
-/*  */
 .octicon-globe:before {
   content: '\f0b6'; }
 
@@ -368,6 +359,10 @@
   content: '\f09d'; }
 
 /*  */
+.octicon-inbox:before {
+  content: '\f0cf'; }
+
+/*  */
 .octicon-info:before {
   content: '\f059'; }
 
@@ -412,6 +407,10 @@
   content: '\f00d'; }
 
 /*  */
+.octicon-law:before {
+  content: '\f0d8'; }
+
+/*  */
 .octicon-light-bulb:before {
   content: '\f000'; }
 
@@ -436,18 +435,13 @@
   content: '\f060'; }
 
 /*  */
+.octicon-gist-private:before,
+.octicon-mirror-private:before,
+.octicon-git-fork-private:before,
 .octicon-lock:before {
   content: '\f06a'; }
 
 /*  */
-.octicon-log-in:before {
-  content: '\f036'; }
-
-/*  */
-.octicon-log-out:before {
-  content: '\f032'; }
-
-/*  */
 .octicon-logo-github:before {
   content: '\f092'; }
 
@@ -468,10 +462,10 @@
   content: '\f00a'; }
 
 /*  */
-.octicon-mark-twitter:before {
-  content: '\f0ae'; }
+.octicon-markdown:before {
+  content: '\f0c9'; }
 
-/*  */
+/*  */
 .octicon-megaphone:before {
   content: '\f077'; }
 
@@ -488,14 +482,15 @@
   content: '\f075'; }
 
 /*  */
-.octicon-mirror-private:before {
-  content: '\f025'; }
-
-/*  */
-.octicon-mirror-public:before {
+.octicon-mirror-public:before,
+.octicon-mirror:before {
   content: '\f024'; }
 
 /*  */
+.octicon-mortar-board:before {
+  content: '\f0d7'; }
+
+/*  */
 .octicon-move-down:before {
   content: '\f0a8'; }
 
@@ -516,10 +511,6 @@
   content: '\f080'; }
 
 /*  */
-.octicon-mute-video:before {
-  content: '\f0b8'; }
-
-/*  */
 .octicon-no-newline:before {
   content: '\f09c'; }
 
@@ -532,26 +523,24 @@
   content: '\f037'; }
 
 /*  */
+.octicon-package:before {
+  content: '\f0c4'; }
+
+/*  */
+.octicon-paintcan:before {
+  content: '\f0d1'; }
+
+/*  */
 .octicon-pencil:before {
   content: '\f058'; }
 
 /*  */
+.octicon-person-add:before,
+.octicon-person-follow:before,
 .octicon-person:before {
   content: '\f018'; }
 
 /*  */
-.octicon-person-add:before {
-  content: '\f01a'; }
-
-/*  */
-.octicon-person-follow:before {
-  content: '\f01c'; }
-
-/*  */
-.octicon-person-remove:before {
-  content: '\f01b'; }
-
-/*  */
 .octicon-pin:before {
   content: '\f041'; }
 
@@ -572,6 +561,14 @@
   content: '\f0bc'; }
 
 /*  */
+.octicon-plug:before {
+  content: '\f0d4'; }
+
+/*  */
+.octicon-repo-create:before,
+.octicon-gist-new:before,
+.octicon-file-directory-create:before,
+.octicon-file-add:before,
 .octicon-plus:before {
   content: '\f05d'; }
 
@@ -608,10 +605,7 @@
   content: '\f030'; }
 
 /*  */
-.octicon-remove-close:before {
-  content: '\f050'; }
-
-/*  */
+.octicon-repo-delete:before,
 .octicon-repo:before {
   content: '\f001'; }
 
@@ -620,18 +614,11 @@
   content: '\f04c'; }
 
 /*  */
-.octicon-repo-create:before {
-  content: '\f003'; }
-
-/*  */
-.octicon-repo-delete:before {
-  content: '\f004'; }
-
-/*  */
 .octicon-repo-force-push:before {
   content: '\f04a'; }
 
 /*  */
+.octicon-gist-fork:before,
 .octicon-repo-forked:before {
   content: '\f002'; }
 
@@ -644,10 +631,6 @@
   content: '\f005'; }
 
 /*  */
-.octicon-repo-sync:before {
-  content: '\f04b'; }
-
-/*  */
 .octicon-rocket:before {
   content: '\f033'; }
 
@@ -668,6 +651,7 @@
   content: '\f067'; }
 
 /*  */
+.octicon-search-save:before,
 .octicon-search:before {
   content: '\f02e'; }
 
@@ -680,46 +664,57 @@
   content: '\f07c'; }
 
 /*  */
+.octicon-log-in:before,
+.octicon-sign-in:before {
+  content: '\f036'; }
+
+/*  */
+.octicon-log-out:before,
+.octicon-sign-out:before {
+  content: '\f032'; }
+
+/*  */
+.octicon-split:before {
+  content: '\f0c6'; }
+
+/*  */
 .octicon-squirrel:before {
   content: '\f0b2'; }
 
 /*  */
+.octicon-star-add:before,
+.octicon-star-delete:before,
 .octicon-star:before {
   content: '\f02a'; }
 
 /*  */
-.octicon-star-add:before {
-  content: '\f082'; }
+.octicon-steps:before {
+  content: '\f0c7'; }
 
-/*  */
-.octicon-star-delete:before {
-  content: '\f083'; }
-
-/*  */
+/*  */
 .octicon-stop:before {
   content: '\f08f'; }
 
 /*  */
+.octicon-repo-sync:before,
 .octicon-sync:before {
   content: '\f087'; }
 
 /*  */
+.octicon-tag-remove:before,
+.octicon-tag-add:before,
 .octicon-tag:before {
   content: '\f015'; }
 
 /*  */
-.octicon-tag-add:before {
-  content: '\f054'; }
-
-/*  */
-.octicon-tag-remove:before {
-  content: '\f055'; }
-
-/*  */
 .octicon-telescope:before {
   content: '\f088'; }
 
 /*  */
+.octicon-terminal:before {
+  content: '\f0c8'; }
+
+/*  */
 .octicon-three-bars:before {
   content: '\f05e'; }
 
@@ -728,6 +723,10 @@
   content: '\f031'; }
 
 /*  */
+.octicon-trashcan:before {
+  content: '\f0d0'; }
+
+/*  */
 .octicon-triangle-down:before {
   content: '\f05b'; }
 
@@ -752,14 +751,11 @@
   content: '\f0ba'; }
 
 /*  */
-.octicon-unmute-video:before {
-  content: '\f0b9'; }
-
-/*  */
 .octicon-versions:before {
   content: '\f064'; }
 
 /*  */
+.octicon-remove-close:before,
 .octicon-x:before {
   content: '\f081'; }
 
