@@ -2,6 +2,12 @@
 
 ---
 
+{% if page.theme == "home" %}
+    {% assign leadingpath = '.' %}
+{% else %}
+    {% assign leadingpath = '..' %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
   <head>
@@ -11,20 +17,20 @@
     {% endif %}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-    <link rel="stylesheet" media="all" href="{{ site.url }}/_stylesheets/page.css" />
+    <link rel="stylesheet" media="all" href="{{ leadingpath }}/_stylesheets/page.css" />
 
-    <link rel="stylesheet" media="screen" href="{{ site.url }}/_stylesheets/page.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="{{ leadingpath }}/_stylesheets/page.css" type="text/css" />
 
     {% include analytics.html %}
 
-      <script src="{{ site.url }}/_javascript/jquery-1.11.0.min.js"></script>
-      <script src="{{ site.url }}/_javascript/page.js"></script>
+    <script src="{{ leadingpath }}/_javascript/jquery-1.11.0.min.js"></script>
+    <script src="{{ leadingpath }}/_javascript/page.js"></script>
 
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="{{ site.url }}/_javascript/bootstrap/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{{ leadingpath }}/_javascript/bootstrap/css/bootstrap.min.css">
 
-      <!-- Latest compiled and minified JavaScript -->
-      <script src="{{ site.url }}/_javascript/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="{{ leadingpath }}/_javascript/bootstrap/js/bootstrap.min.js"></script>
   </head>
   <body data-spy="scroll" data-target="#toc">
     {% include navigation.html %}
