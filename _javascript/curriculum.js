@@ -12,12 +12,9 @@ function buildToc(){
 			toc = $("#toc-list");
 
 	for(var h=0; h<headings.length; h++){
-
-
 		var item = $('<li><a href="#' + headings[h].innerHTML.split(' ')[0] + '">' + headings[h].innerHTML + '</a></li>');
 		toc.append(item);
 		headings[h].setAttribute("id", headings[h].innerHTML.split(' ')[0]);
-
 		$('.curriculum').scrollspy({ target: '#toc' });
 	}
 }
