@@ -1,0 +1,35 @@
+---
+layout: bare
+---
+
+<section class="hero overview">
+  <div class="container">
+    <div class="content">
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.description }}</p>
+    </div>
+  </div>
+</section>
+
+
+<div id="toc-wrapper">
+  <div id="toc" data-spy="affix" data-offset-top="165">
+    <ul id="toc-list" class="nav nav-list" role="tablist"></ul>
+  </div>
+</div>
+
+<!-- <section class=""> -->
+  <div class="container curriculum">
+
+    <div class="two-thirds markdown-content">
+      {{ content }}
+    </div>
+
+
+  </div>
+<!-- </section> -->
+
+{% include footer.html %}
+
+<script src="{{ site.url }}/_javascript/snap-svg/dist/snap.svg-min.js"></script>
+<script src="{{ site.url }}/_javascript/curriculum.js"></script>
