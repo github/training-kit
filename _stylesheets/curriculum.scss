@@ -54,7 +54,7 @@
   }
 
   .diagram{
-    
+
   }
 
   table, pre{
@@ -116,20 +116,18 @@
 }
 
 #toc-wrapper{
-
+  position: absolute;
+  right: 0px;
 }
 
 #toc{
-
-  // right: 0
-  top: 0;
   width: 200px;
   border-radius: 3px;
   background: #f3f3f3;
 }
 
 .affix-top{
-  
+  margin-top: 165px;
 }
 
 .affix{
