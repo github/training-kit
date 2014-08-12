@@ -12,9 +12,19 @@ function buildToc(){
 			toc = $("#toc-list");
 
 	for(var h=0; h<headings.length; h++){
-		var item = $('<li><a href="#' + headings[h].innerHTML.split(' ')[0] + '">' + headings[h].innerHTML + '</a></li>');
+		var item,
+		 		headingOrig;
+
+		headingOrig = headings[h].innerHTML.split(' ');
+
+		var headingSep = "";
+		for(var o=0;o<headingOrig.length;o++){
+			headingSep = headingSep + headingOrig[o];
+		}
+
+		item = $('<li><a href="#' + headingSep.toLowerCase() + '">' + headings[h].innerHTML + '</a></li>');
 		toc.append(item);
-		headings[h].setAttribute("id", headings[h].innerHTML.split(' ')[0]);
+		headings[h].setAttribute("id", headingSep.toLowerCase());
 		$('.curriculum').scrollspy({ target: '#toc' });
 	}
 }
