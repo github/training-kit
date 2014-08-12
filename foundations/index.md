@@ -118,10 +118,22 @@ Repositories can be created in numerous ways, including:
 * Web interface and GUI client
 * Clone command explanation
 
-### 4 – Web flow
+#### Repository init-ing
+<iframe src="//player.vimeo.com/video/88313612" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+### 4 – Acquiring repos
+In many cases, working with a code project means retriving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.  Some of the most common sources and means of cloning include:
+
+* Clone from web (Clone in Desktop button)
+* Clone via personal repo list in GitHub Desktop
+* Clone via SSH or HTTPS URL
+
+### 5 – The Web flow
 The GitHub Web Flow is a path through the GitHub user interface that faciltates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still having the benefit of syntax highlighting and pre-merge code reviews and discussions.
 
 The GitHub Web Flow allows you to:
+
 * Browse projects
 * Start branches
 * Create files
@@ -129,7 +141,10 @@ The GitHub Web Flow allows you to:
 * Change paths
 * Open Pull Requests
 
-### 5 – Local repositories
+#### Drive by contributions
+<iframe src="//player.vimeo.com/video/88472114" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+### 6 – Local repositories
 Git enables repositories to be created both on GitHub, or locally on a developer's PC. A repository created locally can be synced to a network destination at a later time, preserving all the timestamps and comments in the local commits during the synchronization.
 
 ![](../assets/diagrams/distributed-version-control.svg)
@@ -144,18 +159,31 @@ A commit is a transactionally grouped set of changes, described by an brief mess
 * Craft file versions at your own pace
 * Create branches to isolate experiments
 
-### 6 – Syncing history
+#### Local repository definitions
+* Commits
+  * History marker for file(s), change(s)
+  * Record of author, time, and message
+* Branches
+  * Container for grouped commits
+  * Simpler means to integrate change
+  * Cleaner code review possibilities
+
+### 7 – Syncing history
+Since Git facilitates making and saving changes without a network connection, syncing changes with an upstream server is a frequent operation once connected back to a network.  Git accomplishes the syncing through the `pull` and `push` commands.
 
 {% capture svg_path %}../assets/diagrams/sync.svg{% endcapture %}
 {% include svg %}
 
+A repository must have fully incorporated all upstream changes before it can successfully push changes out. This pattern encourages breakages to happen at the leaf nodes of the repository network, thus reducing stop-work merge activity and aiding those tasks being performed asynchronously and potentially even offline.
+
+To retrieve all upstream changes, and then transmit all local changes, type:
+
 ```
-$ git pull --rebase
+$ git pull
 $ git push origin [master|branch]
 ```
 
-### 7 – Branches
-
+### 8 – Branches
 A branch is an divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
 
 ![](../assets/diagrams/what-is-a-branch.svg)
@@ -163,17 +191,23 @@ A branch is an divergent path in the history of the code base. It may contain an
 #### Branching video
 <iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-### 8 – Merges
+### 9 – Merges
+Merging is the important step of integrating one branch with another.  In Git, since work can happen while disconnected from the network, frequently even the same-named branches might need to be merged with one another to unify the changes.  Merges come in several flavors, but we'll focus on the _merge made by recursive_ pattern in today's class.
 
 {% capture svg_path %}../assets/diagrams/merge-recursive.svg{% endcapture %}
 {% include svg %}
 
-* Integrate with Pull Requests
-* Combine locally with GUIs
+Merges can be accomplished through:
+* Through a Pull Request
+* At the command line
+* With a drag-and-drop GUI such as GitHub Desktop
 
-### 9 – Collaboration
+### 10 – Collaboration
+Collaboration happens on GitHub in one of two primary workflows, based on whether the change is coming from someone new to the project, or from a frequent trusted contributor.
 
 #### Forking
+The Forking workflow allows for contributions from any read-authorized team member by facilitating the creation of a safe copy of the repository and offering changes back to a core maintainer upon submission of a Pull Request.
+
 We've crafted a visual [Guide to Forking](https://guides.github.com/activities/forking/) that explains, in-depth:
 
 * Reason for forks
@@ -186,14 +220,18 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 {% include svg %}
  
 #### The GitHub Flow
+ The GitHub Flow workflow prescribes collaboration amongst trusted colleagues within the same repository, starting with the creation of a branch, and similar to the Forking workflow, concluding with a Pull Request and associated code review.
+
 * Branch
 * Commit
 * Compare
 * Pull Request
 * Discuss
 * Animated GIF
-* Line by line code review conversation
-* Clone locally with GitHub Desktop (GitHub for Windows or Mac)
+* Line by line code review
+* Get approval :+1:
+* Merge Pull Request
+* Delete branch
 
 {% capture svg_path %}../assets/diagrams/direct-contribution.svg{% endcapture %}
 {% include svg %}
@@ -202,29 +240,130 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 * [_Understanding The GitHub Flow_ Guide](https://guides.github.com/introduction/flow/)
 * [_Forking_ Guide](https://guides.github.com/activities/forking/)
 
-### 10 – Project Management
-* GitHub Issues
+#### Lab Exercise 10a
+* Begin the process of creating a new repository from the GitHub web site user interface
+* When prompted, seed the new repository with a `README`, `.gitignore`, and `license.md` file
+* Create and select a new branch named _my-home-town_
+* Edit the README file through web interface, add your home town in H1 styling, and commit the change
+* Navigate back to the root of the project and click on the _Create pull request_ button
+* @mention a fellow student for a code review in the now-open Pull Request, asking for their :+1: to :shipit:
+* When you have their blessing to ship the change, merge it in from the Pull Request page.
+* Confirm the change is showing up in the rendered README at the homepage to the project.
+
+
+### 11 – GitHub Pages
+GitHub Pages are an easy-to-use static site hosting service based on the Jekyll blogging engine. It provides:
+
+* Custom web pages for your GitHub project
+* A custom web page for your GitHub account
+* CDN-enabled fast delivery of static web content
+
+#### Example GitHub Pages
+* [NetFlix OSS](http://netflix.github.io)
+* [Twitter OSS](http://twitter.github.io)
+* [Facebook OSS](http://facebook.github.io)
+
+#### Further reading
+* [GitHub Pages](http://pages.github.com)
+
+#### Lab Exercise 11a
+* Create a new empty respository named `<yourgithubusername>.github.io`
+* Click on the _Settings icon_
+* From the _Options_ group, click on _Automatic page generator_ and follow the steps to create and style your new site
+* Wait 10 minutes
+* Confirm your new web site is up and running at `<yourgithubusername>.github.io`
+
+### 12 – GitHub Wikis
+GitHub Wikis are frequently used as the rich documentation for a project hosted on GitHub.  They offer:
+
+* Fast documentation authoring
+* Git repository access, for dedicated documentation clones and commits
+* High visibility to repository guests
+
+Enabling the Wiki feature:
+
+![Enabling the Wiki feature](../assets/screenshots/wikis-enabling.jpg)
+
+Navigating to the project's Wiki:
+
+![Navigating to the project's Wiki](../assets/screenshots/wikis-nav.jpg)
+
+Editing a Wiki page:
+
+![Editing a Wiki page](../assets/screenshots/wikis-editing.jpg)
+
+
+### 13 – Project Management
+GitHub is a platform that offers features not only for developers, but also for project managers and technical leads. These features include:
+
+* Issues
+* [GitHub Flavored Markdown Task Lists](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
 * Milestones
-* Network
+* Network graph
 * Pulse
-* Tags, Releases
-* Collaborators
-* Organizations
-* Teams
+* Tags and Releases
+* Collaborator access control
+* Organization repository grouping
+* Team access control
+* Team @mentions
 
-#### Lab
-<!-- TODO -->
-* Visit GitHub.com
-* Set project access control (public/private)
-* Create repository
-* Seed files (`README`, `.gitignore`, `license.md`)
-* Edit/commit through web interface
-* Concepts of hosted repository
-* Repository based on existing content
-* Web interface and GUI client
-* Clone command explanation
+#### Lab Exercise 13a
+* Find an open source project via the [Explore page](https://github.com/exlpore)
+* Review your chosen project's Pulse page and indentify this week and this year's most prolific contributor
+* Visit the project's Releases page and download the latest binary
 
-### 11 – GitHub Features
-* Repository *watching* and *starring*
-* Gist "light weight" repos
-* GitHub flavored Markdown
+
+### 14 – GitHub Visualizations
+GitHub enhances a traditional Git experience with visualizations typically thought of as the realm of desktop applications. Some of the visualizations we can look at today include:
+
+* Comparing/Diff-ing
+  * Code
+  * Prose
+  * Images
+  * Maps
+  * Spreadsheets
+  * 3D models
+* Branch view
+* Branch ahead/behind positions
+* Network graph
+* Activity graph
+
+
+### 15 – GitHub Social Features
+* Notifications
+* Watching repositories
+* Starring repositories
+* Quick sharing with [Gists](https://gists.github.com)
+
+
+### 16 – Markdown
+* GitHub Flavored Markdown
+  * Basics
+  * Emoji
+  * Checklists (Issues, Gists)
+
+
+### 17 – Special Filenames
+There are several filenames that invoke a special behavior on the GitHub platform. These include:
+
+* `Contributing.md`
+* `License.md`
+  * During repository creation
+  * `+` a file with existing repository (special dropdown)
+* `.gitignore`
+  * During repository creation
+  * `+` a file with existing repository (special dropdown)
+* `Readme.md`
+  * In root
+  * In subfolders
+
+
+### 18 – GitHub Keyboard Shortcuts
+GitHub, though a web application, aims to behave as much like a desktop app as possible. Many of its features are accessible via keyboard shortcuts. While on any GitHub page, press `?` and a context-sensitive help menu will appear. Some of the most frequently used keyboard shortcuts include:
+
+* `?` help
+* `/` command bar
+* `t` fuzzy file search
+* `s` set focus to the search box
+* `g` `c` go to code
+* `g` `i` go to issues
