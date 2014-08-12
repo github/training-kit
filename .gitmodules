@@ -10,3 +10,6 @@
 [submodule "_javascript/snap-svg"]
 	path = _javascript/snap-svg
 	url = https://github.com/adobe-webplatform/Snap.svg.git
+[submodule "slides/dependencies/snap-svg"]
+	path = slides/dependencies/snap-svg
+	url = https://github.com/adobe-webplatform/Snap.svg.git
