@@ -4,38 +4,62 @@ title: GitHub Foundations
 description: Discovering the GitHub collaboration platform
 ---
 
-### Git Concepts
+### Git concepts
 {% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
 {% include svg %}
 
-* Git, the information tracker
-* GitHub, the collaboration platform
-* Distributed version control
-* [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
-* [The Git project homepage](http://git-scm.com)
-
-* [GitHub for Windows installer](http://windows.github.com)
-* [GitHub for Mac installer](http://mac.github.com)
-* [Pro Git Book: Installing Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
-* **Windows**: The GitHub for Windows installer can be found at http://windows.github.com.
-* **Mac**: The GitHub for Mac installer can be found at http://mac.github.com.
-* **Linux**: Git's source code and a listing of supported package managers can be found at http://git-scm.com/download/linux.
+#### Key vocabulary
+Three important words that are key to learning Git are:
 
 * Repository
 * Commit
 * Branch
 
-### GitHub Concepts
+#### Key concepts
+Three important concepts of this version control system are:
 
+* Distributed version control is the concept of full copies of the repository on every contributing machine
+* Git is the file and information tracker
+* GitHub is the collaboration platform
+
+#### Deeper study
+* [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
+* [The Git project homepage](http://git-scm.com)
+
+#### Installers
+* **Windows**: [GitHub for Windows installer](http://windows.github.com)
+* **Mac**: [GitHub for Mac installer](http://mac.github.com)
+* **Linux**: Git's source code and a listing of supported package managers can be found [on the git-scm.com site](http://git-scm.com/download/linux).
+* **Any platform**: [Pro Git Book: Installing Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
+
+### GitHub Concepts
+The five 
+
+* **Repository**: a location to store related code and files
+* **Branch**: a named variation on the code or enhancement-in-progress
+* **Pull Request**: discussion associated with a branch
+* **Issues**: an integrated bug and enhancement tracker
+* **Organizations**: groups of repositories and team members
+* **Teams**: named sets of users that grant access levels and group by talent, focus, and reporting
+
+The GitHub collaboration platform facilitates:
+
+* Hosting Git repositories
+* Collaborating on code, documents, 3D files, maps, CSV data
+* Controlling access & contributions
+  * Collaborators
+  * Forks
+  * Organizations
+  * Users
+* Tracking bugs, enhancements, and features via GitHub Issues
+* [Hosting documentation via GitHub pages and a `gh-pages` branch](https://pages.github.com/)
+* [Discovering trending technology via Explore](https://github.com/explore)
+* [Tracking favorite projects via Stars](https://github.com/stars)
+
+#### Resources
 * [GitHub.com feature list](https://github.com/features)
 * [How to sign up for GitHub](https://www.youtube.com/watch?v=ezxRcdJ8glM&list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx)
 
-* Repository
-* Branch
-* Pull Request
-* Issues
-* Organizations
-* Teams
 
 ### Repository Creation
 * Via GitHub
@@ -135,4 +159,5 @@ $ git push origin [master|branch]
 * Web interface and GUI client
 * Clone command explanation
 
----
+### GitHub Features
+Test
