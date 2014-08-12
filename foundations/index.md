@@ -266,7 +266,7 @@ GitHub Pages are an easy-to-use static site hosting service based on the Jekyll 
 #### Further reading
 * [GitHub Pages](http://pages.github.com)
 
-#### Lab Exercise 11a
+##### Lab Exercise 11a
 * Create a new empty respository named `<yourgithubusername>.github.io`
 * Click on the _Settings icon_
 * From the _Options_ group, click on _Automatic page generator_ and follow the steps to create and style your new site
@@ -307,7 +307,7 @@ GitHub is a platform that offers features not only for developers, but also for 
 * Team access control
 * Team @mentions
 
-#### Lab Exercise 13a
+##### Lab Exercise 13a
 * Find an open source project via the [Explore page](https://github.com/exlpore)
 * Review your chosen project's Pulse page and indentify this week and this year's most prolific contributor
 * Visit the project's Releases page and download the latest binary

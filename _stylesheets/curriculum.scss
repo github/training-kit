@@ -18,14 +18,37 @@
 
 .curriculum{
   position: relative;
+  font-size: 18px;
 
   h3 {
       margin-top: 100px;
-      font-size: 45px;
+      font-size: 240%;
+      line-height: 170%;
+      font-weight: 500;
+      border-bottom: solid 1px #eeeeee;
+      color: $color-dark;
   }
 
   h4 {
-      margin-top: 30px;
+      /*margin-top: 30px;*/
+  }
+
+  h5{
+    font-size: 130%;
+    margin: 2em 0 0;
+
+    &:before{
+      font: normal normal 24px octicons;
+      /* Using ancient Octicons. Need to rev to use newer symbols. */
+      content: "\f008";
+      display: inline-block;
+      margin-right: 1em;
+    }
+  }
+
+  p{
+    line-height: 140%;
+    margin-bottom: 2em;
   }
 
   /* General external link */
