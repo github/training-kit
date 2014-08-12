@@ -4,7 +4,7 @@ title: GitHub Foundations
 description: Discovering the GitHub collaboration platform
 ---
 
-### Git concepts
+### 1 – Git concepts
 {% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
 {% include svg %}
 
@@ -32,7 +32,7 @@ Three important concepts of this version control system are:
 * **Linux**: Git's source code and a listing of supported package managers can be found [on the git-scm.com site](http://git-scm.com/download/linux).
 * **Any platform**: [Pro Git Book: Installing Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
 
-### GitHub Concepts
+### 2 – GitHub concepts
 The five 
 
 * **Repository**: a location to store related code and files
@@ -61,15 +61,31 @@ The GitHub collaboration platform facilitates:
 * [How to sign up for GitHub](https://www.youtube.com/watch?v=ezxRcdJ8glM&list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx)
 
 
-### Repository Creation
-* Via GitHub
-* With GUI
-* On command line
+### 3 – Repository creation
+Repositories can be created in numerous ways, including:
+
+* With the GitHub web user interface
+* With a GitHub GUI
+* With `git init` at the command line
 
 {% capture svg_path %}../assets/diagrams/repo-clone.svg{% endcapture %}
 {% include svg %}
 
-### Web Flow
+#### Repository creation concepts
+<!-- TODO -->
+* Project access control (public/private)
+* Repository creation
+* Seed files (`README`, `.gitignore`, `license.md`)
+* Edit/commit through web interface
+* Concepts of hosted repository
+* Repository based on existing content
+* Web interface and GUI client
+* Clone command explanation
+
+### 4 – Web flow
+The GitHub Web Flow is a path through the GitHub user interface that faciltates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still having the benefit of syntax highlighting and pre-merge code reviews and discussions.
+
+The GitHub Web Flow allows you to:
 * Browse projects
 * Start branches
 * Create files
@@ -77,52 +93,78 @@ The GitHub collaboration platform facilitates:
 * Change paths
 * Open Pull Requests
 
-### Local Repository
-* Initialize repositories
-* Craft file versions
-* Create branches
+### 5 – Local repositories
+Git enables repositories to be created both on GitHub, or locally on a developer's PC. A repository created locally can be synced to a network destination at a later time, preserving all the timestamps and comments in the local commits during the synchronization.
 
-### History Synchronization
+![](../assets/diagrams/distributed-version-control.svg)
+
+A commit is a transactionally grouped set of changes, described by an brief message explaining the "why" of the attached changes.
+
+{% capture svg_path %}../assets/diagrams/what-is-a-commit.svg{% endcapture %}
+{% include svg %}
+
+A branch is an divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
+
+![](../assets/diagrams/what-is-a-branch.svg)
+
+#### Local repository benefits
+* Initialize repositories while disconnected from network
+* Craft file versions at your own pace
+* Create branches to isolate experiments
+
+### 6 – Syncing history
+
+{% capture svg_path %}../assets/diagrams/sync.svg{% endcapture %}
+{% include svg %}
+
 ```
 $ git pull --rebase
 $ git push origin [master|branch]
 ```
 
-### Branches
-{% capture svg_path %}../assets/diagrams/what-is-a-branch.svg{% endcapture %}
+### 7 – Branches
+![](../assets/diagrams/what-is-a-branch.svg)
+
+### 8 – Merges
+
+{% capture svg_path %}../assets/diagrams/merge-recursive.svg{% endcapture %}
 {% include svg %}
 
-
-### Merges
 * Integrate with Pull Requests
 * Combine locally with GUIs
 
-### Collaboration
+### 9 – Collaboration
 
-* Forking
-	* [Guide to Forking](https://guides.github.com/overviews/forking/)
-	* Reason for forks
-	* What it encourages
-	* How it insulates
-	* Keeping up to date (too advanced?)
-	* Original (base) and Fork (individual copy)
-* The GitHub Flow
-	* Branch
-	* Commit
-	* Compare
-	* Pull Request
-	* Discuss
-	* Animated GIF
-	* Line by line code review conversation
-	* Clone locally with GHfD (optional)
+#### Forking
+We've crafted a visual [Guide to Forking](https://guides.github.com/activities/forking/) that explains, in-depth:
+
+* Reason for forks
+* What forking encourages
+* How forking insulates against unwanted changes
+* Keeping forks up to date
+* Concepts of an _Original_ (base) and _Fork_ (personal copy) repositories
 
 {% capture svg_path %}../assets/diagrams/fork-structure.svg{% endcapture %}
 {% include svg %}
+ 
+#### The GitHub Flow
+* Branch
+* Commit
+* Compare
+* Pull Request
+* Discuss
+* Animated GIF
+* Line by line code review conversation
+* Clone locally with GitHub Desktop (GitHub for Windows or Mac)
 
 {% capture svg_path %}../assets/diagrams/direct-contribution.svg{% endcapture %}
 {% include svg %}
 
-### Project Management
+#### Resources
+* [_Understanding The GitHub Flow_ Guide](https://guides.github.com/introduction/flow/)
+* [_Forking_ Guide](https://guides.github.com/activities/forking/)
+
+### 10 – Project Management
 * GitHub Issues
 * Milestones
 * Network
@@ -133,31 +175,18 @@ $ git push origin [master|branch]
 * Teams
 
 #### Lab
-
-* Hosting repositories
-* Collaborating on code, documents, text
-* Controlling access & contributions
-	* Permissions
-	* Forks
-	* Users
-	* Organizations
-* Tracking assignments, tickets, bugs
-* Hosting supporting documentation (GH-Pages)
-	* https://pages.github.com/
-* Discovering trending technology (Explore)
-	* https://github.com/explore
-* Tracking favorite projects (Stars)
-	* https://github.com/stars
-
+<!-- TODO -->
 * Visit GitHub.com
-* Project access control (public/private)
-* Repository creation
+* Set project access control (public/private)
+* Create repository
 * Seed files (`README`, `.gitignore`, `license.md`)
-* Edits/commits through web interface
+* Edit/commit through web interface
 * Concepts of hosted repository
 * Repository based on existing content
 * Web interface and GUI client
 * Clone command explanation
 
-### GitHub Features
-Test
+### 11 – GitHub Features
+* Repository *watching* and *starring*
+* Gist "light weight" repos
+* GitHub flavored Markdown
