@@ -1,7 +1,6 @@
 /* Imports */
 @import "variables.scss";
 
-
 @mixin octicon-link($char){
   font: normal normal 1em octicons;
   text-decoration: none;
@@ -15,6 +14,11 @@
 
 .curriculum{
   position: relative;
+
+  h3 {
+      margin-top: 100px;
+      font-size: 45px;
+  }
 
   /* General external link */
   a[href^="http://"],
