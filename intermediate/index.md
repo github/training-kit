@@ -168,11 +168,15 @@ $ git add [filename]
 $ git commit -m "[your description]"
 ```
 
-![](../assets/diagrams/commit-three-stage.svg)
+{% capture svg_path %}../assets/diagrams/commit-three-stage.svg{% endcapture %}
+{% include svg %}
 
-![](../assets/diagrams/commit-versions.svg)
+{% capture svg_path %}../assets/diagrams/commit-versions.svg{% endcapture %}
+{% include svg %}
 
-![](../assets/diagrams/commit-dag.svg)
+{% capture svg_path %}../assets/diagrams/commit-dag.svg{% endcapture %}
+{% include svg %}
+
 
 #### Video
 <iframe src="//player.vimeo.com/video/88315552" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -181,7 +185,8 @@ $ git commit -m "[your description]"
 ### Review pending modifications
 Git advocates precision in each commit's contents and commit message.  This is facilitated by easy reviewing of in-flight changes prior to describing them and making them permanent.
 
-![](../assets/diagrams/diff.svg)
+{% capture svg_path %}../assets/diagrams/diff.svg{% endcapture %}
+{% include svg %}
 
 The simplest invocation of `diff` is the most common.  It displays
 
@@ -242,7 +247,9 @@ $ git log --patch --color-words
 
 Organizing history:
 
-![](../assets/diagrams/what-is-a-branch.svg)
+{% capture svg_path %}../assets/diagrams/what-is-a-branch.svg{% endcapture %}
+{% include svg %}
+
 
 #### Branching
 Git branch:
@@ -286,16 +293,19 @@ $ git merge [branch]
 
 Merge fast-forward:
 
-![](../assets/diagrams/merge-fast-forward.svg)
+{% capture svg_path %}../assets/diagrams/merge-fast-forward.svg{% endcapture %}
+{% include svg %}
 
 Merge recursive:
 
-![](../assets/diagrams/merge-recursive.svg)
+{% capture svg_path %}../assets/diagrams/merge-recursive.svg{% endcapture %}
+{% include svg %}
 
 
 ### Distributed repositories
 
-![](../assets/diagrams/distributed-version-control.svg)
+{% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
+{% include svg %}
 
 Git is capable of working with 0 to N remotes. 0 means the local repo only knows about the local file system, 1 represents a more traditional centralized model, and 1+N is an example of the "distributed" multi-mastered facet of a DVCS.
 
@@ -314,7 +324,8 @@ $ git remote add [name] [url]
 
 ### Remote workflows
 
-![Fork structure](../assets/diagrams/fork-structure.svg)
+{% capture svg_path %}../assets/diagrams/fork-structure.svg{% endcapture %}
+{% include svg %}
 
 Acquiring a repo:
 
