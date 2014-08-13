@@ -168,13 +168,145 @@ $ git log --patch --color-words
 ```
 
 ### Local workflows
-Lorem ipsum dolor sit amet, vitae risus eu. Risus pede. Etiam facilisi quis, iaculis cum sed, eu mauris. Magna turpis. Etiam sed voluptatem.
+
+Organizing history:
+
+![](../assets/diagrams/what-is-a-branch.svg)
+
+Git branch:
+
+```bash
+# List branches, identify current brach
+$ git branch
+
+# Create a new branch from current branch
+$ git branch [name]
+
+# Switch to a different branch
+$ git checkout [name]
+```
+
+Option switches:
+
+```bash
+# Rename any branch
+$ git branch -m [current-name] [new-name]
+
+# Delete a *reachable* branch
+$ git branch -d [name]
+
+# Delete whether or not reachable
+$ git branch -D [name]
+```
+
+Git merge:
+
+```bash
+# Integrate history of specified branch into current one
+$ git merge [branch]
+```
+
+Merge fast-forward:
+
+![](../assets/diagrams/merge-fast-forward.svg)
+
+Merge recursive:
+
+![](../assets/diagrams/merge-recursive.svg)
 
 ### Distributed repositories
-Lorem ipsum dolor sit amet, vitae risus eu. Risus pede. Etiam facilisi quis, iaculis cum sed, eu mauris. Magna turpis. Etiam sed voluptatem.
+
+![](../assets/diagrams/distributed-version-control.svg)
+
+Git is capable of working with 0 to N remotes. 0 means the local repo only knows about the local file system, 1 represents a more traditional centralized model, and 1+N is an example of the "distributed" multi-mastered facet of a DVCS.
+
+```bash
+# List remote "bookmarks", if any
+$ git remote
+```
+
+Additional remotes (bookmarks) are added as a name-URL-value pair. The default name, as established by a `clone` operation, is `origin`. Another common remote name is `upstream`, seen most frequently in Fork-and-Pull workflows.
+
+```bash
+# Add a remote "bookmark"
+$ git remote add [name] [url]
+```
 
 ### Remote workflows
-Lorem ipsum dolor sit amet, vitae risus eu. Risus pede. Etiam facilisi quis, iaculis cum sed, eu mauris. Magna turpis. Etiam sed voluptatem.
+
+![Fork structure](../assets/diagrams/fork-structure.svg)
+
+Acquiring a repo:
+
+```bash
+$ git clone [repository-url]
+```
+
+#### Retrieval behavior configuration
+
+Adjusting the `pull` to rebase any local changes on top of inbound ones from the upstream branch:
+
+```bash
+$ git config --[scope] pull.rebase true
+```
+
+Retrieving branch changes in discrete steps:
+
+```bash
+# Retrieve all remote branches, then list them
+$ git fetch
+$ git branch -a
+```
+
+
+#### Retrieving changes
+
+If retrieval and incorporation are desired to happen in one action, `pull` is the appropriate command:
+
+```bash
+# Retrieve remote history and update working tree
+$ git pull
+```
+
+If the goal is branch retrieval prior to disconnecting from a network, preserving the changes for later review and incorporation, use `fetch`:
+
+```bash
+# Only retrieve remote history
+$ git fetch
+
+$ git branch -r
+```
+
+Git also facilitates ad-hoc branch retrieval to `FETCH_HEAD` with or without a remote:
+
+```bash
+# Temporarily retrieve a repository's branch from a remote
+$ git fetch [remote] [branch]
+```
+
+```bash
+# Temporarily retrieve a repository's branch from a URL
+$ git fetch [url] [branch]
+```
+
+#### Sharing changes
+
+```bash
+# Send branch's commit to specific remote
+$ git push [remote] [branch]
+```
+
+```bash
+# Setup and publish branch's commits
+$ git push -u [remote] [branch]
+```
+
+```bash
+# Send any local commits to the tracking upstream branch
+$ git push
+```
+
+![](../assets/diagrams/network.svg)
 
 ### Utilities and shortcuts
 Lorem ipsum dolor sit amet, vitae risus eu. Risus pede. Etiam facilisi quis, iaculis cum sed, eu mauris. Magna turpis. Etiam sed voluptatem.
