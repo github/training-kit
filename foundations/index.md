@@ -240,7 +240,7 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 * [_Understanding The GitHub Flow_ Guide](https://guides.github.com/introduction/flow/)
 * [_Forking_ Guide](https://guides.github.com/activities/forking/)
 
-#### Lab Exercise 10a
+##### Lab Exercise 10a
 * Begin the process of creating a new repository from the GitHub web site user interface
 * When prompted, seed the new repository with a `README`, `.gitignore`, and `license.md` file
 * Create and select a new branch named _my-home-town_
@@ -328,6 +328,18 @@ GitHub enhances a traditional Git experience with visualizations typically thoug
 * Network graph
 * Activity graph
 
+#### Image Diff
+Image diffing is typically thought of as a desktop-oriented feature. However, GitHub aims to be a web application that performs beyond desktop apps, and provides a rich 2-up, swipe, and onion skin view for changed images.
+
+* [Image diff blog post](https://github.com/blog/817-behold-image-view-modes)
+* [Image diff demo from Cameron](https://github.com/cameronmcefee/Image-Diff-View-Modes/commit/8e95f70c9c47168305970e91021072673d7cdad8)
+* [Image diff demo from GitHub School](https://github.com/githubschool/hellogitworld/commit/7c0ffa9d88616972bb84befbec40a2212478149e)
+
+Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub platform, providing a surprisingly rich experience right in the browser.
+
+* [3D file viewing blog post](https://github.com/blog/1465-stl-file-viewing)
+* [3D view demo of a RepRap part](https://github.com/reprap/huxley/blob/master/alternative-parts/x-blunt-plate-extended.stl)
+* [3D file diffing blog post](https://github.com/blog/1633-3d-file-diffs)
 
 ### 15 – GitHub Social Features
 * Notifications
