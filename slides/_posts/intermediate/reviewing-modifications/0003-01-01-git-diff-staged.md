@@ -1,0 +1,11 @@
+---
+chapter: Reviewing modifications
+layout: slide
+title: ''
+tags:
+- reviewing-modifications
+---
+
+```bash
+$ git diff --staged
+```

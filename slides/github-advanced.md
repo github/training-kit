@@ -3,26 +3,28 @@ layout: slide
 deck_type: revealjs
 theme: github
 title: GitHub Advanced Course Slides
+deck_title: Advanced Class
 description: A slide deck to the GitHub Advanced class.
-chapters: [
-  'preroll',
-  'intro',
-  'bisect',
-  'bundle',
-  'cherry-pick',
-  'collaboration',
-  'customizing',
-  'filter-branch',
-  'gitattributes',
-  'github-way',
-  'hot-tips',
-  'index',
-  'internals',
-  'notes',
-  'refspec',
-  'remote',
-  'rerere',
-  'searching',
-  'submodule'
-  ]
+chapters:
+- mastering-shortcuts
+- isolating-work
+- understanding-git
+- best-practices
+- ignore
+- navigating-history
+- temporary-changes
+- incorporating-history
+- rewriting-history
+- reordering-history
+- fixing-branches
+- cutting-releases
+- reviewing-synchronizing
+- customizing-interaction
+- maintaining-remotes
+- aggregating-dependencies
+- incorporating-dependencies
+- github-cli
+- signing-work
+- cleaning-up
+- avoiding-repetitive-conflicts
 ---

@@ -199,20 +199,20 @@ Undoes all commits after `[commit]`, preserving changes locally
 Discards all history and changes back to the specified commit
 
 ## Synchronize changes
-Register a repository bookmark and exchange version history
+Register a remote (URL) and exchange repository history
 
 
-```$ git fetch [bookmark]```
+```$ git fetch [remote]```
 
-Downloads all history from the repository bookmark
-
-
-```$ git merge [bookmark]/[branch]```
-
-Combines bookmark’s branch into current local branch
+Downloads all history from the remote repository
 
 
-```$ git push [alias] [branch]```
+```$ git merge [remote]/[branch]```
+
+Combines the remote branch into the current local branch
+
+
+```$ git push [remote] [branch]```
 
 Uploads all local branch commits to GitHub
 

@@ -202,7 +202,7 @@ Annule tous les commits après `[commit]`, en conservant les modifications local
 Supprime tout l'historique et les modifications effectuées après le commit spécifié
 
 ## Synchroniser les changements
-Référencer un dépôt distant avec un nom et synchroniser l'historique de versions
+Référencer un dépôt distant et synchroniser l'historique de versions
 
 
 ```$ git fetch [nom-de-depot]```
@@ -212,7 +212,7 @@ Récupère tout l'historique du dépôt nommé
 
 ```$ git merge [nom-de-depot]/[branche]```
 
-Incorpore les modifications de la branche spécifiée du dépôt dans la branche locale courante
+Fusionne la branche du dépôt dans la branche locale courante
 
 
 ```$ git push [alias] [branche]```
