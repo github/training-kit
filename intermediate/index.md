@@ -168,15 +168,17 @@ $ git add [filename]
 $ git commit -m "[your description]"
 ```
 
+#### Three stage thinking
 {% capture svg_path %}../assets/diagrams/commit-three-stage.svg{% endcapture %}
 {% include svg %}
 
+#### Commit versions
 {% capture svg_path %}../assets/diagrams/commit-versions.svg{% endcapture %}
 {% include svg %}
 
+#### Commit DAG
 {% capture svg_path %}../assets/diagrams/commit-dag.svg{% endcapture %}
 {% include svg %}
-
 
 #### Video
 <iframe src="//player.vimeo.com/video/88315552" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
