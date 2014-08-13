@@ -4,7 +4,7 @@ title: GitHub Foundations
 description: Discovering the GitHub collaboration platform
 ---
  
- 
+
 This curriculum will be your companion to the GitHub Foundations class taught by the GitHub Training Team and other educational groups. In this course, you'll learn basic collaboration skills towards a productive use of Git and GitHub in your open source work and daily job assignments.
 
 ### 1 – The Git VCS
@@ -66,7 +66,7 @@ Sign up for a free GitHub account at https://github.com/join.
 Git can be installed as a unified GitHub GUI and command line or merely as a stand-alone command line interface.
 
 #### GitHub core concepts
-The six core concepts in the GitHub ecosystem are: 
+The six core concepts in the GitHub ecosystem are:
 
 * **Repository**: a location to store related code and files
 * **Branch**: a named variation on the code or enhancement-in-progress
@@ -218,7 +218,7 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 
 {% capture svg_path %}../assets/diagrams/fork-structure.svg{% endcapture %}
 {% include svg %}
- 
+
 #### The GitHub Flow
  The GitHub Flow workflow prescribes collaboration amongst trusted colleagues within the same repository, starting with the creation of a branch, and similar to the Forking workflow, concluding with a Pull Request and associated code review.
 
@@ -313,7 +313,7 @@ GitHub is a platform that offers features not only for developers, but also for 
 * Visit the project's Releases page and download the latest binary
 
 
-### 14 – GitHub Visualizations
+### 14 – GitHub Visualizations
 GitHub enhances a traditional Git experience with visualizations typically thought of as the realm of desktop applications. Some of the visualizations we can look at today include:
 
 * Comparing/Diff-ing
