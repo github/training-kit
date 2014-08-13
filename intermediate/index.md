@@ -291,31 +291,142 @@ $ git fetch [url] [branch]
 
 #### Sharing changes
 
+{% capture svg_path %}../assets/diagrams/network.svg{% endcapture %}
+{% include svg %}
+
+A fully-specified push can indicate both the destination and contents:
+
 ```bash
 # Send branch's commit to specific remote
 $ git push [remote] [branch]
 ```
+
+If a push pattern for a given branch will be used frequently, `-u` instructs Git to remember the remote and branch association.
 
 ```bash
 # Setup and publish branch's commits
 $ git push -u [remote] [branch]
 ```
 
+The most simplistic invocation of `push` leverages _tracking_ as set up by a `clone` or `push -u` to suggest which branches to transmit:
+
 ```bash
 # Send any local commits to the tracking upstream branch
 $ git push
 ```
 
-![](../assets/diagrams/network.svg)
+### Shortcuts and custom commands
 
-### Utilities and shortcuts
-Lorem ipsum dolor sit amet, vitae risus eu. Risus pede. Etiam facilisi quis, iaculis cum sed, eu mauris. Magna turpis. Etiam sed voluptatem.
+```bash
+# Shortcut to output commit history
+$ git config --global alias.l "log --oneline --stat"
+```
+
+```bash
+# Quick graph of commit history and branches
+$ git config --global alias.lol "log --graph --all --oneline --decorate"
+```
+
+```bash
+# Shortuct to repository status
+$ git config alias.s "status -s"
+```
 
 ### File lifecycle
-Lorem ipsum dolor sit amet, vitae risus eu. Risus pede. Etiam facilisi quis, iaculis cum sed, eu mauris. Magna turpis. Etiam sed voluptatem.
+Files in Git transition through a well-defined states of tracking.
+
+{% capture svg_path %}../assets/diagrams/states-of-tracking.svg{% endcapture %}
+{% include svg %}
+
+#### Adding files
+
+```bash
+# Stage all updated files
+$ git add -u [file|pattern]
+```
+
+```
+# Stage all files no matter the state
+$ git add -A [file|pattern]
+```
+
+#### Removing files
+
+When already tracked files are no longer needed, they can be removed from tracking and from the file system:
+
+```bash
+# Permanently delete file, stage for commit
+$ git rm [file]
+```
+
+If there's a reason to preserve the file on disk after removing it from tracking, Git facilitates this behavior variant:
+
+```bash
+# Stop version tracking, stage for commit
+$ git rm --cached [file]
+```
+
+#### Moving files
+
+```bash
+# Change the path of a file
+$ git mv [path]
+```
+
+#### Reviewing moved files
+
+```bash
+# Show history including those with prior path names
+$ git log --stat -M
+```
+
 
 ### Undoing changes
-Lorem ipsum dolor sit amet, vitae risus eu. Risus pede. Etiam facilisi quis, iaculis cum sed, eu mauris. Magna turpis. Etiam sed voluptatem.
+
+#### Revert
+Revert is the kindest of undo functionality. It creates a new _inverse_ commit and links back to the old one in the proposed commit message:
+
+```bash
+# Create a new commit undoing the patch in that specified
+$ git revert [commit]
+```
+
+#### Reset
+
+```bash
+# Move current branch's HEAD to point in history
+$ git reset [commit|branch|tag]
+```
+
+Reset offers a plethora of options to adjust the nuances of its restorative behavior:
+
+```bash
+# Move HEAD, keep changes in staging
+$ git reset --soft [commit|branch|tag]
+
+# Move HEAD, keep changes, clear staging area
+$ git reset --mixed [commit|branch|tag]
+
+## Move HEAD, discard all uncommited changes
+$ git reset --hard [commit|branch|tag]
+```
 
 ### Recovering anything
-Lorem ipsum dolor sit amet, vitae risus eu. Risus pede. Etiam facilisi quis, iaculis cum sed, eu mauris. Magna turpis. Etiam sed voluptatem.
+
+#### Reviewing historical states
+
+```bash
+$ git reflog
+```
+
+#### Restoring a historical state
+
+```bash
+$ git reset --[option] HEAD@{[n]}
+```
+
+#### Specific paths
+
+```bash
+$ git checkout HEAD@{[n]} -- [path]
+```
