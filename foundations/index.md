@@ -7,7 +7,7 @@ description: Discovering the GitHub collaboration platform
 
 This curriculum will be your companion to the GitHub Foundations class taught by the GitHub Training Team and other educational groups. In this course, you'll learn basic collaboration skills towards a productive use of Git and GitHub in your open source work and daily job assignments.
 
-### 1 – The Git VCS
+### The Git VCS
 __Git is an open source distributed__ version control system invented by Linus Torvalds in 2005.  It is used to version the Linux kernel and is shown to be, by some research, the most popular modern version control system.
 
 Git is the open source, command line tool that forms a part of the workflows we'll cover in this course.  It has been called the successor to CVS and Subversion by many users, and maintains some similarity in behavior to these historical open source version control tools.
@@ -54,7 +54,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 #### What is Git?
 <iframe src="//player.vimeo.com/video/41381741" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-### 2 – The GitHub Platform
+### The GitHub Platform
 GitHub accounts are free. Sign up for one at [github.com/join](https://github.com/join).
 
 GitHub is the repository hosting, collaboration, deployment, and distribution platform for both open source and private software projects.  It facilitates discussing changes-in-progress through the concepts of Issues and Pull Requests and provides a web user interface to much of Git. The web flow made possible by GitHub brings a much wider range of contributors, including documentation specialists, designers, and ops engineers into the flow of contributing to your application's life cycle.
@@ -97,7 +97,7 @@ The GitHub collaboration platform facilitates:
 * [How to sign up for GitHub](https://www.youtube.com/watch?v=ezxRcdJ8glM&list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx)
 
 
-### 3 – Repository creation
+### Repository creation
 Repositories can be created in numerous ways, including:
 
 * With the GitHub web user interface
@@ -122,14 +122,14 @@ Repositories can be created in numerous ways, including:
 <iframe src="//player.vimeo.com/video/88313612" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-### 4 – Acquiring repos
+### Acquiring repos
 In many cases, working with a code project means retriving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.  Some of the most common sources and means of cloning include:
 
 * Clone from web (Clone in Desktop button)
 * Clone via personal repo list in GitHub Desktop
 * Clone via SSH or HTTPS URL
 
-### 5 – The Web flow
+### The Web flow
 The GitHub Web Flow is a path through the GitHub user interface that faciltates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still having the benefit of syntax highlighting and pre-merge code reviews and discussions.
 
 The GitHub Web Flow allows you to:
@@ -144,7 +144,7 @@ The GitHub Web Flow allows you to:
 #### Drive by contributions
 <iframe src="//player.vimeo.com/video/88472114" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-### 6 – Local repositories
+### Local repositories
 Git enables repositories to be created both on GitHub, or locally on a developer's PC. A repository created locally can be synced to a network destination at a later time, preserving all the timestamps and comments in the local commits during the synchronization.
 
 ![](../assets/diagrams/distributed-version-control.svg)
@@ -168,7 +168,7 @@ A commit is a transactionally grouped set of changes, described by an brief mess
   * Simpler means to integrate change
   * Cleaner code review possibilities
 
-### 7 – Syncing history
+### Syncing history
 Since Git facilitates making and saving changes without a network connection, syncing changes with an upstream server is a frequent operation once connected back to a network.  Git accomplishes the syncing through the `pull` and `push` commands.
 
 {% capture svg_path %}../assets/diagrams/sync.svg{% endcapture %}
@@ -183,7 +183,7 @@ $ git pull
 $ git push origin [master|branch]
 ```
 
-### 8 – Branches
+### Branches
 A branch is an divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
 
 ![](../assets/diagrams/what-is-a-branch.svg)
@@ -191,7 +191,7 @@ A branch is an divergent path in the history of the code base. It may contain an
 #### Branching video
 <iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-### 9 – Merges
+### Merges
 Merging is the important step of integrating one branch with another.  In Git, since work can happen while disconnected from the network, frequently even the same-named branches might need to be merged with one another to unify the changes.  Merges come in several flavors, but we'll focus on the _merge made by recursive_ pattern in today's class.
 
 {% capture svg_path %}../assets/diagrams/merge-recursive.svg{% endcapture %}
@@ -202,7 +202,7 @@ Merges can be accomplished through:
 * At the command line
 * With a drag-and-drop GUI such as GitHub Desktop
 
-### 10 – Collaboration
+### 1Collaboration
 Collaboration happens on GitHub in one of two primary workflows, based on whether the change is coming from someone new to the project, or from a frequent trusted contributor.
 
 #### Forking
@@ -240,7 +240,7 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 * [_Understanding The GitHub Flow_ Guide](https://guides.github.com/introduction/flow/)
 * [_Forking_ Guide](https://guides.github.com/activities/forking/)
 
-#### Lab Exercise 10a
+##### Lab Exercise 10a
 * Begin the process of creating a new repository from the GitHub web site user interface
 * When prompted, seed the new repository with a `README`, `.gitignore`, and `license.md` file
 * Create and select a new branch named _my-home-town_
@@ -251,7 +251,7 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 * Confirm the change is showing up in the rendered README at the homepage to the project.
 
 
-### 11 – GitHub Pages
+### GitHub Pages
 GitHub Pages are an easy-to-use static site hosting service based on the Jekyll blogging engine. It provides:
 
 * Custom web pages for your GitHub project
@@ -273,7 +273,7 @@ GitHub Pages are an easy-to-use static site hosting service based on the Jekyll 
 * Wait 10 minutes
 * Confirm your new web site is up and running at `<yourgithubusername>.github.io`
 
-### 12 – GitHub Wikis
+### GitHub Wikis
 GitHub Wikis are frequently used as the rich documentation for a project hosted on GitHub.  They offer:
 
 * Fast documentation authoring
@@ -293,7 +293,7 @@ Editing a Wiki page:
 ![Editing a Wiki page](../assets/screenshots/wikis-editing.jpg)
 
 
-### 13 – Project Management
+### Project Management
 GitHub is a platform that offers features not only for developers, but also for project managers and technical leads. These features include:
 
 * Issues
@@ -313,7 +313,7 @@ GitHub is a platform that offers features not only for developers, but also for 
 * Visit the project's Releases page and download the latest binary
 
 
-### 14 – GitHub Visualizations
+### GitHub Visualizations
 GitHub enhances a traditional Git experience with visualizations typically thought of as the realm of desktop applications. Some of the visualizations we can look at today include:
 
 * Comparing/Diff-ing
@@ -328,22 +328,35 @@ GitHub enhances a traditional Git experience with visualizations typically thoug
 * Network graph
 * Activity graph
 
+#### Image Diff
+Image diffing is typically thought of as a desktop-oriented feature. However, GitHub aims to be a web application that performs beyond desktop apps, and provides a rich 2-up, swipe, and onion skin view for changed images.
 
-### 15 – GitHub Social Features
+* [Image diff blog post](https://github.com/blog/817-behold-image-view-modes)
+* [Image diff demo from Cameron](https://github.com/cameronmcefee/Image-Diff-View-Modes/commit/8e95f70c9c47168305970e91021072673d7cdad8)
+* [Image diff demo from GitHub School](https://github.com/githubschool/hellogitworld/commit/7c0ffa9d88616972bb84befbec40a2212478149e)
+
+Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub platform, providing a surprisingly rich experience right in the browser.
+
+* [3D file viewing blog post](https://github.com/blog/1465-stl-file-viewing)
+* [3D view demo of a RepRap part](https://github.com/reprap/huxley/blob/master/alternative-parts/x-blunt-plate-extended.stl)
+* [3D file diffing blog post](https://github.com/blog/1633-3d-file-diffs)
+
+### GitHub Social Features
 * Notifications
 * Watching repositories
 * Starring repositories
 * Quick sharing with [Gists](https://gists.github.com)
 
 
-### 16 – Markdown
+### Markdown
+The realm of writing prose, which is increasingly important to software development, is moving towards more plaintext formats. A leading 
 * GitHub Flavored Markdown
   * Basics
   * Emoji
   * Checklists (Issues, Gists)
 
 
-### 17 – Special Filenames
+### Special Filenames
 There are several filenames that invoke a special behavior on the GitHub platform. These include:
 
 * `Contributing.md`
@@ -358,8 +371,8 @@ There are several filenames that invoke a special behavior on the GitHub platfor
   * In subfolders
 
 
-### 18 – GitHub Keyboard Shortcuts
-GitHub, though a web application, aims to behave as much like a desktop app as possible. Many of its features are accessible via keyboard shortcuts. While on any GitHub page, press `?` and a context-sensitive help menu will appear. Some of the most frequently used keyboard shortcuts include:
+### Keyboard Shortcuts
+GitHub, though it is a web application, aims to behave as much like a desktop app as possible. Many of its features are accessible via keyboard shortcuts. While on any GitHub page, press `?` and a context-sensitive help menu will appear. Some of the most frequently used keyboard shortcuts include:
 
 * `?` help
 * `/` command bar

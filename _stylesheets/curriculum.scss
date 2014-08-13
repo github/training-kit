@@ -48,7 +48,6 @@
 
   p{
     line-height: 140%;
-    margin-bottom: 2em;
   }
 
   /* General external link */
@@ -99,10 +98,8 @@
   }
 
   pre{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px auto;
+    margin: 1em auto 2em;
     width: auto;
 
     /* To ensure scrolling of long code lines */
