@@ -293,19 +293,20 @@ footer, .push {
       transform: rotate(180deg); }
 
 #toc-wrapper {
-  position: absolute;
-  right: 0px; }
+  float: right;
+  padding: 15px 0 0 0; }
 
 #toc {
   width: 200px;
   border-radius: 3px;
-  background: #f3f3f3; }
-
-.affix-top {
-  margin-top: 165px; }
+  font-size: 12px; }
+  #toc .active {
+    font-weight: 700; }
+    #toc .active a {
+      color: #222222; }
 
 .affix {
-  position: fixed; }
+  margin-top: -165px; }
 
 /* Trainers */
 .trainer {

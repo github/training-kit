@@ -151,22 +151,31 @@
 }
 
 #toc-wrapper{
-  position: absolute;
-  right: 0px;
+  float: right;
+  padding: 15px 0 0 0;
 }
 
 #toc{
   width: 200px;
   border-radius: 3px;
-  background: #f3f3f3;
+
+  font-size: 12px;
+
+  .active{
+    font-weight: 700;
+
+    a{
+      color: #222222;
+    }
+  }
 }
 
 .affix-top{
-  margin-top: 165px;
+
 }
 
 .affix{
-  position: fixed;
+  margin-top: -165px;
 }
 
 .affix-bottom{
