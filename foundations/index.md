@@ -341,21 +341,22 @@ Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub
 * [3D view demo of a RepRap part](https://github.com/reprap/huxley/blob/master/alternative-parts/x-blunt-plate-extended.stl)
 * [3D file diffing blog post](https://github.com/blog/1633-3d-file-diffs)
 
-### 15 – GitHub Social Features
+### GitHub Social Features
 * Notifications
 * Watching repositories
 * Starring repositories
 * Quick sharing with [Gists](https://gists.github.com)
 
 
-### 16 – Markdown
+### Markdown
+The realm of writing prose, which is increasingly important to software development, is moving towards more plaintext formats. A leading 
 * GitHub Flavored Markdown
   * Basics
   * Emoji
   * Checklists (Issues, Gists)
 
 
-### 17 – Special Filenames
+### Special Filenames
 There are several filenames that invoke a special behavior on the GitHub platform. These include:
 
 * `Contributing.md`
@@ -370,8 +371,8 @@ There are several filenames that invoke a special behavior on the GitHub platfor
   * In subfolders
 
 
-### 18 – GitHub Keyboard Shortcuts
-GitHub, though a web application, aims to behave as much like a desktop app as possible. Many of its features are accessible via keyboard shortcuts. While on any GitHub page, press `?` and a context-sensitive help menu will appear. Some of the most frequently used keyboard shortcuts include:
+### Keyboard Shortcuts
+GitHub, though it is a web application, aims to behave as much like a desktop app as possible. Many of its features are accessible via keyboard shortcuts. While on any GitHub page, press `?` and a context-sensitive help menu will appear. Some of the most frequently used keyboard shortcuts include:
 
 * `?` help
 * `/` command bar
