@@ -16,7 +16,7 @@ Maintaining a current version of Git is important. While you'll accurately hear 
 
 Verifying that Git is installed and operational can be done by requesting Git to display its current version using this command:
 
-``` shell
+```shell
 $ git --version
 
 git version 1.8.2
@@ -178,7 +178,7 @@ A repository must have fully incorporated all upstream changes before it can suc
 
 To retrieve all upstream changes, and then transmit all local changes, type:
 
-```
+```shell
 $ git pull
 $ git push origin [master|branch]
 ```
