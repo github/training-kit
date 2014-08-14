@@ -71,7 +71,7 @@ $ git branch --no-merged [commit]
 ```
 
 
-### Ignore
+### Ignoring content
 
 #### Repository-specific ignores
 * Ignoring files from repo & system level
@@ -98,6 +98,9 @@ $ git config alias.show-ignored \
 ```shell
 $ git add -f [path]
 ```
+
+#### Video
+<iframe src="//player.vimeo.com/video/99804597" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 ### Navigating History
@@ -129,8 +132,11 @@ $ git name-rev [commit-ref]
 * Dramatically narrows human search time when using `log` search filters.
 
 #### Further reading
-* [Git revision specification syntax](https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html)
+* [Git revision specificat
+ion syntax](https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html)
 
+#### Video
+<iframe src="//player.vimeo.com/video/95811891" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### Temporary Changes
 
@@ -140,9 +146,12 @@ $ git name-rev [commit-ref]
 
 ```shell
 $ git stash
+$ git stash save "<description>"
+$ git stash --include-untracked
 $ git stash list
-$ git stash pop
-$ git stash drop
+$ git stash pop <name>
+$ git stash drop <name>
+$ git stash apply
 $ git stash clear
 $ git stash -p
 ```
@@ -175,6 +184,22 @@ $ git cherry-pick [commit]
 
 $ git cherry [comparison-branch]
 ```
+
+#### More examples
+```shell
+$ git cherry-pick [ref]
+$ git cherry-pick [ref1] [ref2]
+
+$ git branch --contains [noncherrypickedref]
+$ git cherry [upstreambranch]
+
++ bd650366fa8c39f03cfc9dd5290f60e7331a631d
++ ea62f9f6a7cef55a8a3028e617d28819408a63c4
++ 874628c0e405390130d6457776273451bb66d3a8
++ 046a9b8d0f2363361e45cfbc7e0f6d82968f2f9f
++ 315fe16408f9a9080527e00df3d9a8c1ba0dc97a
+```
+
 
 ### Rewriting history with rebase
 
@@ -254,6 +279,18 @@ $ git rebase --onto <newbase> <upstream> <HEAD|branch>
 
 
 ### Cutting Releases
+
+### Summary
+* Why create a tag through the web UI?
+* Not a branch HEAD. Points to a specific commit.
+* Attaching binaries to releases (Web UI and API)
+* Tag with message (defaults to annotated)
+* Force existing tag to new ref
+* Delete a tag
+* `$ git describe` to name the most recent reachable tag
+* Tag types (reference, annotated, signed)
+* Deleting a tag locally
+* Deleting tag on a remote
 
 {% capture svg_path %}../assets/diagrams/tag.svg{% endcapture %}
 {% include svg %}
@@ -488,4 +525,17 @@ $ git filter-branch --index-filter
 
 ```shell
 $ git config rerere.enable true
+```
+
+### The GitHub API
+
+```shell
+# Anonymous
+$ curl <URL>
+
+# Pass credentials on CLI
+$ curl -u <user:password> <URL>
+
+# Use .netrc file
+$ curl -n <URL>
 ```
