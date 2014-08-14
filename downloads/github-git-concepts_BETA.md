@@ -99,6 +99,3 @@ Retrieving changes from a shared repository and automatically merging in any new
 $ git checkout [target-branch]
 $ git pull origin [upstream-branch]
 ```
-
-## Bonus Materials
-TBD
