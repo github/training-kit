@@ -30,7 +30,7 @@
 /* Overview hero block */
 
 .overview .hero .container {
-  overflow: visible;
+  /*overflow: visible;*/
 }
 
 .overview .hero .content {

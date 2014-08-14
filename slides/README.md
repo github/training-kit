@@ -2,7 +2,7 @@
 
 ## Building from Existing Chapters
 
-Creating a new slide deck (within teach.github.com) from existing slide "chapters" is easy:
+Creating a new slide deck from existing slide "chapters" is easy:
 
 1. Create a new HTML file in /presentations
 2. Add YAML front matter with `layout`, `title`, `chapters` fields
@@ -11,9 +11,9 @@ Creating a new slide deck (within teach.github.com) from existing slide "chapter
 
 ## Creating new Chapter Content
 
-All "chapter" content for teach.github.com HydeSlides are located in the `_posts` directory. Subfolders of markdown files are used only for ease of human-readable organization.
+All "chapter" content for Training Kit HydeSlides are located in the `_posts` directory. Subfolders of Markdown files are used only for ease of human-readable organization.
 
-A chapter consists of a `_posts/<yourchapter>` and markdown files consisting of four YAML front matter fields: `chapter`, `layout`, `title`, `tags`.
+A chapter consists of a `_posts/<yourchapter>` and Markdown files consisting of four YAML front matter fields: `chapter`, `layout`, `title`, `tags`.
 
 * `chapter` serves as the string for the cover slide auto-built by HydeSlides
 * `layout` must be set to slide
@@ -32,14 +32,14 @@ Speaker notes, only shown on the "split" screen displayed by pressing the S key,
 
 ### Slide Deck "What's Next" Feature
 
-Pressing S will launch the slide deck What's Next with presenter notes (if any are in the original slide markdown).
+Pressing S will launch the slide deck "What's Next" with presenter notes (if any are in the original slide Markdown).
 
 One idiosyncrasy of the core RevealJS behavior is browser focus must be on the main slide deck window when navigating slides.
 
 ## Theming
 
 /dependencies 
-* SASS theming is found under `/dependencies/github/css` and controls all ReavealJS and slide presentation overrides
+* SASS theming is found under `/dependencies/themes/github/css` and controls all ReavealJS and slide presentation overrides
 * Graphical and JS dependencies centrally stored in `/dependencies`
 * Assets used throughout any slide deck should be stored in `/assets`
 

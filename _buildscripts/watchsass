@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# regenerate the CSS file each time the SCSS file is changed
+sass -w _stylesheets/page.scss

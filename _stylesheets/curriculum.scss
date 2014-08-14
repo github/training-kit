@@ -1,0 +1,180 @@
+/* Imports */
+@import "variables.scss";
+
+@mixin octicon-link($char){
+  font: normal normal 1em octicons;
+  text-decoration: none;
+  color: $color-dark;
+
+  &:after{
+    content: $char;
+    margin-left: 5px;
+  }
+}
+
+.nav-list>li>a{
+  font-size: 8pt;
+}
+
+.curriculum{
+  position: relative;
+  font-size: 18px;
+
+  h3 {
+      margin-top: 100px;
+      font-size: 240%;
+      line-height: 170%;
+      font-weight: 500;
+      border-bottom: solid 1px #eeeeee;
+      color: $color-dark;
+  }
+
+  h4 {
+      /*margin-top: 30px;*/
+  }
+
+  h5{
+    font-size: 130%;
+    margin: 2em 0 0;
+
+    &:before{
+      font: normal normal 24px octicons;
+      /* Using ancient Octicons. Need to rev to use newer symbols. */
+      content: "\f089";
+      display: inline-block;
+      margin-right: 1em;
+    }
+  }
+
+  p{
+    line-height: 140%;
+  }
+
+  /* General external link */
+  a[href^="http://"],
+  a[href^="https://"] {
+    @include octicon-link("\f0b6");
+  }
+
+  /* GitHub Links */
+  a[href^="https://github.com"],
+  a[href^="https://www.github.com"],
+  a[href^="https://help.github.com"]
+  {
+    @include octicon-link("\f008");
+  }
+
+  /* GitHub Book Links, Guide Links */
+  a[href^="http://git-scm.com/book"],
+  a[href^="https://guides.github.com"]
+  {
+    @include octicon-link("\f007");
+  }
+
+
+  /* YouTube Links */
+  a[href^="https://youtube.com"],
+  a[href^="https://www.youtube.com"] {
+    @include octicon-link("\f0b9");
+  }
+
+  .summary, .outline, .details{
+    h2:before{
+      padding: 5px;
+      color: #CCCCCC;
+      content: "\f078";
+      font: normal normal 20px octicons;
+    }
+  }
+
+  .diagram{
+
+  }
+
+  table, pre{
+    background: $mono-light;
+    padding: 20px;
+    display: block;
+  }
+
+  pre{
+    padding: 10px auto;
+    margin: 1em auto 2em;
+    width: auto;
+
+    /* To ensure scrolling of long code lines */
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+  }
+
+  pre:before {
+    content: "\f0c8";
+    font: normal normal 22px octicons;
+    float: right;
+    opacity: .4;
+  }
+
+  blockquote{
+    width: 80%;
+    line-height: 140%;
+    margin: 30px 10%;
+    text-align: justify;
+
+    &:before{
+      content: "\f063";
+      font: normal normal 32px octicons;
+      position: absolute;
+      font-size: 76px;
+      opacity: .1;
+      left: 0;
+      margin-top: -.5em;
+    }
+    &:after{
+      content: "\f063";
+      font: normal normal 32px octicons;
+      position: absolute;
+      font-size: 76px;
+      opacity: .1;
+      right: 0;
+      margin-top: -.25em;
+
+      -ms-transform:rotate(180deg); /* IE 9 */
+      -webkit-transform:rotate(180deg);
+      transform:rotate(180deg);
+    }
+  }
+
+}
+
+#toc-wrapper{
+  float: right;
+  padding: 15px 0 0 0;
+}
+
+#toc{
+  width: 200px;
+  border-radius: 3px;
+
+  font-size: 12px;
+
+  .active{
+    font-weight: 700;
+
+    a{
+      color: #222222;
+    }
+  }
+}
+
+.affix-top{
+
+}
+
+.affix{
+  margin-top: -165px;
+}
+
+.affix-bottom{
+
+}

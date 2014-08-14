@@ -116,7 +116,7 @@ http://git-scm.com
 
 ```$ git rm --cached [file]```
 
-バージョン管理からファイルを削除しますが、ローカルのファイルは保持します
+バージョン管理からファイルを削除して、ローカルのファイルは保持します
 
 
 ```$ git mv [file-original] [file-renamed]```
@@ -173,7 +173,7 @@ temp-*
 
 ```$ git log --follow [file]```
 
-ファイル名の変更を含む指定したファイルのバージョン履歴を一覧で表示します
+名前の変更を含む指定したファイルのバージョン履歴の一覧を表示します
 
 
 ```$ git diff [first-branch]...[second-branch]```
@@ -191,7 +191,7 @@ temp-*
 
 ```$ git reset [commit]```
 
-`[commit]`以降のすべてのコミットを取り消し、ローカルでは変更を保持します
+`[commit]`以降すべてのコミットを取り消し、ローカルでは変更を保持します
 
 
 ```$ git reset --hard [commit]```

@@ -2,47 +2,37 @@
 
 ---
 
+{% if page.theme == "home" %}
+    {% assign leadingpath = '.' %}
+{% else %}
+    {% assign leadingpath = '..' %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
   <head>
-    <title>{% if page.title %}{{ page.title }} • {% endif %}{{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
     {% if page.description %}
     <meta name="description" content="{{ page.description }}" />
     {% endif %}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-    <link rel="stylesheet" media="all" href=
-      {% if page.theme == "home" %}
-        "_stylesheets/page.css"
-      {% else %}
-        "../_stylesheets/page.css"
-      {% endif %}
-    />
+    <link rel="stylesheet" media="all" href="{{ leadingpath }}/_stylesheets/page.css" />
 
-    <link rel="stylesheet"
-      media="screen"
-      href=
-        {% if page.theme %}
-          {% if page.theme == "home" %}
-            "_stylesheets/home.css"
-          {% else %}
-            "../_stylesheets/{{ page.theme }}.css"
-          {% endif %}
-        {% else %}
-          "_stylesheets/page.css"
-        {% endif %}
-      type="text/css" />
+    <link rel="stylesheet" media="screen" href="{{ leadingpath }}/_stylesheets/page.css" type="text/css" />
 
     {% include analytics.html %}
 
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    {% if page.theme == "home" %}
-      <script src="_javascript/page.js"></script>
-    {% else %}
-      <script src="../_javascript/page.js"></script>
-    {% endif %}
+    <script src="{{ leadingpath }}/_javascript/jquery-1.11.0.min.js"></script>
+    <script src="{{ leadingpath }}/_javascript/page.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="{{ leadingpath }}/_javascript/bootstrap/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="{{ leadingpath }}/_javascript/bootstrap/js/bootstrap.min.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#toc">
     {% include navigation.html %}
 
     {{ content }}
