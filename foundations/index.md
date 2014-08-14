@@ -202,7 +202,7 @@ Merges can be accomplished through:
 * At the command line
 * With a drag-and-drop GUI such as GitHub Desktop
 
-### 1Collaboration
+### Collaboration
 Collaboration happens on GitHub in one of two primary workflows, based on whether the change is coming from someone new to the project, or from a frequent trusted contributor.
 
 #### Forking
