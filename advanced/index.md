@@ -4,6 +4,76 @@ title: GitHub Advanced
 description: Mastering Git and GitHub
 ---
 
+### Common branching strategies
+
+#### Summary
+* GitHub Flow
+* Branch-per-feature
+* Compatibility with Pull Requests
+* git-flow
+* Long-term release support
+
+#### Details
+These are called Branching Strategies, but are just as easily called *Team Collaboration Techniques* in an abstract discussion of version control.
+
+* Branch by feature
+* git-flow
+    *  Made popular on Git by Vincent Driessen and his NVIE site
+    * [Git-Flow: A Successful Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
+    * [Git-Flow Source](https://github.com/nvie/gitflow)
+    * Too many levels?
+    * GH prefers Simplest thing that works.
+* GitHub Flow
+    * [How GitHub Develops](https://github.com/blog/919-how-github-develops)
+    * [GitHub Flow blog post](http://scottchacon.com/2011/08/31/github-flow.html)
+    * Works well with Pull Requests when one-layer deep
+    * Think of features much smaller than typical
+* Git's Model
+    * [Git Maintenance Notes](https://sites.google.com/site/maintnotes/)
+    * [Git Workflows](http://www.kernel.org/pub/software/scm/git/docs/gitworkflows.html)
+    * [Git's Source Code](https://github.com/git/git)
+    * Branches
+        * master
+        * maint
+        * next (graduation from pu)
+        * pu (can be rebased)
+        * html
+        * man
+    * _"A trivial and safe enhancement goes directly on top of 'master'."_
+    * _"The two branches "master" and "maint" are never rewound, and "next" usually will not be either"_
+    * _"When a topic that was in 'pu' proves to be in testable shape, it graduates to 'next'."_
+* Version numbers
+    * `major.minor.fix`
+    * [Semantic versioning](http://semver.org)
+* Rebase before sharing (sending a Pull Request)
+    * [Contributing to Spring Social](https://github.com/SpringSource/spring-social/wiki/Contributing)
+    * [How To Merge Without Fear](http://blog.springsource.org/2010/12/21/git-and-social-coding-how-to-merge-without-fear/)
+    * [What to do when things get complicated](http://blog.springsource.org/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/)
+
+### Applying branching patterns
+#### Summary
+* Breaking features down into pieces
+* Feedback early on Pull Requests
+* @mentioning teams instead of individuals
+* Continuous integration
+
+
+### Git-core GUIs
+
+#### Summary
+* for staging, committing
+* for browsing history
+* Tcl/Tk based
+
+#### Details
+```
+$ git gui
+$ gitk
+$ gitk&
+$ gitk --all
+```
+
+
 ### Mastering Shortcuts
 * Shortcuts to multiple steps
 * Useful customized commands
@@ -60,13 +130,30 @@ $ git add -p [file]
 * Checking merge state
 * Cleaning up branches
 
+#### Squash merging
+* Collapsing commits during merge
+* Pros/cons (loss of granularity)
+* Relation to branching strategies and deliverable expectations
+
 ```shell
 $ git merge --squash [branch]
+```
 
+Querying commit existence:
+
+```shell
 $ git branch --contains [commit]
+```
 
+List branches with this merged in:
+
+```shell
 $ git branch --merged [commit]
+```
 
+List branches without this merged in:
+
+```shell
 $ git branch --no-merged [commit]
 ```
 
@@ -538,4 +625,105 @@ $ curl -u <user:password> <URL>
 
 # Use .netrc file
 $ curl -n <URL>
+```
+
+
+### Cleaning
+
+#### Summary
+* Purge untracked in working dir
+* for directories
+* for removing ignored files (useful for tidying build artifacts)
+
+#### Details
+```
+$ git clean -f
+$ git clean -fd
+$ git clean -fx
+```
+
+### Treeish & commitish
+
+#### Summary
+* Simple ways of describing history points
+* Easier-to-describe and understand numerically
+
+#### Details
+```
+HEAD
+HEAD^^
+HEAD~2
+```
+
+### Diff Tool
+
+#### Summary
+* [P4Merge](http://www.perforce.com/downloads/Perforce-Software-Version-Management/complete_list/Free%2020-User%20Edition#10)
+* Opendiff
+* KDiff
+* Kaleidoscope
+* Vimdiff
+* Meld
+
+#### Details
+Difftool execution:
+
+```
+$ git difftool --tool-help
+$ git config diff.tool <tool-name-in-config>
+$ git config difftool.prompt false
+$ git config difftool.<tool-name>.cmd "<path [args]>"
+```
+
+A sample `.gitconfig` file:
+
+```
+[diff]
+    tool = p4merge
+[difftool "p4merge"]
+    cmd = "/Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE"
+[difftool]
+    prompt = false
+```
+
+### Merge Tool
+
+#### Summary
+* Same as difftool, but 3-way comparison
+
+#### Details
+
+Mergetool execution:
+
+```
+$ git config --global merge.tool p4mergetool
+
+$ git config --global mergetool.p4mergetool.cmd "/Applications/p4merge.app/Contents/Resources/launchp4merge \$PWD/\$BASE \$PWD/\$REMOTE \$PWD/\$LOCAL \$PWD/\$MERGED"
+
+$ git config --global mergetool.p4mergetool.trustExitCode false
+
+$ git config --global mergetool.keepBackup false
+```
+
+A sample `.gitconfig` file:
+
+```
+[merge]
+    tool = Kaleidoscope
+[mergetool "p4mergetool"]
+    cmd = " /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED"
+    keepBackup = false
+```
+
+### Refspecs
+#### Summary
+* Specification for retrieval and pushing
+* Implied on fetch, pull, and push
+* Altered by option switches like `--tags`
+* Stored in `.git/config`
+* Ability to retrieve Pull Request branches
+
+```
+$ git fetch [repo-url] [source]:[destination]
+$ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
 ```
