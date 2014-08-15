@@ -2,6 +2,9 @@
 layout: bare
 ---
 
+<script src="../_javascript/snap-svg/dist/snap.svg-min.js"></script>
+<script src="../_javascript/curriculum.js"></script>
+
 <section class="hero overview">
   <div class="container">
     <div class="content">
@@ -11,25 +14,18 @@ layout: bare
   </div>
 </section>
 
-<!-- <section class=""> -->
-  <div class="container curriculum">
+<div class="container curriculum">
+  <div class="two-thirds markdown-content">
+    {{ content }}
+  </div>
 
-    <div class="two-thirds markdown-content">
-      {{ content }}
-    </div>
-
-    <div class="third">
-      <div id="toc-wrapper">
-        <div id="toc" data-spy="affix" data-offset-top="165">
-          <ul id="toc-list" class="nav" role="tablist"></ul>
-        </div>
+  <div class="third">
+    <div id="toc-wrapper">
+      <div id="toc" data-spy="affix" data-offset-top="165">
+        <ul id="toc-list" class="nav" role="tablist"></ul>
       </div>
     </div>
-
   </div>
-<!-- </section> -->
+</div>
 
 {% include footer.html %}
-
-<script src="../_javascript/snap-svg/dist/snap.svg-min.js"></script>
-<script src="../_javascript/curriculum.js"></script>
