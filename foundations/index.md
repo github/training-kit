@@ -130,7 +130,7 @@ In many cases, working with a code project means retriving it to the local disk 
 * Clone via SSH or HTTPS URL
 
 ### The Web flow
-The GitHub Web Flow is a path through the GitHub user interface that faciltates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still having the benefit of syntax highlighting and pre-merge code reviews and discussions.
+The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still having the benefit of syntax highlighting and pre-merge code reviews and discussions.
 
 The GitHub Web Flow allows you to:
 
@@ -267,7 +267,7 @@ GitHub Pages are an easy-to-use static site hosting service based on the Jekyll 
 * [GitHub Pages](http://pages.github.com)
 
 ##### Lab Exercise 11a
-* Create a new empty respository named `<yourgithubusername>.github.io`
+* Create a new empty repository named `<yourgithubusername>.github.io`
 * Click on the _Settings icon_
 * From the _Options_ group, click on _Automatic page generator_ and follow the steps to create and style your new site
 * Wait 10 minutes
@@ -308,8 +308,8 @@ GitHub is a platform that offers features not only for developers, but also for 
 * Team @mentions
 
 ##### Lab Exercise 13a
-* Find an open source project via the [Explore page](https://github.com/exlpore)
-* Review your chosen project's Pulse page and indentify this week and this year's most prolific contributor
+* Find an open source project via the [Explore page](https://github.com/explore)
+* Review your chosen project's Pulse page and identify this week and this year's most prolific contributor
 * Visit the project's Releases page and download the latest binary
 
 
@@ -349,11 +349,11 @@ Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub
 
 
 ### Markdown
-The realm of writing prose, which is increasingly important to software development, is moving towards more plaintext formats. A leading 
-* GitHub Flavored Markdown
-  * Basics
-  * Emoji
-  * Checklists (Issues, Gists)
+A plaintext format for writing prose and documentation. In addition to the [basic formatting options](https://help.github.com/articles/markdown-basics), Markdown files hosted and viewed on GitHub can make use of the following enhancements:
+
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
+* [Emoji](http://www.emoji-cheat-sheet.com/)
+* [Checklists](https://github.com/blog/1825-task-lists-in-all-markdown-documents) (Issues, Gists)
 
 
 ### Special Filenames
