@@ -238,9 +238,9 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 {% include svg %}
 
 #### Resources
-* [_Understanding The GitHub Flow_ Guide](https://guides.github.com/introduction/flow/)
-* [_Forking_ Guide](https://guides.github.com/activities/forking/)
-* [GitHub Teams and Organizations](http://vimeo.com/35539203)
+* [Guide to _Understanding The GitHub Flow_](https://guides.github.com/introduction/flow/)
+* [_Guide to Forking_](https://guides.github.com/activities/forking/)
+* [GitHub Teams and Organizations video](http://vimeo.com/35539203)
 
 ##### Lab Exercise 10a
 * Begin the process of creating a new repository from the GitHub web site user interface
