@@ -4,6 +4,8 @@ title: GitHub Advanced
 description: Mastering Git and GitHub
 ---
 
+This curriculum will be your companion to the GitHub Advanced class taught by the GitHub Training Team and other educational groups. In this course, you'll explore strategies for branch and history rewriting, temporary storing and recovery techniques, and Git technology mechanics for faster problem solving.
+
 ### Common branching strategies
 
 #### Summary
