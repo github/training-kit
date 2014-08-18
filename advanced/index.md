@@ -57,7 +57,7 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 * @mentioning teams instead of individuals
 * Continuous integration
 
-#### Further Reading
+#### Further reading
 * [Validated Build Promotions with Git, GitHub, and Jenkins](http://www.youtube.com/watch?v=Gd8OfAmKkMQ)
 
 ### Git-core GUIs
