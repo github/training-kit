@@ -107,6 +107,9 @@ $ git checkout -b [branch] [base]
 ```bash
 # Stage by patch
 $ git add -p [file]
+
+# Unstage by patch
+git reset RESET HEAD -p [file]
 ```
 
 
