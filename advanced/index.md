@@ -650,8 +650,7 @@ $ git clean -fd
 $ git clean -fx
 ```
 
-
-### Diff Tool
+### Diff & merge tool
 
 #### Summary
 * [P4Merge](http://www.perforce.com/downloads/Perforce-Software-Version-Management/complete_list/Free%2020-User%20Edition#10)
@@ -682,12 +681,6 @@ A sample `.gitconfig` file:
     prompt = false
 ```
 
-### Merge Tool
-
-#### Summary
-* Same as difftool, but 3-way comparison
-
-#### Details
 
 Mergetool execution:
 
