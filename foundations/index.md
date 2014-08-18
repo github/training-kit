@@ -42,6 +42,7 @@ Three important concepts of this version control system are:
 #### Deeper study
 * [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
 * [The Git project homepage](http://git-scm.com)
+* [Entry-level videos from the official Git site](http://git-scm.com/videos)
 
 #### Installers
 The command line version of Git has a very light footprint. For most platforms, you can simply copy the binaries to a folder that is on the executable search $PATH. Git is primarily written in C, which means there is a unique installer for each operating system.
@@ -239,6 +240,7 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 #### Resources
 * [_Understanding The GitHub Flow_ Guide](https://guides.github.com/introduction/flow/)
 * [_Forking_ Guide](https://guides.github.com/activities/forking/)
+* [GitHub Teams and Organizations](http://vimeo.com/35539203)
 
 ##### Lab Exercise 10a
 * Begin the process of creating a new repository from the GitHub web site user interface

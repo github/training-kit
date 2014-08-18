@@ -533,3 +533,7 @@ $ git reset --[option] HEAD@{[n]}
 ```shell
 $ git checkout HEAD@{[n]} -- [path]
 ```
+
+#### Additional Resources
+
+* [Master Git Video Series](http://bit.ly/ogitvid)
