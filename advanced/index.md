@@ -337,7 +337,7 @@ $ git add [conflicting-file]
 $ git rebase --continue
 ```
 
-### Reordering History
+#### Reordering History
 
 * Reorder commits
 * Rewrite history entirely
@@ -364,7 +364,7 @@ $ git rebase -i --autosquash [ref]
 ```
 
 
-### Fixing Branches
+#### Fixing Branches
 * This mode of rebase change where branch history begins
 * Moving blocks of history around
 
@@ -467,21 +467,7 @@ $ git checkout FETCH_HEAD
 $ git branch <newbranchname> FETCH_HEAD
 ```
 
-
-### Customizing Interaction
-* Specification for retrieval and pushing
-* Implied on fetch, pull, and push
-* Altered by option switches like `--tags`
-* Stored in `.git/config`
-* Ability to retrieve Pull Request branches
-
-```shell
-$ git fetch [repo-url] [source]:[destination]
-$ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
-```
-
-
-### Maintaining Remotes
+### Maintaining, customizing remotes
 * Remove non-matching _local_ remote branches
 * Remove non-matching remote upstream branches
 * Remove only remote upstream branch
@@ -495,6 +481,17 @@ $ git fetch --prune
 $ git push origin :<branch-name>
 ```
 
+#### Customizing Interaction
+* Specification for retrieval and pushing
+* Implied on fetch, pull, and push
+* Altered by option switches like `--tags`
+* Stored in `.git/config`
+* Ability to retrieve Pull Request branches
+
+```shell
+$ git fetch [repo-url] [source]:[destination]
+$ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
+```
 
 ### Aggregating repositories
 
@@ -519,8 +516,7 @@ or
 $ git submodule update --init --recursive
 ```
 
-
-### Incorporating dependencies with subtree
+#### Dependencies with subtree
 
 * Alternative to submodule
 * All files available advantage
