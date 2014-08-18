@@ -383,7 +383,9 @@ GitHub, though it is a web application, aims to behave as much like a desktop ap
 * `g` `c` go to code
 * `g` `i` go to issues
 
-### Further Reading on Git
+### Further Resources on Git
 * [Pro Git](http://git-scm.com/book)
 * [Version Control with Git, 2nd Edition](http://bit.ly/ogitbook)
 * [Getting Good with Git](http://net.tutsplus.com/freebies/books/getting-good-with-git-free-ebook/)
+* [Git the Simple Guide](http://rogerdudler.github.io/git-guide/)
+* [Try Git by CodeSchool](https://try.github.io/)

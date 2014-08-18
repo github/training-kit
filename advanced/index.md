@@ -736,3 +736,5 @@ $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upst
 * [Master Advanced Git Video Series](http://bit.ly/ogitvid2)
 * [The Fringes of Git](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
 * [Git Notes & GitHub](http://vimeo.com/34273537)
+* [GitHub Command line client](https://github.com/jingweno/gh)
+* [Oh-my-zsh ZSH configuration](https://github.com/robbyrussell/oh-my-zsh)
