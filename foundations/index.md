@@ -382,3 +382,8 @@ GitHub, though it is a web application, aims to behave as much like a desktop ap
 * `s` set focus to the search box
 * `g` `c` go to code
 * `g` `i` go to issues
+
+### Further Reading on Git
+* [Pro Git](http://git-scm.com/book)
+* [Version Control with Git, 2nd Edition](http://bit.ly/ogitbook)
+* [Getting Good with Git](http://net.tutsplus.com/freebies/books/getting-good-with-git-free-ebook/)
