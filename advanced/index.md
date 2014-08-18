@@ -636,20 +636,6 @@ $ git filter-branch --index-filter
 $ git config rerere.enable true
 ```
 
-### The GitHub API
-
-```shell
-# Anonymous
-$ curl <URL>
-
-# Pass credentials on CLI
-$ curl -u <user:password> <URL>
-
-# Use .netrc file
-$ curl -n <URL>
-```
-
-
 ### Cleaning
 
 #### Summary
