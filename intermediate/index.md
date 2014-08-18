@@ -536,4 +536,4 @@ $ git checkout HEAD@{[n]} -- [path]
 
 #### Additional Resources
 
-* [Master Git Video Series](http://bit.ly/ogitvid)
+* [O'Reilly's Mastering Git video series](http://bit.ly/ogitvid)
