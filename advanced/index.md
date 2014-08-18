@@ -6,6 +6,33 @@ description: Mastering Git and GitHub
 
 This curriculum will be your companion to the GitHub Advanced class taught by the GitHub Training Team and other educational groups. In this course, you'll explore strategies for branch and history rewriting, temporary storing and recovery techniques, and Git technology mechanics for faster problem solving.
 
+### Understanding Git
+{% capture svg_path %}../assets/diagrams/commit-data-structure.svg{% endcapture %}
+{% include svg %}
+
+* Directed acyclic graph
+* Tree object
+* Blob object
+* SHA1
+
+{% capture svg_path %}../assets/diagrams/commit-dag.svg{% endcapture %}
+{% include svg %}
+
+* Linked list of commits
+* First commit has `nil` parent
+* Integrity checking with `git gc`
+
+#### Treeish & commitish
+
+* Simple ways of describing history points
+* Easier-to-describe and understand numerically
+
+```
+HEAD
+HEAD^^
+HEAD~2
+```
+
 ### Common branching strategies
 
 #### Summary
@@ -111,24 +138,6 @@ $ git add -p [file]
 # Unstage by patch
 git reset RESET HEAD -p [file]
 ```
-
-
-### Understanding Git
-{% capture svg_path %}../assets/diagrams/commit-data-structure.svg{% endcapture %}
-{% include svg %}
-
-* Directed acyclic graph
-* Tree object
-* Blob object
-* SHA1
-
-{% capture svg_path %}../assets/diagrams/commit-dag.svg{% endcapture %}
-{% include svg %}
-
-* Linked list of commits
-* First commit has `nil` parent
-* Integrity checking with `git gc`
-
 
 ### Best Practices
 * Collapsing commits during merge
@@ -647,18 +656,6 @@ $ git clean -fd
 $ git clean -fx
 ```
 
-### Treeish & commitish
-
-#### Summary
-* Simple ways of describing history points
-* Easier-to-describe and understand numerically
-
-#### Details
-```
-HEAD
-HEAD^^
-HEAD~2
-```
 
 ### Diff Tool
 
