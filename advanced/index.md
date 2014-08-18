@@ -557,10 +557,22 @@ $ git merge --squash
 * Hub and GH merging into one project
 
 ```shell
+# Create a new public repository on your GitHub account
 $ gh create
+
+# Create a new private repository on your GitHub account
+$ gh create -p
+
+# Open a Pull Request for the current branch
 $ gh pull-request
+
+# Create a fork of the cloned repository on your GitHub Account
 $ gh fork
+
+# Launch a web browser with the branch comparison view
 $ gh compare
+
+# Launch a web browser to the repository home page
 $ gh browse
 ```
 
