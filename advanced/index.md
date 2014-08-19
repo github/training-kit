@@ -26,12 +26,17 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 
 * Simple ways of describing history points
 * Easier-to-describe and understand numerically
+* Application of patterns works on [GitHub](https://help.github.com/articles/comparing-commits-across-time)
 
 ```
 HEAD
 HEAD^^
 HEAD~2
+HEAD@{one.day.ago}
+HEAD@{today}
 ```
+
+
 
 ### Common branching strategies
 
