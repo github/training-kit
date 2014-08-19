@@ -136,7 +136,7 @@ $ git checkout -b [branch] [base]
 $ git add -p [file]
 
 # Unstage by patch
-git reset RESET HEAD -p [file]
+git reset reset HEAD -p [file]
 ```
 
 ### Best Practices
