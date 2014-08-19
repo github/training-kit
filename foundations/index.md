@@ -42,6 +42,7 @@ Three important concepts of this version control system are:
 #### Deeper study
 * [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
 * [The Git project homepage](http://git-scm.com)
+* [Entry-level videos from the official Git site](http://git-scm.com/videos)
 
 #### Installers
 The command line version of Git has a very light footprint. For most platforms, you can simply copy the binaries to a folder that is on the executable search $PATH. Git is primarily written in C, which means there is a unique installer for each operating system.
@@ -237,8 +238,9 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 {% include svg %}
 
 #### Resources
-* [_Understanding The GitHub Flow_ Guide](https://guides.github.com/introduction/flow/)
-* [_Forking_ Guide](https://guides.github.com/activities/forking/)
+* [Guide to _Understanding The GitHub Flow_](https://guides.github.com/introduction/flow/)
+* [_Guide to Forking_](https://guides.github.com/activities/forking/)
+* [GitHub Teams and Organizations video](http://vimeo.com/35539203)
 
 ##### Lab Exercise 10a
 * Begin the process of creating a new repository from the GitHub web site user interface
@@ -380,3 +382,10 @@ GitHub, though it is a web application, aims to behave as much like a desktop ap
 * `s` set focus to the search box
 * `g` `c` go to code
 * `g` `i` go to issues
+
+### Further Resources on Git
+* [Pro Git](http://git-scm.com/book)
+* [Version Control with Git, 2nd Edition](http://bit.ly/ogitbook)
+* [Getting Good with Git](http://net.tutsplus.com/freebies/books/getting-good-with-git-free-ebook/)
+* [Git the Simple Guide](http://rogerdudler.github.io/git-guide/)
+* [Try Git by CodeSchool](https://try.github.io/)

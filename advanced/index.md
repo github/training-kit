@@ -57,6 +57,8 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 * @mentioning teams instead of individuals
 * Continuous integration
 
+#### Further reading
+* [Validated Build Promotions with Git, GitHub, and Jenkins](http://www.youtube.com/watch?v=Gd8OfAmKkMQ)
 
 ### Git-core GUIs
 
@@ -177,7 +179,7 @@ $ git config core.excludesfile [path]
 #### Listing ignored files
 ```shell
 $ git config alias.show-ignored \
-    "ls-files --exclude-standard 
+    "ls-files --exclude-standard
     --others --ignored"
 ```
 
@@ -727,3 +729,12 @@ A sample `.gitconfig` file:
 $ git fetch [repo-url] [source]:[destination]
 $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
 ```
+
+### Additional Resources
+
+* [Advanced Git presented at JavaZone](http://vimeo.com/49444883)
+* [Master Advanced Git Video Series](http://bit.ly/ogitvid2)
+* [The Fringes of Git](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
+* [Git Notes & GitHub](http://vimeo.com/34273537)
+* [GitHub Command line client](https://github.com/jingweno/gh)
+* [Oh-my-zsh ZSH configuration](https://github.com/robbyrussell/oh-my-zsh)
