@@ -264,16 +264,13 @@ $ git stash -p
 ### Incorporating History
 
 * Reusing small pieces of code with `cherry-pick`
-    * Why use `cherry-pick` instead of `merge`?
-    * What happens when you `cherry-pick`?
-    * Maintaining `author` and `committer` fields
-    * Tracing any cherry-picks with `-x` commit message metadata
-    * `-x` metadata hyperlinked on GitHub
-    * `$ git cherry` to view absent commits
-* Rebase interactive
-    * Can include cherry-pick
-    * Must remember to continue the rebase
-    * Alters history
+* Why use `cherry-pick` instead of `merge`?
+* What happens when you `cherry-pick`?
+* Maintaining `author` and `committer` fields
+* Tracing any cherry-picks with `-x` commit message metadata
+* `-x` metadata hyperlinked on GitHub
+* `$ git cherry` to view absent commits
+* Can include cherry-pick during rebase interactive
 
 ```shell
 # Generate new commit on current branch
