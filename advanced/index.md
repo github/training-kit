@@ -386,7 +386,7 @@ $ git rebase --onto <newbase> <upstream> <HEAD|branch>
 
 ### Cutting Releases
 
-### Summary
+#### Summary
 * Why create a tag through the web UI?
 * Not a branch HEAD. Points to a specific commit.
 * Attaching binaries to releases (Web UI and API)
