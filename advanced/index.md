@@ -194,7 +194,7 @@ $ git config core.excludesfile [path]
 #### Listing ignored files
 ```shell
 $ git config alias.show-ignored \
-    "ls-files --exclude-standard 
+    "ls-files --exclude-standard
     --others --ignored"
 ```
 
