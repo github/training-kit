@@ -144,15 +144,12 @@ $ git add -p [file]
 git reset reset HEAD -p [file]
 ```
 
-### Best Practices
-* Collapsing commits during merge
+### Branch best practices
+
+* Pros/cons of collapsing commits during merge
+* Relation to branching strategies and deliverable expectations
 * Checking merge state
 * Cleaning up branches
-
-#### Squash merging
-* Collapsing commits during merge
-* Pros/cons (loss of granularity)
-* Relation to branching strategies and deliverable expectations
 
 ```shell
 $ git merge --squash [branch]
