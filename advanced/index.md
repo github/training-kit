@@ -419,7 +419,7 @@ $ git push origin :[tag-name-to-delete]
 ```
 
 
-### Reviewing synchronizing
+### Reviewing & synchronizing
 
 #### Reviewing remote branches
 * PRs to horizontal contributors
@@ -467,7 +467,7 @@ $ git checkout FETCH_HEAD
 $ git branch <newbranchname> FETCH_HEAD
 ```
 
-### Maintaining, customizing remotes
+#### Maintaining, customizing remotes
 * Remove non-matching _local_ remote branches
 * Remove non-matching remote upstream branches
 * Remove only remote upstream branch
