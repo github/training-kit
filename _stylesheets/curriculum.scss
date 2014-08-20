@@ -21,7 +21,7 @@
   font-size: 18px;
 
   h3 {
-      margin-top: 100px;
+      margin-top: 3em;
       font-size: 240%;
       line-height: 170%;
       font-weight: 500;
@@ -31,6 +31,9 @@
 
   h4 {
       /*margin-top: 30px;*/
+      &:first-child{
+        margin-top: 0;
+      }
   }
 
   h5{
@@ -38,16 +41,24 @@
     margin: 2em 0 0;
 
     &:before{
-      font: normal normal 24px octicons;
-      /* Using ancient Octicons. Need to rev to use newer symbols. */
+      font: normal normal 16px octicons;
+      color: $mono-bright;
       content: "\f089";
       display: inline-block;
       margin-right: 1em;
+      margin-left: -42px;
+      border-radius: 50%;
+      background: $mono-light;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
     }
   }
 
   p{
     line-height: 140%;
+    margin-bottom: 1.8em;
   }
 
   /* General external link */
