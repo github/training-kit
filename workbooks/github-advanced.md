@@ -31,7 +31,7 @@ These are called Branching Strategies, but are just as easily called *Team Colla
     * Think of features much smaller than typical
 * Git's Model
     * [Git Maintenance Notes](https://sites.google.com/site/maintnotes/)
-    * [Git Workflows](http://www.kernel.org/pub/software/scm/git/docs/gitworkflows.html)
+    * [Git Workflows](https://www.kernel.org/pub/software/scm/git/docs/gitworkflows.html)
     * [Git's Source Code](https://github.com/git/git)
     * Branches
         * master
@@ -47,7 +47,7 @@ These are called Branching Strategies, but are just as easily called *Team Colla
     * `major.minor.fix`
     * [Semantic versioning](http://semver.org)
 * Rebase before sharing (sending a Pull Request)
-    * [Contributing to Spring Social](https://github.com/SpringSource/spring-social/wiki/Contributing)
+    * [Contributing to Spring Social](https://github.com/spring-projects/spring-social/wiki/Contributing)
     * [How To Merge Without Fear](http://blog.springsource.org/2010/12/21/git-and-social-coding-how-to-merge-without-fear/)
     * [What to do when things get complicated](http://blog.springsource.org/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/)
 
@@ -495,7 +495,7 @@ HEAD~2
 ## Diff Tool
 
 ### Summary
-* [P4Merge](http://www.perforce.com/downloads/Perforce-Software-Version-Management/complete_list/Free%2020-User%20Edition#10)
+* [P4Merge](http://www.perforce.com/downloads/Perforce/20-User)
 * Opendiff
 * KDiff
 * Kaleidoscope
@@ -671,5 +671,5 @@ $ gitk --all
 
 ### Summary
 * [Listing of GUIs](http://git-scm.com/downloads/guis)
-* [eGit for Eclipse](http://eclipse.github.com)
+* [eGit for Eclipse](http://eclipse.github.io/)
 * [SmartGit for Windows, Mac, Linux](http://www.syntevo.com/smartgithg/)
