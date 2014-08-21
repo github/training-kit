@@ -94,10 +94,6 @@
     }
   }
 
-  .diagram{
-
-  }
-
   table, pre{
     background: $mono-light;
     padding: 20px;
@@ -120,36 +116,6 @@
     font: normal normal 22px octicons;
     float: right;
     opacity: .4;
-  }
-
-  blockquote{
-    width: 80%;
-    line-height: 140%;
-    margin: 30px 10%;
-    text-align: justify;
-
-    &:before{
-      content: "\f063";
-      font: normal normal 32px octicons;
-      position: absolute;
-      font-size: 76px;
-      opacity: .1;
-      left: 0;
-      margin-top: -.5em;
-    }
-    &:after{
-      content: "\f063";
-      font: normal normal 32px octicons;
-      position: absolute;
-      font-size: 76px;
-      opacity: .1;
-      right: 0;
-      margin-top: -.25em;
-
-      -ms-transform:rotate(180deg); /* IE 9 */
-      -webkit-transform:rotate(180deg);
-      transform:rotate(180deg);
-    }
   }
 
 }
