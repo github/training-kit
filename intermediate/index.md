@@ -140,7 +140,7 @@ $ git init
 # ...start coding
 ```
 
-Acquire a project:
+Acquire a project locally:
 
 ```shell
 $ git clone [repository-url]
@@ -190,19 +190,19 @@ Git advocates precision in each commit's contents and commit message.  This is f
 {% capture svg_path %}../assets/diagrams/diff.svg{% endcapture %}
 {% include svg %}
 
-The simplest invocation of `diff` is the most common.  It displays
+The simplest invocation of `diff` is the most common. It displays the difference of the files that have been modified.
 
 ```shell
 $ git diff
 ```
 
-Git creates a distinction between what is modified and unselected and what has been staged for commit. A well-named `diff` option switch allows for the inspection of each of these two groups of changes.
+Git also creates a distinction between what is modified and unselected and what has been staged for commit. A single `diff` option switch allows for the inspection of each of these two groups of changes.
 
 ```shell
 $ git diff --staged
 ```
 
-The default line-level difference indicators are sometimes insufficient for prose and small variable-name changes. An option instructs Git to perform and highlight intra-line comparisons.
+The default line-level difference indicators are sometimes insufficient for prose and small variable-name changes. There is, however, an option to instruct Git to perform and highlight intra-line comparisons.
 
 ```shell
 # Highlight word changes on lines
@@ -221,13 +221,13 @@ $ git diff [file-path]
 
 
 ### Review historical changes
-Lorem ipsum dolor sit amet, vitae risus eu. Risus pede. Etiam facilisi quis, iaculis cum sed, eu mauris. Magna turpis. Etiam sed voluptatem.
+Git can look back at the history of each commit to see when a change took place, who made the change, or what the change contained.
 
 ```shell
 $ git log
 ```
 
-Some simple option flag additions to the `log` invocation can make the output more information-dense.
+Some simple option flag additions to the `log` command can make the output more concise.
 
 ```shell
 # Simple commit summaries

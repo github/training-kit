@@ -162,7 +162,7 @@ A commit is a transactionally grouped set of changes, described by an brief mess
 
 #### Local repository definitions
 * Commits
-  * History marker for file(s), change(s)
+  * History marker for file(s) and change(s)
   * Record of author, time, and message
 * Branches
   * Container for grouped commits
@@ -193,7 +193,7 @@ A branch is an divergent path in the history of the code base. It may contain an
 <iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### Merges
-Merging is the important step of integrating one branch with another.  In Git, since work can happen while disconnected from the network, frequently even the same-named branches might need to be merged with one another to unify the changes.  Merges come in several flavors, but we'll focus on the _merge made by recursive_ pattern in today's class.
+Merging is the important step of integrating one branch with another.  In Git, because work can happen while disconnected from the network, frequently even the same-named branches might need to be merged with one another to unify the changes.  Merges come in several flavors, but we'll focus on the _merge made by recursive_ pattern in today's class.
 
 {% capture svg_path %}../assets/diagrams/merge-recursive.svg{% endcapture %}
 {% include svg %}
@@ -254,7 +254,7 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 
 
 ### GitHub Pages
-GitHub Pages are an easy-to-use static site hosting service based on the Jekyll blogging engine. It provides:
+GitHub Pages are an easy-to-use static site hosting service. It can also be used with the Jekyll blogging engine to provide a more advanced blogging platform. It provides:
 
 * Custom web pages for your GitHub project
 * A custom web page for your GitHub account
@@ -361,14 +361,14 @@ A plaintext format for writing prose and documentation. In addition to the [basi
 ### Special Filenames
 There are several filenames that invoke a special behavior on the GitHub platform. These include:
 
-* `Contributing.md`
-* `License.md`
+* `CONTRIBUTING.md`
+* `LICENSE`
   * During repository creation
   * `+` a file with existing repository (special dropdown)
 * `.gitignore`
   * During repository creation
   * `+` a file with existing repository (special dropdown)
-* `Readme.md`
+* `README.md`
   * In root
   * In subfolders
 
