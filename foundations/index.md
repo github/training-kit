@@ -361,7 +361,7 @@ A plaintext format for writing prose and documentation. In addition to the [basi
 ### Special Filenames
 There are several filenames that invoke a special behavior on the GitHub platform. These include:
 
-* `Contributing.md`
+* `CONTRIBUTING.md`
 * `License.md`
   * During repository creation
   * `+` a file with existing repository (special dropdown)
