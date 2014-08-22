@@ -162,7 +162,7 @@ A commit is a transactionally grouped set of changes, described by an brief mess
 
 #### Local repository definitions
 * Commits
-  * History marker for file(s), change(s)
+  * History marker for file(s) and change(s)
   * Record of author, time, and message
 * Branches
   * Container for grouped commits
