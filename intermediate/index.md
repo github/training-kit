@@ -196,7 +196,7 @@ The simplest invocation of `diff` is the most common. It displays the difference
 $ git diff
 ```
 
-Git also creates a distinction between what is modified and unselected and what has been staged for commit. A well-named `diff` option switch allows for the inspection of each of these two groups of changes.
+Git also creates a distinction between what is modified and unselected and what has been staged for commit. A single `diff` option switch allows for the inspection of each of these two groups of changes.
 
 ```shell
 $ git diff --staged
