@@ -362,13 +362,13 @@ A plaintext format for writing prose and documentation. In addition to the [basi
 There are several filenames that invoke a special behavior on the GitHub platform. These include:
 
 * `CONTRIBUTING.md`
-* `License`
+* `LICENSE`
   * During repository creation
   * `+` a file with existing repository (special dropdown)
 * `.gitignore`
   * During repository creation
   * `+` a file with existing repository (special dropdown)
-* `Readme.md`
+* `README.md`
   * In root
   * In subfolders
 
