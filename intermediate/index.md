@@ -227,7 +227,7 @@ Git can look back at the history of each commit to see when a change took place,
 $ git log
 ```
 
-Some simple option flag additions to the `log` invocation can make the output more information-dense.
+Some simple option flag additions to the `log` command can make the output more concise.
 
 ```shell
 # Simple commit summaries
