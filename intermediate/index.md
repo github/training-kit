@@ -140,7 +140,7 @@ $ git init
 # ...start coding
 ```
 
-Acquire a project:
+Acquire a project locally:
 
 ```shell
 $ git clone [repository-url]
