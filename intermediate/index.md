@@ -221,7 +221,7 @@ $ git diff [file-path]
 
 
 ### Review historical changes
-Lorem ipsum dolor sit amet, vitae risus eu. Risus pede. Etiam facilisi quis, iaculis cum sed, eu mauris. Magna turpis. Etiam sed voluptatem.
+Git can look back at the history of each commit to see when a change took place, who made the change, or what the change contained.
 
 ```shell
 $ git log
