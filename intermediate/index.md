@@ -202,7 +202,7 @@ Git also creates a distinction between what is modified and unselected and what 
 $ git diff --staged
 ```
 
-The default line-level difference indicators are sometimes insufficient for prose and small variable-name changes. An option instructs Git to perform and highlight intra-line comparisons.
+The default line-level difference indicators are sometimes insufficient for prose and small variable-name changes. There is, however, an option to instruct Git to perform and highlight intra-line comparisons.
 
 ```shell
 # Highlight word changes on lines
