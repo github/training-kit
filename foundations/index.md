@@ -254,7 +254,7 @@ We've crafted a visual [Guide to Forking](https://guides.github.com/activities/f
 
 
 ### GitHub Pages
-GitHub Pages are an easy-to-use static site hosting service based on the Jekyll blogging engine. It provides:
+GitHub Pages are an easy-to-use static site hosting service. It can also be used with the Jekyll blogging engine to provide a more advanced blogging platform. It provides:
 
 * Custom web pages for your GitHub project
 * A custom web page for your GitHub account
