@@ -193,7 +193,7 @@ A branch is an divergent path in the history of the code base. It may contain an
 <iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ### Merges
-Merging is the important step of integrating one branch with another.  In Git, since work can happen while disconnected from the network, frequently even the same-named branches might need to be merged with one another to unify the changes.  Merges come in several flavors, but we'll focus on the _merge made by recursive_ pattern in today's class.
+Merging is the important step of integrating one branch with another.  In Git, because work can happen while disconnected from the network, frequently even the same-named branches might need to be merged with one another to unify the changes.  Merges come in several flavors, but we'll focus on the _merge made by recursive_ pattern in today's class.
 
 {% capture svg_path %}../assets/diagrams/merge-recursive.svg{% endcapture %}
 {% include svg %}
