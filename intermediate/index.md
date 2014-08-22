@@ -190,13 +190,13 @@ Git advocates precision in each commit's contents and commit message.  This is f
 {% capture svg_path %}../assets/diagrams/diff.svg{% endcapture %}
 {% include svg %}
 
-The simplest invocation of `diff` is the most common.  It displays
+The simplest invocation of `diff` is the most common. It displays the difference of the files that have been modified.
 
 ```shell
 $ git diff
 ```
 
-Git creates a distinction between what is modified and unselected and what has been staged for commit. A well-named `diff` option switch allows for the inspection of each of these two groups of changes.
+Git also creates a distinction between what is modified and unselected and what has been staged for commit. A well-named `diff` option switch allows for the inspection of each of these two groups of changes.
 
 ```shell
 $ git diff --staged
