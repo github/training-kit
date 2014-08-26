@@ -4,6 +4,41 @@ title: GitHub Advanced
 description: Mastering Git and GitHub
 ---
 
+This curriculum will be your companion to the GitHub Advanced class taught by the GitHub Training Team and other educational groups. In this course, you'll explore strategies for branch and history rewriting, temporary storing and recovery techniques, and Git technology mechanics for faster problem solving.
+
+### Understanding Git
+
+* Directed acyclic graph
+* Tree object
+* Blob object
+* SHA1
+
+{% capture svg_path %}../assets/diagrams/commit-data-structure.svg{% endcapture %}
+{% include svg %}
+
+* Linked list of commits
+* First commit has `nil` parent
+* Integrity checking with `git gc`
+
+{% capture svg_path %}../assets/diagrams/commit-dag.svg{% endcapture %}
+{% include svg %}
+
+#### Treeish & commitish
+
+* Simple ways of describing history points
+* Easier-to-describe and understand numerically
+* Application of patterns works on [GitHub](https://help.github.com/articles/comparing-commits-across-time)
+
+```
+HEAD
+HEAD^^
+HEAD~2
+HEAD@{one.day.ago}
+HEAD@{today}
+```
+
+
+
 ### Common branching strategies
 
 #### Summary
@@ -107,35 +142,17 @@ $ git checkout -b [branch] [base]
 ```bash
 # Stage by patch
 $ git add -p [file]
+
+# Unstage by patch
+git reset reset HEAD -p [file]
 ```
 
+### Branch best practices
 
-### Understanding Git
-{% capture svg_path %}../assets/diagrams/commit-data-structure.svg{% endcapture %}
-{% include svg %}
-
-* Directed acyclic graph
-* Tree object
-* Blob object
-* SHA1
-
-{% capture svg_path %}../assets/diagrams/commit-dag.svg{% endcapture %}
-{% include svg %}
-
-* Linked list of commits
-* First commit has `nil` parent
-* Integrity checking with `git gc`
-
-
-### Best Practices
-* Collapsing commits during merge
+* Pros/cons of collapsing commits during merge
+* Relation to branching strategies and deliverable expectations
 * Checking merge state
 * Cleaning up branches
-
-#### Squash merging
-* Collapsing commits during merge
-* Pros/cons (loss of granularity)
-* Relation to branching strategies and deliverable expectations
 
 ```shell
 $ git merge --squash [branch]
@@ -249,16 +266,13 @@ $ git stash -p
 ### Incorporating History
 
 * Reusing small pieces of code with `cherry-pick`
-    * Why use `cherry-pick` instead of `merge`?
-    * What happens when you `cherry-pick`?
-    * Maintaining `author` and `committer` fields
-    * Tracing any cherry-picks with `-x` commit message metadata
-    * `-x` metadata hyperlinked on GitHub
-    * `$ git cherry` to view absent commits
-* Rebase interactive
-    * Can include cherry-pick
-    * Must remember to continue the rebase
-    * Alters history
+* Why use `cherry-pick` instead of `merge`?
+* What happens when you `cherry-pick`?
+* Maintaining `author` and `committer` fields
+* Tracing any cherry-picks with `-x` commit message metadata
+* `-x` metadata hyperlinked on GitHub
+* `$ git cherry` to view absent commits
+* Can include cherry-pick during rebase interactive
 
 ```shell
 # Generate new commit on current branch
@@ -325,7 +339,7 @@ $ git add [conflicting-file]
 $ git rebase --continue
 ```
 
-### Reordering History
+#### Reordering History
 
 * Reorder commits
 * Rewrite history entirely
@@ -352,7 +366,7 @@ $ git rebase -i --autosquash [ref]
 ```
 
 
-### Fixing Branches
+#### Fixing Branches
 * This mode of rebase change where branch history begins
 * Moving blocks of history around
 
@@ -369,7 +383,7 @@ $ git rebase --onto <newbase> <upstream> <HEAD|branch>
 
 ### Cutting Releases
 
-### Summary
+#### Summary
 * Why create a tag through the web UI?
 * Not a branch HEAD. Points to a specific commit.
 * Attaching binaries to releases (Web UI and API)
@@ -407,7 +421,7 @@ $ git push origin :[tag-name-to-delete]
 ```
 
 
-### Reviewing synchronizing
+### Reviewing & synchronizing
 
 #### Reviewing remote branches
 * PRs to horizontal contributors
@@ -455,21 +469,7 @@ $ git checkout FETCH_HEAD
 $ git branch <newbranchname> FETCH_HEAD
 ```
 
-
-### Customizing Interaction
-* Specification for retrieval and pushing
-* Implied on fetch, pull, and push
-* Altered by option switches like `--tags`
-* Stored in `.git/config`
-* Ability to retrieve Pull Request branches
-
-```shell
-$ git fetch [repo-url] [source]:[destination]
-$ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
-```
-
-
-### Maintaining Remotes
+#### Maintaining, customizing remotes
 * Remove non-matching _local_ remote branches
 * Remove non-matching remote upstream branches
 * Remove only remote upstream branch
@@ -483,6 +483,17 @@ $ git fetch --prune
 $ git push origin :<branch-name>
 ```
 
+#### Customizing Interaction
+* Specification for retrieval and pushing
+* Implied on fetch, pull, and push
+* Altered by option switches like `--tags`
+* Stored in `.git/config`
+* Ability to retrieve Pull Request branches
+
+```shell
+$ git fetch [repo-url] [source]:[destination]
+$ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
+```
 
 ### Aggregating repositories
 
@@ -507,8 +518,7 @@ or
 $ git submodule update --init --recursive
 ```
 
-
-### Incorporating dependencies with subtree
+#### Dependencies with subtree
 
 * Alternative to submodule
 * All files available advantage
@@ -549,10 +559,22 @@ $ git merge --squash
 * Hub and GH merging into one project
 
 ```shell
+# Create a new public repository on your GitHub account
 $ gh create
+
+# Create a new private repository on your GitHub account
+$ gh create -p
+
+# Open a Pull Request for the current branch
 $ gh pull-request
+
+# Create a fork of the cloned repository on your GitHub Account
 $ gh fork
+
+# Launch a web browser with the branch comparison view
 $ gh compare
+
+# Launch a web browser to the repository home page
 $ gh browse
 ```
 
@@ -644,20 +666,7 @@ $ git clean -fd
 $ git clean -fx
 ```
 
-### Treeish & commitish
-
-#### Summary
-* Simple ways of describing history points
-* Easier-to-describe and understand numerically
-
-#### Details
-```
-HEAD
-HEAD^^
-HEAD~2
-```
-
-### Diff Tool
+### Diff & merge tool
 
 #### Summary
 * [P4Merge](http://www.perforce.com/downloads/Perforce/20-User)
@@ -688,12 +697,6 @@ A sample `.gitconfig` file:
     prompt = false
 ```
 
-### Merge Tool
-
-#### Summary
-* Same as difftool, but 3-way comparison
-
-#### Details
 
 Mergetool execution:
 
