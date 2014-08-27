@@ -1,5 +1,7 @@
 /* Imports */
 @import "variables.scss";
+@import "octicons.css";
+@import "footer.scss";
 
 @mixin octicon-link($char){
   font: normal normal 1em octicons;
@@ -12,49 +14,42 @@
   }
 }
 
+html, body{
+  height: 100%;
+  background: #f2fcff;
+  font-size: 16px;
+}
+
 .nav-list>li>a{
   font-size: 8pt;
 }
 
 .curriculum{
-  font-size: 18px;
+  height: 100%;
+  width: 100%;
 
-  h3 {
-      margin-top: 3em;
-      font-size: 240%;
-      line-height: 170%;
-      font-weight: 500;
-      border-bottom: solid 1px #eeeeee;
-      color: $color-dark;
-
-      &:first-child{
-        margin-top: 0;
-      }
+  h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
+    padding: 0 25%;
+    margin: 0;
   }
 
-  h5{
-    font-size: 130%;
-    margin: 2em 0 0;
+  .slide{
+    min-height: 100%;
+    width: 100%;
+    background: #ffffff;
+    display: table;
+    margin: 0 0 3em 0;
 
-    &:before{
-      font: normal normal 16px octicons;
-      color: $mono-bright;
-      content: "\f089";
-      display: inline-block;
-      margin-right: 1em;
-      margin-left: -42px;
-      border-radius: 50%;
-      background: $mono-light;
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
+    h1,h2,h3,h4,h5,h6,p,ul,pre{
+      padding: 0;
+      margin: 0;
     }
-  }
 
-  p{
-    line-height: 140%;
-    margin-bottom: 1.8em;
+    .alignment{
+      padding: 0 20%;
+      display: table-cell;
+      vertical-align: middle;
+    }
   }
 
   /* General external link */
@@ -121,16 +116,14 @@
 }
 
 #toc-wrapper{
-  float: right;
-  padding: 15px 0 0 0;
+  position: fixed;
+  right: 0;
+  width: 15%;
+  z-index: 10000;
+  // padding: 15px 0 0 0;
 }
 
 #toc{
-  width: 200px;
-  border-radius: 3px;
-
-  font-size: 12px;
-
   .active{
     font-weight: 700;
 
@@ -145,7 +138,6 @@
 }
 
 .affix{
-  margin-top: -165px;
 }
 
 .affix-bottom{

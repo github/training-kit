@@ -1,5 +1,5 @@
 ---
-layout: curriculum
+layout: curriculum-beta
 title: GitHub Foundations
 description: Discovering the GitHub collaboration platform
 ---
@@ -245,4 +245,3 @@ A branch is an divergent path in the history of the code base. It may contain an
 
 #### Branching video
 <iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-

@@ -26,7 +26,16 @@ $(function(){
 
 			item = $('<li><a href="#' + headingSep + '">' + headings[h].innerHTML + '</a></li>');
 			toc.append(item);
-			headings[h].setAttribute("id", headingSep);
+			// console.log(headings[h].parentElement);
+
+			// var hiddenTitle = document.createElement("h3");
+			// hiddenTitle.setAttribute("id", headingSep);
+			// console.log(hiddenTitle);
+
+			// $(headings[h].parentElement).prepend(hiddenTitle);
+
+			headings[h].parentElement.setAttribute("id", headingSep);
+			
 			$('.curriculum').scrollspy({ target: '#toc' });
 		}
 	}
