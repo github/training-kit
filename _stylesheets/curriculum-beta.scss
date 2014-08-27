@@ -16,7 +16,7 @@
 
 html, body{
   height: 100%;
-  background: #f2fcff;
+  background: #f4f4f4;
   font-size: 16px;
 }
 
@@ -30,7 +30,7 @@ html, body{
 
   h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
     font-weight: normal;
-    padding: 0 25%;
+    padding: 0 30%;
   }
 
   h3{
@@ -65,8 +65,14 @@ html, body{
     display: table;
     text-align: center;
 
+    h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
+      font-weight: normal;
+      padding: 0 0;
+    }
+
     .alignment{
-      margin: 0 20%;
+      // margin: 0 20%;
+      padding: 0 20%;
       display: table-cell;
       vertical-align: middle;
     }
@@ -108,12 +114,16 @@ html, body{
       font: normal normal 20px octicons;
     }
   }
+  //
+  // pre{
+  //   margin: 0 30%;
+  // }
 
-  table, pre{
-    background: $mono-light;
-    padding: 20px;
-    display: block;
-  }
+  // table, pre{
+  //   background: $mono-light;
+  //   padding: 20px;
+  //   display: block;
+  // }
 
   pre{
     padding: 10px auto;
