@@ -14,8 +14,13 @@ git version 1.8.2
 ```
 {% endcapture %}
 {% include slide-section %}
+{% capture slide %}
+{% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
+{% include svg %}
+{% endcapture %}
+{% include slide-section %}
 
-#### Details & Resources
+
 #### Git key vocabulary
 Three important words that are key to learning Git are:
 
@@ -23,13 +28,7 @@ Three important words that are key to learning Git are:
 * Commit
 * Branch
 
-
-
 __Git is an open source distributed__ version control system invented by Linus Torvalds in 2005.  It is used to version the Linux kernel and is shown to be, by some research, the most popular modern version control system.
-
-Git is the open source, command line tool that forms a part of the workflows we'll cover in this course.  It has been called the successor to CVS and Subversion by many users, and maintains some similarity in behavior to these historical open source version control tools.
-
-Maintaining a current version of Git is important. While you'll accurately hear that Git is generously backwards-compatible, the latest versions offer error message enhancements, performance tunings, and usability features that make using Git ever more quick and pleasant.
 
 #### Git key concepts
 Three important concepts of this version control system are:
@@ -37,9 +36,6 @@ Three important concepts of this version control system are:
 * Distributed version control is the concept of full copies of the repository on every contributing machine
 * Git is the file and information tracker
 * GitHub is the collaboration platform
-
-{% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
-{% include svg %}
 
 #### Deeper study
 * [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
@@ -145,12 +141,9 @@ Repositories can be created in numerous ways, including:
 * Clone via SSH or HTTPS URL
 {% endcapture %}
 {% include slide-section %}
-
 {% capture slide %}
-
 {% capture svg_path %}../assets/diagrams/what-is-a-commit.svg{% endcapture %}
 {% include svg %}
-
 {% endcapture %}
 {% include slide-section %}
 
