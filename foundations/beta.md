@@ -15,7 +15,7 @@ git version 1.8.2
 {% endcapture %}
 {% include slide-section %}
 {% capture slide %}
-{% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
+![svg](../assets/diagrams/distributed-version-control.svg)
 {% include svg %}
 {% endcapture %}
 {% include slide-section %}
@@ -114,7 +114,7 @@ Repositories can be created in numerous ways, including:
 * With a GitHub GUI
 * With `git init` at the command line
 
-{% capture svg_path %}../assets/diagrams/repo-clone.svg{% endcapture %}
+![svg](../assets/diagrams/repo-clone.svg)
 {% include svg %}
 
 #### Repository creation concepts
@@ -142,7 +142,7 @@ Repositories can be created in numerous ways, including:
 {% endcapture %}
 {% include slide-section %}
 {% capture slide %}
-{% capture svg_path %}../assets/diagrams/what-is-a-commit.svg{% endcapture %}
+![svg](../assets/diagrams/what-is-a-commit.svg)
 {% include svg %}
 {% endcapture %}
 {% include slide-section %}
@@ -205,7 +205,7 @@ Git enables repositories to be created both on GitHub, or locally on a developer
 {% capture slide %}
 ### Syncing history
 
-{% capture svg_path %}../assets/diagrams/sync.svg{% endcapture %}
+![svg](../assets/diagrams/sync.svg)
 {% include svg %}
 {% endcapture %}
 {% include slide-section %}
