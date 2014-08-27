@@ -2,6 +2,11 @@ $(function(){
 
 	buildToc();
 
+	$(document).scrollsnap({
+	  snaps: 'section',
+	  proximity: 250
+	});
+
 	function buildToc(){
 		var headings = $("h3"),
 				toc = $("#toc-list");
