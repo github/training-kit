@@ -28,9 +28,24 @@ html, body{
   height: 100%;
   width: 100%;
 
-  h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
+  & > h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
     padding: 0 25%;
     margin: 0;
+  }
+
+  h4{
+    line-height: 3em;
+  }
+
+  p{
+    line-height: 1.75em;
+  }
+  ul{
+    display: inline-block;
+    text-align: left;
+  }
+  svg,iframe{
+    margin: 0 auto;
   }
 
   .slide{
@@ -38,7 +53,7 @@ html, body{
     width: 100%;
     background: #ffffff;
     display: table;
-    margin: 0 0 3em 0;
+    text-align: center;
 
     h1,h2,h3,h4,h5,h6,p,ul,pre{
       padding: 0;

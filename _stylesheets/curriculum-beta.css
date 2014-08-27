@@ -62,15 +62,24 @@ html, body {
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
   /* YouTube Links */ }
-  .curriculum h1, .curriculum h2, .curriculum h3, .curriculum h4, .curriculum h5, .curriculum h6, .curriculum p, .curriculum ul, .curriculum pre, .curriculum svg {
+  .curriculum > h1, .curriculum h2, .curriculum h3, .curriculum h4, .curriculum h5, .curriculum h6, .curriculum p, .curriculum ul, .curriculum pre, .curriculum svg {
     padding: 0 25%;
     margin: 0; }
+  .curriculum h4 {
+    line-height: 3em; }
+  .curriculum p {
+    line-height: 1.75em; }
+  .curriculum ul {
+    display: inline-block;
+    text-align: left; }
+  .curriculum svg, .curriculum iframe {
+    margin: 0 auto; }
   .curriculum .slide {
     min-height: 100%;
     width: 100%;
     background: #ffffff;
     display: table;
-    margin: 0 0 3em 0; }
+    text-align: center; }
     .curriculum .slide h1, .curriculum .slide h2, .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5, .curriculum .slide h6, .curriculum .slide p, .curriculum .slide ul, .curriculum .slide pre {
       padding: 0;
       margin: 0; }
