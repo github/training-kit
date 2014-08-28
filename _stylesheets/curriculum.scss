@@ -1,7 +1,5 @@
 /* Imports */
 @import "variables.scss";
-@import "octicons.css";
-@import "footer.scss";
 
 @mixin octicon-link($char){
   font: normal normal 1em octicons;
@@ -14,68 +12,49 @@
   }
 }
 
-html, body{
-  height: 100%;
-  background: #f4f4f4;
-  font-size: 16px;
-}
-
 .nav-list>li>a{
   font-size: 8pt;
 }
 
 .curriculum{
-  height: 100%;
-  width: 100%;
+  font-size: 18px;
 
-  h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
-    font-weight: normal;
-    padding: 0 30%;
+  h3 {
+      margin-top: 3em;
+      font-size: 240%;
+      line-height: 170%;
+      font-weight: 500;
+      border-bottom: solid 1px #eeeeee;
+      color: $color-dark;
+
+      &:first-child{
+        margin-top: 0;
+      }
   }
 
-  h3{
-    font-size: 400%;
-    line-height: 1.25em;
-    margin-bottom: .5em;
-  }
+  h5{
+    font-size: 130%;
+    margin: 2em 0 0;
 
-  h4{
-    font-size: 250%;
-    margin-bottom: .5em;
+    &:before{
+      font: normal normal 16px octicons;
+      color: $mono-bright;
+      content: "\f089";
+      display: inline-block;
+      margin-right: 1em;
+      margin-left: -42px;
+      border-radius: 50%;
+      background: $mono-light;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+    }
   }
 
   p{
-    line-height: 1.75em;
-    margin: 2em 0;
-  }
-  ul{
-    display: inline-block;
-    text-align: left;
-  }
-  .diagram{
-    width: 60%;
-    /*margin: 0 auto;*/
-    text-align: center;
-  }
-
-  .slide{
-    min-height: 100%;
-    width: 100%;
-    background: #ffffff;
-    display: table;
-    text-align: center;
-
-    h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
-      font-weight: normal;
-      padding: 0 0;
-    }
-
-    .alignment{
-      // margin: 0 20%;
-      padding: 0 20%;
-      display: table-cell;
-      vertical-align: middle;
-    }
+    line-height: 140%;
+    margin-bottom: 1.8em;
   }
 
   /* General external link */
@@ -114,16 +93,12 @@ html, body{
       font: normal normal 20px octicons;
     }
   }
-  //
-  // pre{
-  //   margin: 0 30%;
-  // }
 
-  // table, pre{
-  //   background: $mono-light;
-  //   padding: 20px;
-  //   display: block;
-  // }
+  table, pre{
+    background: $mono-light;
+    padding: 20px;
+    display: block;
+  }
 
   pre{
     padding: 10px auto;
@@ -146,14 +121,16 @@ html, body{
 }
 
 #toc-wrapper{
-  position: fixed;
-  right: 0;
-  width: 15%;
-  z-index: 10000;
-  // padding: 15px 0 0 0;
+  float: right;
+  padding: 15px 0 0 0;
 }
 
 #toc{
+  width: 200px;
+  border-radius: 3px;
+
+  font-size: 12px;
+
   .active{
     font-weight: 700;
 
@@ -168,6 +145,7 @@ html, body{
 }
 
 .affix{
+  margin-top: -165px;
 }
 
 .affix-bottom{
