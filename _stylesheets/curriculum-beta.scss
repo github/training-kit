@@ -3,6 +3,7 @@
 @import "octicons.css";
 @import "footer.scss";
 
+$mono-dark: #454545;
 @mixin octicon-link($char){
   font: normal normal 1em octicons;
   text-decoration: none;
@@ -53,6 +54,7 @@ html, body{
   h4{
     font-size: 250%;
     margin-bottom: .5em;
+    color: $mono-dark;
   }
 
   p{
