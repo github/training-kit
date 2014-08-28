@@ -3,8 +3,17 @@ layout: curriculum
 title: GitHub Foundations
 description: Discovering the GitHub collaboration platform
 ---
-{% capture slide %}
+ 
+
+This curriculum will be your companion to the GitHub Foundations class taught by the GitHub Training Team and other educational groups. In this course, you'll learn basic collaboration skills towards a productive use of Git and GitHub in your open source work and daily job assignments.
+
 ### The Git VCS
+__Git is an open source distributed__ version control system invented by Linus Torvalds in 2005.  It is used to version the Linux kernel and is shown to be, by some research, the most popular modern version control system.
+
+Git is the open source, command line tool that forms a part of the workflows we'll cover in this course.  It has been called the successor to CVS and Subversion by many users, and maintains some similarity in behavior to these historical open source version control tools.
+
+Maintaining a current version of Git is important. While you'll accurately hear that Git is generously backwards-compatible, the latest versions offer error message enhancements, performance tunings, and usability features that make using Git ever more quick and pleasant.
+
 Verifying that Git is installed and operational can be done by requesting Git to display its current version using this command:
 
 ```shell
@@ -12,24 +21,13 @@ $ git --version
 
 git version 1.8.2
 ```
-{% endcapture %}
-{% include slide-section %}
 
-#### Details & Resources
 #### Git key vocabulary
 Three important words that are key to learning Git are:
 
 * Repository
 * Commit
 * Branch
-
-
-
-__Git is an open source distributed__ version control system invented by Linus Torvalds in 2005.  It is used to version the Linux kernel and is shown to be, by some research, the most popular modern version control system.
-
-Git is the open source, command line tool that forms a part of the workflows we'll cover in this course.  It has been called the successor to CVS and Subversion by many users, and maintains some similarity in behavior to these historical open source version control tools.
-
-Maintaining a current version of Git is important. While you'll accurately hear that Git is generously backwards-compatible, the latest versions offer error message enhancements, performance tunings, and usability features that make using Git ever more quick and pleasant.
 
 #### Git key concepts
 Three important concepts of this version control system are:
@@ -57,23 +55,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 #### What is Git?
 <iframe src="//player.vimeo.com/video/41381741" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-
-{% capture slide %}
 ### The GitHub Platform
-
-The six core concepts in the GitHub ecosystem are:
-
-* **Repository**: a location to store related code and files
-* **Branch**: a named variation on the code or enhancement-in-progress
-* **Pull Request**: discussion associated with a branch
-* **Issues**: an integrated bug and enhancement tracker
-* **Organizations**: groups of repositories and team members
-* **Teams**: named sets of users that grant access levels and group by talent, focus, and reporting
-{% endcapture %}
-{% include slide-section %}
-
-#### Details & Resources
-
 GitHub accounts are free. Sign up for one at [github.com/join](https://github.com/join).
 
 GitHub is the repository hosting, collaboration, deployment, and distribution platform for both open source and private software projects.  It facilitates discussing changes-in-progress through the concepts of Issues and Pull Requests and provides a web user interface to much of Git. The web flow made possible by GitHub brings a much wider range of contributors, including documentation specialists, designers, and ops engineers into the flow of contributing to your application's life cycle.
@@ -83,6 +65,16 @@ GitHub accounts are free for an unlimited quantity of public repositories. Only 
 Sign up for a free GitHub account at https://github.com/join.
 
 Git can be installed as a unified GitHub GUI and command line or merely as a stand-alone command line interface.
+
+#### GitHub core concepts
+The six core concepts in the GitHub ecosystem are:
+
+* **Repository**: a location to store related code and files
+* **Branch**: a named variation on the code or enhancement-in-progress
+* **Pull Request**: discussion associated with a branch
+* **Issues**: an integrated bug and enhancement tracker
+* **Organizations**: groups of repositories and team members
+* **Teams**: named sets of users that grant access levels and group by talent, focus, and reporting
 
 The GitHub collaboration platform facilitates:
 
@@ -106,12 +98,7 @@ The GitHub collaboration platform facilitates:
 * [How to sign up for GitHub](https://www.youtube.com/watch?v=ezxRcdJ8glM&list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx)
 
 
-{% capture slide %}
 ### Repository creation
-{% endcapture %}
-{% include slide-section %}
-
-
 Repositories can be created in numerous ways, including:
 
 * With the GitHub web user interface
@@ -136,31 +123,15 @@ Repositories can be created in numerous ways, including:
 <iframe src="//player.vimeo.com/video/88313612" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-
-{% capture slide %}
 ### Acquiring repos
+In many cases, working with a code project means retriving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.  Some of the most common sources and means of cloning include:
 
 * Clone from web (Clone in Desktop button)
 * Clone via personal repo list in GitHub Desktop
 * Clone via SSH or HTTPS URL
-{% endcapture %}
-{% include slide-section %}
 
-{% capture slide %}
-
-{% capture svg_path %}../assets/diagrams/what-is-a-commit.svg{% endcapture %}
-{% include svg %}
-
-{% endcapture %}
-{% include slide-section %}
-
-#### Details & Resources
-
-In many cases, working with a code project means retriving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.  Some of the most common sources and means of cloning include:
-
-
-{% capture slide %}
 ### The Web flow
+The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still having the benefit of syntax highlighting and pre-merge code reviews and discussions.
 
 The GitHub Web Flow allows you to:
 
@@ -170,29 +141,19 @@ The GitHub Web Flow allows you to:
 * Edit content
 * Change paths
 * Open Pull Requests
-{% endcapture %}
-{% include slide-section %}
-
-
-The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still having the benefit of syntax highlighting and pre-merge code reviews and discussions.
-
-
 
 #### Drive by contributions
 <iframe src="//player.vimeo.com/video/88472114" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% capture slide %}
 ### Local repositories
-
-A commit is a transactionally grouped set of changes, described by an brief message explaining the "why" of the attached changes.
-{% endcapture %}
-{% include slide-section %}
-
-
 Git enables repositories to be created both on GitHub, or locally on a developer's PC. A repository created locally can be synced to a network destination at a later time, preserving all the timestamps and comments in the local commits during the synchronization.
 
 ![](../assets/diagrams/distributed-version-control.svg)
 
+A commit is a transactionally grouped set of changes, described by an brief message explaining the "why" of the attached changes.
+
+{% capture svg_path %}../assets/diagrams/what-is-a-commit.svg{% endcapture %}
+{% include svg %}
 
 #### Local repository benefits
 * Initialize repositories while disconnected from network
@@ -208,18 +169,11 @@ Git enables repositories to be created both on GitHub, or locally on a developer
   * Simpler means to integrate change
   * Cleaner code review possibilities
 
-
-{% capture slide %}
 ### Syncing history
+Since Git facilitates making and saving changes without a network connection, syncing changes with an upstream server is a frequent operation once connected back to a network.  Git accomplishes the syncing through the `pull` and `push` commands.
 
 {% capture svg_path %}../assets/diagrams/sync.svg{% endcapture %}
 {% include svg %}
-{% endcapture %}
-{% include slide-section %}
-
-Since Git facilitates making and saving changes without a network connection, syncing changes with an upstream server is a frequent operation once connected back to a network.  Git accomplishes the syncing through the `pull` and `push` commands.
-
-
 
 A repository must have fully incorporated all upstream changes before it can successfully push changes out. This pattern encourages breakages to happen at the leaf nodes of the repository network, thus reducing stop-work merge activity and aiding those tasks being performed asynchronously and potentially even offline.
 
@@ -230,15 +184,7 @@ $ git pull
 $ git push origin [master|branch]
 ```
 
-
-{% capture slide %}
 ### Branches
-
-
-{% endcapture %}
-{% include slide-section %}
-
-
 A branch is an divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
 
 ![](../assets/diagrams/what-is-a-branch.svg)
@@ -246,3 +192,200 @@ A branch is an divergent path in the history of the code base. It may contain an
 #### Branching video
 <iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+### Merges
+Merging is the important step of integrating one branch with another.  In Git, because work can happen while disconnected from the network, frequently even the same-named branches might need to be merged with one another to unify the changes.  Merges come in several flavors, but we'll focus on the _merge made by recursive_ pattern in today's class.
+
+{% capture svg_path %}../assets/diagrams/merge-recursive.svg{% endcapture %}
+{% include svg %}
+
+Merges can be accomplished through:
+* Through a Pull Request
+* At the command line
+* With a drag-and-drop GUI such as GitHub Desktop
+
+### Collaboration
+Collaboration happens on GitHub in one of two primary workflows, based on whether the change is coming from someone new to the project, or from a frequent trusted contributor.
+
+#### Forking
+The Forking workflow allows for contributions from any read-authorized team member by facilitating the creation of a safe copy of the repository and offering changes back to a core maintainer upon submission of a Pull Request.
+
+We've crafted a visual [Guide to Forking](https://guides.github.com/activities/forking/) that explains, in-depth:
+
+* Reason for forks
+* What forking encourages
+* How forking insulates against unwanted changes
+* Keeping forks up to date
+* Concepts of an _Original_ (base) and _Fork_ (personal copy) repositories
+
+{% capture svg_path %}../assets/diagrams/fork-structure.svg{% endcapture %}
+{% include svg %}
+
+#### The GitHub Flow
+ The GitHub Flow workflow prescribes collaboration amongst trusted colleagues within the same repository, starting with the creation of a branch, and similar to the Forking workflow, concluding with a Pull Request and associated code review.
+
+* Branch
+* Commit
+* Compare
+* Pull Request
+* Discuss
+* Animated GIF
+* Line by line code review
+* Get approval :+1:
+* Merge Pull Request
+* Delete branch
+
+{% capture svg_path %}../assets/diagrams/direct-contribution.svg{% endcapture %}
+{% include svg %}
+
+#### Resources
+* [Guide to _Understanding The GitHub Flow_](https://guides.github.com/introduction/flow/)
+* [_Guide to Forking_](https://guides.github.com/activities/forking/)
+* [GitHub Teams and Organizations video](http://vimeo.com/35539203)
+
+##### Lab Exercise 10a
+* Begin the process of creating a new repository from the GitHub web site user interface
+* When prompted, seed the new repository with a `README`, `.gitignore`, and `license.md` file
+* Create and select a new branch named _my-home-town_
+* Edit the README file through web interface, add your home town in H1 styling, and commit the change
+* Navigate back to the root of the project and click on the _Create pull request_ button
+* @mention a fellow student for a code review in the now-open Pull Request, asking for their :+1: to :shipit:
+* When you have their blessing to ship the change, merge it in from the Pull Request page.
+* Confirm the change is showing up in the rendered README at the homepage to the project.
+
+
+### GitHub Pages
+GitHub Pages are an easy-to-use static site hosting service. It can also be used with the Jekyll blogging engine to provide a more advanced blogging platform. It provides:
+
+* Custom web pages for your GitHub project
+* A custom web page for your GitHub account
+* CDN-enabled fast delivery of static web content
+
+#### Example GitHub Pages
+* [NetFlix OSS](http://netflix.github.io)
+* [Twitter OSS](http://twitter.github.io)
+* [Facebook OSS](http://facebook.github.io)
+
+#### Further reading
+* [GitHub Pages](http://pages.github.com)
+
+##### Lab Exercise 11a
+* Create a new empty repository named `<yourgithubusername>.github.io`
+* Click on the _Settings icon_
+* From the _Options_ group, click on _Automatic page generator_ and follow the steps to create and style your new site
+* Wait 10 minutes
+* Confirm your new web site is up and running at `<yourgithubusername>.github.io`
+
+### GitHub Wikis
+GitHub Wikis are frequently used as the rich documentation for a project hosted on GitHub.  They offer:
+
+* Fast documentation authoring
+* Git repository access, for dedicated documentation clones and commits
+* High visibility to repository guests
+
+Enabling the Wiki feature:
+
+![Enabling the Wiki feature](../assets/screenshots/wikis-enabling.jpg)
+
+Navigating to the project's Wiki:
+
+![Navigating to the project's Wiki](../assets/screenshots/wikis-nav.jpg)
+
+Editing a Wiki page:
+
+![Editing a Wiki page](../assets/screenshots/wikis-editing.jpg)
+
+
+### Project Management
+GitHub is a platform that offers features not only for developers, but also for project managers and technical leads. These features include:
+
+* Issues
+* [GitHub Flavored Markdown Task Lists](https://github.com/blog/1825-task-lists-in-all-markdown-documents)
+* Milestones
+* Network graph
+* Pulse
+* Tags and Releases
+* Collaborator access control
+* Organization repository grouping
+* Team access control
+* Team @mentions
+
+##### Lab Exercise 13a
+* Find an open source project via the [Explore page](https://github.com/explore)
+* Review your chosen project's Pulse page and identify this week and this year's most prolific contributor
+* Visit the project's Releases page and download the latest binary
+
+
+### GitHub Visualizations
+GitHub enhances a traditional Git experience with visualizations typically thought of as the realm of desktop applications. Some of the visualizations we can look at today include:
+
+* Comparing/Diff-ing
+  * Code
+  * Prose
+  * Images
+  * Maps
+  * Spreadsheets
+  * 3D models
+* Branch view
+* Branch ahead/behind positions
+* Network graph
+* Activity graph
+
+#### Image Diff
+Image diffing is typically thought of as a desktop-oriented feature. However, GitHub aims to be a web application that performs beyond desktop apps, and provides a rich 2-up, swipe, and onion skin view for changed images.
+
+* [Image diff blog post](https://github.com/blog/817-behold-image-view-modes)
+* [Image diff demo from Cameron](https://github.com/cameronmcefee/Image-Diff-View-Modes/commit/8e95f70c9c47168305970e91021072673d7cdad8)
+* [Image diff demo from GitHub School](https://github.com/githubschool/hellogitworld/commit/7c0ffa9d88616972bb84befbec40a2212478149e)
+
+Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub platform, providing a surprisingly rich experience right in the browser.
+
+* [3D file viewing blog post](https://github.com/blog/1465-stl-file-viewing)
+* [3D view demo of a RepRap part](https://github.com/reprap/huxley/blob/master/alternative-parts/x-blunt-plate-extended.stl)
+* [3D file diffing blog post](https://github.com/blog/1633-3d-file-diffs)
+
+### GitHub Social Features
+* Notifications
+* Watching repositories
+* Starring repositories
+* Quick sharing with [Gists](https://gists.github.com)
+
+
+### Markdown
+A plaintext format for writing prose and documentation. In addition to the [basic formatting options](https://help.github.com/articles/markdown-basics), Markdown files hosted and viewed on GitHub can make use of the following enhancements:
+
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
+* [Emoji](http://www.emoji-cheat-sheet.com/)
+* [Checklists](https://github.com/blog/1825-task-lists-in-all-markdown-documents) (Issues, Gists)
+
+
+### Special Filenames
+There are several filenames that invoke a special behavior on the GitHub platform. These include:
+
+* `CONTRIBUTING.md`
+* `LICENSE`
+  * During repository creation
+  * `+` a file with existing repository (special dropdown)
+* `.gitignore`
+  * During repository creation
+  * `+` a file with existing repository (special dropdown)
+* `README.md`
+  * In root
+  * In subfolders
+
+
+### Keyboard Shortcuts
+GitHub, though it is a web application, aims to behave as much like a desktop app as possible. Many of its features are accessible via keyboard shortcuts. While on any GitHub page, press `?` and a context-sensitive help menu will appear. Some of the most frequently used keyboard shortcuts include:
+
+* `?` help
+* `/` command bar
+* `t` fuzzy file search
+* `s` set focus to the search box
+* `g` `c` go to code
+* `g` `i` go to issues
+
+### Further Resources on Git
+* [Pro Git](http://git-scm.com/book)
+* [Version Control with Git, 2nd Edition](http://bit.ly/ogitbook)
+* [Getting Good with Git](http://net.tutsplus.com/freebies/books/getting-good-with-git-free-ebook/)
+* [Git the Simple Guide](http://rogerdudler.github.io/git-guide/)
+* [Try Git by CodeSchool](https://try.github.io/)
