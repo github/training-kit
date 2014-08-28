@@ -62,26 +62,38 @@ html, body {
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
   /* YouTube Links */ }
-  .curriculum h1, .curriculum h2, .curriculum h3, .curriculum h4, .curriculum h5, .curriculum h6, .curriculum p, .curriculum ul, .curriculum pre, .curriculum svg {
+  .curriculum h1, .curriculum h2, .curriculum h3, .curriculum h4, .curriculum h5, .curriculum h6, .curriculum p, .curriculum ul, .curriculum svg {
     font-weight: normal;
-    padding: 0 30%; }
+    margin: 0 15%; }
+  .curriculum pre {
+    margin: 0 15%;
+    background: white; }
+    .curriculum pre:before {
+      content: "\f0c8";
+      font: normal normal 22px octicons;
+      float: right;
+      opacity: .4; }
   .curriculum h3 {
     font-size: 400%;
     line-height: 1.25em;
-    margin-bottom: .5em; }
+    margin-bottom: .5em;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1); }
   .curriculum h4 {
     font-size: 250%;
-    margin-bottom: .5em; }
+    line-height: 1.35em;
+    margin-bottom: .5em;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    color: #454545;
+    border-bottom: solid 1px #e8e8ea; }
   .curriculum p {
     line-height: 1.75em;
-    margin: 2em 0; }
+    margin-bottom: 2em; }
   .curriculum ul {
     display: inline-block;
     text-align: left; }
-  .curriculum .diagram {
-    width: 60%;
-    /*margin: 0 auto;*/
-    text-align: center; }
+  .curriculum iframe {
+    display: block;
+    margin: 0 auto; }
   .curriculum .slide {
     min-height: 100%;
     width: 100%;
@@ -138,19 +150,6 @@ html, body {
     color: #CCCCCC;
     content: "\f078";
     font: normal normal 20px octicons; }
-  .curriculum pre {
-    padding: 10px auto;
-    margin: 1em auto 2em;
-    width: auto;
-    /* To ensure scrolling of long code lines */
-    overflow: auto;
-    word-wrap: normal;
-    white-space: pre; }
-  .curriculum pre:before {
-    content: "\f0c8";
-    font: normal normal 22px octicons;
-    float: right;
-    opacity: .4; }
 
 #toc-wrapper {
   position: fixed;
