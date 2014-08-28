@@ -31,7 +31,7 @@ html, body{
 
   h1,h2,h3,h4,h5,h6,p,ul,svg{
     font-weight: normal;
-    padding: 0 15%;
+    margin: 0 15%;
   }
 
   pre{
@@ -63,7 +63,7 @@ html, body{
 
   p{
     line-height: 1.75em;
-    margin: 2em 0;
+    margin-bottom: 2em;
   }
   ul{
     display: inline-block;
