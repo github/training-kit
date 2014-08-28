@@ -49,12 +49,16 @@ html, body{
     font-size: 400%;
     line-height: 1.25em;
     margin-bottom: .5em;
+    text-shadow: 0 1px rgba(0,0,0,.1);
   }
 
   h4{
     font-size: 250%;
+    line-height: 1.35em;
     margin-bottom: .5em;
+    text-shadow: 0 1px rgba(0,0,0,.1);
     color: $mono-dark;
+    border-bottom: solid 1px $mono-light;
   }
 
   p{
