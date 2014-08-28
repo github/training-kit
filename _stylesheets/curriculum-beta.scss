@@ -28,9 +28,20 @@ html, body{
   height: 100%;
   width: 100%;
 
-  h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
+  h1,h2,h3,h4,h5,h6,p,ul,svg{
     font-weight: normal;
-    padding: 0 30%;
+    padding: 0 15%;
+  }
+
+  pre{
+    margin: 0 15%;
+
+    &:before {
+      content: "\f0c8";
+      font: normal normal 22px octicons;
+      float: right;
+      opacity: .4;
+    }
   }
 
   h3{
@@ -114,35 +125,6 @@ html, body{
       font: normal normal 20px octicons;
     }
   }
-  //
-  // pre{
-  //   margin: 0 30%;
-  // }
-
-  // table, pre{
-  //   background: $mono-light;
-  //   padding: 20px;
-  //   display: block;
-  // }
-
-  pre{
-    padding: 10px auto;
-    margin: 1em auto 2em;
-    width: auto;
-
-    /* To ensure scrolling of long code lines */
-    overflow: auto;
-    word-wrap: normal;
-    white-space: pre;
-  }
-
-  pre:before {
-    content: "\f0c8";
-    font: normal normal 22px octicons;
-    float: right;
-    opacity: .4;
-  }
-
 }
 
 #toc-wrapper{
