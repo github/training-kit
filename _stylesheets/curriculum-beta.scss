@@ -36,6 +36,7 @@ html, body{
 
   pre{
     margin: 0 15%;
+    background: $mono-bright;
 
     &:before {
       content: "\f0c8";
