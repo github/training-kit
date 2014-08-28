@@ -1,53 +1,31 @@
 ---
-
+layout: bare
 ---
 
+<script src="../_javascript/snap-svg/dist/snap.svg-min.js"></script>
+<script src="../_javascript/curriculum.js"></script>
 
-<!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
-  <head>
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    {% endif %}
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<section class="hero overview">
+  <div class="container">
+    <div class="content">
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.description }}</p>
+    </div>
+  </div>
+</section>
 
-    {% include dependencies %}
+<div class="container curriculum">
+  <div class="two-thirds markdown-content">
+    {{ content }}
+  </div>
 
-
-    <script src="../_javascript/snap-svg/dist/snap.svg-min.js"></script>
-    <script src="../_javascript/curriculum.js"></script>
-  </head>
-  <body data-spy="scroll" data-target="#toc">
-    {% include navigation.html %}
-    <section class="hero overview">
-      <div class="container">
-        <div class="content">
-          <h2>{{ page.title }}</h2>
-          <p>{{ page.description }}</p>
-        </div>
-      </div>
-    </section>
-
+  <div class="third">
     <div id="toc-wrapper">
       <div id="toc" data-spy="affix" data-offset-top="165">
         <ul id="toc-list" class="nav" role="tablist"></ul>
       </div>
     </div>
-        
-    <div class="curriculum">
-      <!-- <div class="two-thirds"> -->
-        {{ content }}
-      <!-- </div> -->
-    </div>
+  </div>
+</div>
 
-    <!-- {% include footer.html %} -->
-
-    
-  </body>
-</html>
-
-
-
-
-
+{% include footer.html %}

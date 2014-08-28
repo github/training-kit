@@ -1,0 +1,153 @@
+/* Imports */
+@import "variables.scss";
+
+@mixin octicon-link($char){
+  font: normal normal 1em octicons;
+  text-decoration: none;
+  color: $color-dark;
+
+  &:after{
+    content: $char;
+    margin-left: 5px;
+  }
+}
+
+.nav-list>li>a{
+  font-size: 8pt;
+}
+
+.curriculum{
+  font-size: 18px;
+
+  h3 {
+      margin-top: 3em;
+      font-size: 240%;
+      line-height: 170%;
+      font-weight: 500;
+      border-bottom: solid 1px #eeeeee;
+      color: $color-dark;
+
+      &:first-child{
+        margin-top: 0;
+      }
+  }
+
+  h5{
+    font-size: 130%;
+    margin: 2em 0 0;
+
+    &:before{
+      font: normal normal 16px octicons;
+      color: $mono-bright;
+      content: "\f089";
+      display: inline-block;
+      margin-right: 1em;
+      margin-left: -42px;
+      border-radius: 50%;
+      background: $mono-light;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+
+  p{
+    line-height: 140%;
+    margin-bottom: 1.8em;
+  }
+
+  /* General external link */
+  a[href^="http://"],
+  a[href^="https://"] {
+    @include octicon-link("\f0b6");
+  }
+
+  /* GitHub Links */
+  a[href^="https://github.com"],
+  a[href^="https://www.github.com"],
+  a[href^="https://help.github.com"]
+  {
+    @include octicon-link("\f008");
+  }
+
+  /* GitHub Book Links, Guide Links */
+  a[href^="http://git-scm.com/book"],
+  a[href^="https://guides.github.com"]
+  {
+    @include octicon-link("\f007");
+  }
+
+
+  /* YouTube Links */
+  a[href^="https://youtube.com"],
+  a[href^="https://www.youtube.com"] {
+    @include octicon-link("\f0b9");
+  }
+
+  .summary, .outline, .details{
+    h2:before{
+      padding: 5px;
+      color: #CCCCCC;
+      content: "\f078";
+      font: normal normal 20px octicons;
+    }
+  }
+
+  table, pre{
+    background: $mono-light;
+    padding: 20px;
+    display: block;
+  }
+
+  pre{
+    padding: 10px auto;
+    margin: 1em auto 2em;
+    width: auto;
+
+    /* To ensure scrolling of long code lines */
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+  }
+
+  pre:before {
+    content: "\f0c8";
+    font: normal normal 22px octicons;
+    float: right;
+    opacity: .4;
+  }
+
+}
+
+#toc-wrapper{
+  float: right;
+  padding: 15px 0 0 0;
+}
+
+#toc{
+  width: 200px;
+  border-radius: 3px;
+
+  font-size: 12px;
+
+  .active{
+    font-weight: 700;
+
+    a{
+      color: #222222;
+    }
+  }
+}
+
+.affix-top{
+
+}
+
+.affix{
+  margin-top: -165px;
+}
+
+.affix-bottom{
+
+}

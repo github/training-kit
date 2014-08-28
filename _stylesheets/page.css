@@ -173,37 +173,15 @@ footer, .push {
     height: 154px; } }
 /* Imports */
 /* Color Definitions */
-html, body {
-  height: 100%;
-  background: #fcfcfc; }
-
 .nav-list > li > a {
   font-size: 8pt; }
 
 .curriculum {
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.15);
   font-size: 18px;
   /* General external link */
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
   /* YouTube Links */ }
-  .curriculum .slide {
-    min-height: 100%;
-    background: #ffffff;
-    display: table; }
-    .curriculum .slide h5 {
-      display: block;
-      height: 0;
-      width: 100%;
-      background: red; }
-    .curriculum .slide .alignment {
-      width: 960px;
-      display: table-cell;
-      vertical-align: middle; }
-    .curriculum .slide + * {
-      background: red; }
   .curriculum h3 {
     margin-top: 3em;
     font-size: 240%;
@@ -294,9 +272,7 @@ html, body {
     opacity: .4; }
 
 #toc-wrapper {
-  position: fixed;
-  right: 0;
-  z-index: 10000;
+  float: right;
   padding: 15px 0 0 0; }
 
 #toc {
@@ -307,6 +283,9 @@ html, body {
     font-weight: 700; }
     #toc .active a {
       color: #222222; }
+
+.affix {
+  margin-top: -165px; }
 
 /* Trainers */
 .trainer {
