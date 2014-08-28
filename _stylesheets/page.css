@@ -1,1 +1,593 @@
-@import url(octicons.css);@import url(normalize.css);@import url(grid.css);@import url(header.css);@import url(hero.css);.colorful{background:#1875c6;color:#fff}.colorful a{color:#fff}.invert{background:#222;border-bottom:solid 1px #e8e8ea;color:#fff}.invert h2{color:#b3b3b9}.invert h3,.invert p{color:#fff}.invert a{color:#cdcdd2}.invert a:hover{color:#fff}.grey{background:#f5f5f6;border-top:solid 1px #e8e8ea;border-bottom:solid 1px #e8e8ea}.button{display:inline;border-radius:3px;box-shadow:0 0 0 1px #00a5ea;text-align:center;padding:10px;text-decoration:none}.button:hover{box-shadow:0 0 0 1px #1875c6;color:#fff;background:#1875c6}.button:hover a{color:#fff}.button a{color:#00a5ea}.logo-training{display:inline-block;height:26px;width:108px}.logo-training:before{content:"";background:url(../images/training-materials-dark-2x.png) no-repeat top left;background-size:contain;height:32px;width:237px;display:block}footer{float:left;position:relative;font-size:12px;line-height:1.5;color:#777;clear:both;width:100%;height:40px;margin:0 auto 0 auto;padding:20px 0 20px 0;border-top:1px solid #eee}footer ul li{margin:0;padding:0;font-size:12px}footer .left{float:left;margin:0}footer .right{float:right;margin:0}footer .octicon-mark-github{position:absolute;left:50%;color:#ccc;height:24px;width:24px;margin-left:-12px;font-size:24px;line-height:1}footer a{color:#1875c6;text-decoration:none}ul.site-footer-links{padding:0 10px}ul.site-footer-links li{display:inline-block;margin-left:5px}ul.site-footer-links li:first-child{margin-left:0}@media screen and (max-width: 568px){ul.site-footer-links{display:none}}.figures{background:url(../images/hero-home.png) no-repeat bottom center #1875c6;background-size:1350px}.screen-shot{background:url(../images/screen-shot-slidedeck.png) no-repeat bottom center;background-size:contain;padding-bottom:300px}.workbook{background:url(../images/screen-shot-workbook.png) no-repeat 0px 25px #f5f5f6;background-size:contain;padding-bottom:270px}.downloads{background:url(../images/screen-shot-pdf.png) no-repeat bottom right;background-size:contain;padding-bottom:300px}html,body{height:100%}body{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;color:#5a5a5a;font-size:14px;line-height:1.6em}header,section,footer{float:left;width:100%;margin:0;padding:0}.content{padding:20px}.center{text-align:center}section.main{padding:30px 0 10px}.page{clear:both;min-height:100%;height:auto !important;height:100%;margin-bottom:-100px}footer,.push{margin:0;padding:20px 0 0;clear:both;position:relative}@media screen and (max-width: 380px){.page{margin-bottom:-154px}footer,.push{height:154px}}.nav-list>li>a{font-size:8pt}.curriculum{font-size:18px}.curriculum h3{margin-top:3em;font-size:240%;line-height:170%;font-weight:500;border-bottom:solid 1px #eeeeee;color:#1875c6}.curriculum h3:first-child{margin-top:0}.curriculum h5{font-size:130%;margin:2em 0 0}.curriculum h5:before{font:normal normal 16px octicons;color:#fff;content:"\f089";display:inline-block;margin-right:1em;margin-left:-42px;border-radius:50%;background:#e8e8ea;width:30px;height:30px;text-align:center;line-height:30px}.curriculum p{line-height:140%;margin-bottom:1.8em}.curriculum a[href^="http://"],.curriculum a[href^="https://"]{font:normal normal 1em octicons;text-decoration:none;color:#1875c6}.curriculum a[href^="http://"]:after,.curriculum a[href^="https://"]:after{content:"\f0b6";margin-left:5px}.curriculum a[href^="https://github.com"],.curriculum a[href^="https://www.github.com"],.curriculum a[href^="https://help.github.com"]{font:normal normal 1em octicons;text-decoration:none;color:#1875c6}.curriculum a[href^="https://github.com"]:after,.curriculum a[href^="https://www.github.com"]:after,.curriculum a[href^="https://help.github.com"]:after{content:"\f008";margin-left:5px}.curriculum a[href^="http://git-scm.com/book"],.curriculum a[href^="https://guides.github.com"]{font:normal normal 1em octicons;text-decoration:none;color:#1875c6}.curriculum a[href^="http://git-scm.com/book"]:after,.curriculum a[href^="https://guides.github.com"]:after{content:"\f007";margin-left:5px}.curriculum a[href^="https://youtube.com"],.curriculum a[href^="https://www.youtube.com"]{font:normal normal 1em octicons;text-decoration:none;color:#1875c6}.curriculum a[href^="https://youtube.com"]:after,.curriculum a[href^="https://www.youtube.com"]:after{content:"\f0b9";margin-left:5px}.curriculum .summary h2:before,.curriculum .outline h2:before,.curriculum .details h2:before{padding:5px;color:#CCCCCC;content:"\f078";font:normal normal 20px octicons}.curriculum table,.curriculum pre{background:#e8e8ea;padding:20px;display:block}.curriculum pre{padding:10px auto;margin:1em auto 2em;width:auto;overflow:auto;word-wrap:normal;white-space:pre}.curriculum pre:before{content:"\f0c8";font:normal normal 22px octicons;float:right;opacity:.4}#toc-wrapper{float:right;padding:15px 0 0 0}#toc{width:200px;border-radius:3px;font-size:12px}#toc .active{font-weight:700}#toc .active a{color:#222222}.affix{margin-top:-165px}.trainer{overflow:hidden}.trainer .fifth .content{padding-right:0}.trainer .content{padding-top:10px;padding-bottom:20px}.trainer .avatar{width:160px;height:160px;border-radius:50%}@media screen and (max-width: 959px){.trainer .avatar{width:130px;height:130px}}@media screen and (max-width: 568px){.trainer .content,.trainer .fifth .content{padding:0 20px}.trainer{margin-bottom:30px}.trainer .testimonial{padding:0;margin:0}.trainer .social{display:block}}.main .trainer h3{margin:.5em 0 0;font-weight:300;font-size:1.8em}.trainer .social a{display:inline-block;position:relative;top:2px;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";filter:alpha(opacity=70);opacity:.7}.trainer .social a:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);opacity:1}.trainer .testimonial{margin-top:10px}p.more{margin-bottom:0}a{color:#00a5ea;text-decoration:none;-webkit-transition:all .25s;-moz-transition:all .25s;-o-transition:all .25s;-ms-transition:all .25s;transition:all .25s}a:hover{color:#0383c0}ul{padding-left:20px}.main h2{color:#333}.main h3{margin:0;color:#222;font-size:1.4em;font-weight:normal}.main h4{margin:0}.help-box p{margin-bottom:0}.resource-list{padding:0;list-style:none;margin-bottom:0}.resource{margin-bottom:30px;float:left;width:100%}.resource:last-child{margin-bottom:0}.resource h4,.resource p{margin:0}.class-list .class{margin:15px 0;padding:0;background:#F1F1F1;background:-webkit-linear-gradient(#fafafa, #f1f1f1);background:-moz-linear-gradient(#fafafa, #f1f1f1);background:-o-linear-gradient(#fafafa, #f1f1f1);background:-ms-linear-gradient(#fafafa, #f1f1f1);background:linear-gradient(#fafafa, #f1f1f1);border:1px solid #DDD;border-bottom:1px solid #CCC;border-radius:3px;box-shadow:inset 0 1px 0 white, 0 1px 5px #F1F1F1}.class h4{font-size:1.25em;font-weight:500;margin:.25em 0}.class .summary{padding:10px 12px}.class .details{padding:6px 12px;font-weight:bold;font-size:12px}.details .icon{position:relative;top:3px}.details span:first-child{margin-right:5px}.class .actions{float:right;text-align:center;margin-left:20px}.small-class .actions{margin-top:3px}.actions .cost{font-size:1em;font-weight:700;margin:0}p.register{text-align:right}@media screen and (max-width: 568px){.video,.book,.other{text-align:center}}@media screen and (max-width: 320px){.repo img{width:16px;height:16px;margin-top:6px}.repo .name{font-size:1em}}.pres-wrapper{padding-right:10px}.pres-wrapper .container{background:#F1F1F1;background:-webkit-linear-gradient(#fafafa, #f1f1f1);background:-moz-linear-gradient(#fafafa, #f1f1f1);background:-o-linear-gradient(#fafafa, #f1f1f1);background:-ms-linear-gradient(#fafafa, #f1f1f1);background:linear-gradient(#fafafa, #f1f1f1);border:1px solid #DDD;border-bottom:1px solid #CCC;border-radius:3px;box-shadow:inset 0 1px 0 white, 0 1px 5px #F1F1F1}.pres-wrapper .container .inner-padding{padding:10px 12px}.pres-wrapper .inner-padding img{width:95%}@media screen and (min-width: 361px) and (max-width: 568px){.pres-wrapper .inner-padding img{width:36%;float:left;margin:0 10px 10px 0}.pres-wrapper .inner-padding h4{margin-top:5px}}@media screen and (max-width: 360px){.pres-wrapper .inner-padding{text-align:center}}.contact .main{padding-top:10px}@media screen and (max-width: 480px){.email-button{font-size:1.25em}.email-button img{width:24px;height:17px}.day{display:block}.class-list .class{text-align:center}.class .actions{float:none;margin:0;text-align:center}p.register{text-align:center}.date:nth-child(n+2){border-top:solid 1px #ccc}}@media screen and (max-width: 480px){.email-button{font-weight:normal}}.try-git-banner{text-align:center;margin:20px 0;background-color:#EFEFEF;background-image:-o-linear-gradient(#efefef, #fcfcfc);background-image:-moz-linear-gradient(#efefef, #fcfcfc);background-image:-webkit-linear-gradient(#efefef, #fcfcfc);background-image:-ms-linear-gradient(#efefef, #fcfcfc);background-image:linear-gradient(#efefef, #fcfcfc);-moz-box-shadow:inset 0px 1px 5px 0 rgba(0,0,0,0.2);-webkit-box-shadow:inset 0px 1px 5px 0 rgba(0,0,0,0.2);box-shadow:inset 0px 1px 5px 0 rgba(0,0,0,0.2)}.try-git-banner span,.try-git-banner a{padding:5px 12px;line-height:32px}.try-git-banner span{color:#666;text-shadow:0 1px 0 #FFFFFF}.try-git-banner a{margin:0 0 10px}.try-git-banner img{vertical-align:middle}@media screen and (min-width: 460px){.try-git-banner span,.try-git-banner a{font-size:21px}}@media screen and (max-width: 568px){.container .content.try-git-banner{margin:10px 0}}@media screen and (min-width: 768px){.try-git-banner a{margin:0;font-size:18px}}@media screen and (min-width: 960px){.try-git-banner{border-radius:5px}.try-git-banner span{font-size:28px}.try-git-banner a{font-size:21px}}.align-left{text-align:left}.align-right{text-align:right}.align-center{text-align:center}
+/* Imports */
+/* Color Definitions */
+/* Colorization */
+@import url(octicons.css);
+@import url(normalize.css);
+@import url(grid.css);
+@import url(header.css);
+@import url(hero.css);
+.colorful {
+  background: #1875c6;
+  color: white; }
+  .colorful a {
+    color: white; }
+
+.invert {
+  background: #222222;
+  border-bottom: solid 1px #e8e8ea;
+  color: white; }
+  .invert h2 {
+    color: #b3b3b9; }
+  .invert h3, .invert p {
+    color: white; }
+  .invert a {
+    color: #cdcdd2; }
+    .invert a:hover {
+      color: white; }
+
+.grey {
+  background: #f5f5f6;
+  border-top: solid 1px #e8e8ea;
+  border-bottom: solid 1px #e8e8ea; }
+
+.button {
+  display: inline;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #00a5ea;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none; }
+  .button:hover {
+    box-shadow: 0 0 0 1px #1875c6;
+    color: white;
+    background: #1875c6; }
+    .button:hover a {
+      color: white; }
+  .button a {
+    color: #00a5ea; }
+
+.logo-training {
+  display: inline-block;
+  height: 26px;
+  width: 108px; }
+  .logo-training:before {
+    content: "";
+    background: url(../images/training-materials-dark-2x.png) no-repeat top left;
+    background-size: contain;
+    height: 32px;
+    width: 237px;
+    display: block; }
+
+footer {
+  float: left;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #777;
+  clear: both;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto 0 auto;
+  padding: 20px 0 20px 0;
+  border-top: 1px solid #eee; }
+  footer ul li {
+    margin: 0;
+    padding: 0;
+    font-size: 12px; }
+  footer .left {
+    float: left;
+    margin: 0; }
+  footer .right {
+    float: right;
+    margin: 0; }
+  footer .octicon-mark-github {
+    position: absolute;
+    left: 50%;
+    color: #ccc;
+    height: 24px;
+    width: 24px;
+    margin-left: -12px;
+    font-size: 24px;
+    line-height: 1; }
+  footer a {
+    color: #1875c6;
+    text-decoration: none; }
+
+ul.site-footer-links {
+  padding: 0 10px; }
+  ul.site-footer-links li {
+    display: inline-block;
+    margin-left: 5px; }
+  ul.site-footer-links li:first-child {
+    margin-left: 0; }
+
+@media screen and (max-width: 568px) {
+  ul.site-footer-links {
+    display: none; } }
+/* Imports */
+/* Color Definitions */
+.figures {
+  background: url(../images/hero-home.png) no-repeat bottom center #1875c6;
+  background-size: 1350px; }
+
+.screen-shot {
+  background: url(../images/screen-shot-slidedeck.png) no-repeat bottom center;
+  background-size: contain;
+  padding-bottom: 300px; }
+
+.workbook {
+  background: url(../images/screen-shot-workbook.png) no-repeat 0px 25px #f5f5f6;
+  background-size: contain;
+  padding-bottom: 270px; }
+
+.downloads {
+  background: url(../images/screen-shot-pdf.png) no-repeat bottom right;
+  background-size: contain;
+  padding-bottom: 300px; }
+
+/* V1.0 Artifacts */
+/* General */
+html, body {
+  height: 100%; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #5a5a5a;
+  font-size: 14px;
+  line-height: 1.6em; }
+
+header, section, footer {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.content {
+  padding: 20px; }
+
+.center {
+  text-align: center; }
+
+section.main {
+  padding: 30px 0 10px; }
+
+/* Sticky footer */
+.page {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -100px; }
+
+footer, .push {
+  margin: 0;
+  padding: 20px 0 0;
+  clear: both;
+  position: relative; }
+
+@media screen and (max-width: 380px) {
+  .page {
+    margin-bottom: -154px; }
+
+  footer, .push {
+    height: 154px; } }
+/* Imports */
+/* Color Definitions */
+html, body {
+  height: 100%;
+  background: #fcfcfc; }
+
+.nav-list > li > a {
+  font-size: 8pt; }
+
+.curriculum {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  /* General external link */
+  /* GitHub Links */
+  /* GitHub Book Links, Guide Links */
+  /* YouTube Links */ }
+  .curriculum .slide {
+    min-height: 100%;
+    background: #ffffff;
+    display: table; }
+    .curriculum .slide h5 {
+      display: block;
+      height: 0;
+      width: 100%;
+      background: red; }
+    .curriculum .slide .alignment {
+      width: 960px;
+      display: table-cell;
+      vertical-align: middle; }
+    .curriculum .slide + * {
+      background: red; }
+  .curriculum h3 {
+    margin-top: 3em;
+    font-size: 240%;
+    line-height: 170%;
+    font-weight: 500;
+    border-bottom: solid 1px #eeeeee;
+    color: #1875c6; }
+    .curriculum h3:first-child {
+      margin-top: 0; }
+  .curriculum h5 {
+    font-size: 130%;
+    margin: 2em 0 0; }
+    .curriculum h5:before {
+      font: normal normal 16px octicons;
+      color: white;
+      content: "\f089";
+      display: inline-block;
+      margin-right: 1em;
+      margin-left: -42px;
+      border-radius: 50%;
+      background: #e8e8ea;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px; }
+  .curriculum p {
+    line-height: 140%;
+    margin-bottom: 1.8em; }
+  .curriculum a[href^="http://"],
+  .curriculum a[href^="https://"] {
+    font: normal normal 1em octicons;
+    text-decoration: none;
+    color: #1875c6; }
+    .curriculum a[href^="http://"]:after,
+    .curriculum a[href^="https://"]:after {
+      content: "\f0b6";
+      margin-left: 5px; }
+  .curriculum a[href^="https://github.com"],
+  .curriculum a[href^="https://www.github.com"],
+  .curriculum a[href^="https://help.github.com"] {
+    font: normal normal 1em octicons;
+    text-decoration: none;
+    color: #1875c6; }
+    .curriculum a[href^="https://github.com"]:after,
+    .curriculum a[href^="https://www.github.com"]:after,
+    .curriculum a[href^="https://help.github.com"]:after {
+      content: "\f008";
+      margin-left: 5px; }
+  .curriculum a[href^="http://git-scm.com/book"],
+  .curriculum a[href^="https://guides.github.com"] {
+    font: normal normal 1em octicons;
+    text-decoration: none;
+    color: #1875c6; }
+    .curriculum a[href^="http://git-scm.com/book"]:after,
+    .curriculum a[href^="https://guides.github.com"]:after {
+      content: "\f007";
+      margin-left: 5px; }
+  .curriculum a[href^="https://youtube.com"],
+  .curriculum a[href^="https://www.youtube.com"] {
+    font: normal normal 1em octicons;
+    text-decoration: none;
+    color: #1875c6; }
+    .curriculum a[href^="https://youtube.com"]:after,
+    .curriculum a[href^="https://www.youtube.com"]:after {
+      content: "\f0b9";
+      margin-left: 5px; }
+  .curriculum .summary h2:before, .curriculum .outline h2:before, .curriculum .details h2:before {
+    padding: 5px;
+    color: #CCCCCC;
+    content: "\f078";
+    font: normal normal 20px octicons; }
+  .curriculum table, .curriculum pre {
+    background: #e8e8ea;
+    padding: 20px;
+    display: block; }
+  .curriculum pre {
+    padding: 10px auto;
+    margin: 1em auto 2em;
+    width: auto;
+    /* To ensure scrolling of long code lines */
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre; }
+  .curriculum pre:before {
+    content: "\f0c8";
+    font: normal normal 22px octicons;
+    float: right;
+    opacity: .4; }
+
+#toc-wrapper {
+  position: fixed;
+  right: 0;
+  z-index: 10000;
+  padding: 15px 0 0 0; }
+
+#toc {
+  width: 200px;
+  border-radius: 3px;
+  font-size: 12px; }
+  #toc .active {
+    font-weight: 700; }
+    #toc .active a {
+      color: #222222; }
+
+/* Trainers */
+.trainer {
+  overflow: hidden; }
+
+.trainer .fifth .content {
+  padding-right: 0; }
+
+.trainer .content {
+  padding-top: 10px;
+  padding-bottom: 20px; }
+
+.trainer .avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; }
+
+@media screen and (max-width: 959px) {
+  .trainer .avatar {
+    width: 130px;
+    height: 130px; } }
+@media screen and (max-width: 568px) {
+  .trainer .content,
+  .trainer .fifth .content {
+    padding: 0 20px; }
+
+  .trainer {
+    margin-bottom: 30px; }
+
+  .trainer .testimonial {
+    padding: 0;
+    margin: 0; }
+
+  .trainer .social {
+    display: block; } }
+.main .trainer h3 {
+  margin: .5em 0 0;
+  font-weight: 300;
+  font-size: 1.8em; }
+
+.trainer .social a {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  opacity: .7; }
+
+.trainer .social a:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1; }
+
+.trainer .testimonial {
+  margin-top: 10px; }
+
+/* HTML Elements */
+p.more {
+  margin-bottom: 0; }
+
+a {
+  color: #00a5ea;
+  text-decoration: none;
+  -webkit-transition: all .25s;
+  -moz-transition: all .25s;
+  -o-transition: all .25s;
+  -ms-transition: all .25s;
+  transition: all .25s; }
+
+a:hover {
+  color: #0383c0; }
+
+ul {
+  padding-left: 20px; }
+
+.main h2 {
+  color: #333; }
+
+.main h3 {
+  margin: 0;
+  color: #222222;
+  font-size: 1.4em;
+  font-weight: normal; }
+
+.main h4 {
+  margin: 0; }
+
+/* Classes and resources */
+.help-box p {
+  margin-bottom: 0; }
+
+.resource-list {
+  padding: 0;
+  list-style: none;
+  margin-bottom: 0; }
+
+.resource {
+  margin-bottom: 30px;
+  float: left;
+  width: 100%; }
+  .resource:last-child {
+    margin-bottom: 0; }
+  .resource h4, .resource p {
+    margin: 0; }
+
+.class-list .class {
+  margin: 15px 0;
+  padding: 0;
+  background: #F1F1F1;
+  background: -webkit-linear-gradient(#fafafa, #f1f1f1);
+  background: -moz-linear-gradient(#fafafa, #f1f1f1);
+  background: -o-linear-gradient(#fafafa, #f1f1f1);
+  background: -ms-linear-gradient(#fafafa, #f1f1f1);
+  background: linear-gradient(#fafafa, #f1f1f1);
+  border: 1px solid #DDD;
+  border-bottom: 1px solid #CCC;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 white, 0 1px 5px #F1F1F1; }
+
+.class h4 {
+  font-size: 1.25em;
+  font-weight: 500;
+  margin: .25em 0; }
+
+.class .summary {
+  padding: 10px 12px; }
+
+.class .details {
+  padding: 6px 12px;
+  font-weight: bold;
+  font-size: 12px; }
+
+.details .icon {
+  position: relative;
+  top: 3px; }
+
+.details span:first-child {
+  margin-right: 5px; }
+
+.class .actions {
+  float: right;
+  text-align: center;
+  margin-left: 20px; }
+
+.small-class .actions {
+  margin-top: 3px; }
+
+.actions .cost {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 0; }
+
+p.register {
+  text-align: right; }
+
+@media screen and (max-width: 568px) {
+  .video, .book, .other {
+    text-align: center; } }
+@media screen and (max-width: 320px) {
+  .repo img {
+    width: 16px;
+    height: 16px;
+    margin-top: 6px; }
+
+  .repo .name {
+    font-size: 1em; } }
+.pres-wrapper {
+  padding-right: 10px; }
+
+.pres-wrapper .container {
+  background: #F1F1F1;
+  background: -webkit-linear-gradient(#fafafa, #f1f1f1);
+  background: -moz-linear-gradient(#fafafa, #f1f1f1);
+  background: -o-linear-gradient(#fafafa, #f1f1f1);
+  background: -ms-linear-gradient(#fafafa, #f1f1f1);
+  background: linear-gradient(#fafafa, #f1f1f1);
+  border: 1px solid #DDD;
+  border-bottom: 1px solid #CCC;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 white, 0 1px 5px #F1F1F1; }
+
+.pres-wrapper .container .inner-padding {
+  padding: 10px 12px; }
+
+.pres-wrapper .inner-padding img {
+  width: 95%; }
+
+@media screen and (min-width: 361px) and (max-width: 568px) {
+  .pres-wrapper .inner-padding img {
+    width: 36%;
+    float: left;
+    margin: 0 10px 10px 0; }
+
+  .pres-wrapper .inner-padding h4 {
+    margin-top: 5px; } }
+@media screen and (max-width: 360px) {
+  .pres-wrapper .inner-padding {
+    text-align: center; } }
+/* Contact page */
+.contact .main {
+  padding-top: 10px; }
+
+@media screen and (max-width: 480px) {
+  .email-button {
+    font-size: 1.25em; }
+
+  .email-button img {
+    width: 24px;
+    height: 17px; }
+
+  .day {
+    display: block; }
+
+  .class-list .class {
+    text-align: center; }
+
+  .class .actions {
+    float: none;
+    margin: 0;
+    text-align: center; }
+
+  p.register {
+    text-align: center; }
+
+  .date:nth-child(n+2) {
+    border-top: solid 1px #ccc; } }
+@media screen and (max-width: 480px) {
+  .email-button {
+    font-weight: normal; } }
+.try-git-banner {
+  text-align: center;
+  margin: 20px 0;
+  background-color: #EFEFEF;
+  background-image: -o-linear-gradient(#efefef, #fcfcfc);
+  background-image: -moz-linear-gradient(#efefef, #fcfcfc);
+  background-image: -webkit-linear-gradient(#efefef, #fcfcfc);
+  background-image: -ms-linear-gradient(#efefef, #fcfcfc);
+  background-image: linear-gradient(#efefef, #fcfcfc);
+  -moz-box-shadow: inset 0px 1px 5px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0px 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 5px 0 rgba(0, 0, 0, 0.2); }
+
+.try-git-banner span, .try-git-banner a {
+  padding: 5px 12px;
+  line-height: 32px; }
+
+.try-git-banner span {
+  color: #666;
+  text-shadow: 0 1px 0 #FFFFFF; }
+
+.try-git-banner a {
+  margin: 0 0 10px; }
+
+.try-git-banner img {
+  vertical-align: middle; }
+
+@media screen and (min-width: 460px) {
+  .try-git-banner span, .try-git-banner a {
+    font-size: 21px; } }
+@media screen and (max-width: 568px) {
+  .container .content.try-git-banner {
+    margin: 10px 0; } }
+@media screen and (min-width: 768px) {
+  .try-git-banner a {
+    margin: 0;
+    font-size: 18px; } }
+@media screen and (min-width: 960px) {
+  .try-git-banner {
+    border-radius: 5px; }
+
+  .try-git-banner span {
+    font-size: 28px; }
+
+  .try-git-banner a {
+    font-size: 21px; } }
+/* Utility classes */
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }

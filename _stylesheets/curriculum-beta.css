@@ -1,0 +1,164 @@
+/* Imports */
+/* Color Definitions */
+@import url(octicons.css);
+footer {
+  float: left;
+  position: relative;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #777;
+  clear: both;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto 0 auto;
+  padding: 20px 0 20px 0;
+  border-top: 1px solid #eee; }
+  footer ul li {
+    margin: 0;
+    padding: 0;
+    font-size: 12px; }
+  footer .left {
+    float: left;
+    margin: 0; }
+  footer .right {
+    float: right;
+    margin: 0; }
+  footer .octicon-mark-github {
+    position: absolute;
+    left: 50%;
+    color: #ccc;
+    height: 24px;
+    width: 24px;
+    margin-left: -12px;
+    font-size: 24px;
+    line-height: 1; }
+  footer a {
+    color: #1875c6;
+    text-decoration: none; }
+
+ul.site-footer-links {
+  padding: 0 10px; }
+  ul.site-footer-links li {
+    display: inline-block;
+    margin-left: 5px; }
+  ul.site-footer-links li:first-child {
+    margin-left: 0; }
+
+@media screen and (max-width: 568px) {
+  ul.site-footer-links {
+    display: none; } }
+html, body {
+  height: 100%;
+  background: #f4f4f4;
+  font-size: 16px; }
+
+.nav-list > li > a {
+  font-size: 8pt; }
+
+.curriculum {
+  height: 100%;
+  width: 100%;
+  /* General external link */
+  /* GitHub Links */
+  /* GitHub Book Links, Guide Links */
+  /* YouTube Links */ }
+  .curriculum h1, .curriculum h2, .curriculum h3, .curriculum h4, .curriculum h5, .curriculum h6, .curriculum p, .curriculum ul, .curriculum pre, .curriculum svg {
+    font-weight: normal;
+    padding: 0 30%; }
+  .curriculum h3 {
+    font-size: 400%;
+    line-height: 1.25em;
+    margin-bottom: .5em; }
+  .curriculum h4 {
+    font-size: 250%;
+    margin-bottom: .5em; }
+  .curriculum p {
+    line-height: 1.75em;
+    margin: 2em 0; }
+  .curriculum ul {
+    display: inline-block;
+    text-align: left; }
+  .curriculum .diagram {
+    width: 60%;
+    /*margin: 0 auto;*/
+    text-align: center; }
+  .curriculum .slide {
+    min-height: 100%;
+    width: 100%;
+    background: #ffffff;
+    display: table;
+    text-align: center; }
+    .curriculum .slide h1, .curriculum .slide h2, .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5, .curriculum .slide h6, .curriculum .slide p, .curriculum .slide ul, .curriculum .slide pre, .curriculum .slide svg {
+      font-weight: normal;
+      padding: 0 0; }
+    .curriculum .slide .alignment {
+      padding: 0 20%;
+      display: table-cell;
+      vertical-align: middle; }
+  .curriculum a[href^="http://"],
+  .curriculum a[href^="https://"] {
+    font: normal normal 1em octicons;
+    text-decoration: none;
+    color: #1875c6; }
+    .curriculum a[href^="http://"]:after,
+    .curriculum a[href^="https://"]:after {
+      content: "\f0b6";
+      margin-left: 5px; }
+  .curriculum a[href^="https://github.com"],
+  .curriculum a[href^="https://www.github.com"],
+  .curriculum a[href^="https://help.github.com"] {
+    font: normal normal 1em octicons;
+    text-decoration: none;
+    color: #1875c6; }
+    .curriculum a[href^="https://github.com"]:after,
+    .curriculum a[href^="https://www.github.com"]:after,
+    .curriculum a[href^="https://help.github.com"]:after {
+      content: "\f008";
+      margin-left: 5px; }
+  .curriculum a[href^="http://git-scm.com/book"],
+  .curriculum a[href^="https://guides.github.com"] {
+    font: normal normal 1em octicons;
+    text-decoration: none;
+    color: #1875c6; }
+    .curriculum a[href^="http://git-scm.com/book"]:after,
+    .curriculum a[href^="https://guides.github.com"]:after {
+      content: "\f007";
+      margin-left: 5px; }
+  .curriculum a[href^="https://youtube.com"],
+  .curriculum a[href^="https://www.youtube.com"] {
+    font: normal normal 1em octicons;
+    text-decoration: none;
+    color: #1875c6; }
+    .curriculum a[href^="https://youtube.com"]:after,
+    .curriculum a[href^="https://www.youtube.com"]:after {
+      content: "\f0b9";
+      margin-left: 5px; }
+  .curriculum .summary h2:before, .curriculum .outline h2:before, .curriculum .details h2:before {
+    padding: 5px;
+    color: #CCCCCC;
+    content: "\f078";
+    font: normal normal 20px octicons; }
+  .curriculum pre {
+    padding: 10px auto;
+    margin: 1em auto 2em;
+    width: auto;
+    /* To ensure scrolling of long code lines */
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre; }
+  .curriculum pre:before {
+    content: "\f0c8";
+    font: normal normal 22px octicons;
+    float: right;
+    opacity: .4; }
+
+#toc-wrapper {
+  position: fixed;
+  right: 0;
+  width: 15%;
+  z-index: 10000; }
+
+#toc .active {
+  font-weight: 700; }
+  #toc .active a {
+    color: #222222; }
