@@ -63,6 +63,12 @@ html, body{
     display: inline-block;
     text-align: left;
   }
+
+  iframe{
+    display: block;
+    margin: 0 auto;
+  }
+
   .diagram{
     width: 60%;
     /*margin: 0 auto;*/
