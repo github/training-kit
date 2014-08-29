@@ -47,8 +47,7 @@ ul.site-footer-links {
 @media screen and (max-width: 568px) {
   ul.site-footer-links {
     display: none; } }
-html, body {
-  height: 100%;
+body {
   background: #f4f4f4;
   font-size: 16px; }
 
@@ -56,7 +55,6 @@ html, body {
   font-size: 8pt; }
 
 .curriculum {
-  height: 100%;
   width: 100%;
   position: relative;
   /* General external link */
@@ -96,7 +94,6 @@ html, body {
     display: block;
     margin: 0 auto; }
   .curriculum .slide {
-    min-height: 100%;
     width: 100%;
     background: #ffffff;
     display: table;
