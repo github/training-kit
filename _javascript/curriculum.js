@@ -1,5 +1,17 @@
 $(function(){
 
+	$(window).resize(function () {
+		updateSlideSize();
+	});
+
+	updateSlideSize();
+
+	function updateSlideSize(){
+		var w = window.innerWidth;
+		var h = window.innerHeight;
+		$(".slide").css("height", h);
+	}
+
 	buildToc();
 
 	$(document).scrollsnap({

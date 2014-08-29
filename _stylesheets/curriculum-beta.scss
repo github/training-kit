@@ -15,8 +15,7 @@ $mono-dark: #454545;
   }
 }
 
-html, body{
-  height: 100%;
+body{
   background: #f4f4f4;
   font-size: 16px;
 }
@@ -26,7 +25,6 @@ html, body{
 }
 
 .curriculum{
-  height: 100%;
   width: 100%;
 
   h1,h2,h3,h4,h5,h6,p,ul,svg{
@@ -78,7 +76,6 @@ html, body{
 
 
   .slide{
-    min-height: 100%;
     width: 100%;
     background: #ffffff;
     display: table;
