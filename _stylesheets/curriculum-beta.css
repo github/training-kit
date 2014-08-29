@@ -58,6 +58,7 @@ html, body {
 .curriculum {
   height: 100%;
   width: 100%;
+  position: relative;
   /* General external link */
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
@@ -152,12 +153,22 @@ html, body {
     font: normal normal 20px octicons; }
 
 #toc-wrapper {
-  position: fixed;
+  position: absolute;
+  z-index: 1000;
   right: 0;
   width: 15%;
-  z-index: 10000; }
+  opacity: .2;
+  transition: all 200ms; }
+  #toc-wrapper:hover {
+    opacity: 1; }
 
 #toc .active {
   font-weight: 700; }
   #toc .active a {
     color: #222222; }
+
+.affix-top {
+  position: absolute; }
+
+.affix {
+  position: fixed; }

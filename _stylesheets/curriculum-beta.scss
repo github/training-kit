@@ -26,6 +26,7 @@ body{
 
 .curriculum{
   width: 100%;
+  position: relative;
 
   h1,h2,h3,h4,h5,h6,p,ul,svg{
     font-weight: normal;
@@ -133,11 +134,10 @@ body{
 }
 
 #toc-wrapper{
-  position: fixed;
+  position: absolute;
+  z-index: 1000;
   right: 0;
   width: 15%;
-  z-index: 10000;
-  // padding: 15px 0 0 0;
   opacity: .2;
   transition: all 200ms;
   &:hover{
@@ -156,12 +156,12 @@ body{
 }
 
 .affix-top{
-
+  position: absolute;
 }
 
 .affix{
+  position: fixed;
 }
 
 .affix-bottom{
-
 }
