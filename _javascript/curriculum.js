@@ -1,10 +1,22 @@
 $(function(){
 
+	$(window).resize(function () {
+		updateSlideSize();
+	});
+
+	updateSlideSize();
+
+	function updateSlideSize(){
+		var w = window.innerWidth;
+		var h = window.innerHeight;
+		$(".slide").css("height", h);
+	}
+
 	buildToc();
 
 	$(document).scrollsnap({
-	  snaps: 'section',
-	  proximity: 250
+	  snaps: '.slide',
+	  proximity: 150
 	});
 
 	function buildToc(){
@@ -27,15 +39,13 @@ $(function(){
 
 			item = $('<li><a href="#' + headingSep + '">' + headings[h].innerHTML + '</a></li>');
 			toc.append(item);
-			// console.log(headings[h].parentElement);
 
-			// var hiddenTitle = document.createElement("h3");
-			// hiddenTitle.setAttribute("id", headingSep);
-			// console.log(hiddenTitle);
-
-			// $(headings[h].parentElement).prepend(hiddenTitle);
-
-			headings[h].parentElement.setAttribute("id", headingSep);
+			if(headings[h].parentElement.getAttribute("class").indexOf("alignment")>-1){
+				headings[h].parentElement.setAttribute("id", headingSep);
+			}
+			else{
+				headings[h].setAttribute("id", headingSep);
+			}
 
 			$('.curriculum').scrollspy({ target: '#toc' });
 		}

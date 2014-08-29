@@ -1,6 +1,6 @@
 
-<section class="slide">
+<div class="slide">
 <div class="alignment">
 {{slide | markdownify}}
 </div>
-</section>
+</div>

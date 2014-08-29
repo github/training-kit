@@ -15,9 +15,8 @@ $mono-dark: #454545;
   }
 }
 
-html, body{
-  height: 100%;
-  background: #f4f4f4;
+body{
+  // background: #f4f4f4;
   font-size: 16px;
 }
 
@@ -26,24 +25,14 @@ html, body{
 }
 
 .curriculum{
-  height: 100%;
-  width: 100%;
+  width: $width-desktop;
+  // width: 100%;
+  margin: 0 auto;
+  position: relative;
 
   h1,h2,h3,h4,h5,h6,p,ul,svg{
     font-weight: normal;
-    margin: 0 15%;
-  }
-
-  pre{
-    margin: 0 15%;
-    background: $mono-bright;
-
-    &:before {
-      content: "\f0c8";
-      font: normal normal 22px octicons;
-      float: right;
-      opacity: .4;
-    }
+    // margin: 0 15%;
   }
 
   h3{
@@ -62,13 +51,21 @@ html, body{
     border-bottom: solid 1px $mono-light;
   }
 
+  pre{
+    margin: 0 15%;
+    background: $mono-bright;
+
+    &:before {
+      content: "\f0c8";
+      font: normal normal 22px octicons;
+      float: right;
+      opacity: .4;
+    }
+  }
+
   p{
     line-height: 1.75em;
     margin-bottom: 2em;
-  }
-  ul{
-    display: inline-block;
-    text-align: left;
   }
 
   iframe{
@@ -76,25 +73,27 @@ html, body{
     margin: 0 auto;
   }
 
-
   .slide{
-    min-height: 100%;
     width: 100%;
     background: #ffffff;
     display: table;
-    text-align: center;
+
+    h3,h4,h5{
+      text-align: center;
+    }
 
     h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
-      font-weight: normal;
-      padding: 0 0;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .alignment{
-      // margin: 0 20%;
       padding: 0 20%;
       display: table-cell;
       vertical-align: middle;
     }
+
+
   }
 
   /* General external link */
@@ -136,11 +135,15 @@ html, body{
 }
 
 #toc-wrapper{
-  position: fixed;
+  position: absolute;
+  z-index: 1000;
   right: 0;
   width: 15%;
-  z-index: 10000;
-  // padding: 15px 0 0 0;
+  opacity: .2;
+  transition: all 200ms;
+  &:hover{
+    opacity: 1;
+  }
 }
 
 #toc{
@@ -154,12 +157,12 @@ html, body{
 }
 
 .affix-top{
-
+  position: absolute;
 }
 
 .affix{
+  position: fixed;
 }
 
 .affix-bottom{
-
 }

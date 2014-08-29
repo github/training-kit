@@ -47,32 +47,22 @@ ul.site-footer-links {
 @media screen and (max-width: 568px) {
   ul.site-footer-links {
     display: none; } }
-html, body {
-  height: 100%;
-  background: #f4f4f4;
+body {
   font-size: 16px; }
 
 .nav-list > li > a {
   font-size: 8pt; }
 
 .curriculum {
-  height: 100%;
-  width: 100%;
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
   /* General external link */
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
   /* YouTube Links */ }
   .curriculum h1, .curriculum h2, .curriculum h3, .curriculum h4, .curriculum h5, .curriculum h6, .curriculum p, .curriculum ul, .curriculum svg {
-    font-weight: normal;
-    margin: 0 15%; }
-  .curriculum pre {
-    margin: 0 15%;
-    background: white; }
-    .curriculum pre:before {
-      content: "\f0c8";
-      font: normal normal 22px octicons;
-      float: right;
-      opacity: .4; }
+    font-weight: normal; }
   .curriculum h3 {
     font-size: 400%;
     line-height: 1.25em;
@@ -85,24 +75,29 @@ html, body {
     text-shadow: 0 1px rgba(0, 0, 0, 0.1);
     color: #454545;
     border-bottom: solid 1px #e8e8ea; }
+  .curriculum pre {
+    margin: 0 15%;
+    background: white; }
+    .curriculum pre:before {
+      content: "\f0c8";
+      font: normal normal 22px octicons;
+      float: right;
+      opacity: .4; }
   .curriculum p {
     line-height: 1.75em;
     margin-bottom: 2em; }
-  .curriculum ul {
-    display: inline-block;
-    text-align: left; }
   .curriculum iframe {
     display: block;
     margin: 0 auto; }
   .curriculum .slide {
-    min-height: 100%;
     width: 100%;
     background: #ffffff;
-    display: table;
-    text-align: center; }
+    display: table; }
+    .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5 {
+      text-align: center; }
     .curriculum .slide h1, .curriculum .slide h2, .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5, .curriculum .slide h6, .curriculum .slide p, .curriculum .slide ul, .curriculum .slide pre, .curriculum .slide svg {
-      font-weight: normal;
-      padding: 0 0; }
+      margin-left: 0;
+      margin-right: 0; }
     .curriculum .slide .alignment {
       padding: 0 20%;
       display: table-cell;
@@ -152,12 +147,22 @@ html, body {
     font: normal normal 20px octicons; }
 
 #toc-wrapper {
-  position: fixed;
+  position: absolute;
+  z-index: 1000;
   right: 0;
   width: 15%;
-  z-index: 10000; }
+  opacity: .2;
+  transition: all 200ms; }
+  #toc-wrapper:hover {
+    opacity: 1; }
 
 #toc .active {
   font-weight: 700; }
   #toc .active a {
     color: #222222; }
+
+.affix-top {
+  position: absolute; }
+
+.affix {
+  position: fixed; }
