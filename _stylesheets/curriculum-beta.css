@@ -86,9 +86,6 @@ body {
   .curriculum p {
     line-height: 1.75em;
     margin-bottom: 2em; }
-  .curriculum ul {
-    display: inline-block;
-    text-align: left; }
   .curriculum iframe {
     display: block;
     margin: 0 auto; }
