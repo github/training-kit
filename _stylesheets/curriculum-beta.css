@@ -64,14 +64,6 @@ body {
   .curriculum h1, .curriculum h2, .curriculum h3, .curriculum h4, .curriculum h5, .curriculum h6, .curriculum p, .curriculum ul, .curriculum svg {
     font-weight: normal;
     margin: 0 15%; }
-  .curriculum pre {
-    margin: 0 15%;
-    background: white; }
-    .curriculum pre:before {
-      content: "\f0c8";
-      font: normal normal 22px octicons;
-      float: right;
-      opacity: .4; }
   .curriculum h3 {
     font-size: 400%;
     line-height: 1.25em;
@@ -84,6 +76,14 @@ body {
     text-shadow: 0 1px rgba(0, 0, 0, 0.1);
     color: #454545;
     border-bottom: solid 1px #e8e8ea; }
+  .curriculum pre {
+    margin: 0 15%;
+    background: white; }
+    .curriculum pre:before {
+      content: "\f0c8";
+      font: normal normal 22px octicons;
+      float: right;
+      opacity: .4; }
   .curriculum p {
     line-height: 1.75em;
     margin-bottom: 2em; }
@@ -96,11 +96,12 @@ body {
   .curriculum .slide {
     width: 100%;
     background: #ffffff;
-    display: table;
-    text-align: center; }
+    display: table; }
+    .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5 {
+      text-align: center; }
     .curriculum .slide h1, .curriculum .slide h2, .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5, .curriculum .slide h6, .curriculum .slide p, .curriculum .slide ul, .curriculum .slide pre, .curriculum .slide svg {
-      font-weight: normal;
-      padding: 0 0; }
+      margin-left: 0;
+      margin-right: 0; }
     .curriculum .slide .alignment {
       padding: 0 20%;
       display: table-cell;

@@ -33,18 +33,6 @@ body{
     margin: 0 15%;
   }
 
-  pre{
-    margin: 0 15%;
-    background: $mono-bright;
-
-    &:before {
-      content: "\f0c8";
-      font: normal normal 22px octicons;
-      float: right;
-      opacity: .4;
-    }
-  }
-
   h3{
     font-size: 400%;
     line-height: 1.25em;
@@ -61,6 +49,18 @@ body{
     border-bottom: solid 1px $mono-light;
   }
 
+  pre{
+    margin: 0 15%;
+    background: $mono-bright;
+
+    &:before {
+      content: "\f0c8";
+      font: normal normal 22px octicons;
+      float: right;
+      opacity: .4;
+    }
+  }
+
   p{
     line-height: 1.75em;
     margin-bottom: 2em;
@@ -75,24 +75,27 @@ body{
     margin: 0 auto;
   }
 
-
   .slide{
     width: 100%;
     background: #ffffff;
     display: table;
-    text-align: center;
+
+    h3,h4,h5{
+      text-align: center;
+    }
 
     h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
-      font-weight: normal;
-      padding: 0 0;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .alignment{
-      // margin: 0 20%;
       padding: 0 20%;
       display: table-cell;
       vertical-align: middle;
     }
+
+
   }
 
   /* General external link */
