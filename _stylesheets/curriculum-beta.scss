@@ -141,6 +141,11 @@ html, body{
   width: 15%;
   z-index: 10000;
   // padding: 15px 0 0 0;
+  opacity: .2;
+  transition: all 200ms;
+  &:hover{
+    opacity: 1;
+  }
 }
 
 #toc{
