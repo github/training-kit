@@ -16,7 +16,7 @@ $mono-dark: #454545;
 }
 
 body{
-  background: #f4f4f4;
+  // background: #f4f4f4;
   font-size: 16px;
 }
 
@@ -25,12 +25,14 @@ body{
 }
 
 .curriculum{
-  width: 100%;
+  width: $width-desktop;
+  // width: 100%;
+  margin: 0 auto;
   position: relative;
 
   h1,h2,h3,h4,h5,h6,p,ul,svg{
     font-weight: normal;
-    margin: 0 15%;
+    // margin: 0 15%;
   }
 
   h3{

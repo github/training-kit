@@ -48,22 +48,21 @@ ul.site-footer-links {
   ul.site-footer-links {
     display: none; } }
 body {
-  background: #f4f4f4;
   font-size: 16px; }
 
 .nav-list > li > a {
   font-size: 8pt; }
 
 .curriculum {
-  width: 100%;
+  width: 960px;
+  margin: 0 auto;
   position: relative;
   /* General external link */
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
   /* YouTube Links */ }
   .curriculum h1, .curriculum h2, .curriculum h3, .curriculum h4, .curriculum h5, .curriculum h6, .curriculum p, .curriculum ul, .curriculum svg {
-    font-weight: normal;
-    margin: 0 15%; }
+    font-weight: normal; }
   .curriculum h3 {
     font-size: 400%;
     line-height: 1.25em;
