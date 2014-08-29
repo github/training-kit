@@ -15,9 +15,11 @@ $(function(){
 	buildToc();
 
 	$(document).scrollsnap({
-	  snaps: 'section',
-	  proximity: 250
+	  snaps: '.slide',
+	  proximity: 150
 	});
+
+
 
 	function buildToc(){
 		var headings = $("h3"),
