@@ -21,7 +21,7 @@ git version 1.8.2
 
 
 #### Git key vocabulary
-Three important words that are key to learning Git are:
+Three important words key to learning Git are:
 
 * Repository
 * Commit
@@ -75,7 +75,7 @@ GitHub is the repository hosting, collaboration, deployment, and distribution pl
 
 GitHub accounts are free for an unlimited quantity of public repositories. Only private repositories cost to host on the service. Private repositories are typically used for closed-source consulting client or corporate products, whereas public repositories are typically used for open source.
 
-Sign up for a free GitHub account at https://github.com/join.
+Sign up for a free GitHub account at [github.com/join](https://github.com/join).
 
 Git can be installed as a unified GitHub GUI and command line or merely as a stand-alone command line interface.
 
@@ -146,7 +146,7 @@ Repositories can be created in numerous ways, including:
 
 #### Details & Resources
 
-In many cases, working with a code project means retriving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.  Some of the most common sources and means of cloning include:
+In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.  Some of the most common sources and means of cloning include:
 
 
 {% capture slide %}
@@ -164,7 +164,7 @@ The GitHub Web Flow allows you to:
 {% include slide-section %}
 
 
-The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still having the benefit of syntax highlighting and pre-merge code reviews and discussions.
+The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still have the benefit of syntax highlighting and pre-merge code reviews and discussions.
 
 
 
@@ -174,12 +174,12 @@ The GitHub Web Flow is a path through the GitHub user interface that facilitates
 {% capture slide %}
 ### Local repositories
 
-A commit is a transactionally grouped set of changes, described by an brief message explaining the "why" of the attached changes.
+A commit is a transactionally grouped set of changes, described by a brief message explaining the "why" of the attached changes.
 {% endcapture %}
 {% include slide-section %}
 
 
-Git enables repositories to be created both on GitHub, or locally on a developer's PC. A repository created locally can be synced to a network destination at a later time, preserving all the timestamps and comments in the local commits during the synchronization.
+Git enables repositories to be created both on GitHub, or locally on a developer's computer. A repository created locally can be synced to a network destination at a later time, preserving all the timestamps and comments in the local commits during the synchronization.
 
 ![](../assets/diagrams/distributed-version-control.svg)
 
@@ -228,7 +228,7 @@ $ git push origin [master|branch]
 {% include slide-section %}
 
 
-A branch is an divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
+A branch is a divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
 
 ![](../assets/diagrams/what-is-a-branch.svg)
 
