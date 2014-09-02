@@ -1,5 +1,5 @@
 ---
-
+leadingpath: ../
 ---
 
 
@@ -14,15 +14,15 @@
 
     {% include dependencies %}
     <!--Scrollsnap-->
-    <script src="{{ leadingpath }}/_javascript/jquery-scrollsnap-plugin/src/jquery.scrollstop.js"></script>
-    <script src="{{ leadingpath }}/_javascript/jquery-scrollsnap-plugin/src/jquery.easing.min.js"></script>
-    <script src="{{ leadingpath }}/_javascript/jquery-scrollsnap-plugin/src/jquery.scrollsnap.js"></script>
+    <script src="{{ page.leadingpath }}_javascript/jquery-scrollsnap-plugin/src/jquery.scrollstop.js"></script>
+    <script src="{{ page.leadingpath }}_javascript/jquery-scrollsnap-plugin/src/jquery.easing.min.js"></script>
+    <script src="{{ page.leadingpath }}_javascript/jquery-scrollsnap-plugin/src/jquery.scrollsnap.js"></script>
 
     <!--Curriculum setup JS-->
-    <script src="{{ leadingpath }}/_javascript/curriculum.js"></script>
+    <script src="{{ page.leadingpath }}_javascript/curriculum.js"></script>
 
     <!--Curriculum special styling-->
-    <link rel="stylesheet" href="{{ leadingpath }}/_stylesheets/curriculum-beta.css" type="text/css" />
+    <link rel="stylesheet" href="{{ page.leadingpath }}_stylesheets/curriculum-beta.css" type="text/css" />
   </head>
   <body data-spy="scroll" data-target="#toc">
     {% include navigation.html %}
