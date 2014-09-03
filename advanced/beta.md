@@ -8,13 +8,19 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 
 {% capture slide %}
 ### Understanding Git
+* Based on classic graph and hashing concepts
+* SHA1 as the core hashing algorithm
+* Linked-list-like data structure
+* Built-in data integrity
 {% endcapture %}
 {% include slide-section %}
 
-* Directed acyclic graph
+### Data structure
+* Directed acyclic graph of commits
+* Commit object
 * Tree object
 * Blob object
-* SHA1
+* SHA1 hash of commit, tree, blob
 
 {% capture svg_path %}../assets/diagrams/commit-data-structure.svg{% endcapture %}
 {% include svg %}
