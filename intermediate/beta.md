@@ -4,7 +4,7 @@ title: GitHub Intermediate
 description: Leveraging Git and GitHub from the command line
 ---
 
-This curriculum will be your companion to the GitHub Intermediate class taught by the GitHub Training Team and other educational groups. In this course, you'll learn how to extensively leverage Git and GitHub from the command line.
+This curriculum will be your companion to the GitHub Intermediate class taught by the GitHub Training Team and other educational groups. In this course you'll learn how to extensively leverage Git and GitHub from the command line.
 
 ![Git repository creation at the command line](../assets/screenshots/terminal-repo-creation.jpg)
 
@@ -123,7 +123,7 @@ $ git config --[scope] color.ui auto
 {% endcapture %}
 {% include slide-section %}
 
-Git provides an easy way to get started versioning any prototype, prose or project with a terse command line recipe.
+Git provides an easy way to start versioning any prototype, prose or project with a terse command line recipe.
 
 Initialize a repository and create a top level project directory:
 
@@ -247,7 +247,7 @@ Some simple option flag additions to the `log` command can make the output more 
 $ git log --oneline
 ```
 
-And if displaying the full contents of the change and word-level comparision are helpful, there are option switches for that too.
+And if displaying the full contents of the change and word-level comparison are helpful, there are option switches for that too.
 
 ```shell
 # Option switches common with `diff`
@@ -512,7 +512,7 @@ $ git log --stat -M
 
 
 #### Revert
-Revert is the kindest of undo functionality. It creates a new _inverse_ commit and links back to the old one in the proposed commit message:
+Revert is the kindest undo functionality. It creates a new _inverse_ commit and links back to the old one in the proposed commit message:
 
 ```shell
 # Create a new commit undoing the patch in that specified
@@ -535,7 +535,7 @@ $ git reset --soft [commit|branch|tag]
 # Move HEAD, keep changes, clear staging area
 $ git reset --mixed [commit|branch|tag]
 
-## Move HEAD, discard all uncommited changes
+## Move HEAD, discard all uncommitted changes
 $ git reset --hard [commit|branch|tag]
 ```
 
