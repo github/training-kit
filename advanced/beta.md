@@ -51,7 +51,7 @@ HEAD@{today}
 
 
 {% capture slide %}
-### Common branching strategies
+### Branching strategies
 {% endcapture %}
 {% include slide-section %}
 
@@ -112,8 +112,13 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 * Continuous integration
 
 #### Further reading
-* [Validated Build Promotions with Git, GitHub, and Jenkins](http://www.youtube.com/watch?v=Gd8OfAmKkMQ)
+[Validated Build Promotions with Git, GitHub, and Jenkins](http://www.youtube.com/watch?v=Gd8OfAmKkMQ)
 
+<iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/Gd8OfAmKkMQ?rel=0" frameborder="0" allowfullscreen></iframe>
+
+[Git and GitHub Workflows at the Utah JUG](https://speakerdeck.com/matthewmccullough/git-and-github-workflows-at-the-utah-jug)
+
+<script async class="speakerdeck-embed" data-id="111dc3201094013231b066d414c0f9a8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 {% capture slide %}
 ### Git-core GUIs
