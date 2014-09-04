@@ -15,12 +15,15 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 {% endcapture %}
 {% include slide-section %}
 
-### Data structure
+{% capture slide %}
+#### Data structure
 * Directed acyclic graph of commits
 * Commit object
 * Tree object
 * Blob object
 * SHA1 hash of commit, tree, blob
+{% endcapture %}
+{% include slide-section %}
 
 {% capture svg_path %}../assets/diagrams/commit-data-structure.svg{% endcapture %}
 {% include svg %}
@@ -828,9 +831,8 @@ $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upst
 {% endcapture %}
 {% include slide-section %}
 
-* [Advanced Git presented at JavaZone](http://vimeo.com/49444883)
-* [Master Advanced Git Video Series](http://bit.ly/ogitvid2)
-* [The Fringes of Git](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
-* [Git Notes & GitHub](http://vimeo.com/34273537)
-* [GitHub Command line client](https://github.com/jingweno/gh)
-* [Oh-my-zsh ZSH configuration](https://github.com/robbyrussell/oh-my-zsh)
+* [Advanced Git, presented at JavaZone](http://vimeo.com/49444883)
+* [Mastering Advanced Git, O'Reilly video series](http://bit.ly/ogitvid2)
+* [The Fringes of Git, Git internals video](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
+* [`gh`, GitHub command line utility](https://github.com/jingweno/gh)
+* [oh-my-zsh, ZSH plugin framework](https://github.com/robbyrussell/oh-my-zsh)
