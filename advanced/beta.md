@@ -819,17 +819,49 @@ A sample `.gitconfig` file:
 {% endcapture %}
 {% include slide-section %}
 
-#### Summary
+{% capture slide %}
+#### What are refspecs?
 * Specification for retrieval and pushing
 * Implied on fetch, pull, and push
 * Altered by option switches like `--tags`
 * Stored in `.git/config`
 * Ability to retrieve Pull Request branches
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+#### Refspec examples
 
 ```
+# Source and destination refspecs
 $ git fetch [repo-url] [source]:[destination]
+
+$ git fetch [repo-url] master
+ * branch     master     -> FETCH_HEAD
+
+$ git fetch origin refs/pull/1/head
+ * branch     refs/pull/1/head -> FETCH_HEAD
+```
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+#### Refspec to retrieve pull requests
+
+```
 $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
 ```
+{% endcapture %}
+{% include slide-section %}
+
+
+{% capture slide %}
+#### Git Refspec Documentation
+* [Git `rev-parse` command and reference specifications](https://www.kernel.org/pub/software/scm/git/docs/git-rev-parse.html)
+* [ProGit book chapter on refspecs](http://git-scm.com/book/en/Git-Internals-The-Refspec)
+{% endcapture %}
+{% include slide-section %}
+
 
 
 {% capture slide %}
@@ -850,5 +882,11 @@ This course covers many advanced uses of Git and GitHub, and yet there is still 
 #### Tools
 * [`gh`, GitHub command line utility](https://github.com/jingweno/gh)
 * [oh-my-zsh, ZSH plugin framework](https://github.com/robbyrussell/oh-my-zsh)
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+#### Git Documentation
+* [Git `man` page command documentation](https://www.kernel.org/pub/software/scm/git/docs/git.html)
 {% endcapture %}
 {% include slide-section %}
