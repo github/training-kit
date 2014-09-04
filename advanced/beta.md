@@ -831,13 +831,24 @@ $ git fetch [repo-url] [source]:[destination]
 $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
 ```
 
+
 {% capture slide %}
 ### Additional Resources
+This course covers many advanced uses of Git and GitHub, and yet there is still more to explore. We've included some of the most useful resources for our students with insatiable appetites. 
 {% endcapture %}
 {% include slide-section %}
 
+{% capture slide %}
+#### Advanced Git Videos
 * [Advanced Git, presented at JavaZone](http://vimeo.com/49444883)
 * [Mastering Advanced Git, O'Reilly video series](http://bit.ly/ogitvid2)
 * [The Fringes of Git, Git internals video](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+#### Tools
 * [`gh`, GitHub command line utility](https://github.com/jingweno/gh)
 * [oh-my-zsh, ZSH plugin framework](https://github.com/robbyrussell/oh-my-zsh)
+{% endcapture %}
+{% include slide-section %}
