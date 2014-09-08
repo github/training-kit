@@ -11,30 +11,8 @@
   }
 }
 
-.invert{
-  background: $mono-dark;
-  border-bottom: solid 1px $mono-light;
-  color: $mono-bright;
-  h2{
-    color: darken($mono-light, 20%);
-  }
-  h3,p{
-    color: darken($mono-bright, 0%);
-  }
-
-  a{
-    color: darken($mono-light, 10%);
-
-    &:hover{
-      color: $mono-bright;
-    }
-  }
-}
-
 .grey{
   background: lighten($mono-light, 5%);
-  border-top: solid 1px $mono-light;
-  border-bottom: solid 1px $mono-light;
 }
 
 .button{
