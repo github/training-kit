@@ -1,5 +1,5 @@
 ---
-layout: curriculum
+layout: curriculum-beta
 title: GitHub Foundations
 description: Discovering the GitHub collaboration platform
 ---
@@ -14,22 +14,20 @@ git version 1.8.2
 ```
 {% endcapture %}
 {% include slide-section %}
+{% capture slide %}
+![svg](../assets/diagrams/distributed-version-control.svg)
+{% endcapture %}
+{% include slide-section %}
 
-#### Details & Resources
+
 #### Git key vocabulary
-Three important words that are key to learning Git are:
+Three important words key to learning Git are:
 
 * Repository
 * Commit
 * Branch
 
-
-
 __Git is an open source distributed__ version control system invented by Linus Torvalds in 2005.  It is used to version the Linux kernel and is shown to be, by some research, the most popular modern version control system.
-
-Git is the open source, command line tool that forms a part of the workflows we'll cover in this course.  It has been called the successor to CVS and Subversion by many users, and maintains some similarity in behavior to these historical open source version control tools.
-
-Maintaining a current version of Git is important. While you'll accurately hear that Git is generously backwards-compatible, the latest versions offer error message enhancements, performance tunings, and usability features that make using Git ever more quick and pleasant.
 
 #### Git key concepts
 Three important concepts of this version control system are:
@@ -37,9 +35,6 @@ Three important concepts of this version control system are:
 * Distributed version control is the concept of full copies of the repository on every contributing machine
 * Git is the file and information tracker
 * GitHub is the collaboration platform
-
-{% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
-{% include svg %}
 
 #### Deeper study
 * [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
@@ -80,7 +75,7 @@ GitHub is the repository hosting, collaboration, deployment, and distribution pl
 
 GitHub accounts are free for an unlimited quantity of public repositories. Only private repositories cost to host on the service. Private repositories are typically used for closed-source consulting client or corporate products, whereas public repositories are typically used for open source.
 
-Sign up for a free GitHub account at https://github.com/join.
+Sign up for a free GitHub account at [github.com/join](https://github.com/join).
 
 Git can be installed as a unified GitHub GUI and command line or merely as a stand-alone command line interface.
 
@@ -118,8 +113,7 @@ Repositories can be created in numerous ways, including:
 * With a GitHub GUI
 * With `git init` at the command line
 
-{% capture svg_path %}../assets/diagrams/repo-clone.svg{% endcapture %}
-{% include svg %}
+![svg](../assets/diagrams/repo-clone.svg)
 
 #### Repository creation concepts
 <!-- TODO -->
@@ -145,18 +139,14 @@ Repositories can be created in numerous ways, including:
 * Clone via SSH or HTTPS URL
 {% endcapture %}
 {% include slide-section %}
-
 {% capture slide %}
-
-{% capture svg_path %}../assets/diagrams/what-is-a-commit.svg{% endcapture %}
-{% include svg %}
-
+![svg](../assets/diagrams/what-is-a-commit.svg)
 {% endcapture %}
 {% include slide-section %}
 
 #### Details & Resources
 
-In many cases, working with a code project means retriving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.  Some of the most common sources and means of cloning include:
+In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.  Some of the most common sources and means of cloning include:
 
 
 {% capture slide %}
@@ -174,7 +164,7 @@ The GitHub Web Flow allows you to:
 {% include slide-section %}
 
 
-The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still having the benefit of syntax highlighting and pre-merge code reviews and discussions.
+The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still have the benefit of syntax highlighting and pre-merge code reviews and discussions.
 
 
 
@@ -184,12 +174,12 @@ The GitHub Web Flow is a path through the GitHub user interface that facilitates
 {% capture slide %}
 ### Local repositories
 
-A commit is a transactionally grouped set of changes, described by an brief message explaining the "why" of the attached changes.
+A commit is a transactionally grouped set of changes, described by a brief message explaining the "why" of the attached changes.
 {% endcapture %}
 {% include slide-section %}
 
 
-Git enables repositories to be created both on GitHub, or locally on a developer's PC. A repository created locally can be synced to a network destination at a later time, preserving all the timestamps and comments in the local commits during the synchronization.
+Git enables repositories to be created both on GitHub, or locally on a developer's computer. A repository created locally can be synced to a network destination at a later time, preserving all the timestamps and comments in the local commits during the synchronization.
 
 ![](../assets/diagrams/distributed-version-control.svg)
 
@@ -212,8 +202,7 @@ Git enables repositories to be created both on GitHub, or locally on a developer
 {% capture slide %}
 ### Syncing history
 
-{% capture svg_path %}../assets/diagrams/sync.svg{% endcapture %}
-{% include svg %}
+![svg](../assets/diagrams/sync.svg)
 {% endcapture %}
 {% include slide-section %}
 
@@ -239,10 +228,9 @@ $ git push origin [master|branch]
 {% include slide-section %}
 
 
-A branch is an divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
+A branch is a divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
 
 ![](../assets/diagrams/what-is-a-branch.svg)
 
 #### Branching video
 <iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
