@@ -1,5 +1,5 @@
 ---
-layout: curriculum-beta
+layout: curriculum
 title: GitHub Intermediate
 description: Leveraging Git and GitHub from the command line
 ---

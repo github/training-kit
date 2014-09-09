@@ -1,5 +1,5 @@
 ---
-layout: curriculum-beta
+layout: curriculum
 title: GitHub Advanced
 description: Mastering Git and GitHub
 ---
@@ -866,7 +866,7 @@ $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upst
 
 {% capture slide %}
 ### Additional Resources
-This course covers many advanced uses of Git and GitHub, and yet there is still more to explore. We've included some of the most useful resources for our students with insatiable appetites. 
+This course covers many advanced uses of Git and GitHub, and yet there is still more to explore. We've included some of the most useful resources for our students with insatiable appetites.
 {% endcapture %}
 {% include slide-section %}
 

@@ -1,5 +1,5 @@
 ---
-layout: curriculum-beta
+layout: curriculum
 title: GitHub Foundations
 description: Discovering the GitHub collaboration platform
 ---
