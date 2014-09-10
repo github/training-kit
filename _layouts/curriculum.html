@@ -1,51 +1,18 @@
 ---
+layout: site
 leadingpath: ../
 ---
 
+<div class="container curriculum">
 
-<!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
-  <head>
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    {% endif %}
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-
-    {% include dependencies %}
-    <!--Scrollsnap-->
-    <script src="{{ page.leadingpath }}_javascript/jquery-scrollsnap-plugin/src/jquery.scrollstop.js"></script>
-    <script src="{{ page.leadingpath }}_javascript/jquery-scrollsnap-plugin/src/jquery.easing.min.js"></script>
-    <script src="{{ page.leadingpath }}_javascript/jquery-scrollsnap-plugin/src/jquery.scrollsnap.js"></script>
-
-    <!--Curriculum setup JS-->
-    <script src="{{ page.leadingpath }}_javascript/curriculum.js"></script>
-
-    <!--Curriculum special styling-->
-    <link rel="stylesheet" href="{{ page.leadingpath }}_stylesheets/curriculum-beta.css" type="text/css" />
-  </head>
-  <body data-spy="scroll" data-target="#toc">
-    {% include navigation.html %}
-
-    <div class="hero overview">
-      <div class="container">
-        <div class="content">
-          <h2>{{ page.title }}</h2>
-          <p>{{ page.description }}</p>
-        </div>
+  <div class="col-md-9">
+    {{ content }}
+  </div>
+  <div class="col-md-3">
+    <div id="toc-wrapper">
+      <div id="toc" data-spy="affix" data-offset-top="145">
+        <ul id="toc-list" class="nav" role="tablist"></ul>
       </div>
     </div>
-
-    <div class="curriculum">
-      <div id="toc-wrapper">
-        <div id="toc" data-spy="affix" data-offset-top="165">
-          <ul id="toc-list" class="nav" role="tablist"></ul>
-        </div>
-      </div>
-
-      {{ content }}
-    </div>
-
-    {% include footer.html %}
-  </body>
-</html>
+  </div>
+</div>
