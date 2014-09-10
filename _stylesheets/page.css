@@ -4,12 +4,13 @@
   text-decoration: none; }
   .jumbotron.classes a .panel {
     background: none;
-    border: solid 1px #00a5ea;
-    height: 16em;
+    box-shadow: none;
     margin: 1em;
-    padding: 1em; }
+    padding: 1em;
+    opacity: .9; }
   .jumbotron.classes a:hover .panel {
-    background: white; }
+    color: white;
+    opacity: 1; }
   .jumbotron.classes a .octicon {
     font-size: 4em; }
 

@@ -12,18 +12,19 @@ $mono-bright: #ffffff;
 	&.classes{
 		a{
 			text-decoration: none;
-			
+
 			.panel{
 				background: none;
-				border: solid 1px $color-bright;
-				height: 16em;
+				box-shadow: none;
 				margin: 1em;
 				padding: 1em;
+				opacity: .9;
 			}
 
 			&:hover{
 				.panel{
-					background: white;
+					color: $mono-bright;
+					opacity: 1;
 				}
 			}
 

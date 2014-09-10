@@ -112,10 +112,12 @@ body {
   #toc-wrapper:hover {
     opacity: 1; }
 
-#toc .active {
-  font-weight: 700; }
-  #toc .active a {
-    color: #222222; }
+#toc {
+  font-size: .8em; }
+  #toc .active {
+    font-weight: 700; }
+    #toc .active a {
+      color: #222222; }
 
 .affix-top {
   position: absolute; }

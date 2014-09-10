@@ -1,6 +1,8 @@
 /* Imports */
 @import "variables.scss";
+@import "octicons.css";
 
+$mono-dark: #454545;
 @mixin octicon-link($char){
   font: normal normal 1em octicons;
   text-decoration: none;
@@ -12,49 +14,102 @@
   }
 }
 
+body{
+  // background: #f4f4f4;
+  font-size: 16px;
+}
+
 .nav-list>li>a{
   font-size: 8pt;
 }
 
 .curriculum{
-  font-size: 18px;
+  // width: $width-desktop - 200px;
+  // padding: 0 200px 0 0;
+  // margin: 0 auto;
+  position: relative;
 
-  h3 {
-      margin-top: 3em;
-      font-size: 240%;
-      line-height: 170%;
-      font-weight: 500;
-      border-bottom: solid 1px #eeeeee;
-      color: $color-dark;
-
-      &:first-child{
-        margin-top: 0;
-      }
+  h1,h2,h3,h4,h5,h6,p,ul,svg{
+    font-weight: normal;
+    // margin: 0 15%;
   }
 
-  h5{
-    font-size: 130%;
-    margin: 2em 0 0;
+  h3{
+    font-size: 400%;
+    line-height: 1.25em;
+    margin-bottom: .5em;
+    text-shadow: 0 1px rgba(0,0,0,.1);
+  }
 
-    &:before{
-      font: normal normal 16px octicons;
-      color: $mono-bright;
-      content: "\f089";
-      display: inline-block;
-      margin-right: 1em;
-      margin-left: -42px;
-      border-radius: 50%;
-      background: $mono-light;
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      line-height: 30px;
+  h4{
+    font-size: 250%;
+    line-height: 1.35em;
+    margin-bottom: .5em;
+    text-shadow: 0 1px rgba(0,0,0,.1);
+    color: $mono-dark;
+    border-bottom: solid 1px $mono-light;
+  }
+
+  pre, table{
+    background: #f9fafa;
+    border: solid 1px #edeff0;
+    border-radius: 3px;
+    box-shadow: 0px 4px 0 0px #edeff0;
+    line-height: 2em;
+  }
+
+  pre{
+    &:before {
+      content: "\f0c8";
+      font: normal normal 22px octicons;
+      float: right;
+      color: #c0c7ce;
+    }
+  }
+  table{
+    th, td{
+      text-align: left;
+      padding: 0 1em;
     }
   }
 
   p{
-    line-height: 140%;
-    margin-bottom: 1.8em;
+    line-height: 1.75em;
+    margin-bottom: 2em;
+  }
+
+  iframe{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .slide{
+    width: 100%;
+    background: #ffffff;
+    display: table;
+
+    h3,h4,h5{
+      text-align: center;
+    }
+
+    h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    pre{
+      code{
+        font-size: 1.5em;
+      }
+    }
+
+    .alignment{
+      padding: 0 10%;
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+
   }
 
   /* General external link */
@@ -93,43 +148,18 @@
       font: normal normal 20px octicons;
     }
   }
-
-  table, pre{
-    background: $mono-light;
-    padding: 20px;
-    display: block;
-  }
-
-  pre{
-    padding: 10px auto;
-    margin: 1em auto 2em;
-    width: auto;
-
-    /* To ensure scrolling of long code lines */
-    overflow: auto;
-    word-wrap: normal;
-    white-space: pre;
-  }
-
-  pre:before {
-    content: "\f0c8";
-    font: normal normal 22px octicons;
-    float: right;
-    opacity: .4;
-  }
-
 }
 
 #toc-wrapper{
-  float: right;
-  padding: 0;
+  opacity: .2;
+  transition: all 200ms;
+  &:hover{
+    opacity: 1;
+  }
 }
 
 #toc{
-  width: 200px;
-  border-radius: 3px;
-
-  font-size: 12px;
+  font-size: .8em;
 
   .active{
     font-weight: 700;
@@ -141,13 +171,12 @@
 }
 
 .affix-top{
-
+  position: absolute;
 }
 
 .affix{
-  margin-top: -165px;
+  margin-top: -145px;
 }
 
 .affix-bottom{
-
 }
