@@ -13,8 +13,9 @@ body {
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
   /* YouTube Links */ }
-  .curriculum h1, .curriculum h2, .curriculum h3, .curriculum h4, .curriculum h5, .curriculum h6, .curriculum p, .curriculum ul, .curriculum svg {
-    font-weight: normal; }
+  .curriculum img {
+    width: 100%;
+    height: auto; }
   .curriculum h3 {
     font-size: 400%;
     line-height: 1.25em;
