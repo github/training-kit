@@ -8,9 +8,6 @@ body {
   font-size: 8pt; }
 
 .curriculum {
-  width: 760px;
-  padding: 0 200px 0 0;
-  margin: 0 auto;
   position: relative;
   /* General external link */
   /* GitHub Links */
@@ -110,10 +107,6 @@ body {
     font: normal normal 20px octicons; }
 
 #toc-wrapper {
-  position: absolute;
-  z-index: 1000;
-  right: 0;
-  width: 15%;
   opacity: .2;
   transition: all 200ms; }
   #toc-wrapper:hover {
@@ -128,4 +121,4 @@ body {
   position: absolute; }
 
 .affix {
-  position: fixed; }
+  margin-top: -145px; }

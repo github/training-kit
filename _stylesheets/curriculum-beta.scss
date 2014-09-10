@@ -24,9 +24,9 @@ body{
 }
 
 .curriculum{
-  width: $width-desktop - 200px;
-  padding: 0 200px 0 0;
-  margin: 0 auto;
+  // width: $width-desktop - 200px;
+  // padding: 0 200px 0 0;
+  // margin: 0 auto;
   position: relative;
 
   h1,h2,h3,h4,h5,h6,p,ul,svg{
@@ -151,10 +151,6 @@ body{
 }
 
 #toc-wrapper{
-  position: absolute;
-  z-index: 1000;
-  right: 0;
-  width: 15%;
   opacity: .2;
   transition: all 200ms;
   &:hover{
@@ -177,7 +173,7 @@ body{
 }
 
 .affix{
-  position: fixed;
+  margin-top: -145px;
 }
 
 .affix-bottom{
