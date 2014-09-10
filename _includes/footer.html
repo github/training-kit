@@ -1,22 +1,28 @@
-<footer class="page-footer">
+<footer>
   <div class="container">
-    <ul class="site-footer-links right">
-      <li><a href="https://twitter.com/GitHubTraining"><span class="octicon octicon-mark-twitter"></span>@githubtraining</a></li>
-      <li><a href="https://status.github.com">Status</a></li>
-      <li><a href="https://github.com/blog">Blog</a></li>
-      <li><a href="https://github.com/about">About</a></li>
-    </ul>
+    <div class="row">
+      <div class="col-md-5">
+        <ul class="text-left">
+          <li>&copy; {{ site.time | date: '%Y' }} <span>GitHub</span>, Inc.</li>
+          <li><a href="https://github.com/site/terms">Terms</a></li>
+          <li><a href="https://training.github.com/kit/license.html">License</a></li>
+          <li><a href="https://github.com/security">Security</a></li>
+          <li><a href="https://training.github.com/contact">Contact</a></li>
+        </ul>
+      </div>
 
-    <a href="/">
-      <span class="mega-octicon octicon-mark-github"></span>
-    </a>
+      <div class="col-md-2">
+        <a href="/"><span class="mega-octicon octicon-mark-github"></span></a>
+      </div>
 
-    <ul class="site-footer-links">
-      <li>&copy; {{ site.time | date: '%Y' }} <span>GitHub</span>, Inc.</li>
-      <li><a href="https://github.com/site/terms">Terms</a></li>
-      <li><a href="https://training.github.com/kit/license.html">License</a></li>
-      <li><a href="https://github.com/security">Security</a></li>
-      <li><a href="https://training.github.com/contact">Contact</a></li>
-    </ul>
+      <div class="col-md-5">
+        <ul class="text-right">
+          <li><a href="https://twitter.com/GitHubTraining"><span class="octicon octicon-mark-twitter"></span>githubtraining</a></li>
+          <li><a href="https://status.github.com">Status</a></li>
+          <li><a href="https://github.com/blog">Blog</a></li>
+          <li><a href="https://github.com/about">About</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>

@@ -16,7 +16,7 @@ $(function(){
 
 	$(document).scrollsnap({
 	  snaps: '.slide',
-	  proximity: 150
+	  proximity: 100
 	});
 
 	function buildToc(){

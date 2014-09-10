@@ -1,52 +1,6 @@
 /* Imports */
 /* Color Definitions */
 @import url(octicons.css);
-footer {
-  float: left;
-  position: relative;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #777;
-  clear: both;
-  width: 100%;
-  height: 40px;
-  margin: 0 auto 0 auto;
-  padding: 20px 0 20px 0;
-  border-top: 1px solid #eee; }
-  footer ul li {
-    margin: 0;
-    padding: 0;
-    font-size: 12px; }
-  footer .left {
-    float: left;
-    margin: 0; }
-  footer .right {
-    float: right;
-    margin: 0; }
-  footer .octicon-mark-github {
-    position: absolute;
-    left: 50%;
-    color: #ccc;
-    height: 24px;
-    width: 24px;
-    margin-left: -12px;
-    font-size: 24px;
-    line-height: 1; }
-  footer a {
-    color: #1875c6;
-    text-decoration: none; }
-
-ul.site-footer-links {
-  padding: 0 10px; }
-  ul.site-footer-links li {
-    display: inline-block;
-    margin-left: 5px; }
-  ul.site-footer-links li:first-child {
-    margin-left: 0; }
-
-@media screen and (max-width: 568px) {
-  ul.site-footer-links {
-    display: none; } }
 body {
   font-size: 16px; }
 
@@ -54,9 +8,6 @@ body {
   font-size: 8pt; }
 
 .curriculum {
-  width: 760px;
-  padding: 0 200px 0 0;
-  margin: 0 auto;
   position: relative;
   /* General external link */
   /* GitHub Links */
@@ -75,7 +26,7 @@ body {
     margin-bottom: .5em;
     text-shadow: 0 1px rgba(0, 0, 0, 0.1);
     color: #454545;
-    border-bottom: solid 1px #e8e8ea; }
+    border-bottom: solid 1px #f3f3f3; }
   .curriculum pre, .curriculum table {
     background: #f9fafa;
     border: solid 1px #edeff0;
@@ -156,22 +107,20 @@ body {
     font: normal normal 20px octicons; }
 
 #toc-wrapper {
-  position: absolute;
-  z-index: 1000;
-  right: 0;
-  width: 15%;
   opacity: .2;
   transition: all 200ms; }
   #toc-wrapper:hover {
     opacity: 1; }
 
-#toc .active {
-  font-weight: 700; }
-  #toc .active a {
-    color: #222222; }
+#toc {
+  font-size: .8em; }
+  #toc .active {
+    font-weight: 700; }
+    #toc .active a {
+      color: #222222; }
 
 .affix-top {
   position: absolute; }
 
 .affix {
-  position: fixed; }
+  margin-top: -145px; }

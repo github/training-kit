@@ -1,0 +1,7 @@
+{% if page.attention_message %}
+<div class="jumbotron alert alert-warning">
+  <div class="container">
+    {{page.attention_message | markdownify}}
+  </div>
+</div>
+{% endif %}
