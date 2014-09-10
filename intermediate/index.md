@@ -3,13 +3,17 @@ layout: curriculum
 title: GitHub Intermediate
 description: Leveraging Git and GitHub from the command line
 ---
- 
 
-This curriculum will be your companion to the GitHub Intermediate class taught by the GitHub Training Team and other educational groups. In this course, you'll learn how to extensively leverage Git and GitHub from the command line.
+This curriculum will be your companion to the GitHub Intermediate class taught by the GitHub Training Team and other educational groups. In this course you'll learn how to extensively leverage Git and GitHub from the command line.
 
 ![Git repository creation at the command line](../assets/screenshots/terminal-repo-creation.jpg)
 
+{% capture slide %}
 ### Git Configuration
+{% endcapture %}
+{% include slide-section %}
+
+
 Git is configured through name-value pairs saved in an [INI file format](http://en.wikipedia.org/wiki/INI_file). The name-value pairs can be read and written through the `git config` command.
 
 Git's configuration is saved in one of three plain text files and one of three levels and is easily editable with a text editor and portable to other machines by copying the configuration files.
@@ -114,9 +118,12 @@ $ git config --[scope] color.ui auto
 4. If on Mac, set your line ending behavior to `core.autocrlf input`
 5. List out all your remaining Git configuration values.
 
-
+{% capture slide %}
 ### Start a repository
-Git provides an easy way to get started versioning any prototype, prose or project with a terse command line recipe.
+{% endcapture %}
+{% include slide-section %}
+
+Git provides an easy way to start versioning any prototype, prose or project with a terse command line recipe.
 
 Initialize a repository and create a top level project directory:
 
@@ -153,7 +160,11 @@ $ git clone [url] [optional-folder-name]
 #### Video
 <iframe src="//player.vimeo.com/video/88313612" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+{% capture slide %}
 ### Versioning content
+{% endcapture %}
+{% include slide-section %}
+
 
 ```shell
 $ git status
@@ -169,26 +180,25 @@ $ git commit -m "[your description]"
 ```
 
 #### Three stage thinking
-{% capture svg_path %}../assets/diagrams/commit-three-stage.svg{% endcapture %}
-{% include svg %}
+![diagram](../assets/diagrams/commit-three-stage.svg)
 
 #### Commit versions
-{% capture svg_path %}../assets/diagrams/commit-versions.svg{% endcapture %}
-{% include svg %}
+![diagram](../assets/diagrams/commit-versions.svg)
 
 #### Commit DAG
-{% capture svg_path %}../assets/diagrams/commit-dag.svg{% endcapture %}
-{% include svg %}
+![diagram](../assets/diagrams/commit-dag.svg)
 
 #### Video
 <iframe src="//player.vimeo.com/video/88315552" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-
+{% capture slide %}
 ### Review pending modifications
+{% endcapture %}
+{% include slide-section %}
+
 Git advocates precision in each commit's contents and commit message.  This is facilitated by easy reviewing of in-flight changes prior to describing them and making them permanent.
 
-{% capture svg_path %}../assets/diagrams/diff.svg{% endcapture %}
-{% include svg %}
+![diagram](../assets/diagrams/diff.svg)
 
 The simplest invocation of `diff` is the most common. It displays the difference of the files that have been modified.
 
@@ -219,8 +229,11 @@ $ git diff [file-path]
 #### Video
 <iframe src="//player.vimeo.com/video/88315553" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-
+{% capture slide %}
 ### Review historical changes
+{% endcapture %}
+{% include slide-section %}
+
 Git can look back at the history of each commit to see when a change took place, who made the change, or what the change contained.
 
 ```shell
@@ -234,7 +247,7 @@ Some simple option flag additions to the `log` command can make the output more 
 $ git log --oneline
 ```
 
-And if displaying the full contents of the change and word-level comparision are helpful, there are option switches for that too.
+And if displaying the full contents of the change and word-level comparison are helpful, there are option switches for that too.
 
 ```shell
 # Option switches common with `diff`
@@ -244,13 +257,15 @@ $ git log --patch --color-words
 #### Video
 <iframe src="//player.vimeo.com/video/95811891" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-
+{% capture slide %}
 ### Local workflows
+{% endcapture %}
+{% include slide-section %}
+
 
 Organizing history:
 
-{% capture svg_path %}../assets/diagrams/what-is-a-branch.svg{% endcapture %}
-{% include svg %}
+![diagram](../assets/diagrams/what-is-a-branch.svg)
 
 
 #### Branching
@@ -295,19 +310,19 @@ $ git merge [branch]
 
 Merge fast-forward:
 
-{% capture svg_path %}../assets/diagrams/merge-fast-forward.svg{% endcapture %}
-{% include svg %}
+![diagram](../assets/diagrams/merge-fast-forward.svg)
 
 Merge recursive:
 
-{% capture svg_path %}../assets/diagrams/merge-recursive.svg{% endcapture %}
-{% include svg %}
+![diagram](../assets/diagrams/merge-recursive.svg)
 
-
+{% capture slide %}
 ### Distributed repositories
+{% endcapture %}
+{% include slide-section %}
 
-{% capture svg_path %}../assets/diagrams/distributed-version-control.svg{% endcapture %}
-{% include svg %}
+
+![diagram](../assets/diagrams/distributed-version-control.svg)
 
 Git is capable of working with 0 to N remotes. 0 means the local repo only knows about the local file system, 1 represents a more traditional centralized model, and 1+N is an example of the "distributed" multi-mastered facet of a DVCS.
 
@@ -323,11 +338,13 @@ Additional remotes (bookmarks) are added as a name-URL-value pair. The default n
 $ git remote add [name] [url]
 ```
 
-
+{% capture slide %}
 ### Remote workflows
+{% endcapture %}
+{% include slide-section %}
 
-{% capture svg_path %}../assets/diagrams/fork-structure.svg{% endcapture %}
-{% include svg %}
+
+![diagram](../assets/diagrams/fork-structure.svg)
 
 Acquiring a repo:
 
@@ -384,8 +401,7 @@ $ git fetch [url] [branch]
 
 #### Sharing changes
 
-{% capture svg_path %}../assets/diagrams/network.svg{% endcapture %}
-{% include svg %}
+![diagram](../assets/diagrams/network.svg)
 
 A fully-specified push can indicate both the destination and contents:
 
@@ -408,8 +424,11 @@ The most simplistic invocation of `push` leverages _tracking_ as set up by a `cl
 $ git push
 ```
 
-
+{% capture slide %}
 ### Shortcuts and custom commands
+{% endcapture %}
+{% include slide-section %}
+
 
 ```shell
 # Shortcut to output commit history
@@ -426,12 +445,14 @@ $ git config --global alias.lol "log --graph --all --oneline --decorate"
 $ git config alias.s "status -s"
 ```
 
-
+{% capture slide %}
 ### File lifecycle
+{% endcapture %}
+{% include slide-section %}
+
 Files in Git transition through a well-defined states of tracking.
 
-{% capture svg_path %}../assets/diagrams/states-of-tracking.svg{% endcapture %}
-{% include svg %}
+![diagram](../assets/diagrams/states-of-tracking.svg)
 
 #### Adding files
 
@@ -484,10 +505,14 @@ $ git log --stat -M
 #### File similarity video
 <iframe src="//player.vimeo.com/video/99213354" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+{% capture slide %}
 ### Undoing changes
+{% endcapture %}
+{% include slide-section %}
+
 
 #### Revert
-Revert is the kindest of undo functionality. It creates a new _inverse_ commit and links back to the old one in the proposed commit message:
+Revert is the kindest undo functionality. It creates a new _inverse_ commit and links back to the old one in the proposed commit message:
 
 ```shell
 # Create a new commit undoing the patch in that specified
@@ -510,11 +535,15 @@ $ git reset --soft [commit|branch|tag]
 # Move HEAD, keep changes, clear staging area
 $ git reset --mixed [commit|branch|tag]
 
-## Move HEAD, discard all uncommited changes
+## Move HEAD, discard all uncommitted changes
 $ git reset --hard [commit|branch|tag]
 ```
 
+{% capture slide %}
 ### Recovering anything
+{% endcapture %}
+{% include slide-section %}
+
 
 #### Reviewing historical states
 

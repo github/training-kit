@@ -6,12 +6,24 @@ description: Mastering Git and GitHub
 
 This curriculum will be your companion to the GitHub Advanced class taught by the GitHub Training Team and other educational groups. In this course, you'll explore strategies for branch and history rewriting, temporary storing and recovery techniques, and Git technology mechanics for faster problem solving.
 
+{% capture slide %}
 ### Understanding Git
+* Based on classic graph and hashing concepts
+* SHA1 as the core hashing algorithm
+* Linked-list-like data structure
+* Built-in data integrity
+{% endcapture %}
+{% include slide-section %}
 
-* Directed acyclic graph
+{% capture slide %}
+#### Data structure
+* Directed acyclic graph of commits
+* Commit object
 * Tree object
 * Blob object
-* SHA1
+* SHA1 hash of commit, tree, blob
+{% endcapture %}
+{% include slide-section %}
 
 {% capture svg_path %}../assets/diagrams/commit-data-structure.svg{% endcapture %}
 {% include svg %}
@@ -38,8 +50,10 @@ HEAD@{today}
 ```
 
 
-
-### Common branching strategies
+{% capture slide %}
+### Branching strategies
+{% endcapture %}
+{% include slide-section %}
 
 #### Summary
 * GitHub Flow
@@ -85,7 +99,12 @@ These are called Branching Strategies, but are just as easily called *Team Colla
     * [How To Merge Without Fear](http://blog.springsource.org/2010/12/21/git-and-social-coding-how-to-merge-without-fear/)
     * [What to do when things get complicated](http://blog.springsource.org/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/)
 
+
+{% capture slide %}
 ### Applying branching patterns
+{% endcapture %}
+{% include slide-section %}
+
 #### Summary
 * Breaking features down into pieces
 * Feedback early on Pull Requests
@@ -93,9 +112,19 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 * Continuous integration
 
 #### Further reading
-* [Validated Build Promotions with Git, GitHub, and Jenkins](http://www.youtube.com/watch?v=Gd8OfAmKkMQ)
+[Validated Build Promotions with Git, GitHub, and Jenkins](http://www.youtube.com/watch?v=Gd8OfAmKkMQ)
 
+<iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/Gd8OfAmKkMQ?rel=0" frameborder="0" allowfullscreen></iframe>
+
+[Git and GitHub Workflows at the Utah JUG](https://speakerdeck.com/matthewmccullough/git-and-github-workflows-at-the-utah-jug)
+
+<script async class="speakerdeck-embed" data-id="111dc3201094013231b066d414c0f9a8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+{% capture slide %}
 ### Git-core GUIs
+{% endcapture %}
+{% include slide-section %}
+
 
 #### Summary
 * for staging, committing
@@ -111,9 +140,13 @@ $ gitk --all
 ```
 
 
+{% capture slide %}
 ### Mastering Shortcuts
 * Shortcuts to multiple steps
 * Useful customized commands
+{% endcapture %}
+{% include slide-section %}
+
 
 Add and commit along with the commit message:
 
@@ -133,11 +166,16 @@ Checkout and create a branch:
 $ git checkout -b [branch] [base]
 ```
 
-
+{% capture slide %}
 ### Isolating Work
+
 * Version patches of large change sets
 * Stage interactively on command line
 * Revise to-be-committed patch
+{% endcapture %}
+{% include slide-section %}
+
+
 
 ```bash
 # Stage by patch
@@ -147,7 +185,11 @@ $ git add -p [file]
 git reset reset HEAD -p [file]
 ```
 
+
+{% capture slide %}
 ### Branch best practices
+{% endcapture %}
+{% include slide-section %}
 
 * Pros/cons of collapsing commits during merge
 * Relation to branching strategies and deliverable expectations
@@ -176,8 +218,10 @@ List branches without this merged in:
 $ git branch --no-merged [commit]
 ```
 
-
+{% capture slide %}
 ### Ignoring content
+{% endcapture %}
+{% include slide-section %}
 
 #### Repository-specific ignores
 * Ignoring files from repo & system level
@@ -209,7 +253,10 @@ $ git add -f [path]
 <iframe src="//player.vimeo.com/video/99804597" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
+{% capture slide %}
 ### Navigating History
+{% endcapture %}
+{% include slide-section %}
 
 ```bash
 $ git log --author [author-name]
@@ -244,11 +291,16 @@ ion syntax](https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html)
 #### Video
 <iframe src="//player.vimeo.com/video/95811891" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+
+{% capture slide %}
 ### Temporary Changes
 
 * Name your stash
 * List stashes
 * Use specific stashes
+{% endcapture %}
+{% include slide-section %}
+
 
 ```shell
 $ git stash
@@ -262,8 +314,11 @@ $ git stash clear
 $ git stash -p
 ```
 
-
+{% capture slide %}
 ### Incorporating History
+{% endcapture %}
+{% include slide-section %}
+
 
 * Reusing small pieces of code with `cherry-pick`
 * Why use `cherry-pick` instead of `merge`?
@@ -303,8 +358,10 @@ $ git cherry [upstreambranch]
 + 315fe16408f9a9080527e00df3d9a8c1ba0dc97a
 ```
 
-
+{% capture slide %}
 ### Rewriting history with rebase
+{% endcapture %}
+{% include slide-section %}
 
 {% capture svg_path %}../assets/diagrams/rebase.svg{% endcapture %}
 {% include svg %}
@@ -381,7 +438,11 @@ $ git rebase --onto <newbase> <upstream> <HEAD|branch>
 * [Git rebase --onto section of Pro Git book](http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases)
 
 
+
+{% capture slide %}
 ### Cutting Releases
+{% endcapture %}
+{% include slide-section %}
 
 #### Summary
 * Why create a tag through the web UI?
@@ -420,8 +481,11 @@ $ git tag -d 12345
 $ git push origin :[tag-name-to-delete]
 ```
 
-
+{% capture slide %}
 ### Reviewing & synchronizing
+{% endcapture %}
+{% include slide-section %}
+
 
 #### Reviewing remote branches
 * PRs to horizontal contributors
@@ -495,7 +559,11 @@ $ git fetch [repo-url] [source]:[destination]
 $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
 ```
 
+
+{% capture slide %}
 ### Aggregating repositories
+{% endcapture %}
+{% include slide-section %}
 
 #### Adding submodules
 Add a separate repository as a subdirectory:
@@ -552,7 +620,11 @@ $ git merge --squash
 ```
 
 
+{% capture slide %}
 ### GitHub CLI
+{% endcapture %}
+{% include slide-section %}
+
 * Uses the API for interfacing with your repos
 * Stores OAUTH token, credentials
 * Highly efficient for power-users
@@ -579,7 +651,11 @@ $ gh browse
 ```
 
 
+
+{% capture slide %}
 ### Signing work
+{% endcapture %}
+{% include slide-section %}
 
 #### By commit message
 Adds a rigorously formatted text block to commit messages:
@@ -616,7 +692,12 @@ $ git tag -v [tag-name]
 ```
 
 
+
+{% capture slide %}
 ### Cleaning up history
+{% endcapture %}
+{% include slide-section %}
+
 ```shell
 $ git filter-branch
     --subdirectory-filter [dir]
@@ -630,7 +711,12 @@ $ git filter-branch --index-filter
 ```
 
 
+
+{% capture slide %}
 ### Avoiding Repetitive Conflicts
+{% endcapture %}
+{% include slide-section %}
+
 * *Re*use *re*corded *re*solution
 * Preserves pre-image to simplify conflicts
 
@@ -652,7 +738,10 @@ $ curl -n <URL>
 ```
 
 
+{% capture slide %}
 ### Cleaning
+{% endcapture %}
+{% include slide-section %}
 
 #### Summary
 * Purge untracked in working dir
@@ -666,7 +755,11 @@ $ git clean -fd
 $ git clean -fx
 ```
 
+
+{% capture slide %}
 ### Diff & merge tool
+{% endcapture %}
+{% include slide-section %}
 
 #### Summary
 * [P4Merge](http://www.perforce.com/downloads/Perforce/20-User)
@@ -720,24 +813,80 @@ A sample `.gitconfig` file:
     keepBackup = false
 ```
 
+
+{% capture slide %}
 ### Refspecs
-#### Summary
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+#### What are refspecs?
 * Specification for retrieval and pushing
 * Implied on fetch, pull, and push
 * Altered by option switches like `--tags`
 * Stored in `.git/config`
 * Ability to retrieve Pull Request branches
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+#### Refspec examples
 
 ```
+# Source and destination refspecs
 $ git fetch [repo-url] [source]:[destination]
+
+$ git fetch [repo-url] master
+ * branch     master     -> FETCH_HEAD
+
+$ git fetch origin refs/pull/1/head
+ * branch     refs/pull/1/head -> FETCH_HEAD
+```
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+#### Refspec to retrieve pull requests
+
+```
 $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
 ```
+{% endcapture %}
+{% include slide-section %}
 
+
+{% capture slide %}
+#### Git Refspec Documentation
+* [Git `rev-parse` command and reference specifications](https://www.kernel.org/pub/software/scm/git/docs/git-rev-parse.html)
+* [ProGit book chapter on refspecs](http://git-scm.com/book/en/Git-Internals-The-Refspec)
+{% endcapture %}
+{% include slide-section %}
+
+
+
+{% capture slide %}
 ### Additional Resources
+This course covers many advanced uses of Git and GitHub, and yet there is still more to explore. We've included some of the most useful resources for our students with insatiable appetites.
+{% endcapture %}
+{% include slide-section %}
 
-* [Advanced Git presented at JavaZone](http://vimeo.com/49444883)
-* [Master Advanced Git Video Series](http://bit.ly/ogitvid2)
-* [The Fringes of Git](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
-* [Git Notes & GitHub](http://vimeo.com/34273537)
-* [GitHub Command line client](https://github.com/jingweno/gh)
-* [Oh-my-zsh ZSH configuration](https://github.com/robbyrussell/oh-my-zsh)
+{% capture slide %}
+#### Advanced Git Videos
+* [Advanced Git, presented at JavaZone](http://vimeo.com/49444883)
+* [Mastering Advanced Git, O'Reilly video series](http://bit.ly/ogitvid2)
+* [The Fringes of Git, Git internals video](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+#### Tools
+* [`gh`, GitHub command line utility](https://github.com/jingweno/gh)
+* [oh-my-zsh, ZSH plugin framework](https://github.com/robbyrussell/oh-my-zsh)
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+#### Git Documentation
+* [Git `man` page command documentation](https://www.kernel.org/pub/software/scm/git/docs/git.html)
+{% endcapture %}
+{% include slide-section %}
