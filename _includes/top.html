@@ -18,7 +18,7 @@
 						<li><a{% if page.body_class == 'trainers' %} class="active"{% endif %} href="{{ site.url }}/trainers/">Trainers</a></li>
 						<li><a{% if page.body_class == 'classes' %} class="active"{% endif %} href="{{ site.url }}/classes/">Classes</a></li>
 						<li><a{% if page.body_class == 'schedule' %} class="active"{% endif %} href="{{ site.url }}/schedule/">Schedule</a></li>
-						<li><a{% if page.body_class == 'kit' %} class="active"{% endif %} href="{{ site.url }}/kit/">Kit</a></li>
+						<li><a class="active" href="{{ site.url }}/kit/">Kit</a></li>
 						<li><a{% if page.body_class == 'resources' %} class="active"{% endif %}  href="{{ site.url }}/resources/">Resources</a></li>
 						<li><a{% if page.body_class == 'contact' %} class="active"{% endif %} href="{{ site.url }}/contact/">Contact</a></li>
 					</ul>
@@ -36,15 +36,13 @@
 			<div class="jumbotron colorful classes">
 				<div class="container text-center">
 
-					<p>Open source training content. Present your way to better version control.</p>
-
 					<div class="row">
 						<div class="col-md-4">
 							<a href="foundations/">
 								<div class="panel">
 									<span class="octicon octicon-plug"></span>
 									<h4>Foundations</h4>
-									<p>Core skills for day-to-day use of Git on the command line and GitHub workflows</p>
+									<p><small>Core skills for day-to-day use of Git on the command line and GitHub workflows</small></p>
 								</div>
 							</a>
 						</div>
@@ -54,7 +52,7 @@
 								<div class="panel">
 									<span class="octicon octicon-terminal"></span>
 									<h4>Intermediate</h4>
-									<p>Important command line skills and problem solving processes</p>
+									<p><small>Important command line skills and problem solving processes</small></p>
 								</div>
 							</a>
 						</div>
@@ -64,7 +62,7 @@
 								<div class="panel">
 									<span class="octicon octicon-microscope"></span>
 									<h4>Advanced</h4>
-									<p>Command line deep dive, problem solving techniques, and GitHub efficiencies</p>
+									<p><small>Command line deep dive, problem solving techniques, and GitHub efficiencies</small></p>
 								</div>
 							</a>
 						</div>
