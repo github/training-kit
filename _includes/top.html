@@ -1,0 +1,82 @@
+<header class="colorful">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-2">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div id="logo"><a href="{{ site.url }}/" data-escp="">GitHub Training</a></div>
+			</div>
+
+			<div class="col-md-9 col-sm-10">
+				<div class="collapse navbar-collapse navbar-right" id="main-navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a{% if page.body_class == 'trainers' %} class="active"{% endif %} href="{{ site.url }}/trainers/">Trainers</a></li>
+						<li><a{% if page.body_class == 'classes' %} class="active"{% endif %} href="{{ site.url }}/classes/">Classes</a></li>
+						<li><a{% if page.body_class == 'schedule' %} class="active"{% endif %} href="{{ site.url }}/schedule/">Schedule</a></li>
+						<li><a{% if page.body_class == 'kit' %} class="active"{% endif %} href="{{ site.url }}/kit/">Kit</a></li>
+						<li><a{% if page.body_class == 'resources' %} class="active"{% endif %}  href="{{ site.url }}/resources/">Resources</a></li>
+						<li><a{% if page.body_class == 'contact' %} class="active"{% endif %} href="{{ site.url }}/contact/">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		{% if page.title %}
+			<h2>{{ page.title }}</h2>
+			{% if page.byline %}<p>{{ page.byline }}</p>{% endif %}
+		{% endif %}
+
+
+		{% if page.body_class == "home" %}
+			<div class="jumbotron colorful">
+				<div class="container text-center">
+
+					<p>Open source training content. Present your way to better version control.</p>
+
+					<div class="row">
+						<div class="col-md-4">
+							<a href="foundations/beta.html">
+								<div class="well">
+									<h4>Foundations</h4>
+									<p>Core skills for day-to-day use of Git on the command line and GitHub workflows</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-4">
+							<a href="intermediate/beta.html">
+								<div class="well">
+									<h4>Intermediate</h4>
+									<p>Important command line skills and problem solving processes</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-md-4">
+							<a href="advanced/beta.html">
+								<div class="well">
+									<h4>Advanced</h4>
+									<p>Command line deep dive, problem solving techniques, and GitHub efficiencies</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="col-md-6">
+							<img src="{{ site.url }}/images/git-training-pics.png" alt="GitHub Training at Live Event" class="img-responsive">
+						</div>
+						<div class="col-md-6">
+							<h2>Open source teaching resources</h2>
+							<p>Open source training content. Present your way to better version control.</p>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		{% endif %}
+	</div>
+</header>

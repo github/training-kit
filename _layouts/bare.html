@@ -1,27 +1,4 @@
----
-
----
-
-{% if page.theme == "home" %}
-    {% assign leadingpath = '.' %}
-{% else %}
-    {% assign leadingpath = '..' %}
-{% endif %}
-
 <!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
-  <head>
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-    {% if page.description %}
-    <meta name="description" content="{{ page.description }}" />
-    {% endif %}
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-
-    {% include dependencies %}
-  </head>
-  <body data-spy="scroll" data-target="#toc">
-    {% include navigation.html %}
-
-    {{ content }}
-  </body>
+<html lang="en">
+{{ content }}
 </html>
