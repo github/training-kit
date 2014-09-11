@@ -4,21 +4,23 @@ title: GitHub Foundations
 byline: Discovering the GitHub collaboration platform
 ---
 
+{% capture slide %}
 ### The Git VCS
+{% endcapture %}
+{% include slide-section %}
 
+
+{% capture slide %}
 * Explain Git as the fundamental technology
 * Describe GitHub as the collaboration platform
 * Review distributed version control system
 * Explore GUIs/graphical clients
 * Distinguish distributed approach
 
-#### Lab
-* Launch Terminal or Git Shell
-* Check Git installation with `git --version`
-* Launch/open GitHub for Desktop
+{% endcapture %}
+{% include slide-section %}
 
 {% capture slide %}
-
 Verifying that Git is installed and operational can be done by requesting Git to display its current version using this command:
 
 ```shell
@@ -31,9 +33,15 @@ git version 1.8.2
 
 {% capture slide %}
 ![svg](../assets/diagrams/distributed-version-control.svg)
+
 {% endcapture %}
 {% include slide-section %}
 
+
+#### Lab
+* Launch Terminal or Git Shell
+* Check Git installation with `git --version`
+* Launch/open GitHub for Desktop
 
 #### Git key vocabulary
 Three important words key to learning Git are:
@@ -71,6 +79,19 @@ The command line version of Git has a very light footprint. For most platforms, 
 {% capture slide %}
 ### The GitHub Platform
 
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+* Git repository hosting
+* Code & Collaboration platform
+* Issue tracking system
+* Documentation distribution
+
+{% endcapture %}
+{% include slide-section %}
+
+#### Feature overview
 * Hosting repositories
 * Collaborating on code, documents, text
 * Controlling access & contributions
@@ -86,10 +107,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 * Tracking favorite projects (Stars)
   * https://github.com/stars
 
-
-
-Project management
-
+#### Project management
 * GitHub Issues
 * Milestones
 * Network
@@ -99,7 +117,7 @@ Project management
 * Organizations
 * Teams
 
-GitHub features
+#### GitHub features
 
 * Notifications
 * Watching repositories
@@ -120,7 +138,7 @@ GitHub features
 * `README.md` in any folder level
 * `CONTRIBUTING.md` in root
 
-GitHub visualizations
+#### GitHub visualizations
 
 * Comparing/Diff-ing
   * Code
@@ -134,7 +152,7 @@ GitHub visualizations
 * Network graph
 * Activity graph
 
-GitHub Pages
+#### GitHub Pages
 
 * Web page for your repository
 * Web page for your account
@@ -148,8 +166,7 @@ The six core concepts in the GitHub ecosystem are:
 * **Issues**: an integrated bug and enhancement tracker
 * **Organizations**: groups of repositories and team members
 * **Teams**: named sets of users that grant access levels and group by talent, focus, and reporting
-{% endcapture %}
-{% include slide-section %}
+
 
 #### Details & Resources
 
