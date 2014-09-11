@@ -91,6 +91,19 @@ The command line version of Git has a very light footprint. For most platforms, 
 {% endcapture %}
 {% include slide-section %}
 
+{% capture slide %}
+The six core concepts in the GitHub ecosystem are:
+
+* **Repository**: a location to store related code and files
+* **Branch**: a named variation on the code or enhancement-in-progress
+* **Pull Request**: discussion associated with a branch
+* **Issues**: an integrated bug and enhancement tracker
+* **Organizations**: groups of repositories and team members
+* **Teams**: named sets of users that grant access levels and group by talent, focus, and reporting
+
+{% endcapture %}
+{% include slide-section %}
+
 ### Feature overview
 * Hosting repositories
 * Collaborating on code, documents, text
@@ -118,7 +131,6 @@ The command line version of Git has a very light footprint. For most platforms, 
 * Teams
 
 ### GitHub features
-
 * Notifications
 * Watching repositories
 * Unsubscribing (per thread)
@@ -139,7 +151,6 @@ The command line version of Git has a very light footprint. For most platforms, 
 * `CONTRIBUTING.md` in root
 
 ### GitHub visualizations
-
 * Comparing/Diff-ing
   * Code
   * Prose
@@ -157,15 +168,6 @@ The command line version of Git has a very light footprint. For most platforms, 
 * Web page for your repository
 * Web page for your account
 * Author, edit, launch from GitHub
-
-The six core concepts in the GitHub ecosystem are:
-
-* **Repository**: a location to store related code and files
-* **Branch**: a named variation on the code or enhancement-in-progress
-* **Pull Request**: discussion associated with a branch
-* **Issues**: an integrated bug and enhancement tracker
-* **Organizations**: groups of repositories and team members
-* **Teams**: named sets of users that grant access levels and group by talent, focus, and reporting
 
 
 ### Details & Resources
@@ -207,6 +209,9 @@ The GitHub collaboration platform facilitates:
 
 {% endcapture %}
 {% include slide-section %}
+
+
+
 
 * Project access control (public/private)
 * Repository creation
@@ -259,6 +264,7 @@ Repositories can be created in numerous ways, including:
 {% endcapture %}
 {% include slide-section %}
 
+
 * Use web interface for repo and the Web Flow
 * Edit files on web interface
 * Create a new file through web interface
@@ -299,7 +305,10 @@ The GitHub Web Flow is a path through the GitHub user interface that facilitates
 {% endcapture %}
 {% include slide-section %}
 
-##Local repositories
+{% capture slide %}
+![svg](../assets/diagrams/what-is-a-commit.svg)
+{% endcapture %}
+{% include slide-section %}
 
 * Getting the code "locally"
 * Launching GitHub for Desktop
@@ -354,27 +363,18 @@ Git enables repositories to be created both on GitHub, or locally on a developer
   * Simpler means to integrate change
   * Cleaner code review possibilities
 
-
-{% capture slide %}
-##Acquiring repos
-
-* Clone from web (Clone in Desktop button)
-* Clone via personal repo list in GitHub Desktop
-* Clone via SSH or HTTPS URL
-{% endcapture %}
-{% include slide-section %}
-
-{% capture slide %}
-![svg](../assets/diagrams/what-is-a-commit.svg)
-{% endcapture %}
-{% include slide-section %}
-
 ### Details & Resources
 
 In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.  Some of the most common sources and means of cloning include:
 
 
+
+{% capture slide %}
 ##Syncing history
+
+{% endcapture %}
+{% include slide-section %}
+
 
 * Reviewing local history versus remote/GitHub
 * Synchronizing local commits with GitHub
@@ -412,6 +412,38 @@ $ git push origin [master|branch]
 
 {% endcapture %}
 {% include slide-section %}
+
+{% capture slide %}
+![](../assets/diagrams/what-is-a-branch.svg)
+
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+### GitHub Fork workflow
+* [Guide to Forking](https://guides.github.com/overviews/forking/)
+* Reason for forks
+* What it encourages
+* How it insulates
+* Keeping up to date (too advanced?)
+* Original (base) and Fork (individual copy)
+
+{% endcapture %}
+{% include slide-section %}
+
+{% capture slide %}
+### GitHub Direct Contribution workflow
+* Everyone commits to same repo
+* All work is done on topic branches
+* All merges performed with Pull Requests
+
+{% endcapture %}
+{% include slide-section %}
+
+
+A branch is a divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
+
+
 * Containing commits and efforts of work/changes
 * Simplifying decision process for pieces of contributions
 * Allowing better code review
@@ -449,15 +481,17 @@ $ git push origin [master|branch]
 * Make more commits to branch through web interface
 * Examine commits showing on Pull Request of branch
 * Make commits on local branch, sync and see commits on Pull Request
-* **The GitHub Flow**
-  * Branch
-  * Commit
-  * Compare
-  * Pull Request
-  * Discuss
-  * Animated GIF
-  * Line by line code review conversation
-  * Clone locally with GHfD (optional)
+*
+
+*The GitHub Flow**
+* Branch
+* Commit
+* Compare
+* Pull Request
+* Discuss
+* Animated GIF
+* Line by line code review conversation
+* Clone locally with GHfD (optional)
 
 * Brand new repo created by Teacher
 * Direct everyone to Fork the new project
@@ -472,30 +506,7 @@ $ git push origin [master|branch]
   * Show how branch directly on repo can be changed
 * Review how a Fork's branch and PR can be manipulated, merged locally into another branch, integrated, and close original PR
 
-### GitHub Fork workflow
-* [Guide to Forking](https://guides.github.com/overviews/forking/)
-* Reason for forks
-* What it encourages
-* How it insulates
-* Keeping up to date (too advanced?)
-* Original (base) and Fork (individual copy)
 
-### GitHub Direct Contribution workflow
-* Everyone commits to same repo
-* All work is done on topic branches
-* All merges performed with Pull Requests
-
-{% capture slide %}
-
-Branch stuff here
-
-{% endcapture %}
-{% include slide-section %}
-
-
-A branch is a divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
-
-![](../assets/diagrams/what-is-a-branch.svg)
 
 ### Branching video
 <iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
