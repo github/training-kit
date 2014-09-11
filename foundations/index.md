@@ -5,7 +5,7 @@ byline: Discovering the GitHub collaboration platform
 ---
 
 {% capture slide %}
-### The Git VCS
+##The Git VCS
 {% endcapture %}
 {% include slide-section %}
 
@@ -38,12 +38,12 @@ git version 1.8.2
 {% include slide-section %}
 
 
-#### Lab
+### Lab
 * Launch Terminal or Git Shell
 * Check Git installation with `git --version`
 * Launch/open GitHub for Desktop
 
-#### Git key vocabulary
+### Git key vocabulary
 Three important words key to learning Git are:
 
 * Repository
@@ -52,19 +52,19 @@ Three important words key to learning Git are:
 
 __Git is an open source distributed__ version control system invented by Linus Torvalds in 2005.  It is used to version the Linux kernel and is shown to be, by some research, the most popular modern version control system.
 
-#### Git key concepts
+### Git key concepts
 Three important concepts of this version control system are:
 
 * Distributed version control is the concept of full copies of the repository on every contributing machine
 * Git is the file and information tracker
 * GitHub is the collaboration platform
 
-#### Deeper study
+### Deeper study
 * [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
 * [The Git project homepage](http://git-scm.com)
 * [Entry-level videos from the official Git site](http://git-scm.com/videos)
 
-#### Installers
+### Installers
 The command line version of Git has a very light footprint. For most platforms, you can simply copy the binaries to a folder that is on the executable search $PATH. Git is primarily written in C, which means there is a unique installer for each operating system.
 
 * **Windows**: [GitHub for Windows installer](http://windows.github.com)
@@ -72,12 +72,12 @@ The command line version of Git has a very light footprint. For most platforms, 
 * **Linux**: Git's source code and a listing of supported package managers can be found [on the git-scm.com site](http://git-scm.com/download/linux).
 * **Any platform**: [Pro Git Book: Installing Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
 
-#### What is Git?
+### What is Git?
 <iframe src="//player.vimeo.com/video/41381741" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 {% capture slide %}
-### The GitHub Platform
+##The GitHub Platform
 
 {% endcapture %}
 {% include slide-section %}
@@ -91,7 +91,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 {% endcapture %}
 {% include slide-section %}
 
-#### Feature overview
+### Feature overview
 * Hosting repositories
 * Collaborating on code, documents, text
 * Controlling access & contributions
@@ -107,7 +107,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 * Tracking favorite projects (Stars)
   * https://github.com/stars
 
-#### Project management
+### Project management
 * GitHub Issues
 * Milestones
 * Network
@@ -117,7 +117,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 * Organizations
 * Teams
 
-#### GitHub features
+### GitHub features
 
 * Notifications
 * Watching repositories
@@ -138,7 +138,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 * `README.md` in any folder level
 * `CONTRIBUTING.md` in root
 
-#### GitHub visualizations
+### GitHub visualizations
 
 * Comparing/Diff-ing
   * Code
@@ -152,7 +152,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 * Network graph
 * Activity graph
 
-#### GitHub Pages
+### GitHub Pages
 
 * Web page for your repository
 * Web page for your account
@@ -168,7 +168,7 @@ The six core concepts in the GitHub ecosystem are:
 * **Teams**: named sets of users that grant access levels and group by talent, focus, and reporting
 
 
-#### Details & Resources
+### Details & Resources
 
 GitHub accounts are free. Sign up for one at [github.com/join](https://github.com/join).
 
@@ -194,15 +194,15 @@ The GitHub collaboration platform facilitates:
 * [Discovering trending technology via Explore](https://github.com/explore)
 * [Tracking favorite projects via Stars](https://github.com/stars)
 
-#### GitHub account creation video
+### GitHub account creation video
 <iframe src="//player.vimeo.com/video/88472085" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-#### Resources
+### Resources
 * [GitHub.com feature list](https://github.com/features)
 * [How to sign up for GitHub](https://www.youtube.com/watch?v=ezxRcdJ8glM&list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx)
 
 
-### Repository creation
+##Repository creation
 
 * Project access control (public/private)
 * Repository creation
@@ -213,7 +213,7 @@ The GitHub collaboration platform facilitates:
 * Web interface and GUI client
 * Clone command explanation
 
-#### Lab
+### Lab
 * Visit GitHub.com
 * Click the `+`
 * Name the repository
@@ -234,7 +234,7 @@ Repositories can be created in numerous ways, including:
 
 ![svg](../assets/diagrams/repo-clone.svg)
 
-#### Repository creation concepts
+### Repository creation concepts
 <!-- TODO -->
 * Project access control (public/private)
 * Repository creation
@@ -245,11 +245,11 @@ Repositories can be created in numerous ways, including:
 * Web interface and GUI client
 * Clone command explanation
 
-#### Repository init-ing
+### Repository init-ing
 <iframe src="//player.vimeo.com/video/88313612" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-### The Web flow
+##The Web flow
 
 * Use web interface for repo and the Web Flow
 * Edit files on web interface
@@ -279,11 +279,11 @@ The GitHub Web Flow is a path through the GitHub user interface that facilitates
 
 
 
-#### Drive by contributions
+### Drive by contributions
 <iframe src="//player.vimeo.com/video/88472114" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-### Local repositories
+##Local repositories
 
 * Getting the code "locally"
 * Launching GitHub for Desktop
@@ -301,7 +301,7 @@ The GitHub Web Flow is a path through the GitHub user interface that facilitates
 * Examining differences in GHfD
 * Commiting changes as-needed
 
-#### Lab
+### Lab
 * Version new or modified files via graphical client
 * Prepare and preserve changes with command line
 
@@ -324,12 +324,12 @@ Git enables repositories to be created both on GitHub, or locally on a developer
 ![](../assets/diagrams/distributed-version-control.svg)
 
 
-#### Local repository benefits
+### Local repository benefits
 * Initialize repositories while disconnected from network
 * Craft file versions at your own pace
 * Create branches to isolate experiments
 
-#### Local repository definitions
+### Local repository definitions
 * Commits
   * History marker for file(s) and change(s)
   * Record of author, time, and message
@@ -340,7 +340,7 @@ Git enables repositories to be created both on GitHub, or locally on a developer
 
 
 {% capture slide %}
-### Acquiring repos
+##Acquiring repos
 
 * Clone from web (Clone in Desktop button)
 * Clone via personal repo list in GitHub Desktop
@@ -353,19 +353,19 @@ Git enables repositories to be created both on GitHub, or locally on a developer
 {% endcapture %}
 {% include slide-section %}
 
-#### Details & Resources
+### Details & Resources
 
 In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.  Some of the most common sources and means of cloning include:
 
 
-### Syncing history
+##Syncing history
 
 * Reviewing local history versus remote/GitHub
 * Synchronizing local commits with GitHub
 * Confirming commits and files now show on remote repository
 
 
-#### Lab
+### Lab
 * Click of a button through graphical clients
 * One Git operation via the command line
 
@@ -391,7 +391,7 @@ $ git pull
 $ git push origin [master|branch]
 ```
 
-### Branches
+##Branches
 
 * Containing commits and efforts of work/changes
 * Simplifying decision process for pieces of contributions
@@ -453,7 +453,7 @@ $ git push origin [master|branch]
   * Show how branch directly on repo can be changed
 * Review how a Fork's branch and PR can be manipulated, merged locally into another branch, integrated, and close original PR
 
-#### GitHub Fork workflow
+### GitHub Fork workflow
 * [Guide to Forking](https://guides.github.com/overviews/forking/)
 * Reason for forks
 * What it encourages
@@ -461,7 +461,7 @@ $ git push origin [master|branch]
 * Keeping up to date (too advanced?)
 * Original (base) and Fork (individual copy)
 
-#### GitHub Direct Contribution workflow
+### GitHub Direct Contribution workflow
 * Everyone commits to same repo
 * All work is done on topic branches
 * All merges performed with Pull Requests
@@ -478,5 +478,5 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 ![](../assets/diagrams/what-is-a-branch.svg)
 
-#### Branching video
+### Branching video
 <iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
