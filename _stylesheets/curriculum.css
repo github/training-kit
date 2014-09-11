@@ -1,14 +1,12 @@
 /* Imports */
 /* Color Definitions */
 @import url(octicons.css);
-body {
-  font-size: 16px; }
-
 .nav-list > li > a {
   font-size: 8pt; }
 
 .curriculum {
   position: relative;
+  font-size: 16px;
   /* General external link */
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
