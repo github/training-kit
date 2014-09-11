@@ -2,6 +2,8 @@
 layout: curriculum
 title: GitHub Foundations
 byline: Discovering the GitHub collaboration platform
+redirect_from:
+  - ../workbooks/github-foundations.html
 ---
 {% capture slide %}
 ### The Git VCS
