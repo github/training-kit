@@ -202,7 +202,11 @@ The GitHub collaboration platform facilitates:
 * [How to sign up for GitHub](https://www.youtube.com/watch?v=ezxRcdJ8glM&list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx)
 
 
+{% capture slide %}
 ##Repository creation
+
+{% endcapture %}
+{% include slide-section %}
 
 * Project access control (public/private)
 * Repository creation
@@ -249,7 +253,11 @@ Repositories can be created in numerous ways, including:
 <iframe src="//player.vimeo.com/video/88313612" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
+{% capture slide %}
 ##The Web flow
+
+{% endcapture %}
+{% include slide-section %}
 
 * Use web interface for repo and the Web Flow
 * Edit files on web interface
@@ -282,6 +290,14 @@ The GitHub Web Flow is a path through the GitHub user interface that facilitates
 ### Drive by contributions
 <iframe src="//player.vimeo.com/video/88472114" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+{% capture slide %}
+##Acquiring repos
+
+* Clone from web (Clone in Desktop button)
+* Clone via personal repo list in GitHub Desktop
+* Clone via SSH or HTTPS URL
+{% endcapture %}
+{% include slide-section %}
 
 ##Local repositories
 
@@ -391,8 +407,11 @@ $ git pull
 $ git push origin [master|branch]
 ```
 
+{% capture slide %}
 ##Branches
 
+{% endcapture %}
+{% include slide-section %}
 * Containing commits and efforts of work/changes
 * Simplifying decision process for pieces of contributions
 * Allowing better code review
