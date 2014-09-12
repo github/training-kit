@@ -68,37 +68,12 @@ $ git config --global [name] [value]
 $ git config --local [name] [value]
 ```
 
-##### Line endings
-The line ending setting is one of the most common settings users choose to set early in their use of Git. Some Git configuration options, like this one, affect platform-targeted behavior:
-
-```shell
-# Set line endings to LF for Mac and Linux
-$ git config --[scope] core.autocrlf input
-```
-
-```shell
-# Set line endings to CRLF for Windows
-$ git config --[scope] core.autocrlf true
-```
-
 ##### Listing configuration
 Listing the current configuration is as easy as asking for the entire set of name-value pairs:
 
 ```shell
-# List all inherited configuration
-$ git config --list
-```
-
-```shell
 ## List all configuration for a given scope
 $ git config --list --[scope]
-```
-
-Some configuration options have become defaults over time:
-
-```shell
-# Enable use of color in output for Git versions older than 1.8.x
-$ git config --[scope] color.ui auto
 ```
 
 #### Further reading
@@ -120,22 +95,16 @@ Git provides an easy way to start versioning any prototype, prose or project wit
 
 ```shell
 # For a new project...
-
 $ git init [projectname]
 $ cd [projectname]
-
-# ...start coding
 ```
 
 Initialize a repository inside a top level project directory:
 
 ```shell
 # For an existing project...
-
 $ cd [existingprojectname]
 $ git init
-
-# ...start coding
 ```
 
 Acquire a project locally:
@@ -199,8 +168,6 @@ $ git commit -m "[your description]"
 
 #### Details
 Git advocates precision in each commit's contents and commit message.  This is facilitated by easy reviewing of in-flight changes prior to describing them and making them permanent.
-
-![diagram](../assets/diagrams/diff.svg)
 
 The simplest invocation of `diff` is the most common. It displays the difference of the files that have been modified.
 
@@ -359,12 +326,6 @@ Additional remotes (bookmarks) are added as a name-URL-value pair. The default n
 ```shell
 # Add a remote "bookmark"
 $ git remote add [name] [url]
-```
-
-Acquiring a repo:
-
-```shell
-$ git clone [repository-url]
 ```
 
 ##### Retrieval behavior configuration
