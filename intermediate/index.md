@@ -4,7 +4,7 @@ title: GitHub Intermediate
 byline: Leveraging Git and GitHub from the command line
 ---
 {% capture slide %}
-### Configuration your Git environment
+### Configuring your Git environment
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
