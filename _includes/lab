@@ -1,4 +1,4 @@
-<div class="panel panel-primary">
+<div class="panel panel-primary lab">
   <div class="panel-heading">Lab</div>
   <div class="panel-body">
     {{ lab | markdownify }}

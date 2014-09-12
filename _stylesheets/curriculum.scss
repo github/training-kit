@@ -76,6 +76,17 @@ $mono-dark: #454545;
     margin: 0 auto;
   }
 
+  .lab{
+    .panel-heading{
+      &:before{
+        content: "\f089";
+        font: normal normal 16px octicons;  
+        float: right;
+
+      }
+    }
+  }
+
   .slide{
     width: 100%;
     background: #ffffff;
