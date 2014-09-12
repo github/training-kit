@@ -5,7 +5,7 @@ byline: Discovering the GitHub collaboration platform
 ---
 
 {% capture slide %}
-##The Git VCS
+## Understanding version control
 {% endcapture %}
 {% include slide-section %}
 
@@ -77,7 +77,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 
 
 {% capture slide %}
-##The GitHub Platform
+## Surveying the GitHub platform
 
 {% endcapture %}
 {% include slide-section %}
@@ -205,7 +205,9 @@ The GitHub collaboration platform facilitates:
 
 
 {% capture slide %}
-##Repository creation
+## Creating a hosted repository
+
+(Repository creation)
 
 {% endcapture %}
 {% include slide-section %}
@@ -259,7 +261,7 @@ Repositories can be created in numerous ways, including:
 
 
 {% capture slide %}
-##The Web flow
+## Exploring the GitHub Web Flow
 
 {% endcapture %}
 {% include slide-section %}
@@ -297,7 +299,7 @@ The GitHub Web Flow is a path through the GitHub user interface that facilitates
 <iframe src="//player.vimeo.com/video/88472114" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% capture slide %}
-##Acquiring repos
+##Acquiring repositories locally
 
 * Clone from web (Clone in Desktop button)
 * Clone via personal repo list in GitHub Desktop
@@ -370,7 +372,7 @@ In many cases, working with a code project means retrieving it to the local disk
 
 
 {% capture slide %}
-##Syncing history
+## Syncing local and GitHub repositories
 
 {% endcapture %}
 {% include slide-section %}
@@ -408,7 +410,7 @@ $ git push origin [master|branch]
 ```
 
 {% capture slide %}
-##Branches
+## Delivering features with branches
 
 {% endcapture %}
 {% include slide-section %}
