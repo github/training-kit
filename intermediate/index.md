@@ -76,12 +76,12 @@ Listing the current configuration is as easy as asking for the entire set of nam
 $ git config --list --[scope]
 ```
 
-#### Further reading
+##### Further reading
 * [Pro Git Book: First Time Git Setup](http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup)
 * [Book chapter on Configuring Git](http://git-scm.com/book/en/Customizing-Git-Git-Configuration)
 * [Git documentation on the config command](http://git-scm.com/docs/git-config)
 
-#### Video
+##### Video
 <iframe src="//player.vimeo.com/video/88276099" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
