@@ -1,6 +1,9 @@
 #!/bin/sh
 
-_buildscripts/vibuild
+if ! _buildscripts/cibuild; then
+    printf '%s\n' 'Build failed' >&2
+    exit 1
+fi
 
 # Clean out the articles directory
 rm -rf _site/articles
