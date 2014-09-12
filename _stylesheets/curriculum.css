@@ -46,6 +46,10 @@
   .curriculum iframe {
     display: block;
     margin: 0 auto; }
+  .curriculum .lab .panel-heading:before {
+    content: "\f089";
+    font: normal normal 16px octicons;
+    float: right; }
   .curriculum .slide {
     width: 100%;
     background: #ffffff;
