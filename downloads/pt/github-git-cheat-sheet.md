@@ -6,15 +6,15 @@ Git é um sistema de controle de versão distribuído open source que facilita a
 GitHub fornece clientes desktop que incluem uma interface gráfica para as ações mais comuns em um repositório e atualiza automaticamente para a linha de comando do Git para cenários avançados.
 
 ### GitHub para Windows
-http://windows.github.com
+[http://windows.github.com](http://windows.github.com)
 
 ### GitHub para Mac
-http://mac.github.com
+[http://mac.github.com](http://mac.github.com)
 
 Distribuições do Git para Linux e sistemas POSIX são disponíveis no site oficial do Git SCM.
 
 ### Git para todas plataformas
-http://git-scm.com
+[http://git-scm.com](http://git-scm.com)
 
 ## Configure a ferramenta
 Configure informações de usuário para todos os repositórios locais
@@ -227,4 +227,4 @@ Baixa o histórico e incorpora as mudanças
 Aprenda mais sobre o uso do GitHub e do Git. Envie um email para a Equipe de Treinamentos ou visite nosso site para ver a agenda de eventos ou a disponibilidade de cursos particulares.
 
 * training@github.com
-* training.github.com
+* [training.github.com](training.github.com)
