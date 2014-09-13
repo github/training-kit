@@ -10,12 +10,22 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Understanding Git
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 
 
 {% capture slide %}
 ### Branching strategies
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 #### Applying branching patterns
 
 #### Branch best practices
@@ -26,11 +36,23 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Git-core GUIs
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
+
 
 
 {% capture slide %}
 ### Mastering shortcuts
 {% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 
 
 
@@ -38,11 +60,23 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Isolating work
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
+
 
 
 {% capture slide %}
 ### Ignoring content
 {% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 
 
 
@@ -50,11 +84,23 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Navigating history
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
+
 
 
 {% capture slide %}
 ### Temporary changes
 {% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 
 
 
@@ -62,6 +108,11 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Incorporating history
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 #### Rewriting history with rebase
 
 
@@ -70,11 +121,23 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Cutting releases
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
+
 
 
 {% capture slide %}
 ### Rewriting & synchronizing
 {% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 
 
 
@@ -82,11 +145,23 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Aggregating repositories
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
+
 
 
 {% capture slide %}
 ### GitHub CLI
 {% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 
 
 
@@ -94,11 +169,23 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Signing work
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
+
 
 
 {% capture slide %}
 ### Cleaning up history
 {% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 
 
 
@@ -106,11 +193,23 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Avoiding repetitive conflicts
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
+
 
 
 {% capture slide %}
 ### The GitHub API
 {% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 
 
 
@@ -118,11 +217,23 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Cleaning
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
+
 
 
 {% capture slide %}
 ### Diff & merge tool
 {% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
 
 
 
@@ -130,8 +241,20 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 ### Refspecs
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
+
 
 
 {% capture slide %}
 ### Additional resources
 {% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+
+{% endcapture %}{% include lab %}
+
+#### Details
