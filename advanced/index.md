@@ -134,26 +134,57 @@ $ git push origin :[tag-name-to-delete]
 ```
 
 
+
 {% capture slide %}
-### Using built-in GUIs
+### Ignoring & cleaning up files
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Setup ignore patterns to prevent accidental versioning
+2. Clean working directory of untracked files
+3. Tidy working directory of any `.gitignore` matched files
 {% endcapture %}{% include lab %}
 
 #### Details
-* for staging, committing
-* for browsing history
-* Tcl/Tk based
+##### Repository-specific ignores
+* Ignoring files from repo & system level
+* Reviewing ignored files with custom command
+* Forcing a staging of ignored files
 
-```
-$ git gui
-$ gitk
-$ gitk&
-$ gitk --all
+```shell
+$ vi .gitignore
 ```
 
+##### System-wide ignores
+```shell
+$ git config core.excludesfile [path]
+```
+
+##### Listing ignored files
+```shell
+$ git config alias.show-ignored \
+    "ls-files --exclude-standard
+    --others --ignored"
+```
+
+##### Staging ignored files
+```shell
+$ git add -f [path]
+```
+
+##### Removing unwanted files
+* Purge untracked in working dir
+* for directories
+* for removing ignored files (useful for tidying build artifacts)
+
+```
+$ git clean -f
+$ git clean -fd
+$ git clean -fx
+```
+
+#### Video
+<iframe src="//player.vimeo.com/video/99804597" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% capture slide %}
 ### Mastering shortcuts & efficiencies
@@ -227,55 +258,24 @@ $ git config rerere.enable true
 
 
 {% capture slide %}
-### Ignoring & cleaning up files
+### Using built-in GUIs
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-1. Setup ignore patterns to prevent accidental versioning
-2. Clean working directory of untracked files
-3. Tidy working directory of any `.gitignore` matched files
+
 {% endcapture %}{% include lab %}
 
 #### Details
-##### Repository-specific ignores
-* Ignoring files from repo & system level
-* Reviewing ignored files with custom command
-* Forcing a staging of ignored files
-
-```shell
-$ vi .gitignore
-```
-
-##### System-wide ignores
-```shell
-$ git config core.excludesfile [path]
-```
-
-##### Listing ignored files
-```shell
-$ git config alias.show-ignored \
-    "ls-files --exclude-standard
-    --others --ignored"
-```
-
-##### Staging ignored files
-```shell
-$ git add -f [path]
-```
-
-##### Removing unwanted files
-* Purge untracked in working dir
-* for directories
-* for removing ignored files (useful for tidying build artifacts)
+* for staging, committing
+* for browsing history
+* Tcl/Tk based
 
 ```
-$ git clean -f
-$ git clean -fd
-$ git clean -fx
+$ git gui
+$ gitk
+$ gitk&
+$ gitk --all
 ```
-
-#### Video
-<iframe src="//player.vimeo.com/video/99804597" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 
