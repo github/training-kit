@@ -15,6 +15,7 @@ byline: Mastering Git and GitHub
 {% capture lab %}
 1. Understand the way Git preserves history and data objects
 2. Utilize shorthand for navigation commit history
+3. Filter `log` option switches for refined version querying
 {% endcapture %}{% include lab %}
 
 #### Details
@@ -66,7 +67,9 @@ $ git name-rev [commit-ref]
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Utilize the command line for branching strategies
+2. Understand best branch and collaboration workflows
+3. Apply `tag`s to commits to indicate releases
 {% endcapture %}{% include lab %}
 
 
@@ -191,7 +194,10 @@ $ git clean -fx
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Use built-in, time-saving command shortcuts for commiting and branch switching
+2. Learn when to use `stash` and when longer-lived branching provides better options
+3. Commit partial file content *hunks* with patch option switches of `add` and `reset`
+4. Avoiding repetitive conflict resolution with `rerere`
 {% endcapture %}{% include lab %}
 
 #### Details
@@ -262,7 +268,8 @@ $ git config rerere.enable true
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Launch Git's built-in graphical client for commiting change
+2. Review version history and branch relationships with `gitk`
 {% endcapture %}{% include lab %}
 
 #### Details
@@ -284,7 +291,9 @@ $ gitk --all
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Capture select commits and generate new history on separate branches
+2. Determine commit history existence in independent branches
+3. Capture path-specific change from a commit with multiple files
 {% endcapture %}{% include lab %}
 
 #### Details
@@ -324,7 +333,10 @@ git checkout [commit] -- [path]
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Replay branch history with `rebase`
+2. Understand side effects of rewriting history
+3. Rewrite history interactively with `rebase -i` mode
+4. Resolve merge conflict during a rebase
 {% endcapture %}{% include lab %}
 
 ![Rebase](../assets/diagrams/rebase.svg)
@@ -394,7 +406,9 @@ $ git rebase -i --autosquash [ref]
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Review GitHub pull requests from the command line
+2. Acquire Pull Request history temporarily and with branches
+3. Customize `fetch` operations with *refspecs*
 {% endcapture %}{% include lab %}
 
 #### Details
@@ -520,7 +534,10 @@ $ git submodule update --init --recursive
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Use a GPG key to sign a specific commit
+2. Verify a signed commit
+3. Use a GPG key to sign a Git tag
+4. Verify a signed tag
 {% endcapture %}{% include lab %}
 
 #### Details
@@ -561,7 +578,9 @@ $ git tag -v [tag-name]
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Create a GitHub (public or private) repository from the command line
+2. Create a tracking branch and open a Pull Request from the command line
+3. Clone a public, open source repository and Fork it from the command line
 {% endcapture %}{% include lab %}
 
 #### Details
@@ -613,7 +632,9 @@ There are a number of libraries for interfacing with the GitHub API, all of whic
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Setup a preferred visual tool for diff and merge operations
+2. Run the `difftool` to compare uncommitted file changes
+3. Generate a merge conflict and resolve using a `mergetool`
 {% endcapture %}{% include lab %}
 
 #### Details
@@ -674,10 +695,6 @@ A sample `.gitconfig` file:
 {% capture slide %}
 ### Additional resources
 {% endcapture %}{% include slide-section %}
-
-{% capture lab %}
-
-{% endcapture %}{% include lab %}
 
 #### Details
 This course covers many advanced uses of Git and GitHub, and yet there is still more to explore. We've included some of the most useful resources for our students with insatiable appetites.
