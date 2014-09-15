@@ -617,6 +617,7 @@ There are a number of libraries for interfacing with the GitHub API, all of whic
 {% endcapture %}{% include lab %}
 
 #### Details
+* [Atom Merge Conflict plugin](https://atom.io/packages/merge-conflicts)
 * [P4Merge](http://www.perforce.com/downloads/Perforce/20-User)
 * Opendiff
 * KDiff
