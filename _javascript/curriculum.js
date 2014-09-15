@@ -20,7 +20,7 @@ $(function(){
 	});
 
 	function buildToc(){
-		var headings = $("h3"),
+		var headings = $(".curriculum h2"),
 				toc = $("#toc-list");
 
 		for(var h=0; h<headings.length; h++){
