@@ -36,8 +36,9 @@
     width: 100%;
     background: #ffffff;
     display: table; }
-    .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5 {
-      text-align: center; }
+    .curriculum .slide h2, .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5 {
+      text-align: center;
+      font-size: 400%; }
     .curriculum .slide h1, .curriculum .slide h2, .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5, .curriculum .slide h6, .curriculum .slide p, .curriculum .slide ul, .curriculum .slide pre, .curriculum .slide svg {
       margin-left: 0;
       margin-right: 0; }
