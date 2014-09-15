@@ -7,32 +7,137 @@ byline: Mastering Git and GitHub
 This curriculum will be your companion to the GitHub Advanced class taught by the GitHub Training Team and other educational groups. In this course, you'll explore strategies for branch and history rewriting, temporary storing and recovery techniques, and Git technology mechanics for faster problem solving.
 
 {% capture slide %}
-### Understanding Git
+### Understanding Git, navigating history
 {% endcapture %}{% include slide-section %}
 
-{% capture lab %}
+![Git data structure](../assets/diagrams/commit-data-structure.svg)
 
+![Commit DAG](../assets/diagrams/commit-dag.svg)
+
+{% capture lab %}
+1. Understand the way Git preserves history and data objects
+2. Utilize shorthand for navigation commit history
 {% endcapture %}{% include lab %}
 
 #### Details
+* SHA1 as the core hashing algorithm
+* Directed acyclic graph of commits
+* Composed of three fundamental object typs
+  * Commit
+  * Tree
+  * Blob
+* Built-in data integrity from commit, tree, blob
+
+##### Treeish & commitish
+* Simple ways of describing history points
+* Easier-to-describe and understand numerically
+* Application of patterns works on [GitHub](https://help.github.com/articles/comparing-commits-across-time)
+
+```
+HEAD
+HEAD^^
+HEAD~2
+HEAD@{one.day.ago}
+HEAD@{today}
+```
+
+##### Navigating history
+* Log is like a search engine.
+* Search for person, time, change, contents, message.
+* Dramatically narrows human search time when using `log` search filters.
+
+```bash
+$ git log --author [author-name]
+$ git log --since [integer].days.ago
+$ git log -S [string-in-patch]
+$ git log -G [regex-pattern-in-patch]
+$ git log --grep=[regex-in-message]
+$ git log --diff-filter=[A|M|D]
+$ git log --follow --stat --diff-filter=[A|M|D] -- <filename>
+$ git log --oneline --left-right master..other
+$ git log --oneline --left-right master...other
+$ git name-rev [commit-ref]
+```
+
+#### Videos
+<iframe src="//player.vimeo.com/video/95811891" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 {% capture slide %}
-### Branching strategies
+### Collaborating on change & releases
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
 
 {% endcapture %}{% include lab %}
 
-#### Details
-##### Applying branching patterns
-##### Branch best practices
 
+![Tags](../assets/diagrams/tag.svg)
+
+#### Details
+
+##### Branching patterns, best practices
+* Branch by feature
+ Compatibility with Pull Requests
+* GitHub Flow
+    * [How GitHub Develops](https://github.com/blog/919-how-github-develops)
+    * [GitHub Flow blog post](http://scottchacon.com/2011/08/31/github-flow.html)
+    * Works well with Pull Requests when one-layer deep
+    * Think of features much smaller than typical
+* git-flow
+    *  Made popular on Git by Vincent Driessen and his NVIE site
+    * [Git-Flow: A Successful Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
+    * [Git-Flow Source](https://github.com/nvie/gitflow)
+    * Too many levels?
+    * GH prefers Simplest thing that works.
+* Rebase before sharing (sending a Pull Request)
+  * [Contributing to Spring Social](https://github.com/spring-projects/spring-social/wiki/Contributing)
+  * [How To Merge Without Fear](http://blog.springsource.org/2010/12/21/git-and-social-coding-how-to-merge-without-fear/)
+  * [What to do when things get complicated](http://blog.springsource.org/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/)
+
+##### Cutting releases
+* Why create a tag through the web UI?
+* Not a branch HEAD. Points to a specific commit.
+* Attaching binaries to releases (Web UI and API)
+* Tag with message (defaults to annotated)
+* Force existing tag to new ref
+* Delete a tag
+* `$ git describe` to name the most recent reachable tag
+* Tag types (reference, annotated, signed)
+* Deleting a tag locally
+* Deleting tag on a remote
+* Version numbers
+  * `major.minor.fix`
+  * [Semantic versioning](http://semver.org)
+
+Generating a lightweight reference tag is simple:
+
+```shell
+$ git tag [TAGNAME] [commit]
+```
+
+Annotated tags generate a complete data object in the Git repository, storing the author, a timestamp, a specific SHA1 reference, and the option of signing work with a GPG key.
+
+```shell
+$ git tag -a [TAG_NAME] [commit|branch]
+$ git tag -a -m [TAG_NAME] [commit|branch]
+```
+
+The `tag` command offers a number of ways to understand what it represents, ways of replacing it, and even the option of eliminating it if necessary.
+
+```shell
+$ git tag -s -m[message] [TAGNAME]
+$ git tag -f [TAGNAME]
+$ git tag -d [TAGNAME]
+$ git describe
+$ git describe [SHA]
+$ git tag -d 12345
+$ git push origin :[tag-name-to-delete]
+```
 
 
 {% capture slide %}
-### Git-core GUIs
+### Using built-in GUIs
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
@@ -40,7 +145,16 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 {% endcapture %}{% include lab %}
 
 #### Details
+* for staging, committing
+* for browsing history
+* Tcl/Tk based
 
+```
+$ git gui
+$ gitk
+$ gitk&
+$ gitk --all
+```
 
 
 {% capture slide %}
@@ -75,7 +189,6 @@ $ git checkout -b [branch] [base]
 ```
 
 ##### Temporary changes
-
 * Name your stash
 * List stashes
 * Use specific stashes
@@ -92,8 +205,7 @@ $ git stash clear
 $ git stash -p
 ```
 
-#### Isolating Work
-
+##### Isolating Work
 * Version patches of large change sets
 * Stage interactively on command line
 * Revise to-be-committed patch
@@ -104,6 +216,14 @@ $ git add -p [file]
 
 # Unstage by patch
 git reset reset HEAD -p [file]
+```
+
+##### Avoiding repetitive conflicts
+* *Re*use *re*corded *re*solution
+* Preserves pre-image to simplify conflicts
+
+```shell
+$ git config rerere.enable true
 ```
 
 
@@ -162,20 +282,6 @@ $ git clean -fx
 
 
 {% capture slide %}
-### Navigating history
-{% endcapture %}{% include slide-section %}
-
-{% capture lab %}
-
-{% endcapture %}{% include lab %}
-
-#### Details
-
-
-
-
-
-{% capture slide %}
 ### Capturing pieces of history
 {% endcapture %}{% include slide-section %}
 
@@ -207,7 +313,11 @@ $ git cherry-pick [commit]
 $ git cherry [comparison-branch]
 ```
 
-
+##### Retrieving paths from existing commits
+```shell
+# Stage the versioned file from a specific commit
+git checkout [commit] -- [path]
+```
 
 
 
@@ -218,6 +328,9 @@ $ git cherry [comparison-branch]
 {% capture lab %}
 
 {% endcapture %}{% include lab %}
+
+![Rebase](../assets/diagrams/rebase.svg)
+
 
 #### Details
 ##### What is rebase?
@@ -275,17 +388,6 @@ Automatically arrange commits and rebase with `fixup!` and `squash!` message pre
 ```bash
 $ git rebase -i --autosquash [ref]
 ```
-
-
-{% capture slide %}
-### Cutting releases
-{% endcapture %}{% include slide-section %}
-
-{% capture lab %}
-
-{% endcapture %}{% include lab %}
-
-#### Details
 
 
 
@@ -415,19 +517,6 @@ $ git submodule update --init --recursive
 
 
 
-
-{% capture slide %}
-### GitHub CLI
-{% endcapture %}{% include slide-section %}
-
-{% capture lab %}
-
-{% endcapture %}{% include lab %}
-
-#### Details
-
-
-
 {% capture slide %}
 ### Signing work
 {% endcapture %}{% include slide-section %}
@@ -437,15 +526,40 @@ $ git submodule update --init --recursive
 {% endcapture %}{% include lab %}
 
 #### Details
+##### Configuring GPG
+```shell
+$ gpg --list-keys
+pub   1024D/627CBB21 2014-08-01
+uid                  Matthew McCullough
 
+# Use 627CBB21 as the signing key's ID
+$ git config --global user.signingkey [ID]
+```
 
+##### Using GPG signatures on commits
+```shell
+$ git commit --signoff
+# or the shorthand invocation...
+$ git commit -S
 
+$ git log --show-signature
+```
 
+##### Using GPG signatures on tags
+```shell
+$ git merge --verify-signatures
+```
+
+```shell
+$ git tag -s [tag-name] [commit]
+
+$ git tag -v [tag-name]
+```
 
 
 
 {% capture slide %}
-### Avoiding repetitive conflicts
+### Using GitHub CLI and the API
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
@@ -454,19 +568,46 @@ $ git submodule update --init --recursive
 
 #### Details
 
+##### Command line interface
+* Uses the API for interfacing with your repos
+* Stores OAUTH token, credentials
+* Highly efficient for power-users
+* Hub and GH merging into one project
 
+```shell
+# Create a new public repository on your GitHub account
+$ gh create
 
-{% capture slide %}
-### The GitHub API
-{% endcapture %}{% include slide-section %}
+# Create a new private repository on your GitHub account
+$ gh create -p
 
-{% capture lab %}
+# Open a Pull Request for the current branch
+$ gh pull-request
 
-{% endcapture %}{% include lab %}
+# Create a fork of the cloned repository on your GitHub Account
+$ gh fork
 
-#### Details
+# Launch a web browser with the branch comparison view
+$ gh compare
 
+# Launch a web browser to the repository home page
+$ gh browse
+```
 
+##### The GitHub API
+
+```shell
+# Anonymous
+$ curl <URL>
+
+# Pass credentials on CLI
+$ curl -u <user:password> <URL>
+
+# Use .netrc file
+$ curl -n <URL>
+```
+
+There are a number of libraries for interfacing with the GitHub API, all of which are available at [octokit.github.io](http://octokit.github.io/)
 
 
 {% capture slide %}
@@ -478,6 +619,56 @@ $ git submodule update --init --recursive
 {% endcapture %}{% include lab %}
 
 #### Details
+* [P4Merge](http://www.perforce.com/downloads/Perforce/20-User)
+* Opendiff
+* KDiff
+* Kaleidoscope
+* Vimdiff
+* Meld
+
+Difftool execution:
+
+```
+$ git difftool --tool-help
+$ git config diff.tool <tool-name-in-config>
+$ git config difftool.prompt false
+$ git config difftool.<tool-name>.cmd "<path [args]>"
+```
+
+A sample `.gitconfig` file:
+
+```
+[diff]
+    tool = p4merge
+[difftool "p4merge"]
+    cmd = "/Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE"
+[difftool]
+    prompt = false
+```
+
+
+Mergetool execution:
+
+```
+$ git config --global merge.tool p4mergetool
+
+$ git config --global mergetool.p4mergetool.cmd "/Applications/p4merge.app/Contents/Resources/launchp4merge \$PWD/\$BASE \$PWD/\$REMOTE \$PWD/\$LOCAL \$PWD/\$MERGED"
+
+$ git config --global mergetool.p4mergetool.trustExitCode false
+
+$ git config --global mergetool.keepBackup false
+```
+
+A sample `.gitconfig` file:
+
+```
+[merge]
+    tool = Kaleidoscope
+[mergetool "p4mergetool"]
+    cmd = " /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED"
+    keepBackup = false
+```
+
 
 
 
@@ -490,3 +681,16 @@ $ git submodule update --init --recursive
 {% endcapture %}{% include lab %}
 
 #### Details
+This course covers many advanced uses of Git and GitHub, and yet there is still more to explore. We've included some of the most useful resources for our students with insatiable appetites.
+
+##### Advanced Git Videos
+* [Advanced Git, presented at JavaZone](http://vimeo.com/49444883)
+* [Mastering Advanced Git, O'Reilly video series](http://bit.ly/ogitvid2)
+* [The Fringes of Git, Git internals video](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
+
+##### Tools
+* [`gh`, GitHub command line utility](https://github.com/jingweno/gh)
+* [oh-my-zsh, ZSH plugin framework](https://github.com/robbyrussell/oh-my-zsh)
+
+##### Git Documentation
+* [Git `man` page command documentation](https://www.kernel.org/pub/software/scm/git/docs/git.html)
