@@ -213,7 +213,7 @@ $ git stash -p
 $ git add -p [file]
 
 # Unstage by patch
-git reset reset HEAD -p [file]
+git reset HEAD -p [file]
 ```
 
 ##### Avoiding repetitive conflicts
