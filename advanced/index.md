@@ -2,6 +2,8 @@
 layout: curriculum
 title: GitHub Advanced
 byline: Mastering Git and GitHub
+redirect_from:
+  - ../workbooks/github-advanced.html
 ---
 
 {% capture slide %}

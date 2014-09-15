@@ -2,6 +2,8 @@
 layout: curriculum
 title: GitHub Intermediate
 byline: Leveraging Git and GitHub from the command line
+redirect_from:
+  - ../workbooks/github-intermediate.html
 ---
 {% capture slide %}
 ### Configuring your Git environment
