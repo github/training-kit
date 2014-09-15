@@ -4,39 +4,30 @@ title: GitHub Advanced
 byline: Mastering Git and GitHub
 ---
 
-This curriculum will be your companion to the GitHub Advanced class taught by the GitHub Training Team and other educational groups. In this course, you'll explore strategies for branch and history rewriting, temporary storing and recovery techniques, and Git technology mechanics for faster problem solving.
-
 {% capture slide %}
-### Understanding Git
-* Based on classic graph and hashing concepts
+### Understanding Git, navigating history
+{% endcapture %}{% include slide-section %}
+
+![Git data structure](../assets/diagrams/commit-data-structure.svg)
+
+![Commit DAG](../assets/diagrams/commit-dag.svg)
+
+{% capture lab %}
+1. Understand the way Git preserves history and data objects
+2. Utilize shorthand for navigation commit history
+3. Filter `log` option switches for refined version querying
+{% endcapture %}{% include lab %}
+
+#### Details
 * SHA1 as the core hashing algorithm
-* Linked-list-like data structure
-* Built-in data integrity
-{% endcapture %}
-{% include slide-section %}
-
-{% capture slide %}
-#### Data structure
 * Directed acyclic graph of commits
-* Commit object
-* Tree object
-* Blob object
-* SHA1 hash of commit, tree, blob
-{% endcapture %}
-{% include slide-section %}
+* Composed of three fundamental object typs
+  * Commit
+  * Tree
+  * Blob
+* Built-in data integrity from commit, tree, blob
 
-{% capture svg_path %}../assets/diagrams/commit-data-structure.svg{% endcapture %}
-{% include svg %}
-
-* Linked list of commits
-* First commit has `nil` parent
-* Integrity checking with `git gc`
-
-{% capture svg_path %}../assets/diagrams/commit-dag.svg{% endcapture %}
-{% include svg %}
-
-#### Treeish & commitish
-
+##### Treeish & commitish
 * Simple ways of describing history points
 * Easier-to-describe and understand numerically
 * Application of patterns works on [GitHub](https://help.github.com/articles/comparing-commits-across-time)
@@ -49,104 +40,170 @@ HEAD@{one.day.ago}
 HEAD@{today}
 ```
 
+##### Navigating history
+* Log is like a search engine.
+* Search for person, time, change, contents, message.
+* Dramatically narrows human search time when using `log` search filters.
+
+```bash
+$ git log --author [author-name]
+$ git log --since [integer].days.ago
+$ git log -S [string-in-patch]
+$ git log -G [regex-pattern-in-patch]
+$ git log --grep=[regex-in-message]
+$ git log --diff-filter=[A|M|D]
+$ git log --follow --stat --diff-filter=[A|M|D] -- <filename>
+$ git log --oneline --left-right master..other
+$ git log --oneline --left-right master...other
+$ git name-rev [commit-ref]
+```
+
+#### Videos
+<iframe src="//player.vimeo.com/video/95811891" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 
 {% capture slide %}
-### Branching strategies
-{% endcapture %}
-{% include slide-section %}
+### Collaborating on change & releases
+{% endcapture %}{% include slide-section %}
 
-#### Summary
-* GitHub Flow
-* Branch-per-feature
-* Compatibility with Pull Requests
-* git-flow
-* Long-term release support
+{% capture lab %}
+1. Utilize the command line for branching strategies
+2. Understand best branch and collaboration workflows
+3. Apply `tag`s to commits to indicate releases
+{% endcapture %}{% include lab %}
+
+
+![Tags](../assets/diagrams/tag.svg)
 
 #### Details
-These are called Branching Strategies, but are just as easily called *Team Collaboration Techniques* in an abstract discussion of version control.
 
+##### Branching patterns, best practices
 * Branch by feature
+ Compatibility with Pull Requests
+* GitHub Flow
+    * [How GitHub Develops](https://github.com/blog/919-how-github-develops)
+    * [GitHub Flow blog post](http://scottchacon.com/2011/08/31/github-flow.html)
+    * Works well with Pull Requests when one-layer deep
+    * Think of features much smaller than typical
 * git-flow
     *  Made popular on Git by Vincent Driessen and his NVIE site
     * [Git-Flow: A Successful Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
     * [Git-Flow Source](https://github.com/nvie/gitflow)
     * Too many levels?
     * GH prefers Simplest thing that works.
-* GitHub Flow
-    * [How GitHub Develops](https://github.com/blog/919-how-github-develops)
-    * [GitHub Flow blog post](http://scottchacon.com/2011/08/31/github-flow.html)
-    * Works well with Pull Requests when one-layer deep
-    * Think of features much smaller than typical
-* Git's Model
-    * [Git Maintenance Notes](https://sites.google.com/site/maintnotes/)
-    * [Git Workflows](https://www.kernel.org/pub/software/scm/git/docs/gitworkflows.html)
-    * [Git's Source Code](https://github.com/git/git)
-    * Branches
-        * master
-        * maint
-        * next (graduation from pu)
-        * pu (can be rebased)
-        * html
-        * man
-    * _"A trivial and safe enhancement goes directly on top of 'master'."_
-    * _"The two branches "master" and "maint" are never rewound, and "next" usually will not be either"_
-    * _"When a topic that was in 'pu' proves to be in testable shape, it graduates to 'next'."_
-* Version numbers
-    * `major.minor.fix`
-    * [Semantic versioning](http://semver.org)
 * Rebase before sharing (sending a Pull Request)
-    * [Contributing to Spring Social](https://github.com/spring-projects/spring-social/wiki/Contributing)
-    * [How To Merge Without Fear](http://blog.springsource.org/2010/12/21/git-and-social-coding-how-to-merge-without-fear/)
-    * [What to do when things get complicated](http://blog.springsource.org/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/)
+  * [Contributing to Spring Social](https://github.com/spring-projects/spring-social/wiki/Contributing)
+  * [How To Merge Without Fear](http://blog.springsource.org/2010/12/21/git-and-social-coding-how-to-merge-without-fear/)
+  * [What to do when things get complicated](http://blog.springsource.org/2011/07/18/social-coding-pull-requests-what-to-do-when-things-get-complicated/)
+
+##### Cutting releases
+* Why create a tag through the web UI?
+* Not a branch HEAD. Points to a specific commit.
+* Attaching binaries to releases (Web UI and API)
+* Tag with message (defaults to annotated)
+* Force existing tag to new ref
+* Delete a tag
+* `$ git describe` to name the most recent reachable tag
+* Tag types (reference, annotated, signed)
+* Deleting a tag locally
+* Deleting tag on a remote
+* Version numbers
+  * `major.minor.fix`
+  * [Semantic versioning](http://semver.org)
+
+Generating a lightweight reference tag is simple:
+
+```shell
+$ git tag [TAGNAME] [commit]
+```
+
+Annotated tags generate a complete data object in the Git repository, storing the author, a timestamp, a specific SHA1 reference, and the option of signing work with a GPG key.
+
+```shell
+$ git tag -a [TAG_NAME] [commit|branch]
+$ git tag -a -m [TAG_NAME] [commit|branch]
+```
+
+The `tag` command offers a number of ways to understand what it represents, ways of replacing it, and even the option of eliminating it if necessary.
+
+```shell
+$ git tag -s -m[message] [TAGNAME]
+$ git tag -f [TAGNAME]
+$ git tag -d [TAGNAME]
+$ git describe
+$ git describe [SHA]
+$ git tag -d 12345
+$ git push origin :[tag-name-to-delete]
+```
+
 
 
 {% capture slide %}
-### Applying branching patterns
-{% endcapture %}
-{% include slide-section %}
+### Ignoring & cleaning up files
+{% endcapture %}{% include slide-section %}
 
-#### Summary
-* Breaking features down into pieces
-* Feedback early on Pull Requests
-* @mentioning teams instead of individuals
-* Continuous integration
-
-#### Further reading
-[Validated Build Promotions with Git, GitHub, and Jenkins](http://www.youtube.com/watch?v=Gd8OfAmKkMQ)
-
-<iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/Gd8OfAmKkMQ?rel=0" frameborder="0" allowfullscreen></iframe>
-
-[Git and GitHub Workflows at the Utah JUG](https://speakerdeck.com/matthewmccullough/git-and-github-workflows-at-the-utah-jug)
-
-<script async class="speakerdeck-embed" data-id="111dc3201094013231b066d414c0f9a8" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-{% capture slide %}
-### Git-core GUIs
-{% endcapture %}
-{% include slide-section %}
-
-
-#### Summary
-* for staging, committing
-* for browsing history
-* Tcl/Tk based
+{% capture lab %}
+1. Setup ignore patterns to prevent accidental versioning
+2. Clean working directory of untracked files
+3. Tidy working directory of any `.gitignore` matched files
+{% endcapture %}{% include lab %}
 
 #### Details
-```
-$ git gui
-$ gitk
-$ gitk&
-$ gitk --all
+##### Repository-specific ignores
+* Ignoring files from repo & system level
+* Reviewing ignored files with custom command
+* Forcing a staging of ignored files
+
+```shell
+$ vi .gitignore
 ```
 
+##### System-wide ignores
+```shell
+$ git config core.excludesfile [path]
+```
+
+##### Listing ignored files
+```shell
+$ git config alias.show-ignored \
+    "ls-files --exclude-standard
+    --others --ignored"
+```
+
+##### Staging ignored files
+```shell
+$ git add -f [path]
+```
+
+##### Removing unwanted files
+* Purge untracked in working dir
+* for directories
+* for removing ignored files (useful for tidying build artifacts)
+
+```
+$ git clean -f
+$ git clean -fd
+$ git clean -fx
+```
+
+#### Video
+<iframe src="//player.vimeo.com/video/99804597" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% capture slide %}
-### Mastering Shortcuts
+### Mastering shortcuts & efficiencies
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Use built-in, time-saving command shortcuts for commiting and branch switching
+2. Learn when to use `stash` and when longer-lived branching provides better options
+3. Commit partial file content *hunks* with patch option switches of `add` and `reset`
+4. Avoiding repetitive conflict resolution with `rerere`
+{% endcapture %}{% include lab %}
+
+#### Details
+##### Shortcuts
 * Shortcuts to multiple steps
 * Useful customized commands
-{% endcapture %}
-{% include slide-section %}
-
 
 Add and commit along with the commit message:
 
@@ -166,141 +223,10 @@ Checkout and create a branch:
 $ git checkout -b [branch] [base]
 ```
 
-{% capture slide %}
-### Isolating Work
-
-* Version patches of large change sets
-* Stage interactively on command line
-* Revise to-be-committed patch
-{% endcapture %}
-{% include slide-section %}
-
-
-
-```bash
-# Stage by patch
-$ git add -p [file]
-
-# Unstage by patch
-git reset reset HEAD -p [file]
-```
-
-
-{% capture slide %}
-### Branch best practices
-{% endcapture %}
-{% include slide-section %}
-
-* Pros/cons of collapsing commits during merge
-* Relation to branching strategies and deliverable expectations
-* Checking merge state
-* Cleaning up branches
-
-```shell
-$ git merge --squash [branch]
-```
-
-Querying commit existence:
-
-```shell
-$ git branch --contains [commit]
-```
-
-List branches with this merged in:
-
-```shell
-$ git branch --merged [commit]
-```
-
-List branches without this merged in:
-
-```shell
-$ git branch --no-merged [commit]
-```
-
-{% capture slide %}
-### Ignoring content
-{% endcapture %}
-{% include slide-section %}
-
-#### Repository-specific ignores
-* Ignoring files from repo & system level
-* Reviewing ignored files with custom command
-* Forcing a staging of ignored files
-
-```shell
-$ vi .gitignore
-```
-
-#### System-wide ignores
-```shell
-$ git config core.excludesfile [path]
-```
-
-#### Listing ignored files
-```shell
-$ git config alias.show-ignored \
-    "ls-files --exclude-standard
-    --others --ignored"
-```
-
-#### Staging ignored files
-```shell
-$ git add -f [path]
-```
-
-#### Video
-<iframe src="//player.vimeo.com/video/99804597" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-{% capture slide %}
-### Navigating History
-{% endcapture %}
-{% include slide-section %}
-
-```bash
-$ git log --author [author-name]
-
-$ git log --since [integer].days.ago
-
-$ git log -S [string-in-patch]
-
-$ git log -G [regex-pattern-in-patch]
-
-$ git log --grep=[regex-in-message]
-
-$ git log --diff-filter=[A|M|D]
-
-$ git log --follow --stat --diff-filter=[A|M|D] -- <filename>
-
-$ git log --oneline --left-right master..other
-
-$ git log --oneline --left-right master...other
-
-$ git name-rev [commit-ref]
-```
-
-* Log is like a search engine.
-* Search for person, time, change, contents, message.
-* Dramatically narrows human search time when using `log` search filters.
-
-#### Further reading
-* [Git revision specificat
-ion syntax](https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html)
-
-#### Video
-<iframe src="//player.vimeo.com/video/95811891" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-{% capture slide %}
-### Temporary Changes
-
+##### Temporary changes
 * Name your stash
 * List stashes
 * Use specific stashes
-{% endcapture %}
-{% include slide-section %}
-
 
 ```shell
 $ git stash
@@ -314,12 +240,63 @@ $ git stash clear
 $ git stash -p
 ```
 
+##### Isolating Work
+* Version patches of large change sets
+* Stage interactively on command line
+* Revise to-be-committed patch
+
+```bash
+# Stage by patch
+$ git add -p [file]
+
+# Unstage by patch
+git reset HEAD -p [file]
+```
+
+##### Avoiding repetitive conflicts
+* *Re*use *re*corded *re*solution
+* Preserves pre-image to simplify conflicts
+
+```shell
+$ git config rerere.enable true
+```
+
+
+
 {% capture slide %}
-### Incorporating History
-{% endcapture %}
-{% include slide-section %}
+### Using built-in GUIs
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Launch Git's built-in graphical client for commiting change
+2. Review version history and branch relationships with `gitk`
+{% endcapture %}{% include lab %}
+
+#### Details
+* for staging, committing
+* for browsing history
+* Tcl/Tk based
+
+```
+$ git gui
+$ gitk
+$ gitk&
+$ gitk --all
+```
 
 
+
+{% capture slide %}
+### Capturing pieces of history
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Capture select commits and generate new history on separate branches
+2. Determine commit history existence in independent branches
+3. Capture path-specific change from a commit with multiple files
+{% endcapture %}{% include lab %}
+
+#### Details
 * Reusing small pieces of code with `cherry-pick`
 * Why use `cherry-pick` instead of `merge`?
 * What happens when you `cherry-pick`?
@@ -336,44 +313,44 @@ $ git stash -p
 $ git cherry-pick [commit]
 ```
 
-#### Identifying incorporated commits
+##### Identifying incorporated commits
 ```shell
 # List branches containing same patch
 
 $ git cherry [comparison-branch]
 ```
 
-#### More examples
+##### Retrieving paths from existing commits
 ```shell
-$ git cherry-pick [ref]
-$ git cherry-pick [ref1] [ref2]
-
-$ git branch --contains [noncherrypickedref]
-$ git cherry [upstreambranch]
-
-+ bd650366fa8c39f03cfc9dd5290f60e7331a631d
-+ ea62f9f6a7cef55a8a3028e617d28819408a63c4
-+ 874628c0e405390130d6457776273451bb66d3a8
-+ 046a9b8d0f2363361e45cfbc7e0f6d82968f2f9f
-+ 315fe16408f9a9080527e00df3d9a8c1ba0dc97a
+# Stage the versioned file from a specific commit
+git checkout [commit] -- [path]
 ```
 
+
+
 {% capture slide %}
-### Rewriting history with rebase
-{% endcapture %}
-{% include slide-section %}
+### Rewriting and crafting history
+{% endcapture %}{% include slide-section %}
 
-{% capture svg_path %}../assets/diagrams/rebase.svg{% endcapture %}
-{% include svg %}
+{% capture lab %}
+1. Replay branch history with `rebase`
+2. Understand side effects of rewriting history
+3. Rewrite history interactively with `rebase -i` mode
+4. Resolve merge conflict during a rebase
+{% endcapture %}{% include lab %}
 
-#### What is rebase?
+![Rebase](../assets/diagrams/rebase.svg)
+
+
+#### Details
+##### What is rebase?
 * Branch Preparation
 * Rebasing __is not__ merging
 * Conflicts can occur
 * Resolution is simple
 * Small variation to merge conflict
 
-#### Rebasing a branch
+##### Rebasing a branch
 Re-playing branch-specific commits against a base is the most common use case for rebase.
 
 ```shell
@@ -381,14 +358,14 @@ $ git checkout <featurebranch>
 $ git rebase master
 ```
 
-#### Rebase configuration
+##### Rebase configuration
 The behavior of `pull` can be configured to replay all local commits ahead of the incoming upstream ones.
 
 ```shell
 $ git config pull.rebase true
 ```
 
-#### Handling conflicts
+##### Handling conflicts
 Resolving a conflict during a rebase requires intervention, and then signaling that the conflict is resolved.
 
 ```shell
@@ -396,7 +373,7 @@ $ git add [conflicting-file]
 $ git rebase --continue
 ```
 
-#### Reordering History
+##### Reordering History
 
 * Reorder commits
 * Rewrite history entirely
@@ -409,13 +386,13 @@ $ git rebase --continue
 $ git rebase -i <REF>
 ```
 
-#### Reordering all commits on a branch
+##### Reordering all commits on a branch
 
 ```bash
 $ git rebase -i [remote]/[branch]
 ```
 
-#### Rebase markers
+##### Rebase markers
 Automatically arrange commits and rebase with `fixup!` and `squash!` message prefixes
 
 ```bash
@@ -423,71 +400,19 @@ $ git rebase -i --autosquash [ref]
 ```
 
 
-#### Fixing Branches
-* This mode of rebase change where branch history begins
-* Moving blocks of history around
-
-To change which base a branch is placed upon:
-
-```bash
-$ git rebase --onto <newbase> <upstream> <HEAD|branch>
-```
-
-#### Further reading
-* [Rebasing chapter of Pro Git book](http://git-scm.com/book/ch3-6.html)
-* [Git rebase --onto section of Pro Git book](http://git-scm.com/book/ch3-6.html#More-Interesting-Rebases)
-
-
-
-{% capture slide %}
-### Cutting Releases
-{% endcapture %}
-{% include slide-section %}
-
-#### Summary
-* Why create a tag through the web UI?
-* Not a branch HEAD. Points to a specific commit.
-* Attaching binaries to releases (Web UI and API)
-* Tag with message (defaults to annotated)
-* Force existing tag to new ref
-* Delete a tag
-* `$ git describe` to name the most recent reachable tag
-* Tag types (reference, annotated, signed)
-* Deleting a tag locally
-* Deleting tag on a remote
-
-{% capture svg_path %}../assets/diagrams/tag.svg{% endcapture %}
-{% include svg %}
-
-#### Reference tags
-```shell
-$ git tag [TAGNAME] [commit]
-```
-
-#### Annotated tags
-```shell
-$ git tag -a [TAG_NAME] [commit|branch]
-$ git tag -a -m [TAG_NAME] [commit|branch]
-```
-
-#### Other tag options
-```shell
-$ git tag -s -m[message] [TAGNAME]
-$ git tag -f [TAGNAME]
-$ git tag -d [TAGNAME]
-$ git describe
-$ git describe [SHA]
-$ git tag -d 12345
-$ git push origin :[tag-name-to-delete]
-```
 
 {% capture slide %}
 ### Reviewing & synchronizing
-{% endcapture %}
-{% include slide-section %}
+{% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+1. Review GitHub pull requests from the command line
+2. Acquire Pull Request history temporarily and with branches
+3. Customize `fetch` operations with *refspecs*
+{% endcapture %}{% include lab %}
 
-#### Reviewing remote branches
+#### Details
+##### Reviewing remote branches
 * PRs to horizontal contributors
 * PRs multiple levels up
 * Converting issues to PRs
@@ -505,7 +430,7 @@ $ git show FETCH_HEAD
 $ git merge --no-commit --no-ff FETCH_HEAD
 ```
 
-#### Examining remote branches
+##### Examining remote branches
 ```shell
 $ git remote -v
 $ git remote show <remote-name>
@@ -513,7 +438,7 @@ $ git ls-remote
 $ git branch -vv
 ```
 
-#### Retrieving arbitrary commits
+##### Retrieving arbitrary commits
 To merely retrieve the commits to `FETCH_HEAD`:
 
 ```shell
@@ -526,105 +451,141 @@ To merge the retrieved commits into a branch:
 $ git pull [remote] [pull-request-namespace]
 ```
 
-#### Leveraging FETCH_HEAD
+##### Leveraging FETCH_HEAD
 ```shell
 $ git fetch <URL> <branch>
 $ git checkout FETCH_HEAD
 $ git branch <newbranchname> FETCH_HEAD
 ```
 
-#### Maintaining, customizing remotes
-* Remove non-matching _local_ remote branches
-* Remove non-matching remote upstream branches
-* Remove only remote upstream branch
-
-```shell
-# Discard remote local branches
-# not present on upstream
-$ git fetch --prune
-
-# Delete an upstream branch
-$ git push origin :<branch-name>
-```
-
-#### Customizing Interaction
+##### What are refspecs?
 * Specification for retrieval and pushing
 * Implied on fetch, pull, and push
 * Altered by option switches like `--tags`
 * Stored in `.git/config`
 * Ability to retrieve Pull Request branches
 
-```shell
+##### Refspec examples
+```
+# Source and destination refspecs
 $ git fetch [repo-url] [source]:[destination]
+
+$ git fetch [repo-url] master
+ * branch     master     -> FETCH_HEAD
+
+$ git fetch origin refs/pull/1/head
+ * branch     refs/pull/1/head -> FETCH_HEAD
+```
+
+##### Refspec to retrieve pull requests
+```
 $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
 ```
 
 
-{% capture slide %}
-### Aggregating repositories
-{% endcapture %}
-{% include slide-section %}
 
-#### Adding submodules
+{% capture slide %}
+### Filtering histories & externalizing dependencies
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Separate versioned content in a repository into a separate one
+2. Clean up unwanted history repository-wide with `filter-branch`
+3. Incorporate external repositories as dependencies with `submodule`
+{% endcapture %}{% include lab %}
+
+#### Details
+```shell
+$ git filter-branch
+    --subdirectory-filter [dir]
+    -- --all
+```
+
+```shell
+$ git filter-branch --index-filter
+    'git rm --cached
+    --ignore-unmatch [file]' HEAD
+```
+
+##### Adding submodules
 Add a separate repository as a subdirectory:
 
 ```
 $ git submodule add [repo-url] [folder]
 ```
 
-#### Using submodules
+##### Using submodules
 For a freshly cloned repository with submodules
 
 ```
+# Step-by-step
 $ git submodule init
 $ git submodule update
-```
 
-or
-
-```
+# Single process with option switches
 $ git submodule update --init --recursive
 ```
 
-#### Dependencies with subtree
 
-* Alternative to submodule
-* All files available advantage
-
-First a remote connecting to the dependency and a branch in which to read from is needed.
-
-```shell
-$ git remote add
-    [dependency-bookmark]
-    [repository-url]
-
-$ git fetch [dependency-bookmark]
-
-$ git branch [branch]
-    [dependency-bookmark]/[branch]
-```
-
-* Notice the working tree content differs between the dependency and the main project.
-* Establishing the association of a subdirectory and the branch is necessary when creating the association.
-* Whenever the branch needs updating, switch to it, retrieve the changes and commit them against the main project branch(es).
-
-```shell
-$ git read-tree
-  --prefix=[directory]/
-    -u [branch]
-```
-
-```shell
-$ git merge --squash
-  -s subtree [branch]
-```
 
 
 {% capture slide %}
-### GitHub CLI
-{% endcapture %}
-{% include slide-section %}
+### Signing work
+{% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+1. Use a GPG key to sign a specific commit
+2. Verify a signed commit
+3. Use a GPG key to sign a Git tag
+4. Verify a signed tag
+{% endcapture %}{% include lab %}
+
+#### Details
+##### Configuring GPG
+```shell
+$ gpg --list-keys
+pub   1024D/627CBB21 2014-08-01
+uid                  Matthew McCullough
+
+# Use 627CBB21 as the signing key's ID
+$ git config --global user.signingkey [ID]
+```
+
+##### Using GPG signatures on commits
+```shell
+$ git commit --signoff
+# or the shorthand invocation...
+$ git commit -S
+
+$ git log --show-signature
+```
+
+##### Using GPG signatures on tags
+```shell
+$ git merge --verify-signatures
+```
+
+```shell
+$ git tag -s [tag-name] [commit]
+
+$ git tag -v [tag-name]
+```
+
+
+
+{% capture slide %}
+### Using GitHub CLI and the API
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Create a GitHub (public or private) repository from the command line
+2. Create a tracking branch and open a Pull Request from the command line
+3. Clone a public, open source repository and Fork it from the command line
+{% endcapture %}{% include lab %}
+
+#### Details
+
+##### Command line interface
 * Uses the API for interfacing with your repos
 * Stores OAUTH token, credentials
 * Highly efficient for power-users
@@ -650,81 +611,7 @@ $ gh compare
 $ gh browse
 ```
 
-
-
-{% capture slide %}
-### Signing work
-{% endcapture %}
-{% include slide-section %}
-
-#### By commit message
-Adds a rigorously formatted text block to commit messages:
-
-#### Configuring GPG
-```shell
-$ gpg --list-keys
-pub   1024D/627CBB21 2014-08-01
-uid                  Matthew McCullough
-
-# Use 627CBB21 as the signing key's ID
-$ git config --global user.signingkey [ID]
-```
-
-
-#### Using GPG signatures on commits
-```shell
-$ git commit --signoff
-# or the shorthand invocation...
-$ git commit -S
-
-$ git log --show-signature
-```
-
-#### Using GPG signatures on tags
-```shell
-$ git merge --verify-signatures
-```
-
-```shell
-$ git tag -s [tag-name] [commit]
-
-$ git tag -v [tag-name]
-```
-
-
-
-{% capture slide %}
-### Cleaning up history
-{% endcapture %}
-{% include slide-section %}
-
-```shell
-$ git filter-branch
-    --subdirectory-filter [dir]
-    -- --all
-```
-
-```shell
-$ git filter-branch --index-filter
-    'git rm --cached
-    --ignore-unmatch [file]' HEAD
-```
-
-
-
-{% capture slide %}
-### Avoiding Repetitive Conflicts
-{% endcapture %}
-{% include slide-section %}
-
-* *Re*use *re*corded *re*solution
-* Preserves pre-image to simplify conflicts
-
-```shell
-$ git config rerere.enable true
-```
-
-### The GitHub API
+##### The GitHub API
 
 ```shell
 # Anonymous
@@ -737,31 +624,21 @@ $ curl -u <user:password> <URL>
 $ curl -n <URL>
 ```
 
-
-{% capture slide %}
-### Cleaning
-{% endcapture %}
-{% include slide-section %}
-
-#### Summary
-* Purge untracked in working dir
-* for directories
-* for removing ignored files (useful for tidying build artifacts)
-
-#### Details
-```
-$ git clean -f
-$ git clean -fd
-$ git clean -fx
-```
+There are a number of libraries for interfacing with the GitHub API, all of which are available at [octokit.github.io](http://octokit.github.io/)
 
 
 {% capture slide %}
 ### Diff & merge tool
-{% endcapture %}
-{% include slide-section %}
+{% endcapture %}{% include slide-section %}
 
-#### Summary
+{% capture lab %}
+1. Setup a preferred visual tool for diff and merge operations
+2. Run the `difftool` to compare uncommitted file changes
+3. Generate a merge conflict and resolve using a `mergetool`
+{% endcapture %}{% include lab %}
+
+#### Details
+* [Atom Merge Conflict plugin](https://atom.io/packages/merge-conflicts)
 * [P4Merge](http://www.perforce.com/downloads/Perforce/20-User)
 * Opendiff
 * KDiff
@@ -769,7 +646,6 @@ $ git clean -fx
 * Vimdiff
 * Meld
 
-#### Details
 Difftool execution:
 
 ```
@@ -814,79 +690,23 @@ A sample `.gitconfig` file:
 ```
 
 
-{% capture slide %}
-### Refspecs
-{% endcapture %}
-{% include slide-section %}
-
-{% capture slide %}
-#### What are refspecs?
-* Specification for retrieval and pushing
-* Implied on fetch, pull, and push
-* Altered by option switches like `--tags`
-* Stored in `.git/config`
-* Ability to retrieve Pull Request branches
-{% endcapture %}
-{% include slide-section %}
-
-{% capture slide %}
-#### Refspec examples
-
-```
-# Source and destination refspecs
-$ git fetch [repo-url] [source]:[destination]
-
-$ git fetch [repo-url] master
- * branch     master     -> FETCH_HEAD
-
-$ git fetch origin refs/pull/1/head
- * branch     refs/pull/1/head -> FETCH_HEAD
-```
-{% endcapture %}
-{% include slide-section %}
-
-{% capture slide %}
-#### Refspec to retrieve pull requests
-
-```
-$ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
-```
-{% endcapture %}
-{% include slide-section %}
 
 
 {% capture slide %}
-#### Git Refspec Documentation
-* [Git `rev-parse` command and reference specifications](https://www.kernel.org/pub/software/scm/git/docs/git-rev-parse.html)
-* [ProGit book chapter on refspecs](http://git-scm.com/book/en/Git-Internals-The-Refspec)
-{% endcapture %}
-{% include slide-section %}
+### Additional resources
+{% endcapture %}{% include slide-section %}
 
-
-
-{% capture slide %}
-### Additional Resources
+#### Details
 This course covers many advanced uses of Git and GitHub, and yet there is still more to explore. We've included some of the most useful resources for our students with insatiable appetites.
-{% endcapture %}
-{% include slide-section %}
 
-{% capture slide %}
-#### Advanced Git Videos
+##### Advanced Git Videos
 * [Advanced Git, presented at JavaZone](http://vimeo.com/49444883)
 * [Mastering Advanced Git, O'Reilly video series](http://bit.ly/ogitvid2)
 * [The Fringes of Git, Git internals video](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
-{% endcapture %}
-{% include slide-section %}
 
-{% capture slide %}
-#### Tools
+##### Tools
 * [`gh`, GitHub command line utility](https://github.com/jingweno/gh)
 * [oh-my-zsh, ZSH plugin framework](https://github.com/robbyrussell/oh-my-zsh)
-{% endcapture %}
-{% include slide-section %}
 
-{% capture slide %}
-#### Git Documentation
+##### Git Documentation
 * [Git `man` page command documentation](https://www.kernel.org/pub/software/scm/git/docs/git.html)
-{% endcapture %}
-{% include slide-section %}
