@@ -573,6 +573,8 @@ $ git tag -s [tag-name] [commit]
 $ git tag -v [tag-name]
 ```
 
+##### Resources
+* [GPG Suite](https://gpgtools.org/)
 
 
 {% capture slide %}
