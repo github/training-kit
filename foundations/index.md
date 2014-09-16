@@ -192,10 +192,12 @@ Repositories can be created in numerous ways, including:
 * With a GitHub GUI
 * With `git init` at the command line
 
+And important decision when creating your repository is in its name. Giving it a human readable, quick-to-identify, and sensible name makes it most effective and efficient for both yourself, and your colleagues to understand.
+
 
 
 {% capture slide %}
-### Exploring the GitHub Web Flow
+### Touring content versioning on GitHub
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
@@ -208,7 +210,7 @@ Repositories can be created in numerous ways, including:
 {% endcapture %}{% include lab %}
 
 #### Details
-The GitHub Web Flow allows you to:
+The GitHub web interface allows you to interact and perform many file-affecting actions directly through your browser:
 
 * Browse projects
 * Start branches
@@ -217,23 +219,35 @@ The GitHub Web Flow allows you to:
 * Change paths
 * Open Pull Requests
 
+
+
+{% capture slide %}
+### Exploring the GitHub Web Flow
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Create a branch and make commits to it
+2. Notice the notification bar on the repository home page
+3. Open a *Compare and Pull Request*
+4. Facilitate team or colleage code review
+{% endcapture %}{% include lab %}
+
+#### Details
 The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still have the benefit of syntax highlighting and pre-merge code reviews and discussions.
 
 
 
 {% capture slide %}
-### Exploring the GitHub Flow
+### Collaborating and contributing changes
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-1. Create a branch and make commits to it
-2. Open a *Compare and Pull Request*
+1. Create a Fork of a repository needing contributions
+2. Follow the contribution pattern of the GitHub Flow
+3. Submit a Pull Request and iterate with progressive commits
 {% endcapture %}{% include lab %}
 
 #### Details
-
-Details here
-
 
 
 {% capture slide %}
