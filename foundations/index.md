@@ -222,35 +222,6 @@ The GitHub web interface allows you to interact and perform many file-affecting 
 
 
 {% capture slide %}
-### Exploring the GitHub Web Flow
-{% endcapture %}{% include slide-section %}
-
-{% capture lab %}
-1. Create a branch and make commits to it
-2. Notice the notification bar on the repository home page
-3. Open a *Compare and Pull Request*
-4. Facilitate team or colleage code review
-{% endcapture %}{% include lab %}
-
-#### Details
-The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still have the benefit of syntax highlighting and pre-merge code reviews and discussions.
-
-
-
-{% capture slide %}
-### Collaborating and contributing changes
-{% endcapture %}{% include slide-section %}
-
-{% capture lab %}
-1. Create a Fork of a repository needing contributions
-2. Follow the contribution pattern of the GitHub Flow
-3. Submit a Pull Request and iterate with progressive commits
-{% endcapture %}{% include lab %}
-
-#### Details
-
-
-{% capture slide %}
 ### Acquiring repositories locally
 {% endcapture %}{% include slide-section %}
 
@@ -296,18 +267,67 @@ with cleaner code review possibilities.
 
 
 {% capture slide %}
-### Syncing local and GitHub repositories
+### Exploring the GitHub Flow
 {% endcapture %}{% include slide-section %}
 
-{% capture slide %}![Distributed repository interactions](../assets/diagrams/network.svg){% endcapture %}{% include slide-section %}
+{% capture slide %}![What is a branch](../assets/diagrams/what-is-a-branch.svg){% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Create a branch and make commits to it
+2. Notice the notification bar on the repository home page
+3. Open a *Compare and Pull Request*
+4. Facilitate team or colleage code review
+{% endcapture %}{% include lab %}
+
+#### Details
+The GitHub Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still have the benefit of syntax highlighting and pre-merge code reviews and discussions.
+
+A branch is a divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
+
+#### Videos
+<iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+
+{% capture slide %}
+### Contributing with Pull Requests
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Fork contribution pattern](../assets/diagrams/fork-structure.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Create a Fork of a repository needing contributions
+2. Follow the contribution pattern of the GitHub Flow
+3. Submit a Pull Request and iterate with progressive commits
+{% endcapture %}{% include lab %}
+
+#### Resources
+* [Guide to Forking](https://guides.github.com/overviews/forking/)
+
+
+
+{% capture slide %}
+### Syncing local and GitHub repos
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Distributed repository interactions](../assets/diagrams/network.svg)
+{% endcapture %}{% include slide-section %}
 
 {% capture lab %}
 1. Make commits on GitHub repository
 2. Clone in Desktop (if repository does not yet exist locally)
 3. Review the changes locally
 4. Make commits on local repository
-5. Publish (`push`) the changes
-6. Review the changes on GitHub
+5. Understand local history versus remote/GitHub
+6. Publish (`push`) the changes
+7. Review the changes on GitHub
+{% endcapture %}{% include lab %}
+
+#### Details
+In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance. 
 
 Optionally, the process of synchronizing can be done on the command line, in addition to graphical clients like [GitHub for Windows](https://windows.github.com) and [GitHub for Mac](https://mac.github.com):
 
@@ -318,62 +338,21 @@ git pull origin [master|branch]
 ## Publish local changes
 git push origin [master|branch]
 ```
-{% endcapture %}{% include lab %}
 
-#### Objectives
-* Review local history versus remote/GitHub
-* Synchronize local commits with GitHub
-* Confirm commits and files show on the remote repository
 
-#### Details
-In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance. 
 
 {% capture slide %}
-### Delivering features with branches
+### GitHub Pages
 {% endcapture %}{% include slide-section %}
 
-{% capture slide %}![What is a branch](../assets/diagrams/what-is-a-branch.svg){% endcapture %}{% include slide-section %}
 
-{% capture slide %}![Fork contribution pattern](../assets/diagrams/fork-structure.svg){% endcapture %}{% include slide-section %}
 
-{% capture slide %}![Direct contribution pattern](../assets/diagrams/direct-contribution.svg){% endcapture %}{% include slide-section %}
+{% capture slide %}
+### Managing project
+{% endcapture %}{% include slide-section %}
 
-{% capture lab %}
-1. Create a topic branch
-2. Commit changes to the branch
-3. Publish the branch (if made locally)
-4. Open a Pull Request
-5. Request peer-review
-6. Merge (after approval)
-{% endcapture %}{% include lab %}
 
-#### Details
-A branch is a divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
+{% capture slide %}
+### Using GitHub Flavored Markdown
+{% endcapture %}{% include slide-section %}
 
-#### The GitHub Flow
-* Branch
-* Commit
-* Compare
-* Pull Request
-* Discuss
-* Animated GIF
-* Line by line code review conversation
-* Clone locally with GHfD (optional)
-
-#### GitHub Fork workflow
-* [Guide to Forking](https://guides.github.com/overviews/forking/)
-* Reason for forks
-* What it encourages
-* How it insulates
-* Keeping up to date (too advanced?)
-* Original (base) and Fork (individual copy)
-
-#### GitHub Direct Contribution workflow
-* Everyone commits to same repo
-* All work is done on topic branches
-* All merges performed with Pull Requests
-
-#### Videos
-
-##### How to branch
-<iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
