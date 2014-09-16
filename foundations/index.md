@@ -347,13 +347,13 @@ git push origin [master|branch]
 
 
 {% capture slide %}
-### GitHub Pages
+### Using GitHub Pages
 {% endcapture %}{% include slide-section %}
 
 
 
 {% capture slide %}
-### Managing project
+### Managing projects
 {% endcapture %}{% include slide-section %}
 
 
