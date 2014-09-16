@@ -22,6 +22,10 @@ $mono-dark: #454545;
   position: relative;
   font-size: 16px;
 
+  .octicon,.mega-octicon{
+    font-size: 600%;
+  }
+
   img{
     width: 100%;
     height: auto;
@@ -80,7 +84,7 @@ $mono-dark: #454545;
     .panel-heading{
       &:before{
         content: "\f089";
-        font: normal normal 16px octicons;  
+        font: normal normal 16px octicons;
         float: right;
 
       }
@@ -107,10 +111,26 @@ $mono-dark: #454545;
       }
     }
 
+    ul,ol{
+      display: inline-block;
+      text-align: left;
+    }
+    .lab{
+      text-align: left;
+      ul, ol{
+          display: block;
+      }
+    }
+
     .alignment{
       padding: 0 10%;
       display: table-cell;
       vertical-align: middle;
+      text-align: center;
+
+      & > ul{
+        font-size: 250%;
+      }
     }
 
 
