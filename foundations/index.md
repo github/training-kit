@@ -342,6 +342,11 @@ git push origin [master|branch]
 
 
 {% capture slide %}
+### Visualizing changes with GitHub
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
 ### GitHub Pages
 {% endcapture %}{% include slide-section %}
 
