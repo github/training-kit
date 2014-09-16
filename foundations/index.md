@@ -10,6 +10,10 @@ redirect_from:
 ### Understanding version control
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
+![Gitl logo](../assets/diagrams/git-logo-black.svg)
+{% endcapture %}{% include slide-section %}
+
 {% capture slide %}![Distributed version control](../assets/diagrams/distributed-version-control.svg){% endcapture %}{% include slide-section %}
 
 {% capture slide %}![What is a commit](../assets/diagrams/what-is-a-commit.svg){% endcapture %}{% include slide-section %}
@@ -17,7 +21,7 @@ redirect_from:
 {% capture lab %}
 1. Launch Terminal or Git Shell
 2. Check Git installation with `git --version`
-3. Launch/open GitHub for Desktop
+3. Launch GitHub for Desktop
 {% endcapture %}{% include lab %}
 
 #### Objectives
@@ -64,11 +68,47 @@ The command line version of Git has a very light footprint. For most platforms, 
 ### Surveying the GitHub platform
 {% endcapture %}{% include slide-section %}
 
-#### Objectives
+{% capture slide %}
+![GitHub logo](../assets/diagrams/github-logo-black.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-repo"></span>
+#### Repositories
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-git-branch"></span>
+#### Branches
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-git-pull-request"></span>
+#### Pull Requests
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-issue-opened"></span>
+#### Issues
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-jersey"></span>
+#### Teams
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-organization"></span>
+#### Organizations
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
 * Describe the difference between the Git DVCS and GitHub collaboration platform
 * Access the common project components of daily GitHub interactions
-* Utilize project management components (Issues, Milestones, Network, Pulse, Collabortors, Teams)
-* Recognize best document types for Git version control (text, code, CSV, TSV, small binaries)
+* Utilize project management components (Issues, Milestones, Collabortors, Teams)
+* Recognize best document types for version control (code, CSV/TSV, small binaries)
+{% endcapture %}{% include lab %}
+
 
 #### Core concepts
 The six core concepts in the GitHub ecosystem are:
@@ -158,6 +198,15 @@ Repositories can be created in numerous ways, including:
 ### Exploring the GitHub Web Flow
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+1. Browse to one of your repositories
+2. Create file(s) and commit the new content
+3. Edit an existing file's content and commit the change
+4. Remove a file and commit the removal
+5. Change a filename and commit the path change
+6. Examine the *Commits* page of change history
+{% endcapture %}{% include lab %}
+
 #### Details
 The GitHub Web Flow allows you to:
 
@@ -169,6 +218,21 @@ The GitHub Web Flow allows you to:
 * Open Pull Requests
 
 The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still have the benefit of syntax highlighting and pre-merge code reviews and discussions.
+
+
+
+{% capture slide %}
+### Exploring the GitHub Flow
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Create a branch and make commits to it
+2. Open a *Compare and Pull Request*
+{% endcapture %}{% include lab %}
+
+#### Details
+
+Details here
 
 
 
