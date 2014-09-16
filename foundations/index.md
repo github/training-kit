@@ -327,7 +327,7 @@ A branch is a divergent path in the history of the code base. It may contain an 
 {% endcapture %}{% include lab %}
 
 #### Details
-In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance. 
+In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.
 
 Optionally, the process of synchronizing can be done on the command line, in addition to graphical clients like [GitHub for Windows](https://windows.github.com) and [GitHub for Mac](https://mac.github.com):
 
@@ -345,6 +345,35 @@ git push origin [master|branch]
 ### Visualizing changes with GitHub
 {% endcapture %}{% include slide-section %}
 
+#### Details
+GitHub enhances a traditional Git experience with visualizations typically thought of as the realm of desktop applications. Some of the visualizations we can look at today include:
+
+* Comparing/Diff-ing
+  * Code
+  * Prose
+  * Images
+  * Maps
+  * Spreadsheets
+  * 3D models
+* Branch view
+* Branch ahead/behind positions
+* Network graph
+* Activity graph
+
+#### Image Diff
+Image diffing is typically thought of as a desktop-oriented feature. However, GitHub aims to be a web application that performs beyond desktop apps, and provides a rich 2-up, swipe, and onion skin view for changed images.
+
+* [Image diff blog post](https://github.com/blog/817-behold-image-view-modes)
+* [Image diff demo from Cameron](https://github.com/cameronmcefee/Image-Diff-View-Modes/commit/8e95f70c9c47168305970e91021072673d7cdad8)
+* [Image diff demo from GitHub School](https://github.com/githubschool/hellogitworld/commit/7c0ffa9d88616972bb84befbec40a2212478149e)
+
+Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub platform, providing a surprisingly rich experience right in the browser.
+
+* [3D file viewing blog post](https://github.com/blog/1465-stl-file-viewing)
+* [3D view demo of a RepRap part](https://github.com/reprap/huxley/blob/master/alternative-parts/x-blunt-plate-extended.stl)
+* [3D file diffing blog post](https://github.com/blog/1633-3d-file-diffs)
+
+
 
 {% capture slide %}
 ### Using GitHub Pages
@@ -357,7 +386,28 @@ git push origin [master|branch]
 {% endcapture %}{% include slide-section %}
 
 
+
 {% capture slide %}
 ### Using GitHub Flavored Markdown
 {% endcapture %}{% include slide-section %}
 
+#### Details
+A plaintext format for writing prose and documentation. In addition to the [basic formatting options](https://help.github.com/articles/markdown-basics), Markdown files hosted and viewed on GitHub can make use of the following enhancements:
+
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
+* [Emoji](http://www.emoji-cheat-sheet.com/)
+* [Checklists](https://github.com/blog/1825-task-lists-in-all-markdown-documents) (Issues, Gists)
+
+
+
+{% capture slide %}
+### Interacting with shortucts
+{% endcapture %}{% include slide-section %}
+GitHub, though it is a web application, aims to behave as much like a desktop app as possible. Many of its features are accessible via keyboard shortcuts. While on any GitHub page, press `?` and a context-sensitive help menu will appear. Some of the most frequently used keyboard shortcuts include:
+
+* `?` help
+* `/` command bar
+* `t` fuzzy file search
+* `s` set focus to the search box
+* `g` `c` go to code
+* `g` `i` go to issues
