@@ -11,7 +11,8 @@
   .fade-out .timer {
     margin: 0 0 !important; }
   .fade-out .timer-toggle {
-    padding-left: 0px !important; }
+    padding-left: 0px !important;
+    opacity: .3; }
 
 .timer-wrapper {
   background: rgba(255, 255, 255, 0.93);
