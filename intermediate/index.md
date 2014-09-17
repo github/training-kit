@@ -519,7 +519,8 @@ $ git log --stat -M
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Use `revert` to generate a new commit undoing history
+2. Understand the effects of `reset`
 {% endcapture %}{% include lab %}
 
 #### Details
