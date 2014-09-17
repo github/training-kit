@@ -1,4 +1,6 @@
 $(function(){
+	// Global-ish vars
+	var timeLeftInterval = 0;
 
 	$(window).resize(function () {
 		updateSlideSize();
@@ -11,6 +13,36 @@ $(function(){
 		var h = window.innerHeight;
 		$(".slide").css("height", h);
 	}
+
+	$(".timer-toggle").click(function(){
+		var timeLeftDisplay = $("#time-left"),
+				timeLeft = 300;
+
+		clearInterval(timeLeftInterval);
+
+		if($(".timer-wrapper").hasClass("fade-out")){
+			$(".timer-wrapper").removeClass("fade-out");
+			timeLeftDisplay.html( Math.floor((timeLeft)/60) + ":" + (timeLeft%60 < 10 ? "0"+timeLeft%60:timeLeft%60) );
+			timeLeftInterval = setInterval(function(){
+
+
+				timeLeftDisplay.html( Math.floor((timeLeft)/60) + ":" + (timeLeft%60 < 10 ? "0"+timeLeft%60:timeLeft%60) );
+				timeLeft = --timeLeft;
+
+				console.log(timeLeft);
+
+				if(timeLeft == -1){
+					clearInterval(timeLeftInterval);
+				}
+			}, 1000);
+
+
+		}
+		else{
+			timeLeftDisplay.html("");
+			$(".timer-wrapper").addClass("fade-out");
+		}
+	});
 
 	buildToc();
 
