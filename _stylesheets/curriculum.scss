@@ -22,6 +22,10 @@ $mono-dark: #454545;
   position: relative;
   font-size: 16px;
 
+  .octicon,.mega-octicon{
+    font-size: 600%;
+  }
+
   img{
     width: 100%;
     height: auto;
@@ -84,10 +88,26 @@ $mono-dark: #454545;
       }
     }
 
+    ul,ol{
+      display: inline-block;
+      text-align: left;
+    }
+    .lab{
+      text-align: left;
+      ul, ol{
+          display: block;
+      }
+    }
+
     .alignment{
       padding: 0 10%;
       display: table-cell;
       vertical-align: middle;
+      text-align: center;
+
+      & > ul{
+        font-size: 250%;
+      }
     }
 
 

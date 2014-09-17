@@ -11,6 +11,8 @@
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
   /* YouTube Links */ }
+  .curriculum .octicon, .curriculum .mega-octicon {
+    font-size: 600%; }
   .curriculum img {
     width: 100%;
     height: auto; }
@@ -44,10 +46,20 @@
       margin-right: 0; }
     .curriculum .slide pre code {
       font-size: 1.5em; }
+    .curriculum .slide ul, .curriculum .slide ol {
+      display: inline-block;
+      text-align: left; }
+    .curriculum .slide .lab {
+      text-align: left; }
+      .curriculum .slide .lab ul, .curriculum .slide .lab ol {
+        display: block; }
     .curriculum .slide .alignment {
       padding: 0 10%;
       display: table-cell;
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-align: center; }
+      .curriculum .slide .alignment > ul {
+        font-size: 250%; }
   .curriculum a[href^="http://"],
   .curriculum a[href^="https://"] {
     font: normal normal 1em octicons;

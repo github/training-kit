@@ -243,11 +243,19 @@ $ git log --patch --color-words
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![diagram](../assets/diagrams/merge-fast-forward.svg)
+![diagram](../assets/diagrams/merge-fast-forward-01.svg)
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![diagram](../assets/diagrams/merge-recursive.svg)
+![diagram](../assets/diagrams/merge-fast-forward-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![diagram](../assets/diagrams/merge-recursive-01.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![diagram](../assets/diagrams/merge-recursive-02.svg)
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
@@ -429,7 +437,23 @@ $ git config alias.s "status -s"
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![States of tracking](../assets/diagrams/states-of-tracking.svg)
+![States of tracking](../assets/diagrams/states-of-tracking-01.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![States of tracking](../assets/diagrams/states-of-tracking-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![States of tracking](../assets/diagrams/states-of-tracking-03.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![States of tracking](../assets/diagrams/states-of-tracking-04.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![States of tracking](../assets/diagrams/states-of-tracking-05.svg)
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
@@ -495,7 +519,8 @@ $ git log --stat -M
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-
+1. Use `revert` to generate a new commit undoing history
+2. Understand the effects of `reset`
 {% endcapture %}{% include lab %}
 
 ### Details

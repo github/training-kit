@@ -10,6 +10,10 @@ redirect_from:
 ## Understanding version control
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
+![Gitl logo](../assets/diagrams/git-logo-black.svg)
+{% endcapture %}{% include slide-section %}
+
 {% capture slide %}![Distributed version control](../assets/diagrams/distributed-version-control.svg){% endcapture %}{% include slide-section %}
 
 {% capture slide %}![What is a commit](../assets/diagrams/what-is-a-commit.svg){% endcapture %}{% include slide-section %}
@@ -17,7 +21,7 @@ redirect_from:
 {% capture lab %}
 1. Launch Terminal or Git Shell
 2. Check Git installation with `git --version`
-3. Launch/open GitHub for Desktop
+3. Launch GitHub for Desktop
 {% endcapture %}{% include lab %}
 
 ### Objectives
@@ -64,11 +68,46 @@ The command line version of Git has a very light footprint. For most platforms, 
 ## Surveying the GitHub platform
 {% endcapture %}{% include slide-section %}
 
-### Objectives
+{% capture slide %}
+![GitHub logo](../assets/diagrams/github-logo-black.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-repo"></span>
+#### Repositories
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-git-branch"></span>
+#### Branches
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-git-pull-request"></span>
+#### Pull Requests
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-issue-opened"></span>
+#### Issues
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-jersey"></span>
+#### Teams
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+<span class="mega-octicon octicon-organization"></span>
+#### Organizations
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
 * Describe the difference between the Git DVCS and GitHub collaboration platform
 * Access the common project components of daily GitHub interactions
-* Utilize project management components (Issues, Milestones, Network, Pulse, Collabortors, Teams)
-* Recognize best document types for Git version control (text, code, CSV, TSV, small binaries)
+* Utilize project management components (Issues, Milestones, Collaborators, Teams)
+* Recognize best document types for version control (code, CSV/TSV, small binaries)
+{% endcapture %}{% include lab %}
 
 ### Core concepts
 The six core concepts in the GitHub ecosystem are:
@@ -97,8 +136,8 @@ The six core concepts in the GitHub ecosystem are:
   * https://github.com/stars
 * Notifications
 * Watching repositories
-* Unsubscribing (per thread)
 * Subscribing (per thread)
+* Unsubscribing (per thread)
 * Starring repositories
 * Gist
   * Repos in themselves
@@ -152,14 +191,25 @@ Repositories can be created in numerous ways, including:
 * With a GitHub GUI
 * With `git init` at the command line
 
+And important decision when creating your repository is in its name. Giving it a human readable, quick-to-identify, and sensible name makes it most effective and efficient for both yourself, and your colleagues to understand.
+
 
 
 {% capture slide %}
-## Exploring the GitHub Web Flow
+## Touring content versioning on GitHub
 {% endcapture %}{% include slide-section %}
 
+{% capture lab %}
+1. Browse to one of your repositories
+2. Create file(s) and commit the new content
+3. Edit an existing file's content and commit the change
+4. Remove a file and commit the removal
+5. Change a filename and commit the path change
+6. Examine the *Commits* page of change history
+{% endcapture %}{% include lab %}
+
 ### Details
-The GitHub Web Flow allows you to:
+The GitHub web interface allows you to interact and perform many file-affecting actions directly through your browser:
 
 * Browse projects
 * Start branches
@@ -167,8 +217,6 @@ The GitHub Web Flow allows you to:
 * Edit content
 * Change paths
 * Open Pull Requests
-
-The GitHub Web Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still have the benefit of syntax highlighting and pre-merge code reviews and discussions.
 
 
 
@@ -179,23 +227,20 @@ The GitHub Web Flow is a path through the GitHub user interface that facilitates
 {% capture slide %}![Repository clone process](../assets/diagrams/repo-clone.svg){% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-* Version new or modified files via graphical client
-* Prepare and preserve changes with command line
+* Clone from web (Clone in Desktop button)
+* Clone via personal repo list in GitHub Desktop
+* Clone via SSH or HTTPS URL
+{% endcapture %}{% include lab %}
+
+
+### Details
+A commit is a transactionally grouped set of changes, described by a brief message explaining the "why" of the attached changes.
 
 ```
 git status
 git add [file]
 git commit -m"[description]"
 ```
-{% endcapture %}{% include lab %}
-
-### Objectives
-* Clone from web (Clone in Desktop button)
-* Clone via personal repo list in GitHub Desktop
-* Clone via SSH or HTTPS URL
-
-### Details
-A commit is a transactionally grouped set of changes, described by a brief message explaining the "why" of the attached changes.
 
 Git enables repositories to be created both on GitHub, or locally on a developer's computer. A repository created locally can be synced to a network destination at a later time, preserving all the timestamps and comments in the local commits during the synchronization.
 
@@ -210,26 +255,78 @@ $ git pull
 $ git push origin [master|branch]
 ```
 
-Local repositories offer several benefits: You can initialize repositories while disconnected from network, you can craft file versions at your own pace or needing to publish changes one at a time, and you can create branches to isolate experiments in moments and exclusive to your development system.
+Local repositories offer several benefits:
 
-Just as with the Git technology operating on GitHub, local repositories also two identical aspects: Commits, which serve as history marker for file(s) and change(s) with a record of author, time, and message; and branches which serve as a container for grouped commits, making simpler means to integrate change
-with cleaner code review possibilities.
+- Initialize repositories while disconnected from network
+- Craft file versions at your own pace or needing to publish changes one at a time
+- Create branches to isolate experiments in moments and exclusive to your development system
+
+Just as with the Git technology operating on GitHub, local repositories also use two identical aspects: Commits, which serve as history marker for file(s) and change(s) with a record of author, time, and message; and Branches, which serve as a container for grouped commits, making simpler means to integrate change with cleaner code review possibilities.
 
 
 
 {% capture slide %}
-## Syncing local and GitHub repositories
+## Exploring the GitHub Flow
 {% endcapture %}{% include slide-section %}
 
-{% capture slide %}![Distributed repository interactions](../assets/diagrams/network.svg){% endcapture %}{% include slide-section %}
+{% capture slide %}![What is a branch](../assets/diagrams/what-is-a-branch.svg){% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Create a branch and make commits to it
+2. Notice the notification bar on the repository home page
+3. Open a *Compare and Pull Request*
+4. Facilitate team or colleague code review
+{% endcapture %}{% include lab %}
+
+### Details
+The GitHub Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still have the benefit of syntax highlighting and pre-merge code reviews and discussions.
+
+A branch is a divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
+
+### Videos
+<iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+
+{% capture slide %}
+### Contributing with Pull Requests
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Fork contribution pattern](../assets/diagrams/fork-structure.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture lab %}
+1. Create a Fork of a repository needing contributions
+2. Follow the contribution pattern of the GitHub Flow
+3. Submit a Pull Request and iterate with progressive commits
+{% endcapture %}{% include lab %}
+
+#### Resources
+* [Guide to Forking](https://guides.github.com/overviews/forking/)
+
+
+
+{% capture slide %}
+## Syncing local and GitHub repos
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Distributed repository interactions](../assets/diagrams/network.svg)
+{% endcapture %}{% include slide-section %}
 
 {% capture lab %}
 1. Make commits on GitHub repository
 2. Clone in Desktop (if repository does not yet exist locally)
 3. Review the changes locally
 4. Make commits on local repository
-5. Publish (`push`) the changes
-6. Review the changes on GitHub
+5. Understand local history versus remote/GitHub
+6. Publish (`push`) the changes
+7. Review the changes on GitHub
+{% endcapture %}{% include lab %}
+
+### Details
+In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.
 
 Optionally, the process of synchronizing can be done on the command line, in addition to graphical clients like [GitHub for Windows](https://windows.github.com) and [GitHub for Mac](https://mac.github.com):
 
@@ -240,62 +337,76 @@ git pull origin [master|branch]
 # Publish local changes
 git push origin [master|branch]
 ```
-{% endcapture %}{% include lab %}
 
-### Objectives
-* Review local history versus remote/GitHub
-* Synchronize local commits with GitHub
-* Confirm commits and files show on the remote repository
 
-### Details
-In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.
 
 {% capture slide %}
-## Delivering features with branches
+## Visualizing changes with GitHub
 {% endcapture %}{% include slide-section %}
 
-{% capture slide %}![What is a branch](../assets/diagrams/what-is-a-branch.svg){% endcapture %}{% include slide-section %}
+### Details
+GitHub enhances a traditional Git experience with visualizations typically thought of as the realm of desktop applications. Some of the visualizations we can look at today include:
 
-{% capture slide %}![Fork contribution pattern](../assets/diagrams/fork-structure.svg){% endcapture %}{% include slide-section %}
+* Comparing/Diff-ing
+  * Code
+  * Prose
+  * Images
+  * Maps
+  * Spreadsheets
+  * 3D models
+* Branch view
+* Branch ahead/behind positions
+* Network graph
+* Activity graph
 
-{% capture slide %}![Direct contribution pattern](../assets/diagrams/direct-contribution.svg){% endcapture %}{% include slide-section %}
+#### Image Diff
+Image diffing is typically thought of as a desktop-oriented feature. However, GitHub aims to be a web application that performs beyond desktop apps, and provides a rich 2-up, swipe, and onion skin view for changed images.
 
-{% capture lab %}
-1. Create a topic branch
-2. Commit changes to the branch
-3. Publish the branch (if made locally)
-4. Open a Pull Request
-5. Request peer-review
-6. Merge (after approval)
-{% endcapture %}{% include lab %}
+* [Image diff blog post](https://github.com/blog/817-behold-image-view-modes)
+* [Image diff demo from Cameron McEfee](https://github.com/cameronmcefee/Image-Diff-View-Modes/commit/8e95f70c9c47168305970e91021072673d7cdad8)
+* [Image diff demo from GitHub School](https://github.com/githubschool/hellogitworld/commit/7c0ffa9d88616972bb84befbec40a2212478149e)
+
+Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub platform, providing a surprisingly rich experience right in the browser.
+
+* [3D file viewing blog post](https://github.com/blog/1465-stl-file-viewing)
+* [3D view demo of a RepRap part](https://github.com/reprap/huxley/blob/master/alternative-parts/x-blunt-plate-extended.stl)
+* [3D file diffing blog post](https://github.com/blog/1633-3d-file-diffs)
+
+
+
+{% capture slide %}
+## Using GitHub Pages
+{% endcapture %}{% include slide-section %}
+
+
+
+{% capture slide %}
+## Managing projects
+{% endcapture %}{% include slide-section %}
+
+
+
+{% capture slide %}
+## Using GitHub Flavored Markdown
+{% endcapture %}{% include slide-section %}
 
 ### Details
-A branch is a divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
+A plaintext format for writing prose and documentation. In addition to the [basic formatting options](https://help.github.com/articles/markdown-basics), Markdown files hosted and viewed on GitHub can make use of the following enhancements:
 
-### The GitHub Flow
-* Branch
-* Commit
-* Compare
-* Pull Request
-* Discuss
-* Animated GIF
-* Line by line code review conversation
-* Clone locally with GHfD (optional)
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
+* [Emoji](http://www.emoji-cheat-sheet.com/)
+* [Checklists](https://github.com/blog/1825-task-lists-in-all-markdown-documents) (Issues, Gists)
 
-### GitHub Fork workflow
-* [Guide to Forking](https://guides.github.com/overviews/forking/)
-* Reason for forks
-* What it encourages
-* How it insulates
-* Keeping up to date (too advanced?)
-* Original (base) and Fork (individual copy)
 
-### GitHub Direct Contribution workflow
-* Everyone commits to same repo
-* All work is done on topic branches
-* All merges performed with Pull Requests
 
-### Videos
+{% capture slide %}
+### Interacting with shortcuts
+{% endcapture %}{% include slide-section %}
+GitHub, though it is a web application, aims to behave as much like a desktop app as possible. Many of its features are accessible via keyboard shortcuts. While on any GitHub page, press `?` and a context-sensitive help menu will appear. Some of the most frequently used keyboard shortcuts include:
 
-#### How to branch
-<iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+* `?` help
+* `/` command bar
+* `t` fuzzy file search
+* `s` set focus to the search box
+* `g` `c` go to code
+* `g` `i` go to issues
