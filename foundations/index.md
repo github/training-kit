@@ -105,7 +105,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 {% capture lab %}
 * Describe the difference between the Git DVCS and GitHub collaboration platform
 * Access the common project components of daily GitHub interactions
-* Utilize project management components (Issues, Milestones, Collabortors, Teams)
+* Utilize project management components (Issues, Milestones, Collaborators, Teams)
 * Recognize best document types for version control (code, CSV/TSV, small binaries)
 {% endcapture %}{% include lab %}
 
@@ -137,8 +137,8 @@ The six core concepts in the GitHub ecosystem are:
   * https://github.com/stars
 * Notifications
 * Watching repositories
-* Unsubscribing (per thread)
 * Subscribing (per thread)
+* Unsubscribing (per thread)
 * Starring repositories
 * Gist
   * Repos in themselves
@@ -259,10 +259,13 @@ $ git pull
 $ git push origin [master|branch]
 ```
 
-Local repositories offer several benefits: You can initialize repositories while disconnected from network, you can craft file versions at your own pace or needing to publish changes one at a time, and you can create branches to isolate experiments in moments and exclusive to your development system.
+Local repositories offer several benefits: 
 
-Just as with the Git technology operating on GitHub, local repositories also two identical aspects: Commits, which serve as history marker for file(s) and change(s) with a record of author, time, and message; and branches which serve as a container for grouped commits, making simpler means to integrate change
-with cleaner code review possibilities.
+- Initialize repositories while disconnected from network
+- Craft file versions at your own pace or needing to publish changes one at a time
+- Create branches to isolate experiments in moments and exclusive to your development system
+
+Just as with the Git technology operating on GitHub, local repositories also use two identical aspects: Commits, which serve as history marker for file(s) and change(s) with a record of author, time, and message; and Branches, which serve as a container for grouped commits, making simpler means to integrate change with cleaner code review possibilities.
 
 
 
@@ -276,7 +279,7 @@ with cleaner code review possibilities.
 1. Create a branch and make commits to it
 2. Notice the notification bar on the repository home page
 3. Open a *Compare and Pull Request*
-4. Facilitate team or colleage code review
+4. Facilitate team or colleague code review
 {% endcapture %}{% include lab %}
 
 #### Details
@@ -364,7 +367,7 @@ GitHub enhances a traditional Git experience with visualizations typically thoug
 Image diffing is typically thought of as a desktop-oriented feature. However, GitHub aims to be a web application that performs beyond desktop apps, and provides a rich 2-up, swipe, and onion skin view for changed images.
 
 * [Image diff blog post](https://github.com/blog/817-behold-image-view-modes)
-* [Image diff demo from Cameron](https://github.com/cameronmcefee/Image-Diff-View-Modes/commit/8e95f70c9c47168305970e91021072673d7cdad8)
+* [Image diff demo from Cameron McEfee](https://github.com/cameronmcefee/Image-Diff-View-Modes/commit/8e95f70c9c47168305970e91021072673d7cdad8)
 * [Image diff demo from GitHub School](https://github.com/githubschool/hellogitworld/commit/7c0ffa9d88616972bb84befbec40a2212478149e)
 
 Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub platform, providing a surprisingly rich experience right in the browser.
@@ -401,7 +404,7 @@ A plaintext format for writing prose and documentation. In addition to the [basi
 
 
 {% capture slide %}
-### Interacting with shortucts
+### Interacting with shortcuts
 {% endcapture %}{% include slide-section %}
 GitHub, though it is a web application, aims to behave as much like a desktop app as possible. Many of its features are accessible via keyboard shortcuts. While on any GitHub page, press `?` and a context-sensitive help menu will appear. Some of the most frequently used keyboard shortcuts include:
 
