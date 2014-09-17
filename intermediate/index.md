@@ -155,7 +155,7 @@ $ git commit -m "[your description]"
 
 
 {% capture slide %}
-## Comparing pending and existing change
+## Comparing pending and existing changes
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
@@ -169,7 +169,7 @@ $ git commit -m "[your description]"
 {% endcapture %}{% include lab %}
 
 ### Details
-Git advocates precision in each commit's contents and commit message.  This is facilitated by easy reviewing of in-flight changes prior to describing them and making them permanent.
+Git advocates precision in each commit's contents and commit message.  This is facilitated by easy review of in-flight changes prior to making them permanent.
 
 The simplest invocation of `diff` is the most common. It displays the difference of the files that have been modified.
 
