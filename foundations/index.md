@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 {% capture slide %}
-### Understanding version control
+## Understanding version control
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
@@ -24,12 +24,12 @@ redirect_from:
 3. Launch GitHub for Desktop
 {% endcapture %}{% include lab %}
 
-#### Objectives
+### Objectives
 * Understand the "distributed" aspect of Git version control
 * Comprehend how *commit* objects serve as document change reference points
 * Check that Git is installed and functioning on your system
 
-#### Git key vocabulary & concepts
+### Git key vocabulary & concepts
 Three important words key to learning Git are:
 
 * Repository
@@ -44,12 +44,12 @@ Three important concepts of this version control system are:
 * Git is the file and information tracker
 * GitHub is the collaboration platform
 
-##### Deeper study
+#### Deeper study
 * [A short history of Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
 * [The Git project homepage](http://git-scm.com)
 * [Entry-level videos from the official Git site](http://git-scm.com/videos)
 
-##### Installers
+#### Installers
 The command line version of Git has a very light footprint. For most platforms, you can simply copy the binaries to a folder that is on the executable search $PATH. Git is primarily written in C, which means there is a unique installer for each operating system.
 
 * **Windows**: [GitHub for Windows installer](http://windows.github.com)
@@ -57,15 +57,15 @@ The command line version of Git has a very light footprint. For most platforms, 
 * **Linux**: Git's source code and a listing of supported package managers can be found [on the git-scm.com site](http://git-scm.com/download/linux).
 * **Any platform**: [Pro Git Book: Installing Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
 
-#### Videos
+### Videos
 
-##### What is Git?
+#### What is Git?
 <iframe src="//player.vimeo.com/video/41381741" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 
 {% capture slide %}
-### Surveying the GitHub platform
+## Surveying the GitHub platform
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
@@ -109,8 +109,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 * Recognize best document types for version control (code, CSV/TSV, small binaries)
 {% endcapture %}{% include lab %}
 
-
-#### Core concepts
+### Core concepts
 The six core concepts in the GitHub ecosystem are:
 
 * **Repository**: a location to store related code and files
@@ -120,7 +119,7 @@ The six core concepts in the GitHub ecosystem are:
 * **Organizations**: groups of repositories and team members
 * **Teams**: named sets of users that grant access levels and group by talent, focus, and reporting
 
-#### Feature overview
+### Feature overview
 * Hosting repositories
 * Collaborating on code, documents, text
 * Controlling access & contributions
@@ -154,7 +153,7 @@ The six core concepts in the GitHub ecosystem are:
 * `README.md` in any folder level
 * `CONTRIBUTING.md` in root
 
-#### Details & resources
+### Details & resources
 GitHub accounts are free. Sign up for one at [github.com/join](https://github.com/join).
 
 GitHub is the repository hosting, collaboration, deployment, and distribution platform for both open source and private software projects.  It facilitates discussing changes-in-progress through the concepts of Issues and Pull Requests and provides a web user interface to much of Git. The web flow made possible by GitHub brings a much wider range of contributors, including documentation specialists, designers, and ops engineers into the flow of contributing to your application's life cycle.
@@ -166,15 +165,15 @@ Sign up for a free GitHub account at [github.com/join](https://github.com/join).
 * [GitHub.com feature list](https://github.com/features)
 * [How to sign up for GitHub](https://www.youtube.com/watch?v=ezxRcdJ8glM&list=PLg7s6cbtAD17rhrz2BJWAPJMjR71B3IDx)
 
-#### Videos
+### Videos
 
-##### GitHub account creation video
+#### GitHub account creation video
 <iframe src="//player.vimeo.com/video/88472085" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 
 {% capture slide %}
-### Creating a hosted repository
+## Creating a hosted repository
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
@@ -185,7 +184,7 @@ Sign up for a free GitHub account at [github.com/join](https://github.com/join).
 * Discuss ways of interaction
 {% endcapture %}{% include lab %}
 
-#### Details
+### Details
 Repositories can be created in numerous ways, including:
 
 * With the GitHub web user interface
@@ -197,7 +196,7 @@ And important decision when creating your repository is in its name. Giving it a
 
 
 {% capture slide %}
-### Touring content versioning on GitHub
+## Touring content versioning on GitHub
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
@@ -209,7 +208,7 @@ And important decision when creating your repository is in its name. Giving it a
 6. Examine the *Commits* page of change history
 {% endcapture %}{% include lab %}
 
-#### Details
+### Details
 The GitHub web interface allows you to interact and perform many file-affecting actions directly through your browser:
 
 * Browse projects
@@ -222,29 +221,26 @@ The GitHub web interface allows you to interact and perform many file-affecting 
 
 
 {% capture slide %}
-### Acquiring repositories locally
+## Acquiring repositories locally
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}![Repository clone process](../assets/diagrams/repo-clone.svg){% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-* Version new or modified files via graphical client
-* Prepare and preserve changes with command line
+* Clone from web (Clone in Desktop button)
+* Clone via personal repo list in GitHub Desktop
+* Clone via SSH or HTTPS URL
+{% endcapture %}{% include lab %}
+
+
+### Details
+A commit is a transactionally grouped set of changes, described by a brief message explaining the "why" of the attached changes.
 
 ```
 git status
 git add [file]
 git commit -m"[description]"
 ```
-{% endcapture %}{% include lab %}
-
-#### Objectives
-* Clone from web (Clone in Desktop button)
-* Clone via personal repo list in GitHub Desktop
-* Clone via SSH or HTTPS URL
-
-#### Details
-A commit is a transactionally grouped set of changes, described by a brief message explaining the "why" of the attached changes.
 
 Git enables repositories to be created both on GitHub, or locally on a developer's computer. A repository created locally can be synced to a network destination at a later time, preserving all the timestamps and comments in the local commits during the synchronization.
 
@@ -259,7 +255,7 @@ $ git pull
 $ git push origin [master|branch]
 ```
 
-Local repositories offer several benefits: 
+Local repositories offer several benefits:
 
 - Initialize repositories while disconnected from network
 - Craft file versions at your own pace or needing to publish changes one at a time
@@ -270,7 +266,7 @@ Just as with the Git technology operating on GitHub, local repositories also use
 
 
 {% capture slide %}
-### Exploring the GitHub Flow
+## Exploring the GitHub Flow
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}![What is a branch](../assets/diagrams/what-is-a-branch.svg){% endcapture %}{% include slide-section %}
@@ -282,12 +278,12 @@ Just as with the Git technology operating on GitHub, local repositories also use
 4. Facilitate team or colleague code review
 {% endcapture %}{% include lab %}
 
-#### Details
+### Details
 The GitHub Flow is a path through the GitHub user interface that facilitates governed, named, and reviewed sets of changes. This flow can be performed entirely from a web browser, with no need to download the code to a desktop machine, and yet still have the benefit of syntax highlighting and pre-merge code reviews and discussions.
 
 A branch is a divergent path in the history of the code base. It may contain an experiment, fix, or enhancement, and is generally intended to be merged back to the `master` branch after being thoroughly reviewed by a colleague.
 
-#### Videos
+### Videos
 <iframe src="//player.vimeo.com/video/100128962" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
@@ -312,7 +308,7 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 
 {% capture slide %}
-### Syncing local and GitHub repos
+## Syncing local and GitHub repos
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
@@ -329,26 +325,26 @@ A branch is a divergent path in the history of the code base. It may contain an 
 7. Review the changes on GitHub
 {% endcapture %}{% include lab %}
 
-#### Details
+### Details
 In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.
 
 Optionally, the process of synchronizing can be done on the command line, in addition to graphical clients like [GitHub for Windows](https://windows.github.com) and [GitHub for Mac](https://mac.github.com):
 
 ```
-## Retrieve GitHub changes
+# Retrieve GitHub changes
 git pull origin [master|branch]
 
-## Publish local changes
+# Publish local changes
 git push origin [master|branch]
 ```
 
 
 
 {% capture slide %}
-### Visualizing changes with GitHub
+## Visualizing changes with GitHub
 {% endcapture %}{% include slide-section %}
 
-#### Details
+### Details
 GitHub enhances a traditional Git experience with visualizations typically thought of as the realm of desktop applications. Some of the visualizations we can look at today include:
 
 * Comparing/Diff-ing
@@ -379,22 +375,22 @@ Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub
 
 
 {% capture slide %}
-### Using GitHub Pages
+## Using GitHub Pages
 {% endcapture %}{% include slide-section %}
 
 
 
 {% capture slide %}
-### Managing projects
+## Managing projects
 {% endcapture %}{% include slide-section %}
 
 
 
 {% capture slide %}
-### Using GitHub Flavored Markdown
+## Using GitHub Flavored Markdown
 {% endcapture %}{% include slide-section %}
 
-#### Details
+### Details
 A plaintext format for writing prose and documentation. In addition to the [basic formatting options](https://help.github.com/articles/markdown-basics), Markdown files hosted and viewed on GitHub can make use of the following enhancements:
 
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
