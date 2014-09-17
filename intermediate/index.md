@@ -243,11 +243,19 @@ $ git log --patch --color-words
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![diagram](../assets/diagrams/merge-fast-forward.svg)
+![diagram](../assets/diagrams/merge-fast-forward-01.svg)
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![diagram](../assets/diagrams/merge-recursive.svg)
+![diagram](../assets/diagrams/merge-fast-forward-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![diagram](../assets/diagrams/merge-recursive-01.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![diagram](../assets/diagrams/merge-recursive-02.svg)
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
