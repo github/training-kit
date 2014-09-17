@@ -437,7 +437,23 @@ $ git config alias.s "status -s"
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![States of tracking](../assets/diagrams/states-of-tracking.svg)
+![States of tracking](../assets/diagrams/states-of-tracking-01.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![States of tracking](../assets/diagrams/states-of-tracking-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![States of tracking](../assets/diagrams/states-of-tracking-03.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![States of tracking](../assets/diagrams/states-of-tracking-04.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![States of tracking](../assets/diagrams/states-of-tracking-05.svg)
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
