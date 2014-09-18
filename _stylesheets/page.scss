@@ -1,4 +1,5 @@
 @import "octicons.css";
+@import "../dependencies/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 /* Color Definitions */
 $color-dark: #1875c6;
@@ -7,6 +8,13 @@ $mono-dark: #222222;
 $mono-light: #f3f3f3;
 $mono-medium: #5a5a5a;
 $mono-bright: #ffffff;
+
+//
+table{
+	@extend .table;
+	@extend .table-striped;
+	@extend .table-bordered;
+}
 
 .jumbotron{
 	&.classes{
