@@ -25,26 +25,26 @@ redirect_from:
 {% endcapture %}{% include lab %}
 
 ### Details
-* SHA1 as the core hashing algorithm
-* Directed acyclic graph of commits
-* Composed of three fundamental object typs
-  * Commit
-  * Tree
-  * Blob
-* Built-in data integrity from commit, tree, blob
+Git version control is composed of three fundamental object types
 
-#### Treeish & commitish
-* Simple ways of describing history points
-* Easier-to-describe and understand numerically
-* Application of patterns works on [GitHub](https://help.github.com/articles/comparing-commits-across-time)
+Object Type | Purpose
+----------- | ------
+Commit      | Store file content
+Tree        | Preserve path and structure
+Commit      | Serve as unique historical reference
 
-```
-HEAD
-HEAD^^
-HEAD~2
-HEAD@{one.day.ago}
-HEAD@{today}
-```
+These three data types utilize a SHA1 for unique identification and establish built-in data integrity from the commit, tree, and blog *fingerprints*.
+
+#### Commitish
+Historical commit points is simple to discuss using using *commitish* rather than hexideciaml SHA1 identifies. This shorthand works on the command line, as well as on [GitHub](https://help.github.com/articles/comparing-commits-across-time).
+
+Shorthand              | Explanation
+---------------------- | -----------
+`HEAD`                 | Current commit
+`HEAD^^`               | Second parety of current commit
+`HEAD~2`               | Two commits from current commit
+`HEAD@{one.day.ago}`   | Reachable by current branch from one day ago
+`HEAD@{today}`         | All commits reachable by current branch made *today*
 
 #### Navigating history
 * Log is like a search engine.
