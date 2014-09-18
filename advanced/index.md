@@ -334,6 +334,28 @@ git checkout [commit] -- [path]
 ## Rewriting and crafting history
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
+![Rebase](../assets/diagrams/rebase-01.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Rebase](../assets/diagrams/rebase-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Rebase](../assets/diagrams/rebase-03.svg)
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+![Rebase](../assets/diagrams/rebase-interactive-01.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Rebase](../assets/diagrams/rebase-interactive-02.svg)
+{% endcapture %}{% include slide-section %}
+
+
 {% capture lab %}
 1. Replay branch history with `rebase`
 2. Understand side effects of rewriting history
@@ -341,7 +363,6 @@ git checkout [commit] -- [path]
 4. Resolve merge conflict during a rebase
 {% endcapture %}{% include lab %}
 
-![Rebase](../assets/diagrams/rebase.svg)
 
 
 ### Details
