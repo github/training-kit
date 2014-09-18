@@ -284,29 +284,6 @@ $ git config rerere.enable true
 
 
 {% capture slide %}
-## Using built-in GUIs
-{% endcapture %}{% include slide-section %}
-
-{% capture lab %}
-1. Launch Git's built-in graphical client for commiting change
-2. Review version history and branch relationships with `gitk`
-{% endcapture %}{% include lab %}
-
-### Details
-* for staging, committing
-* for browsing history
-* Tcl/Tk based
-
-```
-$ git gui
-$ gitk
-$ gitk&
-$ gitk --all
-```
-
-
-
-{% capture slide %}
 ## Capturing pieces of history
 {% endcapture %}{% include slide-section %}
 
