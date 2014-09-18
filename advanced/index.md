@@ -10,9 +10,13 @@ redirect_from:
 ## Understanding Git, navigating history
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
 ![Git data structure](../assets/diagrams/commit-data-structure.svg)
+{% endcapture %}{% include slide-section %}
 
+{% capture slide %}
 ![Commit DAG](../assets/diagrams/commit-dag.svg)
+{% endcapture %}{% include slide-section %}
 
 {% capture lab %}
 1. Understand the way Git preserves history and data objects
