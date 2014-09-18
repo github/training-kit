@@ -15,34 +15,37 @@ $(function(){
 	}
 
 	$(".timer-toggle").click(function(){
-		var timeLeftDisplay = $("#time-left"),
-				timeLeft = 300;
-
-		clearInterval(timeLeftInterval);
+		$(".timer-wrapper").toggleClass("fade-out");
+		resetTimer();
 
 		if($(".timer-wrapper").hasClass("fade-out")){
-			$(".timer-wrapper").removeClass("fade-out");
-			timeLeftDisplay.html( Math.floor((timeLeft)/60) + ":" + (timeLeft%60 < 10 ? "0"+timeLeft%60:timeLeft%60) );
-			timeLeftInterval = setInterval(function(){
-
-
-				timeLeftDisplay.html( Math.floor((timeLeft)/60) + ":" + (timeLeft%60 < 10 ? "0"+timeLeft%60:timeLeft%60) );
-				timeLeft = --timeLeft;
-
-				console.log(timeLeft);
-
-				if(timeLeft == -1){
-					clearInterval(timeLeftInterval);
-				}
-			}, 1000);
-
-
-		}
-		else{
-			timeLeftDisplay.html("");
-			$(".timer-wrapper").addClass("fade-out");
+			$(".timer-amount").toggle();
 		}
 	});
+
+	$("#start-stop").click(function(){
+		var timeLeftDisplay = $("#time-left")
+		var min = $("#minutes").attr("value");
+		var duration = min*60;
+
+		$(".timer-amount").toggle();
+
+		resetTimer();
+
+		timeLeftInterval = setInterval(function(){
+			timeLeftDisplay.html( Math.floor((duration)/60) + ":" + (duration%60 < 10 ? "0"+duration%60:duration%60) );
+			duration = --duration;
+
+			if(duration == -1){
+				clearInterval(timeLeftInterval);
+			}
+		}, 1000);
+	});
+
+	function resetTimer(){
+		clearInterval(timeLeftInterval);
+		$("#time-left").html("");
+	}
 
 	buildToc();
 

@@ -6,13 +6,18 @@
   margin-left: 100%;
   position: fixed;
   left: -35px !important; }
+  .fade-out .octicon {
+    font-size: 14px !important; }
   .fade-out.timer-wrapper {
     background-color: none !important; }
   .fade-out .timer {
     margin: 0 0 !important; }
   .fade-out .timer-toggle {
     padding-left: 0px !important;
-    opacity: .3; }
+    opacity: .3;
+    text-align: left !important; }
+  .fade-out .timer-amount {
+    visibility: hidden; }
 
 .timer-wrapper {
   background: rgba(255, 255, 255, 0.93);
@@ -22,6 +27,8 @@
   z-index: 1000;
   top: 0;
   left: 0; }
+  .timer-wrapper .octicon {
+    font-size: 50px; }
   .timer-wrapper .timer {
     transition: all 300ms;
     position: relative;
@@ -30,22 +37,16 @@
     height: 150px;
     width: 150px;
     display: block;
-    display: table; }
+    text-align: center; }
     .timer-wrapper .timer .timer-toggle {
-      position: absolute;
-      height: 35px;
-      width: 35px;
-      padding-top: 5px;
-      padding-left: 70px;
+      width: 100%;
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
       text-align: center; }
     .timer-wrapper .timer .timer-content {
-      display: table-cell;
-      vertical-align: middle;
       text-align: center; }
     .timer-wrapper .timer .time-left {
-      font-size: 56px;
+      font-size: 72px;
       display: block; }
 
 .nav-list > li > a {
