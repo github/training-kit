@@ -47,21 +47,35 @@ Shorthand              | Explanation
 `HEAD@{today}`         | All commits reachable by current branch made *today*
 
 #### Navigating history
-* Log is like a search engine.
-* Search for person, time, change, contents, message.
-* Dramatically narrows human search time when using `log` search filters.
+The `log` command is like a search engine. By default, all history is shown, but greater control can be applied, isolating commits by author and committer, the time changes occurred, patch content, or even the message description.
+
+Dramatically narrow the search time when combined with filters related to a partial or full match of a Git `user.name` or within a particular time range.
 
 ```bash
 $ git log --author [author-name]
 $ git log --since [integer].days.ago
+```
+
+Searching by a string or regular expression often proves as the most efficient way of finding history:
+
+```bash
 $ git log -S [string-in-patch]
 $ git log -G [regex-pattern-in-patch]
 $ git log --grep=[regex-in-message]
+```
+
+Isolating change by file state, *added* (A), *modified* (M), or *deleted* (D), also narrows what change requires assessment.
+
+```bash
 $ git log --diff-filter=[A|M|D]
 $ git log --follow --stat --diff-filter=[A|M|D] -- <filename>
+```
+
+Revision selection and commit ranges are extremely powerful in narrowing historical output, and is detailed on the [Git-SCM.com web site](http://git-scm.com/book/en/Git-Tools-Revision-Selection).
+
+```bash
 $ git log --oneline --left-right master..other
 $ git log --oneline --left-right master...other
-$ git name-rev [commit-ref]
 ```
 
 ### Videos
