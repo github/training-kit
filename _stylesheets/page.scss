@@ -16,6 +16,10 @@ table{
 	@extend .table-bordered;
 }
 
+iframe[src^="//player.vimeo"]{
+	width: 100%;
+}
+
 .jumbotron{
 	&.classes{
 		a{
