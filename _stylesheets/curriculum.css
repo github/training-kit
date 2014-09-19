@@ -69,15 +69,6 @@
     font: normal normal 22px octicons;
     float: right;
     color: #c0c7ce; }
-  .curriculum table th, .curriculum table td {
-    text-align: left;
-    padding: 0 1em; }
-  .curriculum p {
-    line-height: 1.75em;
-    margin-bottom: 2em; }
-  .curriculum iframe {
-    display: block;
-    margin: 0 auto; }
   .curriculum .lab .panel-heading:before {
     content: "\f089";
     font: normal normal 16px octicons;
@@ -102,7 +93,6 @@
       .curriculum .slide .lab ul, .curriculum .slide .lab ol {
         display: block; }
     .curriculum .slide .alignment {
-      padding: 0 10%;
       display: table-cell;
       vertical-align: middle;
       text-align: center; }
@@ -159,11 +149,9 @@
     opacity: 1; }
 
 #toc {
-  font-size: .8em; }
-  #toc .active {
-    font-weight: 700; }
-    #toc .active a {
-      color: #222222; }
+  font-size: .7em; }
+  #toc a {
+    padding: 5px; }
 
 .affix-top {
   position: absolute; }
