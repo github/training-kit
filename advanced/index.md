@@ -297,16 +297,10 @@ $ git config rerere.enable true
 Capturing pieces of code changed in other branches or in orphaned commit history becomes a useful and timesaving operation. With `cherry-pick`, authorship and attribution fields remain, versioned changes are carried over, and a new commit is generated.
 
 ```shell
- Generate new commit on current branch
- with patch of specified commit
-
+# Generate new commit on current branch with patch of specified commit
 $ git cherry-pick [commit]
-```
 
-#### Identifying incorporated commits
-```shell
- List branches containing same patch
-
+# List branches containing same patch
 $ git cherry [comparison-branch]
 ```
 
