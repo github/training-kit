@@ -349,12 +349,9 @@ git checkout [commit] -- [path]
 
 
 ### Details
-#### What is rebase?
-* Branch Preparation
-* Rebasing __is not__ merging
-* Conflicts can occur
-* Resolution is simple
-* Small variation to merge conflict
+Adjusting, rewriting and crafting existing version control history is often completed with `rebase`. The most important aspect to note is that `rebase` is distinct from `merge` and not the same, despite their similarities.
+
+Just as with `merge`, confclits can occur, resolutions are relatively straight forward, and simple require a small process pattern to follow to ensure a seamless recovery and completion.
 
 #### Rebasing a branch
 Re-playing branch-specific commits against a base is the most common use case for rebase.
@@ -380,26 +377,20 @@ $ git rebase --continue
 ```
 
 #### Reordering History
-
-* Reorder commits
-* Rewrite history entirely
-* Discard commits
-* Revise/edit commits
-* Safe patterns for rebasing local history
-* Verbs (cheat sheet of commands)
+The `rebase -i` command operates similarly to `rebase` in its plain form, but allows for reordering commits, rewriting entire histories, discarding commits, and even revising existing commits.
 
 ```bash
-$ git rebase -i <REF>
+# Rewrite any commits back to specified base commit
+$ git rebase -i <commit>
 ```
 
-#### Reordering all commits on a branch
+Rewriting shared repository history is unadvisable, and is easily avoided by utilizing the remote branches as a base commit to ensure only local histories are affected.
 
 ```bash
 $ git rebase -i [remote]/[branch]
 ```
 
-#### Rebase markers
-Automatically arrange commits and rebase with `fixup!` and `squash!` message prefixes
+Automatically arrange history and `rebase -i` steps with `fixup!` and `squash!` message prefixes to any commits during work-in-progress steps that will ultimately be collapsed.
 
 ```bash
 $ git rebase -i --autosquash [ref]
