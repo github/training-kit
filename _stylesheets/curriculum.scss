@@ -111,22 +111,6 @@ $mono-dark: #454545;
       color: #c0c7ce;
     }
   }
-  table{
-    th, td{
-      text-align: left;
-      padding: 0 1em;
-    }
-  }
-
-  p{
-    line-height: 1.75em;
-    margin-bottom: 2em;
-  }
-
-  iframe{
-    display: block;
-    margin: 0 auto;
-  }
 
   .lab{
     .panel-heading{
@@ -172,7 +156,6 @@ $mono-dark: #454545;
     }
 
     .alignment{
-      padding: 0 10%;
       display: table-cell;
       vertical-align: middle;
       text-align: center;
@@ -181,8 +164,6 @@ $mono-dark: #454545;
         font-size: 250%;
       }
     }
-
-
   }
 
   /* General external link */
@@ -205,7 +186,6 @@ $mono-dark: #454545;
   {
     @include octicon-link("\f007");
   }
-
 
   /* YouTube Links */
   a[href^="https://youtube.com"],
@@ -232,14 +212,9 @@ $mono-dark: #454545;
 }
 
 #toc{
-  font-size: .8em;
-
-  .active{
-    font-weight: 700;
-
-    a{
-      color: #222222;
-    }
+  font-size: .7em;
+  a{
+    padding: 5px;
   }
 }
 
