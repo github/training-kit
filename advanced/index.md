@@ -294,14 +294,7 @@ $ git config rerere.enable true
 {% endcapture %}{% include lab %}
 
 ### Details
-* Reusing small pieces of code with `cherry-pick`
-* Why use `cherry-pick` instead of `merge`?
-* What happens when you `cherry-pick`?
-* Maintaining `author` and `committer` fields
-* Tracing any cherry-picks with `-x` commit message metadata
-* `-x` metadata hyperlinked on GitHub
-* `$ git cherry` to view absent commits
-* Can include cherry-pick during rebase interactive
+Capturing pieces of code changed in other branches or in orphaned commit history becomes a useful and timesaving operation. With `cherry-pick`, authorship and attribution fields remain, versioned changes are carried over, and a new commit is generated.
 
 ```shell
  Generate new commit on current branch
