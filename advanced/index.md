@@ -33,7 +33,7 @@ Commit      | Store file content
 Tree        | Preserve path and structure
 Commit      | Serve as unique historical reference
 
-These three data types utilize a SHA1 for unique identification and establish built-in data integrity from the commit, tree, and blog *fingerprints*.
+These three data types utilize a SHA1 for unique identification and establish built-in data integrity from the commit, tree, and blob *fingerprints*.
 
 #### Commitish
 Historical commit points is simple to discuss using using *commitish* rather than hexideciaml SHA1 identifies. This shorthand works on the command line, as well as on [GitHub](https://help.github.com/articles/comparing-commits-across-time).
@@ -351,8 +351,6 @@ git checkout [commit] -- [path]
 ### Details
 Adjusting, rewriting and crafting existing version control history is often completed with `rebase`. The most important aspect to note is that `rebase` is distinct from `merge` and not the same, despite their similarities.
 
-Just as with `merge`, confclits can occur, resolutions are relatively straight forward, and simple require a small process pattern to follow to ensure a seamless recovery and completion.
-
 #### Rebasing a branch
 Re-playing branch-specific commits against a base is the most common use case for rebase.
 
@@ -384,7 +382,7 @@ The `rebase -i` command operates similarly to `rebase` in its plain form, but al
 $ git rebase -i <commit>
 ```
 
-Rewriting shared repository history is unadvisable, and is easily avoided by utilizing the remote branches as a base commit to ensure only local histories are affected.
+Rewriting shared repository history is typically inadvisable and is easily avoided by using remote branches as the base commit of a `rebase`.
 
 ```bash
 $ git rebase -i [remote]/[branch]
