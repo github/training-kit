@@ -304,9 +304,10 @@ $ git cherry-pick [commit]
 $ git cherry [comparison-branch]
 ```
 
-#### Retrieving paths from existing commits
+Similar to `cherry-pick`, but without the result of an automatically created commit with the change is the more precise use of `checkout` with a path argument.
+
 ```shell
- Stage the versioned file from a specific commit
+# Stage the versioned file from a specific commit
 git checkout [commit] -- [path]
 ```
 
