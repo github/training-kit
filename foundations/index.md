@@ -410,3 +410,8 @@ GitHub, though it is a web application, aims to behave as much like a desktop ap
 * `s` set focus to the search box
 * `g` `c` go to code
 * `g` `i` go to issues
+
+#### Additional Resources
+* [O'Reilly's Mastering Git video series](http://bit.ly/ogitvid)
+* [Introducing GitHub](http://shop.oreilly.com/product/0636920033059.do)
+* [Git and GitHub LiveLessons (Workshop)](http://www.informit.com/store/git-and-github-livelessons-workshop-9780133991772)
