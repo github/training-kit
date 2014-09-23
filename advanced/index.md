@@ -491,12 +491,12 @@ $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upst
 
 ### Details
 ```shell
+# Rewrite all history with respect to files in [dir]
 $ git filter-branch
     --subdirectory-filter [dir]
     -- --all
-```
 
-```shell
+# Rewrite history, applying `git rm` across all commits
 $ git filter-branch --index-filter
     'git rm --cached
     --ignore-unmatch [file]' HEAD
