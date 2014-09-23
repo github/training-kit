@@ -549,20 +549,23 @@ $ git config --global user.signingkey [ID]
 #### Using GPG signatures on commits
 ```shell
 $ git commit --signoff
- or the shorthand invocation...
+# or the shorthand invocation...
 $ git commit -S
 
+# Display signatures per commit
 $ git log --show-signature
-```
 
-#### Using GPG signatures on tags
-```shell
+# Merge only if all signatures match public keys
 $ git merge --verify-signatures
 ```
 
+#### Using GPG signatures on tags
+
 ```shell
+# Create a signed tag
 $ git tag -s [tag-name] [commit]
 
+# Verify signature of tag
 $ git tag -v [tag-name]
 ```
 
