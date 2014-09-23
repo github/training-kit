@@ -2,6 +2,39 @@ $(function(){
 	// Global-ish vars
 	var timeLeftInterval = 0;
 
+
+	// WARNING This only anticipates one querystring value
+	var urlSearch = window.location.search,
+			queryString = urlSearch.substring(1,urlSearch.length),
+			username = queryString.substring((queryString.indexOf("="))+1, queryString.length);
+
+	$.ajax(
+	{
+		url: "https://api.github.com/users/"+username,
+		success: function(data, textStatus, jqXHR){
+			$("<div/>",
+			{
+				class: "teacher",
+				text: data.name
+			}).appendTo("#teacher");
+
+			$("<div/>",
+			{
+				class: "email",
+				text: data.email
+			}).appendTo("#teacher");
+
+			$("<img/>",
+			{
+				src: data.avatar_url,
+				class: "avatar",
+				height: "300",
+				width: "300"
+			}).appendTo("#teacher");
+		}
+	});
+
+
 	$(window).resize(function () {
 		updateSlideSize();
 	});
