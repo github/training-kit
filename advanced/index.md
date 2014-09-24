@@ -29,7 +29,7 @@ Git version control is composed of three fundamental object types
 
 Object Type | Purpose
 ----------- | ------
-Commit      | Store file content
+Blob      | Store file content
 Tree        | Preserve path and structure
 Commit      | Serve as unique historical reference
 
@@ -56,7 +56,7 @@ $ git log --author [author-name]
 $ git log --since [integer].days.ago
 ```
 
-Searching by a string or regular expression often proves as the most efficient way of finding history:
+Searching by a string or regular expression often often the most efficient way of finding history:
 
 ```bash
 $ git log -S [string-in-patch]
@@ -64,7 +64,7 @@ $ git log -G [regex-pattern-in-patch]
 $ git log --grep=[regex-in-message]
 ```
 
-Isolating change by file state, *added* (A), *modified* (M), or *deleted* (D), also narrows what change requires assessment.
+Filtering by file state, *added* (A), *modified* (M), or *deleted* (D), also narrows what change requires assessment.
 
 ```bash
 $ git log --diff-filter=[A|M|D]
@@ -388,7 +388,7 @@ Rewriting shared repository history is typically inadvisable and is easily avoid
 $ git rebase -i [remote]/[branch]
 ```
 
-Automatically arrange history and `rebase -i` steps with `fixup!` and `squash!` message prefixes to any commits during work-in-progress steps that will ultimately be collapsed.
+Automatically arrange history and `rebase -i` steps with `fixup!` and `squash!`. Prefix messages for work-in-progress commits steps to efficiently collapse them during an interactive rebase.
 
 ```bash
 $ git rebase -i --autosquash [ref]
