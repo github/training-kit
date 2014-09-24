@@ -10,9 +10,13 @@ redirect_from:
 ## Understanding Git, navigating history
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
 ![Git data structure](../assets/diagrams/commit-data-structure.svg)
+{% endcapture %}{% include slide-section %}
 
+{% capture slide %}
 ![Commit DAG](../assets/diagrams/commit-dag.svg)
+{% endcapture %}{% include slide-section %}
 
 {% capture lab %}
 1. Understand the way Git preserves history and data objects
@@ -21,43 +25,57 @@ redirect_from:
 {% endcapture %}{% include lab %}
 
 ### Details
-* SHA1 as the core hashing algorithm
-* Directed acyclic graph of commits
-* Composed of three fundamental object typs
-  * Commit
-  * Tree
-  * Blob
-* Built-in data integrity from commit, tree, blob
+Git version control is composed of three fundamental object types
 
-#### Treeish & commitish
-* Simple ways of describing history points
-* Easier-to-describe and understand numerically
-* Application of patterns works on [GitHub](https://help.github.com/articles/comparing-commits-across-time)
+Object Type | Purpose
+----------- | ------
+Blob      | Store file content
+Tree        | Preserve path and structure
+Commit      | Serve as unique historical reference
 
-```
-HEAD
-HEAD^^
-HEAD~2
-HEAD@{one.day.ago}
-HEAD@{today}
-```
+These three data types utilize a SHA1 for unique identification and establish built-in data integrity from the commit, tree, and blob *fingerprints*.
+
+#### Commitish
+Historical commit points is simple to discuss using using *commitish* rather than hexideciaml SHA1 identifies. This shorthand works on the command line, as well as on [GitHub](https://help.github.com/articles/comparing-commits-across-time).
+
+Shorthand              | Explanation
+---------------------- | -----------
+`HEAD`                 | Current commit
+`HEAD^^`               | Second parety of current commit
+`HEAD~2`               | Two commits from current commit
+`HEAD@{one.day.ago}`   | Reachable by current branch from one day ago
+`HEAD@{today}`         | All commits reachable by current branch made *today*
 
 #### Navigating history
-* Log is like a search engine.
-* Search for person, time, change, contents, message.
-* Dramatically narrows human search time when using `log` search filters.
+The `log` command is like a search engine. By default, all history is shown, but greater control can be applied, isolating commits by author and committer, the time changes occurred, patch content, or even the message description.
+
+Dramatically narrow the search time when combined with filters related to a partial or full match of a Git `user.name` or within a particular time range.
 
 ```bash
 $ git log --author [author-name]
 $ git log --since [integer].days.ago
+```
+
+Searching by a string or regular expression often often the most efficient way of finding history:
+
+```bash
 $ git log -S [string-in-patch]
 $ git log -G [regex-pattern-in-patch]
 $ git log --grep=[regex-in-message]
+```
+
+Filtering by file state, *added* (A), *modified* (M), or *deleted* (D), also narrows what change requires assessment.
+
+```bash
 $ git log --diff-filter=[A|M|D]
 $ git log --follow --stat --diff-filter=[A|M|D] -- <filename>
+```
+
+Revision selection and commit ranges are extremely powerful in narrowing historical output, and is detailed on the [Git-SCM.com web site](http://git-scm.com/book/en/Git-Tools-Revision-Selection).
+
+```bash
 $ git log --oneline --left-right master..other
 $ git log --oneline --left-right master...other
-$ git name-rev [commit-ref]
 ```
 
 ### Videos
@@ -266,29 +284,6 @@ $ git config rerere.enable true
 
 
 {% capture slide %}
-## Using built-in GUIs
-{% endcapture %}{% include slide-section %}
-
-{% capture lab %}
-1. Launch Git's built-in graphical client for commiting change
-2. Review version history and branch relationships with `gitk`
-{% endcapture %}{% include lab %}
-
-### Details
-* for staging, committing
-* for browsing history
-* Tcl/Tk based
-
-```
-$ git gui
-$ gitk
-$ gitk&
-$ gitk --all
-```
-
-
-
-{% capture slide %}
 ## Capturing pieces of history
 {% endcapture %}{% include slide-section %}
 
@@ -299,32 +294,20 @@ $ gitk --all
 {% endcapture %}{% include lab %}
 
 ### Details
-* Reusing small pieces of code with `cherry-pick`
-* Why use `cherry-pick` instead of `merge`?
-* What happens when you `cherry-pick`?
-* Maintaining `author` and `committer` fields
-* Tracing any cherry-picks with `-x` commit message metadata
-* `-x` metadata hyperlinked on GitHub
-* `$ git cherry` to view absent commits
-* Can include cherry-pick during rebase interactive
+Capturing pieces of code changed in other branches or in orphaned commit history becomes a useful and timesaving operation. With `cherry-pick`, authorship and attribution fields remain, versioned changes are carried over, and a new commit is generated.
 
 ```shell
- Generate new commit on current branch
- with patch of specified commit
-
+# Generate new commit on current branch with patch of specified commit
 $ git cherry-pick [commit]
-```
 
-#### Identifying incorporated commits
-```shell
- List branches containing same patch
-
+# List branches containing same patch
 $ git cherry [comparison-branch]
 ```
 
-#### Retrieving paths from existing commits
+Similar to `cherry-pick`, but without the result of an automatically created commit with the change is the more precise use of `checkout` with a path argument.
+
 ```shell
- Stage the versioned file from a specific commit
+# Stage the versioned file from a specific commit
 git checkout [commit] -- [path]
 ```
 
@@ -366,12 +349,7 @@ git checkout [commit] -- [path]
 
 
 ### Details
-#### What is rebase?
-* Branch Preparation
-* Rebasing __is not__ merging
-* Conflicts can occur
-* Resolution is simple
-* Small variation to merge conflict
+Adjusting, rewriting and crafting existing version control history is often completed with `rebase`. The most important aspect to note is that `rebase` is distinct from `merge` and not the same, despite their similarities.
 
 #### Rebasing a branch
 Re-playing branch-specific commits against a base is the most common use case for rebase.
@@ -397,26 +375,20 @@ $ git rebase --continue
 ```
 
 #### Reordering History
-
-* Reorder commits
-* Rewrite history entirely
-* Discard commits
-* Revise/edit commits
-* Safe patterns for rebasing local history
-* Verbs (cheat sheet of commands)
+The `rebase -i` command operates similarly to `rebase` in its plain form, but allows for reordering commits, rewriting entire histories, discarding commits, and even revising existing commits.
 
 ```bash
-$ git rebase -i <REF>
+# Rewrite any commits back to specified base commit
+$ git rebase -i <commit>
 ```
 
-#### Reordering all commits on a branch
+Rewriting shared repository history is typically inadvisable and is easily avoided by using remote branches as the base commit of a `rebase`.
 
 ```bash
 $ git rebase -i [remote]/[branch]
 ```
 
-#### Rebase markers
-Automatically arrange commits and rebase with `fixup!` and `squash!` message prefixes
+Automatically arrange history and `rebase -i` steps with `fixup!` and `squash!`. Prefix messages for work-in-progress commits steps to efficiently collapse them during an interactive rebase.
 
 ```bash
 $ git rebase -i --autosquash [ref]
@@ -519,12 +491,12 @@ $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upst
 
 ### Details
 ```shell
+# Rewrite all history with respect to files in [dir]
 $ git filter-branch
     --subdirectory-filter [dir]
     -- --all
-```
 
-```shell
+# Rewrite history, applying `git rm` across all commits
 $ git filter-branch --index-filter
     'git rm --cached
     --ignore-unmatch [file]' HEAD
@@ -577,20 +549,23 @@ $ git config --global user.signingkey [ID]
 #### Using GPG signatures on commits
 ```shell
 $ git commit --signoff
- or the shorthand invocation...
+# or the shorthand invocation...
 $ git commit -S
 
+# Display signatures per commit
 $ git log --show-signature
-```
 
-#### Using GPG signatures on tags
-```shell
+# Merge only if all signatures match public keys
 $ git merge --verify-signatures
 ```
 
+#### Using GPG signatures on tags
+
 ```shell
+# Create a signed tag
 $ git tag -s [tag-name] [commit]
 
+# Verify signature of tag
 $ git tag -v [tag-name]
 ```
 
