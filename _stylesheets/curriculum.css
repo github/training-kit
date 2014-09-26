@@ -59,8 +59,20 @@
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
   /* YouTube Links */ }
-  .curriculum .octicon, .curriculum .mega-octicon {
+  .curriculum .mega-octicon {
     font-size: 600%; }
+  .curriculum #teacher-avatar img {
+    height: 300px;
+    width: 300px; }
+  .curriculum .teacher-name {
+    color: #1875c6;
+    font-size: 300%; }
+  .curriculum #teacher-username, .curriculum #teacher-email, .curriculum #teacher-organization, .curriculum #teacher-location {
+    margin: auto .75em;
+    opacity: .6; }
+  .curriculum .teacher-badges {
+    margin: 1em 0;
+    opacity: .5; }
   .curriculum img {
     width: 100%;
     height: auto; }

@@ -7,32 +7,72 @@ $(function(){
 	var urlSearch = window.location.search,
 			queryString = urlSearch.substring(1,urlSearch.length),
 			username = queryString.substring((queryString.indexOf("="))+1, queryString.length);
+	if(username){
+		$.ajax(
+		{
+			url: "https://api.github.com/users/"+username,
+			success: function(data, textStatus, jqXHR){
 
-	$.ajax(
-	{
-		url: "https://api.github.com/users/"+username,
-		success: function(data, textStatus, jqXHR){
-			$("<div/>",
-			{
-				class: "teacher",
-				text: data.name
-			}).appendTo("#teacher");
+				console.log(data);
 
-			$("<div/>",
-			{
-				class: "email",
-				text: data.email
-			}).appendTo("#teacher");
 
-			$("<img/>",
-			{
-				src: data.avatar_url,
-				class: "avatar",
-				height: "300",
-				width: "300"
-			}).appendTo("#teacher");
-		}
-	});
+				$("<span/>",
+				{
+					class: "teacher-name",
+					text: data.name
+				}).appendTo("#teacher-name");
+
+				$("<span/>",
+				{
+					text: data.login
+				}).appendTo("#teacher-username");
+
+				$("<span/>",
+				{
+					text: data.email
+				}).appendTo("#teacher-email");
+
+				$("<span/>",
+				{
+					text: data.company
+				}).appendTo("#teacher-organization");
+
+				$("<span/>",
+				{
+					text: data.location
+				}).appendTo("#teacher-location");
+
+				$("<img/>",
+				{
+					src: data.avatar_url,
+					class: "img-circle img-thumbnail"
+				}).appendTo("#teacher-avatar");
+
+
+				$("<span/>",
+				{
+					text: data.public_repos,
+					class: "badge"
+				}).appendTo("#teacher-repo");
+
+				$("<span/>",
+				{
+					text: data.followers,
+					class: "badge"
+				}).appendTo("#teacher-followers");
+
+				$("<span/>",
+				{
+					text: data.following,
+					class: "badge"
+				}).appendTo("#teacher-following");
+
+
+
+				$("#teacher").toggleClass("hidden");
+			}
+		});
+	}
 
 
 	$(window).resize(function () {
