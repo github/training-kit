@@ -94,8 +94,30 @@ $mono-dark: #454545;
   position: relative;
   font-size: 16px;
 
-  .octicon,.mega-octicon{
+  .mega-octicon{
     font-size: 600%;
+  }
+
+  #teacher-avatar{
+    img{
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  .teacher-name{
+    color: $color-dark;
+    font-size: 300%;
+  }
+
+  #teacher-username,#teacher-email, #teacher-organization, #teacher-location{
+    margin: auto .75em;
+    opacity: .6;
+  }
+
+  .teacher-badges{
+    margin: 1em 0;
+    opacity: .5;
   }
 
   img{
