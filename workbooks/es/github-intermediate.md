@@ -25,7 +25,7 @@ Nivel | Precedencia | Ubicación
 $ git config --list
 $ git config user.name
 $ git config user.email
-$ git config --global core.autocrlf <value>
+$ git config --global core.autocrlf <valor>
 ```
 
 
@@ -100,7 +100,7 @@ $ git clone [url] [nombre-opcional]
 * Explorando los fundamentos
 * La carpeta `.git`
 * Todo el historial almacenado localmente
-* Naturaleza distribuída, cambios simultáneos
+* Naturaleza distribuida, cambios simultáneos
 * No bloqueante
 * Optimizado para texto y archivos pequeños
 * Símbolo `HEAD`
@@ -175,7 +175,7 @@ $ git log --decorate
 * Mostrar ramas locales
 * Crear
 * Borrar
-* Renombrar
+* Renombrado
 
 #### Detalles
 ```
@@ -210,7 +210,7 @@ $ git checkout [referencia]
 ## Remotos
 
 ### Resumen
-* Explicar la convensión de `origin`
+* Explicar la convención de `origin`
 * Aliases, marcadores para URL de un servidor
 * Remover conexiones
 
@@ -286,7 +286,7 @@ $ git show FETCH_HEAD
 ## Remover archivos
 
 ### Resumen
-* Observaciones de Git sobre eliminacion de archivos
+* Observaciones de Git sobre eliminación de archivos
 * Remover archivos
 * Dejar de rastrear archivos
 

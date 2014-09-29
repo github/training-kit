@@ -91,7 +91,7 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 * Ramas
   * Contenedor para commits agrupados
   * Medios simples para integrar cambios
-  * Posibilidades de revisión de código maás limpias
+  * Posibilidades de revisión de código más limpias
 * GitHub, repositorios locales
 
 ## Interacción con repositorios de GitHub
@@ -130,14 +130,14 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 
 ### Resumen
 * Forking
-    * [Guia para hacer Forking](https://guides.github.com/overviews/forking/)
+    * [Guía para hacer Forking](https://guides.github.com/overviews/forking/)
     * Razones para hacer forks
     * Lo que fomenta
-    * Cómo aisla
+    * Cómo se aísla
     * Manteniéndose al día (¿demasiado avanzado?)
     * Original (base) y Fork (copia individual)
 * El flujo de GitHub
-    * Branch
+    * Ramas
     * Commit
     * Comparar
     * Pull Request
