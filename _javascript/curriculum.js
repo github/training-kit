@@ -12,10 +12,6 @@ $(function(){
 		{
 			url: "https://api.github.com/users/"+username,
 			success: function(data, textStatus, jqXHR){
-
-				console.log(data);
-
-
 				$("<span/>",
 				{
 					class: "teacher-name",
