@@ -44,7 +44,6 @@ $(function(){
 					class: "img-circle img-thumbnail"
 				}).appendTo("#teacher-avatar");
 
-
 				$("<span/>",
 				{
 					text: data.public_repos,
@@ -63,20 +62,27 @@ $(function(){
 					class: "badge"
 				}).appendTo("#teacher-following");
 
-
-
 				$("#teacher").toggleClass("hidden");
 				$("#teacher").toggleClass("slide");
+
+				updateSlideSize();
 			}
 		});
 	}
 
-
+	// Render the TOC
+	buildToc();
+	// Reframe slides on any window resize
 	$(window).resize(function () {
 		updateSlideSize();
 	});
-
+	// Ensure slide scale at start
 	updateSlideSize();
+	// Startup slide scrollsnap watching
+	$(document).scrollsnap({
+		snaps: '.slide',
+		proximity: 200
+	});
 
 	function updateSlideSize(){
 		var w = window.innerWidth;
@@ -84,6 +90,7 @@ $(function(){
 		$(".slide").css("height", h);
 	}
 
+	//Time toggle keybinding
 	$(".timer-toggle").click(function(){
 		$(".timer-wrapper").toggleClass("fade-out");
 		resetTimer();
@@ -92,16 +99,13 @@ $(function(){
 			$(".timer-amount").toggle();
 		}
 	});
-
 	$("#start-stop").click(function(){
 		var timeLeftDisplay = $("#time-left")
 		var min = $("#minutes").attr("value");
 		var duration = min*60;
 
 		$(".timer-amount").toggle();
-
 		resetTimer();
-
 		timeLeftInterval = setInterval(function(){
 			timeLeftDisplay.html( Math.floor((duration)/60) + ":" + (duration%60 < 10 ? "0"+duration%60:duration%60) );
 			duration = --duration;
@@ -111,19 +115,12 @@ $(function(){
 			}
 		}, 1000);
 	});
-
 	function resetTimer(){
 		clearInterval(timeLeftInterval);
 		$("#time-left").html("");
 	}
 
-	buildToc();
-
-	$(document).scrollsnap({
-	  snaps: '.slide',
-	  proximity: 100
-	});
-
+	// Table of Contents header parsing and builder
 	function buildToc(){
 		var headings = $(".curriculum h2"),
 				toc = $("#toc-list");
