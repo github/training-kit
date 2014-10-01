@@ -66,6 +66,7 @@ $(function(){
 
 
 				$("#teacher").toggleClass("hidden");
+				$("#teacher").toggleClass("slide");
 			}
 		});
 	}
