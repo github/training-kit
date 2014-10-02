@@ -42,7 +42,47 @@ $mono-dark: #454545;
   .timer-amount{
     visibility: hidden;
   }
+}
 
+.display-controls{
+  border-top: solid 2px $mono-light;
+  margin-top: 5px;
+  padding-top: 10px;
+}
+
+.slide-only-check{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+
+  &:checked + label{
+    color: $mono-dark;
+
+    &:before{
+      content: '\f03a';
+      color: rgba($mono-bright, 1);
+      background-color: $mono-medium;
+      box-shadow: 0 0 0 2px $mono-medium;
+    }
+  }
+}
+
+.slides-only-label{
+  color: rgba($mono-dark, .5);
+
+  &:before{
+    content: '\f03a';
+    font: normal normal normal 16px/1 octicons;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    color: rgba($mono-dark, 0);
+    -webkit-transition: all 180ms;
+    margin-right: 5px;
+    width: 1em;
+    height: 1em;
+    box-shadow: 0 0 0 2px $mono-light;
+  }
 }
 
 .timer-wrapper{
