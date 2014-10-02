@@ -411,7 +411,16 @@ GitHub, though it is a web application, aims to behave as much like a desktop ap
 * `g` `c` go to code
 * `g` `i` go to issues
 
-#### Additional Resources
+
+
+{% capture slide %}
+## Additional resources
+{% endcapture %}{% include slide-section %}
+
+### Details
+This course covers many introductory and day-to-day uses of Git and GitHub. There are many more resources available to continue your exploration with the technology and platform, and we've included these here for you to explore.
+
+* [Try Git by CodeSchool](https://try.github.io/)
 * [O'Reilly's Mastering Git video series](http://bit.ly/ogitvid)
 * [Introducing GitHub](http://shop.oreilly.com/product/0636920033059.do)
 * [Git and GitHub LiveLessons (Workshop)](http://www.informit.com/store/git-and-github-livelessons-workshop-9780133991772)
