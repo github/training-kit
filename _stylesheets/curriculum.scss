@@ -56,32 +56,39 @@ $mono-dark: #454545;
   width: 0;
 
   &:checked + label{
-    color: $mono-dark;
+    color: $color-dark;
 
     &:before{
       content: '\f03a';
       color: rgba($mono-bright, 1);
-      background-color: $mono-medium;
-      box-shadow: 0 0 0 2px $mono-medium;
+      background-color: $color-dark;
+      box-shadow: 0 0 0 2px $color-dark;
+      padding-left: 0px;
+      line-height: 1em;
     }
   }
 }
 
 .slides-only-label{
   color: rgba($mono-dark, .5);
+  line-height: 18px;
+  padding-left: 25px;
 
   &:before{
     content: '\f03a';
     font: normal normal normal 16px/1 octicons;
     text-align: center;
+    position: absolute;
+    left: 0;
     display: inline-block;
     border-radius: 50%;
     color: rgba($mono-dark, 0);
     -webkit-transition: all 180ms;
-    margin-right: 5px;
-    width: 1em;
-    height: 1em;
-    box-shadow: 0 0 0 2px $mono-light;
+    padding-left: 5px;
+    width: 18px;
+    height: 18px;
+    box-shadow: 0 0 0 2px rgba($mono-dark, .5);
+    line-height: .2em;
   }
 }
 
