@@ -1,6 +1,7 @@
 $(function(){
 	var timeLeftInterval = 0;
 
+	// Bind checkbox/label click for slide toggle
 	$("#slide-only-toggle").change(function(){
 		var checkState = $("#slide-only-toggle").attr("checked");
 		$(".materials > *").toggleClass("hidden");
@@ -8,15 +9,21 @@ $(function(){
 	});
 
 
-	// WARNING This only anticipates one querystring value
+	// Parse username from querystring
 	var urlSearch = window.location.search,
-			queryString = urlSearch.substring(1,urlSearch.length),
-			username = queryString.substring((queryString.indexOf("="))+1, queryString.length);
-	if(username){
+			teacherQuery = urlSearch.match(/teacher=[a-z,A-Z,0-9]*/),
+			username;
+
+	if(teacherQuery && teacherQuery.length == 1){
+		username = teacherQuery[0].substring(8, teacherQuery[0].length);
+
+		console.log(username);
+
 		$.ajax(
 		{
 			url: "https://api.github.com/users/"+username,
 			success: function(data, textStatus, jqXHR){
+
 				$("<span/>",
 				{
 					class: "teacher-name",
@@ -28,20 +35,39 @@ $(function(){
 					text: data.login
 				}).appendTo("#teacher-username");
 
-				$("<span/>",
-				{
-					text: data.email
-				}).appendTo("#teacher-email");
+				// Profile email
+				if(data.email){
+					$("<span/>",
+					{
+						text: data.email
+					}).appendTo("#teacher-email");
+				}
+				else{
+					$("#teacher-email").toggleClass("hidden");
+				}
 
-				$("<span/>",
-				{
-					text: data.company
-				}).appendTo("#teacher-organization");
+				// Profile company
+				if(data.company){
+					$("<span/>",
+					{
+						text: data.company
+					}).appendTo("#teacher-organization");
+				}
+				else{
+					$("#teacher-organization").toggleClass("hidden");
+				}
 
-				$("<span/>",
-				{
-					text: data.location
-				}).appendTo("#teacher-location");
+
+				// Profile location
+				if(data.location){
+					$("<span/>",
+					{
+						text: data.location
+					}).appendTo("#teacher-location");
+				}
+				else{
+					$("#teacher-location").toggleClass("hidden");
+				}
 
 				$("<img/>",
 				{
