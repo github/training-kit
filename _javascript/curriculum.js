@@ -1,16 +1,10 @@
 $(function(){
-	// Global-ish vars
 	var timeLeftInterval = 0;
-
-	// Slide only toggle on/off
-	console.log("Checked or not:" + $("#slide-only-toggle").attr("checked") );
 
 	$("#slide-only-toggle").change(function(){
 		var checkState = $("#slide-only-toggle").attr("checked");
-
 		$(".materials > *").toggleClass("hidden");
 		$(".slide").toggleClass("hidden");
-		// $(".slide").toggleClass("hidden");
 	});
 
 
