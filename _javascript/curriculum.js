@@ -1,6 +1,7 @@
 $(function(){
 	var timeLeftInterval = 0;
 
+	// Bind checkbox/label click for slide toggle
 	$("#slide-only-toggle").change(function(){
 		var checkState = $("#slide-only-toggle").attr("checked");
 		$(".materials > *").toggleClass("hidden");
@@ -8,7 +9,7 @@ $(function(){
 	});
 
 
-	// WARNING This only anticipates one querystring value
+	// Parse username from querystring
 	var urlSearch = window.location.search,
 			queryString = urlSearch.substring(1,urlSearch.length),
 			username = queryString.substring((queryString.indexOf("="))+1, queryString.length);
