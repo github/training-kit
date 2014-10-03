@@ -1,11 +1,6 @@
-<div class="slide">
-  <div class="alignment">
-    <div class="panel panel-primary lab">
-      <div class="panel-heading">Lab</div>
-      <div class="panel-body">
-        {{ lab | markdownify }}
-      </div>
-      <!--<div class="panel-footer">Footer</div>-->
-    </div>
+<div class="panel panel-primary lab">
+  <div class="panel-heading">Lab</div>
+  <div class="panel-body">
+    {{ lab | markdownify }}
   </div>
 </div>
