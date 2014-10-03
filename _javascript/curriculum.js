@@ -11,10 +11,14 @@ $(function(){
 
 	// Parse username from querystring
 	var urlSearch = window.location.search,
-			teacherQuery = urlSearch.match(/teacher=[a-z,A-Z,0-9]*/)[0],
-			username = teacherQuery.substring(8, teacherQuery.length);
+			teacherQuery = urlSearch.match(/teacher=[a-z,A-Z,0-9]*/),
+			username;
 
-	if(username){
+	if(teacherQuery && teacherQuery.length == 1){
+		username = teacherQuery[0].substring(8, teacherQuery[0].length);
+
+		console.log(username);
+
 		$.ajax(
 		{
 			url: "https://api.github.com/users/"+username,
