@@ -11,8 +11,9 @@ $(function(){
 
 	// Parse username from querystring
 	var urlSearch = window.location.search,
-			queryString = urlSearch.substring(1,urlSearch.length),
-			username = queryString.substring((queryString.indexOf("="))+1, queryString.length);
+			teacherQuery = urlSearch.match(/teacher=[a-z,A-Z,0-9]*/)[0],
+			username = teacherQuery.substring(8, teacherQuery.length);
+
 	if(username){
 		$.ajax(
 		{
