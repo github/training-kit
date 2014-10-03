@@ -19,6 +19,7 @@ $(function(){
 		{
 			url: "https://api.github.com/users/"+username,
 			success: function(data, textStatus, jqXHR){
+
 				$("<span/>",
 				{
 					class: "teacher-name",
@@ -30,20 +31,39 @@ $(function(){
 					text: data.login
 				}).appendTo("#teacher-username");
 
-				$("<span/>",
-				{
-					text: data.email
-				}).appendTo("#teacher-email");
+				// Profile email
+				if(data.email){
+					$("<span/>",
+					{
+						text: data.email
+					}).appendTo("#teacher-email");
+				}
+				else{
+					$("#teacher-email").toggleClass("hidden");
+				}
 
-				$("<span/>",
-				{
-					text: data.company
-				}).appendTo("#teacher-organization");
+				// Profile company
+				if(data.company){
+					$("<span/>",
+					{
+						text: data.company
+					}).appendTo("#teacher-organization");
+				}
+				else{
+					$("#teacher-organization").toggleClass("hidden");
+				}
 
-				$("<span/>",
-				{
-					text: data.location
-				}).appendTo("#teacher-location");
+
+				// Profile location
+				if(data.location){
+					$("<span/>",
+					{
+						text: data.location
+					}).appendTo("#teacher-location");
+				}
+				else{
+					$("#teacher-location").toggleClass("hidden");
+				}
 
 				$("<img/>",
 				{
