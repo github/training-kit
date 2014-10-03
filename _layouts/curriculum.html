@@ -8,24 +8,23 @@ leadingpath: ../
     <div class="timer-toggle">
       <span class="octicon octicon-clock"></span>
     </div>
-
     <div class="timer-amount">
       <input type="number" id="minutes" name="minutes" min="1" max="20" value="5" placeholder="min" class="form-control">
       <!-- <input type="number" id="seconds" name="seconds" min="1" max="60" value="0" placeholder="sec" class="form-control"> -->
       <button id="start-stop" type="submit" class="btn btn-default">Start</button>
     </div>
-
     <div class="timer-content">
       <span class="time-left" id="time-left"></span>
     </div>
-
-
   </div>
 </div>
 
 <div class="container curriculum">
+
+
+
   <div class="row">
-    <div class="col-md-9">
+    <div class="col-md-9 materials">
       <div id="teacher" class="hidden">
         <div class="alignment">
           <div id="teacher-avatar" class=""></div>
@@ -69,8 +68,20 @@ leadingpath: ../
     </div>
     <div class="col-md-3">
       <div id="toc-wrapper">
+
         <div id="toc" data-spy="affix" data-offset-top="145">
-          <ul id="toc-list" class="nav nav-pills nav-stacked" role="tablist"></ul>
+          <ul id="toc-list" class="nav nav-pills nav-stacked" role="tablist">
+            <li>
+
+
+            </li>
+          </ul>
+          <ul class="nav display-controls">
+            <li>
+              <input type="checkbox" name="slide-only" id="slide-only-toggle" class="slide-only-check" value="true">
+              <label id="slides-only" for="slide-only-toggle" class="slides-only-label">Slides Only</label>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

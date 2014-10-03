@@ -19,6 +19,45 @@
   .fade-out .timer-amount {
     visibility: hidden; }
 
+.display-controls {
+  border-top: solid 2px #f3f3f3;
+  margin-top: 5px;
+  padding-top: 10px; }
+
+.slide-only-check {
+  visibility: hidden;
+  height: 0;
+  width: 0; }
+  .slide-only-check:checked + label {
+    color: #1875c6; }
+    .slide-only-check:checked + label:before {
+      content: '\f03a';
+      color: white;
+      background-color: #1875c6;
+      box-shadow: 0 0 0 2px #1875c6;
+      padding-left: 0px;
+      line-height: 1em; }
+
+.slides-only-label {
+  color: rgba(69, 69, 69, 0.5);
+  line-height: 18px;
+  padding-left: 25px; }
+  .slides-only-label:before {
+    content: '\f03a';
+    font: normal normal normal 16px/1 octicons;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    border-radius: 50%;
+    color: rgba(69, 69, 69, 0);
+    -webkit-transition: all 180ms;
+    padding-left: 5px;
+    width: 18px;
+    height: 18px;
+    box-shadow: 0 0 0 2px rgba(69, 69, 69, 0.5);
+    line-height: .2em; }
+
 .timer-wrapper {
   background: rgba(255, 255, 255, 0.93);
   height: 100%;

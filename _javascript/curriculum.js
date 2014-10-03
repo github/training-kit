@@ -1,6 +1,11 @@
 $(function(){
-	// Global-ish vars
 	var timeLeftInterval = 0;
+
+	$("#slide-only-toggle").change(function(){
+		var checkState = $("#slide-only-toggle").attr("checked");
+		$(".materials > *").toggleClass("hidden");
+		$(".slide").toggleClass("hidden");
+	});
 
 
 	// WARNING This only anticipates one querystring value
@@ -81,7 +86,7 @@ $(function(){
 	// Startup slide scrollsnap watching
 	$(document).scrollsnap({
 		snaps: '.slide',
-		proximity: 200
+		proximity: 160
 	});
 
 	function updateSlideSize(){
