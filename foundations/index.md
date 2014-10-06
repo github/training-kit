@@ -103,10 +103,10 @@ The command line version of Git has a very light footprint. For most platforms, 
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-* Describe the difference between the Git DVCS and GitHub collaboration platform
-* Access the common project components of daily GitHub interactions
-* Utilize project management components (Issues, Milestones, Collaborators, Teams)
-* Recognize best document types for version control (code, CSV/TSV, small binaries)
+1. Understand Git and GitHub's use of a *repository* for version history storage
+2. Recognize *branch*es as a short-lived container for changes with Git or GitHub
+3. Utilize *pull request*s for discussion around code changes within a *branch*
+4. Access GitHub specific features (*Issues*, *Milestones*, *Organizatoins*, *Teams*)
 {% endcapture %}{% include lab %}
 
 ### Core concepts
