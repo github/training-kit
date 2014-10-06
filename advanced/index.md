@@ -121,8 +121,8 @@ $ git log --oneline --left-right master...other
 * Not a branch HEAD. Points to a specific commit.
 * Attaching binaries to releases (Web UI and API)
 * Creating release notes that link back between tags
-  - `/compare/1.0.1...1.0.2`
-  - [ReactiveUI](https://github.com/reactiveui/ReactiveUI/releases/tag/6.1.0)
+  * `/compare/1.0.1...1.0.2`
+  * [ReactiveUI](https://github.com/reactiveui/ReactiveUI/releases/tag/6.1.0)
 * Tag with message (defaults to annotated)
 * Force existing tag to new ref
 * Delete a tag
