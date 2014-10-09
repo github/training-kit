@@ -70,7 +70,32 @@ The most lightweight approach is by utilizing `git svn` as a one-time conversion
 * GitHub "upstream" repository setup for receiving history, branches, tags
 
 ### Git-SVN method
-TBD
+* Create email/username mapping file
+* Begin `git svn clone`
+* Add `git remote add origin [GitHub-URL]`
+
+Run each `ref` publish separately:
+
+* Run `git push --all origin`
+* Run `git push --tags origin`
+
+Or upload all `ref`s (branches, tags,) to upstream:
+
+* `git push --mirror origin`
 
 ### SVN2Git method
+
+* Install Ruby Gem [SVN2Git](https://github.com/nirvdrum/svn2git)
+* Identify the projects in the Subversion repository
+* Run `svn list [svn-repo-url]`
+* Start `svn2git [repo-root|repo-root/project]`
+
+Considerations on migration:
+
+* Convert "flat" history across all projects
+* Utilize Git `filter-branch --subdirectory-filter`
+* Migrate on a project-by-project basis
+* Use `--trunk`, `--nobranches`, `--notags` or `--rootistrunk` for non-standard layouts
+* Limit history from starting point ``--revision <<starting_rev>>``, or range `--revision <<start:end>>`
+
 https://github.com/nirvdrum/svn2git
