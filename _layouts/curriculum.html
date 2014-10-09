@@ -5,9 +5,7 @@ leadingpath: ../
 
 <div class="timer-wrapper fade-out">
   <div class="timer">
-    <div class="timer-toggle">
-      <span class="octicon octicon-clock"></span>
-    </div>
+    <div class="timer-exit"><span class="octicon octicon-x"></span></div>
     <div class="timer-amount">
       <input type="number" id="minutes" name="minutes" min="1" max="20" value="5" placeholder="min" class="form-control">
       <!-- <input type="number" id="seconds" name="seconds" min="1" max="60" value="0" placeholder="sec" class="form-control"> -->
@@ -20,9 +18,6 @@ leadingpath: ../
 </div>
 
 <div class="container curriculum">
-
-
-
   <div class="row">
     <div class="col-md-9 materials">
       <div id="teacher" class="hidden">
@@ -80,6 +75,10 @@ leadingpath: ../
             <li>
               <input type="checkbox" name="slide-only" id="slide-only-toggle" class="slide-only-check" value="true">
               <label id="slides-only" for="slide-only-toggle" class="slides-only-label">Slides Only</label>
+            </li>
+            <li>
+              <input type="checkbox" name="timer-check" id="timer-check" class="timer-check" value="true">
+              <label for="timer-check" class="timer-label">Timer</label>
             </li>
           </ul>
         </div>

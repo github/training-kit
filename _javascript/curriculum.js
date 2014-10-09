@@ -122,21 +122,26 @@ $(function(){
 	}
 
 	//Time toggle keybinding
-	$(".timer-toggle").click(function(){
+	$(".timer-label").click(function(){
 		$(".timer-wrapper").toggleClass("fade-out");
+		$(".timer-amount").show();
 		resetTimer();
-
-		if($(".timer-wrapper").hasClass("fade-out")){
-			$(".timer-amount").toggle();
-		}
+	});
+	$(".timer-exit").click(function(){
+		$(".timer-wrapper").toggleClass("fade-out");
+		$("#timer-check").removeAttr("checked");
+		// $(".timer-amount").();
+		resetTimer();
 	});
 	$("#start-stop").click(function(){
 		var timeLeftDisplay = $("#time-left")
 		var min = $("#minutes").attr("value");
 		var duration = min*60;
 
-		$(".timer-amount").toggle();
 		resetTimer();
+
+		$(".timer-amount").hide();
+
 		timeLeftInterval = setInterval(function(){
 			timeLeftDisplay.html( Math.floor((duration)/60) + ":" + (duration%60 < 10 ? "0"+duration%60:duration%60) );
 			duration = --duration;
@@ -150,6 +155,7 @@ $(function(){
 		clearInterval(timeLeftInterval);
 		$("#time-left").html("");
 	}
+
 
 	// Table of Contents header parsing and builder
 	function buildToc(){

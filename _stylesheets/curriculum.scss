@@ -16,32 +16,32 @@ $mono-dark: #454545;
 
 
 .fade-out{
-  background: none !important;
-  margin-left: 100%;
-  position: fixed;
-  left: -35px !important;
+	background: none !important;
+	margin-left: 100%;
+	position: fixed;
+	left: -35px !important;
 
-  .octicon{
-    font-size: 14px !important;
-  }
+	.octicon{
+		font-size: 14px !important;
+	}
 
-  &.timer-wrapper{
-    background-color: none !important;
-  }
+	&.timer-wrapper{
+		background-color: none !important;
+	}
 
-  .timer{
-    margin: 0 0 !important;
-  }
+	.timer{
+		margin: 0 0 !important;
+	}
 
-  .timer-toggle{
-    padding-left: 0px !important;
-    opacity: .3;
-    text-align: left !important;
-  }
+	.timer-toggle{
+		padding-left: 0px !important;
+		opacity: .3;
+		text-align: left !important;
+	}
 
-  .timer-amount{
-    visibility: hidden;
-  }
+	.timer-amount{
+		visibility: hidden;
+	}
 }
 
 .display-controls{
@@ -50,87 +50,120 @@ $mono-dark: #454545;
   padding-top: 10px;
 }
 
-.slide-only-check{
-  visibility: hidden;
-  height: 0;
-  width: 0;
+.timer-check{
+	visibility: hidden;
+	height: 0;
+	width: 0;
 
-  &:checked + label{
-    color: $color-dark;
+	&:checked + label{
+		color: $color-dark;
 
-    &:before{
-      content: '\f03a';
-      color: rgba($mono-bright, 1);
-      background-color: $color-dark;
-      box-shadow: 0 0 0 2px $color-dark;
-      padding-left: 0px;
-      line-height: 1em;
-    }
-  }
+		&:before{
+			content: '\f046';
+			color: rgba($mono-bright, 1);
+			background-color: $color-dark;
+			box-shadow: 0 0 0 2px $color-dark;
+			padding-left: 0px;
+			line-height: 1em;
+		}
+	}
+}
+.timer-label{
+	line-height: 18px;
+	padding-left: 25px;
+
+	&:before{
+		content: '\f046';
+		font: normal normal normal 16px/1 octicons;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		display: inline-block;
+		border-radius: 50%;
+		color: rgba($mono-dark, 0);
+		-webkit-transition: all 180ms;
+		width: 18px;
+		height: 18px;
+		box-shadow: 0 0 0 2px $mono-dark;
+		padding-top: 1px;
+	}
 }
 
-.slides-only-label{
-  color: rgba($mono-dark, .5);
-  line-height: 18px;
-  padding-left: 25px;
+.slide-only-check{
+	visibility: hidden;
+	height: 0;
+	width: 0;
 
-  &:before{
-    content: '\f03a';
-    font: normal normal normal 16px/1 octicons;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    display: inline-block;
-    border-radius: 50%;
-    color: rgba($mono-dark, 0);
-    -webkit-transition: all 180ms;
-    padding-left: 5px;
-    width: 18px;
-    height: 18px;
-    box-shadow: 0 0 0 2px rgba($mono-dark, .5);
-    line-height: .2em;
-  }
+	&:checked + label{
+		color: $color-dark;
+
+		&:before{
+			content: '\f03a';
+			color: rgba($mono-bright, 1);
+			background-color: $color-dark;
+			box-shadow: 0 0 0 2px $color-dark;
+			padding-left: 0px;
+			line-height: 1em;
+		}
+	}
+}
+.slides-only-label{
+	line-height: 18px;
+	padding-left: 25px;
+
+	&:before{
+		content: '\f03a';
+		font: normal normal normal 16px/1 octicons;
+		text-align: center;
+		position: absolute;
+		left: 0;
+		display: inline-block;
+		border-radius: 50%;
+		color: rgba($mono-dark, 0);
+		-webkit-transition: all 180ms;
+		padding-left: 5px;
+		width: 18px;
+		height: 18px;
+		box-shadow: 0 0 0 2px $mono-dark;
+		line-height: .2em;
+	}
 }
 
 .timer-wrapper{
-  background: rgba(255,255,255,.93);
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
+	background: rgba(255,255,255,.93);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
 
-  .octicon{
-    font-size: 50px;
-  }
+	.timer{
+		transition: all 300ms;
+		position: relative;
+		margin: 10% auto;
+		border-radius: 10px;
+		height: 150px;
+		width: 150px;
+		display: block;
+		text-align: center;
 
-  .timer{
-    transition: all 300ms;
-    position: relative;
-    margin: 10% auto;
-    border-radius: 10px;
-    height: 150px;
-    width: 150px;
-    display: block;
-    text-align: center;
+		.timer-toggle{
+			width: 100%;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
+			text-align: center;
+		}
 
-    .timer-toggle{
-      width: 100%;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      text-align: center;
-    }
+		.timer-content{
+			text-align: center;
+		}
 
-    .timer-content{
-      text-align: center;
-    }
-
-    .time-left{
-      font-size: 72px;
-      display: block;
-    }
-  }
+		.time-left{
+			font-size: 72px;
+			display: block;
+		}
+	}
 }
 
 .nav-list>li>a{
