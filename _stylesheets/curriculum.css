@@ -103,7 +103,7 @@
     margin: 10% auto;
     border-radius: 10px;
     height: 150px;
-    width: 150px;
+    width: 300px;
     display: block;
     text-align: center; }
     .timer-wrapper .timer .timer-toggle {
@@ -114,7 +114,7 @@
     .timer-wrapper .timer .timer-content {
       text-align: center; }
     .timer-wrapper .timer .time-left {
-      font-size: 72px;
+      font-size: 150px;
       display: block; }
 
 .nav-list > li > a {
