@@ -1,6 +1,6 @@
 # Subversion to Git migration
 
-From migrating your Subversion content to Git repositories to understanding both shared and distinct vocabularies of the technologies.
+From understanding the vocabularies of Subversion and Git technologies to migrating a project to GitHub, this cheat sheet can help.
 
 
 ## Vocabulary
