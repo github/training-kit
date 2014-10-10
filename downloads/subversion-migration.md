@@ -5,7 +5,7 @@ From understanding the vocabularies of Subversion and Git technologies to migrat
 
 ## Vocabulary
 
-| Git command | SVN | SVN equivalent | Behavior |
+| Git command | SVN | SVN equivalent | Git Behavior |
 |---|---|---|---|
 | `status` | ✓ |  | State of working tree |
 | `add` | — |  | Required before commit |
