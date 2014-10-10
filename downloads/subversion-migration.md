@@ -9,18 +9,17 @@ From understanding the vocabularies of Subversion and Git technologies to migrat
 |---|---|---|---|
 | `status` | ✓ |  | State of working tree |
 | `add` | — |  | Required before commit |
-| `commit` | — |  |  |
-| `rm` | ✓ |  |  |
-| `mv` | ✓ |  |  |
+| `commit` | — |  | Store prepared changes in local revision history |
+| `rm` | ✓ | `rm`, `delete` | Prepare paths for deletion in next commit |
+| `mv` | ✓ | `move` | Prepare relocated content for next commit |
 | `branch` | ✗ |  | Create local context for commits |
 | `checkout` | — |  | Switch branches, or rewrite working tree from commit |
 | `merge` | ✓ |  | Join branch histories and changes to working tree |
 | `log` | — |  | No network required |
-| `clone` | ✗ | `checkout` |  |
-| `push` | ✗ | `commit` |  |
-| `pull` | ✗ |  |  |
-| `fetch` | ✗ |  |  |
-| `rebase` | ✗ |  | Preserve changes |
+| `clone` | ✗ | `checkout` | Acquire the entire history of a project |
+| `push` | ✗ | `commit` | Upload commit history to GitHub/centralized Git host |
+| `pull` | ✗ |  | Download and integrate remote repository history with local one |
+| `fetch` | ✗ |  | Download remote repository history with no other action  |
 
 **Key:** ✓ yes, ✗ no, — partial
 
