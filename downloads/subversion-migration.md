@@ -16,10 +16,10 @@ From understanding the vocabularies of Subversion and Git technologies to migrat
 | `checkout` | — |  | Switch branches, or rewrite working tree from commit |
 | `merge` | ✓ |  | Join branch histories and changes to working tree |
 | `log` | — |  | No network required |
-| `clone` | ✗ | `checkout` | Acquire the entire history of a project |
-| `push` | ✗ | `commit` | Upload commit history to GitHub/centralized Git host |
-| `pull` | ✗ |  | Download and integrate remote repository history with local one |
-| `fetch` | ✗ |  | Download remote repository history with no other action  |
+| `clone` | ✗ | `checkout` | Acquire the entire history of a project locally for the first time |
+| `push` | ✗ | `commit` | Update commit history from local to GitHub/centralized Git host |
+| `pull` | ✗ |  | Download and integrate GitHub repository history with local one |
+| `fetch` | ✗ |  | Download GitHub repository history with no other action  |
 
 **Key:** ✓ yes, ✗ no, — partial
 
