@@ -23,7 +23,7 @@ From understanding the vocabularies of Subversion and Git technologies to migrat
 
 **Key:** ✓ yes, ✗ no, — partial
 
-## SVN repository, Git locally
+## Leveraging Git's support of SVN
 During a VCS change, there may be a need to begin using Git locally while the hosted repositories remain under Subversion control. The `git svn` command and sub-commends provide the ability to interact with Subversion's repositories while using all the benefits of Git on the command line or with graphical clients.
 
 Acquire an SVN repository, with a resulting Git repository locally:
