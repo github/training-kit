@@ -7,9 +7,9 @@ From understanding the vocabularies of Subversion and Git technologies to migrat
 
 | Git command | SVN | SVN equivalent | Git Behavior |
 |---|---|---|---|
-| `status` | ✓ |  | State of working tree |
-| `add` | — |  | Required before commit |
-| `commit` | — |  | Store prepared changes in local revision history |
+| `status` | ✓ | status | Report the state of working tree |
+| `add` | — | add | Required for each path before making a commit |
+| `commit` | — | commit | Store prepared changes in local revision history |
 | `rm` | ✓ | `rm`, `delete` | Prepare paths for deletion in next commit |
 | `mv` | ✓ | `move` | Prepare relocated content for next commit |
 | `branch` | ✗ |  | Create local context for commits |
@@ -17,7 +17,7 @@ From understanding the vocabularies of Subversion and Git technologies to migrat
 | `merge` | ✓ |  | Join branch histories and changes to working tree |
 | `log` | — |  | No network required |
 | `clone` | ✗ | `checkout` | Acquire the entire history of a project locally for the first time |
-| `push` | ✗ | `commit` | Update commit history from local to GitHub/centralized Git host |
+| `push` | ✗ | `commit` | Upload commit history to GitHub/centralized Git host |
 | `pull` | ✗ |  | Download and integrate GitHub repository history with local one |
 | `fetch` | ✗ |  | Download GitHub repository history with no other action  |
 
