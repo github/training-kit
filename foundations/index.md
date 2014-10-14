@@ -272,10 +272,16 @@ Just as with the Git technology operating on GitHub, local repositories also use
 {% capture slide %}![What is a branch](../assets/diagrams/what-is-a-branch.svg){% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-1. Create a branch and make commits to it
-2. Notice the notification bar on the repository home page
-3. Open a *Compare and Pull Request*
-4. Facilitate team or colleague code review
+1. Using the GitHub web UI, create a branch with an articulate feature name
+2. Make two distinct commits to the branch, each contributing part of the feature's changes
+3. Return to the homepage of the repository by clicking the repository's name
+4. Notice the suggestion message asking if you'd like to "compare and pull request"
+5. Click on *Compare and Pull Request*
+6. Describe the reasoning behind the changes on this branch via the pull request
+7. @mention a team or colleague, asking for a code review
+8. Address the points raised by the reviewers through an additional commit to the branch
+9. Ask for a final review and :+1: from a colleague
+10. Merge the pull request
 {% endcapture %}{% include lab %}
 
 ### Details
