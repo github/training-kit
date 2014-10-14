@@ -295,7 +295,7 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 
 {% capture slide %}
-### Contributing with Pull Requests
+### Contributing with Forks & Pull Requests
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
@@ -304,8 +304,10 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 {% capture lab %}
 1. Create a Fork of a repository needing contributions
-2. Follow the contribution pattern of the GitHub Flow
-3. Submit a Pull Request and iterate with progressive commits
+2. Follow the contribution pattern of the GitHub Flow, with the branch creation and commits happening on your fork of the repository
+3. Observe the Network and Members graph that offer visualizations of your commits and fork
+4. Merge the pull request
+5. Observe your contributions in the original repository, having preserved your username as the author of the code
 {% endcapture %}{% include lab %}
 
 #### Resources
