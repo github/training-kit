@@ -324,13 +324,11 @@ A branch is a divergent path in the history of the code base. It may contain an 
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-1. Make commits on GitHub repository
-2. Clone in Desktop (if repository does not yet exist locally)
-3. Review the changes locally
-4. Make commits on local repository
-5. Understand local history versus remote/GitHub
-6. Publish (`push`) the changes
-7. Review the changes on GitHub
+1. Clone an existing GitHub repo using the GitHub for Desktop application
+2. Following the GitHub Flow pattern, create a topic branch and make commits to the local repository
+3. Review the local (unsynced) commits in history
+4. Publish the changes via the Sync button
+5. Verify the presence of the now-synced changes by refreshing the GitHub web UI of the cloned repo
 {% endcapture %}{% include lab %}
 
 ### Details
