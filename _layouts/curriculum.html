@@ -3,11 +3,10 @@ layout: site
 leadingpath: ../
 ---
 
+
 <div class="timer-wrapper fade-out">
   <div class="timer">
-    <div class="timer-toggle">
-      <span class="octicon octicon-clock"></span>
-    </div>
+    <div class="timer-exit"><span class="octicon octicon-x"></span></div>
     <div class="timer-amount">
       <input type="number" id="minutes" name="minutes" min="1" max="20" value="5" placeholder="min" class="form-control">
       <!-- <input type="number" id="seconds" name="seconds" min="1" max="60" value="0" placeholder="sec" class="form-control"> -->
@@ -19,71 +18,76 @@ leadingpath: ../
   </div>
 </div>
 
-<div class="container curriculum">
 
+<div id="toc-toggle">
+  <input type="checkbox" class="toc-toggle-check" id="toc-toggle-check" name="toc-toggle-check" value="true">
+  <label class="toc-toggle-label" for="toc-toggle-check">
+    <span class="octicon octicon-list-unordered"></span>
+    <!-- <span class="toc-header">Table of Contents</span> -->
+  </label>
+</div>
 
+<div class="col-content deck  col-md-12 col-sm-12 col-xs-12 materials curriculum">
+  <div id="teacher" class="hidden">
+    <div class="alignment">
+      <div id="teacher-avatar" class=""></div>
+      <div class="" id="teacher-info">
+        <div id="teacher-name"></div>
 
-  <div class="row">
-    <div class="col-md-9 materials">
-      <div id="teacher" class="hidden">
-        <div class="alignment">
-          <div id="teacher-avatar" class=""></div>
-          <div class="" id="teacher-info">
-            <div id="teacher-name"></div>
+        <span id="teacher-username">
+          <span class="octicon octicon-octoface"></span>
+        </span>
 
-            <span id="teacher-username">
-              <span class="octicon octicon-octoface"></span>
-            </span>
+        <span id="teacher-email">
+          <span class="octicon octicon-mail"></span>
+        </span>
 
-            <span id="teacher-email">
-              <span class="octicon octicon-mail"></span>
-            </span>
+        <span id="teacher-organization">
+          <span class="octicon octicon-organization"></span>
+        </span>
 
-            <span id="teacher-organization">
-              <span class="octicon octicon-organization"></span>
-            </span>
+        <span id="teacher-location">
+          <span class="octicon octicon-location"></span>
+        </span>
 
-            <span id="teacher-location">
-              <span class="octicon octicon-location"></span>
-            </span>
+        <div class="teacher-badges">
+          <span id="teacher-repo" class="">
+            <span class="octicon octicon-repo"></span>
+          </span>
 
-            <div class="teacher-badges">
-              <span id="teacher-repo" class="">
-                <span class="octicon octicon-repo"></span>
-              </span>
+          <span id="teacher-followers" class="">
+            <span class="octicon octicon-person"></span>
+          </span>
 
-              <span id="teacher-followers" class="">
-                <span class="octicon octicon-person"></span>
-              </span>
-
-              <span id="teacher-following" class="">
-                <span class="octicon octicon-steps"></span>
-              </span>
-            </div>
-          </div>
+          <span id="teacher-following" class="">
+            <span class="octicon octicon-steps"></span>
+          </span>
         </div>
       </div>
-
-      {{ content }}
     </div>
-    <div class="col-md-3">
-      <div id="toc-wrapper">
+  </div>
 
-        <div id="toc" data-spy="affix" data-offset-top="145">
-          <ul id="toc-list" class="nav nav-pills nav-stacked" role="tablist">
-            <li>
+  {{ content }}
+</div>
 
 
-            </li>
-          </ul>
-          <ul class="nav display-controls">
-            <li>
-              <input type="checkbox" name="slide-only" id="slide-only-toggle" class="slide-only-check" value="true">
-              <label id="slides-only" for="slide-only-toggle" class="slides-only-label">Slides Only</label>
-            </li>
-          </ul>
-        </div>
-      </div>
+<div class="col-toc col-md-2 col-sm-2 col-xs-2">
+  <div id="toc-wrapper">
+    <div id="toc" data-spy="affix" data-offset-top="145">
+      <ul id="toc-list" class="nav nav-pills nav-stacked" role="tablist">
+        <li></li>
+      </ul>
+      <ul class="nav display-controls">
+        <li>
+          <input type="checkbox" name="slide-only" id="slide-only-toggle" class="slide-only-check" value="true">
+          <label id="slides-only" for="slide-only-toggle" class="slides-only-label">Slides Only</label>
+        </li>
+        <li>
+          <div class="timer-toggle"></div>
+          <input type="checkbox" name="timer-check" id="timer-check" class="timer-check" value="true">
+          <label for="timer-check" class="timer-label">Timer</label>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

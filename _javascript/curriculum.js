@@ -17,8 +17,6 @@ $(function(){
 	if(teacherQuery && teacherQuery.length == 1){
 		username = teacherQuery[0].substring(8, teacherQuery[0].length);
 
-		console.log(username);
-
 		$.ajax(
 		{
 			url: "https://api.github.com/users/"+username,
@@ -101,6 +99,13 @@ $(function(){
 		});
 	}
 
+	// Bind checkbox toggle for TOC
+	$(".toc-toggle-check").change(function(){
+		console.log("shiftleft on both.");
+		$(".col-content").toggleClass("shift-left");
+		$(".col-toc").toggleClass("shift-left");
+	});
+
 	// Render the TOC
 	buildToc();
 	// Reframe slides on any window resize
@@ -109,10 +114,11 @@ $(function(){
 	});
 	// Ensure slide scale at start
 	updateSlideSize();
+
 	// Startup slide scrollsnap watching
 	$(document).scrollsnap({
 		snaps: '.slide',
-		proximity: 160
+		proximity: 100
 	});
 
 	function updateSlideSize(){
@@ -122,21 +128,26 @@ $(function(){
 	}
 
 	//Time toggle keybinding
-	$(".timer-toggle").click(function(){
+	$(".timer-label").click(function(){
 		$(".timer-wrapper").toggleClass("fade-out");
+		$(".timer-amount").show();
 		resetTimer();
-
-		if($(".timer-wrapper").hasClass("fade-out")){
-			$(".timer-amount").toggle();
-		}
+	});
+	$(".timer-exit").click(function(){
+		$(".timer-wrapper").toggleClass("fade-out");
+		$("#timer-check").removeAttr("checked");
+		// $(".timer-amount").();
+		resetTimer();
 	});
 	$("#start-stop").click(function(){
 		var timeLeftDisplay = $("#time-left")
 		var min = $("#minutes").attr("value");
 		var duration = min*60;
 
-		$(".timer-amount").toggle();
 		resetTimer();
+
+		$(".timer-amount").hide();
+
 		timeLeftInterval = setInterval(function(){
 			timeLeftDisplay.html( Math.floor((duration)/60) + ":" + (duration%60 < 10 ? "0"+duration%60:duration%60) );
 			duration = --duration;
@@ -153,7 +164,7 @@ $(function(){
 
 	// Table of Contents header parsing and builder
 	function buildToc(){
-		var headings = $(".curriculum h2"),
+		var headings = $(".deck h2"),
 				toc = $("#toc-list");
 
 		for(var h=0; h<headings.length; h++){
@@ -180,7 +191,7 @@ $(function(){
 				headings[h].setAttribute("id", headingSep);
 			}
 
-			$('.curriculum').scrollspy({ target: '#toc' });
+			$('.deck').scrollspy({ target: '#toc' });
 		}
 	}
 });
