@@ -52,7 +52,7 @@ Keep in mind this rewrites history and your Git commit refs will be different th
 
 ## Subversion tooling bridge via GitHub
 
-For users familiar with Subversion toolsets and clients, GitHub fully supports and bridges communications for the central repository. All Subversion commits directed to a GitHub hosted repository will automatically be converted to Git commit history.
+For users familiar with Subversion toolsets and clients, [GitHub fully supports and bridges communications for the central repository](https://help.github.com/articles/support-for-subversion-clients/). All Subversion commits directed to a GitHub hosted repository will automatically be converted to Git commit history.
 
 * [Topics about branch strategies with SVN](https://github.com/blog/1178-collaborating-on-github-with-subversion)
 * Patterns for updating `trunk` or GitHub default branch equivalent
@@ -65,10 +65,10 @@ The use of `git svn` should be a temporary bridge and complete migration to Git 
 The most lightweight approach is by utilizing `git svn` as a one-time conversion from Subversion to Git repository, rather than a long-running liaison between systems. To migrate a Subversion repository, several aspects must be ensured:
 
 * Subversion commits cease prior to initiating the process
-* One machine services as intermediary during conversion
-* GitHub "upstream" repository setup for receiving history, branches, tags
+* One machine serves as intermediary during conversion
+* GitHub "upstream" repository intialized and ready to receive history, branches, tags
 
-### Git-SVN method
+### Git-SVN conversion method
 * Create email/username mapping file
 * Begin `git svn clone`
 * Add `git remote add origin [GitHub-URL]`
@@ -98,3 +98,11 @@ Considerations on migration:
 * Limit history from starting point ``--revision <<starting_rev>>``, or range `--revision <<start:end>>`
 
 https://github.com/nirvdrum/svn2git
+
+### GitHub importer (Porter) method
+* [Read the import tool documentation](https://help.github.com/articles/importing-from-other-version-control-systems-to-github/)
+* Expose the Subversion repository publicly
+* [Visit the GitHub import tool page](https://porter.github.com/new)
+* Point the import tool at your Subversion, TFS, or Mercurial repository
+* Create the username mappings
+* Wait for the tool to work in the background and complete the conversion
