@@ -12,7 +12,7 @@ From understanding the vocabularies of Subversion and Git technologies to migrat
 | `commit` | — | commit | Store prepared changes in local revision history |
 | `rm` | ✓ | `rm`, `delete` | Prepare paths for deletion in next commit |
 | `mv` | ✓ | `move` | Prepare relocated content for next commit |
-| `branch` | ✗ |  | Create local context for commits |
+| `branch` | — |  | Create local context for commits |
 | `checkout` | — |  | Switch branches, or rewrite working tree from commit |
 | `merge` | ✓ |  | Join branch histories and changes to working tree |
 | `log` | — |  | No network required |
@@ -48,11 +48,11 @@ If the Subversion repository has commits not yet on the local Git-equivalent, a 
 
 `git svn rebase`
 
-Keep in mind this rewrites history and your Git commit refs will be different than before the command is run.
+Keep in mind this rewrites local Git history and your Git commit refs will be different than before the command is run.
 
 ## Subversion tooling bridge via GitHub
 
-For users familiar with Subversion toolsets and clients, [GitHub fully supports and bridges communications for the central repository](https://help.github.com/articles/support-for-subversion-clients/). All Subversion commits directed to a GitHub hosted repository will automatically be converted to Git commit history.
+For users familiar with Subversion toolsets and clients, [GitHub fully supports and bridges communications to the central repository](https://help.github.com/articles/support-for-subversion-clients/). All Subversion commits directed at a GitHub hosted repository will automatically be converted to Git commits.
 
 * [Topics about branch strategies with SVN](https://github.com/blog/1178-collaborating-on-github-with-subversion)
 * Patterns for updating `trunk` or GitHub default branch equivalent
@@ -62,7 +62,7 @@ For users familiar with Subversion toolsets and clients, [GitHub fully supports 
 
 The use of `git svn` should be a temporary bridge and complete migration to Git repositories for both local and upstream destinations is optimal.
 
-The most lightweight approach is by utilizing `git svn` as a one-time conversion from Subversion to Git repository, rather than a long-running liaison between systems. To migrate a Subversion repository, several aspects must be ensured:
+The most lightweight approach is by utilizing `git svn` as a one-time conversion from Subversion to Git repository. To migrate a Subversion repository, several aspects must be ensured:
 
 * Subversion commits cease prior to initiating the process
 * One machine serves as intermediary during conversion
