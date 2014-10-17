@@ -30,7 +30,7 @@ Acquire an SVN repository, with a resulting Git repository locally:
 
 `git svn clone [svn-repo-url]`
 
-**Note:** Keep in mind the *layout* of the SVN repository and whether this follows the standard pattern or not. If the Subversion repository is non-standard, with trunk, branches, or tags in uniquely named or structured folders, the following options switches should be used:
+**Note:** Keep in mind the *layout* of the SVN repository and whether this follows the standard pattern or not. If the Subversion repository follows the traditional `trunk`, `branches`, and `tags` pattern, supply the `--std-layout` option. When the Subversion repository is non-standard or organized in a more custom structure, the following options switches should be specified during the clone:
 
 * `-T [trunk]` for alternate main source convention
 * `-b [branches]` for alternate branch location
