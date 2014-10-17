@@ -1,5 +1,5 @@
 ---
-
+layout: cheat-sheet
 ---
 
 # Subversion to Git migration
