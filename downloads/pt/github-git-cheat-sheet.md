@@ -1,3 +1,8 @@
+---
+layout: cheat-sheet
+---
+
+
 # GitHub Folha de dicas de Git
 
 Git é um sistema de controle de versão distribuído open source que facilita ações com o GitHub em seu notebook ou desktop. Esta folha de dicas resume instruções comumente usadas via linha de comando do Git para referência rápida.
