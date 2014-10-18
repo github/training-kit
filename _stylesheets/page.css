@@ -5571,3 +5571,10 @@ footer {
     display: none; }
   .cheat-sheet h2:first-of-type {
     margin-top: 0; }
+  .cheat-sheet h2:last-of-type {
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: solid 1px #f3f3f3; }
