@@ -199,13 +199,7 @@ footer {
   column-gap: 4em;
 
 	h1, h1+p{
-		-webkit-column-span: all;
-		column-span: all;
-	}
-	h1+p{
-		padding-bottom: 1em;
-		margin-bottom: 1em;
-		border-bottom: solid 1px $mono-light;
+		display: none;
 	}
 
 	h2:first-of-type{

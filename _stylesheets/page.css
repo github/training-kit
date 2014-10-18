@@ -5568,11 +5568,6 @@ footer {
   -moz-column-gap: 4em;
   column-gap: 4em; }
   .cheat-sheet h1, .cheat-sheet h1 + p {
-    -webkit-column-span: all;
-    column-span: all; }
-  .cheat-sheet h1 + p {
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    border-bottom: solid 1px #f3f3f3; }
+    display: none; }
   .cheat-sheet h2:first-of-type {
     margin-top: 0; }
