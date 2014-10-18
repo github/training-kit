@@ -1,3 +1,9 @@
+---
+layout: cheat-sheet
+title: Subversion to Git migration
+byline: From understanding the vocabularies of Subversion and Git technologies to migrating a project to GitHub, this cheat sheet can help.
+---
+
 # Subversion to Git migration
 
 From understanding the vocabularies of Subversion and Git technologies to migrating a project to GitHub, this cheat sheet can help.
