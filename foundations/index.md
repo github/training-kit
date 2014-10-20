@@ -272,10 +272,16 @@ Just as with the Git technology operating on GitHub, local repositories also use
 {% capture slide %}![What is a branch](../assets/diagrams/what-is-a-branch.svg){% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-1. Create a branch and make commits to it
-2. Notice the notification bar on the repository home page
-3. Open a *Compare and Pull Request*
-4. Facilitate team or colleague code review
+1. Using the GitHub web UI, create a branch with an articulate feature name
+2. Make two distinct commits to the branch, each contributing part of the feature's changes
+3. Return to the homepage of the repository by clicking the repository's name
+4. Notice the suggestion message asking if you'd like to "compare and pull request"
+5. Click on *Compare and Pull Request*
+6. Describe the reasoning behind the changes on this branch via the pull request
+7. @mention a team or colleague, asking for a code review
+8. Address the points raised by the reviewers through an additional commit to the branch
+9. Ask for a final review and :+1: from a colleague
+10. Merge the pull request
 {% endcapture %}{% include lab %}
 
 ### Details
@@ -289,7 +295,7 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 
 {% capture slide %}
-### Contributing with Pull Requests
+### Contributing with Forks & Pull Requests
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
@@ -298,8 +304,10 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 {% capture lab %}
 1. Create a Fork of a repository needing contributions
-2. Follow the contribution pattern of the GitHub Flow
-3. Submit a Pull Request and iterate with progressive commits
+2. Follow the contribution pattern of the [GitHub Flow](https://guides.github.com/introduction/flow/), with the branch creation and commits happening on your fork of the repository
+3. Observe the Network and Members graph that offer visualizations of your commits and fork
+4. Merge the pull request
+5. Observe your contributions in the original repository, having preserved your username as the author of the code
 {% endcapture %}{% include lab %}
 
 #### Resources
@@ -316,13 +324,11 @@ A branch is a divergent path in the history of the code base. It may contain an 
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-1. Make commits on GitHub repository
-2. Clone in Desktop (if repository does not yet exist locally)
-3. Review the changes locally
-4. Make commits on local repository
-5. Understand local history versus remote/GitHub
-6. Publish (`push`) the changes
-7. Review the changes on GitHub
+1. Clone an existing GitHub repo using the GitHub for Desktop application
+2. Following the GitHub Flow pattern, create a topic branch and make commits to the local repository
+3. Review the local (unsynced) commits in history
+4. Publish the changes via the Sync button
+5. Verify the presence of the now-synced changes by refreshing the GitHub web UI of the cloned repo
 {% endcapture %}{% include lab %}
 
 ### Details
