@@ -24,6 +24,38 @@
   margin-top: 5px;
   padding-top: 10px; }
 
+.timer-check {
+  visibility: hidden;
+  height: 0;
+  width: 0; }
+  .timer-check:checked + label {
+    color: #1875c6; }
+    .timer-check:checked + label:before {
+      content: '\f046';
+      color: white;
+      background-color: #1875c6;
+      box-shadow: 0 0 0 2px #1875c6;
+      padding-left: 0px;
+      line-height: 1em; }
+
+.timer-label {
+  line-height: 18px;
+  padding-left: 25px; }
+  .timer-label:before {
+    content: '\f046';
+    font: normal normal normal 16px/1 octicons;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    border-radius: 50%;
+    color: rgba(69, 69, 69, 0);
+    -webkit-transition: all 180ms;
+    width: 18px;
+    height: 18px;
+    box-shadow: 0 0 0 2px #454545;
+    padding-top: 1px; }
+
 .slide-only-check {
   visibility: hidden;
   height: 0;
@@ -39,7 +71,6 @@
       line-height: 1em; }
 
 .slides-only-label {
-  color: rgba(69, 69, 69, 0.5);
   line-height: 18px;
   padding-left: 25px; }
   .slides-only-label:before {
@@ -55,7 +86,7 @@
     padding-left: 5px;
     width: 18px;
     height: 18px;
-    box-shadow: 0 0 0 2px rgba(69, 69, 69, 0.5);
+    box-shadow: 0 0 0 2px #454545;
     line-height: .2em; }
 
 .timer-wrapper {
@@ -66,15 +97,13 @@
   z-index: 1000;
   top: 0;
   left: 0; }
-  .timer-wrapper .octicon {
-    font-size: 50px; }
   .timer-wrapper .timer {
     transition: all 300ms;
     position: relative;
     margin: 10% auto;
     border-radius: 10px;
     height: 150px;
-    width: 150px;
+    width: 300px;
     display: block;
     text-align: center; }
     .timer-wrapper .timer .timer-toggle {
@@ -85,7 +114,7 @@
     .timer-wrapper .timer .timer-content {
       text-align: center; }
     .timer-wrapper .timer .time-left {
-      font-size: 72px;
+      font-size: 150px;
       display: block; }
 
 .nav-list > li > a {
