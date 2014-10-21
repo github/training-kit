@@ -1,3 +1,10 @@
+---
+layout: cheat-sheet
+title: Aide-mémoire GitHub Git
+byline: Git est le sytème de gestion de version décentralisé open source qui facilite les activités GitHub sur votre ordinateur. Cet aide-mémoire permet un accès rapide aux instructions des commandes Git les plus utilisées.
+leadingpath: ../../
+---
+
 # Aide-mémoire GitHub Git
 
 Git est le sytème de gestion de version décentralisé open source qui facilite les activités GitHub sur votre ordinateur. Cet aide-mémoire permet un accès rapide aux instructions des commandes Git les plus utilisées.
@@ -119,12 +126,12 @@ Supprime le fichier du répertoire de travail et met à jour l'index
 
 ```$ git rm --cached [fichier]```
 
-Supprime le fichier du système de suivi de version mais le préserve localement 
+Supprime le fichier du système de suivi de version mais le préserve localement
 
 
 ```$ git mv [fichier-nom] [fichier-nouveau-nom]```
 
-Renomme le fichier et prépare le changement pour un commit 
+Renomme le fichier et prépare le changement pour un commit
 
 ## Exclure du suivi de version
 Exclure des fichiers et chemins temporaires
@@ -227,7 +234,7 @@ Récupère tout l'historique du dépôt nommé et incorpore les modifications
 ---
 
 ## Formations GitHub
-Formez-vous à l'utilisation de GitHub et Git. Contactez l'équipe de formation ou visitez notre site web pour connaître les dates de formation 
+Formez-vous à l'utilisation de GitHub et Git. Contactez l'équipe de formation ou visitez notre site web pour connaître les dates de formation
 et les disponibilités pour des cours privés.
 
 * training@github.com
