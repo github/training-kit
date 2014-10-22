@@ -26,5 +26,8 @@ include:
 
 markdown: rdiscount
 
+sass:
+  sass_dir: dependencies/bootstrap-sass/assets/stylesheets/
+
 # Custom site configuration
 lang: en
