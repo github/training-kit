@@ -1,6 +1,6 @@
 # GitHub Training Kit
 
-This is the official courseware for the [GitHub Training Team](http://training.github.com). This repository provides open source materials and slides for teaching GitHub Classes under the [_CC BY 3.0_ license](http://creativecommons.org/licenses/by/3.0/).
+This is the official courseware for the [GitHub Training Team](http://training.github.com). This repository provides open source materials and slides for teaching GitHub Classes under the [_CC BY 4.0_ license](http://creativecommons.org/licenses/by/4.0/).
 
 We know that part of effectively sharing GitHub and Git with the world goes beyond our team's course offerings. We are pleased to provide you with this training kit that you can use to teach these same concepts at your company, for a user group, or at a conference.
 
