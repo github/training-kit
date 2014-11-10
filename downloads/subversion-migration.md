@@ -13,7 +13,7 @@ When migrating from Subversion to Git, there's a vocabulary and command set to l
 | Git command | SVN | SVN equivalent | Git Behavior |
 |---|---|---|---|
 | `status` | ✓ | status | Report the state of working tree |
-| `add` | — | add | Required for each path before making a commit |
+| `add` | ✓ | add | Required for each path before making a commit |
 | `commit` | — | commit | Store prepared changes in local revision history |
 | `rm` | ✓ | `rm`, `delete` | Prepare paths for deletion in next commit |
 | `mv` | ✓ | `move` | Prepare relocated content for next commit |
