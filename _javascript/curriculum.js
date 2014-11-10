@@ -14,6 +14,8 @@ $(function(){
 	help.toggle = function(event){
 		if(event.shiftKey && event.keyCode === 191){
 			console.log("Toggle help");
+
+			$("#help").toggle();
 		}
 	};
 
