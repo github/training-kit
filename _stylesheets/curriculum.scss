@@ -42,38 +42,6 @@ table{
 	}
 }
 
-#toc-toggle{
-	position: fixed;
-	top: 15px;
-	right: 24px;
-	padding: 0;
-	margin: 0;
-	z-index:1000;
-}
-.toc-toggle-check{
-	visibility: hidden;
-	width: 0;
-	height: 0;
-
-	& + .toc-toggle-label{
-		color: $gray-darker;
-		opacity: .3;
-
-		.toc-header{
-			margin-left: 1em;
-			display: none;
-		}
-	}
-
-	&:checked + .toc-toggle-label{
-		opacity: 1;
-		// right: 16.66667%;
-
-		.toc-header{
-			display: inline;
-		}
-	}
-}
 
 #toc-wrapper{
 	opacity: .5;
@@ -361,7 +329,7 @@ table{
 }
 
 .affix{
-  margin-top: -130px;
+  margin-top: -165px;
   position: fixed;
 }
 
