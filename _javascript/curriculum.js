@@ -9,6 +9,17 @@ $(function(){
 	});
 
 
+	// "?" Help menu
+	var help = {};
+	help.toggle = function(event){
+		if(event.shiftKey && event.keyCode === 191){
+			console.log("Toggle help");
+		}
+	};
+
+	document.addEventListener("keydown", help.toggle, false);
+
+
 	// Parse username from querystring
 	var urlSearch = window.location.search,
 			teacherQuery = urlSearch.match(/teacher=[a-z,A-Z,0-9]*/),
