@@ -111,11 +111,14 @@ $(function(){
 	}
 
 	// Bind checkbox toggle for TOC
-	$(".toc-toggle-check").change(function(){
-		console.log("shiftleft on both.");
-		$(".col-content").toggleClass("shift-left");
-		$(".col-toc").toggleClass("shift-left");
-	});
+	var toc = {};
+	toc.toggle = function(event){
+		if(event.shiftKey && event.keyCode === 84){
+			$(".col-content").toggleClass("shift-left");
+			$(".col-toc").toggleClass("shift-left");
+		}
+	}
+	document.addEventListener("keydown", toc.toggle, false);
 
 	// Render the TOC
 	buildToc();
