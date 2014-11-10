@@ -8,7 +8,6 @@ $(function(){
 		$(".slide").toggleClass("hidden");
 	});
 
-
 	// Parse username from querystring
 	var urlSearch = window.location.search,
 			teacherQuery = urlSearch.match(/teacher=[a-z,A-Z,0-9]*/),
@@ -100,14 +99,21 @@ $(function(){
 	}
 
 	// Bind checkbox toggle for TOC
-	var toc = {};
-	toc.toggle = function(event){
-		if(event.shiftKey && event.keyCode === 84){
+	var shortcuts = {};
+	shortcuts.toggle = function(event){
+		console.log(event.keyCode);
+
+		// Help "?" toggle
+		if(event.shiftKey && event.keyCode === 191){
+			$('#help').modal('toggle');
+		}
+		// TOC "T" toggle
+		else if(event.shiftKey && event.keyCode === 84){
 			$(".col-content").toggleClass("shift-left");
 			$(".col-toc").toggleClass("shift-left");
 		}
 	}
-	document.addEventListener("keydown", toc.toggle, false);
+	document.addEventListener("keydown", shortcuts.toggle, false);
 
 	// Render the TOC
 	buildToc();
