@@ -12,21 +12,21 @@ When migrating from Subversion to Git, there's a vocabulary and command set to l
 
 | Git command | SVN | SVN equivalent | Git Behavior |
 |---|---|---|---|
-| `status` | ✓ | status | Report the state of working tree |
-| `add` | — | add | Required for each path before making a commit |
-| `commit` | — | commit | Store prepared changes in local revision history |
+| `status` | ✓ |  | Report the state of working tree |
+| `add` | ✓ |  | Required for each path before making a commit |
+| `commit` | ✓ |  | Store prepared changes in local revision history |
 | `rm` | ✓ | `rm`, `delete` | Prepare paths for deletion in next commit |
 | `mv` | ✓ | `move` | Prepare relocated content for next commit |
-| `branch` | — |  | Create local context for commits |
-| `checkout` | — |  | Switch branches, or rewrite working tree from commit |
+| `branch` | ✓ |  | Create local context for commits |
+| `checkout` | ✓ |  | Switch branches, or rewrite working tree from commit |
 | `merge` | ✓ |  | Join branch histories and changes to working tree |
-| `log` | — |  | No network required |
+| `log` | ✓ |  | No network required |
 | `clone` | ✗ | `checkout` | Acquire the entire history of a project locally for the first time |
 | `push` | ✗ | `commit` | Upload commit history to GitHub/centralized Git host |
 | `pull` | ✗ |  | Download and integrate GitHub repository history with local one |
 | `fetch` | ✗ |  | Download GitHub repository history with no other action  |
 
-**Key:** ✓ yes, ✗ no, — partial
+**Key:** ✓ yes, ✗ no
 
 ## Leveraging Git's support of SVN
 During a VCS change, there may be a need to begin using Git locally while the hosted repositories remain under Subversion control. The `git svn` command and sub-commends provide the ability to interact with Subversion's repositories while using all the benefits of Git on the command line or with graphical clients.
