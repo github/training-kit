@@ -41,7 +41,7 @@ Historical commit points is simple to discuss using using *commitish* rather tha
 Shorthand              | Explanation
 ---------------------- | -----------
 `HEAD`                 | Current commit
-`HEAD^^`               | Second parety of current commit
+`HEAD^^`               | Second parent of current commit
 `HEAD~2`               | Two commits from current commit
 `HEAD@{one.day.ago}`   | Reachable by current branch from one day ago
 `HEAD@{today}`         | All commits reachable by current branch made *today*
