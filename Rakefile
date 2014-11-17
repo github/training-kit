@@ -6,7 +6,6 @@ task :clean do
 end
 
 task :test do
-  sh 'bundle exec sass --style compressed _stylesheets/page.scss:_stylesheets/page.css'
   sh 'bundle exec jekyll build'
 
 #  HTML::Proofer.new("./_site").run
