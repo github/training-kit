@@ -1,6 +1,54 @@
 /* Imports */
 /* Color Definitions */
 @import url(octicons.css);
+.fade-out {
+  background: none !important;
+  margin-left: 100%;
+  position: fixed;
+  left: -35px !important; }
+  .fade-out .octicon {
+    font-size: 14px !important; }
+  .fade-out.timer-wrapper {
+    background-color: none !important; }
+  .fade-out .timer {
+    margin: 0 0 !important; }
+  .fade-out .timer-toggle {
+    padding-left: 0px !important;
+    opacity: .3;
+    text-align: left !important; }
+  .fade-out .timer-amount {
+    visibility: hidden; }
+
+.timer-wrapper {
+  background: rgba(255, 255, 255, 0.93);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0; }
+  .timer-wrapper .octicon {
+    font-size: 50px; }
+  .timer-wrapper .timer {
+    transition: all 300ms;
+    position: relative;
+    margin: 10% auto;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    display: block;
+    text-align: center; }
+    .timer-wrapper .timer .timer-toggle {
+      width: 100%;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      text-align: center; }
+    .timer-wrapper .timer .timer-content {
+      text-align: center; }
+    .timer-wrapper .timer .time-left {
+      font-size: 72px;
+      display: block; }
+
 .nav-list > li > a {
   font-size: 8pt; }
 
@@ -11,41 +59,16 @@
   /* GitHub Links */
   /* GitHub Book Links, Guide Links */
   /* YouTube Links */ }
+  .curriculum .octicon, .curriculum .mega-octicon {
+    font-size: 600%; }
   .curriculum img {
     width: 100%;
     height: auto; }
-  .curriculum h3 {
-    font-size: 400%;
-    line-height: 1.25em;
-    margin-bottom: .5em;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.1); }
-  .curriculum h4 {
-    font-size: 250%;
-    line-height: 1.35em;
-    margin-bottom: .5em;
-    text-shadow: 0 1px rgba(0, 0, 0, 0.1);
-    color: #454545;
-    border-bottom: solid 1px #f3f3f3; }
-  .curriculum pre, .curriculum table {
-    background: #f9fafa;
-    border: solid 1px #edeff0;
-    border-radius: 3px;
-    box-shadow: 0px 4px 0 0px #edeff0;
-    line-height: 2em; }
   .curriculum pre:before {
     content: "\f0c8";
     font: normal normal 22px octicons;
     float: right;
     color: #c0c7ce; }
-  .curriculum table th, .curriculum table td {
-    text-align: left;
-    padding: 0 1em; }
-  .curriculum p {
-    line-height: 1.75em;
-    margin-bottom: 2em; }
-  .curriculum iframe {
-    display: block;
-    margin: 0 auto; }
   .curriculum .lab .panel-heading:before {
     content: "\f089";
     font: normal normal 16px octicons;
@@ -54,17 +77,27 @@
     width: 100%;
     background: #ffffff;
     display: table; }
-    .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5 {
-      text-align: center; }
+    .curriculum .slide h2, .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5 {
+      text-align: center;
+      font-size: 400%; }
     .curriculum .slide h1, .curriculum .slide h2, .curriculum .slide h3, .curriculum .slide h4, .curriculum .slide h5, .curriculum .slide h6, .curriculum .slide p, .curriculum .slide ul, .curriculum .slide pre, .curriculum .slide svg {
       margin-left: 0;
       margin-right: 0; }
     .curriculum .slide pre code {
       font-size: 1.5em; }
+    .curriculum .slide ul, .curriculum .slide ol {
+      display: inline-block;
+      text-align: left; }
+    .curriculum .slide .lab {
+      text-align: left; }
+      .curriculum .slide .lab ul, .curriculum .slide .lab ol {
+        display: block; }
     .curriculum .slide .alignment {
-      padding: 0 10%;
       display: table-cell;
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-align: center; }
+      .curriculum .slide .alignment > ul {
+        font-size: 250%; }
   .curriculum a[href^="http://"],
   .curriculum a[href^="https://"] {
     font: normal normal 1em octicons;
@@ -116,11 +149,9 @@
     opacity: 1; }
 
 #toc {
-  font-size: .8em; }
-  #toc .active {
-    font-weight: 700; }
-    #toc .active a {
-      color: #222222; }
+  font-size: .7em; }
+  #toc a {
+    padding: 5px; }
 
 .affix-top {
   position: absolute; }

@@ -1,4 +1,6 @@
 $(function(){
+	// Global-ish vars
+	var timeLeftInterval = 0;
 
 	$(window).resize(function () {
 		updateSlideSize();
@@ -12,6 +14,39 @@ $(function(){
 		$(".slide").css("height", h);
 	}
 
+	$(".timer-toggle").click(function(){
+		$(".timer-wrapper").toggleClass("fade-out");
+		resetTimer();
+
+		if($(".timer-wrapper").hasClass("fade-out")){
+			$(".timer-amount").toggle();
+		}
+	});
+
+	$("#start-stop").click(function(){
+		var timeLeftDisplay = $("#time-left")
+		var min = $("#minutes").attr("value");
+		var duration = min*60;
+
+		$(".timer-amount").toggle();
+
+		resetTimer();
+
+		timeLeftInterval = setInterval(function(){
+			timeLeftDisplay.html( Math.floor((duration)/60) + ":" + (duration%60 < 10 ? "0"+duration%60:duration%60) );
+			duration = --duration;
+
+			if(duration == -1){
+				clearInterval(timeLeftInterval);
+			}
+		}, 1000);
+	});
+
+	function resetTimer(){
+		clearInterval(timeLeftInterval);
+		$("#time-left").html("");
+	}
+
 	buildToc();
 
 	$(document).scrollsnap({
@@ -20,7 +55,7 @@ $(function(){
 	});
 
 	function buildToc(){
-		var headings = $("h3"),
+		var headings = $(".curriculum h2"),
 				toc = $("#toc-list");
 
 		for(var h=0; h<headings.length; h++){
