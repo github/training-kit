@@ -701,6 +701,7 @@ This course covers many advanced uses of Git and GitHub, and yet there is still 
 * [Advanced Git, presented at JavaZone](http://vimeo.com/49444883)
 * [Mastering Advanced Git, O'Reilly video series](http://bit.ly/ogitvid2)
 * [The Fringes of Git, Git internals video](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
+* [Git and GitHub LiveLessons (Workshop)](http://www.informit.com/store/git-and-github-livelessons-workshop-9780133991772)
 
 #### Tools
 * [`gh`, GitHub command line utility](https://github.com/jingweno/gh)
