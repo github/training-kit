@@ -1,12 +1,12 @@
 ---
 layout: cheat-sheet
 title: Transitioning from Subversion to Git and GitHub
-byline: When migrating from Subversion to Git, there's a vocabulary and command set to learn, in addition to the new capabilities only afforded by a DVCS such as Git. This cheat sheet aims to help you in your trasition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.
+byline: When migrating from Subversion to Git, there's a vocabulary and command set to learn, in addition to the new capabilities only afforded by a DVCS such as Git. This cheat sheet aims to help you in your transition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.
 ---
 
 # Transitioning from Subversion to Git and GitHub
 
-When migrating from Subversion to Git, there's a vocabulary and command set to learn, in addition to the new capabilities only afforded by a DVCS such as Git. This cheat sheet aims to help you in your trasition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.
+When migrating from Subversion to Git, there's a vocabulary and command set to learn, in addition to the new capabilities only afforded by a DVCS such as Git. This cheat sheet aims to help you in your transition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.
 
 ## Vocabulary
 
@@ -29,7 +29,7 @@ When migrating from Subversion to Git, there's a vocabulary and command set to l
 **Key:** ✓ yes, ✗ no
 
 ## Leveraging Git's support of SVN
-During a VCS change, there may be a need to begin using Git locally while the hosted repositories remain under Subversion control. The `git svn` command and sub-commends provide the ability to interact with Subversion's repositories while using all the benefits of Git on the command line or with graphical clients.
+During a VCS change, there may be a need to begin using Git locally while the hosted repositories remain under Subversion control. The `git svn` command and sub-commands provide the ability to interact with Subversion's repositories while using all the benefits of Git on the command line or with graphical clients.
 
 Acquire an SVN repository, with a resulting Git repository locally:
 
@@ -57,7 +57,7 @@ Keep in mind this rewrites local Git history and your Git commit refs will be di
 
 ## Subversion tooling bridge via GitHub
 
-For users familiar with Subversion toolsets and clients, [GitHub fully supports and bridges communications to the central repository](https://help.github.com/articles/support-for-subversion-clients/). All Subversion commits directed at a GitHub hosted repository will automatically be converted to Git commits.
+For users familiar with Subversion toolsets and clients, [GitHub fully supports and bridges communications to the central repository](https://help.github.com/articles/support-for-subversion-clients/). All Subversion commits directed at a GitHub hosted repository will be automatically converted to Git commits.
 
 * [Topics about branch strategies with SVN](https://github.com/blog/1178-collaborating-on-github-with-subversion)
 * Patterns for updating `trunk` or GitHub default branch equivalent
@@ -71,7 +71,7 @@ The most lightweight approach is by utilizing `git svn` as a one-time conversion
 
 * Subversion commits cease prior to initiating the process
 * One machine serves as intermediary during conversion
-* GitHub "upstream" repository intialized and ready to receive history, branches, tags
+* GitHub "upstream" repository initialized and ready to receive history, branches, tags
 
 ### Git-SVN conversion method
 * Create email/username mapping file
