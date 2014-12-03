@@ -56,7 +56,7 @@ $ git log --author [author-name]
 $ git log --since [integer].days.ago
 ```
 
-Searching by a string or regular expression often often the most efficient way of finding history:
+Searching by a string or regular expression is often the most efficient way of finding history:
 
 ```bash
 $ git log -S [string-in-patch]
@@ -196,7 +196,7 @@ $ git add -f [path]
 ```
 
 #### Removing unwanted files
-* Purge untracked in working dir
+* Purge untracked in working directory
 * for directories
 * for removing ignored files (useful for tidying build artifacts)
 
@@ -214,7 +214,7 @@ $ git clean -fx
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-1. Use built-in, time-saving command shortcuts for commiting and branch switching
+1. Use built-in, time-saving command shortcuts for committing and branch switching
 2. Learn when to use `stash` and when longer-lived branching provides better options
 3. Commit partial file content *hunks* with patch option switches of `add` and `reset`
 4. Avoiding repetitive conflict resolution with `rerere`
@@ -585,7 +585,7 @@ $ git tag -v [tag-name]
 
 #### Command line interface
 * Uses the API for interfacing with your repos
-* Stores OAUTH token, credentials
+* Stores OAuth token, credentials
 * Highly efficient for power-users
 * Hub and GH merging into one project
 
