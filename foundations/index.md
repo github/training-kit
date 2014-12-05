@@ -6,7 +6,11 @@ redirect_from:
   - ../workbooks/github-foundations.html
 ---
 
+
+
+
 {% capture slide %}
+
 ## Understanding version control
 {% endcapture %}{% include slide-section %}
 
@@ -16,7 +20,25 @@ redirect_from:
 
 {% capture slide %}![Distributed version control](../assets/diagrams/distributed-version-control.svg){% endcapture %}{% include slide-section %}
 
-{% capture slide %}![What is a commit](../assets/diagrams/what-is-a-commit.svg){% endcapture %}{% include slide-section %}
+{% capture slide %}
+
+
+<div class="mermaid">
+graph RL;
+A(Text);
+B(Binary);
+C(Code);
+D(Commit);
+D-->A;
+D-->B;
+D-->C;
+</div>
+
+
+![What is a commit](../assets/diagrams/what-is-a-commit.svg)
+
+
+{% endcapture %}{% include slide-section %}
 
 {% capture lab %}
 1. Launch Terminal or Git Shell

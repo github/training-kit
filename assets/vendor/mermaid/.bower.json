@@ -1,0 +1,39 @@
+{
+  "name": "mermaid",
+  "version": "0.2.10",
+  "authors": [
+    "knsv <knut@sveido.com>"
+  ],
+  "description": "Markdownish syntax for generating flowcharts",
+  "main": "dist/mermaid.slim.js",
+  "keywords": [
+    "diagram",
+    "markdown",
+    "flowchart"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jasmine": "~2.0.4",
+    "dagre": "0.6.2",
+    "d3": "3.3.8",
+    "dagre-d3": "0.3.2"
+  },
+  "homepage": "https://github.com/knsv/mermaid",
+  "_release": "0.2.10",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.10",
+    "commit": "15023461722117d1429bbc0eb6030ca35aa51d53"
+  },
+  "_source": "git://github.com/knsv/mermaid.git",
+  "_target": "~0.2.10",
+  "_originalSource": "mermaid",
+  "_direct": true
+}

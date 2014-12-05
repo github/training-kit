@@ -27,7 +27,7 @@ include:
 markdown: rdiscount
 
 sass:
-  sass_dir: dependencies/bootstrap-sass/assets/stylesheets/
+  sass_dir: assets/vendor/bootstrap-sass/lib/
   style: :compressed
 
 # Custom site configuration
