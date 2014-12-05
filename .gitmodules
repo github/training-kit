@@ -1,9 +1,6 @@
 [submodule "slides/dependencies/plugins"]
 	path = slides/dependencies/plugins
 	url = https://github.com/jordanmccullough/hydeslides-plugins.git
-[submodule "slides/dependencies/impressjs"]
-	path = slides/dependencies/impressjs
-	url = https://github.com/bartaz/impress.js.git
 [submodule "slides/dependencies/revealjs"]
 	path = slides/dependencies/revealjs
 	url = https://github.com/hakimel/reveal.js.git
