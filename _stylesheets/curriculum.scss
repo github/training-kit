@@ -1,6 +1,8 @@
-@import "octicons.css";
-@import "octicons.css";
-@import "../dependencies/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+---
+
+---
+
+@import "bootstrap-sass/lib/bootstrap.scss";
 
 table{
 	@extend .table;
