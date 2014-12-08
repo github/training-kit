@@ -166,8 +166,17 @@ Git provides an easy way to start versioning any prototype, prose or project wit
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![Three stages of versioning](../assets/diagrams/commit-three-stage.svg)
+![Three stages of versioning](../assets/diagrams/commit-three-stage-01.svg)
 {% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Three stages of versioning](../assets/diagrams/commit-three-stage-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Three stages of versioning](../assets/diagrams/commit-three-stage-03.svg)
+{% endcapture %}{% include slide-section %}
+
 
 {% capture lab %}
 1. Create a new file and save it in the repository folder
