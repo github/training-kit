@@ -162,6 +162,14 @@ Git provides an easy way to start versioning any prototype, prose or project wit
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
+```shell
+$ git status
+$ git add [filename]
+$ git commit -m "[your description]"
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
 ![Versions](../assets/diagrams/commit-versions.svg)
 {% endcapture %}{% include slide-section %}
 
@@ -185,11 +193,7 @@ Git provides an easy way to start versioning any prototype, prose or project wit
 {% endcapture %}{% include lab %}
 
 ### Details
-```shell
-$ git status
-$ git add [filename]
-$ git commit -m "[your description]"
-```
+
 
 ### Videos
 <iframe src="//player.vimeo.com/video/88315552" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -201,7 +205,15 @@ $ git commit -m "[your description]"
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![Diff](../assets/diagrams/diff.svg)
+![Diff](../assets/diagrams/diff-01.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Diff](../assets/diagrams/diff-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Diff](../assets/diagrams/diff-03.svg)
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
