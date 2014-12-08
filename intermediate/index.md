@@ -9,6 +9,26 @@ redirect_from:
 ## Configuring your Git environment
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
+```
+git config user.name "Your Name"
+git config user.email "Email Address"
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```bash
+git config color.ui auto
+git config core.autocrlf [input|true]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```bash
+git config core.editor
+```
+{% endcapture %}{% include slide-section %}
+
 {% capture lab %}
 1. Verify the current value of your username and email address as known by Git.
 2. If needed, set your username and email address using the `git config` command.
@@ -92,32 +112,45 @@ $ git config --list --[scope]
 ## Starting on the command line
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
+Initialize a new project
+
+```
+$ git init [projectname]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+
+Initialize a repository inside a top level project directory
+
+```
+$ cd [project-directory]
+$ git init
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+Acquire with default repository name
+
+```shell
+$ git clone [repository-url]
+```
+
+Acquire with preferred, optional name
+
+```
+$ git clone [url] [optional-folder-name]
+```
+{% endcapture %}{% include slide-section %}
+
+
 ### Details
 Git provides an easy way to start versioning any prototype, prose or project with a terse command line recipe. Just initialize a local repository and create a top level project directory:
 
-```shell
- For a new project...
-$ git init [projectname]
-$ cd [projectname]
-```
 
-Initialize a repository inside a top level project directory:
-
-```shell
- For an existing project...
-$ cd [existingprojectname]
-$ git init
-```
-
-Acquire a project locally:
-
-```shell
- Acquire with default repository name
-$ git clone [repository-url]
-
- Acquire with preferred, optional name
-$ git clone [url] [optional-folder-name]
-```
 
 ### Video
 <iframe src="//player.vimeo.com/video/88313612" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -582,5 +615,3 @@ $ git checkout HEAD@{[n]} -- [path]
 #### Additional Resources
 * [O'Reilly's Mastering Git video series](http://bit.ly/ogitvid)
 * [Git and GitHub LiveLessons (Workshop)](http://www.informit.com/store/git-and-github-livelessons-workshop-9780133991772)
-
-
