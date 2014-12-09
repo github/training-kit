@@ -93,13 +93,13 @@ The command line version of Git has a very light footprint. For most platforms, 
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-<span class="mega-octicon octicon-jersey"></span>
-#### Teams
+<span class="mega-octicon octicon-organization"></span>
+#### Organizations
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-<span class="mega-octicon octicon-organization"></span>
-#### Organizations
+<span class="mega-octicon octicon-jersey"></span>
+#### Teams
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
