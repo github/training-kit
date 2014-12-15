@@ -345,7 +345,8 @@ $ git log --patch --color-words
 
 
 {% capture slide %}
-## Organizing history for optimal workflows
+## Organizing history
+## for optimal workflows
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
