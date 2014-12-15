@@ -222,11 +222,29 @@ $ git commit -m "[your description]"
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
+```shell
+$ git diff
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
 ![Diff](../assets/diagrams/diff-02.svg)
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
+```shell
+$ git diff --staged
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
 ![Diff](../assets/diagrams/diff-03.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+$ git diff HEAD
+```
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
