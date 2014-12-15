@@ -247,6 +247,15 @@ $ git diff HEAD
 ```
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
+```shell
+# By specific file
+
+$ git diff [file-path]
+```
+{% endcapture %}{% include slide-section %}
+
+
 {% capture lab %}
 1. Compare changes of modified files with respect to history
 2. Compare staged modifications with respect to history
