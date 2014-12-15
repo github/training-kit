@@ -302,13 +302,13 @@ $ git diff [file-path]
 
 {% capture slide %}
 ```shell
-git log
+$ git log
 ```
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
 ```shell
-git log --oneline
+$ git log --oneline
 ```
 {% endcapture %}{% include slide-section %}
 
