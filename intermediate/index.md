@@ -350,9 +350,25 @@ $ git log --patch --color-words
 
 {% capture slide %}
 ```shell
-# Create a new branch from current one
+# Create a new branch from the current one
 
-git branch
+$ git branch [branch-name]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+# Switch to a specified branch
+
+$ git checkout [branch-name]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+# List all local branches
+
+$ git branch
 ```
 {% endcapture %}{% include slide-section %}
 
