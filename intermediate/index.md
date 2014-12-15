@@ -175,7 +175,15 @@ $ git commit -m "[your description]"
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![Versions](../assets/diagrams/commit-versions.svg)
+![Versions](../assets/diagrams/commit-versions-01.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Versions](../assets/diagrams/commit-versions-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Versions](../assets/diagrams/commit-versions-03.svg)
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
