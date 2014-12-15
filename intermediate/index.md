@@ -349,6 +349,14 @@ $ git log --patch --color-words
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
+```shell
+# Create a new branch from current one
+
+git branch
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
 ![diagram](../assets/diagrams/merge-fast-forward-01.svg)
 {% endcapture %}{% include slide-section %}
 
