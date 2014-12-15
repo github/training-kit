@@ -113,9 +113,11 @@ $ git config --list --[scope]
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-Initialize a new project
+
 
 ```
+# Initialize a new project
+
 $ git init [projectname]
 ```
 {% endcapture %}{% include slide-section %}
@@ -123,9 +125,10 @@ $ git init [projectname]
 
 {% capture slide %}
 
-Initialize a repository inside a top level project directory
 
 ```
+#Initialize from inside a top level directory
+
 $ cd [project-directory]
 $ git init
 ```
@@ -133,15 +136,17 @@ $ git init
 
 
 {% capture slide %}
-Acquire with default repository name
-
 ```shell
+#Acquire with default repository name
+
 $ git clone [repository-url]
 ```
+{% endcapture %}{% include slide-section %}
 
-Acquire with preferred, optional name
-
+{% capture slide %}
 ```
+# Acquire with preferred, optional name
+
 $ git clone [url] [optional-folder-name]
 ```
 {% endcapture %}{% include slide-section %}
