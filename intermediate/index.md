@@ -280,14 +280,14 @@ $ git diff --staged
 The default line-level difference indicators are sometimes insufficient for prose and small variable-name changes. There is, however, an option to instruct Git to perform and highlight intra-line comparisons.
 
 ```shell
- Highlight word changes on lines
+# Highlight word changes on lines
 $ git diff --color-words
 ```
 
 Diff, by default, performs comparisons on all modified files. If inspection of just a subset is called for, `diff` accepts a precise or wildcard-ed filename or path as an option.
 
 ```shell
- By specific file
+# By specific file
 $ git diff [file-path]
 ```
 
