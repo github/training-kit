@@ -374,6 +374,10 @@ $ git branch
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
+### Merge strategies
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
 ![diagram](../assets/diagrams/merge-fast-forward-01.svg)
 {% endcapture %}{% include slide-section %}
 
