@@ -300,6 +300,18 @@ $ git diff [file-path]
 ## Reviewing historical changes
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
+```shell
+git log
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+git log --oneline
+```
+{% endcapture %}{% include slide-section %}
+
 {% capture lab %}
 1. Review default commit history output
 2. Refine history output with option switches
