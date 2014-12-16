@@ -2,6 +2,7 @@
 
 ---
 
+@import "octicons/octicons/sprockets-octicons.scss";
 @import "bootstrap-sass/lib/bootstrap.scss";
 
 table{
@@ -262,6 +263,14 @@ table{
 		}
 
 		pre{
+			width: 80%;
+			padding: 2em;
+			font-size: 120%;
+			text-align: left;
+			margin: 0 auto;
+			background: #222;
+			color: #f9f9f9;
+
 			code{
 				font-size: 1.5em;
 			}

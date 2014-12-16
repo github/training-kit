@@ -9,6 +9,26 @@ redirect_from:
 ## Configuring your Git environment
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
+```
+git config user.name "Your Name"
+git config user.email "Email Address"
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```bash
+git config color.ui auto
+git config core.autocrlf [input|true]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```bash
+git config core.editor
+```
+{% endcapture %}{% include slide-section %}
+
 {% capture lab %}
 1. Verify the current value of your username and email address as known by Git.
 2. If needed, set your username and email address using the `git config` command.
@@ -92,32 +112,50 @@ $ git config --list --[scope]
 ## Starting on the command line
 {% endcapture %}{% include slide-section %}
 
+{% capture slide %}
+
+
+```
+# Initialize a new project
+
+$ git init [projectname]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+
+
+```
+#Initialize from inside a top level directory
+
+$ cd [project-directory]
+$ git init
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```shell
+#Acquire with default repository name
+
+$ git clone [repository-url]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+# Acquire with preferred, optional name
+
+$ git clone [url] [optional-folder-name]
+```
+{% endcapture %}{% include slide-section %}
+
+
 ### Details
 Git provides an easy way to start versioning any prototype, prose or project with a terse command line recipe. Just initialize a local repository and create a top level project directory:
 
-```shell
- For a new project...
-$ git init [projectname]
-$ cd [projectname]
-```
 
-Initialize a repository inside a top level project directory:
-
-```shell
- For an existing project...
-$ cd [existingprojectname]
-$ git init
-```
-
-Acquire a project locally:
-
-```shell
- Acquire with default repository name
-$ git clone [repository-url]
-
- Acquire with preferred, optional name
-$ git clone [url] [optional-folder-name]
-```
 
 ### Video
 <iframe src="//player.vimeo.com/video/88313612" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -129,12 +167,37 @@ $ git clone [url] [optional-folder-name]
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![Versions](../assets/diagrams/commit-versions.svg)
+```shell
+$ git status
+$ git add [filename]
+$ git commit -m "[your description]"
+```
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![Three stages of versioning](../assets/diagrams/commit-three-stage.svg)
+![Versions](../assets/diagrams/commit-versions-01.svg)
 {% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Versions](../assets/diagrams/commit-versions-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Versions](../assets/diagrams/commit-versions-03.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Three stages of versioning](../assets/diagrams/commit-three-stage-01.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Three stages of versioning](../assets/diagrams/commit-three-stage-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Three stages of versioning](../assets/diagrams/commit-three-stage-03.svg)
+{% endcapture %}{% include slide-section %}
+
 
 {% capture lab %}
 1. Create a new file and save it in the repository folder
@@ -143,11 +206,7 @@ $ git clone [url] [optional-folder-name]
 {% endcapture %}{% include lab %}
 
 ### Details
-```shell
-$ git status
-$ git add [filename]
-$ git commit -m "[your description]"
-```
+
 
 ### Videos
 <iframe src="//player.vimeo.com/video/88315552" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -159,8 +218,43 @@ $ git commit -m "[your description]"
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
-![Diff](../assets/diagrams/diff.svg)
+![Diff](../assets/diagrams/diff-01.svg)
 {% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+$ git diff
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Diff](../assets/diagrams/diff-02.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+$ git diff --staged
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+![Diff](../assets/diagrams/diff-03.svg)
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+$ git diff HEAD
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+# By specific file
+
+$ git diff [file-path]
+```
+{% endcapture %}{% include slide-section %}
+
 
 {% capture lab %}
 1. Compare changes of modified files with respect to history
@@ -186,14 +280,14 @@ $ git diff --staged
 The default line-level difference indicators are sometimes insufficient for prose and small variable-name changes. There is, however, an option to instruct Git to perform and highlight intra-line comparisons.
 
 ```shell
- Highlight word changes on lines
+# Highlight word changes on lines
 $ git diff --color-words
 ```
 
 Diff, by default, performs comparisons on all modified files. If inspection of just a subset is called for, `diff` accepts a precise or wildcard-ed filename or path as an option.
 
 ```shell
- By specific file
+# By specific file
 $ git diff [file-path]
 ```
 
@@ -204,6 +298,18 @@ $ git diff [file-path]
 
 {% capture slide %}
 ## Reviewing historical changes
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+$ git log
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+$ git log --oneline
+```
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
@@ -239,7 +345,36 @@ $ git log --patch --color-words
 
 
 {% capture slide %}
-## Organizing history for optimal workflows
+## Organizing history
+## for optimal workflows
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+# Create a new branch from the current one
+
+$ git branch [branch-name]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+# Switch to a specified branch
+
+$ git checkout [branch-name]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+# List all local branches
+
+$ git branch
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+### Merge strategies
 {% endcapture %}{% include slide-section %}
 
 {% capture slide %}
@@ -582,5 +717,3 @@ $ git checkout HEAD@{[n]} -- [path]
 #### Additional Resources
 * [O'Reilly's Mastering Git video series](http://bit.ly/ogitvid)
 * [Git and GitHub LiveLessons (Workshop)](http://www.informit.com/store/git-and-github-livelessons-workshop-9780133991772)
-
-
