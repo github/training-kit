@@ -528,6 +528,15 @@ $ git rebase [base-commit]
 {% endcapture %}{% include slide-section %}
 
 
+
+{% capture slide %}
+```
+$ git pull --rebase
+```
+{% endcapture %}{% include slide-section %}
+
+
+
 {% capture slide %}
 ```
 $ git config branch.autosetuprebase
