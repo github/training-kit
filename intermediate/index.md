@@ -40,14 +40,14 @@ git config core.editor
 ### Details
 Git is configured through name-value pairs saved in an [INI file format](http://en.wikipedia.org/wiki/INI_file). The name-value pairs can be read and written through the `git config` command.
 
-Git's configuration is saved in one of three plain text files and one of three levels and is easily editable with a text editor and portable to other machines by copying the configuration files.
+Git's configuration is saved in one of three plain text files and one of three levels. It is easily editable with a text editor and portable to other machines by copying the configuration files.
 
 #### Identity
 Your name and email address are configured locally in Git and are attached to each commit. Set these accurately to receive proper attribution for your work.
 
 These are the very first Git elements often suggested to set. If not set, Git will fall back to an automatically derived name and email from the host machine's network node name.
 
-To inspect the current settings, individually query two configuration values:
+To see the current settings, individually query two configuration values:
 
 ```shell
 $ git config user.name
@@ -403,7 +403,7 @@ $ git branch
 Typical workflows always begin with a branch, no matter how small or grand the level of effort might be or the number of commits involved.
 
 ```shell
- List branches, identify current brach
+ List branches, identify current branch
 $ git branch
 
  Create a new branch from current branch
@@ -545,7 +545,7 @@ $ git push
 {% endcapture %}{% include slide-section %}
 
 {% capture lab %}
-1. Setup example aliases for command line effiency
+1. Setup example aliases for command line efficiency
 2. Create your own Git command alias and option switch combination
 {% endcapture %}{% include lab %}
 
@@ -561,7 +561,7 @@ $ git config --global alias.lol "log --graph --all --oneline --decorate"
 ```
 
 ```shell
- Shortuct to repository status
+ Shortcut to repository status
 $ git config alias.s "status -s"
 ```
 
@@ -600,7 +600,7 @@ $ git config alias.s "status -s"
 {% endcapture %}{% include lab %}
 
 ### Details
-Files in Git transition through a well-defined states of tracking.
+Files in Git transition through well-defined states of tracking.
 
 #### Adding files
 ```shell
