@@ -5,29 +5,38 @@ byline: Leveraging Git and GitHub from the command line
 redirect_from:
   - ../workbooks/github-intermediate.html
 ---
-{% capture slide %}
-## Configuring your Git environment
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+## Configuring your Git environment
+
+---
+
+---
+
 ```
 git config user.name "Your Name"
 git config user.email "Email Address"
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```bash
 git config color.ui auto
 git config core.autocrlf [input|true]
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```bash
 git config core.editor
 ```
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Verify the current value of your username and email address as known by Git.
@@ -108,23 +117,25 @@ $ git config --list --[scope]
 
 
 
-{% capture slide %}
+---
+
 ## Starting on the command line
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
 
+
+---
 
 ```
 # Initialize a new project
 
 $ git init [projectname]
 ```
-{% endcapture %}{% include slide-section %}
+
+---
 
 
-{% capture slide %}
-
+---
 
 ```
 #Initialize from inside a top level directory
@@ -132,24 +143,29 @@ $ git init [projectname]
 $ cd [project-directory]
 $ git init
 ```
-{% endcapture %}{% include slide-section %}
+
+---
 
 
-{% capture slide %}
+---
+
 ```shell
 #Acquire with default repository name
 
 $ git clone [repository-url]
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```
 # Acquire with preferred, optional name
 
 $ git clone [url] [optional-folder-name]
 ```
-{% endcapture %}{% include slide-section %}
+
+---
 
 
 ### Details
@@ -162,41 +178,57 @@ Git provides an easy way to start versioning any prototype, prose or project wit
 
 
 
-{% capture slide %}
-## Versioning via the command line
-{% endcapture %}{% include slide-section %}
+---
 
-{% capture slide %}
+## Versioning via the command line
+
+---
+
+---
+
 ```shell
 $ git status
 $ git add [filename]
 $ git commit -m "[your description]"
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Versions](../assets/diagrams/commit-versions-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Versions](../assets/diagrams/commit-versions-02.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Versions](../assets/diagrams/commit-versions-03.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Three stages of versioning](../assets/diagrams/commit-three-stage-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Three stages of versioning](../assets/diagrams/commit-three-stage-02.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Three stages of versioning](../assets/diagrams/commit-three-stage-03.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 
 {% capture lab %}
@@ -213,47 +245,63 @@ $ git commit -m "[your description]"
 
 
 
-{% capture slide %}
+---
+
 ## Comparing pending and existing changes
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Diff](../assets/diagrams/diff-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```shell
 $ git diff
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Diff](../assets/diagrams/diff-02.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```shell
 $ git diff --staged
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Diff](../assets/diagrams/diff-03.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```shell
 $ git diff HEAD
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```shell
 # By specific file
 
 $ git diff [file-path]
 ```
-{% endcapture %}{% include slide-section %}
+
+---
 
 
 {% capture lab %}
@@ -296,21 +344,27 @@ $ git diff [file-path]
 
 
 
-{% capture slide %}
-## Reviewing historical changes
-{% endcapture %}{% include slide-section %}
+---
 
-{% capture slide %}
+## Reviewing historical changes
+
+---
+
+---
+
 ```shell
 $ git log
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```shell
 $ git log --oneline
 ```
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Review default commit history output
@@ -344,54 +398,72 @@ $ git log --patch --color-words
 
 
 
-{% capture slide %}
+---
+
 ## Organizing history
 ## for optimal workflows
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```shell
 # Create a new branch from the current one
 
 $ git branch [branch-name]
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```shell
 # Switch to a specified branch
 
 $ git checkout [branch-name]
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ```shell
 # List all local branches
 
 $ git branch
 ```
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ### Merge strategies
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![diagram](../assets/diagrams/merge-fast-forward-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![diagram](../assets/diagrams/merge-fast-forward-02.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![diagram](../assets/diagrams/merge-recursive-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![diagram](../assets/diagrams/merge-recursive-02.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Create a topic branch from `master` or `gh-pages`
@@ -440,17 +512,23 @@ $ git merge [branch]
 
 
 
-{% capture slide %}
+---
+
 ## Interacting with distributed repositories
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Distributed repos](../assets/diagrams/distributed-version-control.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![diagram](../assets/diagrams/fork-structure.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Understand Fork repository model
@@ -540,9 +618,11 @@ $ git push
 
 
 
-{% capture slide %}
+---
+
 ## Crafting shortcuts & efficiencies
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Setup example aliases for command line efficiency
@@ -567,29 +647,41 @@ $ git config alias.s "status -s"
 
 
 
-{% capture slide %}
+---
+
 ## Understanding versioned file lifecycle
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![States of tracking](../assets/diagrams/states-of-tracking-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![States of tracking](../assets/diagrams/states-of-tracking-02.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![States of tracking](../assets/diagrams/states-of-tracking-03.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![States of tracking](../assets/diagrams/states-of-tracking-04.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![States of tracking](../assets/diagrams/states-of-tracking-05.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Understand the tracking states of new, modified, deleted, and renamed paths
@@ -649,9 +741,11 @@ $ git log --stat -M
 
 
 
-{% capture slide %}
+---
+
 ## Undoing any versioned changes
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Use `revert` to generate a new commit undoing history
@@ -688,9 +782,11 @@ $ git reset --hard [commit|branch|tag]
 
 
 
-{% capture slide %}
+---
+
 ## Recovering from anything
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Understand the side effects of `reset` and discarding commit history

@@ -3,20 +3,32 @@ layout: curriculum
 title: GitHub Foundations
 byline: Discovering the GitHub collaboration platform
 redirect_from:
-  - ../workbooks/github-foundations.html
+- ../workbooks/github-foundations.html
 ---
 
-{% capture slide %}
+---
+
 ## Understanding version control
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Gitl logo](../assets/diagrams/git-logo-black.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}![Distributed version control](../assets/diagrams/distributed-version-control.svg){% endcapture %}{% include slide-section %}
+---
 
-{% capture slide %}![What is a commit](../assets/diagrams/what-is-a-commit.svg){% endcapture %}{% include slide-section %}
+---
+
+![Distributed version control](../assets/diagrams/distributed-version-control.svg)
+
+---
+
+---
+
+![What is a commit](../assets/diagrams/what-is-a-commit.svg)
+
+---
 
 {% capture lab %}
 1. Launch Terminal or Git Shell
@@ -64,43 +76,59 @@ The command line version of Git has a very light footprint. For most platforms, 
 
 
 
-{% capture slide %}
+---
+
 ## Surveying the GitHub platform
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![GitHub logo](../assets/diagrams/github-logo-black.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 <span class="mega-octicon octicon-repo"></span>
 #### Repositories
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 <span class="mega-octicon octicon-git-branch"></span>
 #### Branches
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 <span class="mega-octicon octicon-git-pull-request"></span>
 #### Pull Requests
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 <span class="mega-octicon octicon-issue-opened"></span>
 #### Issues
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 <span class="mega-octicon octicon-jersey"></span>
 #### Teams
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 <span class="mega-octicon octicon-organization"></span>
 #### Organizations
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 * Describe the difference between the Git DVCS and GitHub collaboration platform
@@ -123,29 +151,29 @@ The six core concepts in the GitHub ecosystem are:
 * Hosting repositories
 * Collaborating on code, documents, text
 * Controlling access & contributions
-  * Permissions
-  * Forks
-  * Users
-  * Organizations
+* Permissions
+* Forks
+* Users
+* Organizations
 * Tracking assignments, tickets, bugs
 * Hosting supporting documentation (GH-Pages)
-  * https://pages.github.com/
+* https://pages.github.com/
 * Discovering trending technology (Explore)
-  * https://github.com/explore
+* https://github.com/explore
 * Tracking favorite projects (Stars)
-  * https://github.com/stars
+* https://github.com/stars
 * Notifications
 * Watching repositories
 * Subscribing (per thread)
 * Unsubscribing (per thread)
 * Starring repositories
 * Gist
-  * Repos in themselves
-  * Embeddable (use with GH-pages content)
+* Repos in themselves
+* Embeddable (use with GH-pages content)
 * GitHub Flavored Markdown
-  * Basics
-  * Emoji
-  * Checklists (Issues, Gists)
+* Basics
+* Emoji
+* Checklists (Issues, Gists)
 * Cross referencing
 * Commit referencing
 * Issue references
@@ -172,9 +200,11 @@ Sign up for a free GitHub account at [github.com/join](https://github.com/join).
 
 
 
-{% capture slide %}
+---
+
 ## Creating a hosted repository
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 * Visit GitHub.com
@@ -195,9 +225,11 @@ And important decision when creating your repository is in its name. Giving it a
 
 
 
-{% capture slide %}
+---
+
 ## Touring content versioning on GitHub
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Browse to one of your repositories
@@ -220,11 +252,17 @@ The GitHub web interface allows you to interact and perform many file-affecting 
 
 
 
-{% capture slide %}
-## Acquiring repositories locally
-{% endcapture %}{% include slide-section %}
+---
 
-{% capture slide %}![Repository clone process](../assets/diagrams/repo-clone.svg){% endcapture %}{% include slide-section %}
+## Acquiring repositories locally
+
+---
+
+---
+
+![Repository clone process](../assets/diagrams/repo-clone.svg)
+
+---
 
 {% capture lab %}
 * Clone from web (Clone in Desktop button)
@@ -265,11 +303,19 @@ Just as with the Git technology operating on GitHub, local repositories also use
 
 
 
-{% capture slide %}
-## Exploring the GitHub Flow
-{% endcapture %}{% include slide-section %}
+---
 
-{% capture slide %}![What is a branch](../assets/diagrams/what-is-a-branch.svg){% endcapture %}{% include slide-section %}
+## Exploring the GitHub Flow
+
+---
+
+---
+
+### What is a branch
+
+![What is a branch](../assets/diagrams/what-is-a-branch.svg)
+
+---
 
 {% capture lab %}
 1. Using the GitHub web UI, create a branch with an articulate feature name
@@ -294,13 +340,17 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 
 
-{% capture slide %}
-### Contributing with Forks & Pull Requests
-{% endcapture %}{% include slide-section %}
+---
 
-{% capture slide %}
+### Contributing with Forks & Pull Requests
+
+---
+
+---
+
 ![Fork contribution pattern](../assets/diagrams/fork-structure.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Create a Fork of a repository needing contributions
@@ -315,13 +365,17 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 
 
-{% capture slide %}
-## Syncing local and GitHub repos
-{% endcapture %}{% include slide-section %}
+---
 
-{% capture slide %}
+## Syncing local and GitHub repos
+
+---
+
+---
+
 ![Distributed repository interactions](../assets/diagrams/network.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Clone an existing GitHub repo using the GitHub for Desktop application
@@ -346,20 +400,22 @@ git push origin [master|branch]
 
 
 
-{% capture slide %}
+---
+
 ## Visualizing changes with GitHub
-{% endcapture %}{% include slide-section %}
+
+---
 
 ### Details
 GitHub enhances a traditional Git experience with visualizations typically thought of as the realm of desktop applications. Some of the visualizations we can look at today include:
 
 * Comparing/Diff-ing
-  * Code
-  * Prose
-  * Images
-  * Maps
-  * Spreadsheets
-  * 3D models
+* Code
+* Prose
+* Images
+* Maps
+* Spreadsheets
+* 3D models
 * Branch view
 * Branch ahead/behind positions
 * Network graph
@@ -380,21 +436,27 @@ Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub
 
 
 
-{% capture slide %}
+---
+
 ## Using GitHub Pages
-{% endcapture %}{% include slide-section %}
+
+---
 
 
 
-{% capture slide %}
+---
+
 ## Managing projects
-{% endcapture %}{% include slide-section %}
+
+---
 
 
 
-{% capture slide %}
+---
+
 ## Using GitHub Flavored Markdown
-{% endcapture %}{% include slide-section %}
+
+---
 
 ### Details
 A plaintext format for writing prose and documentation. In addition to the [basic formatting options](https://help.github.com/articles/markdown-basics), Markdown files hosted and viewed on GitHub can make use of the following enhancements:
@@ -403,11 +465,12 @@ A plaintext format for writing prose and documentation. In addition to the [basi
 * [Emoji](http://www.emoji-cheat-sheet.com/)
 * [Checklists](https://github.com/blog/1825-task-lists-in-all-markdown-documents) (Issues, Gists)
 
+---
 
-
-{% capture slide %}
 ### Interacting with shortcuts
-{% endcapture %}{% include slide-section %}
+
+---
+
 GitHub, though it is a web application, aims to behave as much like a desktop app as possible. Many of its features are accessible via keyboard shortcuts. While on any GitHub page, press `?` and a context-sensitive help menu will appear. Some of the most frequently used keyboard shortcuts include:
 
 * `?` help
@@ -418,10 +481,11 @@ GitHub, though it is a web application, aims to behave as much like a desktop ap
 * `g` `i` go to issues
 
 
+---
 
-{% capture slide %}
 ## Additional resources
-{% endcapture %}{% include slide-section %}
+
+---
 
 ### Details
 This course covers many introductory and day-to-day uses of Git and GitHub. There are many more resources available to continue your exploration with the technology and platform, and we've included these here for you to explore.
