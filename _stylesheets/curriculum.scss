@@ -34,19 +34,16 @@ table{
 .col-content, .col-toc{
 	transition: padding 300ms, opacity 200ms;
 }
-
 .col-toc{
 	position: fixed;
 	right: -16.66667%;
 	right: 0;
 	opacity: 0;
 }
-
 .shift-left{
 	&.col-content{
 		padding-right: 16.66667%;
 	}
-
 	&.col-toc{
 		right: 0;
 		opacity: 1;
@@ -78,7 +75,6 @@ table{
 		opacity: 1;
 	}
 }
-
 #toc{
   transition: margin 300ms;
 	font-size: .7em;
