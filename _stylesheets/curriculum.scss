@@ -218,11 +218,23 @@ table{
 
 .deck{
 	position: relative;
-	// font-size: 16px;
+	font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif;
+	font-weight: 300;
+	color: $gray-darker;
 
-	// .mega-octicon{
-	// 	font-size: 600%;
-	// }
+	h1,h2,h3,h4,h5,h6,p,ul,li{
+		font-weight: inherit;
+	}
+
+	h2{
+		font-size: 52px;
+	}
+	h3,h4{
+		font-size: 42px;
+	}
+	p{
+		font-size: 20px;
+	}
 
 	#teacher-avatar{
 		img{
@@ -249,18 +261,7 @@ table{
 
 	.slide{
 		width: 100%;
-		background: #ffffff;
 		display: table;
-
-		// h2,h3,h4,h5{
-		// 	text-align: center;
-		// 	font-size: 400%;
-		// }
-
-		// h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
-		// 	margin-left: 0;
-		// 	margin-right: 0;
-		// }
 
 		pre{
 			width: 80%;
