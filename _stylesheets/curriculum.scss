@@ -246,6 +246,9 @@ table{
 		opacity: .5;
 	}
 
+	&>hr{
+		display: none;
+	}
 
 	.slide{
 		width: 100%;

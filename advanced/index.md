@@ -6,17 +6,23 @@ redirect_from:
   - ../workbooks/github-advanced.html
 ---
 
-{% capture slide %}
+---
+
 ## Understanding Git, navigating history
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Git data structure](../assets/diagrams/commit-data-structure.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Commit DAG](../assets/diagrams/commit-dag.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Understand the way Git preserves history and data objects
@@ -82,9 +88,11 @@ $ git log --oneline --left-right master...other
 <iframe src="//player.vimeo.com/video/95811891" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-{% capture slide %}
+---
+
 ## Collaborating on change & releases
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Utilize the command line for branching strategies
@@ -158,9 +166,11 @@ $ git push origin :[tag-name-to-delete]
 
 
 
-{% capture slide %}
+---
+
 ## Ignoring & cleaning up files
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Setup ignore patterns to prevent accidental versioning
@@ -209,9 +219,11 @@ $ git clean -fx
 ### Video
 <iframe src="//player.vimeo.com/video/99804597" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% capture slide %}
+---
+
 ## Mastering shortcuts & efficiencies
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Use built-in, time-saving command shortcuts for committing and branch switching
@@ -283,9 +295,11 @@ $ git config rerere.enable true
 
 
 
-{% capture slide %}
+---
+
 ## Capturing pieces of history
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Capture select commits and generate new history on separate branches
@@ -313,30 +327,42 @@ git checkout [commit] -- [path]
 
 
 
-{% capture slide %}
+---
+
 ## Rewriting and crafting history
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Rebase](../assets/diagrams/rebase-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Rebase](../assets/diagrams/rebase-02.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Rebase](../assets/diagrams/rebase-03.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 
-{% capture slide %}
+---
+
 ![Rebase](../assets/diagrams/rebase-interactive-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![Rebase](../assets/diagrams/rebase-interactive-02.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 
 {% capture lab %}
@@ -396,9 +422,11 @@ $ git rebase -i --autosquash [ref]
 
 
 
-{% capture slide %}
+---
+
 ## Reviewing & synchronizing
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Review GitHub pull requests from the command line
@@ -479,9 +507,11 @@ $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upst
 
 
 
-{% capture slide %}
+---
+
 ## Filtering histories & externalizing dependencies
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Separate versioned content in a repository into a separate one
@@ -524,9 +554,11 @@ $ git submodule update --init --recursive
 
 
 
-{% capture slide %}
+---
+
 ## Signing work
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Use a GPG key to sign a specific commit
@@ -571,9 +603,11 @@ $ git tag -v [tag-name]
 
 
 
-{% capture slide %}
+---
+
 ## Using GitHub CLI and the API
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Create a GitHub (public or private) repository from the command line
@@ -625,9 +659,11 @@ $ curl -n <URL>
 There are a number of libraries for interfacing with the GitHub API, all of which are available at [octokit.github.io](http://octokit.github.io/)
 
 
-{% capture slide %}
+---
+
 ## Diff & merge tool
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Setup a preferred visual tool for diff and merge operations
@@ -690,9 +726,11 @@ A sample `.gitconfig` file:
 
 
 
-{% capture slide %}
+---
+
 ## Additional resources
-{% endcapture %}{% include slide-section %}
+
+---
 
 ### Details
 This course covers many advanced uses of Git and GitHub, and yet there is still more to explore. We've included some of the most useful resources for our students with insatiable appetites.

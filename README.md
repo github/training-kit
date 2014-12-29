@@ -14,17 +14,27 @@ We know that many of the users of this repository are just focused on getting th
 
 ## Contribute
 
-We’re eager to have your help in improving this kit. If you have an idea for a change, start by opening a new [Issue](https://github.com/github/training-kit/issues) so we can discuss and help guide your contribution to the right location. If you have corrections or kit contributions, we'd be glad to receive them via a [Pull Request](https://help.github.com/articles/using-pull-requests). For kit contributions, we ask you to share in our mindset of minimalism.  We aim to keep the workbook and slides a synchronized pair.
+We’re eager to have your help in improving this kit. If you have an idea for a change, start by opening a new [Issue](https://github.com/github/training-kit/issues) so we can discuss and help guide your contribution to the right location. If you have corrections or kit contributions, we'd be glad to receive them via a [Pull Request](https://help.github.com/articles/using-pull-requests). For kit contributions, we ask you to share in our mindset of minimalism.
 
-The educational content exists in two top level directories:
+The slides align with the [Foundations](), [Intermediate](), and [Advanced]() classes delivered by the GitHub Training team.
 
-1. [`slides`](https://github.com/github/training-kit/tree/master/slides)
-2. [`workbooks`](https://github.com/github/training-kit/tree/master/workbooks)
+The three class' slides reside at top-level directories:
+
+- [`foundations/`](https://github.com/github/training-kit/tree/master/foundations)
+- [`intermediate/`](https://github.com/github/training-kit/tree/master/intermediate)
+- [`advanced/`](https://github.com/github/training-kit/tree/master/advanced)
 
 
 ## File Format
 
-The majority of the site materials are written in [Markdown](http://whatismarkdown.com), a [lightweight markup language](http://en.wikipedia.org/wiki/Lightweight_markup_language) supported in the GitHub web application user interface. There is a syntax guide to the original [Markdown format](http://daringfireball.net/projects/markdown/syntax) and also [GitHub Flavored Markdown](http://github.github.com/github-flavored-markdown/).  This repository is based on [Hydeslides](https://github.com/jordanmccullough/HydeSlides). That project offers additional information on the file and directory structure.
+The class materials are written in [Markdown](http://whatismarkdown.com), a [lightweight markup language](http://en.wikipedia.org/wiki/Lightweight_markup_language) supported in the GitHub web application user interface. There is a syntax guide to the original [Markdown format](http://daringfireball.net/projects/markdown/syntax) and also [GitHub Flavored Markdown](http://github.github.com/github-flavored-markdown/).
+
+The class material content possess two specialized uses of Markdown for slide-like rendering and formatting:
+
+- Full-screen slides are preceded with a `---` and followed by `---`
+- Step-by-step *lab* sections are wrapped with `{% capture lab %}` and `{% endcapture %}{% include lab %}`
+
+ This repository is based on [Hydeslides](https://github.com/jordanmccullough/HydeSlides). That project offers additional information on the file and directory structure.
 
 ## Build
 

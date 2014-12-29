@@ -131,9 +131,14 @@ $(function(){
 	});
 
 	function updateSlideSize(){
-		var w = window.innerWidth;
-		var h = window.innerHeight;
-		$(".slide").css("height", h);
+		var h = window.innerHeight,
+				even = $("hr:even");
+
+		even.each(function(index){
+			$(this).nextUntil("hr").wrapAll("<div class='slide'><div class='alignment'></div>");
+		});
+
+		$(".slide").css("height", h + "px");
 	}
 
 	//Time toggle keybinding
