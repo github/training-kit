@@ -225,6 +225,7 @@ table{
 	.slide{
 		h2{
 			font-size: 52px;
+			margin-bottom: 30px;
 		}
 		h3,h4{
 			font-size: 42px;
@@ -262,6 +263,18 @@ table{
 	.slide{
 		width: 100%;
 		display: table;
+
+		a[href^="http://"],
+		a[href^="https://"]{
+			&:after{
+				content: "";
+				margin-left: 0;
+			}
+		}
+
+		p{
+			padding: 0 20px;
+		}
 
 		pre{
 			width: 80%;
