@@ -20,13 +20,8 @@ $(function(){
 		{
 			url: "https://api.github.com/users/"+username,
 			success: function(data, textStatus, jqXHR){
-
-				$("<span/>",
-				{
-					class: "teacher-name",
-					text: data.name
-				}).appendTo("#teacher-name");
-
+				$("#teacher-name").html(data.name);
+				
 				$("<span/>",
 				{
 					text: data.login
