@@ -2,15 +2,18 @@
 
 ---
 
+// Import external dependencies
 @import "octicons/octicons/sprockets-octicons.scss";
 @import "bootstrap-sass/lib/bootstrap.scss";
 
+// Incorporate Bootstrap table striping
 table{
 	@extend .table;
 	@extend .table-striped;
 	@extend .table-bordered;
 }
 
+// Octicon mixin
 @mixin octicon-link($char){
 	font: normal normal 1em octicons;
 	text-decoration: none;
@@ -22,7 +25,7 @@ table{
 	}
 }
 
-
+// Custom columns for hide/show of TOC
 .col-content, .col-toc{
 	transition: padding 300ms, opacity 200ms;
 }
@@ -68,7 +71,7 @@ table{
 	padding-top: 10px;
 }
 
-
+// Custom components
 .time-amount{
 	text-align: center;
 }
