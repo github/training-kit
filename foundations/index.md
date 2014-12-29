@@ -118,17 +118,18 @@ The command line version of Git has a very light footprint. For most platforms, 
 
 ---
 
+<span class="mega-octicon octicon-organization"></span>
+#### Organizations
+
+---
+
+---
+
 <span class="mega-octicon octicon-jersey"></span>
 #### Teams
 
 ---
 
----
-
-<span class="mega-octicon octicon-organization"></span>
-#### Organizations
-
----
 
 {% capture lab %}
 * Describe the difference between the Git DVCS and GitHub collaboration platform
