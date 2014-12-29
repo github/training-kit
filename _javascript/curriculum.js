@@ -132,20 +132,13 @@ $(function(){
 
 	function updateSlideSize(){
 		var h = window.innerHeight,
-				odd = $("hr:odd")
 				even = $("hr:even");
-
-		odd.each(function(index){
-			// $(this).append("close");
-
-		});
 
 		even.each(function(index){
 			$(this).nextUntil("hr").wrapAll("<div class='slide'><div class='alignment'></div>");
 		});
 
 		$(".slide").css("height", h + "px");
-
 	}
 
 	//Time toggle keybinding
