@@ -62,36 +62,6 @@ table{
 	}
 }
 
-
-.fade-out{
-	background: none !important;
-	margin-left: 100%;
-	position: fixed;
-	left: -35px !important;
-
-	.octicon{
-		font-size: 14px !important;
-	}
-
-	&.timer-wrapper{
-		background-color: none !important;
-	}
-
-	.timer{
-		margin: 0 0 !important;
-	}
-
-	.timer-toggle{
-		padding-left: 0px !important;
-		opacity: .3;
-		text-align: left !important;
-	}
-
-	.timer-amount{
-		visibility: hidden;
-	}
-}
-
 .display-controls{
 	border-top: solid 2px $gray-lighter;
 	margin-top: 5px;
@@ -99,6 +69,12 @@ table{
 }
 
 
+.time-amount{
+	text-align: center;
+}
+.time-left{
+	font-size: 88px;
+}
 
 .timer-check{
 	visibility: hidden;
@@ -135,7 +111,6 @@ table{
 		width: 14px;
 		height: 14px;
 		box-shadow: 0 0 0 1px $gray-light;
-		// padding-top: 1px;
 	}
 }
 
@@ -218,11 +193,11 @@ table{
 
 .deck{
 	position: relative;
-	font-size: 16px;
+	// font-size: 16px;
 
-	.mega-octicon{
-		font-size: 600%;
-	}
+	// .mega-octicon{
+	// 	font-size: 600%;
+	// }
 
 	#teacher-avatar{
 		img{
@@ -252,15 +227,15 @@ table{
 		background: #ffffff;
 		display: table;
 
-		h2,h3,h4,h5{
-			text-align: center;
-			font-size: 400%;
-		}
+		// h2,h3,h4,h5{
+		// 	text-align: center;
+		// 	font-size: 400%;
+		// }
 
-		h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
-			margin-left: 0;
-			margin-right: 0;
-		}
+		// h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
+		// 	margin-left: 0;
+		// 	margin-right: 0;
+		// }
 
 		pre{
 			width: 80%;
@@ -276,16 +251,6 @@ table{
 			}
 		}
 
-		ul,ol{
-			display: inline-block;
-			text-align: left;
-		}
-		.lab{
-			text-align: left;
-			ul, ol{
-					display: block;
-			}
-		}
 
 		.alignment{
 			display: table-cell;
