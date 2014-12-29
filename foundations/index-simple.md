@@ -259,7 +259,9 @@ The GitHub web interface allows you to interact and perform many file-affecting 
 ---
 
 ---
+
 ![Repository clone process](../assets/diagrams/repo-clone.svg)
+
 ---
 
 {% capture lab %}
@@ -312,6 +314,7 @@ Just as with the Git technology operating on GitHub, local repositories also use
 ### What is a branch
 
 ![What is a branch](../assets/diagrams/what-is-a-branch.svg)
+
 ---
 
 {% capture lab %}
