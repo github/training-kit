@@ -222,14 +222,30 @@ table{
 		font-weight: inherit;
 	}
 
-	h2{
-		font-size: 52px;
+	.slide{
+		h2{
+			font-size: 52px;
+		}
+		h3,h4{
+			font-size: 42px;
+		}
+		p,ul{
+			font-size: 20px;
+			color: $gray;
+		}
 	}
-	h3,h4{
-		font-size: 42px;
-	}
-	p{
-		font-size: 20px;
+
+	#teacher{
+		.octicon{
+			color: $brand-primary;
+		}
+		span{
+			margin: auto 4px;
+		}
+
+		.teacher-badges{
+			margin-top: 10px;
+		}
 	}
 
 	#teacher-avatar{
@@ -237,21 +253,6 @@ table{
 			height: 300px;
 			width: 300px;
 		}
-	}
-
-	.teacher-name{
-		color: $brand-primary;
-		font-size: 300%;
-	}
-
-	#teacher-username,#teacher-email, #teacher-organization, #teacher-location{
-		margin: auto .75em;
-		opacity: .6;
-	}
-
-	.teacher-badges{
-		margin: 1em 0;
-		opacity: .5;
 	}
 
 
@@ -265,8 +266,8 @@ table{
 			font-size: 120%;
 			text-align: left;
 			margin: 0 auto;
-			background: #222;
-			color: #f9f9f9;
+			background: $gray-darker;
+			color: $gray-lighter;
 
 			code{
 				font-size: 1.5em;
