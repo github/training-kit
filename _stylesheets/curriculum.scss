@@ -2,15 +2,23 @@
 
 ---
 
+// Import external dependencies
 @import "octicons/octicons/sprockets-octicons.scss";
 @import "bootstrap-sass/lib/bootstrap.scss";
 
+
+body{
+	background: $body-bg;
+}
+
+// Incorporate Bootstrap table striping
 table{
 	@extend .table;
 	@extend .table-striped;
 	@extend .table-bordered;
 }
 
+// Octicon mixin
 @mixin octicon-link($char){
 	font: normal normal 1em octicons;
 	text-decoration: none;
@@ -22,30 +30,44 @@ table{
 	}
 }
 
-
+// Custom columns for hide/show of TOC
 .col-content, .col-toc{
 	transition: padding 300ms, opacity 200ms;
 }
-
 .col-toc{
 	position: fixed;
 	right: -16.66667%;
 	right: 0;
 	opacity: 0;
 }
-
 .shift-left{
 	&.col-content{
 		padding-right: 16.66667%;
 	}
-
 	&.col-toc{
 		right: 0;
 		opacity: 1;
 	}
 }
 
+// Custom Octicon styling
+.mega-octicon{
+	font-size: 110px;
+	color: $brand-primary;
 
+	&:after{
+		content: "";
+		display: block;
+		width: 170px;
+		height: 170px;
+		border: solid 1px $gray-light;
+		border-radius: 50%;
+		padding: 20px;
+		margin-top: -142px;
+	}
+}
+
+// Table of contents
 #toc-wrapper{
 	opacity: .5;
 	transition: all 200ms;
@@ -53,42 +75,11 @@ table{
 		opacity: 1;
 	}
 }
-
 #toc{
   transition: margin 300ms;
 	font-size: .7em;
 	a{
 		padding: 5px;
-	}
-}
-
-
-.fade-out{
-	background: none !important;
-	margin-left: 100%;
-	position: fixed;
-	left: -35px !important;
-
-	.octicon{
-		font-size: 14px !important;
-	}
-
-	&.timer-wrapper{
-		background-color: none !important;
-	}
-
-	.timer{
-		margin: 0 0 !important;
-	}
-
-	.timer-toggle{
-		padding-left: 0px !important;
-		opacity: .3;
-		text-align: left !important;
-	}
-
-	.timer-amount{
-		visibility: hidden;
 	}
 }
 
@@ -98,7 +89,13 @@ table{
 	padding-top: 10px;
 }
 
-
+// Custom components
+.time-amount{
+	text-align: center;
+}
+.time-left{
+	font-size: 88px;
+}
 
 .timer-check{
 	visibility: hidden;
@@ -135,7 +132,6 @@ table{
 		width: 14px;
 		height: 14px;
 		box-shadow: 0 0 0 1px $gray-light;
-		// padding-top: 1px;
 	}
 }
 
@@ -218,10 +214,38 @@ table{
 
 .deck{
 	position: relative;
-	font-size: 16px;
+	font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif;
+	font-weight: 300;
+	color: $gray-darker;
 
-	.mega-octicon{
-		font-size: 600%;
+	h1,h2,h3,h4,h5,h6,p,ul,li{
+		font-weight: inherit;
+	}
+
+	.slide{
+		h2{
+			font-size: 52px;
+		}
+		h3,h4{
+			font-size: 42px;
+		}
+		p,ul{
+			font-size: 20px;
+			color: $gray;
+		}
+	}
+
+	#teacher{
+		.octicon{
+			color: $brand-primary;
+		}
+		span{
+			margin: auto 4px;
+		}
+
+		.teacher-badges{
+			margin-top: 10px;
+		}
 	}
 
 	#teacher-avatar{
@@ -231,39 +255,13 @@ table{
 		}
 	}
 
-	.teacher-name{
-		color: $brand-primary;
-		font-size: 300%;
-	}
-
-	#teacher-username,#teacher-email, #teacher-organization, #teacher-location{
-		margin: auto .75em;
-		opacity: .6;
-	}
-
-	.teacher-badges{
-		margin: 1em 0;
-		opacity: .5;
-	}
-
 	&>hr{
 		display: none;
 	}
 
 	.slide{
 		width: 100%;
-		background: #ffffff;
 		display: table;
-
-		h2,h3,h4,h5{
-			text-align: center;
-			font-size: 400%;
-		}
-
-		h1,h2,h3,h4,h5,h6,p,ul,pre,svg{
-			margin-left: 0;
-			margin-right: 0;
-		}
 
 		pre{
 			width: 80%;
@@ -271,24 +269,14 @@ table{
 			font-size: 120%;
 			text-align: left;
 			margin: 0 auto;
-			background: #222;
-			color: #f9f9f9;
+			background: $gray-darker;
+			color: $gray-lighter;
 
 			code{
 				font-size: 1.5em;
 			}
 		}
 
-		ul,ol{
-			display: inline-block;
-			text-align: left;
-		}
-		.lab{
-			text-align: left;
-			ul, ol{
-					display: block;
-			}
-		}
 
 		.alignment{
 			display: table-cell;

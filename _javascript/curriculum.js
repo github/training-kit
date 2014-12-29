@@ -20,13 +20,8 @@ $(function(){
 		{
 			url: "https://api.github.com/users/"+username,
 			success: function(data, textStatus, jqXHR){
-
-				$("<span/>",
-				{
-					class: "teacher-name",
-					text: data.name
-				}).appendTo("#teacher-name");
-
+				$("#teacher-name").html(data.name);
+				
 				$("<span/>",
 				{
 					text: data.login
@@ -143,24 +138,18 @@ $(function(){
 
 	//Time toggle keybinding
 	$(".timer-label").click(function(){
-		$(".timer-wrapper").toggleClass("fade-out");
-		$(".timer-amount").show();
-		resetTimer();
-	});
-	$(".timer-exit").click(function(){
-		$(".timer-wrapper").toggleClass("fade-out");
-		$("#timer-check").removeAttr("checked");
-		// $(".timer-amount").();
 		resetTimer();
 	});
 	$("#start-stop").click(function(){
+
 		var timeLeftDisplay = $("#time-left")
 		var min = $("#minutes").attr("value");
 		var duration = min*60;
 
 		resetTimer();
 
-		$(".timer-amount").hide();
+		$(".time-amount").hide();
+		$("#start-stop").hide();
 
 		timeLeftInterval = setInterval(function(){
 			timeLeftDisplay.html( Math.floor((duration)/60) + ":" + (duration%60 < 10 ? "0"+duration%60:duration%60) );
@@ -173,6 +162,8 @@ $(function(){
 	});
 	function resetTimer(){
 		clearInterval(timeLeftInterval);
+		$("#start-stop").show();
+		$(".time-amount").show();
 		$("#time-left").html("");
 	}
 

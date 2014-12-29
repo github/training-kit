@@ -4,12 +4,12 @@ leadingpath: ../
 ---
 
 <!-- Modal -->
-<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="timerModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Help / Shortcuts</h4>
+        <h4 class="modal-title" id="timerModalLabel">Help / Shortcuts</h4>
       </div>
       <div class="modal-body">
         <table>
@@ -26,7 +26,7 @@ leadingpath: ../
             <td>Hide/show table of contents</td>
           </tr>
         </table>
-        
+
         <table>
           <tr>
             <th>URL Command</th>
@@ -48,16 +48,19 @@ leadingpath: ../
   </div>
 </div>
 
-<div class="timer-wrapper fade-out">
-  <div class="timer">
-    <div class="timer-exit"><span class="octicon octicon-x"></span></div>
-    <div class="timer-amount">
-      <input type="number" id="minutes" name="minutes" min="1" max="20" value="5" placeholder="min" class="form-control">
-      <!-- <input type="number" id="seconds" name="seconds" min="1" max="60" value="0" placeholder="sec" class="form-control"> -->
-      <button id="start-stop" type="submit" class="btn btn-default">Start</button>
-    </div>
-    <div class="timer-content">
-      <span class="time-left" id="time-left"></span>
+
+
+<!-- Modal -->
+<div class="modal fade" id="timerModal" tabindex="-1" role="dialog" aria-labelledby="timerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content text-center">
+      <input type="number" id="minutes" name="minutes" min="1" max="60" value="5" placeholder="min" class="form-control time-amount">
+      <div class="time-left" id="time-left"></div>
+
+      <div class="modal-footer">
+        <button id="start-stop" type="submit" class="btn btn-default">Start</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
 </div>
@@ -67,7 +70,8 @@ leadingpath: ../
     <div class="alignment">
       <div id="teacher-avatar" class=""></div>
       <div class="" id="teacher-info">
-        <div id="teacher-name"></div>
+
+        <h3 id="teacher-name"></h3>
 
         <span id="teacher-username">
           <span class="octicon octicon-octoface"></span>
@@ -121,7 +125,7 @@ leadingpath: ../
         <li>
           <div class="timer-toggle"></div>
           <input type="checkbox" name="timer-check" id="timer-check" class="timer-check" value="true">
-          <label for="timer-check" class="timer-label">Timer</label>
+          <label for="timer-check" class="timer-label" data-toggle="modal" data-target="#timerModal">Timer</label>
         </li>
       </ul>
     </div>
