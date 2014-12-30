@@ -209,6 +209,8 @@ Sign up for a free GitHub account at [github.com/join](https://github.com/join).
 
 ## Creating a hosted repository
 
+Publishing your versioned documents and sharing **projects** on the [GitHub](https://github.com) platform.
+
 ---
 
 {% capture lab %}
