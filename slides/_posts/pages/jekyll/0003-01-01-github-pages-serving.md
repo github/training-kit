@@ -1,7 +1,7 @@
 ---
 chapter: "Jekyll"
 cover: true
-layout: hydeside
+
 title: GitHub Pages Serving
 tags:
   - "pages/jekyll"
