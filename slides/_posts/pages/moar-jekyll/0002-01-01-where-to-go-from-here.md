@@ -1,7 +1,7 @@
 ---
 chapter: "Moar Jekyll!"
 cover: true
-layout: hydesides
+
 tags:
   - "pages/moar-jekyll"
 ---

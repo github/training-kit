@@ -1,7 +1,7 @@
 ---
 chapter: "Template Data"
 cover: true
-layout: hydesides
+
 tags:
   - "pages/template-data"
 ---
