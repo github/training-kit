@@ -1,7 +1,7 @@
 ---
 chapter: "Getting Started"
 cover: true
-layout: hydeside
+
 tags:
   - "pages/getting-started"
 ---
