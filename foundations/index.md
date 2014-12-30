@@ -82,7 +82,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 
 ## Surveying the GitHub platform
 
-Discovery the flexibility of preserving version controlled work, the simplicity of workflows, and **collaborating** with others all in one ecosystem.
+Discovery the flexibility of preserving version controlled files and the simplicity of **collaboration** workflows all in one ecosystem.
 
 ---
 
