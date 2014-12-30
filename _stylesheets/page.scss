@@ -201,6 +201,12 @@ footer {
   -moz-column-gap: 4em;
   column-gap: 4em;
 
+	h2, h3, table{
+		-webkit-column-span: all;
+		-moz-column-span: all;
+		column-span: all;
+	}
+
 	h1, h1+p{
 		display: none;
 	}
