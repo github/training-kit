@@ -1,113 +1,95 @@
 ---
 layout: cheat-sheet
-title: Transitioning from Subversion to Git and GitHub
-byline: When migrating from Subversion to Git, there's a vocabulary and command set to learn, in addition to the new capabilities only afforded by a DVCS such as Git. This cheat sheet aims to help you in your transition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.
+title: Subversion to Git Migration
+byline: When migrating from Subversion to Git, there’s a vocabulary and command set to learn, in addition to the new capabilities only afforded by Git. This cheat sheet aims to help you in your transition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.
 ---
-
-# Transitioning from Subversion to Git and GitHub
-
-When migrating from Subversion to Git, there's a vocabulary and command set to learn, in addition to the new capabilities only afforded by a DVCS such as Git. This cheat sheet aims to help you in your transition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.
-
-## Vocabulary
-
-| Git command | SVN | SVN equivalent | Git Behavior |
-|---|---|---|---|
-| `status` | ✓ |  | Report the state of working tree |
-| `add` | ✓ |  | Required for each path before making a commit |
-| `commit` | ✓ |  | Store prepared changes in local revision history |
-| `rm` | ✓ | `rm`, `delete` | Prepare paths for deletion in next commit |
-| `mv` | ✓ | `move` | Prepare relocated content for next commit |
-| `branch` | ✓ |  | Create local context for commits |
-| `checkout` | ✓ |  | Switch branches, or rewrite working tree from commit |
-| `merge` | ✓ |  | Join branch histories and changes to working tree |
-| `log` | ✓ |  | No network required |
-| `clone` | ✗ | `checkout` | Acquire the entire history of a project locally for the first time |
-| `push` | ✗ | `commit` | Upload commit history to GitHub/centralized Git host |
-| `pull` | ✗ |  | Download and integrate GitHub repository history with local one |
-| `fetch` | ✗ |  | Download GitHub repository history with no other action  |
-
-**Key:** ✓ yes, ✗ no
-
-## Leveraging Git's support of SVN
-During a VCS change, there may be a need to begin using Git locally while the hosted repositories remain under Subversion control. The `git svn` command and sub-commands provide the ability to interact with Subversion's repositories while using all the benefits of Git on the command line or with graphical clients.
-
-Acquire an SVN repository, with a resulting Git repository locally:
-
-`git svn clone [svn-repo-url]`
-
-**Note:** Keep in mind the *layout* of the SVN repository and whether this follows the standard pattern or not. If the Subversion repository follows the traditional `trunk`, `branches`, and `tags` pattern, supply the `--std-layout` option. When the Subversion repository is non-standard or organized in a more custom structure, the following options switches should be specified during the clone:
-
-* `-T [trunk]` for alternate main source convention
-* `-b [branches]` for alternate branch location
-* `-t [tags]` for alternate tag structure location
-
-Once the clone operation completes, you can proceed with any standard Git interactions, commands and processes.
-
-## Synchronizing with SVN repository
-
-Once local history within a `git svn clone` repository has occurred, the commits must be published to the Subversion repository.
-
-`git svn dcommit`
-
-If the Subversion repository has commits not yet on the local Git-equivalent, a `rebase` must first be performed.
-
-`git svn rebase`
-
-Keep in mind this rewrites local Git history and your Git commit refs will be different than before the command is run.
-
-## Subversion tooling bridge via GitHub
-
-For users familiar with Subversion toolsets and clients, [GitHub fully supports and bridges communications to the central repository](https://help.github.com/articles/support-for-subversion-clients/). All Subversion commits directed at a GitHub hosted repository will be automatically converted to Git commits.
-
-* [Topics about branch strategies with SVN](https://github.com/blog/1178-collaborating-on-github-with-subversion)
-* Patterns for updating `trunk` or GitHub default branch equivalent
-
 
 ## Migrating
 
-The use of `git svn` should be a temporary bridge and complete migration to Git repositories for both local and upstream destinations is optimal.
+### GitHub importer
 
-The most lightweight approach is by utilizing `git svn` as a one-time conversion from Subversion to Git repository. To migrate a Subversion repository, several aspects must be ensured:
+For Internet-accessible projects, GitHub.com provides Importer for automatic migration and repository creation from Subversion, Team Foundation Server, Mercurial, or alternatively-hosted Git version controlled projects.
 
-* Subversion commits cease prior to initiating the process
-* One machine serves as intermediary during conversion
-* GitHub "upstream" repository initialized and ready to receive history, branches, tags
+The process is as simple, needing only you to sign into your GitHub account, if you aren’t already, entering your existing project’s version control URL in the repository field, and initiating the conversion.
 
-### Git-SVN conversion method
-* Create email/username mapping file
-* Begin `git svn clone`
-* Add `git remote add origin [GitHub-URL]`
+Depending on the detected version control system, Importer may request additional information for migration. This includes a mapping file for associating Subversion usernames with Git fields.
 
-Run each `ref` publish separately:
+Begin migrating repositories by visiting the Importer home page:
 
-* Run `git push --all origin`
-* Run `git push --tags origin`
+[https://importer.github.com](https://importer.github.com)
 
-Or upload all `ref`s (branches, tags,) to upstream:
+### SVN2Git Utility
 
-* `git push --mirror origin`
+When access limitations or non-public Subversion repositories need porting to Git, the SVN2Git utility is the command line utility of choice and provides control through every step of the process.
 
-### SVN2Git method
+Subversion presents distinct differences in structure to that of a Git repository, and SVN2Git provides the flexibility and configuration for traditional and custom Subversion layouts. This ensures the resulting Git repository aligns with standard best practices for commits, branches, and tags for the entire project’s history.
 
-* Install Ruby Gem [SVN2Git](https://github.com/nirvdrum/svn2git)
-* Identify the projects in the Subversion repository
-* Run `svn list [svn-repo-url]`
-* Start `svn2git [repo-root|repo-root/project]`
+Notable features of SVN2Git include:
 
-Considerations on migration:
+- Converting all SVN conventions to traditional Git structure
+- Providing SVN users field to  name and email data in Git commits
+- Permiting exclusion patterns for precise Git repository content
 
-* Convert "flat" history across all projects
-* Utilize Git `filter-branch --subdirectory-filter`
-* Migrate on a project-by-project basis
-* Use `--trunk`, `--nobranches`, `--notags` or `--rootistrunk` for non-standard layouts
-* Limit history from starting point ``--revision <<starting_rev>>``, or range `--revision <<start:end>>`
+Learn more about SVN2Git at the project’s official home page:
 
-https://github.com/nirvdrum/svn2git
+[https://github.com/nirvdrum/svn2git](https://github.com/nirvdrum/svn2git)
 
-### GitHub importer (Porter) method
-* [Read the import tool documentation](https://help.github.com/articles/importing-from-other-version-control-systems-to-github/)
-* Expose the Subversion repository publicly
-* [Visit the GitHub import tool page](https://porter.github.com/new)
-* Point the import tool at your Subversion, TFS, or Mercurial repository
-* Create the username mappings
-* Wait for the tool to work in the background and complete the conversion
+
+## Bridging
+
+### Leveraging Git’s support of SVN
+
+Often times, during a transition to Git, the Subversion infrastructure remains in place while users become acquianted with local Git repository interactions, local workflows, and desktop applications.
+
+The `git svn` command permits users to synchronize with a centralized Subversion repository host while taking advantage of all the benefits local Git  command line and graphical clients have to offer.
+
+To acquire a Subversion repository as a resulting local Git repository, download the project in its entirety with this command:
+
+```
+git svn clone [svn-repo-url] --std-layout
+```
+
+Make certain you are familiar with the targeted Subversion repository’s structure and whether it follows the standard layout or not. For non-traditional `trunk`, `branches`, and `tags` layouts, the following option switches should be specified during the `svn clone`:
+
+- `T [trunk]` for alternate main source convention
+- `b [branches]` for alternate branch location
+- `t [tags]` for alternate tag structure location
+
+Once the clone operation completes, you can proceed with any local Git interactions on the command line or with graphical clients.
+
+### Synchronizing with Subversion
+
+Publishing local Git history back to a central Subversion repository acquired with git svn clone is performed with one command:
+
+```
+git svn dcommit
+```
+
+If the hosted Subversion repository’s history possesses commits not yet in the local Git repository,  the `dcommit` operation will be rejected until the commits are acquired with this command:
+
+```
+git svn rebase
+```
+
+Keep in mind this action rewrites your local Git history and your commit identifiers will be different.
+
+
+## Understanding
+
+Subversion and Git share similar vocabularies, but the commonality often is only is command names. Behavior and functionality are quite distinct given the unique qualities Git provides as a distributed version control system when compared to the centralized aspects of Subversion.
+
+
+| SVN command     | Git command | Git behavior                                                          |
+| ---             | ---         | ---                                                                   |
+| `status`        | `status`    | Report the state of working tree                                      |
+| `add`           | `add`       | Required for each path before making a commit                         |
+| `commit`        | `commit     | Store prepared changes in local revision history                      |
+| `rm`, `delete   | `rm`        | Prepare paths for deletion in next commit                             |
+| `move`          | `mv`        | Prepare relocated content for next commit                             |
+| `checkout`      | `clone`     | Acquire the entire history of a project locally for the first tim     |
+|                 | `branch`    | Create local context for commits                                      |
+|                 | `merge`     | Join branch histories and changes to working tree                     |
+|                 | `log`       | No network required                                                   |
+|                 | `push`      | Upload commit history to GitHub/centralized Git host                  |
+|                 | `pull`      | Download and integrate GitHub repository history with local on        |
+|                 | `fetch`     | Download GitHub repository history with no other action               |
