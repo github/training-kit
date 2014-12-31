@@ -4,8 +4,8 @@ title: Subversion to Git Migration
 byline: When migrating from Subversion to Git, there’s a vocabulary and command set to learn, in addition to the new capabilities only afforded by Git. This cheat sheet aims to help you in your transition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.
 ---
 
+{% capture migration %}
 ## Migrating
-
 ### GitHub importer
 
 For Internet-accessible projects, GitHub.com provides Importer for automatic migration and repository creation from Subversion, Team Foundation Server, Mercurial, or alternatively-hosted Git version controlled projects.
@@ -33,8 +33,13 @@ Notable features of SVN2Git include:
 Learn more about SVN2Git at the project’s official home page:
 
 [https://github.com/nirvdrum/svn2git](https://github.com/nirvdrum/svn2git)
+{% endcapture %}
 
+<div class="col-md-6">
+{{ migration | markdownify }}
+</div>
 
+{% capture bridging %}
 ## Bridging
 
 ### Leveraging Git’s support of SVN
@@ -72,6 +77,11 @@ git svn rebase
 ```
 
 Keep in mind this action rewrites your local Git history and your commit identifiers will be different.
+{% endcapture %}
+
+<div class="col-md-6">
+{{ bridging | markdownify }}
+</div>
 
 
 ## Understanding
