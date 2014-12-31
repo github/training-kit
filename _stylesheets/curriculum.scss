@@ -50,23 +50,6 @@ table{
 	}
 }
 
-// Custom Octicon styling
-.mega-octicon{
-	font-size: 110px;
-	color: $brand-primary;
-
-	&:after{
-		content: "";
-		display: block;
-		width: 170px;
-		height: 170px;
-		border: solid 1px $gray-light;
-		border-radius: 50%;
-		padding: 20px;
-		margin-top: -142px;
-	}
-}
-
 // Table of contents
 #toc-wrapper{
 	opacity: .5;
@@ -232,6 +215,23 @@ table{
 		p,ul{
 			font-size: 20px;
 			color: $gray;
+		}
+
+		// Custom Octicon styling
+		.mega-octicon{
+			font-size: 110px;
+			color: $brand-primary;
+
+			&:after{
+				content: "";
+				display: block;
+				width: 170px;
+				height: 170px;
+				border: solid 1px $gray-light;
+				border-radius: 50%;
+				padding: 20px;
+				margin-top: -142px;
+			}
 		}
 	}
 
