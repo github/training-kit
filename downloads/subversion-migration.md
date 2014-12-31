@@ -93,8 +93,8 @@ Subversion and Git share similar vocabularies, but the commonality often is only
 | ---             | ---         | ---                                                                   |
 | `status`        | `status`    | Report the state of working tree                                      |
 | `add`           | `add`       | Required for each path before making a commit                         |
-| `commit`        | `commit     | Store prepared changes in local revision history                      |
-| `rm`, `delete   | `rm`        | Prepare paths for deletion in next commit                             |
+| `commit`        | `commit`     | Store prepared changes in local revision history                      |
+| `rm`, `delete`   | `rm`        | Prepare paths for deletion in next commit                             |
 | `move`          | `mv`        | Prepare relocated content for next commit                             |
 | `checkout`      | `clone`     | Acquire the entire history of a project locally for the first tim     |
 |                 | `branch`    | Create local context for commits                                      |
