@@ -419,6 +419,8 @@ git push origin [master|branch]
 
 ## Visualizing changes with GitHub
 
+Identifying **changes** across document history is easily achieved through GitHub's interface and support for code, prose, graphics files, and more.
+
 ---
 
 ### Details
