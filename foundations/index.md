@@ -477,6 +477,8 @@ Identify pending contributions, manage collaborator and permissions access, and 
 
 ## Using GitHub Flavored Markdown
 
+Unleash **communication** potential with GitHub's vast support of simple and effective plain-text document formatting known as Markdown.
+
 ---
 
 ### Details
