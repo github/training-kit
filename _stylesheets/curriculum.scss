@@ -30,6 +30,8 @@ table{
 	}
 }
 
+
+
 // Custom columns for hide/show of TOC
 .col-content, .col-toc{
 	transition: padding 300ms, opacity 200ms;
@@ -216,6 +218,45 @@ table{
 		p,ul{
 			font-size: 20px;
 			color: $gray;
+		}
+
+		.objectives{
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+			column-count: 2;
+			width: 85%;
+			margin: 0 auto;
+			text-align: left;
+		}
+
+		input[type="checkbox"]{
+			display:none;
+
+			&+label{
+				width: 100%;
+				line-height: 40px;
+
+				&:before{
+					content: " ";
+					float: left;
+					font: normal normal 20px octicons;
+					text-align: center;
+					height: 20px;
+					width: 20px;
+					margin: 10px;
+					border-radius: 50%;
+					box-shadow: 0 0 0 2px $gray-lighter;
+				}
+			}
+
+			&:checked + label{
+				text-decoration: line-through;
+
+				&:before{
+					content: "\f03a";
+					color: $brand-primary;
+				}
+			}
 		}
 
 		// Custom Octicon styling
