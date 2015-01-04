@@ -382,6 +382,8 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 ## Syncing local and GitHub repos
 
+Publish and syncrhonize **local** commit history with with a GitHub hosted repository with the flexibility of graphical clients and command line.
+
 ---
 
 ---
