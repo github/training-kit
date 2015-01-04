@@ -467,6 +467,8 @@ Craft, version, and publish GitHub-hosted web pages directly from a project repo
 
 ## Managing projects
 
+Identify pending contributions, manage collaborator and permissions access, and curate flexible task lists of project objectives.
+
 ---
 
 
