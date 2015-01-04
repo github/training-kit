@@ -236,6 +236,8 @@ And important decision when creating your repository is in its name. Giving it a
 
 ## Touring content versioning on GitHub
 
+Become acquainted with the **GitHub Web Flow** and GitHub interface that provides robust Git version control actions  through a web browser.
+
 ---
 
 {% capture lab %}
