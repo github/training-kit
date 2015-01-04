@@ -318,6 +318,8 @@ Just as with the Git technology operating on GitHub, local repositories also use
 
 ## Exploring the GitHub Flow
 
+Discover the simplicity and flexibility in Git-based collaboration **workflows** with context-specific sets of changes and code review via pull requests
+
 ---
 
 ---
