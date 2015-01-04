@@ -1,7 +1,7 @@
 ---
 chapter: "Template Data"
 cover: true
-layout: hydesides
+
 title: Let's Take A Look Part Deux
 tags:
   - "pages/template-data"

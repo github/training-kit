@@ -1,7 +1,7 @@
 ---
 chapter: "Layouts"
 cover: true
-layout: hydeside
+
 tags:
   - "pages/layouts"
 ---
