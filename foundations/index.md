@@ -457,6 +457,8 @@ Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub
 
 ## Using GitHub Pages
 
+Craft, version, and publish GitHub-hosted web pages directly from a project repository.
+
 ---
 
 
