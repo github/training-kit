@@ -265,6 +265,8 @@ The GitHub web interface allows you to interact and perform many file-affecting 
 
 ## Acquiring repositories locally
 
+Explore the process of downloading a hosted repository to a **local** machine, the support across tooling, and the options of protocols.
+
 ---
 
 ---
