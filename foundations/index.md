@@ -8,6 +8,17 @@ redirect_from:
 
 ---
 
+<span class="mega-octicon octicon-plug"></span>
+
+# GitHub Foundations
+
+Core skills for day-to-day use of Git on the command line and GitHub workflows
+
+---
+
+
+---
+
 ## Understanding version control
 
 Explore an **introduction** to core concepts of the [Git](https://git-scm.com) technology and its vocabulary for every-day applications and scenarios.
