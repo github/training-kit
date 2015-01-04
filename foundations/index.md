@@ -14,6 +14,16 @@ redirect_from:
 
 Core skills for day-to-day use of Git on the command line and GitHub workflows
 
+<div class="objectives">
+<input type="checkbox" id="obj1"><label for="obj1">Understand Git vocabulary, GitHub platform</label>
+<input type="checkbox" id="obj2"><label for="obj2">Interact with versioned documents on GitHub</label>
+<input type="checkbox" id="obj3"><label for="obj3">Use graphical clients to download projects</label>
+<input type="checkbox" id="obj4"><label for="obj4">Apply basic workflow principles</label>
+<input type="checkbox" id="obj5"><label for="obj5">Maximize benefits of local, remote repositories</label>
+<input type="checkbox" id="obj6"><label for="obj6">Compare versioned history on GitHub</label>
+<input type="checkbox" id="obj7"><label for="obj7">Utilize Markdown during code review processes</label>
+</div>
+
 ---
 
 
