@@ -805,6 +805,8 @@ $ git reset --hard [commit|branch|tag]
 
 ## Recovering from anything
 
+Recover from unexpected or unwanted changes from versioned history.
+
 ---
 
 {% capture lab %}
