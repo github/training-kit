@@ -666,6 +666,8 @@ $ git config alias.s "status -s"
 
 ## Understanding versioned file lifecycle
 
+Remove, move, and rename files with full version control coverage.
+
 ---
 
 ---
