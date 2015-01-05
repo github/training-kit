@@ -633,6 +633,8 @@ $ git push
 
 ## Crafting shortcuts & efficiencies
 
+Improve Git interactions with custom commands incorporated preferred options and specialized outputs.
+
 ---
 
 {% capture lab %}
