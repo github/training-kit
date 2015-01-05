@@ -762,6 +762,8 @@ $ git log --stat -M
 
 ## Undoing any versioned changes
 
+Rewind, collapse, or discard one or a range of versioned changes with a few simple commands.
+
 ---
 
 {% capture lab %}
