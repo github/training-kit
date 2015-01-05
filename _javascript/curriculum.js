@@ -21,7 +21,7 @@ $(function(){
 			url: "https://api.github.com/users/"+username,
 			success: function(data, textStatus, jqXHR){
 				$("#teacher-name").html(data.name);
-				
+
 				$("<span/>",
 				{
 					text: data.login
@@ -130,7 +130,7 @@ $(function(){
 				even = $("hr:even");
 
 		even.each(function(index){
-			$(this).nextUntil("hr").wrapAll("<div class='slide'><div class='alignment'></div>");
+			$(this).nextUntil("hr").wrapAll("<div class='slide'><div class='alignment'></div></div>");
 		});
 
 		$(".slide").css("height", h + "px");
