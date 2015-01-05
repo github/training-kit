@@ -123,6 +123,8 @@ $ git config --list --[scope]
 
 ## Starting on the command line
 
+Begin versioning project content from existing content or from a fresh start with a few basic commands.
+
 ---
 
 
