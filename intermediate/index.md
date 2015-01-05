@@ -356,6 +356,8 @@ $ git diff [file-path]
 
 ## Reviewing historical changes
 
+Assess committed content across all known version and narrow searches with useful filtering options.
+
 ---
 
 ---
