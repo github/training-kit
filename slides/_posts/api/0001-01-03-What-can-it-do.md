@@ -5,7 +5,7 @@ title: What can it do?
 tags: ['api']
 ---
 
-	$ curl -n https://api.github.com
+  $ curl -n https://api.github.com
     
     {
       "public_gists_url": "/gists/public",
