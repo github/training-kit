@@ -186,6 +186,8 @@ Git provides an easy way to start versioning any prototype, prose or project wit
 
 ## Versioning via the command line
 
+Explore the advantages of Git's staging area and commit process and real-world workflows for easily and strategically versioning change.
+
 ---
 
 ---
