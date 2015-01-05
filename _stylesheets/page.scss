@@ -190,32 +190,3 @@ footer {
 		}
 	}
 }
-
-
-.cheat-sheet{
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	column-count: 2;
-
-	-webkit-column-gap: 4em;
-  -moz-column-gap: 4em;
-  column-gap: 4em;
-
-	h1, h1+p{
-		display: none;
-	}
-
-	h2:first-of-type{
-		margin-top: 0;
-	}
-
-	h2:last-of-type{
-		-webkit-column-span: all;
-		-moz-column-span: all;
-		column-span: all;
-
-		padding-top: 1em;
-		margin-top: 1em;
-		border-top: solid 1px $mono-light;
-	}
-}
