@@ -8,6 +8,29 @@ redirect_from:
 
 ---
 
+<span class="mega-octicon octicon-terminal"></span>
+
+# GitHub Intermediate
+
+Important command line skills and problem solving processes
+
+<div class="objectives">
+<input type="checkbox" id="obj1"><label for="obj1">Setup and configure Git</label>
+<input type="checkbox" id="obj2"><label for="obj2">Utilize basic command line operations</label>
+<input type="checkbox" id="obj3"><label for="obj3">Understand versioning steps for content change</label>
+<input type="checkbox" id="obj4"><label for="obj4">Review uncommited and versioned content</label>
+<input type="checkbox" id="obj5"><label for="obj5">Assess history and result filtering</label>
+<input type="checkbox" id="obj6"><label for="obj6">Organize work with branches</label>
+<input type="checkbox" id="obj7"><label for="obj7">Manage commit history synchronization</label>
+<input type="checkbox" id="obj8"><label for="obj8">Create shortcuts and customized commands</label>
+<input type="checkbox" id="obj9"><label for="obj9">Version files across renames, moves, and more</label>
+<input type="checkbox" id="obj10"><label for="obj10">Undo and recovery from any changes</label>
+</div>
+
+---
+
+---
+
 ## Configuring your Git environment
 
 Establish important and useful settings for efficiences in command line day-to-day uses.
