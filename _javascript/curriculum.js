@@ -3,9 +3,7 @@ $(function(){
 
 	// Bind checkbox/label click for slide toggle
 	$("#slide-only-toggle").change(function(){
-		var checkState = $("#slide-only-toggle").attr("checked");
-		$(".materials > *").toggleClass("hidden");
-		$(".slide").toggleClass("hidden");
+		$(".materials > *").not(".slide").toggleClass("hidden");
 	});
 
 	// Parse username from querystring
@@ -21,7 +19,7 @@ $(function(){
 			url: "https://api.github.com/users/"+username,
 			success: function(data, textStatus, jqXHR){
 				$("#teacher-name").html(data.name);
-				
+
 				$("<span/>",
 				{
 					text: data.login
@@ -86,7 +84,6 @@ $(function(){
 				}).appendTo("#teacher-following");
 
 				$("#teacher").toggleClass("hidden");
-				$("#teacher").toggleClass("slide");
 
 				updateSlideSize();
 			}
@@ -130,7 +127,7 @@ $(function(){
 				even = $("hr:even");
 
 		even.each(function(index){
-			$(this).nextUntil("hr").wrapAll("<div class='slide'><div class='alignment'></div>");
+			$(this).nextUntil("hr").wrapAll("<div class='slide'><div class='alignment'></div></div>");
 		});
 
 		$(".slide").css("height", h + "px");
