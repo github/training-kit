@@ -527,6 +527,8 @@ $ git merge [branch]
 
 ## Interacting with distributed repositories
 
+Go beyond local history interactions and synchronize histories on an as-needed, controlled basis, with publication and download commands.
+
 ---
 
 ---
