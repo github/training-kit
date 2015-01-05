@@ -255,6 +255,8 @@ $ git commit -m "[your description]"
 
 ## Comparing pending and existing changes
 
+Maximize the file comparison abilities of Git with historical and un-committed change review commands.
+
 ---
 
 ---
