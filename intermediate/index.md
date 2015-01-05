@@ -410,8 +410,9 @@ $ git log --patch --color-words
 
 ---
 
-## Organizing history
-## for optimal workflows
+## Organizing history for optimal workflows
+
+Harness Git's fast, and local, branching features for contextualizing change and efficiently switching between work effort.
 
 ---
 
