@@ -3,9 +3,7 @@ $(function(){
 
 	// Bind checkbox/label click for slide toggle
 	$("#slide-only-toggle").change(function(){
-		var checkState = $("#slide-only-toggle").attr("checked");
-		$(".materials > *").toggleClass("hidden");
-		$(".slide").toggleClass("hidden");
+		$(".materials > *").not(".slide").toggleClass("hidden");
 	});
 
 	// Parse username from querystring
@@ -86,7 +84,6 @@ $(function(){
 				}).appendTo("#teacher-following");
 
 				$("#teacher").toggleClass("hidden");
-				$("#teacher").toggleClass("slide");
 
 				updateSlideSize();
 			}
