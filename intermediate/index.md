@@ -10,6 +10,8 @@ redirect_from:
 
 ## Configuring your Git environment
 
+Establish important and useful settings for efficiences in command line day-to-day uses.
+
 ---
 
 ---
