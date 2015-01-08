@@ -8,7 +8,32 @@ redirect_from:
 
 ---
 
+<span class="mega-octicon octicon-terminal"></span>
+
+# GitHub Intermediate
+
+Important command line skills and problem solving processes
+
+<div class="objectives">
+<input type="checkbox" id="obj1"><label for="obj1">Setup and configure Git</label>
+<input type="checkbox" id="obj2"><label for="obj2">Utilize basic command line operations</label>
+<input type="checkbox" id="obj3"><label for="obj3">Understand versioning steps for content change</label>
+<input type="checkbox" id="obj4"><label for="obj4">Review uncommited and versioned content</label>
+<input type="checkbox" id="obj5"><label for="obj5">Assess history and result filtering</label>
+<input type="checkbox" id="obj6"><label for="obj6">Organize work with branches</label>
+<input type="checkbox" id="obj7"><label for="obj7">Manage commit history synchronization</label>
+<input type="checkbox" id="obj8"><label for="obj8">Create shortcuts and customized commands</label>
+<input type="checkbox" id="obj9"><label for="obj9">Version files across renames, moves, and more</label>
+<input type="checkbox" id="obj10"><label for="obj10">Undo and recovery from any changes</label>
+</div>
+
+---
+
+---
+
 ## Configuring your Git environment
+
+Establish important and useful settings for efficient command line use.
 
 ---
 
@@ -121,6 +146,8 @@ $ git config --list --[scope]
 
 ## Starting on the command line
 
+Begin versioning project content from existing content or from a fresh start.
+
 ---
 
 
@@ -181,6 +208,8 @@ Git provides an easy way to start versioning any prototype, prose or project wit
 ---
 
 ## Versioning via the command line
+
+Explore the advantages of Git's staging area and commit process.
 
 ---
 
@@ -248,6 +277,8 @@ $ git commit -m "[your description]"
 ---
 
 ## Comparing pending and existing changes
+
+Maximize file comparison abilities of Git with historical and un-committed change review.
 
 ---
 
@@ -348,6 +379,8 @@ $ git diff [file-path]
 
 ## Reviewing historical changes
 
+Assess committed content across all known version and narrow searches with filtering options.
+
 ---
 
 ---
@@ -400,8 +433,9 @@ $ git log --patch --color-words
 
 ---
 
-## Organizing history
-## for optimal workflows
+## Organizing history for optimal workflows
+
+Harness Git's fast branching features for efficiently switching between work effort.
 
 ---
 
@@ -516,6 +550,8 @@ $ git merge [branch]
 
 ## Interacting with distributed repositories
 
+Go beyond local history interactions and synchronize histories on an as-needed, controlled basis.
+
 ---
 
 ---
@@ -622,6 +658,8 @@ $ git push
 
 ## Crafting shortcuts & efficiencies
 
+Improve Git interactions with custom commands, preferred option flags, and specialized outputs.
+
 ---
 
 {% capture lab %}
@@ -650,6 +688,8 @@ $ git config alias.s "status -s"
 ---
 
 ## Understanding versioned file lifecycle
+
+Remove, move, and rename files with full version control coverage.
 
 ---
 
@@ -745,6 +785,8 @@ $ git log --stat -M
 
 ## Undoing any versioned changes
 
+Rewind, collapse, or discard one or a range of versioned changes with a few simple commands.
+
 ---
 
 {% capture lab %}
@@ -785,6 +827,8 @@ $ git reset --hard [commit|branch|tag]
 ---
 
 ## Recovering from anything
+
+Restore content from versioned history.
 
 ---
 

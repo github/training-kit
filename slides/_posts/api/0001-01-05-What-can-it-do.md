@@ -5,7 +5,7 @@ title: What can it do?
 tags: ['api']
 ---
 
-	$ curl -n https://api.github.com
+  $ curl -n https://api.github.com
     
     {
       "team_url": "/teams",
