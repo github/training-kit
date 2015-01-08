@@ -10,6 +10,8 @@ redirect_from:
 
 ## Understanding Git, navigating history
 
+Explore the structure and way change is preserved in Git.
+
 ---
 
 ---
@@ -92,6 +94,8 @@ $ git log --oneline --left-right master...other
 
 ## Collaborating on change & releases
 
+Cutting and creating releases on the command line and on GitHub.
+
 ---
 
 {% capture lab %}
@@ -170,6 +174,8 @@ $ git push origin :[tag-name-to-delete]
 
 ## Ignoring & cleaning up files
 
+Prevent unwanted project artifacts from becoming tracked content.
+
 ---
 
 {% capture lab %}
@@ -223,6 +229,7 @@ $ git clean -fx
 
 ## Mastering shortcuts & efficiencies
 
+Circumvent multi-step processes and utilize temporary solutions for quick history interaction.
 ---
 
 {% capture lab %}
@@ -299,6 +306,8 @@ $ git config rerere.enable true
 
 ## Capturing pieces of history
 
+Craft and acquire commits with selective, as-needed commands.
+
 ---
 
 {% capture lab %}
@@ -330,6 +339,8 @@ git checkout [commit] -- [path]
 ---
 
 ## Rewriting and crafting history
+
+Rebase and reorder existing commits for improved historical context.
 
 ---
 
@@ -426,6 +437,8 @@ $ git rebase -i --autosquash [ref]
 
 ## Reviewing & synchronizing
 
+Interact, investigate, and integrat remote repository histories.
+
 ---
 
 {% capture lab %}
@@ -511,6 +524,8 @@ $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upst
 
 ## Filtering histories & externalizing dependencies
 
+Separate single, large repository histories into individual projects.
+
 ---
 
 {% capture lab %}
@@ -557,6 +572,8 @@ $ git submodule update --init --recursive
 ---
 
 ## Signing work
+
+Identify work legitimacy with easy-to-use GPG and commit functionality.
 
 ---
 
@@ -606,6 +623,8 @@ $ git tag -v [tag-name]
 ---
 
 ## Using GitHub CLI and the API
+
+Interact with GitHub features directly from the command line.
 
 ---
 
@@ -662,6 +681,8 @@ There are a number of libraries for interfacing with the GitHub API, all of whic
 ---
 
 ## Diff & merge tool
+
+Go beyond command line comparison with visual tooling.
 
 ---
 
