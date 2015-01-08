@@ -33,7 +33,7 @@ Important command line skills and problem solving processes
 
 ## Configuring your Git environment
 
-Establish important and useful settings for efficiences in command line day-to-day uses.
+Establish important and useful settings for efficient command line use.
 
 ---
 
@@ -146,7 +146,7 @@ $ git config --list --[scope]
 
 ## Starting on the command line
 
-Begin versioning project content from existing content or from a fresh start with a few basic commands.
+Begin versioning project content from existing content or from a fresh start.
 
 ---
 
@@ -209,7 +209,7 @@ Git provides an easy way to start versioning any prototype, prose or project wit
 
 ## Versioning via the command line
 
-Explore the advantages of Git's staging area and commit process and real-world workflows for easily and strategically versioning change.
+Explore the advantages of Git's staging area and commit process.
 
 ---
 
@@ -278,7 +278,7 @@ $ git commit -m "[your description]"
 
 ## Comparing pending and existing changes
 
-Maximize the file comparison abilities of Git with historical and un-committed change review commands.
+Maximize file comparison abilities of Git with historical and un-committed change review.
 
 ---
 
@@ -379,7 +379,7 @@ $ git diff [file-path]
 
 ## Reviewing historical changes
 
-Assess committed content across all known version and narrow searches with useful filtering options.
+Assess committed content across all known version and narrow searches with filtering options.
 
 ---
 
@@ -435,7 +435,7 @@ $ git log --patch --color-words
 
 ## Organizing history for optimal workflows
 
-Harness Git's fast, and local, branching features for contextualizing change and efficiently switching between work effort.
+Harness Git's fast branching features for efficiently switching between work effort.
 
 ---
 
@@ -550,7 +550,7 @@ $ git merge [branch]
 
 ## Interacting with distributed repositories
 
-Go beyond local history interactions and synchronize histories on an as-needed, controlled basis, with publication and download commands.
+Go beyond local history interactions and synchronize histories on an as-needed, controlled basis.
 
 ---
 
@@ -658,7 +658,7 @@ $ git push
 
 ## Crafting shortcuts & efficiencies
 
-Improve Git interactions with custom commands incorporated preferred options and specialized outputs.
+Improve Git interactions with custom commands, preferred option flags, and specialized outputs.
 
 ---
 
@@ -828,7 +828,7 @@ $ git reset --hard [commit|branch|tag]
 
 ## Recovering from anything
 
-Recover from unexpected or unwanted changes from versioned history.
+Restore content from versioned history.
 
 ---
 
