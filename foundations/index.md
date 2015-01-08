@@ -8,7 +8,30 @@ redirect_from:
 
 ---
 
+<span class="mega-octicon octicon-plug"></span>
+
+# GitHub Foundations
+
+Core skills for day-to-day use of Git on the command line and GitHub workflows
+
+<div class="objectives">
+<input type="checkbox" id="obj1"><label for="obj1">Understand Git vocabulary, GitHub platform</label>
+<input type="checkbox" id="obj2"><label for="obj2">Interact with versioned documents on GitHub</label>
+<input type="checkbox" id="obj3"><label for="obj3">Use graphical clients to download projects</label>
+<input type="checkbox" id="obj4"><label for="obj4">Apply basic workflow principles</label>
+<input type="checkbox" id="obj5"><label for="obj5">Maximize benefits of local, remote repositories</label>
+<input type="checkbox" id="obj6"><label for="obj6">Compare versioned history on GitHub</label>
+<input type="checkbox" id="obj7"><label for="obj7">Utilize Markdown during code review processes</label>
+</div>
+
+---
+
+
+---
+
 ## Understanding version control
+
+Explore an introduction to core concepts of the [Git](https://git-scm.com) technology and its vocabulary for every-day scenarios.
 
 ---
 
@@ -79,6 +102,8 @@ The command line version of Git has a very light footprint. For most platforms, 
 ---
 
 ## Surveying the GitHub platform
+
+Discover the flexibility of preserving version controlled files and the simplicity of collaboration workflows all in one ecosystem.
 
 ---
 
@@ -205,6 +230,8 @@ Sign up for a free GitHub account at [github.com/join](https://github.com/join).
 
 ## Creating a hosted repository
 
+Publish your versioned documents and share projects on the [GitHub](https://github.com) platform.
+
 ---
 
 {% capture lab %}
@@ -229,6 +256,8 @@ And important decision when creating your repository is in its name. Giving it a
 ---
 
 ## Touring content versioning on GitHub
+
+Explore the GitHub Web Flow and GitHub interface that provides robust Git version control actions all through a web browser.
 
 ---
 
@@ -256,6 +285,8 @@ The GitHub web interface allows you to interact and perform many file-affecting 
 ---
 
 ## Acquiring repositories locally
+
+Explore the process of downloading a hosted repository to a local machine, the support across tooling, and the options of protocols.
 
 ---
 
@@ -307,6 +338,8 @@ Just as with the Git technology operating on GitHub, local repositories also use
 ---
 
 ## Exploring the GitHub Flow
+
+Discover the simplicity and flexibility in Git-based collaboration workflows with context-specific sets of changes and code review via pull requests
 
 ---
 
@@ -370,6 +403,8 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 ## Syncing local and GitHub repos
 
+Publish and syncrhonize local commit history with a GitHub hosted repository from graphical clients and command line.
+
 ---
 
 ---
@@ -404,6 +439,8 @@ git push origin [master|branch]
 ---
 
 ## Visualizing changes with GitHub
+
+Identify changes across document history through GitHub's interface and support for code, prose, graphics files, and more.
 
 ---
 
@@ -441,6 +478,8 @@ Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub
 
 ## Using GitHub Pages
 
+Craft, version, and publish GitHub-hosted web pages directly from a project repository.
+
 ---
 
 
@@ -449,6 +488,8 @@ Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub
 
 ## Managing projects
 
+Identify pending contributions, manage collaborator and permissions access, and curate flexible task lists of project objectives.
+
 ---
 
 
@@ -456,6 +497,8 @@ Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub
 ---
 
 ## Using GitHub Flavored Markdown
+
+Unleash **communication** potential with GitHub's vast support of simple and effective plain-text document formatting known as Markdown.
 
 ---
 
