@@ -8,6 +8,28 @@ redirect_from:
 
 ---
 
+<span class="mega-octicon octicon-microscope"></span>
+
+# GitHub Advanced
+
+Command line deep dive, problem solving techniques, and GitHub efficiencies
+
+<div class="objectives">
+<input type="checkbox" id="obj1"><label for="obj1">Understand and apply commit DAG concepts</label>
+<input type="checkbox" id="obj2"><label for="obj2">Create tag release on GitHub and command line</label>
+<input type="checkbox" id="obj3"><label for="obj3">Apply ignore patterns to projects</label>
+<input type="checkbox" id="obj4"><label for="obj4">Improve day-to-day efficiency with shortcuts</label>
+<input type="checkbox" id="obj5"><label for="obj5">Capture and rewrite branch history</label>
+<input type="checkbox" id="obj6"><label for="obj6">Utilize multiple remote repository interactions</label>
+<input type="checkbox" id="obj7"><label for="obj7">Use exteral Git repositories as dependencies</label>
+<input type="checkbox" id="obj8"><label for="obj8">Interact with GitHub from the command line</label>
+</div>
+
+---
+
+
+---
+
 ## Understanding Git, navigating history
 
 Explore the structure and way change is preserved in Git.
@@ -230,6 +252,7 @@ $ git clean -fx
 ## Mastering shortcuts & efficiencies
 
 Circumvent multi-step processes and utilize temporary solutions for quick history interaction.
+
 ---
 
 {% capture lab %}
