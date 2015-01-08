@@ -31,7 +31,7 @@ Core skills for day-to-day use of Git on the command line and GitHub workflows
 
 ## Understanding version control
 
-Explore an **introduction** to core concepts of the [Git](https://git-scm.com) technology and its vocabulary for every-day applications and scenarios.
+Explore an introduction to core concepts of the [Git](https://git-scm.com) technology and its vocabulary for every-day scenarios.
 
 ---
 
@@ -103,7 +103,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 
 ## Surveying the GitHub platform
 
-Discovery the flexibility of preserving version controlled files and the simplicity of **collaboration** workflows all in one ecosystem.
+Discover the flexibility of preserving version controlled files and the simplicity of collaboration workflows all in one ecosystem.
 
 ---
 
@@ -230,7 +230,7 @@ Sign up for a free GitHub account at [github.com/join](https://github.com/join).
 
 ## Creating a hosted repository
 
-Publishing your versioned documents and sharing **projects** on the [GitHub](https://github.com) platform.
+Publish your versioned documents and share projects on the [GitHub](https://github.com) platform.
 
 ---
 
@@ -257,7 +257,7 @@ And important decision when creating your repository is in its name. Giving it a
 
 ## Touring content versioning on GitHub
 
-Become acquainted with the **GitHub Web Flow** and GitHub interface that provides robust Git version control actions  through a web browser.
+Explore the GitHub Web Flow and GitHub interface that provides robust Git version control actions all through a web browser.
 
 ---
 
@@ -286,7 +286,7 @@ The GitHub web interface allows you to interact and perform many file-affecting 
 
 ## Acquiring repositories locally
 
-Explore the process of downloading a hosted repository to a **local** machine, the support across tooling, and the options of protocols.
+Explore the process of downloading a hosted repository to a local machine, the support across tooling, and the options of protocols.
 
 ---
 
@@ -339,7 +339,7 @@ Just as with the Git technology operating on GitHub, local repositories also use
 
 ## Exploring the GitHub Flow
 
-Discover the simplicity and flexibility in Git-based collaboration **workflows** with context-specific sets of changes and code review via pull requests
+Discover the simplicity and flexibility in Git-based collaboration workflows with context-specific sets of changes and code review via pull requests
 
 ---
 
@@ -403,7 +403,7 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 ## Syncing local and GitHub repos
 
-Publish and syncrhonize **local** commit history with with a GitHub hosted repository with the flexibility of graphical clients and command line.
+Publish and syncrhonize local commit history with a GitHub hosted repository from graphical clients and command line.
 
 ---
 
@@ -440,7 +440,7 @@ git push origin [master|branch]
 
 ## Visualizing changes with GitHub
 
-Identifying **changes** across document history is easily achieved through GitHub's interface and support for code, prose, graphics files, and more.
+Identify changes across document history through GitHub's interface and support for code, prose, graphics files, and more.
 
 ---
 
