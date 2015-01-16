@@ -130,7 +130,7 @@ Some simple option flag additions to the `log` command can make the output more 
 $ git log --oneline
 ```
 
-And if displaying the full contents of the change and word-level comparison are helpful, there are option switches for that too.
+And if displaying the full contents of the change and word-level comparisons are helpful, there are option switches for that too.
 
 ```shell
 # Option switches common with `diff`
