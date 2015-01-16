@@ -37,7 +37,7 @@ Explore an introduction to core concepts of the [Git](https://git-scm.com) techn
 
 ---
 
-![Gitl logo](../assets/diagrams/git-logo-black.svg)
+![Git logo](../assets/diagrams/git-logo-black.svg)
 
 ---
 
@@ -249,7 +249,7 @@ Repositories can be created in numerous ways, including:
 * With a GitHub GUI
 * With `git init` at the command line
 
-And important decision when creating your repository is in its name. Giving it a human readable, quick-to-identify, and sensible name makes it most effective and efficient for both yourself, and your colleagues to understand.
+An important decision when creating your repository is in its name. Giving it a human readable, quick-to-identify, and sensible name makes it most effective and efficient for both yourself, and your colleagues to understand.
 
 
 
@@ -339,7 +339,7 @@ Just as with the Git technology operating on GitHub, local repositories also use
 
 ## Exploring the GitHub Flow
 
-Discover the simplicity and flexibility in Git-based collaboration workflows with context-specific sets of changes and code review via pull requests
+Discover the simplicity and flexibility in Git-based collaboration workflows with context-specific sets of changes and code review via Pull Requests
 
 ---
 
@@ -355,13 +355,13 @@ Discover the simplicity and flexibility in Git-based collaboration workflows wit
 1. Using the GitHub web UI, create a branch with an articulate feature name
 2. Make two distinct commits to the branch, each contributing part of the feature's changes
 3. Return to the homepage of the repository by clicking the repository's name
-4. Notice the suggestion message asking if you'd like to "compare and pull request"
+4. Notice the suggestion message asking if you'd like to "Compare and Pull Request"
 5. Click on *Compare and Pull Request*
-6. Describe the reasoning behind the changes on this branch via the pull request
+6. Describe the reasoning behind the changes on this branch via the Pull Request
 7. @mention a team or colleague, asking for a code review
 8. Address the points raised by the reviewers through an additional commit to the branch
 9. Ask for a final review and :+1: from a colleague
-10. Merge the pull request
+10. Merge the Pull Request
 {% endcapture %}{% include lab %}
 
 ### Details
@@ -390,7 +390,7 @@ A branch is a divergent path in the history of the code base. It may contain an 
 1. Create a Fork of a repository needing contributions
 2. Follow the contribution pattern of the [GitHub Flow](https://guides.github.com/introduction/flow/), with the branch creation and commits happening on your fork of the repository
 3. Observe the Network and Members graph that offer visualizations of your commits and fork
-4. Merge the pull request
+4. Merge the Pull Request
 5. Observe your contributions in the original repository, having preserved your username as the author of the code
 {% endcapture %}{% include lab %}
 
@@ -403,7 +403,7 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 ## Syncing local and GitHub repos
 
-Publish and syncrhonize local commit history with a GitHub hosted repository from graphical clients and command line.
+Publish and synchronize local commit history with a GitHub hosted repository from graphical clients and command line.
 
 ---
 
