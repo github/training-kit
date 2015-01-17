@@ -21,7 +21,7 @@ Command line deep dive, problem solving techniques, and GitHub efficiencies
 <input type="checkbox" id="obj4"><label for="obj4">Improve day-to-day efficiency with shortcuts</label>
 <input type="checkbox" id="obj5"><label for="obj5">Capture and rewrite branch history</label>
 <input type="checkbox" id="obj6"><label for="obj6">Utilize multiple remote repository interactions</label>
-<input type="checkbox" id="obj7"><label for="obj7">Use exteral Git repositories as dependencies</label>
+<input type="checkbox" id="obj7"><label for="obj7">Use external Git repositories as dependencies</label>
 <input type="checkbox" id="obj8"><label for="obj8">Interact with GitHub from the command line</label>
 </div>
 
@@ -59,14 +59,14 @@ Git version control is composed of three fundamental object types
 
 Object Type | Purpose
 ----------- | ------
-Blob      | Store file content
+Blob        | Store file content
 Tree        | Preserve path and structure
 Commit      | Serve as unique historical reference
 
 These three data types utilize a SHA1 for unique identification and establish built-in data integrity from the commit, tree, and blob *fingerprints*.
 
 #### Commitish
-Historical commit points is simple to discuss using using *commitish* rather than hexideciaml SHA1 identifies. This shorthand works on the command line, as well as on [GitHub](https://help.github.com/articles/comparing-commits-across-time).
+Historical commit points are simple to discuss using *commitish* rather than hexadecimal SHA1 identifiers. This shorthand works on the command line, as well as on [GitHub](https://help.github.com/articles/comparing-commits-across-time).
 
 Shorthand              | Explanation
 ---------------------- | -----------
@@ -144,7 +144,7 @@ Cutting and creating releases on the command line and on GitHub.
     * [Git-Flow: A Successful Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
     * [Git-Flow Source](https://github.com/nvie/gitflow)
     * Too many levels?
-    * GH prefers Simplest thing that works.
+    * GH prefers "Simplest thing that works"
 * Rebase before sharing (sending a Pull Request)
   * [Contributing to Spring Social](https://github.com/spring-projects/spring-social/wiki/Contributing)
   * [How To Merge Without Fear](http://blog.springsource.org/2010/12/21/git-and-social-coding-how-to-merge-without-fear/)
@@ -448,7 +448,7 @@ Rewriting shared repository history is typically inadvisable and is easily avoid
 $ git rebase -i [remote]/[branch]
 ```
 
-Automatically arrange history and `rebase -i` steps with `fixup!` and `squash!`. Prefix messages for work-in-progress commits steps to efficiently collapse them during an interactive rebase.
+Automatically arrange history and `rebase -i` steps with `fixup!` and `squash!`. Prefix messages of work-in-progress commits to efficiently collapse them during an interactive rebase.
 
 ```bash
 $ git rebase -i --autosquash [ref]
@@ -460,12 +460,12 @@ $ git rebase -i --autosquash [ref]
 
 ## Reviewing & synchronizing
 
-Interact, investigate, and integrat remote repository histories.
+Interact, investigate, and integrate remote repository histories.
 
 ---
 
 {% capture lab %}
-1. Review GitHub pull requests from the command line
+1. Review GitHub Pull Requests from the command line
 2. Acquire Pull Request history temporarily and with branches
 3. Customize `fetch` operations with *refspecs*
 {% endcapture %}{% include lab %}
@@ -474,7 +474,7 @@ Interact, investigate, and integrat remote repository histories.
 #### Reviewing remote branches
 * PRs to horizontal contributors
 * PRs multiple levels up
-* Converting issues to PRs
+* Converting Issues to PRs
 * PRs as Issues with code
 * Automatic closing of PRs by local merges
 * Merges must be _made by recursive_
@@ -536,7 +536,7 @@ $ git fetch origin refs/pull/1/head
  * branch     refs/pull/1/head -> FETCH_HEAD
 ```
 
-#### Refspec to retrieve pull requests
+#### Refspec to retrieve Pull Requests
 ```
 $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upstream]/pull/*"
 ```

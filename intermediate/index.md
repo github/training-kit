@@ -18,7 +18,7 @@ Important command line skills and problem solving processes
 <input type="checkbox" id="obj1"><label for="obj1">Setup and configure Git</label>
 <input type="checkbox" id="obj2"><label for="obj2">Utilize basic command line operations</label>
 <input type="checkbox" id="obj3"><label for="obj3">Understand versioning steps for content change</label>
-<input type="checkbox" id="obj4"><label for="obj4">Review uncommited and versioned content</label>
+<input type="checkbox" id="obj4"><label for="obj4">Review uncommitted and versioned content</label>
 <input type="checkbox" id="obj5"><label for="obj5">Assess history and result filtering</label>
 <input type="checkbox" id="obj6"><label for="obj6">Organize work with branches</label>
 <input type="checkbox" id="obj7"><label for="obj7">Manage commit history synchronization</label>
@@ -116,7 +116,7 @@ Level | Precedence | Location
 `global` | middle | in your home directory as `.gitconfig`
 `local` | highest | in your project's `.git/config` file
 
-To use each of the scopes in a setting or getting action of `config`, simple provide the scope's name alongside the config action:
+To use each of the scopes in a setting or getting action of `config`, simply provide the scope's name alongside the config action:
 
 ```shell
 $ git config --system [name] [value]
@@ -379,7 +379,7 @@ $ git diff [file-path]
 
 ## Reviewing historical changes
 
-Assess committed content across all known version and narrow searches with filtering options.
+Assess committed content across all known versions and narrow searches with filtering options.
 
 ---
 
@@ -419,7 +419,7 @@ Some simple option flag additions to the `log` command can make the output more 
 $ git log --oneline
 ```
 
-And if displaying the full contents of the change and word-level comparison are helpful, there are option switches for that too.
+And if displaying the full contents of the change and word-level comparisons are helpful, there are option switches for that too.
 
 ```shell
  Option switches common with `diff`
@@ -532,7 +532,7 @@ $ git branch -d [name]
 $ git branch -D [name]
 ```
 
-The final step to bringing in the history of a branch into the current one is performed by merging it.
+The final step to bringing the history of a branch into the current one is performed by merging it.
 
 ```shell
  Integrate history of specified branch into current one
