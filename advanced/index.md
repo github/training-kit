@@ -620,7 +620,7 @@ $ git config --global user.signingkey [ID]
 
 #### Using GPG signatures on commits
 ```shell
-$ git commit --signoff
+$ git commit --gpg-sign
 # or the shorthand invocation...
 $ git commit -S
 
