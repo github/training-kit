@@ -18,9 +18,9 @@ description: Este libro de trabajo para estudiantes y maestros será tu compañe
 ### Detalles
 __Git es un sistema de código abierto y distribuido__ de control de versiones inventado por Linus Torvalds en 2005. Se utiliza para versionar el kernel de Linux y ha demostrado ser, por algunas investigaciones, el sistema de control de versiones moderno más popular.
 
-Git es el sistema de código abierto de comandos de línnea que forma parte de los flujos de trabajo que cubriremos en este curso. Se le ha llamado el sucesor de "CVS" y "Subversion" por muchos usuarios, y mantiene cierta similitud con el comportamiento de estas herramientas históricas de control de versiones de código abierto.
+Git es el sistema de código abierto de comandos de línea que forma parte de los flujos de trabajo que cubriremos en este curso. Se le ha llamado el sucesor de "CVS" y "Subversion" por muchos usuarios, y mantiene cierta similitud con el comportamiento de estas herramientas históricas de control de versiones de código abierto.
 
-Mantener una versión actual de Git es importante. Aún cuando escucharás correctamente que Git es generosamente compatible con versiones anteriores, las últimas versiones ofrecen mejoras en los mensajes de error, afinamientos en el rendimiento y características de usabilidad que hacen que usar Git sea ahora más rápido y agradable.
+Mantener una versión actual de Git es importante. Aun cuando escucharás correctamente que Git es generosamente compatible con versiones anteriores, las últimas versiones ofrecen mejoras en los mensajes de error, afinamientos en el rendimiento y características de usabilidad que hacen que usar Git sea ahora más rápido y agradable.
 
 Verificar que Git está instalado y funcionando correctamente se puede hacer solicitando a Git que muestre su versión actual empleando este comando:
 
@@ -34,9 +34,9 @@ git version 1.8.2
 * [Instalador de GitHub para Windows](http://windows.github.com)
 * [Instalador de GitHub para Mac](http://mac.github.com)
 * [Libro Pro Git: Instalando Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
-* **Windows**: El instalador de GitHub para Windows puede ser encontrado en http://windows.github.com.
-* **Mac**: El instalador de GitHub para Mac puede ser encontrado en http://mac.github.com.
-* **Linux**: El código fuente de Git y un listado de administradores de paquetes puede ser encontrado en http://git-scm.com/download/linux.
+* **Windows**: El instalador de GitHub para Windows puede encontrarse en http://windows.github.com.
+* **Mac**: El instalador de GitHub para Mac puede encontrarse en http://mac.github.com.
+* **Linux**: El código fuente de Git y un listado de administradores de paquetes puede encontrarse en http://git-scm.com/download/linux.
 
 ### Detalles
 
@@ -51,7 +51,7 @@ La versión de línea de comandos de Git tiene una huella muy ligera. Para la ma
 
 Las cuentas de GitHub son gratuitas. Regístrate por una en [github.com/join](https://github.com/join).
 
-GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código abierto y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub trae consigo un rango más amplio de colaboradores, incluyendo especialistas de documentación, diseñadores, e ingenieros de operaciones dentro del flujo de contribución al ciclo de vida de tu proyecto.
+GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código abierto y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub trae consigo un rango más amplio de colaboradores, incluyendo especialistas de documentación, diseñadores e ingenieros de operaciones dentro del flujo de contribución al ciclo de vida de tu proyecto.
 
 Las cuentas de GitHub son gratuitas para una cantidad ilimitada de repositorios públicos. Solo los repositorios privados tienen un costo para hospedarse en el servicio. Los repositorios privados son típicamente usados para consultoría de código cerrado del cliente o productos corporativos, mientras que los repositorios públicos son comúnmente utilizados para código abierto.
 
@@ -157,7 +157,7 @@ Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y 
   * Hojas de cálculo
   * Modelos 3D
 * Vista de rama
-* Posiciones de Rama: Adelante/Detrás
+* Posiciones de rama: Adelante/Detrás
 * Gráfica de red
 * Gráfica de actividad
 
