@@ -1,7 +1,7 @@
 ---
 layout: workbook
 title: Libro de trabajo de Fundamentos de GitHub
-description: Este libro de trabajo para estudiantes y maestros será tu compañero para la clase de Fundamentos de GitHub impartida por el equipo de entrenamiento de GitHub y otros grupos educacionales. En este curso, aprenderás habilidades básicas de colaboración a través del productivo uso de Git y GitHub en tu trabajo de código abierto diario y asignaciones de trabajo.
+description: Este libro de trabajo para estudiantes y maestros será tu compañero para la clase de Fundamentos de GitHub impartida por el equipo de entrenamiento de GitHub y otros grupos educacionales. En este curso aprenderás habilidades básicas de colaboración a través del uso productivo de Git y GitHub en tu trabajo de código abierto y en tus asignaciones diarias de trabajo.
 
 
 ---
@@ -13,16 +13,16 @@ description: Este libro de trabajo para estudiantes y maestros será tu compañe
 * GitHub, la plataforma de colaboración
 * Control de versiones distribuido
 * [Una breve historia de Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
-* [La página principal del proyecto de github](http://git-scm.com)
+* [La página principal de Git](http://git-scm.com)
 
 ### Detalles
-__Git es un sistema de código abierto y distribuido__ de control de versiones inventado por Linus Torvalds en 2005. Se utiliza para versionar el kernel de Linux y se demuestra que es, por un poco de investigación, el sistema de control de versiones modernas más popular.
+__Git es un sistema de código abierto y distribuido__ de control de versiones inventado por Linus Torvalds en 2005. Se utiliza para versionar el kernel de Linux y ha demostrado ser, por algunas investigaciones, el sistema de control de versiones moderno más popular.
 
-Git es la herramienta de código abierto, de línea de comandos que forma parte de los flujos de trabajo que cubriremos en este curso. Se le ha llamado el sucesor de CVS y Subversion por muchos usuarios, y mantiene cierta similitud con el comportamiento de estas herramientas de control de versiones históricas de código abierto.
+Git es el sistema de código abierto de comandos de línnea que forma parte de los flujos de trabajo que cubriremos en este curso. Se le ha llamado el sucesor de CVS y Subversion por muchos usuarios, y mantiene cierta similitud con el comportamiento de estas herramientas históricas de control de versiones de código abierto.
 
-El mantenimiento de una versión actual de Git es importante. Mientras se escucha con precisión que Git es generosamente compatible con versiones anteriores, las últimas versiones ofrecen mejoras de mensajes de error, afinaciones de rendimiento y características de usabilidad que hacen que usar Git cada vez más rápido y agradable.
+Mantener una versión actual de Git es importante. Aún cuando escucharás correctamente que Git es generosamente compatible con versiones anteriores, las últimas versiones ofrecen mejoras en los mensajes de error, afinamientos en el rendimiento y características de usabilidad que hacen que usar Git sea ahora más rápido y agradable.
 
-Verificar que Git está instalado y en funcionamiento se puede hacer solicitando a Git que muestre su versión actual, usando este comando:
+Verificar que Git está instalado y funcionando correctamente se puede hacer solicitando a Git que muestre su versión actual empleando este comando:
 
 ``` shell
 $ git --version
