@@ -51,9 +51,9 @@ La versión de línea de comandos de Git tiene una huella muy ligera. Para la ma
 
 Las cuentas de GitHub son gratuitas. Regístrate por una en [github.com/join](https://github.com/join).
 
-GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código abierto y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub trate consigo un rango más amplio de colaboradores, incluyendo especialistas de documentación, diseñadores, e ingenieros de operaciones dentro del flujo de contribución al ciclo de vida de tu proyecto.
+GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código abierto y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub trae consigo un rango más amplio de colaboradores, incluyendo especialistas de documentación, diseñadores, e ingenieros de operaciones dentro del flujo de contribución al ciclo de vida de tu proyecto.
 
-Las cuentas de GitHub son gratuitas para una ilimitada cantidad de repositorios públicos. Solo los repositorios privados tienen un costo para hospedarse en el servicio. Los repositorios privados son típicamente usados para consultoría de código cerrado del cliente o productos corporativos, mientras que los repositorios públicos son comúnmente utilizados para código abierto.
+Las cuentas de GitHub son gratuitas para una cantidad ilimitada de repositorios públicos. Solo los repositorios privados tienen un costo para hospedarse en el servicio. Los repositorios privados son típicamente usados para consultoría de código cerrado del cliente o productos corporativos, mientras que los repositorios públicos son comúnmente utilizados para código abierto.
 
 Regístrate por una cuenta gratuita de Github en https://github.com/join.
 
@@ -62,7 +62,7 @@ Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y 
 ## Interactuando con repositorios
 
 ### Resumen
-* [GitHub web flow](https://guides.github.com/overviews/flow/)
+* [El flujo web de GitHub](https://guides.github.com/overviews/flow/)
 * GUIs de GitHub para Mac, Windows
 * Línea de Comandos
 
@@ -72,10 +72,10 @@ Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y 
 *Inicialización de Repositorios
   * Nuevo proyecto y nuevo repositorio
   * Repositorio basado en contenido existente
-  * Por medio de interfaz web
-  * Interfaz Web y cliente GUI
+  * Por medio de la interfaz web
+  * Interfaz web y cliente GUI
 
-## Adquiriendo repos
+## Adquiriendo repositorios
 
 ### Resumen
 * Clonar desde la web (botón de Clonar en Escritorio)
@@ -106,7 +106,7 @@ Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y 
   * Página de listado
   * Vista de comparación
 
-## Interacción en repositorio local
+## Interacción con repositorio local
 
 ### Resumen
 * Cambios (con editor de texto)
@@ -114,10 +114,10 @@ Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y 
 * Commits
 * Ramas
 * Historial
-* Sincronizando (GHfD)
+* Sincronización (GHfD)
 
 * Commits (GitHub para Escritorio)
-  * Administrando archivo en el sistema, revisando resultados
+  * Administración de archivo en el sistema, revisión de resultados
   * Rastreo a nivel de línea
   * Agrupando archivos
   * Sincronizando commits locales
@@ -143,8 +143,8 @@ Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y 
     * Pull Request
     * Discusión
     * GIF Animado
-    * Revisión linea por linea
-    * Clona localmente con GHfD (opcional)
+    * Conversación de revisión de código línea por línea
+    * Clonar localmente con GHfD (opcional)
 
 ## Visualizaciones en GitHub
 
@@ -157,8 +157,8 @@ Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y 
   * Hojas de cálculo
   * Modelos 3D
 * Vista de rama
-* Posiciones delante/detrás de Rama
-* Gráfica de red de trabajo
+* Posiciones de Rama: Adelante/Detrás
+* Gráfica de red
 * Gráfica de actividad
 
 ## Wikis de GitHub
@@ -171,8 +171,8 @@ Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y 
 ## Páginas de GitHub
 
 ### Resumen
-* Página Web para tu repositorio
-* Página Web para tu cuenta
+* Página web para tu repositorio
+* Página web para tu cuenta
 * Crear, editar, lanzar desde GitHub
 
 ## Características de GitHub
@@ -180,7 +180,7 @@ Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y 
 ### Resumen
 * Notificaciones
 * Observando repositorios
-* Starring repositories
+* Destacando ("starring") repositorios
 * Gist
 * Markdown al estilo GitHub
   * Lo esencial
@@ -195,10 +195,10 @@ Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y 
 * `?` ayuda
 * `t` búsqueda de archivos difusa
 
-## Lo esencial de administración de Proyecto
+## Fundamentos de administración de proyectos
 
 ### Resumen
-* GitHub Issues
+* "Issues" en GitHub
 * Hitos
 * Red de trabajo
 * Pulso
