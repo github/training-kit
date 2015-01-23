@@ -1,7 +1,7 @@
 ---
 layout: workbook
 title: Libro de trabajo de Fundamentos de GitHub
-description: Este libro de trabajo para estudiantes y maestros será tu compañero para la clase de Fundamentos de GitHub impartida por el equipo de entrenamiento de GitHub y otros grupos educacionales. En este curso, aprenderás habilidades básicas de colaboración a través del productivo uso de Git y GitHub en tu trabajo de código abierto diario y asignaciones de trabajo.
+description: Este libro de trabajo para estudiantes y maestros será tu compañero para la clase de Fundamentos de GitHub impartida por el equipo de entrenamiento de GitHub y otros grupos educacionales. En este curso aprenderás habilidades básicas de colaboración a través del uso productivo de Git y GitHub en tu trabajo de código abierto y en tus asignaciones diarias de trabajo.
 
 
 ---
@@ -13,16 +13,16 @@ description: Este libro de trabajo para estudiantes y maestros será tu compañe
 * GitHub, la plataforma de colaboración
 * Control de versiones distribuido
 * [Una breve historia de Git](http://git-scm.com/book/en/Getting-Started-A-Short-History-of-Git)
-* [La página principal del proyecto de github](http://git-scm.com)
+* [La página principal de Git](http://git-scm.com)
 
 ### Detalles
-__Git es un sistema de código abierto y distribuido__ de control de versiones inventado por Linus Torvalds en 2005. Se utiliza para versionar el kernel de Linux y se demuestra que es, por un poco de investigación, el sistema de control de versiones modernas más popular.
+__Git es un sistema de código abierto y distribuido__ de control de versiones inventado por Linus Torvalds en 2005. Se utiliza para versionar el kernel de Linux y ha demostrado ser, por algunas investigaciones, el sistema de control de versiones moderno más popular.
 
-Git es la herramienta de código abierto, de línea de comandos que forma parte de los flujos de trabajo que cubriremos en este curso. Se le ha llamado el sucesor de CVS y Subversion por muchos usuarios, y mantiene cierta similitud con el comportamiento de estas herramientas de control de versiones históricas de código abierto.
+Git es el sistema de código abierto de comandos de línea que forma parte de los flujos de trabajo que cubriremos en este curso. Se le ha llamado el sucesor de "CVS" y "Subversion" por muchos usuarios, y mantiene cierta similitud con el comportamiento de estas herramientas históricas de control de versiones de código abierto.
 
-El mantenimiento de una versión actual de Git es importante. Mientras se escucha con precisión que Git es generosamente compatible con versiones anteriores, las últimas versiones ofrecen mejoras de mensajes de error, afinaciones de rendimiento y características de usabilidad que hacen que usar Git cada vez más rápido y agradable.
+Mantener una versión actual de Git es importante. Aun cuando escucharás correctamente que Git es generosamente compatible con versiones anteriores, las últimas versiones ofrecen mejoras en los mensajes de error, afinamientos en el rendimiento y características de usabilidad que hacen que usar Git sea ahora más rápido y agradable.
 
-Verificar que Git está instalado y en funcionamiento se puede hacer solicitando a Git que muestre su versión actual, usando este comando:
+Verificar que Git está instalado y funcionando correctamente se puede hacer solicitando a Git que muestre su versión actual empleando este comando:
 
 ``` shell
 $ git --version
@@ -34,13 +34,13 @@ git version 1.8.2
 * [Instalador de GitHub para Windows](http://windows.github.com)
 * [Instalador de GitHub para Mac](http://mac.github.com)
 * [Libro Pro Git: Instalando Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
-* **Windows**: El instalador de GitHub para Windows puede ser encontrado en http://windows.github.com.
-* **Mac**: El instalador de GitHub para Mac puede ser encontrado en http://mac.github.com.
-* **Linux**: El código fuente de Git y un listado de gestores de paquetes puede ser encontrado en http://git-scm.com/download/linux.
+* **Windows**: El instalador de GitHub para Windows puede encontrarse en http://windows.github.com.
+* **Mac**: El instalador de GitHub para Mac puede encontrarse en http://mac.github.com.
+* **Linux**: El código fuente de Git y un listado de administradores de paquetes puede encontrarse en http://git-scm.com/download/linux.
 
 ### Detalles
 
-La versión de línea de comandos de Git tiene una huella muy ligera. Para la mayoría de las plataformas, puedes simplemente copiar los binarios a una carpeta que esté dentro del $PATH de búsqueda ejecutable. Git está escrito primordialmente en C, lo que significa que existe un solo instalador para cada sistema operativo.
+La versión de línea de comandos de Git tiene una huella muy ligera. Para la mayoría de las plataformas, puedes simplemente copiar los binarios a una carpeta que esté dentro del $PATH de búsqueda ejecutable. Git está escrito principalmente en C, lo que significa que existe un solo instalador para cada sistema operativo.
 
 ## La plataforma GitHub
 
@@ -51,18 +51,18 @@ La versión de línea de comandos de Git tiene una huella muy ligera. Para la ma
 
 Las cuentas de GitHub son gratuitas. Regístrate por una en [github.com/join](https://github.com/join).
 
-GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código abierto y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub conlleva a un rango más extenso de contribuciones, incluyendo especialistas de documentación, diseñadores, e ingenieros de operación dentro del flujo de contribución al ciclo de vida de tu proyecto.
+GitHub es la plataforma de hospedaje de repositorios, colaboración, despliegue y distribución para proyectos de software de código abierto y privado. Facilita la discusión de cambios en curso a través de los conceptos "Issues" y "Pull Requests" y proporciona una interfaz de usuario web a gran parte de Git. El flujo web hecho posible por GitHub trae consigo un rango más amplio de colaboradores, incluyendo especialistas de documentación, diseñadores e ingenieros de operaciones dentro del flujo de contribución al ciclo de vida de tu proyecto.
 
-Las cuentas de GitHub son gratuitas para una ilimitada cantidad de repositorios. Sólo los repositorios privados tienen un costo para hospedarse en el servicio. Los repositorios privados son típicamente usados para consultoría de código cerrado del cliente o productos corporativos, mientras que los repositorios públicos son comúnmente utilizados para código abierto.
+Las cuentas de GitHub son gratuitas para una cantidad ilimitada de repositorios públicos. Solo los repositorios privados tienen un costo para hospedarse en el servicio. Los repositorios privados son típicamente usados para consultoría de código cerrado del cliente o productos corporativos, mientras que los repositorios públicos son comúnmente utilizados para código abierto.
 
 Regístrate por una cuenta gratuita de Github en https://github.com/join.
 
-Git puede ser instalado como una línea de comandos GUI unificada de GitHub o simplemente como una interfaz de línea de comandos autónoma.
+Git puede ser instalado como una Interfaz Gráfica de Usuario (GUI) de GitHub y línea de comandos unificada, o simplemente como una interfaz de línea de comandos independiente.
 
 ## Interactuando con repositorios
 
 ### Resumen
-* [GitHub web flow](https://guides.github.com/overviews/flow/)
+* [El flujo web de GitHub](https://guides.github.com/overviews/flow/)
 * GUIs de GitHub para Mac, Windows
 * Línea de Comandos
 
@@ -72,10 +72,10 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 *Inicialización de Repositorios
   * Nuevo proyecto y nuevo repositorio
   * Repositorio basado en contenido existente
-  * Por medio de interfaz web
-  * Interfaz Web y cliente GUI
+  * Por medio de la interfaz web
+  * Interfaz web y cliente GUI
 
-## Adquiriendo repos
+## Adquiriendo repositorios
 
 ### Resumen
 * Clonar desde la web (botón de Clonar en Escritorio)
@@ -106,7 +106,7 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
   * Página de listado
   * Vista de comparación
 
-## Interacción en repositorio local
+## Interacción con repositorio local
 
 ### Resumen
 * Cambios (con editor de texto)
@@ -114,10 +114,10 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 * Commits
 * Ramas
 * Historial
-* Sincronizando (GHfD)
+* Sincronización (GHfD)
 
 * Commits (GitHub para Escritorio)
-  * Administrando archivo en el sistema, revisando resultados
+  * Administración de archivo en el sistema, revisión de resultados
   * Rastreo a nivel de línea
   * Agrupando archivos
   * Sincronizando commits locales
@@ -143,8 +143,8 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
     * Pull Request
     * Discusión
     * GIF Animado
-    * Revisión linea por linea
-    * Clona localmente con GHfD (opcional)
+    * Conversación de revisión de código línea por línea
+    * Clonar localmente con GHfD (opcional)
 
 ## Visualizaciones en GitHub
 
@@ -157,8 +157,8 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
   * Hojas de cálculo
   * Modelos 3D
 * Vista de rama
-* Posiciones delante/detrás de Rama
-* Gráfica de red de trabajo
+* Posiciones de rama: Adelante/Detrás
+* Gráfica de red
 * Gráfica de actividad
 
 ## Wikis de GitHub
@@ -171,8 +171,8 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 ## Páginas de GitHub
 
 ### Resumen
-* Página Web para tu repositorio
-* Página Web para tu cuenta
+* Página web para tu repositorio
+* Página web para tu cuenta
 * Crear, editar, lanzar desde GitHub
 
 ## Características de GitHub
@@ -180,7 +180,7 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 ### Resumen
 * Notificaciones
 * Observando repositorios
-* Starring repositories
+* Destacando ("starring") repositorios
 * Gist
 * Markdown al estilo GitHub
   * Lo esencial
@@ -195,10 +195,10 @@ Git puede ser instalado como una línea de comandos GUI unificada de GitHub o si
 * `?` ayuda
 * `t` búsqueda de archivos difusa
 
-## Lo esencial de administración de Proyecto
+## Fundamentos de administración de proyectos
 
 ### Resumen
-* GitHub Issues
+* "Issues" en GitHub
 * Hitos
 * Red de trabajo
 * Pulso
