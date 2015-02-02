@@ -40,8 +40,8 @@ Establish important and useful settings for efficient command line use.
 ---
 
 ```
-git config user.name "Your Name"
-git config user.email "Email Address"
+git config --global user.name "Your Name"
+git config --global user.email "Email Address"
 ```
 
 ---
@@ -49,8 +49,8 @@ git config user.email "Email Address"
 ---
 
 ```bash
-git config color.ui auto
-git config core.autocrlf [input|true]
+git config --global color.ui auto
+git config --global core.autocrlf [input|true]
 ```
 
 ---
@@ -58,7 +58,7 @@ git config core.autocrlf [input|true]
 ---
 
 ```bash
-git config core.editor
+git config --global core.editor
 ```
 
 ---
