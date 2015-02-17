@@ -84,10 +84,10 @@ These are the very first Git elements often suggested to set. If not set, Git wi
 To see the current settings, individually query two configuration values:
 
 ```shell
-$ git config user.name
+$ git config --global user.name
 Firstname Lastname
 
-$ git config user.email
+$ git config --global user.email
 someaccount@example.com
 ```
 
