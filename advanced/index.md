@@ -409,7 +409,7 @@ Rebase and reorder existing commits for improved historical context.
 
 
 ### Details
-Use `rebase` to ddit existing commit history. But pay close attention to how it differs from `merge`
+Use `rebase` to edit existing commit history. But pay close attention to how it differs from `merge`
 
 #### Rebasing a branch
 Re-playing branch-specific commits against a base is the most common use case for rebase.
