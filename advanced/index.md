@@ -49,7 +49,7 @@ Explore the structure and way change is preserved in Git.
 ---
 
 {% capture lab %}
-1. Understand the way Git preserves data
+1. Understand the way Git preserves history and data
 2. Use shorthands to navigate commit history
 3. Filter `log` option switches for refined version querying
 {% endcapture %}{% include lab %}
@@ -71,8 +71,8 @@ Historical commit points are simple to discuss using *commitish* rather than hex
 Shorthand              | Explanation
 ---------------------- | -----------
 `HEAD`                 | Current commit
-`HEAD^2`               | Second parent of current commit (assumes current commit the result of a merge)
-`HEAD~2`               | First parent (commit) of the first parent of the current commit (different than above!)
+`HEAD^2`               | Second parent if merge commit, otherwise second ancestor
+`HEAD~2`               | Second ancestor of the current commit
 `HEAD@{one.day.ago}`   | Reachable by current branch from one day ago
 `HEAD@{today}`         | All commits reachable by current branch made *today*
 
