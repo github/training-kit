@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Removing Tracked Files
 pre-requisites: CONT-CLI-21_Handling-merge-conflicts
 learning-objective: Discover how to remove files from tracking.

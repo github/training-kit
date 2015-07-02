@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Merging Pull Requests
 pre-requisites: CONT-04_Editing-pull-request-files
 learning-objective: Merge the changes made on your feature branch into your master branch.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Creating a Repository on GitHub
 pre-requisites: CONT-CLI-05_Sync-changes
 learning-objective: Describe best practices for creating a new repository and adding collaborators on GitHub.

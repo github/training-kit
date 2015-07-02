@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 # I am including comments in this first yaml file just to provide more context. Please don't parse the comments - just ignore them
 # If anything here is hard to parse, please just reformat it to make it easy to parse!
 title: Introducing GitHub # The title for the module - displayed to end users

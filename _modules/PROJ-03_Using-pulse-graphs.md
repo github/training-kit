@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Using Pulse and Graphs
 pre-requisites: CONT-05_Merging-pull-requests
 learning-objective: Learn how to use Pulse and Graphs to track team productivity and project status.

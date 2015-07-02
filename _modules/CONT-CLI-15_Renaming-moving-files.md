@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Renaming and Moving Files
 pre-requisites: CONT-CLI-14_Creating-repository-local
 learning-objective: Discover Git commands for renaming and moving tracked files.

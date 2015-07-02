@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Using Branches
 pre-requisites: CONT-01_Understanding-github-flow
 learning-objective: Create a branch to separate feature work from the master branch.

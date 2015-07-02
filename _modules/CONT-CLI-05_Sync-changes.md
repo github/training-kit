@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Pushing Changes
 pre-requisites: CONT-CLI-04_Two-stage-commit
 learning-objective: Create a branch to separate feature work from the master branch.

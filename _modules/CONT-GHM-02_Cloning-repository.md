@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Cloning a Repository
 pre-requisites: CONT-GHM-01_Basic-configuration
 learning-objective: Clone a repository and create a branch to separate feature work from the master branch.

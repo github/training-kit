@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Understanding the GitHub Flow
 pre-requisites: COLL-02_Using-issues
 learning-objective: Describe the collaborative workflow enabled by GitHub.

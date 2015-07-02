@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Creating Aliases
 pre-requisites: CONT-CLI-22_Removing-tracked-files
 learning-objective: Discover how to create shortcuts for commonly used git commands.

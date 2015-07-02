@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Using Milestones
 pre-requisites: PROJ-01_Managing-issues-pull-requests
 learning-objective: Learn how to organize your projects with milestones.

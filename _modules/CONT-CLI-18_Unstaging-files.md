@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Unstaging Files
 pre-requisites: CONT-CLI-17_Fixing-bad-commits
 learning-objective: Discover steps you can take when you need to unstage files.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Synchronizing Changes
 pre-requisites: CONT-GHM-04_Two-stage-commit
 learning-objective: Push changes from local computer to the remote using GitHub Desktop.

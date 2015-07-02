@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Basic Configuration on GitHub Desktop
 pre-requisites: CONT-05_Merging-pull-requests
 learning-objective: Successfully configure the GitHub desktop app to be able to work effectively with GitHub remotes.

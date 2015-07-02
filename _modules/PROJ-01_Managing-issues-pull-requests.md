@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Managing Issues and Pull Requests
 pre-requisites: CONT-05_Merging-pull-requests
 learning-objective: Learn ways to maximize team effectiveness with Issues and Pull Requests.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Fixing Bad Commits
 pre-requisites: CONT-CLI-16_Reverting-commits
 learning-objective: Discover steps you can take when you realize you messed up the last commit.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Exploring a Repository
 pre-requisites:
 learning-objective: Locate the key features of a GitHub repository.

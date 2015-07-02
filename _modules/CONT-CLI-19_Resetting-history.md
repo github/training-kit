@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Resetting History
 pre-requisites: CONT-CLI-18_Unstaging-files
 learning-objective: Discover steps you can take when you need to rewrite history.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Creating Files on GitHub
 pre-requisites: CONT-02_Using-branches
 learning-objective: Add a new file using GitHub.com or GitHub Enterprise.

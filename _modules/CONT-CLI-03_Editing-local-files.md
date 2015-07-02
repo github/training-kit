@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Editing Local Files
 pre-requisites: CONT-CLI-02_Cloning-a-repository
 learning-objective: Edit files from the command line.

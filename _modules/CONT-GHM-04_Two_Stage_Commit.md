@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: The Two Stage Commit
 pre-requisites: CONT-GHM-03_Editing-local-files
 learning-objective: Add and commit files using the GitHub Desktop App.

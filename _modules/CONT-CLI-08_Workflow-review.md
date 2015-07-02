@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Workflow Review
 pre-requisites: CONT-CLI-07_Creating-local-branches
 learning-objective: Review the GitHub flow using the command line.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Pulling Changes from the Remote
 pre-requisites: CONT-CLI-08_Workflow-review
 learning-objective: Pulling changes from the remote into your local repository.

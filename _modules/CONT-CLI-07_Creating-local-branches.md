@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Creating Local Branches
 pre-requisites: CONT-CLI-06_Creating-repository-github
 learning-objective: Create a branch locally using the command line.

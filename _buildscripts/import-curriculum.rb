@@ -49,7 +49,7 @@ def in_with_the_new(directory)
 
       # Write .yml file contents to .md file with necessary frontmatter
       md = File.new("_#{directory}/#{File.basename(file, '.yml')}.md", "w")
-      md.write("---\nlayout: #{directory.chomp('s')}\n#{yml}\n---")
+      md.write("---\nlayout: #{directory.chomp('s')}\nleadingpath: ../\n#{yml}\n---")
       md.close
     end
   end

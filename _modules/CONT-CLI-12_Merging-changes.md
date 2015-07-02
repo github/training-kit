@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Merging Local Changes
 pre-requisites: CONT-CLI-11_Viewing-local-diffs
 learning-objective: Merge branches on the command line.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Reverting Commits
 pre-requisites: CONT-CLI-15_Renaming-moving-files
 learning-objective: Describe the process for reversing a commit.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Basic Command Line Interface (CLI) Configuration
 pre-requisites: CONT-05_Merging-pull-requests
 learning-objective: Configure the CLI to work effectively with Git.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Watching notifications and stars
 pre-requisites: COLL-01_Exploring-a-repository
 learning-objective: Introduce the social features of GitHub.

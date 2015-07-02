@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Viewing Local Diffs
 pre-requisites: CONT-CLI-10_Modifying-local-files
 learning-objective: Discover techniques for viewing file changes in different stages of the workflow.

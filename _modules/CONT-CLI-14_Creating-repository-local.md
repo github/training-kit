@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Creating a Repository on the Command Line
 pre-requisites: CONT-CLI-13_Viewing-project-history
 learning-objective: Create a local repository on the command line.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Handling Merge Conflicts
 pre-requisites: CONT-CLI-20_Discarding-changes-modified-files
 learning-objective: Discover how to handle merge conflicts.

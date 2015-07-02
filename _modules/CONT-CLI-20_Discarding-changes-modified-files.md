@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Discarding Changes in Modified Files
 pre-requisites: CONT-CLI-19_Resetting-history
 learning-objective: Discover steps you can take when you need to discard the changes made in unstaged files.

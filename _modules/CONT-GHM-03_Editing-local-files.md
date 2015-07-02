@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Editing Local Files
 pre-requisites: CONT-GHM-02_Cloning-a-repository
 learning-objective: Edit local files using the GitHub Desktop App.

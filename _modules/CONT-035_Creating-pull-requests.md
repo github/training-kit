@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Creating Pull Requests
 pre-requisites: CONT-03_Creating-files-platform
 learning-objective: Creating a pull request.

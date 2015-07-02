@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: The Two Stage Commit
 pre-requisites: CONT-CLI-03_Editing-local-files
 learning-objective: Add and commit files on the command line.

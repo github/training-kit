@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Editing Pull Request Files
 pre-requisites: CONT-035_Creating-pull-requests
 learning-objective: Edit a file that is currently part of a pull request.

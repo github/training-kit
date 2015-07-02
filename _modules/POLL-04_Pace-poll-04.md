@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: How is the pace?
 pre-requisites:
 learning-objective: Determine whether the pace of instruction is appropriate for the learners.

@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Modifying Local Files
 pre-requisites: CONT-CLI-09_Pulling-changes
 learning-objective: Experience common commit scenarios.

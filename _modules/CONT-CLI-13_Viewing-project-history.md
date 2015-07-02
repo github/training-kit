@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Viewing Project History
 pre-requisites: CONT-CLI-12_Merging-changes
 learning-objective: Discover commands for viewing the history of your project.

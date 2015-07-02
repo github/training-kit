@@ -1,5 +1,6 @@
 ---
 layout: module
+leadingpath: ../
 title: Fetching Changes from the Remote
 pre-requisites: CONT-CLI-08_Workflow-review
 learning-objective: Fetch changes from the remote and merge them into your local repository.
