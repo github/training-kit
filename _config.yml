@@ -22,7 +22,7 @@ exclude:
 
 collections:
   modules:
-    output: false
+    output: true
   courses:
     output: true
 
