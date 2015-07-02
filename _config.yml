@@ -24,7 +24,7 @@ collections:
   modules:
     output: false
   courses:
-    output: false
+    output: true
 
 include:
 - _stylesheets
