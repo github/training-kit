@@ -1,6 +1,7 @@
 ---
 layout: module
 title: Using Issues
+leadingpath: ../
 pre-requisites: COLL-01_Exploring-a-repository
 learning-objective: Collaborate using GitHub Issues to discuss ideas, enhancements, tasks and bugs.
 screens:

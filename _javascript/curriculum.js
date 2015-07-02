@@ -85,6 +85,11 @@ $(function(){
 
         $("#teacher").toggleClass("hidden");
 
+        // Toggle material when self-taught
+
+        $("div.video").toggleClass("hidden");
+        $("div.narration-table").toggleClass("hidden");
+
         updateSlideSize();
       }
     });

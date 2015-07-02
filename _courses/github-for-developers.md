@@ -1,6 +1,7 @@
 ---
 layout: course
 title: GitHub for Developers
+leadingpath: ../
 description: If you use GitHub on the command line every day, this two-part class will help you work faster and go further with GitHub tools and interactions. On the first day, you will learn how to integrate Git and GitHub into your daily command line workflow. On the second day, we'll take a deeper dive into command line Git operations, including platform shortcuts, Git behavior customization, and how to re-write history.
 
 sections:

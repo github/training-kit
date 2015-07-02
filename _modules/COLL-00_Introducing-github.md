@@ -1,6 +1,7 @@
 ---
 layout: module
 title: Introducing GitHub
+leadingpath: ../
 pre-requisites:
 learning-objective: Describe the features of GitHub and how it is used to collaborate effectively with your team.
 screens:

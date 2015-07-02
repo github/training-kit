@@ -1,6 +1,7 @@
 ---
 layout: module
 title: Exploring a Repository
+leadingpath: ../
 pre-requisites: 001
 learning-objective: Learn how to navigate through a repository, understand the basic concepts of  the code view, the README.md, issues and pull requests.
 screens:
