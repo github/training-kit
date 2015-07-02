@@ -20,6 +20,12 @@ exclude:
 - script
 - vendor
 
+collections:
+  modules:
+    output: false
+  courses:
+    output: false
+
 include:
 - _stylesheets
 - _javascript
