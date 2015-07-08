@@ -127,26 +127,23 @@ layout: site
 
             {% when 'poll' or 'quiz' %}
 
-              <p>{{ item[1].presenter-script }}</p>
+              <div class="lab panel panel-primary">
 
-              <ol>
-              {% for question in item[1].questions %}
-                  <li>{{ question.title }}<br/><br/>
-                  <ul>
-                    {% for option in question.options %}
-                    <li>
-                      {% if option.value != null %}
-                        {{ option.value | remove:'/' | remove: '$' | remove: '^' | remove: '#' | remove: '?'}}<br/>
-                      {% else %}
-                        <em>NULL - No Value Specified</em><br/>
-                      {% endif %}
-                      <em><small>{{ option.response }}</small></em><br/><br/>
-                    </li>
-                    {% endfor %}
-                  </ul>
-                </li>
-              {% endfor %}
-            </ol>
+                <div class="panel-heading">
+                    {{ item[0] | capitalize }}
+                </div>
+
+                <div class="panel-body">
+                  <p>{{ item[1].presenter-script }}</p>
+                </div>
+
+                <ol>
+                {% for question in item[1].questions %}
+                    <li>{{ question.title }}<br/><br/></li>
+                {% endfor %}
+              </ol>
+
+            </div>
 
             {% when 'image-slide' %}
 
