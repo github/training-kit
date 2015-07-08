@@ -4,6 +4,8 @@ $(function(){
   // Bind checkbox/label click for slide toggle
   $("#slide-only-toggle").change(function(){
     $(".materials > *").not(".slide").toggleClass("hidden");
+    $(".poll").toggleClass("hidden");
+    $(".lab").toggleClass("hidden");
   });
 
   // Parse username from querystring

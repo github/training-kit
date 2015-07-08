@@ -105,8 +105,6 @@ layout: site
     </div>
   </div>
 
-  <div class="deck">
-
       <div class="slide">
         <div class="alignment">
           <h1>{{ page.title }}</h1>
@@ -117,7 +115,7 @@ layout: site
       </div>
 
       {% for screen in page.screens %}
-      <div class="slide">
+      <div class="slide {{ screen.first[0] }}">
         <div class="alignment">
 
           {% for item in screen %}
@@ -215,9 +213,6 @@ layout: site
         </div>
       </div>
       {% endfor %}
-
-  </div>
-
 
 </div>
 
