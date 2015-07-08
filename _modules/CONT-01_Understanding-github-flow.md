@@ -7,7 +7,7 @@ learning-objective: Describe the collaborative workflow enabled by GitHub.
 screens:
   - video-slide:
       title: Understanding the GitHub Flow
-      video: https://www.youtube.com/watch?v=r5C6yXNaSGo
+      video: http://youtu.be/PBI2Rz-ZOxU
       video-script:
         - do: Show the GitHub flow at https://guides.github.com/introduction/flow/
           say: The GitHub flow is a lightweight workflow that allows you to experiment with new ideas safely, without fear of compromising a project.

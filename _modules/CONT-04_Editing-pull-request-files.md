@@ -12,7 +12,7 @@ screens:
         - Since you created the pull request, you will be notified when someone adds a comment. In this case, the comment tells us we need to make a change to the file we have already created. Let's see how GitHub makes this easy.
   - video-slide:
       title: Editing Pull Request Files
-      video: https://www.youtube.com/watch?v=r5C6yXNaSGo
+      video: http://youtu.be/F0IvcyTwDt4
       video-script:
         - do: "Navigate to your `pull request`"
           say: "Let's go back to your pull request and make the edits requested by your collaborators."

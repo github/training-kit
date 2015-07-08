@@ -16,7 +16,7 @@ screens:
         - Let's take a look at how you can merge the pull request and close the original issue at the same time.
   - video-slide:
       title: Merging Pull Requests
-      video: https://www.youtube.com/watch?v=r5C6yXNaSGo
+      video: http://youtu.be/3MUmLHHxSqE
       video-script:
         - do: "Open the `pull request` to be merged"
           say: "Visit your pull request now that it's ready to be merged"

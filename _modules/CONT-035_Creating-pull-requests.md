@@ -12,7 +12,7 @@ screens:
         - Pull Requests are used to propose changes to the project files. A pull request introduces an action that addresses an Issue. A Pull Request is considered a "work in progress" until it is merged into the project. Now that you have created a file, you will open a pull request to discuss the file with your team mates.
   - video-slide:
       title: Creating a Pull Request on GitHub
-      video: https://www.youtube.com/watch?v=r5C6yXNaSGo
+      video: http://youtu.be/kJr-PIfLDl4
       video-script:
         - do: Show `Your recently pushed branches:` banner
           say: "GitHub knows that you have added changes to your branch and helpfully recommends that you start a pull request."

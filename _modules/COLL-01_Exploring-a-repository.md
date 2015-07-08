@@ -47,17 +47,17 @@ screens:
       id: COLL-01-quiz-02
       presenter-script: Before we move on, let's make sure we can find important parts of a repository
       questions:
-        - title: What is the Issue number for the discussion on updating the .gitignore
+        - title: What is the Issue number for the discussion on adding the .gitignore
           id: COLL-01-qq2
           type: open-response
           options:
             - value: "/^#?4$/"
               id: COLL-01-qq2-o1
-              response: "Good job! Issue #4 is discussing the updates to the .gitignore."
+              response: "Good job! Issue #4 is discussing adding the .gitignore."
               correct: true
             - value: # Null means it matches anything else - please make this the last option
               id: COLL-01-qq2-o2
-              response: "Not quite. Issue #4 is discussing the updates to the .gitignore."
+              response: "Not quite. Issue #4 is discussing adding the .gitignore."
   - quiz:
       title: Exploring a Repository
       id: COLL-01-quiz-03
@@ -67,13 +67,13 @@ screens:
           id: COLL-01-qq3
           type: open-response
           options:
-            - value: /crichID/i
+            - value: /githubteacher/i
               id: COLL-01-qq3-o1
-              response: "Good job! @crichID opened issue #1."
+              response: "Good job! @githubteacher opened issue #1."
               correct: true
             - value: # Null means it matches anything else - please make this the last option
               id: COLL-01-qq3-o2
-              response: "Not quite. @crichID opened issue #1."
+              response: "Not quite. @githubteacher opened issue #1."
               correct: false
   - quiz:
       title: Exploring a Repository
@@ -84,13 +84,13 @@ screens:
           id: COLL-01-qq4
           type: open-response
           options:
-            - value: /peterbell/i
+            - value: /crichID/i
               id: COLL-01-qq4-o1
-              response: "Good job! @peterbell was the first person to comment on issue #2."
+              response: "Good job! @crichID was the first person to comment on issue #2."
               correct: true
             - value: # Null means it matches anything else - please make this the last option
               id: COLL-01-qq4-o2
-              response: "Not quite. @peterbell was the first person to comment on issue #2."
+              response: "Not quite. @crichID was the first person to comment on issue #2."
               correct: false
   - quiz:
       title: Exploring a Repository
@@ -101,13 +101,13 @@ screens:
           id: COLL-01-qq5
           type: open-response
           options:
-            - value: "/^#?5$/"
+            - value: "/^#?6$/"
               id: COLL-01-qq5-o1
-              response: "Good job! PR #5 is fixing the .gitignore file."
+              response: "Good job! PR #6 is adding the .gitignore file."
               correct: true
             - value: # Null means it matches anything else - please make this the last option
               id: COLL-01-qq5-o2
-              response: "Not quite. PR #5 is fixing the .gitignore file."
+              response: "Not quite. PR #6 is adding the .gitignore file."
               correct: false
 additional-labs:
 additional-questions:

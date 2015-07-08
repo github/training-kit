@@ -7,7 +7,7 @@ learning-objective: Add a new file using GitHub.com or GitHub Enterprise.
 screens:
   - video-slide:
       title: Creating Files on GitHub
-      video: https://www.youtube.com/watch?v=r5C6yXNaSGo
+      video: http://youtu.be/47M6Is7pIB8
       video-script:
         - do: Navigate to the `class repository`
           say: Now that you have been introduced to the GitHub flow and branching, let's see how they are used in the real world. In order to respond to the issue you created earlier, you need to create a file.

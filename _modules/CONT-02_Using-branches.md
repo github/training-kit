@@ -16,7 +16,7 @@ screens:
         - Let's learn how you can create a new branch.
   - video-slide:
       title: Creating a Branch
-      video: https://www.youtube.com/watch?v=r5C6yXNaSGo
+      video: http://youtu.be/xgQmu81G1yY
       video-script:
         - do: Navigate to the `class repository`
           say: Earlier you created an issue to create an introduction file. Let's create a branch that you will use to add your file.
