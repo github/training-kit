@@ -36,36 +36,25 @@
         <div class="text-center">
 
           <div class="row">
-            <div class="col-md-4">
-              <a href="foundations/">
-                <div class="panel">
-                  <span class="octicon octicon-plug"></span>
-                  <h4>Foundations</h4>
-                  <p><small>Core skills for day-to-day use of Git on the command line and GitHub workflows</small></p>
-                </div>
-              </a>
-            </div>
 
-            <div class="col-md-4">
-              <a href="intermediate/">
-                <div class="panel">
-                  <span class="octicon octicon-terminal"></span>
-                  <h4>Intermediate</h4>
-                  <p><small>Important command line skills and problem solving processes</small></p>
-                </div>
-              </a>
-            </div>
+            {% for course in site.courses %}
+              <div class="col-md-6">
+                <a href="{{ course.url }}">
+                  <div class="panel">
+                    {% if course.title == "GitHub for Developers" %}
+                      <span class="octicon octicon-terminal"></span>
+                    {% elsif course.title == "GitHub for Everyone" %}
+                      <span class="octicon octicon-organization"></span>
+                    {% endif %}
+                    <h4>{{ course.title }}</h4>
+                    <p><small>{{ course.description }}</small></p>
+                  </div>
+                </a>
+              </div>
+            {% endfor %}
 
-            <div class="col-md-4">
-              <a href="advanced/">
-                <div class="panel">
-                  <span class="octicon octicon-microscope"></span>
-                  <h4>Advanced</h4>
-                  <p><small>Command line deep dive, problem solving techniques, and GitHub efficiencies</small></p>
-                </div>
-              </a>
-            </div>
           </div>
+
           <!-- <div class="row">
             <div class="col-md-6">
               <img src="{{ site.url }}/images/git-training-pics.png" alt="GitHub Training at Live Event" class="img-responsive">
