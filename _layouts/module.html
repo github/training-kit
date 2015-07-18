@@ -149,7 +149,7 @@ layout: site
               {{ item[1].presenter-script }}
             </p>
             <p>
-              <img src="{% if item[1].image contains 'http'%}{{ item[1].image }}{% else %}/images/{{item[1].image}}{% endif %}" alt="" />
+              <img src="{% if item[1].image contains 'http'%}{{ item[1].image }}{% else %}{{ site.baseurl }}/images/{{item[1].image}}{% endif %}" alt="" />
             </p>
 
             {% when 'video-slide' %}
