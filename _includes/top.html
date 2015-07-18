@@ -39,7 +39,7 @@
 
             {% for course in site.courses %}
               <div class="col-md-6">
-                <a href="{{ course.url }}">
+                <a href="{{ site.baseurl }}{{ course.url }}">
                   <div class="panel">
                     {% if course.title == "GitHub for Developers" %}
                       <span class="octicon octicon-terminal"></span>
