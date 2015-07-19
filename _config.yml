@@ -6,6 +6,7 @@ title: GitHub Training
 
 # standard jekyll configuration
 
+baseurl: /kit
 permalink: /articles/:title
 highlighter: pygments
 exclude:
@@ -19,6 +20,12 @@ exclude:
 - README.md
 - script
 - vendor
+
+collections:
+  modules:
+    output: true
+  courses:
+    output: true
 
 include:
 - _stylesheets
