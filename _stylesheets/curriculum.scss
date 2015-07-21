@@ -378,6 +378,15 @@ table{
       font: normal normal 20px octicons;
     }
   }
+
+  /* Narration Table Styling */
+  .narration-table {
+    margin: 0 6em;
+    th {
+      text-align: center;
+      font-size: 1.5em;
+    }
+  }
 }
 
 .affix-top{
