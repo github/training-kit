@@ -116,11 +116,22 @@ $(function(){
   }
   document.addEventListener("keydown", shortcuts.toggle, false);
 
-  // Render the TOC
-  //buildToc();
+  // Conditionally Render the TOC
 
-  // Hide the TOC
-  $(".module-toc").hide();
+    // List of Legacy Classes
+    var legacyClasses = ["GitHub Foundations", "GitHub Intermediate", "GitHub Advanced"];
+
+    // Get the current class title
+    var classTitle = $("header.colorful > div.container > h2").html();
+
+    // If the current class is not in the list of legacy classes, hide the TOC
+    // Otherwise render it out.
+    if ($.inArray(classTitle, legacyClasses) == -1) {
+      $(".module-toc").hide();
+    }
+    else {
+      buildToc();
+    }
 
   // Reframe slides on any window resize
   $(window).resize(function () {
