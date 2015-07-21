@@ -115,7 +115,11 @@ $(function(){
   document.addEventListener("keydown", shortcuts.toggle, false);
 
   // Render the TOC
-  buildToc();
+  //buildToc();
+
+  // Hide the TOC
+  $(".module-toc").hide();
+
   // Reframe slides on any window resize
   $(window).resize(function () {
     updateSlideSize();
