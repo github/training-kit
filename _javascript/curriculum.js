@@ -1,10 +1,13 @@
 $(function(){
   var timeLeftInterval = 0;
 
+  // Hide Quizzes and Polls
+  $(".quiz").hide();
+  $(".poll").hide();
+
   // Bind checkbox/label click for slide toggle
   $("#slide-only-toggle").change(function(){
     $(".materials > *").not(".slide").toggleClass("hidden");
-    $(".poll").toggleClass("hidden");
     $(".lab").toggleClass("hidden");
   });
 
