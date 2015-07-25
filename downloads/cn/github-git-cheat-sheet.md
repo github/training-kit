@@ -27,7 +27,6 @@ http://git-scm.com
 
 对你的commit操作设置关联的用户名
 
-
 ```$ git config --global user.email "[email address]"```
 
 对你的commit操作设置关联的邮箱地址
@@ -54,7 +53,7 @@ http://git-scm.com
 
 {% capture colTwo %}
 
-## 做更改
+## 更改
 检查已有的编辑并执行commit操作
 
 
@@ -87,7 +86,7 @@ http://git-scm.com
 
 将文件快照永久地记录在版本历史中
 
-## 群组更改
+## 批量更改
 命名一系列commit以及合并已完成的工作
 
 
@@ -124,14 +123,12 @@ http://git-scm.com
 ---
 
 {% capture colThree %}
-## 重构档案名
+## 重构文件
 重定位并移除版本文件
-
 
 ```$ git rm [file]```
 
 从工作目录中删除文件并暂存此删除
-
 
 ```$ git rm --cached [file]```
 
@@ -142,7 +139,7 @@ http://git-scm.com
 
 改变文件名并准备commit
 
-## 组织跟踪
+## 停止追踪
 不包含临时文件和路径
 
 ```
@@ -158,9 +155,8 @@ temp-*
 
 列出所有项目中忽略的文件
 
-## 保存碎片
+## 保存临时更改
 暂存一些未完成的更改
-
 
 ```$ git stash```
 
