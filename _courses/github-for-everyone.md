@@ -2,7 +2,7 @@
 layout: course
 leadingpath: ../
 title: GitHub for Everyone
-description: GitHub is not just for developers. Project managers, tech writers, and other people who help build software can use GitHub to work with developers and with each other. Get an introduction to Git and GitHub concepts and learn how to use version control  in your role without touching the command line.
+description: An introduction to GitHub concepts for those who prefer to use graphical tools instead of the command line.
 
 sections:
   -
