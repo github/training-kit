@@ -62,7 +62,7 @@ Lista todos os arquivos novos ou modificados para serem commitados
 
 ```$ git diff```
 
-Mostra diferenças no arquivo que não foram realizadas
+Mostra diferenças no arquivo que não foram preparadas
 
 
 ```$ git add [arquivo]```
@@ -72,12 +72,12 @@ Faz o snapshot de um arquivo na preparação para versionamento
 
 ```$ git diff --staged```
 
-Mostra a diferença entre arquivos selecionados e a suas últimas versões
+Mostra a diferença entre arquivos preparados e a suas últimas versões
 
 
 ```$ git reset [arquivo]```
 
-Deseleciona o arquivo, mas preserva seu conteúdo
+Retira o arquivo da área de preparação, mas preserva seu conteúdo
 
 
 ```$ git commit -m "[mensagem descritiva]"```
@@ -119,7 +119,7 @@ Mude e remova os arquivos versionados
 
 ```$ git rm [arquivo]```
 
-Remove o arquivo do diretório de trabalho e o seleciona para remoção
+Remove o arquivo do diretório de trabalho e o prepara a remoção
 
 
 ```$ git rm --cached [arquivo]```
@@ -129,7 +129,7 @@ Remove o arquivo do controle de versão mas preserva o arquivo localmente
 
 ```$ git mv [arquivo-original] [arquivo-renomeado]```
 
-Muda o nome do arquivo e o seleciona para o commit
+Muda o nome do arquivo e o prepara para o commit
 
 ## Suprima o rastreamento
 Ignore arquivos e diretórios temporários
