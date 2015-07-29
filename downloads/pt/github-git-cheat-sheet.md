@@ -207,17 +207,17 @@ Desfaz todos os commits depois de `[commit]`, preservando mudanças locais
 Descarta todo histórico e mudanças para o commit especificado
 
 ## Sincronize mudanças
-Registre um marcador de repositório e troque o histórico de versão
+Registre um repositório remoto e troque o histórico de versão
 
 
-```$ git fetch [marcador]```
+```$ git fetch [nome-remoto]```
 
-Baixe todo o histórico de um marcador de repositório
+Baixe todo o histórico de um repositório remoto
 
 
-```$ git merge [marcador]/[branch]```
+```$ git merge [nome-remoto]/[branch]```
 
-Combina o marcador do branch no branch local
+Combina o branch remoto no branch local
 
 
 ```$ git push [alias] [branch]```
