@@ -132,7 +132,7 @@ Remove o arquivo do controle de versão mas preserva o arquivo localmente
 Muda o nome do arquivo e o seleciona para o commit
 
 ## Suprima o rastreamento
-Exclua arquivos e diretórios temporários
+Ignore arquivos e diretórios temporários
 
 ```
 *.log
