@@ -62,7 +62,7 @@ Lista todos os arquivos novos ou modificados para serem commitados
 
 ```$ git diff```
 
-Mostra diferenças no arquivo que não foram preparadas
+Mostra diferenças no arquivo que ainda não foram preparadas
 
 
 ```$ git add [arquivo]```
