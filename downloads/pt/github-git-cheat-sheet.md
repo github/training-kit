@@ -131,7 +131,7 @@ Remove o arquivo do controle de versão mas preserva o arquivo localmente
 
 Muda o nome do arquivo e o prepara para o commit
 
-## Suprima o rastreamento
+## Suprima o monitoramento
 Ignore arquivos e diretórios temporários
 
 ```
@@ -153,7 +153,7 @@ Arquive e restaure mudanças incompletas
 
 ```$ git stash```
 
-Armazena temporariamente todos os arquivos rastreados modificados
+Armazena temporariamente todos os arquivos monitorados modificados
 
 
 ```$ git stash pop```
