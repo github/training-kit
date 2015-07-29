@@ -2,7 +2,7 @@
 layout: course
 leadingpath: ../
 title: GitHub for Everyone
-description: An introduction to GitHub concepts for those who prefer to use graphical tools instead of the command line.
+description: An introduction to GitHub for those who prefer the web browser and graphical clients.
 
 sections:
   -
