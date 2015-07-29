@@ -44,7 +44,7 @@ Inicie um novo repositório ou obtenha de uma URL existente
 
 ```$ git init [nome-do-projeto]```
 
-Cria um novo repositório local com um nome específico
+Cria um novo repositório local com um nome especificado
 
 
 ```$ git clone [url]```
@@ -100,17 +100,17 @@ Cria um novo branch
 
 ```$ git checkout [nome-do-branch]```
 
-Muda para o branch específico e atualiza o diretório de trabalho
+Muda para o branch especificado e atualiza o diretório de trabalho
 
 
 ```$ git merge [nome-do-branch]```
 
-Combina o histórico do branch específico ao branch atual
+Combina o histórico do branch especificado ao branch atual
 
 
 ```$ git branch -d [nome-do-branch]```
 
-Exclui o branch específico
+Exclui o branch especificado
 
 
 ## Refatore nomes dos arquivos
