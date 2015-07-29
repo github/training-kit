@@ -105,7 +105,7 @@ Muda para o branch específico e atualiza o diretório de trabalho
 
 ```$ git merge [nome-do-branch]```
 
-Combina o histórico do branch específico com o branch atual
+Combina o histórico do branch específico ao branch atual
 
 
 ```$ git branch -d [nome-do-branch]```
@@ -217,7 +217,7 @@ Baixe todo o histórico de um repositório remoto
 
 ```$ git merge [nome-remoto]/[branch]```
 
-Combina o branch remoto no branch local
+Combina o branch remoto ao branch local atual
 
 
 ```$ git push [alias] [branch]```
