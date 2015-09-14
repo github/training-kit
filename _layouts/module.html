@@ -52,7 +52,7 @@ layout: site
 <!-- Modal -->
 <div class="modal fade" id="timerModal" tabindex="-1" role="dialog" aria-labelledby="timerModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content text-center">
+    <form id='timerForm' class="modal-content text-center">
       <input type="number" id="minutes" name="minutes" min="1" max="60" value="5" placeholder="min" class="form-control time-amount">
       <div class="time-left" id="time-left"></div>
 
@@ -60,7 +60,7 @@ layout: site
         <button id="start-stop" type="submit" class="btn btn-default">Start</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
-    </div>
+    </form>
   </div>
 </div>
 

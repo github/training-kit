@@ -1,6 +1,4 @@
 $(function(){
-  var timeLeftInterval = 0;
-
   // Hide Quizzes and Polls
   $(".quiz").hide();
   $(".poll").hide();
@@ -158,35 +156,77 @@ $(function(){
   }
 
   //Time toggle keybinding
-  $(".timer-label").click(function(){
-    resetTimer();
-  });
-  $("#start-stop").click(function(){
+  var Timer = (function() {
+    // this stores target time on window.countDownTo
 
-    var timeLeftDisplay = $("#time-left")
-    var min = $("#minutes").attr("value");
-    var duration = min*60;
+    function now() { return new Date().getTime() }
 
-    resetTimer();
+    function bareCallback(aTimer) {
+      var delta      = window.countDownTo.getTime() - now()
+      var timeLeft   = delta > 0
+      var noTimeLeft = !(timeLeft)
 
-    $(".time-amount").hide();
-    $("#start-stop").hide();
-
-    timeLeftInterval = setInterval(function(){
-      timeLeftDisplay.html( Math.floor((duration)/60) + ":" + (duration%60 < 10 ? "0"+duration%60:duration%60) );
-      duration = --duration;
-
-      if(duration == -1){
-        clearInterval(timeLeftInterval);
+      if (noTimeLeft) {
+        aTimer.clearTimer()
+        return
       }
-    }, 1000);
-  });
-  function resetTimer(){
-    clearInterval(timeLeftInterval);
+
+      var min_float = delta / 1000 / 60
+      var minutes = Math.floor(min_float)
+      var seconds = Math.floor((min_float - minutes) * 60)
+      if (minutes < 10) { minutes = "0" + minutes }
+      if (seconds < 10) { seconds = "0" + seconds}
+      aTimer.shouldDisplay(minutes + ":" + seconds)
+    }
+
+    var Timer = function(display) {
+      var aTimer       = this
+      this.display     = display
+      this.callback    = function() { bareCallback(aTimer) }
+    }
+
+    Timer.prototype.blankSlate = function() {
+      this.clearTimer("")
+    }
+
+    Timer.prototype.clearTimer = function(textToShow) {
+      textToShow = typeof textToShow !== 'undefined' ?  textToShow : "00:00"
+      this.shouldDisplay(textToShow)
+      window.countDownTo = 0
+      if (window.counter) { window.clearInterval(window.counter) }
+    }
+
+    Timer.prototype.shouldDisplay = function(text) {
+      this.display.text(text)
+    }
+
+    Timer.prototype.startCountdown = function(durationInMinutes) {
+      // timer so that every second, update displayed time
+      var countDownTo = new Date(now() + (1000 * 60 * durationInMinutes))
+      window.countDownTo = countDownTo
+
+      this.callback()
+      window.counter = setInterval(this.callback, 1000 * 1)
+    }
+
+    return Timer;
+  })()
+
+  var timer = new Timer($("#time-left"));
+  $('.timer-label').click(function(e) {
+    e.preventDefault()
+    timer.blankSlate()
     $("#start-stop").show();
     $(".time-amount").show();
-    $("#time-left").html("");
-  }
+  })
+
+  $('#timerForm').submit(function(e) {
+    e.preventDefault()
+    $(".time-amount").hide();
+    var duration = $('#minutes').val()
+    timer.startCountdown(duration)
+  })
+
 
   // Table of Contents header parsing and builder
   function buildToc(){
