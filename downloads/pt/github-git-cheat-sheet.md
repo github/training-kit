@@ -5,11 +5,6 @@ byline: Git é um sistema de controle de versão distribuído open source que fa
 leadingpath: ../../
 ---
 
-
-# Folha de Dicas de Git do GitHub (pt-BR)
-
-Git é um sistema de controle de versão distribuído open source que facilita ações com o GitHub em seu notebook ou desktop. Esta folha de dicas resume instruções comumente usadas via linha de comando do Git para referência rápida.
-
 ## Instale o Git
 GitHub fornece clientes desktop que incluem uma interface gráfica para as ações mais comuns em um repositório e atualiza automaticamente para a linha de comando do Git para cenários avançados.
 
