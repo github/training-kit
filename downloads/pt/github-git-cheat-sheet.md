@@ -5,6 +5,7 @@ byline: Git é um sistema de controle de versão distribuído open source que fa
 leadingpath: ../../
 ---
 
+{% capture colOne %}
 ## Instale o Git
 GitHub fornece clientes desktop que incluem uma interface gráfica para as ações mais comuns em um repositório e atualiza automaticamente para a linha de comando do Git para cenários avançados.
 
@@ -46,9 +47,15 @@ Cria um novo repositório local com um nome especificado
 
 Baixa um projeto e seu histórico de versão inteiro
 
+{% endcapture %}
+<div class="col-md-6">
+{{ colOne | markdownify }}
+</div>
+
+{% capture colTwo %}
+
 ## Faça mudanças
 Revise edições e crie uma transação de commit
-
 
 ```$ git status```
 
@@ -106,8 +113,15 @@ Combina o histórico do branch especificado ao branch atual
 ```$ git branch -d [nome-do-branch]```
 
 Exclui o branch especificado
+{% endcapture %}
+<div class="col-md-6">
+{{ colTwo | markdownify }}
+</div>
+<div class="clearfix"></div>
 
+---
 
+{% capture colThree %}
 ## Refatore nomes de arquivos
 Mude e remova os arquivos versionados
 
@@ -165,6 +179,12 @@ Lista todos os conjuntos de alterações em stash
 
 Descarta os conjuntos de alterações mais recentes em stash
 
+{% endcapture %}
+<div class="col-md-6">
+{{ colThree | markdownify }}
+</div>
+
+{% capture colFour %}
 ## Revise o histórico
 Navegue e inspecione a evolução dos arquivos do projeto
 
@@ -224,10 +244,7 @@ Envia todos os commits do branch local para o GitHub
 
 Baixa o histórico e incorpora as mudanças
 
----
-
-## GitHub Training
-Aprenda mais sobre o uso do GitHub e do Git. Envie um email para a Equipe de Treinamentos ou visite nosso site para ver a agenda de eventos ou a disponibilidade de cursos particulares.
-
-* training@github.com
-* [training.github.com](training.github.com)
+{% endcapture %}
+<div class="col-md-6">
+{{ colFour | markdownify }}
+</div>
