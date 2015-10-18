@@ -14,7 +14,7 @@ screens:
       title: The Two Stage Commit
       image: two-stage-commit-b.jpg
       presenter-script:
-        - When you work locally, your files exist in one of four states. They are either untracked, modified, staged, or committed.
+        - When you work locally, your files exist in one of four states: untracked, modified, staged, or committed.
         - An untracked file is one that is not currently part of the version controlled directory.
   - image-slide:
       title: The Two Stage Commit

@@ -10,7 +10,7 @@ screens:
       image: two-stage-commit-a.jpg
       presenter-script:
         - After you have finished making your changes, it is time to commit them. When working in the desktop app, you will need to be familiar with the idea of the two stage commit.
-        - When you work locally, your files exist in one of four states. They are either untracked, modified, staged, or committed.
+        - When you work locally, your files exist in one of four states: untracked, modified, staged, or committed.
         - When you are ready to add these files to version control, you will create a collection of files that represent a discrete unit of work. We build this unit in the changes tab of the desktop app.
         - When we are satisfied with the unit of work we have assembled, we will commit it.
         - Let's do it now.
