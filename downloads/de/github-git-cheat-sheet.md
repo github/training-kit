@@ -20,7 +20,7 @@ Git-Distributionen für Linux- und POSIX-Systeme sind auf der offiziellen Git SC
 ### Git für alle Plattformen
 http://git-scm.com
 
-## Tool-Konfiguration
+## Werkzeuge konfigurieren
 Konfigurieren von Benutzerinformationen für alle lokalen Repositories
 
 ```$ git config --global user.name "[name]"```
