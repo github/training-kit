@@ -34,7 +34,7 @@ Setzt die Emailadresse, die du an deine Commit-Transaktionen hängen willst
 
 
 ## Repositories anlegen
-Lege ein neues Repository an, oder lade eines von einer bestehenden URL
+Ein neues Repository anlegen, oder eines von einer bestehenden URL herunterladen
 
 
 ```$ git init [project-name]```
@@ -43,7 +43,7 @@ Legt ein neues lokales Repository mit dem angegebenen Namen an
 
 ```$ git clone [url]```
 
-Lädt ein Projekt und seine gesamte Versionshistorie herunter
+Klont ein Projekt und lädt seine gesamte Versionshistorie herunter
 
 {% endcapture %}
 <div class="col-md-6">
@@ -133,7 +133,7 @@ Entfernt die Datei aus der Versionskontrolle, behält sie jedoch lokal
 
 Ändert den Namen der Datei und bereitet diese für den Commit vor
 
-## Überwachung unterdrücken
+## Tracking unterdrücken
 Temporäre Dateien und Pfade ausschließen
 
 ```
@@ -155,7 +155,7 @@ Aufschieben und Wiederherstellen unvollständiger Änderungen
 
 ```$ git stash```
 
-Speichern temporär alle überwachten Dateien mit Änderungen
+Speichert temporär alle getrackten Dateien mit Änderungen
 
 
 ```$ git stash pop```
@@ -214,27 +214,27 @@ Macht alle Commits nach `[commit]` rückgängig, erhält die Änderungen aber lo
 Verwirft die Historie und Änderungen seit dem angegebenen Commit
 
 ## Änderungen synchronisieren
-Registrieren eines entfernten Repositories (URL) und Tauschen der Repository-Historie
+Registrieren eines externen Repositories (URL) und Tauschen der Repository-Historie
 
 
 ```$ git fetch [remote]```
 
-Lädt die gesamte Historie eines entfernten Repositories herunter
+Lädt die gesamte Historie eines externen Repositories herunter
 
 
 ```$ git merge [remote]/[branch]```
 
-Kombiniert den entfernten Branch in den aktuellen lokalen Branch
+Integriert den externen Branch in den aktuellen lokalen Branch
 
 
 ```$ git push [remote] [branch]```
 
-Lädt alle Commits auf dem lokalen Branch zu GitHub hoch
+Pusht alle Commits auf dem lokalen Branch zu GitHub
 
 
 ```$ git pull```
 
-Lädt die gemerkte Historie herunter und integriert die Änderungen
+Pullt die Historie vom externen Repository und integriert die Änderungen
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
