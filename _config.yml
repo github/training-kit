@@ -6,6 +6,7 @@ title: GitHub Training
 
 # standard jekyll configuration
 
+baseurl: /kit
 permalink: /articles/:title
 highlighter: pygments
 exclude:
@@ -20,11 +21,21 @@ exclude:
 - script
 - vendor
 
+collections:
+  modules:
+    output: true
+  courses:
+    output: true
+
 include:
 - _stylesheets
 - _javascript
 
 markdown: rdiscount
+
+sass:
+  sass_dir: assets/vendor/
+  style: :compressed
 
 # Custom site configuration
 lang: en

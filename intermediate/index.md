@@ -5,9 +5,63 @@ byline: Leveraging Git and GitHub from the command line
 redirect_from:
   - ../workbooks/github-intermediate.html
 ---
-{% capture slide %}
+
+---
+
+<span class="mega-octicon octicon-terminal"></span>
+
+# GitHub Intermediate
+
+Important command line skills and problem solving processes
+
+<div class="objectives">
+<input type="checkbox" id="obj1"><label for="obj1">Setup and configure Git</label>
+<input type="checkbox" id="obj2"><label for="obj2">Utilize basic command line operations</label>
+<input type="checkbox" id="obj3"><label for="obj3">Understand versioning steps for content change</label>
+<input type="checkbox" id="obj4"><label for="obj4">Review uncommitted and versioned content</label>
+<input type="checkbox" id="obj5"><label for="obj5">Assess history and result filtering</label>
+<input type="checkbox" id="obj6"><label for="obj6">Organize work with branches</label>
+<input type="checkbox" id="obj7"><label for="obj7">Manage commit history synchronization</label>
+<input type="checkbox" id="obj8"><label for="obj8">Create shortcuts and customized commands</label>
+<input type="checkbox" id="obj9"><label for="obj9">Version files across renames, moves, and more</label>
+<input type="checkbox" id="obj10"><label for="obj10">Undo and recovery from any changes</label>
+</div>
+
+---
+
+---
+
 ## Configuring your Git environment
-{% endcapture %}{% include slide-section %}
+
+Establish important and useful settings for efficient command line use.
+
+---
+
+---
+
+```
+git config --global user.name "Your Name"
+git config --global user.email "Email Address"
+```
+
+---
+
+---
+
+```bash
+git config --global color.ui auto
+git config --global core.autocrlf [input|true]
+```
+
+---
+
+---
+
+```bash
+git config --global core.editor
+```
+
+---
 
 {% capture lab %}
 1. Verify the current value of your username and email address as known by Git.
@@ -20,20 +74,20 @@ redirect_from:
 ### Details
 Git is configured through name-value pairs saved in an [INI file format](http://en.wikipedia.org/wiki/INI_file). The name-value pairs can be read and written through the `git config` command.
 
-Git's configuration is saved in one of three plain text files and one of three levels and is easily editable with a text editor and portable to other machines by copying the configuration files.
+Git's configuration is saved in one of three plain text files and one of three levels. It is easily editable with a text editor and portable to other machines by copying the configuration files.
 
 #### Identity
 Your name and email address are configured locally in Git and are attached to each commit. Set these accurately to receive proper attribution for your work.
 
 These are the very first Git elements often suggested to set. If not set, Git will fall back to an automatically derived name and email from the host machine's network node name.
 
-To inspect the current settings, individually query two configuration values:
+To see the current settings, individually query two configuration values:
 
 ```shell
-$ git config user.name
+$ git config --global user.name
 Firstname Lastname
 
-$ git config user.email
+$ git config --global user.email
 someaccount@example.com
 ```
 
@@ -62,7 +116,7 @@ Level | Precedence | Location
 `global` | middle | in your home directory as `.gitconfig`
 `local` | highest | in your project's `.git/config` file
 
-To use each of the scopes in a setting or getting action of `config`, simple provide the scope's name alongside the config action:
+To use each of the scopes in a setting or getting action of `config`, simply provide the scope's name alongside the config action:
 
 ```shell
 $ git config --system [name] [value]
@@ -88,53 +142,123 @@ $ git config --list --[scope]
 
 
 
-{% capture slide %}
+---
+
 ## Starting on the command line
-{% endcapture %}{% include slide-section %}
+
+Begin versioning project content from existing content or from a fresh start.
+
+---
+
+
+---
+
+```
+# Initialize a new project
+
+$ git init [projectname]
+```
+
+---
+
+
+---
+
+```
+#Initialize from inside a top level directory
+
+$ cd [project-directory]
+$ git init
+```
+
+---
+
+
+---
+
+```shell
+#Acquire with default repository name
+
+$ git clone [repository-url]
+```
+
+---
+
+---
+
+```
+# Acquire with preferred, optional name
+
+$ git clone [url] [optional-folder-name]
+```
+
+---
+
 
 ### Details
 Git provides an easy way to start versioning any prototype, prose or project with a terse command line recipe. Just initialize a local repository and create a top level project directory:
 
-```shell
- For a new project...
-$ git init [projectname]
-$ cd [projectname]
-```
 
-Initialize a repository inside a top level project directory:
-
-```shell
- For an existing project...
-$ cd [existingprojectname]
-$ git init
-```
-
-Acquire a project locally:
-
-```shell
- Acquire with default repository name
-$ git clone [repository-url]
-
- Acquire with preferred, optional name
-$ git clone [url] [optional-folder-name]
-```
 
 ### Video
 <iframe src="//player.vimeo.com/video/88313612" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 
-{% capture slide %}
+---
+
 ## Versioning via the command line
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
-![Versions](../assets/diagrams/commit-versions.svg)
-{% endcapture %}{% include slide-section %}
+Explore the advantages of Git's staging area and commit process.
 
-{% capture slide %}
-![Three stages of versioning](../assets/diagrams/commit-three-stage.svg)
-{% endcapture %}{% include slide-section %}
+---
+
+---
+
+```shell
+$ git status
+$ git add [filename]
+$ git commit -m "[your description]"
+```
+
+---
+
+---
+
+![Versions](../assets/diagrams/commit-versions-01.svg)
+
+---
+
+---
+
+![Versions](../assets/diagrams/commit-versions-02.svg)
+
+---
+
+---
+
+![Versions](../assets/diagrams/commit-versions-03.svg)
+
+---
+
+---
+
+![Three stages of versioning](../assets/diagrams/commit-three-stage-01.svg)
+
+---
+
+---
+
+![Three stages of versioning](../assets/diagrams/commit-three-stage-02.svg)
+
+---
+
+---
+
+![Three stages of versioning](../assets/diagrams/commit-three-stage-03.svg)
+
+---
+
 
 {% capture lab %}
 1. Create a new file and save it in the repository folder
@@ -143,24 +267,73 @@ $ git clone [url] [optional-folder-name]
 {% endcapture %}{% include lab %}
 
 ### Details
-```shell
-$ git status
-$ git add [filename]
-$ git commit -m "[your description]"
-```
+
 
 ### Videos
 <iframe src="//player.vimeo.com/video/88315552" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 
-{% capture slide %}
-## Comparing pending and existing changes
-{% endcapture %}{% include slide-section %}
+---
 
-{% capture slide %}
-![Diff](../assets/diagrams/diff.svg)
-{% endcapture %}{% include slide-section %}
+## Comparing pending and existing changes
+
+Maximize file comparison abilities of Git with historical and un-committed change review.
+
+---
+
+---
+
+![Diff](../assets/diagrams/diff-01.svg)
+
+---
+
+---
+
+```shell
+$ git diff
+```
+
+---
+
+---
+
+![Diff](../assets/diagrams/diff-02.svg)
+
+---
+
+---
+
+```shell
+$ git diff --staged
+```
+
+---
+
+---
+
+![Diff](../assets/diagrams/diff-03.svg)
+
+---
+
+---
+
+```shell
+$ git diff HEAD
+```
+
+---
+
+---
+
+```shell
+# By specific file
+
+$ git diff [file-path]
+```
+
+---
+
 
 {% capture lab %}
 1. Compare changes of modified files with respect to history
@@ -186,14 +359,14 @@ $ git diff --staged
 The default line-level difference indicators are sometimes insufficient for prose and small variable-name changes. There is, however, an option to instruct Git to perform and highlight intra-line comparisons.
 
 ```shell
- Highlight word changes on lines
+# Highlight word changes on lines
 $ git diff --color-words
 ```
 
 Diff, by default, performs comparisons on all modified files. If inspection of just a subset is called for, `diff` accepts a precise or wildcard-ed filename or path as an option.
 
 ```shell
- By specific file
+# By specific file
 $ git diff [file-path]
 ```
 
@@ -202,9 +375,29 @@ $ git diff [file-path]
 
 
 
-{% capture slide %}
+---
+
 ## Reviewing historical changes
-{% endcapture %}{% include slide-section %}
+
+Assess committed content across all known versions and narrow searches with filtering options.
+
+---
+
+---
+
+```shell
+$ git log
+```
+
+---
+
+---
+
+```shell
+$ git log --oneline
+```
+
+---
 
 {% capture lab %}
 1. Review default commit history output
@@ -226,7 +419,7 @@ Some simple option flag additions to the `log` command can make the output more 
 $ git log --oneline
 ```
 
-And if displaying the full contents of the change and word-level comparison are helpful, there are option switches for that too.
+And if displaying the full contents of the change and word-level comparisons are helpful, there are option switches for that too.
 
 ```shell
  Option switches common with `diff`
@@ -238,25 +431,73 @@ $ git log --patch --color-words
 
 
 
-{% capture slide %}
+---
+
 ## Organizing history for optimal workflows
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+Harness Git's fast branching features for efficiently switching between work effort.
+
+---
+
+---
+
+```shell
+# Create a new branch from the current one
+
+$ git branch [branch-name]
+```
+
+---
+
+---
+
+```shell
+# Switch to a specified branch
+
+$ git checkout [branch-name]
+```
+
+---
+
+---
+
+```shell
+# List all local branches
+
+$ git branch
+```
+
+---
+
+---
+
+### Merge strategies
+
+---
+
+---
+
 ![diagram](../assets/diagrams/merge-fast-forward-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![diagram](../assets/diagrams/merge-fast-forward-02.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![diagram](../assets/diagrams/merge-recursive-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![diagram](../assets/diagrams/merge-recursive-02.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Create a topic branch from `master` or `gh-pages`
@@ -268,7 +509,7 @@ $ git log --patch --color-words
 Typical workflows always begin with a branch, no matter how small or grand the level of effort might be or the number of commits involved.
 
 ```shell
- List branches, identify current brach
+ List branches, identify current branch
 $ git branch
 
  Create a new branch from current branch
@@ -291,7 +532,7 @@ $ git branch -d [name]
 $ git branch -D [name]
 ```
 
-The final step to bringing in the history of a branch into the current one is performed by merging it.
+The final step to bringing the history of a branch into the current one is performed by merging it.
 
 ```shell
  Integrate history of specified branch into current one
@@ -305,17 +546,25 @@ $ git merge [branch]
 
 
 
-{% capture slide %}
+---
+
 ## Interacting with distributed repositories
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+Go beyond local history interactions and synchronize histories on an as-needed, controlled basis.
+
+---
+
+---
+
 ![Distributed repos](../assets/diagrams/distributed-version-control.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![diagram](../assets/diagrams/fork-structure.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Understand Fork repository model
@@ -405,12 +654,16 @@ $ git push
 
 
 
-{% capture slide %}
+---
+
 ## Crafting shortcuts & efficiencies
-{% endcapture %}{% include slide-section %}
+
+Improve Git interactions with custom commands, preferred option flags, and specialized outputs.
+
+---
 
 {% capture lab %}
-1. Setup example aliases for command line effiency
+1. Setup example aliases for command line efficiency
 2. Create your own Git command alias and option switch combination
 {% endcapture %}{% include lab %}
 
@@ -426,35 +679,49 @@ $ git config --global alias.lol "log --graph --all --oneline --decorate"
 ```
 
 ```shell
- Shortuct to repository status
+ Shortcut to repository status
 $ git config alias.s "status -s"
 ```
 
 
 
-{% capture slide %}
+---
+
 ## Understanding versioned file lifecycle
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+Remove, move, and rename files with full version control coverage.
+
+---
+
+---
+
 ![States of tracking](../assets/diagrams/states-of-tracking-01.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![States of tracking](../assets/diagrams/states-of-tracking-02.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![States of tracking](../assets/diagrams/states-of-tracking-03.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![States of tracking](../assets/diagrams/states-of-tracking-04.svg)
-{% endcapture %}{% include slide-section %}
 
-{% capture slide %}
+---
+
+---
+
 ![States of tracking](../assets/diagrams/states-of-tracking-05.svg)
-{% endcapture %}{% include slide-section %}
+
+---
 
 {% capture lab %}
 1. Understand the tracking states of new, modified, deleted, and renamed paths
@@ -465,7 +732,7 @@ $ git config alias.s "status -s"
 {% endcapture %}{% include lab %}
 
 ### Details
-Files in Git transition through a well-defined states of tracking.
+Files in Git transition through well-defined states of tracking.
 
 #### Adding files
 ```shell
@@ -514,9 +781,13 @@ $ git log --stat -M
 
 
 
-{% capture slide %}
+---
+
 ## Undoing any versioned changes
-{% endcapture %}{% include slide-section %}
+
+Rewind, collapse, or discard one or a range of versioned changes with a few simple commands.
+
+---
 
 {% capture lab %}
 1. Use `revert` to generate a new commit undoing history
@@ -553,9 +824,13 @@ $ git reset --hard [commit|branch|tag]
 
 
 
-{% capture slide %}
+---
+
 ## Recovering from anything
-{% endcapture %}{% include slide-section %}
+
+Restore content from versioned history.
+
+---
 
 {% capture lab %}
 1. Understand the side effects of `reset` and discarding commit history
@@ -582,5 +857,3 @@ $ git checkout HEAD@{[n]} -- [path]
 #### Additional Resources
 * [O'Reilly's Mastering Git video series](http://bit.ly/ogitvid)
 * [Git and GitHub LiveLessons (Workshop)](http://www.informit.com/store/git-and-github-livelessons-workshop-9780133991772)
-
-

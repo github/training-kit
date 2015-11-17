@@ -10,7 +10,7 @@ showinnav: true
 
 <section>
 <p>
-<a href="git-foundations.html">Git Foundations</a></br>
+<a href="github-foundations.html">GitHub Foundations</a></br>
   <em>A thorough course on GitHub and Git used in GitHub:Training classrooms</em>
 </p>
 </section>
@@ -31,7 +31,7 @@ showinnav: true
 
 <section>
 <p>
-<a href="github-advanced.html">Git Advanced</a></br>
+<a href="github-advanced.html">GitHub Advanced</a></br>
   <em>Advanced Git techniques for the experienced Git user</em>
 </p>
 </section>

@@ -1,0 +1,10 @@
+{
+  "name": "training-kit",
+  "dependencies": {
+
+    "jquery": "2.1.1",
+    "bootstrap-sass": "3.0.2",
+    "Snap.svg": "0.3.0",
+    "octicons": "https://github.com/github/octicons.git#2.1.2"
+  }
+}

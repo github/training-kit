@@ -8,10 +8,11 @@ This curriculum will be your companion to the GitHub Intermediate class taught b
 
 ![Git repository creation at the command line](../assets/screenshots/terminal-repo-creation.jpg)
 
-{% capture slide %}
+---
+
 ### Git Configuration
-{% endcapture %}
-{% include slide-section %}
+
+---
 
 ![GitHub for Mac Advanced Preferences](../assets/screenshots/github-for-mac-advanced-preferences.png)
 
@@ -45,17 +46,19 @@ $ git config --list
 
 
 
-{% capture slide %}
+---
+
 ### Start a repository
-{% endcapture %}
-{% include slide-section %}
+
+---
 
 
 
-{% capture slide %}
+---
+
 ### Versioning content
-{% endcapture %}
-{% include slide-section %}
+
+---
 
 #### Three stage thinking
 ![diagram](../assets/diagrams/commit-three-stage.svg)
@@ -69,10 +72,11 @@ $ git config --list
 #### Video
 <iframe src="//player.vimeo.com/video/88315552" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% capture slide %}
+---
+
 ### Review pending modifications
-{% endcapture %}
-{% include slide-section %}
+
+---
 
 Git advocates precision in each commit's contents and commit message.  This is facilitated by easy reviewing of in-flight changes prior to describing them and making them permanent.
 
@@ -107,10 +111,11 @@ $ git diff [file-path]
 #### Video
 <iframe src="//player.vimeo.com/video/88315553" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% capture slide %}
+---
+
 ### Review historical changes
-{% endcapture %}
-{% include slide-section %}
+
+---
 
 Git can look back at the history of each commit to see when a change took place, who made the change, or what the change contained.
 
@@ -125,7 +130,7 @@ Some simple option flag additions to the `log` command can make the output more 
 $ git log --oneline
 ```
 
-And if displaying the full contents of the change and word-level comparison are helpful, there are option switches for that too.
+And if displaying the full contents of the change and word-level comparisons are helpful, there are option switches for that too.
 
 ```shell
 # Option switches common with `diff`
@@ -135,11 +140,11 @@ $ git log --patch --color-words
 #### Video
 <iframe src="//player.vimeo.com/video/95811891" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% capture slide %}
-### Local workflows
-{% endcapture %}
-{% include slide-section %}
+---
 
+### Local workflows
+
+---
 
 Organizing history:
 
@@ -148,10 +153,11 @@ Organizing history:
 
 
 
-{% capture slide %}
+---
+
 ### Distributed repositories
-{% endcapture %}
-{% include slide-section %}
+
+---
 
 Acquiring a repo:
 
@@ -161,44 +167,48 @@ $ git clone [repository-url]
 
 
 
-{% capture slide %}
+---
+
 ### Remote workflows
-{% endcapture %}
-{% include slide-section %}
+
+---
 
 
 ![diagram](../assets/diagrams/fork-structure.svg)
 
 
 
-{% capture slide %}
+---
+
 ### Shortcuts and custom commands
-{% endcapture %}
-{% include slide-section %}
+
+---
 
 
+---
 
-{% capture slide %}
 ### File lifecycle
-{% endcapture %}
-{% include slide-section %}
+
+---
+
 
 
 
 ![diagram](../assets/diagrams/states-of-tracking.svg)
 
 
-{% capture slide %}
+---
+
 ### Undoing changes
-{% endcapture %}
-{% include slide-section %}
+
+---
 
 
 
 
-{% capture slide %}
+
+---
+
 ### Recovering anything
-{% endcapture %}
-{% include slide-section %}
 
-
+---

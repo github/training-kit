@@ -1,7 +1,7 @@
 ---
 chapter: "Jekyll"
 cover: true
-layout: hydeside
+
 tags:
   - "pages/jekyll"
 ---

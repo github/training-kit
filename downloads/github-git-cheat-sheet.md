@@ -1,7 +1,11 @@
-# GitHub Git Cheat Sheet
+---
+layout: cheat-sheet
+title: GitHub Git Cheat Sheet
+byline: Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
+leadingpath: ../
+---
 
-Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
-
+{% capture colOne %}
 ## Install Git
 GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
 
@@ -18,7 +22,6 @@ http://git-scm.com
 
 ## Configure tooling
 Configure user information for all local repositories
-
 
 ```$ git config --global user.name "[name]"```
 
@@ -42,6 +45,14 @@ Creates a new local repository with the specified name
 ```$ git clone [url]```
 
 Downloads a project and its entire version history
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colOne | markdownify }}
+</div>
+
+
+{% capture colTwo %}
 
 ## Make changes
 Review edits and craft a commit transaction
@@ -103,8 +114,15 @@ Combines the specified branch’s history into the current branch
 ```$ git branch -d [branch-name]```
 
 Deletes the specified branch
+{% endcapture %}
+<div class="col-md-6">
+{{ colTwo | markdownify }}
+</div>
+<div class="clearfix"></div>
 
+---
 
+{% capture colThree %}
 ## Refactor file names
 Relocate and remove versioned files
 
@@ -161,7 +179,12 @@ Lists all stashed changesets
 ```$ git stash drop```
 
 Discards the most recently stashed changeset
+{% endcapture %}
+<div class="col-md-6">
+{{ colThree | markdownify }}
+</div>
 
+{% capture colFour %}
 ## Review history
 Browse and inspect the evolution of project files
 
@@ -220,11 +243,7 @@ Uploads all local branch commits to GitHub
 ```$ git pull```
 
 Downloads bookmark history and incorporates changes
-
----
-
-## GitHub Training
-Learn more about using GitHub and Git. Email the Training Team or visit our website for learning event schedules and private class availability.
-
-* training@github.com
-* training.github.com
+{% endcapture %}
+<div class="col-md-6">
+{{ colFour | markdownify }}
+</div>
