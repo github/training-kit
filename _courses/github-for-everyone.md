@@ -13,7 +13,6 @@ sections:
       - COLL-01_Exploring-a-repository
       - COLL-02_Using-issues
       - COLL-03_Watching-notifications-stars-explore
-      - CONT-CLI-14_Creating-repository-local
   -
     title: Creating Your First Pull Request
     description: In this section you will learn about the GitHub flow and create your first pull request.
