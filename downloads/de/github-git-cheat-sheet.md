@@ -71,7 +71,7 @@ Indiziert den derzeitigen Stand der Datei für die Versionierung
 
 ```$ git diff --staged```
 
-Zeigt die Unterschiede zwischen dem Index und der aktuellen Dateiversion
+Zeigt die Unterschiede zwischen dem Index ("staging area") und der aktuellen Dateiversion
 
 ```$ git reset [file]```
 
@@ -83,7 +83,7 @@ Nimmt die Datei vom Index, erhält jedoch ihren Inhalt
 Nimmt alle derzeit indizierten Dateien permanent in die Versionshistorie auf
 
 ## Änderungen gruppieren
-Benennen von Commit-Serien und Zusammenfassen erledigter Tätigkeiten
+Benennen von Commit-Serien und Zusammenfassen erledigter Tasks
 
 ```$ git branch```
 
@@ -100,7 +100,7 @@ Wechselt auf den angegebenen Branch und aktualisiert das Arbeitsverzeichnis
 
 ```$ git merge [branch-name]```
 
-Fasst die Historie des angegeben Branches mit der des aktuellen Branches zusammen
+Fasst die Historie des angegeben Branches mit der des aktuell ausgecheckten Branches zusammen
 
 
 ```$ git branch -d [branch-name]```
@@ -178,7 +178,7 @@ Verwirft die zuletzt zwischengespeicherten Änderungen
 
 {% capture colFour %}
 ## Historie überprüfen
-Durchsuchen und Inspizieren der Entwicklung von Projektdateien
+Durchsuchen und Inspizieren der Evolution von Projektdateien
 
 
 ```$ git log```
@@ -224,7 +224,7 @@ Lädt die gesamte Historie eines externen Repositories herunter
 
 ```$ git merge [remote]/[branch]```
 
-Integriert den externen Branch in den aktuellen lokalen Branch
+Integriert den externen Branch in den aktuell lokal ausgecheckten Branch
 
 
 ```$ git push [remote] [branch]```
