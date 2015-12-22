@@ -1,13 +1,13 @@
 ---
 layout: cheat-sheet
 title: GitHub Git 备忘单
-byline: Git是一个开源的分布式版本控制系统，方便你在笔记本或桌面端进行Github的操作，这个备忘单总结了常用的Git命令行指令，以便快速查询。
+byline: Git是一个开源的分布式版本控制系统，方便你在笔记本或桌面端进行GitHub的操作，这个备忘单总结了常用的Git命令行指令，以便快速查询。
 leadingpath: ../../
 ---
 
 {% capture colOne %}
 ## 安装Git
-Github提供了包含图形界面的桌面客户端，通过客户端可以完成大部分常用的仓库操作，同时可以自动更新Git的命令行版本，以适应新的场景。
+GitHub提供了包含图形界面的桌面客户端，通过客户端可以完成大部分常用的仓库操作，同时可以自动更新Git的命令行版本，以适应新的场景。
 
 ### GitHub for Windows
 http://windows.github.com
@@ -15,7 +15,7 @@ http://windows.github.com
 ### GitHub for Mac
 http://mac.github.com
 
-Github的Linux和POSIX版本可以在官方的Git SCM网站上获取。
+GitHub的Linux和POSIX版本可以在官方的Git SCM网站上获取。
 
 ### Git 全平台版
 http://git-scm.com
@@ -234,7 +234,7 @@ temp-*
 
 ```$ git push [remote] [branch]```
 
-上传所有本地分支commit到Github上
+上传所有本地分支commit到GitHub上
 
 
 ```$ git pull```
