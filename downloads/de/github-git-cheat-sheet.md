@@ -112,8 +112,6 @@ Löscht den angegebenen Branch
 </div>
 <div class="clearfix"></div>
 
----
-
 {% capture colThree %}
 ## Dateinamen refaktorisieren
 Verschieben und Löschen versionierter Dateien

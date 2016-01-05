@@ -120,7 +120,6 @@ Deletes the specified branch
 </div>
 <div class="clearfix"></div>
 
----
 
 {% capture colThree %}
 ## Refactor file names

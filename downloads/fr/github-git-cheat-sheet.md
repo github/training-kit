@@ -231,8 +231,6 @@ Envoie tous les commits de la branche locale vers GitHub
 
 Récupère tout l'historique du dépôt nommé et incorpore les modifications
 
----
-
 ## Formations GitHub
 Formez-vous à l'utilisation de GitHub et Git. Contactez l'équipe de formation ou visitez notre site web pour connaître les dates de formation
 et les disponibilités pour des cours privés.

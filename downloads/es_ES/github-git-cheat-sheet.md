@@ -225,8 +225,6 @@ Sube todos los commits de la rama local a GitHub
 
 Descarga el historial del marcador e incorpora cambios
 
----
-
 ## GitHub Training
 Obtenga más información sobre el uso de GitHub y Git. Envíe un e-mail al Equipo de Capacitación o visite nuestro sitio web para informarse sobre los horarios de eventos y la disponibilidad de clases privadas.
 
