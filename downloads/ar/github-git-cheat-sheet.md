@@ -23,13 +23,11 @@ leadingpath: ../../
 <h2 dir="rtl"> إعادة تكوين الأدوات</h2>
 <p dir="rtl">إعداد معلومات المستخدم لجميع المستودعات المحلية</p>
 
-<pre><code align="right">$ git config --global user.name "[الاسم]"</pre></code>
+<p align="right"><code align="right">$ git config --global user.name "[الاسم]"</code></p>
 
 <p dir="rtl">إعداد الاسم المراد إدراجه في إجراءات تنفيذ أو "ارتكاب" التغييرات</p>
 
-
-<pre><code align="right">$ git config --global user.email "[البريد الالكتروني]"</pre></code>
-
+<p align="right"><code>$ git config --global user.email "[البريد الالكتروني]"</code></p>
 <p dir="rtl">إعداد البريد الالكتروني المراد إدراجه في إجراءات تنفيذ أو "ارتكاب" التغييرات</p>
 
 
@@ -37,12 +35,12 @@ leadingpath: ../../
 <p dir="rtl">بدء مستودع جديد أو الحصول على مستودع موجود مسبقاً عن طريق وصلة</p>
 
 
-<pre><code align="right">$ git init [اسم المشروع]</pre></code>
+<p align="right"><code align="right">$ git init [اسم المشروع]</code></p>
 
 <p dir="rtl">صنع مستودع جديد بالمسمى المعطى</p>
 
 
-<pre><code align="right">$ git clone [رابط المشروع]</pre></code>
+<p align="right"><code>$ git clone [رابط المشروع]</code></p>
 
 <p dir="rtl">تحميل مشروع بماضيه الشامل لكل النسخ الحالية والسابقة</p>
 
@@ -58,32 +56,32 @@ leadingpath: ../../
 <p dir="rtl">مراجعة التغييرات وتشكيل إجراء "ارتكاب" التغييرات</p>
 
 
-<pre><code align="right">$ git status</pre></code>
+<p align="right"><code >$ git status</code></p>
 
 <p dir="rtl">إدراج جميع الملفات الجديدة أو التي تم تغييرها وتنتظر أن يتم ارتكابها</p>
 
 
-<pre><code align="right">$ git diff</pre></code>
+<p align="right"><code>$ git diff</code></p>
 
 <p dir="rtl">إظهار كل التغييرات في الملفات المتغيرة التي لم يتم إضافتها لقائمة الترحيل</p>
 
 
-<pre><code align="right">$ git add [اسم الملف]</pre></code>
+<p align="right"><code>$ git add [اسم الملف]</code></p>
 
 <p dir="rtl">إضافة الملف لقائمة الترحيل للتحضير ليتم ارتكابها</p>
 
 
-<pre><code align="right">$ git diff --staged</pre></code>
+<p align="right"><code>$ git diff --staged</code></p>
 
 <p dir="rtl">إظهار كل التغييرات في الملفات المتغيرة في قائمة الترحيل والمختلفة عن الموجودة في المستودع حالياً</p>
 
 
-<pre><code align="right">$ git reset [اسم الملف]</pre></code>
+<p align="right"><code >$ git reset [اسم الملف]</code></p>
 
 <p dir="rtl">إزالة الملف من قائمة الترحيل مع الحفاظ على المحتوى الجديد دون تغيير.</p>
 
 
-<pre><code align="right">$ git commit -m"[تعليق توضيحي]"</pre></code>
+<p align="right"><code align="right">$ git commit -m"[تعليق توضيحي]"</code></p>
 
 <p dir="rtl">ارتكاب التغييرات الموجودة في قائمة الترحيل وحفظها في ماضي النسخ</p>
 
@@ -91,27 +89,27 @@ leadingpath: ../../
 <p dir="rtl">تسمية مجموعة من التغييرات المرتكبة وجمع الجهود المكتملة</p>
 
 
-<pre><code align="right">$ git branch</pre></code>
+<p align="right"><code align="right">$ git branch</code></p>
 
 <p dir="rtl">إدراج قائمة بكل الفروع المحلية للمستودع الحالي</p>
 
 
-<pre><code align="right">$ git branch [اسم الفرع]</pre></code>
+<p align="right"><code align="right">$ git branch [اسم الفرع]</code></p>
 
 <p dir="rtl">تكوين فرع جديد</p>
 
 
-<pre><code align="right">$ git checkout [اسم الفرع]</pre></code>
+<p align="right"><code align="right">$ git checkout [اسم الفرع]</code></p>
 
 <p dir="rtl">التغيير إلى فرع معين وتحديث المسار الحالي</p>
 
 
-<pre><code align="right">$ git merge [اسم الفرع]</pre></code>
+<p align="right"><code align="right">$ git merge [اسم الفرع]</code></p>
 
 <p dir="rtl">دمج الفرع الحالي بفرع آخر ماضي</p>
 
 
-<pre><code align="right">$ git branch -d [اسم الفرع]</pre></code>
+<p align="right"><code align="right">$ git branch -d [اسم الفرع]</code></p>
 
 <p dir="rtl">حذف فرع معين</p>
 
