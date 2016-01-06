@@ -5,6 +5,7 @@ byline: Git est le sytème de gestion de version décentralisé open source qui 
 leadingpath: ../../
 ---
 
+{% capture colOne %}
 ## Installer git
 GitHub fournit des clients desktop qui incluent une interface graphique pour les manipulations les plus courantes et une "an automatically updating command line edition of Git" pour les scénari avancés.
 
@@ -49,6 +50,13 @@ Crée un dépôt local à partir du nom spécifié
 ```$ git clone [url]```
 
 Télécharge un projet et tout son historique de versions
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colOne | markdownify }}
+</div>
+
+{% capture colTwo %}
 
 ## Effectuer des changements
 Consulter les modifications et effectuer une opération de commit
@@ -111,6 +119,14 @@ Combine dans la branche courante l'historique de la branche spécifiée
 
 Supprime la branche spécifiée
 
+{% endcapture %}
+<div class="col-md-6">
+{{ colTwo | markdownify }}
+</div>
+<div class="clearfix"></div>
+
+
+{% capture colThree %}
 ## Changements au niveau des noms de fichiers
 Déplacer et supprimer des fichiers sous suivi de version
 
@@ -167,6 +183,13 @@ Liste toutes les remises
 ```$ git stash drop```
 
 Supprime la remise la plus récente
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colThree | markdownify }}
+</div>
+
+{% capture colFour %}
 
 ## Vérifier l'historique des versions
 Suivre et inspecter l'évolution des fichiers du projet
@@ -227,9 +250,7 @@ Envoie tous les commits de la branche locale vers GitHub
 
 Récupère tout l'historique du dépôt nommé et incorpore les modifications
 
-## Formations GitHub
-Formez-vous à l'utilisation de GitHub et Git. Contactez l'équipe de formation ou visitez notre site web pour connaître les dates de formation
-et les disponibilités pour des cours privés.
-
-* training@github.com
-* training.github.com
+{% endcapture %}
+<div class="col-md-6">
+{{ colFour | markdownify }}
+</div>
