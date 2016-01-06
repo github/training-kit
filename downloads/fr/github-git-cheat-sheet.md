@@ -5,10 +5,6 @@ byline: Git est le sytème de gestion de version décentralisé open source qui 
 leadingpath: ../../
 ---
 
-# Aide-mémoire GitHub Git
-
-Git est le sytème de gestion de version décentralisé open source qui facilite les activités GitHub sur votre ordinateur. Cet aide-mémoire permet un accès rapide aux instructions des commandes Git les plus utilisées.
-
 ## Installer git
 GitHub fournit des clients desktop qui incluent une interface graphique pour les manipulations les plus courantes et une "an automatically updating command line edition of Git" pour les scénari avancés.
 
