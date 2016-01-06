@@ -5,6 +5,7 @@ byline: أمر Git هو نظام تحكم بالنسخ الموزعة المفت
 leadingpath: ../../
 ---
 
+{% capture colOne %}
 <h2 dir="rtl"> تنصيب Git</h2>
 <p dir="rtl">نظام GitHub يوفر برنامج عميل لسطح المكتب يشمل واجهة مستخدم رسومية لنشاطات المستودعات الأكثر شيوعاً وتحديث نسخة سطر أوامر Git تلقائياً للحالات المتقدمة.</p>
 
@@ -44,6 +45,14 @@ leadingpath: ../../
 <pre><code align="right">$ git clone [رابط المشروع]</pre></code>
 
 <p dir="rtl">تحميل مشروع بماضيه الشامل لكل النسخ الحالية والسابقة</p>
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colOne | markdownify }}
+</div>
+
+
+{% capture colTwo %}
 
 <h2 dir="rtl"> إحداث تغييرات</h2>
 <p dir="rtl">مراجعة التغييرات وتشكيل إجراء "ارتكاب" التغييرات</p>
@@ -106,7 +115,14 @@ leadingpath: ../../
 
 <p dir="rtl">حذف فرع معين</p>
 
+{% endcapture %}
+<div class="col-md-6">
+{{ colTwo | markdownify }}
+</div>
+<div class="clearfix"></div>
 
+
+{% capture colThree %}
 <h2 dir="rtl"> إزالة وتغيير الملفات</h2>
 <p dir="rtl">تحريك وإزالة الملفات التي تتم متابعة نسخها</p>
 
@@ -164,6 +180,12 @@ temp-*
 
 <p dir="rtl">التخلص من آخر الملفات المتغيرة التي تم تخزينها مؤخراً بشكل مؤقت</p>
 
+{% endcapture %}
+<div class="col-md-6">
+{{ colThree | markdownify }}
+</div>
+
+{% capture colFour %}
 <h2 dir="rtl"> مراجعة ماضي التغييرات</h2>
 <p dir="rtl">تصفح وتفحص تطور ملفات المشروع</p>
 
@@ -223,8 +245,7 @@ temp-*
 
 <p dir="rtl">تحميل ماضي العلامة المرجعية ودمج التغييرات</p>
 
-<h2> GitHub تدريب استخدام</h2>
-<p dir="rtl">للمزيد من المعلومات عن استخدام Github و Git. الرجاء مراسلة فريق التدريب أو زيارة موقعنا لجدول المناسبات التعليمية وحالة توفر المحادثة الخاصة</p>
-
-* training@github.com
-* training.github.com
+{% endcapture %}
+<div class="col-md-6">
+{{ colFour | markdownify }}
+</div>
