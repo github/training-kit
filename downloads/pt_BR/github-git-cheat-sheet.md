@@ -119,8 +119,6 @@ Exclui o branch especificado
 </div>
 <div class="clearfix"></div>
 
----
-
 {% capture colThree %}
 ## Refatore nomes de arquivos
 Mude e remova os arquivos versionados

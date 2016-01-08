@@ -120,7 +120,6 @@ http://git-scm.com
 </div>
 <div class="clearfix"></div>
 
----
 
 {% capture colThree %}
 ## 重构文件

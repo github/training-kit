@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title: GitHub Git Spickzettel
 byline: Git ist das verteilte Open Source Versionskontrollsystem, dass die GitHub-Aktivitäten auf deinem Laptop oder PC möglich macht. Dieser Spickzettel fasst die gebräuchlichsten Git-Kommandozeilenbefehle zum schnellen Nachschlagen zusammen.
-leadingpath: ../
+leadingpath: ../../
 ---
 
 {% capture colOne %}
@@ -111,8 +111,6 @@ Löscht den angegebenen Branch
 {{ colTwo | markdownify }}
 </div>
 <div class="clearfix"></div>
-
----
 
 {% capture colThree %}
 ## Dateinamen refaktorisieren

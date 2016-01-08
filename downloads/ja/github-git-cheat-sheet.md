@@ -4,11 +4,7 @@ title: GitHub Git チートシート
 byline: Gitはオープンソースとして配布されているバージョン管理システムです。Gitを使うと、あなたのノートまたはデスクトップパソコンから、GitHub上のアクティビティーを操作できます。この早見表にはコマンドラインからよく使われているGitの命令をまとめています。
 leadingpath: ../../
 ---
-
-# GitHub Git チートシート
-
-Gitはオープンソースとして配布されているバージョン管理システムです。Gitを使うと、あなたのノートまたはデスクトップパソコンから、GitHub上のアクティビティーを操作できます。この早見表にはコマンドラインからよく使われているGitの命令をまとめています。
-
+{% capture colOne %}
 ## gitのインストール
 GitHubは、利用頻度の高いリポジトリへのアクションを可能にするGUI版と、上級向けに自動的にアップデートされるGitのコマンドライン版を含むデスクトップクライアントを提供しています。
 
@@ -49,6 +45,13 @@ http://git-scm.com
 ```$ git clone [url]```
 
 プロジェクトとすべてのバージョン履歴をダウンロードします
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colOne | markdownify }}
+</div>
+
+{% capture colTwo %}
 
 ## 変更の作成
 変更をレビューしコミット操作ログを作成します
@@ -111,7 +114,14 @@ http://git-scm.com
 
 指定されたブランチを削除します
 
+{% endcapture %}
+<div class="col-md-6">
+{{ colTwo | markdownify }}
+</div>
+<div class="clearfix"></div>
 
+
+{% capture colThree %}
 ## ファイル名の整理
 バージョン管理されているファイルの移動、または削除を行ないます
 
@@ -168,6 +178,13 @@ temp-*
 ```$ git stash drop```
 
 直近に一時保存された変更セットを破棄します
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colThree | markdownify }}
+</div>
+
+{% capture colFour %}
 
 ## 履歴の確認
 プロジェクトファイルの進展を確認します
@@ -228,10 +245,7 @@ temp-*
 
 ブックマークの履歴をダウンロードし、変更を統合します
 
----
-
-## GitHub トレーニング
-より詳しくGitHubとGitの使い方を知るには、トレーニングチームにメールするか、イベントスケジュールや受講可能なプライベート講義を知るために私たちのウェブサイトをご覧ください。
-
-* training@github.com
-* training.github.com
+{% endcapture %}
+<div class="col-md-6">
+{{ colFour | markdownify }}
+</div>

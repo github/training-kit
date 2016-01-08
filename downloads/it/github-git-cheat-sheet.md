@@ -120,8 +120,6 @@ Elimina il branch specificato
 </div>
 <div class="clearfix"></div>
 
----
-
 {% capture colThree %}
 ## Refactoring dei nomi di file
 Ricerca e rimuovi file dallo storico

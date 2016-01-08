@@ -5,10 +5,7 @@ byline: Git es el sistema de control de versiones distribuido de código abierto
 leadingpath: ../../
 ---
 
-# Hoja de referencia para Git de Github
-
-Git es el sistema de control de versiones distribuido de código abierto que facilita realizar actividades de Github en tu computadora portátil o de escritorio. Esta hoja de referencia resume las instrucciones de línea de comandos comúnmente usadas para una rápida referencia.
-
+{% capture colOne %}
 ## Instalar Git
 
 GitHub proporciona clientes de escritorio que incluyen una interfaz gráfica de usuario para las acciones más comunes que se pueden realizar en un repositorio y una edición de Git en la línea de comandos actualizada automáticamente para escenarios más avanzados.
@@ -49,6 +46,14 @@ Crea un nuevo repositorio local con el nombre especificado
 ```$ git clone [url]```
 
 Descarga un proyecto y toda su historial de versiones
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colOne | markdownify }}
+</div>
+
+
+{% capture colTwo %}
 
 ## Efectuar cambios
 Revisa cambios y crea un commit
@@ -111,6 +116,15 @@ Combina el historial de la rama especificada con la rama actual
 
 Borra la rama especificada
 
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colTwo | markdownify }}
+</div>
+<div class="clearfix"></div>
+
+
+{% capture colThree %}
 ## Refactorización de archivos
 Reubica y retira los archivos de los cuales se tiene una versión
 
@@ -168,6 +182,13 @@ Enumera todos los grupos de cambios que estan guardados temporalmente
 
 Elimina el grupo de cambios más reciente que se encuentra guardado temporalmente
 
+{% endcapture %}
+<div class="col-md-6">
+{{ colThree | markdownify }}
+</div>
+
+{% capture colFour %}
+
 ## Repasar historial
 Navega e inspecciona la evolución de los archivos de proyecto
 
@@ -224,11 +245,7 @@ Sube todos los commits de la rama local a GitHub
 ```$ git pull```
 
 Descarga el historial del marcador e incorpora cambios
-
----
-
-## GitHub Training
-Obtenga más información sobre el uso de GitHub y Git. Envíe un e-mail al Equipo de Capacitación o visite nuestro sitio web para informarse sobre los horarios de eventos y la disponibilidad de clases privadas.
-
-* training@github.com
-* training.github.com
+{% endcapture %}
+<div class="col-md-6">
+{{ colFour | markdownify }}
+</div>
