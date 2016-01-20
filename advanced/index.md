@@ -12,6 +12,8 @@ redirect_from:
 
 # GitHub Advanced
 
+**Please note: This class is no longer in use. We have combined this material into our two day [GitHub for Developers course](https://training.github.com/kit/).**
+
 Command line deep dive, problem solving techniques, and GitHub efficiencies
 
 <div class="objectives">
