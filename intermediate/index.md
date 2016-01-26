@@ -8,8 +8,6 @@ redirect_from:
 
 ---
 
-**Please note: This class is no longer in use. It is now part of our two day [GitHub for Developers course](https://training.github.com/kit/).**
-
 <span class="mega-octicon octicon-terminal"></span>
 
 # GitHub Intermediate
