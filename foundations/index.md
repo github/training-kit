@@ -8,11 +8,11 @@ redirect_from:
 
 ---
 
+**Please note: This class is no longer in use. We have combined this material into our two day [GitHub for Developers course](https://training.github.com/kit/).**
+
 <span class="mega-octicon octicon-plug"></span>
 
 # GitHub Foundations
-
-**Please note: This class is no longer in use. We have combined this material into our two day [GitHub for Developers course](https://training.github.com/kit/).**
 
 Core skills for day-to-day use of Git on the command line and GitHub workflows
 
