@@ -21,7 +21,7 @@ $(function(){
     {
       url: "https://api.github.com/users/"+username,
       success: function(data, textStatus, jqXHR){
-        $("#teacher-name").html(data.name);
+        $("#teacher-name").text(data.name);
 
         $("<span/>",
         {
