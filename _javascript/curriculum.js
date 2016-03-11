@@ -21,22 +21,22 @@ $(function(){
     {
       url: "https://api.github.com/users/"+username,
       success: function(data, textStatus, jqXHR){
-        $("#teacher-name").html(data.name);
+        $("#teachername").text(data.name);
 
         $("<span/>",
         {
           text: data.login
-        }).appendTo("#teacher-username");
+        }).appendTo("#teacherusername");
 
         // Profile email
         if(data.email){
           $("<span/>",
           {
             text: data.email
-          }).appendTo("#teacher-email");
+          }).appendTo("#teacheremail");
         }
         else{
-          $("#teacher-email").toggleClass("hidden");
+          $("#teacheremail").toggleClass("hidden");
         }
 
         // Profile company
@@ -44,10 +44,10 @@ $(function(){
           $("<span/>",
           {
             text: data.company
-          }).appendTo("#teacher-organization");
+          }).appendTo("#teacherorganization");
         }
         else{
-          $("#teacher-organization").toggleClass("hidden");
+          $("#teacherorganization").toggleClass("hidden");
         }
 
 
@@ -56,35 +56,35 @@ $(function(){
           $("<span/>",
           {
             text: data.location
-          }).appendTo("#teacher-location");
+          }).appendTo("#teacherlocation");
         }
         else{
-          $("#teacher-location").toggleClass("hidden");
+          $("#teacherlocation").toggleClass("hidden");
         }
 
         $("<img/>",
         {
           src: data.avatar_url,
           class: "img-circle img-thumbnail"
-        }).appendTo("#teacher-avatar");
+        }).appendTo("#teacheravatar");
 
         $("<span/>",
         {
           text: data.public_repos,
           class: "badge"
-        }).appendTo("#teacher-repo");
+        }).appendTo("#teacherrepo");
 
         $("<span/>",
         {
           text: data.followers,
           class: "badge"
-        }).appendTo("#teacher-followers");
+        }).appendTo("#teacherfollowers");
 
         $("<span/>",
         {
           text: data.following,
           class: "badge"
-        }).appendTo("#teacher-following");
+        }).appendTo("#teacherfollowing");
 
         $("#teacher").toggleClass("hidden");
 
