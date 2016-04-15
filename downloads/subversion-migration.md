@@ -52,7 +52,7 @@ The `git svn` command permits users to synchronize with a centralized Subversion
 To acquire a Subversion repository as a resulting local Git repository, download the project in its entirety with this command:
 
 ```
-git svn clone [svn-repo-url] --std-layout
+git svn clone [svn-repo-url] --stdlayout
 ```
 
 Make certain you are familiar with the targeted Subversion repository’s structure and whether it follows the standard layout or not. For non-traditional `trunk`, `branches`, and `tags` layouts, the following option switches should be specified during the `svn clone`:
