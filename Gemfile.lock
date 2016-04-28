@@ -111,11 +111,7 @@ GEM
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
     parallel (1.8.0)
-    posix-spawn (0.3.11)
     public_suffix (1.5.3)
-    pygments.rb (0.6.3)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.2.0)
     rack (1.5.2)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
@@ -137,7 +133,6 @@ GEM
       ethon (>= 0.8.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    yajl-ruby (1.2.1)
     yell (2.0.6)
 
 PLATFORMS
@@ -146,10 +141,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages (= 45)
   html-proofer
-  pygments.rb
   rack-contrib (~> 1.1.0)
   rake
-  rdiscount (= 2.1.8)
 
 BUNDLED WITH
    1.11.2
