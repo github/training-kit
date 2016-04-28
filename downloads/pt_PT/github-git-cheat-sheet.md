@@ -1,14 +1,16 @@
 ---
 layout: cheat-sheet
-title: Folheto de ajuda para Git do GitHub (pt-BR)
-byline: Git é um sistema de controlo de versão distribuído open source que facilita ações com o GitHub no seu notebook ou desktop. Este folheto de ajuda resume instruções frequentemente usadas na linha de comando do Git para referência rápida.
+title: Folheto de ajuda para Git do GitHub (pt-PT)
+byline: Git é um sistema de controlo de versão distribuído open source que facilita ações com o GitHub no seu portátil ou desktop. Este folheto de ajuda resume instruções frequentemente usadas na linha de comando do Git para referência rápida.
 leadingpath: ../../
 ---
 
 {% capture colOne %}
 ## Instalar o Git
 
-O GitHub fornece clientes desktop que incluem um interface gráfico para as ações mais comuns em repositórios. Estes clientes também incluem ferramentas da linha de comandos para cenários mais avançados. Em ambos os casos, os clientes são atualizados automáticamente.
+Git é um sistema distribuído open source de controlo de versões que permite interagir com o GitHub no seu notebook ou desktop. Este folheto de ajuda resume as instruções frequentemente usadas na linha de comando do Git para referência rápida.
+
+O GitHub fornece clientes desktop que incluem um interface gráfico para as ações mais comuns. Estes clientes também incluem ferramentas da linha de comandos para cenários mais avançados. Em ambos os casos, os clientes são atualizados automáticamente.
 
 ### GitHub para Windows
 [http://windows.github.com](http://windows.github.com)
@@ -59,7 +61,7 @@ Ver estado das alterações e criar um commit
 
 ```$ git status```
 
-Lista todos os ficheiros modificados no project atual.
+Lista todos os ficheiros modificados no projecto atual
 
 
 ```$ git diff```
@@ -69,7 +71,7 @@ Mostra as diferenças linha a linha dos ficheiros alterados (pre-stage)
 
 ```$ git add [ficheiro]```
 
-Classifica um ficheiro como preparado para commit (staged)
+Adiciona um ficheiro à área de preparação para que possa ser incluído em commits (staged)
 
 
 ```$ git diff --staged```
@@ -79,7 +81,7 @@ Mostra as diferenças linha a linha dos ficheiros preparados e alterados (pre-st
 
 ```$ git reset [ficheiro]```
 
-Remove o ficheiro da área de preparação (staged), mas preserva o seu conteúdo
+Marca o ficheiro para remoção do repositório local e remove o ficheiro do sistema de ficheiros
 
 
 ```$ git commit -m "[mensagem descritiva]"```
@@ -107,7 +109,7 @@ Muda para o branch especificado e atualiza o diretório de trabalho
 
 ```$ git merge [nome-do-branch]```
 
-Combina a história do branch especificado com o branch atual.
+Combina a história do branch especificado com o branch atual
 
 
 ```$ git branch -d [nome-do-branch]```
@@ -147,7 +149,7 @@ build/
 temp-*
 ```
 
-Um ficheiro `.gitignore` na raiz do projecto, ignora o versionamento acidental de ficheiros e diretórios correspondentes aos padrões especificados
+Um ficheiro `.gitignore` na raiz do projecto ignora o versionamento acidental de ficheiros e diretórios correspondentes aos padrões especificados
 
 
 ```$ git ls-files --other --ignored --exclude-standard```
@@ -155,7 +157,7 @@ Um ficheiro `.gitignore` na raiz do projecto, ignora o versionamento acidental d
 Lista todos os ficheiros e directórios ignorados neste projeto
 
 ## Guardar alteracões temporariamente
-Guarde e restaure mudanças temporarias
+Guarde e restaure mudanças temporárias
 
 
 ```$ git stash```
