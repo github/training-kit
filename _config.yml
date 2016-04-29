@@ -30,9 +30,6 @@ collections:
 include:
 - _stylesheets
 - _javascript
-
-markdown: rdiscount
-
 sass:
   sass_dir: assets/vendor/
   style: :compressed
