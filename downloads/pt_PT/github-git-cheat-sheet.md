@@ -81,7 +81,7 @@ Mostra as diferenças linha a linha dos ficheiros preparados e alterados (pre-st
 
 ```$ git reset [ficheiro]```
 
-Marca o ficheiro para remoção do repositório local e remove o ficheiro do sistema de ficheiros
+Remove o ficheiro da área de preparação (staged) sem o remover do sistema de ficheiros
 
 
 ```$ git commit -m "[mensagem descritiva]"```
@@ -128,7 +128,7 @@ Mover e remover os ficheiros já versionados
 
 ```$ git rm [ficheiro]```
 
-Remove o ficheiro do diretório de trabalho e prepara-o para commit (staged)
+Marca o ficheiro para remoção do repositório local e remove o ficheiro do sistema de ficheiros (staged)
 
 
 ```$ git rm --cached [ficheiro]```
