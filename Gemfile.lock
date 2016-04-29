@@ -139,10 +139,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages (= 45)
+  github-pages
   html-proofer
   rack-contrib (~> 1.1.0)
   rake
 
 BUNDLED WITH
-   1.11.2
+   1.12.0
