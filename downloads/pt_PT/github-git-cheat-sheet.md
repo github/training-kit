@@ -8,9 +8,9 @@ leadingpath: ../../
 {% capture colOne %}
 ## Instalar o Git
 
-Git é um sistema distribuído open source de controlo de versões que permite interagir com o GitHub no seu notebook ou desktop. Este folheto de ajuda resume as instruções frequentemente usadas na linha de comando do Git para referência rápida.
+Git é um sistema distribuído open source de controlo de versões que permite interagir com o GitHub no seu portátil ou desktop. Este folheto de ajuda resume as instruções frequentemente usadas na linha de comando do Git para referência rápida.
 
-O GitHub fornece clientes desktop que incluem um interface gráfico para as ações mais comuns. Estes clientes também incluem ferramentas da linha de comandos para cenários mais avançados. Em ambos os casos, os clientes são atualizados automáticamente.
+O GitHub disponibiliza clientes desktop que incluem um interface gráfico para as ações mais comuns. Estes clientes também incluem ferramentas para a linha de comandos para cenários mais avançados. Em ambos os casos, os clientes são atualizados automáticamente.
 
 ### GitHub para Windows
 [http://windows.github.com](http://windows.github.com)
@@ -149,7 +149,7 @@ build/
 temp-*
 ```
 
-Um ficheiro `.gitignore` na raiz do projecto ignora o versionamento acidental de ficheiros e diretórios correspondentes aos padrões especificados
+Um ficheiro `.gitignore` na raiz do projecto previne o versionamento acidental de ficheiros e diretórios correspondentes aos padrões especificados
 
 
 ```$ git ls-files --other --ignored --exclude-standard```
@@ -219,7 +219,7 @@ Aponta o ambiente de trabalho para o commit especificado, preservando alteracõe
 
 ```$ git reset --hard [commit]```
 
-Aponta o ambiente de trabalho para o commit especificado, sem preserver alteracões e descartando o histórico de versões posteriores.
+Aponta o ambiente de trabalho para o commit especificado, sem preservar alteracões e descartando o histórico de versões posteriores.
 
 ## Sincronizar alteracões
 Actualiza e combina alteracões entre repositórios
