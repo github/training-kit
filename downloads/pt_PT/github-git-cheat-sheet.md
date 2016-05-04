@@ -1,14 +1,12 @@
 ---
 layout: cheat-sheet
 title: Folheto de ajuda para Git do GitHub (pt-PT)
-byline: Git é um sistema de controlo de versão distribuído open source que facilita ações com o GitHub no seu portátil ou desktop. Este folheto de ajuda resume instruções frequentemente usadas na linha de comando do Git para referência rápida.
+byline: Git é um sistema distribuído open source de controlo de versões que permite interagir com o GitHub no seu portátil ou desktop. Este folheto de ajuda resume as instruções frequentemente usadas na linha de comando do Git para referência rápida.
 leadingpath: ../../
 ---
 
 {% capture colOne %}
 ## Instalar o Git
-
-Git é um sistema distribuído open source de controlo de versões que permite interagir com o GitHub no seu portátil ou desktop. Este folheto de ajuda resume as instruções frequentemente usadas na linha de comando do Git para referência rápida.
 
 O GitHub disponibiliza clientes desktop que incluem um interface gráfico para as ações mais comuns. Estes clientes também incluem ferramentas para a linha de comandos para cenários mais avançados. Em ambos os casos, os clientes são atualizados automáticamente.
 
