@@ -8,7 +8,7 @@ We know that part of effectively sharing GitHub and Git with the world goes beyo
 
 We know that many of the users of this repository are just focused on getting the materials and teaching from them.  We've made that easy.
 
-1. You can view and teach from the kit, hosted on GitHub, at http://training.github.com/kit
+1. You can view and teach from the kit, hosted on GitHub, at https://services.github.com/kit/
 2. You can download an offline copy of the kit via the green button at https://github.com/github/training-kit/releases
 
 
