@@ -30,7 +30,8 @@ Command line deep dive, problem solving techniques, and GitHub efficiencies
 
 ---
 
-## Understanding Git, navigating history
+## Understanding Git
+## Navigating history
 
 Explore the structure and way change is preserved in Git.
 
@@ -47,6 +48,61 @@ Explore the structure and way change is preserved in Git.
 ![Commit DAG](../assets/diagrams/commit-dag.svg)
 
 ---
+
+
+{% capture slide %}
+```
+git log [branch]..[branch]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+git log [branch]...[branch]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+$ git log --left-right
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+$ git log --diff-filter=[A|M|D]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+$ git branch --merged
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+git branch --no-merged
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+git rev-parse [commit-shorthand]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+git name-rev [commit]
+```
+{% endcapture %}{% include slide-section %}
 
 {% capture lab %}
 1. Understand the way Git preserves history and data
@@ -119,6 +175,44 @@ $ git log --oneline --left-right master...other
 Cutting and creating releases on the command line and on GitHub.
 
 ---
+
+
+{% capture slide %}
+```
+git tag [tagname] [commit]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+git tag -a [tagname] [commit]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+git push [remote] [tagname]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+git tag -d [tagname]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+git describe
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+git tag -s -m "[message]" [tagname] [commit]
+```
+{% endcapture %}{% include slide-section %}
 
 {% capture lab %}
 1. Use the command line for branching strategies
@@ -200,6 +294,39 @@ Avoid tracking unimportant files.
 
 ---
 
+
+{% capture slide %}
+```
+$ vi .gitignore
+```
+{% endcapture %}{% include slide-section %}
+
+
+
+{% capture slide %}
+```
+$ git config core.excludesfile [path]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+$ git add -f [path]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+$ git clean -f
+$ git clean -fd
+$ git clean -fx
+```
+{% endcapture %}{% include slide-section %}
+
+
+
 {% capture lab %}
 1. Set ignore patterns to prevent accidental versioning
 2. Clean working directory of untracked files
@@ -254,6 +381,46 @@ $ git clean -fx
 Speed up your workflow.
 
 ---
+
+
+
+{% capture slide %}
+```
+$ git commit -a -m"[message]"
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+$ git commit --amend -m "[updated message]"
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+$ git checkout -b [branch] [base]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+$ git stash
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+# Stage by patch
+$ git add -p [file]
+
+# Unstage by patch
+git reset HEAD -p [file]
+```
+{% endcapture %}{% include slide-section %}
+
+
 
 {% capture lab %}
 1. Use built-in shortcuts for committing and branch switching
@@ -333,6 +500,30 @@ Craft and acquire commits with selective, as-needed commands.
 
 ---
 
+
+
+
+{% capture slide %}
+```
+# Generate new commit from specified commit
+$ git cherry-pick [commit]
+
+# List branches containing same patch
+$ git cherry [comparison-branch]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+# Stage the file from a specific commit
+git checkout [commit] -- [path]
+```
+{% endcapture %}{% include slide-section %}
+
+
+
+
 {% capture lab %}
 1. Capture select commits and generate new history on separate branches
 2. Determine commit history existence in independent branches
@@ -388,6 +579,32 @@ Rebase and reorder existing commits for improved historical context.
 
 ---
 
+{% capture slide %}
+```
+$ git rebase [base-commit]
+```
+{% endcapture %}{% include slide-section %}
+
+
+
+{% capture slide %}
+```
+$ git pull --rebase
+```
+{% endcapture %}{% include slide-section %}
+
+
+
+{% capture slide %}
+```
+$ git config branch.autosetuprebase
+$ git config branch.[master].rebase true
+```
+{% endcapture %}{% include slide-section %}
+
+
+---
+
 ![Rebase](../assets/diagrams/rebase-interactive-01.svg)
 
 ---
@@ -398,6 +615,19 @@ Rebase and reorder existing commits for improved historical context.
 
 ---
 
+
+{% capture slide %}
+```
+$ git rebase -i [base-commit]
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+# When commits contain `fixup!` or `squash!`
+$ git rebase -i --autosquash [base-commit]
+```
+{% endcapture %}{% include slide-section %}
 
 {% capture lab %}
 1. Replay branch history with `rebase`
@@ -464,6 +694,63 @@ $ git rebase -i --autosquash [ref]
 Interact, investigate, and integrate remote repository histories.
 
 ---
+
+
+{% capture slide %}
+```shell
+$ git remote -v
+$ git branch -vv
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+$ git remote show <remote-name>
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```shell
+# List refs of upstream
+$ git ls-remote [remote]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+git pull [remote] [pull-request-namespace]
+```
+{% endcapture %}{% include slide-section %}
+
+
+
+{% capture slide %}
+```
+# Retrieve, store as temporary branch
+$ git fetch [remote] refs/pull/[num]/head
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+$ git show FETCH_HEAD
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+$ git merge --no-commit --no-ff FETCH_HEAD
+```
+{% endcapture %}{% include slide-section %}
+
+
+
+
+
+
 
 {% capture lab %}
 1. Review GitHub Pull Requests from the command line
@@ -552,6 +839,47 @@ Separate single, large repository histories into individual projects.
 
 ---
 
+
+{% capture slide %}
+```shell
+# Rewrite all history with
+# respect to files in directory
+$ git filter-branch
+--subdirectory-filter [dir]
+-- --all
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```
+# Rewrite history, applying Git command
+# across all commits
+$ git filter-branch --index-filter
+'git rm --cached
+--ignore-unmatch [file]' HEAD
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+$ git submodule add [repo-url] [folder]
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+$ git submodule init
+$ git submodule update
+
+# OR
+
+$ git clone --recursive [url]
+```
+{% endcapture %}{% include slide-section %}
+
+
 {% capture lab %}
 1. Separate versioned content in a repository into a separate one
 2. Clean up unwanted history repository-wide with `filter-branch`
@@ -600,6 +928,28 @@ $ git submodule update --init --recursive
 Verify authenticity with GPG keys
 
 ---
+
+{% capture slide %}
+```shell
+$ git commit --signoff
+```
+{% endcapture %}{% include slide-section %}
+
+{% capture slide %}
+```shell
+# Display signatures per commit
+$ git log --show-signature
+```
+{% endcapture %}{% include slide-section %}
+
+
+{% capture slide %}
+```
+# Merge only if all signatures match public keys
+$ git merge --verify-signatures
+```
+{% endcapture %}{% include slide-section %}
+
 
 {% capture lab %}
 1. Use a GPG key to sign a specific commit
