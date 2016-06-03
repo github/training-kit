@@ -53,7 +53,7 @@ byline: Discovering the GitHub collaboration platform
   * Images
   * Maps
   * Spreadsheets
-  * models
+  * Models
 * Branch view
 * Branch ahead/behind positions
 * Network graph
@@ -138,7 +138,7 @@ The GitHub collaboration platform facilitates:
 
 
 
-### Drive by contributions
+### Drive-by contributions
 <iframe src="//player.vimeo.com/video/88472114" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
@@ -162,7 +162,7 @@ The GitHub collaboration platform facilitates:
 
 * Editing content of track file(s)
 * Examining differences in GHfD
-* Commiting changes as-needed
+* Committing changes as-needed
 
 
 
@@ -249,13 +249,10 @@ The GitHub collaboration platform facilitates:
 * Explain what a Fork is, its purpose, reasons
 * Demonstrate who has Forked from Network Members page
 * GitHub Student creates a Fork to follow along
-* Perform the same branching, commiting pattern
+* Perform the same branching, committing pattern
 * Open a Pull Request and see the "linkage"
 * Review and create local branch relating to PRs (even from Fork) ???
 * Use "Checkout this Branch for..."" to create local branch of any PR and branch
   * Show how branch cannot be synced for Forks' branches
   * Show how branch directly on repo can be changed
 * Review how a Fork's branch and PR can be manipulated, merged locally into another branch, integrated, and close original PR
-
-
-

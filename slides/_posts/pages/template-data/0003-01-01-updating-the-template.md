@@ -1,7 +1,7 @@
 ---
 chapter: "Template Data"
 cover: true
-layout: hydesides
+
 tags:
   - "pages/template-data"
 ---
@@ -16,4 +16,3 @@ Now, we can go back to update our page layout in `_layouts/page.html` to add a p
            <h1>Hello World!</h1>
          </body>
        </html>
-

@@ -29,7 +29,7 @@ $ git config --global core.autocrlf <value>
 ```
 
 
-## Configuing the Git User
+## Configuring the Git User
 ### Summary
 * [Pro Git Book: First Time Git Setup](http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup)
 * Username

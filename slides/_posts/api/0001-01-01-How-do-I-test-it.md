@@ -6,10 +6,10 @@ tags: ['api']
 ---
 
     # Anonymous
-	$ curl <URL>
+  $ curl <URL>
     
     # Pass credentials on CLI
     $ curl -u <user:password> <URL>
 
     # Use .netrc file
-	$ curl -n <URL>
+  $ curl -n <URL>

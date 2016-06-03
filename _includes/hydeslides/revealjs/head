@@ -9,7 +9,7 @@
 
 <!-- If the query includes 'print-pdf', use the PDF print sheet -->
 <script>
-	document.write( '<link rel="stylesheet" href="dependencies/revealjs/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+  document.write( '<link rel="stylesheet" href="dependencies/revealjs/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 </script>
 
 <!--[if lt IE 9]>
@@ -21,7 +21,7 @@
 
 <!--GitHub Style-->
 {% if page.theme %}
-	{% assign theme = page.theme %}
+  {% assign theme = page.theme %}
 {% else %}
-	{% assign theme = "original" %}
+  {% assign theme = "original" %}
 {% endif %}
