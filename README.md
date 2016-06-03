@@ -38,6 +38,6 @@ The class material content possess two specialized uses of Markdown for slide-li
 
 ## Build
 
-The build of this repository is fully automated through several shell scripts. To perform a build of the materials identical to that of our continuous integration server, from the top directory of this project, run `./_buildscripts/cibuild` and then inspect the output in the `_site` directory.
+The build of this repository is fully automated through several shell scripts. To perform a build of the materials identical to that of our continuous integration server, from the top directory of this project, run `script/cibuild` and then inspect the output in the `_site` directory.
 
-The `_buildscripts/makerelease` script produces a zip bundle for offline use of these materials. Pre-built releases are available at https://github.com/github/training-kit/releases
+The `script/makerelease` script produces a zip bundle for offline use of these materials. Pre-built releases are available at https://github.com/github/training-kit/releases

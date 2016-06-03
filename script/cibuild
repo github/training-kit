@@ -12,6 +12,6 @@ echo "hostname: $(hostname)"
 echo "pwd: $(pwd)"
 git --version
 
-_buildscripts/bootstrap
+script/bootstrap
 
 bundle exec rake test
