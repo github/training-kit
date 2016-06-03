@@ -16,7 +16,7 @@ We know that many of the users of this repository are just focused on getting th
 
 We’re eager to have your help in improving this kit. If you have an idea for a change, start by opening a new [Issue](https://github.com/github/training-kit/issues) so we can discuss and help guide your contribution to the right location. If you have corrections or kit contributions, we'd be glad to receive them via a [Pull Request](https://help.github.com/articles/using-pull-requests). For kit contributions, we ask you to share in our mindset of minimalism.
 
-The slides align with the [Foundations](), [Intermediate](), and [Advanced]() classes delivered by the GitHub Training team.
+The slides align with the [Foundations](https://github.com/github/training-kit/tree/master/foundations/index.md), [Intermediate](https://github.com/github/training-kit/blob/master/intermediate/index.md), and [Advanced](https://github.com/github/training-kit/tree/master/advanced/index.md) classes delivered by the GitHub Training team.
 
 The three class' slides reside at top-level directories:
 
