@@ -30,7 +30,8 @@ Command line deep dive, problem solving techniques, and GitHub efficiencies
 
 ---
 
-## Understanding Git, navigating history
+## Understanding Git
+## Navigating history
 
 Explore the structure and way change is preserved in Git.
 
@@ -45,6 +46,70 @@ Explore the structure and way change is preserved in Git.
 ---
 
 ![Commit DAG](../assets/diagrams/commit-dag.svg)
+
+---
+
+---
+
+```
+git log [branch]..[branch]
+```
+
+---
+
+---
+
+```
+git log [branch]...[branch]
+```
+
+---
+
+---
+
+```
+$ git log --left-right
+```
+
+---
+
+---
+
+```
+$ git log --diff-filter=[A|M|D]
+```
+
+---
+
+---
+
+```
+$ git branch --merged
+```
+
+---
+
+---
+
+```
+git branch --no-merged
+```
+
+---
+
+---
+
+```
+git rev-parse [commit-shorthand]
+```
+
+---
+
+---
+
+```
+git name-rev [commit]
+```
 
 ---
 
@@ -120,14 +185,65 @@ Cutting and creating releases on the command line and on GitHub.
 
 ---
 
+---
+
+```
+git tag [tagname] [commit]
+```
+
+---
+
+---
+
+```
+git tag -a [tagname] [commit]
+```
+
+---
+
+---
+
+```
+git push [remote] [tagname]
+```
+
+---
+
+---
+
+```
+git tag -d [tagname]
+```
+
+---
+
+---
+
+```
+git describe
+```
+
+---
+
+---
+
+```
+git tag -s -m "[message]" [tagname] [commit]
+```
+
+---
+
 {% capture lab %}
 1. Use the command line for branching strategies
 2. Understand best branch and collaboration workflows
 3. Apply `tag`s to commits to indicate releases
 {% endcapture %}{% include lab %}
 
+---
 
 ![Tags](../assets/diagrams/tag.svg)
+
+---
 
 ### Details
 
@@ -200,6 +316,40 @@ Avoid tracking unimportant files.
 
 ---
 
+---
+
+```
+$ vi .gitignore
+```
+
+---
+
+---
+
+```
+$ git config core.excludesfile [path]
+```
+
+---
+
+---
+
+```
+$ git add -f [path]
+```
+
+---
+
+---
+
+```
+$ git clean -f
+$ git clean -fd
+$ git clean -fx
+```
+
+---
+
 {% capture lab %}
 1. Set ignore patterns to prevent accidental versioning
 2. Clean working directory of untracked files
@@ -252,6 +402,50 @@ $ git clean -fx
 ## Mastering shortcuts & efficiencies
 
 Speed up your workflow.
+
+---
+
+---
+
+```
+$ git commit -a -m"[message]"
+```
+
+---
+
+---
+
+```
+$ git commit --amend -m "[updated message]"
+```
+
+---
+
+---
+
+```
+$ git checkout -b [branch] [base]
+```
+
+---
+
+---
+
+```
+$ git stash
+```
+
+---
+
+---
+
+```
+# Stage by patch
+$ git add -p [file]
+
+# Unstage by patch
+git reset HEAD -p [file]
+```
 
 ---
 
@@ -316,14 +510,12 @@ git reset HEAD -p [file]
 ```
 
 #### Avoiding repetitive conflicts
-* *Re*use *re*corded *re*solution
-* Preserves pre-image to simplify conflicts
+- **Re**use **re**corded **re**solution
+- Preserves pre-image to simplify conflicts
 
 ```shell
 $ git config rerere.enable true
 ```
-
-
 
 ---
 
@@ -332,6 +524,28 @@ $ git config rerere.enable true
 Craft and acquire commits with selective, as-needed commands.
 
 ---
+
+---
+
+```
+# Generate new commit from specified commit
+$ git cherry-pick [commit]
+
+# List branches containing same patch
+$ git cherry [comparison-branch]
+```
+
+---
+
+---
+
+```
+# Stage the file from a specific commit
+git checkout [commit] -- [path]
+```
+
+---
+
 
 {% capture lab %}
 1. Capture select commits and generate new history on separate branches
@@ -388,6 +602,31 @@ Rebase and reorder existing commits for improved historical context.
 
 ---
 
+```
+$ git rebase [base-commit]
+```
+
+---
+
+---
+
+```
+$ git pull --rebase
+```
+
+---
+
+---
+
+```
+$ git config branch.autosetuprebase
+$ git config branch.[master].rebase true
+```
+
+---
+
+---
+
 ![Rebase](../assets/diagrams/rebase-interactive-01.svg)
 
 ---
@@ -398,6 +637,22 @@ Rebase and reorder existing commits for improved historical context.
 
 ---
 
+---
+
+```
+$ git rebase -i [base-commit]
+```
+
+---
+
+---
+
+```
+# When commits contain `fixup!` or `squash!`
+$ git rebase -i --autosquash [base-commit]
+```
+
+---
 
 {% capture lab %}
 1. Replay branch history with `rebase`
@@ -464,6 +719,66 @@ $ git rebase -i --autosquash [ref]
 Interact, investigate, and integrate remote repository histories.
 
 ---
+
+---
+
+```shell
+$ git remote -v
+$ git branch -vv
+```
+
+---
+
+---
+
+```
+$ git remote show <remote-name>
+```
+
+---
+
+---
+
+```shell
+# List refs of upstream
+$ git ls-remote [remote]
+```
+
+---
+
+---
+
+```
+git pull [remote] [pull-request-namespace]
+```
+
+---
+
+---
+
+```
+# Retrieve, store as temporary branch
+$ git fetch [remote] refs/pull/[num]/head
+```
+
+---
+
+---
+
+```
+$ git show FETCH_HEAD
+```
+
+---
+
+---
+
+```
+$ git merge --no-commit --no-ff FETCH_HEAD
+```
+
+---
+
 
 {% capture lab %}
 1. Review GitHub Pull Requests from the command line
@@ -552,6 +867,52 @@ Separate single, large repository histories into individual projects.
 
 ---
 
+---
+
+```shell
+# Rewrite all history with
+# respect to files in directory
+$ git filter-branch
+--subdirectory-filter [dir]
+-- --all
+```
+
+---
+
+---
+
+```
+# Rewrite history, applying Git command
+# across all commits
+$ git filter-branch --index-filter
+'git rm --cached
+--ignore-unmatch [file]' HEAD
+```
+
+---
+
+---
+
+```
+$ git submodule add [repo-url] [folder]
+```
+
+---
+
+---
+
+```
+$ git submodule init
+$ git submodule update
+
+# OR
+
+$ git clone --recursive [url]
+```
+
+---
+
+
 {% capture lab %}
 1. Separate versioned content in a repository into a separate one
 2. Clean up unwanted history repository-wide with `filter-branch`
@@ -600,6 +961,33 @@ $ git submodule update --init --recursive
 Verify authenticity with GPG keys
 
 ---
+
+---
+
+```shell
+$ git commit --signoff
+```
+
+---
+
+---
+
+```shell
+# Display signatures per commit
+$ git log --show-signature
+```
+
+---
+
+---
+
+```
+# Merge only if all signatures match public keys
+$ git merge --verify-signatures
+```
+
+---
+
 
 {% capture lab %}
 1. Use a GPG key to sign a specific commit

@@ -8,7 +8,7 @@ We know that part of effectively sharing GitHub and Git with the world goes beyo
 
 We know that many of the users of this repository are just focused on getting the materials and teaching from them.  We've made that easy.
 
-1. You can view and teach from the kit, hosted on GitHub, at http://training.github.com/kit
+1. You can view and teach from the kit, hosted on GitHub, at https://services.github.com/kit/
 2. You can download an offline copy of the kit via the green button at https://github.com/github/training-kit/releases
 
 
@@ -16,7 +16,7 @@ We know that many of the users of this repository are just focused on getting th
 
 We’re eager to have your help in improving this kit. If you have an idea for a change, start by opening a new [Issue](https://github.com/github/training-kit/issues) so we can discuss and help guide your contribution to the right location. If you have corrections or kit contributions, we'd be glad to receive them via a [Pull Request](https://help.github.com/articles/using-pull-requests). For kit contributions, we ask you to share in our mindset of minimalism.
 
-The slides align with the [Foundations](), [Intermediate](), and [Advanced]() classes delivered by the GitHub Training team.
+The slides align with the [Foundations](https://github.com/github/training-kit/tree/master/foundations/index.md), [Intermediate](https://github.com/github/training-kit/blob/master/intermediate/index.md), and [Advanced](https://github.com/github/training-kit/tree/master/advanced/index.md) classes delivered by the GitHub Training team.
 
 The three class' slides reside at top-level directories:
 
@@ -38,6 +38,6 @@ The class material content possess two specialized uses of Markdown for slide-li
 
 ## Build
 
-The build of this repository is fully automated through several shell scripts. To perform a build of the materials identical to that of our continuous integration server, from the top directory of this project, run `./_buildscripts/cibuild` and then inspect the output in the `_site` directory.
+The build of this repository is fully automated through several shell scripts. To perform a build of the materials identical to that of our continuous integration server, from the top directory of this project, run `script/cibuild` and then inspect the output in the `_site` directory.
 
-The `_buildscripts/makerelease` script produces a zip bundle for offline use of these materials. Pre-built releases are available at https://github.com/github/training-kit/releases
+The `script/makerelease` script produces a zip bundle for offline use of these materials. Pre-built releases are available at https://github.com/github/training-kit/releases
