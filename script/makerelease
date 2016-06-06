@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if ! _buildscripts/cibuild; then
+if ! script/cibuild; then
     printf '%s\n' 'Build failed' >&2
     exit 1
 fi
