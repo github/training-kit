@@ -2,4 +2,4 @@ language: ruby
 rvm:
   - 2.0
 script:
-  - bundle exec rake test
+  - script/cibuild
