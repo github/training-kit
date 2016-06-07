@@ -18,11 +18,11 @@ We’re eager to have your help in improving this kit. If you have an idea for a
 
 ### Class Material
 
-[GitHub for Developers](https://services.github.com/kit/courses/github-for-developers.html) and [GitHub for Everyone](https://services.github.com/kit/courses/github-for-everyone.html) are the two class types taught by the GitHub Training team. Their content is composed of several modules listed in the `[_modules/](_modules/)` subdirectory.
+[GitHub for Developers](https://services.github.com/kit/courses/github-for-developers.html) and [GitHub for Everyone](https://services.github.com/kit/courses/github-for-everyone.html) are the two class types taught by the GitHub Training team. Their content is composed of several modules listed in the `[_modules/](https://github.com/github/training-kit/tree/master/_modules/)` subdirectory.
 
 ### Cheat Sheets
 
-The Git and GitHub Cheat Sheets are located within the `[downloads/](downloads/)` directory. There are some translations available and we're always looking for more. If you are looking to get a `.pdf` generated for the html version of a cheatsheet, please start an issue and @mention [@brntbeer](https://github.com/brntbeer) or [@crichid](https://github.com/crichid) and they will see to the request.
+The Git and GitHub Cheat Sheets are located within the `[downloads/](https://github.com/github/training-kit/tree/master/downloads/)` directory. There are some translations available and we're always looking for more. If you are looking to get a `.pdf` generated for the html version of a cheatsheet, please start an issue and @mention [@brntbeer](https://github.com/brntbeer) or [@crichid](https://github.com/crichid) and they will see to the request.
 
 ### Legacy Class Material
 
