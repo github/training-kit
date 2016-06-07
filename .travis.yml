@@ -1,0 +1,5 @@
+language: ruby
+rvm:
+  - 2.0
+script:
+  - script/cibuild
