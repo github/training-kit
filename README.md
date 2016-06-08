@@ -26,9 +26,7 @@ The Git and GitHub Cheat Sheets are located within the [`downloads/`](https://gi
 
 ### Legacy Class Material
 
-There are old slides that slides align with the [Foundations](https://github.com/github/training-kit/tree/master/foundations/index.md), [Intermediate](https://github.com/github/training-kit/blob/master/intermediate/index.md), and [Advanced](https://github.com/github/training-kit/tree/master/advanced/index.md) classes previously delivered by the GitHub Training team.
-
-These three legacy class' slides reside at top-level directories:
+This repository also contains our legacy course content. You can find these in the top-level directories:
 - [`foundations/`](https://github.com/github/training-kit/tree/master/foundations)
 - [`intermediate/`](https://github.com/github/training-kit/tree/master/intermediate)
 - [`advanced/`](https://github.com/github/training-kit/tree/master/advanced)
