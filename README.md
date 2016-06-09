@@ -16,10 +16,17 @@ We know that many of the users of this repository are just focused on getting th
 
 We’re eager to have your help in improving this kit. If you have an idea for a change, start by opening a new [Issue](https://github.com/github/training-kit/issues) so we can discuss and help guide your contribution to the right location. If you have corrections or kit contributions, we'd be glad to receive them via a [Pull Request](https://help.github.com/articles/using-pull-requests). For kit contributions, we ask you to share in our mindset of minimalism.
 
-The slides align with the [Foundations](https://github.com/github/training-kit/tree/master/foundations/index.md), [Intermediate](https://github.com/github/training-kit/blob/master/intermediate/index.md), and [Advanced](https://github.com/github/training-kit/tree/master/advanced/index.md) classes delivered by the GitHub Training team.
+### Class Material
 
-The three class' slides reside at top-level directories:
+[GitHub for Developers](https://services.github.com/kit/courses/github-for-developers.html) and [GitHub for Everyone](https://servies.github.com/kit/courses/github-for-everyone.html) are the two class types taught by the GitHub Training team. Their content is composed of several modules listed in the [`_modules/`](https://github.com/github/training-kit/tree/master/_modules/) subdirectory.
 
+### Cheat Sheets
+
+The Git and GitHub Cheat Sheets are located within the [`downloads/`](https://github.com/github/training-kit/tree/master/downloads/) directory. There are some translations available and we're always looking for more. If you are looking to get a `.pdf` generated for the html version of a cheatsheet, please start an issue and @mention [@brntbeer](https://github.com/brntbeer) or [@crichid](https://github.com/crichid) and they will see to the request.
+
+### Legacy Class Material
+
+This repository also contains our legacy course content. You can find these in the top-level directories:
 - [`foundations/`](https://github.com/github/training-kit/tree/master/foundations)
 - [`intermediate/`](https://github.com/github/training-kit/tree/master/intermediate)
 - [`advanced/`](https://github.com/github/training-kit/tree/master/advanced)
