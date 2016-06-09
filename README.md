@@ -8,9 +8,18 @@ We know that part of effectively sharing GitHub and Git with the world goes beyo
 
 We know that many of the users of this repository are just focused on getting the materials and teaching from them.  We've made that easy.
 
-1. You can view and teach from the kit, hosted on GitHub, at https://services.github.com/kit/
-2. You can download an offline copy of the kit via the green button at https://github.com/github/training-kit/releases
+1. You can view and teach from the kit, hosted on GitHub, at https://services.github.com/kit/.
+2. You can download the source files [here](https://github.com/github/training-kit/archive/master.zip).
 
+#### Packaging for Viewing Behind Your Firewall
+
+Sometimes you can't download the repository at work because of firewall rules, but you'd like to have a copy of the files that would be able to be served from a web server inside of these firewall rules. To do so, we need to use `script/package`.
+
+1. Run `script/package` to create a release tarball. This will be in the format `release-XXXXXXX.tgz` for you to take wherever you want.
+2. To test this looks okay, create some folders `mkdir -p test_site/kit`.
+3. Untar the release, `tar -xzf release-XXXXXXX.tgz -C test_site/kit`.
+4. Switch into the test_site directory, `cd test_site`.
+5. View the site with `python -m SimpleHTTPServer`. _Note: Some servers are obviously more advance than others and can handle redirects, smart recognition of `.html` files, etc_
 
 ## Contribute
 
@@ -46,5 +55,3 @@ The class material content possess two specialized uses of Markdown for slide-li
 ## Build
 
 The build of this repository is fully automated through several shell scripts. To perform a build of the materials identical to that of our continuous integration server, from the top directory of this project, run `script/cibuild` and then inspect the output in the `_site` directory.
-
-The `script/makerelease` script produces a zip bundle for offline use of these materials. Pre-built releases are available at https://github.com/github/training-kit/releases
