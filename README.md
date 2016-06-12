@@ -27,7 +27,7 @@ We’re eager to have your help in improving this kit. If you have an idea for a
 
 ### Class Material
 
-[GitHub for Developers](https://services.github.com/kit/courses/github-for-developers.html) and [GitHub for Everyone](https://servies.github.com/kit/courses/github-for-everyone.html) are the two class types taught by the GitHub Training team. Their content is composed of several modules listed in the [`_modules/`](https://github.com/github/training-kit/tree/master/_modules/) subdirectory.
+[GitHub for Developers](https://services.github.com/kit/courses/github-for-developers.html) and [GitHub for Everyone](https://services.github.com/kit/courses/github-for-everyone.html) are the two class types taught by the GitHub Training team. Their content is composed of several modules listed in the [`_modules/`](https://github.com/github/training-kit/tree/master/_modules/) subdirectory.
 
 ### Cheat Sheets
 
