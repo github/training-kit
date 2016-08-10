@@ -15,9 +15,7 @@ The process is as simple, needing only you to sign into your GitHub account, if 
 
 Depending on the detected version control system, Importer may request additional information for migration. This includes a mapping file for associating Subversion usernames with Git fields.
 
-Begin migrating repositories by visiting the Importer home page:
-
-[https://importer.github.com](https://importer.github.com)
+Read more about how to import your project into GitHub by looking at the full [GitHub Importer documentation](https://help.github.com/articles/importing-a-repository-with-github-importer/).
 
 ### SVN2Git Utility
 
