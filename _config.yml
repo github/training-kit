@@ -7,6 +7,7 @@ title: GitHub Training
 # standard jekyll configuration
 
 baseurl: /kit
+parentsite: https://services.github.com
 permalink: /articles/:title
 exclude:
 - bin
