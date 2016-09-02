@@ -7,6 +7,8 @@ leadingpath: ../
 
 {% capture migration %}
 ## Migrating
+
+
 ### GitHub importer
 
 For Internet-accessible projects, GitHub.com provides Importer for automatic migration and repository creation from Subversion, Team Foundation Server, Mercurial, or alternatively-hosted Git version controlled projects.
