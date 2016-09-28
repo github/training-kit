@@ -72,6 +72,7 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 
 {% capture slide %}
 ### Mastering Shortcuts
+{% endcapture %}
 
 
 {% capture slide %}
@@ -352,4 +353,3 @@ A sample `.gitconfig` file:
 ##### Git Refspec Documentation
 * [Git `rev-parse` command and reference specifications](https://www.kernel.org/pub/software/scm/git/docs/git-rev-parse.html)
 * [ProGit book chapter on refspecs](http://git-scm.com/book/en/Git-Internals-The-Refspec)
-
