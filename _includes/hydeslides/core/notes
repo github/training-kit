@@ -1,3 +1,0 @@
-<aside class="notes">
-{% if notes %}{{ notes | markdownify }}{% endif %}
-</aside>
