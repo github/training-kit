@@ -1,0 +1,40 @@
+/*
+Error: Invalid CSS after "...bootstrap.scss"": expected "{", was ";"
+        on line 4 of _stylesheets/page.scss
+
+1: ---
+2: ---
+3: 
+4: @import "bootstrap-sass/lib/bootstrap.scss";
+5: 
+6: /* Color Definitions *\/
+7: $color-dark: #1875c6;
+8: $color-bright: #00a5ea;
+9: $mono-dark: #222222;
+
+Backtrace:
+_stylesheets/page.scss:4
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:656:in `block'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:391:in `run'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...bootstrap.scss\"\": expected \"{\", was \";\"\A         on line 4 of _stylesheets/page.scss\A \A 1: ---\A 2: ---\A 3: \A 4: @import \"bootstrap-sass/lib/bootstrap.scss\";\A 5: \A 6: /* Color Definitions */\A 7: $color-dark: #1875c6;\A 8: $color-bright: #00a5ea;\A 9: $mono-dark: #222222;"; }
