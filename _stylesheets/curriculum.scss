@@ -3,10 +3,9 @@
 ---
 
 // Import external dependencies
-
-
-@import "bootstrap-sass/lib/bootstrap.scss";
 @import "octicons/octicons/sprockets-octicons.scss";
+@import "bootstrap-sass/lib/bootstrap.scss";
+
 
 body{
   background: $body-bg;
