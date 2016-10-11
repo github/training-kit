@@ -1,0 +1,71 @@
+# main links links
+main:
+# Keep original nav, do not replace
+  - title: "Introduction to GitHub"
+    url: /intro-to-github/
+  - title: "GitHub Desktop"
+    url: /github-desktop/
+#  - title: "Introduction to GitHub Pages"
+#    url: /patchwork/gh-pages/
+
+intro-nav:
+  - title: "Welcome"
+    url: /intro-to-github/
+  - title: "Exploring GitHub"
+    url: /intro-to-github/01/
+  - title: "Repository Features"
+    url: /intro-to-github/02/
+  - title: "GitHub Flow"
+    url: /intro-to-github/03/
+  - title: "Creating a Branch"
+    url: /intro-to-github/04/
+  - title: "Working on GitHub"
+    url: /intro-to-github/05/
+  - title: "Collaborating on GitHub"
+    url: /intro-to-github/06/
+  - title: "Editing Files"
+    url: /intro-to-github/07/
+  - title: "Merging Pull Requests"
+    url: /intro-to-github/07/
+
+gh-pages:
+  - title: "Introduction to GitHub Pages"
+    url: /patchwork/gh-pages/
+  - title: "Editing Your GitHub Page"
+    url: /patchwork/gh-pages/02/
+  - title: "Creating Pages and Posts in Jekyll"
+    url: /patchwork/gh-pages/03/
+  - title: "Templates and Design"
+    url: /patchwork/gh-pages/04/
+  - title: "Installing Jekyll Locally"
+    url: /patchwork/gh-pages/05/
+
+github-for-everyone:
+    - title: "Set Up GitHub Desktop"
+      url: /github-desktop/
+    - title: "Local vs. Remote Repositories"
+      url: /github-desktop/02/
+    - title: "About GitHub Pages"
+      url: /github-desktop/03/
+    - title: "Clone the Repository"
+      url: /github-desktop/04/
+    - title: "Create Local Branches"
+      url: /github-desktop/05/
+    - title: "Add Commits Locally"
+      url: /github-desktop/06/
+    - title: "Collaborate on Changes With GitHub"
+      url: /github-desktop/07/
+    - title: "Merge your Pull Request"
+      url: /github-desktop/08/
+    - title: "Join the Class Repo"
+      url: /github-desktop/09/
+    - title: "Clone Class Repo"
+      url: /github-desktop/10/
+    - title: "Workflow Review on Class Repo"
+      url: /github-desktop/11/
+    - title: "Sync Changes on Class Repo"
+      url: /github-desktop/12/
+    - title: "Pull Request on Class Repo"
+      url: /github-desktop/13/
+    - title: "Merge Changes to Class Repo"
+      url: /github-desktop/14/
