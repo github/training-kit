@@ -1,14 +1,4 @@
-{% capture activity-text %}
-# Activity: Merging Pull Request
+Since this is your repository, you probably don't have anyone to collaborate with (yet). Go ahead and merge your Pull Request now:
 
-1. On GitHub.com, navigate to the pull request that you just opened.
-2. Scroll down and click the big green **Merge Pull Request** button.
-
-{% endcapture %}
-
-<div class="notice--warning">
-{{ activity-text | markdownify }}
-</div>
-
-Need help? Click **open chat** below for answers from GitHub trainers!
-{: .notice--success}
+1. On GitHub.com, navigate to the Pull Request that you just opened.
+1. Scroll down and click the big green **Merge Pull Request** button.

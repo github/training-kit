@@ -15,11 +15,13 @@ Let's think back to the GitHub workflow again. You have created a branch, added 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kJr-PIfLDl4" frameborder="0" allowfullscreen></iframe>
 
-{% include activity/05-create-a-pull-request.md %}
+{% include activity/intro-to-github/05-create-a-pull-request.md %}
 
 :tada: Congratulations! You have created your Pull Request. Now it is time to put your collaborator hat on and go help others!
 
-{% include activity/05a-collaborate-on-pull-request.md %}
+{% include activity/intro-to-github/05a-collaborate-on-pull-request.md %}
+
+{% include need_help %}
 
 {% include manual/07a-exploring.md %}
 

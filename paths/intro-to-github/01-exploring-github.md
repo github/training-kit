@@ -34,6 +34,9 @@ If you just created your account, you may not have any repositories yet. Let's f
 
 (P.S. Even if you already have some repositories, you will want to follow the instructions below to join the class repository.)
 
-{% include activity/01-join-intro-repo.md %}
+{% include activity/intro-to-github/01-join-intro-repo.md %}
+
+{% include need_help %}
+
 
 [Continue](../02/){: .btn}

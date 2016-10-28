@@ -1,16 +1,6 @@
-{% capture activity-text %}
-# Activity: Opening a Pull Request
+Now that you have made some local commits, it is time to send your changes to the remote copy of your repository on GitHub.com:
 
-1. After you have committed your changes, click the Pull Request button.
-2. Complete the fields of the pull request just like you would on GitHub.com. (Make sure you know if the main default branch is `master` or `gh-pages`!)
-3. Click create pull request. GitHub Desktop will do all of the work of pushing your changes and creating a pull request. When it is finished, you will receive a confirmation message.
-4. Go to your repository on GitHub.com, click the **Pull Requests** tab, and see your newly created pull request!
-
-{% endcapture %}
-
-<div class="notice--warning">
-{{ activity-text | markdownify }}
-</div>
-
-Need help? Click **open chat** below for answers from GitHub trainers!
-{: .notice--success}
+1. On GitHub Desktop, click the Pull Request button.
+1. Complete the fields of the Pull Request just like you would on GitHub.com. Ensure the `base` branch (the one on the left) is `master` and that the `compare` branch (the one on the right) is the one you created on GitHub Desktop.
+1. Click `Send Pull Request`. GitHub Desktop will send your changes and create a pull request.
+1. You will receive a confirmation message including the link to your Pull Request. Click the link to view your newly created Pull Request on GitHub.com!

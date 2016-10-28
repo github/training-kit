@@ -1,22 +1,8 @@
-{% capture activity-text %}
 
-# Activity: Add Commits Locally
+It's time to create the home page for your website.
 
-1. Double check that you're checked out to your branch on GitHub Desktop.
-1. Open your preferred text editor.
-1. Create a new file with the title `index.md`.
-1. In your file, include at least "Hello World" and your username. Bonus points for using markdown, including a bio, or even making a portfolio!
-1. When you are finished, save the file and close the text editor.
-1. Go back to GitHub Desktop and select the `master` branch.
-
-_When you open your file with the master branch selected, you will notice that the changes you just made to the file are not included._
-
-
-{% endcapture %}
-
-<div class="notice--warning">
-{{ activity-text | markdownify }}
-</div>
-
-Need help? Click **open chat** below for answers from GitHub trainers!
-{: .notice--success}
+1. Double check that your new branch is the selected branch on GitHub Desktop.
+1. Open the repository in your preferred text editor.
+1. Create a new file named `index.html`.
+1. In your `index.html` file, include at least the following two lines: `<h1> Hello World! </h1>` and `<p> My name is GITHUB_USERNAME </p>`. Bonus points for including more information, or using [Jekyll Themes](http://jekyllthemes.org/) to create a more robust site.
+1. When you are finished, save your changes and close the text editor.

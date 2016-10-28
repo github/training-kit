@@ -2,6 +2,7 @@ function initialize() {
   $.getJSON('https://githubschool.github.io/open-enrollment-classes-introduction-to-github/createMap.topojson', function (data) {
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 2,
+      minZoom: 2,
       center: new google.maps.LatLng(10, 15),
       mapTypeId: 'terrain',
       //disableDefaultUI: true,
@@ -11,7 +12,23 @@ function initialize() {
       scrollwheel: false,
       streetViewControl: false,
       //zoomControl: false,
-      //draggable: false
+      //draggable: false,
+      styles: [{
+        featureType: 'administrative',
+        elementType: 'geometry',
+        stylers: [{visibility: 'off'}]
+      }, {
+        featureType: 'administrative.country',
+        stylers: [{visibility: 'off'}]
+      }, {
+        featureType: 'water',
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
+      }, {
+        featureType: 'administrative',
+        elementType: 'labels',
+        stylers: [{visibility: 'off'}]
+      }]
     });
 
     $.each(data.features, function (index, coords) {

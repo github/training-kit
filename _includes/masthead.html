@@ -13,7 +13,7 @@
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }} {% if link.beta %} <span class="btn btn--inverse">BETA</span> {% endif %}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>

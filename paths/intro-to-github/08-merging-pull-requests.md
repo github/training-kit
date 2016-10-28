@@ -16,7 +16,11 @@ When all the comments have been addressed and all of the builds are passing, you
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3MUmLHHxSqE" frameborder="0" allowfullscreen></iframe>
 
 
-{% include manual/09-merging-pull-requests-intro-to-github.md %}
+{% include manual/09a-merge-explained.md %}
+
+{% include activity/intro-to-github/06-merge-a-pr.md %}
+
+{% include need_help %}
 
 ## :tada: Congratulations!
 

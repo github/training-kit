@@ -1,16 +1,7 @@
-{% capture activity-text %}
-# Activity: Create a branch using GitHub Desktop
+
+Now that you have a local copy of the repository, let's use the steps of [GitHub Flow](https://guides.github.com/introduction/flow/) to make a change in your project. First we will create a branch:
 
 1. At the top of GitHub Desktop, click the <i class="fa fa-code-fork fa-lg" aria-hidden="true"></i> button.
-2. In the _Name_ field, type a meaningful name for your branch. 
-3. Click **Create branch**.
-4. GitHub Desktop will automatically create and checkout to your new branch.
-
-{% endcapture %}
-
-<div class="notice--warning">
-{{ activity-text | markdownify }}
-</div>
-
-Need help? Click **open chat** below for answers from GitHub trainers!
-{: .notice--success}
+1. In the `Name` field, type a meaningful name for your branch. Something like `add-index-page` will work nicely.
+1. Click `Create branch`.
+1. GitHub Desktop will automatically create your new branch and switch you to it.

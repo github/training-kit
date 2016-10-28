@@ -8,7 +8,7 @@ title: GitHub Training
 
 baseurl: /on-demand
 parentsite: https://services.github.com
-permalink: /articles/:title
+permalink: /articles/:title/
 exclude:
 - bin
 - config.rb

@@ -38,6 +38,8 @@ Next, you will designate where you want your changes to be committed. If you wer
 
 Now it's time to add a file to the class repository containing the code for your map pin!
 
-{% include activity/04-create-a-file-on-github.md %}
+{% include activity/intro-to-github/04-create-a-file-on-github.md %}
+
+{% include need_help %}
 
 [Continue with this class](../06){: .btn}

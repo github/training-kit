@@ -1,17 +1,8 @@
-{% capture activity-text %}
-# Activity: Create a Repository on GitHub.com
+Now that you have GitHub Desktop installed, let's create the repository that will hold your new website.
 
 1. On GitHub.com, [create a new repository](https://github.com/new).
-1. You can name your repository anything you'd like - one idea is `pages-website`.
-1. Enter a description.
-1. We recommend you create a public repository. Public repositories are free.
+1. Name your repository `YOUR-USERNAME.github.io`. Why the funny name? Click the **Tell me why** section below to learn more.
+1. Enter a description for your repository.
+1. We recommend you create a public repository. Public repositories are free. Even if you select a private repository, your published website will be public.
 1. Check the box to initialize the repository with a README.
-
-{% endcapture %}
-
-<div class="notice--warning">
-{{ activity-text | markdownify }}
-</div>
-
-Need help? Click **open chat** below for answers from GitHub trainers!
-{: .notice--success}
+1. Click `Create repository`.

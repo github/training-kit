@@ -3,10 +3,11 @@ main:
 # Keep original nav, do not replace
   - title: "Introduction to GitHub"
     url: /intro-to-github/
-  - title: "GitHub Desktop"
+  - title: "Using GitHub Desktop"
+    beta: true
     url: /github-desktop/
-#  - title: "Introduction to GitHub Pages"
-#    url: /patchwork/gh-pages/
+  - title: "Community"
+    url: /community/
 
 intro-nav:
   - title: "Welcome"
@@ -26,46 +27,38 @@ intro-nav:
   - title: "Editing Files"
     url: /intro-to-github/07/
   - title: "Merging Pull Requests"
-    url: /intro-to-github/07/
+    url: /intro-to-github/08/
 
-gh-pages:
-  - title: "Introduction to GitHub Pages"
-    url: /patchwork/gh-pages/
-  - title: "Editing Your GitHub Page"
-    url: /patchwork/gh-pages/02/
-  - title: "Creating Pages and Posts in Jekyll"
-    url: /patchwork/gh-pages/03/
-  - title: "Templates and Design"
-    url: /patchwork/gh-pages/04/
-  - title: "Installing Jekyll Locally"
-    url: /patchwork/gh-pages/05/
-
-github-for-everyone:
-    - title: "Set Up GitHub Desktop"
+github-desktop-nav:
+    - title: "Welcome"
       url: /github-desktop/
-    - title: "Local vs. Remote Repositories"
+    - title: "Install GitHub Desktop"
       url: /github-desktop/02/
-    - title: "About GitHub Pages"
+    - title: "Create the Remote Repository"
       url: /github-desktop/03/
     - title: "Clone the Repository"
       url: /github-desktop/04/
     - title: "Create Local Branches"
       url: /github-desktop/05/
-    - title: "Add Commits Locally"
+    - title: "Make Local Changes"
       url: /github-desktop/06/
-    - title: "Collaborate on Changes With GitHub"
+    - title: "Add Local Commits"
       url: /github-desktop/07/
-    - title: "Merge your Pull Request"
+    - title: "Open a Pull Request"
       url: /github-desktop/08/
-    - title: "Join the Class Repo"
+    - title: "Merge Your Pull Request"
       url: /github-desktop/09/
-    - title: "Clone Class Repo"
+    - title: "View Your site"
       url: /github-desktop/10/
-    - title: "Workflow Review on Class Repo"
+    - title: "Keep Things in Sync"
       url: /github-desktop/11/
-    - title: "Sync Changes on Class Repo"
+    - title: "Add Your Site to the Showcase"
       url: /github-desktop/12/
-    - title: "Pull Request on Class Repo"
+    - title: "Review the local workflow"
       url: /github-desktop/13/
-    - title: "Merge Changes to Class Repo"
+    - title: "Review Pushing and Opening Pull Requests"
       url: /github-desktop/14/
+    - title: "Let's collaborate!"
+      url: /github-desktop/15/
+    - title: "Merge Your PR"
+      url: /github-desktop/16/

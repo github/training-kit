@@ -42,7 +42,9 @@ To learn more about issues, check out this video:
 
 We mentioned earlier that you will add a pin to the map during this class. Wouldn't it be fun to know if there are other people in your city who have taken this class. We think it is! Let's find out using issues.
 
-{% include activity/02-find-your-hometown.md %}
+{% include activity/intro-to-github/02-find-your-hometown.md %}
+
+{% include need_help %}
 
 ### Managing Notifications
 

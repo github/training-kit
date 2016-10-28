@@ -6,60 +6,14 @@
 <link href="{{ base_path }}/assets/css/github_contribution_graph.css" media="all" rel="stylesheet" />
 
 <script type="text/javascript">
-//Generate random number between min and max
-function randomInt(min,max)
-{
-  return Math.floor(Math.random()*(max-min+1)+min);
-}
-
-function getRandomTimeStamps( min, max ){
-  var return_list = [];
-
-  var entries =  randomInt( min, max );
-  for ( var i =0; i < entries; i++ ){
-    var day = new Date();
-
-    //Genrate random
-    var previous_date = randomInt(0,365);
-    day.setDate( day.getDate() - previous_date );
-
-    return_list.push( day.getTime() );
-  }
-
-  return return_list;
-
-}
 $(document).ready(function(){
 
 
     $('#github_chart_1').github_graph( {
-      //Generate random entries from 50-> 200 entries
-      data: 'https://hectorsector.github.io/open-enrollment-classes-introduction-to-github/createDirectory.json' ,
+      data: 'https://githubschool.github.io/on-demand-github-pages/createDirectory.json' ,
       texts: ['site added to our directory','sites added to our directory'],
       link: 'this is the link'
     });
-
-  //  document.write(getRandomTimeStamps(50,500));
-
-/*
-    $('#github_chart_2').github_graph( {
-      //Generate random entries from 10-> 100 entries
-      data: getRandomTimeStamps(10,100) ,
-      texts: ['comment','comments'],
-      //override colours
-      colors:['rgba(0,0,0,0.3)','#d6e685','#8cc665','#44a340','#44a340'],
-    });
-
-    $('#github_chart_3').github_graph( {
-      //Generate random entries from 10-> 100 entries
-      data: getRandomTimeStamps(100,600) ,
-      texts: ['category','categories'],
-      //Override month names
-      month_names: ['T1','T2','T3','T4','T5','T6','T7','T8','T9','T10','T11','T12'],
-      h_days:['2','4','6'],
-      //override colours
-      colors:['gray','purple','yellow','green','red']
-    });*/
 
 });
 </script>

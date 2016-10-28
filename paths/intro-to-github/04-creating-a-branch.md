@@ -19,7 +19,9 @@ Since branches are so important, we recommend you take a look at this video to l
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xgQmu81G1yY" frameborder="0" allowfullscreen></iframe>
 
-{% include activity/03-create-branch.md %}
+{% include activity/intro-to-github/03-create-branch.md %}
+
+{% include need_help %}
 
 ## Tips for Using Branches
 

@@ -1,27 +1,27 @@
 ---
-layout: intro-to-github
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Cloning the Repository Locally
+title: Clone the Repository
 permalink: /github-desktop/04/
+next-page: /github-desktop/05/
 facilitator: false
 sidebar:
-  nav: "github-for-everyone"
+  nav: "github-desktop-nav"
+main-content:
+  includes:
+    - activity/github-desktop/02-clone-locally.md
+show-me-how: "images/gifs/clone-repository-locally.gif"
+tell-me-why: |
+  ## Remote vs. local repositories
+  
+  Let's take a moment to define a couple of important terms:
+
+  A **remote** repository is the copy of your project that is housed on GitHub.com. You access this copy through a unique URL.
+
+  A **local** repository is a copy of the remote repository that you have "cloned" to your computer. This copy includes all of the files, history, and branches in your project.
+
+  In this class, you will make changes to this local repository and then sync them with the copy of your project on GitHub.com.
+
 ---
-
-## The meaning of a clone
-
-Now that you've created a repository on the remote, the next step is to clone it to your local environment.
-
-![]({{site.baseurl}}/images/clone-diagram.jpg){: .align-center}
-
-You can name the clone of the repository anything you would like. In this example, we will leave it the same as the remote. You can also choose the location where you would like the cloned repository to be saved.
-
-{% include activity/github-desktop/02-clone-locally.md %}
-
-You may be wondering: *why do I have to create the repository on GitHub if I'll be working locally?*
-
-Actually, you don't have to. If you would like, you can create a repository strictly locally - by either starting a new project from scratch or taking an existing project and adding version control. More on this later.
-
-[Continue](../05/){: .btn}
