@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title: Subversion to Git Migration
 byline: When migrating from Subversion to Git, there’s a vocabulary and command set to learn, in addition to the new capabilities only afforded by Git. This cheat sheet aims to help you in your transition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.
-leadingpath: ../
+leadingpath: ../../
 ---
 
 {% capture migration %}

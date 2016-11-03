@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title:  برشامة أوامر Git لنظام GitHub
 byline: أمر Git هو نظام تحكم بالنسخ الموزعة المفتوحة المصدر التي توظف أنشطة GitHub في الحواسيب الشخصية. هذه "البرشامة" تلخص تعليمات Git الأكثر استخداماً على سطر الأوامر كمرجع سري
-leadingpath: ../../
+leadingpath: ../../../
 ---
 
 {% capture colOne %}
