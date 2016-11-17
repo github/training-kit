@@ -1,13 +1,13 @@
 ---
 layout: cheat-sheet
-title: Contekan Git GIhub
-byline: Git adalah sistem kontrol versi distribusi versi sumber terbuka yang memfasilitasi kegiatan GitHub di laptop atau desktop Anda. contekan ini meringkas secara umum instruksi baris perintah Git sebagai referensi cepat.
+title: Buku Saku Git GitHub
+byline: Git adalah sistem manajemen revisi terdistribusi bersifat terbuka yang menyediakan aktivitas GitHub di laptop atau komputer pribadi Anda. Buku saku ini meringkas baris perintah instruksi-instruksi Git yang paling sering dipakai sebagai referensi singkat.
 leadingpath: ../
 ---
 
 {% capture colOne %}
 ## Pasang Git
-GitHub memberikan klien desktop yang termasuk antarmuka pengguna grafis untuk tindakan repositori yang paling umum dan secara otomatis memperbarui edisi baris perintah dari Git untuk skenario lanjutan.
+GitHub menyediakan klien bagi komputer, termasuk di dalamnya ada antarmuka grafis untuk tindakan repositori yang paling umum dilakukan dan tampilan konsol tempat menuliskan baris perintah untuk melaksanakan tindakan lebih lanjut.
 
 ### GitHub untuk Windows
 http://windows.github.com
@@ -15,35 +15,32 @@ http://windows.github.com
 ### GitHub untuk Mac
 http://mac.github.com
 
-Distribusi Git untuk Linux dan POSIX sistem tersedia di situs resmi Git SCM.
+Distribusi Git untuk Linux dan sistem POSIX tersedia di situs resmi Git SCM.
 
-### Git untuk semua platform
+### Git untuk semua media
 https://git-scm.com
 
-## Konfigurasi tooling
-Konfigurasi informasi user untuk semua repositori lokal
+## Konfigurasi alat
+Konfigurasi informasi pengguna untuk semua repositori lokal
 
 ```$ git config --global user.name "[nama]"```
 
-Menetapkan nama yang ingin diterapkan untuk melakukan transaksi Anda
-
+Menata nama yang ditautkan dalam pencatatan _commit_ Anda
 
 ```$ git config --global user.email "[alamat surel]"```
 
-Menetapkan surel yang ingin melekat untuk melakukan transaksi Anda
+Menata alamat pos-el yang ditautkan dalam pencatatan _commit_ Anda
 
 ## Buat repositori
-Mulai repositori baru atau mendapatkan salah satu dari URL yang ada
-
+Memulai repositori baru atau mengambilnya dari tautan yang sudah ada
 
 ```$ git init [nama-proyek]```
 
-Membuat sebuah repositori lokal dengan nama tertentu
-
+Membuat repositori lokal dengan nama tertentu
 
 ```$ git clone [url]```
 
-Unduh sebuah proyek dan seluruh riwayat versinya
+Unduh sebuah proyek dan seluruh riwayat revisinya
 
 {% endcapture %}
 <div class="col-md-6">
@@ -54,61 +51,50 @@ Unduh sebuah proyek dan seluruh riwayat versinya
 {% capture colTwo %}
 
 ## Buat perubahan
-Tinjau suntingan dan kerajinan transaksi komit
-
+Tinjau suntingan dan daftarkan _commit_
 
 ```$ git status```
 
-Daftar semua file baru atau dimodifikasi yang akan di-komit-kan
-
+Daftar semua berkas yang baru dibuat atau telah dimodifikasi dan akan didaftarkan dalam bentuk _commit_
 
 ```$ git diff```
 
-Menunjukkan perbedaan file yang belum dipentaskan
-
+Menunjukkan perbedaan berkas-berkas yang belum didaftarkan dalam _commit_
 
 ```$ git add [berkas]```
 
-Snapshot file dalam persiapan untuk pem-versi-an
-
+Rekam berkas dalam persiapan untuk mendaftarkan revisi
 
 ```$ git diff --staged```
 
-Menunjukkan perbedaan file antara pementasan dan versi file terakhir
-
+Menunjukkan perbedaan file antara hasil revisi dan versi berkas terakhir yang terdaftar
 
 ```$ git reset [berkas]```
 
-Batal mementaskan file, tapi mempertahankan isinya
-
+Batal merevisi berkas, namun tetap mempertahankan isinya
 
 ```$ git commit -m "[descriptive message]"```
 
-Catat snapshots file secara permanen di riwayat versi
+Daftarkan perubahan berkas secara permanen di riwayat revisi
 
-## Perubahan grup
-Nama serangkaian komit dan menggabungkan upaya untuk menyelesaikan
-
+## Perubahan untuk banyak berkas 
+Namai serangkaian _commit_ dan gabungkan upaya pengubahan jadi satu
 
 ```$ git branch```
 
 Daftar semua cabang lokal di repositori saat ini
 
-
 ```$ git branch [nama-cabang]```
 
 Buat cabang baru
 
-
 ```$ git checkout [nama-cabang]```
 
-Berpindah ke cabang tertentu dan update direktori kerja
-
+Berpindah ke cabang tertentu dan perbarui direktori yang sedang dikerjakan
 
 ```$ git merge [nama-cabang]```
 
-Menggabungkan sejarah cabang tertentu ke dalam cabang saat ini
-
+Menggabungkan riwayat cabang tertentu ke dalam cabang yang sedang dipakai
 
 ```$ git branch -d [nama-cabang]```
 
@@ -121,26 +107,23 @@ Hapus cabang tertentu
 
 
 {% capture colThree %}
-## Memfaktorkan ulang nama file
-Relokasi dan menghapus file berversi
-
+## Pergantian nama berkas
+Relokasi dan menghapus berkas terevisi
 
 ```$ git rm [berkas]```
 
-Menghapus file dari direktori kerja dan pentaskan penghapusan
-
+Menghapus berkas dari direktori kerja dan daftarkan penghapusan
 
 ```$ git rm --cached [berkas]```
 
-Menghapus file dari kontrol versi tetapi mempertahankan file lokal
-
+Menghapus berkas dari riwayat revisi dengan tetap mempertahankan berkas lokal
 
 ```$ git mv [berkas-asli] [berkas-baru]```
 
-Mengubah nama file dan mempersiapkannya untuk melakukan komit
+Mengganti nama berkas dan mempersiapkan berkas untuk pendaftaran _commit_
 
-## Menekan pelacakan
-EMengecualikan sementara file dan jalur
+## Tahan pelacakan
+Mengabaikan berkas dan jalur untuk sementara
 
 ```
 *.log
@@ -148,98 +131,84 @@ build/
 temp-*
 ```
 
-Sebuah file teks bernama `.gitignore` menekan versi file tanpa disengaja dan jalur yang cocok dengan pola tertentu
-
+Sebuah berkas teks bernama `.gitignore` mengabaikan revisi berkas yang tidak disengaja serta jalur berkas yang cocok dengan pola tertentu
 
 ```$ git ls-files --other --ignored --exclude-standard```
 
-Daftar semua berkas yang diabaikan dalam proyek ini
+Daftarkan semua berkas yang diabaikan dalam proyek ini
 
 ## Simpan fragmen
-Mengesampingkan dan mengembalikan perubahan lengkap
-
+Menyimpan dan mengembalikan perubahan yang belum lengkap
 
 ```$ git stash```
 
-Menyimpan sementara semua perubahan file yang terlacak
-
+Menyimpan semua perubahan berkas yang terlacak untuk sementara
 
 ```$ git stash pop```
 
-Mengembalikan file yang paling baru disimpan
-
+Mengembalikan berkas yang paling baru disimpan
 
 ```$ git stash list```
 
-Daftar semua changesets tersimpan
-
+Daftar semua koleksi perubahan yang tersimpan
 
 ```$ git stash drop```
 
-Membuang changeset paling baru disimpan
+Membuang koleksi perubahan yang paling baru disimpan
 {% endcapture %}
 <div class="col-md-6">
 {{ colThree | markdownify }}
 </div>
 
 {% capture colFour %}
-## Sejarah ulasan
-Jelajah dan periksa evolusi dari berkas proyek
-
+## riwayat ulasan
+Jelajah dan periksa perkembangan berkas-berkas dalam proyek
 
 ```$ git log```
 
-Daftar riwayat versi untuk cabang saat ini
-
+Daftar riwayat revisi untuk cabang saat ini
 
 ```$ git log --follow [berkas]```
 
-Daftar riwayat versi untuk file, termasuk mengganti nama
-
+Daftar riwayat revisi untuk sebuah berkas, termasuk pergantian namanya
 
 ```$ git diff [cabang-pertama]...[cabang-kedua]```
 
-Menunjukkan perbedaan konten antara dua cabang
+Menunjukkan perbedaan konten antar dua cabang
 
+`` `$ git show [commit]` ``
 
-`` `$ Git show [komit]` ``
+Mennampilkan perubahan konten dan metadata yang terdaftar dalam sebuah komit
 
-Output metadata dan konten perubahan yang ditentukan komit
+## Lakukan _commit_ kembali
+Menghapus kesalahan dan buat riwayat penggantian
 
-## Redo melakukan
-Menghapus kesalahan dan sejarah pengganti kerajinan
+`` `$ git reset [komit]` ``
 
+Membatalkan semua _commit_ setelah `[commit]`, dengan melestarikan perubahan lokal
 
-`` `$ Git reset [komit]` ``
+`` `$ Git reset --hard [commit]` ``
 
-Membatalkan semua komit setelah `[komit]`, melestarikan perubahan lokal
-
-
-`` `$ Git reset --hard [berkomitmen]` ``
-
-Membuang semua sejarah dan perubahan kembali ke ditentukan komit
+Membuang semua riwayat dan perubahan sampai di titik yang ditentukan oleh _commit_
 
 ## Sinkronisasi perubahan
-Daftar remote (URL) dan sejarah repositori pertukaran
+Daftar (tautan) dura dan tukar riwayat repositori
 
-```$ git fetch [remote]```
+```$ git fetch [dura]```
 
-Unduh semua sejarah dari repositori jauh
+Unduh semua riwayat dari repositori dura
 
+```$ git merge [dura]/[cabang]```
 
-```$ git merge [remote]/[cabang]```
-
-Menggabungkan cabang remote ke cabang lokal saat ini
-
+Menggabungkan cabang dura ke dalam cabang lokal saat ini
 
 ```$ git push [remote] [branch]```
 
-Upload semua cabang lokal berkomitmen untuk GitHub
-
+Unggak semua _commit_ dari cabang lokal ke GitHub
 
 ```$ git pull```
 
-Download penunjuk sejarah dan menggabungkan perubahan
+Unduh riwayat marka dan gabungkan perubahan
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
