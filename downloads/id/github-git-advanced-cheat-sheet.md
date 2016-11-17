@@ -1,61 +1,67 @@
-# Lanjutan Cheat Sheet
+# Buku Saku Tingkat Lanjut
 
+## Perintah penggabungkan
 
-## Merge perintah
+---
 
 Batalkan penggabungan
 
 `$ git merge --abort`
 
-## Perintah stash
+## Perintah penyimpanan
 
-Simpan perubahan saat ini untuk simpanan dengan nama tertentu
+---
+
+Simpan perubahan saat ini dalam penyimpanan dengan nama tertentu
 
 `$ git stash save <stash name>`
 
-Simpan perubahan saat ini untuk simpanan (menyimpannya sebagai stash@{0})
+Simpan perubahan saat ini dalam sebuah penyimpanan (dengan nama stash@{0})
 
 `$ git stash`
 
-Jatuhkan simpanan di atas sntack
+Hilangkan simpanan di tumpukan teratas
 
 `$ git stash drop`
 
-Jatuhkan simpanan di indeks n
+Hilangkan simpanan di indeks tumpukan ke-n
 
 `$ git stash drop stash@{n}`
 
-Terapkan simpanan di indeks n dan menghapus dari daftar
+Terapkan penyimpanan di indeks tumpukan ke-n dan hapus dari daftar
 
 `$ git stash pop stash@{n}`
 
-Terapkan simpanan di indeks n
+Terapkan penyimpanan di indeks tumpukan ke-n
 
 `$ git stash apply stash@{n}`
 
+## Perintah lapor keluar
 
-## Perintah Checkout
+---
 
-Membuang semua perubahan
+Singkirkan semua perubahan
 
 `$ git checkout .`
 
-Membuat cabang baru dan melihat cabang tersebut
+Membuat cabang baru dan pindah ke cabang tersebut
 
 `$ git checkout -b <branch name>`
 
-Membawa satu file ke ruang kerja dari simpanan
+Membawa satu berkas ke lokasi saat ini dari simpanan
 
 `$ git checkout <stash@{0}> — <filename>`
 
-## Perintah patch
+## Perintah tambalan
 
-Menerapkan file patch (.diff atau .patch) ke repo
+---
+
+Menerapkan berkas tambalan (.diff atau .patch) ke dalam repo
 
 `$ git apply <patch file>`
 
-## Log perintah
+## Perintah log
 
-Mendandani sejarah log dari gi
+Mendandani riwayat log sebuah git
 
 `$ git log --pretty=oneline`
