@@ -63,7 +63,7 @@ Menunjukkan perbedaan berkas-berkas yang belum didaftarkan dalam _commit_
 
 ```$ git add [berkas]```
 
-Rekam berkas dalam persiapan untuk mendaftarkan revisi
+Rekam berkas untuk didaftarkan ke dalam _commit_
 
 ```$ git diff --staged```
 
@@ -77,7 +77,7 @@ Batal merevisi berkas, namun tetap mempertahankan isinya
 
 Daftarkan perubahan berkas secara permanen di riwayat revisi
 
-## Perubahan untuk banyak berkas 
+## Perubahan untuk banyak berkas
 Namai serangkaian _commit_ dan gabungkan upaya pengubahan jadi satu
 
 ```$ git branch```
@@ -183,7 +183,7 @@ Mennampilkan perubahan konten dan metadata yang terdaftar dalam sebuah komit
 ## Lakukan _commit_ kembali
 Menghapus kesalahan dan buat riwayat penggantian
 
-`` `$ git reset [komit]` ``
+`` `$ git reset [commit]` ``
 
 Membatalkan semua _commit_ setelah `[commit]`, dengan melestarikan perubahan lokal
 
@@ -192,19 +192,19 @@ Membatalkan semua _commit_ setelah `[commit]`, dengan melestarikan perubahan lok
 Membuang semua riwayat dan perubahan sampai di titik yang ditentukan oleh _commit_
 
 ## Sinkronisasi perubahan
-Daftar (tautan) dura dan tukar riwayat repositori
+Daftar (tautan) remot dan perbarui riwayat repositori
 
-```$ git fetch [dura]```
+```$ git fetch [remot]```
 
-Unduh semua riwayat dari repositori dura
+Unduh semua riwayat dari repositori remot
 
-```$ git merge [dura]/[cabang]```
+```$ git merge [remot]/[cabang]```
 
-Menggabungkan cabang dura ke dalam cabang lokal saat ini
+Menggabungkan cabang remot ke dalam cabang lokal saat ini
 
 ```$ git push [remote] [branch]```
 
-Unggak semua _commit_ dari cabang lokal ke GitHub
+Unggah semua _commit_ dari cabang lokal ke GitHub
 
 ```$ git pull```
 
