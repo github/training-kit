@@ -1,6 +1,6 @@
 # Buku Saku Tingkat Lanjut
 
-## Perintah penggabungkan
+## Perintah penggabungan
 
 ---
 
