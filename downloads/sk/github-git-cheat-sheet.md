@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title: GitHub Git Cheat Sheet
 byline: Git je open-source distribuovaný systém riadenia revízií. Github je služba, na ktorej je možné tieto revízie (repozitáre, projekty) hostovať. Tento cheat sheet sumarizuje bežne používané Git príkazy pre rýchlu referenciu.
-leadingpath: ../../
+leadingpath: ../../../
 ---
 
 {% capture colOne %}
