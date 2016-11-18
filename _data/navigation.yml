@@ -1,0 +1,64 @@
+# main links links
+main:
+# Keep original nav, do not replace
+  - title: "Introduction to GitHub"
+    url: /intro-to-github/
+  - title: "Using GitHub Desktop"
+    beta: true
+    url: /github-desktop/
+  - title: "Community"
+    url: /community/
+
+intro-nav:
+  - title: "Welcome"
+    url: /intro-to-github/
+  - title: "Exploring GitHub"
+    url: /intro-to-github/01/
+  - title: "Repository Features"
+    url: /intro-to-github/02/
+  - title: "GitHub Flow"
+    url: /intro-to-github/03/
+  - title: "Creating a Branch"
+    url: /intro-to-github/04/
+  - title: "Working on GitHub"
+    url: /intro-to-github/05/
+  - title: "Collaborating on GitHub"
+    url: /intro-to-github/06/
+  - title: "Editing Files"
+    url: /intro-to-github/07/
+  - title: "Merging Pull Requests"
+    url: /intro-to-github/08/
+
+github-desktop-nav:
+    - title: "Welcome"
+      url: /github-desktop/
+    - title: "Install GitHub Desktop"
+      url: /github-desktop/02/
+    - title: "Create the Remote Repository"
+      url: /github-desktop/03/
+    - title: "Clone the Repository"
+      url: /github-desktop/04/
+    - title: "Create Local Branches"
+      url: /github-desktop/05/
+    - title: "Make Local Changes"
+      url: /github-desktop/06/
+    - title: "Add Local Commits"
+      url: /github-desktop/07/
+    - title: "Open a Pull Request"
+      url: /github-desktop/08/
+    - title: "Merge Your Pull Request"
+      url: /github-desktop/09/
+    - title: "View Your site"
+      url: /github-desktop/10/
+    - title: "Keep Things in Sync"
+      url: /github-desktop/11/
+    - title: "Add Your Site to the Showcase"
+      url: /github-desktop/12/
+    - title: "Review the local workflow"
+      url: /github-desktop/13/
+    - title: "Review Pushing and Opening Pull Requests"
+      url: /github-desktop/14/
+    - title: "Let's collaborate!"
+      url: /github-desktop/15/
+    - title: "Merge Your PR"
+      url: /github-desktop/16/
