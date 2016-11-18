@@ -19,7 +19,7 @@ Sometimes you can't download the repository at work because of firewall rules, b
 2. To test this looks okay, create some folders `mkdir -p test_site/kit`.
 3. Untar the release, `tar -xzf release-XXXXXXX.tgz -C test_site/kit`.
 4. Switch into the test_site directory, `cd test_site`.
-5. View the site with `python -m SimpleHTTPServer`. _Note: Some servers are obviously more advance than others and can handle redirects, smart recognition of `.html` files, etc_
+5. View the site with `python -m SimpleHTTPServer`. _Note: Some servers are obviously more advanced than others and can handle redirects, smart recognition of `.html` files, etc_
 
 ## Contribute
 
