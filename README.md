@@ -55,3 +55,24 @@ The class material content possess two specialized uses of Markdown for slide-li
 ## Build
 
 The build of this repository is fully automated through several shell scripts. To perform a build of the materials identical to that of our continuous integration server, from the top directory of this project, run `script/cibuild` and then inspect the output in the `_site` directory.
+
+## Theme Documentation
+
+The theme for the on-demand training is [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) and has some [amazing documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/), particularly useful is:
+- [Styling buttons, notices, text and image alignment](https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/)
+
+## Licenses
+
+Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
+
+> Content based on
+> <a href="https://github.com/github/on-demand">github.com/github/on-demand</a>
+> used under the
+> <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>
+> license.</a>
+
+Code used to build and test the site as well as code samples on the site, if any, are licensed under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode). CC0 waives all copyright restrictions but does not grant you any trademark permissions.
+
+This means you can use the content and code in this repository except for GitHub trademarks in your own projects.
+
+When you contribute to this repository you are doing so under the above licenses.
