@@ -10,7 +10,7 @@ sidebar:
   nav: "intro-nav"
 ---
 
-{% include manual/01-getting-ready-for-class-intro-to-github.md %}
+{% include manual/01a-set-up-your-github-account.md %}
 
 ## Exploring GitHub
 
