@@ -6,7 +6,6 @@ permalink: /community/
 header:
   overlay_color: "#137bce"
 ---
-{% include toc %}
 
 # Availability
 
