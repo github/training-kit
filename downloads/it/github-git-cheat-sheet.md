@@ -151,7 +151,7 @@ temp-*
 Un file di testo chiamato `.gitignore` previene il versioning accidentale di file o directory secondo un pattern specificato.
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Elenca tutti i file ignorati in questo progetto
 

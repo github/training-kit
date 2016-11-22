@@ -152,7 +152,7 @@ temp-*
 A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Lists all ignored files in this project
 
