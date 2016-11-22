@@ -1,14 +1,40 @@
 #!/bin/sh
 
+# script/bootstrap: Resolve all dependencies required to produce manuals
+
 set -e
-export CC=gcc
 
-echo "==> Installing gem dependencies…"
+cd "$(dirname "$0")/.."
 
-bundle check --path vendor/gems 2>&1 > /dev/null || {
-  bundle install --binstubs bin --path vendor/gems --local --quiet
+which brew &>/dev/null || {
+  echo "You need to install Homebrew and a few other bits"
+  echo "Follow the instructions at https://strap.githubapp.com, then run this script again"
+  exit 1
+}
+
+if [ -f "Brewfile" ] && [ "$(uname -s)" = "Darwin" ]; then
+  brew update
+
+  brew bundle check >/dev/null 2>&1  || {
+    echo "==> Installing Homebrew dependencies…"
+    brew bundle
+  }
+fi
+
+if [ -z "$(rbenv version-name 2>/dev/null)" ]; then
+echo "==> Installing Ruby..."
+rbenv install --skip-existing
+which bundle >/dev/null 2>&1  || {
+  gem install bundler
+  rbenv rehash
+}
+fi
+
+echo "==> Installing gem dependencies..."
+bundle check --path vendor/gems >/dev/null 2>&1  || {
+  bundle install --binstubs bin --path vendor/gems --quiet --without production
 }
 
 echo "==> Cloning into submodules"
-git submodule init
-git submodule update
+git submodule sync --quiet --recursive
+git submodule update --init --recursive
