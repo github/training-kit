@@ -133,7 +133,7 @@ temp-*
 
 Sebuah berkas teks bernama `.gitignore` mengabaikan revisi berkas yang tidak disengaja serta jalur berkas yang cocok dengan pola tertentu
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Daftarkan semua berkas yang diabaikan dalam proyek ini
 
