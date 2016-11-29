@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'jekyll'
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'sass-rails', '>= 3.2'
 
 gem 'github-pages', group: :jekyll_plugins
 
