@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'jekyll'
+gem 'sass', '~> 3.4', '>= 3.4.22'
 
 gem 'github-pages', group: :jekyll_plugins
 

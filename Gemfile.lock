@@ -148,6 +148,7 @@ DEPENDENCIES
   html-proofer
   jekyll
   rake
+  sass (~> 3.4, >= 3.4.22)
 
 RUBY VERSION
    ruby 2.3.0p0
