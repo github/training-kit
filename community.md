@@ -11,7 +11,7 @@ header:
 
 GitHub's training team answers your questions about this training via a Gitter chat room. Gitter is a chat service that integrates well with GitHub and allows you to authenticate with your GitHub account.
 
- We will work to answer questions within 12 hours if you ask them Monday through Friday (except on [US holidays](us-holidays/)).
+ We will work to answer questions within 12 hours if you ask them Monday through Friday (except on [US holidays]({{base_path}}/us-holidays/)).
 
 In the meantime, a great way to learn new things is to explain them to others. If you see any questions you feel equipped to answer, please feel free to help!
 
