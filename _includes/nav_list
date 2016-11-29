@@ -24,7 +24,7 @@
         {% else %}
         {% endif %}
 
-            <li><a href="{{ domain }}{{ nav.url }}" class="{{ active }}"><span class="nav__sub-title">{{ nav.title }}</span></a></li>
+            <a href="{{ domain }}{{ nav.url }}" class="{{ active }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
 
       </li>
     {% endfor %}

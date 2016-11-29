@@ -1,3 +1,11 @@
 #!/bin/sh
-echo "==> Building the site…"
+#/ Usage: script/build
+#/
+#/ Build the site.
+#/
+
+set -e
+cd $(dirname "$0")/..
+
+echo "==> Building the site..."
 bundle exec jekyll build $@

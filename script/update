@@ -1,6 +1,12 @@
 #!/bin/sh
+#/ Usage: script/update
+#/
+#/ Update the app.
+#/
 
 set -e
+cd $(dirname "$0")/..
+
 export CC=gcc
 
 script/bootstrap

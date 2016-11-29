@@ -3,6 +3,8 @@ layout: default
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
+sidebar:
+  nav: "intro-nav"
 ---
 
 {% include base_path %}
@@ -51,7 +53,7 @@ header:
           <div class="notice--info">
           <details>
             <summary>Show me how</summary>
-            <img src="{{site.baseurl}}/{{ page.show-me-how }}">
+            <img src="{{base_path}}/{{ page.show-me-how }}" alt="">
           </details>
           </div>
         {% endif %}
@@ -99,7 +101,7 @@ header:
         </div>
 
         {% if page.next-page %}
-        <a href="{{ site.baseurl }}{{ page.next-page }}" class="btn">Continue</a>
+        <a href="{{ base_path }}{{ page.next-page }}" class="btn">Continue</a>
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label }}</a></div>{% endif %}
