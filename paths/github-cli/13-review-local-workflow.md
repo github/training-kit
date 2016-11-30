@@ -17,7 +17,7 @@ refresh:
    includes:
       - /activity/github-CLI/local-review.md
 tell-me-why: |
-  ## Workflow Review
+  ## Reviewing the GitHub Flow
 
   Now you will see all of the great pages that have been made by others, and share your page with the world in our class repository! To do that, we'll follow the same 5 steps of the GitHub workflow, but on the [class repository](https://github.com/githubschool/open-enrollment-classes-introduction-to-github).
 
