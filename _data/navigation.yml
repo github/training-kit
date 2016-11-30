@@ -6,8 +6,13 @@ main:
   - title: "Using GitHub Desktop"
     beta: true
     url: /github-desktop/
+  - title: "Using the Command Line"
+    beta: true
+    url: /github-cli/
   - title: "Community"
     url: /community/
+
+# When creating new sidebar navs, remember the url in this document needs to match the url assigned in the permalink field.
 
 intro-nav:
   - title: "Welcome"
@@ -29,36 +34,82 @@ intro-nav:
   - title: "Merging Pull Requests"
     url: /intro-to-github/08/
 
+gh-pages:
+  - title: "Introduction to GitHub Pages"
+    url: /patchwork/gh-pages/
+  - title: "Editing Your GitHub Page"
+    url: /patchwork/gh-pages/02/
+  - title: "Creating Pages and Posts in Jekyll"
+    url: /patchwork/gh-pages/03/
+  - title: "Templates and Design"
+    url: /patchwork/gh-pages/04/
+  - title: "Installing Jekyll Locally"
+    url: /patchwork/gh-pages/05/
+
 github-desktop-nav:
-    - title: "Welcome"
-      url: /github-desktop/
-    - title: "Install GitHub Desktop"
-      url: /github-desktop/02/
-    - title: "Create the Remote Repository"
-      url: /github-desktop/03/
-    - title: "Clone the Repository"
-      url: /github-desktop/04/
-    - title: "Create Local Branches"
-      url: /github-desktop/05/
-    - title: "Make Local Changes"
-      url: /github-desktop/06/
-    - title: "Add Local Commits"
-      url: /github-desktop/07/
-    - title: "Open a Pull Request"
-      url: /github-desktop/08/
-    - title: "Merge Your Pull Request"
-      url: /github-desktop/09/
-    - title: "View Your site"
-      url: /github-desktop/10/
-    - title: "Keep Things in Sync"
-      url: /github-desktop/11/
-    - title: "Add Your Site to the Showcase"
-      url: /github-desktop/12/
-    - title: "Review the local workflow"
-      url: /github-desktop/13/
-    - title: "Review Pushing and Opening Pull Requests"
-      url: /github-desktop/14/
-    - title: "Let's collaborate!"
-      url: /github-desktop/15/
-    - title: "Merge Your PR"
-      url: /github-desktop/16/
+  - title: "Welcome"
+    url: /github-desktop/
+  - title: "Install GitHub Desktop"
+    url: /github-desktop/02/
+  - title: "Create the Remote Repository"
+    url: /github-desktop/03/
+  - title: "Clone the Repository"
+    url: /github-desktop/04/
+  - title: "Create Local Branches"
+    url: /github-desktop/05/
+  - title: "Make Local Changes"
+    url: /github-desktop/06/
+  - title: "Add Local Commits"
+    url: /github-desktop/07/
+  - title: "Open a Pull Request"
+    url: /github-desktop/08/
+  - title: "Merge Your Pull Request"
+    url: /github-desktop/09/
+  - title: "View Your site"
+    url: /github-desktop/10/
+  - title: "Keep Things in Sync"
+    url: /github-desktop/11/
+  - title: "Add Your Site to the Showcase"
+    url: /github-desktop/12/
+  - title: "Review the Local Workflow"
+    url: /github-desktop/13/
+  - title: "Review Pushing and Opening Pull Requests"
+    url: /github-desktop/14/
+  - title: "Let's Collaborate!"
+    url: /github-desktop/15/
+  - title: "Merge Your PR"
+    url: /github-desktop/16/
+
+github-cli:
+  - title: "Welcome"
+    url: /github-cli/
+  - title: "Git Configuration"
+    url: /github-cli/02
+  - title: "Create the Remote Repository"
+    url: /github-cli/03
+  - title: "Clone the Repository"
+    url: /github-cli/04
+  - title: "Create Local Branches"
+    url: /github-cli/05
+  - title: "Make Local Changes"
+    url: /github-cli/06
+  - title: "Add Local Commits"
+    url: /github-cli/07
+  - title: "Open a Pull Request"
+    url: /github-cli/08
+  - title: "Merge Your Pull Request"
+    url: /github-cli/09
+  - title: "View Your site"
+    url: /github-cli/10
+  - title: "Keep Things in Sync"
+    url: /github-cli/11
+  - title: "Add Your Site to the Showcase"
+    url: /github-cli/12
+  - title: "Review the Local Workflow"
+    url: /github-cli/13
+  - title: "Review Pushing and Opening Pull Requests"
+    url: /github-cli/14
+  - title: "Let's Collaborate!"
+    url: /github-cli/15
+  - title: "Merge Your PR"
+    url: /github-cli/16

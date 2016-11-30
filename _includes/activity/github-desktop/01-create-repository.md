@@ -1,4 +1,4 @@
-Now that you have GitHub Desktop installed, let's create the repository that will hold your new website.
+Now that you have what you need for Git and GitHub installed locally, let's create the repository that will hold your new website.
 
 1. On GitHub.com, [create a new repository](https://github.com/new).
 1. Name your repository `YOUR-USERNAME.github.io`. Why the funny name? Click the **Tell me why** section below to learn more.
