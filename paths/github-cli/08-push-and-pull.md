@@ -16,9 +16,9 @@ show-me-how: images/gifs/github-cli/push-and-pull.gif
 tell-me-why: |
   ## Pushing Changes
 
-  1. Create a branch
-  1. Add commits
-  1. Open a Pull Request** :arrow_left: _(This section deals with this step.)_
+  1. :white_check_mark: Create a branch
+  1. :white_check_mark: Add commits
+  1. **Open a Pull Request** :arrow_left: _(This section deals with this step.)_
   1. Collaborate, and make more commits
   1. Merge the Pull Request
 
