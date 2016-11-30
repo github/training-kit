@@ -16,6 +16,12 @@ show-me-how: images/gifs/github-cli/push-and-pull.gif
 tell-me-why: |
   ## Pushing Changes
 
+  1. Create a branch
+  1. Add commits
+  1. Open a Pull Request** :arrow_left: _(This section deals with this step.)_
+  1. Collaborate, and make more commits
+  1. Merge the Pull Request
+
   We just created a branch locally and added commits. The remote repository that's hosted on GitHub.com isn't aware of these changes automatically.
 
   In fact, there are only 4 network commands that actually cause the **local** or **remote** repositories to update.
