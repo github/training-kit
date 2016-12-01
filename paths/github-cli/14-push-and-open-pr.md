@@ -14,7 +14,7 @@ main-content:
     - activity/github-CLI/06-git-push.md
 show-me-how: images/gifs/github-cli/sync-changes.gif
 refresh:
-   includes: activity/github-CLI/pull-request.md
+   includes: refresh/github-CLI/pull-request.md
 tell-me-why:
   includes:
     - tell-me-why/pull-request.md

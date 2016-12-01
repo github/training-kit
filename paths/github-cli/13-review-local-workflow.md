@@ -15,7 +15,7 @@ main-content:
 show-me-how: images/gifs/github-cli/clone-class-repo.gif
 refresh:
    includes:
-      - /activity/github-CLI/local-review.md
+      - /refresh/github-CLI/local-review.md
 tell-me-why: |
   ## Reviewing the GitHub Flow
 
