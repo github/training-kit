@@ -26,10 +26,10 @@ If you aren't quite ready to get started yet, but want to bookmark the "Help" ro
 
 Meet the members of GitHub who will be in Gitter and the class repository helping you along the way.
 
-| ![@beardofedu](https://avatars2.githubusercontent.com/u/18329853?v=3&s=140)|![@brianamarie](https://avatars0.githubusercontent.com/u/9906718?v=3&s=140)|![@crichID](https://avatars0.githubusercontent.com/u/9950121?v=3&s=140)|![@hectorsector](https://avatars3.githubusercontent.com/u/16547949?v=3&s=140)|![@hollenberry](https://avatars1.githubusercontent.com/u/13326548?v=3&s=140)|
+| ![@beardofedu](https://avatars2.githubusercontent.com/u/18329853?v=3&s=140){: .align-center}|![@brianamarie](https://avatars0.githubusercontent.com/u/9906718?v=3&s=140){: .align-center}|![@crichID](https://avatars0.githubusercontent.com/u/9950121?v=3&s=140){: .align-center}|![@hectorsector](https://avatars3.githubusercontent.com/u/16547949?v=3&s=140){: .align-center}|![@hollenberry](https://avatars1.githubusercontent.com/u/13326548?v=3&s=140){: .align-center}|
 |---|---|---|---|---|
 |@beardofedu|@brianamarie|@crichID|@hectorsector|@hollenberry|
-
+{: .text-center}
 ---
 
 # Contributor Covenant Code of Conduct
