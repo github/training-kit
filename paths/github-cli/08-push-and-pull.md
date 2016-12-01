@@ -12,6 +12,9 @@ sidebar:
 main-content:
   includes:
     - activity/github-CLI/06-git-push.md
+refresh:
+  includes:
+    - refresh/github-CLI/create-pr.md
 show-me-how: images/gifs/github-cli/push-and-pull.gif
 tell-me-why: |
   ## Pushing Changes
