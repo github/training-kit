@@ -62,3 +62,19 @@ github-desktop-nav:
       url: /github-desktop/15/
     - title: "Merge Your PR"
       url: /github-desktop/16/
+
+reset:
+    - title: "Welcome"
+      url: /reset/
+    - title: "Introduction to Git Reset"
+      url: /reset/01
+    - title: "Create a Local Repository"
+      url: /reset/02
+    - title: "03"
+      url: /reset/03
+    - title: "04"
+      url: /reset/04
+    - title: "05"
+      url: /reset/05
+    - title: "06"
+      url: /reset/06
