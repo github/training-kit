@@ -39,9 +39,10 @@ tell-me-why: |
 
   `-u` is short for `--set-upstream`. This sets a relationship between the branch on the remote and your branch locally, so that in the future you only need to type `git push`.
 
-  `origin BRANCH-NAME` creates a branch on the remote and names it after your local branch.
+  `origin` tells git _where_ you want to push. Origin is just a shortcut for the URL of the repository. You can type `git remote -v` to see what it is pointing to.
 
-  The good news is, you only need to do this the once. If you have pushed this branch before or it already exists on the remote, you can simply type
-   `git push`.
+  `BRANCH-NAME` tells git to create a branch on the remote with the same name as your local branch.
+
+  The good news is, you only need to do this long command once. If you have pushed this branch before or it already exists on the remote, you can simply type `git push`.
 
 ---
