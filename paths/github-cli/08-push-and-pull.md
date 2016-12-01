@@ -31,7 +31,7 @@ tell-me-why: |
   - `git pull`
   - `git push`
 
-  Since this won't happen automatically, but we still want to open a pull request, we need to push up our branch.
+  This won't happen automatically, so when we are ready to open a pull request, we need to push up our branch. The command we will use is `git push -u origin BRANCH-NAME`.
 
   The syntax is a little complicated here. Let's break it down.
 
