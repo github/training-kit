@@ -11,9 +11,9 @@ sidebar:
   nav: "github-cli"
 main-content:
   includes:
-    - activity/github-cli/05-make-commits.md
+    - activity/github-CLI/05-make-commits.md
 show-me-how: images/gifs/github-cli/2-step-commit.gif
-tell-me-why: 
+tell-me-why:
   includes:
     - tell-me-why/two-stage-commit.md
 

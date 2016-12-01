@@ -11,7 +11,7 @@ sidebar:
   nav: "github-cli"
 main-content:
   includes:
-    - activity/github-cli/11-sync-changes.md
+    - activity/github-CLI/11-sync-changes.md
 show-me-how: "images/gifs/github-cli/keep-things-in-sync.gif"
 tell-me-why: |
   ## Keeping the Local Repository in Sync

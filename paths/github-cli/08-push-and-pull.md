@@ -11,7 +11,7 @@ sidebar:
   nav: "github-cli"
 main-content:
   includes:
-    - activity/github-cli/06-git-push.md
+    - activity/github-CLI/06-git-push.md
 show-me-how: images/gifs/github-cli/push-and-pull.gif
 tell-me-why: |
   ## Pushing Changes

@@ -11,7 +11,7 @@ sidebar:
   nav: "github-cli"
 main-content:
   includes:
-    - activity/github-cli/03-branch-locally.md
+    - activity/github-CLI/03-branch-locally.md
 show-me-how: images/gifs/github-cli/branching.gif
 tell-me-why:
   includes:

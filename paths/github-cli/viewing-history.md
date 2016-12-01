@@ -11,12 +11,12 @@ sidebar:
   nav: "github-cli"
 main-content:
   includes:
-    - activity/github-cli/git-log.md
+    - activity/github-CLI/git-log.md
 show-me-how: images/gifs/github-cli/viewing-history.gif
 tell-me-why: |
 
   ## More About Git Log
-  
+
   There are lots of ways to customize the output from the `git log` command. We will just explore a few, but you can find many more on the [git-scm.com](https://git-scm.com/docs/git-log) website.
 
   #### `--oneline`
