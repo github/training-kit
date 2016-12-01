@@ -11,7 +11,7 @@ sidebar:
   nav: "github-cli"
 main-content:
   includes:
-    - activity/github-cli/10-add-website-commits.md
+    - activity/github-CLI/10-add-website-commits.md
 show-me-how: images/gifs/github-cli/clone-class-repo.gif
 refresh:
    includes:
