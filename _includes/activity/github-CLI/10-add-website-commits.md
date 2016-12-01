@@ -10,7 +10,7 @@ Now that you are a collaborator, let's use the local workflow we just learned to
         pageUrl: YOUR-SITES-URL
         timestamp: TODAYS-DATE-YYYY-MM-DD
         ---
-        
-1. Ensure you've replaced `YOUR-USERNAME` with your GitHub Username, `YOUR-SITES-URL` with the URL to your site (which should be `YOUR-USERNAME.github.io`), and `TODAYS-DATE-YYYY-MM-DD` with today's date, using a 4-digit year, 2-digit month, and 2-digit day. For example, if today is October 17, 2016, you would enter: `2016-10-17`..
-1. Create a commit that includes the file you just created. Use `git commit -m "COMMIT MESSAGE"`.
+
+
+1. Commit your changes using `git commit -m "COMMIT MESSAGE"` to add your message in-line instead of opening the text editor.
 1. Type `git status` to ensure your work was committed.
