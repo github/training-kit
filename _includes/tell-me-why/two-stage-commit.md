@@ -16,7 +16,9 @@ After you have finished making your changes, it is time to commit them. When wor
 
 When you work locally, your files exist in one of four states. They are either untracked, modified, staged, or committed.
 
-An untracked file is one that is not currently part of the version controlled directory. Typically, a file is identified as untracked if it is a new file, or a file that has been added to the folder where your local files are stored.
+An untracked file is one that is not currently part of the version controlled directory. These are typically new files.
+
+Modified files are ones that git already knows about, they have at least one other version in history.
 
 ![](/on-demand/images/two-stage-commit-c.jpg){: .align-center}
 
