@@ -11,7 +11,7 @@ sidebar:
   nav: "github-cli"
 main-content:
   includes:
-    - activity/github-cli/02-clone-repository.md
+    - activity/github-CLI/02-clone-repository.md
 show-me-how: images/gifs/github-cli/git-clone.gif
 tell-me-why:
   includes:
