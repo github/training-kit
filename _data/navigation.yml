@@ -70,11 +70,15 @@ reset:
       url: /reset/01
     - title: "Create a Local Repository"
       url: /reset/02
-    - title: "03"
+    - title: "Commit History"
       url: /reset/03
-    - title: "04"
+    - title: "Reset Soft"
       url: /reset/04
-    - title: "05"
+    - title: "Reset Mixed"
       url: /reset/05
-    - title: "06"
+    - title: "Reset Hard"
       url: /reset/06
+    - title: "Reflog and Cherry Pick"
+      url: /reset/07
+    - title: "Wrap Up"
+      url: /reset/08
