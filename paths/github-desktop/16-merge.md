@@ -11,11 +11,9 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/16-merge-pr.md
-show-me-how: images/gifs/merge.gif
-tell-me-why: |
-  ## Congratulations!
+show-me-how: images/gifs/github-desktop/merge.gif
+tell-me-why:
+  includes:
+    - tell-me-why/merge-pr.md
 
-  You've now completed all steps of [GitHub Flow](https://guides.github.com/introduction/flow/), created a website, and added it to our showcase!
-
-  That's it for this course, but we hope you will come back and try one of our other courses soon!
 ---

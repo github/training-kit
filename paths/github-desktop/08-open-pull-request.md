@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/06-pull-request.md
-show-me-how: "images/gifs/opening-a-pr.gif"
+show-me-how: "images/gifs/github-desktop/opening-a-pr.gif"
 tell-me-why: |
   ## Reviewing the GitHub Flow
 
