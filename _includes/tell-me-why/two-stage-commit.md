@@ -1,13 +1,5 @@
 ## The Two Stage Commit
 
-Add and commit files on the command line.
-
-1. :white_check_mark: Create a branch
-1. **Add commits** :arrow_left: _(This section deals with this step.)_
-1. Open a Pull Request
-1. Collaborate, and make more commits
-1. Merge the Pull Request
-
 After you have finished making your changes, it is time to commit them. When working from the command line, you will need to be familiar with the idea of the two stage commit.
 
 ![](/on-demand/images/two-stage-commit-a.jpg){: .align-center}
