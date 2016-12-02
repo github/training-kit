@@ -6,6 +6,8 @@ main:
   - title: "Using GitHub Desktop"
     beta: true
     url: /github-desktop/
+  - title: "Git Reset"
+    url: /reset/
   - title: "Community"
     url: /community/
 
