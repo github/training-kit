@@ -1,6 +1,12 @@
 #!/bin/sh
+#/ Usage: script/server
+#/
+#/ Run local dev server.
+#/
+
+set -e
+cd $(dirname "$0")/..
 
 script/update
-script/cibuild
 
-bundle exec jekyll serve --watch "$@"
+bundle exec jekyll serve --config _config.dev.yml

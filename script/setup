@@ -1,7 +1,11 @@
 #!/bin/sh
+#/ Usage: script/setup
+#/
+#/ Set up the app.
+#/
 
 set -e
-export CC=gcc
+cd $(dirname "$0")/..
 
 script/bootstrap
 

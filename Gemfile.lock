@@ -22,6 +22,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     ffi (1.9.10)
     gemoji (2.1.0)
+    github-markdown (0.6.9)
     github-pages (77)
       RedCloth (= 4.2.9)
       github-pages-health-check (= 1.1.0)
@@ -117,9 +118,6 @@ GEM
       sawyer (~> 0.7.0, >= 0.5.3)
     parallel (1.8.0)
     public_suffix (1.5.3)
-    rack (1.5.2)
-    rack-contrib (1.1.0)
-      rack (>= 0.9.1)
     rake (10.3.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -144,10 +142,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  github-markdown
   github-pages
+  html-pipeline
   html-proofer
-  rack-contrib (~> 1.1.0)
+  jekyll
   rake
+  sass (~> 3.4, >= 3.4.22)
+
+RUBY VERSION
+   ruby 2.3.0p0
 
 BUNDLED WITH
-   1.12.0
+   1.13.6
