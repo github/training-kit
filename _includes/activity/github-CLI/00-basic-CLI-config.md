@@ -7,6 +7,6 @@ Before you can work with Git on the command line, you will need to set some basi
 3. Type `git config --global user.name "USER NAME"`, replacing `USERNAME` with your first and last name.
 4. Type `git config --global user.email "EMAIL"`, replacing `EMAIL` with the email account associated with your GitHub account.
 5. Depending on your operating system, set the core.autocrlf.
-  - **Windows users:** Type `git config --global core.autocrlf true`.
-  - **Mac & Linux users:** Type `git config --global core.autocrlf input`.
+  - <i class="fa fa-windows" aria-hidden="true"></i> **Windows users:** Type `git config --global core.autocrlf true`.
+  - <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-linux" aria-hidden="true"></i> **Mac & Linux users:** Type `git config --global core.autocrlf input`.
 6. Type `git config --list` to see your current configurations.
