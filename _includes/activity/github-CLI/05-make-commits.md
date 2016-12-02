@@ -1,6 +1,6 @@
 After you have finished making your changes, it is time to commit them.
 
-1. Type `git status`. Remember that Git status allows us to see the status of the files on our branch at any given time.
+1. Type `git status`. Remember that `git status` allows us to see the status of the files on our branch at any given time.
 Your file is listed under the heading _Untracked files_.
 1. Type `git add FILE-NAME`. This adds the file to the staging area and prepares it to become part of the next commit.
 1. Type `git status` again to see what has changed. Your file is now listed under the heading _Changes to be committed_. This tells us that the file is in the staging area. It also indicates this is a new file.
