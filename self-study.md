@@ -1,8 +1,8 @@
 ---
 layout: single
-title: Self Study
+title: Training Path
 category: self-study
-permalink: /self-study/
+permalink: /path/
 header:
   overlay_color: "#137bce"
 ---
