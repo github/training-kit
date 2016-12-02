@@ -8,4 +8,4 @@ After you've created a repository on the remote, the next step is to clone it to
 1. Type `cd REPOSITORY-NAME` to move into the directory of the repository you just created.
 1. Type `git status`.
 
-`git status` is a command you will use often to verify the current state of your repository and the files it contains. Right now, we can see that we are on branch master, everything is up to date with origin/master and our working directory is clean.
+`git status` is a command you will use often to verify the current state of your repository and the files it contains. Right now, we can see that we are on branch `master`, everything is up to date with `origin/master` and our working directory is clean.
