@@ -10,7 +10,6 @@ facilitator: false
 sidebar:
   nav: "reset"
 main-content: |
-  ## Welcome
   This course is a quick overview of the `git reset` command and in the next 15 minutes you are going to be introduced to functionality of `git reset`s modes. If you have taken other courses with us in the past you should be familiar with the idea of using repositories when working with Git, however, for this class all of the exercises will be conducted on your local machine!
 
   ## Prerequisites

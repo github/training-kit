@@ -23,5 +23,5 @@ main-content: |
   1. Run `git commit -m "Add file-03 and file-04"`.
 show-me-how:
 tell-me-why: |
-  ## Commit to Staging Area
+  
 ---
