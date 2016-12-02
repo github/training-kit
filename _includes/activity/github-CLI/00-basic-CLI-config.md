@@ -4,7 +4,7 @@ Before you can work with Git on the command line, you will need to set some basi
 
 1. Open your terminal application.
 2. Type `git --version` to ensure Git is installed. Version `1.9.5` or :arrow_up: is :+1:. Check [git-scm.com](https://git-scm.com/) for the latest version.
-3. Type `git config --global user.name "USERNAME"`, replacing `USERNAME` with your first and last name.
+3. Type `git config --global user.name "USER NAME"`, replacing `USERNAME` with your first and last name.
 4. Type `git config --global user.email "EMAIL"`, replacing `EMAIL` with the email account associated with your GitHub account.
 5. Depending on your operating system, set the core.autocrlf.
   - **Windows users:** Type `git config --global core.autocrlf true`.
