@@ -8,7 +8,7 @@ Now that you are a collaborator, let's use the local workflow we just learned to
 
         ---
         githubHandle: YOUR-USERNAME
-        pageUrl: YOUR-SITES-URL
+        pageUrl: YOUR-USERNAME.github.io
         timestamp: TODAYS-DATE-YYYY-MM-DD
         ---
 
