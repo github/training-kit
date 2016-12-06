@@ -26,7 +26,7 @@ main-content: |
   Now that you have merged your pull request, you have completed the GitHub workflow! Check out your new pin on the map!
 
   <div id="map"></div>
-
+ 
   ## What's Next?
 
   We hope this class is only the first step in your journey to learn how to use GitHub, and that it has shown you how easy it is to contribute to projects. If you are ready for next steps, here are some ideas.
