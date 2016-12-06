@@ -16,8 +16,9 @@ main-content: |
   1. Enter the folder you just created by entering, `cd reset-example`.
   1. After entering the folder, we need to initialize git, to do that, enter the following command: `git init`.
 
-                Now that you have initialized git within the `reset-example` directory, we need to create some files, add them to the Staging Area, and commit them.
-                Perform the following task four (4) times to create four (4) unique files.
+        Now that you have initialized git within the `reset-example` directory, we need to create some files, add them to the Staging Area, and commit them.
+        Perform the following tasks four (4) times to create four (4) unique files.
+
   1.  Create a file named `file-01.md`. If you are on a Mac or UNIX machine, you can create a file using the command `touch file-01.md`. If you are on a Windows machine, you can create a file using the command `echo $null >> file-01.md`.
   1. Now that a file has been created you need to move it from the Working Directory to the Staging Area, this can be accomplished by running the command `git add file-01.md`.
   1. With the file moved to the Staging Area, it is time to commit it, perform the following: `git commit -m "Add file-01.md"`

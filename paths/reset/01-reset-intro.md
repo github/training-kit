@@ -18,6 +18,6 @@ main-content: |
   - `--mixed`
   - `--hard`
 show-me-how:
-tell-me-why: |
-
+tell-me-why:
+   includes: tell-me-why/two-stage-commit.md 
 ---
