@@ -12,11 +12,9 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/04-make-changes-locally.md
-show-me-how: "images/gifs/add-commits-locally.gif"
-tell-me-why: |
-  ## Your first website
+show-me-how: "images/gifs/github-desktop/add-commits-locally.gif"
+tell-me-why:
+  includes:
+    - tell-me-why/create-file-locally.md
 
-  For this activity, we are really focusing on the steps for working with a repository with GitHub.com and GitHub Desktop. If you are not familiar with web design, then these instructions will create a very basic, unformatted page. 
-
-  There are several tools you can use in combination with GitHub Pages to create a beautiful website. For example, you can download one of the themes on [http://jekyllthemes.org/](http://jekyllthemes.org/) or you can create a regular HTML page. The possibilities are endless!
 ---

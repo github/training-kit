@@ -6,10 +6,16 @@ main:
   - title: "Using GitHub Desktop"
     beta: true
     url: /github-desktop/
+  - title: "Using the Command Line"
+    beta: true
+    url: /github-cli/
   - title: "Git Reset"
+    beta: true
     url: /reset/
   - title: "Community"
     url: /community/
+
+# When creating new sidebar navs, remember the url in this document needs to match the url assigned in the permalink field.
 
 intro-nav:
   - title: "Welcome"
@@ -30,6 +36,18 @@ intro-nav:
     url: /intro-to-github/07/
   - title: "Merging Pull Requests"
     url: /intro-to-github/08/
+
+gh-pages:
+  - title: "Introduction to GitHub Pages"
+    url: /patchwork/gh-pages/
+  - title: "Editing Your GitHub Page"
+    url: /patchwork/gh-pages/02/
+  - title: "Creating Pages and Posts in Jekyll"
+    url: /patchwork/gh-pages/03/
+  - title: "Templates and Design"
+    url: /patchwork/gh-pages/04/
+  - title: "Installing Jekyll Locally"
+    url: /patchwork/gh-pages/05/
 
 github-desktop-nav:
     - title: "Welcome"
@@ -84,3 +102,37 @@ reset:
       url: /reset/07
     - title: "Wrap Up"
       url: /reset/08
+
+github-cli:
+  - title: "Welcome"
+    url: /github-cli/
+  - title: "Git Configuration"
+    url: /github-cli/02
+  - title: "Create the Remote Repository"
+    url: /github-cli/03
+  - title: "Clone the Repository"
+    url: /github-cli/04
+  - title: "Create Local Branches"
+    url: /github-cli/05
+  - title: "Make Local Changes"
+    url: /github-cli/06
+  - title: "Add Local Commits"
+    url: /github-cli/07
+  - title: "Open a Pull Request"
+    url: /github-cli/08
+  - title: "Merge Your Pull Request"
+    url: /github-cli/09
+  - title: "View Your site"
+    url: /github-cli/10
+  - title: "Keep Things in Sync"
+    url: /github-cli/11
+  - title: "Add Your Site to the Showcase"
+    url: /github-cli/12
+  - title: "Review the Local Workflow"
+    url: /github-cli/13
+  - title: "Review Pushing and Opening Pull Requests"
+    url: /github-cli/14
+  - title: "Let's Collaborate!"
+    url: /github-cli/15
+  - title: "Merge Your PR"
+    url: /github-cli/16

@@ -150,7 +150,7 @@ temp-*
 文本文件`.gitignore`可以防止一些特定的文件进入到版本控制中
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 列出所有项目中忽略的文件
 

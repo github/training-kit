@@ -155,7 +155,7 @@ temp-*
 Un archivo de texto llamado `.gitignore` suprime la creación accidental de versiones para archivos y rutas que concuerdan con los patrones especificados
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Enumera todos los archivos ignorados en este proyecto
 
