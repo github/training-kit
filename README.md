@@ -37,7 +37,12 @@ We are eager to create materials that are easy to use and follow! To that end, h
 
 When you are ready to test your changes, you will want to build the repository locally. This is fully automated through a series of shell scripts based [the scripts to rule them all](https://github.com/github/scripts-to-rule-them-all)!
 
-To perform a build of the materials, run `script/setup` and then `script/server`. When successful, the script will initiate a local server at `http://127.0.0.1:4000/on-demand`. Simply paste that into your favorite web-browser and you will be ready to test.
+To perform a build of the materials perform the following:
+
+1. Run `script/setup` 
+1. Run `script/server`. 
+    - When successful, the script will initiate a local server at `http://127.0.0.1:4000/on-demand`. 
+1. Simply paste that into your favorite web-browser and you will be ready to test.
 
 #### Packaging for Viewing Behind Your Firewall
 
