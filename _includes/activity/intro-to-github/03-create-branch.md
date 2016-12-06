@@ -1,4 +1,3 @@
-{% capture activity-text %}
 # Activity: Create your Branch
 
 It is time to create the branch you will use to propose the addition of your pin to the map. Here's how you do it:
@@ -7,8 +6,3 @@ It is time to create the branch you will use to propose the addition of your pin
 2. Click the drop-down titled `master`.
 3. In the field, enter this unique name for your branch: `<your-username-your-city>`.
 4. Press Enter to create your branch.
-{% endcapture %}
-
-<div class="notice--warning">
-  {{ activity-text | markdownify }}
-</div>
