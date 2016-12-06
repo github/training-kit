@@ -147,7 +147,7 @@ temp-*
 `.gitignore`이름의 텍스트 파일은 특정 패턴으로 매칭되는 우연히 버저닝된 파일과 경로를 숨깁니다
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 해당 프로젝트에서 무시된 모든 파일 리스트를 보여줍니다
 
