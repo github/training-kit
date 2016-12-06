@@ -12,7 +12,11 @@ sidebar:
 main-content: |
   When working with Git, you might find yourself in a position where the things you have been working on don't meet your initial needs or aren't working. The `git reset` command allows you to 'reset' your repository (and your Staging Area / Working Directory) to a specific moment in time.
 
-  In this course we discuss three distinct modes of the `reset` command: `--soft`, `--mixed`, and `--hard`.
+  In this course we discuss three distinct modes of the `reset` command:
+
+  - `--soft`
+  - `--mixed`
+  - `--hard`
 show-me-how:
 tell-me-why: |
 
