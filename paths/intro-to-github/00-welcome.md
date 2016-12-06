@@ -6,7 +6,6 @@ header:
 title: Welcome
 permalink: /intro-to-github/
 next-page: /intro-to-github/01/
-facilitator: false
 sidebar:
   nav: "intro-nav"
 main-content: |
@@ -14,6 +13,21 @@ main-content: |
 
   If you are looking for a quick and fun introduction to GitHub, you've found it. This class is designed to get you started using GitHub in less than an hour.
 
+  Over the next few pages, you'll add **your own pin to the map**!
+
+  <div id="map"></div>
+
+  ## We are Here to Help!
+
+  If you have questions or need help along the way, you can drop by our Gitter chat room by clicking `Open Chat` at the bottom of the page.
+
+  GitHub trainers will stop by regularly to answer your questions or help you get un-stuck.
+
+  **Are you ready?** Click the continue button below to see what's next.
+
+
+show-me-how: images/gifs/gitter-chat.gif
+tell-me-why: |
   ## What is GitHub?
 
   We are glad you asked! Many people stumble onto GitHub through one of the millions of Open Source projects it holds or because their employer or professor is using it. Why do these projects use GitHub?
@@ -38,12 +52,7 @@ main-content: |
 
   As GitHub trainers we have the privilege of traveling around the world to teach people Git and GitHub, so we thought: "Wouldn't it be great to see all the places people are learning Git and GitHub?"
 
-  And that's how this activity was born. Check out our map so far:
-
-  <div id="map"></div>
-
-
-  In this class you will add **your own pin to the map**.
+  And that's how this activity was born.
 
   ## Class Goals
 
@@ -53,17 +62,5 @@ main-content: |
   - collaborate with ~~strangers~~ new friends on a fun project
   - add your pin to the map!
 
-  ## We are Here to Help!
 
-  If you have questions or need help along the way, you can drop by our Gitter chat room by clicking `Open Chat` at the bottom of the page.
-
-  ![]({{site.baseurl}}/images/gifs/gitter-chat.gif){: .align-center}
-
-  GitHub trainers will stop by regularly to answer your questions or help you get un-stuck.
-
-  **Are you ready?** Click the continue button below to see what's next.
-
-
-show-me-how:
-tell-me-why:
 ---
