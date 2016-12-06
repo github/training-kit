@@ -150,7 +150,7 @@ temp-*
 Um ficheiro `.gitignore` na raiz do projecto previne o versionamento acidental de ficheiros e diretórios correspondentes aos padrões especificados
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Lista todos os ficheiros e directórios ignorados neste projeto
 

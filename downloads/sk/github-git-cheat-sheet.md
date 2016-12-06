@@ -156,7 +156,7 @@ temp-*
 Textový súbor nazvaný `.gitignore` zakáže verzovanie nechcených súborov alebo priečinkov (väčšinou napr. súbory IDE, heslá).
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Vráti zoznam všetkých ignorovaných súborov v projekte
 

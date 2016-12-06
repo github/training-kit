@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/00-install-configure-gh-desktop.md
-show-me-how: "images/gifs/download-gh-desktop.gif"
+show-me-how: "images/gifs/github-desktop/download-gh-desktop.gif"
 tell-me-why: |
   ## Working locally
 

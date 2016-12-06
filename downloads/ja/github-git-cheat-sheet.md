@@ -152,7 +152,7 @@ temp-*
 `.gitignore` という名前のテキストファイルで、指定されたパターンに該当するファイルやパスを誤ってバージョン管理してしまうことを防げます
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 プロジェクト内のすべての除外されたファイルを一覧で表示します
 

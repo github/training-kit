@@ -157,7 +157,7 @@ temp-*
 Un fichier texte nommé `.gitignore` permet d'éviter le suivi de version accidentel pour les fichiers et chemins correspondant aux patterns spécifiés
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Liste tous les fichiers exclus du suivi de version dans ce projet
 

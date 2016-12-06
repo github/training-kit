@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/05-committing-locally.md
-show-me-how: "images/gifs/making-commits-locally.gif"
+show-me-how: "images/gifs/github-desktop/making-commits-locally.gif"
 tell-me-why: |
   ## Making great commits
 
