@@ -17,9 +17,9 @@ For more information on contributing to this repository, check out our [CONTRIBU
 
 This repository contains three primary resources:
 
-- Our current [on-demand courses](https://services.github.com/on-demand/) can be found in the [paths directory](https://github.com/github/training-kit/tree/master/paths)
-- The translations of our popular [Git Cheat Sheets](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) can be found in the [download directory](https://github.com/github/training-kit/tree/master/downloads). We're always looking for more. _P.S._ Right now the PDF generation is a manual process so please mention @github/services-training for assistance in getting your translation moved to the PDF.
-- The recommended [Training Path](https://services.github.com/on-demand/path/) can be found [here](https://github.com/github/training-kit/blob/master/self-study.md).
+- Our current [on-demand courses](https://services.github.com/on-demand/) can be found in the [paths directory](/paths)
+- The translations of our popular [Git Cheat Sheets](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) can be found in the [downloads directory](/downloads). We're always looking for more. _P.S._ Right now the PDF generation is a manual process so please mention @github/services-training for assistance in getting your translation moved to the PDF.
+- The recommended [Training Path](https://services.github.com/on-demand/path/) can be found [here](/self-study.md).
 
 ## Our Content Philosophy
 
@@ -39,9 +39,9 @@ When you are ready to test your changes, you will want to build the repository l
 
 To perform a build of the materials perform the following:
 
-1. Run `script/setup` 
-1. Run `script/server`. 
-    - When successful, the script will initiate a local server at `http://127.0.0.1:4000/on-demand`. 
+1. Run `script/setup`
+1. Run `script/server`.
+    - When successful, the script will initiate a local server at `http://127.0.0.1:4000/on-demand`.
 1. Simply paste that into your favorite web-browser and you will be ready to test.
 
 #### Packaging for Viewing Behind Your Firewall
