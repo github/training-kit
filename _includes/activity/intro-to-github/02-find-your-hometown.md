@@ -1,4 +1,3 @@
-{% capture activity-text %}
 # Activity: Find or Create an Issue for Your City
 
 First, let's see if an issue already exists for your city:
@@ -14,9 +13,3 @@ If an issue **does not exist** for your city, you get to start one!
 1. Click the `New Issue` button.
 2. Complete the pre-populated issue template, adding a subject to the issue and replacing the placeholders for <your-city> name.
 3. If you need help finding your city's coordinates to complete the issue template, [Click here](http://mynasadata.larc.nasa.gov/latitudelongitude-finder/) and search for your city.
-
-{% endcapture %}
-
-<div class="notice--warning">
-  {{ activity-text | markdownify }}
-</div>
