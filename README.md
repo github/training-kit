@@ -8,7 +8,7 @@ This repository contains the completely open source on-demand training hosted at
 **We’re eager to work with you**, our user community to improve these materials and develop new ones. Here's how you can help:
 
 - **You spotted a mistake:** please feel free to fork the repository and submit a change via Pull Request (not sure how to do that, [we have a course for you](https://services.github.com/on-demand)).
-- **You have an idea to make it better:** we :heart: new ideas! We invite you to open a new [Issue](https://github.com/github/training-kit/issues) to kick off the process.
+- **You have an idea to make it better:** we :heart: new ideas! We invite you to open a new [Issue](https://github.com/github/training-kit/issues) if you want to talk about it, or you can fork this repository and submit your idea via a Pull Request.
 - **You just want to help:** check out the [open issues](https://github.com/github/training-kit/issues) for projects you can tackle, review an [open pull request](https://github.com/github/training-kit/pulls), or check out [the project ROADMAP](https://github.com/github/training-kit/projects/1).
 
 For more information on contributing to this repository, check out our [CONTRIBUTING guide](https://github.com/github/training-kit/blob/master/CONTRIBUTING.md).
