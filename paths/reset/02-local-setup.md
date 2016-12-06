@@ -28,5 +28,6 @@ main-content: |
   When you are finished you should have a total of 4 files named `file-01.md`, `file-02.md`, `file-03.md`, and `file-04.md`. Each file should have a separate commit, which we will look at in a little bit.
 show-me-how:
 tell-me-why: |
-
+   ## Working Local
+   Git is distributed version control system (DVCS) which means you don't need to be connected to a centralized server to begin working! This means, you can start working on a project on your local machine and once you have the opportunity to connect to GitHub.com you can create a repository and begin working with other collaborators.
 ---
