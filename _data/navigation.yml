@@ -21,18 +21,16 @@ intro-nav:
     url: /intro-to-github/01/
   - title: "Repository Features"
     url: /intro-to-github/02/
-  - title: "GitHub Flow"
-    url: /intro-to-github/03/
   - title: "Creating a Branch"
-    url: /intro-to-github/04/
+    url: /intro-to-github/03/
   - title: "Working on GitHub"
-    url: /intro-to-github/05/
+    url: /intro-to-github/04/
   - title: "Collaborating on GitHub"
-    url: /intro-to-github/06/
+    url: /intro-to-github/05/
   - title: "Editing Files"
-    url: /intro-to-github/07/
+    url: /intro-to-github/06/
   - title: "Merging Pull Requests"
-    url: /intro-to-github/08/
+    url: /intro-to-github/07/
 
 gh-pages:
   - title: "Introduction to GitHub Pages"
