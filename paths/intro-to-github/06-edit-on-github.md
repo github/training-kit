@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Editing Files
-permalink: /intro-to-github/07/
-next-page: /intro-to-github/08/
+permalink: /intro-to-github/06/
+next-page: /intro-to-github/07/
 sidebar:
   nav: "intro-nav"
 main-content: |
@@ -18,5 +18,5 @@ main-content: |
   {% include help-build-fail.md %}
 
   {% include help-other-things.md %}
- 
+
 ---
