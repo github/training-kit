@@ -1,4 +1,7 @@
 # GitHub Training Kit
+
+[![Linux Build Status](https://travis-ci.org/github/training-kit.svg?branch=master)](https://travis-ci.org/github/training-kit)
+
 ### Home of GitHub's On-Demand training
 
 This repository contains the completely open source on-demand training hosted at https://services.github.com/on-demand/. These materials are provided under a [_Creative Commons License_ license](https://github.com/github/training-kit/blob/master/LICENSE).
