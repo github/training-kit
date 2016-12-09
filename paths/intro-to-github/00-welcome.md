@@ -9,7 +9,7 @@ next-page: /intro-to-github/01/
 sidebar:
   nav: "intro-nav"
 main-content: |
-  ## Welcome! We're glad you're here :octocat:
+  ## We're glad you're here :octocat:
 
   This class is designed to get you started using GitHub in less than an hour.
 
@@ -45,16 +45,6 @@ tell-me-why: |
 
   GitHub is the collaboration software used to build some of the most powerful applications in the world. It can do a lot of really cool things, but this class is going to focus on getting you started with the basics. We will dig in to the rest later!
 
-  ## Come Collaborate with Us
-
-  In this short class, you will learn the basic GitHub workflow for collaborating with others. We know there is no better way to learn than by getting your hands on a real project, so we asked ourselves:
-
-  > What is a fun project we can do with thousands of students around the world?
-
-  As GitHub trainers we have the privilege of traveling around the world to teach people Git and GitHub, so we thought: "Wouldn't it be great to see all the places people are learning Git and GitHub?"
-
-  And that's how this activity was born.
-
   ## Class Goals
 
   We know some people like to set goals, so here are some for this class:
@@ -62,6 +52,4 @@ tell-me-why: |
   - confidently use the GitHub.com website to complete the GitHub workflow
   - collaborate with ~~strangers~~ new friends on a fun project
   - add your pin to the map!
-
-
 ---
