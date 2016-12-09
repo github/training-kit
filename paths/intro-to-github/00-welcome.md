@@ -9,9 +9,9 @@ next-page: /intro-to-github/01/
 sidebar:
   nav: "intro-nav"
 main-content: |
-  ## Welcome
+  ## Welcome! We're glad you're here :octocat:
 
-  If you are looking for a quick and fun introduction to GitHub, you've found it. This class is designed to get you started using GitHub in less than an hour.
+  This class is designed to get you started using GitHub in less than an hour.
 
   Over the next few pages, you'll add **your own pin to the map**!
 
@@ -19,12 +19,13 @@ main-content: |
 
   ## We are Here to Help!
 
-  If you have questions or need help along the way, you can drop by our Gitter chat room by clicking `Open Chat` at the bottom of the page.
+  See animations for each page in this course by clicking on `Show me how`.
 
-  GitHub trainers will stop by regularly to answer your questions or help you get un-stuck.
+  We've kept the steps on each page short. Dig deeper by clicking on `Tell me why` on each page.
+
+  Drop by our Gitter chat room by clicking `Open Chat` at the bottom of the page. GitHub trainers will stop by regularly to answer your questions or help you get un-stuck.
 
   **Are you ready?** Click the continue button below to see what's next.
-
 
 show-me-how: images/gifs/gitter-chat.gif
 tell-me-why: |
