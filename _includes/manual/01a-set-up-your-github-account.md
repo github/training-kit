@@ -1,5 +1,3 @@
-## Get Your GitHub.com Account
-
 For this class, you will need an account on GitHub.com.
 
 If you already have a Github.com account you are ready to get started. Otherwise, you can set up your free account by following these steps:

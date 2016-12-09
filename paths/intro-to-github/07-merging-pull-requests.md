@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Merging Pull Requests
-permalink: /intro-to-github/07/
+permalink: /intro-to-github/08/
 sidebar:
   nav: "intro-nav"
 main-content: |

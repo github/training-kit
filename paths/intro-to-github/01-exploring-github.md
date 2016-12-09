@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Exploring GitHub
+title: Get a GitHub account
 permalink: /intro-to-github/01/
 next-page: /intro-to-github/02/
 sidebar:
@@ -34,8 +34,4 @@ tell-me-why: |
   If you just created your account, you may not have any repositories yet. Let's fix that!
 
   (P.S. Even if you already have some repositories, you will want to follow the instructions below to join the class repository.)
-
-  {% include activity/intro-to-github/01-join-intro-repo.md %}
-
-  {% include need_help %}
 ---
