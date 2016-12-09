@@ -1,6 +1,7 @@
 # GitHub Training Kit
 
 [![Linux Build Status](https://travis-ci.org/github/training-kit.svg?branch=master)](https://travis-ci.org/github/training-kit)
+[![Join the Open Source Training chat](https://githubtraining.herokuapp.com/badge.svg)](https://githubtraining.herokuapp.com/)
 
 ### Home of GitHub's On-Demand training
 
