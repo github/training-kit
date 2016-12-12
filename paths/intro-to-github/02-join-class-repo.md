@@ -12,9 +12,6 @@ main-content:
   includes:
   - activity/intro-to-github/01-join-intro-repo.md
 show-me-how:
-<<<<<<< 34feb5ef0da070cbe19f254c2481c075e95e24f5
-tell-me-why:
-=======
 tell-me-why: |
   ## Exploring Our GitHub Repository
 
@@ -65,5 +62,4 @@ tell-me-why: |
   <iframe width="560" height="315" src="https://www.youtube.com/embed/PBI2Rz-ZOxU" frameborder="0" allowfullscreen></iframe>
 
   If you would like to learn more about the GitHub Workflow, check out this [interactive guide](https://guides.github.com/introduction/flow/).
->>>>>>> add join class repo as a separate page
 ---
