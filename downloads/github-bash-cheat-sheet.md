@@ -5,6 +5,8 @@ byline: Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is
 leadingpath: ../
 ---
 
+main-content: | 
+
 {% capture colOne %}
 ## Install Bash
 Bash is typically a native application on Linux/Unix based machines; however, if installation is necessary you can find links to downloads below.
@@ -177,6 +179,10 @@ Adds your SSH key to the host file for [user] to enable a keyed or passwordless 
 ```$ scp [file] [user]@[ip/host]:/path/to/file```
 
 Securely copies [file] to a remote [host]
+
+```$ wget [file]```
+
+Downloads [file] to your current working directory
 
 ## System Tasks
 
