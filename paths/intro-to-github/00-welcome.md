@@ -9,21 +9,27 @@ next-page: /intro-to-github/01/
 sidebar:
   nav: "intro-nav"
 main-content: |
-  ## We're glad you're here :octocat:
+  ## We're Glad You're Here :octocat:
 
-  This class is designed to get you started using GitHub in less than an hour.
+  This course is designed to get you started using GitHub in less than an hour.
 
-  Over the next few pages, you'll add **your own pin to the map**!
+  **In this course, you will learn how to**:
+
+  - Use the GitHub.com website to complete the GitHub workflow
+  - Collaborate with ~~strangers~~ new friends on a fun project
+  - Add your pin to the map!
 
   <div id="map"></div>
 
-  ## We are Here to Help!
+  ## We Are Here to Help!
 
-  See animations for each page in this course by clicking on `Show me how`.
+  We've minimized the words on each page to focus on the steps you need to take, but we've hidden additional information in the panes below.
 
-  We've kept the steps on each page short. Dig deeper by clicking on `Tell me why` on each page.
+  View animations for each step in this project by expanding the **Show me how** pane.
 
-  Drop by our Gitter chat room by clicking `Open Chat` at the bottom of the page. GitHub trainers will stop by regularly to answer your questions or help you get un-stuck.
+  Dig deeper by clicking **Tell me why**.
+
+  Click **Open Chat** at the bottom of the page to join our Gitter chat room. GitHub trainers stop by regularly to answer your questions and help you get un-stuck.
 
   **Are you ready?** Click the continue button below to see what's next.
 
@@ -43,13 +49,6 @@ tell-me-why: |
 
   **GitHub is so much more.**
 
-  GitHub is the collaboration software used to build some of the most powerful applications in the world. It can do a lot of really cool things, but this class is going to focus on getting you started with the basics. We will dig in to the rest later!
+  GitHub is used to build some of the most powerful applications in the world. It can do a lot of really cool things, but this class is going to focus on getting you started with the basics. We will dig in to the rest later!
 
-  ## Class Goals
-
-  We know some people like to set goals, so here are some for this class:
-
-  - confidently use the GitHub.com website to complete the GitHub workflow
-  - collaborate with ~~strangers~~ new friends on a fun project
-  - add your pin to the map!
 ---

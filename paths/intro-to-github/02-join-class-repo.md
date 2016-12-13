@@ -13,28 +13,6 @@ main-content:
   - activity/intro-to-github/01-join-intro-repo.md
 show-me-how:
 tell-me-why: |
-  ## Exploring Our GitHub Repository
-
-  Now that you have a repository, check out this short video to learn about the key features it contains:
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/R8OAwrcMlRw" frameborder="0" allowfullscreen></iframe>
-
-  ### More Great Features
-
-  The video covered some of the most commonly used features. Here are a few other items of interest you can find GitHub repositories:
-
-  - **Wiki**: GitHub also has a place to create and store your relevant project documentation.
-  - **Pulse**: Pulse is our project's dashboard. It contains information on the work that has been completed and the work in progress.
-  - **Graphs**: Graphs provide a more granular view of the repository activity, including who has contributed, when the work is being done, and who has forked the repository.
-
-  ### Special Files
-
-  In the video you learned about a special file called the README.md. Here are a few other special files you can add to your repositories:
-
-  - **CONTRIBUTING.md**: The `CONTRIBUTING.md` is used to describe the process for collaborating on the repository. The link to the `CONTRIBUTING.md` file is shown anytime someone begins to create a new issue or pull request.
-  - **ISSUE_TEMPLATE.md**: The `ISSUE_TEMPLATE.md` is yet another special file you can use to pre-populate the body of an issue. For example, if you always want to gather certain types of information for bug reports, you can include it in the issue template and every new issue will be opened with your recommended starter text.
-
-  Speaking of issues, let's jump back to the Issues tab now.
 
   ## Using GitHub Issues
 
@@ -49,17 +27,12 @@ tell-me-why: |
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/Zhj46r5D0nQ" frameborder="0" allowfullscreen></iframe>
 
-  ### Managing Notifications
+  ## Why Did We Ask You to Comment on this Issue?
 
-  It won't take long for GitHub to start sending you lots of email notifications about the things happening in our project. If you would like to learn how to customize (or reduce) the notifications you receive from GitHub, check out this video:
+  When you sign up for GitHub, you automatically have **Read only access** to any public repository. This means you can look around, comment on Issues and Pull Requests, and open new Issues to report bugs or request features on your favorite projects. You can also create repositories on your own account!
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/ocQldxF7fMY" frameborder="0" allowfullscreen></iframe>
+  However, you can't make changes directly on someone else's project unless you use a special workflow (called Fork and Pull) or they give you collaborator access.
 
-  # Understanding the GitHub Flow
+  For this repository, we have created a webhook that adds you as a collaborator when you comment on this issue. If you completed the steps above, you are ready to be a collaborator on our project!
 
-  It is time to discuss the collaborative workflow used on GitHub. First, check out this video:
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/PBI2Rz-ZOxU" frameborder="0" allowfullscreen></iframe>
-
-  If you would like to learn more about the GitHub Workflow, check out this [interactive guide](https://guides.github.com/introduction/flow/).
 ---

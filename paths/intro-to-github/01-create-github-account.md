@@ -3,14 +3,14 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Get a GitHub account
+title: Create a GitHub Account
 permalink: /intro-to-github/01/
 next-page: /intro-to-github/02/
 sidebar:
   nav: "intro-nav"
 main-content:
   includes:
-  - manual/01a-set-up-your-github-account.md
+  - activity/intro-to-github/00-create-github-account.md
 show-me-how:
 tell-me-why: |
   ## Exploring GitHub
@@ -25,13 +25,12 @@ tell-me-why: |
 
   Click your user icon in the top right to to access your profile.
 
-  Your profile contains information about your activity on GitHub. This is the your public page on GitHub. Some employers will even check out your profile when you apply for a position, so don't forget to add an awesome photo and a fun bio.
+  Your profile contains information about your activity on GitHub. This is your public page on GitHub. Some employers will even check out your profile when you apply for a position, so don't forget to add an awesome photo and a fun bio.
 
   ### Your GitHub Repositories
 
-  We have seen this word "repository" a lot, so let's talk about it. A repository is a container that holds everything related to a specific project.
+  You will see this word "repository" a lot, so let's talk about it. A repository is a container that holds everything related to a specific project.
 
-  If you just created your account, you may not have any repositories yet. Let's fix that!
+  If you just created your account, you may not have any repositories yet. Don't worry, we are going to fix that on the next page!
 
-  (P.S. Even if you already have some repositories, you will want to follow the instructions below to join the class repository.)
 ---

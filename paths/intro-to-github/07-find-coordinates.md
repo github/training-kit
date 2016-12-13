@@ -4,11 +4,13 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Find Your Coordinates
-permalink: /intro-to-github/03/
-next-page: /intro-to-github/04/
+permalink: /intro-to-github/07/
+next-page: /intro-to-github/08/
 sidebar:
   nav: "intro-nav"
 main-content: |
+  To create your pin, you will need to know the latitude and longitude of your home town:
+
   1. Find your latitude and longitude using one of these buttons.
 
         [<i class="fa fa-location-arrow" aria-hidden="true"></i> Find My Coordinates Automatically](#location){: #find-location .btn .btn--success} [<i class="fa fa-map-marker" aria-hidden="true"></i> Manually Search for My Own Coordinates ](https://mynasadata.larc.nasa.gov/latitudelongitude-finder/){: .btn .btn--warning}
