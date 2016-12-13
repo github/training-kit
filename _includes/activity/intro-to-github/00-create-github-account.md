@@ -5,4 +5,5 @@ If you already have a Github.com account you are ready to get started. Otherwise
 1. Access GitHub.com and click Sign up.
 2. Choose the free account.
 3. You will receive a verification email at the address provided.
-4. Click the link to complete the verification process.
+4. Click the emailed link to complete the verification process.
+5. If you are wondering where to go from here, click **Tell my why** for a quick tour of your dashboard.
