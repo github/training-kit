@@ -14,19 +14,19 @@ main-content:
 show-me-how:
 tell-me-why: |
 
-  ## Adding a New File
+  ## Add a New File
 
-  To add your pin, you will need to add a new file to the class repository. We gave you specific instructions above, but first let's talk about some of the helpful ways GitHub allows you to add files to your projects.
+  To add your pin, add a new file to the class repository. We gave you specific instructions above, but first consider some of the helpful ways GitHub allows you to add files to your projects.
 
-  - **File Uploader:** if you already have a file on your computer that you would like to add to your repository, you can simply drag and drop it in to the repository window on GitHub.
-  - **Create New File:** you can also choose to create a new file in your repository by clicking the **Create New File** button. This will open a simple, web-based file editor where you can provide a file name with the appropriate file extension. The file extension will tell GitHub how to render your content.
+  - **File Uploader:** if you already have a file on your computer that you would like to add to your repository, simply drag and drop it in to the repository window on GitHub.
+  - **Create New File:** you can also choose to create a new file in your repository by clicking the **Create New File** button. This opens a simple, web-based file editor. First, provide a file name with the appropriate file extension. The file extension will tell GitHub how to render your content.
   - **Modifying an Existing File:** Sometimes you simply need to make a change to an existing file. If this is the case, navigate to the file using the file directory in the Code tab. Once you have opened the file, click the pencil icon in the top right to open the file in edit mode.
 
-  ## Committing Your Changes
+  ## Commit Your Changes
 
-  When you are finished creating or making changes to a file on GitHub, you will scroll to the bottom of the page. There you will find a **Commit new file** section.
+  When you are finished creating or making changes to a file on GitHub, scroll to the bottom of the page. There, find a **Commit new file** section.
 
-  In the first field, you will type a commit message. The commit message should briefly tell others about the changes you are introducing to the file.
+  In the first field, type a commit message. The commit message should briefly tell others about the changes you are introducing to the file.
 
   #### Rules to Live By For Commits:
 
@@ -35,8 +35,8 @@ tell-me-why: |
   - Commits use the imperative mood. _Add_ instead of _Added_. _Merge_ instead of _Merged_.
   - Think of your commit as expressing intent to introduce a change.
 
-  ## Choosing Your Branch
+  ## Choose Your Branch
 
-  Next, you will designate where you want your changes to be committed. If you were on your branch when you clicked the Create New File button, GitHub will prompt you to commit directly to that branch. But, if you forgot to create a new branch, you can do it now.
+  Next, designate where you want your changes to be committed. If you were on your branch when you clicked the **Create New File** button, GitHub will prompt you to commit directly to that branch. But, if you forgot to create a new branch, you can do it now.
 
 ---
