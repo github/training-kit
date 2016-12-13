@@ -28,7 +28,7 @@ tell-me-why: |
 
   The video covered some of the most commonly used features. Here are a few other items of interest you can find GitHub repositories:
 
-  - *Projects:** You can create Kanban style project tracking boards within GitHub.
+  - **Projects:** You can create Kanban style project tracking boards within GitHub.
   - **Wiki**: GitHub also has a place to create and store your relevant project documentation.
   - **Pulse**: Pulse is our project's dashboard. It contains information on the work that has been completed and the work in progress.
   - **Graphs**: Graphs provide a more granular view of the repository activity, including who has contributed, when the work has been done, and who has forked the repository.
