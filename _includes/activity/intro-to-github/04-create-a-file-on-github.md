@@ -1,7 +1,6 @@
 It's time to add your file to the repository:
 
 1. In your new branch, add a new file named: `_pins/YOUR-USERNAME.json`.
-1. Enter the following code in your file:
 1. Enter the following content into your file:
 
         ---
