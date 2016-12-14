@@ -12,6 +12,7 @@ main-content: |
   ## We're Glad You're Here :octocat:
 
   This course is designed to get you started using GitHub in less than an hour.
+  If you don't have an hour, [this](https://services.github.com/on-demand/intro-to-github/14) video completes the course in 3 minutes. 
 
   **In this course, you will learn how to**:
 
