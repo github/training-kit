@@ -1,6 +1,9 @@
-# Handling Dependencies with Submodules and Subtrees
-
-Submodules and subtrees are git tools that allow subprojects to be included as a subdirectory within a parent project. The implementation of each is very different.
+---
+layout: cheat-sheet
+title: Handling Dependencies with Submodules and Subtrees
+byline: Submodules and subtrees are git tools that allow subprojects to be included as a subdirectory within a project. The implementation of each is very different.
+leadingpath: ../../
+---
 
 ### Adding a New Subproject
 
