@@ -5,8 +5,6 @@ byline: Bash is the GNU Project's shell. Bash is the Bourne Again SHell. Bash is
 leadingpath: ../
 ---
 
-main-content: | 
-
 {% capture colOne %}
 ## Install Bash
 Bash is typically a native application on Linux/Unix based machines; however, if installation is necessary you can find links to downloads below.
@@ -214,5 +212,5 @@ Shows disk usage of all files and folders in [filename]
 
 {% endcapture %}
 <div class="col-md-6">
-{{ colFour | markdownify }}
+{{ colThree | markdownify }}
 </div>
