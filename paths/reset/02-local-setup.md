@@ -26,7 +26,7 @@ main-content: |
   Steps #4-6 need to be performed 3 more times to create a total of 4 files. Each time you create a new file, increase the number in the file name by 1. For example when you create the second file, it should be named `file-02.md`. Each time you create a file, you need to `add` it to the Staging Area and `commit` it before creating another file.
 
   When you are finished you should have a total of 4 files named `file-01.md`, `file-02.md`, `file-03.md`, and `file-04.md`. Each file should have a separate commit, which we will look at in a little bit.
-show-me-how:
+show-me-how: "images/gifs/reset/create-local-repository.gif"
 tell-me-why: |
    ## Working Local
    Git is distributed version control system (DVCS) which means you don't need to be connected to a centralized server to begin working! This means, you can start working on a project on your local machine and once you have the opportunity to connect to GitHub.com you can create a repository and begin working with other collaborators.

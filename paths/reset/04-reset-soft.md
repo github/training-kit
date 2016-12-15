@@ -21,7 +21,7 @@ main-content: |
   1. Run `git reset --soft <SHA-1>`, where `<SHA-1>` is the first four digits of the SHA-1 hash associated with the commit for `file-02.md`.
   1. Run `git status`.
   1. Run `git commit -m "Add file-03 and file-04"`.
-show-me-how:
+show-me-how: "images/gifs/reset/git-reset-soft.gif"
 tell-me-why: |
 
 ---

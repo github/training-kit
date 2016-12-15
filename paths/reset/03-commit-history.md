@@ -19,7 +19,7 @@ main-content: |
 
   NEED GIT LOG IMAGE
 
-show-me-how:
+show-me-how: "images/gifs/reset/commit-history.gif"
 tell-me-why: |
 
 ---

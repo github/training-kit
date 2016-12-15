@@ -18,7 +18,7 @@ main-content: |
   1. Run `git status`.
 
   After running `git reset --hard` check the folder you have open, it should be empty! You just deleted all your files! However, we can bring it all back using two _other_ commands, `git reflog` and `git cherry pick`.
-show-me-how:
+show-me-how: "images/gifs/reset/git-reset-hard.gif"
 tell-me-why: |
   ## Commit to Working Directory
 ---

@@ -18,7 +18,7 @@ main-content: |
   1. Run `git status`.
   1. Run `git add file-02.md file-03.md file-04.md`
   1. Run `git commit -m "Add files 02 03 and 04"`.
-show-me-how:
+show-me-how: "images/gifs/reset/git-reset-mixed.gif"
 tell-me-why: |
   ## Commit to Working Directory
 ---

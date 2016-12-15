@@ -15,7 +15,7 @@ main-content: |
   1. Enter `git reflog` and identify the SHA-1 with the commit message `Add files 02 03 and 04`.
   1. Enter `git cherry-pick <SHA-1>`, where <SHA-1> is the SHA-1 associated with the commit `Add files 02 03 04`.
 
-show-me-how:
+show-me-how: "images/gifs/reset/git-reflog-git-cherry-pick.gif"
 tell-me-why: |
   ## Commit to Working Directory
 ---
