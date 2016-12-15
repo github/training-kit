@@ -20,5 +20,6 @@ main-content: |
   After running `git reset --hard` check the folder you have open, it should be empty! You just deleted all your files! However, we can bring it all back using two _other_ commands, `git reflog` and `git cherry pick`.
 show-me-how: "images/gifs/reset/git-reset-hard.gif"
 tell-me-why: |
-  ## Commit to Working Directory
+  ## This Idea Did Not Work
+  Sometimes after you begin working on a group of changes you realize it just isn't going to work. This is where `--hard` comes in. Don't like any of the changes you made recently and don't want to include any of your commits the next time you push to your remote? Use `--hard` to remove any commits you made after a specified commit and its like you never started working on the project in the first place!
 ---
