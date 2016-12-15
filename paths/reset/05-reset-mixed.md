@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Git Reset Mixed
+title: Reset Mixed
 permalink: /reset/05
 next-page: /reset/06
 facilitator: false

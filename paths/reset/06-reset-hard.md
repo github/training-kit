@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Git Reset Hard
+title: Reset Hard
 permalink: /reset/06
 next-page: /reset/07
 facilitator: false

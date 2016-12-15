@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Git Reset Soft
+title: Reset Soft
 permalink: /reset/04
 next-page: /reset/05
 facilitator: false
