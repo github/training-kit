@@ -23,5 +23,13 @@ main-content: |
   1. Run `git commit -m "Add file-03 and file-04"`.
 show-me-how: "images/gifs/reset/git-reset-soft.gif"
 tell-me-why: |
+  As you work on your project, you are more than likely going to modify multiple files to successfully implement some awesome idea. Perhaps while you were making those changes, you made a handful of commits along the way. After implementing your new change, you realize you have 15 commits that made your awesome idea come to life. You can use `git reset --soft` to pull all of those commits back into your Staging Area and create one giant commit that implements your change.
+
+  When we talk about putting related changes together in one commit, we use the term Atomic Commit.
+
+  ### Atomic Commits
+  One way to keep a cleaner repository history, is the use of atomic commits. An atomic commit is a group of related changes that are placed within the same commit, as opposed to making individual commits for each related change.
+
+  The best part about using atomic commits is the ability to use commands like `git revert` without fear of unintentionally removing an unrelated change. 
 
 ---
