@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Git Reflog and Git Cherry Pick
+title: Reflog and Cherry Pick
 permalink: /reset/07
 next-page: /reset/08
 facilitator: false
