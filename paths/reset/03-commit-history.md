@@ -19,5 +19,8 @@ main-content: |
 
 show-me-how:
 tell-me-why: |
-  To summarize it briefly, the `git log` command allows you to review the commit history of a branch. `log` has a bunch of modifiers that provide different   
+  The `git log` command allows you to review the commit history of a branch. `log` has a bunch of modifiers that display your committed changes in a variety of ways. Viewing your history can be beneficial when trying to identify what changes have occurred within a project, to identify the different branches that have been merged into your deployed branch, or simply reviewing the commit history to catch up on the project's development.
+
+  For information about the different commands modifiers associated with `git log`, check out [git-scm](https://git-scm.com/docs/git-log).
+
 ---
