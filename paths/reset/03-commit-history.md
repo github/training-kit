@@ -17,9 +17,7 @@ main-content: |
   1. Enter `git log --oneline`
   1. Identify the different SHA-1 identifiers for each different commit you made previously.
 
-  NEED GIT LOG IMAGE
-
-show-me-how: "images/gifs/reset/commit-history.gif"
+show-me-how:
 tell-me-why: |
-
+  To summarize it briefly, the `git log` command allows you to review the commit history of a branch. `log` has a bunch of modifiers that provide different   
 ---
