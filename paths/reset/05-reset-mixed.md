@@ -23,5 +23,7 @@ tell-me-why: |
   ## Similar but Different
   The `--mixed` mode of `reset` enables you to take previously committed changes and send them back to the Working Directory of your repository. Similar to `--soft`, `--mixed` can be used to group related changes together. Additionally, `--mixed` can be used to make changes to files after you made some commits.
 
-  For example, if you were working on the layout of your website and some of the stylistic choices you made early on in the development of the new design don't match the direction you ended up going in, instead of deleting those changes, you can just go back in time and alter your previous commits. 
+  ![](/on-demand/images/reset-mixed.png){: .align-center}
+
+  For example, if you were working on the layout of your website and some of the stylistic choices you made early on in the development of the new design don't match the direction you ended up going in, instead of deleting those changes, you can just go back in time and alter your previous commits.
 ---
