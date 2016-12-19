@@ -17,7 +17,7 @@ main-content: |
   **In this course, you will learn how to**:
 
   - Use the GitHub.com website to complete the GitHub workflow
-  - Collaborate with ~~strangers~~ new friends on a fun project
+  - Collaborate with new friends on a fun project
   - Add your pin to the map!
 
   <div id="map"></div>
