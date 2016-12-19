@@ -15,7 +15,7 @@ main-content: |
   2. Navigate to the **Code** tab to find the README.
   3. Click on an **Issue** and a **Pull Request** to see the difference (HINT: one contains changes to code, the other does not).
   4. Click **Pulse** and **Graphs** to view some of our repository stats.
-show-me-how:
+show-me-how: "images/gifs/intro/explore-repo.gif"
 tell-me-why: |
 
   ## Exploring A GitHub Repository

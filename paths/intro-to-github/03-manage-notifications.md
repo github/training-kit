@@ -11,7 +11,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/02-manage-notifications.md
-show-me-how:
+show-me-how: "images/gifs/intro/notifications.gif"
 tell-me-why: |
 
   ### Managing Notifications

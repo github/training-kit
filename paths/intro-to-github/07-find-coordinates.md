@@ -22,7 +22,7 @@ main-content: |
         We found this based on IP address: <span id="ip"></span>
         </div>
   1. Jot down your latitude and longitude, you'll need to enter it in the coming steps.
-show-me-how:
+show-me-how: "images/gifs/intro/find-coordinants.gif"
 tell-me-why:
 
 ---

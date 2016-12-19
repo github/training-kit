@@ -11,7 +11,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/04-create-a-file-on-github.md
-show-me-how:
+show-me-how: "images/gifs/intro/working-on-github.gif"
 tell-me-why: |
 
   ## Add a New File
