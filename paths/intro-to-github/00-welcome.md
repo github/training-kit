@@ -12,7 +12,7 @@ main-content: |
   ## We're Glad You're Here :octocat:
 
   This course is designed to get you started using GitHub, with deep understanding, in less than an hour.<br>
-  If you don't have an hour, [this](https://services.github.com/on-demand/intro-to-github/14) video completes the course in 3 minutes.
+  If you don't have an hour, [this video](https://services.github.com/on-demand/intro-to-github/14) shows the steps of the course in 3 minutes.
 
   **In this course, you will learn how to**:
 
@@ -21,16 +21,6 @@ main-content: |
   - Add your pin to the map!
 
   <div id="map"></div>
-
-  ## We Are Here to Help!
-
-  We've minimized the words on each page to focus on the steps you need to take, but we've hidden additional information in the panes below.
-
-  View animations for each step in this project by expanding the **Show me how** pane.
-
-  Dig deeper by clicking **Tell me why**.
-
-  Click **Open Chat** at the bottom of the page to join our Gitter chat room. GitHub trainers stop by regularly to answer your questions and help you get un-stuck.
 
   **Are you ready?** Click the continue button below to see what's next.
 
