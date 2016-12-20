@@ -1,9 +1,7 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 <script src="{{ base_path }}/assets/js/mapsAPI.js"></script>
 
-<script type="text/javascript" src="{{ base_path }}/assets/js/jquery-2.1.1.js" ></script>
 <script type="text/javascript" src="{{ base_path }}/assets/js/github_contribution.js"></script>
-<script src="{{ base_path }}/assets/js/jquery.joyride-2.1.js"></script>
 <link href="{{ base_path }}/assets/css/github_contribution_graph.css" media="all" rel="stylesheet" />
 
 <script type="text/javascript">
@@ -18,8 +16,29 @@ $(document).ready(function(){
 
 });
 </script>
+<div id="my_awesome_id">Here it is!</div>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB48gZNKOtEbslmLkTWtphkzCJVM6ITd1s&callback=initialize"></script>
+
+<!-- At the bottom of your page but inside of the body tag -->
+<ol id="chooseID">
+  <li data-id="course_body">Tip content...</li>
+</ol>
+
+<script type="text/javascript" src="{{ base_path }}/assets/js/jquery-2.1.1.js" ></script>
+<script src="{{ base_path }}/assets/js/jquery.joyride-2.1.js"></script>
+
+
+/* Launching joyride when to page is loaded */
+<script>
+$(window).load(function() {
+  $('#chooseID').joyride({
+    /* Options will go here */
+    autoStart : true
+  });
+});
+</script>
+
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
