@@ -69,7 +69,16 @@ header:
           <div class="notice--info">
           <details>
             <summary>Show me how</summary>
+            {% if page.show-me-how.includes %}
+              {% for child in page.show-me-how.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                <hr>
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            <hr>
             <img src="{{site.baseurl}}/{{ page.show-me-how }}">
+            {% endif %}
           </details>
           </div>
         {% endif %}

@@ -24,7 +24,9 @@ main-content: |
 
   **Are you ready?** Click the continue button below to see what's next.
 
-show-me-how: images/gifs/gitter-chat.gif
+show-me-how:
+  includes:
+    - intro-video.html
 tell-me-why: |
   ## What is GitHub?
 
