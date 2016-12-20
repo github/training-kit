@@ -11,8 +11,8 @@ sidebar:
 main-content: |
   ## We're Glad You're Here :octocat:
 
-  This course is designed to get you started using GitHub, with deep understanding, in less than an hour.<br>
-  If you don't have an hour, [this video](https://services.github.com/on-demand/intro-to-github/14) shows the steps of the course in 3 minutes.
+  This course is designed to get you started using GitHub in less than an hour.<br>
+  If you need help along the way, check out this [step-by-step video](https://services.github.com/on-demand/intro-to-github/14) on how to complete the project.
 
   **In this course, you will learn how to**:
 
