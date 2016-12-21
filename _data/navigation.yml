@@ -43,8 +43,6 @@ intro-nav:
     url: /intro-to-github/12/
   - title: "Celebrate"
     url: /intro-to-github/13/
-  - title: "Video Recap"
-    url: /intro-to-github/14/
 
 gh-pages:
   - title: "Introduction to GitHub Pages"

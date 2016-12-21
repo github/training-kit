@@ -12,7 +12,7 @@ main-content: |
   ## We're Glad You're Here :octocat:
 
   This course is designed to get you started using GitHub in less than an hour.<br>
-  If you need help along the way, check out this [step-by-step video](https://services.github.com/on-demand/intro-to-github/14) on how to complete the project.
+  If you need help along the way, check out the step-by-step video below in the "Show Me How" section.
 
   **In this course, you will learn how to**:
 
