@@ -17,22 +17,32 @@ main:
 intro-nav:
   - title: "Welcome"
     url: /intro-to-github/
-  - title: "Exploring GitHub"
+  - title: "Create a GitHub Account"
     url: /intro-to-github/01/
-  - title: "Repository Features"
+  - title: "Join the Class Repository"
     url: /intro-to-github/02/
-  - title: "GitHub Flow"
+  - title: "Manage Notifications"
     url: /intro-to-github/03/
-  - title: "Creating a Branch"
+  - title: "Exploring the Repository"
     url: /intro-to-github/04/
-  - title: "Working on GitHub"
+  - title: "Using GitHub Flow"
     url: /intro-to-github/05/
-  - title: "Collaborating on GitHub"
+  - title: "Creating a Branch"
     url: /intro-to-github/06/
-  - title: "Editing Files"
+  - title: "Find Your Coordinates"
     url: /intro-to-github/07/
-  - title: "Merging Pull Requests"
+  - title: "Working on GitHub"
     url: /intro-to-github/08/
+  - title: "Creating a Pull Request"
+    url: /intro-to-github/09/
+  - title: "Collaborating on GitHub"
+    url: /intro-to-github/10/
+  - title: "Editing Files"
+    url: /intro-to-github/11/
+  - title: "Merging Pull Requests"
+    url: /intro-to-github/12/
+  - title: "Celebrate"
+    url: /intro-to-github/13/
 
 gh-pages:
   - title: "Introduction to GitHub Pages"

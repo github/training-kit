@@ -5,6 +5,27 @@
 <script type="text/javascript" src="{{ base_path }}/assets/js/github_contribution.js"></script>
 <link href="{{ base_path }}/assets/css/github_contribution_graph.css" media="all" rel="stylesheet" />
 
+<script>
+$('#find-location').click( function()
+{
+  $.getJSON('https://freegeoip.net/json/')
+     .done (function(location)
+     {
+          $('#location-box').show();
+          $('#country').html(location.country_name);
+          $('#country_code').html(location.country_code);
+          $('#region').html(location.region_name);
+          $('#region_code').html(location.region_code);
+          $('#city').html(location.city);
+          $('#latitude').html(location.latitude);
+          $('#longitude').html(location.longitude);
+          $('#timezone').html(location.time_zone);
+          $('#ip').html(location.ip);
+     });
+} );
+</script>
+
+
 <script type="text/javascript">
 $(document).ready(function(){
 

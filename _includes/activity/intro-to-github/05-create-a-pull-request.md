@@ -1,5 +1,4 @@
-{% capture activity-text %}
-# Activity: Creating a Pull Request
+Now that you have created a file, you will create a Pull Request to show your proposed changes to others who are completing this project:
 
 1. Navigate to the <a href="https://github.com/githubschool/open-enrollment-classes-introduction-to-github/pulls" target="_blank">Pull Requests tab</a>.
 2. Click `New Pull Request`.
@@ -17,9 +16,3 @@
 8. Click *Preview* to see how your Pull Request will look.
 9. Assign the pull request to yourself by clicking `assign to yourself` in the Assignees section.
 10. Click `Create Pull Request`.
-
-{% endcapture %}
-
-<div class="notice--warning">
-  {{ activity-text | markdownify }}
-</div>
