@@ -4,10 +4,8 @@ main:
   - title: "Introduction to GitHub"
     url: /intro-to-github/
   - title: "Using GitHub Desktop"
-    beta: true
     url: /github-desktop/
   - title: "Using the Command Line"
-    beta: true
     url: /github-cli/
   - title: "Community"
     url: /community/
