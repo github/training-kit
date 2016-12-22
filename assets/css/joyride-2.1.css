@@ -18,7 +18,7 @@ body {
   z-index: 101;
   top: 0; /* keeps the page from scrolling when calculating position */
   left: 0;
-  font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica", Helvetica, Arial, Lucida, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-weight: normal;
      -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
