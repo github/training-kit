@@ -13,6 +13,12 @@ main-content: |
 
   Too Many Commits!  
 
+pushed: |
+    The
+
+didnt-push: |
+    The
+
 show-me-how:
 tell-me-why: |
   The

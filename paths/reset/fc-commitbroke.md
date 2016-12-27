@@ -13,6 +13,12 @@ main-content: |
 
   Commit Broke Everything!  
 
+pushed: |
+    The
+
+didnt-push: |
+    The
+
 show-me-how:
 tell-me-why: |
   The
