@@ -15,6 +15,11 @@ main-content: |
     - Create a test repository on [GitHub.com](https://www.github.com)
     - Clone the test repository to your local machine
 
+  ## New UI Addition
+  If you have taken some of the other courses provided on this site, you might be familiar with the `Show Me How` and `Tell Me Why` drop-downs. In this course we added two new drop-downs, `I Didn't Push` and `Pushed`. When using the various Git tools to get out of a pickle, the best tool for the job is typically dependent on if you pushed your commits to your remote (or not). Each scenario (for the most part), provides the best command to use based on if your pushed your commits or not.
+
+  <INSERT PIC OF DROP DOWNS ONCE COLORS SELECTED>
+
   ## Scenarios
   - [Committed Something on Accident](/on-demand/reset/fc-05)
 
