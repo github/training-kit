@@ -32,7 +32,9 @@ main-content: |
 
     The sky is **not** falling down chicken little, we can make everything right-as-rain, and this scenario shows you how to fix that last commit.
 
-  - Things  
+  - Too Many Commits!
+
+    While you were making changes you might have created a bunch of tiny commits to keep track of the changes you were making, but when it comes time to actually push your changes back to your `remote`, you want to group your commits together and prevent your commit history from being inundated with the 30 commits you just made. This scenario guides you through `squashing` those commits and creating more condensed commits.   
 
 show-me-how:
 tell-me-why: |

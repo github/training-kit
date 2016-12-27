@@ -142,9 +142,15 @@ advanced:
     url: /reset/fc
   - title: "Scenarios"
     url: /reset/fc-01
-  - title: "Scenarios"
+  - title: "Too Many Commits"
     url: /reset/fc-02
-  - title: "Scenarios"
+  - title: "Commit Message Sucks"
     url: /reset/fc-03
-  - title: "Scenarios"
+  - title: "Committed to Wrong Branch"
     url: /reset/fc-04
+  - title: "Accidental Commit"
+    url: /reset/fc-05
+  - title: "Commit Broke Everything!"
+    url: /reset/fc-06
+  - title: "Other Thing"
+    url: /reset/fc-07
