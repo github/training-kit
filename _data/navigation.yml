@@ -136,3 +136,15 @@ github-cli:
     url: /github-cli/15
   - title: "Merge Your PR"
     url: /github-cli/16
+
+advanced:
+  - title: "Welcome"
+    url: /reset/fc
+  - title: "Scenarios"
+    url: /reset/fc-01
+  - title: "Scenarios"
+    url: /reset/fc-02
+  - title: "Scenarios"
+    url: /reset/fc-03
+  - title: "Scenarios"
+    url: /reset/fc-04
