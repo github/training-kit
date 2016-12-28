@@ -12,7 +12,7 @@ sidebar:
 main-content: |  
   As you begin creating commits to identify the changes you are making to the files you might 'accidentally' create a commit message that is borderline atrocious; something like 'Fixed the thing'. Although you are definitely aware of the **thing** you just **fixed**, other collaborators including future you, might not know what it is you fixed and more importantly, **why** you needed to fix it. Thankfully, Git is well aware of our tendency to craft terrible commit messages and has a handful of commands that save even the vaguest commit message.
 
-  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Scenarios](on-demand/reset/fc-01) page.
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Scenarios](/on-demand/reset/fc-01) page.
 pushed: |
   The
 
