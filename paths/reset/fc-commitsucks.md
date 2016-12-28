@@ -42,4 +42,6 @@ show-me-how:
 tell-me-why: |
   The
 
+  ## Reset
+  All `reset` content going here.
 ---
