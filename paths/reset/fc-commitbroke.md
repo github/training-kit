@@ -14,8 +14,16 @@ main-content: |
   Your well intentioned commit was supposed to fix that bug that has been plaguing your project for weeks, but after making the commit things are worse than they were before! First, breathe, you can fix this; for real. Second, remember you aren't the first person who completely broke everything with a commit, heck, even the GitHub Trainers do it from time to time. So, now that you have found yourself in some :ahem: _very_ distinguished company, you can fix that gross commit.  
 
 pushed: |
-    The
-    git revert yo.
+    Pushing your commit isn't the end of the world, other than it breaking everything, but still, the world will be fine. So, since the commit has been pushed and other collaborators might have begun working on the files related to that commit, especially if they noticed that the commit broke even more things.
+    You can fix it really quickly though, using a handful of commands and soon it everything will be back to normal.
+
+     1. Ensure you are on the correct branch and enter: `git log --oneline`.
+     1. Identify the SHA-1 hash for the **adding file 2** commit.
+     1. Enter: `git revert SHA-1`, where the SHA-1 is the SHA-1 for the **adding file 2** commit. You should have to enter a commit message, enter one and close the editor.
+     1. Enter: `git log --oneline`. You know have a commit for the revert that you can push up to your remote.
+     1. Enter: `git push`.
+
+    For some extra practice using `git revert`, try to `revert` your previous `revert` and `push`ing that back up to your remote.
 
 didnt-push: |
     Well, you didn't push the commit, that means no one else knows you made the project worse than it was. Use the following steps to fix that errant commit.
