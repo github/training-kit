@@ -32,8 +32,8 @@ main-content: |
 
   With a branch created, its time to create those files, thankfully we have some handy scripts that will automatically generate files and commits (with commit messages!) that will make your life a little easier.
 
-   - Script 1
-   - Script 2  
+   - **Bash:** ```for d in {1..6}; do touch file$d.md; git add file$d.md; git commit -m "adding file $d"; done```
+   - **PowerShell:** ```for ($d=1; $d -le 6;$d++) { touch file$d.md; git add file$d.md; git commit -m "adding file$d.md";}```
 
   If you created a repository on GitHub.com, cloned it, created a branch, and created files and commits, you are ready to rock and roll! Sorry about the GIANT block of text to get setup :cry:.
 

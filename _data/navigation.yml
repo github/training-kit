@@ -142,7 +142,7 @@ advanced:
     url: /reset/fc
   - title: "Scenarios"
     url: /reset/fc-01
-  - title: "Too Many Commits"
+  - title: "Too Many (small) Commits"
     url: /reset/fc-02
   - title: "Commit Message Sucks"
     url: /reset/fc-03
