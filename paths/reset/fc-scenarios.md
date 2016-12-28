@@ -20,6 +20,23 @@ main-content: |
 
   INSERT PIC OF DROP DOWNS ONCE COLORS SELECTED
 
+  ## Setting Up Your Scenario Environment
+
+  Unlike our other courses, this class isn't linear which means before you can begin working on any scenario, you are going to need to do a little bit of setup to get a 'testing environment' ready.
+
+   1. Create a repository on GitHub.com and `clone` it to your desktop.
+
+  With a remote repository created, we need to populate our repository with some files and commits.
+
+   1. Before creating new files, you should probably create a new branch, maybe call it something like ```test```.
+
+  With a branch created, its time to create those files, thankfully we have some handy scripts that will automatically generate files and commits (with commit messages!) that will make your life a little easier.
+
+   - Script 1
+   - Script 2  
+
+  If you created a repository on GitHub.com, cloned it, created a branch, and created files and commits, you are ready to rock and roll! Sorry about the GIANT block of text to get setup :cry:.
+
   ## Scenarios
   - [Committed Something on Accident](/on-demand/reset/fc-05)
 
