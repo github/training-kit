@@ -21,6 +21,7 @@ didnt-push: |
     Well, you didn't push the commit, that means no one else knows you made the project worse than it was. Use the following steps to fix that errant commit.
 
     Use Git Reset to bring the file back to the working directory.
+
     Make sure to use `ls` in this workflow as we reference it in the next sub-section
 
 
@@ -39,10 +40,27 @@ didnt-push: |
     ### Wait, I Shouldn't Have Done That!!!
     OK, so that one rage-induced moment you 'accidentally' deleted that file because you just couldn't stand the sight of it. What if you could bring it back from the dead? You can, with a very nifty command, `reflog`.
 
-    Use git reflog to identify the file
-    Bring it back to life with cherry-pick 
+     1. Enter: `git reflog`.
+     1. Identify the SHA-1 for the **adding file 6** commit.
+     1. Enter: `git cherry-pick SHA-1`.
+     1. Enter: `git log --oneline`.
+     1. Enter: `git reflog`. Notice any
+
+    You saved the file you deleted! Nice work!
 
 show-me-how:
 tell-me-why: |
   The
+
+  ## Reflog
+  Reflog is a more powerful version of `git log`, it identifies the tip of a branch or other references as they are updated. For instance, when you ran `git log --oneline` and `git reflog` at the end of the exercise, you saw the initial `reset` and the `cherry-pick`, but `git log --oneline` didn't show that information.
+  There are a few things that you should know about `reflog`, such as:
+
+  1. `reflog` is **local** only, so, you other collaborators are not going to be able to find files you deleted in their `reflog`s.
+  1. `reflog` has an expiration date:
+     - 30 days: 'Unreachable' objects, aka commits or modifications that were made to a branch that no longer exists.
+     - 90 days: 'Reachable' objects, aka commits or modifications that were made to a branch that still exists.
+  1. thing
+
+
 ---
