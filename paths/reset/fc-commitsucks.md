@@ -35,6 +35,7 @@ pushed: |
    1. To begin editing the commit message(s), enter `git commit --amend`, and edit the commit message. After editing the commit message, close your editor.
    1. If you are happy with the message you typed, enter: `git rebase --continue`. If you need to change your commit message again, enter: `git commit --amend` and repeat these steps. You will need to perform this process of `git commit --amend`, edit the commit message, `git rebase --continue`, until you have edited each commit you marked with an `e` during the initial stage of the `rebase`.
    1. Once you have finished editing commit messages, enter: `git rebase --continue`, and the `rebase` will finish.
+   1. After finishing the `rebase`, enter `git push --force`.
 
 didnt-push: |
   So you have a couple of options when it comes to fixing a bad commit message that, so first, we need to identify if:
@@ -64,4 +65,7 @@ tell-me-why: |
 
   ## Reset
   All `reset` content going here.
+
+  ## Rebase
+  All `rebase` content going here.
 ---
