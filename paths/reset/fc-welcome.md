@@ -18,9 +18,9 @@ main-content: |
   ### Thanks!
   Before we begin, the GitHub Training team would like to thank the following community contributors for their work in creating meaningful content that inspired this course:
 
-    - Justin (@bobthecow), [Git Pretty](http://justinhileman.info/article/git-pretty/)
+    - Justin Hileman (:octocat:[@bobthecow](https://github.com/bobthecow)), [Git Pretty](http://justinhileman.info/article/git-pretty/)
 
-    - Katie (@ksylor), [Oh, Shit, Git!](http://ohshitgit.com/)
+    - Katie Sylor-Miller (:octocat:[@ksylor](https://github.com/ksylor)), [Oh, Shit, Git!](http://ohshitgit.com/)
 
 show-me-how:
 tell-me-why: |
