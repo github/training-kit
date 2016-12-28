@@ -32,7 +32,6 @@ didnt-push: |
 
     Make sure to use `ls` in this workflow as we reference it in the next sub-section
 
-
     ## I Just Want it All Gone
     Sometimes the best way to fix a problem is to pretend it never existed in the first place. If after removing the commit you just don't have the patience to deal with this garbage commit, you can use Git to make it look like it never happened. In the previous steps, you brought the file back to the Working Directory, so you could fix the issues you introduced with the initial commit and create a brand new commit that fixed that nagging bug and removed any trace of your previous attempt to fix it. If trying to identify how to get your fix to work is just not getting anywhere, we can use a different command to just get rid of it.
 
@@ -59,6 +58,9 @@ didnt-push: |
 show-me-how:
 tell-me-why: |
   The
+
+  ## Revert
+  The easiest way to think about `revert` is just making your repository do the exact opposite of an existing commit and creating a new commit to record that change. Revert is useful when trying to reverse the changes made in a specific commit, and even _more_ useful if you pushed a change that your want to reverse to your remote. If you want to reverse a large group of changes and haven't pushed (you can actually use this if you have pushed, but there are some caveats to consider) you should use `reset`. For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
 
   ## Reflog
   Reflog is a more powerful version of `git log`, it identifies the tip of a branch or other references as they are updated. For instance, when you ran `git log --oneline` and `git reflog` at the end of the exercise, you saw the initial `reset` and the `cherry-pick`, but `git log --oneline` didn't show that information.
