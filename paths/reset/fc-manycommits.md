@@ -11,10 +11,12 @@ sidebar:
   nav: "advanced"
 main-content: |  
 
-  Too Many Commits!  
+  While working on your project, you might have made commits for every little change you made along the way and created a commit history that looks more like an avalanche of information as opposed to a succinct list of the changes you made to the branch.
+
+  As with most things, Git comes equipped with the tools necessary tools to save you from yourself.
 
 pushed: |
-    The
+    The crew
 
 didnt-push: |
     The

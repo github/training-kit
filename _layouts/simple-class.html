@@ -50,15 +50,15 @@ header:
         {% if page.didnt-push %}
           <div class="notice--info">
           <details>
-            <summary>Didn't Push</summary>
+            <summary>I Didn't Push</summary>
             <hr>
-            {% if page.tell-me-why.includes %}
-              {% for child in page.tell-me-why.includes %}
+            {% if page.didnt-push.includes %}
+              {% for child in page.didnt-push.includes %}
                 {% capture my_include %}{% include {{child}} %}{% endcapture %}
                 {{ my_include | markdownify }}
               {% endfor %}
             {% else %}
-            {{ page.tell-me-why | markdownify }}
+            {{ page.didnt-push | markdownify }}
             {% endif %}
           </details>
           </div>
@@ -69,13 +69,13 @@ header:
           <details>
             <summary>Pushed</summary>
             <hr>
-            {% if page.tell-me-why.includes %}
-              {% for child in page.tell-me-why.includes %}
+            {% if page.pushed.includes %}
+              {% for child in page.pushed.includes %}
                 {% capture my_include %}{% include {{child}} %}{% endcapture %}
                 {{ my_include | markdownify }}
               {% endfor %}
             {% else %}
-            {{ page.tell-me-why | markdownify }}
+            {{ page.pushed | markdownify }}
             {% endif %}
           </details>
           </div>
