@@ -32,7 +32,7 @@ didnt-push: |
 
    1. Ensure you are on the correct `branch` and enter: `git log --oneline`
    1. Identify the SHA-1 hash code associated with the commit message **below** the commit message you want to modify.
-   1. Enter the SHA-1 hash of the identified commit using the following: `git reset --mixed SHA-1`, where SHA-1 is the SHA-1 of the commit that occurred prior to the commit you want to fix.
+   1. Enter the SHA-1 hash of the identified commit using the following: `git reset --soft SHA-1`, where SHA-1 is the SHA-1 of the commit that occurred prior to the commit you want to fix.
    1. Add the files associated with the commit you want to fix. Use `git add <file name>` until you have added all the files associated with the commit.
    1. Enter `git commit -m "YOUR COMMIT MESSAGE"` to create a new commit.
 
