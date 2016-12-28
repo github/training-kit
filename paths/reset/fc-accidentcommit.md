@@ -16,6 +16,8 @@ main-content: |
 pushed: |
     The
 
+    Gonna revert on this one
+
 didnt-push: |
     If you didn't push that incomplete commit up to your remote, it makes it =a little bit easier to resolve this misstep.
 

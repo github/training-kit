@@ -16,6 +16,9 @@ main-content: |
 pushed: |
   The
 
+  1. Do you really need to edit the commit message? But like realllly?
+  1. commit amend with force push
+
 didnt-push: |
   So you have a couple of options when it comes to fixing a bad commit message that, so first, we need to identify if:
 

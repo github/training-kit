@@ -18,6 +18,15 @@ main-content: |
 pushed: |
     The
 
+    ## Single Commit
+
+    1. On wrong branch, revert for 1 commit and push.
+    1. On correct branch, git reflog / cherry-pick the commit you reverted
+
+    ## Multiple Commits
+
+    1. still use revert, but show how to select multiple commits at once
+
 didnt-push: |
     The good news is, you didn't push, so none of the collaborators on your project know you just committed a bunch of changes directly to `Master` on 'accident' (I mean, lets be serious, those changes are awesome and are definitely gonna get merged). Here is how we can fix that 'mistake'.
 

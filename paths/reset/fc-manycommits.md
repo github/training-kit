@@ -17,6 +17,9 @@ main-content: |
 pushed: |
     The
 
+    Gonna go rebase -i here. Wish me luck.
+
+
 didnt-push: |
     If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators using the `reset` command. If you created files using the Bash or PowerShell scripts we provided, your commit message history should include 6 commits that look something like this:
 
