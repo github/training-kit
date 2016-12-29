@@ -57,8 +57,6 @@ didnt-push: |
 
 show-me-how:
 tell-me-why: |
-  The
-
   ## Revert
   The easiest way to think about `revert` is just making your repository do the exact opposite of an existing commit and creating a new commit to record that change. Revert is useful when trying to reverse the changes made in a specific commit, and even _more_ useful if you pushed a change that your want to reverse to your remote. If you want to reverse a large group of changes and haven't pushed (you can actually use this if you have pushed, but there are some caveats to consider) you should use `reset`. For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
 
@@ -70,7 +68,4 @@ tell-me-why: |
   1. `reflog` has an expiration date:
      - 30 days: 'Unreachable' objects, aka commits or modifications that were made to a branch that no longer exists.
      - 90 days: 'Reachable' objects, aka commits or modifications that were made to a branch that still exists.
-  1. thing
-
-
 ---
