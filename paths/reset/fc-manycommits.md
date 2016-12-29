@@ -37,7 +37,6 @@ didnt-push: |
 
 show-me-how:
 tell-me-why: |
-  The
 
   ## Reset
   For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
@@ -61,7 +60,7 @@ tell-me-why: |
 
   Looking at the above example, you can see that again the `test` branch was created at the `0d7b` commit. Changes were made on both the `master` and `test` branches. Once the changes on the `test` branch were ready to be merged with the `master` branch, it was `rebase`d onto the `master` branch. You can see that the commits that occurred on the `test` branch were recreated on the `master` branch and given new commit SHA-1 hashes.
 
-  To sum it up: 
+  To sum it up:
   Quick delivery of feature branches? Merge
 
   Clarity of History? Rebase

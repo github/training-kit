@@ -20,6 +20,8 @@ main-content: |
 
   ![](/on-demand/images/push-dropdowns.png){: .align-center}
 
+  The `I Pushed` instructions assume that you have already `push`ed your commits to your remote branch. If you haven't `push`ed the changes, you probably won't see the expected changes on your remote.
+
   ## Setting Up Your Scenario Environment
 
   Unlike our other courses, this class isn't linear which means before you can begin working on any scenario, you are going to need to do a little bit of setup to get a 'testing environment' ready.

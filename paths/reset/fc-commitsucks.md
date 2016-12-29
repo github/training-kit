@@ -19,7 +19,7 @@ pushed: |
   If you aren't fixing your last commit, skip down some. If you are fixing the **last** commit you made you can do the following:
 
    1. Ensure you are on the correct `branch` and enter: `git commit --amend`.
-   1. Enter the desired commit message and close the text editor.
+   1. Instead of having the commit message say, `adding file 6`, why not try something like `Add file 6`. Once you have entered the commit message, just close the editor.
    1. Enter: `git push --force` to force your change to your remote.
 
   > **BOOM** you just fixed your terrible commit message and you potentially caused problems for other collaborators. Congratulations!!! In all seriousness, editing a commit message might seem important at the time, but pushing a terrible commit message isn't the worst thing in the world, so it is recommended that you do this sparingly.
