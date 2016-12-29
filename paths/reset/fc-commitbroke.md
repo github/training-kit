@@ -19,7 +19,7 @@ pushed: |
 
      1. Ensure you are on the correct branch and enter: `git log --oneline`.
      1. Identify the SHA-1 hash for the **adding file 2** commit.
-     1. Enter: `git revert SHA-1`, where the SHA-1 is the SHA-1 for the **adding file 2** commit. You should have to enter a commit message, enter one and close the editor.
+     1. Enter: `git revert SHA-1`, where the SHA-1 is the SHA-1 for the **adding file 2** commit. You will be prompted to edit a commit message for the revert, however, you don't need to change the supplied message if you don't want to. Once you are happy with the commit message, close your editor.
      1. Enter: `git log --oneline`. You know have a commit for the revert that you can push up to your remote.
      1. Enter: `git push`.
 
