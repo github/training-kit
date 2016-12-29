@@ -42,5 +42,6 @@ tell-me-why: |
   For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
 
   ## Rebase
-  
+  For more information about `rebase`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
+
 ---
