@@ -22,16 +22,16 @@ pushed: |
    1. Instead of having the commit message say, `adding file 6`, why not try something like `Add file 6`. Once you have entered the commit message, just close the editor.
    1. Enter: `git push --force` to force your change to your remote.
 
-  > **BOOM** you just fixed your terrible commit message and you potentially caused problems for other collaborators. Congratulations!!! In all seriousness, editing a commit message might seem important at the time, but pushing a terrible commit message isn't the worst thing in the world, so it is recommended that you do this sparingly.
+  **BOOM** you just fixed your terrible commit message and you potentially caused problems for other collaborators. Congratulations!!! In all seriousness, editing a commit message might seem important at the time, but pushing a terrible commit message isn't the worst thing in the world, so it is recommended that you do this sparingly.
 
   If you aren't fixing your **last** commit, you can perform the following...actually wait, this process is very complex and you _really_ need to figure out if you _need_ to fix those commit messages that badly.
 
   Still here? Ok, here we go:
 
    1. Ensure you are on the correct `branch` and enter: `git log --oneline`
-   1. Identify the SHA-1 hash code associated with the commit message **below** the commit messages you want to modify.
-   1. Enter: `git rebase -i SHA-1`, where SHA-1 is the SHA-1 of the commit that occurred prior to the commit you want to fix. This will cause a `rebase` window to display in `-i` (or interactive) mode.
-   1. Identify the commits you want to modify and replace the word `pick` with an `e` or the word `edit`. After selecting the commits, close the editor. After closing the editor, go back to the terminal to begin editing the commit messages.
+   1. Identify the SHA-1 hash code associated with the commit when **file 4** was committed.
+   1. Enter: `git rebase -i SHA-1`, where SHA-1 is the SHA-1 of the commit for adding **file 4**. This will cause a `rebase` window to display in `-i` (or interactive) mode.
+   1. Identify the commits you want to modify, for this example, select the commits for **adding file 5** and **adding file 6**. Replace the word `pick` with an `e` or the word `edit`. After selecting the commits, close the editor. After closing the editor, go back to the terminal to begin editing the commit messages.
    1. To begin editing the commit message(s), enter `git commit --amend`, and edit the commit message. After editing the commit message, close your editor.
    1. If you are happy with the message you typed, enter: `git rebase --continue`. If you need to change your commit message again, enter: `git commit --amend` and repeat these steps. You will need to perform this process of `git commit --amend`, edit the commit message, `git rebase --continue`, until you have edited each commit you marked with an `e` during the initial stage of the `rebase`.
    1. Once you have finished editing commit messages, enter: `git rebase --continue`, and the `rebase` will finish.
@@ -47,24 +47,24 @@ didnt-push: |
    1. Ensure you are on the correct `branch` and enter: `git commit --amend`.
    1. Enter the desired commit message and close the text editor.
 
-  > **BOOM** you just fixed your terrible commit message and now no one is the wiser. Congratulations!!!
+  **BOOM** you just fixed your terrible commit message and now no one is the wiser. Congratulations!!!
 
   If you aren't fixing your **last** commit, you can perform the following:
 
    1. Ensure you are on the correct `branch` and enter: `git log --oneline`
-   1. Identify the SHA-1 hash code associated with the commit message **below** the commit message you want to modify.
-   1. Enter the SHA-1 hash of the identified commit using the following: `git reset --soft SHA-1`, where SHA-1 is the SHA-1 of the commit that occurred prior to the commit you want to fix.
-   1. Add the files associated with the commit you want to fix. Use `git add <file name>` until you have added all the files associated with the commit.
-   1. Enter `git commit -m "YOUR COMMIT MESSAGE"` to create a new commit.
-
-  If you have multiple commits that you need to create after running the `git reset` command, just continue creating new commits using the `git add <FILE NAME>` command until you have created all of the commits you need.
+   1. Identify the SHA-1 hash code associated with the commit when **file 4** was added.
+   1. Enter the SHA-1 hash of the identified commit using the following: `git reset --soft SHA-1`, where SHA-1 is the SHA-1 of the commit for when **file 4** was added.
+   1. Remove **file6.md** from the Staging Area by entering: `git reset HEAD file6.md`.
+   1. Create a commit with **file5.md** by entering: `git commit -m "YOUR MESSAGE"`.
+   1. Add **file6.md** to the Staging Area by entering: `git add file6.md`.
+   1. Create a new commit for **file 6** by entering: `git commit -m "YOUR COMMIT MESSAGE"`.
 
 show-me-how:
 tell-me-why: |
   The
 
   ## Reset
-  All `reset` content going here.
+  Where `revert`, a command we use in other exercises was a command that provided a non-destructive method to clean up commit history and modify changes made to your repository, reset is a potentially destructive command. When using reset you are removing any reference to the commit in the repository history and the original copies of the files will no longer be available.
 
   ## Rebase
 
