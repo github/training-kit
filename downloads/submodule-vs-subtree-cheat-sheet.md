@@ -27,7 +27,7 @@ Submodules and subtrees are git tools that allow subprojects to be included as a
 | Submodule | Subtree |
 | ---------- | ---------- |
 | `git submodule update --remote` | `git subtree pull --prefix=example-submodule https://github.com/githubtraining/example-submodule master --squash` |
-| If you have more than one submodule, you can add the name of the submodule to the end of the command to specify which submodule to update. | You can shorten the command by adding the submodule as a remote: <br> `git remote add sub-remote https://github.com/githubtraining/example-submodule.git` |
+| If you have more than one submodule, you can add the name of the submodule to the end of the command to specify which submodule to update. | You can shorten the command by adding the subproject as a remote: <br> `git remote add sub-remote https://github.com/githubtraining/example-submodule.git` |
 | By default, this will update the subproject and check out to the default branch of the subproject remote. <br> You can change the default branch with: <br> `git config -f .gitmodules submodule.example-submodule.branch other-branch`| You can add/pull from other refs by replacing `master` with the desired ref (e.g. stable, v1.0). |
 
 ### Making Changes to a Subproject
