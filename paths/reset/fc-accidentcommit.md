@@ -14,9 +14,13 @@ main-content: |
   In the fervor of making some sweet changes to your repository you might from time to time, accidentally commit some changes to a branch before you were actually ready to commit it. This mistake can be quickly fixed and you can get back to making your project :sparkle:.
 
 pushed: |
-    The
+    Since we accidentally pushed our changes to the wrong branch on our remote, we need to `revert` the commit (or commits) to prevent them creating any problems for other collaborators.
 
-    Gonna revert on this one
+    1. Ensure you are on the correct branch and enter: `git log --oneline`.
+    1. Identify the SHA-1 hash for the commit for **adding file 4**.
+    1. Enter: `git revert SHA-1`, where SHA-1 is the SHA-1 hash for the commit where you created **file 4**.
+    1. Enter a commit message (or simply keep the predefined `revert` message) and close the editor.
+    1. Enter: `git push`. You have successfully undone the commit you recently `push`ed to your remote.   
 
 didnt-push: |
     If you didn't push that incomplete commit up to your remote, it makes it =a little bit easier to resolve this misstep.
@@ -35,8 +39,6 @@ didnt-push: |
 
 show-me-how:
 tell-me-why: |
-  The
-
   ## Why Did the SHA-1 Change?
   So, after you created the new commit you might have noticed that the SHA-1 associated with the commit for `file6.md` is now different. That is because the SHA-1 doesn't just identify the file (or files) that have been committed. It also contains additional information like Date, Time, Author, and other information. So, even though you might have created a commit with the exact same file from before, you will have a completely new SHA-1 hash for the commit. Pretty cool, huh?
 
