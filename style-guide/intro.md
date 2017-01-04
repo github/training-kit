@@ -22,3 +22,18 @@ Is that you? Let's get started!
 
 You should strive to keep text on the page short and to the point. Why? Because people are easily distracted. No training page should require the user to scroll when viewing it on a standard desktop resolution.
 
+# Use color to guide learners
+
+This is how color is used throughout the training courses.
+
+Blue is used to highlight screenshots, screen captures, or any visual demonstration.
+{: .notice--info}
+
+Yellow is used to expand on the short amount of knowledge. It can lead to more reading or links to external resources.
+{: .notice--warning}
+
+Green guides learners to getting help, like the Gitter community.
+{: .notice--success}
+
+Red helps learners troubleshoot through errors or roadblocks.
+{: .notice--danger}
