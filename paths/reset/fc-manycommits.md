@@ -15,10 +15,15 @@ main-content: |
   As with most things, Git comes equipped with the tools necessary tools to save you from yourself.
 
 pushed: |
-    The
+    When it comes to gitting (HA!) out of troublesome situations, you might have a handful of tools at your disposal to make everything right. In this particular instance Git has two tools that allow you to modify your commit history. In the example provided, the `reset` command is used, however, the `rebase -i` functionality could also be used. For information on how to use `rebase -i` command, review the "I pushed" section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
 
-    Gonna go rebase -i here. Wish me luck.
+    1. Ensure you are on the correct branch and enter: `git log --oneline`.
+    1. Identify the SHA-1 hash for the commit that introduced **file 1**.
+    1. Enter: `git reset --soft SHA-1`, where SHA-1 is the commit that introduced **file 1**.
+    1. Enter: `git commit --amend`, modify the commit message to read "Add file 1-6".
+    1. Enter `git push`.  
 
+    For more information about the use of `commit --amend`, review the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
 
 didnt-push: |
     If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators using the `reset` command. If you created files using the Bash or PowerShell scripts we provided, your commit message history should include 6 commits that look something like this:
