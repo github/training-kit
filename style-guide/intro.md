@@ -18,3 +18,7 @@ This is a style guide for writing :sparkles: training content for GitHub's [On D
 
 Is that you? Let's get started!
 
+# Keep it simple, silly :kiss:
+
+You should strive to keep text on the page short and to the point. Why? Because people are easily distracted. No training page should require the user to scroll when viewing it on a standard desktop resolution.
+
