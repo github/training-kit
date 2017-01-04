@@ -37,3 +37,14 @@ Green guides learners to getting help, like the Gitter community.
 
 Red helps learners troubleshoot through errors or roadblocks.
 {: .notice--danger}
+
+# Styling text
+
+Text is styled minimally:
+
+- **Important terms are bolded** to help learners identify their importance and help with cognition.
+- Names of repos, branches, variables, or user handles are wrapped in `backticks`.
+- Code that the learner should copy and paste, and code that spans multiple lines:
+
+      Is put into
+        fenced code blocks.
