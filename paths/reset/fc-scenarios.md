@@ -16,11 +16,11 @@ main-content: |
     - Clone the test repository to your local machine
 
   ## New UI Addition
-  If you have taken some of the other courses provided on this site, you might be familiar with the `Show Me How` and `Tell Me Why` drop-downs. In this course we added two new drop-downs, `I Didn't Push` and `Pushed`. When using the various Git tools to get out of a pickle, the best tool for the job is typically dependent on if you pushed your commits to your remote (or not). Each scenario (for the most part), provides the best command to use based on if your pushed your commits or not.
+  If you have taken some of the other courses provided on this site, you might be familiar with the `Show Me How` and `Tell Me Why` drop-downs. In this course we added two new drop-downs, `I didn't push` and `I pushed`. When using the various Git tools to get out of a pickle, the best tool for the job is typically dependent on if you pushed your commits to your remote (or not). Each scenario (for the most part), provides the best command to use based on if your pushed your commits or not.
 
   ![](/on-demand/images/push-dropdowns.png){: .align-center}
 
-  The `I Pushed` instructions assume that you have already `push`ed your commits to your remote branch. If you haven't `push`ed the changes, you probably won't see the expected changes on your remote.
+  The `I pushed` instructions assume that you have already `push`ed your commits to your remote branch. If you haven't `push`ed the changes, you probably won't see the expected changes on your remote.
 
   ## Setting Up Your Scenario Environment
 
@@ -28,7 +28,7 @@ main-content: |
 
    1. Create a repository on GitHub.com and `clone` it to your desktop.
 
-  With a remote repository created, we need to populate our repository with some files and commits.
+       With a remote repository created, we need to populate our repository with some files and commits.
 
    1. Before creating new files, you should probably create a new branch, maybe call it something like ```test```.
 
