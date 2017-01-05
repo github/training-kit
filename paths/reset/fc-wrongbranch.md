@@ -20,12 +20,22 @@ pushed: |
 
     ## Single Commit
 
-    1. On wrong branch, revert for 1 commit and push.
-    1. On correct branch, git reflog / cherry-pick the commit you reverted
+    1. Ensure you are on the correct branch and enter: `git log --oneline`. Identify the SHA-1 hash for the **adding file 3** commit.
+    1. Enter: `git revert SHA-1`, where SHA-1 is the hash for the **adding file 3** commit. You can modify the revert commit message if you would like or just close the editor.
+    1. Create a new branch by entering: `git checkout -b NEWBRANCH`, where NEWBRANCH is the name of your new branch.
+    1. Enter: `git reflog`,
+    1. On the new branch, enter: `git cherry-pick SHA-1`, where SHA-1 is the hash for the **adding file 3** commit.
 
     ## Multiple Commits
 
-    1. Ensure you are on the correct branch and enter: `git log --oneline`. Identify the SHA-1 hashes for the different commits you need
+    1. Ensure you are on the correct branch and enter: `git log --oneline`. Identify the SHA-1 hash for the commit where **file 1** was added.
+    1. Enter `git reset --soft SHA-1`, where SHA-1 is the commit where **file 1** was added.
+    1. Enter: `git checkout BRANCH`, where BRANCH is the name of the branch you should have made the commits to. If you don't have an existing branch, enter: `git checkout -b BRANCH`, where BRANCH is the name of the new branch you want to create.
+    1. Enter: `git status`, files 2 - 6 should be in the Staging Area.
+    1. Enter: `git commit -m "MESSAGE"`, where message is your new commit message, for example `Add files 2 through 6` could work.
+    1. Enter: `git push`. If you haven't pushed from this branch before, you will be prompted by Git to set the `upstream` for the branch. To set the upstream, enter: `git push -u origin new`.
+    1. Enter: `git checkout BRANCH`, where BRANCH is the branch you removed your errant commits from.
+    1. Enter `git push`.  
 
 didnt-push: |
     The good news is, you didn't push, so none of the collaborators on your project know you just committed a bunch of changes directly to `Master` on 'accident' (I mean, lets be serious, those changes are awesome and are definitely gonna get merged). Here is how we can fix that 'mistake'.
