@@ -15,7 +15,7 @@ main-content: |
   As with most things, Git comes equipped with the tools necessary tools to save you from yourself.
 
 pushed: |
-    When it comes to gitting (HA!) out of troublesome situations, you might have a handful of tools at your disposal to make everything right. In this particular instance Git has two tools that allow you to modify your commit history. In the example provided, the `reset` command is used, however, the `rebase -i` functionality could also be used. For information on how to use `rebase -i` command, review the "I pushed" section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
+    When it comes to gitting (HA!) out of troublesome situations, you might have a handful of tools at your disposal to make everything right. In this particular instance Git has two tools that allow you to modify your commit history. In the example provided, the `reset` command is used, however, the `rebase -i` functionality could also be used. For information on how to use `rebase -i` command, review the "I pushed" section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
 
     1. Ensure you are on the correct branch and enter: `git log --oneline`.
     1. Identify the SHA-1 hash for the commit that introduced **file 1**.
@@ -23,7 +23,7 @@ pushed: |
     1. Enter: `git commit --amend`, modify the commit message to read "Add file 1-6".
     1. Enter `git push`.  
 
-    For more information about the use of `commit --amend`, review the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
+    For more information about the use of `commit --amend`, review the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
 
 didnt-push: |
     If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators using the `reset` command. If you created files using the Bash or PowerShell scripts we provided, your commit message history should include 6 commits that look something like this:
@@ -44,9 +44,9 @@ show-me-how:
 tell-me-why: |
 
   ## Reset
-  For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
+  For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
 
   ## Rebase
-  For more information about `rebase`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
+  For more information about `rebase`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
 
 ---

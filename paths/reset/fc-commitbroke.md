@@ -58,7 +58,7 @@ didnt-push: |
 show-me-how:
 tell-me-why: |
   ## Revert
-  The easiest way to think about `revert` is just making your repository do the exact opposite of an existing commit and creating a new commit to record that change. Revert is useful when trying to reverse the changes made in a specific commit, and even _more_ useful if you pushed a change that your want to reverse to your remote. If you want to reverse a large group of changes and haven't pushed (you can actually use this if you have pushed, but there are some caveats to consider) you should use `reset`. For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
+  The easiest way to think about `revert` is just making your repository do the exact opposite of an existing commit and creating a new commit to record that change. Revert is useful when trying to reverse the changes made in a specific commit, and even _more_ useful if you pushed a change that your want to reverse to your remote. If you want to reverse a large group of changes and haven't pushed (you can actually use this if you have pushed, but there are some caveats to consider) you should use `reset`. For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
 
   ## Reflog
   Reflog is a more powerful version of `git log`, it identifies the tip of a branch or other references as they are updated. For instance, when you ran `git log --oneline` and `git reflog` at the end of the exercise, you saw the initial `reset` and the `cherry-pick`, but `git log --oneline` didn't show that information.

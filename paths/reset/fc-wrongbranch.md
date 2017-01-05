@@ -55,10 +55,10 @@ didnt-push: |
 show-me-how:
 tell-me-why: |
   ## Revert
-  For more information about `revert`, check out the ‘Tell me why’ section in the [Commit Broke Everything!](/on-demand/reset/fc-06) scenario.
+  For more information about `revert`, check out the ‘Tell me why’ section in the [Commit Broke Everything!](/on-demand/git-trouble/06) scenario.
 
   ## Reset
-  For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/reset/fc-03) scenario.
+  For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
 
   ## What Happened to File 4?
   When you were running the `git reset --mixed SHA-1` you might have expected `file4.md` to be included in the files that got sent to the Working Directory. This is a very misconception when it comes to `git reset`, so don't worry, you are not alone! When you run `git reset`, you are identifying the commit that you want to `reset` to. So anything that happened after the identified commit needs to be modified with the `git reset` command.
