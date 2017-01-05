@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Welcome
-permalink: /reset/fc
-next-page: /reset/fc-01
+permalink: /git-trouble/
+next-page: /git-trouble/01
 facilitator: false
 sidebar:
   nav: "advanced"
@@ -23,5 +23,5 @@ main-content: |
     - Katie Sylor-Miller (:octocat:[@ksylor](https://github.com/ksylor)), [Oh, Shit, Git!](http://ohshitgit.com/)
 
 show-me-how:
-tell-me-why: 
+tell-me-why:
 ---

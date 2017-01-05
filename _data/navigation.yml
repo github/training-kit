@@ -139,16 +139,16 @@ github-cli:
 
 advanced:
   - title: "Welcome"
-    url: /reset/fc
+    url: /git-trouble/
   - title: "Scenarios"
-    url: /reset/fc-01
+    url: /git-trouble/01
   - title: "Too Many (small) Commits"
-    url: /reset/fc-02
+    url: /git-trouble/02
   - title: "Commit Message Sucks"
-    url: /reset/fc-03
+    url: /git-trouble/03
   - title: "Commit to Wrong Branch"
-    url: /reset/fc-04
+    url: /git-trouble/04
   - title: "Accidental Commit"
-    url: /reset/fc-05
+    url: /git-trouble/05
   - title: "Commit Broke Everything!"
-    url: /reset/fc-06
+    url: /git-trouble/06

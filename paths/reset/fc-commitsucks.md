@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Commit Message Sucks
-permalink: /reset/fc-03
-next-page: /reset/fc-01
+permalink: /git-trouble/03
+next-page: /git-trouble/01
 facilitator: false
 sidebar:
   nav: "advanced"
