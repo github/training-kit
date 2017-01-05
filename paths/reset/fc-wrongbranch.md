@@ -16,7 +16,7 @@ main-content: |
   Fear not! You can salvage those changes and put them where they belong! Next time, try to remember to run a quick `git checkout BRANCH` before you get to working on that sweet Pull Request :wink:.
 
 pushed: |
-    The
+    When trying to fix committing to the wrong branch, it is important to identify if you need to fix 1 commit or multiple commits before continuing.
 
     ## Single Commit
 
@@ -25,7 +25,7 @@ pushed: |
 
     ## Multiple Commits
 
-    1. still use revert, but show how to select multiple commits at once
+    1. Ensure you are on the correct branch and enter: `git log --oneline`. Identify the SHA-1 hashes for the different commits you need
 
 didnt-push: |
     The good news is, you didn't push, so none of the collaborators on your project know you just committed a bunch of changes directly to `Master` on 'accident' (I mean, lets be serious, those changes are awesome and are definitely gonna get merged). Here is how we can fix that 'mistake'.
