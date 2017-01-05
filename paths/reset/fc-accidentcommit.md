@@ -28,7 +28,7 @@ didnt-push: |
     1. Ensure you are on the correct branch and enter: `git log --oneline`.
     1. We are going to assume you didn't mean to commit file 6, so identify the SHA-1 hash for the **adding file 5** commit.
 
-    Before continuing we should identify the options avaiable to fix this mistake. If you want to add additional files to the commit, you can use `git reset --soft`, if you need to make changes to `file6.md`, you should use `git reset --mixed`.
+        Before continuing we should identify the options avaiable to fix this mistake. If you want to add additional files to the commit, you can use `git reset --soft`, if you need to make changes to `file6.md`, you should use `git reset --mixed`.
 
     1. For this step, you can either use: `git reset --soft SHA-1` or `git reset --mixed SHA-1`, where SHA-1 is the SHA-1 hash associated with the **adding file 5** commit. Typically you would use `--mixed` if you wanted to modify `file6.md`, if you just want to add additional files to the commit but leave `file6.md` as it is, you can use `--soft`.  
     1. Enter: `git status`. You should see `file6.md` in your Staging Area (`--soft`) or Working Directory (`--mixed`).
