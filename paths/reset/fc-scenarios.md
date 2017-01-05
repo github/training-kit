@@ -40,7 +40,7 @@ main-content: |
   If you created a repository on GitHub.com, cloned it, created a branch, and created files and commits, you are ready to rock and roll! Sorry about the GIANT block of text to get setup :cry:.
 
   ## Scenarios
-  - [Committed Something on Accident](/on-demand/reset/fc-05)
+  - [Commit Something on Accident](/on-demand/reset/fc-05)
 
     During your workflow, you might have gotten excited and made a commit before you had actually finished your thought. Maybe you made the commit without adding all of the related files. Perhaps your commit included changes that were unrelated. In either case, we can fix that, just follow along and `git` out of trouble.
 

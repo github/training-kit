@@ -146,11 +146,9 @@ advanced:
     url: /reset/fc-02
   - title: "Commit Message Sucks"
     url: /reset/fc-03
-  - title: "Committed to Wrong Branch"
+  - title: "Commit to Wrong Branch"
     url: /reset/fc-04
   - title: "Accidental Commit"
     url: /reset/fc-05
   - title: "Commit Broke Everything!"
     url: /reset/fc-06
-  - title: "Other Thing"
-    url: /reset/fc-07
