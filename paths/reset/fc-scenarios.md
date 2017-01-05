@@ -61,9 +61,6 @@ main-content: |
 
     The sky is **not** falling down chicken little, we can make everything right-as-rain, and this scenario shows you how to fix that last commit.
 
-
-
 show-me-how:
-tell-me-why: |
-  The
+tell-me-why:
 ---
