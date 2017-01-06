@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title: Aide-mémoire GitHub Git
 byline: Git est le sytème de gestion de version décentralisé open source qui facilite les activités GitHub sur votre ordinateur. Cet aide-mémoire permet un accès rapide aux instructions des commandes Git les plus utilisées.
-leadingpath: ../../
+leadingpath: ../../../
 ---
 
 {% capture colOne %}
