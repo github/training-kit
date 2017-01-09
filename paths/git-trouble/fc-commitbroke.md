@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Commit Broke Everything!
 permalink: /git-trouble/07
-next-page: /git-trouble/01
+next-page: /git-trouble/02
 facilitator: false
 sidebar:
   nav: "advanced"

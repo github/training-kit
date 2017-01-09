@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Accidental Commit
 permalink: /git-trouble/06
-next-page: /git-trouble/01
+next-page: /git-trouble/02
 facilitator: false
 sidebar:
   nav: "advanced"
