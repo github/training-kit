@@ -140,15 +140,18 @@ github-cli:
 advanced:
   - title: "Welcome"
     url: /git-trouble/
-  - title: "Scenarios"
+  - title: "Set Up Your Environment"
     url: /git-trouble/01
-  - title: "Too Many (small) Commits"
+  - title: "Scenarios"
     url: /git-trouble/02
-  - title: "Commit Message Sucks"
-    url: /git-trouble/03
-  - title: "Commit to Wrong Branch"
-    url: /git-trouble/04
-  - title: "Accidental Commit"
-    url: /git-trouble/05
-  - title: "Commit Broke Everything!"
-    url: /git-trouble/06
+    children:
+    - title: "Too Many (small) Commits"
+      url: /git-trouble/03
+    - title: "Commit Message Sucks"
+      url: /git-trouble/04
+    - title: "Commit to Wrong Branch"
+      url: /git-trouble/05
+    - title: "Accidental Commit"
+      url: /git-trouble/06
+    - title: "Commit Broke Everything!"
+      url: /git-trouble/07

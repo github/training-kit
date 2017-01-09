@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Too Many (small) Commits!
-permalink: /git-trouble/02
+permalink: /git-trouble/03
 next-page: /git-trouble/01
 facilitator: false
 sidebar:
