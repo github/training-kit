@@ -15,6 +15,7 @@ main-content: |
 
   Fear not! You can salvage those changes and put them where they belong! Next time, try to remember to run a quick `git checkout BRANCH` before you get to working on that sweet Pull Request :wink:.
 
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
 pushed: |
     When trying to fix committing to the wrong branch, it is important to identify if you need to fix 1 commit or multiple commits before continuing.
 
