@@ -35,7 +35,7 @@ pushed: |
     1. Enter: `git commit -m "MESSAGE"`, where message is your new commit message, for example `Add files 2 through 6` could work.
     1. Enter: `git push`. If you haven't pushed from this branch before, you will be prompted by Git to set the `upstream` for the branch. To set the upstream, enter: `git push -u origin new`.
     1. Enter: `git checkout BRANCH`, where BRANCH is the branch you removed your errant commits from.
-    1. Enter `git push`.  
+    1. Enter `git push --force`.  
 
 didnt-push: |
     The good news is, you didn't push, so none of the collaborators on your project know you just committed a bunch of changes directly to `Master` on 'accident' (I mean, lets be serious, those changes are awesome and are definitely gonna get merged). Here is how we can fix that 'mistake'.

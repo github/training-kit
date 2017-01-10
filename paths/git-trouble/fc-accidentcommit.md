@@ -34,8 +34,9 @@ didnt-push: |
     1. Enter: `git status`. You should see `file6.md` in your Staging Area (`--soft`) or Working Directory (`--mixed`).
 
     Depending on what mode of `reset` you used, perform one of the following bonus steps:
+
     - If you used `--mixed`, try to create a new file, add it to the Staging Area, and create a new commit. After creating the new commit, run `git status` and identify the SHA-1 associated with the new commit.
-    - If you sued `--soft`, create a new commit with `file6.md`. After committing it, run `git log --oneline` and identify the SHA-1 associated with the new commit.
+    - If you used `--soft`, create a new commit with `file6.md`. After committing it, run `git log --oneline` and identify the SHA-1 associated with the new commit.
 
 show-me-how:
 tell-me-why: |

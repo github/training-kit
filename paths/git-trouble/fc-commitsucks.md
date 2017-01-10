@@ -62,10 +62,10 @@ didnt-push: |
 show-me-how:
 tell-me-why: |
   ## Commit --amend
-  The `commit --amend` command enables you to modify the message of the _last_ commit you made. This can be helpful if you identify a spelling error or grammatical issue with the commit message you created. This command **only** works with the _last_ commit you made and you need to use other commands to modify commits made prior to your last commit.
+  The `commit --amend` command enables you to modify the message and contents (changes that are included) of the _last_ commit you made. This can be helpful if you identify a spelling error or grammatical issue with the commit message you created. This command **only** works with the _last_ commit you made and you need to use other commands to modify commits made prior to your last commit.
 
   ## Reset
-  Where `revert`, a command we use in other exercises was a command that provided a non-destructive method to clean up commit history and modify changes made to your repository, reset is a potentially destructive command. When using reset you are removing any reference to the commit in the repository history and the original copies of the files will no longer be available.
+  Where `revert`, a command we use in other exercises was a command that provided a non-destructive method to clean up commit history and modify changes made to your repository, `reset` is a potentially destructive command. When using reset you are removing any reference to the commit in the repository history and the original copies of the files will no longer be available.
 
   ## Rebase
   A rebase and a merge are essentially the same thing. When you want to combine your changes from two branches into one, you have a choice to use either process. The difference is found in the history that your project leaves behind.

@@ -21,7 +21,7 @@ pushed: |
     1. Identify the SHA-1 hash for the commit that introduced **file 1**.
     1. Enter: `git reset --soft SHA-1`, where SHA-1 is the commit that introduced **file 1**.
     1. Enter: `git commit --amend`, modify the commit message to read "Add file 1-6".
-    1. Enter `git push`.  
+    1. Enter `git push --force`.  
 
     For more information about the use of `commit --amend`, review the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
 
@@ -41,12 +41,8 @@ didnt-push: |
     Congratulations you just combined a bunch of commits into a single commit! Now, none of the other collaborators will know that you make **way** too many commits!
 
 show-me-how:
-tell-me-why: |
-
-  ## Reset
-  For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
-
-  ## Rebase
-  For more information about `rebase`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
-
+tell-me-why:
+  includes:
+    - tell-me-why/trouble-reset.md
+    - tell-me-why/trouble-rebase.md
 ---
