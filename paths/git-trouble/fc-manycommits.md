@@ -16,7 +16,7 @@ main-content: |
 
   Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
 pushed: |
-    When it comes to gitting (HA!) out of troublesome situations, you might have a handful of tools at your disposal to make everything right. In this particular instance Git has two tools that allow you to modify your commit history. In the example provided, the `reset` command is used, however, the `rebase -i` functionality could also be used. For information on how to use `rebase -i` command, review the "I pushed" section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
+    When it comes to gitting (HA!) out of troublesome situations, you might have a handful of tools at your disposal to make everything right. In this particular instance Git has two tools that allow you to modify your commit history. In the example provided below, the `reset` command is used, however, the `rebase -i` functionality could also be used. For information on how to use `rebase -i` command, review the "I pushed" section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
 
     1. Ensure you are on the correct branch and enter: `git log --oneline`.
     1. Identify the SHA-1 hash for the commit that introduced **file 1**.
