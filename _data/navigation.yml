@@ -9,7 +9,7 @@ main:
   - title: "Using the Command Line"
     beta: true
     url: /github-cli/
-  - title: "Git Reset"
+  - title: "Git Out of Trouble"
     beta: true
     url: /reset/
   - title: "Community"
