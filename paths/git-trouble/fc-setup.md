@@ -10,7 +10,7 @@ facilitator: false
 sidebar:
   nav: "advanced"
 main-content: |  
-  1. Create a repository on GitHub.com and `clone` it to your desktop.
+  1. Create a repository on [GitHub.com](https://www.github.com) and `clone` it to your desktop.
   1. Create a new branch, call it ```test```.
   1. Create a series of commits that give you a rich history to practice the scenarios in this course. Feel free to use this handy script to generate them for you:
   - **Bash**:
@@ -31,7 +31,7 @@ main-content: |
   :metal: You're ready to rock! :guitar:
 
   ## New UI Addition
-  Look :eyes: for the drop these drop downs throughout the course:
+  Look :eyes: for these drop downs throughout the course:
 
   ![](/on-demand/images/push-dropdowns.png){: .align-center}
 
