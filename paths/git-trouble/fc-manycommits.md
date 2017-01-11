@@ -25,7 +25,7 @@ pushed: |
     1. Enter `git push --force`.  
 
 didnt-push: |
-    If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators using the `reset` command. If you created files using the Bash or PowerShell scripts we provided, your commit message history should include 6 commits that look something like this:
+    If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators using the `reset` command. If you created files using the Bash or PowerShell scripts we provided, your commit history should include several commits that look something like this:
 
         5950a1b adding file 4
 
