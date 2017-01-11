@@ -24,8 +24,6 @@ pushed: |
     1. Enter: `git commit --amend`, modify the commit message to read "Add file 1-6".
     1. Enter `git push --force`.  
 
-    For more information about the use of `commit --amend`, review the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
-
 didnt-push: |
     If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators using the `reset` command. If you created files using the Bash or PowerShell scripts we provided, your commit message history should include 6 commits that look something like this:
 
@@ -44,6 +42,7 @@ didnt-push: |
 show-me-how:
 tell-me-why:
   includes:
+    - tell-me-why/trouble-commitamend.md
     - tell-me-why/trouble-reset.md
     - tell-me-why/trouble-rebase.md
 ---
