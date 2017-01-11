@@ -83,26 +83,6 @@ github-desktop-nav:
     - title: "Merge Your PR"
       url: /github-desktop/16/
 
-reset:
-    - title: "Welcome"
-      url: /reset/
-    - title: "Introduction to Git Reset"
-      url: /reset/01
-    - title: "Create a Local Repository"
-      url: /reset/02
-    - title: "Commit History"
-      url: /reset/03
-    - title: "Reset Soft"
-      url: /reset/04
-    - title: "Reset Mixed"
-      url: /reset/05
-    - title: "Reset Hard"
-      url: /reset/06
-    - title: "Reflog and Cherry Pick"
-      url: /reset/07
-    - title: "Wrap Up"
-      url: /reset/08
-
 github-cli:
   - title: "Welcome"
     url: /github-cli/
