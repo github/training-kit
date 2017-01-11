@@ -29,7 +29,7 @@ didnt-push: |
 
         5950a1b adding file 4
 
-    Those first 7 characters are going to be unique to your machine and is the SHA-1 hash assigned to that specific commit. We are going to use that hash identifier when using the `reset` command.
+    Those first 7 characters are going to be unique to your machine and are a section of the SHA-1 hash assigned to that specific commit (the SHA-1 hash is 40 characters long). We are going to use that hash identifier when using the `reset` command.
 
     1. Ensure you are on the correct branch and enter: `git log --oneline`.
     1. For this example, we are going to combine the commits associated with the addition of files 4, 5, and 6. So identify the SHA-1 associated with the commit for **adding file 3**.
