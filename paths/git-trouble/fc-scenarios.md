@@ -15,7 +15,7 @@ main-content: |
 
   ## [Commit Message Sucks](/on-demand/git-trouble/04)
 
-  'Edited stuff' might have seemed like a decent commit message at 3am, but in hindsight, you might realize you want to provide more context. Covering the different commands you can use to `revert` the error of your commit message-ways, this scenario identifies how to get more descriptive.
+  'Edited stuff' might have seemed like a decent commit message at 3am, but in hindsight, you might realize you want to provide a _little_ more context. Covering the different commands you can use to `revert` the error of your commit message-ways, this scenario identifies how to get more descriptive.
 
   ## [Commit to Wrong Branch](/on-demand/git-trouble/05)
 
@@ -23,7 +23,7 @@ main-content: |
 
   ## [Accidental Commit](/on-demand/git-trouble/06)
 
-  During your workflow, you might have gotten excited and made a commit before you had actually finished your thought. Maybe you made the commit without adding all of the related files. Perhaps your commit included changes that were unrelated. In either case, we can fix that, just follow along and `git` out of trouble.
+  During your workflow, you might have gotten excited and made a commit before you had actually finished. Maybe you made the commit without adding all of the related files. Perhaps your commit included changes that were unrelated. In either case, we can fix that, just follow along and `git` out of trouble.
 
   ## [Commit Broke EVERYTHING](/on-demand/git-trouble/07)
 
