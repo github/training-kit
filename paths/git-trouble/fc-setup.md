@@ -37,6 +37,24 @@ main-content: |
 
   When trying to get out of a pickle, the best tool for the job is typically dependent on if you pushed your commits to your remote (or not). These drop downs help you find the right instructions for each situation.
 
+refresh: |
+  ## Creating a Repository
+  1. Navigate to [GitHub.com](https://www.github.com)
+  1. Click the **New repository** button.
+  1. Enter a name for the repository in the **Repository name** field.
+       - You can also add a description for the repository in the **Description** field.
+  1. Click the **Initialize this repository with a README** checkbox.
+  1. Click the **Create repository** button.
+
+  ## Cloning a Repository
+  1. Navigate to your repository on [GitHub.com](https://www.github.com).
+      - If you just created the repository, you are already there!
+  1. Click the **Clone or download** button.
+  1. Copy the **Clone with HTTPS** web url.
+      - You can also clone using SSH, just click the **Use SSH** option and copy that address.
+  1. Open a terminal and navigate to a location on your local machine where you want the course repository to go.
+  1. Enter: `git clone ADDRESS`, where address is the web url you copied from your repository. This clones your repository to your local machine!    
+
 show-me-how:
 tell-me-why:
 ---
