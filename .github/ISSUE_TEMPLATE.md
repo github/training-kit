@@ -11,21 +11,20 @@
 <If new idea or direction, please create a checklist of proposed ideas or next steps. [Example](https://github.com/github/training-kit/issues/415).>
 
 ### How to Contribute
-- [ ] Comment on this issue if you'd like to work/collaborate on it!
+- [ ] Comment on this issue if you'd like to work/collaborate on it! One of the training-kit maintainers will then "Assign" you to the issue.
 - [ ] Fork the [repository](https://github.com/github/training-kit).
-- [ ] Clone YOUR forked version of the repository to your command line. `git clone YOURURL`
-- [ ] Make changes.
+- [ ] Use the [GitHub Flow](https://guides.github.com/introduction/flow/) to make changes to your fork. 
 - In your command line:
-  - [ ] ADVANCED/OPTIONAL: If you'd like to have a copy of the files to be served from a web server inside of your firewall, start by running `script/package`.
+  - [Install Git](https://git-scm.com/)
+  - [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+  - [ ] ADVANCED/OPTIONAL: If you'd like to have a copy of the files to be served from a web server inside of your firewall, start by running `script/package`. Otherwise, do the following steps.
   - [ ] Run `script/setup`
   - [ ] Run `script/server`.
     - When successful, the script will initiate a local server at `http://127.0.0.1:4000/on-demand`.
-  - [ ] Simply paste that into your favorite web-browser and you will be ready to test.
-- [ ] Push your changes to your repository. `git push`
+- [ ] Push your changes to your repository. 
 - [ ] Submit a Pull Request
-  - Base Dropdown: THIS Training Kit
-  - Compare Dropdown: YOUR Training Kit repository
+  - Base Dropdown: github/training-kit
+  - Compare Dropdown: Your fork
 
 ### Questions?
-- [![Join the Open Source Training chat](https://githubtraining.herokuapp.com/badge.svg)](https://githubtraining.herokuapp.com/)
 - Leave a comment on this issue! Make sure to use @ mentions if you want a specific person's attention!
