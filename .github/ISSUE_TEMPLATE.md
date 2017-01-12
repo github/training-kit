@@ -19,7 +19,7 @@
   - Base Dropdown: github/training-kit
   - Compare Dropdown: Your fork
 
-### Testing Locally
+#### Testing Locally
 If you'd like to make and test changes locally (and see how they would look if merged), do the following:
 - In your command line:
   - [Install Git](https://git-scm.com/)
