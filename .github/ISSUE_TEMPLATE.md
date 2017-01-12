@@ -13,7 +13,7 @@
 ### How to Contribute
 - [ ] Comment on this issue if you'd like to work/collaborate on it! 
 - [ ] Fork the [repository](https://github.com/github/training-kit).
-- [ ] Use the [GitHub Flow](https://guides.github.com/introduction/flow/) to make changes to your fork. [This](https://services.github.com/on-demand/intro-to-github/) is a refresher course if you're unsure about how to make a change on GitHub.com
+- [ ] Use the [GitHub Flow](https://guides.github.com/introduction/flow/) to make changes to your fork. [This](https://services.github.com/on-demand/intro-to-github/) is a refresher course if you're unsure about how to make a change on GitHub.
 
 If you'd like to make and test changes locally (and see how they would look if merged), do the following:
 - In your command line:
