@@ -11,13 +11,14 @@
 <If new idea or direction, please create a checklist of proposed ideas or next steps. [Example](https://github.com/github/training-kit/issues/415).>
 
 ### How to Contribute
-- [ ] Comment on this issue if you'd like to work/collaborate on it! One of the training-kit maintainers will then "Assign" you to the issue.
+- [ ] Comment on this issue if you'd like to work/collaborate on it! 
 - [ ] Fork the [repository](https://github.com/github/training-kit).
-- [ ] Use the [GitHub Flow](https://guides.github.com/introduction/flow/) to make changes to your fork. 
+- [ ] Use the [GitHub Flow](https://guides.github.com/introduction/flow/) to make changes to your fork. [This](https://services.github.com/on-demand/intro-to-github/) is a refresher course if you're unsure about how to make a change on GitHub.com
+
+If you'd like to make and test changes locally (and see how they would look if merged), do the following:
 - In your command line:
   - [Install Git](https://git-scm.com/)
   - [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/)
-  - [ ] ADVANCED/OPTIONAL: If you'd like to have a copy of the files to be served from a web server inside of your firewall, start by running `script/package`. Otherwise, do the following steps.
   - [ ] Run `script/setup`
   - [ ] Run `script/server`.
     - When successful, the script will initiate a local server at `http://127.0.0.1:4000/on-demand`.
