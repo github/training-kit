@@ -36,6 +36,7 @@ didnt-push: |
     1. Enter the following: `git reset --soft SHA-1`, where SHA-1 is the SHA-1 associated with the `adding file 3` commit.
     1. Enter `git status`. You should see files 4, 5, and 6; in the Staging Area (aka ready to be committed).
     1. Enter: `git commit -m "Adding files 4, 5, and 6"`.
+    1. Enter: `git log --oneline`, your commit history should be modified.
 
     Congratulations you just combined a bunch of commits into a single commit! Now, none of the other collaborators will know that you make **way** too many commits!
 
