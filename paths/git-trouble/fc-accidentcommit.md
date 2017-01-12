@@ -11,11 +11,11 @@ sidebar:
   nav: "advanced"
 main-content: |  
 
-  In the fervor of making some sweet changes to your repository you might from time to time, accidentally commit some changes to a branch before you were actually ready to commit it. This mistake can be quickly fixed and you can get back to making your project :sparkle:.
+  In the fervor of making some sweet changes to your repository you might accidentally commit changes to a branch before you were actually ready to.   This mistake can be quickly fixed and you can get back to making your project :sparkle:.
 
   Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
 pushed: |
-    Since we accidentally pushed our changes to the wrong branch on our remote, we need to `revert` the commit (or commits) to prevent them creating any problems for other collaborators.
+    Since we accidentally pushed our changes to the wrong branch on our remote, you need to `revert` the commit (or commits) to prevent them creating any problems for other collaborators.
 
     1. Ensure you are on the correct branch and enter: `git log --oneline`.
     1. Identify the SHA-1 hash for the commit for **adding file 4**.
