@@ -10,9 +10,7 @@ facilitator: false
 sidebar:
   nav: "advanced"
 main-content: |
-  While working on your project, you might have made commits for every little change you made along the way and created a commit history that looks more like an avalanche of information as opposed to a succinct list of the changes you made to the branch.
-
-  When it comes to gitting (HA!) out of troublesome situations, you might have a handful of tools at your disposal to make everything right.
+  While working on your project, you might have made commits for every little change and created a commit history that looks more like an avalanche of information as opposed to a succinct list of the changes.
 
   Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
 pushed: |
@@ -25,7 +23,7 @@ pushed: |
     1. Enter `git push --force`.  
 
 didnt-push: |
-    If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators using the `reset` command. If you created files using the Bash or PowerShell scripts we provided, your commit history should include several commits that look something like this:
+    If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators using the `reset` command. If you used the Bash or PowerShell scripts we provided, your commit history should include several commits that look something like this:
 
         5950a1b adding file 4
 
