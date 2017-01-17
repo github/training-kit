@@ -31,4 +31,4 @@
 
 ## Important Reminder
 
- `reset` will change the commit history for your project which can cause problems for your collaborators if you have already pushed. Alternatively, `revert`, a command we use in other exercises, provides a non-destructive method to modify changes made to your repository and should be considered in place of reset when the commit(s) have already been pushed to the remote.
+ The `reset` command will change the commit history for your project which can cause problems for your collaborators if you have already pushed. Alternatively, `revert`, a command we use in other exercises, provides a non-destructive method to modify changes made to your repository and should be considered in place of reset when the commit(s) have already been pushed to the remote.
