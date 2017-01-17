@@ -6,7 +6,7 @@
 
  ![](/on-demand/images/reset-visual.jpg){: .align-center}
 
- ### How Reset Works
+### How Reset Works
 
  When you use `git reset` you are overwriting one or more of the three trees git uses to manage your work.
 
@@ -20,7 +20,7 @@
 
  ![](/on-demand/images/reset-modes.jpg){: .align-center}
 
- ### Are They Really Gone?
+### Are They Really Gone?
 
  The good news is, git keeps a running log of every commit HEAD has pointed to. You can find this log with `git reflog`.
 
@@ -29,6 +29,6 @@
  - The reflog isn't pushed to the remote. So the only place you can access it is in your local repository.
  - The reflog only displays activity for the last 30 - 90 days. 90 days applies to any commit that is currently part of a branch. 30 days applies to commits that are "unreachable" - in other words, they are not currently on a branch.
 
- ## Important Reminder
+## Important Reminder
 
  `reset` will change the commit history for your project which can cause problems for your collaborators if you have already pushed. Alternatively, `revert`, a command we use in other exercises, provides a non-destructive method to modify changes made to your repository and should be considered in place of reset when the commit(s) have already been pushed to the remote.

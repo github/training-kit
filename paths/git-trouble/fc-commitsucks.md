@@ -14,7 +14,7 @@ main-content: |
 
   Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
 pushed: |
-  Before you begin worrying about that terrible commit message you have pushed to the remote, let's talk about the risks associated with fixing it. Fixing a commit message you have already pushed is going to require you to use `git push --force`. `push --force` can cause some **serious** problems for other collaborators on your project. The embarrassment of a mis-spelled word is nothing compared to the embarrassment of messing up your collaborators. If your commit is really that bad, or if causing problems doesn't trouble you, keep reading.
+  Before you begin worrying about that terrible commit message you have pushed to the remote, let's talk about the risks associated with fixing it. Fixing a commit message you have already pushed is going to require you to use `git push --force`. Using `push --force` can cause some **serious** problems for other collaborators on your project. The embarrassment of a mispelled :grin: word is nothing compared to the embarrassment of messing up your collaborators. If your commit is really that bad, or if causing problems doesn't trouble you, keep reading.
 
   Start by asking yourself:
 
@@ -77,5 +77,5 @@ tell-me-why:
   includes:
     - tell-me-why/trouble-commitamend.md
     - tell-me-why/trouble-reset.md
-    - tell-me-why/trouble-rebase.md 
+    - tell-me-why/trouble-rebase.md
 ---
