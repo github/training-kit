@@ -6,7 +6,7 @@
 
  ![](/on-demand/images/reset-visual.jpg){: .align-center}
 
- ### How Reset Works
+### How Reset Works
 
  When you use `git reset` you are overwriting one or more of the three trees git uses to manage your work.
 
@@ -20,7 +20,7 @@
 
  ![](/on-demand/images/reset-modes.jpg){: .align-center}
 
-## Are They Really Gone?
+### Are They Really Gone?
 
  The good news is, git keeps a running log of every commit HEAD has pointed to. You can find this log with `git reflog`.
 
