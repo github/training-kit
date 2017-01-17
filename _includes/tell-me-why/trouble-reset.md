@@ -1,6 +1,7 @@
 [//]: # "This is used in the Git Out of Trouble course"
 
 ## Reset
+
  `Reset` allows us to rewind our branch to look like it did at a previous point in history.
 
  ![](/on-demand/images/reset-visual.jpg){: .align-center}
