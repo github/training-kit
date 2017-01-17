@@ -30,7 +30,7 @@ main-content: |
 
   ## [Just Make it Go Away!](/on-demand/git-trouble/07)
 
-  The sky is **not** falling down chicken little, we can make everything right-as-rain, and this scenario shows you how to fix that last commit.
+  Sometimes that exciting new feature takes a turn for the worse and you just want to make it all go away. Have no fear, we can make that happen.  
 
 show-me-how:
 tell-me-why:
