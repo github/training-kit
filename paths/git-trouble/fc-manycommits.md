@@ -19,12 +19,8 @@ pushed: |
     Instead, let it go (for now) and use the **Squash and Merge** option when you are ready to merge the pull request. This will reduce that avalanche of commits down to a single snowflake on master!   
 
 didnt-push: |
-    If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators using the `reset` command. If you used the Bash or PowerShell scripts we provided, your commit history should include several commits that look something like this:
-
-        5950a1b adding file 4
-
-    Those first 7 characters are going to be unique to your machine and are a section of the SHA-1 hash assigned to that specific commit (the SHA-1 hash is 40 characters long). We are going to use that hash identifier when using the `reset` command.
-
+    If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators:
+    
     1. Ensure you are on the correct branch and enter: `git log --oneline`.
     1. For this example, we are going to combine the commits associated with the addition of files 4, 5, and 6. So identify the SHA-1 associated with the commit for **adding file 3**.
     1. Enter the following: `git reset --soft SHA-1`, where SHA-1 is the SHA-1 associated with the `adding file 3` commit.
