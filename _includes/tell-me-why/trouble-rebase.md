@@ -1,23 +1,27 @@
 [//]: # "This is used in the Git Out of Trouble course"
 
 ## Rebase
-A rebase and a merge are essentially the same thing. When you want to combine your changes from two branches into one, you have a choice to use either process. The difference is found in the history that your project leaves behind.
 
-When you `merge` two branches, a merge commit is created. This is a commit that identifies that the changes on the `test` branch were applied to the `master` branch (using our repo branches as an example). This would look something like having two traffic lanes merge into one at a single point (or commit in Git terminology).
+The `git rebase` command is a powerful tool that can be used to reorder commits, edit commits, or even pick up entire branches and move them.
 
-Alternatively, if you were to `rebase` your `test` branch with the `master` branch, you would be placing the commits made on the `test` branch along the linear (straight line) history of the `master branch`.
+### How Rebase Works
 
-Instead of just describing the difference between a `merge` commit and a `rebase`, look at these images.
+Let's start with a fairly common use case for rebase:
 
-  ![](/on-demand/images/git-merge.png){: .align-center}
+![](/on-demand/images/git-rebase-before.png){: .align-center}
 
-In the above image, the `test` and `master` branches were merged at the `7b67` 'merge' commit. During development `test` was created at the `0d7b` commit and began creating changes on the `test` branch. Meanwhile, the `master` branch also got a handful of commits. When the `merge` command was used the commits that occurred between on both branches since the `0d7b` commit were combined at the `7b67` merge commit.
+ In the above image, we created a branch called `test` and did some work. The branch `test` is "based" on the first commit on `master`: `e137e`. While we were working on our `test` branch, some of our collaborators merged their work into `master`. If we want to merge in our `test` branch, git would need to **recursively** combine the history on the two branches. This recursive merge strategy would result in a new commit being made as you see below:
 
-  ![](/on-demand/images/git-rebase.png){: .align-center}
+ ![](/on-demand/images/git-merge-recursive.png){: .align-center}
 
-Looking at the above example, you can see that again the `test` branch was created at the `0d7b` commit. Changes were made on both the `master` and `test` branches. Once the changes on the `test` branch were ready to be merged with the `master` branch, it was `rebase`d onto the `master` branch. You can see that the commits that occurred on the `test` branch were recreated on the `master` branch and given new commit SHA-1 hashes.
+ Alternatively, you can use `rebase` to move the "base" of your `test` branch to the current tip of master:
 
-To sum it up:
+ ![](/on-demand/images/git-rebase-after.png){: .align-center}
 
-  - Quick delivery of feature branches? Merge
-  - Clarity of History? Rebase
+ As you can see from the diagram, git picked up the commits on our original test branch `a55e`, `97d6` and `1c70` and replayed the entire branch as if we had just created it from master. However, you should also notice the commits that occurred on the `test` branch have new SHA-1 hashes because the "base" commit for the branch has changed.
+
+ If we were to merge these two branches now, git would do a **fast-forward** merge, giving us a nice linear history (without the recursive merge commit).
+
+ ### Rebase Interactive
+
+ Rebase includes an interactive option that allows us to make changes to the commits as they are being replayed. For example, we can edit our commit messages as well as combine (squash), re-order, and even delete commits.  
