@@ -46,13 +46,8 @@ didnt-push: |
 show-me-how:
 tell-me-why: |
   ## Revert
-  The easiest way to think about `revert` is just making your repository do the exact opposite of an existing commit and creating a new commit to record that change. Revert is useful when trying to reverse the changes made in a specific commit, and even _more_ useful if you pushed a change that your want to reverse to your remote. If you want to reverse a large group of changes and haven't pushed (you can actually use this if you have pushed, but there are some caveats to consider) you could use `reset`. For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
+  The easiest way to think about `revert` is just making your repository do the exact opposite of an existing commit and creating a new commit to record that change. Revert is useful when trying to 'undo' the changes made in a specific commit, and even _more_ useful if you pushed a change that your want to reverse to your remote since it will always create a new commit and leave the original commit untouched. 
 
-  ## Why Did the SHA-1 Change?
-  So, after you created the new commit you might have noticed that the SHA-1 associated with the commit for `file6.md` is now different. That is because the SHA-1 doesn't just identify the file (or files) that have been committed. It also contains additional information like Date, Time, Author, and other information. So, even though you might have created a commit with the exact same file from before, you will have a completely new SHA-1 hash for the commit. Pretty cool, huh?
-
-  ## What Happened to File 5?
-  When you were running the `git reset --mixed (or --soft) SHA-1` you might have expected `file5.md` to be included in the files that got sent to the Staging Area or Working Directory. In the 'Tell Me Why' section of the [Committed to the Wrong Branch](/on-demand/git-trouble/04) scenario, we describe a similar situation (What Happened to File 4?). If you want additional context as to why `file5.md` didn't get grabbed when you used `reset`, review that section.
-
-
+  ## Reset and Commit --amend
+  For more information on `git reset` and `git commit --amend`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
 ---
