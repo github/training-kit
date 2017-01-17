@@ -26,6 +26,7 @@ pushed: |
     ## Recovering Your Work
 
     Now that the branch on the remote is fixed, you may want to recover that accidental commit and finish your work. Here's how you can do it:
+
     1. Use `git log --oneline` to identify the SHA-1 of the revert commit. If you left the default message, it will say something like `Revert "adding file 4"`.
     1. Type `git revert SHA-1` where the SHA-1 is the revert commit.
     1. Finish your work on the files.
@@ -49,7 +50,10 @@ tell-me-why: |
   ## Revert
   The easiest way to think about `revert` is just making your repository do the exact opposite of an existing commit and creating a new commit to record that change. Revert is useful when trying to 'undo' the changes made in a specific commit, and even _more_ useful if you pushed a change that your want to reverse to your remote since it will always create a new commit and leave the original commit untouched.
 
-  ## Reset and Commit --amend
-  For more information on `git reset` and `git commit --amend`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/03) scenario.
+  ## Reset
+  For more information on `git reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/03) scenario.
+
+  ## Commit --amend
+  For more information on `git commit --amend`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/04) scenario.
 
 ---
