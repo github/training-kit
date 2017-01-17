@@ -43,6 +43,7 @@ didnt-push: |
   1. Enter: `git status`. You should see `file6.md` in your working directory.
 
   Now you are ready to keep making your :guitar: changes and no one is the wiser!
+
 show-me-how:
 tell-me-why: |
   ## Revert
@@ -50,4 +51,5 @@ tell-me-why: |
 
   ## Reset and Commit --amend
   For more information on `git reset` and `git commit --amend`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
+  
 ---

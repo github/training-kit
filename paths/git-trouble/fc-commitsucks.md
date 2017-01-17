@@ -74,8 +74,8 @@ didnt-push: |
 
 show-me-how:
 tell-me-why:
-includes:
-  - tell-me-why/trouble-commitamend.md
-  - tell-me-why/trouble-reset.md
-  - tell-me-why/trouble-rebase.md 
+  includes:
+    - tell-me-why/trouble-commitamend.md
+    - tell-me-why/trouble-reset.md
+    - tell-me-why/trouble-rebase.md 
 ---
