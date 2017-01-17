@@ -10,6 +10,8 @@ facilitator: false
 sidebar:
   nav: "advanced"
 main-content: |  
+  This stuff is a lot more fun if you try it out. Let's create a sample repository to play with:
+
   1. Create a repository on [GitHub.com](https://www.github.com) and `clone` it to your desktop.
   1. Create a new branch, call it ```test```.
   1. Create a series of commits that give you a rich history to practice the scenarios in this course. Feel free to use this handy script to generate them for you:
@@ -31,11 +33,11 @@ main-content: |
   :metal: You're ready to rock! :guitar:
 
   ## New UI Addition
-  Look :eyes: for these drop downs throughout the course:
+  When trying to get out of a pickle, the best tool for the job is typically dependent on if you `push`ed your commits to your remote (or not). Look :eyes: for these drop downs throughout the course:
 
   ![](/on-demand/images/push-dropdowns.png){: .align-center}
 
-  When trying to get out of a pickle, the best tool for the job is typically dependent on if you `push`ed your commits to your remote (or not). These drop downs help you find the right instructions for each situation.
+   They will help you find the right instructions for each situation.
 
 refresh:
   includes:
