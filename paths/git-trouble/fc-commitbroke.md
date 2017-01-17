@@ -99,4 +99,10 @@ tell-me-why: |
   1. `reflog` only displays commits for a limited time:
      - 30 days: 'Unreachable' objects, aka commits or modifications that were made to a branch that no longer exists.
      - 90 days: 'Reachable' objects, aka commits or modifications that were made to a branch that still exists.
+
+  ## Reset
+  For more information about `reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/03) scenario.
+
+  ## Cherry-pick
+  For more information about `cherry-pick`, check out the 'Tell me why' section in the [Committed to the Wrong Branch!](/on-demand/git-trouble/05) scenario.  
 ---
