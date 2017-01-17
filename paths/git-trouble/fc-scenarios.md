@@ -30,7 +30,7 @@ main-content: |
 
   ## [Just Make it Go Away!](/on-demand/git-trouble/07)
 
-  That innovative fix was **supposed** to fix everything! Instead your project is a dumpster fire and you just want everything to go back to how it was. Have no fear, we can make that happen.  
+  That innovative fix was **supposed** to fix everything! Instead your project is a garbage fire and you just want everything to go back to how it was. Have no fear, we can make that happen.  
 
 show-me-how:
 tell-me-why:
