@@ -28,7 +28,7 @@ main-content: |
 
   Did you make a commit before you had actually finished all of the related changes? Maybe you left one lonely little change in the working directory? Perhaps your commit included changes that were unrelated. In either case, we can fix that, just follow along and `git` out of trouble.
 
-  ## [Commit Broke EVERYTHING](/on-demand/git-trouble/07)
+  ## [Just Make it Go Away!](/on-demand/git-trouble/07)
 
   The sky is **not** falling down chicken little, we can make everything right-as-rain, and this scenario shows you how to fix that last commit.
 

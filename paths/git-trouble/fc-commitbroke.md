@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Commit Broke Everything!
+title: Just Make it Go Away!
 permalink: /git-trouble/07
 next-page: /git-trouble/02
 facilitator: false
