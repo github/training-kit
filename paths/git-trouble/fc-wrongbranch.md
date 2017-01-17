@@ -76,6 +76,10 @@ tell-me-why: |
 
   In this example, we created 4 commits on `new-branch`, then did `git reset --hard HEAD~3`. The three commits with dashed lines are considered "unreachable" because they aren't currently attached to a branch. So we cherry-picked `28144` to rescue that commit from the ashes.
 
+  ### Why Did the SHA-1 Change?
+
+  So, after you cherry-picked your commit you might have noticed that the SHA-1 associated with the commit is now different. That is because the SHA-1 doesn't just identify the file (or files) that have been committed. It actually contains a lot of additional information like Date, Time, Author, and other information. So, even though you might have created a commit with the exact same file from before, you will have a completely new SHA-1 hash for the commit. Pretty cool, huh?
+
   ## Revert
   For more information about `revert`, check out the ‘Tell me why’ section in the [Commit Broke Everything!](/on-demand/git-trouble/06) scenario.
 
