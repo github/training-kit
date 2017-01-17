@@ -11,7 +11,7 @@ main:
     url: /github-cli/
   - title: "Git Out of Trouble"
     beta: true
-    url: /reset/
+    url: /git-trouble/
   - title: "Community"
     url: /community/
 
