@@ -11,62 +11,92 @@ sidebar:
   nav: "advanced"
 main-content: |  
 
-  Your well intentioned commit was supposed to fix that bug that has been plaguing your project for weeks, but after making the commit things are worse than they were before! First, breathe, you can fix this; for real. Second, remember you aren't the first person who completely broke everything with a commit, heck, even the GitHub Trainers do it from time to time. So, now that you have found yourself in some :ahem: _very_ distinguished company, you can fix that gross commit.  
+  Your well intentioned branch was supposed to introduce that awesome new feature, but after making a few commits, things aren't going as planned!   
 
   Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
-pushed: | 
-    Pushing your commit isn't the end of the world, other than it breaking everything, but still, the world will be fine. So, since the commit has been pushed and other collaborators might have begun working on the files related to that commit, especially if they noticed that the commit broke even more things.
-    You can fix it really quickly though, using a handful of commands and soon it everything will be back to normal.
+pushed: |
+    This is what makes Git awesome! You can try new things and, when they don't work out, just get rid of them. First, ask yourself:
 
-     1. Ensure you are on the correct branch and enter: `git log --oneline`.
-     1. Identify the SHA-1 hash for the **adding file 2** commit.
-     1. Enter: `git revert SHA-1`, where the SHA-1 is the SHA-1 for the **adding file 2** commit. You will be prompted to edit a commit message for the revert, however, you don't need to change the supplied message if you don't want to. Once you are happy with the commit message, close your editor.
-     1. Enter: `git log --oneline`. You know have a commit for the revert that you can push up to your remote.
-     1. Enter: `git push`.
+    > Is it all terrible? Or can I use some of it?
 
-    For some extra practice using `git revert`, try to `revert` your previous `revert` and `push`ing that back up to your remote.
+    ## Make it all go away!
+
+    Ok, if you really mean it, we can get rid of the entire branch on the remote.
+
+    1. First, let's go back to the `master` branch with: `git checkout master`
+    1. Enter: `git push origin :BRANCH-NAME` or `git push --delete BRANCH-NAME` to delete the branch on the remote.
+    1. Enter: `git fetch --prune` to delete the remote tracking branch.
+    1. Enter: `git branch -D BRANCH-NAME` to delete the local copy of the branch.
+
+    ## It isn't all bad
+
+    If some of it can be salvaged, you can use the following approach:
+
+    1. Ensure you are on the correct branch and enter: `git log --oneline`.
+    1. Identify the SHA-1 hash for the last commit you want to keep. For this example, let's pretend files 1 and 2 are good, but we want to get rid of the rest, so grab the SHA-1 for "adding file 2".
+    1. Enter: `git reset --hard SHA-1`, where SHA-1 is the SHA-1 hash for the commit where you created **file 2**.
+    1. Type: `git status` and `ls`, notice that everything except files 1 and 2 are gone!
+    1. Enter: `git push --force`.
 
 didnt-push: |
-    Well, you didn't push the commit, that means no one else knows you made the project worse than it was. Use the following steps to fix that errant commit.
+    Well, you didn't push, that means no one else knows about your failed experiment. Use the following steps to get back to your happy place.
 
-    Use Git Reset to bring the file back to the working directory.
+    First, ask yourself:
 
-    Make sure to use `ls` in this workflow as we reference it in the next sub-section
+    > Is it all terrible? Or can I use some of it?
 
-    ## I Just Want it All Gone
-    Sometimes the best way to fix a problem is to pretend it never existed in the first place. If after removing the commit you just don't have the patience to deal with this garbage commit, you can use Git to make it look like it never happened. In the previous steps, you brought the file back to the Working Directory, so you could fix the issues you introduced with the initial commit and create a brand new commit that fixed that nagging bug and removed any trace of your previous attempt to fix it. If trying to identify how to get your fix to work is just not getting anywhere, we can use a different command to just get rid of it.
+    ## Make it all go away!
+
+    Sometimes the best way to fix a problem is to pretend it never happened. The easiest solution is to just delete the branch:
+
+    1. Check out to the `master` branch with: `git checkout master`
+    1. Enter: `git branch -D BRANCH-NAME` to delete the local copy of the branch.
+
+    ## It isn't all bad
+
+    If some of it can be salvaged, you can use the following approach:
 
     > If you want to see something kinda cool, open your local repository in a file browser (Finder, My Computer, etc.) and leave it to the side (but in view).
 
     1. Ensure you are on the correct branch and enter: `git log --oneline`.
-    1. Identify the SHA-1 associated with the **adding file5.md** commit.
-    1. Enter: `git reset --hard SHA-1` where SHA-1 is the SHA-1 associated with the **adding file5.md** commit.
+    1. Identify the SHA-1 hash for the last commit you want to keep. For this example, let's pretend files 1 and 2 are good, but we want to get rid of the rest, so grab the SHA-1 for "adding file 2".
+    1. Enter: `git reset --hard SHA-1`, where SHA-1 is the SHA-1 hash for the commit where you created **file 2**.
         If you have your file explorer open, you might have noticed something pretty cool happen!
-    1. Enter: `git log --oneline`, the commit for **adding file6.md** is gone!
-    1. Enter: `ls`. `file6.md` is no longer displayed in the list of files that exist (unlike before).
+    1. Type: `git status` and `ls`, notice that everything except files 1 and 2 are gone!  
+    1. Enter: `git log --oneline`, all of the commits after **adding file2.md** are gone!
 
-    ### Wait, I Shouldn't Have Done That!!!
-    OK, so that one rage-induced moment you 'accidentally' deleted that file because you just couldn't stand the sight of it. What if you could bring it back from the dead? You can, with a very nifty command, `reflog`.
+    ## Wait, I Shouldn't Have Done That!!!
 
-     1. Enter: `git reflog`.
-     1. Identify the SHA-1 for the **adding file 6** commit.
-     1. Enter: `git cherry-pick SHA-1`.
-     1. Enter: `git log --oneline`.
-     1. Enter: `git reflog`. Notice any
+    OK, so that one rage-induced moment you 'accidentally' deleted that file because you just couldn't stand the sight of it. What if you could bring it back from the dead? You can:
 
-    You saved the file you deleted! Nice work!
+    ### Bring One File Back
+
+    1. Enter: `git reflog`.
+    1. Identify the SHA-1 for the **adding file 6** commit.
+    1. Enter: `git cherry-pick SHA-1` where SHA-1 is the commit for "Adding file 6".
+    1. Enter: `git log --oneline` and `ls` to see that file 6 and its commit are back.
+
+    ### Bring Them All Back
+
+    After you took the dog for a walk, you realized where you were going wrong (fresh air works every time) and you want it all back. Don't worry, you can do that too:
+
+    1. Enter: `git reflog`.
+    1. Identify the SHA-1 for the **adding file 6** commit.
+    1. Enter: `git reset --hard SHA-1` where SHA-1 is the commit for "Adding file 6".
+    1. Enter: `git log --oneline` to see all of the commits are back. Notice the SHA-1 hashes of the commit - they match the original commits!
 
 show-me-how:
 tell-me-why: |
-  ## Revert
-  The easiest way to think about `revert` is just making your repository do the exact opposite of an existing commit and creating a new commit to record that change. Revert is useful when trying to reverse the changes made in a specific commit, and even _more_ useful if you pushed a change that your want to reverse to your remote. If you want to reverse a large group of changes and haven't pushed (you can actually use this if you have pushed, but there are some caveats to consider) you should use `reset`. For more information about `reset`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/03) scenario.
 
   ## Reflog
-  Reflog is a more powerful version of `git log`, it identifies the tip of a branch or other references as they are updated. For instance, when you ran `git log --oneline` and `git reflog` at the end of the exercise, you saw the initial `reset` and the `cherry-pick`, but `git log --oneline` didn't show that information.
+  Reflog is a more powerful version of `git log`, it records every commit HEAD has pointed to. HEAD is simply a pointer that represents the commit you are currently "checked out" to.
+
+  In most cases, you will be checked out to a branch, but you can also check out to any commit or tag in your history. When you are checked out to something other than a local branch, you are in what's called a **detached head** state. This is also recorded in the reflog.
+
   There are a few things that you should know about `reflog`, such as:
 
   1. `reflog` is **local** only, so, you other collaborators are not going to be able to find files you deleted in their `reflog`s.
-  1. `reflog` has an expiration date:
+  1. `reflog` only displays commits for a limited time:
      - 30 days: 'Unreachable' objects, aka commits or modifications that were made to a branch that no longer exists.
      - 90 days: 'Reachable' objects, aka commits or modifications that were made to a branch that still exists.
 ---
