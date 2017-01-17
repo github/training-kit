@@ -11,34 +11,38 @@ sidebar:
   nav: "advanced"
 main-content: |  
 
-  In the fervor of making some sweet changes to your repository you might accidentally commit changes to a branch before you were actually ready to.   This mistake can be quickly fixed and you can get back to making your project :sparkle:.
+  In the fervor of making some sweet changes to your repository you might accidentally commit changes before you were actually ready to.   This mistake can be quickly fixed and you can get back to making your project :sparkle:.
 
   Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
 pushed: |
-    Since we accidentally pushed our changes to the wrong branch on our remote, you need to `revert` the commit (or commits) to prevent them creating any problems for other collaborators.
+    Since we accidentally pushed our changes to the remote, you need to `revert` the commit (or commits) to prevent them creating any problems for other collaborators.
 
     1. Ensure you are on the correct branch and enter: `git log --oneline`.
-    1. Identify the SHA-1 hash for the commit for **adding file 4**.
+    1. Identify the SHA-1 hash for the incorrect commit. For this example, let's use the **adding file 4** commit.
     1. Enter: `git revert SHA-1`, where SHA-1 is the SHA-1 hash for the commit where you created **file 4**.
     1. Enter a commit message (or simply keep the predefined `revert` message) and close the editor.
-    1. Enter: `git push`. You have successfully undone the commit you recently `push`ed to your remote.   
+    1. Enter: `git push`. You have successfully undone the commit you recently `push`ed to your remote.
+
+    ## Recovering Your Work
+
+    Now that the branch on the remote is fixed, you may want to recover that accidental commit and finish your work. Here's how you can do it:
+    1. Use `git log --oneline` to identify the SHA-1 of the revert commit. If you left the default message, it will say something like `Revert "adding file 4"`.
+    1. Type `git revert SHA-1` where the SHA-1 is the revert commit.
+    1. Finish your work on the files.
+    1. Type: `git add` to stage your changes.
+    1. Type: `git commit --amend` to meld your changes into the previous commit.
+    1. Enter an appropriate commit message and close your text editor.
+    1. Enter: `git push` to send your beautiful (and complete) new commit to the remote.
 
 didnt-push: |
-    If you didn't push that incomplete commit up to your remote, it makes it =a little bit easier to resolve this misstep.
+    If you didn't push that incomplete commit up to your remote, it makes it a little bit easier to resolve this misstep.
 
     1. Ensure you are on the correct branch and enter: `git log --oneline`.
     1. We are going to assume you didn't mean to commit file 6, so identify the SHA-1 hash for the **adding file 5** commit.
+    1. Enter: `git reset --mixed SHA-1`, where SHA-1 is the SHA-1 hash associated with the **adding file 5** commit.
+    1. Enter: `git status`. You should see `file6.md` in your working directory.
 
-        Before continuing we should identify the options avaiable to fix this mistake. If you want to add additional files to the commit, you can use `git reset --soft`, if you need to make changes to `file6.md`, you should use `git reset --mixed`.
-
-    1. For this step, you can either use: `git reset --soft SHA-1` or `git reset --mixed SHA-1`, where SHA-1 is the SHA-1 hash associated with the **adding file 5** commit. Typically you would use `--mixed` if you wanted to modify `file6.md`, if you just want to add additional files to the commit but leave `file6.md` as it is, you can use `--soft`.  
-    1. Enter: `git status`. You should see `file6.md` in your Staging Area (`--soft`) or Working Directory (`--mixed`).
-
-    Depending on what mode of `reset` you used, perform one of the following bonus steps:
-
-    - If you used `--mixed`, try to create a new file, add it to the Staging Area, and create a new commit. After creating the new commit, run `git status` and identify the SHA-1 associated with the new commit.
-    - If you used `--soft`, create a new commit with `file6.md`. After committing it, run `git log --oneline` and identify the SHA-1 associated with the new commit.
-
+  Now you are ready to keep making your :guitar: changes and no one is the wiser!
 show-me-how:
 tell-me-why: |
   ## Revert
