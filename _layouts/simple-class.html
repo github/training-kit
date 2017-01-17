@@ -47,6 +47,40 @@ header:
         {{ page.main-content | markdownify }}
         {% endif %}
 
+        {% if page.didnt-push %}
+          <div class="notice--primary">
+          <details>
+            <summary>I didn't push</summary>
+            <hr>
+            {% if page.didnt-push.includes %}
+              {% for child in page.didnt-push.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            {{ page.didnt-push | markdownify }}
+            {% endif %}
+          </details>
+          </div>
+        {% endif %}
+
+        {% if page.pushed %}
+          <div class="notice--danger">
+          <details>
+            <summary>I pushed</summary>
+            <hr>
+            {% if page.pushed.includes %}
+              {% for child in page.pushed.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            {{ page.pushed | markdownify }}
+            {% endif %}
+          </details>
+          </div>
+        {% endif %}
+
         {% if page.refresh %}
           <div class="notice--primary">
           <details>

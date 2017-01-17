@@ -9,6 +9,9 @@ main:
   - title: "Using the Command Line"
     beta: true
     url: /github-cli/
+  - title: "Git Out of Trouble"
+    beta: true
+    url: /git-trouble/
   - title: "Community"
     url: /community/
 
@@ -57,38 +60,38 @@ gh-pages:
     url: /patchwork/gh-pages/05/
 
 github-desktop-nav:
-  - title: "Welcome"
-    url: /github-desktop/
-  - title: "Install GitHub Desktop"
-    url: /github-desktop/02/
-  - title: "Create the Remote Repository"
-    url: /github-desktop/03/
-  - title: "Clone the Repository"
-    url: /github-desktop/04/
-  - title: "Create Local Branches"
-    url: /github-desktop/05/
-  - title: "Make Local Changes"
-    url: /github-desktop/06/
-  - title: "Add Local Commits"
-    url: /github-desktop/07/
-  - title: "Open a Pull Request"
-    url: /github-desktop/08/
-  - title: "Merge Your Pull Request"
-    url: /github-desktop/09/
-  - title: "View Your site"
-    url: /github-desktop/10/
-  - title: "Keep Things in Sync"
-    url: /github-desktop/11/
-  - title: "Add Your Site to the Showcase"
-    url: /github-desktop/12/
-  - title: "Review the Local Workflow"
-    url: /github-desktop/13/
-  - title: "Review Pushing and Opening Pull Requests"
-    url: /github-desktop/14/
-  - title: "Let's Collaborate!"
-    url: /github-desktop/15/
-  - title: "Merge Your PR"
-    url: /github-desktop/16/
+    - title: "Welcome"
+      url: /github-desktop/
+    - title: "Install GitHub Desktop"
+      url: /github-desktop/02/
+    - title: "Create the Remote Repository"
+      url: /github-desktop/03/
+    - title: "Clone the Repository"
+      url: /github-desktop/04/
+    - title: "Create Local Branches"
+      url: /github-desktop/05/
+    - title: "Make Local Changes"
+      url: /github-desktop/06/
+    - title: "Add Local Commits"
+      url: /github-desktop/07/
+    - title: "Open a Pull Request"
+      url: /github-desktop/08/
+    - title: "Merge Your Pull Request"
+      url: /github-desktop/09/
+    - title: "View Your site"
+      url: /github-desktop/10/
+    - title: "Keep Things in Sync"
+      url: /github-desktop/11/
+    - title: "Add Your Site to the Showcase"
+      url: /github-desktop/12/
+    - title: "Review the local workflow"
+      url: /github-desktop/13/
+    - title: "Review Pushing and Opening Pull Requests"
+      url: /github-desktop/14/
+    - title: "Let's collaborate!"
+      url: /github-desktop/15/
+    - title: "Merge Your PR"
+      url: /github-desktop/16/
 
 github-cli:
   - title: "Welcome"
@@ -123,3 +126,22 @@ github-cli:
     url: /github-cli/15
   - title: "Merge Your PR"
     url: /github-cli/16
+
+advanced:
+  - title: "Welcome"
+    url: /git-trouble/
+  - title: "Set Up Your Environment"
+    url: /git-trouble/01
+  - title: "Scenarios"
+    url: /git-trouble/02
+    children:
+    - title: "Too Many (small) Commits"
+      url: /git-trouble/03
+    - title: "Commit Message Sucks"
+      url: /git-trouble/04
+    - title: "Commit to Wrong Branch"
+      url: /git-trouble/05
+    - title: "Accidental Commit"
+      url: /git-trouble/06
+    - title: "Just Make it Go Away!"
+      url: /git-trouble/07
