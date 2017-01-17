@@ -150,7 +150,7 @@ In most cases, it is considered best practice to make changes in the subproject 
 {% capture submodule %}
 ### Submodule
 
-Cd into the submodule directory and create a branch:
+Access the submodule directory and create a branch:
 
     cd example-submodule
     git checkout -b branch-name master
