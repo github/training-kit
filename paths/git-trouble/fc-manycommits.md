@@ -14,13 +14,9 @@ main-content: |
 
   Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
 pushed: |
-    In this particular instance Git has two tools that allow you to modify your commit history the `reset` command is used below, however, the `rebase -i` command is an alternate option.
+    I know that avalanche of commits looks bad, but it doesn't need to be permanent. A lot of people unintentionally create problems by trying to use Git to fix something that has already been pushed to the remote.
 
-    1. Ensure you are on the correct branch and enter: `git log --oneline`.
-    1. Identify the SHA-1 hash for the commit that introduced **file 1**.
-    1. Enter: `git reset --soft SHA-1`, where SHA-1 is the commit that introduced **file 1**.
-    1. Enter: `git commit --amend`, modify the commit message to read "Add file 1-6".
-    1. Enter `git push --force`.  
+    Instead, let it go (for now) and use the **Squash and Merge** option when you are ready to merge the pull request. This will reduce that avalanche of commits down to a single snowflake on master!   
 
 didnt-push: |
     If you haven't pushed your changes, you can adjust the commits you created without worrying about causing problems for other collaborators using the `reset` command. If you used the Bash or PowerShell scripts we provided, your commit history should include several commits that look something like this:
