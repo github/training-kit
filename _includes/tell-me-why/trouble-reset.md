@@ -20,7 +20,7 @@
 
  ![](/on-demand/images/reset-modes.jpg){: .align-center}
 
-### Are They Really Gone?
+## Are They Really Gone?
 
  The good news is, git keeps a running log of every commit HEAD has pointed to. You can find this log with `git reflog`.
 
