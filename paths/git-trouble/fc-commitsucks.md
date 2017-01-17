@@ -14,28 +14,38 @@ main-content: |
 
   Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
 pushed: |
-  Before we being fixing a terrible commit message that you have pushed to the remote, the risks should be identified. Fixing a commit message that you have pushed is going to require the use of the `--force` modifier which can cause some **serious** problems for other collaborators on your project. If knowing that fixing your commit message could cause problems doesn't trouble you, lets get started.
+  Before you begin worrying about that terrible commit message you have pushed to the remote, let's talk about the risks associated with fixing it. Fixing a commit message you have already pushed is going to require you to use `git push --force`. `push --force` can cause some **serious** problems for other collaborators on your project. The embarrassment of a mis-spelled word is nothing compared to the embarrassment of messing up your collaborators. If your commit is really that bad, or if causing problems doesn't trouble you, keep reading.
 
-  If you aren't fixing your last commit, skip down some. If you are fixing the **last** commit you made you can do the following:
+  Start by asking yourself:
 
-   1. Ensure you are on the correct `branch` and enter: `git commit --amend`.
-   1. Instead of having the commit message say, `adding file 6`, why not try something like `Add file 6`. Once you have entered the commit message, just close the editor.
+   > Am I trying to fix the **last** commit I made or one a few commits back?
+
+  ### Fixing the Last Commit
+
+  If you are fixing the **last** commit you made you can do the following:
+
+   1. Ensure you are on the correct `branch`
+   1. Use `git log --oneline` to ensure the commit you want to fix is at the top of the list.
+   1. Enter: `git commit --amend`.
+   1. Enter the desired commit message and close the text editor.
    1. Enter: `git push --force` to force your change to your remote.
 
   **BOOM** you just fixed your terrible commit message and you potentially caused problems for other collaborators. Congratulations!!! In all seriousness, editing a commit message might seem important at the time, but pushing a terrible commit message isn't the worst thing in the world, so it is recommended that you do this sparingly.
+
+  ### Fixing an Older Commit
 
   If you aren't fixing your **last** commit, you can perform the following...actually wait, this process is very complex and you _really_ need to figure out if you _need_ to fix those commit messages that badly.
 
   Still here? Ok, here we go:
 
    1. Ensure you are on the correct `branch` and enter: `git log --oneline`
-   1. Identify the SHA-1 hash code associated with the commit when **file 4** was committed.
-   1. Enter: `git rebase -i SHA-1`, where SHA-1 is the SHA-1 of the commit for adding **file 4**. This will cause a `rebase` window to display in `-i` (or interactive) mode.
-   1. Identify the commits you want to modify, for this example, select the commits for **adding file 5** and **adding file 6**. Replace the word `pick` with an `e` or the word `edit`. After selecting the commits, close the editor. After closing the editor, go back to the terminal to begin editing the commit messages.
-   1. To begin editing the commit message(s), enter `git commit --amend`, and edit the commit message. After editing the commit message, close your editor.
-   1. If you are happy with the message you typed, enter: `git rebase --continue`. If you need to change your commit message again, enter: `git commit --amend` and repeat these steps. You will need to perform this process of `git commit --amend`, edit the commit message, `git rebase --continue`, until you have edited each commit you marked with an `e` during the initial stage of the `rebase`.
-   1. Once you have finished editing commit messages, enter: `git rebase --continue`, and the `rebase` will finish.
-   1. After finishing the `rebase`, enter `git push --force`.
+   1. Identify the SHA-1 hash for the commit just before the one you would like to change. For this example, let's pretend we want to fix the commit for file 5, so we will pick the SHA-1 associated with the **file 4** commit.
+   1. Enter: `git rebase -i SHA-1`, where SHA-1 is the SHA-1 of the commit for adding **file 4**. The `-i` is the interactive option and will open your text editor, allowing you to modify the `rebase` script.
+   1. Identify the commits you want to modify in the list and replace the word `pick` with an `e` or the word `edit`. When you are happy with your selections, close the editor and go back to the terminal.
+   1. The rebase will stop at the first commit to be edited. To begin editing the first commit message, enter `git commit --amend`. Your text editor will open, allowing you to edit the commit message.
+   1. Close the text editor and enter: `git rebase --continue`.
+   1. Repeat the two previous steps for each commit you would like to edit.
+   1. When you have edited the last commit, the rebase will finish. Enter: `git push --force` to push your new commits to the remote.
 
 didnt-push: |
   You have a couple of options when it comes to fixing a bad commit message. First, you need to ask yourself:
