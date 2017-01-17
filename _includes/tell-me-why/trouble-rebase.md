@@ -22,6 +22,6 @@ Let's start with a fairly common use case for rebase:
 
  If we were to merge these two branches now, git would do a **fast-forward** merge, giving us a nice linear history (without the recursive merge commit).
 
- ### Rebase Interactive
+### Rebase Interactive
 
  Rebase includes an interactive option that allows us to make changes to the commits as they are being replayed. For example, we can edit our commit messages as well as combine (squash), re-order, and even delete commits.  
