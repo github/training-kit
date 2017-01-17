@@ -10,7 +10,7 @@ facilitator: false
 sidebar:
   nav: "advanced"
 main-content: |  
-  As you begin creating commits to identify the changes you are making to the files you might 'accidentally' create a commit message that is borderline atrocious; something like 'Fixed the thing'. Although you are definitely aware of the **thing** you just **fixed**, other collaborators including future you, might not know what it is you fixed and more importantly, **why** you needed to fix it. Thankfully, Git is well aware of our tendency to craft terrible commit messages and has a handful of commands that save even the vaguest commit message.
+  As you begin creating commits you might 'accidentally' create a commit message that is borderline atrocious; something like 'Fixed the thing'. Although you are definitely aware of the **thing** you just **fixed**, other collaborators (including future you) will not know what you fixed and more importantly, **why** you needed to fix it. Thankfully, Git is well aware of our tendency to craft terrible commit messages and has a handful of commands that save even the vaguest commit message.
 
   Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
 pushed: |
@@ -38,26 +38,29 @@ pushed: |
    1. After finishing the `rebase`, enter `git push --force`.
 
 didnt-push: |
-  So you have a couple of options when it comes to fixing a bad commit message that, so first, we need to identify if:
+  You have a couple of options when it comes to fixing a bad commit message. First, you need to ask yourself:
 
-   > Am I trying to fix the **last** commit I made or commit a few commits back?
+   > Am I trying to fix the **last** commit I made or one a few commits back?
 
-  If you aren't fixing your last commit, skip down some. If you are fixing the **last** commit you made you can do the following:
+  ### Fixing the Last Commit
 
-   1. Ensure you are on the correct `branch` and enter: `git commit --amend`.
+  If you are fixing the **last** commit you made you can do the following:
+
+   1. Ensure you are on the correct `branch`
+   1. Use `git log --oneline` to ensure the commit you want to fix is at the top of the list.
+   1. Enter: `git commit --amend`.
    1. Enter the desired commit message and close the text editor.
 
   **BOOM** you just fixed your terrible commit message and now no one is the wiser. Congratulations!!!
 
+  ### Fixing an Older Commit
+
   If you aren't fixing your **last** commit, you can perform the following:
 
    1. Ensure you are on the correct `branch` and enter: `git log --oneline`
-   1. Identify the SHA-1 hash code associated with the commit when **file 4** was added.
-   1. Enter the SHA-1 hash of the identified commit using the following: `git reset --soft SHA-1`, where SHA-1 is the SHA-1 of the commit for when **file 4** was added.
-   1. Remove **file6.md** from the Staging Area by entering: `git reset HEAD file6.md`.
-   1. Create a commit with **file5.md** by entering: `git commit -m "YOUR MESSAGE"`.
-   1. Add **file6.md** to the Staging Area by entering: `git add file6.md`.
-   1. Create a new commit for **file 6** by entering: `git commit -m "YOUR COMMIT MESSAGE"`.
+   1. Identify the SHA-1 hash associated with the commit just before the one you want to fix. For practice, let's use the one where **file 4** was added.
+   1. Enter `git reset --mixed SHA-1`, where SHA-1 is the SHA-1 of the commit before the one you want to fix.
+   1. The changes you made in the file 5 and file 6 commits are now sitting in your working directory. Simply re-add and re-commit the changes.
 
 show-me-how:
 tell-me-why: |
