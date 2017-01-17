@@ -38,7 +38,7 @@ didnt-push: |
     1. Enter: `git commit -m "Adding files 4, 5, and 6"`.
     1. Enter: `git log --oneline`, your commit history should be modified.
 
-    Congratulations you just combined a bunch of commits into a single commit! Now, none of the other collaborators will know that you make **way** too many commits!
+    Congratulations you just combined a bunch of commits into a single commit! Now, none of the other collaborators will know that you made **way** too many commits!
 
 show-me-how:
 tell-me-why:
