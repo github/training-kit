@@ -143,3 +143,33 @@ advanced:
       url: /git-trouble/06
     - title: "Just Make it Go Away!"
       url: /git-trouble/07
+
+open-source:
+  - title: "Start With Why"
+    url: /open-source/
+  - title: "Where to Begin"
+    url: /open-source/01
+    children:
+    - title: "Explore"
+      url: /open-source/02
+  - title: "First Steps"
+    url: /open-source/03
+    children:
+    - title: "Health Check"
+      url: /open-source/04
+  - title: "Contributing"
+      url: /open-source/05
+      children:
+    - title: "CONTRIBUTING.md"
+        url: /open-source/06
+    - title: "Being a Good Citizen"
+        url: /open-source/07
+  - title: "Staying Active"
+      url: /open-source/08
+      children:
+    - title: "The Waiting Game"
+        url: /open-source/09
+    - title: "Talking Good"
+        url: /open-source/10
+  - title: "Leaving the Nest"
+      url: /open-source/11
