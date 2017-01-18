@@ -158,18 +158,18 @@ open-source:
     - title: "Health Check"
       url: /open-source/04
   - title: "Contributing"
-      url: /open-source/05
-      children:
+    url: /open-source/05
+    children:
     - title: "CONTRIBUTING.md"
-        url: /open-source/06
+      url: /open-source/06
     - title: "Being a Good Citizen"
-        url: /open-source/07
+      url: /open-source/07
   - title: "Staying Active"
-      url: /open-source/08
-      children:
+    url: /open-source/08
+    children:
     - title: "The Waiting Game"
-        url: /open-source/09
+      url: /open-source/09
     - title: "Talking Good"
-        url: /open-source/10
+      url: /open-source/10
   - title: "Leaving the Nest"
-      url: /open-source/11
+    url: /open-source/11
