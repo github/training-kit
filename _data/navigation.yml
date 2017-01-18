@@ -10,6 +10,9 @@ main:
   - title: "Git Out of Trouble"
     beta: true
     url: /git-trouble/
+  - title: "Git to Open Source"
+    beta: true
+    url: /open-source/
   - title: "Community"
     url: /community/
 
