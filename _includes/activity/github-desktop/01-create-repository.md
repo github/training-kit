@@ -15,4 +15,4 @@ This course is going to use GitHub Pages to create your website. Click the **Tel
 1. Click **Save**.
 1. With GitHub Pages enabled, we can select a Theme. Click **Choose a theme**.
 1. Decide which theme you would like to use, and click **Select theme**.
-1. Your site is published at: USERNAME.github.io/REPONAME
+1. Your site is published at: USERNAME.github.io/REPONAME.
