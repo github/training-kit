@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/01-create-repository.md
-show-me-how: images/gifs/github-cli/create-repository.gif
+show-me-how: images/gifs/github-desktop/create-repo.gif
 tell-me-why:
   includes:
     - tell-me-why/create-remote.md
