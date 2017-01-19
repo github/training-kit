@@ -1,5 +1,13 @@
 language: ruby
 rvm:
   - 2.0
+  
+install:
+- . $HOME/.nvm/nvm.sh
+- nvm install stable
+- nvm use stable
+- npm install writewell -g
+
 script:
   - script/cibuild
+  - writewell -l list-of-files.txt
