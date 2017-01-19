@@ -8,8 +8,8 @@ before_install:
 - nvm use stable
 
 before_script:
-  - npm install -g writewell
+  - npm install writewell
 
 script:
   - script/cibuild
-  - writewell -l script/list-of-files.txt
+  - npm test
