@@ -3,12 +3,13 @@ rvm:
   - 2.0
 
 before_install:
-- . $HOME/.nvm/nvm.sh
-- nvm install stable
-- nvm use stable
+  - . $HOME/.nvm/nvm.sh
+  - nvm install 6
+  - npm install -g npm
+  - nvm use 6
 
 before_script:
-  - npm install writewell
+  - npm install writewell -g
 
 script:
   - script/cibuild
