@@ -6,8 +6,8 @@ install:
 - . $HOME/.nvm/nvm.sh
 - nvm install stable
 - nvm use stable
-- npm install writewell -g
+# - npm install writewell -g
 
 script:
   - script/cibuild
-  - writewell -l script/list-of-files.txt
+ # - writewell -l script/list-of-files.txt
