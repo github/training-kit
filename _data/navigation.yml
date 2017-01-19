@@ -10,6 +10,8 @@ main:
   - title: "Git Out of Trouble"
     beta: true
     url: /git-trouble/
+  - title: "Training Path"
+    url: /path/  
   - title: "Community"
     url: /community/
 
