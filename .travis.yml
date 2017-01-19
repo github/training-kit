@@ -1,8 +1,8 @@
 language: ruby
 rvm:
   - 2.0
-  
-install:
+
+before_install:
 - . $HOME/.nvm/nvm.sh
 - nvm install stable
 - nvm use stable
@@ -12,4 +12,4 @@ before_script:
 
 script:
   - script/cibuild
- # - writewell -l script/list-of-files.txt
+  - writewell -l script/list-of-files.txt
