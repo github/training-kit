@@ -11,6 +11,8 @@ echo "hostname: $(hostname)"
 echo "pwd: $(pwd)"
 git --version
 
+writewell -l list-of-files.txt
+
 script/bootstrap
 
 bundle exec rake test
