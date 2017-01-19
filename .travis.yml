@@ -10,4 +10,4 @@ install:
 
 script:
   - script/cibuild
-  - writewell -l list-of-files.txt
+  - writewell -l script/list-of-files.txt
