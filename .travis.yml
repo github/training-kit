@@ -2,14 +2,12 @@ language: ruby
 rvm:
   - 2.0
 
-before_install:
-  - . $HOME/.nvm/nvm.sh
-  - nvm install 6
-  - npm install -g npm
-  - nvm use 6
+env:
+  - TRAVIS_NODE_VERSION="6"
 
-before_script:
-  - npm install writewell -g
+install:
+  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
+  - npm install
 
 script:
   - script/cibuild
