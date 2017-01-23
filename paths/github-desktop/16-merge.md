@@ -11,11 +11,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/16-merge-pr.md
-
-## We :heart: Feedback
-
-Please take literally less than a minute to let us know what you think of this on-demand training and sign up for updates when we release new classes. [Start Survey](http://www.surveygizmo.com/s3/3288550/desktop)!
-
+    - activity/github-desktop/desktopsurvey.md
 show-me-how: images/gifs/github-desktop/merge.gif
 tell-me-why:
   includes:
