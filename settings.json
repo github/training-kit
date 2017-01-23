@@ -1,7 +1,6 @@
 {
   "dictionaries": {
     "build-in": ["en_US", "en_GB"]
-    // "custom": ["training-docs.dic"]
   },
   "selectors": {
     "whitelist": "p, li, h1, h2, h3, h4, th, td, dl, figcaption",
