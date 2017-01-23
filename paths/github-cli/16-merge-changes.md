@@ -11,7 +11,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/16-merge-pr.md
-    - activity/github-cli/clisurvey.md
+    - activity/github-CLI/clisurvey.md
 show-me-how: images/gifs/github-cli/merge-pull-request.gif
 tell-me-why:
   includes:
