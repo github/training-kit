@@ -11,7 +11,7 @@ echo "hostname: $(hostname)"
 echo "pwd: $(pwd)"
 git --version
 
-writewell -l list-of-files.txt
+writewell -l list-of-files.txt -c settings.json
 
 script/bootstrap
 
