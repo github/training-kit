@@ -11,7 +11,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/01-join-intro-repo.md
-show-me-how: "images/gifs/intro/join-repo-make-issue.gif"
+show-me-how: "images/gifs/intro/join-repo-make-issue-introduction.gif"
 tell-me-why: |
 
   ## Using GitHub Issues
