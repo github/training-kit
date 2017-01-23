@@ -17,7 +17,7 @@ main-content: |
 
   ## We :heart: Feedback
 
-  Please take a moment to let us know what you think of this on-demand training and sign up for updates when we release new classes. [Start Survey](http://www.surveygizmo.com/s3/3288550/intro-to-github)!
+  Please take _literally less than a minute_ to let us know what you think of this course. You also have the option to opt-in for updates on future classes. [Start Survey](http://www.surveygizmo.com/s3/3288550/intro-to-github)!
 
   ## What's Next?
 
