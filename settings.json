@@ -1,7 +1,7 @@
 {
   "dictionaries": {
     "build-in": ["en_US", "en_GB"],
-    "custom": ["assets/dic/extra-words.dic"]
+    "custom": ["assets/dictionary/extra-words.dic"]
   },
   "selectors": {
     "whitelist": "p, li, h1, h2, h3, h4, th, td, dl, figcaption",
