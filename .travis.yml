@@ -7,7 +7,7 @@ rvm:
 
 cache:
   bundler: true
-  directories
+  directories:
     - node_modules
 
 env:
