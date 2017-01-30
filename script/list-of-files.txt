@@ -1,2 +1,1 @@
 ./README.md
-find . -type f -name "*.html"
