@@ -1,2 +1,3 @@
 ./README.md
-./_site/*.html
+./_site/CONTRIBUTING.md
+./_site/index.html
