@@ -14,5 +14,4 @@ install:
 
 script:
   - script/cibuild
-  - ls
   - npm test
