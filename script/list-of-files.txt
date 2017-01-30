@@ -1,3 +1,4 @@
 ./README.md
 ./_site/CONTRIBUTING.md
 ./_site/index.html
+find . -type f -name "*.html"
