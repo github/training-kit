@@ -10,11 +10,13 @@ ruby -v
 echo "hostname: $(hostname)"
 echo "pwd: $(pwd)"
 git --version
+echo "node: $(node --version)"
+echo "npm: $(npm --version)"
 
 script/bootstrap
 
-cd /_site
-find . -type f -name "*.html" >> ./script/list-of-files.txt
-cd ..
-
 bundle exec rake test
+
+find _site -type f -name "*.html" >> ./script/list-of-files.txt
+
+bundle exec npm test

@@ -4,6 +4,7 @@ _site/
 /vendor/gems/
 /bin/
 /.bundle/
+/node_modules/
 .sass-cache/
 *.*~
 _release
