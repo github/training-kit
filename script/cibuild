@@ -15,6 +15,4 @@ script/bootstrap
 
 bundle exec rake test
 
-cd /_site
-find . -type f -name "*.html" >> ./script/list-of-files.txt
-cd ..
+find ./_site/ -type f -name "*.html" >> ./script/list-of-files.txt
