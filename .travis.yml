@@ -14,4 +14,7 @@ install:
 
 script:
   - script/cibuild
+  - cd /_site
+  - find . -type f -name "*.html" >> ./script/list-of-files.txt
+  - cd ..
   - npm test
