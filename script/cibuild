@@ -17,6 +17,6 @@ script/bootstrap
 
 bundle exec rake test
 
-find _site -type f -name "*.html" >> ./script/list-of-files.txt
+find ./_site -type d \( -name assets -o -name _javascript \) -prune -o -name "*.html" -print >> ./script/list-of-files.txt
 
 bundle exec npm test
