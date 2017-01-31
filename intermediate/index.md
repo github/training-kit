@@ -363,7 +363,7 @@ The default line-level difference indicators are sometimes insufficient for pros
 $ git diff --color-words
 ```
 
-Diff, by default, performs comparisons on all modified files. If inspection of just a subset is called for, `diff` accepts a precise or wildcard filename or path as an option.
+Diff, by default, performs comparisons on all modified files. If inspection of just a subset is called for, `diff` accepts a precise or wild-card filename or path as an option.
 
 ```shell
 # By specific file
@@ -620,7 +620,7 @@ $ git fetch
 $ git branch -r
 ```
 
-Git also facilitates ad hoc branch retrieval to `FETCH_HEAD` with or without a remote:
+Git also facilitates ad-hoc branch retrieval to `FETCH_HEAD` with or without a remote:
 
 ```shell
  Temporarily retrieve a repository's branch from a remote

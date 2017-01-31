@@ -47,7 +47,7 @@ byline: Discovering the GitHub collaboration platform
 
 
 ### GitHub visualizations
-* Comparing/Diff-ing
+* Comparing
   * Code
   * Prose
   * Images
@@ -117,7 +117,7 @@ The GitHub collaboration platform facilitates:
 * Web interface and GUI client
 * Clone command explanation
 
-### Repository init-ing
+### Repository initializing
 <iframe src="//player.vimeo.com/video/88313612" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
@@ -131,7 +131,7 @@ The GitHub collaboration platform facilitates:
 * Describe the distinction of one-file-at-a-time on Web Flow
 * Editing files and small changes on the web
 * Changing paths, filenames, content
-* Introducing new files or sub-foldered content
+* Introducing new files or subdirectory content
 * Removing unwanted files permanently
 
 
@@ -157,7 +157,7 @@ The GitHub collaboration platform facilitates:
 
 * Working with local files
 * Create new file with text editor
-* Review new files in GHfD that are unversioned
+* Review new files in tool that are not versioned
 * Commit the new file(s)
 
 * Editing content of track file(s)
@@ -227,7 +227,7 @@ The GitHub collaboration platform facilitates:
 
 * Describe collaboration/review process with Pull Requests
 * With a branch and commit(s), open a Pull Request
-* Assess what this means from one-collaborator repo
+* Assess what this means from one-collaborator repository
 * Describe the effort as it pertains to work in branch
 * Explain how Pull Requests "observe" any commits on that branch while open
 * Make more commits to branch through web interface

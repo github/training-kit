@@ -1,5 +1,4 @@
 166
-[source]:[destination]
 $BASE
 $REMOTE
 $LOCAL
@@ -48,6 +47,7 @@ else's
 Emoji
 FETCH_HEAD
 file(s
+file2.md
 FirstName
 geojson
 gh
@@ -66,6 +66,8 @@ gpg
 GPG
 gpg-sign
 GUI's
+GUIs
+Hard(er
 hectorsector
 Hileman
 hollenberry
@@ -82,7 +84,7 @@ LastName
 launchp4merge
 LiveLessons
 Kanban
-Kdiff
+KDiff
 ksylor
 mac.github.com
 McEfee
@@ -92,6 +94,7 @@ mergetool.keepBackup
 mergetool.p4mergetool.cmd
 mergetool.p4mergetool.trustExitCode
 message(s
+mispelled
 netrc
 nirvdrum
 NVIE
@@ -114,6 +117,7 @@ projectname
 PWD
 README.md
 rebase
+Rebasing
 reflog
 Refspec
 refspec
@@ -127,6 +131,7 @@ services.github.com
 services@github.com
 SHA-1
 someaccount@example.com
+source]:[destination
 submodule
 Submodule
 submodules
@@ -141,6 +146,7 @@ subtree
 Subtree
 subtrees
 Subtrees
+svn
 SVN2Git
 Sylor-Miller
 test_site
@@ -151,6 +157,8 @@ Untar
 unformatted
 unmerged
 Unstage
+unstaged
+Unstages
 Unstaged
 Uploader
 user.name
@@ -158,6 +166,7 @@ user.email
 user.signingkey
 usernames
 v1.0
+Vimdiff
 versioned
 versioning
 Versioning

@@ -131,7 +131,7 @@ The command line version of Git has a very light footprint. For most platforms, 
 ---
 
 {% capture lab %}
-* Describe the difference between the Git DVCS and GitHub collaboration platform
+* Describe the difference between the Git distributed version control and GitHub collaboration platform
 * Access the common project components of daily GitHub interactions
 * Utilize project management components (Issues, Milestones, Collaborators, Teams)
 * Recognize best document types for version control (code, CSV/TSV, small binaries)
@@ -168,7 +168,7 @@ The six core concepts in the GitHub ecosystem are:
 * Unsubscribing (per thread)
 * Starring repositories
 * Gist
-* Repos in themselves
+* Repositories in themselves
 * Embeddable (use with GH-pages content)
 * GitHub Flavored Markdown
 * Basics
@@ -177,7 +177,7 @@ The six core concepts in the GitHub ecosystem are:
 * Cross referencing
 * Commit referencing
 * Issue references
-* cross-repository refs org|user/repo#num
+* cross-repository refs org|user/repository
 * `README.md` in any folder level
 * `CONTRIBUTING.md` in root
 
@@ -367,7 +367,7 @@ A branch is a divergent path in the history of the code base. It may contain an 
 
 ---
 
-## Syncing local and GitHub repos
+## Syncing local and GitHub repositories
 
 ---
 
@@ -380,9 +380,9 @@ A branch is a divergent path in the history of the code base. It may contain an 
 {% capture lab %}
 1. Clone an existing GitHub repository using the GitHub for Desktop application
 2. Following the GitHub Flow pattern, create a topic branch and make commits to the local repository
-3. Review the local (unsynced) commits in history
+3. Review the local (unsynchronised) commits in history
 4. Publish the changes via the Sync button
-5. Verify the presence of the now-synced changes by refreshing the GitHub web UI of the cloned repo
+5. Verify the presence of the now-synced changes by refreshing the GitHub web UI of the cloned repository
 {% endcapture %}{% include lab %}
 
 ### Details
@@ -392,10 +392,10 @@ Optionally, the process of synchronizing can be done on the command line, in add
 
 ```
 # Retrieve GitHub changes
-git pull origin [master|branch]
+git pull origin [master]
 
 # Publish local changes
-git push origin [master|branch]
+git push origin [master]
 ```
 
 
@@ -409,7 +409,7 @@ git push origin [master|branch]
 ### Details
 GitHub enhances a traditional Git experience with visualizations typically thought of as the realm of desktop applications. Some of the visualizations we can look at today include:
 
-* Comparing/Diff-ing
+* Comparing
 * Code
 * Prose
 * Images
@@ -459,7 +459,7 @@ Similarly, 3D file viewing, and then 3D file diffing are also part of the GitHub
 ---
 
 ### Details
-A plaintext format for writing prose and documentation. In addition to the [basic formatting options](https://help.github.com/articles/markdown-basics), Markdown files hosted and viewed on GitHub can make use of the following enhancements:
+A plain-text format for writing prose and documentation. In addition to the [basic formatting options](https://help.github.com/articles/markdown-basics), Markdown files hosted and viewed on GitHub can make use of the following enhancements:
 
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
 * [Emoji](http://www.emoji-cheat-sheet.com/)

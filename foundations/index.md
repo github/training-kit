@@ -418,7 +418,7 @@ Publish and synchronize local commit history with a GitHub hosted repository fro
 2. Following the GitHub Flow pattern, create a topic branch and make commits to the local repository
 3. Review the local (unsynchronised) commits in history
 4. Publish the changes via the Sync button
-5. Verify the presence of the now-synced changes by refreshing the GitHub web UI of the cloned repo
+5. Verify the presence of the now-synced changes by refreshing the GitHub web UI of the cloned repository
 {% endcapture %}{% include lab %}
 
 ### Details

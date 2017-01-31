@@ -33,7 +33,7 @@ Notable features of SVN2Git include:
 
 Learn more about SVN2Git at the project’s official home page:
 
-[https://github.com/nirvdrum/SVN2git](https://github.com/nirvdrum/SVN2git)
+[https://github.com/nirvdrum/SVN2Git](https://github.com/nirvdrum/SVN2Git)
 {% endcapture %}
 
 <div class="col-md-6">
