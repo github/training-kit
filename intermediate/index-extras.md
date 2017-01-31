@@ -187,7 +187,7 @@ $ git clone [repository-url]
 
 ---
 
-### File lifecycle
+### File life-cycle
 
 ---
 
