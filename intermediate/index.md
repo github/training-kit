@@ -85,7 +85,7 @@ To see the current settings, individually query two configuration values:
 
 ```shell
 $ git config --global user.name
-Firstname Lastname
+FirstName LastName
 
 $ git config --global user.email
 someaccount@example.com
@@ -179,7 +179,7 @@ $ git init
 ```shell
 #Acquire with default repository name
 
-$ git clone [repository-url]
+$ git clone [repository-URL]
 ```
 
 ---
@@ -189,7 +189,7 @@ $ git clone [repository-url]
 ```
 # Acquire with preferred, optional name
 
-$ git clone [url] [optional-folder-name]
+$ git clone [URL] [optional-folder-name]
 ```
 
 ---
@@ -278,7 +278,7 @@ $ git commit -m "[your description]"
 
 ## Comparing pending and existing changes
 
-Maximize file comparison abilities of Git with historical and un-committed change review.
+Maximize file comparison abilities of Git with review of historical commits changes that haven't yet been committed.
 
 ---
 
@@ -363,7 +363,7 @@ The default line-level difference indicators are sometimes insufficient for pros
 $ git diff --color-words
 ```
 
-Diff, by default, performs comparisons on all modified files. If inspection of just a subset is called for, `diff` accepts a precise or wildcard-ed filename or path as an option.
+Diff, by default, performs comparisons on all modified files. If inspection of just a subset is called for, `diff` accepts a precise or wildcard filename or path as an option.
 
 ```shell
 # By specific file
@@ -573,7 +573,7 @@ Go beyond local history interactions and synchronize histories on an as-needed, 
 {% endcapture %}{% include lab %}
 
 ### Details
-Git is capable of working with 0 to N remotes. 0 means the local repository only knows about the local file system, 1 represents a more traditional centralized model, and 1+N is an example of the "distributed" multi-mastered facet of a DVCS.
+Git is capable of working with 0 to N remotes. 0 means the local repository only knows about the local file system, 1 represents a more traditional centralized model, and a project with multiple remotes is an example of the "distributed" multi-mastered facet of a distributed version control system.
 
 ```shell
  List remote "bookmarks", if any
@@ -620,14 +620,14 @@ $ git fetch
 $ git branch -r
 ```
 
-Git also facilitates ad-hoc branch retrieval to `FETCH_HEAD` with or without a remote:
+Git also facilitates ad hoc branch retrieval to `FETCH_HEAD` with or without a remote:
 
 ```shell
  Temporarily retrieve a repository's branch from a remote
 $ git fetch [remote] [branch]
 
  Temporarily retrieve a repository's branch from a URL
-$ git fetch [url] [branch]
+$ git fetch [URL] [branch]
 ```
 
 #### Sharing changes
@@ -687,7 +687,7 @@ $ git config alias.s "status -s"
 
 ---
 
-## Understanding versioned file lifecycle
+## Understanding versioned file life-cycle
 
 Remove, move, and rename files with full version control coverage.
 
@@ -806,20 +806,20 @@ $ git revert [commit]
 #### Reset
 ```shell
  Move current branch's HEAD to point in history
-$ git reset [commit|branch|tag]
+$ git reset [commit, branch, or tag]
 ```
 
 Reset offers a plethora of options to adjust the nuances of its restorative behavior:
 
 ```shell
  Move HEAD, keep changes in staging
-$ git reset --soft [commit|branch|tag]
+$ git reset --soft [commit, branch, or tag]
 
  Move HEAD, keep changes, clear staging area
-$ git reset --mixed [commit|branch|tag]
+$ git reset --mixed [commit, branch, or tag]
 
 # Move HEAD, discard all uncommitted changes
-$ git reset --hard [commit|branch|tag]
+$ git reset --hard [commit, branch, or tag]
 ```
 
 
@@ -835,7 +835,7 @@ Restore content from versioned history.
 {% capture lab %}
 1. Understand the side effects of `reset` and discarding commit history
 2. Using the `reflog` to review orphaned commits and past, local repository interactions
-3. Applying `reflog` commit SHAs and the `reset` to recover lost commits
+3. Applying `reflog` commit IDs and the `reset` to recover lost commits
 {% endcapture %}{% include lab %}
 
 ### Details
