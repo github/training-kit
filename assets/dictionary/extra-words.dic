@@ -1,4 +1,4 @@
-87
+95
 1:02:15
 2:15
 2:25
@@ -20,6 +20,8 @@ bobthecow
 brianamarie
 CC0-1.0
 CC0
+changeset
+changesets
 commit(s
 commit's
 config
@@ -46,16 +48,19 @@ ISSUE_TEMPLATE.md
 jekyllthemes.org
 Kanban
 ksylor
+mac.github.com
 message(s
 nirvdrum
 oneline
 OpenStreetMap
 P.S.
+POSIX
 PowerShell
 ProGit
 README.md
 reflog
 REPONAME
+SCM
 services.github.com
 services@github.com
 SHA-1
@@ -79,9 +84,12 @@ test_site
 Untar
 unformatted
 unmerged
+Unstages
 Uploader
 usernames
 v1.0
+versioned
+versioning
 Versioning
 webhook
 windows.github.com
