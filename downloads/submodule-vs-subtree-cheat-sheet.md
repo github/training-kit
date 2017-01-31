@@ -208,7 +208,7 @@ Or while in the parent directory:
 </div>
 
 <div class="col-md-12">
-<h1>Helpful Configs for Submodules</h1>
+<h1>Helpful Configurations for Submodules</h1>
 
 {% capture configs %}
 Always show the submodule log when you diff:
