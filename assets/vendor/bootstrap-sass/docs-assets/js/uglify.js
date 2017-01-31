@@ -1,5 +1,5 @@
 /** @license uglifyweb Copyright (c) 2011, The Dojo Foundation All Rights Reserved.
- * The parts that are unique to this repo (not much, just some wrapper code) are
+ * The parts that are unique to this repository (not much, just some wrapper code) are
  * released under the new BSD and MIT licenses.
  *
  * This file includes UglifyJS and some parts of es5-shim, both which have

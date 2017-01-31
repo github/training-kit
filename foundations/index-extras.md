@@ -125,7 +125,7 @@ The GitHub collaboration platform facilitates:
 ## Exploring the GitHub Web Flow
 
 
-* Use web interface for repo and the Web Flow
+* Use web interface for repository and the Web Flow
 * Edit files on web interface
 * Create a new file through web interface
 * Describe the distinction of one-file-at-a-time on Web Flow
@@ -244,7 +244,7 @@ The GitHub collaboration platform facilitates:
 * Line by line code review conversation
 * Clone locally with GHfD (optional)
 
-* Brand new repo created by Teacher
+* Brand new repository created by Teacher
 * Direct everyone to Fork the new project
 * Explain what a Fork is, its purpose, reasons
 * Demonstrate who has Forked from Network Members page
@@ -254,5 +254,5 @@ The GitHub collaboration platform facilitates:
 * Review and create local branch relating to PRs (even from Fork) ???
 * Use "Checkout this Branch for..."" to create local branch of any PR and branch
   * Show how branch cannot be synced for Forks' branches
-  * Show how branch directly on repo can be changed
+  * Show how branch directly on repository can be changed
 * Review how a Fork's branch and PR can be manipulated, merged locally into another branch, integrated, and close original PR

@@ -79,7 +79,7 @@ Anyone who clones will need to:
 
     git clone --recursive URL
 
-Anyone who already has a local copy of the repo will need to:
+Anyone who already has a local copy of the repository will need to:
 
     git submodule update --init
 

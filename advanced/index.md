@@ -358,7 +358,7 @@ $ git clean -fx
 
 ### Details
 #### Repository-specific ignores
-* Ignoring files from repo & system level
+* Ignoring files from repository & system level
 * Reviewing ignored files with custom command
 * Forcing a staging of ignored files
 

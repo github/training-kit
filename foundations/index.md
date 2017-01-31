@@ -203,7 +203,7 @@ The six core concepts in the GitHub ecosystem are:
 * Cross referencing
 * Commit referencing
 * Issue references
-* cross-repo refs org|user/repo#num
+* cross-repository refs org|user/repo#num
 * `README.md` in any folder level
 * `CONTRIBUTING.md` in root
 
@@ -298,7 +298,7 @@ Explore the process of downloading a hosted repository to a local machine, the s
 
 {% capture lab %}
 * Clone from web (Clone in Desktop button)
-* Clone via personal repo list in GitHub Desktop
+* Clone via personal repository list in GitHub Desktop
 * Clone via SSH or HTTPS URL
 {% endcapture %}{% include lab %}
 
@@ -414,7 +414,7 @@ Publish and synchronize local commit history with a GitHub hosted repository fro
 ---
 
 {% capture lab %}
-1. Clone an existing GitHub repo using the GitHub for Desktop application
+1. Clone an existing GitHub repository using the GitHub for Desktop application
 2. Following the GitHub Flow pattern, create a topic branch and make commits to the local repository
 3. Review the local (unsynced) commits in history
 4. Publish the changes via the Sync button

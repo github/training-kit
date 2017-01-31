@@ -108,7 +108,7 @@ $ git config user.email "[youremail@yourdomain.country]"
 ```
 
 #### Scopes
-Git configuration can be set at one of the three aforementioned levels.  The most common is `global`, and is used for all cross-repo but per-user settings.
+Git configuration can be set at one of the three aforementioned levels.  The most common is `global`, and is used for all cross-repository but per-user settings.
 
 Level | Precedence | Location
 --- | --- | ---
@@ -573,7 +573,7 @@ Go beyond local history interactions and synchronize histories on an as-needed, 
 {% endcapture %}{% include lab %}
 
 ### Details
-Git is capable of working with 0 to N remotes. 0 means the local repo only knows about the local file system, 1 represents a more traditional centralized model, and 1+N is an example of the "distributed" multi-mastered facet of a DVCS.
+Git is capable of working with 0 to N remotes. 0 means the local repository only knows about the local file system, 1 represents a more traditional centralized model, and 1+N is an example of the "distributed" multi-mastered facet of a DVCS.
 
 ```shell
  List remote "bookmarks", if any
@@ -834,7 +834,7 @@ Restore content from versioned history.
 
 {% capture lab %}
 1. Understand the side effects of `reset` and discarding commit history
-2. Using the `reflog` to review orphaned commits and past, local repo interactions
+2. Using the `reflog` to review orphaned commits and past, local repository interactions
 3. Applying `reflog` commit SHAs and the `reset` to recover lost commits
 {% endcapture %}{% include lab %}
 
