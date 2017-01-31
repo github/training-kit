@@ -10,6 +10,12 @@
   "write-good": {
     "weasel": false,
     "passive": false,
-    "tooWordy": false
+    "tooWordy": false,
+    "illusion": false,
+    "so": false,
+    "thereIs": false,
+    "adverb": false,
+    "tooWordy": false,
+    "cliches": false
   }
 }
