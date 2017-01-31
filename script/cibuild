@@ -17,7 +17,7 @@ script/bootstrap
 
 bundle exec rake test
 
-find ./_site -type d \( -path assets -o -path _javascript -o -path downloads \) -prune -o -name "*.html" -print >> ./script/list-of-files.txt
-find ./_site/downloads -type d \( -path ar -o -path bn_BD -o -path de -o -path es_ES -o -path fr -o -path it -o -path ja -o -path kr -o -path pt_BR -o -path pt_PT -o -path sk -o -path zh_CN \) -prune -o -name "*.html" -print >> ./script/list-of-files.txt
+find ./_site -type d \( -name assets -o -name _javascript -o -name downloads \) -prune -o -name "*.html" -print >> ./script/list-of-files.txt
+find ./_site/downloads -type d \( -name ar -o -name bn_BD -o -name de -o -name es_ES -o -name fr -o -name it -o -name ja -o -name kr -o -name pt_BR -o -name pt_PT -o -name sk -o -name zh_CN \) -prune -o -name "*.html" -print >> ./script/list-of-files.txt
 
 bundle exec npm test
