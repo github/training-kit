@@ -159,7 +159,7 @@ Organizing history:
 
 ---
 
-Acquiring a repo:
+Acquiring a repository:
 
 ```shell
 $ git clone [repository-url]
