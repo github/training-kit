@@ -161,7 +161,7 @@ The GitHub collaboration platform facilitates:
 * Commit the new file(s)
 
 * Editing content of track file(s)
-* Examining differences in GHfD
+* Examining differences
 * Committing changes as-needed
 
 
@@ -201,7 +201,7 @@ The GitHub collaboration platform facilitates:
 * Allowing better code review
 
 * Committing thus far only to "master" branch
-* Exploring local branches with GHfD
+* Exploring local branches
 * Creating local branch
 * Authoring new files, committing
 * Switching branches to show how working tree is updated
@@ -242,7 +242,7 @@ The GitHub collaboration platform facilitates:
 * Discuss
 * Animated GIF
 * Line by line code review conversation
-* Clone locally with GHfD (optional)
+* Clone locally (optional)
 
 * Brand new repository created by Teacher
 * Direct everyone to Fork the new project
@@ -251,7 +251,7 @@ The GitHub collaboration platform facilitates:
 * GitHub Student creates a Fork to follow along
 * Perform the same branching, committing pattern
 * Open a Pull Request and see the "linkage"
-* Review and create local branch relating to PRs (even from Fork) ???
+* Review and create local branch relating to pull requests (even from Fork) ???
 * Use "Checkout this Branch for..."" to create local branch of any PR and branch
   * Show how branch cannot be synced for Forks' branches
   * Show how branch directly on repository can be changed
