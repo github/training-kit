@@ -13,8 +13,13 @@ git --version
 echo "node: $(node --version)"
 echo "npm: $(npm --version)"
 
-script/bootstrap
+# script/bootstrap
 
-bundle exec rake test
+# bundle exec rake test
 
-script/writewell; ./node_modules/.bin/writewell -c settings.json -l script/writewell-files.txt
+script/writewell
+
+writewell=$(which writewell)
+echo "${writewell}"
+
+${writewell} -c settings.json -l script/writewell-files.txt
