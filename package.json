@@ -20,7 +20,7 @@
     "url": "https://github.com/github/training-kit/issues"
   },
   "scripts": {
-    "test": "writewell -c settings.json -l script/list-of-files.txt"
+    "test": "writewell -c settings.json -l script/writewell-files.txt"
   },
   "dependencies": {
     "writewell": "^0.7.1"

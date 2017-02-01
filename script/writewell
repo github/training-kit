@@ -26,6 +26,6 @@ Dir['./_site/**/*.html'].each do |filename|
   }
 end
 
-File.open('./script/list-of-files.txt', 'w') do |f|
+File.open('./script/writewell-files.txt', 'w') do |f|
   whitelist.each { |element| f.puts(element) }
 end

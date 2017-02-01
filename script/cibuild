@@ -17,4 +17,4 @@ script/bootstrap
 
 bundle exec rake test
 
-script/writegoodfiles; ./node_modules/.bin/writewell -c settings.json -l script/list-of-files.txt
+script/writewell; ./node_modules/.bin/writewell -c settings.json -l script/writewell-files.txt
