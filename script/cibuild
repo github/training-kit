@@ -13,9 +13,9 @@ git --version
 echo "node: $(node --version)"
 echo "npm: $(npm --version)"
 
-# script/bootstrap
+script/bootstrap
 
-# bundle exec rake test
+bundle exec rake test
 
 script/writewell
 
