@@ -2,24 +2,43 @@
 
 set -e
 
-# setup environment
+# GC customizations
+export RUBY_GC_MALLOC_LIMIT=79000000
+export RUBY_GC_HEAP_INIT_SLOTS=800000
+export RUBY_HEAP_FREE_MIN=100000
+export RUBY_HEAP_SLOTS_INCREMENT=400000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+
 export PATH="/usr/share/rbenv/shims:$PATH"
+export RACK_ROOT=$(cd "$(dirname $0)"/.. && pwd)
+export RACK_ENV="test"
+export RAILS_ENV="test"
+export RBENV_VERSION="2.2.3"
+
+# clean out the ruby environment
+export RUBYLIB=
+export RUBYOPT=
 
 # write some debug info
 ruby -v
 echo "hostname: $(hostname)"
 echo "pwd: $(pwd)"
 git --version
-echo "node: $(node --version)"
-echo "npm: $(npm --version)"
 
+# bootstrap gem environment changes
+cd "$RACK_ROOT"
 script/bootstrap
 
-bundle exec rake test
-
+# build whitelist
 script/writewell
 
-writewell=$(which writewell)
-echo "${writewell}"
+# run rake tests
+bundle exec rake test
 
+writewell=$(which writewell)
+echo "node: $(node --version)"
+echo "npm: $(npm --version)"
+echo "writewell: ${writewell}"
+
+# run writewell test
 ${writewell} -c settings.json -l script/writewell-files.txt

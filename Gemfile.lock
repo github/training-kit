@@ -145,9 +145,10 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  html-pipeline
   html-proofer
   rack-contrib (~> 1.1.0)
   rake
 
 BUNDLED WITH
-   1.12.0
+   1.14.3
