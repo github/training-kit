@@ -19,7 +19,7 @@ main-content: |
 
   **You**: _Why should I spend the time? What's at the end of all this?_
 
-  Think of this course as the instruction book for opening doors to any field that you'd like to learn more about or contribute to (when you're ready - no rush).
+  Think of this course as the instruction book for opening doors to any computerized field that you'd like to learn more about or contribute to (when you're ready - no rush).
 
   Some cool things that are Open Sourced (and on GitHub):
 
@@ -57,5 +57,5 @@ tell-me-why: |
 
   And even though his change isn't the most inspiring change, the story is what carries. This happened a year ago, and is something that his friends still talk about. And now that story is here, serving as a small inspiration that has the potential to impact anyone who decided to take this course and read this section, before making their own commits and sharing their own stories. **cough** _Butterfly Effect_ **cough**  
 
-  Where do you want your story to start? 
+  Where do you want your story to start?
 ---
