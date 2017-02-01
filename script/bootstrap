@@ -4,7 +4,6 @@ set -e
 export CC=gcc
 
 echo "==> Installing gem dependencies…"
-
 bundle check --path vendor/gems 2>&1 > /dev/null || {
   bundle install --binstubs bin --path vendor/gems --local --quiet
 }
@@ -12,3 +11,6 @@ bundle check --path vendor/gems 2>&1 > /dev/null || {
 echo "==> Cloning into submodules"
 git submodule init
 git submodule update
+
+echo "==> Installing node_modules…"
+npm install
