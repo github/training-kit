@@ -43,6 +43,7 @@ open-source: |
   Fun fact, Wikipedia also thrives and benefits from the principles of Open Source. In that spirit, I'll link you to [this article](https://en.wikipedia.org/wiki/Butterfly_effect), which details the Butterfly Effect.  
 
   **TL;DR**
+
   >The butterfly effect is the concept that small causes can have large effects. Initially, it was used with weather prediction but later the term became a metaphor used in and out of science.
 
 
@@ -63,7 +64,7 @@ tell-me-why: |
 
   That's it! But you know what? Bryan can now say that he is a contributor to Google. Also, this is actually a true story. He's a real person with a real commit to Google, and now works for Uber.
 
-  And even though his change isn't the most inspiring change, the story is what carries. This happened a year ago, and is something that his friends still talk about. And now that story is here, serving as a small inspiration that has the potential to impact anyone who decided to take this course and read this section, before making their own commits and sharing their own stories. 
+  And even though his change isn't the most inspiring change, the story is what carries. This happened a year ago, and is something that his friends still talk about. And now that story is here, serving as a small inspiration that has the potential to impact anyone who decided to take this course and read this section, before making their own commits and sharing their own stories.
 
   **cough** _Butterfly Effect_ **cough**  
 
