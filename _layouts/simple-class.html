@@ -81,6 +81,23 @@ header:
           </div>
         {% endif %}
 
+        {% if page.open-source %}
+          <div class="notice--danger">
+          <details>
+            <summary>Open Sources</summary>
+            <hr>
+            {% if page.open-source.includes %}
+              {% for child in page.open-source.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            {{ page.open-source | markdownify }}
+            {% endif %}
+          </details>
+          </div>
+        {% endif %}
+
         {% if page.refresh %}
           <div class="notice--primary">
           <details>
