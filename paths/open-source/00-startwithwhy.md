@@ -35,6 +35,8 @@ main-content: |
   - Contribute to projects (whether this is code or something else)
   - Get involved in communities
 
+  If you've never interacted with GitHub at all, we highly recommend taking our [introductory course](https://services.github.com/on-demand/intro-to-github/) before going any further. 
+
 open-source: |
   This is where we'll quote or reference relevant resources that we like, but didn't write.
 
