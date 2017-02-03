@@ -23,6 +23,9 @@ main-content: |
       - [up-for-grabs](http://up-for-grabs.net/#/tags/) - an aggregated list of repositories specifically seeking new contributors.
       - [your-first-pr](http://yourfirstpr.github.io/) - a community driven issue [collection](https://github.com/yourfirstpr/yourfirstpr.github.io/issues) for finding good starter projects.
       - [first-timers-only](http://www.firsttimersonly.com/) - Another [label](https://github.com/search?q=label%3Afirst-timers-only&state=open&type=Issues) that helps you find your feet. This one has a twitter [bot](https://twitter.com/first_tmrs_only).
+    - Events:
+      - If you're reading this in October, you can participate in [Hacktoberfest](https://hacktoberfest.digitalocean.com/) and get some free swag! This also has feature projects year round. 
+      - If you're reading this in December, you can participate in [24 Pull Requests](https://24pullrequests.com/), which will still point you to resources year round.
 
 
   Have a few tabs open? I hope so! On we go!
