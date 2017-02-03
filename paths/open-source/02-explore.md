@@ -24,7 +24,7 @@ main-content: |
       - [your-first-pr](http://yourfirstpr.github.io/) - a community driven issue [collection](https://github.com/yourfirstpr/yourfirstpr.github.io/issues) for finding good starter projects.
       - [first-timers-only](http://www.firsttimersonly.com/) - Another [label](https://github.com/search?q=label%3Afirst-timers-only&state=open&type=Issues) that helps you find your feet. This one has a twitter [bot](https://twitter.com/first_tmrs_only).
     - Events:
-      - If you're reading this in October, you can participate in [Hacktoberfest](https://hacktoberfest.digitalocean.com/) and get some free swag! This also has feature projects year round. 
+      - If you're reading this in October, you can participate in [Hacktoberfest](https://hacktoberfest.digitalocean.com/) and get some free swag! This also has feature projects year round.
       - If you're reading this in December, you can participate in [24 Pull Requests](https://24pullrequests.com/), which will still point you to resources year round.
 
 
@@ -33,6 +33,7 @@ main-content: |
 open-source: |
   - A [list](https://github.com/lucev/beginner-friendly) of beginner-friendly projects, with a Ruby theme.
   - Another great [list](https://github.com/MunGell/awesome-for-beginners) inspired by some of the projects above.
+  - For the advanced users, check out [Code Triage](https://www.codetriage.com/), which will deliver an open issue to your inbox every day. 
 
 show-me-how:
 tell-me-why: |
