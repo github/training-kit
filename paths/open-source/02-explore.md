@@ -33,9 +33,10 @@ main-content: |
 open-source: |
   - A [list](https://github.com/lucev/beginner-friendly) of beginner-friendly projects, with a Ruby theme.
   - Another great [list](https://github.com/MunGell/awesome-for-beginners) inspired by some of the projects above.
-  - For the advanced users, check out [Code Triage](https://www.codetriage.com/), which will deliver an open issue to your inbox every day. 
+  - For the advanced users, check out [Code Triage](https://www.codetriage.com/), which will deliver an open issue to your inbox every day.
 
 show-me-how:
+ - Nice to have .gif's for using search? 
 tell-me-why: |
 
 ---
