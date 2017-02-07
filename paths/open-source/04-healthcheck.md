@@ -24,7 +24,7 @@ main-content: |
 
   - [This](http://isitmaintained.com/) link helps you assess the average time it takes to close an issue, and how many issues in total are open.
     - To be fair, this isn't always the best way to assess a repository. Sometimes issues stay open for a long time to indicate that there aren't enough contributors.
-  - Health Check (Ask Katrina because I can't find it)
+  - [This](https://sarahsharp.github.io/foss-heartbeat/) resource helps you assess community involvement within a repository.
 
 open-source: |
 
@@ -68,6 +68,8 @@ open-source: |
   - Do maintainers thank people for their contributions?
 
 show-me-how:
+ - Git Health Check Overview Video
+ - Foss Heartbeat Video
 tell-me-why: |
 
 ---
