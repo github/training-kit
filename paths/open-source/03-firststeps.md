@@ -14,8 +14,7 @@ main-content: |
 
   Now, we're dedicating a whole page to stress how important it is that you do that. The last thing we want is for you to be overwhelmed with GitHub/Git AND how to make a contribution at the same time.
 
-  If you have a good understanding of a GitHub repository, let's carry on. 
-show-me-how:
+  If you have a good understanding of a GitHub repository, let's carry on.
 tell-me-why: |
 
 ---
