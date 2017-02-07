@@ -36,7 +36,8 @@ open-source: |
   - For the advanced users, check out [Code Triage](https://www.codetriage.com/), which will deliver an open issue to your inbox every day.
 
 show-me-how:
- - Nice to have .gif's for using search? 
+ - Nice to have .gif's for using search?
+ - Video detailing searching and other resources 
 tell-me-why: |
 
 ---
