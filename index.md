@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 
-excerpt: "You're in control. We're with you along the way."
+excerpt: "Youre in control. We're with you along the way."
 feature_row:
   - icon: fa fa-cubes
     title: "Start Learning"
