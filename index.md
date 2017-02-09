@@ -7,7 +7,7 @@ header:
 excerpt: "Youre in control. We're with you along the way."
 feature_row:
   - icon: fa fa-cubes
-    title: "Start Learning"
+    title: "Start Lening"
     excerpt: "Whether you learn best by reading, by example, or by doing, we've got you covered."
     url: "/intro-to-github/"
     btn_label: "Get Started"
