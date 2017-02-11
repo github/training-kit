@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Merge Your PR
-permalink: /github-desktop/16/
+permalink: /github-desktop/17/
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

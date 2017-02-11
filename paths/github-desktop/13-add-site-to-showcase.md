@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Add Your Site to the Showcase
-permalink: /github-desktop/12/
-next-page: /github-desktop/13/
+permalink: /github-desktop/13/
+next-page: /github-desktop/14/
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

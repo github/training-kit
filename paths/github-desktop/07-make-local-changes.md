@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Make Local Changes
-permalink: /github-desktop/06/
-next-page: /github-desktop/07/
+permalink: /github-desktop/07/
+next-page: /github-desktop/08/
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

@@ -11,7 +11,7 @@ main:
     beta: true
     url: /git-trouble/
   - title: "Training Path"
-    url: /path/  
+    url: /path/
   - title: "Community"
     url: /community/
 
@@ -66,32 +66,34 @@ github-desktop-nav:
       url: /github-desktop/02/
     - title: "Create the Remote Repository"
       url: /github-desktop/03/
-    - title: "Clone the Repository"
+    - title: "Choose a Theme"
       url: /github-desktop/04/
-    - title: "Create Local Branches"
+    - title: "Clone the Repository"
       url: /github-desktop/05/
-    - title: "Make Local Changes"
+    - title: "Create Local Branches"
       url: /github-desktop/06/
-    - title: "Add Local Commits"
+    - title: "Make Local Changes"
       url: /github-desktop/07/
-    - title: "Open a Pull Request"
+    - title: "Add Local Commits"
       url: /github-desktop/08/
-    - title: "Merge Your Pull Request"
+    - title: "Open a Pull Request"
       url: /github-desktop/09/
-    - title: "View Your site"
+    - title: "Merge Your Pull Request"
       url: /github-desktop/10/
-    - title: "Keep Things in Sync"
+    - title: "View Your site"
       url: /github-desktop/11/
-    - title: "Add Your Site to the Showcase"
+    - title: "Keep Things in Sync"
       url: /github-desktop/12/
-    - title: "Review the local workflow"
+    - title: "Add Your Site to the Showcase"
       url: /github-desktop/13/
-    - title: "Review Pushing and Opening Pull Requests"
+    - title: "Review the local workflow"
       url: /github-desktop/14/
-    - title: "Let's collaborate!"
+    - title: "Review Pushing and Opening Pull Requests"
       url: /github-desktop/15/
-    - title: "Merge Your PR"
+    - title: "Let's collaborate!"
       url: /github-desktop/16/
+    - title: "Merge Your PR"
+      url: /github-desktop/17/
 
 github-cli:
   - title: "Welcome"
