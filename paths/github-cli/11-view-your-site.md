@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: View Your Site
-permalink: /github-cli/10
-next-page: /github-cli/11
+permalink: /github-cli/11
+next-page: /github-cli/12
 facilitator: false
 sidebar:
   nav: "github-cli"

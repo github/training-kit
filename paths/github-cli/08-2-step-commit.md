@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Add Local Commits
-permalink: /github-cli/07
-next-page: /github-cli/08
+permalink: /github-cli/08
+next-page: /github-cli/09
 facilitator: false
 sidebar:
   nav: "github-cli"

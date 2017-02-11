@@ -102,32 +102,34 @@ github-cli:
     url: /github-cli/02
   - title: "Create the Remote Repository"
     url: /github-cli/03
-  - title: "Clone the Repository"
+  - title: "Choose a Theme"
     url: /github-cli/04
-  - title: "Create Local Branches"
+  - title: "Clone the Repository"
     url: /github-cli/05
-  - title: "Make Local Changes"
+  - title: "Create Local Branches"
     url: /github-cli/06
-  - title: "Add Local Commits"
+  - title: "Make Local Changes"
     url: /github-cli/07
-  - title: "Open a Pull Request"
+  - title: "Add Local Commits"
     url: /github-cli/08
-  - title: "Merge Your Pull Request"
+  - title: "Open a Pull Request"
     url: /github-cli/09
-  - title: "View Your site"
+  - title: "Merge Your Pull Request"
     url: /github-cli/10
-  - title: "Keep Things in Sync"
+  - title: "View Your site"
     url: /github-cli/11
-  - title: "Add Your Site to the Showcase"
+  - title: "Keep Things in Sync"
     url: /github-cli/12
-  - title: "Review the Local Workflow"
+  - title: "Add Your Site to the Showcase"
     url: /github-cli/13
-  - title: "Review Pushing and Opening Pull Requests"
+  - title: "Review the Local Workflow"
     url: /github-cli/14
-  - title: "Let's Collaborate!"
+  - title: "Review Pushing and Opening Pull Requests"
     url: /github-cli/15
-  - title: "Merge Your PR"
+  - title: "Let's Collaborate!"
     url: /github-cli/16
+  - title: "Merge Your PR"
+    url: /github-cli/17
 
 advanced:
   - title: "Welcome"

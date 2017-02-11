@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Let's Collaborate!
-permalink: /github-cli/15
-next-page: /github-cli/16
+permalink: /github-cli/16
+next-page: /github-cli/17
 facilitator: false
 sidebar:
   nav: "github-cli"
