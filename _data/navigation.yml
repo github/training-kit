@@ -11,7 +11,7 @@ main:
     beta: true
     url: /git-trouble/
   - title: "Training Path"
-    url: /path/  
+    url: /path/
   - title: "Community"
     url: /community/
 
@@ -24,28 +24,26 @@ intro-nav:
     url: /intro-to-github/01/
   - title: "Join the Class Repository"
     url: /intro-to-github/02/
-  - title: "Manage Notifications"
-    url: /intro-to-github/03/
   - title: "Exploring the Repository"
-    url: /intro-to-github/04/
+    url: /intro-to-github/03/
   - title: "Using GitHub Flow"
-    url: /intro-to-github/05/
+    url: /intro-to-github/04/
   - title: "Creating a Branch"
-    url: /intro-to-github/06/
+    url: /intro-to-github/05/
   - title: "Find Your Coordinates"
-    url: /intro-to-github/07/
+    url: /intro-to-github/06/
   - title: "Working on GitHub"
-    url: /intro-to-github/08/
+    url: /intro-to-github/07/
   - title: "Creating a Pull Request"
-    url: /intro-to-github/09/
+    url: /intro-to-github/08/
   - title: "Collaborating on GitHub"
-    url: /intro-to-github/10/
+    url: /intro-to-github/09/
   - title: "Editing Files"
-    url: /intro-to-github/11/
+    url: /intro-to-github/10/
   - title: "Merging Pull Requests"
-    url: /intro-to-github/12/
+    url: /intro-to-github/11/
   - title: "Celebrate"
-    url: /intro-to-github/13/
+    url: /intro-to-github/12/
 
 gh-pages:
   - title: "Introduction to GitHub Pages"

@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Exploring the Repository
-permalink: /intro-to-github/04/
-next-page: /intro-to-github/05/
+permalink: /intro-to-github/03/
+next-page: /intro-to-github/04/
 sidebar:
   nav: "intro-nav"
 main-content: |
