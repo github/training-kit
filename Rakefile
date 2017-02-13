@@ -9,8 +9,6 @@ desc "Runs the tests!"
 task :test do
   require "html-proofer"
 
-  sh "bundle exec jekyll build"
-
   File.readlines("script/writewell-files.txt").each do |line|
     HTMLProofer.check_file(line.delete!("\n"), {
       :empty_alt_ignore => true,
