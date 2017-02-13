@@ -10,6 +10,7 @@ facilitator: false
 sidebar:
   nav: "open-source"
 main-content: |
+  Once you decide to commit to a repository, it's important to briefly look over the scope of the project.
 
 show-me-how:
 tell-me-why: |
