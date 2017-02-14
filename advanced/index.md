@@ -173,9 +173,6 @@ $ git log --oneline --left-right master..other
 $ git log --oneline --left-right master...other
 ```
 
-### Videos
-<iframe src="//player.vimeo.com/video/95811891" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 
 ---
 
