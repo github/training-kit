@@ -95,7 +95,7 @@ tell-me-why: |
 
   There are a few things that you should know about `reflog`, such as:
 
-  1. `reflog` is **local** only, so, you other collaborators are not going to be able to find files you deleted in their `reflog`s.
+  1. `reflog` is **local** only, so, your other collaborators are not going to be able to find files you deleted in their `reflog`s.
   1. `reflog` only displays commits for a limited time:
      - 30 days: 'Unreachable' objects, aka commits or modifications that were made to a branch that no longer exists.
      - 90 days: 'Reachable' objects, aka commits or modifications that were made to a branch that still exists.
