@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Meet Bryan
+title: Events
 permalink: /open-source/02a
 facilitator: false
 sidebar:

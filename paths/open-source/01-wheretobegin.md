@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: It's About <s>Who</s> What You Know
+title: How to Begin
 permalink: /open-source/01
 next-page: /open-source/02
 facilitator: false
