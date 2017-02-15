@@ -24,23 +24,23 @@ intro-nav:
     url: /intro-to-github/01/
   - title: "Join the Class Repository"
     url: /intro-to-github/02/
-  - title: "Exploring the Repository"
+  - title: "Explore the Repository"
     url: /intro-to-github/03/
-  - title: "Using GitHub Flow"
+  - title: "Use GitHub Flow"
     url: /intro-to-github/04/
-  - title: "Creating a Branch"
+  - title: "Create a Branch"
     url: /intro-to-github/05/
   - title: "Find Your Coordinates"
     url: /intro-to-github/06/
-  - title: "Working on GitHub"
+  - title: "Work on GitHub"
     url: /intro-to-github/07/
-  - title: "Creating a Pull Request"
+  - title: "Create a Pull Request"
     url: /intro-to-github/08/
-  - title: "Collaborating on GitHub"
+  - title: "Collaborate on GitHub"
     url: /intro-to-github/09/
-  - title: "Editing Files"
+  - title: "Edit Files"
     url: /intro-to-github/10/
-  - title: "Merging Pull Requests"
+  - title: "Merge Pull Requests"
     url: /intro-to-github/11/
   - title: "Celebrate"
     url: /intro-to-github/12/

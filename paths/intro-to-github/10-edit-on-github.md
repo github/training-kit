@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Editing Files
+title: Edit Files
 permalink: /intro-to-github/10/
 next-page: /intro-to-github/11/
 sidebar:

@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Using GitHub Flow
+title: Use GitHub Flow
 permalink: /intro-to-github/04/
 next-page: /intro-to-github/05/
 sidebar:
