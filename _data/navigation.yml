@@ -148,7 +148,7 @@ advanced:
       url: /git-trouble/07
 
 open-source:
-  - title: "Git Started with Open Source"
+  - title: "Let's Git Started"
     url: /open-source/
     children:
     - title: "Meet Bryan"
@@ -158,7 +158,7 @@ open-source:
     - title: "Explore"
       url: /open-source/02
     - title: "Events"
-      url: /open-source/02a  
+      url: /open-source/02a
   - title: "First Steps"
     url: /open-source/03
     children:

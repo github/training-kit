@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Git Started With Open Source
+title: Let's Git Started
 permalink: /open-source/
 next-page: /open-source/01
 facilitator: false
