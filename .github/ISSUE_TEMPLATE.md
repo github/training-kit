@@ -11,13 +11,13 @@
 <If new idea or direction, please create a checklist of proposed ideas or next steps. [Example](https://github.com/github/training-kit/issues/415).>
 
 ### How to Contribute
-- [ ] Comment on this issue if you'd like to work/collaborate on it! 
+- [ ] Comment on this issue if you'd like to work/collaborate on it!
 - [ ] Fork the [repository](https://github.com/github/training-kit).
 - [ ] Use the [GitHub Flow](https://guides.github.com/introduction/flow/) to make changes to your fork. [This](https://services.github.com/on-demand/intro-to-github/) is a refresher course if you're unsure about how to make a change on GitHub.
-- [ ] Push your changes to your repository. 
+- [ ] Push your changes to your repository.
 - [ ] Submit a Pull Request
-  - Base Dropdown: github/training-kit
-  - Compare Dropdown: Your fork
+  - Base Drop-down: github/training-kit
+  - Compare Drop-down: Your fork
 
 #### Testing Locally
 If you'd like to make and test changes locally (and see how they would look if merged), do the following:

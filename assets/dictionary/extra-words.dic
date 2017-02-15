@@ -1,4 +1,4 @@
-176
+177
 $BASE
 $REMOTE
 $LOCAL
@@ -166,6 +166,7 @@ user.name
 user.email
 user.signingkey
 usernames
+USERNAME.github.io
 v1.0
 Vimdiff
 versioned

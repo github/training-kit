@@ -9,8 +9,6 @@ desc "Runs the tests!"
 task :test do
   require "html-proofer"
 
-  sh "bundle exec jekyll build"
-
   File.readlines("script/writewell-files.txt").each do |line|
     HTMLProofer.check_file(line.delete!("\n"), {
       :empty_alt_ignore => true,
@@ -25,6 +23,7 @@ task :test do
         /mademistakes\.com/,
         /nasa\.gov/,
         /travis-ci\.org/,
+        /vimeo\.com/,
       ],
       :href_ignore => [],
       :href_swap => {},
