@@ -10,6 +10,14 @@ facilitator: false
 sidebar:
   nav: "open-source"
 main-content: |
+  IDEA FOR MATT TO FINISH
+
+  Big images for showcase / trending / search with quick descriptions to provide pop.
+
+  Labels should have a section
+
+  Events needs a calendar image (try to find more than 2)
+
   Now, hopefully you wrote things down as prompted on the last page. If you didn't, hopefully you have some ideas fixed in your mind. Otherwise, this next section is going to be difficult.
 
   We're hoping to open a large quantity of potential repositories, which we'll parse down as time goes on. Open a lot of tabs, it'll be okay.
@@ -37,7 +45,7 @@ open-source: |
 
 show-me-how:
  - Nice to have .gif's for using search?
- - Video detailing searching and other resources 
+ - Video detailing searching and other resources
 tell-me-why: |
 
 ---

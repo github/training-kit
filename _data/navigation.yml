@@ -155,11 +155,13 @@ open-source:
       url: /open-source/00a
     - title: "How to Begin"
       url: /open-source/01
-  - title: "Explore"
-    url: /open-source/02
+    - title: "Explore"
+      url: /open-source/02
   - title: "First Steps"
     url: /open-source/03
     children:
+    - title: "README.md"
+      url: /open-source/04a  
     - title: "Health Check"
       url: /open-source/04
   - title: "Contributing"
