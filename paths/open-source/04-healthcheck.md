@@ -21,11 +21,12 @@ main-content: |
    - Is there recent activity?
   5. How many `stars`, `forks`, and `watch` numbers are there?
 
-  ### You can also use tools to help you with your assessment.
+  ## Assessment Tools
+  You can also use tools created by the community to help you with your assessment of the repository.
 
-  - [This](http://isitmaintained.com/) link helps you assess the average time it takes to close an issue, and how many issues in total are open.
+  - [**Is It Maintained?**](http://isitmaintained.com/) helps you assess the average time it takes to close an issue, and how many issues in total are open.
     - To be fair, this isn't always the best way to assess a repository. Sometimes issues stay open for a long time to indicate that there aren't enough contributors.
-  - [This](https://sarahsharp.github.io/foss-heartbeat/) resource helps you assess community involvement within a repository.
+  - [**FOSS Heartbeat**](https://sarahsharp.github.io/foss-heartbeat/) helps you assess community involvement within a repository using contributor participation data.
 
 open-source: |
 
