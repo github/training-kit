@@ -150,11 +150,13 @@ advanced:
 open-source:
   - title: "Git Started with Open Source"
     url: /open-source/
-  - title: "Where to Begin"
-    url: /open-source/01
     children:
-    - title: "Explore"
-      url: /open-source/02
+    - title: "Meet Bryan"
+      url: /open-source/00a
+    - title: "How to Begin"
+      url: /open-source/01
+  - title: "Explore"
+    url: /open-source/02
   - title: "First Steps"
     url: /open-source/03
     children:

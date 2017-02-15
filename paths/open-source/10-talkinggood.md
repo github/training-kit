@@ -12,6 +12,8 @@ sidebar:
 main-content: |
    One way to manage your ability to communicate with other collaborators on a project is making sure you know when communication is even happening! GitHub provides a couple of ways to manage the notifications you receive.
 
+   
+
 
 show-me-how:
 tell-me-why: |
