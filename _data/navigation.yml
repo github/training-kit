@@ -157,11 +157,13 @@ open-source:
       url: /open-source/01
     - title: "Explore"
       url: /open-source/02
+    - title: "Events"
+      url: /open-source/02a  
   - title: "First Steps"
     url: /open-source/03
     children:
     - title: "README.md"
-      url: /open-source/04a  
+      url: /open-source/04a
     - title: "Health Check"
       url: /open-source/04
   - title: "Contributing"
