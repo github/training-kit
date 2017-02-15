@@ -67,7 +67,7 @@ show-me-how:
  - Foss Heartbeat Video
 tell-me-why: |
  ### Stars, Forks, and Watch
-  5. How many `stars`, `forks`, and `watch` numbers are there?
+  The number of people who are `watch`ing, have `star`red, and `fork`ed the repository can be an indiciation of how much impact the project is having. Keep in mind, a repository doesn't _need_ to have a lot of people watching, starring, or forking it for you to want to contribute. 
 
  ### Description / Link
   The description and link section of the repository just displays a brief introduction of the project and potentially a link to a website with more information.
