@@ -41,7 +41,7 @@ didnt-push: |
     1. Ensure you are on the branch you accidentally made those commits to. If you followed the 'Setting Up Your Scenario Environment' directions, you should have made a few commits to a branch named `test`.
     1. Enter: `git log --oneline` and identify the SHA-1 hash associated with the commit just before the first incorrect commit. In this case, let's pretend file 5 was the first one that should have been on the other branch.
     1. Enter: `git reset --mixed SHA-1`, where `SHA-1` is the SHA-1 associated with the **adding file 4** commit.
-    1. Enter: 'git status'. You should see files 5 and 6 in your working directory.
+    1. Enter: `git status`. You should see files 5 and 6 in your working directory.
     1. Enter: `git checkout -b correct`. This will create a new branch named `correct` and check you out to that branch.
     1. Enter: `git status`. Files 5 and 6 should still be in your working directory.
     1. Add both File 5 and File 6 by entering: `git add file* `.
