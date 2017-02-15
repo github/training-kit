@@ -48,4 +48,4 @@ echo "writewell: ${writewell}"
 echo ""
 
 # run writewell test
-# ${writewell} -c settings.json -l script/writewell-files.txt
+${writewell} -c settings.json -l script/writewell-files.txt
