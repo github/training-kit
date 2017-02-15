@@ -13,6 +13,8 @@ main-content: |
   ### When looking at a repository for the first time, you can typically follow this pattern of assessment.
   _We recommend watching the video for this section, if you've been skipping them so far._
 
+  ![image-center](../images/os_repoexample.png){: .align-center}
+
   1. Is there a description/link? If so, cool! Is that link something you want to contribute to?
   2. How detailed is the README.md? Is it populated at all? Does it feel welcoming and easy to understand?
   3. How many `issues` are there? What about `pull requests`?

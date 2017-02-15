@@ -9,21 +9,6 @@ next-page: /open-source/03
 facilitator: false
 sidebar:
   nav: "open-source"
-feature_row:
-    - image_path: /images/os_search.png
-      alt: "search"
-      title: "search"
-      excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    - image_path: /images/os_showcase.png
-      alt: "placeholder image 2"
-      title: "Placeholder 2"
-      excerpt: "This is some sample content that goes here with **Markdown** formatting."
-      url: "#test-link"
-      btn_label: "Read More"
-      btn_class: "btn--inverse"
-    - image_path: /images/os_trending.png
-      title: "Placeholder 3"
-      excerpt: "This is some sample content that goes here with **Markdown** formatting."
 main-content: |
 
   {% include feature_row %}
