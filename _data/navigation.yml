@@ -171,6 +171,8 @@ open-source:
     children:
     - title: "CONTRIBUTING.md"
       url: /open-source/06
+    - title: "Using Templates"
+      url: /open-source/06a  
     - title: "Being a Good Citizen"
       url: /open-source/07
   - title: "Staying Active"
