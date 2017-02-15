@@ -14,13 +14,6 @@ main-content: |
 
   ![image-center](../images/os_repoexample.png){: .align-center}
 
-  1. Is there a description/link? If so, cool! Is that link something you want to contribute to?
-  2. How detailed is the README.md? Is it populated at all? Does it feel welcoming and easy to understand?
-  3. How many `issues` are there? What about `pull requests`?
-  4. What do the `pulse` and `graphs` tabs look like?
-   - Is there recent activity?
-  5. How many `stars`, `forks`, and `watch` numbers are there?
-
   ## Assessment Tools
   You can also use tools created by the community to help you with your assessment of the repository.
 
@@ -73,5 +66,45 @@ show-me-how:
  - Git Health Check Overview Video
  - Foss Heartbeat Video
 tell-me-why: |
+ ### Stars, Forks, and Watch
+  5. How many `stars`, `forks`, and `watch` numbers are there?
+
+ ### Description / Link
+  The description and link section of the repository just displays a brief introduction of the project and potentially a link to a website with more information.
+
+  When reviewing this section, notice the following:
+
+  - Is there a description/link? If so, cool!
+  - More importantly, is the description/link something you want to contribute to?
+
+ ### README.md
+  The README.md file is the project's chance to inform you about the purpose of the project and potentially what it needs.
+  When reviewing the README.md file, you should take notice of a couple of things:
+
+  - How detailed is the README.md?
+  - Is it populated at all?
+  - Does it feel welcoming and easy to understand?
+
+ ### Issues and Pull Requests
+  The number of open Issues and Pull Requests on a project can provide a glimpse into the current activity on the project and might provide some opportunities for you to jump right into the project.
+
+  Keep in mind, Issues are discussions about the project; Pull Requests are a comparison of changes between the deployed or live version and some recent changes submitted by another contributor.
+
+ ### Pulse and Graphs
+  The `Pulse` and `Graphs` section of the repository provides visual information about activity on the repository. These sections provide a glimpse into the overall activity of the project.
+
+  ![image-center](../images/os_pulse.png){: .align-center}
+
+  When reviewing the repository's `pulse` and `graphs`, think about:
+
+  - What they look like?
+   - Is there recent activity?
+   - Does it have active contributors?
+   - How many contributors does it have?
+
+
+
+
+
 
 ---
