@@ -148,7 +148,7 @@ advanced:
       url: /git-trouble/07
 
 open-source:
-  - title: "Start With Why"
+  - title: "Git Started with Open Source"
     url: /open-source/
   - title: "Where to Begin"
     url: /open-source/01
@@ -170,9 +170,9 @@ open-source:
   - title: "Staying Active"
     url: /open-source/08
     children:
-    - title: "The Waiting Game"
+    - title: "Notifications"
       url: /open-source/09
-    - title: "Talking Good"
+    - title: "Communication"
       url: /open-source/10
   - title: "Leaving the Nest"
     url: /open-source/11
