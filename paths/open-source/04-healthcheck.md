@@ -10,8 +10,7 @@ facilitator: false
 sidebar:
   nav: "open-source"
 main-content: |
-  ### When looking at a repository for the first time, you can typically follow this pattern of assessment.
-  _We recommend watching the video for this section, if you've been skipping them so far._
+  Before deciding to contribute to a project, you can inspect a couple of elements of the repository to determine if their is active development on it. Using the [Atom](www.github.com/atom) repository as an example, lets review some areas that help determine the health of a repository.
 
   ![image-center](../images/os_repoexample.png){: .align-center}
 
