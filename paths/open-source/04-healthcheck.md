@@ -10,7 +10,7 @@ facilitator: false
 sidebar:
   nav: "open-source"
 main-content: |
-  Before deciding to contribute to a project, you can inspect a couple of elements of the repository to determine if their is active development on it. Using the [Atom](www.github.com/atom) repository as an example, lets review some areas that help determine the health of a repository.
+  Before deciding to contribute to a project, you can inspect a couple of elements of the repository to determine if their is active development on it. Using the [Atom](https://github.com/atom/atom) repository as an example, lets review some areas that help determine the health of a repository.
 
   ![image-center](../images/os_repoexample.png){: .align-center}
 
