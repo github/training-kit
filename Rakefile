@@ -23,6 +23,7 @@ task :test do
         /mademistakes\.com/,
         /nasa\.gov/,
         /travis-ci\.org/,
+        /vimeo\.com/,
       ],
       :href_ignore => [],
       :href_swap => {},
