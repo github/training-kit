@@ -126,20 +126,20 @@ github-cli:
     url: /github-cli/16
 
 advanced:
-  - title: "Welcome"
+  - title: "Welcome to Git Out Of Trouble"
     url: /git-trouble/
-  - title: "Set Up Your Environment"
+  - title: "Set Up Your Git Scenario Environment"
     url: /git-trouble/01
-  - title: "Scenarios"
+  - title: "Git Trouble Scenarios"
     url: /git-trouble/02
     children:
-    - title: "Too Many (small) Commits"
+    - title: "Too Many (small) Git Commits"
       url: /git-trouble/03
-    - title: "Commit Message Sucks"
+    - title: "Git Commit Message Sucks"
       url: /git-trouble/04
-    - title: "Commit to Wrong Branch"
+    - title: "Git Committed to Wrong Branch"
       url: /git-trouble/05
-    - title: "Accidental Commit"
+    - title: "Accidental Git Commit"
       url: /git-trouble/06
-    - title: "Just Make it Go Away!"
+    - title: "Just Make it Go Away: Breaking Things With Git"
       url: /git-trouble/07

@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Set Up Your Scenario Environment
+title: Set Up Your Git Scenario Environment
 permalink: /git-trouble/01
 next-page: /git-trouble/02
 facilitator: false

@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Too Many (small) Commits!
+title: Too Many (small) Git Commits!
 permalink: /git-trouble/03
 next-page: /git-trouble/02
 facilitator: false
