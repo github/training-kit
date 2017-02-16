@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Add Local Commits
+title: Add Local Commits With Git
 permalink: /github-cli/07
 next-page: /github-cli/08
 facilitator: false

@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Merge Your Pull Request
+title: Merge Your Pull Request on GitHub
 permalink: /github-cli/09
 next-page: /github-cli/10
 facilitator: false

@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: View Your Site
+title: View Your GitHub Pages Site
 permalink: /github-cli/10
 next-page: /github-cli/11
 facilitator: false

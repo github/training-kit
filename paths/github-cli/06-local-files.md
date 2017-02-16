@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Make Local Changes
+title: Make Local Changes With Git
 permalink: /github-cli/06
 next-page: /github-cli/07
 facilitator: false

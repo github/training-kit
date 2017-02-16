@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Let's Collaborate!
+title: Collaborate with GitHub Pull Requests
 permalink: /github-cli/15
 next-page: /github-cli/16
 facilitator: false

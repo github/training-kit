@@ -92,37 +92,37 @@ github-desktop-nav:
       url: /github-desktop/16/
 
 github-cli:
-  - title: "Welcome"
+  - title: "GitHub Pages & Git in the Command Line"
     url: /github-cli/
   - title: "Git Configuration"
     url: /github-cli/02
-  - title: "Create the Remote Repository"
+  - title: "Create the Remote Repository on GitHub"
     url: /github-cli/03
-  - title: "Clone the Repository"
+  - title: "Clone the Repository Using the Command Line"
     url: /github-cli/04
-  - title: "Create Local Branches"
+  - title: "Create Local Branches With Git"
     url: /github-cli/05
-  - title: "Make Local Changes"
+  - title: "Make Local Changes With Git"
     url: /github-cli/06
-  - title: "Add Local Commits"
+  - title: "Add Local Commits With Git"
     url: /github-cli/07
-  - title: "Open a Pull Request"
+  - title: "Open a Pull Request on GitHub"
     url: /github-cli/08
-  - title: "Merge Your Pull Request"
+  - title: "Merge Your Pull Request on GitHub"
     url: /github-cli/09
-  - title: "View Your site"
+  - title: "View Your GitHub Pages Site"
     url: /github-cli/10
-  - title: "Keep Things in Sync"
+  - title: "Git Push & Git Pull"
     url: /github-cli/11
-  - title: "Add Your Site to the Showcase"
+  - title: "Add Your GitHub Pages Site to the Showcase"
     url: /github-cli/12
-  - title: "Review the Local Workflow"
+  - title: "Review the Local GitHub Flow in the Command Line"
     url: /github-cli/13
   - title: "Review Pushing and Opening Pull Requests"
     url: /github-cli/14
-  - title: "Let's Collaborate!"
+  - title: "Collaborate with GitHub Pull Requests"
     url: /github-cli/15
-  - title: "Merge Your PR"
+  - title: "Merge Your Pull Request on GitHub"
     url: /github-cli/16
 
 advanced:
