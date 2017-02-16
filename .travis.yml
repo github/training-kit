@@ -14,4 +14,3 @@ install:
 
 script:
   - script/cibuild
-  # - writewell -c settings.json -l script/writewell-files.txt
