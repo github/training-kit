@@ -58,37 +58,37 @@ gh-pages:
     url: /patchwork/gh-pages/05/
 
 github-desktop-nav:
-    - title: "Welcome"
+    - title: "GitHub Pages & GitHub Desktop"
       url: /github-desktop/
     - title: "Install GitHub Desktop"
       url: /github-desktop/02/
-    - title: "Create the Remote Repository"
+    - title: "Create the Remote Repository on GitHub"
       url: /github-desktop/03/
-    - title: "Clone the Repository"
+    - title: "Clone the Repository from GitHub"
       url: /github-desktop/04/
-    - title: "Create Local Branches"
+    - title: "Create Local Branches With Git"
       url: /github-desktop/05/
-    - title: "Make Local Changes"
+    - title: "Make Local Changes With Git"
       url: /github-desktop/06/
-    - title: "Add Local Commits"
+    - title: "Add Local Commits With GitHub Desktop"
       url: /github-desktop/07/
-    - title: "Open a Pull Request"
+    - title: "Open a Pull Request With GitHub Desktop"
       url: /github-desktop/08/
-    - title: "Merge Your Pull Request"
+    - title: "Merge Your Pull Request on GitHub"
       url: /github-desktop/09/
-    - title: "View Your site"
+    - title: "View Your GitHub Pages Site"
       url: /github-desktop/10/
-    - title: "Keep Things in Sync"
+    - title: "Keep GitHub in Sync"
       url: /github-desktop/11/
-    - title: "Add Your Site to the Showcase"
+    - title: "Add Your GitHub Pages Site to the Showcase"
       url: /github-desktop/12/
-    - title: "Review the local workflow"
+    - title: "Review the Local GitHub Flow"
       url: /github-desktop/13/
     - title: "Review Pushing and Opening Pull Requests"
       url: /github-desktop/14/
-    - title: "Let's collaborate!"
+    - title: "Collaborating on GitHub in Pull Requests"
       url: /github-desktop/15/
-    - title: "Merge Your PR"
+    - title: "Merge Your Pull Request on GitHub"
       url: /github-desktop/16/
 
 github-cli:

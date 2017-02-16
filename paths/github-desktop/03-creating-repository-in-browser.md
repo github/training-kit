@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Create the Remote Repository
+title: Create the Remote Repository on GitHub
 permalink: /github-desktop/03/
 next-page: /github-desktop/04/
 facilitator: false

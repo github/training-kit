@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Review the Local Workflow
+title: Review the Local GitHub Flow
 permalink: /github-desktop/13/
 next-page: /github-desktop/14/
 facilitator: false

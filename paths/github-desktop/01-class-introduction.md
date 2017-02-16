@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Welcome
+title: GitHub Pages & GitHub Desktop
 permalink: /github-desktop/
 next-page: /github-desktop/02/
 facilitator: false

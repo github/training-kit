@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Open a Pull Request
+title: Open a Pull Request With GitHub Desktop
 permalink: /github-desktop/08/
 next-page: /github-desktop/09/
 facilitator: false

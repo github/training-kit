@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Keep Things in Sync
+title: Keep GitHub in Sync
 permalink: /github-desktop/11/
 next-page: /github-desktop/12/
 facilitator: false
