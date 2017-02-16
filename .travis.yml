@@ -14,3 +14,4 @@ install:
 
 script:
   - script/cibuild
+  - writewell -c settings.json -f README.md

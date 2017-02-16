@@ -49,4 +49,4 @@ echo ""
 
 # run writewell test
 # ${writewell} -c settings.json -l script/writewell-files.txt
-${writewell} -c settings.json -f README.md
+# ${writewell} -c settings.json -f README.md
