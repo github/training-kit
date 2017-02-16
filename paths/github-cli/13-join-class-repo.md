@@ -4,17 +4,17 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Add Your Site to the Showcase
-permalink: /github-desktop/12/
-next-page: /github-desktop/13/
+permalink: /github-cli/13
+next-page: /github-cli/14
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-cli"
 main-content:
   includes:
   - activity/github-desktop/12-add-class-repo.md  
 show-me-how: images/gifs/github-desktop/join-repo-make-issue-pages.gif
 tell-me-why: |
-  ## Getting access to the shared repository
+  ## Access to the Shared Repository
 
   We will use a shared class repository to host a directory of all pages that have been created as a part of this course.
 

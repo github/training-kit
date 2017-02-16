@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Review of Pull Requests
-permalink: /github-desktop/14/
-next-page: /github-desktop/15/
+permalink: /github-desktop/15/
+next-page: /github-desktop/16/
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"
