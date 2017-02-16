@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Explore the Repository
+title: Explore the GitHub Repository
 permalink: /intro-to-github/03/
 next-page: /intro-to-github/04/
 sidebar:

@@ -18,13 +18,13 @@ main:
 # When creating new sidebar navs, remember the url in this document needs to match the url assigned in the permalink field.
 
 intro-nav:
-  - title: "Welcome"
+  - title: "Introduction to GitHub"
     url: /intro-to-github/
   - title: "Create a GitHub Account"
     url: /intro-to-github/01/
   - title: "Join the Class Repository"
     url: /intro-to-github/02/
-  - title: "Explore the Repository"
+  - title: "Explore the GitHub Repository"
     url: /intro-to-github/03/
   - title: "Use GitHub Flow"
     url: /intro-to-github/04/
@@ -32,17 +32,17 @@ intro-nav:
     url: /intro-to-github/05/
   - title: "Find Your Coordinates"
     url: /intro-to-github/06/
-  - title: "Work on GitHub"
+  - title: "Working on GitHub"
     url: /intro-to-github/07/
   - title: "Create a Pull Request"
     url: /intro-to-github/08/
   - title: "Collaborate on GitHub"
     url: /intro-to-github/09/
-  - title: "Edit Files"
+  - title: "Edit Files on GitHub"
     url: /intro-to-github/10/
-  - title: "Merge Pull Requests"
+  - title: "Merge Your Pull Request"
     url: /intro-to-github/11/
-  - title: "Celebrate"
+  - title: "You Completed the GitHub Flow"
     url: /intro-to-github/12/
 
 gh-pages:
