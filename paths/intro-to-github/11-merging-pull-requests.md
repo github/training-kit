@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Merging Pull Requests
-permalink: /intro-to-github/12/
-next-page: /intro-to-github/13/
+title: Merge Pull Requests
+permalink: /intro-to-github/11/
+next-page: /intro-to-github/12/
 sidebar:
   nav: "intro-nav"
 main-content:

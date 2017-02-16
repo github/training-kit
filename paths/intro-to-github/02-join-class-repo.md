@@ -27,12 +27,12 @@ tell-me-why: |
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/Zhj46r5D0nQ" frameborder="0" allowfullscreen></iframe>
 
-  ## Why Did We Ask You to Comment on this Issue?
+  ## Why Did We Ask You to Create an Issue?
 
   When you sign up for GitHub, you automatically have **Read only access** to any public repository. This means you can look around, comment on Issues and Pull Requests, and open new Issues to report bugs or request features on your favorite projects. You can also create repositories on your own account!
 
   However, you can't make changes directly on someone else's project unless you use a special workflow (called Fork and Pull) or they give you collaborator access.
 
-  For this repository, we have created a webhook that adds you as a collaborator when you comment on this issue. If you completed the steps above, you are ready to be a collaborator on our project!
+  For this repository, we have created a webhook that adds you as a collaborator when you create an issue. If you completed the steps above, you are ready to be a collaborator on our project!
 
 ---

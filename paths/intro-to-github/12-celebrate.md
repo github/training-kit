@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Celebrate!
-permalink: /intro-to-github/13/
+permalink: /intro-to-github/12/
 sidebar:
   nav: "intro-nav"
 main-content: |

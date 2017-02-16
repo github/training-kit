@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Find Your Coordinates
-permalink: /intro-to-github/07/
-next-page: /intro-to-github/08/
+permalink: /intro-to-github/06/
+next-page: /intro-to-github/07/
 sidebar:
   nav: "intro-nav"
 main-content: |

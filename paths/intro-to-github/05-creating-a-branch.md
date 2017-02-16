@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Creating a Branch
-permalink: /intro-to-github/06/
-next-page: /intro-to-github/07/
+title: Create a Branch
+permalink: /intro-to-github/05/
+next-page: /intro-to-github/06/
 sidebar:
   nav: "intro-nav"
 main-content:
