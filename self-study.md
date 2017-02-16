@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Training Path
+title: Git & GitHub Training Path
 category: self-study
 permalink: /path/
 header:

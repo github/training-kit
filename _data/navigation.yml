@@ -10,9 +10,9 @@ main:
   - title: "Git Out of Trouble"
     beta: true
     url: /git-trouble/
-  - title: "Training Path"
+  - title: "Git & GitHub Training Path"
     url: /path/
-  - title: "Community"
+  - title: "GitHub Training Community"
     url: /community/
 
 # When creating new sidebar navs, remember the url in this document needs to match the url assigned in the permalink field.
