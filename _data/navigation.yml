@@ -64,11 +64,11 @@ github-desktop-nav:
       url: /github-desktop/02/
     - title: "Create the Remote Repository on GitHub"
       url: /github-desktop/03/
-    - title: "Clone the Repository from GitHub"
+    - title: "Clone the Repository with GitHub Desktop"
       url: /github-desktop/04/
-    - title: "Create Local Branches With Git"
+    - title: "Create Local Branches With GitHub Desktop"
       url: /github-desktop/05/
-    - title: "Make Local Changes With Git"
+    - title: "Make Local Changes With GitHub Desktop"
       url: /github-desktop/06/
     - title: "Add Local Commits With GitHub Desktop"
       url: /github-desktop/07/
