@@ -57,16 +57,21 @@ gems:
   - jemoji
 
 exclude:
-- bin
-- config.rb
-- Gemfile
-- Gemfile.lock
-- gems
-- Procfile
-- Rakefile
-- README.md
-- script
-- vendor
+  - assets/dictionary
+  - bin
+  - bower.json
+  - CONTRIBuTING.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - package.json
+  - Rakefile
+  - README.md
+  - script
+  - settings.json
+  - test
+  - vendor
 
 collections:
   modules:

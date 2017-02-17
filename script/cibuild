@@ -21,10 +21,12 @@ export RUBYOPT=
 
 # write some debug info
 echo ""
-ruby -v
+echo "ruby: $(ruby -v)"
 echo "hostname: $(hostname)"
 echo "pwd: $(pwd)"
-git --version
+echo "git: $(git --version)"
+echo "node: $(node --version)"
+echo "npm: $(npm --version)"
 echo ""
 
 # bootstrap gem environment changes
@@ -40,12 +42,6 @@ script/writewell
 # run rake tests
 bundle exec rake test
 
-writewell=$(which writewell)
-echo ""
-echo "node: $(node --version)"
-echo "npm: $(npm --version)"
-echo "writewell: ${writewell}"
-echo ""
-
 # run writewell test
+writewell=$(which writewell)
 ${writewell} -c settings.json -l script/writewell-files.txt
