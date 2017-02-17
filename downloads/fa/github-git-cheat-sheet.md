@@ -1,18 +1,15 @@
-
-
-
-<h2 dir="rtl">راهنمای مستندات گیت‌هاب</h2>
-
 ---
-layout: cheat-sheet
-title: GitHub Git Cheat Sheet
-byline: Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
-leadingpath: ../../
+layout: برگه تقلب
+title: گیت‌هاب گیت برگه تقلب
+byline: گیت یک سیستم کنترل نسخه توزیع‌شده که برای تسهیل فعالیت‌های گیت بر روی لپ‌تاپ یا دسکتپاب می‌باشد. این برگه تقلب خلاصه شده دستورهای معمول  که کاربران برای ارتباط با گیت برای ارجاع سریع ارائه شده است.
+leadingpath: ../../../
 ---
 
 {% capture colOne %}
 ## Install Git
 GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
+
+<h2 dir="rtl">راهنمای مستندات گیت‌هاب</h2>
 
 ### GitHub for Windows
 http://windows.github.com
