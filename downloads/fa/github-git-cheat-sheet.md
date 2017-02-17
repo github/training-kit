@@ -33,7 +33,7 @@ Sets the name you want attached to your commit transactions
 Sets the email you want attached to your commit transactions
 
 
-## Create repositories
+<h2 dir="rtl">ساخت یک مخزن</h2>
 Start a new repository or obtain one from an existing URL
 
 
@@ -54,7 +54,7 @@ Downloads a project and its entire version history
 
 {% capture colTwo %}
 
-## Make changes
+<h2 dir="rtl">نجام تغیرات</h2>
 Review edits and craft a commit transaction
 
 
@@ -87,7 +87,7 @@ Unstages the file, but preserves its contents
 
 Records file snapshots permanently in version history
 
-## Group changes
+<h2 dir="rtl">تغیرات گروهی</h2>
 Name a series of commits and combine completed efforts
 
 
@@ -122,7 +122,8 @@ Deletes the specified branch
 
 
 {% capture colThree %}
-## Refactor file names
+
+<h2 dir="rtl">ویرایش نام فایل‌ها</h2>
 Relocate and remove versioned files
 
 
@@ -140,7 +141,7 @@ Removes the file from version control but preserves the file locally
 
 Changes the file name and prepare it for commit
 
-## Suppress tracking
+<h2 dir="rtl">پیگیری تغیرات</h2>
 Exclude temporary files and paths
 
 ```
@@ -156,6 +157,7 @@ A text file named `.gitignore` suppresses accidental versioning of files and pat
 
 Lists all ignored files in this project
 
+<h2 dir="rtl"></h2>
 ## Save fragments
 Shelve and restore incomplete changes
 
@@ -184,7 +186,8 @@ Discards the most recently stashed changeset
 </div>
 
 {% capture colFour %}
-## Review history
+
+<h2 dir="rtl">مرور تاریخچه</h2>
 Browse and inspect the evolution of project files
 
 
@@ -207,7 +210,7 @@ Shows content differences between two branches
 
 Outputs metadata and content changes of the specified commit
 
-## Redo commits
+<h2 dir="rtl">برگشت به عقب برای یک کامیت</h2>
 Erase mistakes and craft replacement history
 
 
@@ -220,7 +223,7 @@ Undoes all commits after `[commit]`, preserving changes locally
 
 Discards all history and changes back to the specified commit
 
-## Synchronize changes
+<h2 dir="rtl">سینک شدن با تغیرات</h2>
 Register a remote (URL) and exchange repository history
 
 
