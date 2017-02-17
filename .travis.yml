@@ -19,5 +19,4 @@ install:
 
 script:
   - script/writewell
-  - script/cibuild
   - npm test
