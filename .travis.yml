@@ -18,6 +18,4 @@ install:
   - npm install -g writewell
 
 script:
-  - script/writewell
   - script/cibuild
-  - npm test

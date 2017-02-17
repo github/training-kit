@@ -36,5 +36,12 @@ script/bootstrap
 # build the site
 bundle exec jekyll build
 
+# build whitelist
+script/writewell
+
 # run rake tests
 bundle exec rake test
+
+# run writewell test
+writewell=$(which writewell)
+${writewell} -c settings.json -l script/writewell-files.txt
