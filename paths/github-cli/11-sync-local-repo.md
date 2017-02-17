@@ -14,7 +14,7 @@ main-content:
     - activity/github-CLI/11-sync-changes.md
 show-me-how: "images/gifs/github-cli/keep-things-in-sync.gif"
 tell-me-why: |
-  ## Keeping the Local Repository in Sync
+  ## Keeping the Local Reitory in Sync
 
   As we discussed previously, Git doesn't require an internet connection which means it doesn't communicate with remote repositories unless explicitly instructed to do so.
 
