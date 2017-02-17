@@ -36,8 +36,5 @@ script/bootstrap
 # build the site
 bundle exec jekyll build
 
-# build whitelist
-script/writewell
-
 # run rake tests
 bundle exec rake test
