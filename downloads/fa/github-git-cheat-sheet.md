@@ -6,23 +6,21 @@ leadingpath: ../../../
 ---
 
 {% capture colOne %}
-## Install Git
+<h2 dir="rtl">نصب گیت‌هاب</h2>
 GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
 
-<h2 dir="rtl">راهنمای مستندات گیت‌هاب</h2>
-
-### GitHub for Windows
+<h2 dir="rtl">گیت‌هاب برای ویندوز</h2>
 http://windows.github.com
 
-### GitHub for Mac
+<h2 dir="rtl">گیت‌هاب برای مک</h2>
 http://mac.github.com
 
 Git distributions for Linux and POSIX systems are available on the official Git SCM website.
 
-### Git for all platforms
+<h2 dir="rtl">گیت‌هاب برای همه سیستم ها</h2>
 http://git-scm.com
 
-## Configure tooling
+<h2 dir="rtl">ابزار تنظیمات</h2>
 Configure user information for all local repositories
 
 ```$ git config --global user.name "[name]"```
