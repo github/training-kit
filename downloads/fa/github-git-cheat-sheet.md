@@ -185,7 +185,7 @@ http://git-scm.com
 <div dir="rtl">
 بازجاگذاری و حذف فایل از تاریخچه
 </div>
-Relocate and remove versioned files
+
 
 
 ```$ git rm [file]```
