@@ -7,7 +7,7 @@ leadingpath: ../../../
 
 {% capture colOne %}
 <h2 dir="rtl">نصب گیت‌هاب</h2>
-GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
+گبت‌هاب برای کاربران دسکتاپ یک اینترفیس گرافیکی را برای کارهای عمومی ارائه کرده است، حال آنکه برای دستور‌های حرفه‌ای تر می توانید از نسخه خط‌فرمان استفاده کنید.
 
 <h2 dir="rtl">گیت‌هاب برای ویندوز</h2>
 http://windows.github.com
