@@ -7,7 +7,9 @@ leadingpath: ../../../
 
 {% capture colOne %}
 <h2 dir="rtl">نصب گیت‌هاب</h2>
+<div dir="rtl">
 گبت‌هاب برای کاربران دسکتاپ یک اینترفیس گرافیکی را برای کارهای عمومی ارائه کرده است، حال آنکه برای دستور‌های حرفه‌ای تر می توانید از نسخه خط‌فرمان استفاده کنید.
+</div>
 
 <h2 dir="rtl">گیت‌هاب برای ویندوز</h2>
 http://windows.github.com
@@ -73,7 +75,7 @@ http://git-scm.com
 
 {% capture colTwo %}
 
-<h2 dir="rtl">نجام تغیرات</h2>
+<h2 dir="rtl">انجام تغیرات</h2>
 <div dir="rtl">
 مرور ویرایش‌های و بررسی پیش‌روی کامیت‌ها
 </div>
@@ -81,60 +83,95 @@ http://git-scm.com
 
 ```$ git status```
 
-Lists all new or modified files to be committed
+<div dir="rtl">
+لیست تمامی فایل های جدید و یا ویرایش شده که کامیت شده اند.
+</div>
+
 
 
 ```$ git diff```
 
-Shows file differences not yet staged
+<div dir="rtl">
+نمایش تفاوت فایلی که هنوز قرارداده نشده است.
+</div>
 
 
 ```$ git add [file]```
 
-Snapshots the file in preparation for versioning
+<div dir="rtl">
+ایجاد یک تصویر از فایل برای آماده سازی در نسخه برداری(اضافه کردن فایل به لیست کامیت‌ها)
+</div>
+
 
 
 ```$ git diff --staged```
 
-Shows file differences between staging and the last file version
+<div dir="rtl">
+نمایش تفاوت فایل های ثبت شده با آخرین نسخه
+</div>
+
 
 
 ```$ git reset [file]```
 
-Unstages the file, but preserves its contents
+<div dir="rtl">
+خارج کردن فایل از حالت انتخاب شده به حالت قبلی بدون تغیر محتوای فایل
+</div>
+
 
 
 ```$ git commit -m"[descriptive message]"```
 
-Records file snapshots permanently in version history
+<div dir="rtl">
+ذخیره سازی فایل در نظام تاریخچه سازی گیت‌هاب(کامیت)
+</div>
+
 
 <h2 dir="rtl">تغیرات گروهی</h2>
-Name a series of commits and combine completed efforts
+<div dir="rtl">
+نام‌گذاری یک سری از کامیت‌ها و ترکیب‌ آنها
+</div>
+
 
 
 ```$ git branch```
 
-Lists all local branches in the current repository
+<div dir="rtl">
+لیست تمامی شاخه‌های لوکال در مخزن جاری
+</div>
+
 
 
 ```$ git branch [branch-name]```
 
-Creates a new branch
+<div dir="rtl">
+ساخت یک شاخه جدید
+</div>
+
 
 
 ```$ git checkout [branch-name]```
 
-Switches to the specified branch and updates working directory
+<div dir="rtl">
+تغیر شاخه جاری به شاخه دیگر
+</div>
+
 
 
 ```$ git merge [branch-name]```
 
-Combines the specified branch’s history into the current branch
+<div dir="rtl">
+ترکیب یک شاخه از تاریخچه با شاخه جاری
+</div>
+
 
 
 ```$ git branch -d [branch-name]```
 
-Deletes the specified branch
+<div dir="rtl">
+حذف شاخه مشخص شده
+</div>
+
 {% endcapture %}
 <div class="col-md-6">
 {{ colTwo | markdownify }}
@@ -145,62 +182,95 @@ Deletes the specified branch
 {% capture colThree %}
 
 <h2 dir="rtl">ویرایش نام فایل‌ها</h2>
+<div dir="rtl">
+بازجاگذاری و حذف فایل از تاریخچه
+</div>
 Relocate and remove versioned files
 
 
 ```$ git rm [file]```
 
-Deletes the file from the working directory and stages the deletion
+<div dir="rtl">
+حذف فایل از شاخه جاری و همینطور از سیستم نسخه بندی
+</div>
 
 
 ```$ git rm --cached [file]```
 
-Removes the file from version control but preserves the file locally
+<div dir="rtl">
+حذف فایل از سیستم نسخه بندی منتها بدون حذف فایل از لوکال
+</div>
 
 
 ```$ git mv [file-original] [file-renamed]```
 
-Changes the file name and prepare it for commit
+<div dir="rtl">
+تغیر نام فایل و کامیت
+</div>
+
 
 <h2 dir="rtl">پیگیری تغیرات</h2>
-Exclude temporary files and paths
+<div dir="rtl">
+حذف فایل‌های موقت
+</div>
+
 
 ```
 *.log
 build/
 temp-*
 ```
+<div dir="rtl">
+یک فایل متنی با نام 
+.gitignore`
+با تطابق خاصی از الگوها جلوگیری می کند. 
+</div>
 
-A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
 
 
 ```$ git ls-files --others --ignored --exclude-standard```
 
-Lists all ignored files in this project
+<div dir="rtl">
+لیست فایل های صرفه نظر شده در پروژه جاری
+</div>
 
-<h2 dir="rtl"></h2>
-## Save fragments
-Shelve and restore incomplete changes
+
+<h2 dir="rtl">ذخیره سازی قطعات</h2>
+<div dir="rtl">
+نادیده‌گرفتن و بازگردانی تغیرات
+</div>
+
 
 
 ```$ git stash```
 
-Temporarily stores all modified tracked files
+<div dir="rtl">
+ذخیره سازی موقت تمامی فایل های تغیر کرده
+</div>
 
 
 ```$ git stash pop```
 
-Restores the most recently stashed files
+<div dir="rtl">
+بازآوری فایل های اخیرا ذخیره شده
+</div>
+
 
 
 ```$ git stash list```
 
-Lists all stashed changesets
+<div dir="rtl">
+لیست همه تغیرات ذخیره شده
+</div>
+
 
 
 ```$ git stash drop```
 
-Discards the most recently stashed changeset
+<div dir="rtl">
+نادیده گرفتن همه تغیرات ذخیره شده
+</div>
+
 {% endcapture %}
 <div class="col-md-6">
 {{ colThree | markdownify }}
@@ -209,63 +279,92 @@ Discards the most recently stashed changeset
 {% capture colFour %}
 
 <h2 dir="rtl">مرور تاریخچه</h2>
-Browse and inspect the evolution of project files
+<div dir="rtl">
+نمایش و بررسی سیر تکاملی پروژه
+</div>
+
 
 
 ```$ git log```
 
-Lists version history for the current branch
+<div dir="rtl">
+لیست نسخه برای شاخه جاری
+</div>
 
 
 ```$ git log --follow [file]```
 
-Lists version history for the file, including renames
+<div dir="rtl">
+لیست نسخه برای فایل ها که شامل فایل های تغیر نام شده نیز می باشد
+</div>
+
 
 
 ```$ git diff [first-branch]...[second-branch]```
 
-Shows content differences between two branches
+<div dir="rtl">
+نمایش تفاوت‌های محتوای بین دو شاخه
+</div>
 
 
 ```$ git show [commit]```
 
-Outputs metadata and content changes of the specified commit
+<div dir="rtl">
+نمایش متادیتا و محتوای تغیر داده شده از یک کامیت خاص
+</div>
 
 <h2 dir="rtl">برگشت به عقب برای یک کامیت</h2>
-Erase mistakes and craft replacement history
+<div dir="rtl">
+حذف خطاها و نادیده گرفتن تاریخچه
+</div>
 
 
 ```$ git reset [commit]```
 
-Undoes all commits after `[commit]`, preserving changes locally
+<div dir="rtl">
+برگشت به عقب برای تمامی کامیت های بعد از کامیت مشخص شده
+</div>
 
 
 ```$ git reset --hard [commit]```
 
-Discards all history and changes back to the specified commit
+<div dir="rtl">
+نادیده گرفتن تاریخچه نسخه تا کامیت مشخص شده
+</div>
 
 <h2 dir="rtl">سینک شدن با تغیرات</h2>
-Register a remote (URL) and exchange repository history
+<div dir="rtl">
+ثبت یک URL و اعمال تغیرات در مخزن
+</div>
+
 
 
 ```$ git fetch [remote]```
 
-Downloads all history from the remote repository
+<div dir="rtl">
+دانلود تمامی تاریخچه پروژه از مخزن راه‌دور
+</div>
 
 
 ```$ git merge [remote]/[branch]```
 
-Combines the remote branch into the current local branch
+<div dir="rtl">
+ترکیب شاخه راه‌دور با شاخه جاری لوکال
+</div>
 
 
 ```$ git push [remote] [branch]```
 
-Uploads all local branch commits to GitHub
+<div dir="rtl">
+آپلود تمامی شاخه های لوکال به گیت‌هاب
+</div>
 
 
 ```$ git pull```
 
-Downloads bookmark history and incorporates changes
+<div dir="rtl">
+دانلود تاریخچه و تمامی تغیرات از سرور راه دور
+</div>
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
