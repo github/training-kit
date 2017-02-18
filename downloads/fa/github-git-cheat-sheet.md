@@ -15,36 +15,55 @@ http://windows.github.com
 <h2 dir="rtl">گیت‌هاب برای مک</h2>
 http://mac.github.com
 
-Git distributions for Linux and POSIX systems are available on the official Git SCM website.
+<div dir="rtl">
+گیت‌هاب برای لینوکس و سیستم‌های پازیکس در سایت رسمی SCM قابل استفاده است.
+</div>
 
 <h2 dir="rtl">گیت‌هاب برای همه سیستم ها</h2>
 http://git-scm.com
 
 <h2 dir="rtl">ابزار تنظیمات</h2>
-Configure user information for all local repositories
+<div dir="rtl">
+تنظیم اطلاعات کاربری برای تمامی مخازن لوکال
+</div>
 
 ```$ git config --global user.name "[name]"```
 
-Sets the name you want attached to your commit transactions
+<div dir="rtl">
+نام خود را برای تمامی کامیت‌های بعدی تنظیم کنید.
+</div>
+
 
 
 ```$ git config --global user.email "[email address]"```
 
-Sets the email you want attached to your commit transactions
+<div dir="rtl">
+ایمیل خود را برای تمامی کامیت‌های بعدی تنظیم کنید.
+</div>
+
 
 
 <h2 dir="rtl">ساخت یک مخزن</h2>
-Start a new repository or obtain one from an existing URL
+<div dir="rtl">
+ساخت یک مخزن و یا کپی یک مخزن از یک آدرس
+</div>
+
 
 
 ```$ git init [project-name]```
 
-Creates a new local repository with the specified name
+<div dir="rtl">
+ساخت یک مخزن لوکال با نام منحصر به فرد
+</div>
+
 
 
 ```$ git clone [url]```
 
-Downloads a project and its entire version history
+<div dir="rtl">
+دانلود کل پروژه به همراه تاریخچه گی آن!
+</div>
+
 
 {% endcapture %}
 <div class="col-md-6">
@@ -55,7 +74,9 @@ Downloads a project and its entire version history
 {% capture colTwo %}
 
 <h2 dir="rtl">نجام تغیرات</h2>
-Review edits and craft a commit transaction
+<div dir="rtl">
+مرور ویرایش‌های و بررسی پیش‌روی کامیت‌ها
+</div>
 
 
 ```$ git status```
