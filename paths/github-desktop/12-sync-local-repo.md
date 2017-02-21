@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Pushing to GitHub with GitHub Desktop
-permalink: /github-desktop/12/
-next-page: /github-desktop/13/
+permalink: /github-desktop/push-with-github-desktop
+next-page: /github-desktop/add-github-pages-site-showcase
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

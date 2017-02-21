@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: View Your GitHub Pages Site
-permalink: /github-desktop/11/
-next-page: /github-desktop/12/
+permalink: /github-desktop/view-github-pages-site
+next-page: /github-desktop/push-with-github-desktop
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

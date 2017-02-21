@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Merge Your Pull Request on GitHub
-permalink: /github-desktop/10/
-next-page: /github-desktop/11/
+permalink: /github-desktop/merge-pull-request-github
+next-page: /github-desktop/view-github-pages-site
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

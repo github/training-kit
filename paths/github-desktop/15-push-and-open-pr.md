@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Pushing to GitHub & Using Pull Requests
-permalink: /github-desktop/15/
-next-page: /github-desktop/16/
+permalink: /github-desktop/push-pull-request-github-desktop
+next-page: /github-desktop/collaborate-github-pull-requests
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

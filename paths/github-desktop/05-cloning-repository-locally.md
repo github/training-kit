@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Clone the Repository with GitHub Desktop
-permalink: /github-desktop/05/
-next-page: /github-desktop/06/
+permalink: /github-desktop/clone-repository-github-desktop
+next-page: /github-desktop/create-branches-github-desktop
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

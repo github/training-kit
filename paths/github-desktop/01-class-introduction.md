@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: GitHub Pages & GitHub Desktop
 permalink: /github-desktop/
-next-page: /github-desktop/02/
+next-page: /github-desktop/install-github-desktop
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

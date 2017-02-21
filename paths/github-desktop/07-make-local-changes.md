@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Make Local Changes With GitHub Desktop
-permalink: /github-desktop/07/
-next-page: /github-desktop/08/
+permalink: /github-desktop/make-changes-github-desktop
+next-page: /github-desktop/add-commits-github-desktop
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

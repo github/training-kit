@@ -61,37 +61,37 @@ github-desktop-nav:
     - title: "GitHub Pages & GitHub Desktop"
       url: /github-desktop/
     - title: "Install GitHub Desktop"
-      url: /github-desktop/02/
+      url: /github-desktop/install-github-desktop
     - title: "Create the Remote Repository on GitHub"
-      url: /github-desktop/03/
+      url: /github-desktop/create-remote-repository
     - title: "Choose a GitHub Pages Theme"
-      url: /github-desktop/04/
+      url: /github-desktop/choose-github-pages-theme
     - title: "Clone the Repository with GitHub Desktop"
-      url: /github-desktop/05/
+      url: /github-desktop/clone-repository-github-desktop
     - title: "Create Local Branches With GitHub Desktop"
-      url: /github-desktop/06/
+      url: /github-desktop/create-branches-github-desktop
     - title: "Make Local Changes With GitHub Desktop"
-      url: /github-desktop/07/
+      url: /github-desktop/make-changes-github-desktop
     - title: "Add Local Commits With GitHub Desktop"
-      url: /github-desktop/08/
+      url: /github-desktop/add-commits-github-desktop
     - title: "Open a Pull Request With GitHub Desktop"
-      url: /github-desktop/09/
+      url: /github-desktop/pull-request-github-desktop
     - title: "Merge Your Pull Request on GitHub"
-      url: /github-desktop/10/
+      url: /github-desktop/merge-pull-request-github
     - title: "View Your GitHub Pages Site"
-      url: /github-desktop/11/
+      url: /github-desktop/view-github-pages-site
     - title: "Pushing to GitHub with GitHub Desktop"
-      url: /github-desktop/12/
+      url: /github-desktop/push-with-github-desktop
     - title: "Add Your GitHub Pages Site to the Showcase"
-      url: /github-desktop/13/
+      url: /github-desktop/add-github-pages-site-showcase
     - title: "Review the Local GitHub Flow"
-      url: /github-desktop/14/
+      url: /github-desktop/review-github-flow
     - title: "Pushing to GitHub & Using Pull Requests"
-      url: /github-desktop/15/
+      url: /github-desktop/push-pull-request-github-desktop
     - title: "Collaborate With GitHub Pull Requests"
-      url: /github-desktop/16/
+      url: /github-desktop/collaborate-github-pull-requests
     - title: "Merge Your Pull Request on GitHub"
-      url: /github-desktop/17/
+      url: /github-desktop/merge-pull-request-showcase
 
 github-cli:
   - title: "GitHub Pages & Git in the Command Line"

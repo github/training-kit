@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Install GitHub Desktop
-permalink: /github-desktop/02/
-next-page: /github-desktop/03/
+permalink: /github-desktop/install-github-desktop
+next-page: /github-desktop/create-remote-repository
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"
