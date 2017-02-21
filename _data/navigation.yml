@@ -97,37 +97,37 @@ github-cli:
   - title: "GitHub Pages & Git in the Command Line"
     url: /github-cli/
   - title: "Git Configuration"
-    url: /github-cli/02
+    url: /github-cli/git-configuration
   - title: "Create the Remote Repository on GitHub"
-    url: /github-cli/03
+    url: /github-cli/create-remote-repository
   - title: "Choose a GitHub Pages Theme"
-    url: /github-cli/04
+    url: /github-cli/choose-github-pages-theme
   - title: "Clone the Repository Using the Command Line"
-    url: /github-cli/05
+    url: /github-cli/clone-repo-cli
   - title: "Create Local Branches With Git"
-    url: /github-cli/06
+    url: /github-cli/create-branches-git
   - title: "Make Local Changes With Git"
-    url: /github-cli/07
+    url: /github-cli/make-local-changes-git
   - title: "Add Local Commits With Git"
-    url: /github-cli/08
+    url: /github-cli/add-commits-git
   - title: "Open a Pull Request on GitHub"
-    url: /github-cli/09
+    url: /github-cli/open-pull-request-github
   - title: "Merge Your Pull Request on GitHub"
-    url: /github-cli/10
+    url: /github-cli/merge-pull-request-github
   - title: "View Your GitHub Pages Site"
-    url: /github-cli/11
+    url: /github-cli/view-github-pages-site
   - title: "Git Push & Git Pull"
-    url: /github-cli/12
+    url: /github-cli/git-push-git-pull
   - title: "Add Your GitHub Pages Site to the Showcase"
-    url: /github-cli/13
+    url: /github-cli/add-github-pages-site-showcase
   - title: "Review the Local GitHub Flow in the Command Line"
-    url: /github-cli/14
+    url: /github-cli/github-flow-cli
   - title: "Review Pushing and Opening Pull Requests"
-    url: /github-cli/15
+    url: /github-cli/git-push-open-pull-request
   - title: "Collaborate With GitHub Pull Requests"
-    url: /github-cli/16
+    url: /github-cli/collaborate-github-pull-requests
   - title: "Merge Your Pull Request on GitHub"
-    url: /github-cli/17
+    url: /github-cli/merge-pull-request-github-showcase
 
 advanced:
   - title: "Welcome to Git Out Of Trouble"

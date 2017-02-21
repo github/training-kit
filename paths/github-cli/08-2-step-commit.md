@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Add Local Commits With Git
-permalink: /github-cli/08
-next-page: /github-cli/09
+permalink: /github-cli/add-commits-git
+next-page: /github-cli/open-pull-request-github
 facilitator: false
 sidebar:
   nav: "github-cli"

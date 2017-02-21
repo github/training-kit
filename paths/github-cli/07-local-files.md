@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Make Local Changes With Git
-permalink: /github-cli/07
-next-page: /github-cli/08
+permalink: /github-cli/make-local-changes-git
+next-page: /github-cli/add-commits-git
 facilitator: false
 sidebar:
   nav: "github-cli"

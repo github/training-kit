@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Merge Your Pull Request on GitHub
-permalink: /github-cli/10
-next-page: /github-cli/11
+permalink: /github-cli/merge-pull-request-github
+next-page: /github-cli/view-github-pages-site
 facilitator: false
 sidebar:
   nav: "github-cli"

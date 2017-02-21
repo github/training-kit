@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Clone the Repository Using the Command Line
-permalink: /github-cli/05
-next-page: /github-cli/06
+permalink: /github-cli/clone-repo-cli
+next-page: /github-cli/create-branches-git
 facilitator: false
 sidebar:
   nav: "github-cli"

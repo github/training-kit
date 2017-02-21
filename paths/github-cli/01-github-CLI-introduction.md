@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: GitHub Pages & Git in the Command Line
 permalink: /github-cli/
-next-page: /github-cli/02
+next-page: /github-cli/git-configuration
 facilitator: false
 sidebar:
   nav: "github-cli"

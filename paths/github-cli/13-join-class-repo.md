@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Add Your GitHub Pages Site to the Showcase
-permalink: /github-cli/13
-next-page: /github-cli/14
+permalink: /github-cli/add-github-pages-site-showcase
+next-page: /github-cli/github-flow-cli
 facilitator: false
 sidebar:
   nav: "github-cli"

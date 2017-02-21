@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Open a Pull Request on GitHub
-permalink: /github-cli/09
-next-page: /github-cli/10
+permalink: /github-cli/open-pull-request-github
+next-page: /github-cli/merge-pull-request-github
 facilitator: false
 sidebar:
   nav: "github-cli"
