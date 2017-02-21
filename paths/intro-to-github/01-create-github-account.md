@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Create a GitHub Account
-permalink: /intro-to-github/01/
-next-page: /intro-to-github/02/
+permalink: /intro-to-github/create-github-account
+next-page: /intro-to-github/join-class-repository
 sidebar:
   nav: "intro-nav"
 main-content:

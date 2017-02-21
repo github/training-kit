@@ -21,29 +21,29 @@ intro-nav:
   - title: "Introduction to GitHub"
     url: /intro-to-github/
   - title: "Create a GitHub Account"
-    url: /intro-to-github/01/
+    url: /intro-to-github/create-github-account
   - title: "Join the Class Repository"
-    url: /intro-to-github/02/
+    url: /intro-to-github/join-class-repository
   - title: "Explore the GitHub Repository"
-    url: /intro-to-github/03/
+    url: /intro-to-github/explore-github-repository
   - title: "Use GitHub Flow"
-    url: /intro-to-github/04/
+    url: /intro-to-github/use-github-flow
   - title: "Create a Branch"
-    url: /intro-to-github/05/
+    url: /intro-to-github/create-a-branch
   - title: "Find Your Coordinates"
-    url: /intro-to-github/06/
+    url: /intro-to-github/find-your-coordinates
   - title: "Working on GitHub"
-    url: /intro-to-github/07/
+    url: /intro-to-github/working-on-github
   - title: "Create a Pull Request"
-    url: /intro-to-github/08/
+    url: /intro-to-github/create-pull-request
   - title: "Collaborate on GitHub"
-    url: /intro-to-github/09/
+    url: /intro-to-github/collaborate-on-github
   - title: "Edit Files on GitHub"
-    url: /intro-to-github/10/
+    url: /intro-to-github/edit-files-on-github
   - title: "Merge Your Pull Request"
-    url: /intro-to-github/11/
+    url: /intro-to-github/merge-pull-request
   - title: "You Completed the GitHub Flow"
-    url: /intro-to-github/12/
+    url: /intro-to-github/you-completed-github-flow
 
 gh-pages:
   - title: "Introduction to GitHub Pages"

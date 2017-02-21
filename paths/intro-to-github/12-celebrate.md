@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: You Completed the GitHub Flow
-permalink: /intro-to-github/12/
+permalink: /intro-to-github/you-completed-github-flow
 sidebar:
   nav: "intro-nav"
 main-content: |

@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Collaborate on GitHub
-permalink: /intro-to-github/09/
-next-page: /intro-to-github/10/
+permalink: /intro-to-github/collaborate-on-github
+next-page: /intro-to-github/edit-files-on-github
 sidebar:
   nav: "intro-nav"
 main-content:

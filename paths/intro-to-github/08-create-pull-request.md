@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Create a Pull Request
-permalink: /intro-to-github/08/
-next-page: /intro-to-github/09/
+permalink: /intro-to-github/create-pull-request
+next-page: /intro-to-github/collaborate-on-github
 sidebar:
   nav: "intro-nav"
 main-content:

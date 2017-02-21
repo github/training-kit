@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Edit Files on GitHub
-permalink: /intro-to-github/10/
-next-page: /intro-to-github/11/
+permalink: /intro-to-github/edit-files-on-github
+next-page: /intro-to-github/merge-pull-request
 sidebar:
   nav: "intro-nav"
 main-content: |
