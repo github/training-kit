@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Collaborating on GitHub in Pull Requests
+title: Collaborate With GitHub Pull Requests
 permalink: /github-desktop/16/
 next-page: /github-desktop/17/
 facilitator: false

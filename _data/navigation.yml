@@ -88,7 +88,7 @@ github-desktop-nav:
       url: /github-desktop/14/
     - title: "Pushing to GitHub & Using Pull Requests"
       url: /github-desktop/15/
-    - title: "Collaborating on GitHub in Pull Requests"
+    - title: "Collaborate With GitHub Pull Requests"
       url: /github-desktop/16/
     - title: "Merge Your Pull Request on GitHub"
       url: /github-desktop/17/
@@ -124,7 +124,7 @@ github-cli:
     url: /github-cli/14
   - title: "Review Pushing and Opening Pull Requests"
     url: /github-cli/15
-  - title: "Collaborate on GitHub"
+  - title: "Collaborate With GitHub Pull Requests"
     url: /github-cli/16
   - title: "Merge Your Pull Request on GitHub"
     url: /github-cli/17
