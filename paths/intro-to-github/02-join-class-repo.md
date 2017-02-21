@@ -14,6 +14,6 @@ main-content:
 show-me-how: "images/gifs/intro/join-repo-make-issue-introduction.gif"
 tell-me-why: 
   includes:
-  - includes/create-issue.md
-  - includes/manage-notifications.md
+  - tell-me-why/create-issue.md
+  - tell-me-why/manage-notifications.md
 ---
