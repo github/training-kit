@@ -31,9 +31,11 @@ We are eager to create materials that are easy to use and follow! To that end, h
 
 - We focus on providing clear, step-by-step instructions for completing an activity, giving the learner the opportunity to study the concept in greater detail with the Tell Me Why feature.
 - We focus on minimalism.
+
+## Projects Used in Training-Kit
 - We use [Jekyll](https://jekyllrb.com/) and [Markdown](https://guides.github.com/features/mastering-markdown/).
 - The theme for the on-demand training is [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) and has some [amazing documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
-
+- The corner badge of an Octocat is from [tholman.com](http://tholman.com/github-corners/)
 
 ## Building and Packaging
 
