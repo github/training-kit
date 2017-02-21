@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Create the Remote Repository
+title: Choose a GitHub Pages Theme
 permalink: /github-cli/04
 next-page: /github-cli/05
 facilitator: false

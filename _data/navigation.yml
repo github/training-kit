@@ -100,7 +100,7 @@ github-cli:
     url: /github-cli/02
   - title: "Create the Remote Repository on GitHub"
     url: /github-cli/03
-  - title: "Choose a Theme"
+  - title: "Choose a GitHub Pages Theme"
     url: /github-cli/04
   - title: "Clone the Repository Using the Command Line"
     url: /github-cli/05
