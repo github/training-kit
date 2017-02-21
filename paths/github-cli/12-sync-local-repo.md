@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Git Push & Git Pull
-permalink: /github-cli/11
-next-page: /github-cli/12
+permalink: /github-cli/12
+next-page: /github-cli/13
 facilitator: false
 sidebar:
   nav: "github-cli"

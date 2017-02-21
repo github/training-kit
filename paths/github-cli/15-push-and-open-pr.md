@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Review Pushing and Opening Pull Requests
-permalink: /github-cli/14
-next-page: /github-cli/15
+permalink: /github-cli/15
+next-page: /github-cli/16
 facilitator: false
 sidebar:
   nav: "github-cli"

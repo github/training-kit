@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Create Local Branches With GitHub Desktop
-permalink: /github-desktop/05/
-next-page: /github-desktop/06/
+permalink: /github-desktop/06/
+next-page: /github-desktop/07/
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

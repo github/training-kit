@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Review the Local GitHub Flow in the Command Line
-permalink: /github-cli/13
-next-page: /github-cli/14
+permalink: /github-cli/14
+next-page: /github-cli/15
 facilitator: false
 sidebar:
   nav: "github-cli"

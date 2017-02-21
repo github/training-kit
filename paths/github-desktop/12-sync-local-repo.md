@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Keep GitHub in Sync
-permalink: /github-desktop/11/
-next-page: /github-desktop/12/
+title: Pushing to GitHub with GitHub Desktop
+permalink: /github-desktop/12/
+next-page: /github-desktop/13/
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

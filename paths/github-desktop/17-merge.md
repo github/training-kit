@@ -4,15 +4,15 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Merge Your Pull Request on GitHub
-permalink: /github-cli/16
+permalink: /github-desktop/17/
 facilitator: false
 sidebar:
-  nav: "github-cli"
+  nav: "github-desktop-nav"
 main-content:
   includes:
     - activity/github-desktop/16-merge-pr.md
-    - activity/github-CLI/clisurvey.md
-show-me-how: images/gifs/github-cli/merge-pull-request.gif
+    - activity/github-desktop/desktopsurvey.md
+show-me-how: images/gifs/github-desktop/merge.gif
 tell-me-why:
   includes:
     - tell-me-why/merge-pr.md

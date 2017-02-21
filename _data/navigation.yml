@@ -64,32 +64,34 @@ github-desktop-nav:
       url: /github-desktop/02/
     - title: "Create the Remote Repository on GitHub"
       url: /github-desktop/03/
-    - title: "Clone the Repository with GitHub Desktop"
+    - title: "Choose a GitHub Pages Theme"
       url: /github-desktop/04/
-    - title: "Create Local Branches With GitHub Desktop"
+    - title: "Clone the Repository with GitHub Desktop"
       url: /github-desktop/05/
-    - title: "Make Local Changes With GitHub Desktop"
+    - title: "Create Local Branches With GitHub Desktop"
       url: /github-desktop/06/
-    - title: "Add Local Commits With GitHub Desktop"
+    - title: "Make Local Changes With GitHub Desktop"
       url: /github-desktop/07/
-    - title: "Open a Pull Request With GitHub Desktop"
+    - title: "Add Local Commits With GitHub Desktop"
       url: /github-desktop/08/
-    - title: "Merge Your Pull Request on GitHub"
+    - title: "Open a Pull Request With GitHub Desktop"
       url: /github-desktop/09/
-    - title: "View Your GitHub Pages Site"
-      url: /github-desktop/10/
-    - title: "Keep GitHub in Sync"
-      url: /github-desktop/11/
-    - title: "Add Your GitHub Pages Site to the Showcase"
-      url: /github-desktop/12/
-    - title: "Review the Local GitHub Flow"
-      url: /github-desktop/13/
-    - title: "Review Pushing and Opening Pull Requests"
-      url: /github-desktop/14/
-    - title: "Collaborating on GitHub in Pull Requests"
-      url: /github-desktop/15/
     - title: "Merge Your Pull Request on GitHub"
+      url: /github-desktop/10/
+    - title: "View Your GitHub Pages Site"
+      url: /github-desktop/11/
+    - title: "Pushing to GitHub with GitHub Desktop"
+      url: /github-desktop/12/
+    - title: "Add Your GitHub Pages Site to the Showcase"
+      url: /github-desktop/13/
+    - title: "Review the Local GitHub Flow"
+      url: /github-desktop/14/
+    - title: "Pushing to GitHub & Using Pull Requests"
+      url: /github-desktop/15/
+    - title: "Collaborate on GitHub"
       url: /github-desktop/16/
+    - title: "Merge Your Pull Request on GitHub"
+      url: /github-desktop/17/
 
 github-cli:
   - title: "GitHub Pages & Git in the Command Line"
@@ -98,32 +100,34 @@ github-cli:
     url: /github-cli/02
   - title: "Create the Remote Repository on GitHub"
     url: /github-cli/03
-  - title: "Clone the Repository Using the Command Line"
+  - title: "Choose a Theme"
     url: /github-cli/04
-  - title: "Create Local Branches With Git"
+  - title: "Clone the Repository Using the Command Line"
     url: /github-cli/05
-  - title: "Make Local Changes With Git"
+  - title: "Create Local Branches With Git"
     url: /github-cli/06
-  - title: "Add Local Commits With Git"
+  - title: "Make Local Changes With Git"
     url: /github-cli/07
-  - title: "Open a Pull Request on GitHub"
+  - title: "Add Local Commits With Git"
     url: /github-cli/08
-  - title: "Merge Your Pull Request on GitHub"
+  - title: "Open a Pull Request on GitHub"
     url: /github-cli/09
-  - title: "View Your GitHub Pages Site"
-    url: /github-cli/10
-  - title: "Git Push & Git Pull"
-    url: /github-cli/11
-  - title: "Add Your GitHub Pages Site to the Showcase"
-    url: /github-cli/12
-  - title: "Review the Local GitHub Flow in the Command Line"
-    url: /github-cli/13
-  - title: "Review Pushing and Opening Pull Requests"
-    url: /github-cli/14
-  - title: "Collaborate with GitHub Pull Requests"
-    url: /github-cli/15
   - title: "Merge Your Pull Request on GitHub"
+    url: /github-cli/10
+  - title: "View Your GitHub Pages Site"
+    url: /github-cli/11
+  - title: "Git Push & Git Pull"
+    url: /github-cli/12
+  - title: "Add Your GitHub Pages Site to the Showcase"
+    url: /github-cli/13
+  - title: "Review the Local GitHub Flow in the Command Line"
+    url: /github-cli/14
+  - title: "Review Pushing and Opening Pull Requests"
+    url: /github-cli/15
+  - title: "Collaborate on GitHub"
     url: /github-cli/16
+  - title: "Merge Your Pull Request on GitHub"
+    url: /github-cli/17
 
 advanced:
   - title: "Welcome to Git Out Of Trouble"
