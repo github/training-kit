@@ -11,7 +11,7 @@ sidebar:
   nav: "open-source"
 main-content: |
 
-Before
+ Before
 
 show-me-how:
 tell-me-why: |
