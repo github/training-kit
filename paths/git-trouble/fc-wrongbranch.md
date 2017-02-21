@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Git Committed to the Wrong Branch!
-permalink: /git-trouble/05
-next-page: /git-trouble/02
+permalink: /git-trouble/git-commit-wrong-branch
+next-page: /git-trouble/git-scenarios
 facilitator: false
 sidebar:
   nav: "advanced"

@@ -133,17 +133,17 @@ advanced:
   - title: "Welcome to Git Out Of Trouble"
     url: /git-trouble/
   - title: "Set Up Your Git Scenario Environment"
-    url: /git-trouble/01
+    url: /git-trouble/git-set-up
   - title: "Git Trouble Scenarios"
-    url: /git-trouble/02
+    url: /git-trouble/git-scenarios
     children:
     - title: "Too Many (small) Git Commits"
-      url: /git-trouble/03
+      url: /git-trouble/too-many-commits
     - title: "Git Commit Message Sucks"
-      url: /git-trouble/04
+      url: /git-trouble/git-commit-message
     - title: "Git Committed to Wrong Branch"
-      url: /git-trouble/05
+      url: /git-trouble/git-commit-wrong-branch
     - title: "Accidental Git Commit"
-      url: /git-trouble/06
+      url: /git-trouble/accidental-git-commit
     - title: "Just Make it Go Away: Breaking Things With Git"
-      url: /git-trouble/07
+      url: /git-trouble/breaking-things-with-git

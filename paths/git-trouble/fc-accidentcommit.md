@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Accidental Git Commit
-permalink: /git-trouble/06
-next-page: /git-trouble/02
+permalink: /git-trouble/accidental-git-commit
+next-page: /git-trouble/git-scenarios
 facilitator: false
 sidebar:
   nav: "advanced"
