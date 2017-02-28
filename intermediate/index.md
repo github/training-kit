@@ -855,5 +855,5 @@ $ git checkout HEAD@{[n]} -- [path]
 ```
 
 #### Additional Resources
-* [O'Reilly's Mastering Git video series](http://bit.ly/ogitvid)
+* O'Reilly's Mastering Git video series
 * [Git and GitHub LiveLessons (Workshop)](http://www.informit.com/store/git-and-github-livelessons-workshop-9780133991772)
