@@ -11,10 +11,11 @@ Keep doing this until you see a message that the build has passed. If you need h
 ### Help With Specific Issues
 
 The build can fail because of many reasons. By looking at the details of the **Travis CI** log it might help you to troubleshoot your code.
-1) Open the _Pull request_
-2) Go to the bottom to the "merge" icon to the section where it says that 'All checks have failed'.
-   Here you'll see a lot of red crosses. Not good.
-3) Open the `Details`
+
+1. Open the _Pull request_  
+2. Go to the bottom to the "merge" icon to the section where it says that 'All checks have failed'.  
+  Here you'll see a lot of red crosses. Not good.  
+3. Open the `Details`  
 
 The build log of Travis CI may appear a little cryptic. But with some careful reading you might be able to pull out the reason why your build is failing. (Btw if you think the `job log` is cryptic, try and click on the `Raw log`.)
 
