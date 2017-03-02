@@ -32,8 +32,8 @@ intro-nav:
     url: /intro-to-github/create-a-branch
   - title: "Find Your Coordinates"
     url: /intro-to-github/find-your-coordinates
-  - title: "Working on GitHub"
-    url: /intro-to-github/working-on-github
+  - title: "Work on GitHub"
+    url: /intro-to-github/work-on-github
   - title: "Create a Pull Request"
     url: /intro-to-github/create-pull-request
   - title: "Collaborate on GitHub"

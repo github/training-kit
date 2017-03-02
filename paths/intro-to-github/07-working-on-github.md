@@ -3,8 +3,8 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Working on GitHub
-permalink: /intro-to-github/working-on-github
+title: Work on GitHub
+permalink: /intro-to-github/work-on-github
 next-page: /intro-to-github/create-pull-request
 sidebar:
   nav: "intro-nav"
