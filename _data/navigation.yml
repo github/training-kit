@@ -45,18 +45,6 @@ intro-nav:
   - title: "You Completed the GitHub Flow"
     url: /intro-to-github/you-completed-github-flow
 
-gh-pages:
-  - title: "Introduction to GitHub Pages"
-    url: /patchwork/gh-pages/
-  - title: "Editing Your GitHub Page"
-    url: /patchwork/gh-pages/02/
-  - title: "Creating Pages and Posts in Jekyll"
-    url: /patchwork/gh-pages/03/
-  - title: "Templates and Design"
-    url: /patchwork/gh-pages/04/
-  - title: "Installing Jekyll Locally"
-    url: /patchwork/gh-pages/05/
-
 github-desktop-nav:
     - title: "GitHub Pages & GitHub Desktop"
       url: /github-desktop/
