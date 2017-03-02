@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: To Infinity and Other Places You Might Like
+title: Next Steps
 permalink: /open-source/11
 facilitator: false
 sidebar:
