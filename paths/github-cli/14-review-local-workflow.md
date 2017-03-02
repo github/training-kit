@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Review the Local Workflow
-permalink: /github-cli/14
-next-page: /github-cli/15
+title: Review the Local GitHub Flow in the Command Line
+permalink: /github-cli/github-flow-cli
+next-page: /github-cli/git-push-open-pull-request
 facilitator: false
 sidebar:
   nav: "github-cli"

@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Welcome
+title: Introduction to GitHub
 permalink: /intro-to-github/
-next-page: /intro-to-github/01/
+next-page: /intro-to-github/create-github-account
 sidebar:
   nav: "intro-nav"
 main-content: |

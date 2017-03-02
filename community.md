@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Community
+title: GitHub Training Community
 category: community
 permalink: /community/
 header:

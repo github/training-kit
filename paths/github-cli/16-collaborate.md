@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Let's Collaborate!
-permalink: /github-cli/16
-next-page: /github-cli/17
+title: Collaborate with GitHub Pull Requests
+permalink: /github-cli/collaborate-github-pull-requests
+next-page: /github-cli/merge-pull-request-github-showcase
 facilitator: false
 sidebar:
   nav: "github-cli"

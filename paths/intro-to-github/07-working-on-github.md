@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Work on GitHub
-permalink: /intro-to-github/07/
-next-page: /intro-to-github/08/
+permalink: /intro-to-github/work-on-github
+next-page: /intro-to-github/create-pull-request
 sidebar:
   nav: "intro-nav"
 main-content:
