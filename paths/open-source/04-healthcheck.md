@@ -10,7 +10,7 @@ facilitator: false
 sidebar:
   nav: "open-source"
 main-content: |
-  Before deciding to contribute to a project, you can inspect a couple of elements of the repository to determine if their is active development on it. Using the [Atom](https://github.com/atom/atom) repository as an example, lets review some areas that help determine the health of a repository.
+  Before deciding to contribute to a project, you can inspect a couple of elements of the repository to determine if there is active development on it. Using the [Atom](https://github.com/atom/atom) repository as an example, lets review some areas that help determine the health of a repository.
 
   ![image-center](../images/os_repoexample.png){: .align-center}
 
@@ -18,7 +18,7 @@ main-content: |
   You can also use tools created by the community to help you with your assessment of the repository.
 
   - [**Is It Maintained?**](http://isitmaintained.com/) helps you assess the average time it takes to close an issue, and how many issues in total are open.
-    - To be fair, this isn't always the best way to assess a repository. Sometimes issues stay open for a long time to indicate that there aren't enough contributors.
+    - To be fair, this isn't always the best way to assess a repository. Sometimes issues stay open for a long time, which may indicate that there aren't enough contributors.
   - [**FOSS Heartbeat**](https://sarahsharp.github.io/foss-heartbeat/) helps you assess community involvement within a repository using contributor participation data.
 
 open-source: |
@@ -37,7 +37,7 @@ open-source: |
   - How many contributors does the project have?
   - How often do people commit? (On GitHub, you can find this by clicking "Commits" in the top bar.)
 
-  Next, look at the project's issues.
+  #### Next, look at the project's issues.
 
   - How many open issues are there?
   - Do maintainers respond quickly to issues when they are opened?
@@ -45,7 +45,7 @@ open-source: |
   - Are the issues recent?
   - Are issues getting closed? (On GitHub, click the "closed" tab on the Issues page to see closed issues.)
 
-  Now do the same for the project's pull requests.
+  #### Now do the same for the project's pull requests.
 
   - How many open pull requests are there?
   - Do maintainers respond quickly to pull requests when they are opened?
@@ -67,7 +67,7 @@ show-me-how:
  - Foss Heartbeat Video
 tell-me-why: |
  ### Stars, Forks, and Watch
-  The number of people who are `watch`ing, have `star`red, and `fork`ed the repository can be an indiciation of how much impact the project is having. Keep in mind, a repository doesn't _need_ to have a lot of people watching, starring, or forking it for you to want to contribute. 
+  The number of people who are `watch`ing, have `star`red, and `fork`ed the repository can be an indiciation of how much impact the project is having. Keep in mind, a repository doesn't _need_ to have a lot of people watching, starring, or forking it for you to want to contribute.
 
  ### Description / Link
   The description and link section of the repository just displays a brief introduction of the project and potentially a link to a website with more information.
