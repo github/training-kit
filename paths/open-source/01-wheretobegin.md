@@ -18,6 +18,7 @@ main-content: |
 
   ### Step One (Ways to Contribute)
   More detail/guidance on this section can be found in **Open Sources** below.
+  Answer yes or no to the following questions.  
 
   - Do you like planning events?
   - Do you like to design?

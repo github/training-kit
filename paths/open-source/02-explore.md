@@ -21,7 +21,7 @@ main-content: |
 
   Now, hopefully you wrote things down as prompted on the last page. If you didn't, hopefully you have some ideas fixed in your mind. Otherwise, this next section is going to be difficult.
 
-  We're hoping to open a large quantity of potential repositories, which we'll parse down as time goes on. Open a lot of tabs, it'll be okay.
+  For each section below, open a large quantity of potential repositories, which we'll parse down as time goes on. Open a lot of tabs, it'll be okay.
 
   ## Showcases
   ![image-center](../images/os_showcase.png){: .align-center}
