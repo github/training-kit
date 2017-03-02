@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Pushing to GitHub & Using Pull Requests
+title: Push to GitHub & Create a Pull Request
 permalink: /github-desktop/push-pull-request-github-desktop
 next-page: /github-desktop/collaborate-github-pull-requests
 facilitator: false

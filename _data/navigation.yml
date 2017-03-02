@@ -68,13 +68,13 @@ github-desktop-nav:
       url: /github-desktop/merge-pull-request-github
     - title: "View Your GitHub Pages Site"
       url: /github-desktop/view-github-pages-site
-    - title: "Pushing to GitHub with GitHub Desktop"
+    - title: "Push to GitHub with GitHub Desktop"
       url: /github-desktop/push-with-github-desktop
     - title: "Add Your GitHub Pages Site to the Showcase"
       url: /github-desktop/add-github-pages-site-showcase
     - title: "Review the Local GitHub Flow"
       url: /github-desktop/review-github-flow
-    - title: "Pushing to GitHub & Using Pull Requests"
+    - title: "Push to GitHub & Create a Pull Request"
       url: /github-desktop/push-pull-request-github-desktop
     - title: "Collaborate With GitHub Pull Requests"
       url: /github-desktop/collaborate-github-pull-requests
