@@ -133,5 +133,5 @@ advanced:
       url: /git-trouble/git-commit-wrong-branch
     - title: "Accidental Git Commit"
       url: /git-trouble/accidental-git-commit
-    - title: "Just Make it Go Away: Breaking Things With Git"
+    - title: "Just Make it Go Away - Breaking Things With Git"
       url: /git-trouble/breaking-things-with-git
