@@ -15,10 +15,11 @@ Learning Git and GitHub can seem daunting but with this helpful list of training
 
 | | Title | Time
 | --- | --- | ---
+| :tv: | [What is GitHub?](https://youtu.be/w3jLJU7DT5E) | 3:45
 | :computer: | [On Demand: Introduction to GitHub](https://services.github.com/on-demand/intro-to-github/) | 30:00
 | :computer: | [On Demand: Using GitHub Desktop](https://services.github.com/on-demand/github-desktop/) | 30:00
 | :tv: | [Setup Git](https://www.youtube.com/watch?v=7Inc0G0wutk) | 2:15
-| | **Total** | ~1:02:15
+| | **Total** | ~1:06
 
 
 ## Ready for Next Steps
