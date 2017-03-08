@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Explore the GitHub Repository
-permalink: /windows/
-next-page: /windows/01
+permalink: /intro-to-github/explore-github-repository
+next-page: /intro-to-github/use-github-flow
 sidebar:
   nav: "windows"
 main-content: |

@@ -135,3 +135,9 @@ advanced:
       url: /git-trouble/accidental-git-commit
     - title: "Just Make it Go Away - Breaking Things With Git"
       url: /git-trouble/breaking-things-with-git
+
+windows:
+  - title: "Welcome to GitHub for Windows Users"
+    url: /windows/
+  - title: "CRLF: Line Endings"
+    url: /windows/01
