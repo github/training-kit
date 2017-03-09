@@ -30,6 +30,8 @@ show-me-how:
 tell-me-why: |
   ## What is GitHub?
 
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E?ecver=1" frameborder="0" allowfullscreen></iframe>
+
   We are glad you asked! Many people stumble onto GitHub through one of the millions of Open Source projects it holds or because their employer or professor is using it. Why do these projects use GitHub?
 
   **At its heart, GitHub is a collaboration platform.**
