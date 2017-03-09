@@ -145,4 +145,12 @@ windows:
     url: /windows/git-crlf
   - title: "Credential Management"
     url: /windows/git-credentials
-  - title: ""
+  - title: "Visual Source Integration"
+    url: /windows/visual-source
+    children:
+    - title: "Installing the Visual Source Integration"
+      url: /windows/install-visual-source
+    - title: "Starting a project"
+      url: /windows/vs-start-project
+  - title: "Another options"
+    url: /windows/another-option
