@@ -138,6 +138,11 @@ advanced:
 
 windows:
   - title: "Welcome to GitHub for Windows Users"
-    url: /windows/
+    url: /windows/github-for-windows
+  - title: "Installing Git"
+    url: /windows/installing-git
   - title: "CRLF: Line Endings"
-    url: /windows/01
+    url: /windows/git-crlf
+  - title: "Credential Management"
+    url: /windows/git-credentials
+  - title: ""
