@@ -140,24 +140,25 @@ windows:
   - title: "Welcome to GitHub for Windows Users"
     url: /windows/github-for-windows
   - title: "Getting Started"
+    url: /windows/getting-started
     children:
     - title: "Installing Git"
-    url: /windows/installing-git
+      url: /windows/installing-git
     - title: "Installing GitHub Desktop"
-    url: /windows/installing-desktop
+      url: /windows/installing-desktop
     - title: "Configuring Git"
-    url: /windows/configure-git
+      url: /windows/configure-git
     - title: "CRLF: Line Endings"
-    url: /windows/git-crlf
+      url: /windows/git-crlf
     - title: "Credential Management"
-    url: /windows/git-credentials
+      url: /windows/git-credentials
   - title: "Editors"
     url: /windows/editors
     children:
     - title: "VI Basics"
-    url: /windows/vi-basics
+      url: /windows/vi-basics
     - title: "Configure Other Editors"
-    url: /windows/configure-editors
+      url: /windows/configure-editors
   - title: "Visual Source Integration"
     url: /windows/visual-source
     children:
