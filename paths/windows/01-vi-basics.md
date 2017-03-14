@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Explore the GitHub Repository
-permalink: /windows/01
-next-page: /windows/02
+permalink: /windows/vi-basics
+next-page: /windows/configure-editors
 sidebar:
   nav: "windows"
 main-content: |

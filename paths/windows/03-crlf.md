@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Line Endings
-permalink: /intro-to-github/git-crlf
-next-page: /intro-to-github/use-github-flow
+permalink: /windows/git-crlf
+next-page: /windows/use-github-flow
 sidebar:
   nav: "windows"
 main-content: |
