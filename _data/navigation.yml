@@ -148,7 +148,7 @@ windows:
       url: /windows/configure-git
     - title: "CRLF: Line Endings"
       url: /windows/git-crlf
-    - title: "Credential Management"
+    - title: "Storing Your Password"
       url: /windows/git-credentials
   - title: "Editors"
     url: /windows/editors
