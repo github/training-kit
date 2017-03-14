@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Installing Git
-permalink: /windows/installing-git
-next-page: /windows/02
+permalink: /windows/configure-git
+next-page: /windows/git-crlf
 sidebar:
   nav: "windows"
 main-content: |
@@ -19,7 +19,7 @@ main-content: |
   ### Defining `user.email`
   1. In your terminal application enter, `git config --global user.email your_email@email.com`; where `your_email.mail.com` is the e-mail address associated with your GitHub account.
 
-  Now that you have configured your user name and email, it is time to define your Carriage Return Line Feed (crlf) on the next page. 
+  Now that you have configured your user name and email, it is time to define your Carriage Return Line Feed (crlf) on the next page.
 
 show-me-how: "images/gifs/intro/example.gif"
 tell-me-why: |
