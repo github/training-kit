@@ -17,6 +17,6 @@ main-content: |
 show-me-how: "images/gifs/intro/example.gif"
 tell-me-why: |
 
-https://help.github.com/articles/caching-your-github-password-in-git/#platform-windows
+  https://help.github.com/articles/caching-your-github-password-in-git/#platform-windows
 
 ---
