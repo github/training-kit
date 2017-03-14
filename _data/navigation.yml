@@ -144,8 +144,6 @@ windows:
     children:
     - title: "Installing Git"
       url: /windows/installing-git
-    - title: "Installing GitHub Desktop"
-      url: /windows/installing-desktop
     - title: "Configuring Git"
       url: /windows/configure-git
     - title: "CRLF: Line Endings"

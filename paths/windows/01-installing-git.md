@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Installing Git
-permalink: /windows/01
+permalink: /windows/installing-git
 next-page: /windows/02
 sidebar:
   nav: "windows"

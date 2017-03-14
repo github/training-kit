@@ -18,6 +18,8 @@ main-content: |
 
   Use the table of contents on the left side of the screen to navigate through the different setup and configuration steps.
 
-  :peace_symbol: :heart: & :octocat:
+  :heart:,
+  
+  :octocat:
 
 ---
