@@ -13,7 +13,7 @@ main-content: |
 
   1. Find your latitude and longitude using one of these buttons.
 
-        [<i class="fa fa-location-arrow" aria-hidden="true"></i> Find My Coordinates Automatically](#location){: #find-location .btn .btn--success} [<i class="fa fa-map-marker" aria-hidden="true"></i> Manually Search for My Own Coordinates ](https://mynasadata.larc.nasa.gov/latitudelongitude-finder/){: .btn .btn--warning}
+        [<i class="fa fa-location-arrow" aria-hidden="true"></i> Find My Coordinates Automatically](#location){: #find-location .btn .btn--success} [<i class="fa fa-map-marker" aria-hidden="true"></i> Manually Search for My Own Coordinates ](https://landsatlook.usgs.gov/viewer.html){: .btn .btn--warning}
 
         <div id="location-box" style="display:none;">
         You're in <span id="city"></span>, <span id="region"></span>, <span id="country"></span><br>
