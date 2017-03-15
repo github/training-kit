@@ -9,7 +9,7 @@ next-page: /windows/git-crlf
 sidebar:
   nav: "windows"
 main-content: |
-  Things
+  Things hello.
 
 show-me-how: "images/gifs/intro/example.gif"
 tell-me-why: |
