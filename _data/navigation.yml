@@ -138,7 +138,7 @@ advanced:
 
 windows:
   - title: "Welcome to GitHub for Windows Users"
-    url: /windows/github-for-windows
+    url: /windows/
   - title: "Getting Started"
     url: /windows/getting-started
     children:
