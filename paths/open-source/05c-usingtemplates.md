@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Using Templates
-permalink: /open-source/06a
+permalink: /open-source/05b
 facilitator: false
 sidebar:
   nav: "open-source"

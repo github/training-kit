@@ -11,8 +11,10 @@ sidebar:
   nav: "open-source"
 main-content: |
 
+    Finding the thing to work on... a look into issues and filtering
 
-
+    If what you want to work on does not exist, check for a template.
+    
 show-me-how:
 tell-me-why: |
 

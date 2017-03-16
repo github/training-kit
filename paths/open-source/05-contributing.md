@@ -10,7 +10,13 @@ facilitator: false
 sidebar:
   nav: "open-source"
 main-content: |
-  Once you decide to commit to a repository, it's important to briefly look over the scope of the project.
+
+  Once you decide to commit to a repository, it's important to:
+
+  - Find the rulebook
+  - Briefly look over the scope of the project
+  - Identify where you can help
+  - Be nice
 
 show-me-how:
 tell-me-why: |
