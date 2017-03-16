@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Communication
+title: Responding to Feedback
 permalink: /open-source/10
 next-page: /open-source/11
 facilitator: false
