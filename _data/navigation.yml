@@ -151,7 +151,7 @@ windows:
     - title: "Storing Your Password"
       url: /windows/git-credentials
   - title: "Editors"
-    url: /windows/vi-basics
+    url: /windows/editors
     children:
     - title: "VI Basics"
       url: /windows/vi-basics
