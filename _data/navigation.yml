@@ -140,7 +140,7 @@ windows:
   - title: "Welcome to GitHub for Windows Users"
     url: /windows/
   - title: "Getting Started"
-    url: /windows/installing-git
+    url: /windows/getting-started
     children:
     - title: "Installing Git"
       url: /windows/installing-git
