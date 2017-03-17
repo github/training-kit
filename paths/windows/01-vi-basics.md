@@ -3,13 +3,13 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Explore the GitHub Repository
+title: vi Basics
 permalink: /windows/vi-basics
 next-page: /windows/configure-editors
 sidebar:
   nav: "windows"
 main-content: |
-  If you haven't defined a `core.editor` for git to use, it defaults to using VI for commit messages, interactive rebases, and other commands that require user input. Before we identify how to setup a `core.editor` you might need the following information:
+  If you haven't defined a `core.editor` for git to use, it defaults to using [vi](https://en.wikipedia.org/wiki/Vi) for commit messages, interactive rebases, and other commands that require user input. Before we identify how to setup a `core.editor` you might need the following information:
 
   ### How the *$#@& do I get out of VI?
   First, don't worry, everyone gets stuck in VI. Second, it is _really_ easy to get out of VI using the following:
