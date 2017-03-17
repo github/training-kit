@@ -165,8 +165,6 @@ windows:
     children:
     - title: "Install the GitHub Extension"
       url: /windows/install-visual-source
-    - title: "Integration Walkthrough"
-      url: /windows/int-walkthrough
     - title: "Start a Project"
       url: /windows/vs-start-project
     - title: "Make a Commit"
