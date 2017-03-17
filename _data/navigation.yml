@@ -160,7 +160,7 @@ windows:
   - title: "Visual Source Integration"
     url: /windows/visual-source
     children:
-    - title: "Installing the Visual Source Integration"
+    - title: "Install the GitHub Extension"
       url: /windows/install-visual-source
     - title: "Integration Walkthrough"
       url: /windows/int-walkthrough
