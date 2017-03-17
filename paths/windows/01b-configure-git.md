@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Installing Git
+title: Configuring Git
 permalink: /windows/configure-git
 next-page: /windows/git-crlf
 sidebar:
@@ -21,7 +21,7 @@ main-content: |
 
   Now that you have configured your user name and email, it is time to define your Carriage Return Line Feed (crlf) on the next page.
 
-show-me-how: "images/gifs/intro/example.gif"
+show-me-how: "images/gifs/windows/configure-git.gif"
 tell-me-why: |
 
 ---

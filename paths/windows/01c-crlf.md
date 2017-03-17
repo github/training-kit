@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Line Endings
+title: CRLF aka Line Endings
 permalink: /windows/git-crlf
 next-page: /windows/use-github-flow
 sidebar:
@@ -15,7 +15,7 @@ main-content: |
   1. Enter: `git config --global core.autocrlf true`. These instructions assume you are using Windows, if you are using macOS or a flavor of Linux, use the following: `git config --global core.autocrlf input`.
   1. To ensure you applied the configuration setting, you can enter: `git config --global --list` to view the different configurations settings.
 
-show-me-how: "images/gifs/intro/example.gif"
+show-me-how: "images/gifs/windows/configure-crlf.gif"
 tell-me-why: |
 
   ### What does autocrlf do?
