@@ -168,5 +168,7 @@ windows:
       url: /windows/flow-in-vs
     - title: "Starting a project"
       url: /windows/vs-start-project
-  - title: "Another options"
-    url: /windows/another-option
+    - title: "Make a Commit"
+      url: /windows/vs-make-commit
+    - title: "Sync?"
+      url: /windows/wtf-sync

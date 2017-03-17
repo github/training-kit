@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Installing Git
 permalink: /windows/installing-git
-next-page: /windows/02
+next-page: /windows/configure-git
 sidebar:
   nav: "windows"
 main-content: |
