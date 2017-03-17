@@ -21,7 +21,7 @@ main-content: |
 
   Now that you have configured your user name and email, it is time to define your Carriage Return Line Feed (crlf) on the next page.
 
-show-me-how: "images/gifs/intro/example.gif"
+show-me-how: "images/gifs/windows/configure-git.gif"
 tell-me-why: |
 
 ---
