@@ -16,7 +16,5 @@ main-content: |
   - [GitHub Desktop](https://desktop.github.com/)
      - [GitHub Desktop Installation Instructions](https://help.github.com/desktop/guides/getting-started/installing-github-desktop/#platform-windows)
      - [GitHub Desktop Getting Started Guide](https://help.github.com/desktop/guides/getting-started/)
-show-me-how: "images/gifs/intro/example.gif"
-tell-me-why: |
 
 ---
