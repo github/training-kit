@@ -10,7 +10,8 @@ sidebar:
   nav: "windows"
 main-content: |
   When creating a repository using the Visual Studio extension there might be some confusion on how to get your repository on GitHub.com.
-  ### Started Locally
+
+  ## Started Locally
   If you create the repository locally follow these steps:
 
   1. Create the repository using the Visual Studio extension.
@@ -27,7 +28,7 @@ main-content: |
   1. CLICK **Initialize this repository with a README** checkbox.
   1. Click **Create repository**.
   1. Use the **Quick setup** instructions to clone your repository to your machine.
-  
+
 show-me-how: "images/gifs/intro/example.gif"
 tell-me-why: |
   Tell Me Why content

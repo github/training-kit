@@ -171,4 +171,4 @@ windows:
     - title: "Make a Commit"
       url: /windows/vs-make-commit
     - title: "Sync?"
-      url: /windows/wtf-sync
+      url: /windows/vs-sync
