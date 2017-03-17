@@ -142,16 +142,16 @@ advanced:
 windows:
   - title: "Welcome to GitHub for Windows Users"
     url: /windows/
-  - title: "Getting Started"
+  - title: "Get Started"
     url: /windows/getting-started
     children:
-    - title: "Installing Git"
+    - title: "Install Git"
       url: /windows/installing-git
-    - title: "Configuring Git"
+    - title: "Configure Git"
       url: /windows/configure-git
     - title: "CRLF aka Line Endings"
       url: /windows/git-crlf
-    - title: "Storing Your Password"
+    - title: "Store Your Password"
       url: /windows/git-credentials
   - title: "Editors"
     url: /windows/editors
@@ -167,9 +167,7 @@ windows:
       url: /windows/install-visual-source
     - title: "Integration Walkthrough"
       url: /windows/int-walkthrough
-    - title: "GitHub Flow in Visual Studio"
-      url: /windows/flow-in-vs
-    - title: "Starting a project"
+    - title: "Start a Project"
       url: /windows/vs-start-project
     - title: "Make a Commit"
       url: /windows/vs-make-commit
