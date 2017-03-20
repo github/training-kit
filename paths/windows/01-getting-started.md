@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Installing Git
+title: Get Started
 permalink: /windows/getting-started
 next-page: /windows/installing-git
 sidebar:
