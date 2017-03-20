@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Configure Other Editors
 permalink: /windows/configure-editors
-next-page: /windows/02
+next-page: /windows/visual-studio
 sidebar:
   nav: "windows"
 main-content: |
