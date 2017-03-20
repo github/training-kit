@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Configuring Git
+title: Visual Studio Integration
 permalink: /windows/visual-studio
 next-page: /windows/install-visual-studio
 sidebar:
