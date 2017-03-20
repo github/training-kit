@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Configure Line Endings
 permalink: /windows/git-crlf
-next-page: /windows/use-github-flow
+next-page: /windows/git-credentials
 sidebar:
   nav: "windows"
 main-content: |
