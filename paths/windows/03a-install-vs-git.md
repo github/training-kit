@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Install the GitHub Extension
 permalink: /windows/install-visual-studio
-next-page: /windows/02
+next-page: /windows/vs-start-project
 sidebar:
   nav: "windows"
 main-content: |
