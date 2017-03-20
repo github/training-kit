@@ -160,11 +160,11 @@ windows:
       url: /windows/vi-basics
     - title: "Configure Other Editors"
       url: /windows/configure-editors
-  - title: "Visual Source Integration"
-    url: /windows/visual-source
+  - title: "Visual Studio Integration"
+    url: /windows/visual-studio
     children:
     - title: "Install the GitHub Extension"
-      url: /windows/install-visual-source
+      url: /windows/install-visual-studio
     - title: "Start a Project"
       url: /windows/vs-start-project
     - title: "Make a Commit"
