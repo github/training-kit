@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Storing Your Password
 permalink: /windows/git-credentials
-next-page: /windows/git-crlf
+next-page: /windows/editors
 sidebar:
   nav: "windows"
 main-content: |
