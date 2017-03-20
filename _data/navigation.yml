@@ -10,6 +10,9 @@ main:
   - title: "Git Out of Trouble"
     beta: true
     url: /git-trouble/
+  - title: "GitHub for Windows Users"
+    beta: true
+    url: /windows/
   - title: "Git & GitHub Training Path"
     url: /path/
   - title: "GitHub Training Community"
@@ -135,3 +138,38 @@ advanced:
       url: /git-trouble/accidental-git-commit
     - title: "Just Make it Go Away - Breaking Things With Git"
       url: /git-trouble/breaking-things-with-git
+
+windows:
+  - title: "Welcome to GitHub for Windows Users"
+    url: /windows/
+  - title: "Get Started"
+    url: /windows/getting-started
+    children:
+    - title: "Install Git"
+      url: /windows/installing-git
+    - title: "Configure Git"
+      url: /windows/configure-git
+    - title: "Configure Line Endings"
+      url: /windows/git-crlf
+    - title: "Store Your Password"
+      url: /windows/git-credentials
+  - title: "Editors"
+    url: /windows/editors
+    children:
+    - title: "vi Basics"
+      url: /windows/vi-basics
+    - title: "Configure Other Editors"
+      url: /windows/configure-editors
+  - title: "Visual Studio Integration"
+    url: /windows/visual-studio
+    children:
+    - title: "Install the GitHub Extension"
+      url: /windows/install-visual-studio
+    - title: "Start a Project"
+      url: /windows/vs-start-project
+    - title: "Make a Commit"
+      url: /windows/vs-make-commit
+    - title: "What is Sync?"
+      url: /windows/vs-sync
+  - title: "Congratulations"
+    url: /windows/congrats
