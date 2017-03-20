@@ -9,7 +9,7 @@ next-page: /windows/configure-git
 sidebar:
   nav: "windows"
 main-content: |
-  Installing Git on your Windows computer is relatively straightforward. You can either download Git from git-scm or install the GUI Git platform built with :heart: by GitHub, GitHub Desktop. Once you have downloaded either installation option,  
+  Installing Git on your Windows computer is relatively straightforward. You can either download Git from git-scm or install the GUI Git platform built with :heart: by GitHub, GitHub Desktop. 
 
   - [git-scm](https://git-scm.com/downloads)
      - [git-scm Windows Install Guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
