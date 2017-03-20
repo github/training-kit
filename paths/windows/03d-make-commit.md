@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Make a Commit
 permalink: /windows/vs-make-commit
-next-page: /windows/git-crlf
+next-page: /windows/vs-sync
 sidebar:
   nav: "windows"
 main-content: |
