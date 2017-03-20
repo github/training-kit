@@ -14,8 +14,12 @@ main-content: |
   ## Changing `core.editor`
   To change the default editor that git uses, you can use the `git config core.editor` setting. Every text editor is assigned to the `core.editor` setting differently, but thankfully there is a [GitHub Help](https://help.github.com/articles/associating-text-editors-with-git/) article about how to associate a specific editor as your default editor. Using the [Atom](https://atom.io/) text editor as an example it would look something like this:
 
+  1. Make sure your terminal application is closed.
   1. Install [Atom](https://atom.io/).
   1. Enter the following in your terminal application: `git config --global core.editor "atom --wait"`.
+
+  In some instances, you will need to use the installation path of Atom when setting the config settings.   
+
 show-me-how: "images/gifs/intro/example.gif"
 tell-me-why: |
   ## Why --global?
