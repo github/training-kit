@@ -14,9 +14,7 @@ main-content: |
   1. Enter,  `git config --global credential.helper wincred`
   1. Perform an operation that normally requires you to enter your password, like `git push`, enter your password when prompted, and you shouldn't have to enter it agin.
 
+  For more information about caching your password, review the GitHub Help [documentation](https://help.github.com/articles/caching-your-github-password-in-git/#platform-windows).
 show-me-how: "images/gifs/windows/configure-credmgr.gif"
-tell-me-why: |
-
-  https://help.github.com/articles/caching-your-github-password-in-git/#platform-windows
 
 ---

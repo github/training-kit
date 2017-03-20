@@ -20,7 +20,6 @@ main-content: |
 
   In some instances, you will need to use the installation path of Atom when setting the config settings.   
 
-show-me-how: "images/gifs/intro/example.gif"
 tell-me-why: |
   ## Why --global?
 

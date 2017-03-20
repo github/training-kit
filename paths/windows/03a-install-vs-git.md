@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Install the GitHub Extension
-permalink: /windows/install-visual-source
+permalink: /windows/install-visual-studio
 next-page: /windows/02
 sidebar:
   nav: "windows"
