@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: CRLF aka Line Endings
+title: Configure Line Endings
 permalink: /windows/git-crlf
 next-page: /windows/use-github-flow
 sidebar:

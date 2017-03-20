@@ -149,7 +149,7 @@ windows:
       url: /windows/installing-git
     - title: "Configure Git"
       url: /windows/configure-git
-    - title: "CRLF aka Line Endings"
+    - title: "Configure Line Endings"
       url: /windows/git-crlf
     - title: "Store Your Password"
       url: /windows/git-credentials

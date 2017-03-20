@@ -17,7 +17,7 @@ main-content: |
   1. Search for `GitHub Extension` using the search bar in the top right corner.
   1. Access the GitHub Extension by selecting **View > Other Windows > GitHub** from the main menu.
 
-  After installing the Visual Studio GitHub Extension, you might want to check out the [official website](https://visualstudio.github.com/index.html) for the extension that includes a description of the different windows and panes you will encounter while using the extension. 
+  After installing the Visual Studio GitHub Extension, you might want to check out the [official website](https://visualstudio.github.com/index.html) for the extension that includes a description of the different windows and panes you will encounter while using the extension.
 
 show-me-how: "images/gifs/intro/example.gif"
 tell-me-why: |
