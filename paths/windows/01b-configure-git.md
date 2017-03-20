@@ -32,6 +32,6 @@ tell-me-why: |
     - `--global` These are the user level configurations. They only apply to your user account and will be applied to every repository you create or clone under your account.
     - `--local` - These are the repository level configurations. They only apply to the specific repository where they are set.
 
-  The default value for git config is `--local`. `--local` has precedence so setting something at the local level will override settings at global or system level.
+  The default value for git config is `--local`. `--local` has precedence so setting something at the local level will override settings at the `--global` or `--system` level.
   ![](/on-demand/images/config-levels.jpg){: .align-center}
 ---
