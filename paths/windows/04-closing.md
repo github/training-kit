@@ -14,5 +14,6 @@ main-content: |
   - **[GitHub 102: Using GitHub Desktop](https://services.github.com/on-demand/github-desktop/)** learn how to use GitHub Desktop when creating commits and synchronizing changes with the `pull` and `push` commands via Sync.
   - **[GitHub 103: Using the Command Line](https://services.github.com/on-demand/github-cli/)** learn how to leave GUI environments when working with Git and `push` and `pull` changes right from your terminal application.
   - **[Git Out of Trouble](https://services.github.com/on-demand/git-trouble)** learn how to use those commands that you found on Stack Overflow when you encountered an issue during your workflow.
+  - **[Git and GitHub Training Path](https://services.github.com/on-demand/path)** want to dive a little deeper into Git? This provides links to other resources that give a little more context to Git and the GitHub Workflow.
 
 ---
