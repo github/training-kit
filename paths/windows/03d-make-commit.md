@@ -29,5 +29,5 @@ main-content: |
 
 show-me-how: "/images/gifs/windows/tfs-make-commit.gif"
 tell-me-why: |
-
+   Commits are your opportunity to  create a snapshot of your project at a given period in time. After creating a commit (or commits) you should `push` your changes to your remote repository so that other collaborators have access to the latest changes you have made to the project. Additionally, even if you are working on a project without other collaborators, `push`ing your changes to your remote repository acts as a backup and prevents you from losing changes should your local machine encounter issues.
 ---
