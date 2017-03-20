@@ -156,7 +156,7 @@ windows:
   - title: "Editors"
     url: /windows/editors
     children:
-    - title: "VI Basics"
+    - title: "vi Basics"
       url: /windows/vi-basics
     - title: "Configure Other Editors"
       url: /windows/configure-editors
