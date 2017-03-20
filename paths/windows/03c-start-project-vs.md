@@ -26,7 +26,7 @@ main-content: |
   ## Alternate Starting Locally instructions
   1. Open the Github Extension by selecting **View > Other Windows > GitHub**.
   1. You may be able to select **Push to GitHub** unless your project isn't added to source control. If you need to add source control select: **Project > Add to Source control**.
-  1. In the GitHub Pane, click the green **Get Started** button to publish your code.
+  1. In the GitHub window, click the green **Get Started** button to publish your code.
   1. Make sure the name and description match your project. Additionally you can select if you would like to make the repository private.
 
   ## Started Online
