@@ -31,7 +31,4 @@ main-content: |
   1. Click **Create repository**.
   1. Use the **Quick setup** instructions to clone your repository to your machine.
 
-show-me-how: "images/gifs/intro/example.gif"
-tell-me-why: |
-  Tell Me Why content
 ---
