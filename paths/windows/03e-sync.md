@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: What is Sync?
 permalink: /windows/vs-sync
-next-page: /windows/
+next-page: /windows/congrats
 sidebar:
   nav: "windows"
 main-content: |

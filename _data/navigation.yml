@@ -171,3 +171,5 @@ windows:
       url: /windows/vs-make-commit
     - title: "What is Sync?"
       url: /windows/vs-sync
+  - title: "Congratulations"
+    url: /windows/congrats
