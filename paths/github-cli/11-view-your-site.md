@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: View Your Site
-permalink: /github-cli/11
-next-page: /github-cli/12
+title: View Your GitHub Pages Site
+permalink: /github-cli/view-github-pages-site
+next-page: /github-cli/git-push-git-pull
 facilitator: false
 sidebar:
   nav: "github-cli"

@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Git Configuration
-permalink: /github-cli/02
-next-page: /github-cli/03
+permalink: /github-cli/git-configuration
+next-page: /github-cli/create-remote-repository
 facilitator: false
 sidebar:
   nav: "github-cli"

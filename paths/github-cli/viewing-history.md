@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Viewing History
+title: Viewing History With Git Log
 permalink: /github-cli/98
 next-page: /github-cli/99
 facilitator: false

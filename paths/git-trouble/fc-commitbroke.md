@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Just Make it Go Away!
-permalink: /git-trouble/07
-next-page: /git-trouble/02
+title: Just Make it Go Away - Breaking Things With Git
+permalink: /git-trouble/breaking-things-with-git
+next-page: /git-trouble/git-scenarios
 facilitator: false
 sidebar:
   nav: "advanced"

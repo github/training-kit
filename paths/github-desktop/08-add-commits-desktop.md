@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Add Local Commits
-permalink: /github-desktop/08/
-next-page: /github-desktop/09/
+title: Add Local Commits With GitHub Desktop
+permalink: /github-desktop/add-commits-github-desktop
+next-page: /github-desktop/pull-request-github-desktop
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

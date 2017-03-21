@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Commit Message Sucks
-permalink: /git-trouble/04
-next-page: /git-trouble/02
+title: Git Commit Message Sucks
+permalink: /git-trouble/git-commit-message
+next-page: /git-trouble/git-scenarios
 facilitator: false
 sidebar:
   nav: "advanced"

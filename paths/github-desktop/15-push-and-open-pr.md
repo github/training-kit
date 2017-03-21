@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Review of Pull Requests
-permalink: /github-desktop/15/
-next-page: /github-desktop/16/
+title: Push to GitHub & Create a Pull Request
+permalink: /github-desktop/push-pull-request-github-desktop
+next-page: /github-desktop/collaborate-github-pull-requests
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Create Local Branches
-permalink: /github-cli/06
-next-page: /github-cli/07
+title: Create Local Branches With Git
+permalink: /github-cli/create-branches-git
+next-page: /github-cli/make-local-changes-git
 facilitator: false
 sidebar:
   nav: "github-cli"

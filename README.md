@@ -65,7 +65,7 @@ If you'd like to have a copy of the files to be served from a web server inside 
 Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
 
 > Content based on
-> <a href="https://github.com/github/on-demand">github.com/github/on-demand</a>
+> <a href="https://services.github.com/on-demand/">services.github.com/on-demand</a>
 > used under the
 > <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>
 > license.</a>

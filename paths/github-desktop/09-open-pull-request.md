@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Open a Pull Request
-permalink: /github-desktop/09/
-next-page: /github-desktop/10/
+title: Open a Pull Request With GitHub Desktop
+permalink: /github-desktop/pull-request-github-desktop
+next-page: /github-desktop/merge-pull-request-github
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"

@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Find Your Coordinates
-permalink: /intro-to-github/06/
-next-page: /intro-to-github/07/
+permalink: /intro-to-github/find-your-coordinates
+next-page: /intro-to-github/work-on-github
 sidebar:
   nav: "intro-nav"
 main-content: |
@@ -13,7 +13,7 @@ main-content: |
 
   1. Find your latitude and longitude using one of these buttons.
 
-        [<i class="fa fa-location-arrow" aria-hidden="true"></i> Find My Coordinates Automatically](#location){: #find-location .btn .btn--success} [<i class="fa fa-map-marker" aria-hidden="true"></i> Manually Search for My Own Coordinates ](https://mynasadata.larc.nasa.gov/latitudelongitude-finder/){: .btn .btn--warning}
+        [<i class="fa fa-location-arrow" aria-hidden="true"></i> Find My Coordinates Automatically](#location){: #find-location .btn .btn--success} [<i class="fa fa-map-marker" aria-hidden="true"></i> Manually Search for My Own Coordinates ](https://landsatlook.usgs.gov/viewer.html){: .btn .btn--warning}
 
         <div id="location-box" style="display:none;">
         You're in <span id="city"></span>, <span id="region"></span>, <span id="country"></span><br>

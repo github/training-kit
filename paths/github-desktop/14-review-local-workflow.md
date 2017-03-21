@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Review the Local Workflow
-permalink: /github-desktop/14/
-next-page: /github-desktop/15/
+title: Review the Local GitHub Flow
+permalink: /github-desktop/review-github-flow
+next-page: /github-desktop/push-pull-request-github-desktop
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"
