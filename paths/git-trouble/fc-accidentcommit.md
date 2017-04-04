@@ -12,7 +12,7 @@ sidebar:
 main-content: |  
   In the fervor of making some sweet changes to your repository you might accidentally commit changes before you were actually ready to. First, breathe, you can fix this; for real. Second, remember you aren't the first person who completely broke everything with a commit, heck, even the GitHub Trainers do it from time to time. So, now that you have found yourself in some :ahem: _very_ distinguished company, you can fix that gross commit.
 
-  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/git-set-up) page.
 
 pushed: |
     Since we accidentally pushed our changes to the remote, you need to `revert` the commit (or commits) to prevent them creating any problems for other collaborators.

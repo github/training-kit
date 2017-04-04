@@ -13,7 +13,7 @@ main-content: |
 
   Your well intentioned branch was supposed to introduce that awesome new feature, but after making a few commits, things aren't going as planned!   
 
-  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/git-set-up) page.
 pushed: |
     This is what makes Git awesome! You can try new things and, when they don't work out, just get rid of them. First, ask yourself:
 
