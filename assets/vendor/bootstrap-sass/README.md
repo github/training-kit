@@ -85,7 +85,7 @@ You may use [this JS Bin](http://jsbin.com/aKiCIDO/1/edit) as a template for you
 
 ## Documentation
 
-Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://getbootstrap.com>. The docs may also be run locally.
+Bootstrap's documentation, included in this repository in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://getbootstrap.com>. The docs may also be run locally.
 
 ### Running documentation locally
 

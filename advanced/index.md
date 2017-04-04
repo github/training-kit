@@ -115,7 +115,7 @@ git name-rev [commit]
 
 {% capture lab %}
 1. Understand the way Git preserves history and data
-2. Use shorthands to navigate commit history
+2. Use shortcuts to navigate commit history
 3. Filter `log` option switches for refined version querying
 {% endcapture %}{% include lab %}
 
@@ -128,10 +128,10 @@ Blob        | Store file content
 Tree        | Preserve path and structure
 Commit      | Serve as unique historical reference
 
-These three data types use a SHA1 for unique identification and establish built-in data integrity from the commit, tree, and blob *fingerprints*.
+These three data types use a SHA-1 for unique identification and establish built-in data integrity from the commit, tree, and blob *fingerprints*.
 
-#### Commitish
-Historical commit points are simple to discuss using *commitish* rather than hexadecimal SHA1 identifiers. This shorthand works on the command line, as well as on [GitHub](https://help.github.com/articles/comparing-commits-across-time).
+#### Traversing History without Commit IDs
+Historical commit points are simple to discuss using *HEAD* rather than hexadecimal SHA-1 identifiers. This shorthand works on the command line, as well as on [GitHub](https://help.github.com/articles/comparing-commits-across-time).
 
 Shorthand              | Explanation
 ---------------------- | -----------
@@ -166,14 +166,14 @@ $ git log --diff-filter=[A|M|D]
 $ git log --follow --stat --diff-filter=[A|M|D] -- <filename>
 ```
 
-Specifying commit ranges, as detailed on the [Git-SCM.com web site](http://git-scm.com/book/en/Git-Tools-Revision-Selection):
+Specifying commit ranges, as detailed on the [Git-scm.com web site](http://git-scm.com/book/en/Git-Tools-Revision-Selection):
 
 ```bash
 $ git log --oneline --left-right master..other
 $ git log --oneline --left-right master...other
 ```
 
-### Videos
+[//]: ### Videos
 <iframe src="//player.vimeo.com/video/95811891" width="500" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
@@ -260,7 +260,7 @@ git tag -s -m "[message]" [tagname] [commit]
     * [Git-Flow: A Successful Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
     * [Git-Flow Source](https://github.com/nvie/gitflow)
     * Too many levels?
-    * GH prefers "Simplest thing that works"
+    * GitHub prefers "Simplest thing that works"
 * Rebase before sharing (sending a Pull Request)
   * [Contributing to Spring Social](https://github.com/spring-projects/spring-social/wiki/Contributing)
   * [How To Merge Without Fear](http://blog.springsource.org/2010/12/21/git-and-social-coding-how-to-merge-without-fear/)
@@ -287,7 +287,7 @@ Generating a lightweight reference tag is simple:
 $ git tag [TAGNAME] [commit]
 ```
 
-Annotated tags generate a complete data object in the Git repository, storing the author, a timestamp, a specific SHA1 reference, and an optional GPG key for signing work.
+Annotated tags generate a complete data object in the Git repository, storing the author, a time-stamp, a specific SHA-1 reference, and an optional GPG key for signing work.
 
 ```shell
 $ git tag -a [TAG_NAME] [commit|branch]
@@ -358,7 +358,7 @@ $ git clean -fx
 
 ### Details
 #### Repository-specific ignores
-* Ignoring files from repo & system level
+* Ignoring files from repository & system level
 * Reviewing ignored files with custom command
 * Forcing a staging of ignored files
 
@@ -554,7 +554,7 @@ git checkout [commit] -- [path]
 {% endcapture %}{% include lab %}
 
 ### Details
-Capturing changes from other branches or in orphaned commit history becomes a useful and timesaving operation. With `cherry-pick`, authorship and attribution fields remain, versioned changes are carried over, and a new commit is generated.
+Capturing changes from other branches or in orphaned commit history becomes a useful and time-saving operation. With `cherry-pick`, authorship and attribution fields remain, versioned changes are carried over, and a new commit is generated.
 
 ```shell
 # Generate new commit on current branch with patch of specified commit
@@ -788,13 +788,13 @@ $ git merge --no-commit --no-ff FETCH_HEAD
 
 ### Details
 #### Reviewing remote branches
-* PRs to horizontal contributors
-* PRs multiple levels up
-* Converting Issues to PRs
-* PRs as Issues with code
-* Automatic closing of PRs by local merges
+* Pull Requests to horizontal contributors
+* Pull Requests multiple levels up
+* Converting Issues to Pull Requests
+* Pull Requests as Issues with code
+* Automatic closing of Pull Requests by local merges
 * Merges must be _made by recursive_
-* Retrieving PRs locally to resolve conflicts
+* Retrieving Pull Requests locally to resolve conflicts
 (without locally merging to target branch)
 
 ```shell
@@ -843,9 +843,9 @@ $ git branch <newbranchname> FETCH_HEAD
 #### Refspec examples
 ```
  Source and destination refspecs
-$ git fetch [repo-url] [source]:[destination]
+$ git fetch [repository-URL] [source]:[destination]
 
-$ git fetch [repo-url] master
+$ git fetch [repository-URL] master
  * branch     master     -> FETCH_HEAD
 
 $ git fetch origin refs/pull/1/head
@@ -894,7 +894,7 @@ $ git filter-branch --index-filter
 ---
 
 ```
-$ git submodule add [repo-url] [folder]
+$ git submodule add [repository-URL] [folder]
 ```
 
 ---
@@ -907,7 +907,7 @@ $ git submodule update
 
 # OR
 
-$ git clone --recursive [url]
+$ git clone --recursive [URL]
 ```
 
 ---
@@ -936,7 +936,7 @@ $ git filter-branch --index-filter
 Add a separate repository as a subdirectory:
 
 ```
-$ git submodule add [repo-url] [folder]
+$ git submodule add [repository-URL] [folder]
 ```
 
 #### Using submodules
@@ -1049,10 +1049,10 @@ Use GitHub features directly from the command line.
 ### Details
 
 #### Command line interface
-* Uses the API for interfacing with your repos
+* Uses the API for interfacing with your repository
 * Stores OAuth token, credentials
 * Highly efficient for power-users
-* Hub and GH merging into one project
+* Hub and GitHub merging into one project
 
 ```shell
  Create a new public repository on your GitHub account
@@ -1169,7 +1169,7 @@ A sample `.gitconfig` file:
 This course covers many advanced uses of Git and GitHub, and yet there is still more to explore. We've included some of the most useful resources for our students with insatiable appetites.
 
 #### Advanced Git Videos
-* [Advanced Git, presented at JavaZone](http://vimeo.com/49444883)
+* [Advanced Git, presented at JavaZone](https://vimeo.com/49444883)
 * [Mastering Advanced Git, O'Reilly video series](http://bit.ly/ogitvid2)
 * [The Fringes of Git, Git internals video](http://www.youtube.com/watch?v=qh-R0-7Ii_U)
 * [Git and GitHub LiveLessons, Pearson InformIT LiveLessons (Workshop)](http://www.informit.com/store/git-and-github-livelessons-workshop-9780133991772)

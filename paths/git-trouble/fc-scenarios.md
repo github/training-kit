@@ -18,7 +18,7 @@ main-content: |
 
   ## [Git Commit Message Sucks](../git-trouble/git-commit-message)
 
-  'Edited stuff' might have seemed like a decent commit message at 3am, but in hindsight, you might want to provide a _little_ more context. Covering the different commands you can use to `revert` the error of your commit message-ways, this scenario identifies how to get more descriptive.
+  'Edited stuff' might have seemed like a decent commit message at 3 AM, but in hindsight, you might want to provide a _little_ more context. Covering the different commands you can use to `revert` the error of your commit message-ways, this scenario identifies how to get more descriptive.
 
   ## [Git Committed to Wrong Branch](../git-trouble/git-commit-wrong-branch)
 

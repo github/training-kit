@@ -11,7 +11,7 @@ sidebar:
   nav: "advanced"
 main-content: |  
 
-  Your well intentioned branch was supposed to introduce that awesome new feature, but after making a few commits, things aren't going as planned!   
+  Your well-intentioned branch was supposed to introduce that awesome new feature, but after making a few commits, things aren't going as planned!   
 
   Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/git-set-up) page.
 pushed: |
@@ -21,7 +21,7 @@ pushed: |
 
     ## Make it all go away!
 
-    Ok, if you really mean it, we can get rid of the entire branch on the remote.
+    OK, if you really mean it, we can get rid of the entire branch on the remote.
 
     1. First, let's go back to the `master` branch with: `git checkout master`
     1. Enter: `git push origin :BRANCH-NAME` or `git push --delete BRANCH-NAME` to delete the branch on the remote.

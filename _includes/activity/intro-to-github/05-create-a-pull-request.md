@@ -2,8 +2,8 @@ Now that you have created a file, you will create a Pull Request to show your pr
 
 1. Navigate to the <a href="https://github.com/githubschool/open-enrollment-classes-introduction-to-github/pulls" target="_blank">Pull Requests tab</a>.
 2. Click `New Pull Request`.
-3. In the *base* dropdown, choose `master`.
-4. In the *compare* dropdown, choose your branch.
+3. In the *base* drop-down, choose `master`.
+4. In the *compare* drop-down, choose your branch.
 5. Click `Create Pull Request`
 6. You can leave the default title or make it more descriptive.
 7. Use [markdown formatting](https://guides.github.com/features/mastering-markdown/) to explain the work you have done on your branch.

@@ -34,9 +34,9 @@ pushed: |
 
   ### Fixing an Older Commit
 
-  If you aren't fixing your **last** commit, you can perform the following...actually wait, this process is very complex and you _really_ need to figure out if you _need_ to fix those commit messages that badly.
+  If you aren't fixing your **last** commit, you can perform the following... actually wait, this process is very complex and you _really_ need to figure out if you _need_ to fix those commit messages that badly.
 
-  Still here? Ok, here we go:
+  Still here? OK, here we go:
 
    1. Ensure you are on the correct `branch` and enter: `git log --oneline`
    1. Identify the SHA-1 hash for the commit just before the one you would like to change. For this example, let's pretend we want to fix the commit for file 5, so we will pick the SHA-1 associated with the **file 4** commit.

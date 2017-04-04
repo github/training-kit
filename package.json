@@ -1,0 +1,28 @@
+{
+  "name": "training-kit",
+  "version": "1.0.0",
+  "description": "Open source on demand courses and cheat sheets for Git and GitHub",
+  "keywords": [
+    "git",
+    "github",
+    "cheat-cheets",
+    "training"
+  ],
+  "author": "GitHub Teacher <training@github.com>",
+  "contributors": [
+    "Briana Swift <brianamarie@github.com>",
+    "Stefan Stölzle <stefan@github.com>"
+  ],
+  "license": "CC-BY-4.0",
+  "homepage": "https://services.github.com/on-demand/",
+  "repository": "https://github.com/github/training-kit.git",
+  "bugs": {
+    "url": "https://github.com/github/training-kit/issues"
+  },
+  "scripts": {
+    "test": "writewell -c settings.json -l script/writewell-files.txt"
+  },
+  "dependencies": {
+    "writewell": "^0.7.1"
+  }
+}

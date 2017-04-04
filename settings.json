@@ -1,0 +1,21 @@
+{
+  "dictionaries": {
+    "build-in": ["en_US", "en_GB"],
+    "custom": ["assets/dictionary/extra-words.dic"]
+  },
+  "selectors": {
+    "whitelist": "p, li, h1, h2, h3, h4, th, td, dl, figcaption",
+    "blacklist": "pre, code"
+  },
+  "write-good": {
+    "weasel": false,
+    "passive": false,
+    "tooWordy": false,
+    "illusion": false,
+    "so": false,
+    "thereIs": false,
+    "adverb": false,
+    "tooWordy": false,
+    "cliches": false
+  }
+}

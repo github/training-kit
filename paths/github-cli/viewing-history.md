@@ -33,7 +33,7 @@ tell-me-why: |
 
   #### `--all`
 
-  - If you also want to include un-merged branches, you should add the option --all.
+  - If you also want to include unmerged branches, you should add the option --all.
 
   #### `--stat`
 
