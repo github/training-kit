@@ -47,7 +47,7 @@ byline: Discovering the GitHub collaboration platform
 
 
 ### GitHub visualizations
-* Comparing/Diff-ing
+* Comparing
   * Code
   * Prose
   * Images
@@ -117,7 +117,7 @@ The GitHub collaboration platform facilitates:
 * Web interface and GUI client
 * Clone command explanation
 
-### Repository init-ing
+### Repository initializing
 <iframe src="//player.vimeo.com/video/88313612" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
@@ -125,13 +125,13 @@ The GitHub collaboration platform facilitates:
 ## Exploring the GitHub Web Flow
 
 
-* Use web interface for repo and the Web Flow
+* Use web interface for repository and the Web Flow
 * Edit files on web interface
 * Create a new file through web interface
 * Describe the distinction of one-file-at-a-time on Web Flow
 * Editing files and small changes on the web
 * Changing paths, filenames, content
-* Introducing new files or sub-foldered content
+* Introducing new files or subdirectory content
 * Removing unwanted files permanently
 
 
@@ -157,11 +157,11 @@ The GitHub collaboration platform facilitates:
 
 * Working with local files
 * Create new file with text editor
-* Review new files in GHfD that are unversioned
+* Review new files in tool that are not versioned
 * Commit the new file(s)
 
 * Editing content of track file(s)
-* Examining differences in GHfD
+* Examining differences
 * Committing changes as-needed
 
 
@@ -201,7 +201,7 @@ The GitHub collaboration platform facilitates:
 * Allowing better code review
 
 * Committing thus far only to "master" branch
-* Exploring local branches with GHfD
+* Exploring local branches
 * Creating local branch
 * Authoring new files, committing
 * Switching branches to show how working tree is updated
@@ -227,7 +227,7 @@ The GitHub collaboration platform facilitates:
 
 * Describe collaboration/review process with Pull Requests
 * With a branch and commit(s), open a Pull Request
-* Assess what this means from one-collaborator repo
+* Assess what this means from one-collaborator repository
 * Describe the effort as it pertains to work in branch
 * Explain how Pull Requests "observe" any commits on that branch while open
 * Make more commits to branch through web interface
@@ -242,17 +242,17 @@ The GitHub collaboration platform facilitates:
 * Discuss
 * Animated GIF
 * Line by line code review conversation
-* Clone locally with GHfD (optional)
+* Clone locally (optional)
 
-* Brand new repo created by Teacher
+* Brand new repository created by Teacher
 * Direct everyone to Fork the new project
 * Explain what a Fork is, its purpose, reasons
 * Demonstrate who has Forked from Network Members page
 * GitHub Student creates a Fork to follow along
 * Perform the same branching, committing pattern
 * Open a Pull Request and see the "linkage"
-* Review and create local branch relating to PRs (even from Fork) ???
+* Review and create local branch relating to pull requests (even from Fork) ???
 * Use "Checkout this Branch for..."" to create local branch of any PR and branch
   * Show how branch cannot be synced for Forks' branches
-  * Show how branch directly on repo can be changed
+  * Show how branch directly on repository can be changed
 * Review how a Fork's branch and PR can be manipulated, merged locally into another branch, integrated, and close original PR

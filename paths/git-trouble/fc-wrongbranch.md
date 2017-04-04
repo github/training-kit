@@ -22,7 +22,7 @@ pushed: |
     Since this usually happens on `master`, the first thing you probably need to do is get those untested, unapproved commits out of master.
 
     1. While on `master` enter: `git log --oneline`. Identify the SHA-1 hash for the commits that should be removed. In this case, let's use the **adding file 3** commit.
-    1. Enter: `git revert SHA-1`, where SHA-1 is the hash for the **adding file 3** commit. You can revert multiple commits in the same operation by adding a list of SHA-1's with a space between each one.
+    1. Enter: `git revert SHA-1`, where SHA-1 is the hash for the **adding file 3** commit. You can revert multiple commits in the same operation by adding a list of SHA-1 commit IDs with a space between each one.
     1. You can modify the revert commit message(s) if you would like or just close the editor.
     1. Use `git push` to send the changes to the remote.
 
@@ -32,7 +32,7 @@ pushed: |
 
     1. Create a new branch with: `git checkout -b BRANCH-NAME`(or check out to one you had already created).
     1. Enter `git reflog` to identify the SHA-1 hash for the commits you need to rescue.
-    1. Enter: `git cherry-pick SHA-1`, where SHA-1 is the hash for the commit you want to place on the branch. You can cherry pick multiple commits by adding multiple SHA-1s separated by a space.
+    1. Enter: `git cherry-pick SHA-1`, where SHA-1 is the hash for the commit you want to place on the branch. You can cherry pick multiple commits by adding multiple SHA-1 commit IDs separated by a space.
     1. Push your new branch to the remote with: `git push -u origin BRANCH-NAME`
 
 didnt-push: |

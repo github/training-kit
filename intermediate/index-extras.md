@@ -101,7 +101,7 @@ The default line-level difference indicators are sometimes insufficient for pros
 $ git diff --color-words
 ```
 
-Diff, by default, performs comparisons on all modified files. If inspection of just a subset is called for, `diff` accepts a precise or wildcard-ed filename or path as an option.
+Diff, by default, performs comparisons on all modified files. If inspection of just a subset is called for, `diff` accepts a precise or wild-card filename or path as an option.
 
 ```shell
 # By specific file
@@ -159,7 +159,7 @@ Organizing history:
 
 ---
 
-Acquiring a repo:
+Acquiring a repository:
 
 ```shell
 $ git clone [repository-url]
@@ -187,7 +187,7 @@ $ git clone [repository-url]
 
 ---
 
-### File lifecycle
+### File life-cycle
 
 ---
 

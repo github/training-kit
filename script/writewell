@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+blacklist = [
+  '_javascript',
+  'assets',
+  'downloads/ar',
+  'downloads/bn_BD',
+  'downloads/de',
+  'downloads/es_ES',
+  'downloads/fr',
+  'downloads/it',
+  'downloads/ja',
+  'downloads/kr',
+  'downloads/pt_BR',
+  'downloads/pt_PT',
+  'downloads/sk',
+  'downloads/zh_CN',
+  'node_modules'
+]
+
+whitelist = Array.new
+
+Dir['./_site/**/*.html'].each do |filename|
+  whitelist << filename if not blacklist.any? { |bl|
+    File.dirname(filename).include?(bl)
+  }
+end
+
+File.open('./script/writewell-files.txt', 'w') do |f|
+  whitelist.each { |element| f.puts(element) }
+end
