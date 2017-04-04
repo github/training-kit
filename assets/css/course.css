@@ -1,0 +1,15 @@
+/**
+ * Screens
+ */
+
+.screen {
+  padding: 1em;
+  background-color: #eee;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+
+.lab {
+  text-align: left;
+}

@@ -1,0 +1,409 @@
+---
+
+---
+
+// Import external dependencies
+@import "vendor/octicons/octicons/sprockets-octicons.scss";
+@import "vendor/bootstrap-sass/lib/bootstrap.scss";
+
+
+body{
+  background: $body-bg;
+}
+
+// Incorporate Bootstrap table striping
+table{
+  @extend .table;
+  @extend .table-striped;
+  @extend .table-bordered;
+}
+
+// Octicon mixin
+@mixin octicon-link($char){
+  font: normal normal 1em octicons;
+  text-decoration: none;
+  color: $brand-primary;
+
+  &:after{
+    content: $char;
+    margin-left: 5px;
+  }
+}
+
+
+
+// Custom columns for hide/show of TOC
+.col-content, .col-toc{
+  transition: padding 300ms, opacity 200ms;
+}
+.col-toc{
+  position: fixed;
+  right: -16.66667%;
+  right: 0;
+  opacity: 0;
+}
+.shift-left{
+  &.col-content{
+    padding-right: 16.66667%;
+  }
+  &.col-toc{
+    right: 0;
+    opacity: 1;
+  }
+}
+
+// Table of contents
+#toc-wrapper{
+  opacity: .5;
+  transition: all 200ms;
+  &:hover{
+    opacity: 1;
+  }
+}
+#toc{
+  transition: margin 300ms;
+  font-size: .7em;
+  padding-top: 15px;
+  a{
+    padding: 5px;
+  }
+}
+
+.display-controls{
+  border-top: solid 2px $gray-lighter;
+  margin-top: 5px;
+  padding-top: 10px;
+}
+
+// Custom components
+.time-amount{
+  text-align: center;
+}
+.time-left{
+  font-size: 88px;
+}
+
+.timer-check{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+
+  &:checked + label{
+    color: $brand-primary;
+
+    &:before{
+      content: '\f046';
+      color: rgba($gray-lighter, 1);
+      background-color: $gray-light;
+      box-shadow: 0 0 0 1px $gray-light;
+      padding-left: 0px;
+      line-height: 14px;
+    }
+  }
+}
+.timer-label{
+  line-height: 14px;
+  padding-left: 18px;
+
+  &:before{
+    content: '\f046';
+    font: normal normal normal 16px/1 octicons;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    border-radius: 50%;
+    color: rgba($gray-light, 0);
+    -webkit-transition: all 180ms;
+    width: 14px;
+    height: 14px;
+    box-shadow: 0 0 0 1px $gray-light;
+  }
+}
+
+.slide-only-check{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+
+  &:checked + label{
+    color: $gray-light;
+
+    &:before{
+      content: '\f03a';
+      color: rgba($gray-lighter, 1);
+      background-color: $gray-light;
+      box-shadow: 0 0 0 1px $gray-light;
+      padding-left: 0px;
+      line-height: 1em;
+    }
+  }
+}
+.slides-only-label{
+  line-height: 14px;
+  padding-left: 18px;
+
+  &:before{
+    content: '\f03a';
+    font: normal normal normal 16px/1 octicons;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    border-radius: 50%;
+    color: rgba($gray-light, 0);
+    -webkit-transition: all 180ms;
+    padding-left: 5px;
+    width: 14px;
+    height: 14px;
+    box-shadow: 0 0 0 1px $gray-light;
+    line-height: .2em;
+  }
+}
+
+.timer-wrapper{
+  background: rgba(255,255,255,.93);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  .timer{
+    transition: all 300ms;
+    position: relative;
+    margin: 10% auto;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    display: block;
+    text-align: center;
+
+    .timer-toggle{
+      width: 100%;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      text-align: center;
+    }
+
+    .timer-content{
+      text-align: center;
+    }
+
+    .time-left{
+      font-size: 72px;
+      display: block;
+    }
+  }
+}
+
+.deck{
+  position: relative;
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif;
+  font-weight: 300;
+  color: $gray-darker;
+
+  h1,h2,h3,h4,h5,h6,p,ul,li{
+    font-weight: inherit;
+  }
+
+  .slide{
+    h2{
+      font-size: 52px;
+      margin-bottom: 30px;
+    }
+    h3,h4{
+      font-size: 42px;
+    }
+    p,ul{
+      font-size: 20px;
+      color: $gray;
+    }
+
+    .objectives{
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      width: 85%;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    input[type="checkbox"]{
+      display:none;
+
+      &+label{
+        width: 100%;
+        line-height: 40px;
+
+        &:before{
+          content: " ";
+          float: left;
+          font: normal normal 20px octicons;
+          text-align: center;
+          height: 20px;
+          width: 20px;
+          margin: 10px;
+          border-radius: 50%;
+          box-shadow: 0 0 0 2px $gray-lighter;
+        }
+      }
+
+      &:checked + label{
+        text-decoration: line-through;
+
+        &:before{
+          content: "\f03a";
+          color: $brand-primary;
+        }
+      }
+    }
+
+    // Custom Octicon styling
+    .mega-octicon{
+      font-size: 110px;
+      color: $brand-primary;
+
+      &:after{
+        content: "";
+        display: block;
+        width: 170px;
+        height: 170px;
+        border: solid 1px $gray-light;
+        border-radius: 50%;
+        padding: 20px;
+        margin-top: -142px;
+      }
+    }
+  }
+
+  #teacher{
+    .octicon{
+      color: $brand-primary;
+    }
+    span{
+      margin: auto 4px;
+    }
+
+    .teacher-badges{
+      margin-top: 10px;
+    }
+  }
+
+  #teacher-avatar{
+    img{
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  &>hr{
+    display: none;
+  }
+
+  .slide{
+    width: 100%;
+    display: table;
+
+    a[href^="http://"],
+    a[href^="https://"]{
+      &:after{
+        content: "";
+        margin-left: 0;
+      }
+    }
+
+    p{
+      padding: 0 20px;
+    }
+
+    pre{
+      width: 80%;
+      padding: 2em;
+      font-size: 120%;
+      text-align: left;
+      margin: 0 auto;
+      background: $gray-darker;
+      color: $gray-lighter;
+
+      code{
+        font-size: 1.5em;
+      }
+    }
+
+
+    .alignment{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+
+      & > ul{
+        font-size: 250%;
+      }
+    }
+  }
+
+  /* General external link */
+  a[href^="http://"],
+  a[href^="https://"] {
+    @include octicon-link("\f0b6");
+  }
+
+  /* GitHub Links */
+  a[href^="https://github.com"],
+  a[href^="https://www.github.com"],
+  a[href^="https://help.github.com"]
+  {
+    @include octicon-link("\f008");
+  }
+
+  /* GitHub Book Links, Guide Links */
+  a[href^="http://git-scm.com/book"],
+  a[href^="https://guides.github.com"]
+  {
+    @include octicon-link("\f007");
+  }
+
+  /* YouTube Links */
+  a[href^="https://youtube.com"],
+  a[href^="https://www.youtube.com"] {
+    @include octicon-link("\f0b9");
+  }
+
+  .summary, .outline, .details{
+    h2:before{
+      padding: 5px;
+      color: #CCCCCC;
+      content: "\f078";
+      font: normal normal 20px octicons;
+    }
+  }
+
+  /* Narration Table Styling */
+  .narration-table {
+    margin: 0 6em;
+    th {
+      text-align: center;
+      font-size: 1.5em;
+    }
+  }
+}
+
+.affix-top{
+  position: fixed;
+}
+
+.affix{
+  margin-top: -165px;
+  position: fixed;
+}
+
+.affix-bottom{
+}
+
+.deprecation-notice {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
