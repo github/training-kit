@@ -51,9 +51,9 @@ tell-me-why: |
   The easiest way to think about `revert` is just making your repository do the exact opposite of an existing commit and creating a new commit to record that change. Revert is useful when trying to 'undo' the changes made in a specific commit, and even _more_ useful if you pushed a change that your want to reverse to your remote since it will always create a new commit and leave the original commit untouched.
 
   ## Reset
-  For more information on `git reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/03) scenario.
+  For more information on `git reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/too-many-commits) scenario.
 
   ## Commit --amend
-  For more information on `git commit --amend`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/04) scenario.
+  For more information on `git commit --amend`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/git-commit-message) scenario.
 
 ---
