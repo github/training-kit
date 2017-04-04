@@ -12,7 +12,7 @@ sidebar:
 main-content: |  
   In the fervor of making some sweet changes to your repository you might accidentally commit changes before you were actually ready to. First, breathe, you can fix this; for real. Second, remember you aren't the first person who completely broke everything with a commit, heck, even the GitHub Trainers do it from time to time. So, now that you have found yourself in some :ahem: _very_ distinguished company, you can fix that gross commit.
 
-  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/git-set-up) page.
 
 pushed: |
     Since we accidentally pushed our changes to the remote, you need to `revert` the commit (or commits) to prevent them creating any problems for other collaborators.
@@ -51,9 +51,9 @@ tell-me-why: |
   The easiest way to think about `revert` is just making your repository do the exact opposite of an existing commit and creating a new commit to record that change. Revert is useful when trying to 'undo' the changes made in a specific commit, and even _more_ useful if you pushed a change that your want to reverse to your remote since it will always create a new commit and leave the original commit untouched.
 
   ## Reset
-  For more information on `git reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/03) scenario.
+  For more information on `git reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/too-many-commits) scenario.
 
   ## Commit --amend
-  For more information on `git commit --amend`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/04) scenario.
+  For more information on `git commit --amend`, check out the 'Tell me why' section in the [Commit Message Sucks](/on-demand/git-trouble/git-commit-message) scenario.
 
 ---
