@@ -1,19 +1,14 @@
+<header>
+<div class="container">
+  <a class="site-header-logo" href="https://services.github.com/">
+      {% include logo-github-services.svg %}
+    </a>
+</div>
+</header>
+
 <header class="colorful">
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-2">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div id="logo"><a href="https://services.github.com/" data-escp="">GitHub Training</a></div>
-      </div>
-
-    </div>
-
     {% if page.title %}
       <h2>{{ page.title }}</h2>
       {% if page.byline %}<p>{{ page.byline }}</p>{% endif %}
