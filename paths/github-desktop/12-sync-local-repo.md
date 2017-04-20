@@ -20,8 +20,8 @@ tell-me-why: |
 
   When you merge your Pull Request on GitHub.com, the changes you made locally are merged into the `master` branch on the _remote_ repository on GitHub.
 
-   However, you won't automatically see those changes reflected in your local copy until you do another sync.
+   However, you won't automatically see those changes reflected in your local copy until you get an update from _origin_.
 
-  You should `sync` your local repository regularly to ensure you are always working with the most recent copies of the files in the repository.
+  You should `Update Origin`regularly, and then `pull` or `push` as necessary to ensure you are always working with the most recent copies of the files in the repository.
 
 ---
