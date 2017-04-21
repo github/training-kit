@@ -37,7 +37,7 @@ header:
         </header>
       {% endunless %}
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content" itemprop="text" id="course_body">
         {% if page.main-content.includes %}
           {% for child in page.main-content.includes %}
             {% capture my_include %}{% include {{child}} %}{% endcapture %}
