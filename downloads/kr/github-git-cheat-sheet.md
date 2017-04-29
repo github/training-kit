@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title: GitHub Git Cheat Sheet
 byline: Git은 여러분의 노트북이나 데스크톱에서 GitHub을 사용할 수 있도록 해주는 오픈 소스 분산 버전 관리 시스템입니다. 해당 Cheat Sheet에서는 사용자가 빠르게 참고할 수 있도록 주로 사용되는 Git의 명령행(command line)을 간단히 요약하였습니다.
-leadingpath: ../../
+leadingpath: ../../../
 ---
 
 {% capture colOne %}
@@ -147,7 +147,7 @@ temp-*
 `.gitignore`이름의 텍스트 파일은 특정 패턴으로 매칭되는 우연히 버저닝된 파일과 경로를 숨깁니다
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 해당 프로젝트에서 무시된 모든 파일 리스트를 보여줍니다
 

@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title: Folheto de ajuda para Git do GitHub (pt-PT)
 byline: Git é um sistema distribuído open source de controlo de versões que permite interagir com o GitHub no seu portátil ou desktop. Este folheto de ajuda resume as instruções frequentemente usadas na linha de comando do Git para referência rápida.
-leadingpath: ../../
+leadingpath: ../../../
 ---
 
 {% capture colOne %}
@@ -150,7 +150,7 @@ temp-*
 Um ficheiro `.gitignore` na raiz do projecto previne o versionamento acidental de ficheiros e diretórios correspondentes aos padrões especificados
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Lista todos os ficheiros e directórios ignorados neste projeto
 

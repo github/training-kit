@@ -1,0 +1,119 @@
+<!-- About Section -->
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="{{ "./assets/css/timeline.css" }}">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ "assets/fonts/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+        <div class ="container" id="about">
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div>
+                                <a href="/on-demand/intro-to-github/"><img class="timeline-image" src="./images/about/repo.png" alt=""></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <a href="/on-demand/intro-to-github/"><h2>GitHub 101: Introduction to  GitHub</h2></a>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">If you are looking for a quick and fun introduction to GitHub, you’ve found it. This class will get you started using GitHub in less than an hour.</p>
+                                    <p class="text-muted"></p>
+                                </div>
+                              </div>
+                            <!--<div class="timeline-panel-info">
+                              <br>
+                              <p>Class Duration: 60-90 minutes</p>
+                              <p>Skill Level: Beginner</p>
+                            </div>-->
+
+                        </li>
+                        <li class="timeline-inverted">
+                            <div>
+                                <a href="/on-demand/github-desktop/"><img class="timeline-image" src="./images/about/forktocat.jpg" alt=""></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <a href="/on-demand/github-desktop/"><h2>GitHub 102: Using GitHub Desktop</h2></a>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Learn how to <b>use GitHub Desktop</b> to copy a repository to your computer, track changes and communicate with GitHub.</p>
+                                </div>
+                            </div>
+                            <!--<div class="timeline-body-info">
+                              <br>
+                              <p>Class Duration: 60-90 minutes</p>
+                              <p>Skill Level: Intermediate</p>
+                              <p>Pre-reqs: GitHub 101</p>
+                            </div>-->
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/on-demand/github-cli/"><img class="timeline-image" src="./images/about/collabocats.jpg" alt=""></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <a href="/on-demand/github-cli/"><h2>GitHub 103: Using the Command Line</h2></a>
+                                </div>
+                                <div class="timeline-body">
+                                        <p class="text-muted">Learn how to <b>use the Command Line</b> to copy a repository to your computer, track changes and communicate with GitHub.</p>
+                                </div>
+                            </div>
+                            <!--<div class="timeline-panel-info">
+                              <br>
+                              <p>Class Duration: 60-90 minutes</p>
+                              <p>Skill Level: Intermediate</p>
+                              <p>Pre-reqs: GitHub 101</p>
+                            </div>-->
+                        </li>
+                        <li class="timeline-inverted">
+                            <div>
+                                <img class="timeline-image" src="./images/about/inspectocat.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <a href="/on-demand/git-trouble"><h2>Git Out of Trouble</h2></a>
+                                </div>
+                                <div class="timeline-body">
+                                  <span class="btn btn--inverse">BETA</span>
+                                    <p class="text-muted">Quick guides to git out of sticky situations.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                          <div>
+                              <img class="timeline-image" src="./images/about/welcometocat.png" alt="">
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</html>

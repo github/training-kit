@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title: Aide-mémoire GitHub Git
 byline: Git est le sytème de gestion de version décentralisé open source qui facilite les activités GitHub sur votre ordinateur. Cet aide-mémoire permet un accès rapide aux instructions des commandes Git les plus utilisées.
-leadingpath: ../../
+leadingpath: ../../../
 ---
 
 {% capture colOne %}
@@ -157,7 +157,7 @@ temp-*
 Un fichier texte nommé `.gitignore` permet d'éviter le suivi de version accidentel pour les fichiers et chemins correspondant aux patterns spécifiés
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Liste tous les fichiers exclus du suivi de version dans ce projet
 

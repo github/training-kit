@@ -1,3 +1,0 @@
-<h2 {% if section.heading == false %}class="hidden"{% endif %}>{{ section.chapter }}</h2>
-<h3 {% if section.heading == false %}class="hidden"{% endif %}>{{ section.title }}</h3>
-<div class="clear-all"></div>

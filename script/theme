@@ -1,6 +1,0 @@
-for STYLES in page home workbook
-do
-  echo "- Generating $STYLES"
-  sass --style compressed _stylesheets/$STYLES.scss _stylesheets/$STYLES.css
-done
-echo "Completed SASS compiling and CSS compression!"

@@ -1,0 +1,51 @@
+<script src="{{ base_path }}/assets/js/main.min.js"></script>
+<script src="{{ base_path }}/assets/js/mapsAPI.js"></script>
+
+<script type="text/javascript" src="{{ base_path }}/assets/js/jquery-2.1.1.js" ></script>
+<script type="text/javascript" src="{{ base_path }}/assets/js/github_contribution.js"></script>
+<link href="{{ base_path }}/assets/css/github_contribution_graph.css" media="all" rel="stylesheet" />
+
+<script>
+$('#find-location').click( function()
+{
+  $.getJSON('https://freegeoip.net/json/')
+     .done (function(location)
+     {
+          $('#location-box').show();
+          $('#country').html(location.country_name);
+          $('#country_code').html(location.country_code);
+          $('#region').html(location.region_name);
+          $('#region_code').html(location.region_code);
+          $('#city').html(location.city);
+          $('#latitude').html(location.latitude);
+          $('#longitude').html(location.longitude);
+          $('#timezone').html(location.time_zone);
+          $('#ip').html(location.ip);
+     });
+} );
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+    $('#github_chart_1').github_graph( {
+      data: 'https://githubschool.github.io/on-demand-github-pages/createDirectory.json' ,
+      texts: ['site added to our directory','sites added to our directory'],
+      link: 'this is the link'
+    });
+
+});
+</script>
+
+<script
+  src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"
+></script>
+<script
+  async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB48gZNKOtEbslmLkTWtphkzCJVM6ITd1s&callback=initialize"
+></script>
+
+{% include analytics.html %}
+{% include /comments-providers/scripts.html %}

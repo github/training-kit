@@ -9,7 +9,6 @@ This curriculum will be your companion to the GitHub Advanced class taught by th
 {% capture slide %}
 ### Branching strategies
 {% endcapture %}
-{% include slide-section %}
 
 #### Summary
 * GitHub Flow
@@ -43,7 +42,7 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 {% capture slide %}
 ### Applying branching patterns
 {% endcapture %}
-{% include slide-section %}
+
 
 #### Summary
 * Breaking features down into pieces
@@ -63,7 +62,7 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 {% capture slide %}
 ### Git-core GUIs
 {% endcapture %}
-{% include slide-section %}
+
 
 
 #### Summary
@@ -72,12 +71,13 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 
 {% capture slide %}
 ### Mastering Shortcuts
+{% endcapture %}
 
 
 {% capture slide %}
 
 {% endcapture %}
-{% include slide-section %}
+
 
 
 
@@ -85,7 +85,7 @@ These are called Branching Strategies, but are just as easily called *Team Colla
 {% capture slide %}
 ### Branch best practices
 {% endcapture %}
-{% include slide-section %}
+
 
 * Pros/cons of collapsing commits during merge
 * Relation to branching strategies and deliverable expectations
@@ -119,7 +119,7 @@ $ git branch --no-merged [commit]
 {% capture slide %}
 ### Navigating History
 {% endcapture %}
-{% include slide-section %}
+
 
 #### Further reading
 * [Git revision specificat
@@ -130,7 +130,7 @@ ion syntax](https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html)
 {% capture slide %}
 ### Incorporating History
 {% endcapture %}
-{% include slide-section %}
+
 
 #### More examples
 ```shell
@@ -150,7 +150,7 @@ $ git cherry [upstreambranch]
 {% capture slide %}
 ### Rewriting history with rebase
 {% endcapture %}
-{% include slide-section %}
+
 
 
 
@@ -174,7 +174,7 @@ $ git rebase --onto <newbase> <upstream> <HEAD|branch>
 {% capture slide %}
 ### Cutting Releases
 {% endcapture %}
-{% include slide-section %}
+
 
 
 
@@ -182,7 +182,7 @@ $ git rebase --onto <newbase> <upstream> <HEAD|branch>
 {% capture slide %}
 ### Reviewing & synchronizing
 {% endcapture %}
-{% include slide-section %}
+
 
 
 
@@ -217,7 +217,7 @@ $ git config --add remote.[upstream].fetch "+refs/pull/*/head:refs/remotes/[upst
 {% capture slide %}
 ### Aggregating repositories
 {% endcapture %}
-{% include slide-section %}
+
 
 ##### Dependencies with subtree
 
@@ -262,7 +262,7 @@ $ git merge --squash
 {% capture slide %}
 ### Signing work
 {% endcapture %}
-{% include slide-section %}
+
 
 #### By commit message
 Adds a rigorously formatted text block to commit messages:
@@ -281,7 +281,7 @@ Adds a rigorously formatted text block to commit messages:
 {% capture slide %}
 ### Cleaning
 {% endcapture %}
-{% include slide-section %}
+
 
 
 
@@ -289,7 +289,7 @@ Adds a rigorously formatted text block to commit messages:
 {% capture slide %}
 ### Diff & merge tool
 {% endcapture %}
-{% include slide-section %}
+
 
 #### Summary
 * [P4Merge](http://www.perforce.com/downloads/Perforce/20-User)
@@ -347,9 +347,8 @@ A sample `.gitconfig` file:
 {% capture slide %}
 ### Refspecs
 {% endcapture %}
-{% include slide-section %}
+
 
 ##### Git Refspec Documentation
 * [Git `rev-parse` command and reference specifications](https://www.kernel.org/pub/software/scm/git/docs/git-rev-parse.html)
 * [ProGit book chapter on refspecs](http://git-scm.com/book/en/Git-Internals-The-Refspec)
-

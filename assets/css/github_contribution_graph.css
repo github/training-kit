@@ -1,0 +1,59 @@
+.svg-tip {
+  padding: 10px;
+  background: rgba(0,0,0,0.8);
+  color: #bbb;
+  font-size: 12px;
+  position: absolute;
+  z-index: 99999;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.svg-tip:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  height: 5px;
+  width: 5px;
+  bottom: -10px;
+  margin: 0 0 0 -5px;
+  content: " ";
+  border: 5px solid transparent;
+  border-top-color: rgba(0,0,0,0.8);
+}
+
+.expanded-tip {
+  padding: 10px;
+  margin: 10px;
+  width: 721px;
+  background: rgba(0,0,0,0.8);
+  color: #bbb;
+  font-size: 12px;
+  position: absolute;
+  z-index: 99999;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.expanded-tip:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  height: 5px;
+  width: 5px;
+  top: -10px;
+  margin: 0 0 0 -5px;
+  content: " ";
+  border: 5px solid transparent;
+  border-bottom-color: rgba(0,0,0,0.8);
+}
+
+.user_avatar {
+  width: 40px;
+  margin: 2px;
+  height: 40px;
+  display: inline-block;
+}

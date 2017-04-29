@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title: GitHub Git Cheat Sheet
 byline: Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
-leadingpath: ../
+leadingpath: ../../
 ---
 
 {% capture colOne %}
@@ -152,7 +152,7 @@ temp-*
 A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Lists all ignored files in this project
 

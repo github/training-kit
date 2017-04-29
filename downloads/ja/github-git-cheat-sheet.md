@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title: GitHub Git チートシート
 byline: Gitはオープンソースとして配布されているバージョン管理システムです。Gitを使うと、あなたのノートまたはデスクトップパソコンから、GitHub上のアクティビティーを操作できます。この早見表にはコマンドラインからよく使われているGitの命令をまとめています。
-leadingpath: ../../
+leadingpath: ../../../
 ---
 {% capture colOne %}
 ## gitのインストール
@@ -152,7 +152,7 @@ temp-*
 `.gitignore` という名前のテキストファイルで、指定されたパターンに該当するファイルやパスを誤ってバージョン管理してしまうことを防げます
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 プロジェクト内のすべての除外されたファイルを一覧で表示します
 

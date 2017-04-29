@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title:  برشامة أوامر Git لنظام GitHub
 byline: أمر Git هو نظام تحكم بالنسخ الموزعة المفتوحة المصدر التي توظف أنشطة GitHub في الحواسيب الشخصية. هذه "البرشامة" تلخص تعليمات Git الأكثر استخداماً على سطر الأوامر كمرجع سري
-leadingpath: ../../
+leadingpath: ../../../
 ---
 
 {% capture colOne %}
@@ -151,7 +151,7 @@ temp-*
 <p dir="rtl">استخدام ملف نصي بمسمى <code dir="ltr">.gitignore</code> يمنع تتبع الملفات والمجلدات الغير مرغوبة بتحديد أنماط تسمية هذه الملفات</p>
 
 
-<p align="right"><code align="right">$ git ls-files --other --ignored --exclude-standard</code></p>
+<p align="right"><code align="right">$ git ls-files --others --ignored --exclude-standard</code></p>
 
 <p dir="rtl">سرد قائمة بكل الملفات التي تم تجاهلها في المشروع الحالي</p>
 

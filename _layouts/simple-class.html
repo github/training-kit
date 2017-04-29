@@ -1,0 +1,201 @@
+---
+layout: default
+header:
+  overlay_image: cover.jpeg
+  overlay_filter: rgba(46, 129, 200, 0.6)
+---
+
+{% include base_path %}
+
+{% if (page.header.overlay_color or page.header.overlay_image) or page.header.image %}
+  {% include page__hero.html %}
+{% endif %}
+
+<div id="main" role="main">
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'githubschool/on-demand'
+    };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+    {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+
+    <div class="page__inner-wrap">
+      {% unless page.header.overlay_color or page.header.overlay_image %}
+        <header>
+          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.read_time %}
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% endif %}
+        </header>
+      {% endunless %}
+
+      <section class="page__content" itemprop="text">
+        {% if page.main-content.includes %}
+          {% for child in page.main-content.includes %}
+            {% capture my_include %}{% include {{child}} %}{% endcapture %}
+            {{ my_include | markdownify }}
+          {% endfor %}
+        {% else %}
+        {{ page.main-content | markdownify }}
+        {% endif %}
+
+        {% if page.didnt-push %}
+          <div class="notice--primary">
+          <details>
+            <summary>I didn't push</summary>
+            <hr>
+            {% if page.didnt-push.includes %}
+              {% for child in page.didnt-push.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            {{ page.didnt-push | markdownify }}
+            {% endif %}
+          </details>
+          </div>
+        {% endif %}
+
+        {% if page.pushed %}
+          <div class="notice--danger">
+          <details>
+            <summary>I pushed</summary>
+            <hr>
+            {% if page.pushed.includes %}
+              {% for child in page.pushed.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            {{ page.pushed | markdownify }}
+            {% endif %}
+          </details>
+          </div>
+        {% endif %}
+
+        {% if page.refresh %}
+          <div class="notice--primary">
+          <details>
+            <summary>I need a refresher</summary>
+            {% if page.refresh.includes %}
+              {% for child in page.refresh.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                <hr>
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            <hr>
+            {{ page.refresh | markdownify }}
+            {% endif %}
+          </details>
+          </div>
+        {% endif %}
+
+        {% if page.show-me-how %}
+          <div class="notice--info">
+          <details>
+            <summary>Show me how</summary>
+            {% if page.show-me-how.includes %}
+              {% for child in page.show-me-how.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                <hr>
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            <hr>
+            <img src="{{site.baseurl}}/{{ page.show-me-how }}">
+            {% endif %}
+          </details>
+          </div>
+        {% endif %}
+
+        {% if page.troubleshooting %}
+          <div class="notice--danger">
+          <details>
+            <summary>Help me troubleshoot</summary>
+            {% if page.troubleshooting.includes %}
+              {% for child in page.troubleshooting.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                <hr>
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            <hr>
+            {{ page.troubleshooting | markdownify }}
+            {% endif %}
+          </details>
+          </div>
+        {% endif %}
+
+        {% if page.tell-me-why %}
+        <div class="notice--warning">
+        <details>
+          <summary>Tell me why</summary>
+          <hr>
+          {% if page.tell-me-why.includes %}
+            {% for child in page.tell-me-why.includes %}
+              {% capture my_include %}{% include {{child}} %}{% endcapture %}
+              {{ my_include | markdownify }}
+            {% endfor %}
+          {% else %}
+          {{ page.tell-me-why | markdownify }}
+          {% endif %}
+        </details>
+        </div>
+        {% endif %}
+
+        <div class="notice--success">
+        Need help? Click <b>open chat</b> below for answers from GitHub trainers!
+        </div>
+
+        {% if page.next-page %}
+        <a href="{{ site.baseurl }}{{ page.next-page }}" class="btn">Continue</a>
+        {% endif %}
+        {{ content }}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label }}</a></div>{% endif %}
+      </section>
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+        {% if page.modified %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+        {% elsif page.date %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+      </footer>
+
+      {% if page.share %}{% include social-share.html %}{% endif %}
+
+      {% include post_pagination.html %}
+    </div>
+
+    {% if site.comments.provider and page.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </article>
+
+  {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
+  {% if page.id and page.related and site.related_posts.size > 0 %}
+    <div class="page__related">
+      {% if site.data.ui-text[site.locale].related_label %}
+        <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label }}</h4>
+      {% endif %}
+      <div class="grid__wrapper">
+        {% for post in site.related_posts limit:4 %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>

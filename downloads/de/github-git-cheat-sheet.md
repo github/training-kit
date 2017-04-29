@@ -2,7 +2,7 @@
 layout: cheat-sheet
 title: GitHub Git Spickzettel
 byline: Git ist das verteilte Open Source Versionskontrollsystem, dass die GitHub-Aktivitäten auf deinem Laptop oder PC möglich macht. Dieser Spickzettel fasst die gebräuchlichsten Git-Kommandozeilenbefehle zum schnellen Nachschlagen zusammen.
-leadingpath: ../../
+leadingpath: ../../../
 ---
 
 {% capture colOne %}
@@ -143,7 +143,7 @@ temp-*
 Eine Textdatei namens `.gitignore` verhindert das versehentliche Committen von Dateien und Pfaden mit den spezifizierten Patterns
 
 
-```$ git ls-files --other --ignored --exclude-standard```
+```$ git ls-files --others --ignored --exclude-standard```
 
 Listet alle innerhalb dieses Projekts ignorierten Dateien auf
 

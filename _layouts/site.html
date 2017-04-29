@@ -6,7 +6,7 @@ layout: bare
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>{% if page.html_title %}{{ page.html_title }} • {% endif %}GitHub Training</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="{{ page.leadingpath }}_stylesheets/page.css">
+  <link rel="stylesheet" href="{{ site.baseurl}}/assets/css/page.css">
 
 
   <link rel="icon" type="image/x-icon" href="/favicon.png" />
@@ -14,7 +14,7 @@ layout: bare
   <script type="text/javascript" src="{{ page.leadingpath }}js/jquery.min.js"></script>
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="{{ page.leadingpath }}assets/vendor/bootstrap-sass/dist/js/bootstrap.min.js"></script>
+  <script src="{{ site.baseurl }}/_javascript/bootstrap.min.js"></script>
 
 
   <!--Scrollsnap-->
@@ -26,9 +26,8 @@ layout: bare
   <script src="{{ page.leadingpath }}_javascript/curriculum.js"></script>
 
   <!--Curriculum special styling-->
-  <link rel="stylesheet" href="{{ page.leadingpath }}assets/vendor/octicons/octicons/octicons.css" type="text/css" />
-  <link rel="stylesheet" href="{{ page.leadingpath }}_stylesheets/curriculum.css" type="text/css" />
-  <link rel="stylesheet" href="{{ page.leadingpath }}_stylesheets/course.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/curriculum.css" type="text/css" />
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/course.css" media="screen" title="no title" charset="utf-8">
 
   {% include analytics.html %}
 </head>
@@ -42,4 +41,3 @@ layout: bare
 
   {% include footer.html %}
 </body>
-</html>
