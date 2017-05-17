@@ -6,7 +6,7 @@ The files we are using are very picky. If you made any mistakes, you will see a 
 
 When you commit your changes, Travis CI will re-check your file.
 
-Keep doing this until you see a message that the build has passed. If you need help, don't forget you can find us in chat or @ mention `@githubteacher` in your pull request.
+Keep doing this until you see a message that the build has passed. If you need help, don't forget you can @ mention `@githubteacher` in your pull request.
 
 ### Help With Specific Issues
 

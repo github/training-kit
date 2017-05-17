@@ -15,5 +15,5 @@ Time to add our work history as a page to our Jekyll site.
   {{ activity-text | markdownify }}
 </div>
 
-Need help? Click **open chat** below for answers from GitHub trainers!
+Need help? **Open an issue** [in our class repository](https://github.com/githubschool/on-demand-github-pages/issues/new) for answers from GitHub trainers!
 {: .notice--success}
