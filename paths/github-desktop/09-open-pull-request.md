@@ -24,6 +24,6 @@ tell-me-why: |
   1. Collaborate, and make more commits
   1. Merge the Pull Request
 
-  GitHub Desktop makes it easy to open a Pull Request without leaving the app. However, if you wanted to create the Pull Request on GitHub.com, you would simply click the Publish button. This would send your branch up to GitHub so you could open the Pull Request there!
+  Simply click the "Update Origin" button. This sends your branch up to GitHub. Then, you open the Pull Request there!
 
 ---
