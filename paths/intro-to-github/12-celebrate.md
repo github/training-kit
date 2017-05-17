@@ -39,7 +39,7 @@ main-content: |
 
   ### Keep learning
 
-  The GitHub Training team offers free open enrollment classes every month. Just visit the [GitHub Training](https://services.github.com/training/) site to enroll in our next live webinar.
+  The GitHub Training team offers free webinars and full courses every month. Just visit the [GitHub Training](https://services.github.com/training/) site to enroll in our next course.
 show-me-how:
 tell-me-why:
 ---
