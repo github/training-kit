@@ -8,10 +8,8 @@ main:
   - title: "Using the Command Line"
     url: /github-cli/
   - title: "Git Out of Trouble"
-    beta: true
     url: /git-trouble/
   - title: "GitHub for Windows Users"
-    beta: true
     url: /windows/
   - title: "Git & GitHub Training Path"
     url: /path/
