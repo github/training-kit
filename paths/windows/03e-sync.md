@@ -19,12 +19,6 @@ main-content: |
     - **pull** - performs a `git pull`.
     - **push** - performs a `git push`.
 
-  ## GitHub Desktop
-  The **Sync** button is located in the top right corner of the GitHub Desktop GUI and provides you an opportunity to share the commits you have made locally with your remote repository as well as `pull` any commits other collaborators have made to your project.
-
-  - First, a `git pull` is performed to retrieve the latest changes from your remote (or hosted) git repository.`
-  - Second, a `git push` is performed, which sends all of the `commit`s you made locally to your remote git repository.
-
 tell-me-why: |
   One of the primary reasons to use a collaborative version control system like Git is the ability to collaborate with other people on your project and 'syncing' allows you to share the changes you have made with those other collaborators. In a typical workflow, after making `commit`s to your project, you should be `push`ing those `commit`s to your remote repository.
 
