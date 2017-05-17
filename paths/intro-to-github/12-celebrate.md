@@ -35,7 +35,7 @@ main-content: |
 
   ### Help Others
 
-  Just because you have finished this exercise, doesn't mean you have to leave. Feel free to drop in to the Gitter chat room anytime and help other learners who are completing the class. Or, drop an encouraging note in an old pull request. You might just be the reason they finish!
+  Just because you have finished this exercise, doesn't mean you have to leave. Feel free to drop in to open Issues anytime and help other learners who are completing the class. Or, drop an encouraging note in an old pull request. You might just be the reason they finish!
 
   ### Keep learning
 
