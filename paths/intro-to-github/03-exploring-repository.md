@@ -14,7 +14,7 @@ main-content: |
   1. Watch the video in the **Tell me why** section for a guided tour.
   2. Navigate to the **Code** tab to find the README.
   3. Click on an **Issue** and a **Pull Request** to see the difference (HINT: one contains changes to code, the other does not).
-  4. Click **Pulse** and **Graphs** to view some of our repository stats.
+  4. Click **Insights** and select the **Pulse** or **Graphs** sub-options to view some of our repository stats.
 show-me-how: "images/gifs/intro/explore-repo.gif"
 tell-me-why: |
 
@@ -30,8 +30,8 @@ tell-me-why: |
 
   - **Projects:** You can create Kanban style project tracking boards within GitHub.
   - **Wiki**: GitHub also has a place to create and store your relevant project documentation.
-  - **Pulse**: Pulse is our project's dashboard. It contains information on the work that has been completed and the work in progress.
-  - **Graphs**: Graphs provide a more granular view of the repository activity, including who has contributed, when the work has been done, and who has forked the repository.
+  - **Pulse**: Pulse is our project's dashboard. It contains information on the work that has been completed and the work in progress and can be found under the Insights menu option.
+  - **Graphs**: Graphs provide a more granular view of the repository activity, including who has contributed, when the work has been done, and who has forked the repository and can be found under the Insights menu option.
 
   ### Special Files
 
