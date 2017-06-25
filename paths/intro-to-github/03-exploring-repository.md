@@ -26,7 +26,7 @@ tell-me-why: |
 
   ### More Great Features
 
-  The video covered some of the most commonly used features. Here are a few other items of interest you can find GitHub repositories:
+  The video covered some of the most commonly used features. Here are a few other items of interest you can find in GitHub repositories:
 
   - **Projects:** You can create Kanban style project tracking boards within GitHub.
   - **Wiki**: GitHub also has a place to create and store your relevant project documentation.
