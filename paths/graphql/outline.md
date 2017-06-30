@@ -2,27 +2,23 @@
 
 ---
 
-- API Primer
-  - What is an API
-  - Maybe find a human article OR build a human article as an introduction
-     - Examples of using API
-- What is GraphQL
-  - Coming from REST?
-    - Dropdown
-    - Comparing REST commands to GraphQL challenges
-- GraphiQL
-- Intro to Queries
-  - Try it out
-- Intro to Mutations
-  - Try it out
-- Where we been... Where we going...
+Top-level numbers individual pages?
 
-#### Exercise Idea
-- Add a star to the [Training Kit](https://github.com/github/training-kit) repo using GraphQL
-
-#### Resources
-- GraphiQL
-
-#### Audience
-- First-time API users
-- People with REST experience
+1. Introduction
+  - Motivation, present the problem that needs solving
+  - API as the solution (context: dynamic, consumable information)
+    - Examples of API usages (format: service, how API is used, link)
+1. First use (jump right in, no later than pg 2)
+  - instructions for navigating to GraphiQL on web UI
+  - interact with interface, show how it works, live data
+  - tell me why, can explain differences between rest and graphql
+1. Your first query (get personal statistic)
+  - short, direct explanation of a query
+  - instructions for building the first query
+  - tell me why breaks down the components of the query, links to existing documentation
+1. Your first mutation (push to existing personal site)
+  - short, direct explanation of a mutation
+  - instructions for building the mutation
+  - tell my why break down the components of the mutation
+1. Keep going
+  - ideas for next projects
