@@ -16,6 +16,7 @@ Top-level numbers individual pages?
   - short, direct explanation of a query
   - instructions for building the first query
   - tell me why breaks down the components of the query, links to existing documentation
+  - rationale for using API instead of hardcoding data
 1. Your first mutation (push to existing personal site)
   - short, direct explanation of a mutation
   - instructions for building the mutation
