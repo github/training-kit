@@ -46,7 +46,15 @@ main-content: |
   }
   ```
 
-  Your result should look similar to the results displayed above, however, `githubteacher` should be replaced with your username (or login as the query displays). 
+  Your result should look similar to the results displayed above, however, `githubteacher` should be replaced with your username (or login as the query displays).
+
+  With the current query, you can make a minor change to find the URL of your avatar on GitHub. If you add the following code to your query, you will return a URL to your image.
+
+  ```
+  avatarUrl { }
+  ```
+
+  To see how to add the `avatarUrl` **field** click on Show Me How below. :point-down:
 
   #### Goals of this page based on outline
   - instructions for navigating to GraphiQL on web UI
@@ -56,6 +64,19 @@ main-content: |
   - Does this have to be different than page 3, or could we combine?
 
 
-show-me-how:
+show-me-how: |
+
+  ### Using `avatarUrl`
+
+  ```
+  {
+    viewer {
+      login {
+      }
+      avatarUrl {
+      }
+    }
+  }      
+  ```
 tell-me-why:
 ---
