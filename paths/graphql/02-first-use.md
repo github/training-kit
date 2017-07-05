@@ -52,7 +52,7 @@ main-content: |
   avatarUrl { }
   ```
 
-  To see how to add the `avatarUrl` **field** click on Show Me How below. :point-down:
+  To see how to add the `avatarUrl` **field** click on Show Me How below :point_down:.
 
   #### Goals of this page based on outline
   - instructions for navigating to GraphiQL on web UI
