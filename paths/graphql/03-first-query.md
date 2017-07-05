@@ -11,6 +11,28 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  - short, direct explanation of a query
+  - instructions for building the first query
+  - tell me why breaks down the components of the query, links to existing documentation
+  - rationale for using API instead of hardcoding data
+  - Explain how we build this query, what we're searching for, how we could easily change it to search for different things.
+
+  ```
+  query RecentPRs {
+    user(login: "brianamarie") {
+      name
+      pullRequests(last: 5) {
+        edges {
+          node {
+            title
+            body
+            url
+          }
+        }
+      }
+    }
+  }
+  ```
 
 show-me-how:
 tell-me-why:

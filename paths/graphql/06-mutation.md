@@ -11,6 +11,23 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  - short, direct explanation of a mutation
+  - instructions for building the mutation
+  - tell my why break down the components of the mutation
+
+  ```
+  mutation AddComment {
+    addComment(input: {
+      subjectId: "[issueID from step 4]",
+      body: "[template from step 2]"})
+    {
+      subject {
+        id
+      }
+    }
+  }
+  ```
+
 
 show-me-how:
 tell-me-why:

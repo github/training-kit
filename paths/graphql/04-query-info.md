@@ -11,6 +11,18 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+    - Context of why we're doing this, explain standups, show this could be useful for weekly updates of work
+    - Pick out titles and URLs manually and copy them into this template
+
+    ```
+    My most recent PRs are: <br>
+    1. [title1](url1)
+    1. [title2](url2)
+    1. [title3](url3)
+    1. [title4](url4)
+    1. [title5](url5)
+    ```
+
 
 show-me-how:
 tell-me-why:

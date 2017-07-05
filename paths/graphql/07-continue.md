@@ -11,6 +11,9 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  - ideas for next projects
+  - Community projects
+  - how to get help
 
 show-me-how:
 tell-me-why:

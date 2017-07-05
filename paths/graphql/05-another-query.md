@@ -11,6 +11,19 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  - Explain why this is necessary for us to post in the mutation coming up
+  - Build another query
+  - Copy issue ID in response for use in next step.
+
+  ```
+  query FindIssueID {
+    repository(owner: "githubschool", name: "graphQL-standup") {
+      issue(number: 2) {
+        id
+      }
+    }
+  }
+  ```
 
 show-me-how:
 tell-me-why:
