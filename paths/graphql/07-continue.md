@@ -11,6 +11,7 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  #### Goals of this page based on outline
   - ideas for next projects
   - Community projects
   - how to get help

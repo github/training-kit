@@ -11,6 +11,7 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  #### Goals of this page based on outline
   - Explain why this is necessary for us to post in the mutation coming up
   - Build another query
   - Copy issue ID in response for use in next step.

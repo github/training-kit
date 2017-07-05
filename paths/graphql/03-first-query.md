@@ -11,6 +11,7 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  #### Goals of this page based on outline
   - short, direct explanation of a query
   - instructions for building the first query
   - tell me why breaks down the components of the query, links to existing documentation

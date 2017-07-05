@@ -11,6 +11,7 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+    #### Goals of this page based on outline
     - Context of why we're doing this, explain standups, show this could be useful for weekly updates of work
     - Pick out titles and URLs manually and copy them into this template
 

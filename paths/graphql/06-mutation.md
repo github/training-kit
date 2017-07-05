@@ -11,6 +11,7 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  #### Goals of this page based on outline
   - short, direct explanation of a mutation
   - instructions for building the mutation
   - tell my why break down the components of the mutation

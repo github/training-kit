@@ -11,7 +11,9 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  #### Goals of this page based on outline
   - instructions for navigating to GraphiQL on web UI
+    - https://developer.github.com/v4/explorer/
   - interact with interface, show how it works, live data
   - tell me why, can explain differences between rest and graphql
   - Does this have to be different than page 3, or could we combine?
