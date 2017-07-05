@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Intro to GraphQL
-permalink: /graphql/
-next-page: /graphql/
+permalink: /graphql/02
+next-page: /graphql/03
 facilitator: false
 sidebar:
   nav: "github-graphql"
@@ -19,32 +19,30 @@ main-content: |
 
   After logging in, The GraphiQL interface displays a sample query in the left pane that should look like this:
 
-  ```
-  # Type queries into this side of the screen, and you will
-  # see intelligent typeaheads aware of the current GraphQL type schema,
-  # live syntax, and validation errors highlighted within the text.
+      # Type queries into this side of the screen, and you will
+      # see intelligent typeaheads aware of the current GraphQL type schema,
+      # live syntax, and validation errors highlighted within the text.
 
-  # We'll get you started with a simple query showing your username!
-  query {
-    viewer {
-      login
-    }
-  }
-  ```
+      # We'll get you started with a simple query showing your username!
+      query {
+        viewer {
+          login
+        }
+      }
 
   If we click the Execute Query button (looks like a Play button) it will run the query that is in the left pane and display the results in the right pane.
 
   Clicking Execute Query should present something that looks like this:
 
-  ```
-  {
-    "data": {
-      "viewer": {
-        "login": "githubteacher"
+
+      {
+        "data": {
+          "viewer": {
+            "login": "githubteacher"
+          }
+        }
       }
-    }
-  }
-  ```
+
 
   Your result should look similar to the results displayed above, however, `githubteacher` should be replaced with your username (or login as the query displays).
 
@@ -68,15 +66,29 @@ show-me-how: |
 
   ### Using `avatarUrl`
 
-  ```
-  {
-    viewer {
-      login {
-      }
-      avatarUrl {
+  At the end of the lesson, we provided an opportunity for you to experiment using the `avatarUrl` field. If you weren't able to get the query to run, or you just want to see how you would add additional fields to your query, you can make your query look like the following:
+
+      {
+        viewer {
+          login {
+          }
+          avatarUrl {
+          }
+        }
+      }      
+
+  This will present the following results:
+
+    {
+      "data": {
+        "viewer": {
+          "login": "githubteacher",
+          "avatarUrl": "https://avatars3.githubusercontent.com/u/2132216?v=3"
+        }
       }
     }
-  }      
-  ```
+
+  Where the `login` and `avatarUrl` will be unique to your user account. If you haven't setup a unique avatar for your account, you totally should! If you need an idea for a cool avatar to use, why not an Octocat?**LINK TO OCTODEX**
+
 tell-me-why:
 ---
