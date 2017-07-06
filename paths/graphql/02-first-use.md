@@ -91,4 +91,8 @@ show-me-how: |
   Where the `login` and `avatarUrl` will be unique to your user account. If you haven't setup a unique avatar for your account, you totally should! If you need an idea for a cool avatar to use, why not an Octocat?**LINK TO OCTODEX**
 
 tell-me-why:
+
+  ## REST vs GraphQL
+
+  
 ---

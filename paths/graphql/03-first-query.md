@@ -23,37 +23,45 @@ main-content: |
 
  **UPDATE THIS SECTION WHEN EXERCISE IS 100%**
 
+     query RecentPRs {
+       user(login: "brianamarie") {
+         name
+         pullRequests(last: 5) {
+           edges {
+             node {
+               title
+               body
+               url
+             }
+           }
+         }
+       }
+     }
+
  ## Defining Our Query
 
  We provided a query that we are going to use, but lets take a moment to identify what the different parts of the query are doing. As a side note, as you begin exploring and crafting your own queries for your unique projects, you can click the `< Docs` button located above the right pane to get a definition of different query objects or look for query objects that will perfom the task you are attempting.
 
-  #### Goals of this page based on outline
+  - **user(login: "githubteacher"):**
+  - **name:**
+  - **pullRequests(last: #):**
+  - **edges:**
+  - **node:**
+  - **title:** The title of the Pull Request.
+  - **body:** The text found in the first comment of the Pull Request.
+  - **url:** The URL to the specific Pull Request.
+
+ #### Goals of this page based on outline
+
   - short, direct explanation of a query
   - instructions for building the first query
   - tell me why breaks down the components of the query, links to existing documentation
   - rationale for using API instead of hardcoding data
   - Explain how we build this query, what we're searching for, how we could easily change it to search for different things.
 
-  ```
-  query RecentPRs {
-    user(login: "brianamarie") {
-      name
-      pullRequests(last: 5) {
-        edges {
-          node {
-            title
-            body
-            url
-          }
-        }
-      }
-    }
-  }
-  ```
-
 show-me-how: |
 
-During the introduction to the course, we identified that using queries and API would allow you to automatically get consistently updated information and use it to power your application or website. As an example, if you wanted to list the latest commits made across GitHub manually, you would need to do a lot of searching and manually update your application. More importantly, in the time it took your to make your changes, the data might be obsolete. Using queries and APIs, we can automatically gather the latest data, display it, and schedule when that data needs to be updated.
+  During the introduction to the course, we identified that using queries and API would allow you to automatically get consistently updated information and use it to power your application or website. As an example, if you wanted to list the latest commits made across GitHub manually, you would need to do a lot of searching and manually update your application. More importantly, in the time it took your to make your changes, the data might be obsolete. Using queries and APIs, we can automatically gather the latest data, display it, and schedule when that data needs to be updated.
 
 
 tell-me-why:
