@@ -173,7 +173,7 @@ windows:
     url: /windows/congrats
 
 
-graphql:
+github-graphql:
   - title: "Introduction to GraphQL"
     url: /graphql/
   - title: "Use GraphQL for the First Time"
