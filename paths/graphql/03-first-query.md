@@ -13,7 +13,7 @@ main-content: |
 
  # Building Queries
 
- In the last section, we used an existing **query** to display our username in the Results pane. If you participated in the extra `avatarUrl` exercise, your query also provided a link to your GitHub avatar. To learn more about what a query is, click **tell me why** under this next exercise.
+ In the last section, we used an existing **query** to display our username in the Results pane. If you participated in the extra `avatarUrl` exercise, your query also provided a link to your GitHub avatar. To learn more about what a query is, click "Tell me why" under this next exercise.
 
  Let's imagine that you'd like to update your team [in an issue](https://guides.github.com/features/issues/) about some of your recent work. You could use a GraphQL query to find out what pull requests you've most recently contributed to.
 
@@ -58,7 +58,7 @@ tell-me-why: |
 
   - [**viewer:**](https://developer.github.com/v4/guides/using-the-explorer/) Who is currently viewing this information (you!)
   - [**name:**](https://developer.github.com/v4/reference/object/user/#fields) The name of the viewer.
-  - [**pullRequests(last: #):**](https://developer.github.com/v4/reference/object/user/#fields) The last (most recent) pull requests that are relevant to that viewer.
+  - [**pullRequests(last: #):**](https://developer.github.com/v4/reference/object/user/#fields) The last (most recent) pull requests that are relevant to that viewer. The `#` sign can be used to limit the number of pull requests you want returned.
   - [**edges:**](https://developer.github.com/v4/reference/object/pullrequestedge/) An edge in a connection.
   - [**node:**](https://developer.github.com/v4/reference/object/pullrequest/) The item at the end of an edge.
   - [**title:**](https://developer.github.com/v4/reference/object/pullrequest/) The title of the Pull Request.
