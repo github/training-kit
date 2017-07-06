@@ -32,8 +32,8 @@ main-content: |
           ```
 
    1. Look around using the built in documentation. By hovering, erasing, retyping, or changing fields, what can you learn about this mutation?
-   1. Go to the [issue] and find your posted comment.
-   1. For a challenge, use GraphQL to add an emoji reaction to your comment! 
+   1. Go to the [issue](https://github.com/githubschool/graph-ql/issues/1) and find your posted comment.
+   1. For a challenge, use GraphQL to add an emoji reaction to your comment!
 
 
 
