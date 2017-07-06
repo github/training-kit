@@ -10,8 +10,6 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  ## Create a mutation
-
   So far, we've only used GraphQL to form **queries**, or requests for information. Next, we're going to use the information we've gathered to craft a **mutation**. Simply put, a mutation changes information instead of just consuming it.
 
   1. Get the information from the both queries ready.

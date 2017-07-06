@@ -11,8 +11,6 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
- # Building Queries
-
  In the last section, we used an existing **query** to display our username in the Results pane. If you participated in the extra `avatarUrl` exercise, your query also provided a link to your GitHub avatar. To learn more about what a query is, click "Tell me why" under this next exercise.
 
  Let's imagine that you'd like to update your team [in an issue](https://guides.github.com/features/issues/) about some of your recent work. You could use a GraphQL query to find out what pull requests you've most recently contributed to.

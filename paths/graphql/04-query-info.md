@@ -3,15 +3,13 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Query Response
+title: Using Out Query Response
 permalink: /graphql/query-info
 next-page: /graphql/another-query
 facilitator: false
 sidebar:
   nav: "github-graphql"
 main-content: |
-
-  # Using our Query's response
 
   1. Using the response from the query in the last step, fill in this template.
 

@@ -11,8 +11,6 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  ## Another query
-
   This is another query example, meaning we're asking the server (GitHub) to give us some specific information. We're asking for the ID of an issue so that we can use it when we post our information as a mutation in the next step.
 
   1. Build a query to find an issue ID of the repository owned by GitHubSchool named `graph-ql`. Search for the ID of issue number 1.
