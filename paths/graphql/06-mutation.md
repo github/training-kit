@@ -11,25 +11,34 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  #### Goals of this page based on outline
-  - short, direct explanation of a mutation
-  - instructions for building the mutation
-  - tell my why break down the components of the mutation
+  ## Create a mutation
 
-  ```
-  mutation AddComment {
-    addComment(input: {
-      subjectId: "[issueID from step 4]",
-      body: "[template from step 2]"})
-    {
-      subject {
-        id
-      }
-    }
-  }
-  ```
+  So far, we've only used GraphQL to form **queries**, or requests for information. Next, we're going to use the information we've gathered to craft a **mutation**. Simply put, a mutation changes information instead of just consuming it.
+
+  1. Get the information from the both queries ready.
+  1. Create a mutation by either typing or pasting the following into the [GraphQL explorer](). Change [issueID] to the issue ID in the most recent query, and [PR template] to the template you completed earlier based on your most recent pull requests.
+
+          ```
+          mutation AddComment {
+            addComment(input: {
+              subjectId: "[issueID]",
+              body: "[PR template]"})
+            {
+              subject {
+                id
+              }
+            }
+          }
+          ```
+
+   1. Look around using the built in documentation. By hovering, erasing, retyping, or changing fields, what can you learn about this mutation?
+
+
 
 
 show-me-how:
-tell-me-why:
+tell-me-why: |
+
+ FILL WITH MORE INFO ABOUT MUTATIONS
+ 
 ---
