@@ -17,12 +17,9 @@ main-content: |
 
     **INSERT API WAVING IMG**
 
-    This course is going to introduce the concept of using APIs, specifically GraphQL, to gather data and display it on a webpage. To find out more, click **Tell Me Why** below. 
-
-    #### Goals of this page based on outline
-    - Motivation, present the problem that needs solving
-    - API as the solution (context: dynamic, consumable information)
-      - Examples of API usages (format: service, how API is used, link)
+    API stands for Application Program Interface, and many websites, software applications, and services use APIs to share and update information.
+    
+    This course is going to introduce the concept of using APIs, specifically GraphQL, to gather data and display it on a webpage. To find out more, click **Tell Me Why** below.
 
 show-me-how:
 tell-me-why: |
@@ -30,4 +27,6 @@ tell-me-why: |
   Learning new technologies is difficult. Whatever your experience with APIs or GraphQL, this course is hands on and will walk you through the steps to get started. We believe that working with a new technology and getting real experience is the quickest and surest way to learn.
 
   If you aren't sure when your why you might use an API right now, that's OK. This course only walks through a few examples, and we'll share a few other use cases also.
+
+  For more in depth information on the GitHub's GraphQL API, [check out the official documentation](https://developer.github.com/v4/). You can find many use cases and examples of GraphQL in action.
 ---
