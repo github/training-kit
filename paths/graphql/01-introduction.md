@@ -11,13 +11,13 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-    When you are working on projects where you want to share data, maybe the number of commits you made over a period of time, your favorite team's record, or information regarding weather patterns in your area it is very common to hardcode that information on your website. The only problem with this solution is that you are going to need to update that data on a schedule, which could be yearly, monthly, weekly, or even daily!
+    When working on a projects, it is common to hard code relevant data. The only problem with this solution is that you are going to need to update that data - which could be yearly, monthly, weekly, or even daily! Some examples of data you might want to work with could be gathering the number of commits you made over a period of time, your favorite sports team's record, or information regarding weather patterns in your area.
 
     What if I told you that there are systems already in place that can enable you to gather the precise data you want and display it, **and** it will automatically update? Allow us to introduce you to APIs.
 
     **INSERT API WAVING IMG**
 
-    This course is going to introduce the concept of using APIs, specifically GraphQL, to gather data and display it on a webpage.
+    This course is going to introduce the concept of using APIs, specifically GraphQL, to gather data and display it on a webpage. To find out more, click **Tell Me Why** below. 
 
     #### Goals of this page based on outline
     - Motivation, present the problem that needs solving
@@ -25,5 +25,9 @@ main-content: |
       - Examples of API usages (format: service, how API is used, link)
 
 show-me-how:
-tell-me-why:
+tell-me-why: |
+
+  Learning new technologies is difficult. Whatever your experience with APIs or GraphQL, this course is hands on and will walk you through the steps to get started. We believe that working with a new technology and getting real experience is the quickest and surest way to learn.
+
+  If you aren't sure when your why you might use an API right now, that's OK. This course only walks through a few examples, and we'll share a few other use cases also.
 ---
