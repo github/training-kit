@@ -11,58 +11,57 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
- # Queries?
+ # Building Queries
 
- So, in the last section, we used an existing **query** to display our username in the Results pane. If you participated in the extra `avatarUrl` exercise, your query also provided a link to your GitHub avatar. But what exactly is a query?
+ In the last section, we used an existing **query** to display our username in the Results pane. If you participated in the extra `avatarUrl` exercise, your query also provided a link to your GitHub avatar. To learn more about what a query is, click **tell me why** under this next exercise.
 
- A query is an opportunity to ask an existing service, say, GitHub to provide specific information based on the context of your question. Our last "username and avatar exercise" would be similar to asking someone their name and asking for a picture, except with a **query** we can ask GitHub to get the information from _hundreds_ (or _thousands_, or even _millions_) users, repositories, issues, commits, and pull requests.
+ Let's imagine that you'd like to update your team [in an issue](https://guides.github.com/features/issues/) about some of your recent work. You could use a GraphQL query to find out what pull requests you've most recently contributed to.
 
- Additionally, you can use the response to your **query** (or question) to dynamically update and potentially alter the way your content looks.
+ 1. Paste this query into the [GraphQL explorer](https://developer.github.com/v4/explorer/).
 
- # Building a Query
-
- **UPDATE THIS SECTION WHEN EXERCISE IS 100%**
-
-     query RecentPRs {
-       user(login: "brianamarie") {
-         name
-         pullRequests(last: 5) {
-           edges {
-             node {
-               title
-               body
-               url
+         query RecentPRs {
+           viewer {
+             name
+             pullRequests(last: 5) {
+               edges {
+                 node {
+                   title
+                   body
+                   url
+                 }
+               }
              }
            }
          }
-       }
-     }
 
- ## Defining Our Query
 
- We provided a query that we are going to use, but lets take a moment to identify what the different parts of the query are doing. As a side note, as you begin exploring and crafting your own queries for your unique projects, you can click the `< Docs` button located above the right pane to get a definition of different query objects or look for query objects that will perfom the task you are attempting.
+ 1. To identify what the different parts of this query are doing, click *tell me why* below. We could easily change this query to ask for different information. If you'd like, feel free to do that in your own query!
 
-  - **user(login: "githubteacher"):**
-  - **name:**
-  - **pullRequests(last: #):**
-  - **edges:**
-  - **node:**
-  - **title:** The title of the Pull Request.
-  - **body:** The text found in the first comment of the Pull Request.
-  - **url:** The URL to the specific Pull Request.
+      > Note: As you begin exploring and crafting your own queries for your unique projects, you can click the `< Docs` button located above the right pane to get a definition of different query objects or look for query objects that will perform the task you are attempting.
 
- #### Goals of this page based on outline
+  1. Click the **Execute Query** button (it looks like a Play button) to run the query that is in the left pane and display the results in the right pane.
 
-  - short, direct explanation of a query
-  - instructions for building the first query
-  - tell me why breaks down the components of the query, links to existing documentation
-  - rationale for using API instead of hardcoding data
-  - Explain how we build this query, what we're searching for, how we could easily change it to search for different things.
+  This example shows that with the same code, we can get updated data! Any time you have to manually search for information, try to find out if and how you could use an API to do it for you. 
 
-show-me-how: |
+show-me-how:
+tell-me-why: |
+
+  ### What is a query?
+
+  A query is an opportunity to ask an existing service, say, GitHub to provide specific information based on the context of your question. Our last "username and avatar exercise" would be similar to asking someone their name and asking for a picture, except with a **query** we can ask GitHub to get the information from _hundreds_ (or _thousands_, or even _millions_) users, repositories, issues, commits, and pull requests.
+
+  Additionally, you can use the response to your **query** (or question) to dynamically update and potentially alter the way your content looks.
 
   During the introduction to the course, we identified that using queries and API would allow you to automatically get consistently updated information and use it to power your application or website. As an example, if you wanted to list the latest commits made across GitHub manually, you would need to do a lot of searching and manually update your application. More importantly, in the time it took your to make your changes, the data might be obsolete. Using queries and APIs, we can automatically gather the latest data, display it, and schedule when that data needs to be updated.
 
+  ### Our query
 
-tell-me-why:
+  - [**viewer:**](https://developer.github.com/v4/guides/using-the-explorer/) Who is currently viewing this information (you!)
+  - [**name:**](https://developer.github.com/v4/reference/object/user/#fields) The name of the viewer.
+  - [**pullRequests(last: #):**](https://developer.github.com/v4/reference/object/user/#fields) The last (most recent) pull requests that are relevant to that viewer.
+  - [**edges:**](https://developer.github.com/v4/reference/object/pullrequestedge/) An edge in a connection.
+  - [**node:**](https://developer.github.com/v4/reference/object/pullrequest/) The item at the end of an edge.
+  - [**title:**](https://developer.github.com/v4/reference/object/pullrequest/) The title of the Pull Request.
+  - [**body:**](https://developer.github.com/v4/reference/object/pullrequest/) The text found in the first comment of the Pull Request.
+  - [**url:**](https://developer.github.com/v4/reference/object/pullrequest/) The URL to the specific Pull Request.
 ---
