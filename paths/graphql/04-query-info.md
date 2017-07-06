@@ -11,24 +11,26 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  # Why would I use this?
+  # Using our Query's response
 
-  Maybe you are a trying to work on an open source project and want to provide a consistently updated list of other projects you have contributed to. Perhaps you are trying to land a job and want to show your potential employer the projects that you work on. Maybe you already have a job, but you want to be able to show your team or manager what you have been working on recently. Either way, this query will automatically generate a list of the projects that you are actively contributing to, and more importantly, doing it automagically.
+  1. Using the response from the query in the last step, fill in this template.
 
-    #### Goals of this page based on outline
-    - Context of why we're doing this, explain standups, show this could be useful for weekly updates of work
-    - Pick out titles and URLs manually and copy them into this template
-
-    ```
-    My most recent PRs are: <br>
-    1. [title1](url1)
-    1. [title2](url2)
-    1. [title3](url3)
-    1. [title4](url4)
-    1. [title5](url5)
-    ```
-
+          ```
+          My most recent PRs are: <br>
+          1. [title1](url1)<br>
+          1. [title2](url2)<br>
+          1. [title3](url3)<br>
+          1. [title4](url4)<br>
+          1. [title5](url5)<br>
+          ```
+  1. Save this template somewhere where you can get to it later, like a text editor or as a comment in an issue.
 
 show-me-how:
-tell-me-why:
+tell-me-why: |
+
+  ### Why are we making this query?
+
+  Maybe you are a trying to work on an open source project and want to provide a consistently updated list of other projects you have contributed to. Perhaps you are trying to land a job and want to show your potential employer the projects that you work on. Maybe you already have a job, but you want to be able to show your team or manager what you have been working on recently.
+
+  Either way, this query will automatically generate a list of the projects that you are actively contributing to, and more importantly, doing it automagically.
 ---
