@@ -17,7 +17,6 @@ main-content: |
   1. Get the information from the both queries ready.
   1. Create a mutation by either typing or pasting the following into the [GraphQL explorer](https://developer.github.com/v4/explorer/). Change [issueID] to the issue ID in the most recent query, and [PR template] to the template you completed earlier based on your most recent pull requests.
 
-          ```
           mutation AddComment {
             addComment(input: {
               subjectId: "[issueID]",
@@ -28,7 +27,6 @@ main-content: |
               }
             }
           }
-          ```
 
    1. Look around using the built in documentation. By hovering, erasing, retyping, or changing fields, what can you learn about this mutation?
    1. Go to the [issue](https://github.com/githubschool/graph-ql/issues/1) and find your posted comment.
