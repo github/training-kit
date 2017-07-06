@@ -11,6 +11,8 @@ main:
     url: /git-trouble/
   - title: "GitHub for Windows Users"
     url: /windows/
+  - title: "Introduction to GraphQL"
+    url: /graphql/
   - title: "Git & GitHub Training Path"
     url: /path/
   - title: "GitHub Training Community"
