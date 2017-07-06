@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Intro to GraphQL
-permalink: /graphql/04
-next-page: /graphql/05
+title: Query Response
+permalink: /graphql/query-info
+next-page: /graphql/another-query
 facilitator: false
 sidebar:
   nav: "github-graphql"

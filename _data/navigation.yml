@@ -171,3 +171,18 @@ windows:
       url: /windows/vs-sync
   - title: "Congratulations"
     url: /windows/congrats
+
+
+graphql:
+  - title: "Introduction to GraphQL"
+    url: /graphql/
+  - title: "Use GraphQL for the First Time"
+    url: /github-cli/first-use
+  - title: "Building Queries"
+    url: /github-cli/first-query
+  - title: "Query Response"
+    url: /github-cli/query-info
+  - title: "Another Query"
+    url: /github-cli/another-query
+  - title: "Create a Mutation"
+    url: /github-cli/mutation

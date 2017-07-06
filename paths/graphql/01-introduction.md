@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Intro to GraphQL
-permalink: /graphql/01
-next-page: /graphql/02
+title: Introduction to GraphQL
+permalink: /graphql/
+next-page: /graphql/01
 facilitator: false
 sidebar:
   nav: "github-graphql"
@@ -18,7 +18,7 @@ main-content: |
     **INSERT API WAVING IMG**
 
     API stands for Application Program Interface, and many websites, software applications, and services use APIs to share and update information.
-    
+
     This course is going to introduce the concept of using APIs, specifically GraphQL, to gather data and display it on a webpage. To find out more, click **Tell Me Why** below.
 
 show-me-how:

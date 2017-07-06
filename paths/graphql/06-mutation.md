@@ -3,9 +3,8 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Intro to GraphQL
-permalink: /graphql/06
-next-page: /graphql/07
+title: Create a Mutation
+permalink: /graphql/mutation
 facilitator: false
 sidebar:
   nav: "github-graphql"

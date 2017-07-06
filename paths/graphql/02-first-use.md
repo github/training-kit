@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Intro to GraphQL
-permalink: /graphql/02
-next-page: /graphql/03
+title: Use GraphQL for the First Time
+permalink: /graphql/first-use
+next-page: /graphql/first-query
 facilitator: false
 sidebar:
   nav: "github-graphql"
@@ -94,6 +94,6 @@ tell-me-why: |
 
   ### REST vs GraphQL
 
-  If you're already familiar with RESTful APIs, there are some major differences between REST and GraphQL that you should know about. Along with the [official documentation](https://developer.github.com/v4/), you may want to read up on [this blog post](https://githubengineering.com/the-github-graphql-api/). 
+  If you're already familiar with RESTful APIs, there are some major differences between REST and GraphQL that you should know about. Along with the [official documentation](https://developer.github.com/v4/), you may want to read up on [this blog post](https://githubengineering.com/the-github-graphql-api/).
 
 ---

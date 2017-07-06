@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Intro to GraphQL
-permalink: /graphql/03
-next-page: /graphql/04
+title: Building Queries
+permalink: /graphql/first-query
+next-page: /graphql/query-info
 facilitator: false
 sidebar:
   nav: "github-graphql"
@@ -41,7 +41,7 @@ main-content: |
 
   1. Click the **Execute Query** button (it looks like a Play button) to run the query that is in the left pane and display the results in the right pane.
 
-  This example shows that with the same code, we can get updated data! Any time you have to manually search for information, try to find out if and how you could use an API to do it for you. 
+  This example shows that with the same code, we can get updated data! Any time you have to manually search for information, try to find out if and how you could use an API to do it for you.
 
 show-me-how:
 tell-me-why: |
