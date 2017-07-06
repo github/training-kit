@@ -35,9 +35,9 @@ main-content: |
          }
 
 
- 1. To identify what the different parts of this query are doing, click *tell me why* below. We could easily change this query to ask for different information. If you'd like, feel free to do that in your own query!
+ 1. To identify what the different parts of this query are doing, click "Tell me why" below. We could easily change this query to ask for different information. If you'd like, feel free to do that in your own query!
 
-      > Note: As you begin exploring and crafting your own queries for your unique projects, you can click the `< Docs` button located above the right pane to get a definition of different query objects or look for query objects that will perform the task you are attempting.
+      > Note: As you begin exploring and crafting your own queries for your unique projects, you can click the "< Docs" button located above the right pane to get a definition of different query objects or look for query objects that will perform the task you are attempting.
 
   1. Click the **Execute Query** button (it looks like a Play button) to run the query that is in the left pane and display the results in the right pane.
 
