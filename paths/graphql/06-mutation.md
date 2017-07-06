@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Intro to GraphQL
-permalink: /graphql/
-next-page: /graphql/
+permalink: /graphql/06
+next-page: /graphql/07
 facilitator: false
 sidebar:
   nav: "github-graphql"
