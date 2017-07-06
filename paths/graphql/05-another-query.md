@@ -19,7 +19,6 @@ main-content: |
 
         If you can't build this query yourself, that's OK. Paste this query into the explorer, and try to figure out why it's built the way it is and how you could change or recreate it.
 
-              ```
               query FindIssueID {
                 repository(owner: "githubschool", name: "graph-QL") {
                   issue(number: 1) {
@@ -27,7 +26,6 @@ main-content: |
                   }
                 }
               }
-              ```
 
   1. Based on the response to your query, copy the issue ID and put it in a safe place. We'll need it for the next step when we build a mutation.
 
