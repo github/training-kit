@@ -16,7 +16,7 @@ main-content: |
   So far, we've only used GraphQL to form **queries**, or requests for information. Next, we're going to use the information we've gathered to craft a **mutation**. Simply put, a mutation changes information instead of just consuming it.
 
   1. Get the information from the both queries ready.
-  1. Create a mutation by either typing or pasting the following into the [GraphQL explorer](). Change [issueID] to the issue ID in the most recent query, and [PR template] to the template you completed earlier based on your most recent pull requests.
+  1. Create a mutation by either typing or pasting the following into the [GraphQL explorer](https://developer.github.com/v4/explorer/). Change [issueID] to the issue ID in the most recent query, and [PR template] to the template you completed earlier based on your most recent pull requests.
 
           ```
           mutation AddComment {
