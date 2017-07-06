@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Introduction to GraphQL
 permalink: /graphql/
-next-page: /graphql/01
+next-page: /graphql/first-use
 facilitator: false
 sidebar:
   nav: "github-graphql"
