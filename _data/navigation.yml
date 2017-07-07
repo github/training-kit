@@ -184,7 +184,7 @@ github-graphql:
     url: /graphql/first-query
   - title: "Grab a Query's Response"
     url: /graphql/query-info
-  - title: "Another Query"
+  - title: "Use a Query to Find Specific Information"
     url: /graphql/another-query
   - title: "Create a Mutation"
     url: /graphql/mutation
