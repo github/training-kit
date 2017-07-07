@@ -84,7 +84,11 @@ tell-me-why: |
 
   The `login` and `avatarUrl` fields will be unique to your user account. If you haven't setup a unique avatar for your account, you totally should! If you need an idea for a cool avatar to use, [why not an Octocat?](https://octodex.github.com/)
 
-  ### REST vs GraphQL
+  ### What is GraphQL?
+
+  Graph**QL** is just a **Q**uerying **L**anguage that helps you to build a request for data in a systematic way.
+
+  It's a replacement for (_or sometimes works with -- especially if an organization is transition_) RESTful API queries. 
 
   If you're already familiar with RESTful APIs, there are some major differences between REST and GraphQL that you should know about. Along with the [official documentation](https://developer.github.com/v4/), you may want to read up on [this blog post](https://githubengineering.com/the-github-graphql-api/).
 
