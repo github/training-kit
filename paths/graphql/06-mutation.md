@@ -35,6 +35,8 @@ main-content: |
 show-me-how:
 tell-me-why: |
 
- FILL WITH MORE INFO ABOUT MUTATIONS
+ ## Mutation
+
+ In this exercise we created a **mutation**, but what exactly is it? With GraphQL, it is possible to do more than just extract data from a platform, using a **mutation** we can actually manipulate server-side data. 
 
 ---
