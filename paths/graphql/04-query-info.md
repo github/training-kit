@@ -23,7 +23,7 @@ main-content: |
 
   1. Save this template somewhere where you can get to it later, like a text editor or as a comment in an issue.
 
-show-me-how:
+show-me-how: "images/gifs/graphql/recent-prs.gif"
 tell-me-why: |
 
   ### Why are we making this query?

@@ -54,7 +54,7 @@ main-content: |
 
       To see how to add the `avatarUrl` **field** click on "Tell me why" below :point_down:.
 
-show-me-how:
+show-me-how: "images/gifs/graphql/first-query.gif"
 
 tell-me-why: |
 

@@ -18,13 +18,13 @@ main-content: |
 
               query FindIssueID {
                 repository(owner: "githubschool", name: "graph-QL") {
-            
+
                 }
               }
   1. Find the issue's `id` in your results and put it in a safe place. We'll need it for the next step when we build a mutation.
 
 
-show-me-how:
+show-me-how: "images/gifs/graphql/get-issue-id.gif"
 tell-me-why: |
 
   Did building the query give you trouble? That's OK! Here's the full query. Paste it into the GraphQL Explorer to get the issue `id`.

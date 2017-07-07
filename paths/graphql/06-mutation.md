@@ -33,7 +33,7 @@ main-content: |
 
 
 
-show-me-how:
+show-me-how: "images/gifs/graphql/mutation.gif"
 tell-me-why: |
 
  ## Mutation

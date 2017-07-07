@@ -38,7 +38,7 @@ main-content: |
 
   This example shows that with the same code, we can get updated data! Any time you have to manually search for information, try to find out if and how you could use an API to do it for you.
 
-show-me-how:
+show-me-how: "images/gifs/graphql/build-query.gif"
 tell-me-why: |
 
   ### What is a query?
