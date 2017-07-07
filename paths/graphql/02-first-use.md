@@ -49,7 +49,7 @@ main-content: |
   1. Make a minor change to find the URL of your avatar on GitHub. Add the following code to your query, so it will return a URL to your avatar image.
 
       ```
-      avatarUrl { }
+      avatarUrl
       ```
 
       To see how to add the `avatarUrl` **field** click on "Tell me why" below :point_down:.
