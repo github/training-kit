@@ -182,7 +182,7 @@ github-graphql:
     url: /graphql/first-use
   - title: "Build a Query"
     url: /graphql/first-query
-  - title: "Query Response"
+  - title: "Grab a Query's Response"
     url: /graphql/query-info
   - title: "Another Query"
     url: /graphql/another-query

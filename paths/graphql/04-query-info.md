@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Using Out Query Response
+title: Grab a Query's Response
 permalink: /graphql/query-info
 next-page: /graphql/another-query
 facilitator: false
@@ -30,5 +30,7 @@ tell-me-why: |
 
   Maybe you are a trying to work on an open source project and want to provide a consistently updated list of other projects you have contributed to. Perhaps you are trying to land a job and want to show your potential employer the projects that you work on. Maybe you already have a job, but you want to be able to show your team or manager what you have been working on recently.
 
-  Either way, this query will automatically generate a list of the projects that you are actively contributing to, and more importantly, doing it automagically.
+  Either way, this query will automatically generate a list of the projects that you are actively contributing to, and more importantly, it's doing it automagically.
+
+  Later on, we'll use this information to craft a **mutation**.
 ---
