@@ -31,9 +31,9 @@ main-content: |
 
 
 show-me-how:
-tell-me-why:
+tell-me-why: |
 
-If you couldn't build the query yourself, that's OK. Paste this query into the explorer, and identify where you might have encountered issues while building it.
+  If you couldn't build the query yourself, that's OK. Paste this query into the explorer, and identify where you might have encountered issues while building it.
 
       query FindIssueID {
         repository(owner: "githubschool", name: "graph-QL") {
@@ -42,4 +42,5 @@ If you couldn't build the query yourself, that's OK. Paste this query into the e
           }
         }
       }
+
 ---
