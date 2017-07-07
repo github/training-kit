@@ -37,7 +37,7 @@ main-content: |
 
       > Note: As you begin exploring and crafting your own queries for your unique projects, you can click the "< Docs" button located above the right pane to get a definition of different query objects or look for query objects that will perform the task you are attempting.
 
-  1. Click the **Execute Query** button (it looks like a Play button) to run the query that is in the left pane and display the results in the right pane.
+  1. Click the "Execute Query" button (it looks like a Play button) to run the query that is in the left pane and display the results in the right pane.
 
   This example shows that with the same code, we can get updated data! Any time you have to manually search for information, try to find out if and how you could use an API to do it for you.
 

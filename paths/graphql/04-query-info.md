@@ -13,14 +13,14 @@ main-content: |
 
   1. Using the response from the query in the last step, fill in this template.
 
-          ```
           My most recent PRs are: <br>
           1. [title1](url1)<br>
           1. [title2](url2)<br>
           1. [title3](url3)<br>
           1. [title4](url4)<br>
           1. [title5](url5)<br>
-          ```
+
+
   1. Save this template somewhere where you can get to it later, like a text editor or as a comment in an issue.
 
 show-me-how:

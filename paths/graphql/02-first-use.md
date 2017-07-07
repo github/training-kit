@@ -30,7 +30,7 @@ main-content: |
             }
           }
 
-   1. Click the **Execute Query** button (it looks like a Play button) to run the query that is in the left pane and display the results in the right pane.
+   1. Click the "Execute Query" button (it looks like a Play button) to run the query that is in the left pane and display the results in the right pane.
 
       Clicking Execute Query should present something that looks like this:
 
