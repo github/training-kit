@@ -27,6 +27,8 @@ main-content: |
     This course is going to introduce the concept of using APIs via the GitHub GraphQL Query Language, and to gather data and display it on a webpage. To find out more, click "Tell me why" below.
 
 show-me-how:
+  includes:
+  - video/announcing-graphql-video.html
 tell-me-why: |
 
   Learning new technologies is difficult. Whatever your experience with APIs or GraphQL, this course is hands-on and will walk you through the steps to get started. We believe that working with a new technology and getting real experience is the quickest and surest way to learn.
