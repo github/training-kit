@@ -15,10 +15,6 @@ main-content: |
 
   1. Build a query to find an issue ID of the repository owned by GitHubSchool named `graph-ql`. Search for the ID of issue number 1. Below is the start of the query, however, we left some of the **fields** out so you can try to build the query yourself. If you run into any issues building the query, the full code can be found in the "Tell me why" section.
 
-
-
-        If you can't build this query yourself, that's OK. Paste this query into the explorer, and try to figure out why it's built the way it is and how you could change or recreate it.
-
               query FindIssueID {
                 repository(owner: "githubschool", name: "graph-QL") {
                    {
