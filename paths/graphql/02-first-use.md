@@ -54,14 +54,6 @@ main-content: |
 
       To see how to add the `avatarUrl` **field** click on "Tell me why" below :point_down:.
 
-  #### Goals of this page based on outline
-  - [x] instructions for navigating to GraphiQL on web UI
-    - [x] https://developer.github.com/v4/explorer/
-  - [x] interact with interface, show how it works, live data
-  - [x] tell me why, can explain differences between rest and graphql
-  - Does this have to be different than page 3, or could we combine?
-
-
 show-me-how:
 
 tell-me-why: |
