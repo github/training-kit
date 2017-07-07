@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Building Queries
+title: Build a Query
 permalink: /graphql/first-query
 next-page: /graphql/query-info
 facilitator: false
@@ -11,9 +11,9 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
- In the last section, we used an existing **query** to display our username in the Results pane. If you participated in the extra `avatarUrl` exercise, your query also provided a link to your GitHub avatar. To learn more about what a query is, click "Tell me why" under this next exercise.
+ In the last section, we used the default **query** to display our username in the Results pane. Then, we added `avatarUrl` to your query which provided a link to your GitHub avatar. To learn more about what a query is, click "Tell me why" under this next exercise.
 
- Let's imagine that you'd like to update your team [in an issue](https://guides.github.com/features/issues/) about some of your recent work. You could use a GraphQL query to find out what pull requests you've most recently contributed to.
+ Let's imagine that you'd like to update your team about some of your recent work [via an issue](https://guides.github.com/features/issues/). You could use a GraphQL query to find the pull requests you've most recently contributed to.
 
  1. Paste this query into the [GraphQL explorer](https://developer.github.com/v4/explorer/).
 
@@ -31,11 +31,7 @@ main-content: |
              }
            }
          }
-
-
- 1. To identify what the different parts of this query are doing, click "Tell me why" below. We could easily change this query to ask for different information. If you'd like, feel free to do that in your own query!
-
-      > Note: As you begin exploring and crafting your own queries for your unique projects, you can click the "< Docs" button located above the right pane to get a definition of different query objects or look for query objects that will perform the task you are attempting.
+ > To identify what the different parts of this query are doing, click "Tell me why" below. We could easily change this query to ask for different information. If you'd like, feel free to do that in your own query!
 
   1. Click the "Execute Query" button (it looks like a Play button) to run the query that is in the left pane and display the results in the right pane.
 
@@ -62,4 +58,7 @@ tell-me-why: |
   - [**title:**](https://developer.github.com/v4/reference/object/pullrequest/) The title of the Pull Request.
   - [**body:**](https://developer.github.com/v4/reference/object/pullrequest/) The text found in the first comment of the Pull Request.
   - [**url:**](https://developer.github.com/v4/reference/object/pullrequest/) The URL to the specific Pull Request.
+
+  > As you begin exploring and crafting your own queries for your unique projects, you can click the "< Docs" button located above the right pane of the GraphQL Explorer to get a definition of different query objects or look for query objects that will perform the task you are attempting.
+
 ---

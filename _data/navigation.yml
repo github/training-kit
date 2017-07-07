@@ -180,7 +180,7 @@ github-graphql:
     url: /graphql/
   - title: "Use GraphQL for the First Time"
     url: /graphql/first-use
-  - title: "Building Queries"
+  - title: "Build a Query"
     url: /graphql/first-query
   - title: "Query Response"
     url: /graphql/query-info
