@@ -32,7 +32,7 @@ main-content: |
 
    1. Click the "Execute Query" button (it looks like a Play button) to run the query that is in the left pane and display the results in the right pane.
 
-      Clicking Execute Query should present something that looks like this:
+      Clicking "Execute Query" should present something that looks like this:
 
 
           {
@@ -52,13 +52,13 @@ main-content: |
       avatarUrl { }
       ```
 
-      To see how to add the `avatarUrl` **field** click on "Tell Me Why" below :point_down:.
+      To see how to add the `avatarUrl` **field** click on "Tell me why" below :point_down:.
 
   #### Goals of this page based on outline
   - [x] instructions for navigating to GraphiQL on web UI
     - [x] https://developer.github.com/v4/explorer/
   - [x] interact with interface, show how it works, live data
-  - tell me why, can explain differences between rest and graphql
+  - [x] tell me why, can explain differences between rest and graphql
   - Does this have to be different than page 3, or could we combine?
 
 

@@ -19,7 +19,7 @@ main-content: |
 
     API stands for Application Program Interface, and many websites, software applications, and services use APIs to share and update information.
 
-    This course is going to introduce the concept of using APIs, specifically GraphQL, to gather data and display it on a webpage. To find out more, click **Tell Me Why** below.
+    This course is going to introduce the concept of using APIs, specifically GraphQL, to gather data and display it on a webpage. To find out more, click "Tell me why" below.
 
 show-me-how:
 tell-me-why: |
