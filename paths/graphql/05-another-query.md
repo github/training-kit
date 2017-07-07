@@ -15,12 +15,10 @@ main-content: |
 
   1. Build a query to find [this issue](https://github.com/githubschool/graph-ql/issues/1)'s unique identifier, or `id`.
   > Below is the start of the query, however, we left some of the **fields** out so you can try to build the query yourself. See the full code in the "Tell me why" section.
-  
+
               query FindIssueID {
                 repository(owner: "githubschool", name: "graph-QL") {
-                   {
-
-                  }
+            
                 }
               }
   1. Find the issue's `id` in your results and put it in a safe place. We'll need it for the next step when we build a mutation.
