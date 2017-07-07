@@ -93,7 +93,7 @@
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #{{ site.data.template.color.primary }};
+    background-color: white;
 }
 
 .timeline>li p{
