@@ -10,6 +10,8 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  ![img](../images/gifs/graphql/mutation.gif)
+
   So far, we've only used GraphQL to form **queries**, or requests for information. Next, we're going to use the information we've gathered to craft a **mutation**. Simply put, using a **mutation** we can actually manipulate server-side data.
 
   1. Get your information from the both previous queries ready (list of PRs, and the issue's `id`).
@@ -30,7 +32,7 @@ main-content: |
 
    1. Go to the [issue](https://github.com/githubschool/graph-ql/issues/1) and find your posted comment.
    1. For a challenge, use GraphQL to add an emoji reaction to your comment!
-   1. Check out the "Tell Me Why" below to get a head start in managing your notifications from this issue. 
+   1. Check out the "Tell Me Why" below to get a head start in managing your notifications from this issue.
 
 
 show-me-how: "images/gifs/graphql/mutation.gif"
