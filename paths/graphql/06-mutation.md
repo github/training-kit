@@ -10,9 +10,9 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  ![img](../images/gifs/graphql/mutation.gif)
-
   So far, we've only used GraphQL to form **queries**, or requests for information. Next, we're going to use the information we've gathered to craft a **mutation**. Simply put, using a **mutation** we can actually manipulate server-side data.
+
+  ![img](../images/gifs/graphql/mutation.gif)
 
   1. Get your information from the both previous queries ready (list of PRs, and the issue's `id`).
   1. Create a mutation by either typing or pasting the following into the [GraphQL explorer](https://developer.github.com/v4/explorer/). Change `[issueID]` to the issue `id` you found in the most recent query, and `[PR template]` to the template you completed earlier based on your most recent pull requests. _You will need to delete the new lines in between the list items in the template for it to process correctly._
