@@ -11,10 +11,9 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dsPVrbDHgaY?ecver=1" frameborder="0" allowfullscreen></iframe>
+    When working on projects, it's common to want access to outside data. But data is often in flux, and that can be a big problem. Depending on your source, the data might change over the course of years, or merely within seconds.
 
-
-    When working on projects, it's common to want access to website data. The problem with this is that data is often in flux! Depending on your source, this might change anywhere from yearly to within seconds! Some examples of data you might want to work with could be:
+    Some examples of data you might want to work with could be:
 
     - gathering the number of commits you made over a period of time
     - flight statuses
@@ -23,7 +22,7 @@ main-content: |
 
     There are systems already in place that can enable you to gather up to date precise information that you want **and** immediately display it. Allow us to introduce you to APIs.
 
-    **INSERT API WAVING IMG**
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dsPVrbDHgaY?ecver=1" frameborder="0" allowfullscreen></iframe>
 
     API stands for Application Program Interface, and many websites, software applications, and services use APIs to share and update information.
 
