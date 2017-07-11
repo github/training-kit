@@ -11,15 +11,15 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  ![img](../images/gifs/graphql/first-query.gif)
+  When we introduced APIs, the technology that allows programs to interact with existing information, we mentioned GraphQL. In this section, we are going to use a tool that enables you to experiment with GraphQL quickly and easily.
 
-  When we introduced APIs, the technology that allows programs to interact with existing information, we briefly mentioned GraphQL. In this section, we are going to use a tool that enables you to experiment with GraphQL quickly and easily.
+  ![img](../images/gifs/graphql/first-query.gif)
 
   ### Navigating to GraphQL
    1. [Navigate to the GraphQL explorer](https://developer.github.com/v4/explorer/).
    1. Once the page has loaded, click the "Sign in with GitHub" button. If you don't have a GitHub account, [here are some instructions for getting an account setup](https://help.github.com/articles/signing-up-for-a-new-github-account/).  
 
-      After logging in, The GraphiQL interface displays a sample query in the left pane that should look like this:
+      After logging in, The GraphQL interface displays a sample query in the left pane that should look like this:
 
           # Type queries into this side of the screen, and you will
           # see intelligent typeaheads aware of the current GraphQL type schema,
