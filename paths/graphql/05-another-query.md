@@ -11,6 +11,8 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  ![img](../images/gifs/graphql/get-issue-id.gif)
+
   Let's build another query. We'll ask GitHub for the ID of an issue so that we can post to that issue using the API in a later step.
 
   1. Build a query to find [this issue](https://github.com/githubschool/graph-ql/issues/1)'s unique identifier, or `id`.
@@ -23,8 +25,6 @@ main-content: |
               }
   1. Find the issue's `id` in your results and put it in a safe place. We'll need it for the next step when we build a mutation.
 
-
-show-me-how: "images/gifs/graphql/get-issue-id.gif"
 tell-me-why: |
 
   Did building the query give you trouble? That's OK! Here's the full query. Paste it into the GraphQL Explorer to get the issue `id`.

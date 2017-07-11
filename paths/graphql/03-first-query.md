@@ -11,6 +11,8 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+ ![img](../images/gifs/graphql/build-query.gif)
+
  In the last section, we used the default **query** to display our username in the Results pane. Then, we added `avatarUrl` to your query which provided a link to your GitHub avatar. To learn more about what a query is, click "Tell me why" under this next exercise.
 
  Let's imagine that you'd like to update your team about some of your recent work [via an issue](https://guides.github.com/features/issues/). You could use a GraphQL query to find the pull requests you've most recently contributed to.
@@ -38,7 +40,6 @@ main-content: |
 
   This example shows that with the same code, we can get updated data! Any time you have to manually search for information, try to find out if and how you could use an API to do it for you.
 
-show-me-how: "images/gifs/graphql/build-query.gif"
 tell-me-why: |
 
   ### What is a query?

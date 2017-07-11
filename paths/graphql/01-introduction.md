@@ -11,6 +11,8 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dsPVrbDHgaY?ecver=1" frameborder="0" allowfullscreen"></iframe>
+
     When working on projects, it's common to want access to website data. The problem with this is that data is often in flux! Depending on your source, this might change anywhere from yearly to within seconds! Some examples of data you might want to work with could be:
 
     - gathering the number of commits you made over a period of time
@@ -26,9 +28,6 @@ main-content: |
 
     This course is going to introduce the concept of using APIs via the GitHub GraphQL Query Language, and to gather data and display it on a webpage. To find out more, click "Tell me why" below.
 
-show-me-how:
-  includes:
-  - video/announcing-graphql-video.html
 tell-me-why: |
 
   Learning new technologies is difficult. Whatever your experience with APIs or GraphQL, this course is hands-on and will walk you through the steps to get started. We believe that working with a new technology and getting real experience is the quickest and surest way to learn.

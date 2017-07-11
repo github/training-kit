@@ -11,6 +11,8 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  ![img](../images/gifs/graphql/recent-prs.gif)
+
   1. Using the response from the query in the last step, fill in this template.
 
           My most recent PRs are: <br>
@@ -23,7 +25,6 @@ main-content: |
 
   1. Save this template somewhere where you can get to it later, like a text editor or as a comment in an issue.
 
-show-me-how: "images/gifs/graphql/recent-prs.gif"
 tell-me-why: |
 
   ### Why are we making this query?

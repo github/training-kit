@@ -11,6 +11,8 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  ![img](../images/gifs/graphql/first-query.gif)
+
   When we introduced APIs, the technology that allows programs to interact with existing information, we briefly mentioned GraphQL. In this section, we are going to use a tool that enables you to experiment with GraphQL quickly and easily.
 
   ### Navigating to GraphQL
@@ -54,8 +56,6 @@ main-content: |
 
       To see how to add the `avatarUrl` **field** click on "Tell me why" below :point_down:.
 
-show-me-how: "images/gifs/graphql/first-query.gif"
-
 tell-me-why: |
 
   ### Using `avatarUrl`
@@ -88,7 +88,7 @@ tell-me-why: |
 
   Graph**QL** is just a **Q**uerying **L**anguage that helps you to build a request for data in a systematic way.
 
-  It's a replacement for (_or sometimes works with -- especially if an organization is transition_) RESTful API queries. 
+  It's a replacement for (_or sometimes works with -- especially if an organization is transition_) RESTful API queries.
 
   If you're already familiar with RESTful APIs, there are some major differences between REST and GraphQL that you should know about. Along with the [official documentation](https://developer.github.com/v4/), you may want to read up on [this blog post](https://githubengineering.com/the-github-graphql-api/).
 
