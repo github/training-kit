@@ -11,22 +11,22 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-    When working on projects, it's common to want access to outside data. But data is often in flux, and that can be a big problem. Depending on your source, the data might change over the course of years, or merely within seconds.
+    Modern apps are interdependent and dynamic. For example, you probably sign in to various web apps using your GitHub account. These apps may be grabbing your Avatar photo directly from GitHub or some information about your projects. As an added bonus, the data about your project is always changing, so these connections are constantly updating the information that is displayed.
 
-    Some examples of data you might want to work with could be:
+    GitHub isn't the only web app that does this. A few examples of rich data sources are:
 
-    - gathering the number of commits you made over a period of time
-    - flight statuses
-    - your favorite sports team's record, or
-    - weather in your area.
+    - [Weather Underground](https://www.wunderground.com/weather/api/): get access to your local weather or report it from you home weather station
+    - [Flight stats](https://developer.flightstats.com/api-docs/flightstatus/v2): grab information about any flight
+    - [ESPN](http://www.espn.com/static/apis/devcenter/docs/scores.html): keep track of your favorite sports team's record
 
-    There are systems already in place that can enable you to gather up to date precise information that you want **and** immediately display it. Allow us to introduce you to APIs.
+    This data is available to you because the developers of these apps created a public Application Program Interface (API).
+
+    This course is going to introduce the concept of using APIs via GitHub's GraphQL, and show you how it can be used to gather data from GitHub and make a simple change.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/dsPVrbDHgaY?ecver=1" frameborder="0" allowfullscreen></iframe>
 
-    API stands for Application Program Interface, and many websites, software applications, and services use APIs to share and update information.
+    There are several types of APIs. Learn more by expanding the "Tell me why" section below.
 
-    This course is going to introduce the concept of using APIs via the GitHub GraphQL Query Language, and to gather data and display it on a webpage. To find out more, click "Tell me why" below.
 
 tell-me-why: |
 
