@@ -51,13 +51,21 @@ main-content: |
 
       Your result should look similar to the results displayed above, however, `githubteacher` should be replaced with your username (or login as the query displays).
 
-  1. Make a minor change to find the URL of your avatar on GitHub. Add the following code to your query, so it will return a URL to your avatar image.
+  ### Making Changes to the Sample Query
 
-      ```
-      avatarUrl
-      ```
+  In this case, we only asked GraphQL to tell us our login name, but what if we wanted to know more?
 
-      To see how to add the `avatarUrl` **field** click on "Tell me why" below :point_down:.
+  Just below `login`, add a new line with the text `avatarURL`. Now your query should look like this:
+
+
+        {
+          viewer {
+            login
+            avatarUrl
+          }
+        }
+
+  To learn more about the information you can request and what is being returned, check out "Tell me why" below :point_down:.
 
 tell-me-why: |
 
