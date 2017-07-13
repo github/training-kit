@@ -49,7 +49,7 @@ main-content: |
           }
 
 
-      Your result should look similar to the results displayed above, however, `githubteacher` should be replaced with your username (or login as the query displays).
+      The response from a query in GraphQL will be formatted just like the query itself. You'll notice that it looks like JSON, and is mapped to the exact values you requested. 
 
   ### Making Changes to the Sample Query
 
