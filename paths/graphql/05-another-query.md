@@ -15,11 +15,11 @@ main-content: |
 
   ![img](../images/gifs/graphql/get-issue-id.gif)
 
-  1. Build a query to find [this issue](https://github.com/githubschool/graph-ql/issues/1)'s unique identifier, or `id`.
-   - Below is the start of the query, however, we left some of the **fields** out so you can try to build the query yourself. For help, [check out the documentation](https://developer.github.com/v4/). See the full code in the "Tell me why" section.
+  1. Build a query to find an issue's unique identifier, or `id`. If you aren't sure what issue to use, [open one in our shared repository](https://github.com/githubschool/graph-ql) to use for this example and show off your work to others!
+   - Below is the start of the query, however, we left some of the **fields** out so you can try to build the query yourself. For help, [check out the documentation](https://developer.github.com/v4/). See a full code example in the "Tell me why" section.
 
               query FindIssueID {
-                repository(owner: "githubschool", name: "graph-QL") {
+                repository(owner: "", name: "") {
 
                 }
               }
