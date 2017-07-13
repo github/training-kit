@@ -27,11 +27,11 @@ main-content: |
 
 tell-me-why: |
 
-  Did building the query give you trouble? That's OK! Here's the full query. Paste it into the GraphQL Explorer to get the issue `id`.
+  Did building the query give you trouble? That's OK! Here's the full query. Paste it into the GraphQL Explorer to get the issue `id` for your own issue, but replace `#` with the number of [your own issue](https://github.com/githubschool/graph-ql/issues).
 
       query FindIssueID {
         repository(owner: "githubschool", name: "graph-QL") {
-          issue(number: 1) {
+          issue(number: #) {
             id
           }
         }
