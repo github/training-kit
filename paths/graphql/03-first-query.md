@@ -47,8 +47,6 @@ tell-me-why: |
 
   Additionally, you can use the response to your **query** (or question) to dynamically update and potentially alter the way your content looks.
 
-  During the introduction to the course, we identified that using queries and APIs would allow you to automatically get consistently updated information and use it to power your application or website. As an example, if you wanted to list the latest commits made across GitHub manually, you would need to do a lot of searching and manually update your application. More importantly, in the time it took your to make your changes, the data might be obsolete. Using queries and APIs, we can automatically gather the latest data, display it, and schedule when that data needs to be updated.
-
   ### Components of our query
 
   - [**viewer:**](https://developer.github.com/v4/reference/query/#fields) Who is currently viewing this information? (you!)
