@@ -53,8 +53,8 @@ tell-me-why: |
   - [**viewer:**](https://developer.github.com/v4/guides/using-the-explorer/) Who is currently viewing this information (you!)
   - [**name:**](https://developer.github.com/v4/reference/object/user/#fields) The name of the viewer.
   - [**pullRequests(last: #):**](https://developer.github.com/v4/reference/object/user/#fields) The last (most recent) pull requests that are relevant to that viewer. The `#` sign can be used to limit the number of pull requests you want returned.
-  - [**edges:**](https://developer.github.com/v4/reference/object/pullrequestedge/) An edge in a connection.
-  - [**node:**](https://developer.github.com/v4/reference/object/pullrequest/) The item at the end of an edge.
+  - [**edges:**](https://developer.github.com/v4/reference/object/pullrequestedge/) Representation that there's a connection to another array of data
+  - [**node:**](https://developer.github.com/v4/reference/object/pullrequest/) The related object, data, or other item referenced by an edge
   - [**title:**](https://developer.github.com/v4/reference/object/pullrequest/) The title of the Pull Request.
   - [**body:**](https://developer.github.com/v4/reference/object/pullrequest/) The text found in the first comment of the Pull Request.
   - [**url:**](https://developer.github.com/v4/reference/object/pullrequest/) The URL to the specific Pull Request.
