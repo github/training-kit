@@ -37,4 +37,9 @@ main-content: |
    1. Go to your issue and find your posted comment.
    1. For an extra challenge, use GraphQL to add an emoji reaction to your comment!
 
+  ## Done but not Finished
+
+  This was just the tip of the iceberg when it comes to using GraphQL to empower your interactions with GitHub. In this course, we used GraphQL to post information about a pull request you recently worked on to an issue automatically, but the possibilities of what your future queries can do is limited by your imagination. So go out there, experiment with some queries and share them with the Training team at GitHub and other students in an issue on the course [repository](https://github.com/githubschool/graph-ql). Our favorite queries will be added to a document within the repository for all students to view! Good luck out there and may your queries be responsive. 
+
+
 ---
