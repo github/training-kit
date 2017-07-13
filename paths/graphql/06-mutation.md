@@ -32,6 +32,5 @@ main-content: |
 
    1. Go to your issue and find your posted comment.
    1. For a challenge, use GraphQL to add an emoji reaction to your comment!
-   1. Check out the "Tell Me Why" below to get a head start in managing your notifications from this issue.
 
 ---
