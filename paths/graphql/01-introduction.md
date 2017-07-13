@@ -10,6 +10,7 @@ facilitator: false
 sidebar:
   nav: "github-graphql"
 main-content: |
+    ## An Introduction to APIs for Complete Beginners
 
     Modern apps are interdependent and dynamic. For example, you probably sign in to various web apps using your GitHub account. These apps may be grabbing your Avatar photo directly from GitHub or some information about your projects. As an added bonus, the data about your project is always changing, so these connections are constantly updating the information that is displayed.
 
