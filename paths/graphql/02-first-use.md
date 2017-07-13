@@ -69,20 +69,13 @@ main-content: |
 
 tell-me-why: |
 
-  ### Using `avatarUrl`
+  ### What Can I Access with the API?
 
-  At the end of the lesson, we provided an opportunity for you to experiment using the `avatarUrl` field. If you weren't able to get the query to run, or you just want to see how you would add additional fields to your query, you can make your query look like the following:
+  GitHub has made much of the data about a user accessible via the API. To learn more about the data available to the User object, you can check out the [User reference documents on developer.github.com](https://developer.github.com/v4/reference/object/user/).
 
-      {
-        viewer {
-          login {
-          }
-          avatarUrl {
-          }
-        }
-      }      
+  ### What Am I Looking At?
 
-  This will present the following results:
+  When you ran the query above, it should have returned something that looks like this:
 
       {
         "data": {
@@ -93,14 +86,6 @@ tell-me-why: |
         }
       }
 
-  The `login` and `avatarUrl` fields will be unique to your user account. If you haven't setup a unique avatar for your account, you totally should! If you need an idea for a cool avatar to use, [why not an Octocat?](https://octodex.github.com/)
-
-  ### What is GraphQL?
-
-  Graph**QL** is just a **Q**uerying **L**anguage that helps you to build a request for data in a systematic way.
-
-  It's a replacement for (_or sometimes works with -- especially if an organization is transition_) RESTful API queries.
-
-  If you're already familiar with RESTful APIs, there are some major differences between REST and GraphQL that you should know about. Along with the [official documentation](https://developer.github.com/v4/), you may want to read up on [this blog post](https://githubengineering.com/the-github-graphql-api/).
+  Notice that the JSON returned by GraphQL looks like the JSON you provided in the query. This allows you to fine tune the query to return exactly the results you want and receive them in a predictable format.
 
 ---
