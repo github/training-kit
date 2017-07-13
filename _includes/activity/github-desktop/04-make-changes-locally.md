@@ -6,14 +6,12 @@ It's time to create the home page for your website.
 
 The next steps are determined by if you used a GitHub Pages theme or decided to just enable GitHub Pages on your repository.
 
-
 ### I am using a GitHub Pages theme
 
 1. Open the file named `README.md`.
 1. Remove the template text that was added to the `README.md` when you selected your theme.
 1. In the `README.md` file include at least the following two lines: `# Hello World!` and `My name is GITHUB_USERNAME`. Bonus points for including more information.
 1. When you are finished, save your changes and close the text editor.
-
 
 ### I am not using a GitHub Pages theme
 
