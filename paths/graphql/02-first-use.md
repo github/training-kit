@@ -49,21 +49,21 @@ main-content: |
           }
 
 
-      The response from a query in GraphQL will be formatted just like the query itself. You'll notice that it looks like JSON, and is mapped to the exact values you requested. 
+      The response from a query in GraphQL will be formatted just like the query itself. You'll notice that it looks like JSON, and is mapped to the exact values you requested.
 
-  ### Making Changes to the Sample Query
+    1. Make changes to the sample query.
 
-  In this case, we only asked GraphQL to tell us our login name, but what if we wanted to know more?
+        In this case, we only asked GraphQL to tell us our login name, but what if we wanted to know more?
 
-  Just below `login`, add a new line with the text `avatarURL`. Now your query should look like this:
+        Just below `login`, add a new line with the text `avatarURL`. Now your query should look like this:
 
 
-        {
-          viewer {
-            login
-            avatarUrl
-          }
-        }
+            {
+              viewer {
+                login
+                avatarUrl
+              }
+            }
 
   To learn more about the information you can request and what is being returned, check out "Tell me why" below :point_down:.
 
