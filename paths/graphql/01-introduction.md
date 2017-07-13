@@ -12,7 +12,7 @@ sidebar:
 main-content: |
     ## An Introduction to APIs for Complete Beginners
 
-    Modern apps are interdependent and dynamic. For example, you probably sign in to various web apps using your GitHub account. These apps may be grabbing your Avatar photo directly from GitHub or some information about your projects. As an added bonus, the data about your project is always changing, so these connections are constantly updating the information that is displayed.
+    Modern apps are interdependent and dynamic. For example, you probably sign in to various web apps using your GitHub account. These apps may be grabbing your [avatar](https://github.com/blog/1586-identicons) directly from GitHub or some information about your projects. The data about your project is always changing so, as an added bonus, these connections are constantly updating the information that is displayed.
 
     GitHub isn't the only web app that does this. A few examples of rich data sources are:
 
@@ -22,7 +22,7 @@ main-content: |
 
     This data is available to you because the developers of these apps created a public Application Program Interface (API).
 
-    This course is going to introduce the concept of using APIs via GitHub's GraphQL, and show you how it can be used to gather data from GitHub and make a simple change.
+    This course is going to introduce the concept of using APIs via GitHub's GraphQL. You'll learn how to gather data from GitHub, and how to make a simple change.
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/dsPVrbDHgaY?ecver=1" frameborder="0" allowfullscreen></iframe>
 
@@ -41,7 +41,7 @@ tell-me-why: |
   - SOAP
   - .NET
 
-  The goal of this course isn't to teach you about all of the common API types, but it is worth mentioning some of the advantages GraphQL has over the popular REST API so you can take leverage these features in your projects.
+  The goal of this course isn't to teach you about all of the common API types, but it is worth mentioning some of the advantages GraphQL has over the popular REST API so you can leverage these features in your projects.
 
   ### Common Frustrations with REST
 
@@ -52,9 +52,9 @@ tell-me-why: |
 
   GraphQL was designed to remove these frustrations by creating a more flexible query structure and allowing you to request information based on connections across traditional data points.
 
-  GraphQL also allows you to specify the information you want. So if you only want to know how many :smile: emoji reactions were on your last comment, you can get that information.
+  GraphQL also allows you to specify the information you want. So if you only want to know how many :smile: emoji reactions were on your last comment, you can get precisely that information.
 
-  ## How Will You Use GitHub's GraphQL
+  ## How Will You Use GitHub's GraphQL?
 
   If you aren't sure why you might use GraphQL right now, that's :ok: :ok_hand:. This course walks through a few examples, and we'll set you confidently on the path of additional use cases.
 
