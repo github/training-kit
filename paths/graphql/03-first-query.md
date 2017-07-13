@@ -13,18 +13,19 @@ main-content: |
 
  ![img](../images/gifs/graphql/build-query.gif)
 
- Let's imagine that you'd like to update your team about some of your recent work [via an issue](https://guides.github.com/features/issues/). You could use a GraphQL query to find the pull requests you've most recently contributed to.
+ Let's imagine that you'd like to update your team about some of your recent work via [an issue](https://guides.github.com/features/issues/). You could use a GraphQL query to find the pull requests you've most recently contributed to.
 
  1. Paste this query into the [GraphQL explorer](https://developer.github.com/v4/explorer/).
 
-         query RecentPRs {
-           viewer {
-             name
-             pullRequests(last: 5) {
+         query {
+            viewer {
+             contributedRepositories(last:5, privacy:PUBLIC) {
                edges {
                  node {
-                   title
-                   body
+                   owner {
+                     login
+                   }
+                   name
                    url
                  }
                }
