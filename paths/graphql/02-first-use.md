@@ -11,7 +11,9 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  When we introduced APIs, the technology that allows programs to interact with existing information, we mentioned GraphQL. In this section, we are going to use a tool that enables you to experiment with GraphQL quickly and easily.
+  ## Using GraphQL Explorer
+
+  In this section, we are going to introduce you to a tool that enables you to experiment with GraphQL quickly and easily.
 
   ![img](../images/gifs/graphql/first-query.gif)
 
