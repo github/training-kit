@@ -43,22 +43,22 @@ tell-me-why: |
 
   ### What is a query?
 
-  A query is an opportunity to ask an existing service, say, GitHub to provide specific information based on the context of your question. Our last "username and avatar exercise" would be similar to asking someone their name and asking for a picture, except with a **query** we can ask GitHub to get the information from _hundreds_ (or _thousands_, or even _millions_) users, repositories, issues, commits, and pull requests.
+  A query is an opportunity to ask an existing service, say, GitHub to provide specific information based on the context of your question. Our [username and avatar exercise](first-use#running-your-first-graphql-query) would be similar to asking someone their name and asking for a picture, except with a **query** we can ask GitHub to get the information from _hundreds_ (or _thousands_, or even _millions_) of users, repositories, issues, commits, and pull requests.
 
   Additionally, you can use the response to your **query** (or question) to dynamically update and potentially alter the way your content looks.
 
-  During the introduction to the course, we identified that using queries and API would allow you to automatically get consistently updated information and use it to power your application or website. As an example, if you wanted to list the latest commits made across GitHub manually, you would need to do a lot of searching and manually update your application. More importantly, in the time it took your to make your changes, the data might be obsolete. Using queries and APIs, we can automatically gather the latest data, display it, and schedule when that data needs to be updated.
+  During the introduction to the course, we identified that using queries and APIs would allow you to automatically get consistently updated information and use it to power your application or website. As an example, if you wanted to list the latest commits made across GitHub manually, you would need to do a lot of searching and manually update your application. More importantly, in the time it took your to make your changes, the data might be obsolete. Using queries and APIs, we can automatically gather the latest data, display it, and schedule when that data needs to be updated.
 
-  ### Our query
+  ### Components of our query
 
-  - [**viewer:**](https://developer.github.com/v4/guides/using-the-explorer/) Who is currently viewing this information (you!)
-  - [**name:**](https://developer.github.com/v4/reference/object/user/#fields) The name of the viewer.
-  - [**pullRequests(last: #):**](https://developer.github.com/v4/reference/object/user/#fields) The last (most recent) pull requests that are relevant to that viewer. The `#` sign can be used to limit the number of pull requests you want returned.
-  - [**edges:**](https://developer.github.com/v4/reference/object/pullrequestedge/) Representation that there's a connection to another array of data
-  - [**node:**](https://developer.github.com/v4/reference/object/pullrequest/) The related object, data, or other item referenced by an edge
-  - [**title:**](https://developer.github.com/v4/reference/object/pullrequest/) The title of the Pull Request.
-  - [**body:**](https://developer.github.com/v4/reference/object/pullrequest/) The text found in the first comment of the Pull Request.
-  - [**url:**](https://developer.github.com/v4/reference/object/pullrequest/) The URL to the specific Pull Request.
+  - [**viewer:**](https://developer.github.com/v4/reference/query/#fields) Who is currently viewing this information? (you!)
+  - [**contributedRepositories(last:#, privacy:PUBLIC):**](https://developer.github.com/v4/reference/object/user/#connections) The last (most recent) repositories the viewer has contributed to. The `#` can be used to limit the number of repositories you want returned. Only public repositories are turned due to the `PUBLIC` parameter. We could also set this parameter to `PRIVATE`, or leave it out altogether if we'd like all results.
+  - [**edges:**](https://developer.github.com/v4/reference/object/repositoryedge/) Representation that there's a connection to another array of data.
+  - [**node:**](https://developer.github.com/v4/reference/object/repository/) The related object, data, or other item referenced by an edge.
+  - [**owner:**](https://developer.github.com/v4/reference/interface/repositoryowner/#repositoryowner) An object representing the owner of the returned repository.
+  - [**login:**](https://developer.github.com/v4/reference/interface/repositoryowner/#repositoryowner) The repository owner's username on GitHub. The owner may be an individual, or an organization.
+  - [**name:**](https://developer.github.com/v4/reference/object/repository/#fields) The name of the repository.
+  - [**url:**](https://developer.github.com/v4/reference/object/repository/#fields) The repository's URL.
 
   > As you begin exploring and crafting your own queries for your unique projects, you can click the "< Docs" button located above the right pane of the GraphQL Explorer to get a definition of different query objects or look for query objects that will perform the task you are attempting.
 
