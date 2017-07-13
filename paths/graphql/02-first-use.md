@@ -86,6 +86,5 @@ tell-me-why: |
         }
       }
 
-  Notice that the JSON returned by GraphQL looks like the JSON you provided in the query. This allows you to fine tune the query to return exactly the results you want and receive them in a predictable format.
 
 ---
