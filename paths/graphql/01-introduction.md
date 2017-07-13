@@ -31,9 +31,32 @@ main-content: |
 
 tell-me-why: |
 
-  Learning new technologies is difficult. Whatever your experience with APIs or GraphQL, this course is hands-on and will walk you through the steps to get started. We believe that working with a new technology and getting real experience is the quickest and surest way to learn.
+  ## GraphQL vs. Other APIs
 
-  If you aren't sure why you might use an API right now, that's :ok: :ok_hand:. This course only walks through a few examples, and we'll set you confidently on the path of additional use cases.
+  If this is your first time exploring APIs, you picked the perfect time to start. GraphQL is the newest player in the API game and represents a significant leap forward.
 
-  For more in depth information on GitHub's GraphQL API, [check out the official documentation](https://developer.github.com/v4/). You can find many use cases and examples of GraphQL in action.
+  Many of the web apps you use on a daily basis have APIs. Common APIs include:
+
+  - REST
+  - SOAP
+  - .NET
+
+  The goal of this course isn't to teach you about all of the common API types, but it is worth mentioning some of the advantages GraphQL has over the popular REST API so you can take leverage these features in your projects.
+
+  ### Common Frustrations with REST
+
+  - REST APIs are designed to interact with one specific end point at a time. For example, you can get a list of all your issues on GitHub, but you can't get list of issues and the comments on those issues at the same time. This means you often need to make more than one "call" to the API to get the exact information you need.
+  - REST API results are determined by the API developer and they want to make sure you have everything you could possibly want. This often means you are getting way more information than you intend to use.
+
+  ### GraphQL Solves These Frustrations
+
+  GraphQL was designed to remove these frustrations by creating a more flexible query structure and allowing you to request information based on connections across traditional data points.
+
+  GraphQL also allows you to specify the information you want. So if you only want to know how many :smile: emoji reactions were on your last comment, you can get that information.
+
+  ## How Will You Use GitHub's GraphQL
+
+  If you aren't sure why you might use GraphQL right now, that's :ok: :ok_hand:. This course walks through a few examples, and we'll set you confidently on the path of additional use cases.
+
+  You can find use cases and examples of GraphQL in action in [GitHub's official GraphQL documentation](https://developer.github.com/v4/).
 ---
