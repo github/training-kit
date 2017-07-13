@@ -71,7 +71,7 @@ tell-me-why: |
 
   ### What Can I Access with the API?
 
-  GitHub has made much of the data about a user accessible via the API. To learn more about the data available to the User object, you can check out the [User reference documents on developer.github.com](https://developer.github.com/v4/reference/object/user/).
+  GitHub has made much of the data about a user accessible via the API. To learn more about the data available to the User object, you can check out the [user reference documents on developer.github.com](https://developer.github.com/v4/reference/object/user/).
 
   ### What Am I Looking At?
 
