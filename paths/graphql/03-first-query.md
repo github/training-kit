@@ -11,9 +11,9 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  ## Building a Useful Query
+ ## Building a Useful Query
 
-  Let's imagine that you'd like to update your team about some of your recent work via [an issue](https://guides.github.com/features/issues/). You could use a GraphQL query to find the repositories you've most recently contributed to.
+ Let's imagine that you'd like to update your team about some of your recent work via [an issue](https://guides.github.com/features/issues/). You could use a GraphQL query to find the repositories you've most recently contributed to.
 
  ![img](../images/gifs/graphql/build-query.gif)
 
