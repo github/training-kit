@@ -24,7 +24,7 @@ main-content: |
 
     This course is going to introduce the concept of using APIs via GitHub's GraphQL. You'll learn how to gather data from GitHub, and how to make a simple change.
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dsPVrbDHgaY?ecver=1" frameborder="0" allowfullscreen></iframe>
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/dsPVrbDHgaY?ecver=1" frameborder="0" allowfullscreen></iframe></center>
 
     There are several types of APIs. Learn more by expanding the "Tell me why" section below.
 
