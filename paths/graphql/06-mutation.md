@@ -14,13 +14,13 @@ main-content: |
 
   ![img](../images/gifs/graphql/mutation.gif)
 
-  1. Get your information from the both previous queries ready (list of PRs, and the issue's `id`).
-  1. Create a mutation by either typing or pasting the following into the [GraphQL explorer](https://developer.github.com/v4/explorer/). Change `[issueID]` to the issue `id` you found in the most recent query, and `[PR template]` to the template you completed earlier based on your most recent pull requests. _You will need to delete the new lines in between the list items in the template for it to process correctly._
+  1. Get your information from the both previous queries ready (list of repositories, and your issue's `id`).
+  1. Create a mutation by either typing or pasting the following into the [GraphQL explorer](https://developer.github.com/v4/explorer/). Change `[issueID]` to the issue `id` you found in the [most recent query](another-query), and `[contribution template]` to the [template you completed earlier](query-info) based on your most recent contributions. _You will need to delete the new lines in between the list items in the template for it to process correctly._
 
           mutation AddComment {
             addComment(input: {
               subjectId: "[issueID]",
-              body: "[PR template]"})
+              body: "[contribution template]"})
             {
               subject {
                 id
@@ -30,7 +30,7 @@ main-content: |
 
         > Look around using the built in documentation. By hovering, erasing, retyping, or changing fields, what can you learn about this mutation?
 
-   1. Go to the [issue](https://github.com/githubschool/graph-ql/issues/1) and find your posted comment.
+   1. Go to your issue and find your posted comment.
    1. For a challenge, use GraphQL to add an emoji reaction to your comment!
    1. Check out the "Tell Me Why" below to get a head start in managing your notifications from this issue.
 
