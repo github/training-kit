@@ -11,7 +11,7 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  ![img](../images/gifs/graphql/recent-prs.gif)
+  ![img](../images/gifs/graphql/recent-contributions.gif)
 
   1. Using the response from the query in the last step, fill in this template.
 
