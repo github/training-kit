@@ -3,16 +3,16 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Too Many (small) Commits!
-permalink: /git-trouble/03
-next-page: /git-trouble/02
+title: Too Many (small) Git Commits!
+permalink: /git-trouble/too-many-commits
+next-page: /git-trouble/git-scenarios
 facilitator: false
 sidebar:
   nav: "advanced"
 main-content: |
   While working on your project, you might have made commits for every little change and created a commit history that looks more like an avalanche of information as opposed to a succinct list of the changes.
 
-  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/git-set-up) page.
 pushed: |
     I know that avalanche of commits looks bad, but it doesn't need to be permanent. A lot of people unintentionally create problems by trying to use Git to fix something that has already been pushed to the remote.
 

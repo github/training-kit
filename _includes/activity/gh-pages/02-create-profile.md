@@ -30,5 +30,5 @@ Don't worry if you don't want to put your actual information up online. It's OK 
   {{ activity-text | markdownify }}
 </div>
 
-Need help? Click **open chat** below for answers from GitHub trainers!
+Need help? **Open an issue** [in our class repository](https://github.com/githubschool/on-demand-github-pages/issues/new) for answers from GitHub trainers!
 {: .notice--success}

@@ -7,4 +7,4 @@ If you already have a Github.com account you are ready to get started. Otherwise
 3. You will receive a verification email at the address provided.
 4. Click the emailed link to complete the verification process.
 
-If you are wondering where to go from here, click **Tell my why** for a quick tour of your dashboard.
+If you are wondering where to go from here, click **Tell me why** for a quick tour of your dashboard.

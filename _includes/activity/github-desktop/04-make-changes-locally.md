@@ -1,7 +1,7 @@
 
 It's time to create the home page for your website.
 
-1. Make sure you are checked out to the new branch you just created.
+1. Make sure you are checked out to the new branch you just created. You change branches by clicking the **Current Branch** button at the top of the application, then selecting a branch.
 1. Open your preferred text editor.
 
 The next steps are determined by if you used a GitHub Pages theme or decided to just enable GitHub Pages on your repository.

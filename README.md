@@ -31,9 +31,11 @@ We are eager to create materials that are easy to use and follow! To that end, h
 
 - We focus on providing clear, step-by-step instructions for completing an activity, giving the learner the opportunity to study the concept in greater detail with the Tell Me Why feature.
 - We focus on minimalism.
+
+## Projects Used in Training-Kit
 - We use [Jekyll](https://jekyllrb.com/) and [Markdown](https://guides.github.com/features/mastering-markdown/).
 - The theme for the on-demand training is [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) and has some [amazing documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
-
+- The corner badge of an Octocat is from [tholman.com](http://tholman.com/github-corners/)
 
 ## Building and Packaging
 
@@ -63,7 +65,7 @@ If you'd like to have a copy of the files to be served from a web server inside 
 Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
 
 > Content based on
-> <a href="https://github.com/github/on-demand">github.com/github/on-demand</a>
+> <a href="https://services.github.com/on-demand/">services.github.com/on-demand</a>
 > used under the
 > <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>
 > license.</a>

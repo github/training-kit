@@ -24,5 +24,5 @@ You might also look into the "collections" functionality in Jekyll. This would l
   {{ activity-text | markdownify }}
 </div>
 
-Need help? Click **open chat** below for answers from GitHub trainers!
+Need help? **Open an issue** [in our class repository](https://github.com/githubschool/on-demand-github-pages/issues/new) for answers from GitHub trainers!
 {: .notice--success}

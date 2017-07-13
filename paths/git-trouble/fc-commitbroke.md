@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Just Make it Go Away!
-permalink: /git-trouble/07
-next-page: /git-trouble/02
+title: Just Make it Go Away - Breaking Things With Git
+permalink: /git-trouble/breaking-things-with-git
+next-page: /git-trouble/git-scenarios
 facilitator: false
 sidebar:
   nav: "advanced"
@@ -13,7 +13,7 @@ main-content: |
 
   Your well intentioned branch was supposed to introduce that awesome new feature, but after making a few commits, things aren't going as planned!   
 
-  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/git-set-up) page.
 pushed: |
     This is what makes Git awesome! You can try new things and, when they don't work out, just get rid of them. First, ask yourself:
 
@@ -95,14 +95,14 @@ tell-me-why: |
 
   There are a few things that you should know about `reflog`, such as:
 
-  1. `reflog` is **local** only, so, you other collaborators are not going to be able to find files you deleted in their `reflog`s.
+  1. `reflog` is **local** only, so, your other collaborators are not going to be able to find files you deleted in their `reflog`s.
   1. `reflog` only displays commits for a limited time:
      - 30 days: 'Unreachable' objects, aka commits or modifications that were made to a branch that no longer exists.
      - 90 days: 'Reachable' objects, aka commits or modifications that were made to a branch that still exists.
 
   ## Reset
-  For more information about `reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/03) scenario.
+  For more information about `reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/too-many-commits) scenario.
 
   ## Cherry-pick
-  For more information about `cherry-pick`, check out the 'Tell me why' section in the [Committed to the Wrong Branch!](/on-demand/git-trouble/05) scenario.  
+  For more information about `cherry-pick`, check out the 'Tell me why' section in the [Committed to the Wrong Branch!](/on-demand/git-trouble/git-commit-wrong-branch) scenario.  
 ---

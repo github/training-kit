@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Welcome
+title: Welcome to Git Out Of Trouble
 permalink: /git-trouble/
-next-page: /git-trouble/01
+next-page: /git-trouble/git-set-up
 toc: true
 sidebar:
   nav: "advanced"

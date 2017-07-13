@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Welcome
+title: Introduction to GitHub
 permalink: /intro-to-github/
-next-page: /intro-to-github/01/
+next-page: /intro-to-github/create-github-account
 sidebar:
   nav: "intro-nav"
 main-content: |
@@ -29,6 +29,8 @@ show-me-how:
     - intro-video.html
 tell-me-why: |
   ## What is GitHub?
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E?ecver=1" frameborder="0" allowfullscreen></iframe>
 
   We are glad you asked! Many people stumble onto GitHub through one of the millions of Open Source projects it holds or because their employer or professor is using it. Why do these projects use GitHub?
 

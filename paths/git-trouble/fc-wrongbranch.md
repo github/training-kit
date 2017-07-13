@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Committed to the Wrong Branch!
-permalink: /git-trouble/05
-next-page: /git-trouble/02
+title: Git Committed to the Wrong Branch!
+permalink: /git-trouble/git-commit-wrong-branch
+next-page: /git-trouble/git-scenarios
 facilitator: false
 sidebar:
   nav: "advanced"
@@ -15,7 +15,7 @@ main-content: |
 
   Fear not! You can salvage those changes and put them where they belong!
 
-  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/01) page.
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/git-set-up) page.
 pushed: |
     ## First Things First: Fix Master
 
@@ -41,7 +41,7 @@ didnt-push: |
     1. Ensure you are on the branch you accidentally made those commits to. If you followed the 'Setting Up Your Scenario Environment' directions, you should have made a few commits to a branch named `test`.
     1. Enter: `git log --oneline` and identify the SHA-1 hash associated with the commit just before the first incorrect commit. In this case, let's pretend file 5 was the first one that should have been on the other branch.
     1. Enter: `git reset --mixed SHA-1`, where `SHA-1` is the SHA-1 associated with the **adding file 4** commit.
-    1. Enter: 'git status'. You should see files 5 and 6 in your working directory.
+    1. Enter: `git status`. You should see files 5 and 6 in your working directory.
     1. Enter: `git checkout -b correct`. This will create a new branch named `correct` and check you out to that branch.
     1. Enter: `git status`. Files 5 and 6 should still be in your working directory.
     1. Add both File 5 and File 6 by entering: `git add file* `.
@@ -81,10 +81,10 @@ tell-me-why: |
   So, after you cherry-picked your commit you might have noticed that the SHA-1 associated with the commit is now different. That is because the SHA-1 doesn't just identify the file (or files) that have been committed. It actually contains a lot of additional information like Date, Time, Author, and other information. So, even though you might have created a commit with the exact same file from before, you will have a completely new SHA-1 hash for the commit. Pretty cool, huh?
 
   ## Revert
-  For more information about `revert`, check out the ‘Tell me why’ section in the [Accidental Commit](/on-demand/git-trouble/06) scenario.
+  For more information about `revert`, check out the ‘Tell me why’ section in the [Accidental Commit](/on-demand/git-trouble/accidental-git-commit) scenario.
 
   ## Reset
-  For more information about `reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/03) scenario.
+  For more information about `reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/too-many-commits) scenario.
 
   ### What Happened to File 4?
   When you were running the `git reset --mixed SHA-1` you might have expected `file4.md` to be included in the files that got sent to the Working Directory. This is a very misconception when it comes to `git reset`, so don't worry, you are not alone! When you run `git reset`, you are identifying the commit that you want to `reset` to.
