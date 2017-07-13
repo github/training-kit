@@ -17,11 +17,12 @@ main-content: |
 
   ![img](../images/gifs/graphql/first-query.gif)
 
-  ### Navigating to GraphQL
+  ### Running Your First GraphQL Query
+
    1. [Navigate to the GraphQL explorer](https://developer.github.com/v4/explorer/).
    1. Once the page has loaded, click the "Sign in with GitHub" button. If you don't have a GitHub account, [here are some instructions for getting an account setup](https://help.github.com/articles/signing-up-for-a-new-github-account/).  
 
-      After logging in, The GraphQL interface displays a sample query in the left pane that should look like this:
+      On your first log in, The GraphQL interface displays a sample query in the left pane that should look like this:
 
           # Type queries into this side of the screen, and you will
           # see intelligent typeaheads aware of the current GraphQL type schema,
