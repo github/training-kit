@@ -11,6 +11,8 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
+  ## Get Ready to Mutate
+
   ![img](../images/gifs/graphql/recent-contributions.gif)
 
   1. Using the response from the query in the last step, fill in this template.
@@ -27,11 +29,11 @@ main-content: |
 
 tell-me-why: |
 
-  ### Why are we making this query?
+  ### Why are we making this file?
 
-  Maybe you are a trying to work on an open source project and want to provide a consistently updated list of other projects you have contributed to. Perhaps you are trying to land a job and want to show your potential employer the projects that you work on. Maybe you already have a job, but you want to be able to show your team or manager what you have been working on recently.
+  Maybe you are a trying to land a job and want to show your potential employer the projects that you work on. Maybe you already have a job, but you want to be able to show your team or manager what you have been working on recently.
 
-  Either way, this query will automatically generate a list of the projects that you are actively contributing to, and more importantly, it's doing it automagically.
+  You can use this query to automatically generate a list of the projects that you are actively contributing to.
 
-  Later on, we'll use this information to craft a **mutation**.
+  For this course, we are going to use this information in our first **mutation**.
 ---

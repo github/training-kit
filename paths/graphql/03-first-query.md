@@ -11,9 +11,11 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
- ![img](../images/gifs/graphql/build-query.gif)
+  ## Building a Useful Query
 
- Let's imagine that you'd like to update your team about some of your recent work via [an issue](https://guides.github.com/features/issues/). You could use a GraphQL query to find the repositories you've most recently contributed to.
+  Let's imagine that you'd like to update your team about some of your recent work via [an issue](https://guides.github.com/features/issues/). You could use a GraphQL query to find the repositories you've most recently contributed to.
+
+ ![img](../images/gifs/graphql/build-query.gif)
 
  1. Paste this query into the [GraphQL explorer](https://developer.github.com/v4/explorer/).
 
@@ -43,17 +45,19 @@ tell-me-why: |
 
   ### What is a query?
 
-  A query is an opportunity to ask an existing service, say, GitHub to provide specific information based on the context of your question. Our [username and avatar exercise](first-use#running-your-first-graphql-query) would be similar to asking someone their name and asking for a picture, except with a **query** we can ask GitHub to get the information from _hundreds_ (or _thousands_, or even _millions_) of users, repositories, issues, commits, and pull requests.
+  A **query** is a request for specific information. The [previous exercise](first-use#running-your-first-graphql-query) would be similar to asking someone for their name and a picture, except with a query we can ask GitHub to get the information from _hundreds_ (or _thousands_, or even _millions_) of users, repositories, issues, commits, and pull requests.
 
-  Additionally, you can use the response to your **query** (or question) to dynamically update and potentially alter the way your content looks.
+  Additionally, since the results are JSON, you can use the response to your query to power useful apps that request and send data to GitHub. When you use GraphQL to make a change to the data, it is called a **mutation**. We'll get to that soon.
 
   ### Components of our query
 
-  - [**viewer:**](https://developer.github.com/v4/reference/query/#fields) Who is currently viewing this information? (you!)
-  - [**contributedRepositories(last:#, privacy:PUBLIC):**](https://developer.github.com/v4/reference/object/user/#connections) The last (most recent) repositories the viewer has contributed to. The `#` can be used to limit the number of repositories you want returned. Only public repositories are turned due to the `PUBLIC` parameter. We could also set this parameter to `PRIVATE`, or leave it out altogether if we'd like all results.
-  - [**edges:**](https://developer.github.com/v4/reference/object/repositoryedge/) Representation that there's a connection to another array of data.
-  - [**node:**](https://developer.github.com/v4/reference/object/repository/) The related object, data, or other item referenced by an edge.
-  - [**owner:**](https://developer.github.com/v4/reference/interface/repositoryowner/#repositoryowner) An object representing the owner of the returned repository.
+  - [**viewer:**](https://developer.github.com/v4/reference/query/#fields) Who is currently the logged in user? (you!)
+  - [**contributedRepositories(last:#, privacy:PUBLIC):**](https://developer.github.com/v4/reference/object/user/#connections) Contributed repositories is what is known as a connection. It a relationship between two sets of data. In this case, it is a connection between the user (in this case the logged in user) and the (most recent) repositories the viewer has contributed to. We are providing two arguments to help us limit the results.
+    - **Last:** tells the query to return the most recent results. In this case, the `#` must be used to limit the number of repositories returned.
+    - We also chose to only display PUBLIC repositories by providing the **privacy** argument. We could also set this parameter to `PRIVATE`, or leave it out altogether if we'd like PUBLIC and PRIVATE repositories.
+  - [**edges:**](https://developer.github.com/v4/reference/object/repositoryedge/) It is easiest to think of an edge as a bridge between two sets of data. You will need an edge any time you are using a connection.
+  - [**node:**](https://developer.github.com/v4/reference/object/repository/) A node is a set of data. If an edge is a bridge connecting two islands, the node is the island. Within a node, you can select specific data you would like to view. In this case, the node contains the information about the repositories.
+  - [**owner:**](https://developer.github.com/v4/reference/interface/repositoryowner/#repositoryowner) Within the node, you will find specific pieces of information called interfaces. These are interfaces have additional layers of data.
   - [**login:**](https://developer.github.com/v4/reference/interface/repositoryowner/#repositoryowner) The repository owner's username on GitHub. The owner may be an individual, or an organization.
   - [**name:**](https://developer.github.com/v4/reference/object/repository/#fields) The name of the repository.
   - [**url:**](https://developer.github.com/v4/reference/object/repository/#fields) The repository's URL.

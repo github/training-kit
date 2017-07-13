@@ -49,7 +49,7 @@ main-content: |
           }
 
 
-      The response from a query in GraphQL will be formatted just like the query itself. You'll notice that it looks like JSON, and is mapped to the exact values you requested.
+      The response from a query in GraphQL will be JSON, just like the query itself, and is returned in the exact same format as the request.
 
     1. Make changes to the sample query.
 
@@ -73,7 +73,7 @@ tell-me-why: |
 
   GitHub has made much of the data about a user accessible via the API. To learn more about the data available to the User object, you can check out the [user reference documents on developer.github.com](https://developer.github.com/v4/reference/object/user/).
 
-  ### What Am I Looking At?
+  ### What Should I See?
 
   When you ran the query above, it should have returned something that looks like this:
 

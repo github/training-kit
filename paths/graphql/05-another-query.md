@@ -11,12 +11,19 @@ sidebar:
   nav: "github-graphql"
 main-content: |
 
-  Let's build another query. We'll ask GitHub for the ID of an issue so that we can post to that issue using the API in a later step.
+  ## We Need More Information
+
+  We are working our way to our first mutation. The first mutation will be to add a comment to an existing issue containing the list of repositories you just created.
+
+  When we look at [the documentation for adding a comment](https://developer.github.com/v4/reference/mutation/addcomment/), we will see that the list of inputs includes a `subjectId` and `body`. We can tell these are required because they have an ! next to the data type (ID!).
+
+  Let's build another query to get the ID of for the issue where we want to place our list of repositories.
 
   ![img](../images/gifs/graphql/get-issue-id.gif)
 
-  1. Build a query to find an issue's unique identifier, or `id`. If you aren't sure what issue to use, [open one in our shared repository](https://github.com/githubschool/graph-ql) to use for this example and show off your work to others!
-   - Below is the start of the query, however, we left some of the **fields** out so you can try to build the query yourself. For help, [check out the documentation](https://developer.github.com/v4/). See a full code example in the "Tell me why" section.
+  1. Open an issue in our shared class repository: https://github.com/githubschool/graph-ql
+  1. Create the query
+   - We have started the query for you below, however, we left some of the **fields** blank so you can try to build the query yourself. For help, [check out the documentation](https://developer.github.com/v4/). To see a full code example, expand the "Tell me why" section below.
 
               query FindIssueID {
                 repository(owner: "", name: "") {
@@ -27,7 +34,7 @@ main-content: |
 
 tell-me-why: |
 
-  Did building the query give you trouble? That's OK! Here's the full query. Paste it into the GraphQL Explorer to get the issue `id` for your own issue, but replace `#` with the number of [your own issue](https://github.com/githubschool/graph-ql/issues).
+  Did building the query give you trouble? That's OK! Here's the full query. Paste it into the GraphQL Explorer to get the issue `id` for your own issue, just be sure to replace `#` with the number of [your own issue](https://github.com/githubschool/graph-ql/issues).
 
       query FindIssueID {
         repository(owner: "githubschool", name: "graph-QL") {
