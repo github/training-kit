@@ -2,12 +2,12 @@
 - Motivation, present the problem that needs solving
 - API as the solution (context: dynamic, consumable information)
   - Examples of API usages (format: service, how API is used, link)
-  
+
 ## Page 2: First use (jump right in, no later than pg 2)
 - instructions for navigating to GraphiQL on web UI
 - interact with interface, show how it works, live data
 - tell me why, can explain differences between rest and graphql
-- Does this have to be different than page 3, or could we combine? 
+- Does this have to be different than page 3, or could we combine?
 
 ## Page 3: Your first query (get personal statistic)
 - short, direct explanation of a query
@@ -46,9 +46,9 @@ My most recent PRs are: <br>
 1. [title5](url5)
 ```
 
-## Page 5: Another Query: Find a relevant issue ID 
+## Page 5: Another Query: Find a relevant issue ID
 - Explain why this is necessary for us to post in the mutation coming up
-- Build another query 
+- Build another query
 - Copy issue ID in response for use in next step.
 
 ```
@@ -78,8 +78,3 @@ mutation AddComment {
   }
 }
 ```
-
-## Page 7: Keep going
-- ideas for next projects
-- Community projects 
-- how to get help
