@@ -22,7 +22,7 @@ main-content: |
   ![img](../images/gifs/graphql/get-issue-id.gif)
 
   1. Open an issue in our shared class repository: https://github.com/githubschool/graph-ql
-  1. Create the query
+  1. Create the query to find your issue ID number
    - We have started the query for you below, however, we left some of the **fields** blank so you can try to build the query yourself. For help, [check out the documentation](https://developer.github.com/v4/). To see a full code example, expand the "Tell me why" section below.
 
               query FindIssueID {
