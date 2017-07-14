@@ -31,7 +31,7 @@ header:
         </header>
       {% endunless %}
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content" itemprop="text" id="course_body">
         {% if page.main-content.includes %}
           {% for child in page.main-content.includes %}
             {% capture my_include %}{% include {{child}} %}{% endcapture %}
@@ -76,7 +76,7 @@ header:
         {% endif %}
 
         {% if page.refresh %}
-          <div class="notice--primary">
+          <div class="notice--primary" id="refresh">
           <details>
             <summary>I need a refresher</summary>
             {% if page.refresh.includes %}
@@ -94,7 +94,7 @@ header:
         {% endif %}
 
         {% if page.show-me-how %}
-          <div class="notice--info">
+          <div class="notice--info" id="show-me">
           <details>
             <summary>Show me how</summary>
             {% if page.show-me-how.includes %}
@@ -112,7 +112,7 @@ header:
         {% endif %}
 
         {% if page.troubleshooting %}
-          <div class="notice--danger">
+          <div class="notice--danger" id="trouble">
           <details>
             <summary>Help me troubleshoot</summary>
             {% if page.troubleshooting.includes %}
@@ -130,7 +130,7 @@ header:
         {% endif %}
 
         {% if page.tell-me-why %}
-        <div class="notice--warning">
+        <div class="notice--warning" id="tell-me">
         <details>
           <summary>Tell me why</summary>
           <hr>

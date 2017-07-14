@@ -1,7 +1,6 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 <script src="{{ base_path }}/assets/js/mapsAPI.js"></script>
 
-<script type="text/javascript" src="{{ base_path }}/assets/js/jquery-2.1.1.js" ></script>
 <script type="text/javascript" src="{{ base_path }}/assets/js/github_contribution.js"></script>
 <link href="{{ base_path }}/assets/css/github_contribution_graph.css" media="all" rel="stylesheet" />
 
@@ -38,6 +37,7 @@ $(document).ready(function(){
 
 });
 </script>
+<div id="my_awesome_id">Here it is!</div>
 
 <script
   src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"
@@ -46,6 +46,32 @@ $(document).ready(function(){
   async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB48gZNKOtEbslmLkTWtphkzCJVM6ITd1s&callback=initialize"
 ></script>
+
+<!-- At the bottom of your page but inside of the body tag -->
+<ol id="chooseID">
+  <li data-id="course_body">The content of the course, typically instructions on what to do next.</li>
+  <li data-id="sidebar">The table of contents for the course.</li>
+  <li data-id="refresh">Refresh?</li>
+  <li data-id="show-me">Show me</li>
+  <li data-id="trouble">Trouble</li>
+  <li data-id="tell-me">Tell me</li>
+  <li data-id="gitter-open-chat-button">Chat</li>
+</ol>
+
+<script type="text/javascript" src="{{ base_path }}/assets/js/jquery-2.1.1.js" ></script>
+<script src="{{ base_path }}/assets/js/jquery.joyride-2.1.js"></script>
+
+
+/* Launching joyride when to page is loaded */
+<script>
+$(window).load(function() {
+  $('#chooseID').joyride({
+    /* Options will go here */
+    autoStart : true
+  });
+});
+</script>
+
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
