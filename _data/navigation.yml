@@ -11,6 +11,8 @@ main:
     url: /git-trouble/
   - title: "GitHub for Windows Users"
     url: /windows/
+  - title: "Introduction to GraphQL"
+    url: /graphql/
   - title: "Git & GitHub Training Path"
     url: /path/
   - title: "GitHub Training Community"
@@ -171,3 +173,18 @@ windows:
       url: /windows/vs-sync
   - title: "Congratulations"
     url: /windows/congrats
+
+
+github-graphql:
+  - title: "Introduction to GraphQL"
+    url: /graphql/
+  - title: "Use GraphQL for the First Time"
+    url: /graphql/first-use
+  - title: "Build a Query"
+    url: /graphql/first-query
+  - title: "Grab a Query's Response"
+    url: /graphql/query-info
+  - title: "Use a Query to Find Specific Information"
+    url: /graphql/another-query
+  - title: "Create a Mutation"
+    url: /graphql/mutation
