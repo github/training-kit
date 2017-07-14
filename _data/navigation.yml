@@ -3,9 +3,9 @@ main:
 # Keep original nav, do not replace
   - title: "Introduction to GitHub"
     url: /intro-to-github/
-  - title: "Using GitHub Desktop"
+  - title: "GitHub Pages from GitHub Desktop"
     url: /github-desktop/
-  - title: "Using the Command Line"
+  - title: "GitHub Pages from the Command Line"
     url: /github-cli/
   - title: "Git Out of Trouble"
     url: /git-trouble/

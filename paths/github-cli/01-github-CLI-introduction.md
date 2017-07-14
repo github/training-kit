@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: GitHub Pages & Git in the Command Line
+title: GitHub Pages from the Command Line
 permalink: /github-cli/
 next-page: /github-cli/git-configuration
 facilitator: false
