@@ -55,12 +55,14 @@ tell-me-why: |
   - [**contributedRepositories(last:#, privacy:PUBLIC):**](https://developer.github.com/v4/reference/object/user/#connections) Contributed repositories is what is known as a connection. It a relationship between two sets of data. In this case, it is a connection between the user (in this case the logged in user) and the (most recent) repositories the viewer has contributed to. We are providing two arguments to help us limit the results.
     - **Last:** tells the query to return the most recent results. In this case, the `#` must be used to limit the number of repositories returned.
     - We also chose to only display PUBLIC repositories by providing the **privacy** argument. We could also set this parameter to `PRIVATE`, or leave it out altogether if we'd like PUBLIC and PRIVATE repositories.
-  - [**edges:**](https://developer.github.com/v4/reference/object/repositoryedge/) It is easiest to think of an edge as a bridge between two sets of data. You will need an edge any time you are using a connection.
+  - [**edge:**](https://developer.github.com/v4/reference/object/repositoryedge/) It is easiest to think of an edge as a bridge between two sets of data. You will need an edge any time you are working between nodes.
   - [**node:**](https://developer.github.com/v4/reference/object/repository/) A node is a set of data. If an edge is a bridge connecting two islands, the node is the island. Within a node, you can select specific data you would like to view. In this case, the node contains the information about the repositories.
   - [**owner:**](https://developer.github.com/v4/reference/interface/repositoryowner/#repositoryowner) Within the node, you will find specific pieces of information called interfaces. These are interfaces have additional layers of data.
   - [**login:**](https://developer.github.com/v4/reference/interface/repositoryowner/#repositoryowner) The repository owner's username on GitHub. The owner may be an individual, or an organization.
   - [**name:**](https://developer.github.com/v4/reference/object/repository/#fields) The name of the repository.
   - [**url:**](https://developer.github.com/v4/reference/object/repository/#fields) The repository's URL.
+
+  > For a visual example of **nodes** and **edges**, view the [GraphQL Voyager site](https://apis.guru/graphql-voyager/). Any column of data in the graphs would be considered a __node__, and the lines connecting them would be considered __edges__.
 
   > As you begin exploring and crafting your own queries for your unique projects, you can click the "< Docs" button located above the right pane of the GraphQL Explorer to get a definition of different query objects or look for query objects that will perform the task you are attempting.
 
