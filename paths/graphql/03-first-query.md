@@ -65,8 +65,6 @@ tell-me-why: |
   - [**name:**](https://developer.github.com/v4/reference/object/repository/#fields) The name of the repository.
   - [**url:**](https://developer.github.com/v4/reference/object/repository/#fields) The repository's URL.
 
-  > For a visual example of **nodes** and **edges**, view the [GraphQL Voyager site](https://apis.guru/graphql-voyager/). Any column of data in the graphs would be considered a __node__, and the lines connecting them would be considered __edges__.
-
   > As you begin exploring and crafting your own queries for your unique projects, you can click the "< Docs" button located above the right pane of the GraphQL Explorer to get a definition of different query objects or look for query objects that will perform the task you are attempting.
 
 ---
