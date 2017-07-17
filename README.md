@@ -23,7 +23,7 @@ This repository contains three primary resources:
 
 - Our current [on-demand courses](https://services.github.com/on-demand/) can be found in the [paths directory](/paths)
 - The translations of our popular [Git Cheat Sheets](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf) can be found in the [downloads directory](/downloads). We're always looking for more. _P.S._ Right now the PDF generation is a manual process so please mention @github/services-training for assistance in getting your translation moved to the PDF.
-- The recommended [Training Path](https://services.github.com/on-demand/path/) can be found [here](/self-study.md).
+- The recommended Training Path can be found [here](https://services.github.com/resources/learning-path/).
 
 ## Our Content Philosophy
 
