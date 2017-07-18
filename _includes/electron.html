@@ -1,0 +1,100 @@
+<!-- About Section -->
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="{{ "../assets/css/timeline.css" }}">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{{ "./assets/fonts/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+        <div class ="container" id="about">
+            <div class="row">
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div>
+                                <a href="./starting-with-electron/first-project"><img class="timeline-image" src="../images/atom.png" alt=""></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <a href="/on-demand/electron/starting-with-electron"><h2>Electron 101: Creating an App in Electron</h2></a>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Text text text about what exactly we'll cover</p>
+                                    <p class="text-muted"></p>
+                                </div>
+                              </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div>
+                                <a href="/on-demand/electron/converting-electron-apps/"><img class="timeline-image" src="../images/atom.png" alt=""></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <a href="/on-demand/electron/converting-electron-apps/"><h2>Electron 102: Converting Your App</h2></a>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Human words</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="/on-demand/electron/packaging-electron/"><img class="timeline-image" src="../images/atom.png" alt=""></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <a href="/on-demand/electron/packaging-electron/"><h2>Electron 103: Packaging Your App for Downloads</h2></a>
+                                </div>
+                                <div class="timeline-body">
+                                        <p class="text-muted">Things that people would say and understand</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div>
+                                <a href="/on-demand/electron/distributing/"><img class="timeline-image" src="../images/atom.png" alt=""></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <a href="/on-demand/electron/distributing/"><h2>Electron 104: Distributing Your App</h2></a>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lalala</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                          <div>
+                              <img class="timeline-image" src="../images/about/welcometocat.png" alt="">
+                          </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</html>
