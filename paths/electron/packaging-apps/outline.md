@@ -12,9 +12,12 @@ Main goal: Going from local to something someone can download
 
 ## Adding an Icon
 - Including the icon image for the program 
+- give recommendations on what type of image is allowed (open or public domain) and what size would be best.
+- possibly include [icon library](https://useiconic.com/open) suggestions
 
 ## Common Challenges
 - Problems that come up
 
 ## Testing that the packages work
 - How to test the packages
+- Allude to automated testing but probably not walk through it 
