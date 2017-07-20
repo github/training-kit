@@ -188,3 +188,19 @@ github-graphql:
     url: /graphql/another-query
   - title: "Create a Mutation"
     url: /graphql/mutation
+
+electron-getting-started:
+  - title: "Creating an App"
+    url: /electron/starting-with-electron/
+
+electron-converting-apps:
+- title: "Converting Apps"
+  url: /electron/converting-apps/
+
+electron-packaging-apps:
+  - title: "Packaging Apps"
+    url: /electron/packaging-apps/
+
+electron-sharing-apps:
+  - title: "Sharing Apps"
+    url: /electron/starting-with-electron/
