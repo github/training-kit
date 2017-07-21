@@ -27,6 +27,7 @@ On this page, the user types `git init` and pushes to a bare repo on GitHub
 - making it a git repository
   - this might be an opportunity for us to show them how to take an existing project and ADD it to GitHub since we normally have them set the repo up on GH then clone it
 - Callback again to existing git courses in on-demand
+- Important things for `.gitignore` in this type of project
 
 ## Creating the Files for the App
 Q: At what point do we start using branches if we're using git?
