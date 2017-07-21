@@ -6,7 +6,7 @@ Main goal: Going from local to something someone can download
 Maybe usign something like this video to help us: https://www.youtube.com/watch?v=GC3oMVdnmVg
 - Packaging from Mac to Mac
 - Packaging from Mac to Linux
-- Packaging from Mac to Windows (I needed to `brew cask install xquartz`, and `brew install wine`)
+- Packaging from Mac to Windows (I needed to `brew cask install xquartz`, and `brew install wine`, and was prompted to install a wine mono package from a website which I did but don't know if it was necessary)
 - Packaging from Windows to Mac
 - Packaging from Windows to Linux
 - etc...?
