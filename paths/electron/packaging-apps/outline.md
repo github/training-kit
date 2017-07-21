@@ -2,6 +2,14 @@
 
 Main goal: Going from local to something someone can download
 
+?? Do we need to have diffferent guides here?
+- Packaging from Mac to Mac
+- Packaging from Mac to Linux
+- Packaging from Mac to Windows
+- Packaging from Windows to Mac
+- Packaging from Windows to Linux
+- etc...? 
+
 ## Packaging for different environments
 - Needs for Windows, OSX, and Linux
 - Packaging can be done for each OS, but the UI isn't automatically made to look native in the process
@@ -12,10 +20,10 @@ Main goal: Going from local to something someone can download
 - [Other libraries to use](https://github.com/electron-userland/electron-packager)
 
 
-## Walkthrough of Process from Mac
+# Walkthrough of Process from Mac to Mac
 Do we want to do this from Windows, too?
-- `npm i electron-packager --save-dev`
-- Add build script `"build": "electron-packager . app-name"` in "scripts" of package.json
+- `npm install electron-packager --save-dev`
+- Add build script `"build": "electron-packager . app-name --ignore=node_modules/electron-*"` in "scripts" of package.json (ignore all dependency apps the same way)
 - `npm run build`
 
 
@@ -26,6 +34,12 @@ Do we want to do this from Windows, too?
 - Replace icon in Contents>Resources directory in build script: "build": "electron-packager . app-name && cp Icon.icns Path/To/New/Icon"
 - Delete app: `rm -rf AppName.app`
 - Rebuild: `npm run build`
+
+## Stopping people from editing source code with asar
+- Archive capability with asar
+- `npm install asar --save-dev`
+- Create another script in package.json called "package": "asar pack AppName.app/Contents/Resources/app MyApp.app/Contents/Resources/app.assar"
+- Run `npm package`, and delete the app directory
 
 ## Common Challenges
 - Problems that come up
