@@ -8,19 +8,24 @@ Main goal: Going from local to something someone can download
 - Many factors make this somewhat complicated. It is a different process based on your OS and the OS you're trying to go to.
 
 ## Tools to use
-Q: What is the recommended way to do this?
 - [How to do this with Electron](https://github.com/electron/electron/blob/master/docs/tutorial/application-packaging.md)
 - [Other libraries to use](https://github.com/electron-userland/electron-packager)
+
+
+## Walkthrough of Process from Mac
+Do we want to do this from Windows, too?
+- `npm i electron-packager --save-dev`
+- Add build script `"build": "electron-packager . app-name"` in "scripts" of package.json
+- `npm run build`
+
 
 ## Adding an Icon
 - Including the icon image for the program
 - give recommendations on what type of image is allowed (open or public domain) and what size would be best.
 - possibly include [icon library](https://useiconic.com/open) suggestions
-
-## Walkthrough of Process
-- Detailed walkthrough of the tutorial?
-- Include video/gifs?
-- Versioning apps?
+- Replace icon in Contents>Resources directory in build script: "build": "electron-packager . app-name && cp Icon.icns Path/To/New/Icon"
+- Delete app: `rm -rf AppName.app`
+- Rebuild: `npm run build`
 
 ## Common Challenges
 - Problems that come up
