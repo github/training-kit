@@ -6,7 +6,7 @@ Main goal: Going from local to something someone can download
 Maybe usign something like this video to help us: https://www.youtube.com/watch?v=GC3oMVdnmVg
 - Packaging from Mac to Mac
 - Packaging from Mac to Linux
-- Packaging from Mac to Windows
+- Packaging from Mac to Windows (I needed to `brew cask install xquartz`, and `brew install wine`)
 - Packaging from Windows to Mac
 - Packaging from Windows to Linux
 - etc...?
@@ -48,3 +48,5 @@ Do we want to do this from Windows, too?
 ## Testing that the packages work
 - How to test the packages
 - Allude to automated testing but probably not walk through it
+
+## Using electron-packager, how to clean up old binaries and what that means
