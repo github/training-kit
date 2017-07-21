@@ -3,12 +3,13 @@
 Main goal: Going from local to something someone can download
 
 ?? Do we need to have diffferent guides here?
+Maybe usign something like this video to help us: https://www.youtube.com/watch?v=GC3oMVdnmVg
 - Packaging from Mac to Mac
 - Packaging from Mac to Linux
 - Packaging from Mac to Windows
 - Packaging from Windows to Mac
 - Packaging from Windows to Linux
-- etc...? 
+- etc...?
 
 ## Packaging for different environments
 - Needs for Windows, OSX, and Linux
