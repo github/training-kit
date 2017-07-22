@@ -6,7 +6,6 @@
  *  - https://twitter.com/mmistakes
  *
 */
-
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";
 @import "mixins";
@@ -30,6 +29,7 @@
 @import "page";
 @import "archive";
 @import "sidebar";
+@import "cheat-sheets";
 
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/magnific-popup/magnific-popup";
