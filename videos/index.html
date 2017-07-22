@@ -1,0 +1,30 @@
+---
+layout: default
+subpage: videos
+---
+<div class="minitron">
+
+  <div class="container">
+    <h1 class="display-alpha m-y-0">Git Videos</h1>
+    <p class="display-beta text-muted m-t-sm">Recorded content that demonstrates best practices in using Git and GitHub.
+  </div>
+</div>
+
+
+<div class="container">
+
+  {% for video in site.categories.videos %}
+    <div class="row">
+      <div class="col-md-4">
+        <a href="{{ video.the_url }}">
+          <img src="assets/{{ video.image_filename }}" alt="{{ video.title }}" class="img-responsive">
+        </a>
+      </div>
+
+      <div class="col-md-8">
+        <h4><a href="{{ video.the_url }}">{{ video.title }}</a></h4>
+        <p class="body">{{ video.content }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
