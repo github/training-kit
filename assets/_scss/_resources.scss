@@ -36,3 +36,21 @@
         box-shadow: 0 4px 15px rgba(black, 0.2);
     }
 }
+
+.book {
+    display: flex;
+    justify-content: space-between;
+
+    & + & {
+        margin-top: 2em;
+    }
+
+    &__img {
+        display: block;
+        width: 20%;
+        margin-right: 1em;
+        flex-shrink: 0;
+
+        img { display: block; max-width: 100%; }
+    }
+}

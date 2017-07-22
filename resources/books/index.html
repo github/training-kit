@@ -2,7 +2,7 @@
 layout: default
 subpage: books
 ---
-<div class="minitron">
+<div class="minitron" style="margin-top: 32px">
 
   <div class="container">
     <h1 class="display-alpha m-y-0">Git Books</h1>
@@ -15,16 +15,14 @@ subpage: books
 <div class="container">
 
   {% for book in site.categories.books %}
-    <div class="row">
-      <div class="col-md-2">
-        <a href="{{ book.the_url }}">
-          <img src="assets/{{ book.image_filename }}" alt="{{ book.title }}" class="img-responsive">
-        </a>
-      </div>
+    <div class="book">
+      <a href="{{ book.the_url }}" class="book__img">
+        <img src="assets/{{ book.image_filename }}" alt="{{ book.title }}" class="img-responsive">
+      </a>
 
       <div class="col-md-10">
-          <h4><a href="{{ book.the_url }}">{{ book.title }}</a></h4>
-          <p class="body">{{ book.content }}</p>
+          <h2><a href="{{ book.the_url }}">{{ book.title }}</a></h2>
+          <p class="body">{{ book.content | markdownify }}</p>
       </div>
     </div>
   {% endfor %}
