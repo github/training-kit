@@ -26,6 +26,7 @@
 }
 
 .card {
+    display: block;
     padding: 1em;
     border: 1px solid darken(white, 10%);
     box-shadow: 0 2px 4px rgba(black, 0.1);
@@ -52,5 +53,29 @@
         flex-shrink: 0;
 
         img { display: block; max-width: 100%; }
+    }
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video {
+    width: 49%;
+    margin-bottom: 2%;
+    text-decoration: none;
+
+    img { border: 1px solid darken(white, 10%); }
+
+    &:nth-child(odd) {
+        margin-right: 2%;
+    }
+
+    p { color: black; }
+
+    @media (max-width: 768px) {
+        margin-right: 0 !important;
+        width: 100%;
     }
 }

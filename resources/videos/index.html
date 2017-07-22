@@ -2,7 +2,7 @@
 layout: default
 subpage: videos
 ---
-<div class="minitron">
+<div class="minitron" style="margin-top: 32px">
 
   <div class="container">
     <h1 class="display-alpha m-y-0">Git Videos</h1>
@@ -11,20 +11,15 @@ subpage: videos
 </div>
 
 
-<div class="container">
-
+<div class="container videos">
   {% for video in site.categories.videos %}
-    <div class="row">
-      <div class="col-md-4">
-        <a href="{{ video.the_url }}">
-          <img src="assets/{{ video.image_filename }}" alt="{{ video.title }}" class="img-responsive">
-        </a>
-      </div>
+    <a href="{{ video.the_url }}" class="video card">
+      <img src="assets/{{ video.image_filename }}" alt="{{ video.title }}" class="img-responsive">
 
       <div class="col-md-8">
-        <h4><a href="{{ video.the_url }}">{{ video.title }}</a></h4>
+        <h2>{{ video.title }}</h2>
         <p class="body">{{ video.content }}</p>
       </div>
-    </div>
+    </a>
   {% endfor %}
 </div>
