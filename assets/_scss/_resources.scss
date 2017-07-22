@@ -1,0 +1,38 @@
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__tile {
+        width: 24%;
+        text-align: center;
+        text-decoration: none;
+
+        @media (max-width: 768px) {
+            width: 49%;
+            margin-bottom: 2%;
+        }
+
+        svg {
+            width: 72px;
+            height: 72px;
+
+            path { fill: $info-color; }
+        }
+
+        h4 { font-size: 1rem; margin-top: 0.2em; }
+        p { font-size: 0.8rem; color: black; }
+    }
+}
+
+.card {
+    padding: 1em;
+    border: 1px solid darken(white, 10%);
+    box-shadow: 0 2px 4px rgba(black, 0.1);
+    border-radius: 4px;
+    transition: box-shadow 200ms ease-in-out;
+
+    &:hover {
+        box-shadow: 0 4px 15px rgba(black, 0.2);
+    }
+}
