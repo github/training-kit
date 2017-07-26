@@ -11,8 +11,8 @@ sidebar:
   nav: "electron-getting-starting"
 main-content: |
 
-  Content here
-  
+  Tell user yay! And what to do next
+
 show-me-how:
 tell-me-why:
 
