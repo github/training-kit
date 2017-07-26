@@ -33,6 +33,8 @@ main-content: |
   - [The Best Places to Learn to Code for Absolutely Free](https://learntocodewith.me/posts/code-for-free/)
   - [Awesome, a curated list of learning resources](https://github.com/sindresorhus/awesome)
 
+  If you don't think you know enough, don't worry. We'll walk you through what you need to get this app running, even if you don't have experience in these technologies yet.
+  
 show-me-how:
 tell-me-why:
 
