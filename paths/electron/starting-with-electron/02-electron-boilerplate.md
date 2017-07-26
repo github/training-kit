@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Creating an App
+title: Electron Boilerplate
 permalink: /electron/starting-with-electron/boilerplate
 next-page: /electron/starting-with-electron/init-git-repository
 facilitator: false

@@ -192,23 +192,23 @@ github-graphql:
     url: /graphql/mutation
 
 electron-getting-started:
-  - title: "Creating an App"
+  - title: "Getting Started"
     url: /electron/starting-with-electron/
-  - title: "Creating an App"
+  - title: "Electron Boilerplate"
     url: /electron/starting-with-electron/boilerplate
-  - title: "Creating an App"
+  - title: "Creating a Git Repository"
     url: /electron/starting-with-electron/init-git-repository
-  - title: "Creating an App"
+  - title: "Creating App Files"
     url: /electron/starting-with-electron/create-app-files
-  - title: "Creating an App"
+  - title: "Running Electron Apps"
     url: /electron/starting-with-electron/running-the-app
-  - title: "Creating an App"
+  - title: "Add to index.html"
     url: /electron/starting-with-electron/add-to-html
-  - title: "Creating an App"
+  - title: "Add CSS"
     url: /electron/starting-with-electron/add-to-css
-  - title: "Creating an App"
+  - title: "Add JavaScript"
     url: /electron/starting-with-electron/add-to-javascript
-  - title: "Creating an App"
+  - title: "Celebrate"
     url: /electron/starting-with-electron/celebrate
 
 electron-packaging-apps:

@@ -14,7 +14,7 @@ main-content: |
   Welcome to the first of many courses in relation to Electron! Before we get started, we need to identify the things you are going to need to be successful in this course:
 
   - Before you get started
-     - Computer :computer: 
+     - Computer :computer:
       - [Git installed](./github-cli/git-configuration)
       - [GitHub account](./intro-to-github/create-github-account)
       - [Excited to learn new things](http://www.reactiongifs.com/r/cheering_minions.gif)

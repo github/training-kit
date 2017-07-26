@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Creating an App
+title: Creating App Files
 permalink: /electron/starting-with-electron/create-app-files
 next-page: /electron/starting-with-electron/running-the-app
 facilitator: false
