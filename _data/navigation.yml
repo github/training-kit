@@ -192,6 +192,22 @@ github-graphql:
 electron-getting-started:
   - title: "Creating an App"
     url: /electron/starting-with-electron/
+  - title: "Creating an App"
+    url: /electron/starting-with-electron/boilerplate
+  - title: "Creating an App"
+    url: /electron/starting-with-electron/init-git-repository
+  - title: "Creating an App"
+    url: /electron/starting-with-electron/create-app-files
+  - title: "Creating an App"
+    url: /electron/starting-with-electron/running-the-app
+  - title: "Creating an App"
+    url: /electron/starting-with-electron/add-to-html
+  - title: "Creating an App"
+    url: /electron/starting-with-electron/add-to-css
+  - title: "Creating an App"
+    url: /electron/starting-with-electron/add-to-javascript
+  - title: "Creating an App"
+    url: /electron/starting-with-electron/celebrate
 
 electron-packaging-apps:
   - title: "Packaging Apps"

@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Creating an App
-permalink: /electron/starting-with-electron/
-next-page: /electron/starting-with-electron/
+permalink: /electron/starting-with-electron/add-to-css
+next-page: /electron/starting-with-electron/add-to-javascript
 facilitator: false
 sidebar:
   nav: "electron-getting-starting"
