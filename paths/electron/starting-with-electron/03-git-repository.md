@@ -22,7 +22,17 @@ main-content: |
   > Not sure what to do with Git or GitHub? [Check out some of the on-demand courses to learn more!](https://services.github.com/on-demand/)
 
   ### Add a `.gitignore` file
-  - Important things for `.gitignore` in this type of project
+  If you create a [file in your repository named .gitignore](https://help.github.com/articles/ignoring-files/), Git uses it to determine which files and directories to ignore, before you make a commit.
+
+  We want to use a `.gitignore file` for Node, since Electron is a Node based project.
+
+  1. Create a file in your repository called `.gitignore`, either in your text editor, or by typing `touch .gitignore` in your terminal.
+  1. Copy and paste the contents of [this template](https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore) into the `.gitignore` file. Save the file.
+
+  ### Initial Commit
+  1. Type `git status` again, and see that all of your files are currently untracked in the working tree.
+  1. To craft a commit, we will use `git add`. This way, we will be particular about what files are in each commit. We will first commit the `.gitignore` file with `git add .gitignore`, and then `git commit -m "initial commit with gitignore"`.
+  1. To add the rest of the files, type `git add project.json index.js`, and `git commit -m "initial electron boilerplate files"`.
 
   ### Pushing to GitHub
   1. On [GitHub.com](https://github.com/), [create a new repository](https://help.github.com/articles/creating-a-new-repository/). To avoid errors, do not initialize the new repository with `README`, `license`, or `.gitignore` files. You can add these files after your project has been pushed to GitHub.
