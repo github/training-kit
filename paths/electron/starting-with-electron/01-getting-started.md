@@ -11,21 +11,27 @@ sidebar:
   nav: "electron-getting-started"
 main-content: |
 
-  Welcome to the first of many courses in relation to Electron! Before we get started, we need to identify the things you are going to need to be successful in this course:
+  Welcome to the first of many courses in relation to Electron! For today Before we get started, we need to identify the things you are going to need to be successful in this course.
 
+  ### Hardware
   - Before you get started
      - Computer :computer:
       - [Git installed](./github-cli/git-configuration)
       - [GitHub account](./intro-to-github/create-github-account)
       - [Excited to learn new things](http://www.reactiongifs.com/r/cheering_minions.gif)
 
-  - Helpful but not necessary to complete course
-    - Basic website knowledge (html / css)
-    - Understanding of what Javascript is
-    - Although you don't need to be a Javascript master to complete the course, if you feel like learning more about Javascript after taking this course you should check out the **Basic Javascript** course by our friends over at [freeCodeCamp](https://www.freecodecamp.com/map#nested-collapseBasicJavaScript).
+  ### Software Skills
 
-  ### To Do
-    - Point to resources
+  Electron makes it possible to use web technologies to create native desktop applications. So, to use Electron fully, you will want to be proficient in HTML, CSS, and JavaScript.
+
+  How proficient is proficient enough? To create an app on electron with web technologies, you would need the same level of proficiency that you'd need to create that app for the browser. With this tutorial, you'll see exactly how easy it is to use web application technology to create a desktop app.
+
+  For today's course, basic knowledge of these technologies is more than enough. There are countless great resources for learning more about HTML, CSS, and Javascript. We recommend the following resources:
+
+  #### HTML, CSS, and Javascript
+  - [freeCodeCamp](https://www.freecodecamp.com/map)
+  - [The Best Places to Learn to Code for Absolutely Free](https://learntocodewith.me/posts/code-for-free/)
+  - [Awesome, a curated list of learning resources](https://github.com/sindresorhus/awesome)
 
 show-me-how:
 tell-me-why:
