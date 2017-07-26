@@ -13,6 +13,8 @@ main:
     url: /windows/
   - title: "Introduction to GraphQL"
     url: /graphql/
+  - title: "Electron Suite"
+    url: /electron/
   - title: "Git & GitHub Training Path"
     url: /path/
   - title: "GitHub Training Community"
