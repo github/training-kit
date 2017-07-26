@@ -8,23 +8,24 @@ permalink: /electron/starting-with-electron/
 next-page: /electron/starting-with-electron/boilerplate
 facilitator: false
 sidebar:
-  nav: "electron-getting-starting"
+  nav: "electron-getting-started"
 main-content: |
 
-  - Not prereqs
-     - Baseline things to get started:
-        - computer
-        - git installed
-        - github account
-        - excited to learn new things
-     - Helpful but not necessary to complete course
+  Welcome to the first of many courses in relation to Electron! Before we get started, we need to identify the things you are going to need to be successful in this course:
+
+  - Before you get started
+     - :computer: computer
+      - [git installed](./github-cli/git-configuration)
+      - [github account](./intro-to-github/create-github-account)
+      - [Excited to learn new things](http://www.reactiongifs.com/r/cheering_minions.gif)
+
+  - Helpful but not necessary to complete course
         - Basic website knowledge (html / css)
         - Understanding of what Javascript is
-  - Listed to make this course more accessible to all, regardless of JS skill
-  - Let users know that full stack JS knowledge is best for Electron development
-      - Provide links to freeCodeCamp JS intro courses perhaps?
-      - Explain that JS knowledge is useful for enhancing the application, but won't be necessary to complete the course
-  - Point to resources
+          - Although you don't need to be a Javascript master to complete the course, if you feel like learning more about Javascript after taking this course you should check out the **Basic Javascript** course by our friends over at [freeCodeCamp](https://www.freecodecamp.com/map#nested-collapseBasicJavaScript).
+
+  ### To Do
+    - Point to resources
 
 show-me-how:
 tell-me-why:
