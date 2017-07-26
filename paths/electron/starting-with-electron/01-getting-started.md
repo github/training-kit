@@ -17,6 +17,7 @@ main-content: |
   - Before you get started
      - Computer :computer:
       - [Git installed](./github-cli/git-configuration)
+      - [Node.js and NPM](https://nodejs.org/en/download/)
       - [GitHub account](./intro-to-github/create-github-account)
       - [Excited to learn new things](http://www.reactiongifs.com/r/cheering_minions.gif)
 
@@ -34,7 +35,7 @@ main-content: |
   - [Awesome, a curated list of learning resources](https://github.com/sindresorhus/awesome)
 
   If you don't think you know enough, don't worry. We'll walk you through what you need to get this app running, even if you don't have experience in these technologies yet.
-  
+
 show-me-how:
 tell-me-why:
 
