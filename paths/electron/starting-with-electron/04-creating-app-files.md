@@ -11,10 +11,18 @@ sidebar:
   nav: "electron-getting-starting"
 main-content: |
 
-  Q - At what point do we start using branches if we're using git?
-  On this page, the user creates the files that will be customizable and directly impact how the program looks and behaves. (index.html, style.css, main.js)
-  - creating the files that we'll need within the directory
-  - explaining all files at high level
+  Since we used a boilerplate, the main files are already there. These files are the
+  - `package.json`
+  - `src/index.html`
+  - `src/index.js`
+
+  We're going to be using other css and Javascript for our project, so let's add those files now.
+  1. Create a new file in the `src` directory named `style.css`.
+  1. Create a new file in the `src` directory named `script.js`.
+
+  It's OK that these are empty now, we'll add more later. Now, link those files to the main `index.html` by adding the following lines of code:
+  1. Add `<link rel=stylesheet type="text/css" href="./style.css">` on a new line after the existing `<title></title>` line.
+  1. Add `<script type="text/javascript" src="script.js"></script>` on a new line directly above the line with `</body>`.
 
 
 show-me-how:
