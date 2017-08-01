@@ -26,10 +26,7 @@ main-content: |
   ### Add a `.gitignore` file
   If you create a [file in your repository named .gitignore](https://help.github.com/articles/ignoring-files/), Git uses it to determine which files and directories to ignore, before you make a commit.
 
-  We want to use a `.gitignore file` for Node, since Electron is a Node based project.
-
-  1. Create a file in your repository called `.gitignore`, either in your text editor, or by typing `touch .gitignore` in your terminal.
-  1. Copy and paste the contents of [this template](https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore) into the `.gitignore` file. Save the file.
+  We want to use a `.gitignore file` for Node, since Electron is a Node based project. Typically, we would do this manually. Since we used a boilerplate, this is already done. If you're interested in learning about different `.gitignore` files, check out [this repository full of templates](https://github.com/github/gitignore).
 
   ### Initial Commit
   1. Type `git status` again, and see that all of your files are currently untracked in the working tree.
