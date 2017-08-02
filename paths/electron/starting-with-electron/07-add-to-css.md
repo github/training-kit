@@ -11,14 +11,13 @@ sidebar:
   nav: "electron-getting-starting"
 main-content: |
 
-  - Adds to the `style.css` file, and links to it from `index.html`.
-  - As the others, points to resources to learn css
-  - Save and commit changes
-  - Starting the app again
-    - electron .
-    - what to look for
-    - developer tools
-    - troubleshooting
+  Just like with the `src/index.html` file, now we will copy the contents for the css.
+
+  1. Copy the contents of the `css` tab on Codepen into the `src/style.css` file.
+  1. Spin up the app and see how things look different.
+  1. Save and commit your changes.
+
+  TODO - add resources for learning css
 
 
 
