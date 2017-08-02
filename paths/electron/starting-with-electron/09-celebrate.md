@@ -10,8 +10,14 @@ sidebar:
   nav: "electron-getting-starting"
 main-content: |
 
-  Tell user yay! And what to do next
+  ## Done but not Finished
 
+  This was just the tip of the iceberg when it comes to using Electron.
+
+  Next, learn how to package the apps so they can be distributed to different operating systems.
+
+  TODO - point back to JS resources and more electron community things
+  
 show-me-how:
 tell-me-why:
 
