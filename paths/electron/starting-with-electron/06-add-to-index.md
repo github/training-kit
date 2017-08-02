@@ -11,18 +11,17 @@ sidebar:
   nav: "electron-getting-starting"
 main-content: |
 
-  On this page, the user types very simple "hello world" type text on the index.html page.
-  - Breakdown the specific things contained within the `.html` file to show how it makes the application work
-  - Type or copy/paste enough to see a home page
-  - recall the resources in the beginning for users who this goes over their heads
-  - Save and commit changes
-  - Starting the app again
-    - electron .
-    - what to look for
-    - developer tools
-    - troubleshooting
+  For our app, we are going to build a [memory game](). You can find the code for the web application [here on Codepen](https://codepen.io/githubteacher/pen/xLExNZ).
 
+  On Codepen, you can see there are three main sections of code; `html`, `css`, and `js`. These will map out to be our `src/index.html`, `src/style.css`, and `src/script.js`.
 
+  1. Copy the code from the `html` tab on Codepen into the `src/index.html` file locally. Paste the code so it replaces the existing code between `<body>` and `</body>`.
+  1. Save and commit your changes.
+  1. Start the app again by typing `electron-forge start`.
+
+  > If you don't understand everything in the `.html` file, that's okay. Remember the resources listed [at the beginning of the course](), and know you can always go back and learn more!
+
+  ToDO - add what to look for, and troubleshooting 
 
 show-me-how:
 tell-me-why:
