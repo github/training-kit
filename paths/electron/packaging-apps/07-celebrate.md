@@ -3,15 +3,14 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Packaging Apps
-permalink: /electron/packaging-apps/
-next-page: /electron/packaging-apps/
+title: Celebrate
+permalink: /electron/packaging-apps/celebrate
 facilitator: false
 sidebar:
   nav: "electron-packaging-apps"
 main-content: |
 
-  ## Hooray! Next, let's learn how to share 
+  ## Hooray! Next, let's learn how to share
 
 show-me-how:
 tell-me-why:

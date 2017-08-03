@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Packaging Apps
 permalink: /electron/packaging-apps/
-next-page: /electron/packaging-apps/
+next-page: /electron/packaging-apps/using-electron-packager
 facilitator: false
 sidebar:
   nav: "electron-packaging-apps"

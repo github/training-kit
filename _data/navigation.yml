@@ -196,6 +196,20 @@ electron-getting-started:
 electron-packaging-apps:
   - title: "Packaging Apps"
     url: /electron/packaging-apps/
+  - title: "Using electron-packager"
+    url: /electron/packaging-apps/using-electron-packager
+  - title: "Adding an icon"
+    url: /electron/packaging-apps/adding-an-icon
+  - title: "Lock Source Code"
+    url: /electron/packaging-apps/lock-source-code
+  - title: "Testing"
+    url: /electron/packaging-apps/testing
+  - title: "Clean Up Binaries"
+    url: /electron/packaging-apps/clean-up-binaries
+  - title: "Celebrate"
+    url: /electron/packaging-apps/celebrate
+
+
 
 electron-sharing-apps:
   - title: "Sharing Apps"

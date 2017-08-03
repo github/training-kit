@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Packaging Apps
-permalink: /electron/packaging-apps/
-next-page: /electron/packaging-apps/
+title: Testing
+permalink: /electron/packaging-apps/testing
+next-page: /electron/packaging-apps/clean-up-binaries
 facilitator: false
 sidebar:
   nav: "electron-packaging-apps"
