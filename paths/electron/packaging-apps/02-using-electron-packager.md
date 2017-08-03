@@ -11,7 +11,7 @@ sidebar:
   nav: "electron-packaging-apps"
 main-content: |
 
-  ## Walkthrough of Process
+  ## Using `electron-packager`
 
   - `npm install electron-packager --save-dev`
   - Add build script `"build": "electron-packager . app-name --ignore=node_modules/electron-*"` in "scripts" of package.json (ignore all dependency apps the same way)

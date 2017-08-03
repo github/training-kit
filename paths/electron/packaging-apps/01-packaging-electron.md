@@ -24,6 +24,12 @@ main-content: |
 
   Many factors make the process of packaging electron applications somewhat complicated. It is a different process based on your operating system and the operating system you're trying to go to. Right now, [`electron-packager`](https://github.com/electron-userland/electron-packager) is the community's most popular choice to solve these problems.
 
+  ### Downloading `electron-packager`
+
+  While you are in the command line in the directory of your electron app, install the node package `electron-packager` and save it to your development dependencies in the `package.json` file
+
+  1. `npm install electron-packager --save-dev`
+  
 show-me-how:
 tell-me-why:
 
