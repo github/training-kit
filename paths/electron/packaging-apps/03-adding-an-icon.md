@@ -16,17 +16,36 @@ main-content: |
   We have an app, but right now the app only uses the default image. Let's make it a specific, custom image.
 
   ### Finding an Image
-  - possibly include [icon library](https://useiconic.com/open) suggestions
-  - give recommendations on what type of image is allowed (open or public domain) and what size would be best.
+
+  To find an image for your application, keep a few things in mind.
+  - Ownership of the image (Public domain or self-owned)
+  - Size of image (recommedation here)
+
+  Not sure where to start? [Check out this icon library](https://useiconic.com/open)!
 
   ### Converting the Image
-  - What types of images are necessary for each operating system?
-  - How can we find an image and convert into the appropriate formats?
+
+  Every operating system will prefer a different format of image.
+
+  | Operating System | Image Format |
+  |-----|-----|
+  | MacOS |     |
+  | Windows |     |
+  | Linux |      |
+
+  To convert the image to the appropriate format, we recommend [this tool](TBD).
 
   ### Including the Image in the Build
-  - Replace icon in Contents>Resources directory in build script - "build": "electron-packager . app-name && cp Icon.icns Path/To/New/Icon"
-  - Delete app - `rm -rf AppName.app`
-  - Rebuild - `npm run build`
+  1. In your project's root directory, create a new directory called `Icon`: `mkdir Icon`
+  1. Add all of the image files to the `Icon` directory
+  1. Replace icon in Contents>Resources directory in build script:
+
+                  ```json
+                  "build": "electron-packager . app-name && cp Icon.icns Path/To/New/Icon"
+                  ```
+                  
+  1. Delete app: `rm -rf AppName.app`
+  1. Rebuild: `npm run build`
 
 show-me-how:
 tell-me-why:
