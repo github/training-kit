@@ -13,9 +13,10 @@ main-content: |
 
   ## Using `electron-packager`
 
-  - `npm install electron-packager --save-dev`
-  - Add build script `"build": "electron-packager . app-name --ignore=node_modules/electron-*"` in "scripts" of package.json (ignore all dependency apps the same way)
-  - `npm run build`
+  Now that we have installed `electron-packager`, we're ready to use it. We could type out the entire command every time, but it's best practice to add a build script to the `package.json` file. This means that every time we run the default build script, our specific list of commands will be run.
+
+  1. In the `package.json` file, add a build script `"build": "electron-packager . app-name --ignore=node_modules/electron-*"` in "scripts" of package.json. (Ignore all dependency apps the same way.)
+  1. Run the new build script with `npm run build`
 
 show-me-how:
 tell-me-why:
