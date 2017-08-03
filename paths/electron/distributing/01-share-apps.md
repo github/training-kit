@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Sharing Electron Apps
-permalink: /electron/sharing-apps/
-next-page: /electron/sharing-apps/
+permalink: /electron/distributing-apps/
+next-page: /electron/distributing-apps/native-app-discovery
 facilitator: false
 sidebar:
   nav: "electron-sharing-apps"

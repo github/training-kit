@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Sharing Electron Apps
-permalink: /electron/sharing-apps/
-next-page: /electron/sharing-apps/
+title: Native App Discovery
+permalink: /electron/distributing-apps/native-app-discovery
+next-page: /electron/distributing-apps/sharing-on-websites
 facilitator: false
 sidebar:
   nav: "electron-sharing-apps"

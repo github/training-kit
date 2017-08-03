@@ -199,4 +199,8 @@ electron-packaging-apps:
 
 electron-sharing-apps:
   - title: "Sharing Apps"
-    url: /electron/starting-with-electron/
+    url: /electron/distributing-apps/
+  - title: "Native App Discovery"
+    url: /electron/distributing-apps/native-app-discovery
+  - title: "Sharing on Websites"
+    url: /electron/distributing-apps/sharing-on-websites
