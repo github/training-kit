@@ -12,6 +12,9 @@ main-content: |
 
   ## Hooray! Next, let's learn how to share
 
+  - Next step of sharing
+  - Point to electron community 
+
 show-me-how:
 tell-me-why:
 
