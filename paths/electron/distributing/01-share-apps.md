@@ -11,8 +11,15 @@ sidebar:
   nav: "electron-sharing-apps"
 main-content: |
 
-  Content here
-  
+
+  So I have a packaged app, now what? How to get apps onto the app store and easy to download.
+
+
+  ## Legal things to be aware of
+  - Once you're sharing your app, your licenses and other legal things need to be in order
+     - App submission checklist for Windows (https://docs.microsoft.com/en-us/windows/uwp/publish/app-submissions)
+
+
 show-me-how:
 tell-me-why:
 

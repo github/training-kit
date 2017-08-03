@@ -11,8 +11,10 @@ sidebar:
   nav: "electron-sharing-apps"
 main-content: |
 
-  Content here
-  
+  ## Downloads from a website, how to set up a website so others can download a program by clicking a button
+
+  - Show how to get the packaged app onto existing website (maybe pages? linking to release package? would we need something heftier?)
+
 show-me-how:
 tell-me-why:
 
