@@ -11,14 +11,13 @@ sidebar:
   nav: "electron-sharing-apps"
 main-content: |
 
+  ## Sharing Electron Applications
 
-  So I have a packaged app, now what? How to get apps onto the app store and easy to download.
+  So you have a packaged app, but now what? The next few pages will walk through how to make apps easy to find and download. However, we the source of truth should always be this [documentation on application distribution](https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md).
 
+  ### Legal things to be aware of
 
-  ## Legal things to be aware of
-  - Once you're sharing your app, your licenses and other legal things need to be in order
-     - App submission checklist for Windows (https://docs.microsoft.com/en-us/windows/uwp/publish/app-submissions)
-
+  Once you're sharing your app, your licenses and other legal things need to be in order. We recommend [this article](https://help.github.com/articles/licensing-a-repository/) to help you choose the right license for your project.
 
 show-me-how:
 tell-me-why:
