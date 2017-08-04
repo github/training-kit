@@ -10,10 +10,7 @@ sidebar:
   nav: "electron-packaging-apps"
 main-content: |
 
-  ## Hooray! Next, let's learn how to share
-
-  - Next step of sharing
-  - Point to electron community 
+  ## Hooray! Next, you're ready to learn learn how to share packaged applications with others. 
 
 show-me-how:
 tell-me-why:
