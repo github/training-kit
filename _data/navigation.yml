@@ -204,8 +204,6 @@ electron-packaging-apps:
     url: /electron/packaging-apps/lock-source-code
   - title: "Testing"
     url: /electron/packaging-apps/testing
-  - title: "Clean Up Binaries"
-    url: /electron/packaging-apps/clean-up-binaries
   - title: "Celebrate"
     url: /electron/packaging-apps/celebrate
 

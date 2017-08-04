@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Testing
 permalink: /electron/packaging-apps/testing
-next-page: /electron/packaging-apps/clean-up-binaries
+next-page: /electron/packaging-apps/celebrate
 facilitator: false
 sidebar:
   nav: "electron-packaging-apps"
