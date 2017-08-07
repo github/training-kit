@@ -13,12 +13,11 @@ main-content: |
   ## Preparing Electron Apps for Download
 
 
-  Most commonly, electron apps are shared via [GitHub Releases](). People who create and package their own applications upload the binaries to a GitHub repository where others can download them. You can see some great examples of this on the [electron app page](). This is free, version controlled, and kept cleanly alongside your code.
+  Most commonly, electron apps are shared via [GitHub Releases](https://help.github.com/articles/about-releases/). People who create and package their own applications upload the binaries to a GitHub repository where others can download them. You can see some great examples of this on the [electron app page](https://electron.atom.io/apps/). This is free, version controlled, and kept cleanly alongside your code.
 
-  You could then link to your downloads from your very own [GitHub pages site](), or any site for that matter. [Learn how to make your own GitHub Pages site here]().
+  You could then link to your downloads from your very own [GitHub pages site](https://pages.github.com/), or any site for that matter. [Learn how to make your own GitHub Pages site here](https://services.github.com/on-demand/github-cli/).
 
   For now, let's walk through the steps of uploading the packaged application to be a GitHub release.
-
 
 show-me-how:
 tell-me-why:
