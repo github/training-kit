@@ -31,7 +31,8 @@ main-content: |
   1. `npm install electron-packager --save-dev`
 
   TODO - add info on what package.json files are and do, along with examples
-  
+    - add info about packaged things in .gitignore
+    
 show-me-how:
 tell-me-why:
 
