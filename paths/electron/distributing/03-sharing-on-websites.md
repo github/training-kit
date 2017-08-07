@@ -19,6 +19,8 @@ main-content: |
 
   For now, let's walk through the steps of uploading the packaged application to be a GitHub release.
 
+  TODO - do we want to walk through the steps here, or just link out to [this help doc](https://help.github.com/articles/creating-releases/)?
+  
 show-me-how:
 tell-me-why:
 
