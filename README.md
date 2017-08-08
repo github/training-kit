@@ -49,6 +49,10 @@ To perform a build of the materials perform the following:
 1. Run `script/server`.
     - When successful, the script will initiate a local server at `http://127.0.0.1:4000/on-demand`.
 1. Simply paste that into your favorite web-browser and you will be ready to test.
+1. You'll also need to run the following script to compile the SCSS (you can remove the `watch` flag if desired):
+```
+sass --watch assets/_scss/main.scss:assets/css/main.css
+```
 
 #### Packaging for Viewing Behind Your Firewall
 
