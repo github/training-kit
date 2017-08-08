@@ -4,7 +4,8 @@ title: GitHub Training Community
 category: community
 permalink: /community/
 header:
-  overlay_color: "#137bce"
+  overlay_image: cover.jpeg
+  overlay_filter: rgba(46, 129, 200, 0.6)
 ---
 
 # Availability

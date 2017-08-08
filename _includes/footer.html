@@ -2,6 +2,10 @@
 
 <div class="page__footer-follow text-center">
   <p style="margin-bottom: 0.5em"><a href="{{ site.baseurl }}/community/">Made with :heart: by :octocat:s and friends</a></p>
+  <ul class="social-icons">
+    <li><a href="{{ base_path }}/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label }}</a></li>
+    <li><a href="{{ site.baseurl }}/community"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Community</a></li>
+  </ul>
 </div>
 
-<div class="page__footer-copyright" style="text-align: center;">&copy; {{ site.time | date: '%Y' }} {{ site.name }} {{ site.data.ui-text[site.locale].powered_by }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright text-center">&copy; {{ site.time | date: '%Y' }} {{ site.name }} {{ site.data.ui-text[site.locale].powered_by }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
