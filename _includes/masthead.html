@@ -7,14 +7,8 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% for link in site.data.navigation.main %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-              {% else %}
-              {% assign domain = base_path %}
-            {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }} {% if link.beta %} <span class="btn btn--inverse">BETA</span> {% endif %}</a></li>
-          {% endfor %}
+          <li class="masthead__menu-item"><a href="{{ site.baseurl }}/resources">Resources</a></li>
+          <li class="masthead__menu-item"><a href="{{ site.baseurl }}/resources/learning-path">Learning Path</a></li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
