@@ -16,10 +16,10 @@ main-content: |
 
   You should see a program open up that says "Well hey there!!!".
 
-  When working in Electron, you can use Chrome Developer Tools. Open these by selecting "View" from the top level drop down menu of the application, then clicking "Toggle Developer Tools".
+  When working in Electron, you can use Chrome Developer Tools. Open these by selecting "View" from the top level drop down menu of the application, then clicking "Toggle Developer Tools". You can also use whatever shortcut you use to open Dev Tools from within a Chrome window. 
 
   TODO - TROUBLESHOOTING in case they can't see it here
-  TODO - add info about what dev tools can do 
+  TODO - add info about what dev tools can do
 
 show-me-how:
 tell-me-why:
