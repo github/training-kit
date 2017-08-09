@@ -13,6 +13,8 @@ main:
     url: /windows/
   - title: "Introduction to GraphQL"
     url: /graphql/
+  - title: "Electron Suite"
+    url: /electron/
   - title: "Git & GitHub Training Path"
     url: /path/
   - title: "GitHub Training Community"
@@ -190,8 +192,24 @@ github-graphql:
     url: /graphql/mutation
 
 electron-getting-started:
-  - title: "Creating an App"
+  - title: "Getting Started"
     url: /electron/starting-with-electron/
+  - title: "Electron Boilerplate"
+    url: /electron/starting-with-electron/boilerplate
+  - title: "Creating a Git Repository"
+    url: /electron/starting-with-electron/init-git-repository
+  - title: "Creating App Files"
+    url: /electron/starting-with-electron/create-app-files
+  - title: "Running Electron Apps"
+    url: /electron/starting-with-electron/running-the-app
+  - title: "Add to index.html"
+    url: /electron/starting-with-electron/add-to-html
+  - title: "Add CSS"
+    url: /electron/starting-with-electron/add-to-css
+  - title: "Add JavaScript"
+    url: /electron/starting-with-electron/add-to-javascript
+  - title: "Celebrate"
+    url: /electron/starting-with-electron/celebrate
 
 electron-packaging-apps:
   - title: "Packaging Apps"

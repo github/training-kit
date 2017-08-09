@@ -1,6 +1,6 @@
 # Electron 101: Building an Electron App from Scratch
 
-## Things to Know
+## Getting Started
 - Not prereqs
    - Baseline things to get started:
       - computer
