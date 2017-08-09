@@ -17,11 +17,11 @@ main-content: |
 
   1. Copy the code from the `html` tab on Codepen into the `src/index.html` file locally. Paste the code so it replaces the existing text ("Well hey there!!!") between `<body>` and `</body>`.
   1. Save and commit your changes.
-  1. Start the app again by typing `electron-forge start`.
+  1. Start the app again by typing `electron-forge start`. At this point, you should only see text without graphics or functionality.
 
   > If you don't understand everything in the `.html` file, that's okay. Remember the resources listed [at the beginning of the course](), and know you can always go back and learn more!
 
-  ToDO - add what to look for, and troubleshooting 
+  ToDO - add what to look for, and troubleshooting
 
 show-me-how:
 tell-me-why:
