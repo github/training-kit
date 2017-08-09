@@ -11,7 +11,8 @@ sidebar:
   nav: "electron-getting-starting"
 main-content: |
 
-  Since we used a boilerplate, the main files are already there. These files are the
+  Since we used a boilerplate, the main files are already there. These files are the:
+  
   - `package.json`
   - `src/index.html`
   - `src/index.js`
