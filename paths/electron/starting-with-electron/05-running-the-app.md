@@ -14,7 +14,7 @@ main-content: |
   Now, let's spin up the application locally to see the `index.html` page.
   1. In the terminal, type `electron-forge start` and press enter.
 
-  You should see a program open up that says "Well hey there!!!".
+  1. Using your Command Line Interface, type `electron-forge start` and press enter.
 
   When working in Electron, you can use Chrome Developer Tools. Open these by selecting "View" from the top level drop down menu of the application, then clicking "Toggle Developer Tools". You can also use whatever shortcut you use to open Dev Tools from within a Chrome window. 
 
