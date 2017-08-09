@@ -11,20 +11,14 @@ sidebar:
   nav: "electron-getting-starting"
 main-content: |
 
-  We have a great start of an Electron app. But, it's not being tracked with version control. Now, it's time to track this repository with Git, include a .gitignore file that fits this project, and push this up to a remote on GitHub.
-
-  For the rest of this tutorial, we won't guide you too much on using Git. For all of the code, we recommend using branches and atomic commits, as well as pushing to the remote frequently.
+  Throughout this tutorial, we won't guide you too much on using Git. For all of the code, we recommend using branches and atomic commits, as well as pushing to the remote frequently.
 
   > Not sure what to do with Git or GitHub? [Check out some of the on-demand courses to learn more!](https://services.github.com/on-demand/)
 
-  ### Initialize as a Git Repo
-  1. Ensure you're in the correct directory by typing `pwd`. You want to be in the root level directory of the electron-project.
-  1. Ensure that this isn't already a Git repository by typing `git status`. You should see a response: `fatal: Not a git repository (or any of the parent directories): .git`.
-  1. Type `git init`. This initializes Git within this directory, so it will now be a Git repository.
-  1. Type `git status` again to ensure it is now a repository.
+  By default, the boilerplate initialized this directory as a git repository, so we won't need to do any extra work to get this set up.
 
-  ### Add a `.gitignore` file
-  If you create a [file in your repository named .gitignore](https://help.github.com/articles/ignoring-files/), Git uses it to determine which files and directories to ignore, before you make a commit.
+  ### Understanding the `.gitignore` file
+  Also, there's a [file in your repository named .gitignore](https://help.github.com/articles/ignoring-files/). Git uses this to determine which files and directories to ignore, before you make a commit.
 
   We want to use a `.gitignore file` for Node, since Electron is a Node based project. Typically, we would do this manually. Since we used a boilerplate, this is already done. If you're interested in learning about different `.gitignore` files, check out [this repository full of templates](https://github.com/github/gitignore).
 
