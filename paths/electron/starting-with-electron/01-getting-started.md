@@ -20,9 +20,9 @@ main-content: |
   Before we get started, let's identify the things you are going to need to be successful in this course.
 
   ### Environment Setup
-    - [Git installed](./github-cli/git-configuration)
+    - [Git installed](../../github-cli/git-configuration)
     - [Node.js and NPM](https://nodejs.org/en/download/)
-    - [GitHub account](./intro-to-github/create-github-account)
+    - [GitHub account](../../intro-to-github/create-github-account)
     - [Excited to learn new things](http://www.reactiongifs.com/r/cheering_minions.gif)
 
   ### Software Skills
@@ -41,9 +41,8 @@ main-content: |
 
   For today's course, the basics are more than enough.
 
-  ### Learning Recommendations for Web Technologies
+  ### Recommendations for Learning Web Technologies
 
-  #### HTML, CSS, and Javascript
   - [freeCodeCamp](https://www.freecodecamp.com/map)
   - [The Best Places to Learn to Code for Absolutely Free](https://learntocodewith.me/posts/code-for-free/)
   - [Awesome, a curated list of learning resources](https://github.com/sindresorhus/awesome)
