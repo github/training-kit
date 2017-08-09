@@ -25,7 +25,7 @@ main-content: |
   ### Initial Commit
   1. Type `git status` again, and see that all of your files are currently untracked in the working tree.
   1. To craft a commit, we will use `git add`. This way, we will be particular about what files are in each commit. We will first commit the `.gitignore` file with `git add .gitignore`, and then `git commit -m "initial commit with gitignore"`.
-  1. To add the rest of the files, type `git add project.json index.js`, and `git commit -m "initial electron boilerplate files"`.
+  1. To add the rest of the files, type `git add .`, and `git commit -m "add electron boilerplate files"`.
 
   ### Pushing to GitHub
   1. On [GitHub.com](https://github.com/), [create a new repository](https://help.github.com/articles/creating-a-new-repository/). To avoid errors, do not initialize the new repository with `README`, `license`, or `.gitignore` files. You can add these files after your project has been pushed to GitHub.
