@@ -29,7 +29,7 @@ main-content: |
 
   ### Pushing to GitHub
   1. On [GitHub.com](https://github.com/), [create a new repository](https://help.github.com/articles/creating-a-new-repository/). To avoid errors, do not initialize the new repository with `README`, `license`, or `.gitignore` files. You can add these files after your project has been pushed to GitHub.
-  1. At the top of your GitHub repository's Quick Setup page, copy the remote repository URL.   
+  1. Follow the steps for pushing an existing repository from the command line. 
   1. In Terminal, [add the URL for the remote repository](https://help.github.com/articles/adding-a-remote/) where your local repository will be pushed.
   1. [Push the changes](https://help.github.com/articles/pushing-to-a-remote/) in your local repository to GitHub.
 
