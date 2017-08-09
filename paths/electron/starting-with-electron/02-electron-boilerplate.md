@@ -19,15 +19,15 @@ main-content: |
 
   Important files to watch out for in any Electron app:
 
-  - package.json
-  - package-lock.json
-  - src/index.html
-  - src/index.js
+  - `package.json`
+  - `package-lock.json`
+  - `src/index.html`
+  - `src/index.js`
 
 show-me-how:
 tell-me-why: |
   _Potential TODO_: Add file descriptions here?
-  
+
   Any Electron app has 3 core processes that interact with each other. A package.json that initializes the main process, a main process that initializes renderer processes, and a renderer process. NPM operations trigger a package-lock.json file. [Source](https://github.com/electron/electron/blob/master/docs/tutorial/quick-start.md)
 
   - package.json - Points to the app's main file and lists its details and dependencies.
