@@ -8,3 +8,4 @@ _site/
 *.*~
 _release
 *.map
+.jekyll-metadata
