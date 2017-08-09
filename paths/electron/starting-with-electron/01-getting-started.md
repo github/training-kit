@@ -36,7 +36,7 @@ main-content: |
 
   **_What counts as familiar enough?_**
 
-  On your own, to create an app on Electron with these languages, you would need the same level of proficiency that you'd need to create that app (or website) for the browser.
+  On your own, to create an app on Electron with these languages, you would need the same level of proficiency that you'd need to create that app for the browser.
 
   With this tutorial, you'll see exactly how easy it is to use web application technology to create a desktop app.
 
