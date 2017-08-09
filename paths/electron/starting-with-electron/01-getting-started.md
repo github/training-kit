@@ -20,7 +20,6 @@ main-content: |
   Before we get started, let's identify the things you are going to need to be successful in this course.
 
   ### Environment Setup
-   - Computer :computer:
     - [Git installed](./github-cli/git-configuration)
     - [Node.js and NPM](https://nodejs.org/en/download/)
     - [GitHub account](./intro-to-github/create-github-account)
