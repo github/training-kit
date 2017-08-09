@@ -13,12 +13,11 @@ main-content: |
 
   ## Native App Discovery
 
-  Here are some resources for sharing the apps in their native stores. However, instead of walking through this process with the app we built earlier, we'll show you these resources and move on to a how-to of getting the app up and ready for download from a website. 
+  Here are some resources for sharing the apps in their native stores. However, instead of walking through this process with the app we built earlier, we'll show you these resources and move on to a how-to of getting the app up and ready for download from a website.
 
   ### Apple
   - Apple has the App Store. Read up on [Electron's guide for Mac App Store Submission](https://github.com/electron/electron/blob/master/docs/tutorial/mac-app-store-submission-guide.md), or Apple's own [guide](
-  https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/SubmittingYourApp/SubmittingYourApp.html
-).
+  https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/SubmittingYourApp/SubmittingYourApp.html).
 
   ### Windows
   - Windows has the [Windows Store]( (https://www.microsoft.com/en-US/store/apps?rtc=1)). You can [see the Windows Store Guide here](https://github.com/electron/electron/blob/master/docs/tutorial/windows-store-guide.md), and look at the [application submission checklist for Windows here](https://docs.microsoft.com/en-us/windows/uwp/publish/app-submissions).

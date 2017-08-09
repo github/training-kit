@@ -21,9 +21,9 @@ main-content: |
 
   Before we get started, let's identify the things you are going to need to be successful in this course.
 
-  - Install [Git](./github-cli/git-configuration)
+  - Install [Git](../../github-cli/git-configuration)
   - Install [Node.js and NPM](https://nodejs.org/en/download/)
-  - Create a [GitHub account](./intro-to-github/create-github-account)
+  - Create a [GitHub account](../../intro-to-github/create-github-account)
   - Get [excited to learn new things](http://www.reactiongifs.com/r/cheering_minions.gif)
 
   ### Software Skills

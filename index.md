@@ -1,7 +1,7 @@
 ---
 layout: splash
 header:
-  overlay_image: cover.jpeg
+  overlay_image: cover.jpeg "Picture of keyboard with hands typing and a cup of coffee"
   overlay_filter: rgba(46, 129, 200, 0.6)
 
 excerpt: "You're in control. We're with you along the way."
