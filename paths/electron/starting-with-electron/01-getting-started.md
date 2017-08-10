@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Getting Started with Electron
+title: Get Started with Electron
 permalink: /electron/starting-with-electron/
 next-page: /electron/starting-with-electron/boilerplate
 facilitator: false

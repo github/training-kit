@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Electron Boilerplate
+title: Create your app
 permalink: /electron/starting-with-electron/boilerplate
 next-page: /electron/starting-with-electron/init-git-repository
 facilitator: false
@@ -30,8 +30,8 @@ tell-me-why: |
 
   - `package.json` - Points to the app's main file and lists your project's details and dependencies.
   - `package-lock.json` - If you're using NPM 5 or greater (you can check by running `npm -v`), you'll also get a [`package-lock.json` file](https://docs.npmjs.com/files/package-lock.json). This file aims to keep versions of dependencies identical across projects.
-  - `src/index.html` - A web page to render. This is the app's renderer process.
-  - `src/index.js` - Starts the app and creates a browser window to render HTML. This is the app's main process.
+  - `src/index.html` - A web page to render. Each web page will spin off its own renderer process.
+  - `src/index.js` - The default script called by `package.json` to create windows and handle system events. Runs the app's main process.
 
   _Potential TODO_: Add node/npm description here?
 
