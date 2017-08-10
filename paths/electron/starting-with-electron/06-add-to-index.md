@@ -11,7 +11,7 @@ sidebar:
   nav: "electron-getting-starting"
 main-content: |
 
-  For our app, we are going to build a [memory game](). You can find the code for the web application [here on Codepen](https://codepen.io/githubteacher/pen/xLExNZ).
+  For our app, we are going to build a [memory game](https://en.wikipedia.org/wiki/Concentration_(game)). You can find the code for the web application [here on Codepen](https://codepen.io/githubteacher/pen/brRvVz).
 
   On Codepen, you can see there are three main sections of code; `html`, `css`, and `js`. These will map out to be our `src/index.html`, `src/style.css`, and `src/script.js`.
 
