@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Creating a Git Repository
+title: Push your project to GitHub
 permalink: /electron/starting-with-electron/init-git-repository
 next-page: /electron/starting-with-electron/create-app-files
 facilitator: false
@@ -15,25 +15,33 @@ main-content: |
 
   > Not sure what to do with Git or GitHub? [Check out some of the on-demand courses to learn more!](https://services.github.com/on-demand/)
 
-  By default, the boilerplate initialized this directory as a git repository, so we won't need to do any extra work to get this set up.
+  Let's create our first commit, and push our project to :octocat:.
 
-  ### Understanding the `.gitignore` file
-  Also, there's a [file in your repository named .gitignore](https://help.github.com/articles/ignoring-files/). Git uses this to determine which files and directories to ignore, before you make a commit.
+  ### Create your first commit
+  1. Type `git status`, and see that all of your files are currently untracked in the working tree.
+  1. Type `git add .gitignore`. This command stages our first commit using a special file called `.gitignore`, which lets us specify the parts of our project that should be pushed to GitHub, and those that should remain just on our machine.
+  1. Type `git commit -m "initial commit with gitignore"` to craft our first commit.
+  1. Stage the rest of the files, using `git add .`.
+  1. Create your commit using `git commit -m "add electron boilerplate files"`.
 
-  We want to use a `.gitignore file` for Node, since Electron is a Node based project. Typically, we would do this manually. Since we used a boilerplate, this is already done. If you're interested in learning about different `.gitignore` files, check out [this repository full of templates](https://github.com/github/gitignore).
-
-  ### Initial Commit
-  1. Type `git status` again, and see that all of your files are currently untracked in the working tree.
-  1. To craft a commit, we will use `git add`. This way, we will be particular about what files are in each commit. We will first commit the `.gitignore` file with `git add .gitignore`, and then `git commit -m "initial commit with gitignore"`.
-  1. To add the rest of the files, type `git add .`, and `git commit -m "add electron boilerplate files"`.
-
-  ### Pushing to GitHub
-  1. On [GitHub.com](https://github.com/), [create a new repository](https://help.github.com/articles/creating-a-new-repository/). To avoid errors, do not initialize the new repository with `README`, `license`, or `.gitignore` files. You can add these files after your project has been pushed to GitHub.
-  1. Follow the steps for pushing an existing repository from the command line.
-  1. In your Command Line Interface (CLI), [add the URL for the remote repository](https://help.github.com/articles/adding-a-remote/) where your local repository will be pushed.
-  1. [Push the changes](https://help.github.com/articles/pushing-to-a-remote/) in your local repository to GitHub.
+  ### Push to GitHub
+  1. [Create a new repository](https://help.github.com/articles/creating-a-new-repository/) on GitHub.com. To avoid errors, do not initialize the new repository with `README`, `license`, or `.gitignore` files. You can add these files after your project has been pushed to GitHub.
+  1. Follow the steps shown in your new project for pushing an existing repository from the command line. See _Tell my why_ if you'd like some extra resources to help you along.
 
 show-me-how:
-tell-me-why:
+tell-me-why: |
+  By default, the boilerplate initialized this directory as a git repository, so we won't need to do any extra work to get this set up. But we did need to do a little work to get it pushed up to GitHub.com, where we can show off our code to others, and backup our work.
+
+  ### Understanding the `.gitignore` file
+  There's a [file in your repository named .gitignore](https://help.github.com/articles/ignoring-files/). Git uses this to determine which files and directories to ignore, before you make a commit.
+
+  We want to use a `.gitignore file` built for Node projects, since Electron is a Node based project. Typically, we would do this manually. Since we used a boilerplate, this is already done. If you're interested in learning about different `.gitignore` files, check out [this repository full of templates](https://github.com/github/gitignore).
+
+  ### More about pushing to GitHub
+  Repositories can live locally on your machine, but also on a remote like GitHub.com. The steps had you push your repository to GitHub, but if you need some assistance on performing some of the steps we described, you may find the following links helpful:
+
+    1. [Adding a remote](https://help.github.com/articles/adding-a-remote/).
+    1. [Pushing to a remote](https://help.github.com/articles/pushing-to-a-remote/).
+
 
 ---
