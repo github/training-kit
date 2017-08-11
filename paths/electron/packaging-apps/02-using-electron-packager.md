@@ -15,7 +15,7 @@ main-content: |
 
   Now that we have installed `electron-packager`, we're ready to use it. We could type out the entire command every time, but it's best practice to add a build script to the `package.json` file. This means that every time we run the default build script, our specific list of commands will be run.
 
-  1. In the `package.json` file, add a build script `"build": "electron-packager . <app-name> --all --ignore=node_modules/electron-*"` in "scripts" of package.json. (Ignore all dependency apps the same way.)
+  1. In the `package.json` file, add a build script `"build": "electron-packager . <app-name> --all --overwrite --ignore=node_modules/electron-*"` in "scripts" of package.json. (Ignore all dependency apps the same way.)
   1. In the `src/index.js` file, replace the first line with the new line `const { BrowserWindow, app } = require('electron');`. (The current line is pre-populated by `electron-forge` and doesn't play nicely with `electron-packager`.)
   1. Run the new build script with `npm run build`
 
