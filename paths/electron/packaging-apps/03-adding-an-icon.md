@@ -47,7 +47,6 @@ main-content: |
                   "build-win32": "electron-packager . aug-11 --platform=win32 --icon Icons/unicorn.ico --overwrite --ignore=node_modules/electron-* ",
                   "build": "npm run build-darwin && npm build-mas && npm build-linux && npm-build-win32"
 
-  1. Delete app: `rm -rf appname-darwin-x64/` for Darwin, and do the same for each built application folder.
   1. Rebuild: `npm run build`
 
 show-me-how:
