@@ -10,7 +10,7 @@ sidebar:
   nav: "electron-packaging-apps"
 main-content: |
 
-  ## Hooray! Next, you're ready to learn learn [how to share packaged applications](http://services.github.com/on-demand/electron/sharing-apps/) with others.
+  ## Hooray! Next, you're ready to learn learn [how to share packaged applications](http://services.github.com/on-demand/electron/distributing-apps/) with others.
 
 show-me-how:
 tell-me-why:
