@@ -15,7 +15,7 @@ main-content: |
 
   1. Find the terminal and create a directory for the project: `npm install -g electron-forge`
   1. Initialize a new project: `electron-forge init electron-app`
-  1. CD into that app: `cd electron-app`
+  1. CD into that app's directory: `cd electron-app`
 
   Important files to watch out for in any Electron app:
 
