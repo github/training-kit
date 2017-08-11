@@ -32,7 +32,7 @@ main-content: |
 
   **_What if I'm still learning?_**
 
-  Don't worry. We'll walk you through what you need to get today's app running, even if you don't have ample experience in these technologies.
+  Don't worry. We'll walk you through what you need to get today's app running, even if you don't have much experience in these technologies.
 
   **_What counts as familiar enough?_**
 
