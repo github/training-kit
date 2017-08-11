@@ -17,10 +17,7 @@ main-content: |
   1. Spin up your app, and see how it works.
   1. Save and commit your changes.
 
-  TODO -
-  - discuss how it can be made more complex
-     - maybe we can add some "extra credit" resources where we say, try to add X functionality and provide the answer in a TMW section (similar to the GraphQL course)
-
+  It's great to have a working game! What else could you build? How could you change this game? Feel free to make it your own by changing the images, changing the game functionality, or even adding sound! 
 
 show-me-how:
 tell-me-why:
