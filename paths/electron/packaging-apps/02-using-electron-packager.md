@@ -22,7 +22,7 @@ show-me-how:
 tell-me-why:
   When we use [electron-packager](https://github.com/electron-userland/electron-packager#usage), we have some options about how and what we build the applications.
 
-  The typical form is:
+  The typical form is-
   `electron-packager <sourcedir> <appname> --platform=<platform> --arch=<arch> [optional flags...]`
 
   However, when we use the `--all` flag, `electron-packager` creates bundles for all valid combinations of target platforms/architectures.

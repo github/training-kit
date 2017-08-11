@@ -18,6 +18,7 @@ main-content: |
   ### Finding an Image
 
   To find an image for your application, keep a few things in mind.
+
   - Ownership of the image (Public domain or self-owned)
   - Size of image (recommedation here)
 
@@ -29,22 +30,24 @@ main-content: |
 
   | Operating System | Image Format |
   |-----|-----|
-  | MacOS |     |
-  | Windows |     |
-  | Linux |      |
+  | MacOS | .icns |
+  | Windows | .ico |
+  | Linux | .png |
 
   To convert the image to the appropriate format, we recommend [this tool](TBD).
 
   ### Including the Image in the Build
   1. In your project's root directory, create a new directory called `Icon`: `mkdir Icon`
-  1. Add all of the image files to the `Icon` directory
-  1. Replace icon in Contents>Resources directory in build script:
+  1. Add all of the image files to the `Icon` directory. Let's say that the image is called "Icon" as well. If you don't name your image "Icon", make sure to replace that as you follow the next few steps.
+  1. Create a new script specifically for each type of icon, so that your build script section now looks like this.
 
-                  ```json
-                  "build": "electron-packager . app-name && cp Icon.icns Path/To/New/Icon"
-                  ```
-                  
-  1. Delete app: `rm -rf AppName.app`
+                    "build-darwin": "electron-packager . aug-11 --platform=darwin --ignore=node_modules/electron-* && cp Icons/icon.icns ./aug-11-darwin-x64/aug-11.app/Contents/Resources/electron.icns",
+                    "build-mas": "electron-packager . aug-11 --platform=mas --ignore=node_modules/electron-* && cp Icons/icon.icns ./aug-11-mas-x64/aug-11.app/Contents/Resources/electron.icns",
+                    "build-linux": "electron-packager . aug-11 --platform=linux --icon Icons/icon.png --ignore=node_modules/electron-*",
+                    "build-win32": "electron-packager . aug-11 --platform=win32 --icon Icons/icon.ico --ignore=node_modules/electron-* ",
+                    "build": "npm run build-darwin && npm build-mas && npm build-linux && npm-build-win32"
+
+  1. Delete app: `rm -rf appname-darwin-x64/` for Darwin, and do the same for each built application folder.
   1. Rebuild: `npm run build`
 
 show-me-how:
