@@ -15,7 +15,8 @@ main-content: |
 
   1. Type `electron-forge start` and press enter.
 
-  Your app should open up. Dev Tools might also be open on the right side, by default.
+  Your app should open up. Dev Tools might also be open on the right side, by default. Quit the app by pressing `Ctrl` + `C` in your Command Line Interface.
+
 
 show-me-how:
 tell-me-why: |
