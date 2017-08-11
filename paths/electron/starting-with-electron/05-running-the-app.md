@@ -25,7 +25,4 @@ tell-me-why: |
 
   When working in Electron, Dev tools is also available to you. Open it at any time by selecting "View" from the top level drop down menu of the application, then clicking "Toggle Developer Tools", or use the shortcuts described in the official documentation.
 
-  TODO - TROUBLESHOOTING in case they can't see it here
-  TODO - add info about what dev tools can do
-
 ---

@@ -18,10 +18,6 @@ main-content: |
   1. Quit the app by pressing Ctrl + C in your Command Line Interface.
   1. Save and commit your changes.
 
-  TODO - add resources for learning css
-
-
-
 show-me-how:
 tell-me-why:
 

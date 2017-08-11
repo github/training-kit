@@ -22,8 +22,6 @@ main-content: |
 
   > If you don't understand everything in the `.html` file, that's okay. Remember the resources listed [at the beginning of the course](), and know you can always go back and learn more!
 
-  ToDO - add what to look for, and troubleshooting
-
 show-me-how:
 tell-me-why:
 

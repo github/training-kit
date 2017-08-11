@@ -18,10 +18,8 @@ main-content: |
   1. Save and commit your changes.
 
   TODO -
-  - callback to resources to learn JS
   - discuss how it can be made more complex
      - maybe we can add some "extra credit" resources where we say, try to add X functionality and provide the answer in a TMW section (similar to the GraphQL course)
-  - Troubleshooting    
 
 
 show-me-how:
