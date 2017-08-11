@@ -41,10 +41,10 @@ main-content: |
   1. Add all of the image files to the `Icon` directory. Let's say that the image is called "Icon" as well. If you don't name your image "Icon", make sure to replace that as you follow the next few steps.
   1. Create a new script specifically for each type of icon, so that your build script section now looks like this.
 
-                  "build-darwin": "electron-packager . aug-11 --platform=darwin --icon Icons/unicorn.icns --ignore=node_modules/electron-*",
-                  "build-mas": "electron-packager . aug-11 --platform=mas --icon Icons/unicorn.icns --ignore=node_modules/electron-*",
-                  "build-linux": "electron-packager . aug-11 --platform=linux --icon Icons/unicorn.png --ignore=node_modules/electron-*",
-                  "build-win32": "electron-packager . aug-11 --platform=win32 --icon Icons/unicorn.ico --ignore=node_modules/electron-* ",
+                  "build-darwin": "electron-packager . aug-11 --platform=darwin --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
+                  "build-mas": "electron-packager . aug-11 --platform=mas --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
+                  "build-linux": "electron-packager . aug-11 --platform=linux --icon Icons/unicorn.png --overwrite --ignore=node_modules/electron-*",
+                  "build-win32": "electron-packager . aug-11 --platform=win32 --icon Icons/unicorn.ico --overwrite --ignore=node_modules/electron-* ",
                   "build": "npm run build-darwin && npm build-mas && npm build-linux && npm-build-win32"
 
   1. Delete app: `rm -rf appname-darwin-x64/` for Darwin, and do the same for each built application folder.
