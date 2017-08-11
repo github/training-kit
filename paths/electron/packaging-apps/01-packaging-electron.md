@@ -30,9 +30,7 @@ main-content: |
 
   1. `npm install electron-packager --save-dev`
 
-  TODO - add info on what package.json files are and do, along with examples
-    - add info about packaged things in .gitignore
-    
+  Since we run this command with `--save-dev`, it will be installed for this directory _and_ added to the `package.json` file, the important file that guides Node and `npm` packages for the life of the project. 
 show-me-how:
 tell-me-why:
 
