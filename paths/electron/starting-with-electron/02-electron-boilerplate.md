@@ -33,6 +33,9 @@ tell-me-why: |
   - `src/index.html` - A web page to render. Each web page will spin off its own renderer process.
   - `src/index.js` - The default script called by `package.json` to create windows and handle system events. Runs the app's main process.
 
-  _Potential TODO_: Add node/npm description here?
+  #### What is Node?
+  Node.js is the server side portion of full stack Javascript. Many websites are powered with Node, and it powers things on electron as well. [Read the docs here for more information](https://nodejs.org/en/docs/).
 
+  #### What is `npm`?
+  `npm`, short for "Node Package Manager", is exactly as it is named: a manager for packages in Node. Dependencies and their versions are managed in apps through the `package.json` file, and downloaded through `npm`. 
 ---
