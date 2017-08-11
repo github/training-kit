@@ -5,6 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Sharing on Websites
 permalink: /electron/distributing-apps/sharing-on-websites
+next-page: /electron/distributing-apps/celebrate
 facilitator: false
 sidebar:
   nav: "electron-sharing-apps"

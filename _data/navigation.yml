@@ -234,3 +234,5 @@ electron-sharing-apps:
     url: /electron/distributing-apps/native-app-discovery
   - title: "Sharing on Websites"
     url: /electron/distributing-apps/sharing-on-websites
+  - title: "Celebrate"
+    url: /electron/distributing-apps/celebrate
