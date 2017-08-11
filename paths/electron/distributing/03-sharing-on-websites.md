@@ -17,9 +17,7 @@ main-content: |
 
   You could then link to your downloads from your very own [GitHub pages site](https://pages.github.com/), or any site for that matter. [Learn how to make your own GitHub Pages site here](https://services.github.com/on-demand/github-cli/).
 
-  For now, let's walk through the steps of uploading the packaged application to be a GitHub release.
-
-  TODO - do we want to walk through the steps here, or just link out to [this help doc](https://help.github.com/articles/creating-releases/)?
+  We recommend [this help documentation for creating releases on GitHub](https://help.github.com/articles/creating-releases/).
 
 show-me-how:
 tell-me-why:
