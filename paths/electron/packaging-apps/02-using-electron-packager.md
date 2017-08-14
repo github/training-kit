@@ -20,7 +20,7 @@ main-content: |
   1. Run the new build script with `npm run build`
 
 show-me-how:
-tell-me-why:
+tell-me-why: |
   When we use [electron-packager](https://github.com/electron-userland/electron-packager#usage), we have some options about how and what we build the applications.
 
   The typical form is-
