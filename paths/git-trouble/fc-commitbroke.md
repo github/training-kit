@@ -13,7 +13,7 @@ main-content: |
 
   Your well intentioned branch was supposed to introduce that awesome new feature, but after making a few commits, things aren't going as planned!   
 
-  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment](/on-demand/git-trouble/git-set-up) page.
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment]({{site.baseurl}}/git-trouble/git-set-up) page.
 pushed: |
     This is what makes Git awesome! You can try new things and, when they don't work out, just get rid of them. First, ask yourself:
 
@@ -101,8 +101,8 @@ tell-me-why: |
      - 90 days: 'Reachable' objects, aka commits or modifications that were made to a branch that still exists.
 
   ## Reset
-  For more information about `reset`, check out the 'Tell me why' section in the [Too Many (small) Commits](/on-demand/git-trouble/too-many-commits) scenario.
+  For more information about `reset`, check out the 'Tell me why' section in the [Too Many (small) Commits]({{site.baseurl}}/git-trouble/too-many-commits) scenario.
 
   ## Cherry-pick
-  For more information about `cherry-pick`, check out the 'Tell me why' section in the [Committed to the Wrong Branch!](/on-demand/git-trouble/git-commit-wrong-branch) scenario.  
+  For more information about `cherry-pick`, check out the 'Tell me why' section in the [Committed to the Wrong Branch!]({{site.baseurl}}/git-trouble/git-commit-wrong-branch) scenario.  
 ---

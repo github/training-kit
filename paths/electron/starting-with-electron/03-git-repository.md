@@ -13,7 +13,7 @@ main-content: |
 
   Throughout this tutorial, we won't guide you too much on using Git. For all of the code, we recommend using branches and atomic commits, as well as pushing to the remote frequently.
 
-  > Not sure what to do with Git or GitHub? [Check out some of the on-demand courses to learn more!](https://services.github.com/on-demand/)
+  > Not sure what to do with Git or GitHub? [Check out some of the on-demand courses to learn more!](https://services.github.com{{site.baseurl}}/)
 
   Let's create our first commit, and push our project to :octocat:.
 
