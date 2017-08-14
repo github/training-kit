@@ -18,6 +18,20 @@ main-content: |
   1. In the `package.json` file, add a build script `"build": "electron-packager . <app-name> --all --overwrite --ignore=node_modules/electron-*"` in "scripts" of package.json. (Ignore all dependency apps the same way.)
   1. In the `src/index.js` file, replace the first line with the new line `const { BrowserWindow, app } = require('electron');`. (The current line is pre-populated by `electron-forge` and doesn't play nicely with `electron-packager`.)
   1. Run the new build script with `npm run build`
+    1. If this doesn't work for you, check out the troubleshooting steps below.
+
+troubleshooting: |
+  There are some inconsistencies between electron-packager and the most recent version of node. Do the following and you should be all set!
+
+  **macOS**
+
+  1. Type `brew cask install xquartz`
+  1. Type `brew install wine`
+  1. Type `brew install nvm`
+  1. Type `nvm install 6.11.2`
+  1. Type `nvm use 6`
+  1. Use the `npm run build` command again, and everything should work!
+    - **WARNING** -- It might take a long time to build the win32 package. Leave this for 5-10 minutes and return.
 
 show-me-how:
 tell-me-why: |
