@@ -30,7 +30,7 @@ main-content: |
 
   | Operating System | Image Format |
   |-----|-----|
-  | MacOS | .icns |
+  | macOS | .icns |
   | Windows | .ico |
   | Linux | .png |
 
