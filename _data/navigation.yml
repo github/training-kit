@@ -213,19 +213,19 @@ create-an-app-in-electron:
     url: /electron/create-an-app/celebrate/
 
 
-electron-packaging-apps:
-  - title: "Packaging Apps"
-    url: /electron/packaging-apps/
-  - title: "Using electron-packager"
-    url: /electron/packaging-apps/using-electron-packager
-  - title: "Adding an icon"
-    url: /electron/packaging-apps/adding-an-icon
+electron-package-your-app:
+  - title: "Package Your App for Downloads"
+    url: /electron/package-your-app/
+  - title: "Use electron-packager"
+    url: /electron/package-your-app/use-electron-packager/
+  - title: "Add an icon"
+    url: /electron/package-your-app/add-an-icon/
   - title: "Lock Source Code"
-    url: /electron/packaging-apps/lock-source-code
-  - title: "Testing"
-    url: /electron/packaging-apps/testing
+    url: /electron/package-your-app/lock-source-code/
+  - title: "Test Your App"
+    url: /electron/package-your-app/test-your-app/
   - title: "Celebrate"
-    url: /electron/packaging-apps/celebrate
+    url: /electron/package-your-app/celebrate/
 
 
 

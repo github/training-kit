@@ -3,15 +3,13 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Adding an Icon
-permalink: /electron/packaging-apps/adding-an-icon
-next-page: /electron/packaging-apps/lock-source-code
+title: Add an Icon
+permalink: /electron/package-your-app/add-an-icon/
+next-page: /electron/package-your-app/lock-source-code/
 facilitator: false
 sidebar:
-  nav: "electron-packaging-apps"
+  nav: "electron-package-your-app"
 main-content: |
-
-  ## Adding an Icon
 
   We have an app, but right now the app only uses the default image. Let's make it a specific, custom image.
 

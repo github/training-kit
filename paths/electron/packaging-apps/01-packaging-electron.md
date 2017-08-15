@@ -3,16 +3,13 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Packaging Apps
-permalink: /electron/packaging-apps/
-next-page: /electron/packaging-apps/using-electron-packager
+title: Package Your App for Downloads
+permalink: /electron/package-your-app/
+next-page: /electron/package-your-app/use-electron-packager/
 facilitator: false
 sidebar:
-  nav: "electron-packaging-apps"
+  nav: "electron-package-your-app"
 main-content: |
-
-
-  ## Packaging Electron Applications
 
   We are going to use a node package named [`electron-packager`](https://github.com/electron-userland/electron-packager) to package the Electron app. This means that others will be able to download and use the app natively, whether they're running macOS, Windows, or Linux.
 
