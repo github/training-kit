@@ -191,25 +191,27 @@ github-graphql:
   - title: "Create a Mutation"
     url: /graphql/mutation
 
-electron-getting-started:
-  - title: "Getting Started"
-    url: /electron/starting-with-electron/
-  - title: "Electron Boilerplate"
-    url: /electron/starting-with-electron/boilerplate
-  - title: "Creating a Git Repository"
-    url: /electron/starting-with-electron/init-git-repository
-  - title: "Creating App Files"
-    url: /electron/starting-with-electron/create-app-files
-  - title: "Running Electron Apps"
-    url: /electron/starting-with-electron/running-the-app
-  - title: "Add to index.html"
-    url: /electron/starting-with-electron/add-to-html
+
+create-an-app-in-electron:
+  - title: "Get Started with Electron"
+    url: /electron/create-an-app/
+  - title: "Create your app"
+    url: /electron/create-an-app/create-your-app/
+  - title: "Push your project to GitHub"
+    url: /electron/create-an-app/push-your-project-to-github/
+  - title: "Create your App's Files"
+    url: /electron/create-an-app/create-your-apps-files/
+  - title: "Run Your First Electron App"
+    url: /electron/create-an-app/run-your-first-electron-app/
+  - title: "Add your index.html"
+    url: /electron/create-an-app/add-your-index-html/
   - title: "Add CSS"
-    url: /electron/starting-with-electron/add-to-css
+    url: /electron/create-an-app/add-css/
   - title: "Add JavaScript"
-    url: /electron/starting-with-electron/add-to-javascript
+    url: /electron/create-an-app/add-javascript/
   - title: "Celebrate"
-    url: /electron/starting-with-electron/celebrate
+    url: /electron/create-an-app/celebrate/
+
 
 electron-packaging-apps:
   - title: "Packaging Apps"
