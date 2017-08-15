@@ -45,7 +45,7 @@ main-content: |
       "build-mas"     : "electron-packager . electron-app --platform=mas --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
       "build-linux"   : "electron-packager . electron-app --platform=linux --icon Icons/unicorn.png --overwrite --ignore=node_modules/electron-*",
       "build-win32"   : "electron-packager . electron-app --platform=win32 --icon Icons/unicorn.ico --overwrite --ignore=node_modules/electron-* ",
-      "build"         : "npm run build-darwin && npm build-mas && npm build-linux && npm-build-win32"
+      "build"         : "npm run build-darwin && npm run build-mas && npm run build-linux && npm run build-win32"
       ```
   1. Rebuild: `npm run build`
 
