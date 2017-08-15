@@ -13,7 +13,8 @@ main-content: |
 
   To begin, we will set up a base electron app using a boilerplate called [electron-forge](https://electronforge.io/). To do that, we need to go through a few steps.
 
-  1. Find the terminal and create a directory for the project: `npm install -g electron-forge`
+  1. Find the terminal and navigate to your desired project location, for example: `cd ~/` will navigate to your home directory.
+  1. Install electron-forge globally: `npm install -g electron-forge`
   1. Initialize a new project: `electron-forge init electron-app`
   1. CD into that app's directory: `cd electron-app`
 
@@ -34,7 +35,7 @@ tell-me-why: |
   - `src/index.js` - The default script called by `package.json` to create windows and handle system events. Runs the app's main process.
 
   #### What is Node?
-  Node.js is the server side portion of full stack Javascript. Many websites are powered with Node, and it powers things on electron as well. [Read the docs here for more information](https://nodejs.org/en/docs/).
+  Node.js is the server side portion of full stack Javascript. Many websites are powered with Node, and it powers things on Electron as well. [Node.js documentation](https://nodejs.org/en/docs/) is full of information that explain its functionality and purpose.
 
   #### What is `npm`?
   `npm`, short for "Node Package Manager", is exactly as it is named: a manager for packages in Node. Dependencies and their versions are managed in apps through the `package.json` file, and downloaded through `npm`.

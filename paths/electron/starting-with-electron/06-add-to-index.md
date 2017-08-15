@@ -20,7 +20,7 @@ main-content: |
   1. Start the app again by typing `electron-forge start`. At this point, you should only see text without graphics or functionality.
   1. Quit the app by pressing `Ctrl` + `C` in your Command Line Interface.
 
-  > If you don't understand everything in the `.html` file, that's okay. Remember the resources listed [at the beginning of the course](), and know you can always go back and learn more!
+  > If you don't understand everything in the `.html` file, that's okay. Remember the resources listed [at the beginning of the course](./#software-skills), and know you can always go back and learn more!
 
 show-me-how:
 tell-me-why:

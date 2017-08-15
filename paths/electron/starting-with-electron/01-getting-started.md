@@ -26,11 +26,11 @@ main-content: |
   - Create a [GitHub account](../../intro-to-github/create-github-account)
   - Get [excited to learn new things](http://www.reactiongifs.com/r/cheering_minions.gif)
 
-  We will be using Node.js packages that are not maintained by GitHub. This means that we chose these packages because we believe they will make the easiest, smoothest path tog et up and running. However, as you continue to work with Electron, there may be other packages that are better fits for your projects.
-  
+  We will be using Node.js packages that are not maintained by GitHub. This means that we chose these packages because we believe they will make the easiest, smoothest path to get up and running. However, as you continue to work with Electron, there may be other packages that are better fits for your projects.
+
   ### Software Skills
 
-  If you are already familiar with HTML, CSS, and Javascript then adding Electron to your toolkit will be a piece of cake. For this course, the basics are more than enough.
+  If you are already familiar with HTML, CSS, and Javascript then adding Electron to your toolkit will be :cake:. For this course, the basics are more than enough.
 
   **_What if I'm still learning?_**
 

@@ -22,7 +22,7 @@ main-content: |
   1. Create a new file in the `src` directory named `style.css`.
   1. Create a new file in the `src` directory named `script.js`.
 
-  It's OK that these are empty now, we'll add more later. Now, link those files to the main `index.html` by adding the following lines of code to the `index.html`:
+  It's OK that these are empty now, we'll add more later. Now, link those files to the main `index.html` by adding the following lines of code to `index.html`:
 
   1. Add the following code on a new line after the existing `<title></title>` tags.
 
