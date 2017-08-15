@@ -4,11 +4,11 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Create your app
-permalink: /electron/starting-with-electron/boilerplate
-next-page: /electron/starting-with-electron/init-git-repository
+permalink: /electron/create-an-app/create-your-app/
+next-page: /electron/create-an-app/push-your-project-to-github/
 facilitator: false
 sidebar:
-  nav: "electron-getting-started"
+  nav: "create-an-app-in-electron"
 main-content: |
 
   To begin, we will set up a base electron app using a boilerplate called [electron-forge](https://electronforge.io/). To do that, we need to go through a few steps.

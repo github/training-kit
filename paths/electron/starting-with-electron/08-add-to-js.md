@@ -4,11 +4,11 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Add JavaScript
-permalink: /electron/starting-with-electron/add-to-javascript
-next-page: /electron/starting-with-electron/celebrate
+permalink: /electron/create-an-app/add-javascript/
+next-page: /electron/create-an-app/celebrate/
 facilitator: false
 sidebar:
-  nav: "electron-getting-started"
+  nav: "create-an-app-in-electron"
 main-content: |
 
   Finally, let's add the fun part: the Javascript!

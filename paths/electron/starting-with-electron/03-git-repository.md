@@ -4,11 +4,11 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Push your project to GitHub
-permalink: /electron/starting-with-electron/init-git-repository
-next-page: /electron/starting-with-electron/create-app-files
+permalink: /electron/create-an-app/push-your-project-to-github/
+next-page: /electron/create-an-app/create-your-apps-files/
 facilitator: false
 sidebar:
-  nav: "electron-getting-started"
+  nav: "create-an-app-in-electron"
 main-content: |
   Throughout this tutorial, we won't guide you too much on using Git. For all of the code, we recommend using branches and atomic commits, as well as pushing to the remote frequently.
 

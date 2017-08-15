@@ -4,11 +4,11 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Add CSS
-permalink: /electron/starting-with-electron/add-to-css
-next-page: /electron/starting-with-electron/add-to-javascript
+permalink: /electron/create-an-app/add-css/
+next-page: /electron/create-an-app/add-javascript/
 facilitator: false
 sidebar:
-  nav: "electron-getting-started"
+  nav: "create-an-app-in-electron"
 main-content: |
 
   Just like with the `src/index.html` file, now we will copy the contents for the CSS.

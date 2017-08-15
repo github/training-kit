@@ -4,11 +4,11 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Run Your First Electron App
-permalink: /electron/starting-with-electron/running-the-app
-next-page: /electron/starting-with-electron/add-to-html
+permalink: /electron/create-an-app/run-your-first-electron-app/
+next-page: /electron/create-an-app/add-your-index-html/
 facilitator: false
 sidebar:
-  nav: "electron-getting-started"
+  nav: "create-an-app-in-electron"
 main-content: |
 
   Now, let's spin up the application locally.

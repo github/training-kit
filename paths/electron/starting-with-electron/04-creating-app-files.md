@@ -4,11 +4,11 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Create your App's Files
-permalink: /electron/starting-with-electron/create-app-files
-next-page: /electron/starting-with-electron/running-the-app
+permalink: /electron/create-an-app/create-your-apps-files/
+next-page: /electron/create-an-app/run-your-first-electron-app/
 facilitator: false
 sidebar:
-  nav: "electron-getting-started"
+  nav: "create-an-app-in-electron"
 main-content: |
 
   Since we used a boilerplate, the most important files are already there. These files are:
