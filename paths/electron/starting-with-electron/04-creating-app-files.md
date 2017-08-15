@@ -4,11 +4,11 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Create your App's Files
-permalink: /electron/starting-with-electron/create-app-files
-next-page: /electron/starting-with-electron/running-the-app
+permalink: /electron/create-an-app/create-your-apps-files/
+next-page: /electron/create-an-app/run-your-first-electron-app/
 facilitator: false
 sidebar:
-  nav: "electron-getting-started"
+  nav: "create-an-app-in-electron"
 main-content: |
 
   Since we used a boilerplate, the most important files are already there. These files are:
@@ -18,6 +18,8 @@ main-content: |
   - `src/index.js`
 
   We're going to be using other CSS and Javascript for our project, so let's add those files now.
+
+  ![gif of following the directions below](../../images/gifs/electron/electron1-create-files.gif)
 
   1. Create a new file in the `src` directory named `style.css`.
   1. Create a new file in the `src` directory named `script.js`.

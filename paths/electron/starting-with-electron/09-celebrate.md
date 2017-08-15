@@ -4,10 +4,10 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Celebrate
-permalink: /electron/starting-with-electron/celebrate
+permalink: /electron/create-an-app/celebrate/
 facilitator: false
 sidebar:
-  nav: "electron-getting-started"
+  nav: "create-an-app-in-electron"
 main-content: |
 
   ## Done but not Finished

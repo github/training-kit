@@ -3,17 +3,19 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Add to index.html
-permalink: /electron/starting-with-electron/add-to-html
-next-page: /electron/starting-with-electron/add-to-css
+title: Add your index.html
+permalink: /electron/create-an-app/add-your-index-html/
+next-page: /electron/create-an-app/add-css/
 facilitator: false
 sidebar:
-  nav: "electron-getting-started"
+  nav: "create-an-app-in-electron"
 main-content: |
 
   For our app, we are going to build a [memory game](https://en.wikipedia.org/wiki/Concentration_(game)). You can find the code for the web application [here on Codepen](https://codepen.io/githubteacher/pen/brRvVz).
 
   On Codepen, you can see there are three main sections of code; `html`, `css`, and `js`. These will map out to be our `src/index.html`, `src/style.css`, and `src/script.js`.
+
+  ![gif of following the directions below](../../images/gifs/electron/electron1-add-index.gif)
 
   1. Copy the code from the `html` tab on Codepen into the `src/index.html` file locally. Paste the code so it replaces the existing text ("Well hey there!!!") between `<body>` and `</body>`.
   1. Save and commit your changes.
