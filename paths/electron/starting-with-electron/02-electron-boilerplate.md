@@ -11,13 +11,13 @@ sidebar:
   nav: "create-an-app-in-electron"
 main-content: |
 
-  To begin, we will set up a base electron app using a boilerplate called [electron-forge](https://electronforge.io/).
+  To begin, we will set up a base electron app using an npm package called [electron-forge](https://electronforge.io/).
 
   _Note: Electron Forge isn't the only way to get started with Electron! There are other resources, like [Electron Quick Start](https://github.com/electron/electron-quick-start)._
 
   To get started, we need to go through a few steps.
 
-  ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron1-createapp.gif)
+  ![gif of following the directions below](../../images/gifs/electron/electron1-createapp.gif)
 
   1. Find the terminal and navigate to your desired project location, for example: `cd ~/` will navigate to your home directory.
   1. Install electron-forge globally: `npm install -g electron-forge`
