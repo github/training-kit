@@ -8,7 +8,7 @@ permalink: /electron/starting-with-electron/init-git-repository
 next-page: /electron/starting-with-electron/create-app-files
 facilitator: false
 sidebar:
-  nav: "electron-getting-starting"
+  nav: "electron-getting-started"
 main-content: |
 
   Throughout this tutorial, we won't guide you too much on using Git. For all of the code, we recommend using branches and atomic commits, as well as pushing to the remote frequently.

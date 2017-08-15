@@ -8,7 +8,7 @@ permalink: /electron/starting-with-electron/add-to-css
 next-page: /electron/starting-with-electron/add-to-javascript
 facilitator: false
 sidebar:
-  nav: "electron-getting-starting"
+  nav: "electron-getting-started"
 main-content: |
 
   Just like with the `src/index.html` file, now we will copy the contents for the css.

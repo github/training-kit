@@ -8,7 +8,7 @@ permalink: /electron/starting-with-electron/create-app-files
 next-page: /electron/starting-with-electron/running-the-app
 facilitator: false
 sidebar:
-  nav: "electron-getting-starting"
+  nav: "electron-getting-started"
 main-content: |
 
   Since we used a boilerplate, the most important files are already there. These files are:

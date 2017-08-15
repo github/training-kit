@@ -7,7 +7,7 @@ title: Celebrate
 permalink: /electron/starting-with-electron/celebrate
 facilitator: false
 sidebar:
-  nav: "electron-getting-starting"
+  nav: "electron-getting-started"
 main-content: |
 
   ## Done but not Finished

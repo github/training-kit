@@ -8,7 +8,7 @@ permalink: /electron/starting-with-electron/running-the-app
 next-page: /electron/starting-with-electron/add-to-html
 facilitator: false
 sidebar:
-  nav: "electron-getting-starting"
+  nav: "electron-getting-started"
 main-content: |
 
   Now, let's spin up the application locally.

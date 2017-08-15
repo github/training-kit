@@ -8,7 +8,7 @@ permalink: /electron/starting-with-electron/boilerplate
 next-page: /electron/starting-with-electron/init-git-repository
 facilitator: false
 sidebar:
-  nav: "electron-getting-starting"
+  nav: "electron-getting-started"
 main-content: |
 
   To begin, we will set up a base electron app using a boilerplate called [electron-forge](https://electronforge.io/). To do that, we need to go through a few steps.
@@ -37,5 +37,5 @@ tell-me-why: |
   Node.js is the server side portion of full stack Javascript. Many websites are powered with Node, and it powers things on electron as well. [Read the docs here for more information](https://nodejs.org/en/docs/).
 
   #### What is `npm`?
-  `npm`, short for "Node Package Manager", is exactly as it is named: a manager for packages in Node. Dependencies and their versions are managed in apps through the `package.json` file, and downloaded through `npm`. 
+  `npm`, short for "Node Package Manager", is exactly as it is named: a manager for packages in Node. Dependencies and their versions are managed in apps through the `package.json` file, and downloaded through `npm`.
 ---

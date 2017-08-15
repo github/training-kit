@@ -8,7 +8,7 @@ permalink: /electron/starting-with-electron/add-to-html
 next-page: /electron/starting-with-electron/add-to-css
 facilitator: false
 sidebar:
-  nav: "electron-getting-starting"
+  nav: "electron-getting-started"
 main-content: |
 
   For our app, we are going to build a [memory game](https://en.wikipedia.org/wiki/Concentration_(game)). You can find the code for the web application [here on Codepen](https://codepen.io/githubteacher/pen/brRvVz).
