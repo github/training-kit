@@ -15,7 +15,7 @@ main-content: |
 
   ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron1-run-app.gif)
 
-  1. Type `electron-forge start` and press enter.
+  1. Type `npm start` and press enter.
 
   Your app should open up, successfully, with a string of text. Dev Tools will also be open on the right side, due to a setting that we added by default. Quit the app by pressing `Ctrl` + `C` in your Command Line Interface.
 
