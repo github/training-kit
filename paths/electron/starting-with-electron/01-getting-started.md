@@ -44,6 +44,9 @@ main-content: |
   - [The Best Places to Learn to Code for Absolutely Free](https://learntocodewith.me/posts/code-for-free/)
   - [Awesome, a curated list of learning resources](https://github.com/sindresorhus/awesome)
 
+  **_What if I have questions?_**
+
+  We've created a repository for you! If you have any questions throughout this course, go here to open an issue and ask a question: [On Demand Electron App Repo](https://github.com/githubschool/on-demand-electron-app).
 
 show-me-how:
 tell-me-why:

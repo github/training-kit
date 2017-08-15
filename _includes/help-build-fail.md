@@ -14,7 +14,7 @@ The build can fail because of many reasons. By looking at the details of the **T
 
 1. Open the _Pull request_  
 2. Go to the bottom to the "merge" icon to the section where it says 'checks have failed'.  
-  Here you'll see a lot of :x:. Not good.  
+  Here you'll see a lot of red 'x's :x:. Not good.  
 3. Open the `Details`  
 
 The build log of Travis CI may appear a little cryptic. But with some careful reading you might be able to pull out the reason why your build is failing. (By the way, if you think the `job log` is cryptic, try and click on the `Raw log`.)

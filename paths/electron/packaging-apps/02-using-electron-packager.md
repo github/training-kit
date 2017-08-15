@@ -28,6 +28,8 @@ main-content: |
 troubleshooting: |
   There are some inconsistencies between electron-packager and the most recent version of node. If the steps above didn't work for you, try using `node 6.11.2` with `npm 3.10.10`. The following steps should help you do this on macOS.
 
+  _Note: We're using nvm here instead of rbenv. If you can duplicate successful steps to adjust your node version, please do so (and good luck!)._ 
+
   **macOS**
 
   1. Type `brew cask install xquartz`

@@ -11,7 +11,12 @@ sidebar:
   nav: "electron-package-your-app"
 main-content: |
 
+
+  ## Packaging Electron Applications
+
   We are going to use a node package named [`electron-packager`](https://github.com/electron-userland/electron-packager) to package the Electron app. This means that others will be able to download and use the app natively, whether they're running macOS, Windows, or Linux.
+
+  _Note: There are absolutely other tools to package Electron apps, but we're using this one because it's widely adopted and consistently maintained within the community. Feel free to branch out and explore others after this demo if you're interested!_
 
   ### Packaging for different environments
 
@@ -30,6 +35,11 @@ main-content: |
   1. `npm install electron-packager --save-dev`
 
   Since we run this command with `--save-dev`, it will be installed for this directory _and_ added to the `package.json` file, the important file that guides Node and `npm` packages for the life of the project.
+
+  ### Getting Help
+  
+  If you have any issues and need help, we've created a repository for you! If you have any questions throughout this course, go here to open an issue and ask a question: [On Demand Electron App Repo](https://github.com/githubschool/on-demand-electron-app).
+
 show-me-how:
 tell-me-why:
 

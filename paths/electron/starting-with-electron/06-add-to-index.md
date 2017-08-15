@@ -15,6 +15,8 @@ main-content: |
 
   On Codepen, you can see there are three main sections of code; `html`, `css`, and `js`. These will map out to be our `src/index.html`, `src/style.css`, and `src/script.js`.
 
+  _Note: This Codepen works for our demo, but feel free to use any Codepen that you like if you want to try an extension exercise on your own! You'll need to be careful of any that use dependencies, though. In fact, we re-wrote this exercise to use vanilla JS instead of using jQuery for stability and less steps._
+  
   ![gif of following the directions below](../../images/gifs/electron/electron1-add-index.gif)
 
   1. Copy the code from the `html` tab on Codepen into the `src/index.html` file locally. Paste the code so it replaces the existing text ("Well hey there!!!") between `<body>` and `</body>`.
