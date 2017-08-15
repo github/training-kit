@@ -43,18 +43,17 @@ main-content: |
   1. Add all of the image files to the `Icons` directory.
   1. Replace the previous build script in your `package.json` to account for builds with different icons with the scripts below. In the example below, the app name is `electron-app`, and the icon name is `unicorn`. You can change that to match your own app and icon name.
 
-      ```json
-      "build-darwin"  : "electron-packager . electron-app --platform=darwin --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
-      "build-mas"     : "electron-packager . electron-app --platform=mas --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
-      "build-linux"   : "electron-packager . electron-app --platform=linux --icon Icons/unicorn.png --overwrite --ignore=node_modules/electron-*",
-      "build-win32"   : "electron-packager . electron-app --platform=win32 --icon Icons/unicorn.ico --overwrite --ignore=node_modules/electron-* ",
-      "build"         : "npm run build-darwin && npm run build-mas && npm run build-linux && npm run build-win32"
-      ```
+          "build-darwin"  : "electron-packager . electron-app --platform=darwin --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
+          "build-mas"     : "electron-packager . electron-app --platform=mas --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
+          "build-linux"   : "electron-packager . electron-app --platform=linux --icon Icons/unicorn.png --overwrite --ignore=node_modules/electron-*",
+          "build-win32"   : "electron-packager . electron-app --platform=win32 --icon Icons/unicorn.ico --overwrite --ignore=node_modules/electron-* ",
+          "build"         : "npm run build-darwin && npm run build-mas && npm run build-linux && npm run build-win32"
+
   1. Rebuild: `npm run build`
 
   To seen an example file of this (and the next step with `--asar`), [take a peek at our example repository](https://github.com/githubteacher/electron-app/commit/df37a7e3229ec9f5aecda743bf4e1b25ba630a13#diff-b9cfc7f2cdf78a7f4b91a753d10865a2).
 
-  
+
 show-me-how:
 tell-me-why:
 
