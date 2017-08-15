@@ -35,6 +35,11 @@ main-content: |
   1. `npm install electron-packager --save-dev`
 
   Since we run this command with `--save-dev`, it will be installed for this directory _and_ added to the `package.json` file, the important file that guides Node and `npm` packages for the life of the project.
+
+  ### Getting Help
+  
+  If you have any issues and need help, we've created a repository for you! If you have any questions throughout this course, go here to open an issue and ask a question: [On Demand Electron App Repo](https://github.com/githubschool/on-demand-electron-app).
+
 show-me-how:
 tell-me-why:
 
