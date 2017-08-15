@@ -13,7 +13,7 @@ main-content: |
 
   Just like with the `src/index.html` file, now we will copy the contents for the CSS. [Here's an example of a commit doing just that](https://github.com/githubteacher/electron-app/commit/70832b7d1c6cac01ed4e2b2dbfe10e1fad8b398d).
 
-  ![gif of following the directions below](<% SITEURL %>/<% BASEURL %>/images/gifs/electron/electron1-add-css.gif)
+  ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron1-add-css.gif)
 
   1. Copy the contents of the `css` tab on Codepen into the `src/style.css` file.
   1. Spin up the app with `electron-forge start` and see how things look different. There should be style now, but you should still be unable to play the game.

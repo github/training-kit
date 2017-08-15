@@ -30,7 +30,7 @@ main-content: |
 
   While you are in the command line in the directory of your electron app, install the node package `electron-packager` and [save it to your development dependencies in the `package.json` file](https://github.com/githubteacher/electron-app/blob/master/package.json#L60).
 
-  ![gif of following the directions below](<% SITEURL %>/<% BASEURL %>/images/gifs/electron/electron2-packaging-apps.gif)
+  ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron2-packaging-apps.gif)
 
   1. `npm install electron-packager --save-dev`
 

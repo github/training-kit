@@ -16,7 +16,7 @@ main-content: |
 
   Let's create our first commit, and push our project to :octocat:.
 
-  ![gif of following the directions below](<% SITEURL %>/<% BASEURL %>/images/gifs/electron/electron1-push-to-github.gif)
+  ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron1-push-to-github.gif)
 
   ### Create your first commit
   1. Type `git status`, and see that all of your files are currently untracked in the working tree.

@@ -36,7 +36,7 @@ main-content: |
 
   ### Including the Image in the Build
 
-  ![gif of following the directions below](<% SITEURL %>/<% BASEURL %>/images/gifs/electron/electron2-icon.gif)
+  ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron2-icon.gif)
 
   1. From your project's root directory in the CLI, type `mkdir Icons` to create a new Icons directory.
   1. Generate an icon file for Windows (.ico), macOS (.icns), and Linux (.png).
