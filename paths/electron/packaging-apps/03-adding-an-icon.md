@@ -37,10 +37,10 @@ main-content: |
   To convert the image to the appropriate format, we recommend [this tool](https://iconverticons.com/online/).
 
   ### Including the Image in the Build
-  1. From your project's root directory in the CLI, type 'mkdir Icon' to create a new Icon directory.
+  1. From your project's root directory in the CLI, type `mkdir Icons` to create a new Icons directory.
   1. Generate an icon file for Windows (.ico), macOS (.icns), and Linux (.png).
-  1. Add all of the image files to the `Icon` directory.
-  1. Create a new script specifically for each type of icon, so that your build script section now looks like this. If you didn't name your image "unicorn", make sure to replace that for your own process.
+  1. Add all of the image files to the `Icons` directory.
+  1. Replace the previous build script in your package.json to account for builds with different icons with the scripts below. If you didn't name your image "unicorn", make sure to replace that for your own process.
 
                   "build-darwin": "electron-packager . aug-11 --platform=darwin --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
                   "build-mas": "electron-packager . aug-11 --platform=mas --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
