@@ -22,7 +22,7 @@ main-content: |
   ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron1-create-files.gif)
 
   1. Create a new file in the `src` directory named `style.css`.
-  1. Create a new file in the `src` directory named `script.js`.
+  1. Create a new file in the `src` directory named `renderer.js`.
 
   It's OK that these are empty now, we'll add more later. Now, link those files to the main `index.html` by adding the following lines of code to `index.html`:
 
@@ -31,7 +31,7 @@ main-content: |
           <link rel=stylesheet type="text/css" href="./style.css">
   1. Add the following code on a new line directly above `</body>`.
 
-          <script type="text/javascript" src="script.js"></script>
+          <script type="text/javascript" src="renderer.js"></script>
 
 
 show-me-how:
