@@ -11,7 +11,11 @@ sidebar:
   nav: "electron-getting-starting"
 main-content: |
 
-  To begin, we will set up a base electron app using a boilerplate called [electron-forge](https://electronforge.io/). To do that, we need to go through a few steps.
+  To begin, we will set up a base electron app using a boilerplate called [electron-forge](https://electronforge.io/).
+
+  _Note: Electron Forge isn't the only way to get started with Electron! There are other resources, like [Electron Quick Start](https://github.com/electron/electron-quick-start)._
+
+  To get started, we need to go through a few steps.
 
   1. Find the terminal and create a directory for the project: `npm install -g electron-forge`
   1. Initialize a new project: `electron-forge init electron-app`
@@ -37,5 +41,5 @@ tell-me-why: |
   Node.js is the server side portion of full stack Javascript. Many websites are powered with Node, and it powers things on electron as well. [Read the docs here for more information](https://nodejs.org/en/docs/).
 
   #### What is `npm`?
-  `npm`, short for "Node Package Manager", is exactly as it is named: a manager for packages in Node. Dependencies and their versions are managed in apps through the `package.json` file, and downloaded through `npm`. 
+  `npm`, short for "Node Package Manager", is exactly as it is named: a manager for packages in Node. Dependencies and their versions are managed in apps through the `package.json` file, and downloaded through `npm`.
 ---
