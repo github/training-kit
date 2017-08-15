@@ -16,7 +16,7 @@ main-content: |
   ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron1-add-css.gif)
 
   1. Copy the contents of the `css` tab on Codepen into the `src/style.css` file.
-  1. Spin up the app with `electron-forge start` and see how things look different. There should be style now, but you should still be unable to play the game.
+  1. Spin up the app with `npm start` and see how things look different. There should be style now, but you should still be unable to play the game.
   1. Quit the app by pressing Ctrl + C in your Command Line Interface.
   1. Save and commit your changes.
 

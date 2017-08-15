@@ -13,7 +13,7 @@ main-content: |
 
   For our app, we are going to build a [memory game](https://en.wikipedia.org/wiki/Concentration_(game)). You can find the code for the web application [here on Codepen](https://codepen.io/githubteacher/pen/brRvVz).
 
-  On Codepen, you can see there are three main sections of code; `html`, `css`, and `js`. These will map out to be our `src/index.html`, `src/style.css`, and `src/script.js`.
+  On Codepen, you can see there are three main sections of code; `html`, `css`, and `js`. These will map out to be our `src/index.html`, `src/style.css`, and `src/renderer.js`.
 
   _Note: This Codepen works for our demo, but feel free to use any Codepen that you like if you want to try an extension exercise on your own! You'll need to be careful of any that use dependencies, though. In fact, we re-wrote this exercise to use vanilla JS instead of using jQuery for stability and less steps._
   
@@ -21,7 +21,7 @@ main-content: |
 
   1. Copy the code from the `html` tab on Codepen into the `src/index.html` file locally. Paste the code so it replaces the existing text ("Well hey there!!!") between `<body>` and `</body>`.
   1. Save and commit your changes.
-  1. Start the app again by typing `electron-forge start`. At this point, you should only see text without graphics or functionality.
+  1. Start the app again by typing `npm start`. At this point, you should only see text without graphics or functionality.
   1. Quit the app by pressing `Ctrl` + `C` in your Command Line Interface.
 
   See [this commit](https://github.com/githubteacher/electron-app/commit/76425084bc5419e8c291a41dae62bb1f0208d581) as an example of what to take away and what to add in this step.
