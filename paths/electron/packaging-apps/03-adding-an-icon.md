@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Add an Icon
 permalink: /electron/package-your-app/add-an-icon/
-next-page: /electron/package-your-app/lock-source-code/
+next-page: /electron/package-your-app/testing/
 facilitator: false
 sidebar:
   nav: "electron-package-your-app"

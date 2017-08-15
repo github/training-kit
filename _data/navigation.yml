@@ -220,8 +220,6 @@ electron-package-your-app:
     url: /electron/package-your-app/use-electron-packager/
   - title: "Add an icon"
     url: /electron/package-your-app/add-an-icon/
-  - title: "Lock Source Code"
-    url: /electron/package-your-app/lock-source-code/
   - title: "Test Your App"
     url: /electron/package-your-app/test-your-app/
   - title: "Celebrate"
