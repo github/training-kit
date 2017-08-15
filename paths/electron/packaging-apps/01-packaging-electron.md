@@ -28,7 +28,7 @@ main-content: |
 
   ### Downloading `electron-packager`
 
-  While you are in the command line in the directory of your electron app, install the node package `electron-packager` and [save it to your development dependencies in the `package.json` file](https://github.com/githubteacher/electron-app/blob/master/package.json#L60).
+  While you are in the command line in the directory of your electron app, install the node package `electron-packager` and [save it to your development dependencies in the `package.json` file](https://github.com/githubschool/on-demand-electron-app/blob/master/package.json#L60).
 
   ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron2-packaging.gif)
 
@@ -37,7 +37,7 @@ main-content: |
   Since we run this command with `--save-dev`, it will be installed for this directory _and_ added to the `package.json` file, the important file that guides Node and `npm` packages for the life of the project.
 
   ### Getting Help
-  
+
   If you have any issues and need help, we've created a repository for you! If you have any questions throughout this course, go here to open an issue and ask a question: [On Demand Electron App Repo](https://github.com/githubschool/on-demand-electron-app).
 
 show-me-how:

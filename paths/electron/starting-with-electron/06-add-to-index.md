@@ -16,7 +16,7 @@ main-content: |
   On Codepen, you can see there are three main sections of code; `html`, `css`, and `js`. These will map out to be our `src/index.html`, `src/style.css`, and `src/renderer.js`.
 
   _Note: This Codepen works for our demo, but feel free to use any Codepen that you like if you want to try an extension exercise on your own! You'll need to be careful of any that use dependencies, though. In fact, we re-wrote this exercise to use vanilla JS instead of using jQuery for stability and less steps._
-  
+
   ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron1-add-index.gif)
 
   1. Copy the code from the `html` tab on Codepen into the `src/index.html` file locally. Paste the code so it replaces the existing text ("Well hey there!!!") between `<body>` and `</body>`.
@@ -24,8 +24,8 @@ main-content: |
   1. Start the app again by typing `npm start`. At this point, you should only see text without graphics or functionality.
   1. Quit the app by pressing `Ctrl` + `C` in your Command Line Interface.
 
-  See [this commit](https://github.com/githubteacher/electron-app/commit/76425084bc5419e8c291a41dae62bb1f0208d581) as an example of what to take away and what to add in this step.
-  
+  See [this commit](https://github.com/githubschool/on-demand-electron-app/commit/ef39ab6714fe755f646f2b855bdc83b4830b0921) as an example of what to take away and what to add in this step.
+
   > If you don't understand everything in the `.html` file, that's okay. Remember the resources listed [at the beginning of the course](./#software-skills), and know you can always go back and learn more!
 
 show-me-how:

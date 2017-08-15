@@ -11,7 +11,7 @@ sidebar:
   nav: "create-an-app-in-electron"
 main-content: |
 
-  Finally, let's add the fun part: the Javascript! [Click here to see what this commit should look like](https://github.com/githubteacher/electron-app/commit/e92517d213a906dd19523e5bd076011fe8878487).
+  Finally, let's add the fun part: the Javascript! [Click here to see what this commit should look like](https://github.com/githubschool/on-demand-electron-app/commit/1d6e34a7c5a44a37f5c952950a2abfdf3b423f22).
 
   ![gif_of_following_the_directions_below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron1-add-javascript.gif)
 

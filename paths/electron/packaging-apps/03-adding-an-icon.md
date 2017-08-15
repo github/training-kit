@@ -51,7 +51,7 @@ main-content: |
 
   1. Rebuild: `npm run build`
 
-  To see an example file of this (and the next step with `--asar`), [take a peek at our example repository](https://github.com/githubschool/on-demand-electron-app/blob/master/package.json).
+  To see an example file of this, [take a peek at our example repository](https://github.com/githubschool/on-demand-electron-app/blob/master/package.json#L12-L16).
 
 
 show-me-how:
