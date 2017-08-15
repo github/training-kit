@@ -17,7 +17,7 @@ tell-me-why: |
 
   When you merge your branch, you are taking the content and history from the branch you created and adding it to the content and history of the `master` branch.
 
-  ![Merge visual](/on-demand/images/merge-visual.jpg){: .align-center}
+  ![Visual of a simple merge before and after with 2 branches](/on-demand/images/merge-visual.jpg){: .align-center}
 
   ### Tips for Merging with Teams
 
