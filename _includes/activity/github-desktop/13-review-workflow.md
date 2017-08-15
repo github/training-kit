@@ -1,7 +1,7 @@
 
 Now that you are a collaborator, let's use the local workflow we just learned to make changes to this repository:
 
-1. Start from the Code tab of the [class repository on GitHub.com](https://github.com/githubschool/on-demand-github-pages/).
+1. Start from the Code tab of the [class repository on GitHub.com](https://github.com/githubschool{{site.baseurl}}-github-pages/).
 1. Click on `Clone or Download`.
 1. Click `Open in Desktop`. This will open GitHub Desktop.
 1. Confirm the `Local Path` as the place you'd like to store the repository locally.

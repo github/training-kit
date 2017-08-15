@@ -13,6 +13,8 @@ main:
     url: /windows/
   - title: "Introduction to GraphQL"
     url: /graphql/
+  - title: "Electron Suite"
+    url: /electron/
   - title: "Git & GitHub Training Path"
     url: /path/
   - title: "GitHub Training Community"
@@ -188,3 +190,49 @@ github-graphql:
     url: /graphql/another-query
   - title: "Create a Mutation"
     url: /graphql/mutation
+
+
+create-an-app-in-electron:
+  - title: "Get Started with Electron"
+    url: /electron/create-an-app/
+  - title: "Create your app"
+    url: /electron/create-an-app/create-your-app/
+  - title: "Push your project to GitHub"
+    url: /electron/create-an-app/push-your-project-to-github/
+  - title: "Create your App's Files"
+    url: /electron/create-an-app/create-your-apps-files/
+  - title: "Run Your First Electron App"
+    url: /electron/create-an-app/run-your-first-electron-app/
+  - title: "Add your index.html"
+    url: /electron/create-an-app/add-your-index-html/
+  - title: "Add CSS"
+    url: /electron/create-an-app/add-css/
+  - title: "Add JavaScript"
+    url: /electron/create-an-app/add-javascript/
+  - title: "Celebrate"
+    url: /electron/create-an-app/celebrate/
+
+
+electron-package-your-app:
+  - title: "Package Your App for Downloads"
+    url: /electron/package-your-app/
+  - title: "Use electron-packager"
+    url: /electron/package-your-app/use-electron-packager/
+  - title: "Add an icon"
+    url: /electron/package-your-app/add-an-icon/
+  - title: "Test Your App"
+    url: /electron/package-your-app/test-your-app/
+  - title: "Celebrate"
+    url: /electron/package-your-app/celebrate/
+
+
+
+electron-share-your-app:
+  - title: "Share Your App"
+    url: /electron/share-your-app/
+  - title: "List on App Stores"
+    url: /electron/share-your-app/list-on-app-stores/
+  - title: "Share on Websites"
+    url: /electron/share-your-app/share-on-websites/
+  - title: "Celebrate"
+    url: /electron/share-your-app/celebrate/

@@ -29,5 +29,5 @@ tell-me-why: |
   4. Collaborate, and make more commits
   5. Merge the Pull Request
 
-  You've followed this workflow twice so far; once in the [Introduction to GitHub](https://services.github.com/on-demand/intro-to-github/) course, and once in this course.
+  You've followed this workflow twice so far; once in the [Introduction to GitHub](https://services.github.com{{site.baseurl}}/intro-to-github/) course, and once in this course.
 ---

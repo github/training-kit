@@ -43,7 +43,7 @@ main-content: |
   ## New UI Addition
   When trying to get out of a pickle, the best tool for the job is typically dependent on if you `push`ed your commits to your remote (or not). Look :eyes: for these drop downs throughout the course:
 
-  ![](/on-demand/images/push-dropdowns.png){: .align-center}
+  ![]({{site.baseurl}}/images/push-dropdowns.png){: .align-center}
 
    They will help you find the right instructions for each situation.
 

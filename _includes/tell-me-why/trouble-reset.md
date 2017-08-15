@@ -4,13 +4,13 @@
 
  `Reset` allows us to rewind our branch to look like it did at a previous point in history.
 
- ![](/on-demand/images/reset-visual.jpg){: .align-center}
+ ![]({{site.baseurl}}/images/reset-visual.jpg){: .align-center}
 
 ### How Reset Works
 
  When you use `git reset` you are overwriting one or more of the three trees git uses to manage your work.
 
- ![](/on-demand/images/two-stage-commit-a.jpg){: .align-center}
+ ![]({{site.baseurl}}/images/two-stage-commit-a.jpg){: .align-center}
 
  The trees that are overwritten are determined by the mode of reset you use.
 
@@ -18,7 +18,7 @@
  - `--mixed`: The history and the staging area are overwritten, but the working directory is untouched. This means your changes will be waiting in the working directory. **This is the default mode of reset**
  - `--hard`: All three trees (history, staging, and working) are re-written to look like the repository at the selected point in time. **`--hard` can be destructive!** Modified files that have not been committed will be overwritten by a hard reset.
 
- ![](/on-demand/images/reset-modes.jpg){: .align-center}
+ ![]({{site.baseurl}}/images/reset-modes.jpg){: .align-center}
 
 ### Are They Really Gone?
 
