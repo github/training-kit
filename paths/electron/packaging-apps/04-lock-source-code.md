@@ -13,6 +13,8 @@ main-content: |
 
   When people download the application, you may or may not want them to have direct access to the source code. With an option in `electron-packager`, you can control this. If you're not concerned with this, you can skip this step.
 
+  ![gif of following the directions below](../../../images/gifs/electron/electron2-locksource.gif)
+
   1. In your build scripts, add the flag `--asar` after `--overwrite`:
 
       ```json

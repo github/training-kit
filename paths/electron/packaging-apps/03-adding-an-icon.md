@@ -35,6 +35,9 @@ main-content: |
   To convert the image to the appropriate format, we recommend [this tool](https://iconverticons.com/online/).
 
   ### Including the Image in the Build
+
+  ![gif of following the directions below](../../../images/gifs/electron/electron2-icon.gif)
+
   1. From your project's root directory in the CLI, type `mkdir Icons` to create a new Icons directory.
   1. Generate an icon file for Windows (.ico), macOS (.icns), and Linux (.png).
   1. Add all of the image files to the `Icons` directory.

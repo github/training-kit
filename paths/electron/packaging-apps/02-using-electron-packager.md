@@ -13,6 +13,9 @@ main-content: |
 
   Now that we have installed `electron-packager`, we're ready to use it. We could type out the entire command every time, but it's best practice to add a build script to the `package.json` file. This means that every time we run the default build script, our specific list of commands will be run.
 
+  ![gif of following the directions below](../../../images/gifs/electron/electron2-packaging.gif)
+
+
   1. In the `package.json` file, add the following script in "scripts" of package.json.
 
           "build": "electron-packager . electron-app --all --overwrite --ignore=node_modules/electron-*"

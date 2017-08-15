@@ -25,6 +25,8 @@ main-content: |
 
   While you are in the command line in the directory of your electron app, install the node package `electron-packager` and save it to your development dependencies in the `package.json` file
 
+  ![gif of following the directions below](../../images/gifs/electron/electron2-packaging-apps.gif)
+
   1. `npm install electron-packager --save-dev`
 
   Since we run this command with `--save-dev`, it will be installed for this directory _and_ added to the `package.json` file, the important file that guides Node and `npm` packages for the life of the project.
