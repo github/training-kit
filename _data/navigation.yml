@@ -191,48 +191,50 @@ github-graphql:
   - title: "Create a Mutation"
     url: /graphql/mutation
 
-electron-getting-started:
-  - title: "Getting Started"
-    url: /electron/starting-with-electron/
-  - title: "Electron Boilerplate"
-    url: /electron/starting-with-electron/boilerplate
-  - title: "Creating a Git Repository"
-    url: /electron/starting-with-electron/init-git-repository
-  - title: "Creating App Files"
-    url: /electron/starting-with-electron/create-app-files
-  - title: "Running Electron Apps"
-    url: /electron/starting-with-electron/running-the-app
-  - title: "Add to index.html"
-    url: /electron/starting-with-electron/add-to-html
+
+create-an-app-in-electron:
+  - title: "Get Started with Electron"
+    url: /electron/create-an-app/
+  - title: "Create your app"
+    url: /electron/create-an-app/create-your-app/
+  - title: "Push your project to GitHub"
+    url: /electron/create-an-app/push-your-project-to-github/
+  - title: "Create your App's Files"
+    url: /electron/create-an-app/create-your-apps-files/
+  - title: "Run Your First Electron App"
+    url: /electron/create-an-app/run-your-first-electron-app/
+  - title: "Add your index.html"
+    url: /electron/create-an-app/add-your-index-html/
   - title: "Add CSS"
-    url: /electron/starting-with-electron/add-to-css
+    url: /electron/create-an-app/add-css/
   - title: "Add JavaScript"
-    url: /electron/starting-with-electron/add-to-javascript
+    url: /electron/create-an-app/add-javascript/
   - title: "Celebrate"
-    url: /electron/starting-with-electron/celebrate
+    url: /electron/create-an-app/celebrate/
 
-electron-packaging-apps:
-  - title: "Packaging Apps"
-    url: /electron/packaging-apps/
-  - title: "Using electron-packager"
-    url: /electron/packaging-apps/using-electron-packager
-  - title: "Adding an icon"
-    url: /electron/packaging-apps/adding-an-icon
+
+electron-package-your-app:
+  - title: "Package Your App for Downloads"
+    url: /electron/package-your-app/
+  - title: "Use electron-packager"
+    url: /electron/package-your-app/use-electron-packager/
+  - title: "Add an icon"
+    url: /electron/package-your-app/add-an-icon/
   - title: "Lock Source Code"
-    url: /electron/packaging-apps/lock-source-code
-  - title: "Testing"
-    url: /electron/packaging-apps/testing
+    url: /electron/package-your-app/lock-source-code/
+  - title: "Test Your App"
+    url: /electron/package-your-app/test-your-app/
   - title: "Celebrate"
-    url: /electron/packaging-apps/celebrate
+    url: /electron/package-your-app/celebrate/
 
 
 
-electron-sharing-apps:
-  - title: "Sharing Apps"
-    url: /electron/distributing-apps/
-  - title: "Native App Discovery"
-    url: /electron/distributing-apps/native-app-discovery
-  - title: "Sharing on Websites"
-    url: /electron/distributing-apps/sharing-on-websites
+electron-share-your-app:
+  - title: "Share Your App"
+    url: /electron/share-your-app/
+  - title: "List on App Stores"
+    url: /electron/share-your-app/list-on-app-stores/
+  - title: "Share on Websites"
+    url: /electron/share-your-app/share-on-websites/
   - title: "Celebrate"
-    url: /electron/distributing-apps/celebrate
+    url: /electron/share-your-app/celebrate/

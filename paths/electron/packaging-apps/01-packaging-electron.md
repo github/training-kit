@@ -3,32 +3,34 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Packaging Apps
-permalink: /electron/packaging-apps/
-next-page: /electron/packaging-apps/using-electron-packager
+title: Package Your App for Downloads
+permalink: /electron/package-your-app/
+next-page: /electron/package-your-app/use-electron-packager/
 facilitator: false
 sidebar:
-  nav: "electron-packaging-apps"
+  nav: "electron-package-your-app"
 main-content: |
 
 
   ## Packaging Electron Applications
 
-  We are going to use a node package named [`electron-packager`](https://github.com/electron-userland/electron-packager) to package the Electron app. This means that others will be able to download and use the app natively, regardless of if they're running macOS, Windows, or Linux.
+  We are going to use a node package named [`electron-packager`](https://github.com/electron-userland/electron-packager) to package the Electron app. This means that others will be able to download and use the app natively, whether they're running macOS, Windows, or Linux.
 
-  _Note: There are absolutely other tools to package Electron apps, but we're using this one because it's widely adopted and consistently maintained within the community. Feel free to branch out and explore others after this demo if you're interested!_ 
+  _Note: There are absolutely other tools to package Electron apps, but we're using this one because it's widely adopted and consistently maintained within the community. Feel free to branch out and explore others after this demo if you're interested!_
 
   ### Packaging for different environments
 
-  macOS, Windows, and Linux all have different needs for apps to work well. We will work through the functional needs, but it's important to keep in mind that there are other needs. Packaging can be done for each operating system, but the user interface isn't automatically made to look native in the process.
+  macOS, Windows, and Linux all have different technical needs for apps to work well. We will work through those technical needs, but it's important to keep in mind that there's much more to building apps for multiple operating systems. Packaging can be done for each operating system, but the user interface isn't automatically made to look native in the process. It's good practice to be mindful of a user's experience with the interface of their native OS. As you begin to ramp up on desktop app development, you should consider designing interfaces that fit into the user's mental model of their OS.
 
   ### Why `electron-packager`?
 
-  Many factors make the process of packaging electron applications somewhat complicated. It is a different process based on your operating system and the operating system you're trying to go to. Right now, [`electron-packager`](https://github.com/electron-userland/electron-packager) is the community's most popular choice to solve these problems.
+  Many factors make the process of packaging Electron applications somewhat complicated. It is a different process based on your operating system and the operating system you're trying to package for. Right now, [`electron-packager`](https://github.com/electron-userland/electron-packager) is the community's most popular choice to solve these problems.
 
   ### Downloading `electron-packager`
 
   While you are in the command line in the directory of your electron app, install the node package `electron-packager` and save it to your development dependencies in the `package.json` file
+
+  ![gif of following the directions below](../../images/gifs/electron/electron2-packaging-apps.gif)
 
   1. `npm install electron-packager --save-dev`
 

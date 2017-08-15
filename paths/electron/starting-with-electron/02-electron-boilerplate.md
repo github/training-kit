@@ -4,11 +4,11 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Create your app
-permalink: /electron/starting-with-electron/boilerplate
-next-page: /electron/starting-with-electron/init-git-repository
+permalink: /electron/create-an-app/create-your-app/
+next-page: /electron/create-an-app/push-your-project-to-github/
 facilitator: false
 sidebar:
-  nav: "electron-getting-starting"
+  nav: "create-an-app-in-electron"
 main-content: |
 
   To begin, we will set up a base electron app using a boilerplate called [electron-forge](https://electronforge.io/).
@@ -17,7 +17,10 @@ main-content: |
 
   To get started, we need to go through a few steps.
 
-  1. Find the terminal and create a directory for the project: `npm install -g electron-forge`
+  ![gif of following the directions below](../../images/gifs/electron/electron1-createapp.gif)
+
+  1. Find the terminal and navigate to your desired project location, for example: `cd ~/` will navigate to your home directory.
+  1. Install electron-forge globally: `npm install -g electron-forge`
   1. Initialize a new project: `electron-forge init electron-app`
   1. CD into that app's directory: `cd electron-app`
 
@@ -38,7 +41,7 @@ tell-me-why: |
   - `src/index.js` - The default script called by `package.json` to create windows and handle system events. Runs the app's main process.
 
   #### What is Node?
-  Node.js is the server side portion of full stack Javascript. Many websites are powered with Node, and it powers things on electron as well. [Read the docs here for more information](https://nodejs.org/en/docs/).
+  Node.js is the server side portion of full stack Javascript. Many websites are powered with Node, and it powers things on Electron as well. [Node.js documentation](https://nodejs.org/en/docs/) is full of information that explain its functionality and purpose.
 
   #### What is `npm`?
   `npm`, short for "Node Package Manager", is exactly as it is named: a manager for packages in Node. Dependencies and their versions are managed in apps through the `package.json` file, and downloaded through `npm`.
