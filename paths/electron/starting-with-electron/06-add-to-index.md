@@ -22,6 +22,8 @@ main-content: |
   1. Start the app again by typing `electron-forge start`. At this point, you should only see text without graphics or functionality.
   1. Quit the app by pressing `Ctrl` + `C` in your Command Line Interface.
 
+  See [this commit](https://github.com/githubteacher/electron-app/commit/76425084bc5419e8c291a41dae62bb1f0208d581) as an example of what to take away and what to add in this step.
+  
   > If you don't understand everything in the `.html` file, that's okay. Remember the resources listed [at the beginning of the course](./#software-skills), and know you can always go back and learn more!
 
 show-me-how:
