@@ -14,7 +14,7 @@ main-content: |
 
   This was just the tip of the iceberg when it comes to using Electron.
 
-  Next, [learn how to package the apps so they can be distributed to different operating systems](../package-your-app/) and explore the [electron community](https://electron.atom.io/community/).
+  Next, [learn how to package the apps so they can be distributed to different operating systems](../../package-your-app/) and explore the [electron community](https://electron.atom.io/community/).
 
 
 show-me-how:
