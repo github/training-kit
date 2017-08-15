@@ -38,7 +38,7 @@ header:
             {{ my_include | markdownify }}
           {% endfor %}
         {% else %}
-        {{ page.main-content | markdownify }}
+          {{ page.main-content | replace: '<% BASEURL %>', site.baseurl | replace: '<% SITEURL %>', site.url | markdownify }}
         {% endif %}
 
         {% if page.didnt-push %}

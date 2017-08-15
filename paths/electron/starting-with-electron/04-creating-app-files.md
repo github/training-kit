@@ -19,7 +19,7 @@ main-content: |
 
   We're going to be using other CSS and Javascript for our project, so let's add those files now.
 
-  ![gif of following the directions below](../../images/gifs/electron/electron1-create-files.gif)
+  ![gif of following the directions below](<% SITEURL %>/<% BASEURL %>/images/gifs/electron/electron1-create-files.gif)
 
   1. Create a new file in the `src` directory named `style.css`.
   1. Create a new file in the `src` directory named `script.js`.

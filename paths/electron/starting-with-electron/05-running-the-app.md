@@ -13,7 +13,7 @@ main-content: |
 
   Now, let's spin up the application locally.
 
-  ![gif of following the directions below](../../images/gifs/electron/electron1-run-app.gif)
+  ![gif of following the directions below](<% SITEURL %>/<% BASEURL %>/images/gifs/electron/electron1-run-app.gif)
 
   1. Type `electron-forge start` and press enter.
 
