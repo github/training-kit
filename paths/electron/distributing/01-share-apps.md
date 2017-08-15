@@ -3,12 +3,12 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Sharing Electron Apps
-permalink: /electron/distributing-apps/
-next-page: /electron/distributing-apps/native-app-discovery
+title: Share Your App
+permalink: /electron/share-your-app/
+next-page: /electron/share-your-app/list-on-app-stores/
 facilitator: false
 sidebar:
-  nav: "electron-sharing-apps"
+  nav: "electron-share-your-app"
 main-content: |
 
   So you have a packaged app, but now what? The next few pages will walk through how to make apps easy to find and download. The Electron team keeps the [source of truth](https://github.com/electron/electron/blob/master/docs/tutorial/application-distribution.md) for application distribution.

@@ -11,7 +11,7 @@ sidebar:
 main-content: |
   ## Hooray! :tada:
 
-  Next, you're ready to learn learn [how to share packaged applications](../distributing-apps/) with others.
+  Next, you're ready to learn learn [how to share packaged applications](../share-your-app/) with others.
 
 show-me-how:
 tell-me-why:

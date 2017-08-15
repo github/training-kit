@@ -3,12 +3,12 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Native App Discovery
-permalink: /electron/distributing-apps/native-app-discovery
-next-page: /electron/distributing-apps/sharing-on-websites
+title: List on App Stores
+permalink: /electron/share-your-app/list-on-app-stores/
+next-page: /electron/share-your-app/share-on-websites/
 facilitator: false
 sidebar:
-  nav: "electron-sharing-apps"
+  nav: "electron-share-your-app"
 main-content: |
 
   Here are some resources for sharing the apps in their native stores. However, instead of walking through this process with the app we built earlier, we'll show you these resources and move on to a how-to of getting the app up and ready for download from a website.

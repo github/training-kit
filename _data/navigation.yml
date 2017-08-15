@@ -229,12 +229,12 @@ electron-package-your-app:
 
 
 
-electron-sharing-apps:
-  - title: "Sharing Apps"
-    url: /electron/distributing-apps/
-  - title: "Native App Discovery"
-    url: /electron/distributing-apps/native-app-discovery
-  - title: "Sharing on Websites"
-    url: /electron/distributing-apps/sharing-on-websites
+electron-share-your-app:
+  - title: "Share Your App"
+    url: /electron/share-your-app/
+  - title: "List on App Stores"
+    url: /electron/share-your-app/list-on-app-stores/
+  - title: "Share on Websites"
+    url: /electron/share-your-app/share-on-websites/
   - title: "Celebrate"
-    url: /electron/distributing-apps/celebrate
+    url: /electron/share-your-app/celebrate/

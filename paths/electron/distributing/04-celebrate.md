@@ -4,10 +4,10 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Celebrate
-permalink: /electron/distributing-apps/celebrate
+permalink: /electron/share-your-app/celebrate/
 facilitator: false
 sidebar:
-  nav: "electron-sharing-apps"
+  nav: "electron-share-your-app"
 main-content: |
 
 
