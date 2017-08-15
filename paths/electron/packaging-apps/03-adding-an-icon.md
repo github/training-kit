@@ -40,14 +40,15 @@ main-content: |
   1. From your project's root directory in the CLI, type `mkdir Icons` to create a new Icons directory.
   1. Generate an icon file for Windows (.ico), macOS (.icns), and Linux (.png).
   1. Add all of the image files to the `Icons` directory.
-  1. Replace the previous build script in your package.json to account for builds with different icons with the scripts below. If you didn't name your image "unicorn", make sure to replace that for your own process.
+  1. Replace the previous build script in your `package.json` to account for builds with different icons with the scripts below. In the example below, the app name is `my-app`, and the icon name is `unicorn`. You can change that to match your own app and icon name.
 
-                  "build-darwin": "electron-packager . aug-11 --platform=darwin --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
-                  "build-mas": "electron-packager . aug-11 --platform=mas --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
-                  "build-linux": "electron-packager . aug-11 --platform=linux --icon Icons/unicorn.png --overwrite --ignore=node_modules/electron-*",
-                  "build-win32": "electron-packager . aug-11 --platform=win32 --icon Icons/unicorn.ico --overwrite --ignore=node_modules/electron-* ",
-                  "build": "npm run build-darwin && npm build-mas && npm build-linux && npm-build-win32"
-
+      ```json
+      "build-darwin"  : "electron-packager . my-app --platform=darwin --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
+      "build-mas"     : "electron-packager . my-app --platform=mas --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
+      "build-linux"   : "electron-packager . my-app --platform=linux --icon Icons/unicorn.png --overwrite --ignore=node_modules/electron-*",
+      "build-win32"   : "electron-packager . my-app --platform=win32 --icon Icons/unicorn.ico --overwrite --ignore=node_modules/electron-* ",
+      "build"         : "npm run build-darwin && npm build-mas && npm build-linux && npm-build-win32"
+      ```
   1. Rebuild: `npm run build`
 
 show-me-how:
