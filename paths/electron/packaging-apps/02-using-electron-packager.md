@@ -15,7 +15,7 @@ main-content: |
 
   1. In the `package.json` file, add the following script in "scripts" of package.json.
 
-          "build": "electron-packager . my-app --all --overwrite --ignore=node_modules/electron-*"
+          "build": "electron-packager . electron-app --all --overwrite --ignore=node_modules/electron-*"
   1. In the `src/index.js` file, the first line is pre-populated by `electron-forge` and doesn't play nicely with `electron-packager`. Replace the first line with:
 
           const { BrowserWindow, app } = require('electron');
