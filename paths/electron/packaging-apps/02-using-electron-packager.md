@@ -18,7 +18,7 @@ main-content: |
 
   1. In the `package.json` file, add the following script in "scripts" of package.json.
 
-          "build": "electron-packager . electron-app --all --overwrite --ignore=node_modules/electron-*"
+          "build": "electron-packager . electron-app --all --overwrite"
   1. In the `src/index.js` file, the first line is pre-populated by `electron-forge` and doesn't play nicely with `electron-packager`. Replace the first line with:
 
           const { BrowserWindow, app } = require('electron');
@@ -28,7 +28,7 @@ main-content: |
 troubleshooting: |
   There are some inconsistencies between electron-packager and the most recent version of node. If the steps above didn't work for you, try using `node 6.11.2` with `npm 3.10.10`. The following steps should help you do this on macOS.
 
-  _Note: We're using nvm here instead of rbenv. If you can duplicate successful steps to adjust your node version, please do so (and good luck!)._ 
+  _Note: We're using nvm here instead of rbenv. If you can duplicate successful steps to adjust your node version, please do so (and good luck!)._
 
   **macOS**
 

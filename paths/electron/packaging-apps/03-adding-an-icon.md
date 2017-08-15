@@ -43,10 +43,10 @@ main-content: |
   1. Add all of the image files to the `Icons` directory.
   1. Replace the previous build script in your `package.json` to account for builds with different icons with the scripts below. In the example below, the app name is `electron-app`, and the icon name is `unicorn`. You can change that to match your own app and icon name.
 
-          "build-darwin"  : "electron-packager . electron-app --platform=darwin --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
-          "build-mas"     : "electron-packager . electron-app --platform=mas --icon Icons/unicorn.icns --overwrite --ignore=node_modules/electron-*",
-          "build-linux"   : "electron-packager . electron-app --platform=linux --icon Icons/unicorn.png --overwrite --ignore=node_modules/electron-*",
-          "build-win32"   : "electron-packager . electron-app --platform=win32 --icon Icons/unicorn.ico --overwrite --ignore=node_modules/electron-* ",
+          "build-darwin"  : "electron-packager . electron-app --platform=darwin --icon Icons/unicorn.icns --overwrite",
+          "build-mas"     : "electron-packager . electron-app --platform=mas --icon Icons/unicorn.icns --overwrite",
+          "build-linux"   : "electron-packager . electron-app --platform=linux --icon Icons/unicorn.png --overwrite",
+          "build-win32"   : "electron-packager . electron-app --platform=win32 --icon Icons/unicorn.ico --overwrite",
           "build"         : "npm run build-darwin && npm run build-mas && npm run build-linux && npm run build-win32"
 
   1. Rebuild: `npm run build`
