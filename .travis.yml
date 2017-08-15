@@ -1,5 +1,5 @@
 language: ruby
 rvm:
-  - 2.0
+  - 2.3.1
 script:
   - script/cibuild
