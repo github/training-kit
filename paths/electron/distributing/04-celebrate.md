@@ -10,9 +10,10 @@ sidebar:
   nav: "electron-sharing-apps"
 main-content: |
 
-  ## Congratulations!
 
-  Now you've really done it - you've created a multi-platform application, packaged it, and you're sharing it! Explore the [electron community](https://electron.atom.io/community/), and build fantastic applications.
+  ## Congratulations! :tada:
+
+  Now you've really done it - you've created a multi-platform application, packaged it, and you're sharing it! Explore the [Electron community](https://electron.atom.io/community/), and build fantastic applications.
 
 
 
