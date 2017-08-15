@@ -15,10 +15,10 @@ main-content: |
 
   ### Legal things to be aware of
 
-  Once you're sharing your app, your licenses and other legal things need to be in order. We recommend [choose the right license for your project](https://help.github.com/articles/licensing-a-repository/) early on to avoid headaches in the future.
+  Once you're sharing your app, your licenses and other legal things need to be in order. We recommend that you [choose the right license for your project](https://help.github.com/articles/licensing-a-repository/) early on to avoid headaches in the future.
 
   ### Getting Help
-  
+
   If you have any issues and need help, we've created a repository for you! If you have any questions throughout this course, go here to open an issue and ask a question: [On Demand Electron App Repo](https://github.com/githubschool/on-demand-electron-app).
 show-me-how:
 tell-me-why:

@@ -11,9 +11,9 @@ sidebar:
   nav: "electron-share-your-app"
 main-content: |
 
-  Most commonly, electron apps are shared via [GitHub Releases](https://help.github.com/articles/about-releases/). People who create and package their own applications upload the binaries to a GitHub repository where others can download them. You can see some great examples of this on the [electron app page](https://electron.atom.io/apps/). This is free, version controlled, and kept cleanly alongside your code.
+  Most commonly, Electron apps are shared via [GitHub Releases](https://help.github.com/articles/about-releases/). People who create and package their own applications upload the binaries to a GitHub repository where others can download them. You can see some great examples of this on the [Electron App page](https://electron.atom.io/apps/). This is free, version controlled, and kept cleanly alongside your code.
 
-  Once you've [created your release](https://help.github.com/articles/creating-releases/), you could then link to your downloads from your very own [GitHub pages site](../../github-cli/), or any site for that matter.
+  Once you [create your release](https://help.github.com/articles/creating-releases/), link to your downloads from your website! We recommend [GitHub Pages](../../github-cli/) if you don't have a website yet.
 
 
 show-me-how:

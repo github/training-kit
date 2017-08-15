@@ -13,7 +13,7 @@ main-content: |
 
   ## Congratulations! :tada:
 
-  Now you've really done it - you've created a multi-platform application, packaged it, and you're sharing it! Explore the [Electron community](https://electron.atom.io/community/), and build fantastic applications.
+  Now you've really done it - you've created a multi-platform application, packaged it, and you're sharing it! Explore the [Electron community](https://electron.atom.io/community/), and keep building fantastic applications.
 
 
 
