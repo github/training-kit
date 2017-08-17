@@ -20,7 +20,7 @@ main-content: |
   ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron1-createapp.gif)
 
   1. Find the terminal and navigate to your desired project location, for example: `cd ~/` will navigate to your home directory.
-  1. Install electron-forge globally: `npm install -g electron-forge`
+  1. Install electron-forge globally: `npm install electron-forge`
   1. Initialize a new project: `electron-forge init electron-app`
   1. Change into that app's directory: `cd electron-app`
 
