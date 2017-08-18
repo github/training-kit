@@ -8,15 +8,15 @@ The `git rebase` command is a powerful tool that can be used to reorder commits,
 
 Let's start with a fairly common use case for rebase:
 
-![]({{site.baseurl}}/images/git-rebase-before.png){: .align-center}
+![Image of two branches with commits, one branch points to a parent commit 4 from the most recent commit on master set up for recursive merge]({{site.baseurl}}/images/git-rebase-before.png){: .align-center}
 
  In the above image, we created a branch called `test` and did some work. The branch `test` is "based" on the first commit on `master`: `e137e`. While we were working on our `test` branch, some of our collaborators merged their work into `master`. If we want to merge in our `test` branch, git would need to **recursively** combine the history on the two branches. This recursive merge strategy would result in a new commit being made as you see below:
 
- ![]({{site.baseurl}}/images/git-merge-recursive.png){: .align-center}
+ ![Image of same two branches but with new merge commit after recursive merge ]({{site.baseurl}}/images/git-merge-recursive.png){: .align-center}
 
  Alternatively, you can use `rebase` to move the "base" of your `test` branch to the current tip of master:
 
- ![]({{site.baseurl}}/images/git-rebase-after.png){: .align-center}
+ ![Image of same branches, but if the feature branch had been rebased onto master instead of merged]({{site.baseurl}}/images/git-rebase-after.png){: .align-center}
 
  As you can see from the diagram, git picked up the commits on our original test branch `a55e`, `97d6` and `1c70` and replayed the entire branch as if we had just created it from master. However, you should also notice the commits that occurred on the `test` branch have new SHA-1 hashes because the "base" commit for the branch has changed.
 
