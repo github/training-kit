@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/08-sync-desktop.md
-show-me-how: "images/gifs/github-desktop/sync-changes.gif"
+show-me-how:
 tell-me-why: |
   ## Keeping your local repository in sync
 
