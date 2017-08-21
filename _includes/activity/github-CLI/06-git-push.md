@@ -1,4 +1,6 @@
-Now that you have made some local commits, it is time to send your changes to the remote copy of your repository on GitHub.com and create a Pull Request:
+Now that you have made some local commits, it is time to send your changes to the remote copy of your repository on GitHub.com and create a Pull Request.
+
+![gif of following the directions below](../images/gifs/github-cli/push-and-pull.gif)
 
 1. Type `git push -u origin BRANCH-NAME` to push your commits to the remote, and set a tracking branch.
 1. Enter your GitHub username and password, if prompted to do so.

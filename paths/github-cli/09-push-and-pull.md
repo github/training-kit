@@ -15,7 +15,7 @@ main-content:
 refresh:
   includes:
     - refresh/github-CLI/create-pr.md
-show-me-how: images/gifs/github-cli/push-and-pull.gif
+show-me-how:
 tell-me-why: |
   ## Pushing Changes
 
