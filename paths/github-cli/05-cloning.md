@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-CLI/02-clone-repository.md
-show-me-how: images/gifs/github-cli/git-clone.gif
+show-me-how:
 tell-me-why:
   includes:
     - tell-me-why/local-remote.md

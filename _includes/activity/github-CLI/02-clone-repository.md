@@ -1,5 +1,7 @@
 After you've created a repository on the remote, the next step is to clone it to your local environment.
 
+![gif of following the directions below](../images/gifs/github-cli/git-clone.gif)
+
 1. Navigate to the Code tab of the repository on GitHub.com.
 1. Click **Clone or download**.
 1. Copy the **Clone URL** provided.
