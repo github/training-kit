@@ -9,9 +9,15 @@ next-page: /github-cli/add-github-pages-site-showcase
 facilitator: false
 sidebar:
   nav: "github-cli"
-main-content:
-  includes:
-    - activity/github-CLI/11-sync-changes.md
+main-content: |
+
+  After you merge your Pull Request, you will need to update your local copy of the repository.
+
+  ![gif of following the directions below](../images/gifs/github-cli/keep-things-in-sync.gif)
+
+  1. In your command line, type `git checkout master`.
+  2. Type `git pull`.
+
 show-me-how:
 tell-me-why: |
   ## Keeping the Local Repository in Sync
