@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-CLI/03-branch-locally.md
-show-me-how: images/gifs/github-cli/branching.gif
+show-me-how:
 tell-me-why:
   includes:
     - tell-me-why/branching.md
