@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-CLI/00-basic-CLI-config.md
-show-me-how: images/gifs/github-cli/git-configuration.gif
+show-me-how:
 tell-me-why:
  includes:
     - tell-me-why/git-configuration.md
