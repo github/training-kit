@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-CLI/10-add-website-commits.md
-show-me-how: images/gifs/github-cli/clone-class-repo.gif
+show-me-how:
 refresh:
    includes:
       - /refresh/github-CLI/local-review.md

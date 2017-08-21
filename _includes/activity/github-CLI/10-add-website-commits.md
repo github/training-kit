@@ -1,5 +1,7 @@
 Now that you are a collaborator, use the local workflow we just learned to make changes to this repository. This exercise is a bit of a review, but if you need assistance with any of the required steps, more detailed directions are available in 'I need a refresher' below! Good luck!
 
+![gif of following the directions below](../images/gifs/github-cli/clone-class-repo.gif)
+
 1. Clone the repository to your local machine.
 1. Create a new branch in the cloned repository. Something like `yourUsername-add-page` is a perfect branch name.
 1. Checkout to your new branch.
