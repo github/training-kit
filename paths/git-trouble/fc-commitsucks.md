@@ -12,7 +12,7 @@ sidebar:
 main-content: |  
   As you begin creating commits you might 'accidentally' create a commit message that is borderline atrocious; something like 'Fixed the thing'. Although you are definitely aware of the **thing** you just **fixed**, other collaborators (including future you) will not know what you fixed and more importantly, **why** you needed to fix it. Thankfully, Git is well aware of our tendency to craft terrible commit messages and has a handful of commands that save even the vaguest commit message.
 
-  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment]({{site.baseurl}}/git-trouble/git-set-up) page.
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment]({{site.baseurl}}/git-set-up) page.
 pushed: |
   Before you begin worrying about that terrible commit message you have pushed to the remote, let's talk about the risks associated with fixing it. Fixing a commit message you have already pushed is going to require you to use `git push --force-with-lease`. Using `push --force-with-lease` can cause some **serious** problems for other collaborators on your project. The embarrassment of a mispelled :grin: word is nothing compared to the embarrassment of messing up your collaborators. If your commit is really that bad, or if causing problems doesn't trouble you, keep reading.
 
