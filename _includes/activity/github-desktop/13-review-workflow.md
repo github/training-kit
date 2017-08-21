@@ -1,5 +1,6 @@
+Now that you are a collaborator, let's use the local workflow we just learned to make changes to this repository.
 
-Now that you are a collaborator, let's use the local workflow we just learned to make changes to this repository:
+![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/github-desktop/review-local-workflow.gif)
 
 1. Start from the Code tab of the [class repository on GitHub.com](https://github.com/githubschool{{site.baseurl}}-github-pages/).
 1. Click on `Clone or Download`.

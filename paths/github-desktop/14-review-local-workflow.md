@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/13-review-workflow.md
-show-me-how: images/gifs/github-desktop/review-local-workflow.gif
+show-me-how:
 tell-me-why: |
   ## Reviewing the GitHub Flow
 
