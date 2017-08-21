@@ -1,0 +1,24 @@
+{
+  "name": "training-kit",
+  "version": "1.0.0",
+  "description": "![servicesbanner](https://cloud.githubusercontent.com/assets/13326548/21035994/ad40c19c-bd77-11e6-97fa-78b068050c05.jpg)",
+  "main": "index.js",
+  "dependencies": {
+    "primer-css": "^9.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/training-kit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github/training-kit/issues"
+  },
+  "homepage": "https://github.com/github/training-kit#readme"
+}
