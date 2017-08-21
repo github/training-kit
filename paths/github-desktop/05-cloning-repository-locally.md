@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/02-clone-locally.md
-show-me-how: "images/gifs/github-desktop/clone-repository-locally.gif"
+show-me-how: 
 tell-me-why:
   includes:
     - tell-me-why/local-remote.md
