@@ -2,7 +2,7 @@
 
 This course is going to use GitHub Pages to create your website. To initialize GitHub Pages we need to perform a few more steps:
 
-![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/github-desktop/choose-a-theme.gif)
+![gif of following the directions below](../images/gifs/github-desktop/choose-a-theme.gif)
 
 
 1. With your repository created, click the **Settings** tab.

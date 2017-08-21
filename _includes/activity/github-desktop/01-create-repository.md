@@ -2,7 +2,7 @@
 
 Now that you have what you need for Git and GitHub installed locally, let's create the repository that will hold your new website.
 
-![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/github-desktop/create-repo.gif)
+![gif of following the directions below](../images/gifs/github-desktop/create-repo.gif)
 
 1. On GitHub.com, [create a new repository](https://github.com/new).
 1. Name your repository. The name of your repository will be part of the link to your website.

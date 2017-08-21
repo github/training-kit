@@ -1,6 +1,6 @@
 It's time to create the home page for your website.
 
-![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/github-desktop/add-commits-locally.gif)
+![gif of following the directions below](../images/gifs/github-desktop/add-commits-locally.gif)
 
 1. Make sure you are checked out to the new branch you just created. You change branches by clicking the **Current Branch** button at the top of the application, then selecting a branch.
 1. Open your preferred text editor.
