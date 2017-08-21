@@ -10,9 +10,16 @@ facilitator: false
 sidebar:
   nav: "github-desktop-nav"
 main-content:
-  includes:
-    - activity/github-desktop/00-install-configure-gh-desktop.md
-show-me-how: "images/gifs/github-desktop/download-gh-desktop.gif"
+
+  For this class you will use GitHub Desktop to work with your GitHub repository.
+
+  ![img](../images/gifs/github-desktop/download-gh-desktop.gif)
+
+  1. Download and install [GitHub Desktop](https://desktop.github.com).
+  1. Open GitHub Desktop.
+  1. Follow the prompts to sign in to your account.
+  1. Configure your user information (this only happens the first time you run the application).
+
 tell-me-why: |
   ## Working locally
 
