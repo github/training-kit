@@ -9,7 +9,7 @@ next-page: /github-desktop/create-remote-repository
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"
-main-content:
+main-content: |
 
   For this class you will use GitHub Desktop to work with your GitHub repository.
 
