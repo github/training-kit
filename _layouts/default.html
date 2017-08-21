@@ -1,29 +1,13 @@
----
-layout: compress
----
-
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
-  <style>
-    #map {
-      width: 100%;
-      height: 400px;
-    }
-  </style>
   {% include head.html %}
-  {% include head/custom.html %}
 </head>
-
 <body>
-
-  {% include browser-upgrade.html %}
-  {% include masthead.html %}
+  {% include header.html %}
 
   {{ content }}
-
+  
   <div class="page__footer">
     <footer>
       {% include footer/custom.html %}
@@ -32,6 +16,5 @@ layout: compress
   </div>
 
   {% include scripts.html %}
-
 </body>
 </html>
