@@ -1,5 +1,6 @@
-
 After you have finished making your changes, it is time to commit them.
+
+![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/github-desktop/making-commits-locally.gif)
 
 1. Click the **changes** tab in the left sidebar to see a list of the files that have been changed or added since the last commit.
 1. Use the checkboxes to indicate which files should be part of the commit. In this activity, you'll select the `index.html` file.
