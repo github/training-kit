@@ -1,3 +1,4 @@
+[//]: # "This is used in both the CLI and Desktop course"
 
 It's now time to collaborate with other learners taking this class around the world :earth_americas:.
 
