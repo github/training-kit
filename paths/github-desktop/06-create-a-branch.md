@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/03-create-branch.md
-show-me-how: "images/gifs/github-desktop/create-branch-on-desktop.gif"
+show-me-how:
 tell-me-why:
   includes:
     - tell-me-why/branching.md
