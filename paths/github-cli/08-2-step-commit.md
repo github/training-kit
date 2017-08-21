@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-CLI/05-make-commits.md
-show-me-how: images/gifs/github-cli/2-step-commit.gif
+show-me-how:
 tell-me-why:
   includes:
     - ghflow-steps/02-add-commits.md

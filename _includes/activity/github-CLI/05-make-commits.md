@@ -1,5 +1,7 @@
 After you have finished making your changes, it is time to commit them.
 
+![gif of following the directions below](../images/gifs/github-cli/2-step-commit.gif)
+
 1. Type `git status`. Remember that `git status` allows us to see the status of the files on our branch at any given time.
 Your file is listed under the heading _Untracked files_.
 1. Type `git add FILE-NAME`. This adds the file to the staging area and prepares it to become part of the next commit.
