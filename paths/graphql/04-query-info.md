@@ -13,7 +13,7 @@ main-content: |
 
   ## Get Ready to Mutate
 
-  ![img](../images/gifs/graphql/recent-contributions.gif)
+  ![animated gif of instructions outlined below](../images/gifs/graphql/recent-contributions.gif)
 
   1. Using the response from the query in the last step, fill in this template.
 
