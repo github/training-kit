@@ -5,7 +5,13 @@
 @import "primer-product/index.scss";
 @import "primer-marketing/index.scss";
 
-.flash details img { max-width: 100%; }
+.flash details {
+  ul {
+    padding-left: $spacer-4;
+    margin-bottom: $spacer-2;
+  }
+  img { max-width: 100%; }
+}
 
 .markdown-body {
   font-size: 16px;
