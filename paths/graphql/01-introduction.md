@@ -56,7 +56,7 @@ tell-me-why: |
 
   ## How Will You Use GitHub's GraphQL?
 
-  If you aren't sure why you might use GraphQL right now, that's :ok: :ok_hand:. This course walks through a few examples, and will set you confidently on the path of additional use cases.
+  If you aren't sure why you might use GraphQL right now, that's ok :ok_hand:. This course walks through a few examples, and will set you confidently on the path of additional use cases.
 
   You can find use cases and examples of GraphQL in action in [GitHub's official GraphQL documentation](https://developer.github.com/v4/).
 ---
