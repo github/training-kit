@@ -18,7 +18,7 @@ main-content: |
   To find an image for your application, keep a few things in mind.
 
   - Ownership of the image (Public domain or self-owned)
-  - Size of image (recommedation here)
+  - Size of image (recommendation here)
 
   Not sure where to start? [Check out this icon library](https://useiconic.com/open)!
 
