@@ -31,7 +31,7 @@ layout: default
             <div class="flash mb-2">
               <details>
                 <summary>I didn't push</summary>
-                <hr>
+                <hr class="border-blue-light">
                 {% if page.didnt-push.includes %}
                   {% for child in page.didnt-push.includes %}
                     {% capture my_include %}{% include {{child}} %}{% endcapture %}
@@ -48,7 +48,7 @@ layout: default
             <div class="flash mb-2 flash-error">
               <details>
                 <summary>I pushed</summary>
-                <hr>
+                <hr class="border-red-light">
                 {% if page.pushed.includes %}
                   {% for child in page.pushed.includes %}
                     {% capture my_include %}{% include {{child}} %}{% endcapture %}
@@ -68,11 +68,11 @@ layout: default
                 {% if page.refresh.includes %}
                   {% for child in page.refresh.includes %}
                     {% capture my_include %}{% include {{child}} %}{% endcapture %}
-                    <hr>
+                    <hr class="border-green-light">
                     {{ my_include | markdownify }}
                   {% endfor %}
                 {% else %}
-                <hr>
+                <hr class="border-green-light">
                 {{ page.refresh | markdownify }}
                 {% endif %}
               </details>
@@ -86,11 +86,11 @@ layout: default
                 {% if page.show-me-how.includes %}
                   {% for child in page.show-me-how.includes %}
                     {% capture my_include %}{% include {{child}} %}{% endcapture %}
-                    <hr>
+                    <hr class="border-blue-light">
                     {{ my_include | markdownify }}
                   {% endfor %}
                 {% else %}
-                <hr>
+                <hr class="border-blue-light">
                 <img src="{{site.baseurl}}/{{ page.show-me-how }}" alt="gif of the activities from this page">
                 {% endif %}
               </details>
@@ -104,11 +104,11 @@ layout: default
                 {% if page.troubleshooting.includes %}
                   {% for child in page.troubleshooting.includes %}
                     {% capture my_include %}{% include {{child}} %}{% endcapture %}
-                    <hr>
+                    <hr class="border-red-light">
                     {{ my_include | markdownify }}
                   {% endfor %}
                 {% else %}
-                <hr>
+                <hr class="border-red-light">
                 {{ page.troubleshooting | markdownify }}
                 {% endif %}
               </details>
@@ -119,7 +119,7 @@ layout: default
             <div class="flash mb-2 flash-warn">
               <details>
                 <summary>Tell me why</summary>
-                <hr>
+                <hr class="border-yellow">
                 {% if page.tell-me-why.includes %}
                   {% for child in page.tell-me-why.includes %}
                     {% capture my_include %}{% include {{child}} %}{% endcapture %}
