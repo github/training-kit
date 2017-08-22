@@ -77,3 +77,12 @@
     }
   }
 }
+
+.card.hover-card {
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: $box-shadow-large;
+    text-decoration: none;
+  }
+}
