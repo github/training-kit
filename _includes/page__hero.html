@@ -1,6 +1,6 @@
-<div class="bg-blue text-white py-2 py-md-6">
+<div class="bg-blue text-white py-2 py-md-4">
   <div class="container-lg p-responsive my-6">
-    <h1 class="page__title" itemprop="headline">
+    <h1 itemprop="headline">
       {% if paginator %}
         {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page }} {{ paginator.page }}{% endunless %}
       {% else %}

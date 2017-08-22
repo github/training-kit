@@ -2,7 +2,13 @@
 layout: default
 excerpt: "You're in control. We're with you along the way."
 ---
-{% include page__hero.html %}
+<div class="bg-blue text-white py-2 py-md-6 text-center">
+  <div class="container-lg p-responsive my-6">
+    <h1 class="alt-h1" itemprop="headline">{{ site.title }}</h1>
+    <p>{{ page.excerpt }}</p>
+  </div>
+  </div>
+  
 
 <div class="my-6 p-2">
   {% include timeline.html %}
