@@ -5,10 +5,10 @@ layout: default
 <div id="main" role="main">
   {% include page__hero.html %}
 
-  <div class="d-flex gutter py-6 container-lg mx-auto p-responsive">
+  <div class="d-flex flex-items-start flex-wrap gutter py-6 container-lg mx-auto p-responsive">
     {% include sidebar.html %}
   
-    <article class="page col-9" itemscope itemtype="http://schema.org/CreativeWork">
+    <article class="page col-12 col-md-9" itemscope itemtype="http://schema.org/CreativeWork">
       {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
       {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
       {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
