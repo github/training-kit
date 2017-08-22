@@ -3,12 +3,9 @@ layout: single
 title: GitHub Training Community
 category: community
 permalink: /community/
-header:
-  overlay_image: cover.jpeg
-  overlay_filter: rgba(46, 129, 200, 0.6)
 ---
 
-# Availability
+## Availability
 
 GitHub's training team drops by the on-demand repositories daily to answer questions and offer assistance to those who are stuck.
 
@@ -16,7 +13,7 @@ GitHub's training team drops by the on-demand repositories daily to answer quest
 
 In the meantime, a great way to learn new things is to explain them to others. If you see any questions you feel equipped to answer, please feel free to help!  
 
-## GitHub Trainers
+### GitHub Trainers
 
 Meet the members of GitHub who will be dropping by the class repository and helping you along the way.
 
@@ -26,15 +23,15 @@ Meet the members of GitHub who will be dropping by the class repository and help
 {: .text-center}
 ---
 
-## GitHub Professional Services
+### GitHub Professional Services
 
 Courses on the On Demand website are made with :heart: by the friendly :octocat:s from GitHub Professional Services with help from the open source community. These courses are an extension of the paid engagements that we provide to companies large and small. If you are interested in how GitHub Professional Services can help you and your team or organization, [contact us](https://services.github.com/contact/).   
 
 For information regarding the different engagements that we provide, please refer to the [Services](https://services.github.com) website.
 
-# Contributor Covenant Code of Conduct
+## Contributor Covenant Code of Conduct
 
-## Our Pledge
+### Our Pledge
 
 In the interest of fostering an open and welcoming environment, we as
 contributors and maintainers pledge to making participation in our project and
@@ -43,7 +40,7 @@ size, disability, ethnicity, gender identity and expression, level of experience
 nationality, personal appearance, race, religion, or sexual identity and
 orientation.
 
-## Our Standards
+### Our Standards
 
 Examples of behavior that contributes to creating a positive environment
 include:
@@ -65,7 +62,7 @@ advances
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
-## Our Responsibilities
+### Our Responsibilities
 
 Project maintainers are responsible for clarifying the standards of acceptable
 behavior and are expected to take appropriate and fair corrective action in
@@ -77,7 +74,7 @@ that are not aligned to this Code of Conduct, or to ban temporarily or
 permanently any contributor for other behaviors that they deem inappropriate,
 threatening, offensive, or harmful.
 
-## Scope
+### Scope
 
 This Code of Conduct applies both within project spaces and in public spaces
 when an individual is representing the project or its community. Examples of
@@ -86,7 +83,7 @@ address, posting via an official social media account, or acting as an appointed
 representative at an online or offline event. Representation of a project may be
 further defined and clarified by project maintainers.
 
-## Enforcement
+### Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the project team at [services@github.com](mailto:services@github.com). All
@@ -99,7 +96,7 @@ Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
 members of the project's leadership.
 
-## Attribution
+### Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
 available at [http://contributor-covenant.org/version/1/4][version]
