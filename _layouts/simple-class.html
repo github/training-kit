@@ -5,7 +5,7 @@ layout: default
 <div id="main" role="main">
   {% include page__hero.html %}
 
-  <div class="d-flex gutter-condensed container-lg mx-auto p-responsive">
+  <div class="d-flex gutter py-6 container-lg mx-auto p-responsive">
     {% include sidebar.html %}
   
     <article class="page col-9" itemscope itemtype="http://schema.org/CreativeWork">
@@ -14,8 +14,8 @@ layout: default
       {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
       {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
   
-      <div class="page__inner-wrap">
-        <section class="page__content" itemprop="text">
+      <section class="page__content" itemprop="text">
+        <div class="mb-2 markdown-body">
           {% if page.main-content.includes %}
             {% for child in page.main-content.includes %}
               {% capture my_include %}{% include {{child}} %}{% endcapture %}
@@ -24,9 +24,10 @@ layout: default
           {% else %}
             {{ page.main-content | replace: '<% BASEURL %>', site.baseurl | replace: '<% SITEURL %>', site.url | markdownify }}
           {% endif %}
-  
-          {% if page.didnt-push %}
-            <div class="notice--primary">
+        </div>
+            
+        {% if page.didnt-push %}
+          <div class="flash mb-2">
             <details>
               <summary>I didn't push</summary>
               <hr>
@@ -39,11 +40,11 @@ layout: default
               {{ page.didnt-push | markdownify }}
               {% endif %}
             </details>
-            </div>
-          {% endif %}
-  
-          {% if page.pushed %}
-            <div class="notice--danger">
+          </div>
+        {% endif %}
+
+        {% if page.pushed %}
+          <div class="flash mb-2 flash-error">
             <details>
               <summary>I pushed</summary>
               <hr>
@@ -56,11 +57,11 @@ layout: default
               {{ page.pushed | markdownify }}
               {% endif %}
             </details>
-            </div>
-          {% endif %}
-  
-          {% if page.refresh %}
-            <div class="notice--primary">
+          </div>
+        {% endif %}
+
+        {% if page.refresh %}
+          <div class="flash mb-2 flash-success">
             <details>
               <summary>I need a refresher</summary>
               {% if page.refresh.includes %}
@@ -74,11 +75,11 @@ layout: default
               {{ page.refresh | markdownify }}
               {% endif %}
             </details>
-            </div>
-          {% endif %}
-  
-          {% if page.show-me-how %}
-            <div class="notice--info">
+          </div>
+        {% endif %}
+
+        {% if page.show-me-how %}
+          <div class="flash mb-2">
             <details>
               <summary>Show me how</summary>
               {% if page.show-me-how.includes %}
@@ -92,11 +93,11 @@ layout: default
               <img src="{{site.baseurl}}/{{ page.show-me-how }}" alt="gif of the activities from this page">
               {% endif %}
             </details>
-            </div>
-          {% endif %}
-  
-          {% if page.troubleshooting %}
-            <div class="notice--danger">
+          </div>
+        {% endif %}
+
+        {% if page.troubleshooting %}
+          <div class="flash mb-2 flash-error">
             <details>
               <summary>Help me troubleshoot</summary>
               {% if page.troubleshooting.includes %}
@@ -110,56 +111,55 @@ layout: default
               {{ page.troubleshooting | markdownify }}
               {% endif %}
             </details>
-            </div>
-          {% endif %}
-  
-          {% if page.tell-me-why %}
-          <div class="notice--warning">
-          <details>
-            <summary>Tell me why</summary>
-            <hr>
-            {% if page.tell-me-why.includes %}
-              {% for child in page.tell-me-why.includes %}
-                {% capture my_include %}{% include {{child}} %}{% endcapture %}
-                {{ my_include | markdownify }}
-              {% endfor %}
-            {% else %}
-            {{ page.tell-me-why | markdownify }}
-            {% endif %}
-          </details>
           </div>
-          {% endif %}
-  
-          <div class="notice--success">
-          Stuck? Open an issue in the repository for this class and mention @githubteacher for help from one of the GitHub trainers!
+        {% endif %}
+
+        {% if page.tell-me-why %}
+          <div class="flash mb-2 flash-warn">
+            <details>
+              <summary>Tell me why</summary>
+              <hr>
+              {% if page.tell-me-why.includes %}
+                {% for child in page.tell-me-why.includes %}
+                  {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                  {{ my_include | markdownify }}
+                {% endfor %}
+              {% else %}
+              {{ page.tell-me-why | markdownify }}
+              {% endif %}
+            </details>
           </div>
-  
-          {% if page.next-page %}
+        {% endif %}
+
+        <div class="flash mb-2 flash-success">
+          Stuck? Open an issue in the repository for this class and mention <strong>@githubteacher</strong> for help from one of the GitHub trainers!
+        </div>
+
+        {% if page.next-page %}
           <a href="{{ site.baseurl }}{{ page.next-page }}" class="btn">Continue</a>
-          {% endif %}
-          {{ content }}
-          {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label }}</a></div>{% endif %}
-  
-        </section>
-  
-        <footer class="page__meta">
-          {% if site.data.ui-text[site.locale].meta_label %}
-            <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-          {% endif %}
-          {% include page__taxonomy.html %}
-          {% if page.modified %}
-            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
-          {% elsif page.date %}
-            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
-          {% endif %}
-        </footer>
-  
-  
-        {% if page.share %}{% include social-share.html %}{% endif %}
-  
-        {% include post_pagination.html %}
-      </div>
-  
+        {% endif %}
+        {{ content }}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label }}</a></div>{% endif %}
+
+      </section>
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+        {% if page.modified %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+        {% elsif page.date %}
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+        {% endif %}
+      </footer>
+
+
+      {% if page.share %}{% include social-share.html %}{% endif %}
+
+      {% include post_pagination.html %}
+
       {% if site.comments.provider and page.comments %}
         {% include comments.html %}
       {% endif %}
