@@ -1,159 +1,30 @@
-<!-- About Section -->
-<html>
-
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-        <div class ="container" id="about">
-            <div class="row">
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div>
-                                <a href="{{site.baseurl}}/intro-to-github/"><img class="timeline-image" src="./images/about/repo.png" alt="The 'repo' octocat, cartoon of five octocats inside of a metal box"></a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <a href="{{site.baseurl}}/intro-to-github/"><h2>GitHub 101: Introduction to  GitHub</h2></a>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">If you are looking for a quick and fun introduction to GitHub, you’ve found it. This class will get you started using GitHub in less than an hour.</p>
-                                    <p class="text-muted"></p>
-                                </div>
-                              </div>
-                            <!--<div class="timeline-panel-info">
-                              <br>
-                              <p>Class Duration: 60-90 minutes</p>
-                              <p>Skill Level: Beginner</p>
-                            </div>-->
-
-                        </li>
-                        <li class="timeline-inverted">
-                            <div>
-                                <a href="{{site.baseurl}}/github-desktop/"><img class="timeline-image" src="./images/about/forktocat.jpg" alt="The 'forktocat' octocat, cartoon of two octocats joined at the head"></a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <a href="{{site.baseurl}}/github-desktop/"><h2>GitHub 102: GitHub Pages from GitHub Desktop</h2></a>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Learn how to <b>use GitHub Desktop</b> to copy a repository to your computer, track changes and communicate with GitHub.</p>
-                                </div>
-                            </div>
-                            <!--<div class="timeline-body-info">
-                              <br>
-                              <p>Class Duration: 60-90 minutes</p>
-                              <p>Skill Level: Intermediate</p>
-                              <p>Pre-reqs: GitHub 101</p>
-                            </div>-->
-                        </li>
-                        <li>
-                            <div>
-                                <a href="{{site.baseurl}}/github-cli/"><img class="timeline-image" src="./images/about/collabocats.jpg" alt="The 'collabocats', cartoon of octocats pictured on two laptops with symbols showing they're collaborating on code"></a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <a href="{{site.baseurl}}/github-cli/"><h2>GitHub 103: GitHub Pages from the Command Line</h2></a>
-                                </div>
-                                <div class="timeline-body">
-                                        <p class="text-muted">Learn how to <b>use the Command Line</b> to copy a repository to your computer, track changes and communicate with GitHub.</p>
-                                </div>
-                            </div>
-                            <!--<div class="timeline-panel-info">
-                              <br>
-                              <p>Class Duration: 60-90 minutes</p>
-                              <p>Skill Level: Intermediate</p>
-                              <p>Pre-reqs: GitHub 101</p>
-                            </div>-->
-                        </li>
-
-                        <li class="timeline-inverted">
-                            <div>
-                                <a href="{{site.baseurl}}/windows"><img class="timeline-image" src="./images/red-polo.png" alt="The 'red polo' octocat, a cartoon of an octocat wearing a red polo"></a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <a href="{{site.baseurl}}/windows/"><h2>GitHub for Windows Users</h2></a>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Learn how to configure your local git environment to work with GitHub and how to complete GitHub flow using the GitHub Extension for Visual Studio.</p>
-                                </div>
-                            </div>
-                            <!--<div class="timeline-body-info">
-                              <br>
-                              <p>Class Duration: 60-90 minutes</p>
-                              <p>Skill Level: Intermediate</p>
-                              <p>Pre-reqs: GitHub 101</p>
-                            </div>-->
-                        </li>
-                        <li>
-                            <div>
-                                <a href="{{site.baseurl}}/git-trouble"><img class="timeline-image" src="./images/about/inspectocat.jpg" alt="The 'inspectocat', a cartoon of an octocat wearing a trenchcoat and holding a magnifying glass"></a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <a href="{{site.baseurl}}/git-trouble"><h2>Git Out of Trouble</h2></a>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Quick guides to git out of sticky situations.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div>
-                                <a href="{{site.baseurl}}/graphql"><img class="timeline-image" src="./images/graphql-logo.svg" alt="The pink symbol for GraphQL, a triangle inside of an hexagon"></a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <a href="{{site.baseurl}}/graphql"><h2>Introduction to GraphQL</h2></a>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Learn how to create seamless integrations by directly accessing and updating GitHub data using GraphQL.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="{{site.baseurl}}/electron"><img class="timeline-image" src="././images/atom.png" alt=""></a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <a href="{{site.baseurl}}/electron"><h2>Electron</h2></a>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">An entire suite of courses that will get you up and running with Electron.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                          <div>
-                              <img class="timeline-image" src="./images/about/welcometocat.png" alt="The 'welcometocat', a cartoon of a celebrating octocat wearing a party hat and throwing confetti">
-                          </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<div class="container-lg">
+  <ul class="timeline">
+    {% for course in page.courses %}
+      {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+      <li {% if thecycle == 'even' %}class="timeline-inverted"{% endif %}>
+        <div>
+          <a href="{{ site.baseurl }}{{ course.link }}/"><img class="timeline-image" src="{{ course.image }}" alt="{{ course.imageAlt }}"></a>
         </div>
-</html>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <a href="{{ site.baseurl }}{{ course.link }}/">
+              <h2>{{ course.title }}</h2>
+            </a>
+          </div>
+          <div class="timeline-body">
+            <p class="text-muted">{{ course.description | markdownify }}</p>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+
+    {% if page.timeline.showWelcome %}
+      <li class="timeline-inverted">
+        <div>
+          <img class="timeline-image" src="./images/about/welcometocat.png" alt="The 'welcometocat', a cartoon of a celebrating octocat wearing a party hat and throwing confetti">
+        </div>
+      </li>
+    {% endif %}
+  </ul>
+</div>
