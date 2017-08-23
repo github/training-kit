@@ -23,7 +23,7 @@
             {% endif %}
           {% endif %}
     
-          <li><a href="{{ domain }}{{ nav.url }}" class="filter-item ws-normal px-3 mb-2 py-2 {{ selected }}">{{ nav.title }}</a></li>
+          <li><a href="{{ domain }}{{ nav.url }}" class="filter-item ws-normal px-3 {% if forloop.last %}mb-0{% endif %} py-2 {{ selected }}">{{ nav.title }}</a></li>
         {% endfor %}
       </ul>
     </nav>
