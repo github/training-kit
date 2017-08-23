@@ -1,27 +1,14 @@
-body{
-  background: $body-bg;
-}
-
-// Incorporate Bootstrap table striping
-table{
-  @extend .table;
-  @extend .table-striped;
-  @extend .table-bordered;
-}
-
 // Octicon mixin
 @mixin octicon-link($char){
   font: normal normal 1em octicons;
   text-decoration: none;
-  color: $brand-primary;
+  color: $blue;
 
   &:after{
     content: $char;
     margin-left: 5px;
   }
 }
-
-
 
 // Custom columns for hide/show of TOC
 .col-content, .col-toc{
@@ -61,7 +48,7 @@ table{
 }
 
 .display-controls{
-  border-top: solid 2px $gray-lighter;
+  border-top: solid 2px $gray-200;
   margin-top: 5px;
   padding-top: 10px;
 }
@@ -80,13 +67,13 @@ table{
   width: 0;
 
   &:checked + label{
-    color: $brand-primary;
+    color: $blue;
 
     &:before{
       content: '\f046';
-      color: rgba($gray-lighter, 1);
-      background-color: $gray-light;
-      box-shadow: 0 0 0 1px $gray-light;
+      color: rgba($gray-100, 1);
+      background-color: $gray-300;
+      box-shadow: 0 0 0 1px $gray-300;
       padding-left: 0px;
       line-height: 14px;
     }
@@ -104,11 +91,11 @@ table{
     left: 0;
     display: inline-block;
     border-radius: 50%;
-    color: rgba($gray-light, 0);
+    color: rgba($gray-300, 0);
     -webkit-transition: all 180ms;
     width: 14px;
     height: 14px;
-    box-shadow: 0 0 0 1px $gray-light;
+    box-shadow: 0 0 0 1px $gray-300;
   }
 }
 
@@ -118,13 +105,13 @@ table{
   width: 0;
 
   &:checked + label{
-    color: $gray-light;
+    color: $gray-300;
 
     &:before{
       content: '\f03a';
-      color: rgba($gray-lighter, 1);
-      background-color: $gray-light;
-      box-shadow: 0 0 0 1px $gray-light;
+      color: rgba($gray-100, 1);
+      background-color: $gray-300;
+      box-shadow: 0 0 0 1px $gray-300;
       padding-left: 0px;
       line-height: 1em;
     }
@@ -142,12 +129,12 @@ table{
     left: 0;
     display: inline-block;
     border-radius: 50%;
-    color: rgba($gray-light, 0);
+    color: rgba($gray-300, 0);
     -webkit-transition: all 180ms;
     padding-left: 5px;
     width: 14px;
     height: 14px;
-    box-shadow: 0 0 0 1px $gray-light;
+    box-shadow: 0 0 0 1px $gray-300;
     line-height: .2em;
   }
 }
@@ -193,7 +180,7 @@ table{
   position: relative;
   font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif;
   font-weight: 300;
-  color: $gray-darker;
+  color: $gray-900;
 
   h1,h2,h3,h4,h5,h6,p,ul,li{
     font-weight: inherit;
@@ -237,7 +224,7 @@ table{
           width: 20px;
           margin: 10px;
           border-radius: 50%;
-          box-shadow: 0 0 0 2px $gray-lighter;
+          box-shadow: 0 0 0 2px $gray-100;
         }
       }
 
@@ -246,7 +233,7 @@ table{
 
         &:before{
           content: "\f03a";
-          color: $brand-primary;
+          color: $blue;
         }
       }
     }
@@ -254,14 +241,14 @@ table{
     // Custom Octicon styling
     .mega-octicon{
       font-size: 110px;
-      color: $brand-primary;
+      color: $blue;
 
       &:after{
         content: "";
         display: block;
         width: 170px;
         height: 170px;
-        border: solid 1px $gray-light;
+        border: solid 1px $gray-300;
         border-radius: 50%;
         padding: 20px;
         margin-top: -142px;
@@ -271,7 +258,7 @@ table{
 
   #teacher{
     .octicon{
-      color: $brand-primary;
+      color: $blue;
     }
     span{
       margin: auto 4px;
@@ -315,8 +302,8 @@ table{
       font-size: 120%;
       text-align: left;
       margin: 0 auto;
-      background: $gray-darker;
-      color: $gray-lighter;
+      background: $gray-900;
+      color: $gray-100;
 
       code{
         font-size: 1.5em;

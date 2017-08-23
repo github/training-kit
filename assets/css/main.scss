@@ -5,6 +5,10 @@
 @import "primer-product/index.scss";
 @import "primer-marketing/index.scss";
 
+@import "timeline";
+@import "curriculum";
+@import "github_contribution_graph";
+
 details.flash {
   ol, ul {
     padding-left: $spacer-4;
