@@ -12,7 +12,7 @@
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: $gray-200;
 }
 
 .timeline-image {
@@ -89,11 +89,11 @@
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    border: 7px solid $gray-200;
     border-radius: 100%;
     text-align: center;
-    color: #fff;
-    background-color: white;
+    color: $white;
+    background-color: $white;
 }
 
 .timeline>li p{
