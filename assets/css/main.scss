@@ -5,12 +5,14 @@
 @import "primer-product/index.scss";
 @import "primer-marketing/index.scss";
 
-.flash details {
-  ul {
+details.flash {
+  ol, ul {
     padding-left: $spacer-4;
     margin-bottom: $spacer-2;
   }
   img { max-width: 100%; }
+
+  &[open] { box-shadow: 0 0 0 0.2em rgba(3,102,214,0.3); }
 }
 
 .markdown-body {
