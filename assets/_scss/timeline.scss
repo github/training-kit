@@ -89,7 +89,7 @@
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid $gray-200;
+    border: 4px solid $gray-200;
     border-radius: 100%;
     text-align: center;
     color: $white;
@@ -167,6 +167,7 @@
         width: 100px;
         height: 100px;
         margin-left: -50px;
+        border-width: 7px;
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
