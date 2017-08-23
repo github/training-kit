@@ -88,3 +88,9 @@ details.flash {
     text-decoration: none;
   }
 }
+
+.resources svg {
+  width: 64px;
+  height: 64px;
+  path { fill: currentColor !important; }
+}
