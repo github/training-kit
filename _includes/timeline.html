@@ -4,7 +4,7 @@
       {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
       <li {% if thecycle == 'even' %}class="timeline-inverted"{% endif %}>
         <div>
-          <a href="{{ site.baseurl }}{{ course.link }}/"><img class="timeline-image" src="{{ course.image }}" alt="{{ course.imageAlt }}"></a>
+          <a href="{{ site.baseurl }}{{ course.link }}/" class="timeline-image-link"><img class="timeline-image" src="{{ course.image }}" alt="{{ course.imageAlt }}"></a>
         </div>
         <div class="timeline-panel">
           <div class="timeline-heading">
@@ -20,7 +20,7 @@
     {% endfor %}
 
     {% if page.timeline.showWelcome %}
-      <li class="timeline-inverted">
+      <li>
         <div>
           <img class="timeline-image" src="./images/about/welcometocat.png" alt="The 'welcometocat', a cartoon of a celebrating octocat wearing a party hat and throwing confetti">
         </div>

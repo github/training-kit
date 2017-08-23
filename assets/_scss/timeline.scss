@@ -1,10 +1,4 @@
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
- .timeline {
+.timeline {
     position: relative;
     padding: 0;
     list-style: none;
@@ -21,6 +15,12 @@
     background-color: #f1f1f1;
 }
 
+.timeline-image {
+    transition: box-shadow 0.2s ease-in-out;
+
+    &:hover { box-shadow: 0 1px 15px rgba(black, 0.2) }
+}
+
 .timeline>li {
     position: relative;
     margin-bottom: 50px;
@@ -29,7 +29,7 @@
 
 .timeline>li:before,
 .timeline>li:after {
-    content: " ";
+    content: "";
     display: table;
 }
 
