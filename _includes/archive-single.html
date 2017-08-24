@@ -10,7 +10,7 @@
   {% if post.link %}
     <a href="{{ post.link }}" target="_blank">
   {% else %}
-    <a href="{{ base_path }}{{ post.url }}">
+    <a href="{{ site.baseurl }}{{ post.url }}">
   {% endif %}
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       {% if include.type == "grid" and teaser != blank %}

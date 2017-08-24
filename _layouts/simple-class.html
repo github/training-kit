@@ -12,12 +12,6 @@ header:
 {% endif %}
 
 <div id="main" role="main">
-  <script>
-    ((window.gitter = {}).chat = {}).options = {
-      room: 'githubschool/on-demand'
-    };
-  </script>
-  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
   {% include sidebar.html %}
 
@@ -44,7 +38,41 @@ header:
             {{ my_include | markdownify }}
           {% endfor %}
         {% else %}
-        {{ page.main-content | markdownify }}
+          {{ page.main-content | replace: '<% BASEURL %>', site.baseurl | replace: '<% SITEURL %>', site.url | markdownify }}
+        {% endif %}
+
+        {% if page.didnt-push %}
+          <div class="notice--primary">
+          <details>
+            <summary>I didn't push</summary>
+            <hr>
+            {% if page.didnt-push.includes %}
+              {% for child in page.didnt-push.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            {{ page.didnt-push | markdownify }}
+            {% endif %}
+          </details>
+          </div>
+        {% endif %}
+
+        {% if page.pushed %}
+          <div class="notice--danger">
+          <details>
+            <summary>I pushed</summary>
+            <hr>
+            {% if page.pushed.includes %}
+              {% for child in page.pushed.includes %}
+                {% capture my_include %}{% include {{child}} %}{% endcapture %}
+                {{ my_include | markdownify }}
+              {% endfor %}
+            {% else %}
+            {{ page.pushed | markdownify }}
+            {% endif %}
+          </details>
+          </div>
         {% endif %}
 
         {% if page.refresh %}
@@ -77,7 +105,7 @@ header:
               {% endfor %}
             {% else %}
             <hr>
-            <img src="{{site.baseurl}}/{{ page.show-me-how }}">
+            <img src="{{site.baseurl}}/{{ page.show-me-how }}" alt="gif of the activities from this page">
             {% endif %}
           </details>
           </div>
@@ -119,7 +147,7 @@ header:
         {% endif %}
 
         <div class="notice--success">
-        Need help? Click <b>open chat</b> below for answers from GitHub trainers!
+        Stuck? Open an issue in the repository for this class and mention @githubteacher for help from one of the GitHub trainers!
         </div>
 
         {% if page.next-page %}
@@ -127,6 +155,7 @@ header:
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label }}</a></div>{% endif %}
+
       </section>
 
       <footer class="page__meta">
@@ -140,6 +169,7 @@ header:
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
         {% endif %}
       </footer>
+
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 
@@ -164,4 +194,5 @@ header:
       </div>
     </div>
   {% endif %}
+
 </div>

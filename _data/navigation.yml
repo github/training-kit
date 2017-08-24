@@ -3,13 +3,21 @@ main:
 # Keep original nav, do not replace
   - title: "Introduction to GitHub"
     url: /intro-to-github/
-  - title: "Using GitHub Desktop"
-    beta: true
+  - title: "GitHub Pages from GitHub Desktop"
     url: /github-desktop/
-  - title: "Using the Command Line"
-    beta: true
+  - title: "GitHub Pages from the Command Line"
     url: /github-cli/
-  - title: "Community"
+  - title: "Git Out of Trouble"
+    url: /git-trouble/
+  - title: "GitHub for Windows Users"
+    url: /windows/
+  - title: "Introduction to GraphQL"
+    url: /graphql/
+  - title: "Electron Suite"
+    url: /electron/
+  - title: "Git & GitHub Training Path"
+    url: /path/
+  - title: "GitHub Training Community"
     url: /community/
   - title: "Style Guide"
     url: /style/
@@ -17,111 +25,216 @@ main:
 # When creating new sidebar navs, remember the url in this document needs to match the url assigned in the permalink field.
 
 intro-nav:
-  - title: "Welcome"
+  - title: "Introduction to GitHub"
     url: /intro-to-github/
   - title: "Create a GitHub Account"
-    url: /intro-to-github/01/
+    url: /intro-to-github/create-github-account
   - title: "Join the Class Repository"
-    url: /intro-to-github/02/
-  - title: "Manage Notifications"
-    url: /intro-to-github/03/
-  - title: "Exploring the Repository"
-    url: /intro-to-github/04/
-  - title: "Using GitHub Flow"
-    url: /intro-to-github/05/
-  - title: "Creating a Branch"
-    url: /intro-to-github/06/
+    url: /intro-to-github/join-class-repository
+  - title: "Explore the GitHub Repository"
+    url: /intro-to-github/explore-github-repository
+  - title: "Use GitHub Flow"
+    url: /intro-to-github/use-github-flow
+  - title: "Create a Branch"
+    url: /intro-to-github/create-a-branch
   - title: "Find Your Coordinates"
-    url: /intro-to-github/07/
-  - title: "Working on GitHub"
-    url: /intro-to-github/08/
-  - title: "Creating a Pull Request"
-    url: /intro-to-github/09/
-  - title: "Collaborating on GitHub"
-    url: /intro-to-github/10/
-  - title: "Editing Files"
-    url: /intro-to-github/11/
-  - title: "Merging Pull Requests"
-    url: /intro-to-github/12/
-  - title: "Celebrate"
-    url: /intro-to-github/13/
-
-gh-pages:
-  - title: "Introduction to GitHub Pages"
-    url: /patchwork/gh-pages/
-  - title: "Editing Your GitHub Page"
-    url: /patchwork/gh-pages/02/
-  - title: "Creating Pages and Posts in Jekyll"
-    url: /patchwork/gh-pages/03/
-  - title: "Templates and Design"
-    url: /patchwork/gh-pages/04/
-  - title: "Installing Jekyll Locally"
-    url: /patchwork/gh-pages/05/
+    url: /intro-to-github/find-your-coordinates
+  - title: "Work on GitHub"
+    url: /intro-to-github/work-on-github
+  - title: "Create a Pull Request"
+    url: /intro-to-github/create-pull-request
+  - title: "Collaborate on GitHub"
+    url: /intro-to-github/collaborate-on-github
+  - title: "Edit Files on GitHub"
+    url: /intro-to-github/edit-files-on-github
+  - title: "Merge Your Pull Request"
+    url: /intro-to-github/merge-pull-request
+  - title: "You Completed the GitHub Flow"
+    url: /intro-to-github/you-completed-github-flow
 
 github-desktop-nav:
-  - title: "Welcome"
-    url: /github-desktop/
-  - title: "Install GitHub Desktop"
-    url: /github-desktop/02/
-  - title: "Create the Remote Repository"
-    url: /github-desktop/03/
-  - title: "Clone the Repository"
-    url: /github-desktop/04/
-  - title: "Create Local Branches"
-    url: /github-desktop/05/
-  - title: "Make Local Changes"
-    url: /github-desktop/06/
-  - title: "Add Local Commits"
-    url: /github-desktop/07/
-  - title: "Open a Pull Request"
-    url: /github-desktop/08/
-  - title: "Merge Your Pull Request"
-    url: /github-desktop/09/
-  - title: "View Your site"
-    url: /github-desktop/10/
-  - title: "Keep Things in Sync"
-    url: /github-desktop/11/
-  - title: "Add Your Site to the Showcase"
-    url: /github-desktop/12/
-  - title: "Review the Local Workflow"
-    url: /github-desktop/13/
-  - title: "Review Pushing and Opening Pull Requests"
-    url: /github-desktop/14/
-  - title: "Let's Collaborate!"
-    url: /github-desktop/15/
-  - title: "Merge Your PR"
-    url: /github-desktop/16/
+    - title: "GitHub Pages & GitHub Desktop"
+      url: /github-desktop/
+    - title: "Install GitHub Desktop"
+      url: /github-desktop/install-github-desktop
+    - title: "Create the Remote Repository on GitHub"
+      url: /github-desktop/create-remote-repository
+    - title: "Choose a GitHub Pages Theme"
+      url: /github-desktop/choose-github-pages-theme
+    - title: "Clone the Repository with GitHub Desktop"
+      url: /github-desktop/clone-repository-github-desktop
+    - title: "Create Local Branches With GitHub Desktop"
+      url: /github-desktop/create-branches-github-desktop
+    - title: "Make Local Changes With GitHub Desktop"
+      url: /github-desktop/make-changes-github-desktop
+    - title: "Add Local Commits With GitHub Desktop"
+      url: /github-desktop/add-commits-github-desktop
+    - title: "Open a Pull Request With GitHub Desktop"
+      url: /github-desktop/pull-request-github-desktop
+    - title: "Merge Your Pull Request on GitHub"
+      url: /github-desktop/merge-pull-request-github
+    - title: "View Your GitHub Pages Site"
+      url: /github-desktop/view-github-pages-site
+    - title: "Push to GitHub with GitHub Desktop"
+      url: /github-desktop/push-with-github-desktop
+    - title: "Add Your GitHub Pages Site to the Showcase"
+      url: /github-desktop/add-github-pages-site-showcase
+    - title: "Review the Local GitHub Flow"
+      url: /github-desktop/review-github-flow
+    - title: "Push to GitHub & Create a Pull Request"
+      url: /github-desktop/push-pull-request-github-desktop
+    - title: "Collaborate With GitHub Pull Requests"
+      url: /github-desktop/collaborate-github-pull-requests
+    - title: "Merge Your Pull Request on GitHub"
+      url: /github-desktop/merge-pull-request-showcase
 
 github-cli:
-  - title: "Welcome"
+  - title: "GitHub Pages & Git in the Command Line"
     url: /github-cli/
   - title: "Git Configuration"
-    url: /github-cli/02
-  - title: "Create the Remote Repository"
-    url: /github-cli/03
-  - title: "Clone the Repository"
-    url: /github-cli/04
-  - title: "Create Local Branches"
-    url: /github-cli/05
-  - title: "Make Local Changes"
-    url: /github-cli/06
-  - title: "Add Local Commits"
-    url: /github-cli/07
-  - title: "Open a Pull Request"
-    url: /github-cli/08
-  - title: "Merge Your Pull Request"
-    url: /github-cli/09
-  - title: "View Your site"
-    url: /github-cli/10
-  - title: "Keep Things in Sync"
-    url: /github-cli/11
-  - title: "Add Your Site to the Showcase"
-    url: /github-cli/12
-  - title: "Review the Local Workflow"
-    url: /github-cli/13
+    url: /github-cli/git-configuration
+  - title: "Create the Remote Repository on GitHub"
+    url: /github-cli/create-remote-repository
+  - title: "Choose a GitHub Pages Theme"
+    url: /github-cli/choose-github-pages-theme
+  - title: "Clone the Repository Using the Command Line"
+    url: /github-cli/clone-repo-cli
+  - title: "Create Local Branches With Git"
+    url: /github-cli/create-branches-git
+  - title: "Make Local Changes With Git"
+    url: /github-cli/make-local-changes-git
+  - title: "Add Local Commits With Git"
+    url: /github-cli/add-commits-git
+  - title: "Open a Pull Request on GitHub"
+    url: /github-cli/open-pull-request-github
+  - title: "Merge Your Pull Request on GitHub"
+    url: /github-cli/merge-pull-request-github
+  - title: "View Your GitHub Pages Site"
+    url: /github-cli/view-github-pages-site
+  - title: "Git Push & Git Pull"
+    url: /github-cli/git-push-git-pull
+  - title: "Add Your GitHub Pages Site to the Showcase"
+    url: /github-cli/add-github-pages-site-showcase
+  - title: "Review the Local GitHub Flow in the Command Line"
+    url: /github-cli/github-flow-cli
   - title: "Review Pushing and Opening Pull Requests"
-    url: /github-cli/14
-  - title: "Let's Collaborate!"
-    url: /github-cli/15
-  - title: "Merge Your PR"
-    url: /github-cli/16
+    url: /github-cli/git-push-open-pull-request
+  - title: "Collaborate With GitHub Pull Requests"
+    url: /github-cli/collaborate-github-pull-requests
+  - title: "Merge Your Pull Request on GitHub"
+    url: /github-cli/merge-pull-request-github-showcase
+
+advanced:
+  - title: "Welcome to Git Out Of Trouble"
+    url: /git-trouble/
+  - title: "Set Up Your Git Scenario Environment"
+    url: /git-trouble/git-set-up
+  - title: "Git Trouble Scenarios"
+    url: /git-trouble/git-scenarios
+    children:
+    - title: "Too Many (small) Git Commits"
+      url: /git-trouble/too-many-commits
+    - title: "Git Commit Message Sucks"
+      url: /git-trouble/git-commit-message
+    - title: "Git Committed to Wrong Branch"
+      url: /git-trouble/git-commit-wrong-branch
+    - title: "Accidental Git Commit"
+      url: /git-trouble/accidental-git-commit
+    - title: "Just Make it Go Away - Breaking Things With Git"
+      url: /git-trouble/breaking-things-with-git
+
+windows:
+  - title: "Welcome to GitHub for Windows Users"
+    url: /windows/
+  - title: "Get Started"
+    url: /windows/getting-started
+    children:
+    - title: "Install Git"
+      url: /windows/installing-git
+    - title: "Configure Git"
+      url: /windows/configure-git
+    - title: "Configure Line Endings"
+      url: /windows/git-crlf
+    - title: "Store Your Password"
+      url: /windows/git-credentials
+  - title: "Editors"
+    url: /windows/editors
+    children:
+    - title: "vi Basics"
+      url: /windows/vi-basics
+    - title: "Configure Other Editors"
+      url: /windows/configure-editors
+  - title: "Visual Studio Integration"
+    url: /windows/visual-studio
+    children:
+    - title: "Install the GitHub Extension"
+      url: /windows/install-visual-studio
+    - title: "Start a Project"
+      url: /windows/vs-start-project
+    - title: "Make a Commit"
+      url: /windows/vs-make-commit
+    - title: "What is Sync?"
+      url: /windows/vs-sync
+  - title: "Congratulations"
+    url: /windows/congrats
+
+
+github-graphql:
+  - title: "Introduction to GraphQL"
+    url: /graphql/
+  - title: "Use GraphQL for the First Time"
+    url: /graphql/first-use
+  - title: "Build a Query"
+    url: /graphql/first-query
+  - title: "Grab a Query's Response"
+    url: /graphql/query-info
+  - title: "Use a Query to Find Specific Information"
+    url: /graphql/another-query
+  - title: "Create a Mutation"
+    url: /graphql/mutation
+
+
+create-an-app-in-electron:
+  - title: "Get Started with Electron"
+    url: /electron/create-an-app/
+  - title: "Create your app"
+    url: /electron/create-an-app/create-your-app/
+  - title: "Push your project to GitHub"
+    url: /electron/create-an-app/push-your-project-to-github/
+  - title: "Create your App's Files"
+    url: /electron/create-an-app/create-your-apps-files/
+  - title: "Run Your First Electron App"
+    url: /electron/create-an-app/run-your-first-electron-app/
+  - title: "Add your index.html"
+    url: /electron/create-an-app/add-your-index-html/
+  - title: "Add CSS"
+    url: /electron/create-an-app/add-css/
+  - title: "Add JavaScript"
+    url: /electron/create-an-app/add-javascript/
+  - title: "Celebrate"
+    url: /electron/create-an-app/celebrate/
+
+
+electron-package-your-app:
+  - title: "Package Your App for Downloads"
+    url: /electron/package-your-app/
+  - title: "Use electron-packager"
+    url: /electron/package-your-app/use-electron-packager/
+  - title: "Add an icon"
+    url: /electron/package-your-app/add-an-icon/
+  - title: "Test Your App"
+    url: /electron/package-your-app/test-your-app/
+  - title: "Celebrate"
+    url: /electron/package-your-app/celebrate/
+
+
+
+electron-share-your-app:
+  - title: "Share Your App"
+    url: /electron/share-your-app/
+  - title: "List on App Stores"
+    url: /electron/share-your-app/list-on-app-stores/
+  - title: "Share on Websites"
+    url: /electron/share-your-app/share-on-websites/
+  - title: "Celebrate"
+    url: /electron/share-your-app/celebrate/

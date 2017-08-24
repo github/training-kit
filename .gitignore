@@ -7,3 +7,5 @@ _site/
 .sass-cache/
 *.*~
 _release
+*.map
+.jekyll-metadata

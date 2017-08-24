@@ -1,7 +1,7 @@
 ### Push Your Branch
 
 1. To push your local commits to the remote, use the following command: `git push -u origin BRANCH-NAME`
-1. Open your preferred web browser and access `https://github.com/githubschool/on-demand-github-pages/`.
+1. Open your preferred web browser and access `https://github.com/githubschool{{site.baseurl}}-github-pages/`.
 
 ### Create a Pull Request
 
