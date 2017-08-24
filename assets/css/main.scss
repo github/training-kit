@@ -36,6 +36,11 @@ details.flash {
     margin-bottom: $spacer-3;
     line-height: 1.25;
     border: 0;
+    vertical-align: middle;
+
+    code {
+      font-size: 0.8em;
+    }
   }
 
   h3 {
