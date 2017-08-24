@@ -12,7 +12,7 @@ main-content: |
   Take a few minutes to familiarize yourself with the layout of a GitHub repository:
 
   1. Watch the video in the **Tell me why** section for a guided tour.
-  2. Navigate to the **Code** tab to find the README.
+  2. Navigate to the **Code** tab to find the repository README.
   3. Click on an **Issue** and a **Pull Request** to see the difference (HINT: one contains changes to code, the other does not).
   4. Click **Insights** and select the **Pulse** or **Graphs** sub-options to view some of our repository stats.
 show-me-how: "images/gifs/intro/explore-repo.gif"
