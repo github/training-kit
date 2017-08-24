@@ -8,9 +8,9 @@ header:
 
 {% include toc %}
 
-# We're glad you're here!
+# Welcome!
 
-This is a style guide for writing :sparkles: training content for GitHub's [On Demand Training Platform]({{ site.baseurl }}/). This guides makes some assumptions about you and what you're trying to do:
+This is a style guide for writing :sparkles: training content for GitHub's [On Demand Training Platform]({{ site.baseurl }}/). This guide makes some assumptions about you and what you're trying to do:
 
 1. You've gone through at least one of the available training courses.
 1. You want to contribute.
@@ -38,13 +38,22 @@ Green guides learners to getting help.
 Red helps learners troubleshoot errors or roadblocks.
 {: .notice--danger}
 
-# Styling text
+# Style text to convey meaning
 
 Text is styled minimally:
 
-- **Important terms are bolded** to help learners identify their importance and help with cognition.
-- Names of repos, branches, variables, or user handles are wrapped in `backticks`.
-- Code that the learner should copy and paste, and code that spans multiple lines:
+- Vocabulary is italicized to help learners identify their importance and help with cognition.
+  - Example: A *query* is a request for specific information.
+- Button names are bolded to indicate they should be clicked.
+  - Example: Accept the filler text and click **Commit Changes**.
+- Names of repositories, files, branches, variables, or user handles are wrapped in \`backticks\`.
+  - Example: Initialize the repository with a `README.md` file.
+- Code that the learner should type, copy, or execute should be in a fenced code block:
+  - Example: To see the version of your Git installation, type:
 
-      Is put into
-        fenced code blocks.
+        git --version
+
+# Use the proper terminology
+
+- Use given names for complicated concepts, and then explain them.
+- We "click" buttons, we don't press them.
