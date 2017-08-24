@@ -21,6 +21,7 @@ main-content: |
 troubleshooting:
   includes:
     - help-build-fail.md
+    - help-gh101-common.md
     - help-other-things.md
 show-me-how:
 tell-me-why: |
