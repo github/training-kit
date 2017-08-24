@@ -9,52 +9,15 @@ This repository contains the completely open source on-demand training hosted at
 
 ## We :heart: Contributors Like You!
 
-**We’re eager to work with you**, our user community to improve these materials and develop new ones. Here's how you can help:
-
-- **You spotted a mistake:** please feel free to fork the repository and submit a change via Pull Request (not sure how to do that, [we have a course for you](https://services.github.com{{site.baseurl}})).
-- **You have an idea to make it better:** we :heart: new ideas! We invite you to open a new [Issue](https://github.com/github/training-kit/issues) if you want to talk about it, or you can [fork this repository](https://help.github.com/articles/working-with-forks/) and submit your idea via a Pull Request.
-- **You just want to help:** check out the [open issues](https://github.com/github/training-kit/issues) for projects you can tackle, review an [open pull request](https://github.com/github/training-kit/pulls), or check out [the project ROADMAP](https://github.com/github/training-kit/projects/1).
-
-For more information on contributing to this repository, check out our [CONTRIBUTING guide](https://github.com/github/training-kit/blob/master/CONTRIBUTING.md).
-
-## :world_map: Finding Your Way
-
-This repository contains three primary resources:
-
-- Our current [on-demand courses](https://services.github.com{{site.baseurl}}/) can be found in the [paths directory](/paths)
-- The translations of our popular [Git Cheat Sheets](https://services.github.com{{site.baseurl}}/downloads/github-git-cheat-sheet.pdf) can be found in the [downloads directory](/downloads). We're always looking for more. _P.S._ Right now the PDF generation is a manual process so please mention @github/services-training for assistance in getting your translation moved to the PDF.
-- The recommended Training Path can be found [here](https://services.github.com/resources/learning-path/).
-
-## Our Content Philosophy
-
-We are eager to create materials that are easy to use and follow! To that end, here are a few guidelines we ask you to keep in mind:
-
-- We focus on providing clear, step-by-step instructions for completing an activity, giving the learner the opportunity to study the concept in greater detail with the Tell Me Why feature.
-- We focus on minimalism.
+**We’re eager to work with you**, our user community to improve these materials and develop new ones. Please check out our [CONTRIBUTING guide](https://github.com/github/training-kit/blob/master/CONTRIBUTING.md) for more information.
 
 ## Projects Used in Training-Kit
+
 - We use [Jekyll](https://jekyllrb.com/) and [Markdown](https://guides.github.com/features/mastering-markdown/).
 - The theme for the on-demand training is [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) and has some [amazing documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
 - The corner badge of an Octocat is from [tholman.com](http://tholman.com/github-corners/)
 
-## Building and Packaging
-
-#### Building and Testing Locally
-
-When you are ready to test your changes, you will want to build the repository locally. This is fully automated through a series of shell scripts based [the scripts to rule them all](https://github.com/github/scripts-to-rule-them-all)!
-
-To perform a build of the materials perform the following:
-
-1. Run `script/setup`
-1. Run `script/server`.
-    - When successful, the script will initiate a local server at `http://127.0.0.1:4000{{site.baseurl}}`.
-1. Simply paste that into your favorite web-browser and you will be ready to test.
-1. You'll also need to run the following script to compile the SCSS (you can remove the `watch` flag if desired):
-```
-sass --watch assets/_scss/main.scss:assets/css/main.css
-```
-
-#### Packaging for Viewing Behind Your Firewall
+## Packaging for Viewing Behind Your Firewall
 
 If you'd like to have a copy of the files to be served from a web server inside of your firewall, start by running `script/package`.
 
