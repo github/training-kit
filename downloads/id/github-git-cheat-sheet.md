@@ -1,42 +1,45 @@
 ---
 layout: cheat-sheet
 title: Buku Saku Git GitHub
-byline: Git adalah sistem manajemen revisi terdistribusi bersifat terbuka yang menyediakan aktivitas GitHub di laptop atau komputer pribadi Anda. Buku saku ini meringkas baris perintah instruksi-instruksi Git yang paling sering dipakai sebagai referensi singkat.
+byline: Git adalah sistem manajemen revisi terdistribusi bersifat terbuka yang memfasilitasi aktivitas GitHub di laptop atau komputer pribadi Anda. Buku saku ini meringkas baris perintah instruksi-instruksi Git yang biasa digunakan sebagai referensi singkat.
 leadingpath: ../
 ---
 
 {% capture colOne %}
-## Pasang Git
-GitHub menyediakan klien bagi komputer, termasuk di dalamnya ada antarmuka grafis untuk tindakan repositori yang paling umum dilakukan dan tampilan konsol tempat menuliskan baris perintah untuk melaksanakan tindakan lebih lanjut.
+## Memasang Git
+GitHub menyediakan klien untuk komputer yang di dalamnya termasuk sebuah
+antarmuka grafis untuk tindakan-tindakan yang paling umum dilakukan pada suatu
+repositori dan sebuah edisi konsol pembaruan otomatis dari Git untuk skenario
+lanjutan.
 
 ### GitHub untuk Windows
-http://windows.github.com
+[windows.github.com](http://windows.github.com)
 
 ### GitHub untuk Mac
-http://mac.github.com
+[mac.github.com](http://mac.github.com)
 
 Distribusi Git untuk Linux dan sistem POSIX tersedia di situs resmi Git SCM.
 
-### Git untuk semua media
-https://git-scm.com
+### Git untuk Semua Sistem
+[git-scm.com](https://git-scm.com)
 
-## Konfigurasi alat
+## Konfigurasi Alat
 Konfigurasi informasi pengguna untuk semua repositori lokal
 
 ```$ git config --global user.name "[nama]"```
 
-Menata nama yang ditautkan dalam pencatatan _commit_ Anda
+Mengatur nama yang ingin ditautkan pada transaksi _commit_ Anda
 
 ```$ git config --global user.email "[alamat surel]"```
 
-Menata alamat pos-el yang ditautkan dalam pencatatan _commit_ Anda
+Mengatur alamat surel yang ingin ditautkan pada transaksi _commit_ Anda
 
-## Buat repositori
-Memulai repositori baru atau mengambilnya dari tautan yang sudah ada
+## Membuat Repositori
+Mulai repositori baru atau dapatkan satu dari URL yang sudah ada
 
 ```$ git init [nama-proyek]```
 
-Membuat repositori lokal dengan nama tertentu
+Membuat repositori lokal baru dengan nama tertentu
 
 ```$ git clone [url]```
 
@@ -50,12 +53,12 @@ Unduh sebuah proyek dan seluruh riwayat revisinya
 
 {% capture colTwo %}
 
-## Buat perubahan
-Tinjau suntingan dan daftarkan _commit_
+## Membuat Perubahan
+Tinjau suntingan dan buat sebuah transaksi _commit_
 
 ```$ git status```
 
-Daftar semua berkas yang baru dibuat atau telah dimodifikasi dan akan didaftarkan dalam bentuk _commit_
+Daftar semua berkas baru atau modifikasi yang siap didaftarkan dalam _commit_
 
 ```$ git diff```
 
@@ -63,22 +66,23 @@ Menunjukkan perbedaan berkas-berkas yang belum didaftarkan dalam _commit_
 
 ```$ git add [berkas]```
 
-Rekam berkas untuk didaftarkan ke dalam _commit_
+Rekam berkas yang akan didaftarkan ke dalam _commit_
 
 ```$ git diff --staged```
 
-Menunjukkan perbedaan file antara hasil revisi dan versi berkas terakhir yang terdaftar
+Menunjukkan perbedaan berkas hasil revisi dengan versi berkas terakhir yang
+terdaftar
 
 ```$ git reset [berkas]```
 
 Batal merevisi berkas, namun tetap mempertahankan isinya
 
-```$ git commit -m "[descriptive message]"```
+```$ git commit -m "[pesan deskriptif]"```
 
 Daftarkan perubahan berkas secara permanen di riwayat revisi
 
-## Perubahan untuk banyak berkas
-Namai serangkaian _commit_ dan gabungkan upaya pengubahan jadi satu
+## Perubahan Berkelompok
+Menyebutkan serangkaian _commit_ dan menggabungkan upaya yang telah selesai
 
 ```$ git branch```
 
@@ -86,7 +90,7 @@ Daftar semua cabang lokal di repositori saat ini
 
 ```$ git branch [nama-cabang]```
 
-Buat cabang baru
+Membuat cabang baru
 
 ```$ git checkout [nama-cabang]```
 
@@ -107,7 +111,7 @@ Hapus cabang tertentu
 
 
 {% capture colThree %}
-## Pergantian nama berkas
+## Pergantian Nama Berkas
 Relokasi dan menghapus berkas terevisi
 
 ```$ git rm [berkas]```
@@ -122,8 +126,8 @@ Menghapus berkas dari riwayat revisi dengan tetap mempertahankan berkas lokal
 
 Mengganti nama berkas dan mempersiapkan berkas untuk pendaftaran _commit_
 
-## Tahan pelacakan
-Mengabaikan berkas dan jalur untuk sementara
+## Tahan Pelacakan
+Mengabaikan berkas dan garis edar sementara
 
 ```
 *.log
@@ -131,13 +135,13 @@ build/
 temp-*
 ```
 
-Sebuah berkas teks bernama `.gitignore` mengabaikan revisi berkas yang tidak disengaja serta jalur berkas yang cocok dengan pola tertentu
+Sebuah berkas teks bernama `.gitignore` mengabaikan revisi berkas yang tidak disengaja serta garis edar berkas yang cocok dengan pola tertentu
 
 ```$ git ls-files --others --ignored --exclude-standard```
 
-Daftarkan semua berkas yang diabaikan dalam proyek ini
+Daftar semua berkas yang diabaikan dalam proyek tersebut
 
-## Simpan fragmen
+## Menyimpan Fragmen
 Menyimpan dan mengembalikan perubahan yang belum lengkap
 
 ```$ git stash```
@@ -161,7 +165,7 @@ Membuang koleksi perubahan yang paling baru disimpan
 </div>
 
 {% capture colFour %}
-## riwayat ulasan
+## Riwayat Ulasan
 Jelajah dan periksa perkembangan berkas-berkas dalam proyek
 
 ```$ git log```
@@ -176,31 +180,31 @@ Daftar riwayat revisi untuk sebuah berkas, termasuk pergantian namanya
 
 Menunjukkan perbedaan konten antar dua cabang
 
-`` `$ git show [commit]` ``
+```$ git show [commit]```
 
-Mennampilkan perubahan konten dan metadata yang terdaftar dalam sebuah komit
+Mennampilkan perubahan konten dan _metadata_ dari _commit_ tertentu
 
-## Lakukan _commit_ kembali
+## Melakukan _Commit_ Kembali
 Menghapus kesalahan dan buat riwayat penggantian
 
-`` `$ git reset [commit]` ``
+```$ git reset [commit]```
 
 Membatalkan semua _commit_ setelah `[commit]`, dengan melestarikan perubahan lokal
 
-`` `$ Git reset --hard [commit]` ``
+```$ git reset --hard [commit]```
 
 Membuang semua riwayat dan perubahan sampai di titik yang ditentukan oleh _commit_
 
-## Sinkronisasi perubahan
-Daftar (tautan) remot dan perbarui riwayat repositori
+## Sinkronisasi Perubahan
+Daftarkan _remote_ (URL) dan tukar riwayat repositori
 
-```$ git fetch [remot]```
+```$ git fetch [remote]```
 
-Unduh semua riwayat dari repositori remot
+Unduh semua riwayat dari repositori _remote_
 
-```$ git merge [remot]/[cabang]```
+```$ git merge [remote]/[cabang]```
 
-Menggabungkan cabang remot ke dalam cabang lokal saat ini
+Menggabungkan cabang _remote_ ke dalam cabang lokal saat ini
 
 ```$ git push [remote] [branch]```
 
