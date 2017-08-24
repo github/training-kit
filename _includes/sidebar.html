@@ -23,9 +23,34 @@
             {% endif %}
           {% endif %}
     
-          <li><a href="{{ domain }}{{ nav.url }}" class="filter-item ws-normal px-3 {% if forloop.last %}mb-0{% endif %} py-2 {{ selected }}">{{ nav.title }}</a></li>
-        {% endfor %}
-      </ul>
+          <li>
+            <a href="{{ domain }}{{ nav.url }}" class="filter-item ws-normal px-3 {% if forloop.last %}mb-0{% endif %} py-2 {{ selected }}">{{ nav.title }}</a>
+
+            {% if nav.children != null %}
+              <ul>
+                {% for child in nav.children %}
+                  {% comment %} internal/external URL check {% endcomment %}
+                  {% if child.url contains "://" %}
+                    {% assign domain = "" %}
+                  {% else %}
+                    {% assign domain = site.url | append: site.baseurl %}
+                  {% endif %}
+    
+                  {% comment %} set "active" class on current page {% endcomment %}
+                  {% if child.url == page.url %}
+                    {% assign active = "active" %}
+                  {% else %}
+                    {% assign active = "" %}
+                  {% endif %}
+    
+                  <li><a href="{{ domain }}{{ child.url }}" class="{{ active }}">{{ child.title }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+
+          {% endfor %}
+        </ul>
     </nav>
   </aside>
 </div>
