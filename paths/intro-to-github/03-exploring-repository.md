@@ -30,8 +30,9 @@ tell-me-why: |
 
   - **Projects:** You can create Kanban style project tracking boards within GitHub.
   - **Wiki**: GitHub also has a place to create and store your relevant project documentation.
-  - **Pulse**: Pulse is our project's dashboard. It contains information on the work that has been completed and the work in progress and can be found under the Insights menu option.
-  - **Graphs**: Graphs provide a more granular view of the repository activity, including who has contributed, when the work has been done, and who has forked the repository and can be found under the Insights menu option.
+  - **Insights**: A drop-down menu option that contains links to different analytic tools for your repository. It contains the following items:
+     - **Pulse**: Pulse is our project's dashboard. It contains information on the work that has been completed and the work in progress.
+     - **Graphs**: Graphs provide a more granular view of the repository activity, including who has contributed, when the work has been done, and who has forked the repository.
 
   ### Special Files
 
