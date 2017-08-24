@@ -4,4 +4,4 @@ If all of your checks are passing and you do not have any requested changes from
 1. Scroll to the bottom of the Pull Request and click the **Merge pull request** button.
 1. You can accept the default merge commit message.
 1. Click **Confirm merge**.
-1. Delete the branch, as it no longer contains unique work.
+1. Click **Delete branch** to delete the branch, as it no longer contains unique work.
