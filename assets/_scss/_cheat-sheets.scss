@@ -1,0 +1,16 @@
+.cheat-sheet {
+    width: 50%;
+    padding: 0 16px;
+    float: left;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        float: none;
+    }
+
+    svg {
+        width: 72px;
+        height: 72px;
+        margin: 0 auto;
+    }
+}
