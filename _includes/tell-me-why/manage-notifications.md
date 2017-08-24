@@ -5,14 +5,14 @@ You can also choose to receive notifications of a full repository. Whenever ther
 ### You can silence or unmute notifications of _individual issues and pull requests_.
 
 1. Go to the issue or pull request.
-2. Click the _(Un)subscribe_ button on the right, under _Notifications_  
+2. Click the **(Un)subscribe** button on the right, under _Notifications_  
 Underneath the button a short description explains the current notification status.
 
 ### You can _customize_ notifications in Settings.
 
-1. Go to your profile icon
-2. Go to _Settings_
-3. Select _Notifications_ from the menu on the left.  
+1. Click your profile icon.
+2. Click **Settings**.
+3. Click **Notifications** from the menu on the left.  
 Here you can adjust your notification [preferences](https://help.github.com/articles/managing-notification-delivery-methods/).
 
 ### You can choose to receive notifications from a _repository_.
@@ -23,11 +23,11 @@ Here you can adjust your notification [preferences](https://help.github.com/arti
 
 ### You can _review notifications_ for the repositories you are already watching.
 
-1. Go to your profile icon
-2. Go to _settings_
-3. Select _Notification_ from the menu on the left.
+1. Click your profile icon.
+2. Click **Settings**.
+3. Click **Notification** from the menu on the left.
 4. Click on the [repositories you’re watching](https://github.com/watching) link.
-5. Select the _Watching_ tab.
-6. Click the _(Un)watch_ button to disable or enable notifications for that repository.
+5. Select the **Watching** tab.
+6. Click the **(Un)watch** button to disable or enable notifications for that repository.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ocQldxF7fMY" frameborder="0" allowfullscreen></iframe>
