@@ -27,7 +27,7 @@
             <a href="{{ domain }}{{ nav.url }}" class="filter-item ws-normal px-3 {% if forloop.last %}mb-0{% endif %} py-2 {{ selected }}">{{ nav.title }}</a>
 
             {% if nav.children != null %}
-              <ul>
+              <ul class="list-style-none mt-0 mb-2 pl-4">
                 {% for child in nav.children %}
                   {% comment %} internal/external URL check {% endcomment %}
                   {% if child.url contains "://" %}
@@ -38,12 +38,12 @@
     
                   {% comment %} set "active" class on current page {% endcomment %}
                   {% if child.url == page.url %}
-                    {% assign active = "active" %}
+                    {% assign class = "" %}
                   {% else %}
-                    {% assign active = "" %}
+                    {% assign class = "text-gray" %}
                   {% endif %}
     
-                  <li><a href="{{ domain }}{{ child.url }}" class="{{ active }}">{{ child.title }}</a></li>
+                  <li><a href="{{ domain }}{{ child.url }}" class="{% if child.url != page.url %}text-gray{% endif %} d-inline-block mb-2">{{ child.title }}</a></li>
                 {% endfor %}
               </ul>
             {% endif %}
