@@ -31,3 +31,7 @@ Meet the members of GitHub who will be in Gitter and the class repository helpin
 |@beardofedu|@brianamarie|@crichID|@hectorsector|@hollenberry|
 {: .text-center}
 ---
+
+## Participating
+
+By participating in the activities in this course, you agree to comply with our [Code of Conduct](https://github.com/github/training-kit/blob/master/CODE_OF_CONDUCT.md).
