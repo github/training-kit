@@ -4,7 +4,7 @@ Now that you have created a file, you will create a Pull Request to show your pr
 2. Click `New Pull Request`.
 3. In the *base* dropdown, choose `master`.
 4. In the *compare* dropdown, choose your branch.
-5. Click `Create Pull Request`
+5. Click **Create pull request**.
 6. You can leave the default title or make it more descriptive.
 7. Use [markdown formatting](https://guides.github.com/features/mastering-markdown/) to explain the work you have done on your branch.
   - Summarize your proposed change.
