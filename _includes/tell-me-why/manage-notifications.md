@@ -17,9 +17,9 @@ Here you can adjust your notification [preferences](https://help.github.com/arti
 
 ### You can choose to receive notifications from a _repository_.
 
-* _**Watch**_ : You will receive a notification when a **new** _issue_, _pull request_ or _comment_ is posted, and when an _issue_ is **closed** or a _pull request_ is **merged**.  
-* _**Not watching**_ : Stop receiving notifications, but @ mentions will still alert you.  
-* _**Ignore**_ : Stops all notifications.  
+* _**Watch**_: You will receive a notification when a **new** _issue_, _pull request_ or _comment_ is posted, and when an _issue_ is **closed** or a _pull request_ is **merged**.  
+* _**Not watching**_: Stop receiving notifications, but @ mentions will still alert you.  
+* _**Ignore**_: Stops all notifications.  
 
 ### You can _review notifications_ for the repositories you are already watching.
 
