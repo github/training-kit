@@ -37,6 +37,6 @@ tell-me-why: |
 
   ## Choose Your Branch
 
-  Next, designate where you want your changes to be committed. If you were on your branch when you clicked the **Create New File** button, GitHub will prompt you to commit directly to that branch. But, if you forgot to create a new branch, you can do it now.
+  Next, designate where you want your changes to be committed. If you were on your branch when you clicked the **Create new file** button, GitHub will prompt you to commit directly to that branch. But, if you forgot to create a new branch, you can do it now.
 
 ---
