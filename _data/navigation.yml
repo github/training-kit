@@ -173,8 +173,6 @@ windows:
       url: /windows/vs-make-commit
     - title: "What is Sync?"
       url: /windows/vs-sync
-    - title: "Managing Merge Conflicts"
-      url: /windows/merge-conflict  
   - title: "Congratulations"
     url: /windows/congrats
 
