@@ -16,7 +16,9 @@ main-content: |
 
   ### Saving the Commit
   1. Press the `esc` key.
-  1. Enter `:wq` to save (or `w`rite) your commit message, or `:q` to `q`uit without saving your commit message.
+  1. Enter `:wq` to save (or `w`rite) your commit message.
+
+      > You can enter `:q` to `q`uit the editor without saving your commit message.
 
   ### Discarding the Commit
   1. Press the `esc` key.
