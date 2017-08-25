@@ -19,7 +19,7 @@ main-content: |
   ## Defining `user.email`
   1. In your terminal application enter, `git config --global user.email your_email@email_host.com`; where `your_email@mail_host.com` is the e-mail address associated with your GitHub account.
 
-  Now that you have configured your user name and email, it is time to define your Carriage Return Line Feed (crlf) on the next page.
+  Now that you have configured your user name and email, it is time to define your Carriage Return Line Feed (crlf) settings on the next page.
 
 show-me-how: "images/gifs/windows/configure-git.gif"
 tell-me-why: |
