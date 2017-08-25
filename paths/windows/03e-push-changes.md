@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Make a Commit
-permalink: /windows/vs-make-commit
-next-page: /windows/vs-push-changes
+title: Push Your Changes
+permalink: /windows/vs-push-changes
+next-page: /windows/vs-sync
 sidebar:
   nav: "windows"
 main-content: |
