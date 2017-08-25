@@ -14,7 +14,7 @@ This repository contains the completely open source on-demand training hosted at
 ## Projects Used in Training-Kit
 
 - We use [Jekyll](https://jekyllrb.com/) and [Markdown](https://guides.github.com/features/mastering-markdown/).
-- The theme for the on-demand training is [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) and has some [amazing documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
+- Our content is styled using the [Primer CSS toolkit](https://github.com/primer/primer-css).
 - The corner badge of an Octocat is from [tholman.com](http://tholman.com/github-corners/)
 
 ## Packaging for Viewing Behind Your Firewall
