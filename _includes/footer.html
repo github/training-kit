@@ -1,11 +1,9 @@
-{% include base_path %}
-
-<div class="page__footer-follow text-center">
-  <p style="margin-bottom: 0.5em"><a href="{{ site.baseurl }}/community/">Made with :heart: by :octocat:s and friends</a></p>
-  <ul class="social-icons">
-    <li><a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label }}</a></li>
-    <li><a href="{{ site.baseurl }}/community"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Community</a></li>
-  </ul>
-</div>
-
-<div class="page__footer-copyright text-center">&copy; {{ site.time | date: '%Y' }} {{ site.name }} {{ site.data.ui-text[site.locale].powered_by }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<footer class="bg-gray-light border-top py-4 text-gray text-center mt-6">
+  <a href="{{ site.baseurl }}/community/" class="text-gray-dark mb-2">Made with :heart: by :octocat:s and friends</a>
+  <div class="d-flex flex-justify-center text-uppercase text-bold my-1">
+    <a href="{{ site.baseurl }}/feed.xml" class="d-flex flex-items-center text-gray text-uppercase mr-4"><div class="d-flex mr-1">{% include octicons/rss.svg %}</div> {{ site.data.ui-text[site.locale].feed_label }}</a>
+    <a href="{{ site.baseurl }}/community" class="d-flex flex-items-center text-gray text-uppercase"><div class="d-flex mr-1">{% include octicons/organization.svg %}</div> Community</a>
+  </div>
+  
+  <p>&copy; {{ site.time | date: '%Y' }} {{ site.name }} {{ site.data.ui-text[site.locale].powered_by }} <a href="http://jekyllrb.com" rel="nofollow" class="text-gray-dark">Jekyll</a> &amp; <a href="https://github.com/primer/primer-css" rel="nofollow" class="text-gray-dark">Primer</a>.</p>
+</footer>

@@ -21,6 +21,7 @@
 [Step-by-step contribution guide](#step-by-step-contribution-guide)
 - [Our content philosophy](#our-content-philosophy)
 - [Content structure](#content-structure)
+- [Styling content](#styling-content)
 - [Building and testing](#building-and-testing)
 
 <hr>
@@ -105,6 +106,10 @@ Adding an on-demand course requires you to do the following:
 - Add a folder in the [paths directory](/paths) based on the course name
 - Add the course pages in the new folder you created. For an example of a sequential course, check out the [Introduction to GitHub course](/paths/intro-to-github) for a non-sequential course, check out [Git Out of Trouble](/paths/git-trouble)
 - Add the course to the `main` navigation in [_data/navigation.yml](_data/navigation.yml) and add your course navigation in a new section at the end of the files
+
+## Styling content
+
+This site uses GitHub's CSS toolkit called [Primer](https://github.com/primer/primer-css). It's easy to use, and if your contribution requires some design or front-end work you should check out the [Primer Docs](http://primercss.io/).
 
 ### Building and testing
 

@@ -1,32 +1,36 @@
 ---
 layout: default
-title: GitHub Resources
-header:
-  overlay_image: cover.jpeg
-  overlay_filter: rgba(46, 129, 200, 0.6)
+title: GitHub Learning Resources
 ---
+{% include light-hero.html %}
 
-{% include page__hero.html %}
-
-<div class="container resources" style="margin-top: 32px">
-  <a class="resources__tile card" href="learning-path/">
-    {% include octicons/milestone.svg %}
-    <h4>Learning Path</h4>
-    <p>A collection of our favorite coures, videos and tutorials in a sequential, easy-to-follow learning path.</p>
-  </a>
-  <a class="resources__tile card" href="cheatsheets/">
-    {% include octicons/terminal.svg %}
-    <h4>Cheat Sheets</h4>
-    <p>Helpful quick reference guides for anyone who uses Git and GitHub.</p>
-  </a>
-  <a class="resources__tile card" href="videos/">
-    {% include octicons/device-camera-video.svg %}
-    <h4>Videos</h4>
-    <p>Our favorite videos on Git, GitHub and other tools for your toolkit.</p>
-  </a>
-  <a class="resources__tile card" href="books/">
-    {% include octicons/book.svg %}
-    <h4>Books</h4>
-    <p>If you prefer the printed word, we think these books are some of the best on Git and GitHub.</p>
-  </a>
+<div class="d-flex flex-wrap text-center container-lg mx-auto p-responsive mt-4 gutter-condensed resources">
+  <div class="col-12 col-sm-6 col-md-3 mb-3">
+    <a class="d-block text-blue height-full card hover-card p-4" href="learning-path/">
+      {% include octicons/milestone.svg %}
+      <h4 class="text-blue">Learning Path</h4>
+      <p class="text-gray mb-0">A collection of our favorite coures, videos and tutorials in a sequential, easy-to-follow learning path.</p>
+    </a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 mb-3">
+    <a class="d-block text-purple height-full card hover-card p-4" href="cheatsheets/">
+      {% include octicons/terminal.svg %}
+      <h4 class="text-blue">Cheat Sheets</h4>
+      <p class="text-gray mb-0">Helpful quick reference guides for anyone who uses Git and GitHub.</p>
+    </a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 mb-3">
+    <a class="d-block text-red height-full card hover-card p-4" href="videos/">
+      {% include octicons/device-camera-video.svg %}
+      <h4 class="text-blue">Videos</h4>
+      <p class="text-gray mb-0">Our favorite videos on Git, GitHub and other tools for your toolkit.</p>
+    </a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 mb-3">
+    <a class="d-block text-green height-full card hover-card p-4" href="books/">
+      {% include octicons/book.svg %}
+      <h4 class="text-blue">Books</h4>
+      <p class="text-gray mb-0">If you prefer the printed word, we think these books are some of the best on Git and GitHub.</p>
+    </a>
+  </div>
 </div>
