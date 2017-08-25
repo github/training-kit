@@ -171,7 +171,7 @@ windows:
       url: /windows/vs-start-project
     - title: "Make a Commit"
       url: /windows/vs-make-commit
-    - title: "Push Your Changes"
+    - title: "Sharing and Receiving Changes"
       url: /windows/vs-push-changes
     - title: "What is Sync?"
       url: /windows/vs-sync

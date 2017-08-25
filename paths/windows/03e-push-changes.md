@@ -3,31 +3,31 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Push Your Changes
+title: Sharing and Receiving Changes
 permalink: /windows/vs-push-changes
 next-page: /windows/vs-sync
 sidebar:
   nav: "windows"
 main-content: |
-  Crafting a commit using the GitHub Extension in Visual Studio is a relatively straightforward process.
+  After creating a commit (or many commits), it is time to send (or `push`) your changes to your GitHub repository.
 
-  ## Creating a Commit
-  1. Make changes to your project.
-  1. In the **Team Explorer** pane, right-click a modified file and select **Commit**.
+  ## Pushing Your Changes
+  1. From the **Home** page on the **Team Explorer** pane, select **Sync**.
+  1. Ensure you are on the correct **branch**.
+  1. In the **Outgoing Commits (x)** section, click the **Push** option. The Visual Studio GitHub Extension will push the changes on the branch you have selected to the repository on GitHub, if you don't already have a repository on GitHub, it will be created for you.
 
-  ### Selecting All the files
-  1. Enter a commit message identifying the changes you made.
-  1. Click the **Commit all** button.
+  ## Retrieving Changes
+  1. From the **Home** page on the **Team Explorer** pane, select **Sync**.
+  1. Ensure you are on the correct **branch**.
+  1. In the **Incoming Commits** section, click the **Fetch** option. `Fetch`ing retrieves any commits on your current branch that were made on the remote repository without merging those changes it.
+  1. Click **Pull** or **Sync** to merge the changes from your remote repository into your local files. If you select **Sync** any local commits will be `push`ed to your remote.
 
-  ### Selecting Specific Files
-  1. Enter a commit message identifying the changes you made.
-  1. Right click the file(s) you want to add to the commit and select **Stage**.
-  1. Click the **Commmit staged** button.
-
-  ## Now what?
-  After you have created a commit (or many commits) it is time to `push` your changes to your remote repository and potentially share it with other collaborators on your project.
+     > The (x) in the Incoming Commits and Outgoing Commits section identifies the number of commits that you will be `fetch`ing (or retrieving) from the repository on GitHub or how many commits you will be `push`ing (or sending) to the repository.
 
 show-me-how: "/images/gifs/windows/tfs-make-commit.gif"
 tell-me-why: |
-   Commits are your opportunity to  create a snapshot of your project at a given period in time. After creating a commit (or commits) you should `push` your changes to your remote repository so that other collaborators have access to the latest changes you have made to the project. Additionally, even if you are working on a project without other collaborators, `push`ing your changes to your remote repository acts as a backup and prevents you from losing changes should your local machine encounter issues.
+   Sharing your changes on GitHub accomplishes a few things:
+   - Contributors on your project have the latest version of your working files on a specific branch.
+   - It acts as a backup to the project files on your local machine.
+   
 ---
