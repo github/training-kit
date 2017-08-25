@@ -11,7 +11,7 @@ sidebar:
 main-content: |
   To integrate your GitHub account in Visual Studio, you need to install the GitHub Extension for Visual Studio. The following instructions identify how to install the extension within Visual Studio.
 
-  1. **Tools > Extensions and Updates**
+  1. Select **Tools > Extensions and Updates** from the main menu.
   1. Select **Online** from the left side of the Extensions and Updates window.
   1. Search for `GitHub Extension` using the search bar in the top right corner.
   1. Access the GitHub Extension by selecting **View > Other Windows > GitHub** from the main menu.

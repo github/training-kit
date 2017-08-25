@@ -25,7 +25,7 @@ main-content: |
   1. Click the **Commmit staged** button.
 
   ## Now what?
-  After you have created a commit (or many commits) it is `push` your changes to your remote repository and potentially share it with other collaborators on your project.
+  After you have created a commit (or many commits) it is time to `push` your changes to your remote repository and potentially share it with other collaborators on your project.
 
 show-me-how: "/images/gifs/windows/tfs-make-commit.gif"
 tell-me-why: |
