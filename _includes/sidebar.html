@@ -1,25 +1,56 @@
-{% include base_path %}
+<div class="col-12 col-md-3">
+  <aside class="px-1 py-2 px-md-2 rounded-2 border mb-4 mb-md-0">
+    {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+    {% assign navigation = site.data.navigation[page.sidebar.nav] %}
+    
+    <nav>
+      {% if page.sidebar.title %}<header><h4 class="nav__title" style="padding: 0;">{{ page.sidebar.title }}</h4></header>{% endif %}
+      <ul class="list-style-none">
+        {% for nav in navigation %}
+          {% if nav.url %}
+            {% comment %}internal/external URL check{% endcomment %}
+            {% if nav.url contains "://" %}
+              {% assign domain = "" %}
+            {% else %}
+              {% assign domain = site.url | append: site.baseurl %}
+            {% endif %}
+    
+            {% comment %}set "selected" class on current page{% endcomment %}
+            {% if nav.url == page.url %}
+              {% assign selected = "selected" %}
+            {% else %}
+              {% assign selected = "" %}
+            {% endif %}
+          {% endif %}
+    
+          <li>
+            <a href="{{ domain }}{{ nav.url }}" class="filter-item ws-normal px-3 {% if forloop.last %}mb-0{% endif %} py-2 {{ selected }}">{{ nav.title }}</a>
 
-{% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
-  {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src=
-        {% if s.image contains "://" %}
-          "{{ s.image }}"
-        {% else %}
-          "{{ s.image | prepend: "/images/" | prepend: base_path }}"
-        {% endif %}
-        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-      {% if s.text %}{{ s.text | markdownify }}{% endif %}
-    {% endfor %}
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
-  {% endif %}
-  </div>
-{% endif %}
+            {% if nav.children != null %}
+              <ul class="list-style-none mt-0 mb-2 pl-4">
+                {% for child in nav.children %}
+                  {% comment %} internal/external URL check {% endcomment %}
+                  {% if child.url contains "://" %}
+                    {% assign domain = "" %}
+                  {% else %}
+                    {% assign domain = site.url | append: site.baseurl %}
+                  {% endif %}
+    
+                  {% comment %} set "active" class on current page {% endcomment %}
+                  {% if child.url == page.url %}
+                    {% assign class = "" %}
+                  {% else %}
+                    {% assign class = "text-gray" %}
+                  {% endif %}
+    
+                  <li><a href="{{ domain }}{{ child.url }}" class="{% if child.url != page.url %}text-gray{% endif %} d-inline-block mb-2">{{ child.title }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+
+          {% endfor %}
+        </ul>
+    </nav>
+  </aside>
+</div>

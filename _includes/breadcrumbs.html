@@ -1,5 +1,3 @@
-{% include base_path %}
-
 {% case site.categories.type %}
   {% when "liquid" %}
     {% assign path_type = "#" %}
@@ -14,8 +12,8 @@
   {% assign crumb_path = site.categories.path %}
 {% endif %}
 
-<nav class="breadcrumbs">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+<nav class="bg-blue-light p-responsive py-2 border-bottom">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="d-flex list-style-none container-lg mx-auto">
     {% assign crumbs = page.url | split: '/' %}
     {% assign i = 1 %}
     {% for crumb in crumbs offset: 1 %}
@@ -24,7 +22,7 @@
           <a href="{{ site.baseurl }}/" itemprop="item"><span itemprop="name">{{ site.data.ui-text[site.locale].breadcrumb_home_label }}</span></a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
-        <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator }}</span>
+        <span class="mx-2 text-gray">{{ site.data.ui-text[site.locale].breadcrumb_separator }}</span>
       {% endif %}
       {% if forloop.last %}
         <li class="current">{{ page.title }}</li>
@@ -34,7 +32,7 @@
           <a href="{{ site.baseurl }}{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
-        <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator }}</span>
+        <span class="mx-2 text-gray">{{ site.data.ui-text[site.locale].breadcrumb_separator }}</span>
       {% endif %}
     {% endfor %}
   </ol>

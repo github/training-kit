@@ -78,7 +78,9 @@ include:
 - _stylesheets
 - _javascript
 sass:
-  sass_dir: assets/_scss
+  load_paths:
+    - assets/_scss
+    - node_modules
   style: :compressed
 
 # Custom site configuration

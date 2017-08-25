@@ -3,12 +3,9 @@ layout: single
 title: GitHub Training Community
 category: community
 permalink: /community/
-header:
-  overlay_image: cover.jpeg
-  overlay_filter: rgba(46, 129, 200, 0.6)
 ---
 
-# Availability
+## Availability
 
 GitHub's training team drops by the on-demand repositories daily to answer questions and offer assistance to those who are stuck.
 
@@ -16,7 +13,7 @@ GitHub's training team drops by the on-demand repositories daily to answer quest
 
 In the meantime, a great way to learn new things is to explain them to others. If you see any questions you feel equipped to answer, please feel free to help!  
 
-## GitHub Trainers
+### GitHub Trainers
 
 Meet the members of GitHub who will be dropping by the class repository and helping you along the way.
 
@@ -26,12 +23,12 @@ Meet the members of GitHub who will be dropping by the class repository and help
 {: .text-center}
 ---
 
-## Code of Conduct
+### Code of Conduct 
 
 By participating in the activities in this course, you agree to comply with our [Code of Conduct](https://github.com/github/training-kit/blob/master/CODE_OF_CONDUCT.md).
 
-## GitHub Professional Services
+### GitHub Professional Services
 
-Courses on the On Demand website are made with :heart: by the friendly :octocat:s from GitHub Professional Services with help from the open source community. These courses are an extension of the paid engagements that we provide to companies large and small. If you are interested in how GitHub Professional Services can help you and your team or organization, [contact us](https://services.github.com/contact/).   
+Courses on the On Demand website are made with :heart: by the friendly :octocat:s from GitHub Professional Services with help from the open source community.    
 
 For information regarding the different engagements that we provide, please refer to the [Services](https://services.github.com) website.
