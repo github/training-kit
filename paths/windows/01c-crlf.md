@@ -9,7 +9,7 @@ next-page: /windows/git-credentials
 sidebar:
   nav: "windows"
 main-content: |
-  Git is a really powerful collaboration tool, but not everyone you collaborate with uses the same operating system. Thankfully, Git is comes to the party equipped with all the tools necessary to make collaborating easy, you just need to identify what OS you are working on so Git can take care of the rest.
+  Git is a really powerful collaboration tool, but not everyone you collaborate with uses the same operating system. Thankfully, Git comes to the party equipped with all the tools necessary to make collaborating easy, you just need to identify what OS you are working on so Git can take care of the rest.
 
   1. Open your terminal application.
   1. Enter: `git config --global core.autocrlf true`. These instructions assume you are using Windows, if you are using macOS or a flavor of Linux, use the following: `git config --global core.autocrlf input`.
