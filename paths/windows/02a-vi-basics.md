@@ -9,7 +9,7 @@ next-page: /windows/configure-editors
 sidebar:
   nav: "windows"
 main-content: |
-  If you haven't defined a `core.editor` for git to use, it defaults to using [vi](https://en.wikipedia.org/wiki/Vi) for commit messages, interactive rebases, and other commands that require user input. Before we identify how to setup a `core.editor` you might need the following information:
+  If you haven't defined a `core.editor` for Git to use, it defaults to using [vi](https://en.wikipedia.org/wiki/Vi) for commit messages, interactive rebases, and other commands that require user input. Before we identify how to setup a `core.editor` you might need the following information:
 
   ## How the *$#@& do I get out of vi?
   First, don't worry, everyone gets stuck in vi. Second, it is _really_ easy to get out of vi using the following:

@@ -9,7 +9,7 @@ next-page: /windows/congrats
 sidebar:
   nav: "windows"
 main-content: |
-  As you learn to iteratively make changes to your project using git, you might be curious about what the `Sync` button does. Although `Sync` isn't a git command, some GUI environments provide a `sync` button to both update your local files and push your local changes to your remote (your hosted repository).
+  As you learn to iteratively make changes to your project using Git, you might be curious about what the `Sync` button does. Although `Sync` isn't a Git command, some GUI environments provide a `sync` button to both update your local files and push your local changes to your remote (your hosted repository).
 
   ## GitHub Extension for Visual Studio
   The **Sync** button is available on the **Team Explorer** pane and and also displayed after you create a commit using the extension. The **sync** tool enables you to select how you want to update the project:
