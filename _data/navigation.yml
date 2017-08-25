@@ -19,6 +19,8 @@ main:
     url: /path/
   - title: "GitHub Training Community"
     url: /community/
+  - title: "Style Guide"
+    url: /style/
 
 # When creating new sidebar navs, remember the url in this document needs to match the url assigned in the permalink field.
 
