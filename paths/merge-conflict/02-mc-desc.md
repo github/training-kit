@@ -3,9 +3,9 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Managing Merge Conflicts
-permalink: /merge-conflicts
-next-page: /merge-conflicts/normal-merge
+title: "Normal" Merge
+permalink: /merge-conflicts/mc-description
+next-page: /merge-conflicts/gh-pages
 sidebar:
   nav: "merge-conflicts"
 main-content: |

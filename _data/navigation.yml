@@ -236,3 +236,13 @@ electron-share-your-app:
     url: /electron/share-your-app/share-on-websites/
   - title: "Celebrate"
     url: /electron/share-your-app/celebrate/
+
+merge-conflicts:
+  - title: "Managing Merge Conflicts"
+    url: /merge-conflicts
+  - title: "List on App Stores"
+    url: /electron/share-your-app/list-on-app-stores/
+  - title: "Share on Websites"
+    url: /electron/share-your-app/share-on-websites/
+  - title: "Celebrate"
+    url: /electron/share-your-app/celebrate/
