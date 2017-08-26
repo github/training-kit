@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: "Normal" Merge
-permalink: /merge-conflicts/example-03
+permalink: /merge-conflicts/what-next
 next-page: /merge-conflicts/ide-examples
 sidebar:
   nav: "merge-conflicts"
