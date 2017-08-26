@@ -240,9 +240,9 @@ electron-share-your-app:
 merge-conflicts:
   - title: "Managing Merge Conflicts"
     url: /merge-conflicts
-  - title: "List on App Stores"
-    url: /electron/share-your-app/list-on-app-stores/
-  - title: "Share on Websites"
-    url: /electron/share-your-app/share-on-websites/
+  - title: "Normal Merge"
+    url: /merge-conflicts/normal-merge
+  - title: "Merge Conflict Description"
+    url: /merge-conflicts/mc-description
   - title: "Celebrate"
     url: /electron/share-your-app/celebrate/
