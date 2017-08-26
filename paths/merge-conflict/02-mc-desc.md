@@ -26,9 +26,10 @@ main-content: |
 
   **Collaborator 2**
   ```
-  Favorite Animal: Capybura
+  Favorite Animal: Capybara
   ```
-  When
+
+  When **Collaborator 1** merges their changes into the deployment branch, they won't encounter a merge conflict. However, when **Collaborator 2** tries to merge this changes into the deployment branch, they are going to encounter a merge conflict.
 
 
 show-me-how: |
