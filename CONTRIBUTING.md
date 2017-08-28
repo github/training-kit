@@ -52,6 +52,8 @@ We're always looking for contributions to help improve these resources. This inc
 - Translations of existing resources such as the [cheatsheets](/downloads/) into new languages
 - Adding new classes or resources aligned with the [goals](#the-goal-of-these-resources)
 
+<hr>
+
 ## How to contribute
 
 ### Report a bug
@@ -84,6 +86,8 @@ When you are contributing something new, we ask you to be familiar with our cont
 ### Not sure where to start?
 
 If you just want to help out, but don't have a particular change in mind, check out the [open issues](https://github.com/github/training-kit/issues) for projects you can tackle, review an [open pull request](https://github.com/github/training-kit/pulls), or check out [the project ROADMAP](https://github.com/github/training-kit/projects/1).
+
+<hr>
 
 ## Step-by-step contribution guide
 
