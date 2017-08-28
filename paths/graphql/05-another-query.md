@@ -19,7 +19,7 @@ main-content: |
 
   Let's build another query to get the ID of for the issue where we want to place our list of repositories.
 
-  ![img](../images/gifs/graphql/get-issue-id.gif)
+  ![animated gif of instructions outlined below](../images/gifs/graphql/get-issue-id.gif)
 
   1. Open an issue in our shared class repository: https://github.com/githubschool/graph-ql
   1. Create the query to find your issue ID number

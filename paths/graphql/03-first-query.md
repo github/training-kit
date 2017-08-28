@@ -15,7 +15,7 @@ main-content: |
 
  Let's imagine that you'd like to update your team about some of your recent work via [an issue](https://guides.github.com/features/issues/). You could use a GraphQL query to find the repositories you've most recently contributed to.
 
- ![img](../images/gifs/graphql/build-query.gif)
+ ![animated gif of instructions outlined below](../images/gifs/graphql/build-query.gif)
 
  1. Paste this query into the [GraphQL explorer](https://developer.github.com/v4/explorer/).
 

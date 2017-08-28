@@ -14,7 +14,7 @@ main-content: |
 
   > Not sure what to do with Git or GitHub? [Check out some of the on-demand courses to learn more!](../../)
 
-  Let's create our first commit, and push our project to :octocat:.
+  Let's create our first commit, and push our project to GitHub :octocat:.
 
   ![gif of following the directions below](<% SITEURL %><% BASEURL %>/images/gifs/electron/electron1-push-to-github.gif)
 
