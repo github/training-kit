@@ -13,10 +13,5 @@ main-content: |
 
   This course is designed for all of you. We demystify the _merge conflict_ and through a series of examples prepare you to face off against the evil _merge conflict_ and be the hero of the day!
 
-show-me-how: |
-
-
-tell-me-why: |
-  
 
 ---

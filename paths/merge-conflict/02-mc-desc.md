@@ -3,7 +3,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: "Normal" Merge
+title: Merge Conflict Description
 permalink: /merge-conflicts/mc-description
 next-page: /merge-conflicts/gh-pages
 sidebar:
@@ -30,12 +30,5 @@ main-content: |
   ```
 
   When **Collaborator 1** merges their changes into the deployment branch, they won't encounter a merge conflict. However, when **Collaborator 2** tries to merge this changes into the deployment branch, they are going to encounter a merge conflict.
-
-
-show-me-how: |
-
-
-tell-me-why: |
-
 
 ---

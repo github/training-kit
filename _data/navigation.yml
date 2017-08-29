@@ -244,5 +244,7 @@ merge-conflicts:
     url: /merge-conflicts/normal-merge
   - title: "Merge Conflict Description"
     url: /merge-conflicts/mc-description
+  - title: "Example 1"
+    url: /merge-conflicts/example-01  
   - title: "Celebrate"
     url: /electron/share-your-app/celebrate/

@@ -13,10 +13,4 @@ main-content: |
 
   After completing the different merge conflict exercises that we have built for you, you will have a working resume template powered by GitHub Pages that you can modify to use for yourself.
 
-show-me-how:
-  show me how
-
-tell-me-why: |
-  tell me why
-
 ---

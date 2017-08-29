@@ -11,12 +11,4 @@ sidebar:
 main-content: |
   Main content
 
-
-
-show-me-how:
-  show me how
-
-tell-me-why: |
-  tell me why
-
 ---
