@@ -11,7 +11,7 @@ sidebar:
 main-content: |
   To create your pin, you will need to know the latitude and longitude of your home town:
 
-  ![gif of directions](images/gifs/intro/find-coordinants.gif)
+  ![gif of directions](../images/gifs/intro/find-coordinants.gif)
 
   1. Find your latitude and longitude using one of these buttons.
 
