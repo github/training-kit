@@ -239,12 +239,12 @@ electron-share-your-app:
 
 merge-conflicts:
   - title: "Managing Merge Conflicts"
-    url: /merge-conflicts
+    url: /merge-conflicts/
   - title: "Normal Merge"
     url: /merge-conflicts/normal-merge
   - title: "Merge Conflict Description"
     url: /merge-conflicts/mc-description
   - title: "Example 1"
-    url: /merge-conflicts/example-01  
+    url: /merge-conflicts/example-01
   - title: "Celebrate"
     url: /electron/share-your-app/celebrate/

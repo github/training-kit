@@ -4,7 +4,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Managing Merge Conflicts
-permalink: /merge-conflicts
+permalink: /merge-conflicts/
 next-page: /merge-conflicts/normal-merge
 sidebar:
   nav: "merge-conflicts"
