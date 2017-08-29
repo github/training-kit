@@ -11,7 +11,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/06-merge-a-pr.md
-show-me-how: "images/gifs/intro/merge-intro.gif"
+show-me-how:
 tell-me-why: |
   ## Merge Explained
 
