@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
   - activity/github-desktop/12-add-class-repo.md  
-show-me-how: images/gifs/github-desktop/join-repo-make-issue-pages.gif
+show-me-how:
 tell-me-why: |
   ## Access to the Shared Repository
 

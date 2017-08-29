@@ -12,7 +12,7 @@ main-content:
   includes:
     - activity/github-desktop/16-merge-pr.md
     - activity/github-CLI/clisurvey.md
-show-me-how: images/gifs/github-cli/merge-pull-request.gif
+show-me-how:
 tell-me-why:
   includes:
     - tell-me-why/merge-pr.md

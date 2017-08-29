@@ -9,13 +9,21 @@ next-page: /github-cli/merge-pull-request-github
 facilitator: false
 sidebar:
   nav: "github-cli"
-main-content:
-  includes:
-    - activity/github-CLI/06-git-push.md
+main-content: |
+
+  Now that you have made some local commits, it is time to send your changes to the remote copy of your repository on GitHub.com and create a Pull Request.
+
+  ![gif of following the directions below](../images/gifs/github-cli/push-and-pull.gif)
+
+  1. Type `git push -u origin BRANCH-NAME` to push your commits to the remote, and set a tracking branch.
+  1. Enter your GitHub username and password, if prompted to do so.
+  1. Create a Pull Request on GitHub.
+  1. Fill out the body of the Pull Request with information about the changes you're introducing.
+
 refresh:
   includes:
     - refresh/github-CLI/create-pr.md
-show-me-how: images/gifs/github-cli/push-and-pull.gif
+show-me-how:
 tell-me-why: |
   ## Pushing Changes
 

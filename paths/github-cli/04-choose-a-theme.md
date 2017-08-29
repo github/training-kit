@@ -12,6 +12,6 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/choose-a-theme.md
-show-me-how: images/gifs/github-desktop/choose-a-theme.gif
+show-me-how:
 tell-me-why:
 ---
