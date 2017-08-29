@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Managing Merge Conflicts
 permalink: /merge-conflicts/
-next-page: /merge-conflicts/normal-merge
+next-page: /merge-conflicts/normal-merge/
 sidebar:
   nav: "merge-conflicts"
 main-content: |

@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Merge Conflict Description
-permalink: /merge-conflicts/mc-description
-next-page: /merge-conflicts/gh-pages
+permalink: /merge-conflicts/mc-description/
+next-page: /merge-conflicts/gh-pages/
 sidebar:
   nav: "merge-conflicts"
 main-content: |

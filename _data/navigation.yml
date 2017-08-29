@@ -241,14 +241,14 @@ merge-conflicts:
   - title: "Managing Merge Conflicts"
     url: /merge-conflicts/
   - title: "Normal Merge"
-    url: /merge-conflicts/normal-merge
+    url: /merge-conflicts/normal-merge/
   - title: "Merge Conflict Description"
-    url: /merge-conflicts/mc-description
+    url: /merge-conflicts/mc-description/
   - title: "Example 1"
-    url: /merge-conflicts/example-01
-    - title: "Example 2"
-      url: /merge-conflicts/example-02
-    - title: "Example 3"
-      url: /merge-conflicts/example-03
+    url: /merge-conflicts/example-01/
+  - title: "Example 2"
+    url: /merge-conflicts/example-02/
+  - title: "Example 3"
+    url: /merge-conflicts/example-03/
   - title: "What Next?"
     url: /merge-conflicts/what-next/
