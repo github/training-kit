@@ -11,7 +11,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/00-create-github-account.md
-show-me-how: "images/gifs/intro/sign-in.gif"
+show-me-how: 
 tell-me-why: |
   ## Exploring GitHub
 
