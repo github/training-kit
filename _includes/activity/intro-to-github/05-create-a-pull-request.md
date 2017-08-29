@@ -1,5 +1,7 @@
 Now that you have created a file, you will create a Pull Request to show your proposed changes to others who are completing this project:
 
+![gif of directions](../images/gifs/intro/pull-request-intro.gif)
+
 1. Navigate to the <a href="https://github.com/githubschool/open-enrollment-classes-introduction-to-github/pulls" target="_blank">Pull Requests tab</a>.
 2. Click `New Pull Request`.
 3. In the **base** dropdown, choose `master`.

@@ -11,7 +11,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/05-create-a-pull-request.md
-show-me-how: "images/gifs/intro/pull-request-intro.gif"
+show-me-how:
 tell-me-why: |
   ## Collaborating on Your Code
 
