@@ -5,8 +5,14 @@ Now that you have what you need for Git and GitHub installed locally, let's crea
 ![gif of following the directions below](../images/gifs/github-desktop/create-repo.gif)
 
 1. On GitHub.com, [create a new repository](https://github.com/new).
-1. Name your repository. The name of your repository will be part of the link to your website.
+1. Name your repository `YOUR-USERNAME.GITHUB.IO`
+
+    > The name of your repository will be part of the link to your website. If you use the naming convention we described, your web site will be served at that URL.
+
 1. Enter a description for your repository.
-1. We recommend you create a public repository. Public repositories are free. Even if you select a private repository, your published website will be public.
-1. Check the box to initialize the repository with a README.
+1. Choose **Public** visibility.
+
+    > We recommend you create a public repository. Public repositories are free. Even if you select a private repository, your published website will be public.
+
+1. Select **Initialize this repository with a README**.
 1. Click **Create repository**.
