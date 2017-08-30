@@ -19,6 +19,17 @@ details.flash {
   &[open] { box-shadow: 0 0 0 0.2em rgba(3,102,214,0.3); }
 }
 
+.bg-blue-dark {
+  background-color: $blue-600 !important;
+}
+
+.octicon { fill: currentColor; }
+
+.site-header .octicon-mark-github {
+  width: 1.5em;
+  height: 1.5em;
+}
+
 .markdown-body {
   font-size: 16px;
 
