@@ -20,7 +20,7 @@ main-content: |
   - Collaborate with new friends on a fun project
   - Add your pin to the map!
 
-  <div id="map" style="height: 400px;" class="width-full"></div>
+  <div id="map" style="height: 400px;" class="width-full my-3"></div>
 
   **Are you ready?** Click the continue button below to see what's next.
 
