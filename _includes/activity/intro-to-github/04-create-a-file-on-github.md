@@ -1,5 +1,7 @@
 It's time to add your file to the repository:
 
+![gif of directions](../images/gifs/intro/working-on-github.gif)
+
 1. In your new branch, add a new file named: `_pins/YOUR-USERNAME.json`.
 1. Enter the following content into your file:
 

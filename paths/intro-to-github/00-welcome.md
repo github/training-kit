@@ -22,7 +22,7 @@ main-content: |
 
   <div id="map" style="height: 400px;" class="width-full"></div>
 
-  **Are you ready?** Click the continue button below to see what's next.
+  **Are you ready?** Click the **Continue** button below to see what's next.
 
 show-me-how:
   includes:
