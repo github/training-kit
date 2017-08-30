@@ -248,7 +248,7 @@ if (!String.prototype.formatString) {
 
     var settings = $.extend({
       //Default init settings.colors, user can override
-      colors: ['#eeeeee', '#d6e685', '#8cc665', '#44a340', '#44a340'],
+      colors: ['rgb(235, 237, 240)', 'rgb(198, 228, 139)', 'rgb(123, 201, 111)', 'rgb(35, 154, 59)', 'rgb(25, 97, 39)'],
       //List of name months
       month_names: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
       h_days: ['M', 'W', 'F'],
