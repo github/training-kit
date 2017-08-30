@@ -18,4 +18,8 @@ main-content: |
   There is still more to do, but this looks like a great start!
 show-me-how:
 tell-me-why:
+troubleshooting: |
+  Navigate to `https://YOUR-USERNAME.github.io/`. If you see a 404 error, ensure that your repository is named `YOUR-USERNAME.github.io`. If it is not, you web site will be served at: `https://YOUR-USERNAME.github.io/REPOSITORY-NAME`.
+
+  You can learn about this behavior in the [User, Organization, and Project Pages documentation](https://help.github.com/articles/user-organization-and-project-pages/).
 ---
