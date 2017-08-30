@@ -109,7 +109,7 @@ This repository contains two major collections: [on-demand training courses](htt
 Adding an on-demand course requires you to do the following:
 
 - Add a folder in the [paths directory](/paths) based on the course name
-- Add the course pages in the new folder you created. For an example of a sequential course, check out the [Introduction to GitHub course](/paths/intro-to-github) for a non-sequential course, check out [Git Out of Trouble](/paths/git-trouble)
+- Add the course pages in the new folder you created. For an example of a sequential course, check out the [Introduction to GitHub course](/paths/intro-to-github). For a non-sequential course, check out [Git Out of Trouble](/paths/git-trouble)
 - Add the course to the `main` navigation in [_data/navigation.yml](_data/navigation.yml) and add your course navigation in a new section at the end of the files
 
 ### Writing new content

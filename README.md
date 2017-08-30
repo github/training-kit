@@ -9,7 +9,7 @@ This repository contains the completely open source on-demand training hosted at
 
 ## We :heart: Contributors Like You!
 
-**We’re eager to work with you**, our user community to improve these materials and develop new ones. Please check out our [CONTRIBUTING guide](https://github.com/github/training-kit/blob/master/CONTRIBUTING.md) for more information.
+**We’re eager to work with you**, our user community to improve these materials and develop new ones. Please check out our [CONTRIBUTING guide](https://github.com/github/training-kit/blob/master/CONTRIBUTING.md) for more information on getting started.
 
 ## Projects Used in Training-Kit
 
