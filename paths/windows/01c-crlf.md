@@ -11,11 +11,13 @@ sidebar:
 main-content: |
   Git is a really powerful collaboration tool, but not everyone you collaborate with uses the same operating system. Thankfully, Git comes to the party equipped with all the tools necessary to make collaborating easy, you just need to identify what OS you are working on so Git can take care of the rest.
 
+  ![gif of the following directions](../images/gifs/windows/configure-crlf.gif)
+
   1. Open your terminal application.
-  1. Enter: `git config --global core.autocrlf true`. 
+  1. Enter: `git config --global core.autocrlf true`.
   1. To ensure you applied the configuration setting, you can enter: `git config --global --list` to view the different configurations settings.
 
-show-me-how: "images/gifs/windows/configure-crlf.gif"
+show-me-how:
 tell-me-why: |
 
   ### What does autocrlf do?
