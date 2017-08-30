@@ -25,9 +25,24 @@ details.flash {
 
 .octicon { fill: currentColor; }
 
-.site-header .octicon-mark-github {
-  width: 1.5em;
-  height: 1.5em;
+.site-header {
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  .site-header-menu {
+    li {
+      border-bottom: 1px solid $gray-300;
+
+      @include breakpoint(md) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .octicon-mark-github {
+    width: 2em;
+    height: 2em;
+  }
 }
 
 .markdown-body {
