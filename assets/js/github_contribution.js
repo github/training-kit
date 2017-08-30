@@ -166,7 +166,7 @@ if (!String.prototype.formatString) {
           loop_html,
           '</g>',
           '</svg>',
-          '<p class="text-center"><span class="Counter alt-h4">' + totalContribs + '</span> Total Contributions</p>'
+          '<p class="text-center mt-2"><span class="Counter">' + totalContribs + '</span> Total Contributions</p>'
         ].join('');
 
         wrap_chart.html(wire_html);
