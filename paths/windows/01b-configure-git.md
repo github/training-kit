@@ -9,9 +9,12 @@ next-page: /windows/git-crlf
 sidebar:
   nav: "windows"
 main-content: |
+
   After installing Git, it is necessary to setup some of the configuration options. The configuration options you need to define include, `user.name`, `user.email`, and `core.autocrlf`.
 
   The following steps will require you to open a terminal application such as **Git Bash** or **PowerShell** and Git to be installed. To confirm that Git is installed, run `git --version` and your terminal application should display a response similar to `git version x.xx`, where x.xx is the version number.
+
+  ![gif of the following directions](../images/gifs/windows/configure-git.gif)
 
   ## Defining `user.name`
   1. In your terminal application enter, `git config --global user.name "your name"`; where `your name` is the name you want to attribute to the commits you make.
@@ -21,7 +24,7 @@ main-content: |
 
   Now that you have configured your user name and email, it is time to define your Carriage Return Line Feed (crlf) settings on the next page.
 
-show-me-how: "images/gifs/windows/configure-git.gif"
+show-me-how:
 tell-me-why: |
 
   ## Why --global?
