@@ -11,25 +11,30 @@ sidebar:
   nav: "github-cli"
 main-content: |
 
-  Now that you are a collaborator, use the local workflow we just learned to make changes to this repository. This exercise is a bit of a review, but if you need assistance with any of the required steps, more detailed directions are available in 'I need a refresher' below! Good luck!
+  Now that you are a collaborator, use the local workflow we just learned to make changes to this repository. This exercise is a bit of a review, but if you need assistance with any of the required steps, more detailed directions are available in **I need a refresher** below! Good luck!
 
   ![gif of following the directions below](../images/gifs/github-cli/clone-class-repo.gif)
 
   1. Clone the repository to your local machine.
   1. Create a new branch in the cloned repository. Something like `yourUsername-add-page` is a perfect branch name.
   1. Checkout to your new branch.
-  1. Create a file in the `_pages` directory titled: `username.yaml`. Replace `username` with your GitHub username.
+  1. Create a file in the `_pages` directory titled: `<username>.yaml`. Replace `<username>` with your GitHub username.
   1. Enter the following content into your file:
 
           ---
-          githubHandle: YOUR-USERNAME
-          pageUrl: YOUR-USERNAME.github.io
-          timestamp: TODAYS-DATE-YYYY-MM-DD
+          githubHandle: <YOUR-USERNAME>
+          pageUrl: <YOUR-USERNAME>.github.io
+          timestamp: <TODAYS-DATE-YYYY-MM-DD>
           ---
 
+        > - Replace `<YOUR-USERNAME>` with your GitHub username.
+        > - Replace `<YOUR-USERNAME>.github.io` with your web site's URL (leave out the `https`).
+        > - Replace `<TODAYS-DATE-YYYY-MM-DD>` with today's date using a 4 digit year, 2 digit month, and 2 digit day format.
 
   1. Commit your changes.
-  1. Type `git status` to ensure your work was committed.
+  1. Ensure your work was committed.
+
+          git status
 
 show-me-how:
 refresh:

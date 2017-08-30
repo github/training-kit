@@ -1,11 +1,21 @@
 ### Cloning the Repository
 
-1. Navigate to the Code tab of the class repository.
-1. Click **Clone or download**
-1. Copy the **Clone URL** provided.
-1. Open your terminal and `cd` into the directory where you would like to copy the repository. **Pro Tip:** Type `cd ..` to go up one level from your website repository.
-1. Type `git clone URL`. Be sure to replace `URL` with the Clone URL you copied in the previous step.
-1. Type `cd REPOSITORY-NAME` to move into the directory of the repository you just cloned.
+1. Navigate to your repository's **Code** tab.
+1. Click **Clone or download**.
+1. Copy the URL provided.
+1. Open your command line or Terminal application and enter the directory where you would like to copy the repository. This can be anywhere in your local file system, like your home directory. For example:
+
+        cd ~/
+        
+      > Pro Tip: Type `cd ..` to go up one level from your website repository.
+
+1. Clone the repository by replacing `<URL>` with clone URL you copied in the previous step. The repository will be cloned into a new directory in this location.
+
+        git clone <URL>
+
+1. Navigate into the directory of the repository you just created. Replace <REPOSITORY-NAME> with your own repository's name.
+
+        cd <REPOSITORY-NAME>
 
 ### Create a Branch
 
