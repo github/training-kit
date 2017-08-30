@@ -15,8 +15,13 @@ main-content: |
 
   ![gif of following the directions below](../images/gifs/github-cli/keep-things-in-sync.gif)
 
-  1. In your command line, type `git checkout master`.
-  2. Type `git pull`.
+  1. In your command line, type:
+
+          git checkout master
+
+  2. Type:
+
+          git pull
 
 show-me-how:
 tell-me-why: |
@@ -24,9 +29,9 @@ tell-me-why: |
 
   As we discussed previously, Git doesn't require an internet connection which means it doesn't communicate with remote repositories unless explicitly instructed to do so.
 
-  When you merge your Pull Request on GitHub.com, the changes you made locally are merged into the `master` branch on the _remote_ repository on GitHub.
+  When you merge your Pull Request on GitHub.com, the changes you made locally are merged into the `master` branch on the remote repository on GitHub.
 
-  However, you won't automatically see those changes reflected in your local copy until you do a git pull.
+  However, you won't automatically see those changes reflected in your local copy until you do a `git pull`.
 
   ## Git Pull
 
