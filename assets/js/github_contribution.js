@@ -12,6 +12,7 @@ if (!String.prototype.formatString) {
 (function ($) {
   var obj_timestamp = {};
   var obj_jsonData = [];
+  var totalContribs = 0;
 
 
   $.fn.github_graph = function (options) {
@@ -26,6 +27,7 @@ if (!String.prototype.formatString) {
      */
     var processListTimeStamp = function (list_timestamp, callback) {
       $.getJSON(list_timestamp, function (jsonData) {
+        totalContribs = Object.keys(jsonData).length;
         $.each(jsonData, function (i, obj) {
           //use obj.id and obj.name here, for example:
 
@@ -163,7 +165,8 @@ if (!String.prototype.formatString) {
           '<g transform="translate(20, 20)">',
           loop_html,
           '</g>',
-          '</svg>'
+          '</svg>',
+          '<p class="text-center"><span class="Counter alt-h4">' + totalContribs + '</span> Total Contributions</p>'
         ].join('');
 
         wrap_chart.html(wire_html);
