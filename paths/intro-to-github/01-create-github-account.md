@@ -11,7 +11,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/00-create-github-account.md
-show-me-how: "images/gifs/intro/sign-in.gif"
+show-me-how: 
 tell-me-why: |
   ## Exploring GitHub
 
@@ -25,7 +25,7 @@ tell-me-why: |
 
   Click your user icon in the top right to to access your profile.
 
-  Your profile contains information about your activity on GitHub. This is your public page on GitHub. Some employers will even check out your profile when you apply for a position, so don't forget to add an awesome photo and a fun bio.
+  Your profile contains information about your activity on GitHub. This is your public page on GitHub. Some employers will even check out your profile when you apply for a position, so don't forget to add an awesome [profile picture](https://help.github.com/articles/setting-your-profile-picture/) and a fun bio.
 
   ### Your GitHub Repositories
 
