@@ -17,7 +17,7 @@ main-content: |
   To store your password, enter the following in your terminal application:
 
   1. Enter,  `git config --global credential.helper wincred`
-  1. Perform an operation that normally requires you to enter your password, like `git push`, enter your password when prompted, and you shouldn't have to enter it again.
+  1. Perform an operation that normally requires you to enter your password, like `git push`. Then, enter your password when prompted, and you shouldn't have to enter it again.
 
   For more information about caching your password, review the GitHub Help [documentation](https://help.github.com/articles/caching-your-github-password-in-git/#platform-windows).
 show-me-how:
