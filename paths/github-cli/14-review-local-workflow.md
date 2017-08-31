@@ -21,11 +21,11 @@ main-content: |
   1. Create a file in the `_pages` directory titled: `<username>.yaml`. Replace `<username>` with your GitHub username.
   1. Enter the following content into your file:
 
-          ---
-          githubHandle: <YOUR-USERNAME>
-          pageUrl: <YOUR-USERNAME>.github.io
-          timestamp: <TODAYS-DATE-YYYY-MM-DD>
-          ---
+         ---
+         githubHandle: <YOUR-USERNAME>
+         pageUrl: <YOUR-USERNAME>.github.io
+         timestamp: <TODAYS-DATE-YYYY-MM-DD>
+         ---
 
         > - Replace `<YOUR-USERNAME>` with your GitHub username.
         > - Replace `<YOUR-USERNAME>.github.io` with your web site's URL (leave out the `https`).
