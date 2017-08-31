@@ -10,7 +10,7 @@ sidebar:
   nav: "windows"
 main-content: |
 
-  Entering your password in your terminal application of choice can become _really_ frustrating, so why not save your password? Saving your password is really simple, even if you are on a Windows machine!
+  Entering your password in your terminal application of choice after every push can become _really_ frustrating, so why not save your password? Saving your password is really simple, even if you are on a Windows machine!
 
   ![gif of the following directions](../images/gifs/windows/configure-credmgr.gif)
 
