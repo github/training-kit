@@ -16,15 +16,15 @@ main-content: |
   ## Pushing Your Changes
   1. From the **Home** page on the **Team Explorer** pane, select **Sync**.
   1. Ensure you are on the correct **branch**.
-  1. In the **Outgoing Commits (x)** section, click the **Push** option. The Visual Studio GitHub Extension will push the changes on the branch you have selected to the repository on GitHub, if you don't already have a repository on GitHub, it will be created for you.
+  1. In the **Outgoing Commits (x)** section, click the **Push** option. The Visual Studio GitHub Extension will push the changes on the branch you've selected to the repository on GitHub. If you don't already have a repository on GitHub, it will be created for you.
 
   ## Retrieving Changes
   1. From the **Home** page on the **Team Explorer** pane, select **Sync**.
   1. Ensure you are on the correct **branch**.
-  1. In the **Incoming Commits** section, click the **Fetch** option. `Fetch`ing retrieves any commits on your current branch that were made on the remote repository without merging those changes it.
-  1. Click **Pull** or **Sync** to merge the changes from your remote repository into your local files. If you select **Sync** any local commits will be `push`ed to your remote.
+  1. In the **Incoming Commits** section, click the **Fetch** option. `Fetch`ing retrieves any commits on your current branch that were made on the remote repository without merging those changes in.
+  1. Click **Pull** or **Sync** to merge the changes from your remote repository into your local files. If you select **Sync**, any local commits will be `push`ed to your remote.
 
-     > The (x) in the Incoming Commits and Outgoing Commits section identifies the number of commits that you will be `fetch`ing (or retrieving) from the repository on GitHub or how many commits you will be `push`ing (or sending) to the repository.
+     > The (x) in the Incoming Commits and Outgoing Commits section identifies the number of commits that you will be `fetch`ing (or retrieving) from the repository on GitHub, or how many commits you will be `push`ing (or sending) to the repository.
 
 show-me-how:
 tell-me-why: |
