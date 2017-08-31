@@ -49,5 +49,4 @@ main-content: |
   1. Click **Accept Merge**. The `README.md` file now displays the changes you selected.
 
 tell-me-why: |
-  Merge conflicts happen because
 ---
