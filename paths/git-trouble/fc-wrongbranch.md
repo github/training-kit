@@ -15,7 +15,7 @@ main-content: |
 
   Fear not! You can salvage those changes and put them where they belong!
 
-  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment]({{site.baseurl}}/git-trouble/git-set-up) page.
+  Keep in mind, all exercises expect you to have run the script to create files using the scripts found on the [Set Up Your Environment]({{site.baseurl}}/git-set-up) page.
 pushed: |
     ## First Things First: Fix Master
 
@@ -60,19 +60,19 @@ tell-me-why: |
   ### How Cherry-pick Works
   When you use `git cherry-pick`, git generates the difference between the commit you have designated and its parent commit (the one just before it) and then applies that diff wherever you are.
 
-  For example, let's pretend you have a simple branch called `new-branch`:
+  For example, let's pretend you have a simple branch called `new-branch`.
 
-  ![]({{site.baseurl}}/images/cherry-pick-before.png){: .align-center}
+  ![Commits showing a master branch with a feature branch, the feature branch is four commits ahead and set up for a fast forward merge](../images/cherry-pick-before.png){: .align-center}
 
   You are generally unhappy with the way this feature is going, so you decide to cherry-pick the good parts and use them to try out a different idea. So you check out to `better-branch` and then cherry-pick `7f013` from `new-branch`.
 
-  ![]({{site.baseurl}}/images/cherry-pick-after.png){: .align-center}
+  ![Same branch as before, but now a new branch is created off of master](../images/cherry-pick-after.png){: .align-center}
 
   Now, `66a2e` represents the same diff that was introduced in `7f013` on `new-branch`.
 
   You aren't limited to cherry-picking commits attached to a branch, you can also cherry-pick a commit from the reflog!
 
-  ![]({{site.baseurl}}/images/cherry-pick-reflog.png){: .align-center}
+  ![Same example as before, but now parent commit is one of the new commits on the first feature branch](../images/cherry-pick-reflog.png){: .align-center}
 
   In this example, we created 4 commits on `new-branch`, then did `git reset --hard HEAD~3`. The three commits with dashed lines are considered "unreachable" because they aren't currently attached to a branch. So we cherry-picked `28144` to rescue that commit from the ashes.
 
@@ -81,10 +81,10 @@ tell-me-why: |
   So, after you cherry-picked your commit you might have noticed that the SHA-1 associated with the commit is now different. That is because the SHA-1 doesn't just identify the file (or files) that have been committed. It actually contains a lot of additional information like Date, Time, Author, and other information. So, even though you might have created a commit with the exact same file from before, you will have a completely new SHA-1 hash for the commit. Pretty cool, huh?
 
   ## Revert
-  For more information about `revert`, check out the ‘Tell me why’ section in the [Accidental Commit]({{site.baseurl}}/git-trouble/accidental-git-commit) scenario.
+  For more information about `revert`, check out the ‘Tell me why’ section in the [Accidental Commit]({{site.baseurl}}/accidental-git-commit) scenario.
 
   ## Reset
-  For more information about `reset`, check out the 'Tell me why' section in the [Too Many (small) Commits]({{site.baseurl}}/git-trouble/too-many-commits) scenario.
+  For more information about `reset`, check out the 'Tell me why' section in the [Too Many (small) Commits]({{site.baseurl}}/too-many-commits) scenario.
 
   ### What Happened to File 4?
   When you were running the `git reset --mixed SHA-1` you might have expected `file4.md` to be included in the files that got sent to the Working Directory. This is a very misconception when it comes to `git reset`, so don't worry, you are not alone! When you run `git reset`, you are identifying the commit that you want to `reset` to.

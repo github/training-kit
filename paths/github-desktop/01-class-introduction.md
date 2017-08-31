@@ -22,7 +22,7 @@ main-content: |
   - Convert your repository into a website
   - Host and share your website
 
-  **Take a look at everyone who has shared their website so far:**
+  **Take a look at everyone who has shared their website so far in this Contribution Graph:**
 
   <div class="contribution_graph">
   <div id="github_chart_1" class="github_chart_1"></div>

@@ -14,7 +14,7 @@ main-content: |
 
   So far, we've only used GraphQL to form **queries**, or requests for information. Next, we're going to use the information we've gathered to craft a **mutation**. Simply put, using a **mutation** we can actually manipulate server-side data.
 
-  ![img](../images/gifs/graphql/mutation.gif)
+  ![animated gif of instructions outlined below](../images/gifs/graphql/mutation.gif)
 
   1. Get your information from the both previous queries ready (list of repositories, and your issue's `id`).
   1. Create a mutation by either typing or pasting the following into the [GraphQL explorer](https://developer.github.com/v4/explorer/).
@@ -43,7 +43,7 @@ main-content: |
 
   In this course, we used GraphQL to automagically post information about repositories you recently worked on to an issue, but the possibilities of what your future queries can do is limited by your imagination.
 
-  So go out there, experiment with some queries, and share them with the Training team at GitHub and other students in an issue on the course [repository](https://github.com/githubschool/graph-ql).Our favorite queries will be added to a document within the repository for all students to view!
+  So go out there, experiment with some queries, and share them with the Training team at GitHub and other students in an issue on the course [repository](https://github.com/githubschool/graph-ql). Our favorite queries will be added to a document within the repository for all students to view!
 
   Good luck out there and may your queries be responsive.
 

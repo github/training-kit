@@ -15,7 +15,7 @@ main-content: |
 
   In this section, we are going to introduce you to a tool that enables you to experiment with GraphQL quickly and easily.
 
-  ![img](../images/gifs/graphql/first-query.gif)
+  ![animated gif of instructions outlined below](../images/gifs/graphql/first-query.gif)
 
   ### Running Your First GraphQL Query
 

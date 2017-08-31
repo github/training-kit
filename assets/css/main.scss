@@ -1,0 +1,104 @@
+---
+---
+
+@import "primer-core/index.scss";
+@import "primer-product/index.scss";
+@import "primer-marketing/index.scss";
+
+@import "timeline";
+@import "curriculum";
+@import "github_contribution_graph";
+
+details.flash {
+  ol, ul {
+    padding-left: $spacer-4;
+    margin-bottom: $spacer-2;
+  }
+  img { max-width: 100%; }
+
+  &[open] { box-shadow: 0 0 0 0.2em rgba(3,102,214,0.3); }
+}
+
+.markdown-body {
+  font-size: 16px;
+
+  h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialiased;
+    font-family: $alt-body-font;
+  }
+
+  h1 { @include alt-h1; }
+
+  h2 {
+    @include alt-h2;
+    margin-top: $spacer-6;
+    margin-bottom: $spacer-3;
+    line-height: 1.25;
+    border: 0;
+    vertical-align: middle;
+
+    code {
+      font-size: 0.8em;
+    }
+  }
+
+  h3 {
+    @include alt-h3;
+    margin-top: $spacer-4;
+    margin-bottom: $spacer-3;
+
+    @include breakpoint(md) {
+      margin-top: $spacer-5;
+    }
+  }
+}
+
+.emoji {
+  width: 1em;
+  height: 1em;
+}
+
+.js-site-header.open {
+  .site-header-menu { display: block; }
+}
+
+.site-header-menu {
+  @media (max-width: $width-md) {
+    display: none;
+    padding-top: $spacer-2;
+    clear: left;
+  }
+}
+
+.site-header-toggle {
+  display: none;
+
+  svg {
+    width: 18px;
+    height: 24px;
+  }
+
+  @media (max-width: $width-md) {
+    display: flex;
+    color: $gray-400;
+
+    &:hover {
+      color: $gray-300;
+    }
+  }
+}
+
+.card.hover-card {
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: $box-shadow-large;
+    text-decoration: none;
+  }
+}
+
+.resources svg {
+  width: 64px;
+  height: 64px;
+  path { fill: currentColor !important; }
+}

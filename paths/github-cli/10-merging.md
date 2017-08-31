@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/07-merge-pull-request.md
-show-me-how: images/gifs/github-cli/merge-pull-request.gif
+show-me-how:
 tell-me-why: |
   ## Why No Collaboration?
 

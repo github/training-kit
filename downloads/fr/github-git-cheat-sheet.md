@@ -17,7 +17,7 @@ http://mac.github.com
 
 Les distributions de Git pour Linux et les systèmes POSIX sont disponibles sur le site web officiel de Git SCM.
 
-###Git pour toutes les plate-formes
+### Git pour toutes les plate-formes
 http://git-scm.com
 
 ## Configuration des outils
