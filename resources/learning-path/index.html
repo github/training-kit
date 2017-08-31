@@ -4,6 +4,8 @@ subpage: learning-path
 title: Learning Path
 description: Learning Git and GitHub can seem daunting but with this helpful list of training resources, you will be a Git-guru in no time.
 redirect_from: /on-demand/path/
+breadcrumbColor: "bg-gray-light"
+breadcrumbSize: "lg"
 ---
 {% capture thead %}
 <thead>
@@ -16,8 +18,9 @@ redirect_from: /on-demand/path/
 {% endcapture %}
 
 {% include light-hero.html %}
+{% include breadcrumbs.html %}
 
-<div class="container-lg p-responsive">
+<div class="container-lg p-responsive mt-6">
   <h2>Just Getting Started</h2>
   <table class="data-table" role="presentation" summary="Resources: Just getting started">
     {{ thead }}
