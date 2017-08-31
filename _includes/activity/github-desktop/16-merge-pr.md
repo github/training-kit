@@ -5,8 +5,8 @@ Now that your tests have passed, let's click the big green button to add your si
 ![gif of following the directions below](../images/gifs/github-desktop/merge.gif)
 
 1. On GitHub.com, check to ensure the tests are passing.
-1. Click the `Merge` button.
-1. Click `Confirm Merge`.
+1. Click on **Merge**.
+1. Click **Confirm Merge**.
 1. Delete the branch.
 
 ## :tada: Congratulations!
