@@ -17,10 +17,10 @@ main-content: |
   ![gif of the following directions](../images/gifs/windows/configure-git.gif)
 
   ## Defining `user.name`
-  1. Enter `git config --global user.name "your name"`in your Command Line Interface; where `your name` is the name you want to attribute to the commits you make.
+  Enter `git config --global user.name "your name"`in your Command Line Interface; where `your name` is the name you want to attribute to the commits you make.
 
   ## Defining `user.email`
-  1. In your terminal application enter, `git config --global user.email your_email@email_host.com`; where `your_email@mail_host.com` is the e-mail address associated with your GitHub account.
+  In your terminal application enter, `git config --global user.email your_email@email_host.com`; where `your_email@mail_host.com` is the e-mail address associated with your GitHub account.
 
   Now that you have configured your user name and email, it is time to define your Carriage Return Line Feed (crlf) settings on the next page.
 
