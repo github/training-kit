@@ -30,5 +30,5 @@ tell-me-why: |
     - `--local` - These are the repository level configurations. They only apply to the specific repository where they are set.
 
   The default value for git config is `--local`. `--local` has precedence so setting something at the local level will override settings at global or system level.
-  ![]({{site.baseurl}}/images/config-levels.jpg){: .align-center}
+  ![](../images/config-levels.jpg){: .align-center}
 ---
