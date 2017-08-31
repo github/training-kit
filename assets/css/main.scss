@@ -114,6 +114,12 @@ details.flash {
   }
 }
 
+.site-content {
+  flex: 1 0 auto;
+}
+
+.flex-none { flex: none !important; }
+
 .card.hover-card {
   transition: box-shadow 0.2s ease-in-out;
 
