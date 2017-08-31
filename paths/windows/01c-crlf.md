@@ -9,7 +9,7 @@ next-page: /windows/git-credentials
 sidebar:
   nav: "windows"
 main-content: |
-  Git is a really powerful collaboration tool, but not everyone you collaborate with uses the same operating system. Thankfully, Git comes to the party equipped with all the tools necessary to make collaborating easy, you just need to identify what OS you are working on so Git can take care of the rest.
+  Git is a really powerful collaboration tool, but not everyone you collaborate with uses the same operating system. Thankfully, Git comes to the party equipped with all the tools necessary to make collaborating easy. Once you identify what OS you are working on, Git can take care of the rest.
 
   ![gif of the following directions](../images/gifs/windows/configure-crlf.gif)
 
@@ -24,7 +24,7 @@ tell-me-why: |
 
   If you're using Git to collaborate with others on GitHub, ensure that Git is properly configured to handle line endings.
 
-  Every time you press return on your keyboard you're actually inserting an invisible character called a line ending. Historically, different operating systems have handled line endings differently.
+  Every time you press return on your keyboard, you're actually inserting an invisible character called a line ending. Historically, different operating systems have handled line endings differently.
 
   When you view changes in a file, Git handles line endings in its own way. Since you're collaborating on projects with Git and GitHub, Git might produce unexpected results if, for example, you're working on a Windows machine, and your collaborator has made a change in macOS.
 
