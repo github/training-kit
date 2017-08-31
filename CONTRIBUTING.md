@@ -145,4 +145,5 @@ To build of the materials do the following:
 1. Run `sass --watch assets/_scss/main.scss:assets/css/main.css` to compile the SCSS
 1. Run `script/server`
     - When successful, the script will initiate a local server at `http://127.0.0.1:4000/on-demand`.
+    - The `/on-demand/` directory is a result of the [`baseurl` variable](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/) provided by Jekyll. If you'd like to serve your site under a different directory, change it in [`_config.yml`](https://github.com/github/training-kit/blob/contrib-guide/_config.yml).
 1. Simply paste that into your favorite web-browser and you will be ready to test
