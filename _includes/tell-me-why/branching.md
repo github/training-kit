@@ -2,7 +2,7 @@
 
 ## Reviewing the GitHub Flow
 
-Remember, we used the GitHub Flow in [Introduction to GitHub](https://github.github.com/on-demand/intro-to-github/), and we use it again here! :smile:
+Remember, we used the GitHub Flow in [Introduction to GitHub]({{ site.baseurl }}/intro-to-github/), and we use it again here! :smile:
 
 The main steps of the GitHub workflow are:
 

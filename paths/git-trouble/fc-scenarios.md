@@ -10,7 +10,7 @@ sidebar:
   nav: "advanced"
 main-content: |  
 
-  Unlike our other [courses](https://services.github.com/on-demand/), this course doesn't follow a linear path and you can jump into any of the different scenarios provided. So `git` ready to learn about how to get out of trouble with a healthy dose of terrible `git` puns.
+  Unlike our other [courses](../), this course doesn't follow a linear path and you can jump into any of the different scenarios provided. So `git` ready to learn about how to get out of trouble with a healthy dose of terrible `git` puns.
 
   ## [Too Many (small) Git Commits!](../git-trouble/too-many-commits)
 
