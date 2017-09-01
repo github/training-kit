@@ -33,7 +33,7 @@ main-content: |
   If you create the repository online, follow these steps:
 
   1. Follow the steps to create a repository as defined above.
-  1. CLICK **Initialize this repository with a README** checkbox.
+  1. Click **Initialize this repository with a README** checkbox.
   1. Click **Create repository**.
   1. Use the **Quick setup** instructions to clone your repository to your machine.
 
