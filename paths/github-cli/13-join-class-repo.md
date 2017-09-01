@@ -18,6 +18,6 @@ tell-me-why: |
 
   We will use a shared class repository to host a directory of all pages that have been created as a part of this course.
 
-  When you request access via the collaborator issue, we will use a webhook to add you as a collaborator. This will ensure you have the ability to push to this repository, and can add your site.
+  When you request access via the collaborator issue, our friendly [Teacherbot](https://github.com/teacher-bot/teacherbot) will add you as a collaborator. This will ensure you have the ability to push to this repository, and can add your site.
 
 ---

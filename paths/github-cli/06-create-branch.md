@@ -15,10 +15,23 @@ main-content: |
 
   ![gif of following the directions below](../images/gifs/github-cli/branching.gif)
 
-  1. Create a new branch with a descriptive name: `git branch BRANCH-NAME`.
-  1. Type `git status` to see that although you created a new branch, you are still checked out to **master** (as indicated by the in-line response from Git).
-  1. Check out to your new branch: `git checkout BRANCH-NAME`.
-  1. Type `git status` to verify you are now checked out to your new branch.
+  1. Create a new branch. Replace `<BRANCH-NAME>` with descriptive name:
+
+          git branch <BRANCH-NAME>
+
+  1. Check your repository's status:
+
+          git status
+
+        > Notice that although you created a new branch, you are still checked out to `master`, as indicated by the in-line response from Git.
+
+  1. Check out to your new branch:
+
+          git checkout <BRANCH-NAME>
+
+  1. Verify that you are now checked out to your new branch:
+
+          git status
 
 show-me-how:
 tell-me-why:
