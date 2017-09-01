@@ -11,7 +11,7 @@ sidebar:
   nav: "github-desktop-nav"
 main-content: |
 
-  **Essential First Step**: Before this class, you should complete our [Introduction to GitHub](https://github.github.com{{site.baseurl}}/intro-to-github/) course.
+  **Essential First Step**: Before this class, you should complete our [Introduction to GitHub](../intro-to-github/) course.
 
   This course teaches you to create and host your own website via GitHub, using GitHub Desktop.
 
