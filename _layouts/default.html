@@ -3,10 +3,12 @@
 
   {% include head.html %}
 
-  <body>
+  <body style="min-height: 100vh;" class="d-flex flex-column">
     {% include header.html %}
 
-    {{ content }}
+    <main class="site-content">
+      {{ content }}
+    </main>
 
     {% include footer.html %}
     {% include scripts.html %}

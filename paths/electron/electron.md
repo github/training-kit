@@ -21,7 +21,7 @@ courses:
     link: /electron/share-your-app
 ---
 <div class="mb-6">
-  {% include page__hero.html %}
+  {% include blue-hero.html %}
 </div>
 
 {% include timeline.html %}

@@ -13,7 +13,7 @@ main-content: |
 
   Now that you have merged your pull request, you have completed the GitHub workflow! Check out your new pin on the map!
 
-  <div id="map" style="height: 400px;" class="width-full"></div>
+  <div id="map" style="height: 400px;" class="width-full my-3"></div>
 
   ## We Love Feedback :heart:
 

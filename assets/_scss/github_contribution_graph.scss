@@ -1,3 +1,11 @@
+.contribution_graph {
+  font-size: $font-size-small;
+  color: $gray-700;
+  padding: $spacer-2;
+  border-radius: 4px;
+  border: 1px solid $gray-300;
+}
+
 .svg-tip {
   padding: 10px;
   background: rgba(0,0,0,0.8);
