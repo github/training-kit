@@ -12,7 +12,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/07-merge-pull-request.md
-show-me-how: "images/gifs/github-desktop/merge-pr.gif"
+show-me-how:
 tell-me-why: |
   ## Why did we merge without collaborating?
 

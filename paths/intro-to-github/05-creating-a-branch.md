@@ -11,7 +11,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/03-create-branch.md
-show-me-how: "images/gifs/intro/create-branch-intro.gif"
+show-me-how: 
 tell-me-why: |
   ## Creating A Branch
 

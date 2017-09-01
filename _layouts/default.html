@@ -1,37 +1,16 @@
----
-layout: compress
----
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 
-{% include base_path %}
-
-<!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
-<head>
-  <style>
-    #map {
-      width: 100%;
-      height: 400px;
-    }
-  </style>
   {% include head.html %}
-  {% include head/custom.html %}
-</head>
 
-<body>
+  <body style="min-height: 100vh;" class="d-flex flex-column">
+    {% include header.html %}
 
-  {% include browser-upgrade.html %}
-  {% include masthead.html %}
+    <main class="site-content">
+      {{ content }}
+    </main>
 
-  {{ content }}
-
-  <div class="page__footer">
-    <footer>
-      {% include footer/custom.html %}
-      {% include footer.html %}
-    </footer>
-  </div>
-
-  {% include scripts.html %}
-
-</body>
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
 </html>

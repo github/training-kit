@@ -1,25 +1,27 @@
 ---
 layout: default
 subpage: videos
+title: Git Videos
+description: Recorded content that demonstrates best practices in using Git and GitHub.
+breadcrumbColor: "bg-gray-light"
+breadcrumbSize: "lg"
 ---
-<div class="minitron" style="margin-top: 32px">
+{% include light-hero.html %}
+{% include breadcrumbs.html %}
 
-  <div class="container">
-    <h1 class="display-alpha m-y-0">Git Videos</h1>
-    <p class="display-beta text-muted m-t-sm">Recorded content that demonstrates best practices in using Git and GitHub.
-  </div>
-</div>
-
-
-<div class="container videos">
-  {% for video in site.categories.videos %}
-    <a href="{{ video.the_url }}" class="video card">
-      <img src="assets/{{ video.image_filename }}" alt="{{ video.title }}" class="img-responsive">
-
-      <div class="col-md-8">
-        <h2>{{ video.title }}</h2>
-        <p class="body">{{ video.content }}</p>
+<div class="container-lg mx-auto p-responsive mt-6">
+  <div class="d-flex flex-wrap gutter-condensed">
+    {% for video in site.categories.videos %}
+      <div class="mb-3 col-12 col-md-6">
+        <a href="{{ video.the_url }}" class="d-block height-full p-2 card hover-card">
+          <img src="assets/{{ video.image_filename }}" alt="{{ video.title }}" class="width-full" />
+    
+          <div class="mt-4">
+            <h2>{{ video.title }}</h2>
+            <p class="text-gray-dark text-normal">{{ video.content }}</p>
+          </div>
+        </a>
       </div>
-    </a>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>

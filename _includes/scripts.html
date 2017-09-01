@@ -1,9 +1,9 @@
-<script src="{{ site.baseurl }}/assets/js/main.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-2.1.1.js" ></script>
+
+<script src="{{ site.baseurl }}/assets/js/script.js"></script>
 <script src="{{ site.baseurl }}/assets/js/mapsAPI.js"></script>
 
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-2.1.1.js" ></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/github_contribution.js"></script>
-<link href="{{ site.baseurl }}/assets/css/github_contribution_graph.css" media="all" rel="stylesheet" />
 
 <script>
 $('#find-location').click( function()
@@ -29,9 +29,8 @@ $('#find-location').click( function()
 <script type="text/javascript">
 $(document).ready(function(){
 
-
     $('#github_chart_1').github_graph( {
-      data: 'https://githubschool.github.io{{site.baseurl}}-github-pages/createDirectory.json' ,
+      data: 'https://githubschool.github.io/on-demand-github-pages/createDirectory.json' ,
       texts: ['site added to our directory','sites added to our directory'],
       link: 'this is the link'
     });

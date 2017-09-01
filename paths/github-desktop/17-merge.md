@@ -12,7 +12,7 @@ main-content:
   includes:
     - activity/github-desktop/16-merge-pr.md
     - activity/github-desktop/desktopsurvey.md
-show-me-how: images/gifs/github-desktop/merge.gif
+show-me-how:
 tell-me-why:
   includes:
     - tell-me-why/merge-pr.md
