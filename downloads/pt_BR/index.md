@@ -245,4 +245,5 @@ Baixa o histórico e incorpora as mudanças
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
+<a href="./github-git-cheat-sheet.pdf">Download Cheat Sheet</a>
 </div>
