@@ -16,7 +16,7 @@ main-content: |
 
   **En este curso, aprenderas a**:
 
-  - Usar el sitio web GitHub.com para completar el flujo de trabajo de GitHub
+  - Usar el sitio web GitHub.com para completar el Flujo GitHub (el flujo de trabajo de GitHub)
   - Colaborar con nuevos amigos en un divertido proyecto
   - Añadir tu pin al mapa!
 
