@@ -10,7 +10,7 @@ sidebar:
   nav: "intro-nav-es"
 main-content:
   includes:
-  - activity/intro-to-github-es/05a-collaborar-en-pull-request.md
+  - activity/intro-to-github-es/05a-colaborar-en-pull-request.md
 show-me-how:
 tell-me-why: |
   ## Convertirte en un maestro de Markdown
