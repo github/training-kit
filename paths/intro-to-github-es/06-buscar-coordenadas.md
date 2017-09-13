@@ -11,7 +11,7 @@ sidebar:
 main-content: |
   Para crear tu pin, necesitas saber la latitud y longitud en las que te encuentras:
 
-  ![gif of directions](../images/gifs/intro/find-coordinants.gif)
+  ![gif of directions](../../images/gifs/intro/find-coordinants.gif)
 
   1. Encuentra tu latitud y longitud usando uno de estos botones.
 

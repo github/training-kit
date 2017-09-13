@@ -61,7 +61,7 @@ function initialize() {
         });
 
       new MarkerClusterer(map, markers, {
-        imagePath: '../images/cluster/m',
+        imagePath: '/on-demand/images/cluster/m',
         averageCenter: true,
         minimumClusterSize: 42
       });

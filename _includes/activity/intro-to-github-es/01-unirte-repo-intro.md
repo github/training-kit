@@ -1,6 +1,6 @@
 ¡Es hora de ensuciarse las manos! Utiliza estos pasos para acceder a nuestro proyecto compartido:
 
-![gif of the directions]( ../images/gifs/intro/join-repo-make-issue-introduction.gif)
+![gif of the directions]({{site.baseurl}}/images/gifs/intro/join-repo-make-issue-introduction.gif)
 
 1. Entra en tu cuenta GitHub.
 1. Navega hasta nuestro [proyecto compartido](https://github.com/githubschool/open-enrollment-classes-introduction-to-github/issues/) y haz clic en el botón **New issue**.

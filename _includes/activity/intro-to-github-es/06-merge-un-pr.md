@@ -1,6 +1,6 @@
 Si todas tus comprobaciones están pasando y no tienes ningún cambio solicitado por otros estudiantes, adelante, puedes hacer merge de tu pull request:
 
-![gif of directions](../images/gifs/intro/merge-intro.gif)
+![gif of directions]({{site.baseurl}}/images/gifs/intro/merge-intro.gif)
 
 1. Abre tu [Pull Request](https://github.com/githubschool/open-enrollment-classes-introduction-to-github/pulls) para hacer merge.
 1. Navega hasta la parte inferior del Pull Request y haz clic en el botón **Merge pull request**.

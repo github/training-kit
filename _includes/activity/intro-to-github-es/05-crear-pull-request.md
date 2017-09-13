@@ -1,6 +1,6 @@
 Ahora que has creado un archivo, vas a crear un Pull Request para mostrar los cambios que propones a las demás personas que están completando este proyecto:
 
-![gif of directions](../images/gifs/intro/pull-request-intro.gif)
+![gif of directions]({{site.baseurl}}/images/gifs/intro/pull-request-intro.gif)
 
 1. Navega hasta la <a href="https://github.com/githubschool/open-enrollment-classes-introduction-to-github/pulls" target="_blank">pestaña Pull Requests</a>.
 2. Haz clic en `New Pull Request`.
@@ -14,7 +14,7 @@ Ahora que has creado un archivo, vas a crear un Pull Request para mostrar los ca
   - Utiliza la palabra clave `closes` seguida inmediatamente por el número de tu issue (ej. `closes #3`) para indicar a qué Issue se refiere este Pull Request. Cuando haces esto, el issue se cerrará automáticamente cuando se haga merge del pull request.
 
    > Los mensajes de Pull Requess son una excelente oportunidad para describir los cambios realizados en el proyecto. Por ejemplo, podrías también incluir información explicando el tipo de feedback que te gustaría que te aportaran los demás u ofreciendo a tus colaboradores una idea de tu planificación temporal para el trabajo.
-   
+
 8. Haz clic en **Preview** para ver qué aspecto tendrá el Pull Request.
 9. Asígnate el pull request a ti mismo haciendo clic en **assign to yourself** en la sección Assignees.
 10. Haz clic en `Create pull request`.

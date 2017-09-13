@@ -1,6 +1,6 @@
 Es hora de que crees un branch (o rama) que utilizarás para añadir tu pin al mapa. Así es como se hace:
 
-![gif of directions](../images/gifs/intro/create-branch-intro.gif)
+![gif of directions]({{site.baseurl}}/images/gifs/intro/create-branch-intro.gif)
 
 1. Navega a la <a href="https://github.com/githubschool/open-enrollment-classes-introduction-to-github/" target="_blank">pestaña Code</a> en el repositorio de la clase.
 2. Haz clic en el desplegable titulado **Branch: master**.

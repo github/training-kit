@@ -11,7 +11,7 @@ sidebar:
 main-content: |
   Tómate unos minutos para familiarizarte con la estructura de un repositorio GitHub:
 
-  ![gif of directions](../images/gifs/intro/explore-repo.gif)
+  ![gif of directions](../../images/gifs/intro/explore-repo.gif)
 
   1. Mira el video en la sección **Dime por qué** para un tour guiado.
   2. Navega a la pestaña **Code** (código) para encontrar el README del repositorio.
