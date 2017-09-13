@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Introducción a GitHub
-permalink: /intro-to-github/
-next-page: /intro-to-github/create-github-account
+permalink: /intro-to-github-es/
+next-page: /intro-to-github-es/crear-cuenta-github
 sidebar:
   nav: "intro-nav"
 main-content: |
@@ -34,7 +34,7 @@ tell-me-why: |
 
   ¡Nos alegra que nos hagas esa pregunta! Mucha gente se encuentra con GitHub a través de alguno de los millones de proyectos de código abierto que aloja, o porque su jefe o profesor lo está usando. ¿Por qué usan GitHub esos proyectos?
 
-  **Enel fondo, GitHub es una plataforma de colaboración.**
+  **En el fondo, GitHub es una plataforma de colaboración.**
 
   Gente de todo el mundo usa GitHub para colaborar en proyectos que van desde software, pasando por documentos de políticas o libros de recetas. Puedes compartir tus proyectos con el mundo e invitar a tus amigos a ayudar, o puedes mantener tus proyectos en privado y aún así tener acceso fácil a ellos dondequiera que estés.
 

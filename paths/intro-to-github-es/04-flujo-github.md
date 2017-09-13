@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Utiliza el Flujo GitHub
-permalink: /intro-to-github/use-github-flow
-next-page: /intro-to-github/create-a-branch
+permalink: /intro-to-github-es/flujo-github
+next-page: /intro-to-github-es/creando-rama-branch
 sidebar:
   nav: "intro-nav"
 main-content: |
