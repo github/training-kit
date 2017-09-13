@@ -1,5 +1,5 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -7,7 +7,7 @@ title: Haz merge (combina) tu Pull Request
 permalink: /intro-to-github-es/merge-pull-request
 next-page: /intro-to-github-es/celebrar
 sidebar:
-  nav: "intro-nav"
+  nav: "intro-nav-es"
 main-content:
   includes:
   - activity/intro-to-github/06-merge-a-pr.md

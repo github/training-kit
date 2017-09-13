@@ -1,5 +1,5 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -7,7 +7,7 @@ title: Trabajar en GitHub
 permalink: /intro-to-github-es/trabajar-en-github
 next-page: /intro-to-github-es/crear-pull-request
 sidebar:
-  nav: "intro-nav"
+  nav: "intro-nav-es"
 main-content:
   includes:
   - activity/intro-to-github/04-create-a-file-on-github.md

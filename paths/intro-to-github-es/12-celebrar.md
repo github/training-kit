@@ -1,12 +1,12 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Has completado el GitHub Flow
 permalink: /intro-to-github-es/celebrar
 sidebar:
-  nav: "intro-nav"
+  nav: "intro-nav-es"
 main-content: |
 
   ## :tada: ¡Enhorabuena!

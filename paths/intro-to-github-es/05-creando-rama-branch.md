@@ -1,5 +1,5 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -7,7 +7,7 @@ title: Crear una rama o branch
 permalink: /intro-to-github-es/creando-rama-branch
 next-page: /intro-to-github-es/buscar-coordenadas
 sidebar:
-  nav: "intro-nav"
+  nav: "intro-nav-es"
 main-content:
   includes:
   - activity/intro-to-github/03-create-branch.md

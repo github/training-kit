@@ -1,5 +1,5 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -7,7 +7,7 @@ title: Utiliza el Flujo GitHub
 permalink: /intro-to-github-es/flujo-github
 next-page: /intro-to-github-es/creando-rama-branch
 sidebar:
-  nav: "intro-nav"
+  nav: "intro-nav-es"
 main-content: |
   
   Para añadir tu pin al proyecto, necesitas añadir un nuevo archivo. Harás esto mediante el Flujo GitHub.

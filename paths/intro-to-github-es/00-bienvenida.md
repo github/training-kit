@@ -1,5 +1,5 @@
 ---
-layout: simple-class_es
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)

@@ -1,5 +1,5 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -7,7 +7,7 @@ title: Crear un Pull Request
 permalink: /intro-to-github-es/crear-pull-request
 next-page: /intro-to-github-es/colaborar-en-github
 sidebar:
-  nav: "intro-nav"
+  nav: "intro-nav-es"
 main-content:
   includes:
   - activity/intro-to-github/05-create-a-pull-request.md

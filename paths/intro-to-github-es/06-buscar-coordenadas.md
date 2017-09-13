@@ -1,5 +1,5 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -7,7 +7,7 @@ title: Busca tus coordenadas
 permalink: /intro-to-github-es/buscar-coordenadas
 next-page: /intro-to-github-es/trabajar-en-github
 sidebar:
-  nav: "intro-nav"
+  nav: "intro-nav-es"
 main-content: |
   Para crear tu pin, necesitas saber la latitud y longitud en las que te encuentras:
 

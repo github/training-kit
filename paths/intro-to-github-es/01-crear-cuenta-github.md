@@ -1,5 +1,5 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -7,7 +7,7 @@ title: Crear una cuenta en GitHub
 permalink: /intro-to-github-es/crear-cuenta-github
 next-page: /intro-to-github-es/unete-repo-clase
 sidebar:
-  nav: "intro-nav"
+  nav: "intro-nav-es"
 main-content:
   includes:
   - activity/intro-to-github/00-create-github-account.md
