@@ -2,7 +2,7 @@ Para esta clase, necesitarás una cuenta en GitHub.com.
 
 Si ya tienes una cuenta en GitHub.com estás listo para empezar. Si no, puedes obtener tu cuenta gratuita siguiendo esos pasos:
 
-![gif of the following directions](../images/gifs/intro/sign-in.gif)
+![gif of the following directions](/images/gifs/intro/sign-in.gif)
 
 1. Accede a [GitHub.com](https://github.com) e introduce un nombre de usuario, dirección de correo electrónico y contraseña en los campos correspondientes, y haz clic en **Sign up for GitHub**.
 1. Selecciona la opción **Unlimited public repositories for free** (Repositorios gratuitos ilimitados).

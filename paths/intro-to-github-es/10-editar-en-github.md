@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Editar archivos en GitHub
-permalink: /intro-to-github-es/editar-en-github
-next-page: /intro-to-github-es/merge-pull-request
+permalink: /intro-to-github/es/editar-en-github
+next-page: /intro-to-github/es/merge-pull-request
 sidebar:
   nav: "intro-nav-es"
 main-content: |

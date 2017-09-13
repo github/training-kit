@@ -4,12 +4,12 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Utiliza el Flujo GitHub
-permalink: /intro-to-github-es/flujo-github
-next-page: /intro-to-github-es/creando-rama-branch
+permalink: /intro-to-github/es/flujo-github
+next-page: /intro-to-github/es/creando-rama-branch
 sidebar:
   nav: "intro-nav-es"
 main-content: |
-  
+
   Para añadir tu pin al proyecto, necesitas añadir un nuevo archivo. Harás esto mediante el Flujo GitHub.
 
   Hasta ahora, has creado un issue, te has convertido en colaborador de nuestro repositorio, y has explorado un poco. ¡Ahora es el momento de ponerse a trabajar y añadir tu pin al mapa de la clase! Para añadir tu pin al mapa, vamos a utilizar el [Flujo GitHub](https://guides.github.com/introduction/flow/).

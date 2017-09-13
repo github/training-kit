@@ -4,14 +4,14 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Crear una rama o branch
-permalink: /intro-to-github-es/creando-rama-branch
-next-page: /intro-to-github-es/buscar-coordenadas
+permalink: /intro-to-github/es/creando-rama-branch
+next-page: /intro-to-github/es/buscar-coordenadas
 sidebar:
   nav: "intro-nav-es"
 main-content:
   includes:
   - activity/intro-to-github-es/03-crear-branch.md
-show-me-how: 
+show-me-how:
 tell-me-why: |
   ## Creando una rama o branch
 

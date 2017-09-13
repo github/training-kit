@@ -4,21 +4,21 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Trabajar en GitHub
-permalink: /intro-to-github-es/trabajar-en-github
-next-page: /intro-to-github-es/crear-pull-request
+permalink: /intro-to-github/es/trabajar-en-github
+next-page: /intro-to-github/es/crear-pull-request
 sidebar:
   nav: "intro-nav-es"
 main-content:
   includes:
   - activity/intro-to-github-es/04-crear-archivo-en-github.md
-show-me-how: 
+show-me-how:
 tell-me-why: |
 
   ## Añadir un nuevo archivo
 
   Para añadir tu pin, añade un archivo nuevo al repositorio de la clase. Tienes instrucciones específicas más arriba, pero antes considera algunas de las prácticas formas en las que GitHub te permite añadir archivos a tus proyectos.
 
-  - **Subir archivos:** si ya tienes un archivo en tu ordenador que quieres añadir a tu repositorio, simplemente arrástralo a la ventana del repositorio en GitHub. 
+  - **Subir archivos:** si ya tienes un archivo en tu ordenador que quieres añadir a tu repositorio, simplemente arrástralo a la ventana del repositorio en GitHub.
   - **Crear un archivo nuevo:** también puedes escoger crear un archivo nuevo en tu repositorio haciendo clic en el botón **Create new file**. Esto abre un editor de archivos basado en web simple. Primero, escribe un nombre de archivo con la extensión apropiada. La extensión indicará a GitHub cómo renderizar tu contenido.
   - **Modificar un archivo ya existente:** a veces simplemente necesitas hacer cambios en un archivo que ya existe. Si es el caso, navega hasta ese archivo utilizando el directorio de archivos en la pestaña Code. Una vez has abierto el archivo, haz clic en el icono del lápiz en la parte superior derecha para abrir el archivo en modo edición.
 

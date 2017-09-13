@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Introducción a GitHub
-permalink: /intro-to-github-es/
-next-page: /intro-to-github-es/crear-cuenta-github
+permalink: /intro-to-github/es/
+next-page: /intro-to-github/es/crear-cuenta-github
 sidebar:
   nav: "intro-nav-es"
 main-content: |

@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Haz merge (combina) tu Pull Request
-permalink: /intro-to-github-es/merge-pull-request
-next-page: /intro-to-github-es/celebrar
+permalink: /intro-to-github/es/merge-pull-request
+next-page: /intro-to-github/es/celebrar
 sidebar:
   nav: "intro-nav-es"
 main-content:
