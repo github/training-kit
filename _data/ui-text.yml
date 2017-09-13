@@ -3,6 +3,7 @@
 # English (default)
 # -----------------
 en: &DEFAULT_EN
+  name                  : "English"
   page                  : "Page"
   pagination_previous   : "Previous"
   pagination_next       : "Next"
@@ -35,6 +36,7 @@ en-UK:
 # Spanish
 # --------------
 es: &DEFAULT_ES
+  name                  : "Español"
   page                  : "Página"
   pagination_previous   : "Anterior"
   pagination_next       : "Siguiente"
