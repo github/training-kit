@@ -85,3 +85,5 @@ sass:
 
 # Custom site configuration
 lang: en
+
+theme: jekyll-theme-minimal
