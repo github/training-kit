@@ -10,10 +10,10 @@ sidebar:
   nav: "intro-nav-es"
 main-content:
   includes:
-  - activity/intro-to-github/01-join-intro-repo.md
+  - activity/intro-to-github-es/01-unirte-repo-intro.md
 show-me-how:
 tell-me-why:
   includes:
-  - tell-me-why/create-issue.md
-  - tell-me-why/manage-notifications.md
+  - tell-me-why-es/crear-issue.md
+  - tell-me-why-es/gestionar-notificaciones.md
 ---
