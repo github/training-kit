@@ -7,7 +7,7 @@ title: Introducción a GitHub
 permalink: /intro-to-github-es/
 next-page: /intro-to-github-es/crear-cuenta-github
 sidebar:
-  nav: "intro-nav"
+  nav: "intro-nav-es"
 main-content: |
   ## Estamos felices de que estés aquí :octocat:
 

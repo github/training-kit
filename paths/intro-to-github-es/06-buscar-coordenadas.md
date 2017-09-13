@@ -15,7 +15,7 @@ main-content: |
 
   1. Encuentra tu latitud y longitud usando uno de estos botones.
 
-        [<i class="fa fa-location-arrow" aria-hidden="true"></i> Find My Coordinates Automatically](#location){: #find-location .btn .btn--success} [<i class="fa fa-map-marker" aria-hidden="true"></i> Manually Search for My Own Coordinates ](https://mynasadata.larc.nasa.gov/latitudelongitude-finder/){: .btn .btn--warning}
+        [<i class="fa fa-location-arrow" aria-hidden="true"></i> Buscar mis coordenadas automáticamente](#location){: #find-location .btn .btn--success} [<i class="fa fa-map-marker" aria-hidden="true"></i> Buscar mis coordenadas manualmente ](https://mynasadata.larc.nasa.gov/latitudelongitude-finder/){: .btn .btn--warning}
 
         <div id="location-box" style="display:none;">
         Estás en <span id="city"></span>, <span id="region"></span>, <span id="country"></span><br>
