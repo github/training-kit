@@ -10,7 +10,7 @@ sidebar:
   nav: "intro-nav-es"
 main-content:
   includes:
-  - activity/intro-to-github/05-create-a-pull-request.md
+  - activity/intro-to-github-es/05-crear-pull-request.md
 show-me-how:
 tell-me-why: |
   ## Colaborando en tu código

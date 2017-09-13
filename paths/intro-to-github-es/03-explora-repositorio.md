@@ -1,5 +1,5 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -7,7 +7,7 @@ title: Explora el repositorio de GitHub
 permalink: /intro-to-github-es/explora-repositorio
 next-page: /intro-to-github-es/flujo-github
 sidebar:
-  nav: "intro-nav"
+  nav: "intro-nav-es"
 main-content: |
   Tómate unos minutos para familiarizarte con la estructura de un repositorio GitHub:
 

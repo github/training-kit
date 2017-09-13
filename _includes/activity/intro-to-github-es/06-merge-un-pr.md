@@ -1,9 +1,9 @@
-If all of your checks are passing and you do not have any requested changes from other students, you can go ahead and merge your pull request:
+Si todas tus comprobaciones están pasando y no tienes ningún cambio solicitado por otros estudiantes, adelante, puedes hacer merge de tu pull request:
 
 ![gif of directions](../images/gifs/intro/merge-intro.gif)
 
-1. Open your [Pull Request](https://github.com/githubschool/open-enrollment-classes-introduction-to-github/pulls) to be merged.
-1. Scroll to the bottom of the Pull Request and click the **Merge pull request** button.
-1. You can accept the default merge commit message.
-1. Click **Confirm merge**.
-1. Click **Delete branch** to delete the branch, as it no longer contains unique work.
+1. Abre tu [Pull Request](https://github.com/githubschool/open-enrollment-classes-introduction-to-github/pulls) para hacer merge.
+1. Navega hasta la parte inferior del Pull Request y haz clic en el botón **Merge pull request**.
+1. Puedes aceptar el mensaje por defecto para el merge commit.
+1. Haz clic en **Confirm merge**.
+1. Haz clic en **Delete branch** para eliminar el branch, dado que ya no contiene una tarea o variación en la que se esté trabajando.

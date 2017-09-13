@@ -10,7 +10,7 @@ sidebar:
   nav: "intro-nav-es"
 main-content:
   includes:
-  - activity/intro-to-github/06-merge-a-pr.md
+  - activity/intro-to-github-es/06-merge-un-pr.md
 show-me-how:
 tell-me-why: |
   ## Merge explicado

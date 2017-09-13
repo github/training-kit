@@ -1,20 +1,20 @@
-Now that you have created a file, you will create a Pull Request to show your proposed changes to others who are completing this project:
+Ahora que has creado un archivo, vas a crear un Pull Request para mostrar los cambios que propones a las demás personas que están completando este proyecto:
 
 ![gif of directions](../images/gifs/intro/pull-request-intro.gif)
 
-1. Navigate to the <a href="https://github.com/githubschool/open-enrollment-classes-introduction-to-github/pulls" target="_blank">Pull Requests tab</a>.
-2. Click `New Pull Request`.
-3. In the **base** dropdown, choose `master`.
-4. In the **compare** dropdown, choose your branch.
-5. Click **Create pull request**.
-6. You can leave the default title or make it more descriptive.
-7. Use [markdown formatting](https://guides.github.com/features/mastering-markdown/) to explain the work you have done on your branch.
-  - Summarize your proposed change.
-  - Mention the training team using `@githubteacher`.
-  - Use the keywords `closes` immediately followed by your issue number (e.g. `closes #3`)to note which Issue the Pull Request is addressing. When you do this, the issue will be automatically closed when the pull request is merged.
+1. Navega hasta la <a href="https://github.com/githubschool/open-enrollment-classes-introduction-to-github/pulls" target="_blank">pestaña Pull Requests</a>.
+2. Haz clic en `New Pull Request`.
+3. En el desplegable **base**, selecciona `master`.
+4. En el desplegable **compare**, selecciona tu branch.
+5. Haz clic en **Create pull request**.
+6. Puedes dejar el título por defecto o hacerlo más descriptivo.
+7. Utilizando [formato markdown](https://guides.github.com/features/mastering-markdown/) para explicar el trabajo que has hecho en tu branch:
+  - Resume el cambio propuesto.
+  - Menciona al equipo de formadores usando `@githubteacher`.
+  - Utiliza la palabra clave `closes` seguida inmediatamente por el número de tu issue (ej. `closes #3`) para indicar a qué Issue se refiere este Pull Request. Cuando haces esto, el issue se cerrará automáticamente cuando se haga merge del pull request.
 
-   > Pull Request messages are an excellent opportunity for you to describe the changes you have made to the project. For example, you could also include information explaining the type of feedback you'd like others to give you or providing collaborators an idea of your timeline.
-
-8. Click **Preview** to see how your Pull Request will look.
-9. Assign the pull request to yourself by clicking **assign to yourself** in the Assignees section.
-10. Click `Create pull request`.
+   > Los mensajes de Pull Requess son una excelente oportunidad para describir los cambios realizados en el proyecto. Por ejemplo, podrías también incluir información explicando el tipo de feedback que te gustaría que te aportaran los demás u ofreciendo a tus colaboradores una idea de tu planificación temporal para el trabajo.
+   
+8. Haz clic en **Preview** para ver qué aspecto tendrá el Pull Request.
+9. Asígnate el pull request a ti mismo haciendo clic en **assign to yourself** en la sección Assignees.
+10. Haz clic en `Create pull request`.

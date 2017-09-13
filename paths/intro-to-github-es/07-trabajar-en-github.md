@@ -10,7 +10,7 @@ sidebar:
   nav: "intro-nav-es"
 main-content:
   includes:
-  - activity/intro-to-github/04-create-a-file-on-github.md
+  - activity/intro-to-github-es/04-crear-archivo-en-github.md
 show-me-how: 
 tell-me-why: |
 
