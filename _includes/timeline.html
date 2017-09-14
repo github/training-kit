@@ -14,6 +14,9 @@
           </div>
           <div class="timeline-body">
             <p class="text-muted">{{ course.description | markdownify }}</p>
+            {% for lang in course.language %}
+            <a class="btn btn-sm btn-outline m-1" href="{{ site.baseurl }}{{ course.link }}{% if lang != 'en'%}/{{ lang }}/{% endif %}" role="button">{{ site.data.ui-text[lang].name | downcase }}</a>
+            {% endfor %}
           </div>
         </div>
       </li>

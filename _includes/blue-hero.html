@@ -7,6 +7,9 @@
         {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
       {% endif %}
     </h1>
+    {% if page.language %}
+      Languages ({{page.language.length}}): {{ page.language }}
+    {% endif %}
     {% if page.excerpt %}
       <p>{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
     {% endif %}
