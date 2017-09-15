@@ -1,5 +1,7 @@
 ---
-layout: simple-class-es
+lang: es
+ref: intro-to-github-03
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
