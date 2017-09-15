@@ -1,4 +1,6 @@
 ---
+ref: index
+lang: en
 layout: default
 excerpt: "You're in control. We're with you along the way."
 timeline:
@@ -47,12 +49,13 @@ courses:
     link: /electron
     # language: [en]
 ---
-<div class="bg-blue-dark text-white py-2 py-md-6 text-center">
+<!-- <div class="bg-blue-dark text-white py-2 py-md-6 text-center">
   <div class="container-lg p-responsive my-6">
     <h1 class="alt-h1 lh-condensed" itemprop="headline">{{ site.title }}</h1>
     <p>{{ page.excerpt }}</p>
   </div>
-</div>
+</div> -->
+{% include blue-hero.html %}
 
 <div class="my-6 p-2">
   {% include timeline.html %}

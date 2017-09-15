@@ -1,5 +1,8 @@
 ---
+ref: index
+lang: es
 layout: default
+permalink: /es/
 excerpt: "Tú tienes el control. Estamos contigo a lo largo del camino."
 timeline:
   showWelcome: true
@@ -40,13 +43,22 @@ courses:
     imageAlt: Electron logo
     link: /electron
 ---
-<div class="bg-blue-dark text-white py-2 py-md-6 text-center">
+{% include blue-hero.html %}
+<!--
+ <div class="bg-blue-dark text-white py-2 py-md-6 text-center">
   <div class="container-lg p-responsive my-6">
     <h1 class="alt-h1 lh-condensed" itemprop="headline">{{ site.title }}</h1>
     <p>{{ page.excerpt }}</p>
+    <p class="float-right">
+      {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+      {% for page in pages %}
+      <a href="{{ site.baseurl }}{{ page.permalink }}" role="button" class="btn btn-sm btn-outline {{ page.lang }}">{{ site.data.ui-text[page.lang].name | downcase }}</a>
+      {% endfor %}
+    </p>
+
   </div>
 </div>
-
+-->
 <div class="my-6 p-2">
   {% include timeline.html %}
 </div>
