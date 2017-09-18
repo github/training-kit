@@ -13,7 +13,7 @@ Ahora que has creado un archivo, vas a crear un Pull Request para mostrar los ca
   - Menciona al equipo de formadores usando `@githubteacher`.
   - Utiliza la palabra clave `closes` seguida inmediatamente por el número de tu issue (ej. `closes #3`) para indicar a qué Issue se refiere este Pull Request. Cuando haces esto, el issue se cerrará automáticamente cuando se haga merge del pull request.
 
-   > Los mensajes de Pull Requess son una excelente oportunidad para describir los cambios realizados en el proyecto. Por ejemplo, podrías también incluir información explicando el tipo de feedback que te gustaría que te aportaran los demás u ofreciendo a tus colaboradores una idea de tu planificación temporal para el trabajo.
+   > Los mensajes de Pull Request son una excelente oportunidad para describir los cambios realizados en el proyecto. Por ejemplo, podrías también incluir información explicando el tipo de feedback que te gustaría que te aportaran los demás u ofreciendo a tus colaboradores una idea de tu planificación temporal para el trabajo.
 
 8. Haz clic en **Preview** para ver qué aspecto tendrá el Pull Request.
 9. Asígnate el pull request a ti mismo haciendo clic en **assign to yourself** en la sección Assignees.

@@ -21,7 +21,7 @@ tell-me-why: |
 
   ### Claves para hacer merge en equipos
 
-  Muchos proyectos han establecido normbas acerca de quién debería (o no debería) hacer merge de un pull request:
+  Muchos proyectos han establecido normas acerca de quién debería (o no debería) hacer merge de un pull request:
 
   - Algunos dicen que debería ser la persona que creó el pull request, porque serán quienes tengan que lidiar con cualquier problema que surga del merge.
   - Otros dicen que debería ser una única persona en cada proyecto para garantizar la consistencia.

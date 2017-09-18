@@ -20,15 +20,15 @@ tell-me-why: |
 
   - **Subir archivos:** si ya tienes un archivo en tu ordenador que quieres añadir a tu repositorio, simplemente arrástralo a la ventana del repositorio en GitHub.
   - **Crear un archivo nuevo:** también puedes escoger crear un archivo nuevo en tu repositorio haciendo clic en el botón **Create new file**. Esto abre un editor de archivos basado en web simple. Primero, escribe un nombre de archivo con la extensión apropiada. La extensión indicará a GitHub cómo renderizar tu contenido.
-  - **Modificar un archivo ya existente:** a veces simplemente necesitas hacer cambios en un archivo que ya existe. Si es el caso, navega hasta ese archivo utilizando el directorio de archivos en la pestaña Code. Una vez has abierto el archivo, haz clic en el icono del lápiz en la parte superior derecha para abrir el archivo en modo edición.
+  - **Modificar un archivo ya existente:** a veces simplemente necesitas hacer cambios en un archivo que ya existe. Si es el caso, navega hasta ese archivo utilizando el directorio de archivos en la pestaña Code. Una vez que hayas abierto el archivo, haz clic en el icono del lápiz en la parte superior derecha para abrir el archivo en modo edición.
 
   ## Haz commit de tus cambios
 
-  Una vez has terminado de crear o hacer cambios a un archivo en GitHub, navega hasta la parte inferior de la página. Ahí, busca la sección **Commit new file**.
+  Una vez que hayas terminado de crear o hacer cambios a un archivo en GitHub, navega hasta la parte inferior de la página. Ahí, busca la sección **Commit new file**.
 
   En el primer campo, escribe un mensaje de commit. El mensaje de commit debería explicar brevemente qué cambios estás introduciendo en el archivo.
 
-  #### Normas para sobrevivir a los commits:
+  #### Reglas de oro para los mensajes de commit:
 
   - No termines tu mensaje con un punto.
   - Hazlos breves, de 50 caracteres o menos. Puedes añadir detalles adicionales en la ventana de descripción extendida, si hace falta. Esto está justo debajo de la línea de asunto.

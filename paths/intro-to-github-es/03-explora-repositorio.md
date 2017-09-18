@@ -30,7 +30,7 @@ tell-me-why: |
 
   El video cubre algunas de las características más utilizadas. Aquí tienes algunas otras cosas interesantes que puedes encontrar en los repositorios GitHub:
 
-  - **Projects:** Puedes crear paneles de seguimiento de proyectos tipo Kanban dentro de GitHub.
+  - **Projects:** Aquí puedes crear paneles de seguimiento de proyectos tipo Kanban dentro de GitHub.
   - **Wiki**: GitHub también tiene un espacio donde crear y alojar la documentación relevante para tu proyecto.
   - **Insights**: Una opción de menú desplegable que contiene enlaces a diferentes herramientas analíticas para tu repositorio. Dispone de las siguientes opciones:
      - **Pulse**: Pulse es el dashboard o panel de nuestro proyecto. Contiene información sobre el trabajo que se ha completado y el trabajo en curso.

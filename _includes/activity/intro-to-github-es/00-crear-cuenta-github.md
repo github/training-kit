@@ -1,6 +1,6 @@
 Para esta clase, necesitarás una cuenta en GitHub.com.
 
-Si ya tienes una cuenta en GitHub.com estás listo para empezar. Si no, puedes obtener tu cuenta gratuita siguiendo esos pasos:
+Si ya tienes una cuenta en GitHub.com estás listo para empezar. Si no, puedes obtener tu cuenta gratuita siguiendo estos pasos:
 
 ![gif of the following directions]({{site.baseurl}}/images/gifs/intro/sign-in.gif)
 

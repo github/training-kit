@@ -1,5 +1,5 @@
 ## Gestionando notificaciones
-Una vez has comentado en un _issue_ o _pull request_, empezarás a recibir notificaciones por email. Por defecto, se enviarán notificaciones por email cuando haya actividad en el hilo. 
+Una vez que hayas comentado en un _issue_ o _pull request_, empezarás a recibir notificaciones por email. Por defecto, se enviarán notificaciones por email cuando haya actividad en el hilo. 
 También puedes decidir recibir notificaciones de un repositorio completo. Cada vez que haya un _issue_, _pull request_ o _comentario_ nuevo, recibirás una notificación.
 
 ### Puedes silenciar o activar notificaciones _individualmente para issues y pull requests_.

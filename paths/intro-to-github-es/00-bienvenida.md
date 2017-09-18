@@ -44,6 +44,6 @@ tell-me-why: |
 
   **GitHub es mucho más.**
 
-  GitHub se utiliza para crear algunas de las aplicaciones más potentes en el mundo. Puede hacer un montón de cosas muy chulas, pero esta clase se centrará en iniciarte en lo más básico. ¡Profundizaremos en el resto más adelante!
+  GitHub se utiliza para crear algunas de las aplicaciones más potentes en el mundo. Puede hacer un montón de cosas realmente geniales, pero esta clase se centrará en iniciarte en lo más básico. ¡Profundizaremos en el resto más adelante!
 
 ---

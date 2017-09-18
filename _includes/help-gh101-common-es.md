@@ -4,7 +4,7 @@ Hay un par de razones por las que los builds pueden fallar en esta clase. Si tu 
 
 #### El nombre del archivo es incorrecto
 
-El archivo para la clase debería estar en la carpeta `/_pins` y debería es´tar nombrado como `TU-USUARIO`.json. Comprueba para asegurarte de que:
+El archivo para la clase debería estar en la carpeta `/_pins` y debería estar nombrado como `TU-USUARIO`.json. Comprueba para asegurarte de que:
 
  - Tu archivo no está en las carpetas `/_pin` o `/pins`.
  - Tu arhivo no termina con `.jason`, `.md`, `.txt`.
