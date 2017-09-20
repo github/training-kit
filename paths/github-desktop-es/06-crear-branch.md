@@ -1,9 +1,9 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Create Local Branches With GitHub Desktop
+title: Crear branches locales con GitHub Desktop
 permalink: /github-desktop-es/crear-branches-github-desktop
 next-page: /github-desktop-es/hacer-cambios-github-desktop
 facilitator: false
@@ -11,17 +11,17 @@ sidebar:
   nav: "github-desktop-nav-es"
 main-content: |
 
-  Now that you have a local copy of the repository, let's use the steps of [GitHub Flow](https://guides.github.com/introduction/flow/) to make a change in your project. First we will create a branch.
+  Ahora que ya tienes una copia local del repositorio, sigamos los pasos del [GitHub Flow](https://guides.github.com/introduction/flow/) para hacer un cambio en tu proyecto. Primero crearemos un branch.
 
   ![gif of following the directions below](../images/gifs/github-desktop/create-branch-on-desktop.gif)
 
-  1. Within GitHub Desktop, click "File", then click "New Branch".
-  1. In the `Name` field, type a meaningful name for your branch. Something like `add-index-page` will work nicely.
-  1. If you have been following the directions exactly, GitHub Desktop knows to create the new branch based on `master` because it is the branch you were checked out to when you clicked the "New Branch" option.
-  1. GitHub Desktop will automatically create your new branch and switch you to it.
+  1. Desde GitHub Desktop, haz clic en "File", y entonces en "New Branch".
+  1. En el campo `Name`, introduce un nombre significativo para tu branch. Algo como `añadir-pag-index` irá bien.
+  1. Si has estado siguiendo las instrucciones al pie de la letra, GitHub Desktop sabe que tiene que crear el branch nuevo basándose en `master` porque es el brnach que tenías activo cuando hiciste clic en la opción "New Branch".
+  1. GitHub Desktop creará automáticamente tu nuevo branch y te cambiará a él.
 
 show-me-how:
 tell-me-why:
   includes:
-    - tell-me-why/branching.md
+    - tell-me-why-es/branching.md
 ---
