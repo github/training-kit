@@ -11,34 +11,34 @@ sidebar:
   nav: "github-desktop-nav-es"
 main-content: |
 
-  For this class you will use GitHub Desktop to work with your GitHub repository.
+  Para esta clase utilizarás GitHub Desktop para trabajar con tu repositorio GitHub.
 
   ![img](../images/gifs/github-desktop/download-gh-desktop.gif)
 
-  1. Download and install [GitHub Desktop](https://desktop.github.com).
-  1. Open GitHub Desktop.
-  1. Follow the prompts to sign in to your account.
-  1. Configure your user information (this only happens the first time you run the application).
+  1. Descarga e instala [GitHub Desktop](https://desktop.github.com).
+  1. Abre GitHub Desktop.
+  1. Sigue los mensajes en las ventanas emergentes para entrar en tu cuenta.
+  1. Configura tu información de usuario (esto sólo ocurre la primera vez que ejecutas el programa).
 
 tell-me-why: |
-  ## Working locally
+  ## Trabajar localmente
 
-  During the Introduction class, you made all of the changes to the class repository directly on GitHub.com. Making the changes in the web interface works well, but at some point you will need to make more complex changes or work with your project in ways that can't be done through the web interface. For example, you may want to:
+  Durante el curso introductorio, hiciste todos los cambios en el repositorio de la clase directamente en GitHub.com. Hacer los cambios en la interfaz web funciona bien, pero en algún momento necesitarás hacer cambios más complejos o trabajar en tu proyecto de maneras que no son posibles a través de la interfaz web. Por ejemplo, podrías querer:
 
-  - Include changes to more than one file in a single commit
-  - Work on your project while disconnected from the internet
-  - Run local builds and tests on your project
+  - Incluir cambios a más de un archivo en un único commit
+  - Trabajar en tu proyecto mientras no tienes conexión a internet
+  - Ejecutar builds locales y tests en tu proyecto
 
-  To do these things, you will need to work with a copy of your repository on your local machine.
+  Para hacer estas cosas, necesitas trabajar con una copia de tu repositorio localmente, en tu ordenador.
 
-  ## The benefits of working locally with GitHub Desktop
+  ## Los beneficios de trabajar localmente con GitHub Desktop
 
-  GitHub Desktop allows you to:
+    GitHub Desktop te permite:
 
-    - Remove complexity when working with Git locally.
-    - Work offline.
-    - Take snapshots of your project.
-    - View your project's history.
-    - Sync your repository with GitHub.
+    - Eliminar complejidad mientras trabajas con Git localmente.
+    - Trabajar offline.
+    - Tomar instantáneas de tu trabajo.
+    - Ver el histórico de tu proyecto.
+    - Sincronizar tu repositorio con GitHub.
 
 ---
