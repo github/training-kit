@@ -2,11 +2,13 @@
   <div class="container-lg py-6 p-responsive">
     <h1>{{ page.title }}</h1>
     {% if page.description %}<p class="col-12 col-md-6 mx-auto">{{ page.description }}</p>{% endif %}
+    <p class="float-right">
+      {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+      {% for thispage in pages %}
+        {% if page.lang != thispage.lang %}
+        <a href="{{ site.baseurl }}{{ thispage.permalink }}" role="button" class="btn btn-sm btn-outline {{ thispage.lang }}">{{ site.data.ui-text[thispage.lang].name | downcase }}</a>
+        {% endif %}
+      {% endfor %}
+    </p>
   </div>
-  <p class="float-right">
-    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-    {% for page in pages %}
-    <a href="{{ site.baseurl }}{{ page.permalink }}" role="button" class="btn btn-sm btn-outline {{ page.lang }}">{{ site.data.ui-text[page.lang].name | downcase }}</a>
-    {% endfor %}
-  </p>
 </div>
