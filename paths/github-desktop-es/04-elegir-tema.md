@@ -1,9 +1,9 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Choose a GitHub Pages Theme
+title: Elegir un tema de GitHub Pages
 permalink: /github-desktop-es/elegir-tema-github-pages
 next-page: /github-desktop-es/clonar-repositorio-github-desktop
 facilitator: false
@@ -11,7 +11,7 @@ sidebar:
   nav: "github-desktop-nav-es"
 main-content:
   includes:
-    - activity/github-desktop/choose-a-theme.md
+    - activity/github-desktop-es/elegir-tema.md
 show-me-how:
 tell-me-why:
 ---
