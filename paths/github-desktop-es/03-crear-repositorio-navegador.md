@@ -1,9 +1,9 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Create the Remote Repository on GitHub
+title: Crear el repositorio remoto en GitHub
 permalink: /github-desktop-es/crear-repo-remoto
 next-page: /github-desktop-es/elegir-tema-github-pages
 facilitator: false
@@ -11,10 +11,10 @@ sidebar:
   nav: "github-desktop-nav-es"
 main-content:
   includes:
-    - activity/github-desktop/01-create-repository.md
+    - activity/github-desktop-es/01-crear-repositorio.md
 show-me-how:
 tell-me-why:
   includes:
-    - tell-me-why/create-remote.md
-    - tell-me-why/github-pages.md
+    - tell-me-why-es/crear-remoto.md
+    - tell-me-why-es/github-pages.md
 ---
