@@ -8,7 +8,7 @@ permalink: /github-desktop-es/pull-request-github-desktop
 next-page: /github-desktop-es/merge-pull-request-github
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content: |
 
   Now that you have made some local commits, it is time to send your changes to the remote copy of your repository on GitHub.com and open a pull request.

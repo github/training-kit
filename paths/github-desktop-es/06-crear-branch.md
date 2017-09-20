@@ -8,7 +8,7 @@ permalink: /github-desktop-es/crear-branches-github-desktop
 next-page: /github-desktop-es/hacer-cambios-github-desktop
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content: |
 
   Now that you have a local copy of the repository, let's use the steps of [GitHub Flow](https://guides.github.com/introduction/flow/) to make a change in your project. First we will create a branch.

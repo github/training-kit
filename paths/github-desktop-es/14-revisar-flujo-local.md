@@ -8,7 +8,7 @@ permalink: /github-desktop-es/revisar-github-flow
 next-page: /github-desktop-es/push-pull-request-github-desktop
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content: |
 
   Now that you are a collaborator, let's use the local workflow we just learned to make changes to this repository.

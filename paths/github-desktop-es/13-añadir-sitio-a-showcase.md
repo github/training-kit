@@ -8,7 +8,7 @@ permalink: /github-desktop-es/añadir-github-pages-showcase
 next-page: /github-desktop-es/revisar-github-flow
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content:
   includes:
   - activity/github-desktop/12-add-class-repo.md  

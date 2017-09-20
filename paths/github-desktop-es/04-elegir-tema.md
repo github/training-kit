@@ -8,7 +8,7 @@ permalink: /github-desktop-es/elegir-tema-github-pages
 next-page: /github-desktop-es/clonar-repositorio-github-desktop
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content:
   includes:
     - activity/github-desktop/choose-a-theme.md

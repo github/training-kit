@@ -8,7 +8,7 @@ permalink: /github-desktop-es/push-con-github-desktop
 next-page: /github-desktop-es/añadir-github-pages-showcase
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content: |
 
   After you merge your Pull Request, you will need to update your local copy of the repository.

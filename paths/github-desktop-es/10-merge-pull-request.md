@@ -8,7 +8,7 @@ permalink: /github-desktop-es/merge-pull-request-github
 next-page: /github-desktop-es/ver-sitio-github-pages
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content:
   includes:
     - activity/github-desktop/07-merge-pull-request.md

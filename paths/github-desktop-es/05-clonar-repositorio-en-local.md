@@ -8,7 +8,7 @@ permalink: /github-desktop-es/clonar-repositorio-github-desktop
 next-page: /github-desktop-es/crear-branches-github-desktop
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content: |
 
   After you've created a repository on the remote, the next step is to clone it to your local environment.

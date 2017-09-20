@@ -8,7 +8,7 @@ permalink: /github-desktop-es/crear-repo-remoto
 next-page: /github-desktop-es/elegir-tema-github-pages
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content:
   includes:
     - activity/github-desktop/01-create-repository.md

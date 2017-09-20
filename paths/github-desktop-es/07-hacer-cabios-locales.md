@@ -8,7 +8,7 @@ permalink: /github-desktop-es/hacer-cambios-github-desktop
 next-page: /github-desktop-es/nuevos-commits-github-desktop
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content: |
 
   It's time to create the home page for your website.

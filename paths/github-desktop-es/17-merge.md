@@ -7,7 +7,7 @@ title: Merge Your Pull Request on GitHub
 permalink: /github-desktop-es/merge-pull-request-showcase
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content:
   includes:
     - activity/github-desktop/16-merge-pr.md

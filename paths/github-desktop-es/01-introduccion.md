@@ -3,26 +3,26 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: GitHub Pages from GitHub Desktop
+title: GitHub Pages desde GitHub Desktop
 permalink: /github-desktop-es/
 next-page: /github-desktop-es/instalar-github-desktop
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content: |
 
-  **Essential First Step**: Before this class, you should complete our [Introduction to GitHub](../intro-to-github/) course.
+  **Primer paso imprescindible**: Antes de seguir esta clase, deberías completar nuestro curso [Introducción a GitHub](../intro-to-github-es/).
 
-  This course teaches you to create and host your own website via GitHub, using GitHub Desktop.
+  Este curso te enseñará a crear y alojar tu propio sitio web a través de GitHub, utilizando GitHub Desktop.
 
-  **In this course, you will learn how to**:
+  **En este curso, aprenderás cómo:**
 
-  - Create a new repository
-  - Work with your repository on your local machine
-  - Convert your repository into a website
-  - Host and share your website
+  - Crear un nuevo repositorio
+  - Trabajar con tu repositorio en tu ordenador localmente
+  - Convertir tu repositorio en un sitio web
+  - Alojar y compartir tu sitio web
 
-  **Take a look at everyone who has shared their website so far in this Contribution Graph:**
+  **Echa un ojo a todos los que han compartido su sitio web hasta ahora en este Gráfico de contribuciones:**
 
   <div class="contribution_graph">
   <div id="github_chart_1" class="github_chart_1"></div>

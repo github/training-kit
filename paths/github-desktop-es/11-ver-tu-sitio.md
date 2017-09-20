@@ -8,7 +8,7 @@ permalink: /github-desktop-es/ver-sitio-github-pages
 next-page: /github-desktop-es/push-con-github-desktop
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content: |
 
   ## Great work!

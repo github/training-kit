@@ -8,7 +8,7 @@ permalink: /github-desktop-es/nuevos-commits-github-desktop
 next-page: /github-desktop-es/pull-request-github-desktop
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content: |
 
   After you have finished making your changes, it is time to commit them.

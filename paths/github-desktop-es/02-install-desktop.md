@@ -8,7 +8,7 @@ permalink: /github-desktop-es/instalar-github-desktop
 next-page: /github-desktop-es/crear-repo-remoto
 facilitator: false
 sidebar:
-  nav: "github-desktop-nav"
+  nav: "github-desktop-nav-es"
 main-content: |
 
   For this class you will use GitHub Desktop to work with your GitHub repository.
