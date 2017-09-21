@@ -6,7 +6,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Haz merge (combina) tu Pull Request
-permalink: /intro-to-github/es/merge-pull-request
+permalink: /intro-to-github/es/merge-pull-requests
 next-page: /intro-to-github/es/celebrar
 sidebar:
   nav: "intro-nav-es"
@@ -19,7 +19,7 @@ tell-me-why: |
 
   Cuando haces merge (combinas) de tu branch, estás cogiendo el contenido e historia de la rama que creaste y añadiéndolo al contenido e historia del branch `master` o rama principal.
 
-  ![Merge visual](../images/merge-visual.jpg){: .align-center}
+  ![Merge visual](../../images/merge-visual.jpg){: .align-center}
 
   ### Claves para hacer merge en equipos
 
