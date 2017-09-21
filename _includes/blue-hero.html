@@ -7,9 +7,6 @@
         {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
       {% endif %}
     </h1>
-    {% if page.language %}
-      Languages ({{page.language.length}}): {{ page.language }}
-    {% endif %}
     {% if page.excerpt %}
       <p>{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
     {% endif %}
@@ -19,8 +16,10 @@
     {% if page.header.cta_url %}
       <p><a href="{{ cta_path }}" class="btn btn-outline">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label }}</a></p>
     {% endif %}
+    {% include translation_buttons.html %}
   </div>
   {% if page.header.caption %}
     <span>{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
   {% endif %}
+
 </div>

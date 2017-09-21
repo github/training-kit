@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: intro-to-github-07
 layout: simple-class
 header:
   overlay_image: cover.jpeg
@@ -11,7 +13,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/04-create-a-file-on-github.md
-show-me-how: 
+show-me-how:
 tell-me-why: |
 
   ## Add a New File

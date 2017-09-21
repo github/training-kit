@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: intro-to-github-08
 layout: simple-class
 header:
   overlay_image: cover.jpeg
