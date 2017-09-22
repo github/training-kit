@@ -13,5 +13,7 @@ main-content: |
 
   This course is designed for all of you. We demystify the _merge conflict_ and through a series of examples prepare you to face off against the evil _merge conflict_ and be the hero of the day!
 
+  ![louise saying yes yes yes yes yes](https://media.giphy.com/media/xdeQFr16i4y64/giphy.gif)
 
+  But wait, we aren't finished.
 ---
