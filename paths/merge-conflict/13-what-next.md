@@ -9,5 +9,21 @@ next-page: /merge-conflicts/ide-examples
 sidebar:
   nav: "merge-conflicts"
 main-content: |
-  Main content
+  With the the merge conflicts resolved you know have a fully functional GitHub Pages based resume.
+
+
+  #### Modifying Other Sections
+
+  To modify the other sections of the resume, simply create a new branch and modify the the files found in the `/_data` folder. For instance, to modify the projects section, edit the `/_data/projects.yml` file. After making your changes, create a new pull request with your branch and merge your changes.
+
+  #### Modifying the Picture
+
+  If you would like to change the image used on your resume you need to perform a few actions.
+
+  1. Create a new branch, maybe name it something like, `new-avatar`.
+  1. Navigate to the `images` folder and click the **Upload files** button.
+  1. Drag and drop your image and commit your change by clicking **Commit changes**.
+  1. Open the `/_layouts/resume.html` file and edit line 16. Replacing `images/bob-avatar.jpg` with `images/YourFileName`.
+  1. Commit the change and create a pull request. After creating your pull request **merge** and **delete the branch**. 
+
 ---

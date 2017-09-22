@@ -15,5 +15,7 @@ main-content: |
 
   ![louise saying yes yes yes yes yes](https://media.giphy.com/media/xdeQFr16i4y64/giphy.gif)
 
-  But wait, we aren't finished.
+  But wait, this course doesn't just help you learn about merge conflicts, it will provide you with a [GitHub Pages](https://pages.github.com/) powered [resume](https://github.com/jglovier/resume-template). After participating in the different merge conflict exercises in this course, instructions on how to modify the different sections of the resume to tailor it your needs will be provided.
+
+  If you have any questions while taking the course, make sure to create an Issue in the class repository [here](https://github.com/githubtraining/on-demand-merge-conflict/issues).
 ---
