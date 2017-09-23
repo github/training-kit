@@ -211,7 +211,7 @@ $(function(){
 
     return Timer;
   })()
-
+  //receive parameter for count
   var timer = new Timer($("#time-left"));
   $('.timer-label').click(function(e) {
     e.preventDefault()
