@@ -11,6 +11,8 @@ sidebar:
 main-content: |
   To participate in this course, you are going to need to **import** an a project the GitHub Training team created for this course. Importing a project will essentially copy the repository including all of the files and revision history to your account.
 
+  [![instructions for using the import repository tool](../../images/gifs/merge-conflict/import-repo.gif)](../../images/gifs/merge-conflict/import-repo.gif)
+
   1. While logged into GitHub, navigate to the [Import tool](https://github.com/new/import).
   1. In the **Your old repository's clone URL** field, enter this: `https://github.com/githubtraining/on-demand-merge-conflict.git`.
   1. Ensure that the **Owner** field is your account.

@@ -17,13 +17,13 @@ main-content: |
 
   Although you worked on a GitHub Pages-powered resume, GitHub Pages haven't been enabled for your repository so no one can see it. Follow these steps to enable GitHub Pages and officially publish your resume.
 
-  1. Select Settings.
+  1. Select the **Settings** tab.
   1. On the Options pane (the default pane opened when you click Settings), select the **Source** drop-down in the GitHub Pages section and select **master branch**.
   1. Click **Save**, the Settings tab will refresh, scoll down to the GitHub Pages section to see the link to your GitHub Pages site.
 
   #### Modifying Other Sections
 
-  To modify the other sections of the resume, simply create a new branch and modify the the files found in the `/_data` folder. For instance, to modify the projects section, edit the `/_data/projects.yml` file. After making your changes, create a new pull request with your branch and merge your changes.
+  To modify the other sections of the resume, simply create a new branch and modify the the files found in the `/_data` folder. For instance, to modify the Projects section, edit the `/_data/projects.yml` file. After making your changes, create a new pull request with your branch and merge your changes.
 
   #### Modifying the Picture
 
