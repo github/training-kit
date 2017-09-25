@@ -13,11 +13,13 @@ main-content: |
 
   ![you did it!](https://media.giphy.com/media/xT8qBswJpFXXVnMYVO/giphy.gif)
 
-  ## Turning it On
+  #### Enable GitHub Pages
+
+  Although you worked on a GitHub Pages-powered resume, GitHub Pages haven't been enabled for your repository so no one can see it. Follow these steps to enable GitHub Pages and officially publish your resume.
 
   1. Select Settings.
   1. On the Options pane (the default pane opened when you click Settings), select the **Source** drop-down in the GitHub Pages section and select **master branch**.
-  1. Click **Save**, the Settings tab will refresh, scoll down to the GitHub Pages section to see the link to your GitHub Pages site. 
+  1. Click **Save**, the Settings tab will refresh, scoll down to the GitHub Pages section to see the link to your GitHub Pages site.
 
   #### Modifying Other Sections
 
