@@ -28,5 +28,6 @@ main-content: |
 
 
     ###### Course ending gif
+    
     ![you did it!](https://media.giphy.com/media/xT8qBswJpFXXVnMYVO/giphy.gif)
 ---
