@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Setup the Repository
 permalink: /merge-conflicts/setup/
-next-page: /merge-conflicts/example-01/
+next-page: /merge-conflicts/normal-merge/
 sidebar:
   nav: "merge-conflicts"
 main-content: |

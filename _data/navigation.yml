@@ -278,14 +278,14 @@ electron-share-your-app:
 merge-conflicts:
   - title: "Managing Merge Conflicts"
     url: /merge-conflicts/
+  - title: "Setup the Repository"
+    url: /merge-conflicts/setup/
   - title: "Normal Merge"
     url: /merge-conflicts/normal-merge/
   - title: "Your First Conflict"
     url: /merge-conflicts/first-conflict/
   - title: "Merge Conflict Description"
     url: /merge-conflicts/mc-description/
-  - title: "Setup the Repository"
-    url: /merge-conflicts/setup/
   - title: "Bob's Simple Conflict"
     url: /merge-conflicts/example-01/
   - title: "Teddy, Mort, and Jimmy Help"
