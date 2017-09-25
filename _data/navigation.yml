@@ -280,6 +280,8 @@ merge-conflicts:
     url: /merge-conflicts/
   - title: "Normal Merge"
     url: /merge-conflicts/normal-merge/
+  - title: "Your First Conflict"
+    url: /merge-conflicts/first-conflict/
   - title: "Merge Conflict Description"
     url: /merge-conflicts/mc-description/
   - title: "Setup the Repository"
