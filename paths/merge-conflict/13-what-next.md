@@ -11,6 +11,7 @@ sidebar:
 main-content: |
   With the the merge conflicts resolved you know have a fully functional GitHub Pages based resume.
 
+  ![you did it!](https://media.giphy.com/media/xT8qBswJpFXXVnMYVO/giphy.gif)
 
   #### Modifying Other Sections
 
@@ -28,6 +29,6 @@ main-content: |
 
 
     ###### Course ending gif
-    
-    ![you did it!](https://media.giphy.com/media/xT8qBswJpFXXVnMYVO/giphy.gif)
+
+
 ---
