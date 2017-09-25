@@ -24,6 +24,9 @@ main-content: |
   1. Navigate to the `images` folder and click the **Upload files** button.
   1. Drag and drop your image and commit your change by clicking **Commit changes**.
   1. Open the `/_layouts/resume.html` file and edit line 16. Replacing `images/bob-avatar.jpg` with `images/YourFileName`.
-  1. Commit the change and create a pull request. After creating your pull request **merge** and **delete the branch**. 
+  1. Commit the change and create a pull request. After creating your pull request **merge** and **delete the branch**.
 
+
+    ###### Course ending gif
+    ![you did it!](https://media.giphy.com/media/xT8qBswJpFXXVnMYVO/giphy.gif)
 ---
