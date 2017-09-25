@@ -1,9 +1,9 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Make Local Changes With GitHub Desktop
+title: Hacer cambios locales con GitHub Desktop
 permalink: /github-desktop-es/hacer-cambios-github-desktop
 next-page: /github-desktop-es/nuevos-commits-github-desktop
 facilitator: false
@@ -11,31 +11,31 @@ sidebar:
   nav: "github-desktop-nav-es"
 main-content: |
 
-  It's time to create the home page for your website.
+  Es hora de crear la página principal de tu sitio web.
 
   ![gif of following the directions below](../images/gifs/github-desktop/add-commits-locally.gif)
 
-  1. Make sure you are checked out to the new branch you just created. You change branches by clicking the **Current Branch** button at the top of the application, then selecting a branch.
-  1. Open your preferred text editor.
+  1. Asegúrate de que estás en el nuevo branch que acabas de crear. Puedes cambiar de branch haciendo clic en el botón **Current Branch** en la parte superior de la aplicación, y seleccionando el branch apropiado.
+  1. Abre tu editor de texto favorito.
 
-  The next steps are determined by if you used a GitHub Pages theme or decided to just enable GitHub Pages on your repository.
+  Los próximos pasos están determinados por si utilizas un tema de GitHub pages o si has decidido solo activar GitHub Pages en tu repositorio.
 
-  ### I am using a GitHub Pages theme
+  ### Estoy usando un tema de GitHub Pages
 
-  1. Open the file named `README.md`.
-  1. Remove the template text that was added to the `README.md` when you selected your theme.
-  1. In the `README.md` file include at least the following two lines: `# Hello World!` and `My name is GITHUB_USERNAME`. Bonus points for including more information.
-  1. When you are finished, save your changes and close the text editor.
+  1. Abre el archivo con el nombre `READEM.md`.
+  1. Elimina el texto de relleno que se añadió a `README.md` cuando has seleccionado el tema.
+  1. En el archivo `README.md` incluye al menos las siguientes dos líneas: `# ¡Hola mundo!` y `Mi nombre es TU-USUARIO-GITHUB`. Puntos extra si incluyes más información.
+  1. Cuando hayas terminado, guarda tus cambios y cierra el editor de texto.
 
-  ### I am not using a GitHub Pages theme
+  ### No estoy usando un tema de GitHub Pages
 
-  1. Create a new file named `index.html`.
-  1. In your `index.html` file, include at least the following two lines: `<h1> Hello World! </h1>` and `<p> My name is GITHUB_USERNAME </p>`. Bonus points for including more information, or using [Jekyll Themes](http://jekyllthemes.org/) to create a more robust site.
-  1. When you are finished, save your file inside your repository folder, and close the text editor.
+  1. Crea un nuevo archivo con el nombre `index.html`.
+  1. En tu archivo `index.html`, incluye al menos las siguientes dos líneas: `<h1> ¡Hola mundo! </h1>` y `<p> Mi nombre es TU-USUARIO-GITHUB </p>`. Puntos extra si incluyes más información o si usas [Jekyll Themes](http://jekyllthemes.org/) para crear un sitio más robusto.
+  1. Cuando hayas terminado, guarda el archivo en la carpeta de tu repositorio y cierra el editor de texto.
 
 show-me-how:
 tell-me-why:
   includes:
-    - tell-me-why/create-file-locally.md
+    - tell-me-why-es/crear-archivo-local.md
 
 ---
