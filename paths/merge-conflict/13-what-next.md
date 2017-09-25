@@ -13,6 +13,12 @@ main-content: |
 
   ![you did it!](https://media.giphy.com/media/xT8qBswJpFXXVnMYVO/giphy.gif)
 
+  ## Turning it On
+
+  1. Select Settings.
+  1. On the Options pane (the default pane opened when you click Settings), select the **Source** drop-down in the GitHub Pages section and select **master branch**.
+  1. Click **Save**, the Settings tab will refresh, scoll down to the GitHub Pages section to see the link to your GitHub Pages site. 
+
   #### Modifying Other Sections
 
   To modify the other sections of the resume, simply create a new branch and modify the the files found in the `/_data` folder. For instance, to modify the projects section, edit the `/_data/projects.yml` file. After making your changes, create a new pull request with your branch and merge your changes.
@@ -26,9 +32,6 @@ main-content: |
   1. Drag and drop your image and commit your change by clicking **Commit changes**.
   1. Open the `/_layouts/resume.html` file and edit line 16. Replacing `images/bob-avatar.jpg` with `images/YourFileName`.
   1. Commit the change and create a pull request. After creating your pull request **merge** and **delete the branch**.
-
-
-    ###### Course ending gif
 
 
 ---
