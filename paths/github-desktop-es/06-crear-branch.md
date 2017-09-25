@@ -15,7 +15,7 @@ main-content: |
 
   ![gif of following the directions below](../images/gifs/github-desktop/create-branch-on-desktop.gif)
 
-  1. Desde GitHub Desktop, haz clic en "File", y entonces en "New Branch".
+  1. Desde GitHub Desktop, haz clic en "Branch", y entonces en "New Branch".
   1. En el campo `Name`, introduce un nombre significativo para tu branch. Algo como `añadir-pag-index` irá bien.
   1. Si has estado siguiendo las instrucciones al pie de la letra, GitHub Desktop sabe que tiene que crear el branch nuevo basándose en `master` porque es el brnach que tenías activo cuando hiciste clic en la opción "New Branch".
   1. GitHub Desktop creará automáticamente tu nuevo branch y te cambiará a él.

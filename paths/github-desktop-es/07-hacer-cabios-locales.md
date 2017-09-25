@@ -22,7 +22,7 @@ main-content: |
 
   ### Estoy usando un tema de GitHub Pages
 
-  1. Abre el archivo con el nombre `READEM.md`.
+  1. Abre el archivo con el nombre `README.md`.
   1. Elimina el texto de relleno que se añadió a `README.md` cuando has seleccionado el tema.
   1. En el archivo `README.md` incluye al menos las siguientes dos líneas: `# ¡Hola mundo!` y `Mi nombre es TU-USUARIO-GITHUB`. Puntos extra si incluyes más información.
   1. Cuando hayas terminado, guarda tus cambios y cierra el editor de texto.
