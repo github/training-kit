@@ -245,12 +245,12 @@ merge-conflicts:
   - title: "Merge Conflict Description"
     url: /merge-conflicts/mc-description/
   - title: "Setup the Repository"
-    url: /merge-conflicts/setup/  
+    url: /merge-conflicts/setup/
   - title: "Bob's Simple Conflict"
     url: /merge-conflicts/example-01/
   - title: "Teddy, Mort, and Jimmy Help"
     url: /merge-conflicts/example-02/
-  - title: "Example 3"
+  - title: "Gene Adds His Experience"
     url: /merge-conflicts/example-03/
   - title: "What Next?"
     url: /merge-conflicts/what-next/
