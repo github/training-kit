@@ -17,5 +17,5 @@ main-content: |
 
   But wait! This course doesn't just help you learn about merge conflicts, it will provide you with a [GitHub Pages](https://pages.github.com/) powered [resume](https://github.com/jglovier/resume-template). You'll modify sections of the resume as you complete the merge conflict exercises, and we'll provide instructions for polishing it.
 
-  If you have any questions while taking the course, make sure to create an Issue in the [class repository]](https://github.com/githubtraining/on-demand-merge-conflict/issues).
+  If you have any questions while taking the course, make sure to create an Issue in the [class repository](https://github.com/githubtraining/on-demand-merge-conflict/issues).
 ---
