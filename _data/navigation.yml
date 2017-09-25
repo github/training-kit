@@ -244,9 +244,9 @@ merge-conflicts:
     url: /merge-conflicts/normal-merge/
   - title: "Merge Conflict Description"
     url: /merge-conflicts/mc-description/
-  - title: "Example 1"
+  - title: "Bob's Simple Conflict"
     url: /merge-conflicts/example-01/
-  - title: "Example 2"
+  - title: "Teddy, Mort, and Jimmy Help"
     url: /merge-conflicts/example-02/
   - title: "Example 3"
     url: /merge-conflicts/example-03/
