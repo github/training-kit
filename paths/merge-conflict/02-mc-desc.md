@@ -17,18 +17,23 @@ main-content: |
   Favorite Animal: Octocat
   ```
 
-  Now lets imagine that two collaborators on the project decide to change the default `Favorite Animal` in the template. So you might have something that looks like this:
+  Now lets imagine that Linda and Louise Belcher decide to change the default `Favorite Animal` in the template. So you might have something that looks like this:
 
-  **Collaborator 1**
+  **Louise**
   ```
-  Favorite Animal: Panda
-  ```
-
-  **Collaborator 2**
-  ```
-  Favorite Animal: Capybara
+  Favorite Animal: Kuchi Kopi
   ```
 
-  When **Collaborator 1** merges their changes into the deployment branch, they won't encounter a merge conflict. However, when **Collaborator 2** tries to merge this changes into the deployment branch, they are going to encounter a merge conflict.
+  **Linda**
+  ```
+  Favorite Animal: Akkorokamui
+  ```
 
+  When **Louise** merges her changes into the deployment branch, she won't encounter a merge conflict.
+
+  ![louise laughing over fire](https://media.giphy.com/media/dfIQG68floQuY/giphy.gif)
+  
+  However, when **Linda** tries to merge her changes into the deployment branch, she is going to encounter a merge conflict.
+
+  ![linda screaming](https://media.giphy.com/media/l0IyoieFSfr2Xcbza/giphy.gif)
 ---
