@@ -3,10 +3,12 @@ layout: default
 subpage: books
 title: Git Books
 description: Some of our favorite books on Git.
+breadcrumbColor: "bg-gray-light"
 ---
 {% include light-hero.html %}
+{% include breadcrumbs.html %}
 
-<div class="container-md mx-auto p-responsive">
+<div class="container-md mx-auto p-responsive mt-6">
   {% for book in site.categories.books %}
     <div class="d-flex flex-wrap mb-4">
       <a href="{{ book.the_url }}" class="d-block col-12 col-md-3 mb-2 mb-md-0">

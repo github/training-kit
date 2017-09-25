@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: intro-to-github-10
 layout: simple-class
 header:
   overlay_image: cover.jpeg
@@ -21,6 +23,7 @@ main-content: |
 troubleshooting:
   includes:
     - help-build-fail.md
+    - help-gh101-common.md
     - help-other-things.md
 show-me-how:
 tell-me-why: |

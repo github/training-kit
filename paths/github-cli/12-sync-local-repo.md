@@ -9,18 +9,29 @@ next-page: /github-cli/add-github-pages-site-showcase
 facilitator: false
 sidebar:
   nav: "github-cli"
-main-content:
-  includes:
-    - activity/github-CLI/11-sync-changes.md
-show-me-how: "images/gifs/github-cli/keep-things-in-sync.gif"
+main-content: |
+
+  After you merge your Pull Request, you will need to update your local copy of the repository.
+
+  ![gif of following the directions below](../images/gifs/github-cli/keep-things-in-sync.gif)
+
+  1. In your command line, type:
+
+          git checkout master
+
+  2. Type:
+
+          git pull
+
+show-me-how:
 tell-me-why: |
   ## Keeping the Local Repository in Sync
 
   As we discussed previously, Git doesn't require an internet connection which means it doesn't communicate with remote repositories unless explicitly instructed to do so.
 
-  When you merge your Pull Request on GitHub.com, the changes you made locally are merged into the `master` branch on the _remote_ repository on GitHub.
+  When you merge your Pull Request on GitHub.com, the changes you made locally are merged into the `master` branch on the remote repository on GitHub.
 
-  However, you won't automatically see those changes reflected in your local copy until you do a git pull.
+  However, you won't automatically see those changes reflected in your local copy until you do a `git pull`.
 
   ## Git Pull
 

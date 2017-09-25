@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: intro-to-github-07
 layout: simple-class
 header:
   overlay_image: cover.jpeg
@@ -11,7 +13,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/04-create-a-file-on-github.md
-show-me-how: "images/gifs/intro/working-on-github.gif"
+show-me-how:
 tell-me-why: |
 
   ## Add a New File
@@ -19,7 +21,7 @@ tell-me-why: |
   To add your pin, add a new file to the class repository. We gave you specific instructions above, but first consider some of the helpful ways GitHub allows you to add files to your projects.
 
   - **File Uploader:** if you already have a file on your computer that you would like to add to your repository, simply drag and drop it in to the repository window on GitHub.
-  - **Create New File:** you can also choose to create a new file in your repository by clicking the **Create New File** button. This opens a simple, web-based file editor. First, provide a file name with the appropriate file extension. The file extension will tell GitHub how to render your content.
+  - **Create New File:** you can also choose to create a new file in your repository by clicking the **Create new file** button. This opens a simple, web-based file editor. First, provide a file name with the appropriate file extension. The file extension will tell GitHub how to render your content.
   - **Modifying an Existing File:** Sometimes you simply need to make a change to an existing file. If this is the case, navigate to the file using the file directory in the Code tab. Once you have opened the file, click the pencil icon in the top right to open the file in edit mode.
 
   ## Commit Your Changes
@@ -37,6 +39,6 @@ tell-me-why: |
 
   ## Choose Your Branch
 
-  Next, designate where you want your changes to be committed. If you were on your branch when you clicked the **Create New File** button, GitHub will prompt you to commit directly to that branch. But, if you forgot to create a new branch, you can do it now.
+  Next, designate where you want your changes to be committed. If you were on your branch when you clicked the **Create new file** button, GitHub will prompt you to commit directly to that branch. But, if you forgot to create a new branch, you can do it now.
 
 ---

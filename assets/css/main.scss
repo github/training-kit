@@ -19,6 +19,36 @@ details.flash {
   &[open] { box-shadow: 0 0 0 0.2em rgba(3,102,214,0.3); }
 }
 
+.bg-blue-dark {
+  background-color: $blue-600 !important;
+}
+
+.bg-blue-darker {
+  background-color: $blue-700 !important;
+}
+
+.octicon { fill: currentColor; }
+
+.site-header {
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+  .site-header-menu {
+    li {
+      border-bottom: 1px solid $gray-300;
+
+      @include breakpoint(md) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .octicon-mark-github {
+    width: 2em;
+    height: 2em;
+  }
+}
+
 .markdown-body {
   font-size: 16px;
 
@@ -87,6 +117,12 @@ details.flash {
     }
   }
 }
+
+.site-content {
+  flex: 1 0 auto;
+}
+
+.flex-none { flex: none !important; }
 
 .card.hover-card {
   transition: box-shadow 0.2s ease-in-out;

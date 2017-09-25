@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: intro-to-github-11
 layout: simple-class
 header:
   overlay_image: cover.jpeg
@@ -11,13 +13,13 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/06-merge-a-pr.md
-show-me-how: "images/gifs/intro/merge-intro.gif"
+show-me-how:
 tell-me-why: |
   ## Merge Explained
 
   When you merge your branch, you are taking the content and history from the branch you created and adding it to the content and history of the `master` branch.
 
-  ![Merge visual]({{site.baseurl}}/images/merge-visual.jpg){: .align-center}
+  ![Merge visual](../images/merge-visual.jpg){: .align-center}
 
   ### Tips for Merging with Teams
 

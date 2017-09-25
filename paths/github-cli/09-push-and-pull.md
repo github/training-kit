@@ -9,13 +9,24 @@ next-page: /github-cli/merge-pull-request-github
 facilitator: false
 sidebar:
   nav: "github-cli"
-main-content:
-  includes:
-    - activity/github-CLI/06-git-push.md
+main-content: |
+
+  Now that you have made some local commits, it is time to send your changes to the remote copy of your repository on GitHub.com and create a Pull Request.
+
+  ![gif of following the directions below](../images/gifs/github-cli/push-and-pull.gif)
+
+  1. Push your commits to the remote, and set a tracking branch. Type:
+
+          git push -u origin <BRANCH-NAME>
+
+  1. Enter your GitHub username and password, if prompted to do so.
+  1. Create a Pull Request on GitHub.
+  1. Fill out the body of the Pull Request with information about the changes you're introducing.
+
 refresh:
   includes:
     - refresh/github-CLI/create-pr.md
-show-me-how: images/gifs/github-cli/push-and-pull.gif
+show-me-how:
 tell-me-why: |
   ## Pushing Changes
 
@@ -34,17 +45,17 @@ tell-me-why: |
   - `git pull`
   - `git push`
 
-  This won't happen automatically, so when we are ready to open a pull request, we need to push up our branch. The command we will use is `git push -u origin BRANCH-NAME`.
+  This won't happen automatically, so when we are ready to open a pull request, we need to push up our branch. The command we will use is `git push -u origin <BRANCH-NAME>`.
 
   The syntax is a little complicated here. Let's break it down.
 
-  `git push` is the root part of the command. It tells git that you want to update the remote branch with your current, local branch.
+  `git push` is the root part of the command. It tells Git that you want to update the remote branch with your current, local branch.
 
   `-u` is short for `--set-upstream`. This sets a relationship between the branch on the remote and your branch locally, so that in the future you only need to type `git push`.
 
-  `origin` tells git _where_ you want to push. Origin is just a shortcut for the URL of the repository. You can type `git remote -v` to see what it is pointing to.
+  `origin` tells Git _where_ you want to push. `origin` is just a shortcut for the URL of the repository. You can type `git remote -v` to see what it is pointing to.
 
-  `BRANCH-NAME` tells git to create a branch on the remote with the same name as your local branch.
+  `<BRANCH-NAME>` tells Git to create a branch on the remote with the same name as your local branch. You should replace this with your branch's name.
 
   The good news is, you only need to do this long command once. If you have pushed this branch before or it already exists on the remote, you can simply type `git push`.
 

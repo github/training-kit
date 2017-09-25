@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: intro-to-github-09
 layout: simple-class
 header:
   overlay_image: cover.jpeg
@@ -11,7 +13,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/05a-collaborate-on-pull-request.md
-show-me-how: "images/gifs/intro/collaborate.gif"
+show-me-how:
 tell-me-why: |
   ## Becoming a Markdown Master
 

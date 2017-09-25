@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: intro-to-github-08
 layout: simple-class
 header:
   overlay_image: cover.jpeg
@@ -11,7 +13,7 @@ sidebar:
 main-content:
   includes:
   - activity/intro-to-github/05-create-a-pull-request.md
-show-me-how: "images/gifs/intro/pull-request-intro.gif"
+show-me-how:
 tell-me-why: |
   ## Collaborating on Your Code
 

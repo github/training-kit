@@ -3,18 +3,18 @@ layout: default
 ---
 
 <div id="main" role="main">
-  {% include page__hero.html %}
+  {% include blue-hero.html %}
 
   <div class="container-lg mx-auto">
-    <div class="d-flex flex-items-start flex-wrap gutter py-6 p-responsive">
+    <div class="d-flex flex-items-start flex-wrap gutter-md py-6 p-responsive">
       {% include sidebar.html %}
-    
+
       <article class="page col-12 col-md-9" itemscope itemtype="http://schema.org/CreativeWork">
         {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
         {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
         {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
         {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
-    
+
         <section class="page__content" itemprop="text">
           <div class="mb-6 markdown-body">
             {% if page.main-content.includes %}
@@ -26,10 +26,10 @@ layout: default
               {{ page.main-content | replace: '<% BASEURL %>', site.baseurl | replace: '<% SITEURL %>', site.url | markdownify }}
             {% endif %}
           </div>
-              
+
           {% if page.didnt-push %}
             <details class="flash mb-2">
-              <summary>I didn't push</summary>
+              <summary>{{ site.data.ui-text[page.lang].didnt-push }}</summary>
               <hr class="border-blue-light">
               {% if page.didnt-push.includes %}
                 {% for child in page.didnt-push.includes %}
@@ -41,10 +41,10 @@ layout: default
               {% endif %}
             </details>
           {% endif %}
-  
+
           {% if page.pushed %}
             <details class="flash mb-2 flash-error">
-              <summary>I pushed</summary>
+              <summary>{{ site.data.ui-text[page.lang].pushed }}</summary>
               <hr class="border-red-light">
               {% if page.pushed.includes %}
                 {% for child in page.pushed.includes %}
@@ -56,10 +56,10 @@ layout: default
               {% endif %}
             </details>
           {% endif %}
-  
+
           {% if page.refresh %}
             <details class="flash mb-2 flash-success">
-              <summary>I need a refresher</summary>
+              <summary>{{ site.data.ui-text[page.lang].refresh }}</summary>
               {% if page.refresh.includes %}
                 {% for child in page.refresh.includes %}
                   {% capture my_include %}{% include {{child}} %}{% endcapture %}
@@ -72,10 +72,10 @@ layout: default
               {% endif %}
             </details>
           {% endif %}
-  
+
           {% if page.show-me-how %}
             <details class="flash mb-2">
-              <summary>Show me how</summary>
+              <summary>{{ site.data.ui-text[page.lang].show-me-how }}</summary>
               {% if page.show-me-how.includes %}
                 {% for child in page.show-me-how.includes %}
                   {% capture my_include %}{% include {{child}} %}{% endcapture %}
@@ -88,10 +88,10 @@ layout: default
               {% endif %}
             </details>
           {% endif %}
-  
+
           {% if page.troubleshooting %}
             <details class="flash mb-2 flash-error">
-              <summary>Help me troubleshoot</summary>
+              <summary>{{ site.data.ui-text[page.lang].troubleshooting }}</summary>
               {% if page.troubleshooting.includes %}
                 {% for child in page.troubleshooting.includes %}
                   {% capture my_include %}{% include {{child}} %}{% endcapture %}
@@ -104,10 +104,10 @@ layout: default
               {% endif %}
             </details>
           {% endif %}
-  
+
           {% if page.tell-me-why %}
             <details class="flash mb-2 flash-warn">
-              <summary>Tell me why</summary>
+              <summary>{{ site.data.ui-text[page.lang].tell-me-why }}</summary>
               <hr class="border-yellow">
               {% if page.tell-me-why.includes %}
                 {% for child in page.tell-me-why.includes %}
@@ -119,19 +119,19 @@ layout: default
               {% endif %}
             </details>
           {% endif %}
-  
+
           <div class="flash mb-2 flash-success">
-            Stuck? Open an issue in the repository for this class and mention <strong>@githubteacher</strong> for help from one of the GitHub trainers!
+            {{ site.data.ui-text[page.lang].stuck }}
           </div>
-  
+
           {% if page.next-page %}
-            <a href="{{ site.baseurl }}{{ page.next-page }}" class="btn">Continue</a>
+            <a href="{{ site.baseurl }}{{ page.next-page }}" class="btn">{{ site.data.ui-text[page.lang].continue }}</a>
           {% endif %}
           {{ content }}
           {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label }}</a></div>{% endif %}
-  
+
         </section>
-  
+
         <footer class="page__meta">
           {% if site.data.ui-text[site.locale].meta_label %}
             <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
@@ -143,12 +143,12 @@ layout: default
             <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
           {% endif %}
         </footer>
-  
-  
+
+
         {% if page.share %}{% include social-share.html %}{% endif %}
-  
+
         {% include post_pagination.html %}
-  
+
         {% if site.comments.provider and page.comments %}
           {% include comments.html %}
         {% endif %}

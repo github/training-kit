@@ -85,3 +85,10 @@ sass:
 
 # Custom site configuration
 lang: en
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      lang: "en"
