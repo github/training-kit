@@ -15,12 +15,11 @@ main-content: |
 
   Let's see a normal merge, and how it differs from a merge conflict.
 
-  1. Click on the [Fork button](https://github.com/githubtraining/on-demand-merge-conflict/fork) to create a personal copy of the [class repository](https://github.com/githubtraining/on-demand-merge-conflict/).
-  1. In your fork, create a new branch named `my-title`
+  1. In your repository, create a new branch named `my-title`
   1. In `_config.yml` and change lines 2-3 to give your resume a title, and a description.
   1. Commit your changes.
-  1. Open a Pull Request. Change the base fork to `username/on-demand-merge-conflict`. Use **base:** of `gh-pages` and **compare:** of `my-title`
-  1. This pull request can be merged and contains no conflicts. This is because no conflicting commits appear on `master`, the target of our merge. :warning: Do not merge yet! :warning: We will introduce a conflict and merge in the following page.
+  1. Open a Pull Request. Set the **base:** drop-down to `gh-pages` and the **compare:** drop-down of `my-title`
+  1. :warning: Do not merge yet! :warning: This pull request can be merged and contains no conflicts. This is because no conflicting commits appear on `master`, the target of our merge. We will introduce a conflict and merge in the following page.
 
 tell-me-why: |
 
