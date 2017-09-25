@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: What Next
 permalink: /merge-conflicts/what-next
-next-page: /merge-conflicts/ide-examples
+next-page: /merge-conflicts/ide-intro
 sidebar:
   nav: "merge-conflicts"
 main-content: |

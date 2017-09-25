@@ -292,3 +292,8 @@ merge-conflicts:
     url: /merge-conflicts/example-03/
   - title: "What Next?"
     url: /merge-conflicts/what-next/
+  - title: "Using GUIs to Handle Merge Conflicts"
+    url: /merge-conflicts/ide-intro
+    children:
+    - title: "Atom"
+      url: /merge-conflicts/ide-atom
