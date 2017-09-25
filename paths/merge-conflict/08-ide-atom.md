@@ -11,4 +11,5 @@ sidebar:
 main-content: |
   Main content
 
+  [![instructions for this activity](../../images/gifs/merge-conflict/atom-merge.gif)](../../images/gifs/merge-conflict/atom-merge.gif)
 ---
