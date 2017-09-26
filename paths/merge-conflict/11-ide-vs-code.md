@@ -13,7 +13,7 @@ main-content: |
 
   [![instructions for this activity](../images/gifs/merge-conflict/vscode-merge.gif)](../images/gifs/merge-conflict/vscode-merge.gif)
 
-  To see the Atom merge conflict tool in action, perform the following:
+  To see the Visual Studio Code merge conflict tool in action, perform the following:
 
   > If you already completed all of the exercises in this course, you can re-import the course repository and give it a different name.
 
