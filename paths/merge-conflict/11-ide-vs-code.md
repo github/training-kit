@@ -4,8 +4,8 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Visual Studio Code
-permalink: /merge-conflicts/ide-vs-code
-next-page: /merge-conflicts/ide-intro
+permalink: /merge-conflicts/ide-vs-code/
+next-page: /merge-conflicts/ide-intro/
 sidebar:
   nav: "merge-conflicts"
 main-content: |

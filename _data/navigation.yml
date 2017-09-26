@@ -295,11 +295,11 @@ merge-conflicts:
   - title: "What Next?"
     url: /merge-conflicts/what-next/
   - title: "Using GUIs to Handle Merge Conflicts"
-    url: /merge-conflicts/ide-intro
+    url: /merge-conflicts/ide-intro/
     children:
     - title: "Atom"
-      url: /merge-conflicts/ide-atom
+      url: /merge-conflicts/ide-atom/
     - title: "Visual Studio Code"
-      url: /merge-conflicts/ide-vs-code
+      url: /merge-conflicts/ide-vs-code/
     - title: "GitHub Extension for Visual Studio"
-      url: /merge-conflicts/ide-vs-ext
+      url: /merge-conflicts/ide-vs-ext/
