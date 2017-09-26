@@ -9,7 +9,7 @@ next-page: /merge-conflicts/normal-merge/
 sidebar:
   nav: "merge-conflicts"
 main-content: |
-  To participate in this course, you are going to need to **import** a project from the [GitHub School organization](https://github.com/githubschool). Importing a project will essentially copy the repository including all of the files, branches and history to your account.
+  To participate in this course, you're going to need to **import** a project from the [GitHub School organization](https://github.com/githubschool). Importing a project will essentially copy the repository -- including all of the files, branches and history to your account.
 
   [![instructions for using the repository import tool](../../images/gifs/merge-conflict/import-repo.gif)](../../images/gifs/merge-conflict/import-repo.gif)
 
