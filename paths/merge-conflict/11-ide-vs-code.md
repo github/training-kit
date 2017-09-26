@@ -9,9 +9,9 @@ next-page: /merge-conflicts/ide-intro
 sidebar:
   nav: "merge-conflicts"
 main-content: |
-  The [Visual Studio Code](https://code.visualstudio.com/) editor enables you to remove merge conflicts similar to the GitHub.com UI. 
-  
-  [![instructions for this activity](../images/gifs/merge-conflict/vscode-merge.gif)](../../images/gifs/merge-conflict/vscode-merge.gif)
+  The [Visual Studio Code](https://code.visualstudio.com/) editor enables you to remove merge conflicts similar to the GitHub.com UI.
+
+  [![instructions for this activity](../images/gifs/merge-conflict/vscode-merge.gif)](../images/gifs/merge-conflict/vscode-merge.gif)
 
   To see the Atom merge conflict tool in action, perform the following:
 

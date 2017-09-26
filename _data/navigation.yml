@@ -299,3 +299,5 @@ merge-conflicts:
     children:
     - title: "Atom"
       url: /merge-conflicts/ide-atom
+    - title: "Visual Studio Code"
+      url: /merge-conflicts/ide-vs-code
