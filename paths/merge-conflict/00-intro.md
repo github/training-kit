@@ -17,7 +17,7 @@ main-content: |
 
   In this course, we have created a few conflicts for you to resolve in a sample repository. This repository contains a [GitHub Pages](https://pages.github.com/) powered [resume](https://github.com/jglovier/resume-template). That means, when you finish this course, you will have more than a few merge conflicts under your belt. You will also have a shiny new resume.
 
-  Don't worry, when you're all done, we'll provide instructions for polishing your resume and getting it ready to share with others.
+  Don't worry. When you're all done, we'll provide instructions for polishing your resume and getting it ready to share with others.
 
   It's a good idea to complete a few other courses first, specifically the [Introduction to GitHub](../intro-to-github/), and either [GitHub Pages from GitHub Desktop](../github-desktop/) or [GitHub Pages from the Command Line](../github-cli/).
 

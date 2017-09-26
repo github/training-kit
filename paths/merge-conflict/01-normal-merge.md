@@ -9,7 +9,7 @@ next-page: /merge-conflicts/first-conflict/
 sidebar:
   nav: "merge-conflicts"
 main-content: |
-  Before we delve into the world of merge conflicts, we should discuss what a merge is normally doing. When you take some commits from, say, `new-feature` branch and merge them into `master` you are simply applying the commits that you made on the `new-feature` branch on the `master` branch.
+  Before we delve into the world of merge conflicts, we should discuss what a merge is normally doing. Let's say you take some commits from `new-feature` branch and merge them into `master`. You are simply applying the commits that you made on the `new-feature` branch to the `master` branch.
 
   It's common to merge a lot of branches with no problems before you encounter your first merge conflict. That is because Git is really smart when it comes merging. But, sometimes you and another collaborator both have an idea for a change to the same code and Git needs you to examine the conflicting changes before it can successfully implement the changes.
 
