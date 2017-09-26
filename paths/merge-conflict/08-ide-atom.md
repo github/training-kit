@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Atom
 permalink: /merge-conflicts/ide-atom
-next-page: /merge-conflicts/ide-gh-desktop
+next-page: /merge-conflicts/ide-intro
 sidebar:
   nav: "merge-conflicts"
 main-content: |
@@ -21,7 +21,7 @@ main-content: |
   1. Checkout to the `username-config` branch.
   1. Open **Atom** using the `atom .` command.
 
-      > Depending on your operating system, you may need to configure this behavior.
+      > Depending on your operating system, you may need to [configure](http://flight-manual.atom.io/getting-started/sections/installing-atom/) this behavior.
 
   1. Edit the `_config.yml` file, making changes to lines 12-19 and save the file.
   1. Create a commit based on those changes.
