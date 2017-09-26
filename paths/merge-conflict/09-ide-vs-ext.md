@@ -9,7 +9,7 @@ next-page: /merge-conflicts/ide-intro
 sidebar:
   nav: "merge-conflicts"
 main-content: |
-  The [GitHub Extension for Visual Studio](https://visualstudio.github.com/) editor enables you to remove merge conflicts similar to the GitHub.com UI.
+  The [GitHub Extension for Visual Studio](https://visualstudio.github.com/) editor enables you to identify the difference between the two files and automatically fix the merge conflicts by selecting a specific branch.
 
   [![instructions for this activity](../images/gifs/merge-conflict/vs-merge.gif)](../images/gifs/merge-conflict/vs-merge.gif)
 
