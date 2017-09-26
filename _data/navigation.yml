@@ -301,5 +301,5 @@ merge-conflicts:
       url: /merge-conflicts/ide-atom
     - title: "Visual Studio Code"
       url: /merge-conflicts/ide-vs-code
-    - title: "Visual Studio GitHub Extension"
+    - title: "GitHub Extension for Visual Studio"
       url: /merge-conflicts/ide-vs-ext
