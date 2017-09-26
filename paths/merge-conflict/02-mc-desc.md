@@ -9,7 +9,7 @@ next-page: /merge-conflicts/example-01/
 sidebar:
   nav: "merge-conflicts"
 main-content: |
-  To explain a merge conflict, it might be useful to have an example. Imagine we are creating a template for people to describe themselves. You might have something like looks like this:
+  To explain a merge conflict, it might be useful to have an example. Imagine we are creating a template for people to describe themselves. You might have something that looks like this:
 
   ```
   Name: First Last
@@ -17,7 +17,7 @@ main-content: |
   Favorite Animal: Octocat
   ```
 
-  Now lets imagine that Linda and Louise Belcher decide to change the default `Favorite Animal` in the template. So you might have something that looks like this:
+  Now, let's imagine that Linda and Louise Belcher decide to change the default `Favorite Animal` in the template. So they might have something that looks like this:
 
   **Louise**
   ```
