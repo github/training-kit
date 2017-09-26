@@ -15,11 +15,14 @@ main-content: |
 
   To see the Atom merge conflict tool in action, perform the following:
 
-  > If you already completed all of the exercises in this course, you can re-import the course repository and just give it a different name.
+  > If you already completed all of the exercises in this course, you can re-import the course repository and give it a different name.
 
-  1. Clone your repository locally.
-  1. Checkout the `username-config` branch.
+  1. Clone the repository locally.
+  1. Checkout to the `username-config` branch.
   1. Open **Atom** using the `atom .` command.
+
+      > Depending on your operating system, you may need to configure this behavior.
+
   1. Edit the `_config.yml` file, making changes to lines 12-19 and save the file.
   1. Create a commit based on those changes.
   1. Checkout the `master` branch.
@@ -27,5 +30,5 @@ main-content: |
   1. Open the `_config.yml` file with **Atom**.
   1. Select the **Use me** option for your changes.
   1. Enter `git add _config.yml` followed by `git commit -m "Add my config changes"` and enter enter.
-  1. Congratulations you resolved a merge conflict locally with the Atom editor!
+  1. Congratulations, you resolved a merge conflict locally with the Atom editor!
 ---
