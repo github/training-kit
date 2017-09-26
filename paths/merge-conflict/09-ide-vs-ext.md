@@ -11,7 +11,9 @@ sidebar:
 main-content: |
   The [GitHub Extension for Visual Studio](https://visualstudio.github.com/) editor enables you to identify the difference between the two files and automatically fix the merge conflicts by selecting a specific branch.
 
-  [![instructions for this activity](../images/gifs/merge-conflict/vs-merge.gif)](../images/gifs/merge-conflict/vs-merge.gif)
+  While the merge conflict tool found in Visual Studio isn't specific to having the GitHub Extension installed, the extension allows you to log in quickly (even with two factor authentication), and utilize aspects of GitHub such as issues, pull requests, and quickly clone repositories.
+
+  [![instructions for this activity](../../images/gifs/merge-conflict/vs-merge.gif)](../../images/gifs/merge-conflict/vs-merge.gif)
 
   To see the GitHub Extension for Visual Studio merge conflict tool in action, perform the following:
 
