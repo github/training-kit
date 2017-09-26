@@ -9,7 +9,7 @@ next-page: /merge-conflicts/setup/
 sidebar:
   nav: "merge-conflicts"
 main-content: |
-  You might have heard in hushed whispers the term _merge conflict_ from another Git user. Maybe you have encountered one yourself and had to Google your way out. You might also just be exploring everything Git has to offer and have no idea what a merge conflict is.
+  You might have heard the term _merge conflict_ in hushed whispers from another Git user. Maybe you have encountered one yourself and had to Google your way out. You might also just be exploring everything Git has to offer and have no idea what a merge conflict is.
 
   This course is designed for all of you. We demystify the merge conflict and, through a series of examples, prepare you to face off against the evil merge conflict and be the hero of the day!
 
