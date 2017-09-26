@@ -1,9 +1,9 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Add Local Commits With GitHub Desktop
+title: Añadir commits locales con GitHub Desktop
 permalink: /github-desktop-es/nuevos-commits-github-desktop
 next-page: /github-desktop-es/pull-request-github-desktop
 facilitator: false
@@ -11,25 +11,25 @@ sidebar:
   nav: "github-desktop-nav-es"
 main-content: |
 
-  After you have finished making your changes, it is time to commit them.
+  Una vez que hayas terminado de hacer tus cambios, es hora de hacer commit (confirmarlos).
 
   ![gif of following the directions below](../images/gifs/github-desktop/making-commits-locally.gif)
 
-  1. Click the **changes** tab in the left sidebar to see a list of the files that have been changed or added since the last commit.
-  1. Use the checkboxes to indicate which files should be part of the commit. In this activity, you'll select the `index.html` file.
+  1. Haz clic en la pestaña **changes** en la barra lateral izquierda para ver una lista de los archivos que han cambiado o se han añadido desde el último commit.
+  1. Utiliza los checkboxes para indicar qué archivos deberían formar parte del commit. En esta actividad, seleccionarás el archivo `index.html`.
 
-        *Note: It is a good idea to group files together based on the type of changes or the file content. For example, if you fixed the same formatting issue in several documents, you should group them into one commit.*
+        *Nota: Es buena idea agrupar los archivos basándote en el tipo de cambio o el contenido del archivo. Por ejemplo, si has corregido el mismo problema de formato en varios documentos, deberías agruparlos en un único commit.*
 
-  1. Type your commit message in the Summary field.
-  1. You will notice that GitHub Desktop has already populated the commit button with the current branch. Simply click the button to commit your changes.
+  1. Escribe tu mensaje de commit en el campo _Summary_.
+  1. Verás que GitHub Desktop ha rellenado automáticamente el botón de commit con el branch actual. Simplemente haz clic en el botón para hacer commit de tus cambios.
 
 show-me-how:
 tell-me-why: |
-  ## Making great commits
+  ## Crear buenos commits
 
-  When you work on GitHub.com, a commit can only include the changes you made to a single file. But, when you work in the desktop app, you have a lot more control over your commits.
+  Cuando trabajas en GitHub.com, un commit sólo puede incluir los cambios que has hecho en un único archivo. Pero cuando trabajas desde la aplicación de escritorio, tienes mucho más control sobre tus commits.
 
-  With GitHub Desktop, a commit can include multiple files, or you can pick a specific change within a file you would like to commit.
+  Con GitHub Desktop, un commit puede incluir múltiples archivos, o puedes seleccionar un cambio específico en un archivo del que te gustaría hacer commit.
 
-  When you assemble the changes you have made, you should try to create what we like to call an **atomic commit**. In other words, each commit you make should contain changes that belong together and represent a discrete unit of work.
+  Cuando selecciones los cambios realizados que quieres incluir en el commit, deberías intentar crear lo que nos gusta llamar un **commit atómico**. En otras palabras, cada commit que hagas debería contener cambios que tienen sentido juntos y representan una única unidad de trabajo.
 ---
