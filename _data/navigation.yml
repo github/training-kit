@@ -278,7 +278,7 @@ electron-share-your-app:
 merge-conflicts:
   - title: "Managing Merge Conflicts"
     url: /merge-conflicts/
-  - title: "Setup the Repository"
+  - title: "Set Up the Repository"
     url: /merge-conflicts/setup/
   - title: "Normal Merge"
     url: /merge-conflicts/normal-merge/
