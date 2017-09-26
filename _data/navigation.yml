@@ -280,12 +280,12 @@ merge-conflicts:
     url: /merge-conflicts/
   - title: "Set Up the Repository"
     url: /merge-conflicts/setup/
-  - title: "Normal Merge"
+  - title: "A Normal Merge"
     url: /merge-conflicts/normal-merge/
-  - title: "Your First Conflict"
-    url: /merge-conflicts/first-conflict/
   - title: "Merge Conflict Description"
     url: /merge-conflicts/mc-description/
+  - title: "Your First Conflict"
+    url: /merge-conflicts/first-conflict/
   - title: "Bob's Simple Conflict"
     url: /merge-conflicts/example-01/
   - title: "Teddy, Mort, and Jimmy Help"
