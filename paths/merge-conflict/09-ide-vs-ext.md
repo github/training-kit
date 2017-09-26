@@ -9,27 +9,38 @@ next-page: /merge-conflicts/ide-intro
 sidebar:
   nav: "merge-conflicts"
 main-content: |
-  The [Visual Studio GitHub Extension](https://visualstudio.github.com/) editor enables you to remove merge conflicts similar to the GitHub.com UI.
+  The [GitHub Extension for Visual Studio](https://visualstudio.github.com/) editor enables you to remove merge conflicts similar to the GitHub.com UI.
 
   [![instructions for this activity](../images/gifs/merge-conflict/vs-merge.gif)](../images/gifs/merge-conflict/vs-merge.gif)
 
-  To see the Atom merge conflict tool in action, perform the following:
+  To see the GitHub Extension for Visual Studio merge conflict tool in action, perform the following:
 
   > If you already completed all of the exercises in this course, you can re-import the course repository and give it a different name.
 
-  1. Clone the repository locally.
-  1. Checkout to the `username-config` branch.
-  1. Open **Visual Studio Code** using the `code .` command.
-
-      > Depending on your operating system, you may need to [configure](https://code.visualstudio.com/docs/setup/setup-overview) this behavior.
-
+  1. Select **File > Open >  Open from Source Control** from the main menu.
+  1. Search for and clone your repository.
+  1. From the branch selection tool in the bottom right corner, select **New Branch**.
+  1. From the `master` drop-down, select `origin/username-config`. Ensure the **Checkout branch** and **Track remote branch** options are selected and click the **Create Branch** button.
+  1. Select the **Solutions Explorer** tab.
+  1. Open the `_config.yml` file.
   1. Edit the `_config.yml` file, making changes to lines 12-19 and save the file.
-  1. Create a commit based on those changes.
-  1. Checkout the `master` branch.
-  1. Enter `git merge username-config` while on the `master` branch. You will encounter a merge conflict.
-  1. Open the `_config.yml` file with **Visual Studio Code**.
-  1. Remove the merge conflict markers and the content you do not want to keep.
-  1. Enter `git add _config.yml` followed by `git commit -m "Add my config changes"` and enter enter.
-  1. Congratulations, you resolved a merge conflict locally with the Visual Studio Code editor!
+  1. Right-click the `_config.yml` file and select **Commit**.
+  1. Right-click the `_config.yml` file in the Changes pane and select **Stage**.
+
+      > If you haven't saved the changes you made to the `_config.yml` file you will be prompted to save your changes.
+
+  1. With the '_config.yml' file staged, enter a commit message and click **Commit Staged**.
+  1. Checkout the `master` branch from the branch selection tool in the bottom right corner.
+  1. Select the **Manage Branches** option from the branch selection tool in the bottom right corner.
+  1. Right-click the _master_ branch and select the **Merge From...** option.
+  1. Select the `username-config` branch in the **Merge from branch:** drop-down.
+  1. Ensure the `master` branch is selected in the **Into current branch:** drop-down.
+  1. Click the **Merge** button.
+  1. When the merge conflict occurs, click the **Conflicts: 1** option just below the Merge In Progress text.
+  1. Click on the `_config.yml` file and select the **Diff** option. This will display the difference between the two branches.
+  1. Click the **Take Source** option to merge the changes from the `username-config` branch into the `master` branch.
+  1. Click the **Commit Merge** button.
+  1. Enter a commit message in the commit message field and click the **Commit Staged** button.
+  1. Congratulations, you resolved a merge conflict locally with the GitHub Extension for Visual Studio!
 
 ---
