@@ -16,7 +16,7 @@ main-content: |
   Let's see a normal merge, and how it differs from a merge conflict.
 
   1. In your repository, create a new branch named `my-title`
-  1. In `_config.yml` and change lines 2-3 to give your resume a title, and a description.
+  1. In `_config.yml`, change lines 2-3 to give your resume a title, and a description.
   1. Commit your changes.
   1. Open a Pull Request. Set the **base:** drop-down to `master` and the **compare:** drop-down of `my-title`
   1. :warning: Do not merge yet! :warning: This pull request can be merged and contains no conflicts. This is because no conflicting commits appear on `master`, the target of our merge. We will introduce a conflict and merge in the following page.
