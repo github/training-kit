@@ -11,7 +11,7 @@ sidebar:
 main-content: |
   The [Atom text editor](https://atom.io/) has a built in merge conflict tool that enables you to simply choose which branch you would like to keep. Instead of removing the content you don't want and those pesky merge conflict markers, you simply choose theirs or yours.
 
-  [![instructions for this activity](../images/gifs/merge-conflict/atom-merge.gif)](../images/gifs/merge-conflict/atom-merge.gif)
+  [![instructions for this activity](../../images/gifs/merge-conflict/atom-merge.gif)](../../images/gifs/merge-conflict/atom-merge.gif)
 
   To see the Atom merge conflict tool in action, perform the following:
 
