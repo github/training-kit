@@ -1,9 +1,9 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Push to GitHub & Create a Pull Request
+title: Hacer Push a GitHub y crear un Pull Request
 permalink: /github-desktop-es/push-pull-request-github-desktop
 next-page: /github-desktop-es/colaborar-github-pull-requests
 facilitator: false
@@ -11,19 +11,19 @@ sidebar:
   nav: "github-desktop-nav-es"
 main-content: |
 
-  Now that you have made some local commits, it is time to send your changes to the remote copy of your repository on GitHub.com and open a pull request.
+  Ahora que ya has hecho algunos commits locales, es hora de que envíes tus cambios a la copia remota de tu repositorio en GitHub.com y abras un pull request.
 
   ![gif of following the directions below](../images/gifs/github-desktop/review-push-open-pr.gif)
 
-  1. On GitHub Desktop, click the button to sync changes. This button changes states based on the changes that have been made in your local repository and on the remote. If no other changes have been made, it will read **Publish Branch**.
-  1. In your browser, go to the ['Pull Requests' tab of the class repository](https://github.com/githubschool/on-demand-github-pages/pulls).
-  1. Click ['New pull request'](https://github.com/githubschool/on-demand-github-pages/compare).
-  1. Ensure the `base` branch (the one on the left) is `master` and that the `compare` branch (the one on the right) is the one you created on GitHub Desktop.
-  1. Complete the fields of the pull request.
+  1. En GitHub Desktop, haz clic en el botón para sincronizar los cambios. Este botón cambia de estado según los cambios que se hayan realizado en tus repositorios local y remoto. Si no se ha realizado ningún otro cambio, dirá **Publish Branch**.
+  1. En tu navegador, accede a [la pestaña 'Pull Requests' del repositorio de la clase](https://github.com/githubschool/on-demand-github-pages/pulls).
+  1. Haz clic en ['New pull request'](https://github.com/githubschool/on-demand-github-pages/compare).
+  1. Asegúrate de que el branch `base` (el de la izquierda) es `master` y de que el branch `compare` (el de la derecha) es el que has creado en GitHub Desktop.
+  1. Rellena los demás campos del pull request.
 
 show-me-how:
 tell-me-why:
   includes:
-    - tell-me-why/pull-request.md
+    - tell-me-why-es/pull-request.md
 
 ---

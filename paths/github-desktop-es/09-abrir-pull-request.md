@@ -30,8 +30,8 @@ tell-me-why: |
   1. Crear un branch
   1. Añadir commits
   1. **Abrir un Pull Request** :arrow_left: _(Esta sección trata sobre este paso.)_
-  1. Colabora, y haz más commits
-  1. Haz merge del Pull Request
+  1. Colaborar, y hacer más commits
+  1. Hacer merge del Pull Request
 
   Simplemente haz clic en el botón "Update Origin". Esto envía tu branch a GitHub. Entonces puedes abrir el Pull Request ahí.
 

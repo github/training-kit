@@ -44,8 +44,8 @@ tell-me-why: |
   1. **Crear un branch** :arrow_left: _(Esta sección trata sobre este paso.)_
   1. **Hacer commits** :arrow_left: _(Y este.)_
   1. Abrir un Pull Request
-  1. Colabora, y haz más commits
-  1. Haz merge del Pull Request
+  1. Colaborar, y hacer más commits
+  1. Hacer merge del Pull Request
 
   Con suerte esto ya te suena, porque has seguido este flujo de trabajo (al menos) dos veces. Ahora lo seguirás una vez más para añadir tu página a nuestro directorio.
   ---
