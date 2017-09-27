@@ -11,7 +11,7 @@ sidebar:
 main-content: |
   The [GitHub Extension for Visual Studio](https://visualstudio.github.com/) editor enables you to identify the difference between the two files and automatically fix the merge conflicts by selecting a specific branch.
 
-  While the merge conflict tool found in Visual Studio isn't specific to having the GitHub Extension installed, the extension allows you to log in quickly (even with two factor authentication), and utilize aspects of GitHub such as issues, pull requests, and quickly clone repositories.
+  While the merge conflict tool found in Visual Studio isn't specific to having the GitHub Extension installed, the extension allows you to log in quickly (even with two factor authentication), and utilize aspects of GitHub such as pull requests and quickly clone repositories.
 
   [![instructions for this activity](../../images/gifs/merge-conflict/vs-merge.gif)](../../images/gifs/merge-conflict/vs-merge.gif)
 
@@ -31,7 +31,7 @@ main-content: |
 
       > If you haven't saved the changes you made to the `_config.yml` file you will be prompted to save your changes.
 
-  1. With the `_config.yml` file staged, enter a commit message and click **Commit Staged**.
+  1. With the '_config.yml' file staged, enter a commit message and click **Commit Staged**.
   1. Checkout the `master` branch from the branch selection tool in the bottom right corner.
   1. Select the **Manage Branches** option from the branch selection tool in the bottom right corner.
   1. Right-click the _master_ branch and select the **Merge From...** option.
@@ -45,4 +45,5 @@ main-content: |
   1. Enter a commit message in the commit message field and click the **Commit Staged** button.
   1. Congratulations, you resolved a merge conflict locally with the GitHub Extension for Visual Studio!
 
+  ![belcher children dancing](https://media.giphy.com/media/e07y5SEwFMDm0/giphy.gif)
 ---

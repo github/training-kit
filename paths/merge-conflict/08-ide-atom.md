@@ -34,4 +34,6 @@ main-content: |
   1. Select the **Use me** option for your changes.
   1. Enter `git add _config.yml` followed by `git commit -m "Add my config changes"` and enter enter.
   1. Congratulations, you resolved a merge conflict locally with the Atom editor!
+
+  ![shooting star tina](https://media.giphy.com/media/XaFhFM2lVRoVa/giphy.gif)
 ---

@@ -34,4 +34,6 @@ main-content: |
   1. Remove the merge conflict markers and the content you do not want to keep.
   1. Enter `git add _config.yml` followed by `git commit -m "Add my config changes"` and enter enter.
   1. Congratulations, you resolved a merge conflict locally with the Visual Studio Code editor!
+
+  ![bob excited about growing vegetables](https://media.giphy.com/media/3o72FlfJRccOPSYgO4/giphy.gif)
 ---
