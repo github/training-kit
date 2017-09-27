@@ -1,9 +1,9 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Review the Local GitHub Flow
+title: Revisar el GitHub Flow local
 permalink: /github-desktop-es/revisar-github-flow
 next-page: /github-desktop-es/push-pull-request-github-desktop
 facilitator: false
@@ -11,40 +11,41 @@ sidebar:
   nav: "github-desktop-nav-es"
 main-content: |
 
-  Now that you are a collaborator, let's use the local workflow we just learned to make changes to this repository.
+  Ahora que ya eres colaborador, vamos a utilizar el flujo de trabajo local que acabamos de aprender para hacer cambios en este repositorio.
 
   ![gif of following the directions below](../images/gifs/github-desktop/review-local-workflow.gif)
 
-  1. Start from the Code tab of the [class repository on GitHub.com](https://github.com/githubschool/on-demand-github-pages/).
-  1. Click on `Clone or Download`.
-  1. Click `Open in Desktop`. This will open GitHub Desktop.
-  1. Confirm the `Local Path` as the place you'd like to store the repository locally.
-  1. Create a branch by clicking "Branch > New Branch" and label it with your username, something like `yourUsername-add-page`.
-  1. In your favorite text editor, add a file to the `_pages` directory. Include your GitHub handle in the filename: `username.yaml`.
-  1. Enter the following content into your file:
+  1. Empieza desde la pestaña Code del [repositorio de la clase en GitHub.com](https://github.com/githubschool/on-demand-github-pages/).
+  1. Haz clic en `Clone or Download`.
+  1. Haz clic en `Open in Desktop`. Esto abrirá GitHub Desktop.
+  1. Confirma en `Local Path` en qué ubicación exacta de tu ordenador quieres almacenar el repositorio localmente.
+  1. Crea un branch haciendo clic en "Branch > New branch" y etiquétalo con tu nombre de usuario, algo como `tuUsuario-añadir-pagina`.
+  1. En tu editor de texto favorito, añade un archivo al directorio `_pages`. Utiliza tu nombre de usuario como nombre de archivo: `usuario.yaml`.
+  1. Introduce el siguiente contenido en tu archivo:
 
          ---
-         githubHandle: YOUR-USERNAME
-         pageUrl: YOUR-HANDLE.github.io
-         timestamp: TODAYS-DATE-YYYY-MM-DD
+         githubHandle: TU-USUARIO
+         pageUrl: TU-USUARIO.github.io
+         timestamp: FECHA_DE_HOY_CON_FORMATO_YYYY-MM-DD
          ---
 
-  1. Ensure you've replaced `YOUR-USERNAME` with your GitHub Username, `YOUR-SITES-URL` with the URL to your site (which should be `YOUR-USERNAME.github.io`), and `TODAYS-DATE-YYYY-MM-DD` with today's date, using a 4-digit year, 2-digit month, and 2-digit day. For example, if today is October 17, 2016, you would enter: `2016-10-17`.
-  1. On GitHub Desktop, within the `Changes` side bar, ensure your file is checked.
-  1. On GitHub Desktop, enter a commit message describing the change you're introducing to the project.
-  1. On GitHub Desktop, click the `Commit to YOUR-BRANCH` button -- ensure `YOUR-BRANCH` includes your username.
+  1. Asegúrate de que has reemplazado `TU-USUARIO` con tu nombre de usuario GitHub, `TU-USUARIO.github.io` con la URL a tu sitio, y `FECHA_DE_HOY_CON_FORMATO_YYYY-MM-DD` con la fecha de hoy, utilizando cuatro dígitos para el año, dos dígitos para el mes, y dos dígitos para el día. Por ejemplo, si hoy es 27 de septiembre de 2017, escribirías: `2017-09-27`.
+  1. En GitHub Desktop, en la barra lateral `Changes`, asegúrate de que tu archivo está seleccionado.
+  1. En GitHub Desktop, introduce un mensaje de commit que describa el cambio que estás introduciendo en el proyecto.
+  1. En GitHub Desktop, haz clic en el botón `Commit to TU-BRANCH` -- asegúrate de que `TU-BRANCH` incluye tu nombre de usuario.
 
 show-me-how:
 tell-me-why: |
-  ## Reviewing the GitHub Flow
 
-  Remember, the 5 steps of [GitHub Flow](https://guides.github.com/introduction/flow/) are:
+  ## Revisando el GitHub Flow
 
-  1. **Create a branch** :arrow_left: _(This section deals with this step.)_
-  2. **Make commits** :arrow_left: _(And this one.)_
-  3. Open a Pull Request
-  4. Collaborate, and make more commits
-  5. Merge the Pull Request
+  Recuerda, los cinco pasos del [GitHub Flow](https://guides.github.com/introduction/flow/) con:
 
-  Hopefully this looks familiar since you've followed this workflow (at least) twice. Now you will follow it once more to add your page to our directory.
----
+  1. **Crear un branch** :arrow_left: _(Esta sección trata sobre este paso.)_
+  1. **Hacer commits** :arrow_left: _(Y este.)_
+  1. Abrir un Pull Request
+  1. Colabora, y haz más commits
+  1. Haz merge del Pull Request
+
+  Con suerte esto ya te suena, porque has seguido este flujo de trabajo (al menos) dos veces. Ahora lo seguirás una vez más para añadir tu página a nuestro directorio.
+  ---
