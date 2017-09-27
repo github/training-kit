@@ -31,7 +31,7 @@ main-content: |
 
       > If you haven't saved the changes you made to the `_config.yml` file you will be prompted to save your changes.
 
-  1. With the '_config.yml' file staged, enter a commit message and click **Commit Staged**.
+  1. With the `_config.yml` file staged, enter a commit message and click **Commit Staged**.
   1. Checkout the `master` branch from the branch selection tool in the bottom right corner.
   1. Select the **Manage Branches** option from the branch selection tool in the bottom right corner.
   1. Right-click the _master_ branch and select the **Merge From...** option.
