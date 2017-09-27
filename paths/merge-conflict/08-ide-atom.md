@@ -19,7 +19,7 @@ main-content: |
 
   1. Clone the repository locally.
   1. Checkout to the `username-config` branch.
-  1. Open **Atom** using the `atom .` command.
+  1. In the terminal, open **Atom** using the `atom .` command.
 
       > Depending on your operating system, you may need to [configure](http://flight-manual.atom.io/getting-started/sections/installing-atom/) this behavior.
 
@@ -27,6 +27,9 @@ main-content: |
   1. Create a commit based on those changes.
   1. Checkout the `master` branch.
   1. Enter `git merge username-config` while on the `master` branch. You will encounter a merge conflict.
+
+      > If there are multiple files within the merge, you can type `git status` to see which file (or files!) is causing the conflict.
+
   1. Open the `_config.yml` file with **Atom**.
   1. Select the **Use me** option for your changes.
   1. Enter `git add _config.yml` followed by `git commit -m "Add my config changes"` and enter enter.

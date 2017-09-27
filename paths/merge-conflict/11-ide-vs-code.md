@@ -19,7 +19,7 @@ main-content: |
 
   1. Clone the repository locally.
   1. Checkout to the `username-config` branch.
-  1. Open **Visual Studio Code** using the `code .` command.
+  1. In the terminal, open **Visual Studio Code** using the `code .` command.
 
       > Depending on your operating system, you may need to [configure](https://code.visualstudio.com/docs/setup/setup-overview) this behavior.
 
@@ -27,6 +27,9 @@ main-content: |
   1. Create a commit based on those changes.
   1. Checkout the `master` branch.
   1. Enter `git merge username-config` while on the `master` branch. You will encounter a merge conflict.
+
+      > If there are multiple files within the merge, you can type `git status` to see which file (or files!) is causing the conflict.
+
   1. Open the `_config.yml` file with **Visual Studio Code**.
   1. Remove the merge conflict markers and the content you do not want to keep.
   1. Enter `git add _config.yml` followed by `git commit -m "Add my config changes"` and enter enter.
