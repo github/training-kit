@@ -1,9 +1,9 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Push to GitHub with GitHub Desktop
+title: Hacer Push a GitHub con GitHub Desktop
 permalink: /github-desktop-es/push-con-github-desktop
 next-page: /github-desktop-es/añadir-github-pages-showcase
 facilitator: false
@@ -11,25 +11,25 @@ sidebar:
   nav: "github-desktop-nav-es"
 main-content: |
 
-  After you merge your Pull Request, you will need to update your local copy of the repository.
+  Después de hacer merge de tu Pull Request, tienes que actualizar tu copia local del repositorio.
 
   ![gif of following the directions below](../images/gifs/github-desktop/sync-changes.gif)
 
-  1. Navigate back to GitHub Desktop.
-  1. Select the `master` branch at the top of the app.
-  1. Click the button that displays **Fetch Origin** to get an updated status for the remote repository.
-  1. Then click **Pull Origin** to retrieve the changes to your local repository.
+  1. Vuelve a GitHub Desktop.
+  1. Selecciona el branch `master` en la parte superior de la aplicación.
+  1. Haz clic en el botón que dice **Fetch Origin** para obtener un estado actualizado sobre el repositorio remoto.
+  1. Ahora haz clic en **Pull Origin** para traer los cambios a tu repositorio local.
 
 show-me-how:
 tell-me-why: |
-  ## Keeping your local repository in sync
+  ## Mantener tu repositorio local sincronizado
 
-  As we discussed previously, GitHub Desktop doesn't require an internet connection which means it doesn't communicate with remote repositories unless explicitly instructed to do so.
+  Como hemos comentado anteriormente, GitHub Desktop no necesita conexión a internet, lo que significa que no se comunica con repositorios remotos a no ser que se le indique expresamente que lo haga.
 
-  When you merge your Pull Request on GitHub.com, the changes you made locally are merged into the `master` branch on the _remote_ repository on GitHub.
+  Cuando haces merge de tu Pull Request en GitHub.com, los cambios que hiciste localmente se combinan con el branch `master` en el repositorio _remoto_ en GitHub.
 
-   However, you won't automatically see those changes reflected in your local copy until you get an update from _origin_.
+   Sin embargo, no verás estos cambios reflejados automáticamente en tu copia local del repositorio hasta que lo actualices desde _origin_.
 
-  You should `Fetch Origin` regularly, and then `pull` or `push` as necessary to ensure you are always working with the most recent copies of the files in the repository.
-
+  Deberías obtener desde el origen (`Fetch Origin`) regularmente, y entonces hacer `pull` o `push` según sea necesario para asegurarte de que siempre estás trabajando con las copias más recientes de los archivos de tu repositorio.
+  
 ---
