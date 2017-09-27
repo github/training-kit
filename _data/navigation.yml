@@ -274,3 +274,32 @@ electron-share-your-app:
     url: /electron/share-your-app/share-on-websites/
   - title: "Celebrate"
     url: /electron/share-your-app/celebrate/
+
+merge-conflicts:
+  - title: "Managing Merge Conflicts"
+    url: /merge-conflicts/
+  - title: "Set Up the Repository"
+    url: /merge-conflicts/setup/
+  - title: "A Normal Merge"
+    url: /merge-conflicts/normal-merge/
+  - title: "Merge Conflict Description"
+    url: /merge-conflicts/mc-description/
+  - title: "Your First Conflict"
+    url: /merge-conflicts/first-conflict/
+  - title: "Bob's Simple Conflict"
+    url: /merge-conflicts/example-01/
+  - title: "Teddy, Mort, and Jimmy Help"
+    url: /merge-conflicts/example-02/
+  - title: "Gene and Louise Lend a Hand"
+    url: /merge-conflicts/example-03/
+  - title: "What Next?"
+    url: /merge-conflicts/what-next/
+  - title: "Using GUIs to Handle Merge Conflicts"
+    url: /merge-conflicts/ide-intro/
+    children:
+    - title: "Atom"
+      url: /merge-conflicts/ide-atom/
+    - title: "Visual Studio Code"
+      url: /merge-conflicts/ide-vs-code/
+    - title: "GitHub Extension for Visual Studio"
+      url: /merge-conflicts/ide-vs-ext/
