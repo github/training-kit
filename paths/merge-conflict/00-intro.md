@@ -22,4 +22,7 @@ main-content: |
   It's a good idea to complete a few other courses first, specifically the [Introduction to GitHub](../intro-to-github/), and either [GitHub Pages from GitHub Desktop](../github-desktop/) or [GitHub Pages from the Command Line](../github-cli/).
 
   If you have any questions while taking the course, make sure to create an Issue in the primary [class repository](https://github.com/githubschool/on-demand-merge-conflict/issues).
+
+As a token of appreciation for all of the laughs that the Belchers have given some of the trainers here at GitHub, we are using them to cheer you on as you conquer those merge conflicts. In no way, shape, or form, does FOX:tm: or Bob's Burgers:tm: endorse this course, GitHub Professional Services, or GitHub Inc. 
+
 ---
