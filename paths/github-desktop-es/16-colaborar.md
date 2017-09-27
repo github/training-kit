@@ -11,7 +11,7 @@ sidebar:
   nav: "github-desktop-nav-es"
 main-content:
   includes:
-    - activity/github-desktop-es/15-colaborar-prs.md
+    - activity-es/github-desktop-es/15-colaborar-prs.md
 troubleshooting:
   includes:
     - help-build-fail-es.md
