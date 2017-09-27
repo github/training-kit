@@ -1,17 +1,18 @@
 [//]: # "This is used in both the CLI and Desktop course"
 
-Now that your tests have passed, let's click the big green button to add your site to our directory!
+Ahora que tus tests han pasado, hagamos clic en el gran botón verde para añadir tu sitio a nuestro directorio.
 
 ![gif of following the directions below](../images/gifs/github-desktop/merge.gif)
 
-1. On GitHub.com, check to ensure the tests are passing.
-1. Click on **Merge**.
-1. Click **Confirm Merge**.
-1. Delete the branch.
+1. En GitHub.com, comprueba que los tests están pasando.
+2. Haz clic en **Merge**.
+3. Haz clic en **Confirm Merge**.
+4. Elimina el branch.
 
-## :tada: Congratulations!
 
-Once you have merged your pull request, you have completed the GitHub workflow! Refresh this page to see your addition to our contribution graph!
+## :tada: ¡Enhorabuena!
+
+Una vez que hayas hecho merge de tu pull request, ¡has completado el flujo de trabajo GitHub! Actualiza esta página para ver tu incorporación a nuestro gráfico de contribuciones.
 
 <div class="contribution_graph">
 <div id="github_chart_1" class="github_chart_1"></div>

@@ -1,2 +1,2 @@
-## We Love Feedback :heart:
-  Please take _literally less than a minute_ to let us know what you think of this course. You may also choose to opt-in for updates on future classes. [Start Survey](http://www.surveygizmo.com/s3/3288550/desktop)!
+## Nos encanta el feedback :heart:
+  Por favor tómate _literalmente menos de un minuto_  para hacernos saber qué te ha parecido este curso. También puedes optar por apuntarte para recibir actualizaciones sobre clases futuras. [Empezar encuesta](http://www.surveygizmo.com/s3/3288550/desktop)!
