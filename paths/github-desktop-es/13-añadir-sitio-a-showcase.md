@@ -1,23 +1,23 @@
 ---
-layout: simple-class
+layout: simple-class-es
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Add Your GitHub Pages Site to the Showcase
-permalink: /github-desktop-es/añadir-github-pages-showcase
+title: Añade tu sitio GitHub Pages al escaparate
+permalink: /github-desktop-es/añadir-github-pages-escaparate
 next-page: /github-desktop-es/revisar-github-flow
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"
 main-content:
   includes:
-  - activity/github-desktop/12-add-class-repo.md  
+  - activity/github-desktop-es/12-añadir-repo-clase.md  
 show-me-how:
 tell-me-why: |
-  ## Getting access to the shared repository
+  ## Obtener acceso al repositorio compartido
 
-  We will use a shared class repository to host a directory of all pages that have been created as a part of this course.
+  Utilizaremos un repositorio de clase compartido para alojar un directorio de todas las páginas que se han creado como parte de este curso.
 
-  When you request access via the collaborator issue, we will use a webhook to add you as a collaborator. This will ensure you have the ability to push to this repository, and can add your site.
+  Cuando solicitas acceso mediante un issue, utilizaremos un webhook para añadirte como colaborador. Esto asegurará que tienes los permisos para hacer push a este repositorio, y añadir tu sitio.
 
 ---

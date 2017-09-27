@@ -140,8 +140,8 @@ github-desktop-nav-es:
       url: /github-desktop-es/ver-sitio-github-pages
     - title: "Push a GitHub con GitHub Desktop"
       url: /github-desktop-es/push-con-github-desktop
-    - title: "Añadir tu sitio hecho con GitHub Pages al Showcase"
-      url: /github-desktop-es/añadir-github-pages-showcase
+    - title: "Añadir tu sitio hecho con GitHub Pages al Escaparate"
+      url: /github-desktop-es/añadir-github-pages-escaparate
     - title: "Revisar el Flujo de GitHub local"
       url: /github-desktop-es/revisar-github-flow
     - title: "Push a GitHub y crear a Pull Request"
@@ -149,7 +149,7 @@ github-desktop-nav-es:
     - title: "Colaborar con GitHub Pull Requests"
       url: /github-desktop-es/colaborar-github-pull-requests
     - title: "Hacer merge de tu Pull Request en GitHub"
-      url: /github-desktop-es/merge-pull-request-showcase
+      url: /github-desktop-es/merge-pull-request-escaparate
 
 github-cli:
   - title: "GitHub Pages & Git in the Command Line"

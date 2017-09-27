@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Hacer Push a GitHub con GitHub Desktop
 permalink: /github-desktop-es/push-con-github-desktop
-next-page: /github-desktop-es/añadir-github-pages-showcase
+next-page: /github-desktop-es/añadir-github-pages-escaparate
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"
