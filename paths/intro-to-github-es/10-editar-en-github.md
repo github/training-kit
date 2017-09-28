@@ -1,11 +1,13 @@
 ---
-layout: simple-class-es
+lang: es
+ref: intro-to-github-10
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Editar archivos en GitHub
 permalink: /intro-to-github/es/editar-en-github
-next-page: /intro-to-github/es/merge-pull-request
+next-page: /intro-to-github/es/merge-pull-requests
 sidebar:
   nav: "intro-nav-es"
 main-content: |

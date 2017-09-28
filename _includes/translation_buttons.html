@@ -1,0 +1,8 @@
+<p class="float-right">
+  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+  {% for thispage in pages %}
+    {% if page.lang != thispage.lang %}
+    <a href="{{ site.baseurl }}{{ thispage.permalink }}" role="button" class="btn btn-sm btn-outline {{ thispage.lang }}">{{ site.data.ui-text[thispage.lang].name | downcase }}</a>
+    {% endif %}
+  {% endfor %}
+</p>

@@ -1,0 +1,37 @@
+---
+layout: default
+---
+      {% include blue-hero.html %}
+      <div class="my-6 p-2">
+        <div class="container-lg">
+          <ul class="timeline">
+            {% for course in page.courses %}
+              {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+              <li {% if thecycle == 'even' %}class="timeline-inverted"{% endif %}>
+                <div>
+                  <a href="{{ site.baseurl }}{{ course.link }}/" class="timeline-image-link"><img class="timeline-image" src="{{ site.baseurl}}/{{ course.image }}" alt="{{ course.imageAlt }}"></a>
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <a href="{{ site.baseurl }}{{ course.link }}/">
+                      <h2>{{ course.title }}</h2>
+                    </a>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">{{ course.description | markdownify }}</p>
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+
+            {% if page.timeline.showWelcome %}
+              <li>
+                <div>
+                  <img class="timeline-image" src="{{ site.baseurl}}/images/about/welcometocat.png" alt="The 'welcometocat', a cartoon of a celebrating octocat wearing a party hat and throwing confetti">
+                </div>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+
+      </div>

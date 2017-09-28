@@ -1,24 +1,31 @@
-# main links links
+banner:
+  en:
+    title: On Demand Training
+    url: /
+  es:
+    title: On Demand Training
+    url: /es/
+
 main:
-# Keep original nav, do not replace
-  - title: "Introduction to GitHub"
-    url: /intro-to-github/
-  - title: "GitHub Pages from GitHub Desktop"
-    url: /github-desktop/
-  - title: "GitHub Pages from the Command Line"
-    url: /github-cli/
-  - title: "Git Out of Trouble"
-    url: /git-trouble/
-  - title: "GitHub for Windows Users"
-    url: /windows/
-  - title: "Introduction to GraphQL"
-    url: /graphql/
-  - title: "Electron Suite"
-    url: /electron/
-  - title: "Git & GitHub Training Path"
-    url: /path/
-  - title: "GitHub Training Community"
-    url: /community/
+  en:
+    - title: Resources
+      url: /resources/
+    - title: Learning Path
+      url: /resources/learning-path/
+    - title: Upcoming Events
+      abs: https://services.github.com/#upcoming-events
+    - title: Customized Training
+      abs: https://services.github.com/customized-training
+
+  es:
+    - title: Resources
+      url: /resources/
+    - title: Learning Path
+      url: /resources/learning-path/es/
+    - title: Upcoming Events
+      abs: https://services.github.com/#upcoming-events
+    - title: Customized Training
+      abs: https://services.github.com/customized-training
 
 # When creating new sidebar navs, remember the url in this document needs to match the url assigned in the permalink field.
 
@@ -303,3 +310,32 @@ electron-share-your-app:
     url: /electron/share-your-app/share-on-websites/
   - title: "Celebrate"
     url: /electron/share-your-app/celebrate/
+
+merge-conflicts:
+  - title: "Managing Merge Conflicts"
+    url: /merge-conflicts/
+  - title: "Set Up the Repository"
+    url: /merge-conflicts/setup/
+  - title: "A Normal Merge"
+    url: /merge-conflicts/normal-merge/
+  - title: "Merge Conflict Description"
+    url: /merge-conflicts/mc-description/
+  - title: "Your First Conflict"
+    url: /merge-conflicts/first-conflict/
+  - title: "Bob's Simple Conflict"
+    url: /merge-conflicts/example-01/
+  - title: "Teddy, Mort, and Jimmy Help"
+    url: /merge-conflicts/example-02/
+  - title: "Gene and Louise Lend a Hand"
+    url: /merge-conflicts/example-03/
+  - title: "What Next?"
+    url: /merge-conflicts/what-next/
+  - title: "Using GUIs to Handle Merge Conflicts"
+    url: /merge-conflicts/ide-intro/
+    children:
+    - title: "Atom"
+      url: /merge-conflicts/ide-atom/
+    - title: "Visual Studio Code"
+      url: /merge-conflicts/ide-vs-code/
+    - title: "GitHub Extension for Visual Studio"
+      url: /merge-conflicts/ide-vs-ext/
