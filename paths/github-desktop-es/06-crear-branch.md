@@ -15,7 +15,7 @@ main-content: |
 
   Ahora que ya tienes una copia local del repositorio, sigamos los pasos del [GitHub Flow](https://guides.github.com/introduction/flow/) para hacer un cambio en tu proyecto. Primero crearemos un branch.
 
-  ![gif of following the directions below](../images/gifs/github-desktop/create-branch-on-desktop.gif)
+  ![gif of following the directions below](<% BASEURL %>/images/gifs/github-desktop/create-branch-on-desktop.gif)
 
   1. Desde GitHub Desktop, haz clic en "Branch", y entonces en "New Branch".
   1. En el campo `Name`, introduce un nombre significativo para tu branch. Algo como `añadir-pag-index` irá bien.

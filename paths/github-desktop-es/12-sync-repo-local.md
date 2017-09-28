@@ -15,7 +15,7 @@ main-content: |
 
   Después de hacer merge de tu Pull Request, tienes que actualizar tu copia local del repositorio.
 
-  ![gif of following the directions below](../images/gifs/github-desktop/sync-changes.gif)
+  ![gif of following the directions below](<% BASEURL %>/images/gifs/github-desktop/sync-changes.gif)
 
   1. Vuelve a GitHub Desktop.
   1. Selecciona el branch `master` en la parte superior de la aplicación.

@@ -15,7 +15,7 @@ main-content: |
 
   Ahora que ya eres colaborador, vamos a utilizar el flujo de trabajo local que acabamos de aprender para hacer cambios en este repositorio.
 
-  ![gif of following the directions below](../images/gifs/github-desktop/review-local-workflow.gif)
+  ![gif of following the directions below](<% BASEURL %>/images/gifs/github-desktop/review-local-workflow.gif)
 
   1. Empieza desde la pestaña Code del [repositorio de la clase en GitHub.com](https://github.com/githubschool/on-demand-github-pages/).
   1. Haz clic en `Clone or Download`.

@@ -15,7 +15,7 @@ main-content: |
 
   Después de que hayas creado el repositorio en remoto, el siguiente paso es clonarlo a tu entorno local.
 
-  ![gif of following the directions below](../images/gifs/github-desktop/clone-repository-locally.gif)
+  ![gif of following the directions below](<% BASEURL %>/images/gifs/github-desktop/clone-repository-locally.gif)
 
   1. Entra en tu cuenta en GitHub.com y GitHub Desktop.
   1. En la parte derecha de la pantalla, haz clic en **Clone or download**.

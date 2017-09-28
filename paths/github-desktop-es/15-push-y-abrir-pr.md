@@ -15,7 +15,7 @@ main-content: |
 
   Ahora que ya has hecho algunos commits locales, es hora de que envíes tus cambios a la copia remota de tu repositorio en GitHub.com y abras un pull request.
 
-  ![gif of following the directions below](../images/gifs/github-desktop/review-push-open-pr.gif)
+  ![gif of following the directions below](<% BASEURL %>/images/gifs/github-desktop/review-push-open-pr.gif)
 
   1. En GitHub Desktop, haz clic en el botón para sincronizar los cambios. Este botón cambia de estado según los cambios que se hayan realizado en tus repositorios local y remoto. Si no se ha realizado ningún otro cambio, dirá **Publish Branch**.
   1. En tu navegador, accede a [la pestaña 'Pull Requests' del repositorio de la clase](https://github.com/githubschool/on-demand-github-pages/pulls).

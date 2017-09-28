@@ -2,7 +2,7 @@
 
 Ahora que tus tests han pasado, hagamos clic en el gran botón verde para añadir tu sitio a nuestro directorio.
 
-![gif of following the directions below](../images/gifs/github-desktop/merge.gif)
+![gif of following the directions below]({{ site.baseurl }}/images/gifs/github-desktop/merge.gif)
 
 1. En GitHub.com, comprueba que los tests están pasando.
 2. Haz clic en **Merge**.

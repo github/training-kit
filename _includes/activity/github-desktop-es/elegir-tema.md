@@ -2,7 +2,7 @@
 
 Este curso utilizará GitHub Pages para crear tu sitio web. Para inicializar GitHub Pages necesitamos seguir algunos pasos más:
 
-![gif of following the directions below](../images/gifs/github-desktop/choose-a-theme.gif)
+![gif of following the directions below]({{ site.baseurl }}/images/gifs/github-desktop/choose-a-theme.gif)
 
 1. En tu recientemente creado repositorio, haz clic en la pestaña **Settings**.
 1. Navega hasta la sección GitHub Pages.

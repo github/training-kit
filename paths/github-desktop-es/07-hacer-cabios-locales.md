@@ -15,7 +15,7 @@ main-content: |
 
   Es hora de crear la página principal de tu sitio web.
 
-  ![gif of following the directions below](../images/gifs/github-desktop/add-commits-locally.gif)
+  ![gif of following the directions below](<% BASEURL %>/images/gifs/github-desktop/add-commits-locally.gif)
 
   1. Asegúrate de que estás en el nuevo branch que acabas de crear. Puedes cambiar de branch haciendo clic en el botón **Current Branch** en la parte superior de la aplicación, y seleccionando el branch apropiado.
   1. Abre tu editor de texto favorito.

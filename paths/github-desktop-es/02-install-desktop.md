@@ -15,7 +15,7 @@ main-content: |
 
   Para esta clase utilizarás GitHub Desktop para trabajar con tu repositorio GitHub.
 
-  ![img](../images/gifs/github-desktop/download-gh-desktop.gif)
+  ![img](<% BASEURL %>/images/gifs/github-desktop/download-gh-desktop.gif)
 
   1. Descarga e instala [GitHub Desktop](https://desktop.github.com).
   1. Abre GitHub Desktop.

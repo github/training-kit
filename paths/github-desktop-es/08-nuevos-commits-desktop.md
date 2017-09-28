@@ -15,7 +15,7 @@ main-content: |
 
   Una vez que hayas terminado de hacer tus cambios, es hora de hacer commit (confirmarlos).
 
-  ![gif of following the directions below](../images/gifs/github-desktop/making-commits-locally.gif)
+  ![gif of following the directions below](<% BASEURL %>/images/gifs/github-desktop/making-commits-locally.gif)
 
   1. Haz clic en la pestaña **changes** en la barra lateral izquierda para ver una lista de los archivos que han cambiado o se han añadido desde el último commit.
   1. Utiliza los checkboxes para indicar qué archivos deberían formar parte del commit. En esta actividad, seleccionarás el archivo `index.html`.

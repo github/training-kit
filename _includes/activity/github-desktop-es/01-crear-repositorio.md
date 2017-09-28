@@ -2,7 +2,7 @@
 
 Ahora que tienes instalado localmente todo lo que necesitas para trabajar con Git y GitHub, vamos a crear el repositorio que alojará tu nuevo sitio web.
 
-![gif of following the directions below](../images/gifs/github-desktop/create-repo.gif)
+![gif of following the directions below]({{ site.baseurl }}/images/gifs/github-desktop/create-repo.gif)
 
 1. En GitHub.com, [crea un nuevo repositorio](https://github.com/new).
 1. Nombra tu repositorio `TU-USUARIO.GITHUB.IO`
