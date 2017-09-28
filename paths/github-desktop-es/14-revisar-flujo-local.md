@@ -50,4 +50,4 @@ tell-me-why: |
   1. Hacer merge del Pull Request
 
   Con suerte esto ya te suena, porque has seguido este flujo de trabajo (al menos) dos veces. Ahora lo seguirás una vez más para añadir tu página a nuestro directorio.
-  ---
+---

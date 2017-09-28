@@ -156,7 +156,7 @@ github-desktop-nav-es:
     - title: "Colaborar con GitHub Pull Requests"
       url: /github-desktop/es/colaborar-github-pull-requests
     - title: "Hacer merge de tu Pull Request en GitHub"
-      url: /github-desktop/es/merge-pull-request-escaparate
+      url: /github-desktop/es/merge-pull-request-showcase
 
 github-cli:
   - title: "GitHub Pages & Git in the Command Line"

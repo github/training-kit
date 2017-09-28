@@ -6,7 +6,7 @@ header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Hacer merge de tu Pull Request en GitHub
-permalink: /github-desktop/es/merge-pull-request-escaparate
+permalink: /github-desktop/es/merge-pull-request-showcase
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"
