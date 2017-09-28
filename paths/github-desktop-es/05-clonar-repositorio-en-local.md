@@ -1,11 +1,11 @@
 ---
-layout: simple-class-es
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Clonar el eepositorio con GitHub Desktop
-permalink: /github-desktop-es/clonar-repositorio-github-desktop
-next-page: /github-desktop-es/crear-branches-github-desktop
+permalink: /github-desktop/es/clonar-repositorio-github-desktop
+next-page: /github-desktop/es/crear-branches-github-desktop
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"

@@ -1,17 +1,17 @@
 ---
-layout: simple-class-es
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Colaborar con Pull Requests GitHub
-permalink: /github-desktop-es/colaborar-github-pull-requests
-next-page: /github-desktop-es/merge-pull-request-showcase
+permalink: /github-desktop/es/colaborar-github-pull-requests
+next-page: /github-desktop/es/merge-pull-request-showcase
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"
 main-content:
   includes:
-    - activity-es/github-desktop-es/15-colaborar-prs.md
+    - activity/github-desktop-es/15-colaborar-prs.md
 troubleshooting:
   includes:
     - help-build-fail-es.md

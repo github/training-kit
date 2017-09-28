@@ -1,11 +1,11 @@
 ---
-layout: simple-class-es
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Abrir un pull request con GitHub Desktop
-permalink: /github-desktop-es/pull-request-github-desktop
-next-page: /github-desktop-es/merge-pull-request-github
+permalink: /github-desktop/es/pull-request-github-desktop
+next-page: /github-desktop/es/merge-pull-request-github
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"

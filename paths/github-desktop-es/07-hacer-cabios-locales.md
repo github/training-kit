@@ -1,11 +1,11 @@
 ---
-layout: simple-class-es
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Hacer cambios locales con GitHub Desktop
-permalink: /github-desktop-es/hacer-cambios-github-desktop
-next-page: /github-desktop-es/nuevos-commits-github-desktop
+permalink: /github-desktop/es/hacer-cambios-github-desktop
+next-page: /github-desktop/es/nuevos-commits-github-desktop
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"

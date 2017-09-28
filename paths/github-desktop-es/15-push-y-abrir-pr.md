@@ -1,11 +1,11 @@
 ---
-layout: simple-class-es
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Hacer Push a GitHub y crear un Pull Request
-permalink: /github-desktop-es/push-pull-request-github-desktop
-next-page: /github-desktop-es/colaborar-github-pull-requests
+permalink: /github-desktop/es/push-pull-request-github-desktop
+next-page: /github-desktop/es/colaborar-github-pull-requests
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"

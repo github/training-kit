@@ -1,11 +1,11 @@
 ---
-layout: simple-class-es
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: GitHub Pages desde GitHub Desktop
-permalink: /github-desktop-es/
-next-page: /github-desktop-es/instalar-github-desktop
+permalink: /github-desktop/es/
+next-page: /github-desktop/es/instalar-github-desktop
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"

@@ -1,11 +1,11 @@
 ---
-layout: simple-class-es
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Crear el repositorio remoto en GitHub
-permalink: /github-desktop-es/crear-repo-remoto
-next-page: /github-desktop-es/elegir-tema-github-pages
+permalink: /github-desktop/es/crear-repo-remoto
+next-page: /github-desktop/es/elegir-tema-github-pages
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"

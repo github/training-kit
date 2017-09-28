@@ -1,11 +1,11 @@
 ---
-layout: simple-class-es
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Hacer merge de tu Pull Request en GitHub
-permalink: /github-desktop-es/merge-pull-request-github
-next-page: /github-desktop-es/ver-sitio-github-pages
+permalink: /github-desktop/es/merge-pull-request-github
+next-page: /github-desktop/es/ver-sitio-github-pages
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"

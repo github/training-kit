@@ -1,11 +1,11 @@
 ---
-layout: simple-class-es
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Revisar el GitHub Flow local
-permalink: /github-desktop-es/revisar-github-flow
-next-page: /github-desktop-es/push-pull-request-github-desktop
+permalink: /github-desktop/es/revisar-github-flow
+next-page: /github-desktop/es/push-pull-request-github-desktop
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"

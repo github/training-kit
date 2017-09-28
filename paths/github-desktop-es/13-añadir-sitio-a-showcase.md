@@ -1,17 +1,17 @@
 ---
-layout: simple-class-es
+layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Añade tu sitio GitHub Pages al escaparate
-permalink: /github-desktop-es/añadir-github-pages-escaparate
-next-page: /github-desktop-es/revisar-github-flow
+permalink: /github-desktop/es/añadir-github-pages-escaparate
+next-page: /github-desktop/es/revisar-github-flow
 facilitator: false
 sidebar:
   nav: "github-desktop-nav-es"
 main-content:
   includes:
-  - activity/github-desktop-es/12-añadir-repo-clase.md  
+  - activity/github-desktop-es/12-anadir-repo-clase.md  
 show-me-how:
 tell-me-why: |
   ## Obtener acceso al repositorio compartido
