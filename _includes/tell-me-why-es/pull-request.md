@@ -1,8 +1,8 @@
 [//]: # "This is used in both the CLI and Desktop course"
 
-## Revisando el GitHub Flow
+## Revisando el Flujo GitHub
 
-Estamos siguiendo los 5 pasos del [GitHub Flow](https://guides.github.com/introduction/flow/), que son:
+Estamos siguiendo los 5 pasos del [Flujo GitHub](https://guides.github.com/introduction/flow/), que son:
 
 1. :white_check_mark: Crear un branch
 1. :white_check_mark: Hacer commits

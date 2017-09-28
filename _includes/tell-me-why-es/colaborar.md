@@ -1,7 +1,7 @@
 [//]: # "This is used in both the CLI and Desktop course"
 
 
-## Revisando el GitHub Flow
+## Revisando el Flujo GitHub
 
 
 1. :white_check_mark: Crear un branch

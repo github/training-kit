@@ -5,7 +5,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Añade tu sitio GitHub Pages al escaparate
+title: Añade tu sitio hecho con GitHub Pages al Escaparate
 permalink: /github-desktop/es/añadir-github-pages-escaparate
 next-page: /github-desktop/es/revisar-github-flow
 facilitator: false

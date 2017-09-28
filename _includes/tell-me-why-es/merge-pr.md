@@ -1,7 +1,7 @@
 [//]: # "This is used in both the CLI and Desktop course"
 
 
-## Revisando el GitHub Flow
+## Revisando el Flujo GitHub
 
 1. :white_check_mark: Crear un branch
 1. :white_check_mark: Hacer commits
@@ -11,6 +11,6 @@
 
 ## ¡Enhorabuena!
 
-Has competado todos los pasos del [GitHub Flow](https://guides.github.com/introduction/flow/), has creado un sitio web, y lo has añadido a nuestro escaparate.
+Has competado todos los pasos del [Flujo GitHub](https://guides.github.com/introduction/flow/), has creado un sitio web, y lo has añadido a nuestro escaparate.
 
 ¡Esto es todo en este curso, pero esperamos que vuelvas y pruebes alguno de nuestros otros cursos muy pronto!

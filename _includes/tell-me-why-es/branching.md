@@ -1,8 +1,8 @@
 [//]: # "This is used in both the CLI and Desktop course"
 
-## Revisando el GitHub Flow
+## Revisando el Flujo GitHub
 
-Recuerda, utilizamos el GitHub Flow en [Introducción a GitHub]({{ site.baseurl }}/intro-to-github/), y ahora lo usilizaremos otra vez aquí :smile:
+Recuerda, utilizamos el Flujo GitHub en [Introducción a GitHub]({{ site.baseurl }}/intro-to-github/), y ahora lo usilizaremos otra vez aquí :smile:
 
 Los pasos principales para el flujo de trabajo de GitHub son:
 

@@ -5,7 +5,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Install GitHub Desktop
+title: Instalar GitHub Desktop
 permalink: /github-desktop/es/instalar-github-desktop
 next-page: /github-desktop/es/crear-repo-remoto
 facilitator: false

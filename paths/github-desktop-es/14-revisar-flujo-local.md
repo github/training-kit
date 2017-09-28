@@ -5,7 +5,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Revisar el GitHub Flow local
+title: Revisar el Flujo GitHub local
 permalink: /github-desktop/es/revisar-github-flow
 next-page: /github-desktop/es/push-pull-request-github-desktop
 facilitator: false
@@ -39,9 +39,9 @@ main-content: |
 show-me-how:
 tell-me-why: |
 
-  ## Revisando el GitHub Flow
+  ## Revisando el Flujo GitHub
 
-  Recuerda, los cinco pasos del [GitHub Flow](https://guides.github.com/introduction/flow/) con:
+  Recuerda, los cinco pasos del [Flujo GitHub](https://guides.github.com/introduction/flow/) con:
 
   1. **Crear un branch** :arrow_left: _(Esta sección trata sobre este paso.)_
   1. **Hacer commits** :arrow_left: _(Y este.)_

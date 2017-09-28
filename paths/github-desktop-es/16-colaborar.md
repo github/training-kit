@@ -5,7 +5,7 @@ layout: simple-class
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
-title: Colaborar con Pull Requests GitHub
+title: Colaborar con Pull Requests en GitHub
 permalink: /github-desktop/es/colaborar-github-pull-requests
 next-page: /github-desktop/es/merge-pull-request-showcase
 facilitator: false
