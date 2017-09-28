@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: gh-desktop-12
 layout: simple-class
 header:
   overlay_image: cover.jpeg

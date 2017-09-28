@@ -1,4 +1,6 @@
 ---
+lang: es
+ref: gh-desktop-12
 layout: simple-class
 header:
   overlay_image: cover.jpeg
@@ -31,5 +33,5 @@ tell-me-why: |
    Sin embargo, no verás estos cambios reflejados automáticamente en tu copia local del repositorio hasta que lo actualices desde _origin_.
 
   Deberías obtener desde el origen (`Fetch Origin`) regularmente, y entonces hacer `pull` o `push` según sea necesario para asegurarte de que siempre estás trabajando con las copias más recientes de los archivos de tu repositorio.
-  
+
 ---
