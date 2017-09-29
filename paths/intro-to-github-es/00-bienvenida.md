@@ -2,6 +2,7 @@
 lang: es
 ref: intro-to-github-00
 layout: simple-class
+help: https://github.com/githubschool/open-enrollment-classes-introduction-to-github/issues/new?title=I%20need%20help&body=Describe%20what%20you%20need%20help%20with%20here.
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
