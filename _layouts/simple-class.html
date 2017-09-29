@@ -120,10 +120,12 @@ layout: default
             </details>
           {% endif %}
 
+          {% if page.help %}
           <div class="flash mb-2 flash-success">
             <div class="float-left p-1 mr-3"><a href="{{ page.help }}" class="btn btn-primary">{{ site.data.ui-text[page.lang].get-help }}</a></div>
             <div class="overflow-hidden">{{ site.data.ui-text[page.lang].stuck }}</div>
           </div>
+          {% endif %}
 
           {% if page.next-page %}
             <a href="{{ site.baseurl }}{{ page.next-page }}" class="btn">{{ site.data.ui-text[page.lang].continue }}</a>
