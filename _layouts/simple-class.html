@@ -121,7 +121,8 @@ layout: default
           {% endif %}
 
           <div class="flash mb-2 flash-success">
-            {{ site.data.ui-text[page.lang].stuck }}
+            <div class="float-left p-1 mr-3"><a href="{{ page.help }}" class="btn btn-primary">{{ site.data.ui-text[page.lang].get-help }}</a></div>
+            <div class="overflow-hidden">{{ site.data.ui-text[page.lang].stuck }}</div>
           </div>
 
           {% if page.next-page %}
