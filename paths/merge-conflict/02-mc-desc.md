@@ -14,22 +14,26 @@ main-content: |
   ```
   Name: First Last
   Location: I Live Here
-  Favorite Animal: Octocat
+  Favorite Sports Team: Golden State Warriors
   ```
 
   Now, let's imagine that Matt and Briana decide to change the default `Favorite Animal` in the template. So they might have something that looks like this:
 
   **Matt**
   ```
-  Favorite Animal: Capybara
+  Favorite Sports Team: San Francisco Giants
   ```
+
+  ![octocat dressed as a San Francisco Giants](https://octodex.github.com/images/wilson.jpg)
 
   **Briana**
   ```
-  Favorite Animal: Giraffe
+  Favorite Sports Team: San Francisco 49ers
   ```
 
-  When **Matt** merges her changes into the deployment branch, he won't encounter a merge conflict.
+  ![octocat dressed as a San Francisco 49er](https://octodex.github.com/images/goretocat.png)
+
+  When **Matt** merges his changes into the deployment branch, he won't encounter a merge conflict.
 
   However, when **Briana** tries to merge her changes into the deployment branch, she is going to encounter a merge conflict.
 
