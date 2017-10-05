@@ -45,5 +45,5 @@ main-content: |
   1. Enter a commit message in the commit message field and click the **Commit Staged** button.
   1. Congratulations, you resolved a merge conflict locally with the GitHub Extension for Visual Studio!
 
-  ![belcher children dancing](https://media.giphy.com/media/e07y5SEwFMDm0/giphy.gif)
+  ![octocat wearing a red polo](https://octodex.github.com/images/red-polo.png)
 ---
