@@ -34,6 +34,7 @@ en: &DEFAULT_EN
   show-me-how           : "Show me how"
   troubleshooting       : "Help me troubleshoot"
   tell-me-why           : "Tell me why"
+  get-help              : "Get Help"
   stuck                 : "Stuck? Open an issue in the repository for this class and mention <strong>@githubteacher</strong> for help from one of the GitHub trainers!"
   continue              : "Continue"
 en-US:
@@ -75,6 +76,7 @@ es: &DEFAULT_ES
   show-me-how           : "Enséñame cómo"
   troubleshooting       : "Ayúdame a resolver"
   tell-me-why           : "Dime por qué"
+  get-help              : "Pide Ayuda"
   stuck                 : "¿Atascado? Abre un tema (issue) en el repositorio para esta clase y menciona a <strong>@githubteacher</strong> para obtener ayuda de uno de los instructores de GitHub."
   continue              : "Continuar"
 es-ES:
