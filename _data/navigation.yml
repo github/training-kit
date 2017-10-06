@@ -122,6 +122,42 @@ github-desktop-nav:
     - title: "Merge Your Pull Request on GitHub"
       url: /github-desktop/merge-pull-request-showcase
 
+github-desktop-nav-es:
+    - title: "GitHub Pages y GitHub Desktop"
+      url: /github-desktop/es/
+    - title: "Instalar GitHub Desktop"
+      url: /github-desktop/es/instalar-github-desktop
+    - title: "Crear el repositorio remoto en GitHub"
+      url: /github-desktop/es/crear-repo-remoto
+    - title: "Elegir un tema de GitHub Pages"
+      url: /github-desktop/es/elegir-tema-github-pages
+    - title: "Clonar el repositorio con GitHub Desktop"
+      url: /github-desktop/es/clonar-repositorio-github-desktop
+    - title: "Crear branches en local con GitHub Desktop"
+      url: /github-desktop/es/crear-branches-github-desktop
+    - title: "Hacer cambios en local con GitHub Desktop"
+      url: /github-desktop/es/hacer-cambios-github-desktop
+    - title: "Añadir commits locales con GitHub Desktop"
+      url: /github-desktop/es/nuevos-commits-github-desktop
+    - title: "Abrir un Pull Request con GitHub Desktop"
+      url: /github-desktop/es/pull-request-github-desktop
+    - title: "Hacer merge de tu Pull Request en GitHub"
+      url: /github-desktop/es/merge-pull-request-github
+    - title: "Ver tu sitio hecho con GitHub Pages"
+      url: /github-desktop/es/ver-sitio-github-pages
+    - title: "Hacer Push a GitHub con GitHub Desktop"
+      url: /github-desktop/es/push-con-github-desktop
+    - title: "Añadir tu sitio hecho con GitHub Pages al Escaparate"
+      url: /github-desktop/es/añadir-github-pages-escaparate
+    - title: "Revisar el Flujo GitHub local"
+      url: /github-desktop/es/revisar-github-flow
+    - title: "Push a GitHub y crear un Pull Request"
+      url: /github-desktop/es/push-pull-request-github-desktop
+    - title: "Colaborar con Pull Requests en GitHub"
+      url: /github-desktop/es/colaborar-github-pull-requests
+    - title: "Hacer merge de tu Pull Request en GitHub"
+      url: /github-desktop/es/merge-pull-request-showcase
+
 github-cli:
   - title: "GitHub Pages & Git in the Command Line"
     url: /github-cli/

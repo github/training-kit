@@ -30,6 +30,6 @@ tell-me-why: |
 
   Un único proyecto como el nuestro puede tener cientos de branches - cada una probando nuevas funcionalidades o diferentes planteamientos para una misma funcionalidad.
 
-  El truco para gestionar branches con cun equipo es mantenerlas concisas y con vidas cortas. En otras palabras, una branch debería representar una única funcionalidad o resolución de problema. Y ya que GitHub no limita el número de branches que puedes tener, hace que las cosas sean mucho menos confusas si las mantienes activas sólo por unos días y las eliminas una vez que se hayan integrado (merged), de lo que hablaremos un poco más adelante.
+  El truco para gestionar branches con un equipo es mantenerlos concisos y con vidas cortas. En otras palabras, una branch debería representar una única funcionalidad o resolución de problema. Y ya que GitHub no limita el número de branches que puedes tener, hace que las cosas sean mucho menos confusas si las mantienes activas sólo por unos días y las eliminas una vez que se hayan integrado (merged), de lo que hablaremos un poco más adelante.
 
 ---

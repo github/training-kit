@@ -1,4 +1,6 @@
 ---
+lang: en
+ref: gh-desktop-14
 layout: simple-class
 help: https://github.com/githubschool/on-demand-github-pages/issues/new?title=I%20need%20help&body=Describe%20what%20you%20need%20help%20with%20here.&labels=Help%20Wanted
 header:
@@ -20,7 +22,7 @@ main-content: |
   1. Click on `Clone or Download`.
   1. Click `Open in Desktop`. This will open GitHub Desktop.
   1. Confirm the `Local Path` as the place you'd like to store the repository locally.
-  1. Create a branch by clicking "File > New Branch" and label it with your username, something like `yourUsername-add-page`.
+  1. Create a branch by clicking "Branch > New Branch" and label it with your username, something like `yourUsername-add-page`.
   1. In your favorite text editor, add a file to the `_pages` directory. Include your GitHub handle in the filename: `username.yaml`.
   1. Enter the following content into your file:
 
