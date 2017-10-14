@@ -20,7 +20,7 @@ main:
   es:
     - title: Resources
       url: /resources/
-    - title: Learning Path
+    - title: Ruta de aprendizaje
       url: /resources/learning-path/es/
     - title: Upcoming Events
       abs: https://services.github.com/#upcoming-events
