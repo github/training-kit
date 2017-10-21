@@ -11,7 +11,7 @@ This repository contains the completely open source on-demand training hosted at
 
 **We’re eager to work with you**, our user community to improve these materials and develop new ones. Here's how you can help:
 
-- **You spotted a mistake:** please feel free to fork the repository and submit a change via Pull Request (not sure how to do that, [we have a course for you](https://services.github.com/on-demand/)).
+- **You spotted a mistake:** please feel free to fork the repository and submit a change via a Pull Request (not sure how to do that? [We have a course for you](https://services.github.com/on-demand/)).
 - **You have an idea to make it better:** we :heart: new ideas! We invite you to open a new [Issue](https://github.com/github/training-kit/issues) if you want to talk about it, or you can [fork this repository](https://help.github.com/articles/working-with-forks/) and submit your idea via a Pull Request.
 - **You just want to help:** check out the [open issues](https://github.com/github/training-kit/issues) for projects you can tackle, review an [open pull request](https://github.com/github/training-kit/pulls), or check out [the project ROADMAP](https://github.com/github/training-kit/projects/1).
 
@@ -41,7 +41,7 @@ We are eager to create materials that are easy to use and follow! To that end, h
 
 #### Building and Testing Locally
 
-When you are ready to test your changes, you will want to build the repository locally. This is fully automated through a series of shell scripts based [the scripts to rule them all](https://github.com/github/scripts-to-rule-them-all)!
+When you are ready to test your changes, you will want to build the repository locally. This is fully automated through a series of shell scripts based on [the scripts to rule them all](https://github.com/github/scripts-to-rule-them-all)!
 
 To perform a build of the materials perform the following:
 
