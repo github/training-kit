@@ -3,7 +3,7 @@ banner:
     title: On Demand Training
     url: /
   es:
-    title: On Demand Training
+    title: Aprende a tu ritmo
     url: /es/
 
 main:
@@ -20,7 +20,7 @@ main:
   es:
     - title: Resources
       url: /resources/
-    - title: Learning Path
+    - title: Itinerario de aprendizaje
       url: /resources/learning-path/es/
     - title: Upcoming Events
       abs: https://services.github.com/#upcoming-events
