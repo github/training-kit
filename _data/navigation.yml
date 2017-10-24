@@ -5,6 +5,9 @@ banner:
   es:
     title: Aprende a tu ritmo
     url: /es/
+  pt:
+    title: Treinamento sob demanda
+    url: /pt/
 
 main:
   en:
@@ -22,6 +25,15 @@ main:
       url: /resources/
     - title: Itinerario de aprendizaje
       url: /resources/learning-path/es/
+    - title: Upcoming Events
+      abs: https://services.github.com/#upcoming-events
+    - title: Customized Training
+      abs: https://services.github.com/customized-training
+  pt:
+    - title: Resources
+      url: /resources/
+    - title: Learning Path
+      url: /resources/learning-path/
     - title: Upcoming Events
       abs: https://services.github.com/#upcoming-events
     - title: Customized Training
@@ -57,7 +69,6 @@ intro-nav:
   - title: "You Completed the GitHub Flow"
     url: /intro-to-github/you-completed-github-flow
 
-
 intro-nav-es:
   - title: "Introducción a GitHub"
     url: /intro-to-github/es/
@@ -85,6 +96,34 @@ intro-nav-es:
     url: /intro-to-github/es/merge-pull-requests
   - title: "Has completado el Flujo GitHub"
     url: /intro-to-github/es/celebrar
+
+intro-nav-pt:
+  - title: "Introduction to GitHub"
+    url: /intro-to-github/
+  - title: "Create a GitHub Account"
+    url: /intro-to-github/create-github-account
+  - title: "Join the Class Repository"
+    url: /intro-to-github/join-class-repository
+  - title: "Explore the GitHub Repository"
+    url: /intro-to-github/explore-github-repository
+  - title: "Use GitHub Flow"
+    url: /intro-to-github/use-github-flow
+  - title: "Create a Branch"
+    url: /intro-to-github/create-a-branch
+  - title: "Find Your Coordinates"
+    url: /intro-to-github/find-your-coordinates
+  - title: "Work on GitHub"
+    url: /intro-to-github/work-on-github
+  - title: "Create a Pull Request"
+    url: /intro-to-github/create-pull-request
+  - title: "Collaborate on GitHub"
+    url: /intro-to-github/collaborate-on-github
+  - title: "Edit Files on GitHub"
+    url: /intro-to-github/edit-files-on-github
+  - title: "Merge Your Pull Request"
+    url: /intro-to-github/merge-pull-request
+  - title: "You Completed the GitHub Flow"
+    url: /intro-to-github/you-completed-github-flow
 
 github-desktop-nav:
     - title: "GitHub Pages & GitHub Desktop"
@@ -157,6 +196,42 @@ github-desktop-nav-es:
       url: /github-desktop/es/colaborar-github-pull-requests
     - title: "Hacer merge de tu Pull Request en GitHub"
       url: /github-desktop/es/merge-pull-request-showcase
+
+github-desktop-nav-pt:
+    - title: "GitHub Pages & GitHub Desktop"
+      url: /github-desktop/
+    - title: "Install GitHub Desktop"
+      url: /github-desktop/install-github-desktop
+    - title: "Create the Remote Repository on GitHub"
+      url: /github-desktop/create-remote-repository
+    - title: "Choose a GitHub Pages Theme"
+      url: /github-desktop/choose-github-pages-theme
+    - title: "Clone the Repository with GitHub Desktop"
+      url: /github-desktop/clone-repository-github-desktop
+    - title: "Create Local Branches With GitHub Desktop"
+      url: /github-desktop/create-branches-github-desktop
+    - title: "Make Local Changes With GitHub Desktop"
+      url: /github-desktop/make-changes-github-desktop
+    - title: "Add Local Commits With GitHub Desktop"
+      url: /github-desktop/add-commits-github-desktop
+    - title: "Open a Pull Request With GitHub Desktop"
+      url: /github-desktop/pull-request-github-desktop
+    - title: "Merge Your Pull Request on GitHub"
+      url: /github-desktop/merge-pull-request-github
+    - title: "View Your GitHub Pages Site"
+      url: /github-desktop/view-github-pages-site
+    - title: "Push to GitHub with GitHub Desktop"
+      url: /github-desktop/push-with-github-desktop
+    - title: "Add Your GitHub Pages Site to the Showcase"
+      url: /github-desktop/add-github-pages-site-showcase
+    - title: "Review the Local GitHub Flow"
+      url: /github-desktop/review-github-flow
+    - title: "Push to GitHub & Create a Pull Request"
+      url: /github-desktop/push-pull-request-github-desktop
+    - title: "Collaborate With GitHub Pull Requests"
+      url: /github-desktop/collaborate-github-pull-requests
+    - title: "Merge Your Pull Request on GitHub"
+      url: /github-desktop/merge-pull-request-showcase
 
 github-cli:
   - title: "GitHub Pages & Git in the Command Line"
