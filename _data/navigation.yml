@@ -30,13 +30,13 @@ main:
     - title: Customized Training
       abs: https://services.github.com/customized-training
   pt:
-    - title: Resources
+    - title: Recursos
       url: /resources/
-    - title: Learning Path
+    - title: Caminho de aprendizagem
       url: /resources/learning-path/
-    - title: Upcoming Events
+    - title: Próximos Eventos
       abs: https://services.github.com/#upcoming-events
-    - title: Customized Training
+    - title: Treinamento Customizado
       abs: https://services.github.com/customized-training
 
 # When creating new sidebar navs, remember the url in this document needs to match the url assigned in the permalink field.
@@ -98,31 +98,31 @@ intro-nav-es:
     url: /intro-to-github/es/celebrar
 
 intro-nav-pt:
-  - title: "Introduction to GitHub"
+  - title: "Introdução ao GitHub"
     url: /intro-to-github/
-  - title: "Create a GitHub Account"
+  - title: "Criar uma Conta no GitHub"
     url: /intro-to-github/create-github-account
-  - title: "Join the Class Repository"
+  - title: "Entrar para o Repositório da Classe"
     url: /intro-to-github/join-class-repository
-  - title: "Explore the GitHub Repository"
+  - title: "Explore o Repositório do GitHub"
     url: /intro-to-github/explore-github-repository
-  - title: "Use GitHub Flow"
+  - title: "Use o GitHub Flow"
     url: /intro-to-github/use-github-flow
-  - title: "Create a Branch"
+  - title: "Crie um Branch"
     url: /intro-to-github/create-a-branch
-  - title: "Find Your Coordinates"
+  - title: "Encontre suas coordenadas"
     url: /intro-to-github/find-your-coordinates
-  - title: "Work on GitHub"
+  - title: "Trabalhe com o GitHub"
     url: /intro-to-github/work-on-github
-  - title: "Create a Pull Request"
+  - title: "Crie um Pull Request"
     url: /intro-to-github/create-pull-request
-  - title: "Collaborate on GitHub"
+  - title: "Colabore no GitHub"
     url: /intro-to-github/collaborate-on-github
-  - title: "Edit Files on GitHub"
+  - title: "Edite Arquivos no GitHub"
     url: /intro-to-github/edit-files-on-github
-  - title: "Merge Your Pull Request"
+  - title: "Merge do Seu Pull Request"
     url: /intro-to-github/merge-pull-request
-  - title: "You Completed the GitHub Flow"
+  - title: "Você Completou o GitHub Flow"
     url: /intro-to-github/you-completed-github-flow
 
 github-desktop-nav:
@@ -200,37 +200,37 @@ github-desktop-nav-es:
 github-desktop-nav-pt:
     - title: "GitHub Pages & GitHub Desktop"
       url: /github-desktop/
-    - title: "Install GitHub Desktop"
+    - title: "Instalar o GitHub Desktop"
       url: /github-desktop/install-github-desktop
-    - title: "Create the Remote Repository on GitHub"
+    - title: "Criar um Repositório Remote no GitHub"
       url: /github-desktop/create-remote-repository
-    - title: "Choose a GitHub Pages Theme"
+    - title: "Escolher um Tema para o GitHub Pages"
       url: /github-desktop/choose-github-pages-theme
-    - title: "Clone the Repository with GitHub Desktop"
+    - title: "Clonar o Repositório com GitHub Desktop"
       url: /github-desktop/clone-repository-github-desktop
-    - title: "Create Local Branches With GitHub Desktop"
+    - title: "Criar um Branch Local com GitHub Desktop"
       url: /github-desktop/create-branches-github-desktop
-    - title: "Make Local Changes With GitHub Desktop"
+    - title: "Mudanças Locais com GitHub Desktop"
       url: /github-desktop/make-changes-github-desktop
-    - title: "Add Local Commits With GitHub Desktop"
+    - title: "Adicionar Commits Locais com GitHub Desktop"
       url: /github-desktop/add-commits-github-desktop
-    - title: "Open a Pull Request With GitHub Desktop"
+    - title: "Abrir um Pull Request com GitHub Desktop"
       url: /github-desktop/pull-request-github-desktop
-    - title: "Merge Your Pull Request on GitHub"
+    - title: "Merge do Seu Pull Request no GitHub"
       url: /github-desktop/merge-pull-request-github
-    - title: "View Your GitHub Pages Site"
+    - title: "Visualizar o seu Site no GitHub Pages"
       url: /github-desktop/view-github-pages-site
-    - title: "Push to GitHub with GitHub Desktop"
+    - title: "Push para o GitHub com GitHub Desktop"
       url: /github-desktop/push-with-github-desktop
-    - title: "Add Your GitHub Pages Site to the Showcase"
+    - title: "Adicionar o Seu Site GitHub Pages no Showcase"
       url: /github-desktop/add-github-pages-site-showcase
-    - title: "Review the Local GitHub Flow"
+    - title: "Revisão do GitHub Flow Local"
       url: /github-desktop/review-github-flow
-    - title: "Push to GitHub & Create a Pull Request"
+    - title: "Push para GitHub & Criar um Pull Request"
       url: /github-desktop/push-pull-request-github-desktop
-    - title: "Collaborate With GitHub Pull Requests"
+    - title: "Colaboração com GitHub Pull Requests"
       url: /github-desktop/collaborate-github-pull-requests
-    - title: "Merge Your Pull Request on GitHub"
+    - title: "Merge do Seu Pull Request no GitHub"
       url: /github-desktop/merge-pull-request-showcase
 
 github-cli:
