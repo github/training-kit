@@ -30,11 +30,11 @@ main-content: |
 
   ## [Just Make it Go Away! - Breaking Things With Git](../git-trouble/breaking-things-with-git)
 
-That innovative fix was **supposed** to fix everything! Instead, your project is a garbage fire, and you just want everything to go back to how it was. Have no fear; we can make that happen and `git` you back on track.
+  That innovative fix was **supposed** to fix everything! Instead, your project is a garbage fire, and you just want everything to go back to how it was. Have no fear; we can make that happen and `git` you back on track.
 
   ## We Love Feedback :heart:
 
-Did you find this course helpful? [Let us know](http://www.surveygizmo.com/s3/3288550/git-reset)! Did it lose you somewhere? [Tell us about it](http://www.surveygizmo.com/s3/3288550/git-reset)! You may also like to opt-in for updates on future classes.
+  Did you find this course helpful? [Let us know](http://www.surveygizmo.com/s3/3288550/git-reset)! Did it lose you somewhere? [Tell us about it](http://www.surveygizmo.com/s3/3288550/git-reset)! You may also like to opt-in for updates on future classes.
 
 show-me-how:
 tell-me-why:
