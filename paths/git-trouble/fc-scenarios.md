@@ -14,7 +14,7 @@ main-content: |
 
   ## [Too Many (small) Git Commits!](../git-trouble/too-many-commits)
 
-  While you were making changes you might have created a bunch of tiny commits, but when it comes time to actually push your changes back to your `remote`, you want to prevent your commit history from being inundated with the 30 commits you just made. This scenario guides you through creating a more concise history.   
+While you were making changes, you might have created a bunch of tiny commits, but when it is time to push your changes back to your `remote`, you want to prevent your commit history from being inundated with the 30 commits you just made. This scenario guides you through creating a more concise history.
 
   ## [Git Commit Message Sucks](../git-trouble/git-commit-message)
 
@@ -30,7 +30,7 @@ main-content: |
 
   ## [Just Make it Go Away! - Breaking Things With Git](../git-trouble/breaking-things-with-git)
 
-  That innovative fix was **supposed** to fix everything! Instead your project is a garbage fire and you just want everything to go back to how it was. Have no fear, we can make that happen.  
+That innovative fix was **supposed** to fix everything! Instead, your project is a garbage fire, and you just want everything to go back to how it was. Have no fear; we can make that happen and `git` you back on track.
 
   ## We Love Feedback :heart:
 
