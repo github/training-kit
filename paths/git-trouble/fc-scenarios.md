@@ -34,7 +34,7 @@ That innovative fix was **supposed** to fix everything! Instead, your project is
 
   ## We Love Feedback :heart:
 
-    Please take _literally less than a minute_ to let us know what you think of this course. You may also choose to opt-in for updates on future classes. [Start Survey](http://www.surveygizmo.com/s3/3288550/git-reset)!
+Did you find this course helpful? [Let us know](http://www.surveygizmo.com/s3/3288550/git-reset)! Did it lose you somewhere? [Tell us about it](http://www.surveygizmo.com/s3/3288550/git-reset)! You may also like to opt-in for updates on future classes.
 
 show-me-how:
 tell-me-why:
