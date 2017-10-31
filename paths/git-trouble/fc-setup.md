@@ -38,7 +38,7 @@ main-content: |
 
       5950a1b adding file 4
 
-  Those first 7 characters are going to be unique to your machine and are a section of the SHA-1 hash assigned to that specific commit (the SHA-1 hash is 40 characters long). We are going to use that hash identifier a lot as we learn how to 'git' out of sticky situations.
+  Those first 7 characters are going to be unique to your machine and are a section of the SHA-1 hash assigned to that specific commit (the SHA-1 hash is 40 characters long). We are going to use that hash identifier a lot as we learn how to  `git` out of sticky situations.
 
   ## New UI Addition
   When trying to get out of a pickle, the best tool for the job is typically dependent on if you `push`ed your commits to your remote (or not). Look :eyes: for these drop downs throughout the course:
