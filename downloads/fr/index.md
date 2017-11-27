@@ -253,4 +253,5 @@ Récupère tout l'historique du dépôt nommé et incorpore les modifications
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
+<a href="./github-git-cheat-sheet.pdf">Download Cheat Sheet</a>
 </div>
