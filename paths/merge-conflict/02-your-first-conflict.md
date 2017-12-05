@@ -17,10 +17,14 @@ main-content: |
   1. In `_config.yml`, change lines 2-3 again to update your resume's title, and description. Ensure your changes are different from those in step 2 from the previous page of instructions.
   1. Return to your Pull Request. A conflict now appears because `my-title` is based on a previous point in history, and new commits override our proposed change. Let's solve this, our first conflict. Click on **Resolve conflict**.
   1. Remove the conflict markers and choose your desired title.
-      - Merge conflict markers consist of `<<<<<<<`, `=======`, and `>>>>>>>`, as well as the names of the branches. In this case, it would be `my-title` and `master`. 
-      - Your merge conflict includes duplicates of the content found on lines 2 and 3. This is because your `my-title` and the `master` branch modified those lines.
+
+      > To dive into all of the odd symbols on your screen, check out the **Tell me why** section.
+
   1. Click **Mark as resolved**.
-  1. Your Pull Request is now free of conflicts. Press the big green button to merge your pull request!
+  1. Click **Commit merge**.
+  1. Your Pull Request is now free of conflicts. Click **Merge pull request** to merge your pull request!
 
 tell-me-why:
+  includes:
+    - /tell-me-why/merge-conflict.md
 ---
