@@ -9,7 +9,7 @@ next-page: /merge-conflicts/first-conflict/
 sidebar:
   nav: "merge-conflicts"
 main-content: |
-  Before we delve into the world of merge conflicts, we should discuss what a merge is normally doing. Let's say you take some commits from `new-feature` branch and merge them into `master`. Simply, you're applying the commits that you made on the `new-feature` branch to the `master` branch.
+  Before we delve into the world of merge conflicts, we should discuss what a merge is normally doing. Let's say you take some commits from the `new-feature` branch and merge them into `master`. The merge process applies the commits that you made on the `new-feature` branch to the `master` branch.
 
   ![example of new-feature merging into master](../../images/master-new-feature-merge.png)
 
