@@ -1,5 +1,8 @@
 ---
+lang: en
+ref: intro-to-github-12
 layout: simple-class
+help: https://github.com/githubschool/open-enrollment-classes-introduction-to-github/issues/new?title=I%20need%20help&body=Describe%20what%20you%20need%20help%20with%20here.&labels=Help%20Wanted
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -13,9 +16,9 @@ main-content: |
 
   Now that you have merged your pull request, you have completed the GitHub workflow! Check out your new pin on the map!
 
-  <div id="map"></div>
+  <div id="map" style="height: 400px;" class="width-full my-3"></div>
 
-  ## We :heart: Feedback
+  ## We Love Feedback :heart:
 
   Please take _literally less than a minute_ to let us know what you think of this course. You may also choose to opt-in for updates on future classes. [Start Survey](http://www.surveygizmo.com/s3/3288550/intro-to-github)!
 

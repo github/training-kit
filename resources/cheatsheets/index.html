@@ -1,65 +1,52 @@
 ---
 layout: default
+title: Git Cheat Sheets
+description: Reference sheets covering Git commands, features, SVN migrations, and bash. Available in a multiple languages.
 subpage: cheatsheets
 redirect_from:
   - /kit/downloads/git-github-cheat-sheet.pdf/
   - /kit/downloads/subversion-migration.pdf/
+breadcrumbColor: "bg-gray-light"
 ---
-<div class="minitron" style="margin-top: 32px">
+{% include light-hero.html %}
+{% include breadcrumbs.html %}
 
-  <div class="container">
-    <h1 class="display-alpha m-y-0">Git Cheat Sheets</h1>
-    <p class="display-beta text-muted m-t-sm">Reference sheets covering Git commands, features, SVN migrations, and bash. Available in a multiple languages.
-    </p>
+<div class="container-md mx-auto d-flex flex-wrap p-responsive gutter mt-6">
+  <div class="col-12 col-md-6 mb-4 mb-md-0">
+    <div style="width: 128px;">{% include icon-sm-git.svg %}</div>
+    <h3 class="mt-2">Using Git</h3>
+    <ul class="list-style-none">
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/de/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Deutsch</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> English</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> English (PDF)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/es_ES/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Español</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/es_ES/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Español (PDF)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/fr/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Français</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/fr/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Français (PDF)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/it/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Italiano</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/pt_BR/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Português (Brasil)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/pt_BR/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Português (Brasil) (PDF)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/pt_PT/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Português (Portugal)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/pt_PT/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Português (Portugal) (PDF)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/sk/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> Slovenský</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/ar/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> عربى</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/bn_BD/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> বাঙালি</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/kr/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> 한국어</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/zh_CN/github-git-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> 中文</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/ja/github-git-cheat-sheet"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> 日本語</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/ja/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> 日本語 (PDF)</a></li>
+    </ul>
   </div>
-</div>
 
-<div class="container">
-
-  <section class="page-section">
-    <div class="container resources">
-      <div class="row">
-        <div class="cheat-sheet">
-          {% include icon-sm-git.svg %}
-          <h3 class="display-heading-3">Using Git</h3>
-          <ul>
-            <li><a href="{{ site.baseurl }}/downloads/id/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download German"></span> Bahasa Indonesia</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/de/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download German"></span> Deutsch</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download English"></span> English</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download English"></span> English (PDF)</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/es_ES/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download Spanish"></span> Español</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/es_ES/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download Spanish"></span> Español (PDF)</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/fr/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download French"></span> Français</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/fr/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download French"></span> Français (PDF)</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/it/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download Italian"></span> Italiano</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/pt_BR/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download Portuguese Brazil"></span> Português (Brasil)</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/pt_BR/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download Portuguese Brazil"></span> Português (Brasil) (PDF)</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/pt_PT/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download Portuguese Portugal"></span> Português (Portugal)</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/pt_PT/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download Portuguese Portugal"></span> Português (Portugal) (PDF)</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/sk/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download Slovak"></span> Slovenský</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/ar/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download Arabic"></span> عربى</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/bn_BD/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download Bengali"></span> বাঙালি</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/kr/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download Korean"></span> 한국어</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/zh_CN/github-git-cheat-sheet/"><span class="octicon octicon-cloud-download Chinese"></span> 中文</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/ja/github-git-cheat-sheet"><span class="octicon octicon-cloud-download Japanese"></span> 日本語</a></li>
-            <li><a href="{{ site.baseurl }}/downloads/ja/github-git-cheat-sheet.pdf"><span class="octicon octicon-cloud-download Japanese"></span> 日本語 (PDF)</a></li>
-
-
-          </ul>
-        </div>
-        <div class="cheat-sheet">
-          {% include icon-sm-migration.svg %}
-          <h3 class="display-heading-3">SVN migration</h3>
-          <ul>
-            <li><a href="{{ site.baseurl }}/downloads/subversion-migration/"><span class="octicon octicon-cloud-download"></span> English</a></li>
-          </ul>
-          <h3 class="display-heading-3">Submodules vs. Subtrees</h3>
-          <ul>
-            <li><a href="{{ site.baseurl }}/downloads/submodule-vs-subtree-cheat-sheet/"><span class="octicon octicon-cloud-download"></span> English</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <div class="col-12 col-md-6">
+      <div style="width: 128px;">{% include icon-sm-migration.svg %}</div>
+    <h3 class="mt-2">SVN migration</h3>
+    <ul class="list-style-none">
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/subversion-migration/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> English</a></li>
+    </ul>
+    <h3 class="mt-2">Submodules vs. Subtrees</h3>
+    <ul class="list-style-none">
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/submodule-vs-subtree-cheat-sheet/"><span class="d-flex mr-2">{% include octicons/cloud-download.svg %}</span> English</a></li>
+    </ul>
+  </div>
 </div>

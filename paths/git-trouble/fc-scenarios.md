@@ -10,11 +10,11 @@ sidebar:
   nav: "advanced"
 main-content: |  
 
-  Unlike our other [courses](https://services.github.com{{site.baseurl}}/), this course doesn't follow a linear path and you can jump into any of the different scenarios provided. So `git` ready to learn about how to get out of trouble with a healthy dose of terrible `git` puns.
+  Unlike our other [courses](../), this course doesn't follow a linear path and you can jump into any of the different scenarios provided. So `git` ready to learn about how to get out of trouble with a healthy dose of terrible `git` puns.
 
   ## [Too Many (small) Git Commits!](../git-trouble/too-many-commits)
 
-  While you were making changes you might have created a bunch of tiny commits, but when it comes time to actually push your changes back to your `remote`, you want to prevent your commit history from being inundated with the 30 commits you just made. This scenario guides you through creating a more concise history.   
+  While you were making changes, you might have created a bunch of tiny commits, but when it is time to push your changes back to your `remote`, you want to prevent your commit history from being inundated with the 30 commits you just made. This scenario guides you through creating a more concise history.
 
   ## [Git Commit Message Sucks](../git-trouble/git-commit-message)
 
@@ -30,11 +30,11 @@ main-content: |
 
   ## [Just Make it Go Away! - Breaking Things With Git](../git-trouble/breaking-things-with-git)
 
-  That innovative fix was **supposed** to fix everything! Instead your project is a garbage fire and you just want everything to go back to how it was. Have no fear, we can make that happen.  
+  That innovative fix was **supposed** to fix everything! Instead, your project is a garbage fire, and you just want everything to go back to how it was. Have no fear; we can make that happen and `git` you back on track.
 
   ## We Love Feedback :heart:
 
-    Please take _literally less than a minute_ to let us know what you think of this course. You may also choose to opt-in for updates on future classes. [Start Survey](http://www.surveygizmo.com/s3/3288550/git-reset)!
+  Did you find this course helpful? [Let us know](http://www.surveygizmo.com/s3/3288550/git-reset)! Did it lose you somewhere? [Tell us about it](http://www.surveygizmo.com/s3/3288550/git-reset)! You may also like to opt-in for updates on future classes.
 
 show-me-how:
 tell-me-why:

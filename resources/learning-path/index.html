@@ -1,47 +1,46 @@
 ---
+ref: learning-path
+lang: en
 layout: default
 subpage: learning-path
+title: Learning Path
+description: Learning Git and GitHub can seem daunting but with this helpful list of training resources, you will be a Git-guru in no time.
 redirect_from: /on-demand/path/
+breadcrumbColor: "bg-gray-light"
+breadcrumbSize: "lg"
+permalink: /resources/learning-path/
 ---
-
 {% capture thead %}
 <thead>
   <tr>
-    <th scope="col">Format</th>
-    <th scope="col">Title</th>
-    <th scope="col">Time</th>
+    <th class="text-bold" scope="col">Format</th>
+    <th class="text-bold" scope="col">Title</th>
+    <th class="text-bold" scope="col">Time</th>
   </tr>
 </thead>
 {% endcapture %}
 
-<div class="minitron" style="margin-top: 32px;">
+{% include light-hero.html %}
+{% include breadcrumbs.html %}
 
-  <div class="container">
-    <h1 class="display-alpha m-y-0">Learning Path</h1>
-    <p class="display-beta text-muted m-t-sm">Learning Git and GitHub can seem daunting but with this helpful list of training resources, you will be a Git-guru in no time.</p>
-  </div>
-
-</div>
-
-<div class="container selfstudy">
-
-  <h2><a id="Just_Getting_Started_4"></a>Just Getting Started</h2>
+<div class="container-lg p-responsive mt-6">
+  <h2>Just Getting Started</h2>
   <table class="data-table" role="presentation" summary="Resources: Just getting started">
     {{ thead }}
     <tbody>
       <tr>
         <td>Exercise</td>
-        <td><a href="https://services.github.com{{site.baseurl}}/intro-to-github/">On Demand: Introduction to GitHub</a></td>
+        <td><a href="{{ site.baseurl }}/intro-to-github/">On Demand: Introduction to GitHub</a></td>
         <td>30 minutes</td>
       </tr>
       <tr>
         <td>Exercise</td>
-        <td><a href="https://services.github.com{{site.baseurl}}/github-desktop/">On Demand: GitHub Pages from Desktop</a></td>
+        <td><a href="{{ site.baseurl }}/github-desktop/">On Demand: GitHub Pages from Desktop</a></td>
         <td>30 minutes</td>
       </tr>
       <tr>
         <td>Exercise</td>
-        <td><a href="https://services.github.com{{site.baseurl}}/windows/">On Demand: GitHub for Windows</a></td>
+        <td><a href="{{ site.baseurl }}/windows/">On Demand: GitHub for Windows</a></td>
         <td>30 minutes</td>
       </tr>
       <tr>
@@ -57,13 +56,13 @@ redirect_from: /on-demand/path/
     </tbody>
   </table>
 
-  <h2><a id="Ready_for_Next_Steps_14"></a>Ready for Next Steps</h2>
+  <h2 class="mt-4">Ready for Next Steps</h2>
   <table class="data-table" role="presentation" summary="Resources: Ready for Next Steps">
     {{ thead }}
     <tbody>
       <tr>
         <td>Exercise</td>
-        <td><a href="https://services.github.com{{site.baseurl}}/github-cli/">On Demand: GitHub Pages from the Command Line</a></td>
+        <td><a href="{{ site.baseurl }}/github-cli/">On Demand: GitHub Pages from the Command Line</a></td>
         <td>30 minutes</td>
       </tr>
       <tr>
@@ -109,7 +108,7 @@ redirect_from: /on-demand/path/
     </tbody>
   </table>
 
-  <h2><a id="Setting_Your_Team_Up_for_Success_27"></a>Setting Your Team Up for Success</h2>
+  <h2 class="mt-4">Setting Your Team Up for Success</h2>
   <table class="data-table" role="presentation" summary="Resources: Setting Your Team Up for Success">
     {{ thead }}
     <tbody>
@@ -131,7 +130,7 @@ redirect_from: /on-demand/path/
     </tbody>
   </table>
 
-  <h2><a id="Already_Comfortable_Ready_for_the_Harder_Stuff_35"></a>Already Comfortable, Ready for the Hard(er) Stuff</h2>
+  <h2 class="mt-4">Already Comfortable, Ready for the Hard(er) Stuff</h2>
   <table class="data-table" role="presentation" summary="Resources: Already Comfortable, Ready for the Hard(er) Stuff">
     {{ thead }}
     <tbody>
@@ -142,7 +141,7 @@ redirect_from: /on-demand/path/
       </tr>
       <tr>
         <td>Exercise</td>
-        <td><a href="https://services.github.com{{site.baseurl}}/git-trouble/">On Demand: Git Out of Trouble</a></td>
+        <td><a href="{{ site.baseurl }}/git-trouble/">On Demand: Git Out of Trouble</a></td>
         <td>30 minutes</td>
       </tr>
       <tr>
@@ -162,7 +161,7 @@ redirect_from: /on-demand/path/
       </tr>
       <tr>
         <td>Exercise</td>
-        <td><a href="https://services.github.com{{site.baseurl}}/graphql/">On Demand: Introduction to GraphQL</a></td>
+        <td><a href="{{ site.baseurl }}/graphql/">On Demand: Introduction to GraphQL</a></td>
         <td>30 minutes</td>
       </tr>
       <tr>

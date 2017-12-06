@@ -1,5 +1,8 @@
 ---
+lang: en
+ref: gh-desktop-12
 layout: simple-class
+help: https://github.com/githubschool/on-demand-github-pages/issues/new?title=I%20need%20help&body=Describe%20what%20you%20need%20help%20with%20here.&labels=Help%20Wanted
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -9,10 +12,18 @@ next-page: /github-desktop/add-github-pages-site-showcase
 facilitator: false
 sidebar:
   nav: "github-desktop-nav"
-main-content:
-  includes:
-    - activity/github-desktop/08-sync-desktop.md
-show-me-how: "images/gifs/github-desktop/sync-changes.gif"
+main-content: |
+
+  After you merge your Pull Request, you will need to update your local copy of the repository.
+
+  ![gif of following the directions below](../images/gifs/github-desktop/sync-changes.gif)
+
+  1. Navigate back to GitHub Desktop.
+  1. Select the `master` branch at the top of the app.
+  1. Click the button that displays **Fetch Origin** to get an updated status for the remote repository.
+  1. Then click **Pull Origin** to retrieve the changes to your local repository.
+
+show-me-how:
 tell-me-why: |
   ## Keeping your local repository in sync
 

@@ -1,3 +1,5 @@
+---
+---
 function initialize() {
   $.getJSON(
     'https://githubschool.github.io/open-enrollment-classes-introduction-to-github/createMap.topojson',
@@ -61,7 +63,7 @@ function initialize() {
         });
 
       new MarkerClusterer(map, markers, {
-        imagePath: '../images/cluster/m',
+        imagePath: '{{site.baseurl}}/images/cluster/m',
         averageCenter: true,
         minimumClusterSize: 42
       });
