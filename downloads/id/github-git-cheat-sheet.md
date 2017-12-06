@@ -23,8 +23,8 @@ Distribusi Git untuk Linux dan sistem POSIX tersedia di situs resmi Git SCM.
 ### Git untuk Semua Sistem
 [git-scm.com](https://git-scm.com)
 
-## Konfigurasi Alat
-Konfigurasi informasi pengguna untuk semua repositori lokal
+## Konfigurasikan Alat
+Konfigurasikan informasi pengguna untuk semua repositori lokal
 
 ```$ git config --global user.name "[nama]"```
 
@@ -35,7 +35,7 @@ Mengatur nama yang ingin ditautkan pada transaksi _commit_ Anda
 Mengatur alamat surel yang ingin ditautkan pada transaksi _commit_ Anda
 
 ## Membuat Repositori
-Mulai repositori baru atau dapatkan satu dari URL yang sudah ada
+Mulai repositori baru atau ambil dari URL yang sudah ada
 
 ```$ git init [nama-proyek]```
 
@@ -58,7 +58,7 @@ Tinjau suntingan dan buat sebuah transaksi _commit_
 
 ```$ git status```
 
-Daftar semua berkas baru atau modifikasi yang siap didaftarkan dalam _commit_
+Menampilkan semua berkas baru atau modifikasi yang siap didaftarkan dalam _commit_
 
 ```$ git diff```
 
@@ -82,7 +82,7 @@ Batal merevisi berkas, namun tetap mempertahankan isinya
 Daftarkan perubahan berkas secara permanen di riwayat revisi
 
 ## Perubahan Berkelompok
-Menyebutkan serangkaian _commit_ dan menggabungkan upaya yang telah selesai
+Menyebutkan dan menggabungkan serangkain _commit_ yang telah selesai
 
 ```$ git branch```
 
@@ -112,7 +112,7 @@ Hapus cabang tertentu
 
 {% capture colThree %}
 ## Pergantian Nama Berkas
-Relokasi dan menghapus berkas terevisi
+Merelokasi dan menghapus berkas terevisi
 
 ```$ git rm [berkas]```
 
@@ -139,7 +139,7 @@ Sebuah berkas teks bernama `.gitignore` mengabaikan revisi berkas yang tidak dis
 
 ```$ git ls-files --others --ignored --exclude-standard```
 
-Daftar semua berkas yang diabaikan dalam proyek tersebut
+Menampilkan semua berkas yang diabaikan dalam proyek tersebut
 
 ## Menyimpan Fragmen
 Menyimpan dan mengembalikan perubahan yang belum lengkap
