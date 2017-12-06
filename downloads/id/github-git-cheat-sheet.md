@@ -23,8 +23,13 @@ Distribusi Git untuk Linux dan sistem POSIX tersedia di situs resmi Git SCM.
 ### Git untuk Semua Sistem
 [git-scm.com](https://git-scm.com)
 
+<<<<<<< HEAD
 ## Konfigurasikan Alat
 Konfigurasikan informasi pengguna untuk semua repositori lokal
+=======
+## Konfigurasi Alat
+Konfigurasi informasi pengguna untuk semua repositori lokal
+>>>>>>> 650865b3126909e88e5c603dc4e08e8290330e34
 
 ```$ git config --global user.name "[nama]"```
 
@@ -35,7 +40,11 @@ Mengatur nama yang ingin ditautkan pada transaksi _commit_ Anda
 Mengatur alamat surel yang ingin ditautkan pada transaksi _commit_ Anda
 
 ## Membuat Repositori
+<<<<<<< HEAD
 Mulai repositori baru atau ambil dari URL yang sudah ada
+=======
+Mulai repositori baru atau dapatkan satu dari URL yang sudah ada
+>>>>>>> 650865b3126909e88e5c603dc4e08e8290330e34
 
 ```$ git init [nama-proyek]```
 
@@ -58,7 +67,11 @@ Tinjau suntingan dan buat sebuah transaksi _commit_
 
 ```$ git status```
 
+<<<<<<< HEAD
 Menampilkan semua berkas baru atau modifikasi yang siap didaftarkan dalam _commit_
+=======
+Daftar semua berkas baru atau modifikasi yang siap didaftarkan dalam _commit_
+>>>>>>> 650865b3126909e88e5c603dc4e08e8290330e34
 
 ```$ git diff```
 
@@ -82,7 +95,11 @@ Batal merevisi berkas, namun tetap mempertahankan isinya
 Daftarkan perubahan berkas secara permanen di riwayat revisi
 
 ## Perubahan Berkelompok
+<<<<<<< HEAD
 Menyebutkan dan menggabungkan serangkain _commit_ yang telah selesai
+=======
+Menyebutkan serangkaian _commit_ dan menggabungkan upaya yang telah selesai
+>>>>>>> 650865b3126909e88e5c603dc4e08e8290330e34
 
 ```$ git branch```
 
@@ -139,7 +156,11 @@ Sebuah berkas teks bernama `.gitignore` mengabaikan revisi berkas yang tidak dis
 
 ```$ git ls-files --others --ignored --exclude-standard```
 
+<<<<<<< HEAD
 Menampilkan semua berkas yang diabaikan dalam proyek tersebut
+=======
+Daftar semua berkas yang diabaikan dalam proyek tersebut
+>>>>>>> 650865b3126909e88e5c603dc4e08e8290330e34
 
 ## Menyimpan Fragmen
 Menyimpan dan mengembalikan perubahan yang belum lengkap
