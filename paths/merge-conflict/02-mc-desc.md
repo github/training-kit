@@ -17,7 +17,7 @@ main-content: |
   Favorite Sports Team: Golden State Warriors
   ```
 
-  Now, let's imagine that Matt and Briana decide to change the default `Favorite Animal` in the template. So they might have something that looks like this:
+  Now, let's imagine that Matt and Briana decide to change the default `Favorite Sports Team` in the template. So they might have something that looks like this:
 
   **Matt**
   ```
