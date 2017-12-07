@@ -324,7 +324,7 @@ merge-conflicts:
     url: /merge-conflicts/first-conflict/
   - title: "Skatetocat's Simple Conflict"
     url: /merge-conflicts/example-01/
-  - title: "Shoptocat and Supportcat Help"
+  - title: "Shoptocat and Supportocat Help"
     url: /merge-conflicts/example-02/
   - title: "Momtocat and Poptocat Lend a Hand"
     url: /merge-conflicts/example-03/
