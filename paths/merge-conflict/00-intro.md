@@ -19,6 +19,6 @@ main-content: |
 
   It's a good idea to complete a few other courses first, specifically the [Introduction to GitHub](../intro-to-github/), and either [GitHub Pages from GitHub Desktop](../github-desktop/) or [GitHub Pages from the Command Line](../github-cli/).
 
-  If you have any questions while taking the course, make sure to create an Issue in the primary [class repository](https://github.com/githubschool/on-demand-merge-conflict/issues).
+  If you have any questions while taking the course, make sure to create an Issue in the primary [class repository](https://github.com/githubtraining/on-demand-merge-conflict/issues).
 
 ---
