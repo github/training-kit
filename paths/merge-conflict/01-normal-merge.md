@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: A Normal Merge
 permalink: /merge-conflicts/normal-merge/
-next-page: /merge-conflicts/first-conflict/
+next-page: /merge-conflicts/mc-description/
 sidebar:
   nav: "merge-conflicts"
 main-content: |

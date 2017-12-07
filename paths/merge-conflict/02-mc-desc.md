@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Merge Conflict Description
 permalink: /merge-conflicts/mc-description/
-next-page: /merge-conflicts/example-01/
+next-page: /merge-conflicts/first-conflict/
 sidebar:
   nav: "merge-conflicts"
 main-content: |

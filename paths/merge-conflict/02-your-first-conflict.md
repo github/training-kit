@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Your First Conflict
 permalink: /merge-conflicts/first-conflict/
-next-page: /merge-conflicts/mc-description/
+next-page: /merge-conflicts/example-01/
 sidebar:
   nav: "merge-conflicts"
 main-content: |
