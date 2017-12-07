@@ -11,7 +11,7 @@ sidebar:
 main-content: |
   You're here to learn about conflicts! So let's get conflicted.
 
-  ADD GIF HERE
+  [![walkthrough of a merge conflict](../../images/gifs/merge-conflict/first-example.gif)](../../images/gifs/merge-conflict/first-example.gif)
 
   1. Check out to the `master` branch.
   1. In `_config.yml`, change lines 2-3 again to update your resume's title, and description. Ensure your changes are different from those in step 2 from the previous page of instructions.
