@@ -17,6 +17,8 @@ main-content: |
 
   Let's see a normal merge, and how it differs from a merge conflict.
 
+  [![creating a pull request](../../images/gifs/merge-conflict/normal-merge.gif)](../../images/gifs/merge-conflict/normal-merge.gif)
+
   1. In your repository, create a new branch named `my-title`
   1. In `_config.yml`, change lines 2-3 to give your resume a title, and a description.
   1. Commit your changes.
