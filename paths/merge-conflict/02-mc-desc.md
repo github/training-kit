@@ -5,7 +5,7 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: Merge Conflict Description
 permalink: /merge-conflicts/mc-description/
-next-page: /merge-conflicts/example-01/
+next-page: /merge-conflicts/first-conflict/
 sidebar:
   nav: "merge-conflicts"
 main-content: |
@@ -14,26 +14,27 @@ main-content: |
   ```
   Name: First Last
   Location: I Live Here
-  Favorite Animal: Octocat
+  Favorite Sports Team: Golden State Warriors
   ```
 
-  Now, let's imagine that Linda and Louise Belcher decide to change the default `Favorite Animal` in the template. So they might have something that looks like this:
+  Now, let's imagine that Matt and Briana decide to change the default `Favorite Sports Team` in the template. So they might have something that looks like this:
 
-  **Louise**
+  **Matt**
   ```
-  Favorite Animal: Kuchi Kopi
-  ```
-
-  **Linda**
-  ```
-  Favorite Animal: Akkorokamui
+  Favorite Sports Team: San Francisco Giants
   ```
 
-  When **Louise** merges her changes into the deployment branch, she won't encounter a merge conflict.
+  ![octocat dressed as a San Francisco Giants](https://octodex.github.com/images/wilson.jpg)
 
-  ![louise laughing over fire](https://media.giphy.com/media/dfIQG68floQuY/giphy.gif)
+  **Briana**
+  ```
+  Favorite Sports Team: San Francisco 49ers
+  ```
 
-  However, when **Linda** tries to merge her changes into the deployment branch, she is going to encounter a merge conflict.
+  ![octocat dressed as a San Francisco 49er](https://octodex.github.com/images/goretocat.png)
 
-  ![linda screaming](https://media.giphy.com/media/l0IyoieFSfr2Xcbza/giphy.gif)
+  When **Matt** merges his changes into the deployment branch, he won't encounter a merge conflict.
+
+  However, when **Briana** tries to merge her changes into the deployment branch, she is going to encounter a merge conflict.
+
 ---

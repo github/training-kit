@@ -5,15 +5,19 @@ header:
   overlay_filter: rgba(46, 129, 200, 0.6)
 title: A Normal Merge
 permalink: /merge-conflicts/normal-merge/
-next-page: /merge-conflicts/first-conflict/
+next-page: /merge-conflicts/mc-description/
 sidebar:
   nav: "merge-conflicts"
 main-content: |
-  Before we delve into the world of merge conflicts, we should discuss what a merge is normally doing. Let's say you take some commits from `new-feature` branch and merge them into `master`. Simply, you're applying the commits that you made on the `new-feature` branch to the `master` branch.
+  Before we delve into the world of merge conflicts, we should discuss what a merge is normally doing. Let's say you take some commits from the `new-feature` branch and merge them into `master`. The merge process applies the commits that you made on the `new-feature` branch to the `master` branch.
+
+  ![example of new-feature merging into master](../../images/master-new-feature-merge.png)
 
   It's common to merge a lot of branches with no problems before you encounter your first merge conflict. That's because Git is really smart when it comes merging. However, sometimes you and another collaborator both have an idea for a change to the same code, and Git needs you to examine the conflicting changes before it can successfully implement the changes.
 
   Let's see a normal merge, and how it differs from a merge conflict.
+
+  [![creating a pull request](../../images/gifs/merge-conflict/normal-merge.gif)](../../images/gifs/merge-conflict/normal-merge.gif)
 
   1. In your repository, create a new branch named `my-title`
   1. In `_config.yml`, change lines 2-3 to give your resume a title, and a description.

@@ -322,11 +322,11 @@ merge-conflicts:
     url: /merge-conflicts/mc-description/
   - title: "Your First Conflict"
     url: /merge-conflicts/first-conflict/
-  - title: "Bob's Simple Conflict"
+  - title: "Skatetocat's Simple Conflict"
     url: /merge-conflicts/example-01/
-  - title: "Teddy, Mort, and Jimmy Help"
+  - title: "Shoptocat and Supportcat Help"
     url: /merge-conflicts/example-02/
-  - title: "Gene and Louise Lend a Hand"
+  - title: "Momtocat and Poptocat Lend a Hand"
     url: /merge-conflicts/example-03/
   - title: "What Next?"
     url: /merge-conflicts/what-next/
