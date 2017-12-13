@@ -94,6 +94,9 @@ $(function(){
 
         updateSlideSize();
       }
+     //add error from ajax call
+      error: function (xhr) {
+    }
     });
   }
 
@@ -226,7 +229,6 @@ $(function(){
     var duration = $('#minutes').val()
     timer.startCountdown(duration)
   })
-
 
   // Table of Contents header parsing and builder
   function buildToc(){
