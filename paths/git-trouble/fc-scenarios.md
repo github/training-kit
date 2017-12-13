@@ -34,7 +34,7 @@ main-content: |
 
   ## We Love Feedback :heart:
 
-  Did you find this course helpful? [Let us know](http://www.surveygizmo.com/s3/3288550/git-reset)! Did it lose you somewhere? [Tell us about it](http://www.surveygizmo.com/s3/3288550/git-reset)! You may also like to opt-in for updates on future classes.
+  Did you find this course helpful? [Let us know](https://www.surveygizmo.com/s3/3288550/git-reset)! Did it lose you somewhere? [Tell us about it](http://www.surveygizmo.com/s3/3288550/git-reset)! You may also like to opt-in for updates on future classes.
 
 show-me-how:
 tell-me-why:
