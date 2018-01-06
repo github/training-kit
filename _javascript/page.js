@@ -5,6 +5,8 @@ $(function() {
 
     } else {
       $("#floating-nav").fadeOut("fast");
+      // comment
+      // comment 2
     }
   });
 });

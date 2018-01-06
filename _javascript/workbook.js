@@ -15,7 +15,7 @@
 
   function switchScope(event, id){
     var activeId;
-
+    // active id variable
     if(event){
       activeId = event.target.id;
     }
