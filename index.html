@@ -1,51 +1,44 @@
 ---
-ref: index
-lang: en
-permalink: /
-layout: timeline
-title: On Demand Training
-excerpt: "You're in control. We're with you along the way."
-timeline:
-  showWelcome: true
-courses:
-  - title: "GitHub 101: Introduction to GitHub"
-    description: If you are looking for a quick and fun introduction to GitHub, you’ve found it. This class will get you started using GitHub in less than an hour.
-    image: images/about/repo.png
-    imageAlt: The 'repo' octocat, cartoon of five octocats inside of a metal box
-    link: /intro-to-github
-  - title: "GitHub 102: GitHub Pages from GitHub Desktop"
-    description: Learn how to **use GitHub Desktop** to copy a repository to your computer, track changes and communicate with GitHub.
-    image: images/about/forktocat.jpg
-    imageAlt: The 'forktocat' octocat, cartoon of two octocats joined at the head
-    link: /github-desktop
-  - title: "GitHub 103: GitHub Pages from the Command Line"
-    description: Learn how to **use the Command Line** to copy a repository to your computer, track changes and communicate with GitHub.
-    image: images/about/collabocats.jpg
-    imageAlt: The 'collabocats', cartoon of octocats pictured on two laptops with symbols showing they're collaborating on code
-    link: /github-cli    
-  - title: GitHub for Windows Users
-    description: Learn how to configure your local git environment to work with GitHub and how to complete GitHub flow using the GitHub Extension for Visual Studio.
-    image: images/red-polo.png
-    imageAlt: The 'red polo' octocat, a cartoon of an octocat wearing a red polo
-    link: /windows
-  - title: Managing Merge Conflicts
-    description: First you had issues, now you have conflicts. Learn how to resolve at least one of them.
-    image: ./images/skatetocat.png
-    imageAlt: The 'skatetocat', a cartoon of an octocat using a skateboard and having fun
-    link: /merge-conflicts      
-  - title: Git Out of Trouble
-    description: Quick guides to git out of sticky situations.
-    image: images/about/inspectocat.jpg
-    imageAlt: The 'inspectocat', a cartoon of an octocat wearing a trenchcoat and holding a magnifying glass
-    link: /git-trouble
-  - title: Introduction to GraphQL
-    description: Learn how to create seamless integrations by directly accessing and updating GitHub data using GraphQL.
-    image: images/graphql-logo.svg
-    imageAlt: The pink symbol for GraphQL, a triangle inside of a hexagon
-    link: /graphql
-  - title: Electron
-    description: An entire suite of courses that will get you up and running with Electron.
-    image: images/atom.png
-    imageAlt: Electron logo
-    link: /electron
+layout: default
+title: The GitHub Training Kit
+description: A collection of our favorite resources for learning and teaching others aboutGit and the GitHub platform. 
 ---
+{% include light-hero.html %}
+
+<div class="d-flex flex-wrap text-center container-lg mx-auto p-responsive mt-4 gutter-condensed resources">
+  <div class="col-12 col-sm-6 col-md-3 mb-3">
+    <a class="d-block text-blue height-full card hover-card p-4" href="learning-path/">
+      {% include octicons/milestone.svg %}
+      <h4 class="text-blue">Learning Path</h4>
+      <p class="text-gray mb-0">A collection of our favorite courses, videos and tutorials in a sequential, easy-to-follow learning path.</p>
+    </a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 mb-3">
+    <a class="d-block text-purple height-full card hover-card p-4" href="cheatsheets/">
+      {% include octicons/terminal.svg %}
+      <h4 class="text-blue">Cheat Sheets</h4>
+      <p class="text-gray mb-0">Helpful quick reference guides for anyone who uses Git and GitHub.</p>
+    </a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 mb-3">
+    <a class="d-block text-orange height-full card hover-card p-4" href="on-demand/">
+      {% include octicons/repo.svg %}
+      <h4 class="text-blue">On Demand Training</h4>
+      <p class="text-gray mb-0">A set of tutorials for learners to follow while working on actual repositories.</p>
+    </a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 mb-3">
+    <a class="d-block text-red height-full card hover-card p-4" href="videos/">
+      {% include octicons/device-camera-video.svg %}
+      <h4 class="text-blue">Videos</h4>
+      <p class="text-gray mb-0">Our favorite videos on Git, GitHub and other tools for your toolkit.</p>
+    </a>
+  </div>
+  <div class="col-12 col-sm-6 col-md-3 mb-3">
+    <a class="d-block text-green height-full card hover-card p-4" href="books/">
+      {% include octicons/book.svg %}
+      <h4 class="text-blue">Books</h4>
+      <p class="text-gray mb-0">If you prefer the printed word, we think these books are some of the best on Git and GitHub.</p>
+    </a>
+  </div>
+</div>

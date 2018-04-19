@@ -1,15 +1,13 @@
 banner:
   en:
-    title: On Demand Training
+    title: Training Kit
     url: /
-  es:
-    title: Aprende a tu ritmo
-    url: /es/
+  # es:
+  #   title: Kit de Entrenamiento
+  #   url: /es/
 
 main:
   en:
-    - title: Resources
-      url: /resources/
     - title: Learning Path
       url: /resources/learning-path/
     - title: Upcoming Events
@@ -18,8 +16,6 @@ main:
       abs: https://services.github.com/customized-training
 
   es:
-    - title: Resources
-      url: /resources/
     - title: Itinerario de aprendizaje
       url: /resources/learning-path/es/
     - title: Upcoming Events
