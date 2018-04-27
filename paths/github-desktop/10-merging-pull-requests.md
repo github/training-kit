@@ -1,5 +1,8 @@
 ---
+lang: en
+ref: gh-desktop-10
 layout: simple-class
+help: https://github.com/githubschool/on-demand-github-pages/issues/new?title=I%20need%20help&body=Describe%20what%20you%20need%20help%20with%20here.&labels=Help%20Wanted
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -12,7 +15,7 @@ sidebar:
 main-content:
   includes:
     - activity/github-desktop/07-merge-pull-request.md
-show-me-how: "images/gifs/github-desktop/merge-pr.gif"
+show-me-how:
 tell-me-why: |
   ## Why did we merge without collaborating?
 

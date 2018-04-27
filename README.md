@@ -5,7 +5,7 @@
 # GitHub Training Kit
 ### Home of GitHub's On-Demand training
 
-This repository contains the completely open source on-demand training hosted at https://services.github.com{{site.baseurl}}/. These materials are provided under a [_Creative Commons License_ license](https://github.com/github/training-kit/blob/master/LICENSE).
+This repository contains the completely open source on-demand training hosted at https://services.github.com/on-demand/. These materials are provided under a [_Creative Commons License_ license](https://github.com/github/training-kit/blob/master/LICENSE).
 
 ## We :heart: Contributors Like You!
 
@@ -32,7 +32,7 @@ If you'd like to have a copy of the files to be served from a web server inside 
 Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
 
 > Content based on
-> <a href="https://services.github.com{{site.baseurl}}/">services.github.com{{site.baseurl}}</a>
+> <a href="https://services.github.com/on-demand/">services.github.com/on-demand/</a>
 > used under the
 > <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>
 > license.</a>

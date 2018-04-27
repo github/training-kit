@@ -10,7 +10,7 @@ toc: true
 sidebar:
   nav: "advanced"
 main-content: |  
-  It isn't uncommon to make a mistake while working with Git, but don't fret, everyone does it. Getting out of a mess, can be just as easy as getting into one if you know the tools at your disposal to save your project and prevent public embarrassment. This course outlines the different commands you can use to get out of almost **any** sticky situation.
+  It isn’t uncommon to make a mistake while working with Git, but don’t fret, everyone does it. Getting out of a mess can be just as easy as getting into one, and this course is here to help. It outlines the different commands you can use to get out of almost **any** sticky situation helping you to save your project and prevent embarrassment.
 
   ### Thanks!
   Before we begin, the GitHub Training team would like to thank the following community contributors for their work in creating meaningful content that inspired this course:

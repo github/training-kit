@@ -8,9 +8,9 @@ When you work locally, your files exist in one of four states. They are either u
 
 ![two stage commit: three boxes representing the working directory, staging directory, and committed history directory with new and modified work shown in working directory]({{site.baseurl}}/images/two-stage-commit-b.jpg){: .align-center}
 
-An untracked file is one that is not currently part of the version controlled directory. These are typically new files.
+An *untracked* file is one that is not currently part of the version controlled directory. These are typically new files.
 
-Modified files are ones that git already knows about, they have at least one other version in history.
+*Modified* files are ones that Git already knows about, they have at least one other version in history.
 
 To add these files to version control, you will create a collection of files that represent a discrete unit of work. We build this unit in the staging area.
 

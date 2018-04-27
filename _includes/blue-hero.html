@@ -1,0 +1,25 @@
+<div class="bg-blue-dark text-white py-2 py-md-4">
+  <div class="container-lg p-responsive my-4 text-center">
+    <h1 itemprop="headline" class="alt-h1">
+      {% if paginator %}
+        {{ site.title }}{% unless paginator.page == 1 %} {{ site.data.ui-text[site.locale].page }} {{ paginator.page }}{% endunless %}
+      {% else %}
+        {{ page.title | default: site.title | markdownify | remove: "<p>" | remove: "</p>" }}
+      {% endif %}
+    </h1>
+    {% if page.excerpt %}
+      <p>{{ page.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+    {% endif %}
+    {% if site.read_time and page.read_time %}
+      <p><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    {% endif %}
+    {% if page.header.cta_url %}
+      <p><a href="{{ cta_path }}" class="btn btn-outline">{{ page.header.cta_label | default: site.data.ui-text[site.locale].more_label }}</a></p>
+    {% endif %}
+    {% include translation_buttons.html %}
+  </div>
+  {% if page.header.caption %}
+    <span>{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+  {% endif %}
+
+</div>

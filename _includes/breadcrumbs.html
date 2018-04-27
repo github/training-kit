@@ -12,27 +12,37 @@
   {% assign crumb_path = site.categories.path %}
 {% endif %}
 
-<nav class="bg-blue-light p-responsive py-2 border-bottom">
-  <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="d-flex list-style-none container-lg mx-auto">
+{% if page.breadcrumbColor %}
+  {% assign breadClass = page.breadcrumbColor %}
+{% else %}
+  {% assign breadClass = "bg-blue-light" %}
+{% endif %}
+
+{% if page.breadcrumbSize %}
+  {% assign size = page.breadcrumbSize %}
+{% else %}
+  {% assign size = "md" %}
+{% endif %}
+
+<nav class="{{ breadClass }} py-2 border-bottom" aria-label="Breadcrumb">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="container-{{ size }} p-responsive">
     {% assign crumbs = page.url | split: '/' %}
     {% assign i = 1 %}
     {% for crumb in crumbs offset: 1 %}
       {% if forloop.first %}
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="{{ site.baseurl }}/" itemprop="item"><span itemprop="name">{{ site.data.ui-text[site.locale].breadcrumb_home_label }}</span></a>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item">
+          <a href="{{ site.baseurl }}/" itemprop="item">{{ site.data.ui-text[site.locale].breadcrumb_home_label }}</a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
-        <span class="mx-2 text-gray">{{ site.data.ui-text[site.locale].breadcrumb_separator }}</span>
       {% endif %}
       {% if forloop.last %}
-        <li class="current">{{ page.title }}</li>
+        <li class="breadcrumb-item breadcrumb-item-selected text-gray" aria-current="page">{{ page.title }}</li>
       {% else %}
         {% assign i = i | plus: 1 %}
-        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-          <a href="{{ site.baseurl }}{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item">
+          <a href="{{ site.baseurl }}{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path }}" itemprop="item">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
-        <span class="mx-2 text-gray">{{ site.data.ui-text[site.locale].breadcrumb_separator }}</span>
       {% endif %}
     {% endfor %}
   </ol>

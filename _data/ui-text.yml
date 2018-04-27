@@ -3,6 +3,7 @@
 # English (default)
 # -----------------
 en: &DEFAULT_EN
+  name                  : "English"
   page                  : "Page"
   pagination_previous   : "Previous"
   pagination_next       : "Next"
@@ -27,6 +28,15 @@ en: &DEFAULT_EN
   website_label         : "Website"
   email_label           : "Email"
   recent_posts          : "Recent Posts"
+  didnt-push            : "I didn't push"
+  pushed                : "I pushed"
+  refresh               : "I need a refresher"
+  show-me-how           : "Show me how"
+  troubleshooting       : "Help me troubleshoot"
+  tell-me-why           : "Tell me why"
+  get-help              : "Get Help"
+  stuck                 : "Stuck? Open an issue in the repository for this class and mention <strong>@githubteacher</strong> for help from one of the GitHub trainers!"
+  continue              : "Continue"
 en-US:
   <<: *DEFAULT_EN
 en-UK:
@@ -35,6 +45,7 @@ en-UK:
 # Spanish
 # --------------
 es: &DEFAULT_ES
+  name                  : "Español"
   page                  : "Página"
   pagination_previous   : "Anterior"
   pagination_next       : "Siguiente"
@@ -59,6 +70,15 @@ es: &DEFAULT_ES
   website_label         : "Sitio web"
   email_label           : "Email"
   recent_posts          : "Entradas recientes"
+  didnt-push            : "No hice push"
+  pushed                : "Hice push"
+  refresh               : "Necesito un recordatorio"
+  show-me-how           : "Enséñame cómo"
+  troubleshooting       : "Ayúdame a resolver"
+  tell-me-why           : "Dime por qué"
+  get-help              : "Pide Ayuda"
+  stuck                 : "¿Atascado? Abre un tema (issue) en el repositorio para esta clase y menciona a <strong>@githubteacher</strong> para obtener ayuda de uno de los instructores de GitHub."
+  continue              : "Continuar"
 es-ES:
   <<: *DEFAULT_ES
 es-CO:

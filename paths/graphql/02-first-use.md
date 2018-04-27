@@ -1,5 +1,6 @@
 ---
 layout: simple-class
+help: https://github.com/githubschool/graph-ql/issues/new?title=I%20need%20help&body=Describe%20what%20you%20need%20help%20with%20here.&labels=Help%20Wanted
 header:
   overlay_image: cover.jpeg
   overlay_filter: rgba(46, 129, 200, 0.6)
@@ -55,7 +56,7 @@ main-content: |
 
         In this case, we only asked GraphQL to tell us our login name, but what if we wanted to know more?
 
-        Just below `login`, add a new line with the text `avatarURL`. Now your query should look like this:
+        Just below `login`, add a new line with the text `avatarUrl`. Now your query should look like this:
 
 
             {

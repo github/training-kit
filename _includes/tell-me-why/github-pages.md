@@ -2,12 +2,12 @@
 
 ## Enabling GitHub Pages
 
-Remember that funny repository name you typed when you created your repository? That funny name is special to GitHub Pages. It tells GitHub Pages that you want to publish the content on the `master` branch of this repository as a web page.
+Remember that funny repository name, `YOUR-USERNAME.GITHUB.IO`, you typed when you created your repository? That funny name is special to GitHub Pages. It tells GitHub Pages that you want to publish the content on the `master` branch of this repository as a web page.
 
-Technically speaking, any GitHub repository can be viewed as a website using GitHub Pages. All you need to do is access the repository settings and enable pages.
+Technically speaking, any GitHub repository can be viewed as a website using GitHub Pages. All you need to do is access the repository settings and enable GitHub Pages.
 
 ### Learn More About GitHub Pages
 
-Check out this fun, 4 minute video to learn more about GitHub Pages:
+This fun 4 minute video describes GitHub Pages in more detail:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2MsN8gpT6jY" frameborder="0" allowfullscreen></iframe>
