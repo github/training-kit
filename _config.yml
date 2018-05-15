@@ -34,7 +34,7 @@ comments:
 analytics:
   provider               : google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-80557370-2
+    tracking_id          : UA-3769691-2
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
