@@ -36,7 +36,8 @@ Learn more about SVN2Git at the project’s official home page:
 [https://github.com/nirvdrum/svn2git](https://github.com/nirvdrum/svn2git)
 {% endcapture %}
 
-<div class="col-md-6">
+<div class="d-flex flex-wrap gutter">
+<div class="col-md-6 col-12">
 {{ migration | markdownify }}
 </div>
 
@@ -80,8 +81,9 @@ git svn rebase
 Keep in mind this action rewrites your local Git history and your commit identifiers will be different.
 {% endcapture %}
 
-<div class="col-md-6">
+<div class="col-md-6 col-12">
 {{ bridging | markdownify }}
+</div>
 </div>
 
 
