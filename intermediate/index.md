@@ -91,7 +91,7 @@ $ git config --global user.email
 someaccount@example.com
 ```
 
-If using the GitHub for Windows or GitHub for Mac GUIs, these values are set, system-wide, by each GUI's configuration dialog.
+If using GitHub Desktop, these values are set, system-wide, by the configuration dialog.
 
 To set the same values to apply to *any* of your repositories:
 

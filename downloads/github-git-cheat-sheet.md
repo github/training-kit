@@ -9,11 +9,8 @@ leadingpath: ../../
 ## Install Git
 GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
 
-### GitHub for Windows
-http://windows.github.com
-
-### GitHub for Mac
-http://mac.github.com
+### GitHub Desktop
+https://desktop.github.com/
 
 Git distributions for Linux and POSIX systems are available on the official Git SCM website.
 
