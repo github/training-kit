@@ -64,8 +64,7 @@ Three important concepts of this version control system are:
 #### Installers
 The command line version of Git has a very light footprint. For most platforms, you can simply copy the binaries to a folder that is on the executable search $PATH. Git is primarily written in C, which means there is a unique installer for each operating system.
 
-* **Windows**: [GitHub for Windows installer](http://windows.github.com)
-* **Mac**: [GitHub for Mac installer](http://mac.github.com)
+* **Windows or Mac**: [GitHub Desktop](https://desktop.github.com/)
 * **Linux**: Git's source code and a listing of supported package managers can be found [on the git-scm.com site](http://git-scm.com/download/linux).
 * **Any platform**: [Pro Git Book: Installing Git](http://git-scm.com/book/en/Getting-Started-Installing-Git)
 
@@ -388,7 +387,7 @@ A branch is a divergent path in the history of the code base. It may contain an 
 ### Details
 In many cases, working with a code project means retrieving it to the local disk so that you can leverage your language-specific IDE when making changes. To retrieve a repository to the local disk is to `clone` it, in Git parlance.
 
-Optionally, the process of synchronizing can be done on the command line, in addition to graphical clients like [GitHub for Windows](https://windows.github.com) and [GitHub for Mac](https://mac.github.com):
+Optionally, the process of synchronizing can be done on the command line, in addition to graphical clients like [GitHub Desktop](https://desktop.github.com/):
 
 ```
 # Retrieve GitHub changes

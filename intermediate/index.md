@@ -91,20 +91,20 @@ $ git config --global user.email
 someaccount@example.com
 ```
 
-If using the GitHub for Windows or GitHub for Mac GUIs, these values are set, system-wide, by each GUI's configuration dialog.
+If using GitHub Desktop, these values are set, system-wide, by the configuration dialog.
 
 To set the same values to apply to *any* of your repositories:
 
 ```shell
 $ git config --global user.name "your name"
-$ git config --global user.email "your@email"
+$ git config --global user.email "you@example.com"
 ```
 
 For a configuration specific to just the repository folder you're currently working in:
 
 ```shell
 $ git config user.name "[your full name]"
-$ git config user.email "[youremail@yourdomain.country]"
+$ git config user.email "[yourname@project.example]"
 ```
 
 #### Scopes

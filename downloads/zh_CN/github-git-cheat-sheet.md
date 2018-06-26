@@ -9,11 +9,8 @@ leadingpath: ../../../
 ## 安装Git
 GitHub提供了包含图形界面的桌面客户端，通过客户端可以完成大部分常用的仓库操作，同时可以自动更新Git的命令行版本，以适应新的场景。
 
-### GitHub for Windows
-http://windows.github.com
-
-### GitHub for Mac
-http://mac.github.com
+### GitHub Desktop
+https://desktop.github.com/
 
 GitHub的Linux和POSIX版本可以在官方的Git SCM网站上获取。
 
