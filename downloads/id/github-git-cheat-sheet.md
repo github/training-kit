@@ -1,5 +1,6 @@
 ---
 layout: cheat-sheet
+redirect_to: false
 title: Buku Saku Git GitHub
 byline: Git adalah sistem manajemen revisi terdistribusi bersifat terbuka yang memfasilitasi aktivitas GitHub di laptop atau komputer pribadi Anda. Buku saku ini meringkas baris perintah instruksi-instruksi Git yang biasa digunakan sebagai referensi singkat.
 leadingpath: ../

@@ -1,5 +1,6 @@
 ---
 layout: cheat-sheet
+redirect_to: false
 title: GitHub Git Cheat Sheet
 byline: Git은 여러분의 노트북이나 데스크톱에서 GitHub을 사용할 수 있도록 해주는 오픈 소스 분산 버전 관리 시스템입니다. 해당 Cheat Sheet에서는 사용자가 빠르게 참고할 수 있도록 주로 사용되는 Git의 명령행(command line)을 간단히 요약하였습니다.
 leadingpath: ../../../

@@ -1,5 +1,6 @@
 ---
 layout: cheat-sheet
+redirect_to: false
 title: Handling Dependencies with Submodules and Subtrees
 byline: Submodules and subtrees are git tools that allow subprojects to be included as a subdirectory within a project. The implementation of each is very different.
 leadingpath: ../../
