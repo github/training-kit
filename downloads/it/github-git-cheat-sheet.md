@@ -1,5 +1,6 @@
 ---
 layout: cheat-sheet
+redirect_to: false
 title: GitHub Git - riferimento rapido
 byline: Git è un software di controllo di versione distribuito. Installando Git sul tuo PC è possibile facilitare le operazioni su GitHub. Questo documento è un riferimento rapido per i comandi Git più usati.
 leadingpath: ../../../

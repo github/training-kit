@@ -55,6 +55,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-redirect-from
 
 exclude:
 - bin
@@ -92,3 +93,5 @@ defaults:
       path: ""
     values:
       lang: "en"
+      redirect_to:
+        - https://lab.github.com
