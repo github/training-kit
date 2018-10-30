@@ -93,3 +93,5 @@ defaults:
       path: ""
     values:
       lang: "en"
+      redirect_to:
+        - https://lab.github.com
