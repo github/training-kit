@@ -228,8 +228,9 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer
+  jekyll-redirect-from (~> 0.12.1)
   rack-contrib (~> 1.1.0)
   rake
 
 BUNDLED WITH
-   1.15.4
+   1.16.2

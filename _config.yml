@@ -55,6 +55,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-redirect-from
 
 exclude:
 - bin
