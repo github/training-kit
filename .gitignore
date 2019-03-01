@@ -1,7 +1,7 @@
 _site/
 .DS_Store
 /.rbenv-version
-/vendor/gems/
+/vendor/
 /bin/
 /.bundle/
 .sass-cache/
