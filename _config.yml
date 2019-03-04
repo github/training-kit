@@ -7,11 +7,11 @@ email: services@github.com
 # Site Settings
 locale                   : "en-US"
 # Keep original, do not replace
-title                    : "On Demand Training"
+title                    : "GitHub Cheatsheets"
 title_separator          : "-"
 name                     : "GitHub, Inc."
-description              : "You're in control. We're with you along the way."
-baseurl                  : "/on-demand" # the subpath of your site, e.g. "/blog"
+description              : 
+baseurl                  :  # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
@@ -56,6 +56,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-redirect-from
+  - jekyll-octicons
 
 exclude:
 - bin
