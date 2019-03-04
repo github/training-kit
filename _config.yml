@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : "GitHub, Inc."
 description              : 
 baseurl                  :  # the subpath of your site, e.g. "/blog"
-gh_repo                  :
+gh_repo                  : github/training-kit
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
