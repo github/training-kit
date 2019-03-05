@@ -1,51 +1,60 @@
 ---
-ref: index
-lang: en
+layout: default
+title: Git Cheat Sheets
+description: Reference sheets covering Git commands, features, SVN migrations, and bash. Available in a multiple languages.
 permalink: /
-layout: timeline
-title: On Demand Training
-excerpt: "You're in control. We're with you along the way."
-timeline:
-  showWelcome: true
-courses:
-  - title: "GitHub 101: Introduction to GitHub"
-    description: If you are looking for a quick and fun introduction to GitHub, you’ve found it. This class will get you started using GitHub in less than an hour.
-    image: images/about/repo.png
-    imageAlt: The 'repo' octocat, cartoon of five octocats inside of a metal box
-    link: /intro-to-github
-  - title: "GitHub 102: GitHub Pages from GitHub Desktop"
-    description: Learn how to **use GitHub Desktop** to copy a repository to your computer, track changes and communicate with GitHub.
-    image: images/about/forktocat.jpg
-    imageAlt: The 'forktocat' octocat, cartoon of two octocats joined at the head
-    link: /github-desktop
-  - title: "GitHub 103: GitHub Pages from the Command Line"
-    description: Learn how to **use the Command Line** to copy a repository to your computer, track changes and communicate with GitHub.
-    image: images/about/collabocats.jpg
-    imageAlt: The 'collabocats', cartoon of octocats pictured on two laptops with symbols showing they're collaborating on code
-    link: /github-cli    
-  - title: GitHub for Windows Users
-    description: Learn how to configure your local git environment to work with GitHub and how to complete GitHub flow using the GitHub Extension for Visual Studio.
-    image: images/red-polo.png
-    imageAlt: The 'red polo' octocat, a cartoon of an octocat wearing a red polo
-    link: /windows
-  - title: Managing Merge Conflicts
-    description: First you had issues, now you have conflicts. Learn how to resolve at least one of them.
-    image: ./images/skatetocat.png
-    imageAlt: The 'skatetocat', a cartoon of an octocat using a skateboard and having fun
-    link: /merge-conflicts      
-  - title: Git Out of Trouble
-    description: Quick guides to git out of sticky situations.
-    image: images/about/inspectocat.jpg
-    imageAlt: The 'inspectocat', a cartoon of an octocat wearing a trenchcoat and holding a magnifying glass
-    link: /git-trouble
-  - title: Introduction to GraphQL
-    description: Learn how to create seamless integrations by directly accessing and updating GitHub data using GraphQL.
-    image: images/graphql-logo.svg
-    imageAlt: The pink symbol for GraphQL, a triangle inside of a hexagon
-    link: /graphql
-  - title: Electron
-    description: An entire suite of courses that will get you up and running with Electron.
-    image: images/atom.png
-    imageAlt: Electron logo
-    link: /electron
+redirect_from:
+  - /kit/downloads/git-github-cheat-sheet.pdf/
+  - /kit/downloads/subversion-migration.pdf/
+breadcrumbColor: "bg-gray-light"
+redirect_to: false
 ---
+<div class="border-bottom border-top py-6 bg-gray-light text-center">
+  <div class="container-lg py-6 p-responsive">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="col-12 col-md-6 mx-auto">{{ page.description }}</p>{% endif %}
+    {% include translation_buttons.html %}
+  </div>
+</div>
+
+<div class="container-md mx-auto d-flex flex-wrap p-responsive gutter mt-6">
+  <div class="col-12 col-md-6 mb-4 mb-md-0">
+    <div style="width: 128px;">{% include icon-sm-git.svg %}</div>
+    <h3 class="mt-2">Using Git</h3>
+    <ul class="list-style-none">
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/id/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Bahasa Indonesia</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/de/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Deutsch</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> English</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% octicon cloud-download %}</span> English (PDF)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/es_ES/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Español</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/es_ES/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Español (PDF)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/fr/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Français</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/fr/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Français (PDF)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/it/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Italiano</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/pt_BR/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Português (Brasil)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/pt_BR/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Português (Brasil) (PDF)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/pt_PT/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Português (Portugal)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/pt_PT/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Português (Portugal) (PDF)</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/ru/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Russian</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/sk/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> Slovenský</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/ar/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> عربى</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/bn_BD/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> বাঙালি</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/kr/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> 한국어</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/zh_CN/github-git-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> 中文</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/ja/github-git-cheat-sheet"><span class="d-flex mr-2">{% octicon cloud-download %}</span> 日本語</a></li>
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/ja/github-git-cheat-sheet.pdf"><span class="d-flex mr-2">{% octicon cloud-download %}</span> 日本語 (PDF)</a></li>
+    </ul>
+  </div>
+
+  <div class="col-12 col-md-6">
+      <div style="width: 128px;">{% include icon-sm-migration.svg %}</div>
+    <h3 class="mt-2">SVN migration</h3>
+    <ul class="list-style-none">
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/subversion-migration/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> English</a></li>
+    </ul>
+    <h3 class="mt-2">Submodules vs. Subtrees</h3>
+    <ul class="list-style-none">
+      <li><a class="d-flex flex-items-center" href="{{ site.baseurl }}/downloads/submodule-vs-subtree-cheat-sheet/"><span class="d-flex mr-2">{% octicon cloud-download %}</span> English</a></li>
+    </ul>
+  </div>
+</div>

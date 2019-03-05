@@ -7,13 +7,13 @@
 
 <div class="bg-blue-darker py-3 f5 flex-none text-white">
   <header class="container-lg p-responsive site-header js-site-header d-block clearfix">
-    <a class="no-underline text-inherit text-bold d-flex flex-items-center lh-condensed-ultra float-left" href="{{ site.baseurl }}{{site.data.navigation['banner'][lang].url}}">
-      <div class="mr-3">{% include octicons/mark-github.svg %}</div>
+    <a class="no-underline text-inherit text-bold d-flex flex-items-center lh-condensed-ultra float-left" href="{{ site.baseurl }}/{{site.data.navigation['banner'][lang].url}}">
+      <div class="mr-3">{% octicon mark-github %}</div>
       {{ site.data.navigation["banner"][lang].title }}
     </a>
 
     <button class="btn-link float-right site-header-toggle js-site-header-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
-      {% include octicons/three-bars.svg %}
+      {% octicon three-bars %}
     </button>
 
     <nav class="site-header-menu float-none float-md-right py-1 mt-4 mt-md-0">
@@ -21,10 +21,6 @@
         {% for link in nav %}
           <li class="ml-0 ml-md-3"><a class="text-inherit py-3 py-md-0 d-block" href="{% if link.abs %}{{link.abs}}{% else %}{{ site.baseurl }}{{ link.url }}{% endif %}">{{ link.title }}</a></li>
         {% endfor %}
-        <!-- <li class="ml-0 ml-md-3"><a class="text-inherit py-3 py-md-0 d-block" href="{{ site.baseurl }}/resources">Resources</a></li>
-        <li class="ml-0 ml-md-3"><a class="text-inherit py-3 py-md-0 d-block" href="{{ site.baseurl }}/resources/learning-path">Learning Path</a></li>
-        <li class="ml-0 ml-md-3"><a class="text-inherit py-3 py-md-0 d-block" href="https://services.github.com/#upcoming-events">Upcoming Events</a></li>
-        <li class="ml-0 ml-md-3"><a class="text-inherit py-3 py-md-0 d-block" href="https://services.github.com/customized-training">Customized Training</a></li> -->
       </ul>
     </nav>
   </header>

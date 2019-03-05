@@ -134,6 +134,9 @@ GEM
     jekyll-mentions (1.4.1)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
+    jekyll-octicons (8.5.0)
+      jekyll (~> 3.1)
+      octicons (= 8.5.0)
     jekyll-optional-front-matter (0.3.0)
       jekyll (~> 3.0)
     jekyll-paginate (1.1.0)
@@ -217,6 +220,8 @@ GEM
     multipart-post (2.0.0)
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
+    octicons (8.5.0)
+      nokogiri (>= 1.6.3.1)
     octokit (4.13.0)
       sawyer (~> 0.8.0, >= 0.5.3)
     parallel (1.14.0)
@@ -260,6 +265,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   html-proofer
+  jekyll-octicons
   rack-contrib (~> 1.1.0)
   rake
 
