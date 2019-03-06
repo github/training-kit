@@ -21,11 +21,11 @@ lanjutan.
 
 Distribusi Git untuk Linux dan sistem POSIX tersedia di situs resmi Git SCM.
 
-### Git untuk Semua Sistem
+### Sesawang Dokumentasi Git
 [git-scm.com](https://git-scm.com)
 
-## Konfigurasi Alat
-Konfigurasi informasi pengguna untuk semua repositori lokal
+## Konfigurasi Git
+Konfigurasi informasi git untuk pengguna dan system lokal 
 
 ```$ git config --global user.name "[nama]"```
 
@@ -36,7 +36,7 @@ Mengatur nama yang ingin ditautkan pada transaksi _commit_ Anda
 Mengatur alamat surel yang ingin ditautkan pada transaksi _commit_ Anda
 
 ## Membuat Repositori
-Mulai repositori baru atau dapatkan satu dari URL yang sudah ada
+Mulai repositori baru
 
 ```$ git init [nama-proyek]```
 
