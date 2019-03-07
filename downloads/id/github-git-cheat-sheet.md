@@ -21,7 +21,7 @@ lanjutan.
 
 Distribusi Git untuk Linux dan sistem POSIX tersedia di situs resmi Git SCM.
 
-### Sesawang Dokumentasi Git
+### Dokumentasi Lengkap Git
 [git-scm.com](https://git-scm.com)
 
 ## Konfigurasi Git
