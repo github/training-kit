@@ -4,7 +4,7 @@ set -e
 
 version=$(git rev-parse --short HEAD)
 
-sed -i '' -e"s/google_tracking_id:.*/google_tracking_id:/" _config.yml
+sed -i "" 's/tracking_id *:.*/tracking_id:/' _config.yml
 script/build -d $(pwd)/_site
 (cd _site; tar -zcvf ../release-${version}.tgz .)
 ## we modify the config to remove the google tracker id, lets get it back.
