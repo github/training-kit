@@ -236,7 +236,7 @@ Unisci il branch remoto con quello locale
 
 ```$ git push [remote] [branch]```
 
-Carica tutti i cambiamenti al branch locale su GitHub
+Carica tutti i cambiamenti dal branch locale su GitHub
 
 
 ```$ git pull```
