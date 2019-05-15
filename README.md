@@ -27,7 +27,7 @@ If you'd like to have a copy of the files to be served from a web server inside 
 
 ## Licenses
 
-Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
+Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use the content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
 
 > Content based on
 > <a href="https://github.github.com/training-kit/">github.github.com/training-kit/</a>
