@@ -8,7 +8,7 @@ leadingpath: ../../../
 
 {% capture colOne %}
 ## Git 설치하기
-GitHub은 일반적인 저장소(repository) 관리 작업을 위해 그래픽 인터페이스 클라이언트와, 더 복잡한 작업을 위해 자동 업데이트 기능이 포함된 명령줄 인터페이스 Git 클라이언트를 제공합니다.
+GitHub은 일반적으로 많이 사용되는 저장소 관련 작업을 위한 데스크톱 클라이언트와 함께, 더 복잡한 작업을 위해 자동으로 업데이트되는 Git command line 에디션을 제공합니다.
 
 ### Windows 사용자를 위한 GitHub
 http://windows.github.com
