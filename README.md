@@ -4,7 +4,7 @@
 
 ## We :heart: Contributors Like You!
 
-**We’re eager to work with you**, our user community to improve these materials and develop new ones. Please check out our [CONTRIBUTING guide](https://github.com/github/training-kit/blob/master/CONTRIBUTING.md) for more information on getting started.
+**We’re eager to work with you**, our user community, to improve these materials and develop new ones. Please check out our [CONTRIBUTING guide](https://github.com/github/training-kit/blob/master/CONTRIBUTING.md) for more information on getting started.
 
 ## Looking for a resource that was once housed in training-kit?
 
