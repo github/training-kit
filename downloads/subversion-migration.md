@@ -98,7 +98,7 @@ Subversion and Git share similar vocabularies, but the commonality often is only
 | `commit`        | `commit`     | Store prepared changes in local revision history                      |
 | `rm`, `delete`   | `rm`        | Prepare paths for deletion in next commit                             |
 | `move`          | `mv`        | Prepare relocated content for next commit                             |
-| `checkout`      | `clone`     | Acquire the entire history of a project locally for the first tim     |
+| `checkout`      | `clone`     | Acquire the entire history of a project locally for the first time     |
 |                 | `branch`    | Create local context for commits                                      |
 |                 | `merge`     | Join branch histories and changes to working tree                     |
 |                 | `log`       | No network required                                                   |
