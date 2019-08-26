@@ -46,7 +46,7 @@ Several community members have been kind enough to translate the Git Cheat Sheet
 - Create a new folder in the [downloads directory](https://github.com/github/training-kit/tree/master/downloads) using the standard abbreviation for the language you are providing.
 - Copy the most recent [English version of the cheatsheet](https://github.com/github/training-kit/blob/master/downloads/github-git-cheat-sheet.md) to the folder you created.
 - Complete the translation
-- Add a link to the translated resource on [/resources/cheatsheets/index.html](https://github.com/github/training-kit/blob/master/resources/cheatsheets/index.html)
+- Add a link to the translated resource on [/index.html](https://github.com/github/training-kit/blob/master/index.html)
 - Open a pull request against the `master` branch of this repository.
 - Be sure to @ mention a couple of your friends who are native speakers and ask them to review the translation.
 - Update your translation based on feedback from your friends.
