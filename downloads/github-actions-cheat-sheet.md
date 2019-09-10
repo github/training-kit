@@ -17,7 +17,7 @@ Full documentation for GitHub Actions can be found on GitHub at [https://help.gi
 Workflow files use YAML syntax, and must have either a .yml or .yaml file extension. You must store workflow files in the `.github/workflows` directory of your repository.
 
 ### Workflow `name`
-The name of your workflow. GitHub displays the names of your workflows on your repository's actions page. If you omit this field, GitHub sets the `name` to the workflow's filename.
+The name of your workflow. GitHub displays the names of your workflows on your repository's actions page.
 
 ### `on` Event
 Required The name of the GitHub event that triggers the workflow. You can provide a single event string, array of events, or an event configuration map that schedules a workflow or restricts the execution of a workflow to specific files, tags, or branch changes.
