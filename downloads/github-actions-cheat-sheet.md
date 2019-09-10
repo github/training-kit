@@ -43,30 +43,29 @@ on: [push, pull_request]
 ### `jobs`
 A workflow run is made up of one or more jobs and run in parallel by default. Each job runs in a fresh instance of the virtual environment specified by `runs-on`.
 
-### `runs-on`
-Inside of the `jobs` collection, this is the type of virtual host machine to run the job on. Each job runs with a fresh instance of the virtual environment specified in by `runs-on`.
-
+#### `runs-on`
+Inside of the `jobs` collection, this is the type of virtual host machine to run the job on.
 Available virtual machine types are:
 
 - `ubuntu-latest`, `ubuntu-18.04`, or `ubuntu-16.04`
 - `windows-latest`, `windows-2019`, or `windows-2016`
 - `macOS-latest` or `macOS-10.14`
 
-### `steps`
-A job contains a sequence of tasks called `steps`. Steps can run commands, run setup tasks, or run an action in your repository, a public repository, or an action published in a Docker registry. Each step runs in its own process in the virtual environment and has access to the workspace and filesystem.
+#### `steps`
+A job contains a sequence of tasks called `steps`. Steps can run commands, run setup tasks, or run an action from your repository, a public repository, or an action published in a Docker registry. Each step runs in its own process in the virtual environment and has access to the workspace and filesystem.
 
-### `name` and `uses`
+#### `name` and `uses`
 The steps collection's `name` is simply for displaying the job in GitHub. It's not required but does improve readability.
 
-The `steps` collection's `uses` is to selects an action to run as part of a step in your job. You can use an action defined in the same repository as the workflow, a public repository elsewhere on GitHub, or in a published Docker container image. The repositories are specified in the syntax `owner/repo@reference`. For example:
+The `steps` collection's `uses` is to selects an action to run as part of a step in your job. You can use an action defined in the same repository as the workflow, a public repository elsewhere on GitHub, or in a published Docker container image:
 
 ```
 steps
   - uses: actions/setup-node@master
 ```
 
-### `run`
-Run command line programs using the operating system's shell. Each run keyword represents a new process and shell in the virtual environment. When you provide multi-line commands, each line runs in the same shell:
+#### `run`
+Run command line programs using the operating system's shell. Each run keyword represents a new process and shell in the virtual environment:
 
 ```
 - name: Install Dependencies
