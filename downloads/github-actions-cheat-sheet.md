@@ -41,7 +41,7 @@ on: [push, pull_request]
 {% capture colTwo %}
 
 ### `jobs`
-A workflow run is made up of one or more jobs. Jobs run in parallel by default. To run jobs sequentially, you can define dependencies on other jobs using the `jobs.<job_id>.needs` keyword. Each job runs in a fresh instance of the virtual environment specified by runs-on.
+A workflow run is made up of one or more jobs and run in parallel by default. Each job runs in a fresh instance of the virtual environment specified by `runs-on`.
 
 ### `runs-on`
 Inside of the `jobs` collection, this is the type of virtual host machine to run the job on. Each job runs with a fresh instance of the virtual environment specified in by `runs-on`.
@@ -56,9 +56,9 @@ Available virtual machine types are:
 A job contains a sequence of tasks called `steps`. Steps can run commands, run setup tasks, or run an action in your repository, a public repository, or an action published in a Docker registry. Each step runs in its own process in the virtual environment and has access to the workspace and filesystem.
 
 ### `name` and `uses`
-The `name` scalar inside of the `steps` collection is simply for displaying the job in GitHub. It's not required but it makes it easier to follow.
+The steps collection's `name` is simply for displaying the job in GitHub. It's not required but does improve readability.
 
-The `uses` scalar inside of the `steps` collection selects an action to run as part of a step in your job. You can use an action defined in the same repository as the workflow, a public repository, or in a published Docker container image. The repositories are specified in the syntax `owner/repo@reference`. For example:
+The `steps` collection's `uses` is to selects an action to run as part of a step in your job. You can use an action defined in the same repository as the workflow, a public repository elsewhere on GitHub, or in a published Docker container image. The repositories are specified in the syntax `owner/repo@reference`. For example:
 
 ```
 steps
@@ -66,9 +66,7 @@ steps
 ```
 
 ### `run`
-Run command line programs using the operating system's shell. If you do not provide a name, the `steps` collection `name` will default to the run command. Commands run using non-login shells by default.
-
-Each run keyword represents a new process and shell in the virtual environment. When you provide multi-line commands, each line runs in the same shell:
+Run command line programs using the operating system's shell. Each run keyword represents a new process and shell in the virtual environment. When you provide multi-line commands, each line runs in the same shell:
 
 ```
 - name: Install Dependencies
