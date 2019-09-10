@@ -8,7 +8,7 @@ leadingpath: ../../
 
 {% capture colOne %}
 ## About GitHub Actions
-GitHub Actions gives you the flexibility to build an automated software development lifecycle workflow. You can write individual tasks, called actions, and combine them to create a custom workflow. Workflows are custom automated processes that you can set up in your repository to build, test, package, release, or deploy any code project on GitHub and can be run in Linux, macOS, Windows, and containers on GitHub-hosted servers. Actions built by community members can be included in your own workflows, and when you're ready you can build actions to share with the GitHub community!
+GitHub Actions gives you the flexibility to build an automated software development lifecycle workflow. You can write individual tasks, called actions, and combine them to create a custom workflow which are custom automated processes that you can set up in your repository to build, test, package, release, or deploy any code project on GitHub.
 
 ### GitHub Actions Documentation
 Full documentation for GitHub Actions can be found on GitHub at [https://help.github.com/en/categories/automating-your-workflow-with-github-actions](https://help.github.com/en/categories/automating-your-workflow-with-github-actions)
