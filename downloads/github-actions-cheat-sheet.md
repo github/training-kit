@@ -11,7 +11,7 @@ leadingpath: ../../
 GitHub Actions gives you the flexibility to build an automated software development lifecycle workflow. You can write individual tasks, called actions, and combine them to create a custom workflow which are custom automated processes that you can set up in your repository to build, test, package, release, or deploy any code project on GitHub.
 
 ### GitHub Actions Documentation
-Full documentation for GitHub Actions can be found on GitHub at [https://help.github.com/en/categories/automating-your-workflow-with-github-actions](https://help.github.com/en/categories/automating-your-workflow-with-github-actions)
+Full documentation for using GitHub Actions can be found on GitHub at [https://help.github.com/en/categories/automating-your-workflow-with-github-actions](https://help.github.com/en/categories/automating-your-workflow-with-github-actions)
 
 ## Syntax
 Workflow files use YAML syntax, and must have either a .yml or .yaml file extension. You must store workflow files in the `.github/workflows/` directory of your repository.
