@@ -19,52 +19,37 @@ Workflow files use YAML syntax, and must have either a .yml or .yaml file extens
 ### NodeJS Example
 
 ```yaml
+name: Node CI
 on: push
 jobs:
-  build:
+  my_build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-    - run: npm install
-    - run: npm test
+    - name: "Install and Test Node"
+      run: npm install
+      run: npm test
 ```
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colOne | markdownify }}
+</div>
+
+{% capture colTwo %}
 
 ### Workflow `name`
 The name of your workflow. GitHub displays the names of your workflows on your repository's actions page.
 
-{% endcapture %}
-<div class="col-md-6">
-{{ colOne | markdownify }}
-</div>
-
-{% capture colTwo %}
-
 ### `on` Event
 Required The name of the GitHub event that triggers the workflow. You can provide a single event string, array of events, or an event configuration map that schedules a workflow or restricts the execution of a workflow to specific files, tags, or branch changes.
 
-```
-# Trigger on push
-on: push
-```
-
-```
-# Trigger the workflow on push or pull request
-on: [push, pull_request]
-```
-
-{% endcapture %}
-<div class="col-md-6">
-{{ colOne | markdownify }}
-</div>
-
-
-{% capture colTwo %}
-
 ### `jobs`
 A workflow run is made up of one or more jobs and run in parallel by default. Each job runs in a fresh instance of the virtual environment specified by `runs-on`.
+
+#### `job_id`
+The name of the job displayed on GitHub. For example `my_build` or `build`.
 
 #### `runs-on`
 Inside of the `jobs` collection, this is the type of virtual host machine to run the job on.
@@ -77,24 +62,6 @@ Available virtual machine types are:
 #### `steps`
 A job contains a sequence of tasks called `steps`. Steps can run commands, run setup tasks, or run an action from your repository, a public repository, or an action published in a Docker registry. Each step runs in its own process in the virtual environment and has access to the workspace and filesystem.
 
-#### `name` and `uses`
-The steps collection's `name` is simply for displaying the job in GitHub. It's not required but does improve readability.
-
-The `steps` collection's `uses` is to selects an action to run as part of a step in your job. You can use an action defined in the same repository as the workflow, a public repository elsewhere on GitHub, or in a published Docker container image:
-
-```
-steps
-  - uses: actions/setup-node@master
-```
-
-#### `run`
-Run command line programs using the operating system's shell. Each run keyword represents a new process and shell in the virtual environment:
-
-```
-- name: Install Dependencies
-  run: npm install
-```
-
 {% endcapture %}
 <div class="col-md-6">
 {{ colTwo | markdownify }}
@@ -103,6 +70,16 @@ Run command line programs using the operating system's shell. Each run keyword r
 
 
 {% capture colThree %}
+
+
+#### `name` and `uses`
+The `steps` collection's `name` is simply for displaying the sequence in GitHub. It's not required but does improve readability in the logs.
+
+The `steps` collection's `uses` is to select an action to run as part of a step in your job. You can use an action defined in the same repository as the workflow, a public repository elsewhere on GitHub, or in a published Docker container image:
+
+#### `run`
+Run command line programs using the operating system's shell. Each run keyword represents a new process and shell in the virtual environment:
+
 ## Refactor file names
 Relocate and remove versioned files
 
