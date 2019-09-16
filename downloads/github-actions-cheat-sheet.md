@@ -13,7 +13,7 @@ GitHub Actions gives you the flexibility to build an automated software developm
 ### GitHub Actions Documentation
 Full documentation for using GitHub Actions can be found on GitHub at [https://help.github.com/en/categories/automating-your-workflow-with-github-actions](https://help.github.com/en/categories/automating-your-workflow-with-github-actions)
 
-## Syntax
+## Workflow Syntax
 Workflow files use YAML syntax, and must have either a .yml or .yaml file extension. You must store workflow files in the `.github/workflows/` directory of your repository.
 
 ### NodeJS Example
