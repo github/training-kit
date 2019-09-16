@@ -16,8 +16,31 @@ Full documentation for using GitHub Actions can be found on GitHub at [https://h
 ## Syntax
 Workflow files use YAML syntax, and must have either a .yml or .yaml file extension. You must store workflow files in the `.github/workflows/` directory of your repository.
 
+### NodeJS Example
+
+```yaml
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - run: npm install
+    - run: npm test
+```
+
 ### Workflow `name`
 The name of your workflow. GitHub displays the names of your workflows on your repository's actions page.
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colOne | markdownify }}
+</div>
+
+{% capture colTwo %}
 
 ### `on` Event
 Required The name of the GitHub event that triggers the workflow. You can provide a single event string, array of events, or an event configuration map that schedules a workflow or restricts the execution of a workflow to specific files, tags, or branch changes.
