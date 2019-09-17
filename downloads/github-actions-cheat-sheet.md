@@ -71,6 +71,7 @@ A job contains a sequence of tasks called `steps`. Steps can run commands, run s
 
 {% capture colThree %}
 
+## Workflow Syntax (cont.)
 
 #### `name` and `uses`
 The `steps` collection's `name` is simply for displaying the sequence in GitHub. It's not required but does improve readability in the logs.
