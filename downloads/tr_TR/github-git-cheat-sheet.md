@@ -97,22 +97,23 @@ bağımsız çalışma alanlarıdır.
 
 ```$ git branch [branch-name]```
 
-Creates a new branch
+Üzerinde çalıştığınız projenin o anki alanın bir kopyası verilen isim ile yeni bir alan olarak oluşturulur.
 
 
 ```$ git checkout [branch-name]```
 
-Switches to the specified branch and updates working directory
+Var olan çalışma alanınızı günceller, alanlar arası geçiş yapmanızı sağlar.
 
 
 ```$ git merge [branch-name]```
 
-Combines the specified branch’s history into the current branch
+Belirtilen alan ile o anki bulunulan alanın birleştirilerek tek bir alan olması sağlanır.
 
 
 ```$ git branch -d [branch-name]```
 
-Deletes the specified branch
+Seçilen alanın silinmesidir.
+
 {% endcapture %}
 <div class="col-md-6">
 {{ colTwo | markdownify }}
@@ -121,26 +122,26 @@ Deletes the specified branch
 
 
 {% capture colThree %}
-## Refactor file names
-Relocate and remove versioned files
+## Yeniden Düzenleme ve Dosyalar
+Geçmişe sahip dosyaları silebilir veya taşıyabiliriz.
 
 
 ```$ git rm [file]```
 
-Deletes the file from the working directory and stages the deletion
+Dosyayı o anki çalışma dizininden siler ve bu işlemi yapılan düzenlemelerin tutulduğu listeye ekler.
 
 
 ```$ git rm --cached [file]```
 
-Removes the file from version control but preserves the file locally
+Dosyanın sürüm kontrolü tarafından izlenilmesini kaldırır fakat dosyayı silmeden yerel ortamda tutar.
 
 
 ```$ git mv [file-original] [file-renamed]```
 
-Changes the file name and prepare it for commit
+Dosya adını değiştirir,taşır ve bu işlemi yapılan düzenlemelerin tutulduğu listeye ekler.
 
-## Suppress tracking
-Exclude temporary files and paths
+## Geçici dosyaları önlemek
+Geçici dosyaları ve sürekli kullanılan yol bilgilerinin tutulmaması için hazırlanan dosyalardır.
 
 ```
 *.log
@@ -148,12 +149,12 @@ build/
 temp-*
 ```
 
-A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
+İsmi `.gitignore` belirtilen kalıplarla eşleşen dosya ve yolların yanlışlıkla versiyonlanmasını önler.
 
 
 ```$ git ls-files --others --ignored --exclude-standard```
 
-Lists all ignored files in this project
+Bu projedeki yok sayılan, izlenilmesi istenmeyen tüm dosyaları listeler
 
 ## Save fragments
 Shelve and restore incomplete changes
