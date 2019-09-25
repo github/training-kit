@@ -7,7 +7,7 @@ leadingpath: ../../
 ---
 
 {% capture colOne %}
-## Git uygulamasını kurmak
+## Git Uygulamasını Kurmak
 GitHub, en yaygın depolar ile yapılan işlemler için grafiksel bir kullanıcı arabirimi ve Git'in gelişmiş senaryolar için otomatik olarak güncellenen bir komut satırı sürümü içeren masaüstü istemcileri sağlar.
 
 ### GitHub Masaüstü
@@ -18,7 +18,7 @@ Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesin
 ### Git Tüm İşletim Sistemlerinde Kullanılabilir
 http://git-scm.com
 
-## Git konfigürasyonlarını yapalım
+## Git Konfigürasyonlarını Yapmak
 Kurulu olduğu bilgisayardaki tüm depolar,projeler için kullanıcı bilgilerini yapılandırabiliriz.
 
 ```$ git config --global user.name "[isim soyaisim]"```
@@ -31,18 +31,15 @@ Git üzerinde yapılan işlemin kimin tarafından yapıldığını tutan bilgidi
 Git üzerinde yapılan işlemin hangi mail adresi tarafından yapıldığını tutan bilgidir.
 
 
-## Create repositories
-Start a new repository or obtain one from an existing URL
+## Depo Oluşturmak
 
+```$ git init [proje-ismi]```
 
-```$ git init [project-name]```
-
-Creates a new local repository with the specified name
+Verilen proje ismi yardımıyla yeni bir depo oluşturabiliriz.
 
 
 ```$ git clone [url]```
-
-Downloads a project and its entire version history
+Var olan bir projeyi verilen URL bilgisi yardımıyla bulunduğunuz konuma indirir.
 
 {% endcapture %}
 <div class="col-md-6">
@@ -52,7 +49,7 @@ Downloads a project and its entire version history
 
 {% capture colTwo %}
 
-## Make changes
+## Değişiklikler Yapmak
 Review edits and craft a commit transaction
 
 
