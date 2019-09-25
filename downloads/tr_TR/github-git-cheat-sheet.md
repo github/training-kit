@@ -140,7 +140,7 @@ Dosyanın sürüm kontrolü tarafından izlenilmesini kaldırır fakat dosyayı 
 
 Dosya adını değiştirir,taşır ve bu işlemi yapılan düzenlemelerin tutulduğu listeye ekler.
 
-## Geçici dosyaları önlemek
+## Geçici Dosyaları Önlemek
 Geçici dosyaları ve sürekli kullanılan yol bilgilerinin tutulmaması için hazırlanan dosyalardır.
 
 ```
@@ -156,28 +156,29 @@ temp-*
 
 Bu projedeki yok sayılan, izlenilmesi istenmeyen tüm dosyaları listeler
 
-## Save fragments
-Shelve and restore incomplete changes
+## Parçaları Kaydetmek
+Yapmış olduğunuz değişikliklerin gönderilecekler listesine eklenmesini önlemek için kullanılır.
 
 
 ```$ git stash```
 
-Temporarily stores all modified tracked files
+Değiştirilen tüm izlenen dosyaları geçici olarak saklar. Çalışma alanınızda göremezsiniz fakat yaptığnız değişiklikler korunur.
 
 
 ```$ git stash pop```
 
-Restores the most recently stashed files
+Saklanmış dosyaları çalışma alanınıza yeniden yükler.Fakat kopyasını bu listede saklamaya devam eder.
 
 
 ```$ git stash list```
 
-Lists all stashed changesets
+Geçici olarak saklananların listesi
 
 
 ```$ git stash drop```
 
-Discards the most recently stashed changeset
+Saklanmış dosyaları çalışma alanınıza yeniden yükler.Fakat kopyasını bu listede saklamaya devam etmez.
+
 {% endcapture %}
 <div class="col-md-6">
 {{ colThree | markdownify }}
