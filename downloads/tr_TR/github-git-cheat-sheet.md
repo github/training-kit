@@ -185,31 +185,31 @@ Saklanmış dosyaları çalışma alanınıza yeniden yükler.Fakat kopyasını 
 </div>
 
 {% capture colFour %}
-## Review history
-Browse and inspect the evolution of project files
+## Geçmişe Göz Atmak
+
 
 
 ```$ git log```
 
-Lists version history for the current branch
+Proje dosyalarının tarihsel olarak değişimini inceleyin.
 
 
 ```$ git log --follow [file]```
 
-Lists version history for the file, including renames
+Yeniden adlandırmalar da dahil olmak üzere dosyanın sürüm geçmişini listeler
 
 
 ```$ git diff [first-branch]...[second-branch]```
 
-Shows content differences between two branches
+İki çalışma alanı arasındaki içerik farklarını gösterir
 
 
 ```$ git show [commit]```
 
-Outputs metadata and content changes of the specified commit
+Belirtilen işlenmiş noktanın meta verilerini ve içerik değişikliklerini çıktılar
 
 ## Redo commits
-Erase mistakes and craft replacement history
+Hataları veya işlerin geçmişini silebiliriz.
 
 
 ```$ git reset [commit]```
