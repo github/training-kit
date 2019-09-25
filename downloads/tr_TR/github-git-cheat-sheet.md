@@ -8,7 +8,7 @@ leadingpath: ../../
 
 {% capture colOne %}
 ## Install Git
-GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
+GitHub, en yaygın depolar ile yapılan işlemler için grafiksel bir kullanıcı arabirimi ve Git'in gelişmiş senaryolar için otomatik olarak güncellenen bir komut satırı sürümü içeren masaüstü istemcileri sağlar.
 
 ### GitHub Desktop
 https://desktop.github.com/
