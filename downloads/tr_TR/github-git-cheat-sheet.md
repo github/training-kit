@@ -1,7 +1,7 @@
 ---
 layout: cheat-sheet
 redirect_to: false
-title: GitHub Git Cheat Sheet
+title: GitHub Git Komut Sayfası
 byline: Git, dizüstü bilgisayarınızda veya masaüstünüzdeki GitHub etkinliklerini kolaylaştıran, açık kaynaklı dağıtık sürüm kontrol sistemidir. Bu sayfa, hızlı başvuru için sık kullanılan Git komut satırı talimatlarını özetler.
 leadingpath: ../../
 ---
