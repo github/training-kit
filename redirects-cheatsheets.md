@@ -8,6 +8,7 @@ redirect_from:
     - /on-demand/downloads/ja/github-git-cheat-sheet/
     - /on-demand/downloads/pt_PT/github-git-cheat-sheet/
     - /on-demand/downloads/ru/github-git-cheat-sheet/
+    - /on-demand/downloads/tr_TR/github-git-cheat-sheet/
     - /on-demand/downloads/zh_CN/github-git-cheat-sheet/
     - /on-demand/downloads/kr/github-git-cheat-sheet/
     - /on-demand/downloads/ar/github-git-cheat-sheet/
