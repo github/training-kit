@@ -214,35 +214,35 @@ Hataları veya işlerin geçmişini silebiliriz.
 
 ```$ git reset [commit]```
 
-Undoes all commits after `[commit]`, preserving changes locally
+Verilen işlenmiş noktadan sonraki tüm işlemleri `[commit]` ile geri al, fakat yerel değişiklikleri koru
 
 
 ```$ git reset --hard [commit]```
 
-Discards all history and changes back to the specified commit
+Verilen işlenmiş noktadan sonraki tüm işlemleri tamamen ortadan kaldır..
 
-## Synchronize changes
-Register a remote (URL) and exchange repository history
+## Değişiklikleri Senkronize Et
+Çalışmalarınızı uzak sunucu URL sindeki projeleriniz ile günceleyebilirsiniz.
 
 
 ```$ git fetch [remote]```
 
-Downloads all history from the remote repository
+Tüm geçmişi uzak sunucudan çalışma alanıma indir.
 
 
 ```$ git merge [remote]/[branch]```
 
-Combines the remote branch into the current local branch
+Uzaktaki sunucu ile üzerinde çalıştığım alanı birleştir.
 
 
 ```$ git push [remote] [branch]```
 
-Uploads all local branch commits to GitHub
+GitHub üzerindeki alana , tüm yerel çalışmalarımı gönder.
 
 
 ```$ git pull```
 
-Downloads bookmark history and incorporates changes
+Değişikliklerin tutulduğu listeyi ve değişiklikleri lokal çalışma alanınızıa indirir.
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
