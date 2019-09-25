@@ -7,28 +7,28 @@ leadingpath: ../../
 ---
 
 {% capture colOne %}
-## Install Git
+## Git uygulamasını kurmak
 GitHub, en yaygın depolar ile yapılan işlemler için grafiksel bir kullanıcı arabirimi ve Git'in gelişmiş senaryolar için otomatik olarak güncellenen bir komut satırı sürümü içeren masaüstü istemcileri sağlar.
 
-### GitHub Desktop
+### GitHub Masaüstü
 https://desktop.github.com/
 
-Git distributions for Linux and POSIX systems are available on the official Git SCM website.
+Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesinde bulabilirsiniz.
 
-### Git for all platforms
+### Git Tüm İşletim Sistemlerinde Kullanılabilir
 http://git-scm.com
 
-## Configure tooling
-Configure user information for all local repositories
+## Git konfigürasyonlarını yapalım
+Kurulu olduğu bilgisayardaki tüm depolar,projeler için kullanıcı bilgilerini yapılandırabiliriz.
 
-```$ git config --global user.name "[name]"```
+```$ git config --global user.name "[isim soyaisim]"```
 
-Sets the name you want attached to your commit transactions
+Git üzerinde yapılan işlemin kimin tarafından yapıldığını tutan bilgidir.
 
 
-```$ git config --global user.email "[email address]"```
+```$ git config --global user.email "[mail adresi]"```
 
-Sets the email you want attached to your commit transactions
+Git üzerinde yapılan işlemin hangi mail adresi tarafından yapıldığını tutan bilgidir.
 
 
 ## Create repositories
