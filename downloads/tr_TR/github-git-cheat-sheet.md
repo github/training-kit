@@ -2,7 +2,7 @@
 layout: cheat-sheet
 redirect_to: false
 title: GitHub Git Cheat Sheet
-byline: Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
+byline: Git, dizüstü bilgisayarınızda veya masaüstünüzdeki GitHub etkinliklerini kolaylaştıran, açık kaynaklı dağıtık sürüm kontrol sistemidir. Bu sayfa, hızlı başvuru için sık kullanılan Git komut satırı talimatlarını özetler.
 leadingpath: ../../
 ---
 
