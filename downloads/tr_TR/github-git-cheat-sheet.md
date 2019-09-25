@@ -70,25 +70,29 @@ Dosyalar üzerinde yaptığınız son değişiklikleri görebilirsiniz.
 
 ```$ git diff --staged```
 
-Shows file differences between staging and the last file version
+İşi biten ve gönderilecek dosyalar ile son dosyaları karşılaştırır.
+
 
 
 ```$ git reset [file]```
 
-Unstages the file, but preserves its contents
+Dosyaların içeriğini değiştirmeden, gönderilmek üzere olanlar listesinden çıkartıp,
+bir önceki adım olan üzerinde çalışılmışlar listesinde tutar.
+
 
 
 ```$ git commit -m"[descriptive message]"```
 
-Records file snapshots permanently in version history
+O anki değişiklilklerinizi daha sonra hatırlamak için yazılan kısa özet bilgidir.
 
-## Group changes
-Name a series of commits and combine completed efforts
+## Çalışma Grubu Değiştirmek
+Dosyamızın birçok değiştirilmiş ve değiştirilmemiş hallerini ayrı tutabildiğimiz
+bağımsız çalışma alanlarıdır.
 
 
 ```$ git branch```
 
-Lists all local branches in the current repository
+Üzerinde çalıştığınız projenin şuan hangi alanda çalıştığınızın bilgisini döner
 
 
 ```$ git branch [branch-name]```
