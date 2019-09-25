@@ -19,7 +19,7 @@ Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesin
 http://git-scm.com
 
 ## Git Konfigürasyonlarını Yapmak
-Kurulu olduğu bilgisayardaki tüm depolar,projeler için kullanıcı bilgilerini yapılandırabiliriz.
+Kurulu olduğu bilgisayardaki tüm depolar, projeler için kullanıcı bilgilerini yapılandırabiliriz.
 
 ```$ git config --global user.name "[isim soyaisim]"```
 
@@ -50,22 +50,22 @@ Var olan bir projeyi verilen URL bilgisi yardımıyla bulunduğunuz konuma indir
 {% capture colTwo %}
 
 ## Değişiklikler Yapmak
-Review edits and craft a commit transaction
+Yaptığınız düzenlemeleri görüntüleyebiliriz.
 
 
 ```$ git status```
 
-Lists all new or modified files to be committed
+Tüm yeni veya üzerinde çalışılmış olan dosyaları listeleyen, gönderilmek üzere olunan durumu gösteren komuttur.
 
 
 ```$ git diff```
 
-Shows file differences not yet staged
+Dosyalar üzerinde yaptığınız son değişiklikleri görebilirsiniz.
 
 
 ```$ git add [file]```
 
-Snapshots the file in preparation for versioning
+İşi biten ve gönderilecek dosyaları belirtelim.
 
 
 ```$ git diff --staged```
