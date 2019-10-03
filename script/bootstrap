@@ -10,7 +10,3 @@ bundle check --path vendor/gems 2>&1 > /dev/null || {
 
 echo "==> Installing node dependencies…"
 npm install
-
-echo "==> Cloning into submodules"
-git submodule init
-git submodule update
