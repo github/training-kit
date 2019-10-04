@@ -10,7 +10,7 @@ leadingpath: ../../
 ## Git'i Yükleyin
 GitHub, en yaygın depo eylemleri için grafiksel bir kullanıcı arabirimi ve Git'in gelişmiş senaryolar için otomatik olarak güncellenen bir komut satırı sürümü içeren masaüstü istemcileri sağlar.
 
-### GitHub Desktop
+### GitHub Masaüstü
 https://desktop.github.com/
 
 Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesinde bulabilirsiniz.
@@ -18,7 +18,7 @@ Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesin
 ### Tüm platformlar için Git
 http://git-scm.com
 
-## Takım yapulandırna
+## Takım yapılandırna
 Tüm yerel depolar için kullanıcı bilgilerini yapılandırın
 
 ```$ git config --global user.name "[name]"```
