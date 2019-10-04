@@ -31,16 +31,22 @@
     {% for crumb in crumbs offset: 1 %}
       {% if forloop.first %}
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item">
-          <a href="{{ site.baseurl }}/" itemprop="item">{{ site.data.ui-text[site.locale].breadcrumb_home_label }}</a>
+          <a href="{{ site.baseurl }}/" itemprop="item">
+            {{ site.data.ui-text[site.locale].breadcrumb_home_label }}
+          </a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
       {% endif %}
       {% if forloop.last %}
-        <li class="breadcrumb-item breadcrumb-item-selected text-gray" aria-current="page">{{ page.title }}</li>
+        <li class="breadcrumb-item breadcrumb-item-selected text-gray" aria-current="page">
+          {{ page.title }}
+        </li>
       {% else %}
         {% assign i = i | plus: 1 %}
         <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item">
-          <a href="{{ site.baseurl }}{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path }}" itemprop="item">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</a>
+          <a href="{{ site.baseurl }}{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path }}" itemprop="item">
+            {{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}
+          </a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
       {% endif %}
