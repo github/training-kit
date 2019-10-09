@@ -58,7 +58,7 @@ git svn clone [svn-repo-url] --stdlayout
 
 Make certain you are familiar with the targeted Subversion repository’s structure and whether it follows the standard layout or not. For non-traditional `trunk`, `branches`, and `tags` layouts, the following option switches should be specified during the `svn clone`:
 
-- `T [trunk]` for alternate main source convention
+- `T [ trunk ]` for alternate main source convention
 - `b [branches]` for alternate branch location
 - `t [tags]` for alternate tag structure location
 
@@ -95,10 +95,10 @@ Subversion and Git share similar vocabularies, but the commonality often is only
 | ---             | ---         | ---                                                                   |
 | `status`        | `status`    | Report the state of working tree                                      |
 | `add`           | `add`       | Required for each path before making a commit                         |
-| `commit`        | `commit`     | Store prepared changes in local revision history                      |
-| `rm`, `delete`   | `rm`        | Prepare paths for deletion in next commit                             |
+| `commit`        | `commit`    | Store prepared changes in local revision history                      |
+| `rm`, `delete`  | `rm`        | Prepare paths for deletion in next commit                             |
 | `move`          | `mv`        | Prepare relocated content for next commit                             |
-| `checkout`      | `clone`     | Acquire the entire history of a project locally for the first time     |
+| `checkout`      | `clone`     | Acquire the entire history of a project locally for the first time    |
 |                 | `branch`    | Create local context for commits                                      |
 |                 | `merge`     | Join branch histories and changes to working tree                     |
 |                 | `log`       | No network required                                                   |
