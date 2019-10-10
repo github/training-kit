@@ -25,7 +25,7 @@ If you'd like to have a copy of the files to be served from a web server inside 
 4. Switch into the test_site directory, `cd test_site`.
 5. View the site with `python -m SimpleHTTPServer`. _Note: Some servers are obviously more advanced than others and can handle redirects, smart recognition of `.html` files, etc_
 
-## Licenses
+## [Licenses](https://github.com/github/training-kit/blob/master/LICENSE)
 
 Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use the content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
 
