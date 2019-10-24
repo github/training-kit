@@ -7,15 +7,15 @@ leadingpath: ../../
 ---
 
 {% capture colOne %}
-## Install Git
-GitHub provides desktop clients that include a graphical user interface for the most common repository actions and an automatically updating command line edition of Git for advanced scenarios.
+## Install
 
-### GitHub Desktop
-https://desktop.github.com/
+### GitHub for Windows
+https://windows.github.com
 
-Git distributions for Linux and POSIX systems are available on the official Git SCM website.
+### GitHub for Mac
+https://mac.github.com
 
-### Git for all platforms
+### Git for All Platforms
 http://git-scm.com
 
 ## Configure tooling
@@ -25,24 +25,33 @@ Configure user information for all local repositories
 
 Sets the name you want attached to your commit transactions
 
-
 ```$ git config --global user.email "[email address]"```
 
 Sets the email you want attached to your commit transactions
 
+```$ git config --global color.ui auto```
 
-## Create repositories
-Start a new repository or obtain one from an existing URL
+Enables helpful colorization of command line output
 
+## Branches
 
-```$ git init [project-name]```
+Branches are an important part of working with Git. Any commits you make will be made on the branch you're currently "checked out" to. Use `git status` to see which branch that is.
 
-Creates a new local repository with the specified name
+```$ git branch [branch-name]```
 
+Creates a new branch
 
-```$ git clone [url]```
+```$ git checkout [branch-name]```
 
-Downloads a project and its entire version history
+Switches to the specified branch and updates the working directory
+
+```$ git merge [branch]```
+
+Combines the specified branch's history into the current branch. This is usually done in pull requests, but is an important Git operation.
+
+```$ git branch -d [branch-name]```
+
+Deletes the specified branch
 
 {% endcapture %}
 <div class="col-md-6">
@@ -52,194 +61,104 @@ Downloads a project and its entire version history
 
 {% capture colTwo %}
 
-## Make changes
-Review edits and craft a commit transaction
+## Create repositories
 
+When starting out with a new repository, you only need to do it once; either locally, then push to GitHub, or by cloning an existing repository.
 
-```$ git status```
+```$ git init```
 
-Lists all new or modified files to be committed
+Turn an existing directory into a Git repository
 
+```$ git clone [url]```
 
-```$ git diff```
+Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits
 
-Shows file differences not yet staged
+## The .gitignore file
 
+Sometimes it may be a good idea to exclude files from being tracked with Git. This is typically done in a special file named `.gitignore`. You can find helpful templates for `.gitignore` files at [github.com/github/gitignore](https://github.com/github/gitignore).
 
-```$ git add [file]```
+## Synchronize changes
 
-Snapshots the file in preparation for versioning
+Synchronize your local repository with the remote repository on GitHub.com
 
+```$ git fetch```
 
-```$ git diff --staged```
+Downloads all history from the remote tracking branches
 
-Shows file differences between staging and the last file version
+```$ git merge```
 
+Combines remote tracking branches into current local branch
 
-```$ git reset [file]```
+```$ git push```
 
-Unstages the file, but preserves its contents
+Uploads all local branch commits to GitHub
 
+```$ git pull```
 
-```$ git commit -m"[descriptive message]"```
+Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. `git pull` is a combination of `git fetch` and `git merge`
 
-Records file snapshots permanently in version history
-
-## Group changes
-Name a series of commits and combine completed efforts
-
-
-```$ git branch```
-
-Lists all local branches in the current repository
-
-
-```$ git branch [branch-name]```
-
-Creates a new branch
-
-
-```$ git checkout [branch-name]```
-
-Switches to the specified branch and updates working directory
-
-
-```$ git merge [branch-name]```
-
-Combines the specified branch’s history into the current branch
-
-
-```$ git branch -d [branch-name]```
-
-Deletes the specified branch
 {% endcapture %}
 <div class="col-md-6">
 {{ colTwo | markdownify }}
 </div>
 <div class="clearfix"></div>
 
-
 {% capture colThree %}
-## Refactor file names
-Relocate and remove versioned files
 
+## Make changes
 
-```$ git rm [file]```
-
-Deletes the file from the working directory and stages the deletion
-
-
-```$ git rm --cached [file]```
-
-Removes the file from version control but preserves the file locally
-
-
-```$ git mv [file-original] [file-renamed]```
-
-Changes the file name and prepare it for commit
-
-## Suppress tracking
-Exclude temporary files and paths
-
-```
-*.log
-build/
-temp-*
-```
-
-A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
-
-
-```$ git ls-files --others --ignored --exclude-standard```
-
-Lists all ignored files in this project
-
-## Save fragments
-Shelve and restore incomplete changes
-
-
-```$ git stash```
-
-Temporarily stores all modified tracked files
-
-
-```$ git stash pop```
-
-Restores the most recently stashed files
-
-
-```$ git stash list```
-
-Lists all stashed changesets
-
-
-```$ git stash drop```
-
-Discards the most recently stashed changeset
-{% endcapture %}
-<div class="col-md-6">
-{{ colThree | markdownify }}
-</div>
-
-{% capture colFour %}
-## Review history
 Browse and inspect the evolution of project files
-
 
 ```$ git log```
 
 Lists version history for the current branch
 
-
 ```$ git log --follow [file]```
 
-Lists version history for the file, including renames
-
+Lists version history for a file, including renames
 
 ```$ git diff [first-branch]...[second-branch]```
 
 Shows content differences between two branches
 
-
 ```$ git show [commit]```
 
 Outputs metadata and content changes of the specified commit
 
-## Redo commits
-Erase mistakes and craft replacement history
+```$ git add [file]```
 
+Snapshots the file in preparation for versioning
+
+```$ git commit -m"[descriptive message]"```
+
+Records file snapshots permanently in version history
+
+## Redo commits
+
+Erase mistakes and craft replacement history
 
 ```$ git reset [commit]```
 
 Undoes all commits after `[commit]`, preserving changes locally
 
-
 ```$ git reset --hard [commit]```
 
 Discards all history and changes back to the specified commit
 
-## Synchronize changes
-Register a remote (URL) and exchange repository history
+> CAUTION! Changing history can have nasty side effects. If  you need to change commits that exist on GitHub (the remote), proceed with caution. If you need help, reach out at github.community or contact support.
 
+## Glossary
 
-```$ git fetch [remote]```
+**git**: an open source, distributed version-control system
+**GitHub**: a platform for hosting and collaborating on Git repositories
+**commit**: a Git object, a snapshot of your entire repository compressed into a SHA
+**branch**: a lightweight movable pointer to a commit
+**clone**: a local version of a repository, including all commits and branches
+**remote**: a common repository on GitHub that all team members use to exchange their changes
+**fork**: a copy of a repository on GitHub owned by a different user
+**pull request**: a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more
+**HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using `git checkout`
 
-Downloads all history from the remote repository
-
-
-```$ git merge [remote]/[branch]```
-
-Combines the remote branch into the current local branch
-
-
-```$ git push [remote] [branch]```
-
-Uploads all local branch commits to GitHub
-
-
-```$ git pull```
-
-Downloads bookmark history and incorporates changes
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
