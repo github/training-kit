@@ -9,11 +9,8 @@ leadingpath: ../../
 {% capture colOne %}
 ## Install
 
-### GitHub for Windows
-https://windows.github.com
-
-### GitHub for Mac
-https://mac.github.com
+### GitHub Desktop
+https://desktop.github.com
 
 ### Git for All Platforms
 http://git-scm.com
