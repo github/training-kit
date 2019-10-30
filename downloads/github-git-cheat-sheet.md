@@ -10,10 +10,10 @@ leadingpath: ../../
 ## Install
 
 ### GitHub Desktop
-https://desktop.github.com
+[desktop.github.com](https://desktop.github.com)
 
 ### Git for All Platforms
-http://git-scm.com
+[git-scm.com](http://git-scm.com)
 
 ## Configure tooling
 Configure user information for all local repositories
