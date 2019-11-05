@@ -73,7 +73,7 @@ This site uses GitHub's CSS toolkit called [Primer](https://github.com/primer/pr
 
 When you are ready to test your changes, you will want to build the repository locally. This is fully automated through a series of shell scripts based [the scripts to rule them all](https://github.com/github/scripts-to-rule-them-all)!
 
-To build of the materials do the following:
+To build the materials do the following:
 
 1. Run `script/setup`
 1. Run `sass --watch assets/_scss/main.scss:assets/css/main.css` to compile the SCSS
