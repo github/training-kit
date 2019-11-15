@@ -23,7 +23,7 @@ If you'd like to have a copy of the files to be served from a web server inside 
 2. To test this looks okay, create some folders `mkdir -p test_site/kit`.
 3. Untar the release, `tar -xzf release-XXXXXXX.tgz -C test_site/kit`.
 4. Switch into the test_site directory, `cd test_site`.
-5. View the site with `python -m SimpleHTTPServer`. _Note: Some servers are obviously more advanced than others and can handle redirects, smart recognition of `.html` files, etc_
+5. View the site with `python -m SimpleHTTPServer`. _Note: Some servers are more advanced than others and can handle redirects, smart recognition of `.html` files, etc_
 
 ## [Licenses](https://github.com/github/training-kit/blob/master/LICENSE)
 
@@ -37,6 +37,6 @@ Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/
 
 Code used to build and test the site as well as code samples on the site, if any, are licensed under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode). CC0 waives all copyright restrictions but does not grant you any trademark permissions.
 
-This means you can use the content and code in this repository except for GitHub trademarks in your own projects.
+This means you can use the content and code in this repository except for GitHub trademarks in your projects.
 
 When you contribute to this repository you are doing so under the above licenses.
