@@ -13,7 +13,6 @@ This repository currently contains the Git and GitHub Cheatsheets. If you're loo
 ## Projects Used in Training-Kit
 
 - We use [Jekyll](https://jekyllrb.com/) and [Markdown](https://guides.github.com/features/mastering-markdown/).
-
 - Our content is styled using the [Primer CSS toolkit](https://github.com/primer/primer-css).
 
 ## Packaging for Viewing Behind Your Firewall
@@ -21,13 +20,9 @@ This repository currently contains the Git and GitHub Cheatsheets. If you're loo
 If you'd like to have a copy of the files to be served from a web server inside of your firewall, start by running `script/package`.
 
 1. Run `script/package` to create a release tarball. This will be in the format `release-XXXXXXX.tgz` for you to take wherever you want.
-
 2. To test this looks okay, create some folders `mkdir -p test_site/kit`.
-
 3. Untar the release, `tar -xzf release-XXXXXXX.tgz -C test_site/kit`.
-
 4. Switch into the test_site directory, `cd test_site`.
-
 5. View the site with `python -m SimpleHTTPServer`. _Note: Some servers are more advanced than others and can handle redirects, smart recognition of `.html` files, etc_
 
 ## [Licenses](https://github.com/github/training-kit/blob/master/LICENSE)
@@ -35,13 +30,9 @@ If you'd like to have a copy of the files to be served from a web server inside 
 Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use the content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
 
 > Content based on
-
 > <a href="https://github.github.com/training-kit/">github.github.com/training-kit/</a>
-
 > used under the
-
 > <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>
-
 > license.</a>
 
 Code used to build and test the site as well as code samples on the site, if any, are licensed under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode). CC0 waives all copyright restrictions but does not grant you any trademark permissions.
