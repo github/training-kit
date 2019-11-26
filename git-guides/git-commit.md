@@ -1,23 +1,3 @@
-<!--
-# Git Commit - One page that will set the formula for various git commands to follow:
-
-- Individual command page – will follow command page formula.
-
-# General Specifications
-
-- Title: Git Commit – GitHub Git Guide
-- URL: /git-guide/git-commit/
-- Meta Description: The git commit command will save all staged changes, along with a brief description from the user, in a “commit” to the local repository.
-- Focus Keyword: Git Commit (18,100)
-- Secondary Keywords: git undo last commit (6,600), git commit amend (5,400), how to git commit (170), git revert commit (12,100), git undo commit (12,100), git commit example (720), git commit message example (140)
-- Word Count: 800+
-- The focus keyword should be in the page title, url, h1 and throughout body copy.
-- The secondary keywords are semantic variations of the focus keyword and are great to use in h2, h3 and other headings.
-- Written from a marketing perspective, should have an informal voice and not be exclusively technical.
-- Doesn’t need to exhaustively cover the technical intricacies of the specific git command – should be beginner friendly and include a lot of the “why” and a general overview of the “how”. Can link out to more in-depth technical resources where appropriate.
-
--->
-
 # Git Commit
 
 Commits are snapshots of your entire repository at specific times. You should make new commits often, based around logical units of change. Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is. Commits include lots of metadata in addition to the contents and message, like the author, timestamp, and more.

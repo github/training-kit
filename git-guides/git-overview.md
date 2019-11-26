@@ -1,29 +1,3 @@
-<!-- 
-
-# Git Overview Page - Hub page that includes:
-
-- What is Git?
-- Why use Git?
-- Install/Download Git
-- GitHub Cheat Sheet link
-- Mini command tutorial (click through for more)
-- Mini GitHub call to action (why use GitHub)
-- Mini GitHub tutorial (click through for more)
-
-# General Specs
-- Title: Git Guide
-- URL: /git-guide/
-- Meta Description: Everything you need to know about Git, from getting started to advanced commands and workflows.
-- Focus Keyword: git (110,000)
-- Secondary Keywords: what is git (8,100), how to use git (2,400) 
-- Word Count: 1200+
-- **The focus keyword should be in the page title, url, h1 and throughout body copy.**
-- The secondary keywords are semantic variations of the focus keyword and are great to use in h2, h3 and other headings.
-- Written from a marketing perspective, should have an informal voice and not be exclusively technical.
-- Doesn’t need to exhaustively cover the technical intricacies of the specific git command – should be beginner friendly and include a lot of the “why” and a general overview of the “how”. Can link out to more in-depth technical resources where appropriate.
-
--->
-
 # Git Guide
 
 Everything you need to know about Git, from getting started to advanced commands and workflows.
