@@ -63,27 +63,13 @@ The main branch is usually called `master`. We want to work on _another_ branch,
 
 Once you've created a branch, and moved the HEAD pointer to it by "checking out" to that branch, you're ready to get to work. Make the changes in your repository using your favorite text editor or IDE. 
 
-Next, save your changes. You're ready to start the commit! Commits have two phases to help you craft commits properly. Commits should be logical, atomic units of change that represent a specific idea. But, not all humans work that way. You may get carried away and end up solving two or three problems before you remember to commit! That's OK - Git can handle that. Once you're ready to craft your commits, you'll use `git add <FILENAME>` to specify the files that you'd like to "stage" for commit. Without adding any files, the command `git commit` won't work. Git only looks to the staging area to find out what to commit. Staging, or adding, files, is possible through the command line, and also possible with most Git interfaces like GitHub Desktop by selecting the lines or files that you'd like to stage.
+Next, save your changes. You're ready to start the commit!
 
 <!--Image of staging area, working directory, and history-->
 
-You can also use a handy command, `git add -p`, to walk through the changes and separate them out, even if they're in the same file.
+To start your commit, you need to let Git know what changes you'd like to include with `git add [file]`.
 
-Once you've staged the files that you want to include in your commit, you're ready. Whether you commit in a tool like GitHub Desktop, or through your command line, the commit message is important. Commit messages should be short and descriptive of your change. If you are looking through your repository's history, you'll be guided by the commit messages, so they should tell a story. Commits in the command line can include the message with the following format:
-
-- `git commit -m "commit message here"`
-
-Commit messages should be present tense and directive, like the following examples:
-
-- `git commit -m "create file structure for Git guides"`
-- `git commit -m "translate Git cheat sheet into German"`
-- `git commit -m "update broken URL to Git resources"`
-
-If you'd like to include more context in your commit messages, you can have an extended commit message.
-
-Commit messages include lots of metadata in addition to the message, like the author, timestamp, and more.
-
-Remember, commits happen on the branch that you're currently checked out to (wherever HEAD is pointing) so it's always a good idea to run `git status` before making a commit, to check that you're checked-out to the branch that you intend to be.
+Once you've saved and staged the changes, you're ready to make the commit with `git commit -m "descriptive commit message"`. <!--link to commit page>
 
 ### Push your changes to the remote
 
