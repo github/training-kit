@@ -53,7 +53,7 @@ There are many version control systems out there - but Git has some major advant
 
 Depending on your operating system, you may already have Git installed. <!--[Link to installing Git.]--> But, getting started means more than having the software! To get started, it's important to know the basics of how Git works. You may choose to do the actual work within a terminal, an app like GitHub Desktop, or through GitHub.com. (*Note: while you can interact with Git through GitHub.com, your experience may be limited. Many local tools can give you access to the most widely used Git functionalities, though only the terminal will give you access to them all.)
 
-There are _many_ ways to use Git, which doesn't necessarily make it easier! But, the fundamental Git workflow has a few main steps:
+There are _many_ ways to use Git, which doesn't necessarily make it easier! But, the fundamental Git workflow has a few main steps. You can practice all of these in the [Introduction to GitHub Learning Lab course](https://lab.github.com/githubtraining/introduction-to-github).
 
 ### Create a branch
 
@@ -87,7 +87,7 @@ Remember, commits happen on the branch that you're currently checked out to (whe
 
 ### Push your changes to the remote
 
-So far, if you've made a commit locally, you're the only one that can see it. To let others see your work and begin collaboration, you should "push" your changes using `git push`. If you're pushing from a branch for the first time that you've created locally, you may need to give Git some more information. `git push -u origin <branch-name>` tells Git to push the current branch, and create a branch on the remote that matches it with the same name - and also, create a relationship with that branch, so that `git push` will be enough information in the future.
+So far, if you've made a commit locally, you're the only one that can see it. To let others see your work and begin collaboration, you should "push" your changes using `git push`. If you're pushing from a branch for the first time that you've created locally, you may need to give Git some more information. `git push -u origin [branch-name]` tells Git to push the current branch, and create a branch on the remote that matches it with the same name - and also, create a relationship with that branch, so that `git push` will be enough information in the future.
 
 By default, `git push` only pushes the branch that you're currently checked out to.
 
@@ -120,13 +120,28 @@ If you choose not to merge the pull request, you can also close pull requests wi
 
 ### Learning & Mastering Git Commands
 
-- A short description with a link out to the Git Cheat Sheet.
-- Very simplified breakdown of the most basic commands with clear navigation to learn more about each one (this might be a good example).
-- Again, potentially include illustrations from individual command pages here or more general learning illustrations.
-- A link out the help pages for people who are looking for more specific GitHub related technical guidance
+If you're getting started with Git, a great place to start is the [Git Cheat sheet](https://github.github.io/training-kit/). It's translated into many languages, [open source as a part of the `github/training-kit` repository](https://github.com/github/training-kit), and a great starting place for the fundamentals on the command line.
+
+<!--- Very simplified breakdown of the most basic commands with clear navigation to learn more about each one (this might be a good example).-->
+Some of the most important and most used commands that you'll find there are:
+
+- `git clone [url]`: Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
+- `git status`: Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
+- `git branch`: This shows the existing branches in your local repository. You can also use `git branch [banch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
+- `git checkout [branch-name]`: Switches to the specified branch and updates the working directory.
+- `git add [file]`: Snapshots the file in preparation for versioning, adding it to the staging area.
+- `git commit -m "descriptive message"`: Records file snapshots permanently in version history.
+- `git pull`: Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. `git pull` is a combination of `git fetch` and `git merge`.
+- `git push`: Uploads all local branch commits to the remote.
+  
+<!-- Again, potentially include illustrations from individual command pages here or more general learning illustrations. -->
+
+If you're looking for more GitHub specific technical guidance, check out [GitHub's help documentation](https://help.github.com/).
 
 ### Getting Started With GitHub
 
-- Short paragraph introduction to GitHub.
-- Learning Git CTA – people who are new to Git, should include GitHub flow as well.
-- GitHub CTA – people who already know Git and just need a GitHub account.
+If you're wondering where Git ends and GitHub begins, you're not alone. They are tied closely together to make working with them both a seamless experience. While Git takes care of the underlying version control, GitHub is the collaboration platform built on top of it. GitHub is the place for pull requests, comments, reviews, integrated tests, and so much more. Most developers work locally to develop, and use GitHub for collaboration. That ranges from using GitHub to host the shared remote repository, to working with colleagues and capitalizing on features like protected branches, code review, GitHub Actions, and more.
+
+The best place to practice using Git and GitHub is the [Introduction to GitHub Learning Lab course](https://lab.github.com/githubtraining/introduction-to-github).
+
+If you already know Git and need to sign up for a GitHub account, head over to [github.com](https://github.com/).
