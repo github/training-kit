@@ -197,7 +197,7 @@ Or while in the parent directory:
 {% capture subtree %}
 
 ### Subtree
-    git subtree push --prefix= example-submodule https://github.com/githubtraining/example-submodule master
+    git subtree push --prefix=example-submodule https://github.com/githubtraining/example-submodule master
 {% endcapture %}
 
 <div class="col-md-6">
