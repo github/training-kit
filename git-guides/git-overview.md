@@ -93,6 +93,7 @@ Some of the most important and most used commands that you'll find there are:
 - `git commit -m "descriptive message"`: Records file snapshots permanently in version history.
 - `git pull`: Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. `git pull` is a combination of `git fetch` and `git merge`.
 - `git push`: Uploads all local branch commits to the remote.
+- `git log`: Browse and inspect the evolution of project files.
   
 <!-- Again, potentially include illustrations from individual command pages here or more general learning illustrations. -->
 
