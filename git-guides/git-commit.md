@@ -8,17 +8,21 @@
 
 Commits are the building blocks of "save points" within Git's version control.
 
+### Commits shape history
+
 By using commits, you're able to craft history intentionally and safely. You can make commits to different branches, and specify exactly what changes you want to include. Commits are created on the branch that you're currently checked out to (wherever HEAD is pointing) so it's always a good idea to run `git status` before making a commit, to check that you're checked-out to the branch that you intend to be. Before you commit, you will need to stage any new changes that you'd like to include in the commit using `git add [file]`.
 
 Commits are lightweight SHA hashes, objects within Git. As long as you're working with text files, you won't need to worry about how many files you have, how big they are, or how many commits you make. Git can handle it!
 
-## How to Use Git Commit
-
-### Common usages and options for Git Commit.
+### Committing in two phases
 
 Commits have two phases to help you craft commits properly. Commits should be logical, atomic units of change that represent a specific idea. But, not all humans work that way. You may get carried away and end up solving two or three problems before you remember to commit! That's OK - Git can handle that. Once you're ready to craft your commits, you'll use `git add <FILENAME>` to specify the files that you'd like to "stage" for commit. Without adding any files, the command `git commit` won't work. Git only looks to the staging area to find out what to commit. Staging, or adding, files, is possible through the command line, and also possible with most Git interfaces like GitHub Desktop by selecting the lines or files that you'd like to stage.
 
 You can also use a handy command, `git add -p`, to walk through the changes and separate them out, even if they're in the same file.
+
+## How to Use Git Commit
+
+### Common usages and options for Git Commit
 
 - `git commit`: This starts the commit process, but since it doesn't include a `-m` flag for the message, your default text editor will be opened for you to create the commit message. If you haven't configured anything, there's a good chance this will be VI or Vim. (To get out, press esc, then `:w`, and then Enter. :wink:)
 - `git commit -m "descriptive commit message"`: This starts the commit process, and allows you to include the commit message at the same time.
