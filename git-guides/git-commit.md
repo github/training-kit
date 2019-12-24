@@ -38,6 +38,14 @@ Sometimes, you may need to change history. You may need to undo a commit. If you
 - If you are "undoing" a commit that exists on the remote, you could create big problems for your collaborators
 - Undoing a commit on work that you only have locally is much safer
 
+### What can go wrong while changing history?
+
+Changing history for collaborators can be problematic in a few ways. Imagine - You and another collaborator have the same repository, with the same history. But, they make a change that _deletes_ the most recent commit. They continue new commits from the commit directly before that. Meanwhile, you keep working _with_ the commit that the collaborator tried to delete. When they push, they'll have to 'force push', which should show to them that they're changing history. **What do you think will happen when you try to push?**
+
+In dramatic cases, Git may decide that the histories are too different and the projects are no longer related. This is uncommon, but a big problem.
+
+The most common result is that your `git push` would return the "deleted" commit to shared history. (First, you would `git pull` if you were working on the same branch, and then merge, but the results would be the same.) This means that whatever was so important to delete is now back in the repository. A password, token, or large binary file may return without ever alerting you.
+
 #### `git revert`
 
 `git revert` is the safest way to change history with Git. Instead of deleting existing commits, `git revert` looks at the changes introduced in a specific commit, then applies the inverse of those changes in a new commit. It functions as an "undo commit" command, without sacrificing the integrity of your repository's history. **`git revert` is always the recommended way to change history when it's possible**. 
