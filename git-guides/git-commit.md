@@ -83,3 +83,10 @@ Commit messages should be present tense and directive, like the following exampl
 - `git commit -m "update broken URL to Git resources"`
 
 If you'd like to include more context in your commit messages, you can also include an extended commit message.
+
+## Related commands
+
+- `git add [file]`: Snapshots the file in preparation for versioning, adding it to the staging area.
+- `git status`: Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
+- `git push`: Uploads all local branch commits to the remote.
+- `git log`: Browse and inspect the evolution of project files.
