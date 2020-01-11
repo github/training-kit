@@ -1,54 +1,56 @@
 ---
 layout: cheat-sheet
 redirect_to: false
-title: GitHub Git Cheat Sheet
-byline: Git is the open source distributed version control system that facilitates GitHub activities on your laptop or desktop. This cheat sheet summarizes commonly used Git command line instructions for quick reference.
+title: GitHub-dan Git üçün yaddaş kitabçası
+byline: Git - kompüterinizdə GitHub ilə işləmək üçün istifadə olunan açıq mənbəli, versiyaların paylanmış nəzarət sistemidir. Bu kitabça, əmr sətri üçün əsas Git əmrləri və onların tətbiqi üzrə təlimatlardan ibarətdir.
 leadingpath: ../../
 ---
 
 {% capture colOne %}
-## Install
+## Git quraşdırılması
+GitHub, repositarla əsas əməliyyatların icra edilməsi üçün qrafik interfeysli bir pəncərə proqramı və genişləndirilmiş iş ssenariləri üçün Git-in avtomatik yenilənən konsol versiyasını təqdim edir.
 
 ### GitHub Desktop
 [desktop.github.com](https://desktop.github.com)
+
+Linux və POSIX sistemləri üçün Git distributivlərini Git SCM rəsmi saytında tapa bilərsiniz.
 
 ### Git for All Platforms
 [git-scm.com](http://git-scm.com)
 
 ## Configure tooling
-Configure user information for all local repositories
+İstifadəçi haqqında informasiyanın bütün lokal repozitarlar üçün konfiqurasiyası
 
-```$ git config --global user.name "[name]"```
+```$ git config --global user.name "[istifadəçi_adınız]"```
 
-Sets the name you want attached to your commit transactions
+Kommitlərinizdə müəllif sahəsində əks olunacaq adınızı təyin edir
 
-```$ git config --global user.email "[email address]"```
+```$ git config --global user.email "[e-poçt ünvanınız]"```
 
-Sets the email you want attached to your commit transactions
+Kommitlərinizin məlumat hissəsində əks olunacaq e-poçt ünvanınızı təyin edir
 
 ```$ git config --global color.ui auto```
 
-Enables helpful colorization of command line output
+Əmr sətrinin çıxışının faydalı rənglənməsini aktiv edir
 
-## Branches
+## Budaqlar
+Budaqlar - Git-lə işin mühüm hissəsidir. Etdiyiniz istənilən kommit hal-hazırda "giriş etmiş" olduğunuz budaqda ediləcək. Hansı budaqda olduğunuzu görmək üçün `git status` əmrindən istifadə edin.
 
-Branches are an important part of working with Git. Any commits you make will be made on the branch you're currently "checked out" to. Use `git status` to see which branch that is.
+```$ git branch [budaq-adı]```
 
-```$ git branch [branch-name]```
+Yeni budaq yaradır
 
-Creates a new branch
+```$ git checkout [budaq-adı]```
 
-```$ git checkout [branch-name]```
-
-Switches to the specified branch and updates the working directory
+Göstərilən budağa keçir və iş qovluğunu yeniləyir
 
 ```$ git merge [branch]```
 
-Combines the specified branch's history into the current branch. This is usually done in pull requests, but is an important Git operation.
+Göstərilən budağın tarixini cari budaqla birləşdirir. Bu, ümumiyyətlə dəyişikliklərin qəbul edilməsi sorğularında istifadə olunur, lakin vacib bir Git əməliyyatıdır.
 
 ```$ git branch -d [branch-name]```
 
-Deletes the specified branch
+Göstərilən budağı silir
 
 {% endcapture %}
 <div class="col-md-6">
