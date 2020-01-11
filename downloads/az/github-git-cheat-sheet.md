@@ -8,7 +8,7 @@ leadingpath: ../../
 
 {% capture colOne %}
 ## Git quraşdırılması
-GitHub, repositarla əsas əməliyyatların icra edilməsi üçün qrafik interfeysli bir pəncərə proqramı və genişləndirilmiş iş ssenariləri üçün Git-in avtomatik yenilənən konsol versiyasını təqdim edir.
+GitHub, repozitarla əsas əməliyyatların icra edilməsi üçün qrafik interfeysli bir pəncərə proqramı və genişləndirilmiş iş ssenariləri üçün Git-in avtomatik yenilənən konsol versiyasını təqdim edir.
 
 ### Masaüstü GitHub
 [desktop.github.com](https://desktop.github.com)
