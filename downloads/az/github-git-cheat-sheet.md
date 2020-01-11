@@ -10,15 +10,15 @@ leadingpath: ../../
 ## Git quraşdırılması
 GitHub, repositarla əsas əməliyyatların icra edilməsi üçün qrafik interfeysli bir pəncərə proqramı və genişləndirilmiş iş ssenariləri üçün Git-in avtomatik yenilənən konsol versiyasını təqdim edir.
 
-### GitHub Desktop
+### Masaüstü GitHub
 [desktop.github.com](https://desktop.github.com)
 
 Linux və POSIX sistemləri üçün Git distributivlərini Git SCM rəsmi saytında tapa bilərsiniz.
 
-### Git for All Platforms
+### Bütün platformalar üçün Git
 [git-scm.com](http://git-scm.com)
 
-## Configure tooling
+## İlkin quraşdırma
 İstifadəçi haqqında informasiyanın bütün lokal repozitarlar üçün konfiqurasiyası
 
 ```$ git config --global user.name "[istifadəçi_adınız]"```
@@ -44,11 +44,11 @@ Yeni budaq yaradır
 
 Göstərilən budağa keçir və iş qovluğunu yeniləyir
 
-```$ git merge [branch]```
+```$ git merge [budaq-adı]```
 
 Göstərilən budağın tarixini cari budaqla birləşdirir. Bu, ümumiyyətlə dəyişikliklərin qəbul edilməsi sorğularında istifadə olunur, lakin vacib bir Git əməliyyatıdır.
 
-```$ git branch -d [branch-name]```
+```$ git branch -d [budaq-adı]```
 
 Göstərilən budağı silir
 
@@ -60,41 +60,40 @@ Göstərilən budağı silir
 
 {% capture colTwo %}
 
-## Create repositories
+## Repozitarın yaradılması
 
-When starting out with a new repository, you only need to do it once; either locally, then push to GitHub, or by cloning an existing repository.
+Yeni bir repozitar ilə işə başlamaq üçün, bunu ya lokalda yaradıb sonra GitHub-a göndərməli və ya mövcud repozitarı klonlaşdırmalısınız. Hər repozitar üçün bu əməliyyatı sadəcə bir dəfə edəcəksiz.
 
 ```$ git init```
 
-Turn an existing directory into a Git repository
+Mövcud bir qovluğu Git repozitarına çevirir
 
 ```$ git clone [url]```
 
-Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits
+GitHub-da mövcud olan repozitarı, bütün faylları, budaqları və kommitləri daxil olmaqla klonlaşdırır (yükləyir).
 
-## The .gitignore file
+## .gitignore faylı
+Bəzən, müəyyən faylları Git tərəfindən izlənmədən istisna etmək əlverişli ola bilər. Bu, adətən `.gitignore` adlı xüsusi bir faylda edilir. `.gitignore` faylları üçün faydalı şablonları [github.com/github/gitignore](https://github.com/github/gitignore) ünvanında tapa bilərsiniz.
 
-Sometimes it may be a good idea to exclude files from being tracked with Git. This is typically done in a special file named `.gitignore`. You can find helpful templates for `.gitignore` files at [github.com/github/gitignore](https://github.com/github/gitignore).
+## Dəyişikliklərin sinxronizasiyası
 
-## Synchronize changes
-
-Synchronize your local repository with the remote repository on GitHub.com
+Lokal repozitarınızı Github.com-da olan repozitarınız ilə sinxronlaşdırın
 
 ```$ git fetch```
 
-Downloads all history from the remote tracking branches
+GitHub-da mövcud olan repozitarın bütün tarixçəsini yükləyir
 
 ```$ git merge```
 
-Combines remote tracking branches into current local branch
+GitHub-da mövcud olan repozitarı cari budaqla birləşdirir
 
 ```$ git push```
 
-Uploads all local branch commits to GitHub
+Lokal budaqda olan bütün kommitləri Github repozitarına göndərir
 
 ```$ git pull```
 
-Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. `git pull` is a combination of `git fetch` and `git merge`
+Cari işlək lokal budağı müvafiq Github budağından gələn bütün yeni kommitlərlə yeniləyir. `git pull` - `git fetch` və `git merge` əmrlərinin kombinasiyasıdır
 
 {% endcapture %}
 <div class="col-md-6">
@@ -104,47 +103,50 @@ Updates your current local working branch with all new commits from the correspo
 
 {% capture colThree %}
 
-## Make changes
+## Dəyişikliklər edin
+Dəyişikliklərə baxış və kommitlərin yaradılması
 
-Browse and inspect the evolution of project files
+```$ git status```
+
+Bütün yeni və ya dəyişdirilmiş faylların siyahısını sadalayır
 
 ```$ git log```
 
-Lists version history for the current branch
+Cari budaq üçün versiya tarixini siyahılayır
 
-```$ git log --follow [file]```
+```$ git log --follow [fayl]```
 
-Lists version history for a file, including renames
+Bir fayl üçün ad dəyişmələri də daxil olmaqla versiya tarixini siyahılayır
 
-```$ git diff [first-branch]...[second-branch]```
+```$ git diff [birinci-budaq]...[ikinci-budaq]```
 
-Shows content differences between two branches
+İki budaq arasındakı məzmun fərqlərini göstərir
 
 ```$ git show [commit]```
 
-Outputs metadata and content changes of the specified commit
+Müəyyən bir kommit üçün metadata və məzmun dəyişikliklərini göstərir
 
 ```$ git add [file]```
 
-Snapshots the file in preparation for versioning
+Göstərilən faylı sonrakı əməliyyatlar üçün indeksləyir
 
-```$ git commit -m"[descriptive message]"```
+```$ git commit -m "[izahlı mesaj]"```
 
-Records file snapshots permanently in version history
+İndekslənmiş dəyişiklikləri versiya tarixinə yazır
 
-## Redo commits
+## Kommitlərin geri qaytarılması
 
-Erase mistakes and craft replacement history
+Səhvlərin silinməsi və tarixin tənzimlənməsi
 
-```$ git reset [commit]```
+```$ git reset [kommit]```
 
-Undoes all commits after `[commit]`, preserving changes locally
+Bütün dəyişiklikləri işçi qovluğunda saxlayaraq, göstərilən `[commit]`-dən sonrakı kommitlərin hamısını ləğv edir. 
 
-```$ git reset --hard [commit]```
+```$ git reset --hard [kommit]```
 
-Discards all history and changes back to the specified commit
+Bütün tarixi, işçi qovluğu daxil olmaqla ləğv edir və göstərilən kommitə qaytarır.
 
-> CAUTION! Changing history can have nasty side effects. If  you need to change commits that exist on GitHub (the remote), proceed with caution. If you need help, reach out at github.community or contact support.
+> DİQQƏT! Tarixi dəyişdirmək xoşagəlməz yan təsirlərə səbəb ola bilər. GitHub-da mövcud olan kommitləri dəyişdirərkən ehtiyatlı olun. Əgər köməyə ehtiyacınız varsa, github.community və ya dəstəklə əlaqə saxlayın.
 
 {% endcapture %}
 <div class="col-md-6">
@@ -153,17 +155,17 @@ Discards all history and changes back to the specified commit
 
 {% capture colFour %}
 
-## Glossary
+## Lüğət
 
-- **git**: an open source, distributed version-control system
-- **GitHub**: a platform for hosting and collaborating on Git repositories
-- **commit**: a Git object, a snapshot of your entire repository compressed into a SHA
-- **branch**: a lightweight movable pointer to a commit
-- **clone**: a local version of a repository, including all commits and branches
-- **remote**: a common repository on GitHub that all team members use to exchange their changes
-- **fork**: a copy of a repository on GitHub owned by a different user
-- **pull request**: a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more
-- **HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using `git checkout`
+- **git**: açıq mənbəli, versiyaların paylanmış nəzarət sistemidir
+- **GitHub**: git repozitarlarına ev sahibliyi və əməkdaşlıq üçün platformadır
+- **commit**: bir Git obyekti, repozitarınızın SHA alqoritmi ilə sıxılmış bir görüntüsüdür
+- **branch**: kommitlər üçün yüngül daşına bilən bir göstəricidir
+- **clone**: bütün kommit və budaqları da daxil olmaqla bir repozitarın lokal bir versiyasıdır
+- **remote**: GitHub-da bütün komanda üzvlərinin istifadə etdikləri ümumi bir repozitardır
+- **fork**: GitHub-dakı fərqli istifadəçiyə məxsus bir repozitar nüsxəsidir
+- **pull request**: bir budaqda təqdim olunan fərqləri müqayisə və rəylər, şərhlər, inteqrasiya olunmuş testlər və s. ilə müzakirə etmək üçün bir yer
+- **HEAD**: cari işlədiyiniz qovluğu təmsil edir. HEAD göstəricisi `git checkout` istifadə edilərkən müxtəlif budaqlara köçürülə bilər.
 
 {% endcapture %}
 <div class="col-md-6">
