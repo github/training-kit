@@ -10,10 +10,10 @@ leadingpath: ../../
 ## Git quraşdırılması
 GitHub, repozitarla əsas əməliyyatların icra edilməsi üçün qrafik interfeysli bir pəncərə proqramı və genişləndirilmiş iş ssenariləri üçün Git-in avtomatik yenilənən konsol versiyasını təqdim edir.
 
-### Masaüstü GitHub
+### Github Desktop
 [desktop.github.com](https://desktop.github.com)
 
-Linux və POSIX sistemləri üçün Git distributivlərini Git SCM rəsmi saytında tapa bilərsiniz.
+Linux və POSIX sistemləri üçün Git distribusiyalarını Git SCM rəsmi saytında tapa bilərsiniz.
 
 ### Bütün platformalar üçün Git
 [git-scm.com](http://git-scm.com)
@@ -21,11 +21,11 @@ Linux və POSIX sistemləri üçün Git distributivlərini Git SCM rəsmi saytı
 ## İlkin quraşdırma
 İstifadəçi haqqında informasiyanın bütün lokal repozitarlar üçün konfiqurasiyası
 
-```$ git config --global user.name "[istifadəçi_adınız]"```
+```$ git config --global user.name "[istifadəçi adı]"```
 
 Kommitlərinizdə müəllif sahəsində əks olunacaq adınızı təyin edir
 
-```$ git config --global user.email "[e-poçt ünvanınız]"```
+```$ git config --global user.email "[e-poçt ünvanı]"```
 
 Kommitlərinizin məlumat hissəsində əks olunacaq e-poçt ünvanınızı təyin edir
 
@@ -73,7 +73,7 @@ Mövcud bir qovluğu Git repozitarına çevirir
 GitHub-da mövcud olan repozitarı, bütün faylları, budaqları və kommitləri daxil olmaqla klonlaşdırır (yükləyir).
 
 ## .gitignore faylı
-Bəzən, müəyyən faylları Git tərəfindən izlənmədən istisna etmək əlverişli ola bilər. Bu, adətən `.gitignore` adlı xüsusi bir faylda edilir. `.gitignore` faylları üçün faydalı şablonları [github.com/github/gitignore](https://github.com/github/gitignore) ünvanında tapa bilərsiniz.
+Bəzən, müəyyən faylları Git tərəfindən izlənmədən istisna etmək əlverişli ola bilər. Bu istisnalar adətən `.gitignore` adlanan xüsusi faylda yazılaraq təyin edilir. `.gitignore` faylları üçün faydalı şablonları [github.com/github/gitignore](https://github.com/github/gitignore) ünvanında tapa bilərsiniz.
 
 ## Dəyişikliklərin sinxronizasiyası
 
@@ -160,11 +160,11 @@ Bütün tarixi, işçi qovluğu daxil olmaqla ləğv edir və göstərilən komm
 - **git**: açıq mənbəli, versiyaların paylanmış nəzarət sistemidir
 - **GitHub**: git repozitarlarına ev sahibliyi və əməkdaşlıq üçün platformadır
 - **commit**: bir Git obyekti, repozitarınızın SHA alqoritmi ilə sıxılmış bir görüntüsüdür
-- **branch**: kommitlər üçün yüngül daşına bilən bir göstəricidir
+- **branch** (budaq): kommitlər üçün yüngül daşına bilən bir göstəricidir
 - **clone**: bütün kommit və budaqları da daxil olmaqla bir repozitarın lokal bir versiyasıdır
-- **remote**: GitHub-da bütün komanda üzvlərinin istifadə etdikləri ümumi bir repozitardır
-- **fork**: GitHub-dakı fərqli istifadəçiyə məxsus bir repozitar nüsxəsidir
-- **pull request**: bir budaqda təqdim olunan fərqləri müqayisə və rəylər, şərhlər, inteqrasiya olunmuş testlər və s. ilə müzakirə etmək üçün bir yer
+- **remote** (məsafədən idarə olunan): GitHub-da bütün komanda üzvlərinin istifadə etdikləri ümumi bir repozitardır
+- **fork** (nüsxə): GitHub-dakı fərqli istifadəçiyə məxsus bir repozitar nüsxəsidir
+- **pull request** (dəyişikliklərin qəbul edilməsi sorğusu): bir budaqda təqdim olunan fərqləri müqayisə və rəylər, şərhlər, inteqrasiya olunmuş testlər və s. ilə müzakirə etmək üçün bir yer
 - **HEAD**: cari işlədiyiniz qovluğu təmsil edir. HEAD göstəricisi `git checkout` istifadə edilərkən müxtəlif budaqlara köçürülə bilər.
 
 {% endcapture %}
