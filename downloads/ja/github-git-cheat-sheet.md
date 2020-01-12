@@ -15,7 +15,7 @@ https://desktop.github.com/
 LinuxまたはPOSIXシステムのためのGitディストリビューションは公式のGit SCMウェブサイトから入手できます。
 
 ### Git 全プラットフォーム版
-http://git-scm.com
+https://git-scm.com
 
 ## ツールの設定
 すべてのローカルリポジトリ用の、ユーザー情報設定方法

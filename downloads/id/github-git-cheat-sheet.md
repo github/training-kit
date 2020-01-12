@@ -14,10 +14,10 @@ repositori dan sebuah edisi konsol pembaruan otomatis dari Git untuk skenario
 lanjutan.
 
 ### GitHub untuk Windows
-[windows.github.com](http://windows.github.com)
+[windows.github.com](https://windows.github.com)
 
 ### GitHub untuk Mac
-[mac.github.com](http://mac.github.com)
+[mac.github.com](https://mac.github.com)
 
 Distribusi Git untuk Linux dan sistem POSIX tersedia di situs resmi Git SCM.
 
@@ -25,7 +25,7 @@ Distribusi Git untuk Linux dan sistem POSIX tersedia di situs resmi Git SCM.
 [git-scm.com](https://git-scm.com)
 
 ## Konfigurasi Git
-Konfigurasi informasi git untuk pengguna dan system lokal 
+Konfigurasi informasi git untuk pengguna dan system lokal
 
 ```$ git config --global user.name "[nama]"```
 
