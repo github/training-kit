@@ -16,7 +16,7 @@ https://desktop.github.com/
 Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesinde bulabilirsiniz.
 
 ### Tüm platformlar için Git
-http://git-scm.com
+https://git-scm.com
 
 ## Takım yapılandırna
 Tüm yerel depolar için kullanıcı bilgilerini yapılandırın
