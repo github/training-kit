@@ -12,15 +12,15 @@ leadingpath: ../../../
 GitHub proporciona clientes de escritorio que incluyen una interfaz gráfica de usuario para las acciones más comunes que se pueden realizar en un repositorio y una edición de Git en la línea de comandos actualizada automáticamente para escenarios más avanzados.
 
 ### GitHub para Windows
-http://windows.github.com
+https://windows.github.com
 
 ### GitHub para Mac
-http://mac.github.com
+https://mac.github.com
 
 Distribuciones de Git para sistemas Linux y POSIX se encuentran disponibles en el sitio web oficial Git SCM.
 
 ### Git para todas las plataformas
-http://git-scm.com
+https://git-scm.com
 
 ## Configurar herramientas
 Configura la información del usuario para todos los respositorios locales

@@ -16,7 +16,7 @@ https://desktop.github.com/
 GitHub的Linux和POSIX版本可以在官方的Git SCM网站上获取。
 
 ### Git 全平台版
-http://git-scm.com
+https://git-scm.com
 
 ## 配置工具
 对所有本地仓库的用户信息进行配置
