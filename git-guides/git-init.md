@@ -1,3 +1,19 @@
+## General Specifications
+
+* **Title:** Git Init – GitHub Git Guide
+* **URL:** /git-guide/git-init/
+* **Meta Description:** The Git init command initializes a new git repository and is usually one of the first commands to run before using other Git commands.
+* **Focus Keyword:** git init (4,400)
+* **Secondary Keywords:** 
+ *   what does git init do (140)
+ *   git init bare (480)
+ *   git init existing folder (110)
+* **Word Count:** 800+
+*   The focus keyword should be in the page title, url, h1 and throughout body copy.
+*   The secondary keywords are semantic variations of the focus keyword and are great to use in h2, h3 and other headings.
+*   Written from a marketing perspective, should have an informal voice and not be exclusively technical.
+*   Doesn’t need to exhaustively cover the technical intricacies of the specific git command – should be beginner friendly and include a lot of the “why” and a general overview of the “how”. Can link out to more in-depth technical resources where appropriate.
+
 # Git Init
 
 `git init` turns any directory into a Git repository.
@@ -14,9 +30,9 @@ To initialize a repository, Git creates a hidden directory called `.git`. That d
 
 ### Common usages and options for `git init`
 
-*   `git init`: Transform the current directory into a Git repository
-*   `git init <directory>`: Transform a targeted directory in the current path into a Git repository
-*   `git init --bare`: Create a new bare repository, a repository to be sued as a remote repository that won't contain active development
+* `git init`: Transform the current directory into a Git repository
+* `git init <directory>`: Transform a directory in the current path into a Git repository
+* `git init --bare`: Create a new bare repository (a repository to be used as a remote repository only, that won't contain active development)
 
 You can see all of the options with `git init` in [git-scm's documentation](https://git-scm.com/docs/git-init).
 
@@ -28,25 +44,31 @@ Starting a new project can be confusing. Sometimes, it's unclear if you should u
 
 #### `git init`: One Person Starting a New Repository Locally
 
-Because `git init` creates the repository locally, this is the right choice if your project already exists. This is only run once, even if the project is shared by multiple collaborators. Once the repository is initiated and the first commit is made, then sharing the repository through remotes like GitHub will allow others to `git clone` the repository and begin working together. Once you have initialized the repository, you would probably want to create a remote repository somewhere like GitHub.com. Then, you could add the remote URL to your local git repository with `git remote add origin <URL>`. This stores the remote URL under a more human-friendly name, `origin`. Shape your history into at least one commit by using `git add` to stage the existing files, and `git commit` to make the snapshot. Once you have at least one commit, you can push to the remote and set up the tracking relationship for good with `git push -u origin master`.
+Your project may already exist locally, but it doesn't have Git yet. `git init` is probably the right choice for you. This is only run once, even if other collaborators share the project. 
+
+- First, initialize the repository and make at least one commit. 
+- Once you have initialized the repository, create a remote repository somewhere like GitHub.com.
+- Then, add the remote URL to your local git repository with `git remote add origin <URL>`. This stores the remote URL under a more human-friendly name, `origin`.
+- Shape your history into at least one commit by using `git add` to stage the existing files, and `git commit` to make the snapshot.
+- Once you have at least one commit, you can push to the remote and set up the tracking relationship for good with `git push -u origin master`.
 
 #### `git clone`: The Remote Already Exists
 
 If the repository already exists on a remote, you would choose to `git clone` and _not_ `git init`.
 
-If you create a remote repository first with the intent of moving your project to it later, you may have a few other steps to follow. If there are no commits in the remote repository, you can follow the steps above for `git init`. If there are commits and files in the remote repository but you would still like it to contain your project files, `git clone` that repository. Then, move your project's files into that cloned repository. `git add`, `git commit`, and `git push` to create a history that makes sense for the beginning of your project. Then, you and all of your collaborators will be able to interact with the repository without initializing anything with `git init` locally.
+If you create a remote repository first with the intent of moving your project to it later, you may have a few other steps to follow. If there are no commits in the remote repository, you can follow the steps above for `git init`. If there are commits and files in the remote repository but you would still like it to contain your project files, `git clone` that repository. Then, move the project's files into that cloned repository. `git add`, `git commit`, and `git push` to create a history that makes sense for the beginning of your project. Then, your team can interact with the repository without `git init` again.
 
 ### `git init` Existing Folder
 
-The default behavior of `git init` is to transform the current directory into a Git repository. For example, if you'd like your current project to become a Git repository, first change directories into the targeted root directory. Then, run `git init`.
+The default behavior of `git init` is to transform the current directory into a Git repository. For an existing  project to become a Git repository, navigate into the targeted root directory. Then, run `git init`.
 
-Alternatively, if you'd like to create a new repository in a directory in your current path, use `git init <directory>` and specify which directory to turn into a Git repository.
+Or, you can create a new repository in a directory in your current path. Use `git init <directory>` and specify which directory to turn into a Git repository.
 
 ## `git init` Gone Wrong
 
 ### `git init` in the wrong directory
 
-Because `git init` will transform the current directory, it's easy to accidentally create unintended repositories. You may have noticed strange error messages when using Git, and you suspect that another parent directory is also a Git repository.
+Running `git init` in the wrong place will create unintended repositories. You may have noticed strange error messages when using Git. Maybe you suspect that another parent directory is also a Git repository.
 
 To fix this, you first need to track down which directory is the unintended repository. Use `git status` to see if the current directory is tracked by Git. If it is, you can either run `ls -al` and look for an otherwise hidden `.git` directory. 
 
@@ -54,7 +76,7 @@ If you don't see it, navigate one level up in the directory structure with `cd .
 
 Once you find the `.git` directory, and you are sure that you don't want that to be a Git repository, use `rm -rf .git`. This will remove the `.git` directory, effectively un-initializing that repository. Run `git status` again to confirm that Git is no longer tracking any of these files. (It could be possible that multiple layers of `.git` directories are present.)
 
-Return to your working repository, the one that you _expect_ to be under version control, and things should be working as expected.
+Return to your working repository, the one that you _expect_ to be under version control. Things should be working as expected.
 
 ## Related Terms
 
