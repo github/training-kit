@@ -148,6 +148,7 @@ Change read, write, and execute permissions on files and folders
 
 Change permissions of [file] to 755
 
+> Octal representation of permissions are group of permissions for User (u), Group (g) and Others(o) with values that are sum of read (4), write (2) and execute (1) permissions.
 
 ```$ chmod -R 600```
 
