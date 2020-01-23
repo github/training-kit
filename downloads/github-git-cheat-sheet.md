@@ -64,6 +64,10 @@ When starting out with a new repository, you only need to do it once; either loc
 
 ```$ git init```
 
+After using the init command, the local repository must be linked to the GitHub repository created on our account using the following command:
+
+```$ git remote add origin "https://www.github.com/<<username>>/<<Repository name>>.git"```
+
 Turn an existing directory into a Git repository
 
 ```$ git clone [url]```
