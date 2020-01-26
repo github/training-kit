@@ -78,7 +78,7 @@ No special command required
 
 Anyone who clones will need to:
 
-    git clone --recursive URL
+    git clone --recurse-submodules URL
 
 Anyone who already has a local copy of the repo will need to:
 
