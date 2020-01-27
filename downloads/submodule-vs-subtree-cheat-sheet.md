@@ -159,6 +159,40 @@ No special command required
 </div>
 
 <div class="col-md-12">
+<h1>Changing branches</h1>
+</div>
+
+{% capture submodule %}
+### Submodule
+
+By default, the submodule working tree is not updated to match the commit recorded in the superproject when changing branches. You need to use `git submodule update`, or add the `--recurse-submodules` flag to `checkout` :
+
+```bash 
+git checkout <branch>
+git submodule update --recursive
+# or, in one step (Git >= 2.13)
+git checkout --recurse-submodules <branch>
+```
+
+{% endcapture %}
+
+{% capture subtree %}
+
+### Subtree
+
+No special command required
+
+{% endcapture %}
+
+<div class="col-md-6">
+{{ submodule | markdownify }}
+</div>
+
+<div class="col-md-6">
+{{ subtree | markdownify }}
+</div>
+
+<div class="col-md-12">
 <h1>Pulling in Subproject Updates</h1>
 </div>
 
