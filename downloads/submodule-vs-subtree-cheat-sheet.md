@@ -245,7 +245,7 @@ You can add/pull from other refs by replacing `master` with the desired ref (e.g
 <div class="col-md-12">
 <h1>Making Changes to a Subproject</h1>
 
-In most cases, it is considered best practice to make changes in the subproject repository and pull them in to the parent project. When this is not practical, follow these instructions:
+In most cases, it is considered best practice to make changes in a separate clone of the subproject repository and pull them in to the parent project. When this is not practical, follow these instructions:
 </div>
 
 {% capture submodule %}
@@ -257,6 +257,7 @@ Access the submodule directory and create a branch:
     git checkout -b branch-name master
 
 Changes require two commits, one in the subproject repository and one in the parent repository.
+Don't forget to push in both the submodule and the superproject!
 
 {% endcapture %}
 
@@ -319,6 +320,10 @@ Always show the submodule log when you diff:
 Show a short summary of submodule changes in your status message:
 
     git config status.submoduleSummary true
+
+Make `push` default to `--recurse-submodules=on-demand`:
+
+    git config --global push.recurseSubmodules on-demand
 
 
 {% endcapture %}
