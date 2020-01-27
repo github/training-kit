@@ -317,14 +317,17 @@ Always show the submodule log when you diff:
 
     git config --global diff.submodule log
 
-Show a short summary of submodule changes in your status message:
+Show a short summary of submodule changes in your `git status` message:
 
-    git config status.submoduleSummary true
+    git config --global status.submoduleSummary true
 
 Make `push` default to `--recurse-submodules=on-demand`:
 
     git config --global push.recurseSubmodules on-demand
 
+Make all commands (except `clone`) default to `--recurse-submodules` if they support the flag:
+
+    git config --global submodule.recurse true
 
 {% endcapture %}
 
