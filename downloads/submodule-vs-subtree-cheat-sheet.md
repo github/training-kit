@@ -49,8 +49,15 @@ The subtree command adds a subdirectory containing the files from `example-submo
 
 To view a diff of the submodule:
 
-    git diff --cached example-submodule
-    git diff --cached --submodule example-submodule
+```bash
+# show changes to the submodule commit
+git diff example-submodule
+# show oneline log of new commits in the submodule
+git diff --submodule example-submodule
+# show changes to the files in the submodule
+git diff --submodule=diff
+```
+
 {% endcapture %}
 
 {% capture subtree %}
@@ -220,9 +227,7 @@ Show a short summary of submodule changes in your status message:
 
     git config status.submoduleSummary true
 
-See the diffs in all of your submodules:
 
-    git config alias.sdiff "git diff; git submodule foreach 'git diff'"
 {% endcapture %}
 
 {{ configs | markdownify }}
