@@ -83,13 +83,15 @@ No special command required
 {% capture submodule %}
 ### Submodule
 
-Anyone who clones will need to:
+To clone a repository along with its submodules:
 
     git clone --recurse-submodules URL
 
-Anyone who already has a local copy of the repo will need to:
+If you forgot `--recurse-submodules`, you can clone and initialize all submodules:
 
-    git submodule update --init
+    git submodule update --init --recursive
+
+Adding `--recursive` is only required if any submodule itself has submodules.
 
 {% endcapture %}
 
