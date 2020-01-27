@@ -112,6 +112,53 @@ No special command required
 </div>
 
 <div class="col-md-12">
+<h1>Pulling in Superproject Updates</h1>
+</div>
+
+{% capture submodule %}
+### Submodule
+
+By default, the submodule repository is fetched, but not updated when you run `git pull` in the superproject. You need to use ` git submodule update`, or add the `--recurse-submodules` flag to `pull` :
+
+```bash
+git pull
+git submodule update --init --recursive
+# or, in one step (Git >= 2.14)
+git pull --recurse-submodules
+```
+
+`--init` is required if the superproject added new submodules, and `--recursive` is needed if any submodule itself has submodules.
+
+If ever the superproject changes the URL of the submodule, a separate command is required:
+
+```bash
+# copy the new URL to your local config
+git submodule sync --recursive
+# update the submodule from the new URL
+git submodule update --init --recursive
+```
+
+`--recursive` is only needed if any submodule itself has submodules.
+
+{% endcapture %}
+
+{% capture subtree %}
+
+### Subtree
+
+No special command required
+
+{% endcapture %}
+
+<div class="col-md-6">
+{{ submodule | markdownify }}
+</div>
+
+<div class="col-md-6">
+{{ subtree | markdownify }}
+</div>
+
+<div class="col-md-12">
 <h1>Pulling in Subproject Updates</h1>
 </div>
 
