@@ -118,15 +118,25 @@ No special command required
 {% capture submodule %}
 ### Submodule
 
-    git submodule update --remote
+```bash
+# Update the submodule repository
+git submodule update --remote
+# Record the changes in the superproject
+git commit -am "Update submodule"
+```
 
-If you have more than one submodule, you can add the name of the submodule to the end of the command to specify which subproject to update.
+If you have more than one submodule, you can add the path to the submodule at the end of the `git submodule update --remote` command to specify which subproject to update.
 
-By default, this will update the submodule and check out to the default branch of the submodule remote.
+By default, `git submodule update --remote` will update the submodule to the latest commit on the `master` branch of the submodule remote.
 
-You can change the default branch with:
+You can change the default branch for future calls with:
 
-    git config -f .gitmodules submodule.example-submodule.branch other-branch
+```bash
+# Git >= 2.22
+git submodule set-branch other-branch
+# or
+git config -f .gitmodules submodule.example-submodule.branch other-branch
+```
 
 {% endcapture %}
 
@@ -139,7 +149,7 @@ You can shorten the command by adding the subtree URL as a remote:
 
     git remote add sub-remote https://github.com/githubtraining/example-submodule.git
 
-You can add/pull from other refs by replacing master with the desired ref (e.g. stable, v1.0).
+You can add/pull from other refs by replacing `master` with the desired ref (e.g. `stable`, `v1.0`).
 
 {% endcapture %}
 
