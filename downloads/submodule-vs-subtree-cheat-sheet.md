@@ -325,7 +325,7 @@ Make `push` default to `--recurse-submodules=on-demand`:
 
     git config --global push.recurseSubmodules on-demand
 
-Make all commands (except `clone`) default to `--recurse-submodules` if they support the flag:
+Make all commands (except `clone`) default to `--recurse-submodules` if they support the flag (this works for `git pull` since Git 2.15):
 
     git config --global submodule.recurse true
 
