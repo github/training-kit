@@ -25,7 +25,7 @@ Distribusi Git untuk Linux dan sistem POSIX tersedia di situs resmi Git SCM.
 [git-scm.com](https://git-scm.com)
 
 ## Konfigurasi Git
-Konfigurasi informasi git untuk pengguna dan system lokal
+Konfigurasi informasi Git untuk pengguna dan system lokal
 
 ```$ git config --global user.name "[nama]"```
 

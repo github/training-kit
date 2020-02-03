@@ -7,7 +7,7 @@ leadingpath: ../../../
 ---
 
 {% capture colOne %}
-## Inštalácia GITu
+## Inštalácia Gitu
 GitHub ponúka aplikácie pre najbežnejšie operácie s repozitármi alebo rozhranie v príkazovom riadku pre zložitejšie situácie.
 
 ### GitHub pre Windows
