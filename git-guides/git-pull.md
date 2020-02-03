@@ -28,7 +28,7 @@ If you do use `git fetch` instead of `git pull`, make sure you remember to `git 
 
 * `git pull`: Update your local working branch with commits from the remote, _and_ update all remote tracking branches.
 * `git pull --rebase`: Update your local working branch with commits from the remote, but rewrite history so any local commits occur after all new commits coming from the remote, avoiding a merge commit.
-* `git pull --force`: This does *not* work in the same way `git push --force` does! This option allows you to force a fetch of a specific remote tracking branch when using the `<refspec>` option that would otherwise not be fetched due to conflicts. To force Git to overwrite your current branch to match the remote tracking branch, read below about using `git reset`.
+* `git pull --force`: This option allows you to force a fetch of a specific remote tracking branch when using the `<refspec>` option that would otherwise not be fetched due to conflicts. To force Git to overwrite your current branch to match the remote tracking branch, read below about using `git reset`.
 * `git pull --all`: Fetch _all_ remotes - this is handy if you are working on a fork or in another use case with multiple remotes.
 
 You can see all of the many options with `git pull` in [git-scm's documentation](https://git-scm.com/docs/git-pull).
