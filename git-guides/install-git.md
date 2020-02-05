@@ -22,16 +22,31 @@ Installing GitHub Desktop will also install the latest version of Git if you don
 
 ## Install Git on Windows
 
-1) Navigate to the latest [Git for Windows installer](https://gitforwindows.org/) and download the latest version.
-2) Once the installer has started, follow the instructions as provided in the **Git Setup** wizard screen until the installation is complete.
-3) Open the windows command prompt (or **Git Bash** if you selected not to use the standard Git Windows Command Prompt during the Git installation).
-4) Type `git version` to verify Git was installed.
+1. Navigate to the latest [Git for Windows installer](https://gitforwindows.org/) and download the latest version.
+2. Once the installer has started, follow the instructions as provided in the **Git Setup** wizard screen until the installation is complete.
+3. Open the windows command prompt (or **Git Bash** if you selected not to use the standard Git Windows Command Prompt during the Git installation).
+4. Type `git version` to verify Git was installed.
 
 Note: [`git-scm`](https://git-scm.com/download/win) is a popular and recommended resource for downloading Git for Windows. The advantage of downloading Git from `git-scm` is that your download automatically starts with the latest version of Git included with the recommended command prompt, `Git Bash` . The download source is the same [Git for Windows installer](https://gitforwindows.org/) as referenced in the steps above.
 
 ## Install Git on Mac
 
-Most versions of MacOS will already have `git` installed, and you can activate it through the terminal with `git version`. However, if you don't have Git installed for whatever reason, you can [download it here](https://git-scm.com/download/mac).
+Most versions of MacOS will already have `Git` installed, and you can activate it through the terminal with `git version`. However, if you don't have Git installed for whatever reason, you can install the latest version of Git using one of several popular methods as listed below:
+
+#### Install Git From an Installer
+
+1. Navigate to the latest [macOS Git Installer](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect) and download the latest version.
+2. Once the installer has started, follow the instructions as provided until the installation is complete.
+3. Open the command prompt "terminal" and type `git version` to verify Git was installed.
+
+Note: [`git-scm`](https://git-scm.com/download/mac) is a popular and recommended resource for downloading Git on a Mac. The advantage of downloading Git from `git-scm` is that your download automatically starts with the latest version of Git. The download source is the same [macOS Git Installer](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect) as referenced in the steps above.
+
+#### Install Git from Homebrew
+
+[Homebrew](https://brew.sh/) is a popular package manager for macOS. If you already have Homwbrew installed, you can follow the below steps to install Git:
+
+1. Open up a terminal window and install Git using the following command: `brew install git`.
+2. Once the command output has completed, you can verify the installation by typing: `git version`.
 
 ## Install Git on Ubuntu
 
