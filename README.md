@@ -23,7 +23,10 @@ If you'd like to have a copy of the files to be served from a web server inside 
 2. To test this looks okay, create some folders `mkdir -p test_site/kit`.
 3. Untar the release, `tar -xzf release-XXXXXXX.tgz -C test_site/kit`.
 4. Switch into the test_site directory, `cd test_site`.
-5. View the site with `python -m SimpleHTTPServer` for python version 2.x `python -m http.server` for python version 3.x. _Note: Some servers are more advanced than others and can handle redirects, smart recognition of `.html` files, etc_
+5. View the site:
+    - For python version 2.x, run: `python -m SimpleHTTPServer`
+    - For python version 3.x, run: `python -m http.server`
+    - _Note: Some servers are more advanced than others and can handle redirects, smart recognition of `.html` files, etc_
 
 ## [Licenses](https://github.com/github/training-kit/blob/master/LICENSE)
 
