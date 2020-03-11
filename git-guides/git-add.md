@@ -16,6 +16,10 @@ As you're working, you change and save a file, or multiple files. Then, before y
  
 ### What Does Git Add Do?
 
+```sh
+git add README.md
+```
+
 `git add [filename]` selects that file, and moves it to the staging area, marking it for inclusion in the next commit. You can select all files, a directory, specific files, or even specific parts of a file for staging and commit.
 
 This means if you `git add` a deleted file the _deletion_ is staged for commit. The language of "add" when you're actually "deleting" can be confusing. If you think or use `git stage` in place of `git add`, the reality of what is happening may be more clear.
@@ -36,26 +40,26 @@ You can see all of the many options with `git add` in [git-scm's documentation](
 
 `git add` usually fits into the workflow in the following steps:
 
-1. Create a branch
-2. Checkout to that branch
+1. Create a branch: `git branch update-readme`
+2. Checkout to that branch: `git checkout update-readme`
 3. Change a file or files
 4. Save the file or files
-5. Add the files or segments of code that should be included in the next commit
-6. Commit the changes
-7. Push the changes to the remote branch
+5. Add the files or segments of code that should be included in the next commit: `git add README.md`
+6. Commit the changes: `git commit -m "update the README to include links to contributing guide"`
+7. Push the changes to the remote branch: `git push -u origin update-readme`
 
 But, `git add` could also be used like:
 
-1. Create a branch
-2. Checkout to that branch
+1. Create a branch: `git branch update-readme`
+2. Checkout to that branch: `git checkout update-readme`
 3. Change a file or files
 4. Save the file or files
-5. Add only one file, or one part of the changed file
-6. Commit the first set of changes
-7. Add another file, or another part of the changed file
-8. Commit the second set of changes
+5. Add only one file, or one part of the changed file: `git add README.md`
+6. Commit the first set of changes: `git commit -m "update the README to include links to contributing guide"`
+7. Add another file, or another part of the changed file: `git add CONTRIBUTING.md`
+8. Commit the second set of changes: `git commit -m "create the contributing guide"`
 9. (Repeat as necessary)
-10. Push the changes to the remote branch
+10. Push the changes to the remote branch: `git push -u origin update-readme`
 
 ### `git add` All Files
 
