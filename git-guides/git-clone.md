@@ -8,6 +8,10 @@ Git is a distributed version control system. Maximize the advantages of a full r
 
 ### What Does `git clone` Do?
 
+```sh
+git clone https://github.com/github/training-kit.git
+```
+
 When you clone a repository, you don't get one file, like you may in other centralized version control systems. By cloning with Git, you get the entire repository - all files, all branches, and all commits.
 
 Cloning a repository is typically only done once, at the beginning of your interaction with a project. Once a repository already exists on a remote, like on GitHub, then you would clone that repository so you could interact with it locally. Once you have cloned a repository, you won't need to clone it again to do regular development.
