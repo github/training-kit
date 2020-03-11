@@ -8,6 +8,10 @@ Without `git pull`, (or the effect of it,) your local branch wouldn't have any o
 
 ### What Does `git pull` Do?
 
+```sh
+git pull
+```
+
 `git pull` is one of the 4 remote operations within Git. Without running `git pull`, your local repository will never be updated with changes from the remote. `git pull` should be used every day you interact with a repository with a remote, at the minimum. That's why `git pull` is one of the most used Git commands.
 
 ### `git pull` and `git fetch`
