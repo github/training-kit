@@ -12,13 +12,13 @@ The `git add` command adds new or changed files in your working directory to the
 
 ## When do you use `git add`?
 
-As you're working, you change and save a file, or multiple files. Then, before you commit, you must `git add`. This step allows you to choose what you are going to commit. Commits should be logical, atomic units of change - but not everyone works that way. Maybe you are making changes to files that _aren't_ logical or atomic units of change.  `git add` allows you to systematically shape your commits and your history anyway.
- 
-### What Does Git Add Do?
-
 ```sh
 git add README.md
 ```
+
+As you're working, you change and save a file, or multiple files. Then, before you commit, you must `git add`. This step allows you to choose what you are going to commit. Commits should be logical, atomic units of change - but not everyone works that way. Maybe you are making changes to files that _aren't_ logical or atomic units of change.  `git add` allows you to systematically shape your commits and your history anyway.
+ 
+### What Does Git Add Do?
 
 `git add [filename]` selects that file, and moves it to the staging area, marking it for inclusion in the next commit. You can select all files, a directory, specific files, or even specific parts of a file for staging and commit.
 
