@@ -8,6 +8,10 @@
 
 Commits are the building blocks of "save points" within Git's version control.
 
+```sh
+git commit -m "update the README.md with link to contributing guide"
+```
+
 ### Commits shape history
 
 By using commits, you're able to craft history intentionally and safely. You can make commits to different branches, and specify exactly what changes you want to include. Commits are created on the branch that you're currently checked out to (wherever HEAD is pointing) so it's always a good idea to run `git status` before making a commit, to check that you're checked-out to the branch that you intend to be. Before you commit, you will need to stage any new changes that you'd like to include in the commit using `git add [file]`.
