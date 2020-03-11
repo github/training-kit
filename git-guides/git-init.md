@@ -16,6 +16,10 @@
 
 # Git Init
 
+```sh
+git init
+```
+
 `git init` turns any directory into a Git repository.
 
 <!--*   Spiderweb menu of related terms here. What does this mean?-->
