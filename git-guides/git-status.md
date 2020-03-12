@@ -6,21 +6,31 @@
 git status
 ```
 
-`git status` does X.
+`git status` shows the status of your Git working directory.
 
 <!--*   Spiderweb menu of related terms here. What does this mean?-->
 
 ## What Does `git status` Do?
 
+When in doubt, run `git status`. This is _always_ a good idea. `git status` doesn't ever change anything, but gives you information on your repository.
+
+Depending on your situation, `git status` will give you different information. In general, you can count on it to tell you:
+
+- Where `HEAD` is pointing, whether that is a branch or a commit (this is where you are "checked out" to)
+- If you have any changed files in your current directory that have not yet been committed
+- If changed files are un-staged or staged
+- If your current local branch is linked to a remote branch, then `git status` will tell you if your local branch is behind or ahead by any commits
+
+During merge conflicts, `git status` will also tell you exactly which files are the source of the conflict.
+
 ## How to Use `git status`
 
 ### Common usages and options for `git status`
 
-* `git status x`: description
+* `git status`: Most often used in its default form, this shows a good base of information
+* `git status -v`: Shows more "verbose" detail including the textual changes of any uncommitted files
 
 You can see all of the options with `git status` in [git-scm's documentation](https://git-scm.com/docs/git-status).
-
-## Examples of `git status`
 
 ## Related Terms
 
