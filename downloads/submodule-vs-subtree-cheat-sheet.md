@@ -2,7 +2,7 @@
 layout: cheat-sheet
 redirect_to: false
 title: Handling Dependencies with Submodules and Subtrees
-byline: Submodules and subtrees are git tools that allow subprojects to be included as a subdirectory within a project. The implementation of each is very different.
+byline: Submodules and subtrees are Git tools that allow subprojects to be included as a subdirectory within a project. The implementation of each is very different.
 leadingpath: ../../
 ---
 
@@ -49,8 +49,15 @@ The subtree command adds a subdirectory containing the files from `example-submo
 
 To view a diff of the submodule:
 
-    git diff --cached example-submodule
-    git diff --cached --submodule example-submodule
+```bash
+# show changes to the submodule commit
+git diff example-submodule
+# show oneline log of new commits in the submodule
+git diff --submodule example-submodule
+# show changes to the files in the submodule
+git diff --submodule=diff
+```
+
 {% endcapture %}
 
 {% capture subtree %}
@@ -76,13 +83,96 @@ No special command required
 {% capture submodule %}
 ### Submodule
 
-Anyone who clones will need to:
+To clone a repository along with its submodules:
 
-    git clone --recursive URL
+    git clone --recurse-submodules URL
 
-Anyone who already has a local copy of the repo will need to:
+If you forgot `--recurse-submodules`, you can clone and initialize all submodules:
 
-    git submodule update --init
+    git submodule update --init --recursive
+
+Adding `--recursive` is only required if any submodule itself has submodules.
+
+{% endcapture %}
+
+{% capture subtree %}
+
+### Subtree
+
+No special command required
+
+{% endcapture %}
+
+<div class="col-md-6">
+{{ submodule | markdownify }}
+</div>
+
+<div class="col-md-6">
+{{ subtree | markdownify }}
+</div>
+
+<div class="col-md-12">
+<h1>Pulling in Superproject Updates</h1>
+</div>
+
+{% capture submodule %}
+### Submodule
+
+By default, the submodule repository is fetched, but not updated when you run `git pull` in the superproject. You need to use ` git submodule update`, or add the `--recurse-submodules` flag to `pull` :
+
+```bash
+git pull
+git submodule update --init --recursive
+# or, in one step (Git >= 2.14)
+git pull --recurse-submodules
+```
+
+`--init` is required if the superproject added new submodules, and `--recursive` is needed if any submodule itself has submodules.
+
+If ever the superproject changes the URL of the submodule, a separate command is required:
+
+```bash
+# copy the new URL to your local config
+git submodule sync --recursive
+# update the submodule from the new URL
+git submodule update --init --recursive
+```
+
+`--recursive` is only needed if any submodule itself has submodules.
+
+{% endcapture %}
+
+{% capture subtree %}
+
+### Subtree
+
+No special command required
+
+{% endcapture %}
+
+<div class="col-md-6">
+{{ submodule | markdownify }}
+</div>
+
+<div class="col-md-6">
+{{ subtree | markdownify }}
+</div>
+
+<div class="col-md-12">
+<h1>Changing branches</h1>
+</div>
+
+{% capture submodule %}
+### Submodule
+
+By default, the submodule working tree is not updated to match the commit recorded in the superproject when changing branches. You need to use `git submodule update`, or add the `--recurse-submodules` flag to `checkout` :
+
+```bash 
+git checkout <branch>
+git submodule update --recursive
+# or, in one step (Git >= 2.13)
+git checkout --recurse-submodules <branch>
+```
 
 {% endcapture %}
 
@@ -109,15 +199,25 @@ No special command required
 {% capture submodule %}
 ### Submodule
 
-    git submodule update --remote
+```bash
+# Update the submodule repository
+git submodule update --remote
+# Record the changes in the superproject
+git commit -am "Update submodule"
+```
 
-If you have more than one submodule, you can add the name of the submodule to the end of the command to specify which subproject to update.
+If you have more than one submodule, you can add the path to the submodule at the end of the `git submodule update --remote` command to specify which subproject to update.
 
-By default, this will update the submodule and check out to the default branch of the submodule remote.
+By default, `git submodule update --remote` will update the submodule to the latest commit on the `master` branch of the submodule remote.
 
-You can change the default branch with:
+You can change the default branch for future calls with:
 
-    git config -f .gitmodules submodule.example-submodule.branch other-branch
+```bash
+# Git >= 2.22
+git submodule set-branch other-branch
+# or
+git config -f .gitmodules submodule.example-submodule.branch other-branch
+```
 
 {% endcapture %}
 
@@ -130,7 +230,7 @@ You can shorten the command by adding the subtree URL as a remote:
 
     git remote add sub-remote https://github.com/githubtraining/example-submodule.git
 
-You can add/pull from other refs by replacing master with the desired ref (e.g. stable, v1.0).
+You can add/pull from other refs by replacing `master` with the desired ref (e.g. `stable`, `v1.0`).
 
 {% endcapture %}
 
@@ -145,7 +245,7 @@ You can add/pull from other refs by replacing master with the desired ref (e.g. 
 <div class="col-md-12">
 <h1>Making Changes to a Subproject</h1>
 
-In most cases, it is considered best practice to make changes in the subproject repository and pull them in to the parent project. When this is not practical, follow these instructions:
+In most cases, it is considered best practice to make changes in a separate clone of the subproject repository and pull them in to the parent project. When this is not practical, follow these instructions:
 </div>
 
 {% capture submodule %}
@@ -157,6 +257,7 @@ Access the submodule directory and create a branch:
     git checkout -b branch-name master
 
 Changes require two commits, one in the subproject repository and one in the parent repository.
+Don't forget to push in both the submodule and the superproject!
 
 {% endcapture %}
 
@@ -216,13 +317,18 @@ Always show the submodule log when you diff:
 
     git config --global diff.submodule log
 
-Show a short summary of submodule changes in your status message:
+Show a short summary of submodule changes in your `git status` message:
 
-    git config status.submoduleSummary true
+    git config --global status.submoduleSummary true
 
-See the diffs in all of your submodules:
+Make `push` default to `--recurse-submodules=on-demand`:
 
-    git config alias.sdiff "git diff; git submodule foreach 'git diff'"
+    git config --global push.recurseSubmodules on-demand
+
+Make all commands (except `clone`) default to `--recurse-submodules` if they support the flag (this works for `git pull` since Git 2.15):
+
+    git config --global submodule.recurse true
+
 {% endcapture %}
 
 {{ configs | markdownify }}

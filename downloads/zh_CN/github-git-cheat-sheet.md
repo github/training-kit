@@ -2,46 +2,53 @@
 layout: cheat-sheet
 redirect_to: false
 title: GitHub Git 备忘单
-byline: Git是一个开源的分布式版本控制系统，方便你在笔记本或桌面端进行GitHub的操作，这个备忘单总结了常用的Git命令行指令，以便快速查询。
+byline: Git 是一个开源的分布式版本控制系统，方便你在笔记本或桌面端进行 GitHub 的操作，这个备忘单总结了常用的 Git 命令行指令，以便快速查询。
 leadingpath: ../../../
 ---
 
 {% capture colOne %}
-## 安装Git
-GitHub提供了包含图形界面的桌面客户端，通过客户端可以完成大部分常用的仓库操作，同时可以自动更新Git的命令行版本，以适应新的场景。
+## 安装
 
 ### GitHub Desktop
-https://desktop.github.com/
-
-GitHub的Linux和POSIX版本可以在官方的Git SCM网站上获取。
+[desktop.github.com](https://desktop.github.com)
 
 ### Git 全平台版
-http://git-scm.com
+[git-scm.com](https://git-scm.com)
 
 ## 配置工具
-对所有本地仓库的用户信息进行配置
+##### 对所有本地仓库的用户信息进行配置。
 
 ```$ git config --global user.name "[name]"```
 
-对你的commit操作设置关联的用户名
+对你的commit操作设置关联的用户名。
 
 ```$ git config --global user.email "[email address]"```
 
-对你的commit操作设置关联的邮箱地址
+对你的commit操作设置关联的邮箱地址。
 
+```$ git config --global color.ui auto```
 
-## 创建仓库
-创建一个新的仓库或者从一个现有的链接获取仓库
+启用有帮助的彩色命令行输出。
 
+## 分支
 
-```$ git init [project-name]```
+##### 分支是使用 Git 工作的一个重要部分。你做的任何提交都会发生在当前“checked out”到的分支上。使用 `git status` 查看那是哪个分支。
 
-创建一个本地的仓库，并设置名字
+```$ git branch [branch-name]```
 
+创建一个新分支。
 
-```$ git clone [url]```
+```$ git checkout [branch-name]```
 
-下载一个项目以及它所有的版本历史
+切换到指定分支并更新工作目录(working directory)。
+
+```$ git merge [branch]```
+
+将指定分支的历史合并到当前分支。这通常在拉取请求(PR)中完成，但也是一个重要的 Git 操作。
+
+```$ git branch -d [branch-name]```
+
+删除指定分支。
 
 {% endcapture %}
 <div class="col-md-6">
@@ -51,66 +58,41 @@ http://git-scm.com
 
 {% capture colTwo %}
 
-## 更改
-检查已有的编辑并执行commit操作
+## 创建仓库
 
+##### 当着手于一个新的仓库时，你只需创建一次。要么在本地创建，然后推送到 GitHub；要么通过 clone 一个现有仓库。
 
-```$ git status```
+```$ git init```
 
-列出所有新建或者更改的文件，这些文件需要被commit
+将现有目录转换为一个 Git 仓库。
 
+```$ git clone [url]```
 
-```$ git diff```
+Clone（下载）一个已存在于 GitHub 上的仓库，包括所有的文件、分支和提交(commits)。
 
-展示那些没有暂存文件的差异
+## .gitignore 文件
 
+有时一些文件最好不要用 Git 跟踪。这通常在名为 `.gitignore` 的特殊文件中完成。你可以在 [github.com/github/gitignore](https://github.com/github/gitignore) 找到有用的 `.gitignore` 文件模板。
 
-```$ git add [file]```
+## 同步更改
 
-将文件进行快照处理用于版本控制
+##### 将你本地仓库与 GitHub.com 上的远端仓库同步。
 
+```$ git fetch```
 
-```$ git diff --staged```
+下载远端跟踪分支的所有历史。
 
-展示暂存文件与最新版本之间的不同
+```$ git merge```
 
+将远端跟踪分支合并到当前本地分支。
 
-```$ git reset [file]```
+```$ git push```
 
-将文件移除暂存区，但是保留其内容
+将所有本地分支提交上传到 GitHub。
 
+```$ git pull```
 
-```$ git commit -m"[descriptive message]"```
-
-将文件快照永久地记录在版本历史中
-
-## 批量更改
-命名一系列commit以及合并已完成的工作
-
-
-```$ git branch```
-
-列出当前仓库中所有的本地分支
-
-
-```$ git branch [branch-name]```
-
-建立一个新分支
-
-
-```$ git checkout [branch-name]```
-
-切换到一个特定的分支上并更新工作目录
-
-
-```$ git merge [branch-name]```
-
-合并特定分支的历史到当前分支
-
-
-```$ git branch -d [branch-name]```
-
-删除特定的分支
+使用来自 GitHub 的对应远端分支的所有新提交更新你当前的本地工作分支。`git pull` 是 `git fetch` 和 `git merge` 的结合。
 
 {% endcapture %}
 <div class="col-md-6">
@@ -118,61 +100,49 @@ http://git-scm.com
 </div>
 <div class="clearfix"></div>
 
-
 {% capture colThree %}
-## 重构文件
-重定位并移除版本文件
 
-```$ git rm [file]```
+## 进行更改
 
-从工作目录中删除文件并暂存此删除
+##### 浏览并检查项目文件的发展。
 
-```$ git rm --cached [file]```
+```$ git log```
 
-从版本控制中移除文件，并在本地保存文件
+列出当前分支的版本历史。
 
+```$ git log --follow [file]```
 
-```$ git mv [file-original] [file-renamed]```
+列出文件的版本历史，包括重命名。
 
-改变文件名并准备commit
+```$ git diff [first-branch]...[second-branch]```
 
-## 停止追踪
-不包含临时文件和路径
+展示两个分支之间的内容差异。
 
-```
-*.log
-build/
-temp-*
-```
+```$ git show [commit]```
 
-文本文件`.gitignore`可以防止一些特定的文件进入到版本控制中
+输出指定commit的元数据和内容变化。
 
+```$ git add [file]```
 
-```$ git ls-files --others --ignored --exclude-standard```
+将文件进行快照处理用于版本控制。
 
-列出所有项目中忽略的文件
+```$ git commit -m"[descriptive message]"```
 
-## 保存临时更改
-暂存一些未完成的更改
+将文件快照永久地记录在版本历史中。
 
-```$ git stash```
+## 重做提交
 
-临时存储所有修改的已跟踪文件
+##### 清除错误和历史
 
+```$ git reset [commit]```
 
-```$ git stash pop```
+撤销所有 `[commit]` 后的的提交，在本地保存更改。
 
-重新存储所有最近被stash的文件
+```$ git reset --hard [commit]```
 
+放弃所有历史，改回指定提交。
 
-```$ git stash list```
-
-列出所有被stash的更改
-
-
-```$ git stash drop```
-
-放弃所有最近stash的更改
+> 小心！更改历史可能带来不良后果。如果你需要更改 GitHub（远端）已有的提交，请谨慎操作。如果你需要帮助，可访问 [github.community](https://github.community) 或联系支持(support)。
 
 {% endcapture %}
 <div class="col-md-6">
@@ -180,65 +150,21 @@ temp-*
 </div>
 
 {% capture colFour %}
-## 查阅历史
-浏览并检查项目文件的发展
 
+## 术语表
 
-```$ git log```
-
-列出当前分支的版本历史
-
-
-```$ git log --follow [file]```
-
-列出文件的版本历史，包括重命名
-
-
-```$ git diff [first-branch]...[second-branch]```
-
-展示两个不同分支之间的差异
-
-
-```$ git show [commit]```
-
-输出元数据以及特定commit的内容变化
-
-## 撤销commit
-擦除错误并更改历史
-
-```$ git reset [commit]```
-
-撤销所有`[commit]`后的的commit，在本地保存更改
-
-
-```$ git reset --hard [commit]```
-
-放弃所有更改并回到某个特定的commit
-
-## 同步更改
-注册一个远程的链接，交换仓库的版本历史
-
-
-```$ git fetch [remote]```
-
-下载远程仓库的所有历史
-
-
-```$ git merge [remote]/[branch]```
-
-合并远程分支到当前本地分支
-
-
-```$ git push [remote] [branch]```
-
-上传所有本地分支commit到GitHub上
-
-
-```$ git pull```
-
-下载书签历史并合并更改
+- **git**: 一个开源的分布式版本控制系统。
+- **GitHub**: 一个托管和协作管理 Git 仓库的平台。
+- **commit 提交**: 一个 Git 对象，是对整个项目使用安全散列演算法得到的快照。
+- **branch 分支**: 一个轻型可移动的 commit 指针。
+- **clone**: 一个仓库的本地版本，包含所有提交和分支。
+- **remote 远端**: 一个 GitHub 上的公共仓库，所有小组成员通过它来交换修改。
+- **fork**: 相同项目内容，但是属于不同所有者的副本。
+- **pull request 拉取请求**: 用于比较和讨论分支上的差异。
+- **HEAD**: 代表你当前的工作目录。使用`git checkout` 可移动 HEAD 指针到不同的分支、标记(tags)或提交。
 
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
 </div>
+<div class="clearfix"></div>

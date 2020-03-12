@@ -13,7 +13,7 @@ leadingpath: ../../
 [desktop.github.com](https://desktop.github.com)
 
 ### Git for All Platforms
-[git-scm.com](http://git-scm.com)
+[git-scm.com](https://git-scm.com)
 
 ## Configure tooling
 Configure user information for all local repositories
@@ -63,6 +63,10 @@ Deletes the specified branch
 When starting out with a new repository, you only need to do it once; either locally, then push to GitHub, or by cloning an existing repository.
 
 ```$ git init```
+
+After using the `git init` command, link the local repository to an empty GitHub repository using the following command:
+
+```$ git remote add origin [url]```
 
 Turn an existing directory into a Git repository
 
@@ -142,7 +146,7 @@ Undoes all commits after `[commit]`, preserving changes locally
 
 Discards all history and changes back to the specified commit
 
-> CAUTION! Changing history can have nasty side effects. If  you need to change commits that exist on GitHub (the remote), proceed with caution. If you need help, reach out at github.community or contact support.
+> CAUTION! Changing history can have nasty side effects. If you need to change commits that exist on GitHub (the remote), proceed with caution. If you need help, reach out at github.community or contact support.
 
 {% endcapture %}
 <div class="col-md-6">
