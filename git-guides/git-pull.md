@@ -18,7 +18,7 @@ git pull
 
 `git pull`, a combination of `git fetch` + `git merge`, updates some parts of your local repository with changes from the remote repository. To understand what is and isn't affected by `git pull`, you need to first understand the concept of remote tracking branches. When you clone a repository, you clone one working branch, `master`, and all of the remote tracking branches. `git fetch` updates the remote tracking branches. `git merge` will update your current branch with any new commits on the remote tracking branch.
 
-`git pull` is he most common way to update your repository.
+`git pull` is the most common way to update your repository.
 
 However, you may want to use `git fetch` instead. One reason to do this may be that you expect conflicts. Conflicts can occur in this way if you have new local commits, and new commits on the remote. Just like a merge conflict that would happen between two different branches, these two different lines of history could contain changes to the same parts of the same file. If you first operate `git fetch`, the merge won't be initiated, and you won't be prompted to solve the conflict. This gives you the flexibility to resolve the conflict later without the need of network connectivity.
 
