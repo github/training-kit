@@ -6,15 +6,15 @@
 git status
 ```
 
-`git status` shows the status of your Git working directory.
+`git status` shows the current state of your Git working directory and staging area.
 
 <!--*   Spiderweb menu of related terms here. What does this mean?-->
 
 ## What Does `git status` Do?
 
-When in doubt, run `git status`. This is _always_ a good idea. `git status` doesn't ever change anything, but gives you information on your repository.
+When in doubt, run `git status`. This is _always_ a good idea. The `git status` command only outputs information, it won't modify commits or changes in your local repository.
 
-Depending on your situation, `git status` will give you different information. In general, you can count on it to tell you:
+A useful feature of `git status` is that it will provide helpful information depending on your current situation. In general, you can count on it to tell you:
 
 - Where `HEAD` is pointing, whether that is a branch or a commit (this is where you are "checked out" to)
 - If you have any changed files in your current directory that have not yet been committed
@@ -35,7 +35,6 @@ You can see all of the options with `git status` in [git-scm's documentation](ht
 ## Related Terms
 
 - `git clone [url]`: Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
-- `git status`: Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
 - `git remote -v`: Show the associated remote repositories and their stored name, like `origin`.
 - `git remote add origin <url>`: Add a remote so you can collaborate with others on a newly initialized repository.
 - `git push`: Uploads all local branch commits to the remote.
