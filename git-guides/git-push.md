@@ -16,9 +16,7 @@ By default, `git push` only updates the corresponding branch on the remote. So, 
 
 ## How to Use `git push`
 
-After you make and commit changes locally, you can share them with the remote repository using `git push`. It's important to make commits on branches that are for specific purposes, so that you can push the changes frequently.
-
-Pushing changes to the remote makes your commits accessible to others who you may be collaborating with. This will also update any open pull requests with the branch that you're working on. 
+After you make and commit changes locally, you can share them with the remote repository using `git push`. Pushing changes to the remote makes your commits accessible to others who you may be collaborating with. This will also update any open pull requests with the branch that you're working on. 
 
 As best practice, it's important to run the `git pull` command before you push any new changes to the remote branch. This will update your local branch with any new changes that may have been pushed to the remote from other contributors. Pulling before you push can reduce the amount of merge conflicts you create on GitHub - allowing you to resolve them locally before pushing your changes to the remote branch. 
 
