@@ -25,7 +25,7 @@ As best practice, it's important to run the `git pull` command before you push a
 * `git push -f`: description
 * `git push -u origin [branch]`: description
 * `git push --all`: description
-* `git push --tags`: description
+* `git push --tags`: Publish tags that aren't yet in the remote repository
 
 You can see all of the options with `git push` in [git-scm's documentation](https://git-scm.com/docs/git-push).
 
