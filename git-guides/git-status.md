@@ -18,7 +18,7 @@ A useful feature of `git status` is that it will provide helpful information dep
 
 - Where `HEAD` is pointing, whether that is a branch or a commit (this is where you are "checked out" to)
 - If you have any changed files in your current directory that have not yet been committed
-- If changed files are un-staged or staged
+- If changed files are staged or not
 - If your current local branch is linked to a remote branch, then `git status` will tell you if your local branch is behind or ahead by any commits
 
 During merge conflicts, `git status` will also tell you exactly which files are the source of the conflict.
