@@ -22,9 +22,9 @@ As best practice, it's important to run the `git pull` command before you push a
 
 ### Common usages and options for `git push`
 
-* `git push -f`: description
-* `git push -u origin [branch]`: description
-* `git push --all`: description
+* `git push -f`: Force a push that would otherwise be blocked, usually because it will delete or overwrite existing commits _(Use with caution!)_
+* `git push -u origin [branch]`: Useful when pushing a new branch, this creates an upstream tracking branch with a lasting relationship to your local branch
+* `git push --all`: Push all branches
 * `git push --tags`: Publish tags that aren't yet in the remote repository
 
 You can see all of the options with `git push` in [git-scm's documentation](https://git-scm.com/docs/git-push).
