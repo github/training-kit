@@ -15,8 +15,8 @@ git remote -v
 ### Common `git remote` commands
 
 - `git remote -v`: List the current remotes associated with the local repository
-- `git remote add [name] [URL]`:
-- `git remote remove [name]`:
+- `git remote add [name] [URL]`: Add a remote
+- `git remote remove [name]`: Remove a remote
 
 ### What is `origin`?
 
