@@ -27,8 +27,9 @@ During merge conflicts, `git status` will also tell you exactly which files are 
 
 ### Common usages and options for `git status`
 
-* `git status`: Most often used in its default form, this shows a good base of information
-* `git status -v`: Shows more "verbose" detail including the textual changes of any uncommitted files
+- `git status`: Most often used in its default form, this shows a good base of information
+- `git status -s`: Give output in short format
+- `git status -v`: Shows more "verbose" detail including the textual changes of any uncommitted files
 
 You can see all of the options with `git status` in [git-scm's documentation](https://git-scm.com/docs/git-status).
 
