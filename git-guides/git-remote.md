@@ -32,7 +32,7 @@ In this case, it's common to create and clone a fork. Then, the default remote w
 
 ## Communicating with the remote
 
-There are four commands within Git that prompt communication with the remote. Unless you are using one of these four commands, then all of your work is only happening locally.
+There are four commands within Git that prompt communication with the remote. Unless you are using one of these four commands, all of your work is only happening locally.
 
 - `git push`
 - `git clone`
