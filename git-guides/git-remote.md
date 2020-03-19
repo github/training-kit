@@ -28,7 +28,7 @@ You may need or want to work with multiple remotes for one local repository. Thi
 
 In this case, it's common to create and clone a fork. Then, the default remote would be `origin`, in reference to the fork. To make it easier to pull any changes to update the local copy of the fork from the original repository, many people add the original repository as a remote also. It's typical to name this remote `upstream`.
 
-![](https://githubtraining.github.io/training-manual/img/fork-to.png)
+![](https://user-images.githubusercontent.com/9906718/77051803-28625800-69cc-11ea-9533-b5387ed2d3b5.png)
 
 ## Communicating with the remote
 
