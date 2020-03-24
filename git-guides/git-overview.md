@@ -10,7 +10,7 @@ Whether or not you've worked with version control before, there are a few things
 
 - Branches are lightweight and cheap, so it's OK to have many of them
 - Git stores changes in SHA hashes, which work by compressing text files. That makes Git a very good version control system (VCS) for software programming, but not so good for binary files like images or videos.
-- Git repositories can be connected, so you can work on one locally on your own machine, and connect it to a shared repository. This way, you can push and pull changes to a repository and easily collaborate with others.
+- Git repositories can be connected, so you can work on one locally on your own machine, and connect it to a shared repository. This way, you can [push](/git-guides/git-push) and [pull](/git-guides/git-pull) changes to a repository and easily collaborate with others.
 
 ## Why Use Git?
 
@@ -42,7 +42,7 @@ The benefits of this can't be overstated. Not only does it create a safer enviro
 
 ## Getting Started With Git
 
-Depending on your operating system, you may already have Git installed. <!--[Link to installing Git.]--> But, getting started means more than having the software! To get started, it's important to know the basics of how Git works. You may choose to do the actual work within a terminal, an app like GitHub Desktop, or through GitHub.com. (*Note: while you can interact with Git through GitHub.com, your experience may be limited. Many local tools can give you access to the most widely used Git functionalities, though only the terminal will give you access to them all.*)
+Depending on your operating system, you may already have [Git installed](/git-guides/install-git). But, getting started means more than having the software! To get started, it's important to know the basics of how Git works. You may choose to do the actual work within a terminal, an app like GitHub Desktop, or through GitHub.com. (*Note: while you can interact with Git through GitHub.com, your experience may be limited. Many local tools can give you access to the most widely used Git functionalities, though only the terminal will give you access to them all.*)
 
 There are _many_ ways to use Git, which doesn't necessarily make it easier! But, the fundamental Git workflow has a few main steps. You can practice all of these in the [Introduction to GitHub Learning Lab course](https://lab.github.com/githubtraining/introduction-to-github).
 
@@ -57,10 +57,9 @@ Once you've created a branch, and moved the HEAD pointer to it by "checking out"
 Next, save your changes. You're ready to start the commit!
 
 <!--Image of staging area, working directory, and history-->
+To start your [commit](/git-guides/git-commit), you need to let Git know what changes you'd like to include with `git add [file]`.
 
-To start your commit, you need to let Git know what changes you'd like to include with `git add [file]`.
-
-Once you've saved and staged the changes, you're ready to make the commit with `git commit -m "descriptive commit message"`. <!--link to commit page>
+Once you've saved and staged the changes, you're ready to [make the commit](/git-guides/git-commit) with `git commit -m "descriptive commit message"`.
 
 ### Push your changes to the remote
 
@@ -68,7 +67,7 @@ So far, if you've made a commit locally, you're the only one that can see it. To
 
 By default, `git push` only pushes the branch that you're currently checked out to.
 
-Sometimes, if there has been a new commit on the branch on the _remote_, you may be blocked from pushing. Don't worry! Start with a simple `git pull` to incorporate the changes on the remote into your own local branch, resolve any conflicts or finish the merge from the remote into the local branch, and then try the push again.
+Sometimes, if there has been a new commit on the branch on the _remote_, you may be blocked from pushing. Don't worry! Start with a simple [`git pull`](/git-guides/git-pull) to incorporate the changes on the remote into your own local branch, resolve any conflicts or finish the merge from the remote into the local branch, and then try the push again.
 
 ### Open a pull request
 
@@ -102,7 +101,7 @@ If you're getting started with Git, a great place to start is the [Git Cheat she
 <!--- Very simplified breakdown of the most basic commands with clear navigation to learn more about each one (this might be a good example).-->
 Some of the most important and most used commands that you'll find there are:
 
-- `git clone [url]`: Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
+- `git clone [url]`: [Clone](/git-guides/git-clone) (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
 - `git status`: Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
 - `git branch`: This shows the existing branches in your local repository. You can also use `git branch [banch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
 - `git checkout [branch-name]`: Switches to the specified branch and updates the working directory.
