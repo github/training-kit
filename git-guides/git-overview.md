@@ -56,7 +56,6 @@ Once you've created a branch, and moved the HEAD pointer to it by "checking out"
 
 Next, save your changes. You're ready to start the commit!
 
-<!--Image of staging area, working directory, and history-->
 To start your [commit](/git-guides/git-commit), you need to let Git know what changes you'd like to include with `git add [file]`.
 
 Once you've saved and staged the changes, you're ready to [make the commit](/git-guides/git-commit) with `git commit -m "descriptive commit message"`.
@@ -89,16 +88,12 @@ Once you and your team decide that the pull request looks good, you can merge it
 
 If you choose not to merge the pull request, you can also close pull requests with unmerged changes.
 
-<!--- Potentially include Git workflow illustrations.-->
-<!--- “Learning Git” CTA.-->
-
 ## How to Use Git
 
 ### Learning & Mastering Git Commands
 
 If you're getting started with Git, a great place to start is the [Git Cheat sheet](https://github.github.io/training-kit/). It's translated into many languages, [open source as a part of the `github/training-kit` repository](https://github.com/github/training-kit), and a great starting place for the fundamentals on the command line.
 
-<!--- Very simplified breakdown of the most basic commands with clear navigation to learn more about each one (this might be a good example).-->
 Some of the most important and most used commands that you'll find there are:
 
 - `git clone [url]`: [Clone](/git-guides/git-clone) (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
