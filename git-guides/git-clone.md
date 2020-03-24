@@ -2,8 +2,6 @@
 
 The `git clone` command is used to create a copy of a specific repository or branch within a repository.
 
-<!--*   Spiderweb menu of related terms here.- What does this mean? -->
-
 Git is a distributed version control system. Maximize the advantages of a full repository on your own machine by cloning.
 
 ### What Does `git clone` Do?
@@ -53,7 +51,6 @@ To clone one specific branch, use:
 `git clone [url] --branch [branch] --single-branch`
 
 _Cloning only one branch does not add any benefits unless the repository is very large and contains binary files that slow down the performance of the repository. The recommended solution is to optimize the performance of the repository before relying on single branch cloning strategies._
-
 
 
 ### `git clone` With SSH

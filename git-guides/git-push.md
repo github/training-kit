@@ -1,5 +1,3 @@
-## General Specifications
-
 # Git Push
 
 ```sh

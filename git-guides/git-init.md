@@ -1,19 +1,3 @@
-## General Specifications
-
-* **Title:** Git Init – GitHub Git Guide
-* **URL:** /git-guide/git-init/
-* **Meta Description:** The Git init command initializes a new git repository and is usually one of the first commands to run before using other Git commands.
-* **Focus Keyword:** git init (4,400)
-* **Secondary Keywords:** 
- *   what does git init do (140)
- *   git init bare (480)
- *   git init existing folder (110)
-* **Word Count:** 800+
-*   The focus keyword should be in the page title, url, h1 and throughout body copy.
-*   The secondary keywords are semantic variations of the focus keyword and are great to use in h2, h3 and other headings.
-*   Written from a marketing perspective, should have an informal voice and not be exclusively technical.
-*   Doesn’t need to exhaustively cover the technical intricacies of the specific git command – should be beginner friendly and include a lot of the “why” and a general overview of the “how”. Can link out to more in-depth technical resources where appropriate.
-
 # Git Init
 
 ```sh
@@ -21,8 +5,6 @@ git init
 ```
 
 `git init` turns any directory into a Git repository.
-
-<!--*   Spiderweb menu of related terms here. What does this mean?-->
 
 ## What Does `git init` Do?
 

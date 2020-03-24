@@ -113,8 +113,6 @@ Some of the most important and most used commands that you'll find there are:
 - `git log`: Browse and inspect the evolution of project files.
 - `git remote -v`: Show the associated remote repositories and their stored name, like `origin`.
 
-<!-- Again, potentially include illustrations from individual command pages here or more general learning illustrations. -->
-
 If you're looking for more GitHub specific technical guidance, check out [GitHub's help documentation](https://help.github.com/).
 
 ### Getting Started With GitHub
