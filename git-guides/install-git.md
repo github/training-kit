@@ -4,9 +4,6 @@ How to install Git on any OS
 
 Git can be installed on the most common operating systems like Windows, Mac, and Linux. In fact, Git comes installed by default on most Mac and Linux machines!
 
-<!--- Can we use javascript to automatically detect OS and create quick access buttons for “download on Mac”, “Install on Mac” etc.
-- Nav list for quick navigation to the following sections.-->
-
 ## Checking for Git
 
 To see if you already have Git installed, open up your terminal application.

@@ -1,5 +1,3 @@
-## General Specifications
-
 # Git Status
 
 ```sh
@@ -7,8 +5,6 @@ git status
 ```
 
 `git status` shows the current state of your Git working directory and staging area.
-
-<!--*   Spiderweb menu of related terms here. What does this mean?-->
 
 ## What Does `git status` Do?
 

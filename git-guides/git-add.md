@@ -1,5 +1,3 @@
-<!-- *   git remote add (9,900): this command actually doesn't have anything to do with `git add`, but rather with working with remotes. This should probably be its own page in the future -->
-
 # Git Add
 
 The `git add` command adds new or changed files in your working directory to the Git staging area.
@@ -7,8 +5,6 @@ The `git add` command adds new or changed files in your working directory to the
 `git add` is an important command - without it, no `git commit` would ever do anything. Sometimes, `git add` can have a reputation for being an unnecessary step in development. But in reality, `git add` is an important and powerful tool. `git add` allows you to shape history without changing how you work.
 
 ![image of working directory, staging area, and committed history with commands shown and visualized]()
-
-<!--*   Spiderweb menu of related terms here. -->
 
 ## When do you use `git add`?
 
@@ -114,5 +110,3 @@ To move staged changes from the staging area to the working directory without af
 - `git checkout [branch-name]`: Switches to the specified branch and updates the working directory.
 - `git commit -m "descriptive message"`: Records file snapshots permanently in version history.
 - `git push`: Uploads all local branch commits to the remote.
- 
-
