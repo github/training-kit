@@ -130,7 +130,7 @@ Outputs metadata and content changes of the specified commit
 
 Snapshots the file in preparation for versioning
 
-```$ git commit -m"[descriptive message]"```
+```$ git commit -m "[descriptive message]"```
 
 Records file snapshots permanently in version history
 
