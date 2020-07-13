@@ -40,7 +40,7 @@ Note: [`git-scm`](https://git-scm.com/download/mac) is a popular and recommended
 
 #### Install Git from Homebrew
 
-[Homebrew](https://brew.sh/) is a popular package manager for macOS. If you already have Homwbrew installed, you can follow the below steps to install Git:
+[Homebrew](https://brew.sh/) is a popular package manager for macOS. If you already have Homebrew installed, you can follow the below steps to install Git:
 
 1. Open up a terminal window and install Git using the following command: `brew install git`.
 2. Once the command output has completed, you can verify the installation by typing: `git version`.
