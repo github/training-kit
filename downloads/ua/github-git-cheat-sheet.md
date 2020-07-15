@@ -25,15 +25,14 @@ leadingpath: ../../../
 ```$ git config --global user.email "[поштова скринька]"```
 
 Встановлює поштову скриньку, що буде вказана для всіх ваших комітів
-Sets the email you want attached to your commit transactions
 
 ```$ git config --global color.ui auto```
 
 Додає допоміжне забарвлення виводу в командній стрічці
 
-## Branches
+## Вітки
 
-Вітки (branch) - важлива частина роботи з Git. Всі коміти будуть додаватися на вітку, на якій ви наразі знаходитесь (checkout). `git status` підкаже поточну вітку.
+Вітки (branches) - важлива частина роботи з Git. Всі коміти будуть додаватися на вітку, на якій ви наразі знаходитесь (checkout). `git status` підкаже поточну вітку.
 
 ```$ git branch [назва-вітки]```
 
@@ -65,11 +64,11 @@ Sets the email you want attached to your commit transactions
 
 ```$ git init```
 
-Перетворює існуючу директорію на репозиторій Git
+Після виклику `git init`, створює посилання з локального репозиторію на пустий репозиторій на GitHub
 
 ```$ git remote add origin [посилання]```
 
-Після виклику `git init`, створює посилання з локального репозиторію на пустий репозиторій на GitHub
+Перетворює існуючу директорію на репозиторій Git
 
 ```$ git clone [посилання]```
 
@@ -97,7 +96,7 @@ Sets the email you want attached to your commit transactions
 
 ```$ git pull```
 
-Оновлює локальну поточну вітку новими комітами з відповідної віддаленої вітки. `git pull` - це поєднання `git fetch` та `git merge`
+Оновлює локальну поточну вітку новими комітами з відповідної віддаленої вітки. `git pull` — це поєднання `git fetch` та `git merge`
 
 {% endcapture %}
 <div class="col-md-6">
@@ -127,7 +126,7 @@ Sets the email you want attached to your commit transactions
 
 Виводить метадані та зміни вказаного коміту
 
-```$ git add [назва-файлу]```
+```$ git add [назва файлу]```
 
 Зберігає зміни в файлі, готуючись до створення коміту
 
