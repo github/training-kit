@@ -2,7 +2,7 @@ name: Add card to programs triage board
 
 on:
   issues:
-     types: [opened, edited, deleted, closed, reopened, assigned, unassigned, labeled]
+     types: [closed, reopened, labeled]
  # issue_comment:
   
 jobs:
@@ -11,7 +11,7 @@ jobs:
     steps:      
       - name: Add issue to Programs triage board
         if: "( contains(github.event.issue.labels.*.name, 'pg: request') ) || ( contains(github.event.issue.labels.*.name, 'G: Programs') )" 
-        uses: lmkeston/github-actions-issue-to-work-item@v1.1-beta
+        uses: lmkeston/github-actions-issue-to-work-item@v1.2-beta
         env:
            ado_token: "${{ secrets.ADO_PERSONAL_ACCESS_TOKEN }}"
            ado_organization: "lmkeston"
