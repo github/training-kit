@@ -49,7 +49,7 @@ If this happens, use `git status` to identify what changes are causing the probl
 
 Keeping the `master` branch up to date is generally a good idea.
 
-For example, let's say you have cloned a repository. After you clone, someone merges a branch into master. Then, you'd like to create a new branch to do some work. If you create your branch off of `master` _before_ operating `git pull`, your branch will not have the most recent changes. You could accidentally introduce a conflict, or duplicate changes. By running `git pull` before you create a brach, you can be sure that you will be working with the most recent information.
+For example, let's say you have cloned a repository. After you clone, someone merges a branch into master. Then, you'd like to create a new branch to do some work. If you create your branch off of `master` _before_ operating `git pull`, your branch will not have the most recent changes. You could accidentally introduce a conflict, or duplicate changes. By running `git pull` before you create a branch, you can be sure that you will be working with the most recent information.
 
 ### Undo A `git pull`
 
