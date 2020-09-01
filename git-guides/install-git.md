@@ -32,9 +32,12 @@ GitHub integration is provided through the [GitHub Pull Requests and Issues exte
 To get started with the GitHub in VS Code, you'll need to create an account and install the GitHub Pull Requests and Issues extension. 
 Once you've installed the [GitHub Pull Requests and Issues extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github), you'll need to sign in. Follow the prompts to authenticate with GitHub and return to VS Code.
 
+
 ---
+
 Note: You can perform actions like, You can search for and clone a repository from GitHub using the Git: Clone command in the Command Palette (Ctrl+Shift+P) or by using the Clone Repository button in the Source Control view (available when you have no folder open).
 [Learn more here](https://code.visualstudio.com/docs/editor/github)
+
 ---
 
 ## Install Git on Mac
