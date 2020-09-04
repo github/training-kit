@@ -26,6 +26,20 @@ Installing GitHub Desktop will also install the latest version of Git if you don
 
 Note: [`git-scm`](https://git-scm.com/download/win) is a popular and recommended resource for downloading Git for Windows. The advantage of downloading Git from `git-scm` is that your download automatically starts with the latest version of Git included with the recommended command prompt, `Git Bash` . The download source is the same [Git for Windows installer](https://gitforwindows.org/) as referenced in the steps above.
 
+## Install Git on Windows through Visual Studio Code
+
+GitHub integration is provided through the [GitHub Pull Requests and Issues extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
+To get started with the GitHub in VS Code, you'll need to create an account and install the GitHub Pull Requests and Issues extension. 
+Once you've installed the [GitHub Pull Requests and Issues extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github), you'll need to sign in. Follow the prompts to authenticate with GitHub and return to VS Code.
+
+
+---
+
+Note: You can perform actions like, you can search for and clone a repository from GitHub using the Git: Clone command in the Command Palette (Ctrl+Shift+P) or by using the Clone Repository button in the Source Control view (available when you have no folder open).
+[Learn more here](https://code.visualstudio.com/docs/editor/github)
+
+---
+
 ## Install Git on Mac
 
 Most versions of MacOS will already have `Git` installed, and you can activate it through the terminal with `git version`. However, if you don't have Git installed for whatever reason, you can install the latest version of Git using one of several popular methods as listed below:
