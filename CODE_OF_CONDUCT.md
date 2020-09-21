@@ -1,4 +1,4 @@
-#added content here
+#Adding content here.
 
 # Contributor Covenant Code of Conduct
 
