@@ -11,15 +11,15 @@ leadingpath: ../../../
 <p dir="rtl">نظام GitHub يوفر برنامج عميل لسطح المكتب يشمل واجهة مستخدم رسومية لنشاطات المستودعات الأكثر شيوعاً وتحديث نسخة سطر أوامر Git تلقائياً للحالات المتقدمة.</p>
 
 <h3 dir="rtl"> GitHub لنظام تشغيل وندوز</h3>
-<p dir="rtl">https://windows.github.com</p>
+<p dir="rtl"><a href="https://windows.github.com">windows.github.com</a></p>
 
 <h3 dir="rtl"> GitHub لنظام تشغيل ماك</h3>
-<p dir="rtl">https://mac.github.com</p>
+<p dir="rtl"><a href="https://mac.github.com">mac.github.com</a></p>
 
 <p dir="rtl">توزيعات Git لأنظمة لينكس وPosix متوفرة في موقع Git SCM الرسمي.</p>
 
 <h3 dir="rtl"> Git لكل أنظمة التشغيل</h3>
-<p dir="rtl">https://git-scm.com</p>
+<p dir="rtl"><a href="https://git-scm.com">git-scm.com</a></p>
 
 <h2 dir="rtl"> إعادة تكوين الأدوات</h2>
 <p dir="rtl">إعداد معلومات المستخدم لجميع المستودعات المحلية</p>
