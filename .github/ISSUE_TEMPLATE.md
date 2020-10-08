@@ -29,4 +29,4 @@ If you'd like to make and test changes locally (and see how they would look if m
     - When successful, the script will initiate a local server at `http://127.0.0.1:4000/`.
 
 ### Questions?
-- Leave a comment on this issue! Make sure to use @mentions if you want a specific person's attention!
+- Leave a comment on this issue! Make sure to use `@mentions` if you want a specific person's attention!
