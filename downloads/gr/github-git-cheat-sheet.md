@@ -9,6 +9,8 @@ leadingpath: ../../
 {% capture colOne %}
 ## Εγκατάσταση
 
+Το Git είναι το σύστημα ελέγχου έκδοσης διανομής ανοιχτού κώδικα που διευκολύνει τις δραστηριότητες του GitHub στον φορητό ή επιτραπέζιο υπολογιστή σας. Αυτό το φύλλο σύντομων εντολών συνοψίζει τις οδηγίες γραμμής εντολών Git που χρησιμοποιούνται συνήθως για γρήγορη αναφορά.
+
 ### GitHub Desktop
 [desktop.github.com](https://desktop.github.com)
 
@@ -36,11 +38,11 @@ Branches are an important part of working with Git. Any commits you make will be
 
 ```$ git branch [branch-name]```
 
-Creates a new branch
+Δημιουργεί ένα νέο branch
 
 ```$ git checkout [branch-name]```
 
-Switches to the specified branch and updates the working directory
+Εναλλαγή στο καθορισμένο branch και ενημερώνει τον κατάλογο εργασίας
 
 ```$ git merge [branch]```
 
@@ -48,7 +50,7 @@ Combines the specified branch's history into the current branch. This is usually
 
 ```$ git branch -d [branch-name]```
 
-Deletes the specified branch
+Διαγράφει το καθορισμένο branch
 
 {% endcapture %}
 <div class="col-md-6">
@@ -58,7 +60,7 @@ Deletes the specified branch
 
 {% capture colTwo %}
 
-## Create repositories
+## Δημιουργία αποθετηρίων
 
 When starting out with a new repository, you only need to do it once; either locally, then push to GitHub, or by cloning an existing repository.
 
@@ -74,25 +76,25 @@ Turn an existing directory into a Git repository
 
 Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits
 
-## The .gitignore file
+## Το αρχείο .gitignore
 
-Sometimes it may be a good idea to exclude files from being tracked with Git. This is typically done in a special file named `.gitignore`. You can find helpful templates for `.gitignore` files at [github.com/github/gitignore](https://github.com/github/gitignore).
+Μερικές φορές μπορεί να είναι καλή ιδέα να αποκλείσετε την παρακολούθηση αρχείων από το Git. Αυτό συνήθως γίνεται σε ένα ειδικό αρχείο που ονομάζεται `.gitignore`. Μπορείτε να βρείτε χρήσιμα πρότυπα για αρχεία `.gitignore` στη διεύθυνση [github.com/github/gitignore](https://github.com/github/gitignore).
 
-## Synchronize changes
+## Συγχρονισμός αλλαγών
 
-Synchronize your local repository with the remote repository on GitHub.com
+Συγχρονίστε το τοπικό αποθετήριο σας με το απομακρυσμένο αποθετήριο στο GitHub.com
 
 ```$ git fetch```
 
-Downloads all history from the remote tracking branches
+Κατεβάζει όλο το ιστορικό από τους κλάδους απομακρυσμένης παρακολούθησης
 
 ```$ git merge```
 
-Combines remote tracking branches into current local branch
+Συνδυάζει απομακρυσμένους κλάδους παρακολούθησης με το τοπικό branch
 
 ```$ git push```
 
-Uploads all local branch commits to GitHub
+Ανεβάζει όλα τα τοπικά branch commits στο GitHub
 
 ```$ git pull```
 
@@ -106,13 +108,13 @@ Updates your current local working branch with all new commits from the correspo
 
 {% capture colThree %}
 
-## Make changes
+## Κάνοντας αλλαγές
 
-Browse and inspect the evolution of project files
+Περιηγηθείτε και ελέγξτε την εξέλιξη των αρχείων έργου
 
 ```$ git log```
 
-Lists version history for the current branch
+Εμφανίζει το ιστορικό έκδοσης για το τρέχοντα branch
 
 ```$ git log --follow [file]```
 
@@ -146,7 +148,7 @@ Undoes all commits after `[commit]`, preserving changes locally
 
 Discards all history and changes back to the specified commit
 
-> CAUTION! Changing history can have nasty side effects. If you need to change commits that exist on GitHub (the remote), proceed with caution. If you need help, reach out at github.community or contact support.
+> ΠΡΟΣΟΧΗ! Η αλλαγή του ιστορικού μπορεί να έχει δυσάρεστa αποτελέσματα. Εάν πρέπει να αλλάξετε commits που υπάρχουν στο GitHub (το remote), προχωρήστε με προσοχή. Εάν χρειάζεστε βοήθεια, επικοινωνήστε με την github.community ή επικοινωνήστε με την υποστήριξη.
 
 {% endcapture %}
 <div class="col-md-6">
