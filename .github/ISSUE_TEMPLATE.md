@@ -13,7 +13,7 @@
 ### How to Contribute
 - [ ] Comment on this issue if you'd like to work/collaborate on it!
 - [ ] Fork the [repository](https://github.com/github/training-kit).
-- [ ] Use the [GitHub Flow](https://guides.github.com/introduction/flow/) to make changes to your fork. [This](https://services.github.com/on-demand/intro-to-github/) is a refresher course if you're unsure about how to make a change on GitHub.
+- [ ] Use the [GitHub Flow](https://guides.github.com/introduction/flow/) to make changes to your fork. [This](https://lab.github.com/githubtraining/introduction-to-github) is a refresher course if you're unsure about how to make a change on GitHub.
 - [ ] Push your changes to your repository.
 - [ ] Submit a Pull Request
   - Base Dropdown: github/training-kit
