@@ -32,17 +32,17 @@ Sets the email you want attached to your commit transactions
 
 Enables helpful colorization of command line output
 
-## Branches
+## Παρακλάδια (branches)
 
-Branches are an important part of working with Git. Any commits you make will be made on the branch you're currently "checked out" to. Use `git status` to see which branch that is.
+Τα Παρακλάδια (branches) είναι ένα σημαντικό μέρος της συνεργασίας με το Git. Οποιεσδήποτε δεσμεύσεις κάνετε θα γίνουν στο παρακλάδι (branch) στο οποίο είστε "check out". Χρησιμοποιήστε το «git status» για να δείτε ποιο παρακλάδι (branch) είναι.
 
 ```$ git branch [branch-name]```
 
-Δημιουργεί ένα νέο branch
+Δημιουργεί ένα νέο παρακλάδι (branch)
 
 ```$ git checkout [branch-name]```
 
-Εναλλαγή στο καθορισμένο branch και ενημερώνει τον κατάλογο εργασίας
+Εναλλαγή στο καθορισμένο παρακλάδι (branch) και ενημερώνει τον κατάλογο εργασίας
 
 ```$ git merge [branch]```
 
@@ -50,7 +50,7 @@ Combines the specified branch's history into the current branch. This is usually
 
 ```$ git branch -d [branch-name]```
 
-Διαγράφει το καθορισμένο branch
+Διαγράφει το καθορισμένο παρακλάδι (branch)
 
 {% endcapture %}
 <div class="col-md-6">
