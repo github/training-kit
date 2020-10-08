@@ -146,7 +146,7 @@ Bütün dəyişiklikləri işçi qovluğunda saxlayaraq, göstərilən `[commit]
 
 Bütün tarixi, işçi qovluğu daxil olmaqla ləğv edir və göstərilən kommitə qaytarır.
 
-> DİQQƏT! Tarixi dəyişdirmək xoşagəlməz yan təsirlərə səbəb ola bilər. GitHub-da mövcud olan kommitləri dəyişdirərkən ehtiyatlı olun. Əgər köməyə ehtiyacınız varsa, github.community və ya dəstəklə əlaqə saxlayın.
+> DİQQƏT! Tarixi dəyişdirmək xoşagəlməz yan təsirlərə səbəb ola bilər. GitHub-da mövcud olan kommitləri dəyişdirərkən ehtiyatlı olun. Əgər köməyə ehtiyacınız varsa, [github.community](https://github.community) və ya dəstəklə əlaqə saxlayın.
 
 {% endcapture %}
 <div class="col-md-6">
