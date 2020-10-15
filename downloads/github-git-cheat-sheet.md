@@ -60,15 +60,15 @@ Deletes the specified branch
 
 ## Create repositories
 
-When starting out with a new repository, you only need to do it once; either locally, then push to GitHub, or by cloning an existing repository.
+A new repository can either be created locally, or an existing repository can be cloned. When a repository was initialized locally, you have to push it to GitHub afterwards.
 
 ```$ git init```
 
-After using the `git init` command, link the local repository to an empty GitHub repository using the following command:
+The git init command turns an existing directory into a new Git repository inside the folder you are running this command. After using the `git init` command, link the local repository to an empty GitHub repository using the following command:
 
 ```$ git remote add origin [url]```
 
-Turn an existing directory into a Git repository
+Specifies the remote repository for your local repository. The url points to a repository on GitHub.
 
 ```$ git clone [url]```
 
