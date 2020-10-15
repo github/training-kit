@@ -2,13 +2,13 @@
 layout: cheat-sheet
 redirect_to: false
 title: GitHub Git Spickzettel
-byline: Git ist das verteilte Open Source Versionskontrollsystem, dass die GitHub-Aktivitäten auf deinem Laptop oder PC möglich macht. Dieser Spickzettel fasst die gebräuchlichsten Git-Kommandozeilenbefehle zum schnellen Nachschlagen zusammen.
+byline: Git ist das verteilte Open Source Versionskontrollsystem, das die GitHub-Aktivitäten auf deinem Laptop oder PC möglich macht. Dieser Spickzettel fasst die gebräuchlichsten Git-Kommandozeilenbefehle zum schnellen Nachschlagen zusammen.
 leadingpath: ../../../
 ---
 
 {% capture colOne %}
 ## Git installieren
-GitHub bietet Desktop-Clients an, die ein grafisches Benutzerinterface für die häufigsten Aktionen auf Repositories beinhalten, sowie eine automatisch aktualisierte Kommandozeilen-Version von Git für erweiterte Szenarien.
+GitHub bietet Desktop-Clients an, die eine grafische Benutzeroberfläche für die häufigsten Aktionen auf Repositories beinhalten, sowie eine automatisch aktualisierte Kommandozeilen-Version von Git für erweiterte Szenarien.
 
 ### GitHub für Windows
 [windows.github.com](https://windows.github.com)
@@ -26,8 +26,7 @@ Konfigurieren von Benutzerinformationen für alle lokalen Repositories
 
 ```$ git config --global user.name "[name]"```
 
-Setzt den Namen, den du an deine Commit-Transaktionen hängen willst
-
+Setzt den Benutzernamen, den du an deine Commit-Transaktionen hängen willst
 
 ```$ git config --global user.email "[email address]"```
 
@@ -120,7 +119,7 @@ Verschieben und Löschen versionierter Dateien
 
 ```$ git rm [file]```
 
-Löscht die Datei aus dem Arbeitsverzeichnis und indiziert diese Löschung
+Löscht die Datei aus dem Arbeitsverzeichnis und wird im Index zur Löschung markiert, dadurch wird die Datei beim nächsten commit aus der Versionskontrolle gelöscht
 
 
 ```$ git rm --cached [file]```
@@ -177,7 +176,7 @@ Verwirft die zuletzt zwischengespeicherten Änderungen
 
 {% capture colFour %}
 ## Historie überprüfen
-Durchsuchen und Inspizieren der Evolution von Projektdateien
+Durchsuchen und Inspizieren der Entwicklung von Projektdateien
 
 
 ```$ git log```
