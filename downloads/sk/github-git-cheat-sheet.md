@@ -2,7 +2,7 @@
 layout: cheat-sheet
 redirect_to: false
 title: GitHub Git Cheat Sheet
-byline: Git je open-source distribuovaný systém riadenia revízií. Github je služba, na ktorej je možné tieto revízie (repozitáre, projekty) hostovať. Tento cheat sheet sumarizuje bežne používané Git príkazy pre rýchlu referenciu.
+byline: Git je open-source distribuovaný systém riadenia revízií. GitHub je služba, na ktorej je možné tieto revízie (repozitáre, projekty) hostovať. Tento cheat sheet sumarizuje bežne používané Git príkazy pre rýchlu referenciu.
 leadingpath: ../../../
 ---
 
@@ -87,7 +87,7 @@ Unstage-ne súbor, ale zachová jeho obsah
 
 ```$ git commit -m"[vystizny-opis-zmien]"```
 
-Vytvorí commita pridá k nemu správu s opisom zmien, ktoré boli urobené
+Vytvorí commit a pridá k nemu správu s opisom zmien, ktoré boli urobené
 
 ## Skupinové zmeny
 Pomenovanie série commitov a kombinovanie progresu
@@ -105,7 +105,7 @@ Vytvorí novú vetvu
 
 ```$ git checkout [nazov-vetvy]```
 
-Prepne nás do danej vetvy a aktualizuje súbory
+Prejde do danej vetvy a aktualizuje súbory
 
 
 ```$ git merge [nazov-vetvy]```
@@ -207,7 +207,7 @@ Zobrazí rozdiely medzi dvoma vetvami
 
 ```$ git show [commit]```
 
-Vráti metadata a obsah zmien daného commitu
+Vráti metadáta a obsah zmien daného commitu
 
 ## Vrátenie zmien
 Napravenie chýb a nahradenie histórie
@@ -228,7 +228,7 @@ Zapísanie zmien a stiahnutie alebo nahratie zmien
 
 ```$ git fetch [remote]```
 
-Stiahne všetky zmeny zo vzdialeného do lokálneho repozitár
+Stiahne všetky zmeny zo vzdialeného do lokálneho repozitára
 
 
 ```$ git merge [remote]/[branch]```
@@ -238,12 +238,12 @@ Zlúči danú vetvu do súčasnej
 
 ```$ git push [remote] [branch]```
 
-Nahraje commity a zmeny do danej vetvy na Github
+Nahrá commity a zmeny do danej vetvy na GitHub
 
 
 ```$ git pull```
 
-Stiahne k Vám všetky aktuálne zmeny a históriu kódu
+Stiahne všetky aktuálne zmeny a históriu kódu
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
