@@ -10,11 +10,8 @@ leadingpath: ../../../
 ## Inštalácia Gitu
 GitHub ponúka aplikácie pre najbežnejšie operácie s repozitármi alebo rozhranie v príkazovom riadku pre zložitejšie situácie.
 
-### GitHub pre Windows
-[windows.github.com](https://windows.github.com)
-
-### GitHub pre Mac
-[mac.github.com](https://mac.github.com)
+### GitHub pre Windows a Mac
+[desktop.github.com](https://desktop.github.com/)
 
 Git distribúcie pre Linux a POSIX systémy sú dostupné na oficiálnych stránkach Git SCM.
 
