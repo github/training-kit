@@ -103,7 +103,7 @@ Enumera todas las ramas en el repositorio actual
 Crea una nueva rama
 
 
-```$ git checkout [branch-name]```
+```$ git switch [branch-name]```
 
 Cambia a la rama especificada y actualiza el directorio activo
 

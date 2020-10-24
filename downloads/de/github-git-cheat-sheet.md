@@ -94,7 +94,7 @@ Listet alle lokalen Branches im aktuellen Repository auf
 Erzeugt einen neuen Branch
 
 
-```$ git checkout [branch-name]```
+```$ git switch [branch-name]```
 
 Wechselt auf den angegebenen Branch und aktualisiert das Arbeitsverzeichnis
 

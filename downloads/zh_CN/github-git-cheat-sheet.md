@@ -38,7 +38,7 @@ leadingpath: ../../../
 
 创建一个新分支
 
-```$ git checkout [branch-name]```
+```$ git switch [branch-name]```
 
 切换到指定分支并更新工作目录(working directory)
 

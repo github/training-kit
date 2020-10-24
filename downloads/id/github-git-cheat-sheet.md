@@ -93,7 +93,7 @@ Daftar semua cabang lokal di repositori saat ini
 
 Membuat cabang baru
 
-```$ git checkout [nama-cabang]```
+```$ git switch [nama-cabang]```
 
 Berpindah ke cabang tertentu dan perbarui direktori yang sedang dikerjakan
 

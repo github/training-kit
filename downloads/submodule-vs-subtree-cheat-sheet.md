@@ -165,13 +165,13 @@ No special command required
 {% capture submodule %}
 ### Submodule
 
-By default, the submodule working tree is not updated to match the commit recorded in the superproject when changing branches. You need to use `git submodule update`, or add the `--recurse-submodules` flag to `checkout` :
+By default, the submodule working tree is not updated to match the commit recorded in the superproject when changing branches. You need to use `git submodule update`, or add the `--recurse-submodules` flag to `switch` :
 
 ```bash 
-git checkout <branch>
+git switch <branch>
 git submodule update --recursive
 # or, in one step (Git >= 2.13)
-git checkout --recurse-submodules <branch>
+git switch --recurse-submodules <branch>
 ```
 
 {% endcapture %}
@@ -254,7 +254,7 @@ In most cases, it is considered best practice to make changes in a separate clon
 Access the submodule directory and create a branch:
 
     cd example-submodule
-    git checkout -b branch-name master
+    git switch -c branch-name master
 
 Changes require two commits, one in the subproject repository and one in the parent repository.
 Don't forget to push in both the submodule and the superproject!
