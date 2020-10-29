@@ -268,7 +268,7 @@ Los cambios requieren dos commits, una en el repositorio del subproyecto y otra 
 
 ### Subárbol
 
-No se requiere ningún comando especial, los cambiós se agregaran en la rama del proyecto principal.
+No se requiere ningún comando especial, los cambios se agregaran en la rama del proyecto principal.
 
 Es posible crear commits mezclando cambios en el subproyecto y el proyecto principal, pero esto generalmente no se recomienda.
 {% endcapture %}
