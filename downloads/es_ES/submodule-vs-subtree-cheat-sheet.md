@@ -41,7 +41,7 @@ El comando `subtree add` agrega un subdirectorio que contiene los archivos de `s
 </div>
 
 <div class="col-md-12">
-<h1>Ver las diferencias (`diff`) de un Subproyecto</h1>
+<h1>Ver las diferencias de un Subproyecto</h1>
 </div>
 
 {% capture submodule %}
