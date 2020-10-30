@@ -1,7 +1,7 @@
 ---
 layout: cheat-sheet
 redirect_to: false
-title: Migración de Subversion a Git
+title: Migración de Subversion (SVN) a Git
 byline: Al migrar de Subversion a Git, hay un vocabulario y un conjunto de comandos por aprender, además de las nuevas capacidades que solo ofrece Git. Esta hoja de trucos y comandos tiene como objetivo ayudar en la transición entre la tecnología clásica de Subversion y el uso moderno de Git con la plataforma de colaboración GitHub.
 leadingpath: ../../
 ---
@@ -22,7 +22,7 @@ Lea más sobre cómo importar su proyecto a GitHub consultando la [documentació
 
 ### Utilidad SVN2Git
 
-Cuando si tienen limitaciones de acceso o los repositorios de Subversion no son públicos es necesario trasladarlos a Git, la utilidad SVN2Git es la utilidad de línea de comandos de elección y proporciona control a través de cada paso del proceso.
+Cuando se tienen limitaciones de acceso o los repositorios de Subversion no son públicos es necesario trasladarlos a Git, la utilidad SVN2Git es la utilidad de línea de comandos de elección y proporciona control a través de cada paso del proceso.
 
 Subversion presenta claras diferencias en la estructura de un repositorio que la de Git. SVN2Git proporciona la flexibilidad y configuración para diseños de Subversion tradicionales y personalizados. Esto asegura que el repositorio de Git resultante se alinea con las mejores prácticas estándar para commits, ramas y etiquetas para todo el historial del proyecto.
 
