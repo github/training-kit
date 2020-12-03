@@ -36,7 +36,7 @@ Your project may already exist locally, but it doesn't have Git yet. `git init` 
 - Once you have initialized the repository, create a remote repository somewhere like GitHub.com.
 - Then, add the remote URL to your local git repository with `git remote add origin <URL>`. This stores the remote URL under a more human-friendly name, `origin`.
 - Shape your history into at least one commit by using `git add` to stage the existing files, and `git commit` to make the snapshot.
-- Once you have at least one commit, you can push to the remote and set up the tracking relationship for good with `git push -u origin master`.
+- Once you have at least one commit, you can push to the remote and set up the tracking relationship for good with `git push -u origin main`.
 
 #### `git clone`: The Remote Already Exists
 
@@ -71,4 +71,4 @@ Return to your working repository, the one that you _expect_ to be under version
 - `git remote -v`: Show the associated remote repositories and their stored name, like `origin`.
 - `git remote add origin <url>`: Add a remote so you can collaborate with others on a newly initialized repository.
 - `git push`: Uploads all local branch commits to the remote.
-- `git push -u origin master`: When pushing a branch for the first time, this type of push will configure the relationship between the remote and your local repository so that you can use `git pull` and `git push` with no additional options in the future.
+- `git push -u origin main`: When pushing a branch for the first time, this type of push will configure the relationship between the remote and your local repository so that you can use `git pull` and `git push` with no additional options in the future.
