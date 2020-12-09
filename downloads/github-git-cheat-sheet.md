@@ -116,7 +116,7 @@ Lists version history for the current branch
 
 ```$ git log --follow [file]```
 
-Lists version history for a file, including renames
+Lists version history for a file, beyond renames (works only for a single file)
 
 ```$ git diff [first-branch]...[second-branch]```
 
