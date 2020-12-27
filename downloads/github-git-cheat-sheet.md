@@ -38,7 +38,7 @@ Branches are an important part of working with Git. Any commits you make will be
 
 Creates a new branch
 
-```$ git switch [branch-name]```
+```$ git switch -c [branch-name]```
 
 Switches to the specified branch and updates the working directory
 

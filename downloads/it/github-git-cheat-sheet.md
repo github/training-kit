@@ -102,7 +102,7 @@ Elenca tutti i branch nel repository corrente
 Crea un nuovo branch
 
 
-```$ git switch [branch-name]```
+```$ git switch -c [branch-name]```
 
 Passa al branch specificato e aggiorna la directory corrente
 
