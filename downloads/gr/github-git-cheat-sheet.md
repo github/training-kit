@@ -44,7 +44,7 @@ leadingpath: ../../
 
 Δημιουργεί ένα νέο παρακλάδι (branch)
 
-```$ git switch [branch-name]```
+```$ git switch -c [branch-name]```
 
 Εναλλάζει στο καθορισμένο παρακλάδι (branch) και ενημερώνει τον κατάλογο εργασίας (working directory)
 

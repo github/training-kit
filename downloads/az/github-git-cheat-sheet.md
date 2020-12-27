@@ -40,7 +40,7 @@ Budaqlar - Git-lə işin mühüm hissəsidir. Etdiyiniz istənilən kommit hal-h
 
 Yeni budaq yaradır
 
-```$ git switch [budaq-adı]```
+```$ git switch -c [budaq-adı]```
 
 Göstərilən budağa keçir və iş qovluğunu yeniləyir
 
