@@ -36,7 +36,7 @@ Without sharing the code through branches, this would never be possible.
 
 ### Ease of roll back
 
-If you make a mistake, it's OK! Commits are immutable, meaning they can't be changed. (*Note: You _can_ change history, but it will create new replacement commits instead of editing the existing commits. More on that later!*) This means that if you do make a mistake, even on an important branch like master, it's _OK_. **You can easily revert that change, or roll back the branch pointer to the commit where everything was fine.**
+If you make a mistake, it's OK! Commits are immutable, meaning they can't be changed. (*Note: You _can_ change history, but it will create new replacement commits instead of editing the existing commits. More on that later!*) This means that if you do make a mistake, even on an important branch like `main`, it's _OK_. **You can easily revert that change, or roll back the branch pointer to the commit where everything was fine.**
 
 The benefits of this can't be overstated. Not only does it create a safer environment for the project and code, but it fosters a development environment where developers can be braver, trusting that Git has their back.
 
@@ -48,7 +48,7 @@ There are _many_ ways to use Git, which doesn't necessarily make it easier! But,
 
 ### Create a branch
 
-The main branch is usually called `master`. We want to work on _another_ branch, so we can make a pull request and make changes safely. To get started, create a branch off of `master`. Name it however you'd like - but we recommend naming branches based on the function or feature that will be the focus of this branch. One person may have several branches, and one branch may have several people collaborate on it - branches are for a purpose, not a person. Wherever you currently "are" (wherever HEAD is pointing, or whatever branch you're currently "checked out" to) will be the parent of the branch you create. That means you can create branches from other branches, tags, or any commit! But, the most typical workflow is to create a branch from `master` - which represents the most current production code.
+The main branch is usually called `main`. We want to work on _another_ branch, so we can make a pull request and make changes safely. To get started, create a branch off of `main`. Name it however you'd like - but we recommend naming branches based on the function or feature that will be the focus of this branch. One person may have several branches, and one branch may have several people collaborate on it - branches are for a purpose, not a person. Wherever you currently "are" (wherever HEAD is pointing, or whatever branch you're currently "checked out" to) will be the parent of the branch you create. That means you can create branches from other branches, tags, or any commit! But, the most typical workflow is to create a branch from `main` - which represents the most current production code.
 
 ### Make change (and make a commit)
 
@@ -70,7 +70,7 @@ Sometimes, if there has been a new commit on the branch on the _remote_, you may
 
 ### Open a pull request
 
-Pushing a branch, or new commits, to a remote repository is enough if a pull request already exists, but if it's the first time you're pushing that branch, you should open a new pull request. A pull request is a comparison of two branches - typically `master`, or the branch that the feature branch was created from, and the feature branch. This way, like branches, pull requests are scoped around a specific function or addition of work, rather than the person making the changes or amount of time the changes will take.
+Pushing a branch, or new commits, to a remote repository is enough if a pull request already exists, but if it's the first time you're pushing that branch, you should open a new pull request. A pull request is a comparison of two branches - typically `main`, or the branch that the feature branch was created from, and the feature branch. This way, like branches, pull requests are scoped around a specific function or addition of work, rather than the person making the changes or amount of time the changes will take.
 
 Pull requests are the powerhouse of GitHub. Integrated tests can automatically run on pull requests, giving you immediate feedback on your code. Peers can give detailed code reviews, letting you know if there are changes to make, or if it's ready to go.
 
@@ -82,9 +82,9 @@ Once the pull request is open, then the real fun starts. It's important to recog
 
 It's very likely that you will want to make more changes to your work. That's great! To do that, make more commits on the same branch. Once the new commits are present on the remote, the pull request will update and show the most recent version of your work.
 
-### Merge into master
+### Merge into `main`
 
-Once you and your team decide that the pull request looks good, you can merge it. By merging, you integrate the feature branch into the other branch (most typically the `master` branch). Then, `master` will be updated with your changes, and your pull request will be closed. Don't forget to delete your branch! You won't need it anymore. Remember, branches are lightweight and cheap, and you should create a new one when you need it based on the most recent commit on the `master` branch.
+Once you and your team decide that the pull request looks good, you can merge it. By merging, you integrate the feature branch into the other branch (most typically the `main` branch). Then, `main` will be updated with your changes, and your pull request will be closed. Don't forget to delete your branch! You won't need it anymore. Remember, branches are lightweight and cheap, and you should create a new one when you need it based on the most recent commit on the `main` branch.
 
 If you choose not to merge the pull request, you can also close pull requests with unmerged changes.
 
