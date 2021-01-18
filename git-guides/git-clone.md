@@ -18,7 +18,7 @@ The ability to work with the entire repository means that all developers can wor
 -  later use `git push` to share your branch with the remote repository
 - open a pull request to compare the changes with your collaborators
 - test and deploy as needed from the branch
-- merge into the `master` branch.
+- merge into the `main` branch.
 
 ## How to Use `git clone`
 
@@ -44,7 +44,7 @@ The most common usage of cloning is to simply clone a repository. This is only d
 
 But, maybe for some reason you would like to _only_ get a remote tracking branch for one specific branch, or clone one branch which _isn't_ the default branch. Both of these things happen when you use `--single-branch` with `git clone`.
 
-This will create a clone that only has commits included in the current line of history. This means no other branches will be cloned. You can specify a certain branch to clone, but the default branch, usually `master`, will be selected by default.
+This will create a clone that only has commits included in the current line of history. This means no other branches will be cloned. You can specify a certain branch to clone, but the default branch, usually `main`, will be selected by default.
 
 To clone one specific branch, use:
 

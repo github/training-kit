@@ -10,7 +10,7 @@ git push
 
 `git push` updates the remote branch with local commits. It is one of the four commands in Git that prompts interaction with the remote repository. You can also think of `git push` as _update_ or _publish_. 
 
-By default, `git push` only updates the corresponding branch on the remote. So, if you are checked out to the `master` branch when you execute `git push`, then only the `master` branch will be updated. It's always a good idea to use `git status` to see what branch you are on before pushing to the remote.
+By default, `git push` only updates the corresponding branch on the remote. So, if you are checked out to the `main` branch when you execute `git push`, then only the `main` branch will be updated. It's always a good idea to use `git status` to see what branch you are on before pushing to the remote.
 
 ## How to Use `git push`
 
@@ -33,7 +33,7 @@ If you are trying to `git push` but are running into problems, there are a few c
 
 ### Check your branch
 
-Check what branch you are currently on with `git status`. If you are working on a protected branch, like `master`, you may be unable to push commits directly to the remote. If this happens to you, it's OK! You can fix this a few ways.
+Check what branch you are currently on with `git status`. If you are working on a protected branch, like `main`, you may be unable to push commits directly to the remote. If this happens to you, it's OK! You can fix this a few ways.
 
 #### Work was not yet on any branch
 
@@ -43,7 +43,7 @@ Check what branch you are currently on with `git status`. If you are working on 
 #### Accidentally committed to the wrong branch
 
 1. Checkout to the branch that you intended to commit to: `git checkout [branchname]`
-2. Merge the commits from the branch that you _did_ accidentally commit to: `git merge [master]`
+2. Merge the commits from the branch that you _did_ accidentally commit to: `git merge [main]`
 3. Push your changes to the remote: `git push`
 4. Fix the other branch by checking out to that branch, finding what commit it _should_ be pointed to, and using `git reset --hard` to correct the branch pointer
 
