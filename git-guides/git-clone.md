@@ -61,7 +61,7 @@ If you choose to clone with SSH, you would use a specific SSH path for the repos
 
 ## Related Terms
 
-- `git branch`: This shows the existing branches in your local repository. You can also use `git branch [banch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
+- `git branch`: This shows the existing branches in your local repository. You can also use `git branch [branch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
 - `git pull`: Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. `git pull` is a combination of `git fetch` and `git merge`.
 - `git push`: Uploads all local branch commits to the remote.
 - `git remote -v`: Show the associated remote repositories and their stored name, like `origin`.
