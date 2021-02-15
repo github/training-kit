@@ -48,7 +48,7 @@ The benefits of this can't be overstated. Not only does it create a safer enviro
 
 ### Learning Git Basics
 
-If you're getting started with Git, a great place to start is the [Git Cheat sheet](https://github.github.io/training-kit/). It's translated into many languages, [open source as a part of the `github/training-kit` repository](https://github.com/github/training-kit), and a great starting place for the fundamentals on the command line.
+If you're getting started with Git, a great place to learn the basic commands is the [Git Cheat sheet](https://github.github.io/training-kit/). It's translated into many languages, [open source as a part of the `github/training-kit` repository](https://github.com/github/training-kit), and a great starting place for the fundamentals on the command line.
 
 Some of the most important and most used commands that you'll find there are:
 
@@ -63,9 +63,9 @@ Some of the most important and most used commands that you'll find there are:
 - `git log`: Browse and inspect the evolution of project files.
 - `git remote -v`: Show the associated remote repositories and their stored name, like `origin`.
 
-If you're looking for more GitHub-specific technical guidance, check out [GitHub's help documentation](https://help.github.com/).
+If you're looking for more GitHub-specific technical guidance, check out [GitHub's help documentation](https://help.github.com/) or our [GitHub for Developers series](https://www.youtube.com/watch?v=H6wTAIlOUBQ&list=PLg7s6cbtAD16Pgp6WIVfX4VsGI-xyWkMz) on YouTube.
 
-### Getting Started With Git
+### Getting Started With the Git Workflow
 
 Depending on your operating system, you may already have [Git installed](/git-guides/install-git). But, getting started means more than having the software! To get started, it's important to know the basics of how Git works. You may choose to do the actual work within a terminal, an app like GitHub Desktop, or through GitHub.com. (*Note: while you can interact with Git through GitHub.com, your experience may be limited. Many local tools can give you access to the most widely used Git functionalities, though only the terminal will give you access to them all.*)
 
