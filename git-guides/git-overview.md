@@ -2,6 +2,25 @@
 
 Everything you need to know about Git, from getting started to advanced commands and workflows.
 
+**Quick links:**
+- [What is Git?](#what-is-git)
+- [What is Git Written in?](#what-is-git-written-in)
+- [Why Use Git?](#why-use-git)
+    - [Speed](#speed)
+    - [Merge conflicts](#merge-conflicts)
+    - [Cheap branches](#cheap-branches)
+    - [Ease of roll back](#ease-of-roll-back)
+- [How Do I Use Git?](#how-do-i-use-git)
+    - [Learning Git Basics](#learning-git-basics) 
+    - [Getting Started With the Git Workflow](#getting-started-with-the-git-workflow)
+        - [Create a branch](#create-a-branch) 
+        - [Make changes (and make a commit)](#make-changes-and-make-a-commit)
+        - [Push your changes to the remote](#push-your-changes-to-the-remote)
+        - [Open a pull request](#open-a-pull-request)
+        - [Collaborate](#collaborate)
+        - [Merge into main](#merge-into-main)
+    - [Getting Started With GitHub](#getting-started-with-github)
+
 ## What is Git?
 
 Git is distributed version control software. Version control is a way to save changes over time without overwriting previous versions. Being distributed means that every developer working with a Git repository has a copy of that entire repository - every commit, every branch, every file. If you're used to working with centralized version control systems, this is a big difference!
@@ -75,7 +94,7 @@ There are _many_ ways to use Git, which doesn't necessarily make it easier! But,
 
 The main branch is usually called `main`. We want to work on _another_ branch, so we can make a pull request and make changes safely. To get started, create a branch off of `main`. Name it however you'd like - but we recommend naming branches based on the function or feature that will be the focus of this branch. One person may have several branches, and one branch may have several people collaborate on it - branches are for a purpose, not a person. Wherever you currently "are" (wherever HEAD is pointing, or whatever branch you're currently "checked out" to) will be the parent of the branch you create. That means you can create branches from other branches, tags, or any commit! But, the most typical workflow is to create a branch from `main` - which represents the most current production code.
 
-#### Make change (and make a commit)
+#### Make changes (and make a commit)
 
 Once you've created a branch, and moved the HEAD pointer to it by "checking out" to that branch, you're ready to get to work. Make the changes in your repository using your favorite text editor or IDE. 
 
@@ -101,7 +120,7 @@ Pull requests are the powerhouse of GitHub. Integrated tests can automatically r
 
 Make sure you start your pull requests off with the right information. Put yourself in the shoes of your teammates, or even of your future self. Include information about what this change relates to, what prompted it, what is already done, what is left to do, and any specific asks for help or reviews. Include links to relevant work or conversations. Pull request templates can help make this process easy by automating the starting content of the body of pull requests.
 
-#### Collaborate (get feedback from tests or peers, make more commits locally and then push them up and get more feedback)
+#### Collaborate
 
 Once the pull request is open, then the real fun starts. It's important to recognize that pull requests aren't meant to be open when work is _finished_. Pull requests should be open when work is _beginning_! The earlier you open a pull request, the more visibility the entire team has to the work that you're doing. When you're ready for feedback, you can get it by integrating tests or requesting reviews from teammates.
 
