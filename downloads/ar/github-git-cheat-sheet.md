@@ -8,12 +8,12 @@ leadingpath: ../../../
 
 {% capture colOne %}
 <h2 dir="rtl"> تنصيب Git</h2>
-<p dir="rtl">نظام GitHub يوفر برنامج عميل لسطح المكتب يشمل واجهة مستخدم رسومية لنشاطات المستودعات الأكثر شيوعاً وتحديث نسخة سطر أوامر Git تلقائياً للحالات المتقدمة.</p>
+<p dir="rtl">يعد Bash عادةً تطبيقًا أصليًا على الأجهزة التي تعمل بنظام Linux / Unix ؛ ومع ذلك ، إذا كان التثبيت ضروريًا ، يمكنك العثور على روابط للتنزيلات أدناه..</p>
 
-<h3 dir="rtl"> GitHub لنظام تشغيل وندوز</h3>
+<h3 dir="rtl"> Git على نظام التشغيل وندوز</h3>
 <p dir="rtl"><a href="https://windows.github.com">windows.github.com</a></p>
 
-<h3 dir="rtl"> GitHub لنظام تشغيل ماك</h3>
+<h3 dir="rtl"> Git على نظام التشغيل ماك أو لينكس </h3>
 <p dir="rtl"><a href="https://mac.github.com">mac.github.com</a></p>
 
 <p dir="rtl">توزيعات Git لأنظمة لينكس وPosix متوفرة في موقع Git SCM الرسمي.</p>
@@ -21,29 +21,29 @@ leadingpath: ../../../
 <h3 dir="rtl"> Git لكل أنظمة التشغيل</h3>
 <p dir="rtl"><a href="https://git-scm.com">git-scm.com</a></p>
 
-<h2 dir="rtl"> إعادة تكوين الأدوات</h2>
-<p dir="rtl">إعداد معلومات المستخدم لجميع المستودعات المحلية</p>
+<h2 dir="rtl">الإعدادات الأساسية</h2>
+<p dir="rtl">إدخال معلومات المستخدم لجميع المستودعات المحلية</p>
 
-<p align="right"><code align="right">$ git config --global user.name "[الاسم]"</code></p>
+<p align="right"><code align="right">$ git config --global user.name "[إسم المستخدم]"</code></p>
 
-<p dir="rtl">إعداد الاسم المراد إدراجه في إجراءات تنفيذ أو "ارتكاب" التغييرات</p>
+<p dir="rtl">إدخال الإسم المراد إدراجه في إجراءات التنفيد أو "القيام" بأي تغيير</p>
 
 <p align="right"><code>$ git config --global user.email "[البريد الالكتروني]"</code></p>
-<p dir="rtl">إعداد البريد الالكتروني المراد إدراجه في إجراءات تنفيذ أو "ارتكاب" التغييرات</p>
+<p dir="rtl">إدخال البريد الالكتروني المراد إدراجه في إجراءات التنفيد أو "القيام" بأي تغيير</p>
 
 
-<h2 dir="rtl"> صنع المستودعات</h2>
-<p dir="rtl">بدء مستودع جديد أو الحصول على مستودع موجود مسبقاً عن طريق وصلة</p>
+<h2 dir="rtl"> تصنيع المستودعات</h2>
+<p dir="rtl">بناء مستودع جديد أو العمل على مستودع موجود مسبقاً عن طريق رابطه</p>
 
 
-<p align="right"><code align="right">$ git init [اسم المشروع]</code></p>
+<p align="right"><code align="right">$ git init [إسم المشروع]</code></p>
 
-<p dir="rtl">صنع مستودع جديد بالمسمى المعطى</p>
+<p dir="rtl">العمل على مستودع جديد معرف بإسمه الأصلي </p>
 
 
 <p align="right"><code>$ git clone [رابط المشروع]</code></p>
 
-<p dir="rtl">تحميل مشروع بماضيه الشامل لكل النسخ الحالية والسابقة</p>
+<p dir="rtl">تحميل مشروع و على كل ما يحتويه من النسخ الحالية والسابقة</p>
 
 {% endcapture %}
 <div class="col-md-6">
@@ -53,13 +53,13 @@ leadingpath: ../../../
 
 {% capture colTwo %}
 
-<h2 dir="rtl"> إحداث تغييرات</h2>
-<p dir="rtl">مراجعة التغييرات وتشكيل إجراء "ارتكاب" التغييرات</p>
+<h2 dir="rtl">  القيام بأي تغيير</h2>
+<p dir="rtl">مراجعة التغييرات وتشكيل إجراء "القيام" بأي تغيير</p>
 
 
 <p align="right"><code >$ git status</code></p>
 
-<p dir="rtl">إدراج جميع الملفات الجديدة أو التي تم تغييرها وتنتظر أن يتم ارتكابها</p>
+<p dir="rtl">إدراج جميع الملفات الجديدة أو التي تم تغييرها وتنتظر أن يتم العمل عليها</p>
 
 
 <p align="right"><code>$ git diff</code></p>
@@ -67,27 +67,27 @@ leadingpath: ../../../
 <p dir="rtl">إظهار كل التغييرات في الملفات المتغيرة التي لم يتم إضافتها لقائمة الترحيل</p>
 
 
-<p align="right"><code>$ git add [اسم الملف]</code></p>
+<p align="right"><code>$ git add [إسم الملف]</code></p>
 
-<p dir="rtl">إضافة الملف لقائمة الترحيل للتحضير ليتم ارتكابها</p>
+<p dir="rtl"> إضافة ملف لقائمة الترحيل لتحضيره من أجل العمل عليه</p>
 
 
 <p align="right"><code>$ git diff --staged</code></p>
 
-<p dir="rtl">إظهار كل التغييرات في الملفات المتغيرة في قائمة الترحيل والمختلفة عن الموجودة في المستودع حالياً</p>
+<p dir="rtl">إظهار كل التغييرات في الملفات المتغيرة في قائمة الترحيل و إظهار الفرق بينها وبين الأصلية الموجودة في المستودع حالياً</p>
 
 
-<p align="right"><code >$ git reset [اسم الملف]</code></p>
+<p align="right"><code >$ git reset [إسم الملف]</code></p>
 
-<p dir="rtl">إزالة الملف من قائمة الترحيل مع الحفاظ على المحتوى الجديد دون تغيير.</p>
+<p dir="rtl">إزالة ملف من قائمة الترحيل مع الحفاظ على المحتوى الجديد دون تغيير.</p>
 
 
 <p align="right"><code align="right">$ git commit -m"[تعليق توضيحي]"</code></p>
 
-<p dir="rtl">ارتكاب التغييرات الموجودة في قائمة الترحيل وحفظها في ماضي النسخ</p>
+<p dir="rtl"> القيام بالتغييرات الموجودة في قائمة الترحيل وحفظها في ماضي النسخ</p>
 
-<h2 dir="rtl"> التغييرات الجماعية</h2>
-<p dir="rtl">تسمية مجموعة من التغييرات المرتكبة وجمع الجهود المكتملة</p>
+<h2 dir="rtl"> التغييرات الإجمالية</h2>
+<p dir="rtl">تسمية مجموعة من التغييرات المعمولة وجميع الأعمال المكتملة</p>
 
 
 <p align="right"><code align="right">$ git branch</code></p>
@@ -95,22 +95,22 @@ leadingpath: ../../../
 <p dir="rtl">إدراج قائمة بكل الفروع المحلية للمستودع الحالي</p>
 
 
-<p align="right"><code align="right">$ git branch [اسم الفرع]</code></p>
+<p align="right"><code align="right">$ git branch [إسم الفرع]</code></p>
 
 <p dir="rtl">تكوين فرع جديد</p>
 
 
-<p align="right"><code align="right">$ git checkout [اسم الفرع]</code></p>
+<p align="right"><code align="right">$ git checkout [إسم الفرع]</code></p>
 
 <p dir="rtl">التغيير إلى فرع معين وتحديث المسار الحالي</p>
 
 
-<p align="right"><code align="right">$ git merge [اسم الفرع]</code></p>
+<p align="right"><code align="right">$ git merge [إسم الفرع]</code></p>
 
-<p dir="rtl">دمج الفرع الحالي بفرع آخر ماضي</p>
+<p dir="rtl">دمج الفرع الحالي بفرع آخر ماض</p>
 
 
-<p align="right"><code align="right">$ git branch -d [اسم الفرع]</code></p>
+<p align="right"><code align="right">$ git branch -d [إسم الفرع]</code></p>
 
 <p dir="rtl">حذف فرع معين</p>
 
@@ -126,19 +126,19 @@ leadingpath: ../../../
 <p dir="rtl">تحريك وإزالة الملفات التي تتم متابعة نسخها</p>
 
 
-<p align="right"><code align="right">$ git rm [اسم الملف]</code></p>
+<p align="right"><code align="right">$ git rm [إسم الملف]</code></p>
 
-<p dir="rtl">حذف الملف وإضافة عملية الحذف لقائمة الترحيل</p>
+<p dir="rtl">حذف ملف وإضافة عملية الحذف لقائمة الترحيل</p>
 
 
-<p align="right"><code align="right">$ git rm --cached [اسم الملف]</code></p>
+<p align="right"><code align="right">$ git rm --cached [إسم الملف]</code></p>
 
 <p dir="rtl">إلغاء عملية تتبع نسخ الملف مع الحفاظ على الملف محلياً (الملف موجود محليّاً لكنه لا يظهر على Github(</p>
 
 
-<p align="right"><code align="right">$ git mv [اسم الملف الأصلي] [اسم الملف الجديد]</code></p>
+<p align="right"><code align="right">$ git mv [إسم الملف الأصلي] [إسم الملف الجديد]</code></p>
 
-<p dir="rtl">تغيير اسم الملف والتحضير لارتكاب التغييرات</p>
+<p dir="rtl">تغيير اسم ملف والتحضير للقيام بالتغييرات</p>
 
 <h2 dir="rtl"> قمع تتبع الملفات</h2>
 <p dir="rtl">استثناء الملفات والمجلدات المؤقتة</p>
