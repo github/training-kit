@@ -16,17 +16,17 @@ This project and everyone who participates in it is governed by the [Contributor
 
 These materials are designed to help those new to Git, GitHub and software development as a whole. By using these cheatsheets, we hope users will:
 
-- Feel welcome and become active contributors in the open source community
-- Learn best practices for using Git, GitHub and other GitHub supported projects such as Electron, Atom, etc
-- Learn how to use the applications within GitHub's ecosystem to build better software
+- Feel welcome and become active contributors in the open source community.
+- Learn best practices for using Git, GitHub and other GitHub supported projects such as Electron, Atom, etc.
+- Learn how to use the applications within GitHub's ecosystem to build better software.
 
 ### Types of contributions we love
 
 We're always looking for contributions to help improve these resources. This includes:
 
-- Improving the existing cheatsheets
-- Translations of existing cheatsheets into new languages
-- Adding new classes or resources aligned with the [goals](#the-goal-of-these-resources)
+- Improving the existing cheatsheets.
+- Translations of existing cheatsheets into new languages.
+- Adding new classes or resources aligned with the [goals](#the-goal-of-these-resources).
 
 <hr>
 
@@ -40,12 +40,12 @@ If you aren't sure how to fix it or just don't have time, we invite you to open 
 
 ### Translate existing resources
 
-Several community members have been kind enough to translate the Git Cheat Sheets into various languages. At this time, we are only set up to serve the cheat sheets in various languages (but maybe you can help us change that :wink:) If you are planning to contribute a translation, please do the following:
+Several community members have been kind enough to translate the Git Cheat Sheets into various languages. At this time, we are only set up to serve the cheat sheets in various languages (But maybe you can help us change that :wink:) If you are planning to contribute a translation, please do the following:
 
-- Fork this repository
+- Fork this repository.
 - Create a new folder in the [downloads directory](https://github.com/github/training-kit/tree/master/downloads) using the standard abbreviation for the language you are providing.
 - Copy the most recent [English version of the cheatsheet](https://github.com/github/training-kit/blob/master/downloads/github-git-cheat-sheet.md) to the folder you created.
-- Complete the translation
+- Complete the translation.
 - Add a link to the translated resource on [/index.html](https://github.com/github/training-kit/blob/master/index.html)
 - Open a pull request against the `master` branch of this repository.
 - Be sure to @ mention a couple of your friends who are native speakers and ask them to review the translation.
@@ -75,8 +75,8 @@ When you are ready to test your changes, you will want to build the repository l
 
 To build the materials do the following:
 
-1. Run `script/bootstrap` to install the dependencies
-1. Run `script/build` to build the site
-1. Run `script/server`
-    - When successful, the script will initiate a local server at `http://127.0.0.1:4000/`.
-1. Simply paste that into your favorite web-browser and you will be ready to test
+1. Run `script/bootstrap` to install the dependencies.
+1. Run `script/build` to build the site.
+1. Run `script/server`.
+    - When successful, the script will initiate a local server at `http://127.0.0.1:4000/`
+1. Simply paste that into your favorite web-browser and you will be ready to test.

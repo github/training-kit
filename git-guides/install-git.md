@@ -1,17 +1,25 @@
 # Install Git
 
-How to install Git on any OS
+How to install Git on any OS.
 
 Git can be installed on the most common operating systems like Windows, Mac, and Linux. In fact, Git comes installed by default on most Mac and Linux machines!
 
 ## Checking for Git
 
-To see if you already have Git installed, open up your terminal application.
+To see if you already have Git installed, open up your terminal application:
 
 - If you're on a Mac, look for a command prompt application called "Terminal".
+- If you're on a Linux, look for a command prompt application called "Terminal emulator".
 - If you're on a Windows machine, open the windows command prompt or "Git Bash".
 
-Once you've opened your terminal application, type `git version`. The output will either tell you which version of Git is installed, or it will alert you that `git` is an unknown command. If it's an unknown command, read further and find out how to install Git.
+Once you've opened your terminal application, type `git version`:
+
+```shell
+user@debian:~/training-kit$ git version
+git version 2.20.1
+```
+
+The output will either tell you which version of Git is installed, or it will alert you that `git` is an unknown command. If it's an unknown command, read further and find out how to install Git.
 
 ## Install Git Using GitHub Desktop
 
@@ -21,7 +29,7 @@ Installing GitHub Desktop will also install the latest version of Git if you don
 
 1. Navigate to the latest [Git for Windows installer](https://gitforwindows.org/) and download the latest version.
 2. Once the installer has started, follow the instructions as provided in the **Git Setup** wizard screen until the installation is complete.
-3. Open the windows command prompt (or **Git Bash** if you selected not to use the standard Git Windows Command Prompt during the Git installation).
+3. Open the windows command prompt (Or **Git Bash** if you selected not to use the standard Git Windows Command Prompt during the Git installation).
 4. Type `git version` to verify Git was installed.
 
 Note: [`git-scm`](https://git-scm.com/download/win) is a popular and recommended resource for downloading Git for Windows. The advantage of downloading Git from `git-scm` is that your download automatically starts with the latest version of Git included with the recommended command prompt, `Git Bash` . The download source is the same [Git for Windows installer](https://gitforwindows.org/) as referenced in the steps above.
@@ -62,14 +70,14 @@ Note: [`git-scm`](https://git-scm.com/download/mac) is a popular and recommended
 
 ## Install Git on Linux
 
-Fun fact: Git was originally developed to version the Linux operating system! So, it only makes sense that it is easy to configure to run on Linux.
+Fun fact: Git was originally developed to version the kernel of the GNU/Linux operating system! So, it only makes sense that it is easy to configure to run on Linux.
 
 You can install `Git` on Linux through the package management tool that comes with your distribution.
 
 #### Debian/Ubuntu
 
 1. Git packages are available using `apt`.
-2. It's a good idea to make sure you're running the latest version. To do so, Navigate to your command prompt shell and run the following command to make sure everything is up-to-date: `sudo apt-get update`.
+2. It's a good idea to make sure you're running the latest version. To do so, navigate to your command prompt shell and run the following command to make sure everything is up-to-date: `sudo apt-get update`.
 3. To install Git, run the following command: `sudo apt-get install git-all`.
 4. Once the command output has completed, you can verify the installation by typing: `git version`.
 
