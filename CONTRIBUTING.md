@@ -69,6 +69,8 @@ If you just want to help out, but don't have a particular change in mind, check 
 
 This site uses GitHub's CSS toolkit called [Primer](https://github.com/primer/primer-css). It's easy to use, and if your contribution requires some design or front-end work you should check out the [Primer Docs](http://primercss.io/).
 
+For writing style guides, we lean on the [Microsoft writing style guide](https://docs.microsoft.com/en-us/style-guide/welcome/). These [top 10 tips](https://docs.microsoft.com/en-us/style-guide/top-10-tips-style-voice) are a great place to start.
+
 ### Building and testing
 
 When you are ready to test your changes, you will want to build the repository locally. This is fully automated through a series of shell scripts based [the scripts to rule them all](https://github.com/github/scripts-to-rule-them-all)!
