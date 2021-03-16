@@ -103,7 +103,7 @@ Vráti zoznam všetkých lokálnych vetiev v repozitári
 Vytvorí novú vetvu
 
 
-```$ git checkout [nazov-vetvy]```
+```$ git switch -c [nazov-vetvy]```
 
 Prejde do danej vetvy a aktualizuje súbory
 

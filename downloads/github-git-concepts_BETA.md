@@ -42,7 +42,7 @@ Repository contributions are commonly made through branches and commits focused 
 
 ```
 git branch [name]
-git checkout [name]
+git switch [name]
 git add [file]
 git commit -m [commit message]
 ```
@@ -50,7 +50,7 @@ git commit -m [commit message]
 When the feature work reaches completion, the branch can be merged locally or pushed to GitHub for code review.
 
 ```
-git checkout master
+git switch master
 git merge [branch]
 
 git push -u origin [branch]
@@ -67,7 +67,7 @@ $ git diff [modified-file]
 Commits can be made against any branch and in any order. Commonly, this is performed against the  master branch as means of feature or bug-fix integration.
 
 ```
-$ git checkout master
+$ git switch master
 $ git merge feature-enhancement
 $ git branch -d feature-enhancement
 ```
@@ -96,6 +96,6 @@ $ git push origin [branch-name]
 Retrieving changes from a shared repository and automatically merging in any new commits locally is performed in a multi-step operation run by one command.
 
 ```
-$ git checkout [target-branch]
+$ git switch [target-branch]
 $ git pull origin [upstream-branch]
 ```

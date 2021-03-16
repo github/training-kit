@@ -99,7 +99,7 @@ stage한 내용을 커밋으로 영구히 저장합니다
 새로운 브랜치를 생성합니다
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 특정 브랜치로 전환하고 워킹 디렉토리를 업데이트합니다
 

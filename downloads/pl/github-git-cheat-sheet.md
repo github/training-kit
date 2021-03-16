@@ -99,7 +99,7 @@ Wyświetla listę wszystkich lokalnych gałęzi w aktualnym repozytorium
 Tworzy nową gałąź
 
 
-```$ git checkout [nazwa-gałęzi]```
+```$ git switch -c [nazwa-gałęzi]```
 
 Przechodzi do określonej gałęzi i aktualizuje katalog roboczy
 

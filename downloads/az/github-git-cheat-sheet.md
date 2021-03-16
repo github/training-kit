@@ -40,7 +40,7 @@ Budaqlar - Git-lə işin mühüm hissəsidir. Etdiyiniz istənilən kommit hal-h
 
 Yeni budaq yaradır
 
-```$ git checkout [budaq-adı]```
+```$ git switch -c [budaq-adı]```
 
 Göstərilən budağa keçir və iş qovluğunu yeniləyir
 
@@ -165,7 +165,7 @@ Bütün tarixi, işçi qovluğu daxil olmaqla ləğv edir və göstərilən komm
 - **remote** (məsafədən idarə olunan): GitHub-da bütün komanda üzvlərinin istifadə etdikləri ümumi bir repozitardır
 - **fork** (nüsxə): GitHub-dakı fərqli istifadəçiyə məxsus bir repozitar nüsxəsidir
 - **pull request** (dəyişikliklərin qəbul edilməsi sorğusu): bir budaqda təqdim olunan fərqləri müqayisə və rəylər, şərhlər, inteqrasiya olunmuş testlər və s. ilə müzakirə etmək üçün bir yer
-- **HEAD**: cari işlədiyiniz qovluğu təmsil edir. HEAD göstəricisi `git checkout` istifadə edilərkən müxtəlif budaqlara köçürülə bilər.
+- **HEAD**: cari işlədiyiniz qovluğu təmsil edir. HEAD göstəricisi `git switch` istifadə edilərkən müxtəlif budaqlara köçürülə bilər.
 
 {% endcapture %}
 <div class="col-md-6">
