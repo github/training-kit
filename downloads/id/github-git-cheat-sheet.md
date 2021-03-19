@@ -91,9 +91,9 @@ Daftar semua cabang lokal di repositori saat ini
 
 ```$ git branch [nama-cabang]```
 
-Membuat cabang baru
+Mewujudkan cabang baru
 
-```$ git checkout [nama-cabang]```
+```$ git switch -c [nama-cabang]```
 
 Berpindah ke cabang tertentu dan perbarui direktori yang sedang dikerjakan
 

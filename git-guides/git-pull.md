@@ -14,7 +14,7 @@ git pull
 
 ### `git pull` and `git fetch`
 
-`git pull`, a combination of `git fetch` + `git merge`, updates some parts of your local repository with changes from the remote repository. To understand what is and isn't affected by `git pull`, you need to first understand the concept of remote tracking branches. When you clone a repository, you clone one working branch, `master`, and all of the remote tracking branches. `git fetch` updates the remote tracking branches. `git merge` will update your current branch with any new commits on the remote tracking branch.
+`git pull`, a combination of `git fetch` + `git merge`, updates some parts of your local repository with changes from the remote repository. To understand what is and isn't affected by `git pull`, you need to first understand the concept of remote tracking branches. When you clone a repository, you clone one working branch, `main`, and all of the remote tracking branches. `git fetch` updates the remote tracking branches. `git merge` will update your current branch with any new commits on the remote tracking branch.
 
 `git pull` is the most common way to update your repository.
 
@@ -39,17 +39,17 @@ You can see all of the many options with `git pull` in [git-scm's documentation]
 
 ### Working on a Branch
 
-If you're already working on a branch, it is a good idea to run `git pull` before starting work and introducing new commits. Even if you take a small break from development, there's a chance that one of your collaborators has made changes to your branch. This change could even come from updating your branch with new changes from `master`.
+If you're already working on a branch, it is a good idea to run `git pull` before starting work and introducing new commits. Even if you take a small break from development, there's a chance that one of your collaborators has made changes to your branch. This change could even come from updating your branch with new changes from `main`.
 
 It is always a good idea to run `git status` - especially before `git pull`. Changes that are not committed can be overwritten during a `git pull`. Or, they can block the `git merge` portion of the `git pull` from executing. If you have files that are changed, but not committed, and the changes on the remote also change those same parts of the same file, Git must make a choice. Since they are not committed changes, there is no possibility for a merge conflict. Git will either overwrite the changes in your working or staging directories, or the `merge` will not complete, and you will not be able to include any of the updates from the remote.
 
 If this happens, use `git status` to identify what changes are causing the problem. Either delete or commit those changes, then `git pull` or `git merge` again.
 
-### Keep `master` up to date
+### Keep `main` up to date
 
-Keeping the `master` branch up to date is generally a good idea.
+Keeping the `main` branch up to date is generally a good idea.
 
-For example, let's say you have cloned a repository. After you clone, someone merges a branch into master. Then, you'd like to create a new branch to do some work. If you create your branch off of `master` _before_ operating `git pull`, your branch will not have the most recent changes. You could accidentally introduce a conflict, or duplicate changes. By running `git pull` before you create a branch, you can be sure that you will be working with the most recent information.
+For example, let's say you have cloned a repository. After you clone, someone merges a branch into main. Then, you'd like to create a new branch to do some work. If you create your branch off of `main` _before_ operating `git pull`, your branch will not have the most recent changes. You could accidentally introduce a conflict, or duplicate changes. By running `git pull` before you create a branch, you can be sure that you will be working with the most recent information.
 
 ### Undo A `git pull`
 
@@ -64,12 +64,12 @@ Run `git reflog` and search for the commit that you would like to return to. The
 If you have made commits locally that you regret, you may want your local branch to match the remote branch without saving any of your work. This can be done using `git reset`. First, make sure you have the most recent copy of that remote tracking branch by fetching.
 
 `git fetch <remote> <branch>`
-ex: `git fetch origin master`
+ex: `git fetch origin main`
 
 Then, use `git reset --hard` to move the HEAD pointer and the current branch pointer to the most recent commit as it exists on that remote tracking branch.
 
 `git reset --hard <remote>/<branch>`
-ex: `git reset --hard origin/master`
+ex: `git reset --hard origin/main`
 
 > _Note: You can find the remotes with `git remote -v`, and see all available remote tracking branches with `git branch --all`.
 

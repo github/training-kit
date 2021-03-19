@@ -11,12 +11,12 @@ leadingpath: ../../
 GitHub, en yaygın depo eylemleri için grafiksel bir kullanıcı arabirimi ve Git'in gelişmiş senaryolar için otomatik olarak güncellenen bir komut satırı sürümü içeren masaüstü istemcileri sağlar.
 
 ### GitHub Masaüstü
-https://desktop.github.com/
+[desktop.github.com](https://desktop.github.com)
 
 Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesinde bulabilirsiniz.
 
 ### Tüm platformlar için Git
-https://git-scm.com
+[git-scm.com](https://git-scm.com)
 
 ## Takım yapılandırna
 Tüm yerel depolar için kullanıcı bilgilerini yapılandırın
@@ -100,7 +100,7 @@ Geçerli depodaki tüm yerel dalları listeler
 Yeni bir dal oluştur
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 Belirtilen dala geçer ve çalışma dizinini günceller
 

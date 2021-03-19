@@ -11,15 +11,15 @@ leadingpath: ../../../
 GitHub은 일반적으로 많이 사용되는 저장소 관련 작업을 위한 데스크톱 클라이언트와 함께, 더 복잡한 작업을 위해 자동으로 업데이트되는 Git command line 에디션을 제공합니다.
 
 ### Windows 사용자를 위한 GitHub
-https://windows.github.com
+[windows.github.com](https://windows.github.com)
 
 ### Mac 사용자를 위한 GitHub
-https://mac.github.com
+[mac.github.com](https://mac.github.com)
 
 리눅스와 POSIX 운영체제를 위한 Git 배포 버전은 Git의 공식 웹사이트인 Git SCM에서 확인하실 수 있습니다.
 
 ### 모든 플랫폼을 위한 Git
-https://git-scm.com
+[git-scm.com](https://git-scm.com)
 
 ## 환경 설정
 모든 로컬 저장소에 적용할 사용자 정보를 설정합니다
@@ -99,7 +99,7 @@ stage한 내용을 커밋으로 영구히 저장합니다
 새로운 브랜치를 생성합니다
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 특정 브랜치로 전환하고 워킹 디렉토리를 업데이트합니다
 

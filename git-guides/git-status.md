@@ -35,4 +35,4 @@ You can see all of the options with `git status` in [git-scm's documentation](ht
 - `git remote -v`: Show the associated remote repositories and their stored name, like `origin`.
 - `git remote add origin <url>`: Add a remote so you can collaborate with others on a newly initialized repository.
 - `git push`: Uploads all local branch commits to the remote.
-- `git push -u origin master`: When pushing a branch for the first time, this type of push will configure the relationship between the remote and your local repository so that you can use `git pull` and `git push` with no additional options in the future.
+- `git push -u origin main`: When pushing a branch for the first time, this type of push will configure the relationship between the remote and your local repository so that you can use `git pull` and `git push` with no additional options in the future.

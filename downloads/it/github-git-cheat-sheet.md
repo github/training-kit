@@ -11,15 +11,15 @@ leadingpath: ../../../
 GitHub offre un client desktop con interfaccia grafica per svolgere le principali funzioni sui repository. È inoltre presente una versione auto-aggiornante di Git da linea di comando, per gli scenari più avanzati.
 
 ### GitHub per Windows
-https://windows.github.com
+[windows.github.com](https://windows.github.com)
 
 ### GitHub per Mac
-https://mac.github.com
+[mac.github.com](https://mac.github.com)
 
 Le distribuzioni di Git per Linux e sistemi POSIX sono disponibili sul sito ufficiale di Git SCM.
 
 ### Git per tutte le piattaforme
-https://git-scm.com
+[git-scm.com](https://git-scm.com)
 
 ## Configurazione globale
 Configurazione dell'utente valida per tutti i repository
@@ -102,7 +102,7 @@ Elenca tutti i branch nel repository corrente
 Crea un nuovo branch
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 Passa al branch specificato e aggiorna la directory corrente
 

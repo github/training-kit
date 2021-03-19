@@ -10,12 +10,12 @@ leadingpath: ../../../
 GitHubは、利用頻度の高いリポジトリへのアクションを可能にするGUI版と、上級向けに自動的にアップデートされるGitのコマンドライン版を含むデスクトップクライアントを提供しています。
 
 ### GitHub Desktop
-https://desktop.github.com/
+[desktop.github.com](https://desktop.github.com)
 
 LinuxまたはPOSIXシステムのためのGitディストリビューションは公式のGit SCMウェブサイトから入手できます。
 
 ### Git 全プラットフォーム版
-https://git-scm.com
+[git-scm.com](https://git-scm.com)
 
 ## ツールの設定
 すべてのローカルリポジトリ用の、ユーザー情報設定方法
@@ -98,7 +98,7 @@ https://git-scm.com
 新規ブランチを作成します
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 指定されたブランチに切り替え、作業ディレクトリを更新します
 

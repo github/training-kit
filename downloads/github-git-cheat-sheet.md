@@ -38,7 +38,7 @@ Branches are an important part of working with Git. Any commits you make will be
 
 Creates a new branch
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 Switches to the specified branch and updates the working directory
 
@@ -60,15 +60,15 @@ Deletes the specified branch
 
 ## Create repositories
 
-When starting out with a new repository, you only need to do it once; either locally, then push to GitHub, or by cloning an existing repository.
+A new repository can either be created locally, or an existing repository can be cloned. When a repository was initialized locally, you have to push it to GitHub afterwards.
 
 ```$ git init```
 
-After using the `git init` command, link the local repository to an empty GitHub repository using the following command:
+The git init command turns an existing directory into a new Git repository inside the folder you are running this command. After using the `git init` command, link the local repository to an empty GitHub repository using the following command:
 
 ```$ git remote add origin [url]```
 
-Turn an existing directory into a Git repository
+Specifies the remote repository for your local repository. The url points to a repository on GitHub.
 
 ```$ git clone [url]```
 
@@ -116,7 +116,7 @@ Lists version history for the current branch
 
 ```$ git log --follow [file]```
 
-Lists version history for a file, including renames
+Lists version history for a file, beyond renames (works only for a single file)
 
 ```$ git diff [first-branch]...[second-branch]```
 
@@ -146,7 +146,7 @@ Undoes all commits after `[commit]`, preserving changes locally
 
 Discards all history and changes back to the specified commit
 
-> CAUTION! Changing history can have nasty side effects. If you need to change commits that exist on GitHub (the remote), proceed with caution. If you need help, reach out at github.community or contact support.
+> CAUTION! Changing history can have nasty side effects. If you need to change commits that exist on GitHub (the remote), proceed with caution. If you need help, reach out at [github.community](https://github.community) or contact support.
 
 {% endcapture %}
 <div class="col-md-6">
@@ -165,7 +165,7 @@ Discards all history and changes back to the specified commit
 - **remote**: a common repository on GitHub that all team members use to exchange their changes
 - **fork**: a copy of a repository on GitHub owned by a different user
 - **pull request**: a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more
-- **HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using `git checkout`
+- **HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using `git switch`
 
 {% endcapture %}
 <div class="col-md-6">

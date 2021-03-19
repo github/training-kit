@@ -11,15 +11,15 @@ leadingpath: ../../../
 GitHub fornece clientes desktop que incluem uma interface gráfica para as ações mais comuns em um repositório e atualiza automaticamente para a linha de comando do Git para cenários avançados.
 
 ### GitHub para Windows
-[https://windows.github.com](https://windows.github.com)
+[windows.github.com](https://windows.github.com)
 
 ### GitHub para Mac
-[https://mac.github.com](https://mac.github.com)
+[mac.github.com](https://mac.github.com)
 
 Distribuições do Git para Linux e sistemas POSIX são disponíveis no site oficial do Git SCM.
 
 ### Git para todas as plataformas
-[https://git-scm.com](https://git-scm.com)
+[git-scm.com](https://git-scm.com)
 
 ## Configure a ferramenta
 Configure informações de usuário para todos os repositórios locais
@@ -101,7 +101,7 @@ Lista todos os branches locais no repositório atual
 Cria um novo branch
 
 
-```$ git checkout [nome-do-branch]```
+```$ git switch -c [nome-do-branch]```
 
 Muda para o branch especificado e atualiza o diretório de trabalho
 

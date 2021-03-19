@@ -38,7 +38,7 @@ leadingpath: ../../../
 
 创建一个新分支
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 切换到指定分支并更新工作目录(working directory)
 
@@ -146,7 +146,7 @@ Clone（下载）一个已存在于 GitHub 上的仓库，包括所有的文件�
 
 放弃所有历史，改回指定提交。
 
-> 小心！更改历史可能带来不良后果。如果你需要更改 GitHub（远端）已有的提交，请谨慎操作。如果你需要帮助，可访问 github.community 或联系支持(support)。
+> 小心！更改历史可能带来不良后果。如果你需要更改 GitHub（远端）已有的提交，请谨慎操作。如果你需要帮助，可访问 [github.community](https://github.community) 或联系支持(support)。
 
 {% endcapture %}
 <div class="col-md-6">

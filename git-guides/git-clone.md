@@ -18,7 +18,7 @@ The ability to work with the entire repository means that all developers can wor
 -  later use `git push` to share your branch with the remote repository
 - open a pull request to compare the changes with your collaborators
 - test and deploy as needed from the branch
-- merge into the `master` branch.
+- merge into the `main` branch.
 
 ## How to Use `git clone`
 
@@ -44,7 +44,7 @@ The most common usage of cloning is to simply clone a repository. This is only d
 
 But, maybe for some reason you would like to _only_ get a remote tracking branch for one specific branch, or clone one branch which _isn't_ the default branch. Both of these things happen when you use `--single-branch` with `git clone`.
 
-This will create a clone that only has commits included in the current line of history. This means no other branches will be cloned. You can specify a certain branch to clone, but the default branch, usually `master`, will be selected by default.
+This will create a clone that only has commits included in the current line of history. This means no other branches will be cloned. You can specify a certain branch to clone, but the default branch, usually `main`, will be selected by default.
 
 To clone one specific branch, use:
 
@@ -61,7 +61,7 @@ If you choose to clone with SSH, you would use a specific SSH path for the repos
 
 ## Related Terms
 
-- `git branch`: This shows the existing branches in your local repository. You can also use `git branch [banch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
+- `git branch`: This shows the existing branches in your local repository. You can also use `git branch [branch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
 - `git pull`: Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. `git pull` is a combination of `git fetch` and `git merge`.
 - `git push`: Uploads all local branch commits to the remote.
 - `git remote -v`: Show the associated remote repositories and their stored name, like `origin`.

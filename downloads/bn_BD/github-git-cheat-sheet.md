@@ -11,15 +11,15 @@ leadingpath: ../../../
 গিটহাবের রিপোজিটরির  সাধারন অ্যাকশন ও  উন্নত পরিস্থিতিতে জন্য Git এর একটি স্বয়ংক্রিয়ভাবে আপডেট করার কমান্ড লাইন সংস্করণসহ  ডেস্কটপের জন্য গ্রাফিকাল ইউজার ইন্টারফেস সুবিধাযুক্ত ক্লায়েন্ট আছে।
 
 ### উইন্ডোজের জন্য গিটহাব
-https://windows.github.com
+[windows.github.com](https://windows.github.com)
 
 ### ম্যাকের জন্য গিটহাব
-https://mac.github.com
+[mac.github.com](https://mac.github.com)
 
 লিনাক্স ও POSIX সিস্টেমের জন্য গিট অফিশিয়াল Git SCM ওয়েবসাইটে উপলব্ধ।
 
 ### সকল প্ল্যাটফরমের জন্য গিটহাব
-https://git-scm.com
+[git-scm.com](https://git-scm.com)
 
 ## টুল কনফিগার করা
 সকল লোকাল রিপোজিটরির জন্য টুল কনফিগার করা
@@ -102,7 +102,7 @@ Name a series of commits and combine completed efforts
 একটি নতুন ব্রাঞ্চ তৈরি করুন
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 নির্দিষ্ট শাখায় সুইচ এবং আপডেট ওয়ার্কিং ডিরেক্টরি
 

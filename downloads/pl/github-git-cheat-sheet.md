@@ -11,12 +11,12 @@ leadingpath: ../../../
 GitHub dostarcza klienta dla komputerów który zawiera interfejs graficzny dla najbardziej powszechnych akcji w repozytorium i automatycznie aktualizuje edycje Git'a w lini komend dla zaawansowanych scenariuszy.
 
 ### GitHub Desktop
-https://desktop.github.com/
+[desktop.github.com](https://desktop.github.com)
 
 Dystrybucje Git'a dla systemu Linux i POSIX dostępne są na oficjalnej stronie Git SCM.
 
 ### Git dla wszystkich platform
-https://git-scm.com
+[git-scm.com](https://git-scm.com)
 
 ## Konfiguracja narzędzi
 Skonfiguruj informacje o użytkowniku dla wszystkich lokalnych repozytoriów
@@ -99,7 +99,7 @@ Wyświetla listę wszystkich lokalnych gałęzi w aktualnym repozytorium
 Tworzy nową gałąź
 
 
-```$ git checkout [nazwa-gałęzi]```
+```$ git switch -c [nazwa-gałęzi]```
 
 Przechodzi do określonej gałęzi i aktualizuje katalog roboczy
 
