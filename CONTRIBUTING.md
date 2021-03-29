@@ -1,4 +1,4 @@
-# Contributing to training-kit
+ # Contributing to training-kit
 
 :tada: Thank you for taking the time to contribute and for seeking out these instructions. We :heart: community contributions to these materials.
 
