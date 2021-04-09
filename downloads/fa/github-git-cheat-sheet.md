@@ -153,7 +153,7 @@ https://git-scm.com
 
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 <div dir="rtl">
 به شاخه تعیین‌شده سوئیچ نموده و دایرکتوری کاری را نیز تغییر می‌دهد

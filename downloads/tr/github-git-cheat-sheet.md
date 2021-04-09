@@ -100,7 +100,7 @@ Geçerli depodaki tüm yerel dalları listeler
 Yeni bir dal oluştur
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 Belirtilen dala geçer ve çalışma dizinini günceller
 

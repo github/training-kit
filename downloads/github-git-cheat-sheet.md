@@ -38,7 +38,7 @@ Branches are an important part of working with Git. Any commits you make will be
 
 Creates a new branch
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 Switches to the specified branch and updates the working directory
 
@@ -165,7 +165,7 @@ Discards all history and changes back to the specified commit
 - **remote**: a common repository on GitHub that all team members use to exchange their changes
 - **fork**: a copy of a repository on GitHub owned by a different user
 - **pull request**: a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more
-- **HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using `git checkout`
+- **HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using `git switch`
 
 {% endcapture %}
 <div class="col-md-6">

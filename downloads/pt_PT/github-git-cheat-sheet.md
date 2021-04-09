@@ -101,7 +101,7 @@ Lista todos os branches locais no repositório atual
 Cria um novo branch
 
 
-```$ git checkout [nome-do-branch]```
+```$ git switch -c [nome-do-branch]```
 
 Muda para o branch especificado e atualiza o diretório de trabalho
 

@@ -98,7 +98,7 @@ LinuxまたはPOSIXシステムのためのGitディストリビューション�
 新規ブランチを作成します
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 指定されたブランチに切り替え、作業ディレクトリを更新します
 

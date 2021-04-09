@@ -44,7 +44,7 @@ leadingpath: ../../
 
 Δημιουργεί ένα νέο παρακλάδι (branch)
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 Εναλλάζει στο καθορισμένο παρακλάδι (branch) και ενημερώνει τον κατάλογο εργασίας (working directory)
 
@@ -171,7 +171,7 @@ leadingpath: ../../
 - **remote**: a common repository on GitHub that all team members use to exchange their changes
 - **fork**: a copy of a repository on GitHub owned by a different user
 - **pull request**: a place to compare and discuss the differences introduced on a branch with reviews, comments, integrated tests, and more
-- **HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using `git checkout`
+- **HEAD**: representing your current working directory, the HEAD pointer can be moved to different branches, tags, or commits when using `git switch`
 
 {% endcapture %}
 <div class="col-md-6">

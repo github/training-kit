@@ -100,7 +100,7 @@ leadingpath: ../../../
 <p dir="rtl">تكوين فرع جديد</p>
 
 
-<p align="right"><code align="right">$ git checkout [اسم الفرع]</code></p>
+<p align="right"><code align="right">$ git switch -c [اسم الفرع]</code></p>
 
 <p dir="rtl">التغيير إلى فرع معين وتحديث المسار الحالي</p>
 

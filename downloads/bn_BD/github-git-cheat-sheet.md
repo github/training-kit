@@ -102,7 +102,7 @@ Name a series of commits and combine completed efforts
 একটি নতুন ব্রাঞ্চ তৈরি করুন
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 নির্দিষ্ট শাখায় সুইচ এবং আপডেট ওয়ার্কিং ডিরেক্টরি
 
