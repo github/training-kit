@@ -26,7 +26,7 @@ You can also use a handy command, `git add -p`, to walk through the changes and 
 
 ### Common usages and options for Git Commit
 
-- `git commit`: This starts the commit process, but since it doesn't include a `-m` flag for the message, your default text editor will be opened for you to create the commit message. If you haven't configured anything, there's a good chance this will be VI or Vim. (To get out, press esc, then `:w`, and then Enter. :wink:)
+- `git commit`: This starts the commit process, but since it doesn't include a `-m` flag for the message, your default text editor will be opened for you to create the commit message. If you haven't configured anything, there's a good chance this will be VI or Vim. (To get out, press esc, then `:wq`, and then Enter. :wink:)
 - `git commit -m "descriptive commit message"`: This starts the commit process, and allows you to include the commit message at the same time.
 - `git commit -am "descriptive commit message"`: In addition to including the commit message, this option allows you to skip the staging phase. The addition of `-a` will automatically stage any files that are already being tracked by Git (changes to files that you've committed before).
 - `git commit --amend`: Replaces the most recent commit with a new commit. (More on this later!)
