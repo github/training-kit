@@ -23,7 +23,7 @@ Everything you need to know about Git, from getting started to advanced commands
 
 ## What is Git?
 
-Git is distributed version control software. Version control is a way to save changes over time without overwriting previous versions. Being distributed means that every developer working with a Git repository has a copy of that entire repository - every commit, every branch, every file. If you're used to working with centralized version control systems, this is a big difference!
+Git is a distributed version control software. Version control is a way to save changes over time without overwriting previous versions. Being distributed means that every developer working with a Git repository has a copy of that entire repository - every commit, every branch, every file. If you're used to working with centralized version control systems, this is a big difference!
 
 Whether or not you've worked with version control before, there are a few things you should know before getting started with Git:
 
@@ -33,11 +33,11 @@ Whether or not you've worked with version control before, there are a few things
 
 ## What is Git Written in?
 
-The tools that make up the core Git distribution are written in C, Shell, Perl and Tcl. You can find Git's source code on GitHub under [git/git](https://github.com/git/git).
+The tools that make up the core Git distribution are written in C, Shell, Perl, and Tcl. You can find Git's source code on GitHub under [git/git](https://github.com/git/git).
 
 ## Why Use Git?
 
-Version control is very important - without it, you risk losing your work. With Git, you can make a "commit", or a save point, as often as you'd like. You can also go back to previous commits. This takes the pressure off of you while you're working. Commit often and commit early, and you'll never have that gut sinking feeling of overwriting or losing changes.
+Version control is very important - without it, you risk losing your work. With Git, you can make a "commit", or a save point, as often as you'd like. You can also go back to previous commits. This takes the pressure off of you while you're working. Commit often and commit early, and you'll never have that gut-sinking feeling of overwriting or losing changes.
 
 There are many version control systems out there - but Git has some major advantages.
 
@@ -47,7 +47,7 @@ Like we mentioned above, Git uses SHA compression, which makes it very fast.
 
 ### Merge conflicts
 
-Git can handle merge conflicts, which mean that **it's OK for multiple people to work on the same file at the same time**. This opens up the world of development in a way that isn't possible with centralized version control. You have access to the entire project, and if you're working on a branch, you can do whatever you need to and know that your changes are safe.
+Git can handle merge conflicts, which means that **it's OK for multiple people to work on the same file at the same time**. This opens up the world of development in a way that isn't possible with centralized version control. You have access to the entire project, and if you're working on a branch, you can do whatever you need to and know that your changes are safe.
 
 ### Cheap branches
 
@@ -59,7 +59,7 @@ Without sharing the code through branches, this would never be possible.
 
 ### Ease of roll back
 
-If you make a mistake, it's OK! Commits are immutable, meaning they can't be changed. (*Note: You _can_ change history, but it will create new replacement commits instead of editing the existing commits. More on that later!*) This means that if you do make a mistake, even on an important branch like `main`, it's _OK_. **You can easily revert that change, or roll back the branch pointer to the commit where everything was fine.**
+If you make a mistake, it's OK! Commits are immutable, meaning they can't be changed. (*Note: You _can_ change history, but it will create new replacement commits instead of editing the existing commits. More on that later!*) This means that if you do make a mistake, even on an important branch, like `main`, it's _OK_. **You can easily revert that change, or roll back the branch pointer to the commit where everything was fine.**
 
 The benefits of this can't be overstated. Not only does it create a safer environment for the project and code, but it fosters a development environment where developers can be braver, trusting that Git has their back.
 
@@ -76,7 +76,7 @@ Some of the most important and most used commands that you'll find there are:
 - `git branch`: This shows the existing branches in your local repository. You can also use `git branch [branch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
 - `git checkout [branch-name]`: Switches to the specified branch and updates the working directory.
 - `git add [file]`: Snapshots the file in preparation for versioning, adding it to the staging area.
-- `git commit -m "descriptive message"`: Records file snapshots permanently in version history.
+- `git commit -m "descriptive message"`: Records file snapshots permanently in the version history.
 - `git pull`: Updates your current local working branch with all new commits from the corresponding remote branch on GitHub. `git pull` is a combination of `git fetch` and `git merge`.
 - `git push`: Uploads all local branch commits to the remote.
 - `git log`: Browse and inspect the evolution of project files.
@@ -106,15 +106,15 @@ Once you've saved and staged the changes, you're ready to [make the commit](/git
 
 #### Push your changes to the remote
 
-So far, if you've made a commit locally, you're the only one that can see it. To let others see your work and begin collaboration, you should "push" your changes using `git push`. If you're pushing from a branch for the first time that you've created locally, you may need to give Git some more information. `git push -u origin [branch-name]` tells Git to push the current branch, and create a branch on the remote that matches it with the same name - and also, create a relationship with that branch, so that `git push` will be enough information in the future.
+So far, if you've made a commit locally, you're the only one that can see it. To let others see your work and begin collaboration, you should "push" your changes using `git push`. If you're pushing from a branch for the first time that you've created locally, you may need to give Git some more information. `git push -u origin [branch-name]` tells Git to push the current branch, and create a branch on the remote that matches it with the same name - and also, create a relationship with that branch so that `git push` will be enough information in the future.
 
-By default, `git push` only pushes the branch that you're currently checked out to.
+By default, `git push` only pushes the branch that you've currently checked out to.
 
 Sometimes, if there has been a new commit on the branch on the _remote_, you may be blocked from pushing. Don't worry! Start with a simple [`git pull`](/git-guides/git-pull) to incorporate the changes on the remote into your own local branch, resolve any conflicts or finish the merge from the remote into the local branch, and then try the push again.
 
 #### Open a pull request
 
-Pushing a branch, or new commits, to a remote repository is enough if a pull request already exists, but if it's the first time you're pushing that branch, you should open a new pull request. A pull request is a comparison of two branches - typically `main`, or the branch that the feature branch was created from, and the feature branch. This way, like branches, pull requests are scoped around a specific function or addition of work, rather than the person making the changes or amount of time the changes will take.
+Pushing a branch, or new commits, to a remote repository is enough if a pull request already exists, but if it's the first time you're pushing that branch, you should open a new pull request. A pull request is a comparison of two branches - typically `main`, or the branch that the feature branch was created from, and the feature branch. This way, like branches, pull requests are scoped around a specific function or addition of work, rather than the person making the changes or the amount of time the changes will take.
 
 Pull requests are the powerhouse of GitHub. Integrated tests can automatically run on pull requests, giving you immediate feedback on your code. Peers can give detailed code reviews, letting you know if there are changes to make, or if it's ready to go.
 
@@ -134,7 +134,7 @@ If you choose not to merge the pull request, you can also close pull requests wi
 
 ### Getting Started With GitHub
 
-If you're wondering where Git ends and GitHub begins, you're not alone. They are tied closely together to make working with them both a seamless experience. While Git takes care of the underlying version control, GitHub is the collaboration platform built on top of it. GitHub is the place for pull requests, comments, reviews, integrated tests, and so much more. Most developers work locally to develop, and use GitHub for collaboration. That ranges from using GitHub to host the shared remote repository, to working with colleagues and capitalizing on features like protected branches, code review, GitHub Actions, and more.
+If you're wondering where Git ends and GitHub begins, you're not alone. They are tied closely together to make working with them both a seamless experience. While Git takes care of the underlying version control, GitHub is the collaboration platform built on top of it. GitHub is the place for pull requests, comments, reviews, integrated tests, and so much more. Most developers work locally to develop and use GitHub for collaboration. That ranges from using GitHub to host the shared remote repository to working with colleagues and capitalizing on features like protected branches, code review, GitHub Actions, and more.
 
 The best place to practice using Git and GitHub is the [Introduction to GitHub Learning Lab course](https://lab.github.com/githubtraining/introduction-to-github).
 
