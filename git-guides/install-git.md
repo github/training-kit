@@ -15,7 +15,7 @@ Once you've opened your terminal application, type `git version`. The output wil
 
 ## Install Git Using GitHub Desktop
 
-Installing GitHub Desktop will also install the latest version of Git if you don't already have it. With GitHub Desktop, you get a command line version of Git with a robust GUI. Regardless of if you have Git installed or not, GitHub Desktop offers a simple collaboration tool for Git. You can [learn more here](https://desktop.github.com/).
+Installing GitHub Desktop will also install the latest version of Git if you don't already have it. With GitHub Desktop, you get a command-line version of Git with a robust GUI. Regardless of if you have Git installed or not, GitHub Desktop offers a simple collaboration tool for Git. You can [learn more here](https://desktop.github.com/).
 
 ## Install Git on Windows
 
@@ -57,7 +57,7 @@ Note: [`git-scm`](https://git-scm.com/download/mac) is a popular and recommended
 [Homebrew](https://brew.sh/) is a popular package manager for macOS. If you already have Homebrew installed, you can follow the below steps to install Git:
 
 1. Open up a terminal window and install Git using the following command: `brew install git`.
-2. Once the command output has completed, you can verify the installation by typing: `git version`.
+2. Once the command output has been completed, you can verify the installation by typing: `git version`.
 
 
 ## Install Git on Linux
@@ -71,13 +71,13 @@ You can install `Git` on Linux through the package management tool that comes wi
 1. Git packages are available using `apt`.
 2. It's a good idea to make sure you're running the latest version. To do so, Navigate to your command prompt shell and run the following command to make sure everything is up-to-date: `sudo apt-get update`.
 3. To install Git, run the following command: `sudo apt-get install git-all`.
-4. Once the command output has completed, you can verify the installation by typing: `git version`.
+4. Once the command output has been completed, you can verify the installation by typing: `git version`.
 
 #### Fedora
 
 1. Git packages are available using `dnf`.
 2. To install Git, navigate to your command prompt shell and run the following command: `sudo dnf install git-all`.
-3. Once the command output has completed, you can verify the installation by typing: `git version`.
+3. Once the command output has been completed, you can verify the installation by typing: `git version`.
 
 Note: You can download the proper Git versions and read more about how to install on specific Linux systems, like installing Git on Ubuntu or Fedora, [in git-scm's documentation](https://git-scm.com/download/linux).
 

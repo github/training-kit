@@ -12,7 +12,7 @@ git commit -m "update the README.md with link to contributing guide"
 
 ### Commits shape history
 
-By using commits, you're able to craft history intentionally and safely. You can make commits to different branches, and specify exactly what changes you want to include. Commits are created on the branch that you're currently checked out to (wherever HEAD is pointing) so it's always a good idea to run `git status` before making a commit, to check that you're checked-out to the branch that you intend to be. Before you commit, you will need to stage any new changes that you'd like to include in the commit using `git add [file]`.
+By using commits, you're able to craft history intentionally and safely. You can make commits to different branches, and specify exactly what changes you want to include. Commits are created on the branch that you've currently checked out to (wherever HEAD is pointing) so it's always a good idea to run `git status` before making a commit, to check that you're checked out to the branch that you intend to be. Before you commit, you will need to stage any new changes that you'd like to include in the commit using `git add [file]`.
 
 Commits are lightweight SHA hashes, objects within Git. As long as you're working with text files, you won't need to worry about how many files you have, how big they are, or how many commits you make. Git can handle it!
 
@@ -20,13 +20,13 @@ Commits are lightweight SHA hashes, objects within Git. As long as you're workin
 
 Commits have two phases to help you craft commits properly. Commits should be logical, atomic units of change that represent a specific idea. But, not all humans work that way. You may get carried away and end up solving two or three problems before you remember to commit! That's OK - Git can handle that. Once you're ready to craft your commits, you'll use `git add <FILENAME>` to specify the files that you'd like to "stage" for commit. Without adding any files, the command `git commit` won't work. Git only looks to the staging area to find out what to commit. Staging, or adding, files, is possible through the command line, and also possible with most Git interfaces like GitHub Desktop by selecting the lines or files that you'd like to stage.
 
-You can also use a handy command, `git add -p`, to walk through the changes and separate them out, even if they're in the same file.
+You can also use a handy command, `git add -p`, to walk through the changes and separate them, even if they're in the same file.
 
 ## How to Use Git Commit
 
 ### Common usages and options for Git Commit
 
-- `git commit`: This starts the commit process, but since it doesn't include a `-m` flag for the message, your default text editor will be opened for you to create the commit message. If you haven't configured anything, there's a good chance this will be VI or Vim. (To get out, press esc, then `:w`, and then Enter. :wink:)
+- `git commit`: This starts the commit process, but since it doesn't include a `-m` flag for the message, your default text editor will be opened for you to create the commit message. If you haven't configured anything, there's a good chance this will be VI or Vim. (To get out, press Esc, then `:wq`, and then Enter. :wink:)
 - `git commit -m "descriptive commit message"`: This starts the commit process, and allows you to include the commit message at the same time.
 - `git commit -am "descriptive commit message"`: In addition to including the commit message, this option allows you to skip the staging phase. The addition of `-a` will automatically stage any files that are already being tracked by Git (changes to files that you've committed before).
 - `git commit --amend`: Replaces the most recent commit with a new commit. (More on this later!)
@@ -46,7 +46,7 @@ Changing history for collaborators can be problematic in a few ways. Imagine - Y
 
 In dramatic cases, Git may decide that the histories are too different and the projects are no longer related. This is uncommon, but a big problem.
 
-The most common result is that your `git push` would return the "deleted" commit to shared history. (First, you would `git pull` if you were working on the same branch, and then merge, but the results would be the same.) This means that whatever was so important to delete is now back in the repository. A password, token, or large binary file may return without ever alerting you.
+The most common result is that your `git push` would return the "deleted" commit to a shared history. (First, you would `git pull` if you were working on the same branch, and then merge, but the results would be the same.) This means that whatever was so important to delete is now back in the repository. A password, token, or large binary file may return without ever alerting you.
 
 #### `git revert`
 
@@ -54,7 +54,7 @@ The most common result is that your `git push` would return the "deleted" commit
 
 #### `git reset`
 
-Sometimes, a commit includes sensitive information and needs to actually be deleted. `git reset` is a very powerful command that may cause you to lose work. By resetting, you move the `HEAD` pointer and the branch pointer to another point in time - maybe making it seem like the commits in between never happened! Before using `git reset`:
+Sometimes, a commit includes sensitive information that actually needs to be deleted. `git reset` is a very powerful command that may cause you to lose work. By resetting, you move the `HEAD` pointer and the branch pointer to another point in time - maybe making it seem like the commits in between never happened! Before using `git reset`:
 
 - Make sure to talk with your team about any shared commits
 - Research the three types of reset to see which is right for you (--soft, --mixed, --hard)

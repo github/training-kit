@@ -20,11 +20,11 @@ git remote -v
 
 ### What is `origin`?
 
-If you try running `git remote -v` in your repositories, you'll probably see something called `origin`. You may notice `origin` in many messages from Git. `origin` is the human-friendly name for the URL that the remote repository is stored at. It's like a key value pair, and `origin` is the default.
+If you try running `git remote -v` in your repositories, you'll probably see something called `origin`. You may notice `origin` in many messages from Git. `origin` is the human-friendly name for the URL that the remote repository is stored at. It's like a key-value pair, and `origin` is the default.
 
 ### What is `upstream`?
 
-You may need or want to work with multiple remotes for one local repository. This can be common in open source, when a contributor needs to create a fork of a repository to have permission to push changes to the remote.
+You may need or want to work with multiple remotes for one local repository. This can be common in open source when a contributor needs to create a fork of a repository to have permission to push changes to the remote.
 
 In this case, it's common to create and clone a fork. Then, the default remote would be `origin`, in reference to the fork. To make it easier to pull any changes to update the local copy of the fork from the original repository, many people add the original repository as a remote also. It's typical to name this remote `upstream`.
 
@@ -45,7 +45,7 @@ The concept of branches can be confusing once it is combined with the concept of
 
 ### Remote tracking branches
 
-If you run `git branch --all` in your repository, you will notice a long list of branches. The branches that (by default) appear in red are the _remote tracking branches_. These branches are read only copies of the branches on the remote. These update every time you run `git fetch` or `git pull`.
+If you run `git branch --all` in your repository, you will notice a long list of branches. The branches that (by default) appear in red are the _remote tracking branches_. These branches are read-only copies of the branches on the remote. These update every time you run `git fetch` or `git pull`.
 
 These don't take up much room, so it's okay that Git does this by default. But, these will stack up over time - they are not deleted automatically.
 

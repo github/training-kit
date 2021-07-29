@@ -1,6 +1,6 @@
 # Git Pull
 
-`git pull` updates your current local working branch, and all of the remote tracking branches. It's a good idea to run `git pull` regularly on the branches you are working on locally.
+`git pull` updates your current local working branch and all of the remote tracking branches. It's a good idea to run `git pull` regularly on the branches you are working on locally.
 
 Without `git pull`, (or the effect of it,) your local branch wouldn't have any of the updates that are present on the remote.
 
@@ -18,7 +18,7 @@ git pull
 
 `git pull` is the most common way to update your repository.
 
-However, you may want to use `git fetch` instead. One reason to do this may be that you expect conflicts. Conflicts can occur in this way if you have new local commits, and new commits on the remote. Just like a merge conflict that would happen between two different branches, these two different lines of history could contain changes to the same parts of the same file. If you first operate `git fetch`, the merge won't be initiated, and you won't be prompted to solve the conflict. This gives you the flexibility to resolve the conflict later without the need of network connectivity.
+However, you may want to use `git fetch` instead. One reason to do this may be that you expect conflicts. Conflicts can occur in this way if you have new local commits and new commits on the remote. Just like a merge conflict that would happen between two different branches, these two different lines of history could contain changes to the same parts of the same file. If you first operate `git fetch`, the merge won't be initiated, and you won't be prompted to solve the conflict. This gives you the flexibility to resolve the conflict later without the need for network connectivity.
 
 Another reason you may want to run `git fetch` is to update to all remote tracking branches before losing network connectivity. If you run `git fetch`, and then later try to run `git pull` without any network connectivity, the `git fetch` portion of the `git pull` operation will fail. 
 
@@ -49,7 +49,7 @@ If this happens, use `git status` to identify what changes are causing the probl
 
 Keeping the `main` branch up to date is generally a good idea.
 
-For example, let's say you have cloned a repository. After you clone, someone merges a branch into main. Then, you'd like to create a new branch to do some work. If you create your branch off of `main` _before_ operating `git pull`, your branch will not have the most recent changes. You could accidentally introduce a conflict, or duplicate changes. By running `git pull` before you create a branch, you can be sure that you will be working with the most recent information.
+For example, let's say you have cloned a repository. After you clone, someone merges a branch into main. Then, you'd like to create a new branch to do some work. If you create your branch off of `main` _before_ operating `git pull`, your branch will not have the most recent changes. You could accidentally introduce a conflict or duplicate changes. By running `git pull` before you create a branch, you can be sure that you will be working with the most recent information.
 
 ### Undo A `git pull`
 
