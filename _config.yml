@@ -69,6 +69,8 @@ exclude:
 - README.md
 - script
 - vendor
+- package.json
+- package-lock.json
 
 collections:
   modules:
