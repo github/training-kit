@@ -274,6 +274,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.7)
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
     yell (2.2.0)
     zeitwerk (2.4.2)
 
@@ -286,6 +287,7 @@ DEPENDENCIES
   jekyll-octicons
   rack-contrib (~> 1.1.0)
   rake
+  webrick
 
 BUNDLED WITH
-   2.2.9
+   2.2.15
