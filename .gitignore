@@ -9,4 +9,5 @@ _site/
 _release
 *.map
 .jekyll-metadata
+node_modules/
 # *.resume-burger-jokes
