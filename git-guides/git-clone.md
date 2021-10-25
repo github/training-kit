@@ -10,7 +10,7 @@ Git is a distributed version control system. Maximize the advantages of a full r
 git clone https://github.com/github/training-kit.git
 ```
 
-When you clone a repository, you don't get one file, as you may in other centralized version control systems. By cloning with Git, you get the entire repository - all files, all branches, and all commits.
+When you clone a repository, you don't get one file, as you may in other centralized version control systems. By cloning with Git, you get the entire repository – all files, all branches, and all commits.
 
 Cloning a repository is typically only done once, at the beginning of your interaction with a project. Once a repository already exists on a remote, like on GitHub, then you would clone that repository so you could interact with it locally. Once you have cloned a repository, you won't need to clone it again to do regular development.
 
@@ -57,7 +57,7 @@ _Cloning only one branch does not add any benefits unless the repository is very
 
 Depending on how you authenticate with the remote server, you may choose to clone using SSH.
 
-If you choose to clone with SSH, you would use a specific SSH path for the repository instead of a URL. Typically, developers are authenticated with SSH from the machine level. This means that you would probably clone with HTTPS or with SSH - not a mix of both for your repositories.
+If you choose to clone with SSH, you would use a specific SSH path for the repository instead of a URL. Typically, developers are authenticated with SSH from the machine level. This means that you would probably clone with HTTPS or with SSH – not a mix of both for your repositories.
 
 ## Related Terms
 

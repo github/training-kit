@@ -18,7 +18,7 @@ Commits are lightweight SHA hashes, objects within Git. As long as you're workin
 
 ### Committing in two phases
 
-Commits have two phases to help you craft commits properly. Commits should be logical, atomic units of change that represent a specific idea. But, not all humans work that way. You may get carried away and end up solving two or three problems before you remember to commit! That's OK - Git can handle that. Once you're ready to craft your commits, you'll use `git add <FILENAME>` to specify the files that you'd like to "stage" for commit. Without adding any files, the command `git commit` won't work. Git only looks to the staging area to find out what to commit. Staging, or adding, files, is possible through the command line, and also possible with most Git interfaces like GitHub Desktop by selecting the lines or files that you'd like to stage.
+Commits have two phases to help you craft commits properly. Commits should be logical, atomic units of change that represent a specific idea. But, not all humans work that way. You may get carried away and end up solving two or three problems before you remember to commit! That's OK – Git can handle that. Once you're ready to craft your commits, you'll use `git add <FILENAME>` to specify the files that you'd like to "stage" for commit. Without adding any files, the command `git commit` won't work. Git only looks to the staging area to find out what to commit. Staging, or adding, files, is possible through the command line, and also possible with most Git interfaces like GitHub Desktop by selecting the lines or files that you'd like to stage.
 
 You can also use a handy command, `git add -p`, to walk through the changes and separate them, even if they're in the same file.
 
@@ -42,7 +42,7 @@ Sometimes, you may need to change history. You may need to undo a commit. If you
 
 ### What can go wrong while changing history?
 
-Changing history for collaborators can be problematic in a few ways. Imagine - You and another collaborator have the same repository, with the same history. But, they make a change that _deletes_ the most recent commit. They continue new commits from the commit directly before that. Meanwhile, you keep working _with_ the commit that the collaborator tried to delete. When they push, they'll have to 'force push', which should show to them that they're changing history. **What do you think will happen when you try to push?**
+Changing history for collaborators can be problematic in a few ways. Imagine – You and another collaborator have the same repository, with the same history. But, they make a change that _deletes_ the most recent commit. They continue new commits from the commit directly before that. Meanwhile, you keep working _with_ the commit that the collaborator tried to delete. When they push, they'll have to 'force push', which should show to them that they're changing history. **What do you think will happen when you try to push?**
 
 In dramatic cases, Git may decide that the histories are too different and the projects are no longer related. This is uncommon, but a big problem.
 
@@ -54,11 +54,11 @@ The most common result is that your `git push` would return the "deleted" commit
 
 #### `git reset`
 
-Sometimes, a commit includes sensitive information that actually needs to be deleted. `git reset` is a very powerful command that may cause you to lose work. By resetting, you move the `HEAD` pointer and the branch pointer to another point in time - maybe making it seem like the commits in between never happened! Before using `git reset`:
+Sometimes, a commit includes sensitive information that actually needs to be deleted. `git reset` is a very powerful command that may cause you to lose work. By resetting, you move the `HEAD` pointer and the branch pointer to another point in time – maybe making it seem like the commits in between never happened! Before using `git reset`:
 
 - Make sure to talk with your team about any shared commits
 - Research the three types of reset to see which is right for you (--soft, --mixed, --hard)
-- Commit any work that you don't want to be lost intentionally - work that is committed can be gotten back, but uncommitted work cannot
+- Commit any work that you don't want to be lost intentionally – work that is committed can be gotten back, but uncommitted work cannot
 
 #### `git reflog`
 
