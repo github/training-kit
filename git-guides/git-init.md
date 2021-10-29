@@ -8,7 +8,7 @@ git init
 
 ## What Does `git init` Do?
 
-`git init` is one way to start a new project with Git. To start a repository, use either `git init` or `git clone` - not both.
+`git init` is one way to start a new project with Git. To start a repository, use either `git init` or `git clone` – not both.
 
 To initialize a repository, Git creates a hidden directory called `.git`. That directory stores all of the objects and refs that Git uses and creates as a part of your project's history. This hidden `.git` directory is what separates a regular directory from a Git repository.
 

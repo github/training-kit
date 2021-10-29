@@ -23,7 +23,7 @@ Everything you need to know about Git, from getting started to advanced commands
 
 ## What is Git?
 
-Git is a distributed version control software. Version control is a way to save changes over time without overwriting previous versions. Being distributed means that every developer working with a Git repository has a copy of that entire repository - every commit, every branch, every file. If you're used to working with centralized version control systems, this is a big difference!
+Git is a distributed version control software. Version control is a way to save changes over time without overwriting previous versions. Being distributed means that every developer working with a Git repository has a copy of that entire repository – every commit, every branch, every file. If you're used to working with centralized version control systems, this is a big difference!
 
 Whether or not you've worked with version control before, there are a few things you should know before getting started with Git:
 
@@ -37,9 +37,9 @@ The tools that make up the core Git distribution are written in C, Shell, Perl, 
 
 ## Why Use Git?
 
-Version control is very important - without it, you risk losing your work. With Git, you can make a "commit", or a save point, as often as you'd like. You can also go back to previous commits. This takes the pressure off of you while you're working. Commit often and commit early, and you'll never have that gut-sinking feeling of overwriting or losing changes.
+Version control is very important – without it, you risk losing your work. With Git, you can make a "commit", or a save point, as often as you'd like. You can also go back to previous commits. This takes the pressure off of you while you're working. Commit often and commit early, and you'll never have that gut-sinking feeling of overwriting or losing changes.
 
-There are many version control systems out there - but Git has some major advantages.
+There are many version control systems out there – but Git has some major advantages.
 
 ### Speed
 
@@ -92,7 +92,7 @@ There are _many_ ways to use Git, which doesn't necessarily make it easier! But,
 
 #### Create a branch
 
-The main branch is usually called `main`. We want to work on _another_ branch, so we can make a pull request and make changes safely. To get started, create a branch off of `main`. Name it however you'd like - but we recommend naming branches based on the function or feature that will be the focus of this branch. One person may have several branches, and one branch may have several people collaborate on it - branches are for a purpose, not a person. Wherever you currently "are" (wherever HEAD is pointing, or whatever branch you're currently "checked out" to) will be the parent of the branch you create. That means you can create branches from other branches, tags, or any commit! But, the most typical workflow is to create a branch from `main` - which represents the most current production code.
+The main branch is usually called `main`. We want to work on _another_ branch, so we can make a pull request and make changes safely. To get started, create a branch off of `main`. Name it however you'd like – but we recommend naming branches based on the function or feature that will be the focus of this branch. One person may have several branches, and one branch may have several people collaborate on it – branches are for a purpose, not a person. Wherever you currently "are" (wherever HEAD is pointing, or whatever branch you're currently "checked out" to) will be the parent of the branch you create. That means you can create branches from other branches, tags, or any commit! But, the most typical workflow is to create a branch from `main` – which represents the most current production code.
 
 #### Make changes (and make a commit)
 
@@ -106,7 +106,7 @@ Once you've saved and staged the changes, you're ready to [make the commit](/git
 
 #### Push your changes to the remote
 
-So far, if you've made a commit locally, you're the only one that can see it. To let others see your work and begin collaboration, you should "push" your changes using `git push`. If you're pushing from a branch for the first time that you've created locally, you may need to give Git some more information. `git push -u origin [branch-name]` tells Git to push the current branch, and create a branch on the remote that matches it with the same name - and also, create a relationship with that branch so that `git push` will be enough information in the future.
+So far, if you've made a commit locally, you're the only one that can see it. To let others see your work and begin collaboration, you should "push" your changes using `git push`. If you're pushing from a branch for the first time that you've created locally, you may need to give Git some more information. `git push -u origin [branch-name]` tells Git to push the current branch, and create a branch on the remote that matches it with the same name – and also, create a relationship with that branch so that `git push` will be enough information in the future.
 
 By default, `git push` only pushes the branch that you've currently checked out to.
 
@@ -114,7 +114,7 @@ Sometimes, if there has been a new commit on the branch on the _remote_, you may
 
 #### Open a pull request
 
-Pushing a branch, or new commits, to a remote repository is enough if a pull request already exists, but if it's the first time you're pushing that branch, you should open a new pull request. A pull request is a comparison of two branches - typically `main`, or the branch that the feature branch was created from, and the feature branch. This way, like branches, pull requests are scoped around a specific function or addition of work, rather than the person making the changes or the amount of time the changes will take.
+Pushing a branch, or new commits, to a remote repository is enough if a pull request already exists, but if it's the first time you're pushing that branch, you should open a new pull request. A pull request is a comparison of two branches – typically `main`, or the branch that the feature branch was created from, and the feature branch. This way, like branches, pull requests are scoped around a specific function or addition of work, rather than the person making the changes or the amount of time the changes will take.
 
 Pull requests are the powerhouse of GitHub. Integrated tests can automatically run on pull requests, giving you immediate feedback on your code. Peers can give detailed code reviews, letting you know if there are changes to make, or if it's ready to go.
 

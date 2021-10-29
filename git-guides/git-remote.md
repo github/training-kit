@@ -47,7 +47,7 @@ The concept of branches can be confusing once it is combined with the concept of
 
 If you run `git branch --all` in your repository, you will notice a long list of branches. The branches that (by default) appear in red are the _remote tracking branches_. These branches are read-only copies of the branches on the remote. These update every time you run `git fetch` or `git pull`.
 
-These don't take up much room, so it's okay that Git does this by default. But, these will stack up over time - they are not deleted automatically.
+These don't take up much room, so it's okay that Git does this by default. But, these will stack up over time – they are not deleted automatically.
 
 To delete the remote tracking branches that are deleted on the remote, run `git fetch --prune`. This is safe to do if you are using GitHub, because branches merged via pull requests can be restored.
 
