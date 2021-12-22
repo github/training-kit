@@ -31,7 +31,7 @@ If you do use `git fetch` instead of `git pull`, make sure you remember to `git 
 * `git pull`: Update your local working branch with commits from the remote, _and_ update all remote tracking branches.
 * `git pull --rebase`: Update your local working branch with commits from the remote, but rewrite history so any local commits occur after all new commits coming from the remote, avoiding a merge commit.
 * `git pull --force`: This option allows you to force a fetch of a specific remote tracking branch when using the `<refspec>` option that would otherwise not be fetched due to conflicts. To force Git to overwrite your current branch to match the remote tracking branch, read below about using `git reset`.
-* `git pull --all`: Fetch _all_ remotes - this is handy if you are working on a fork or in another use case with multiple remotes.
+* `git pull --all`: Fetch _all_ remotes – this is handy if you are working on a fork or in another use case with multiple remotes.
 
 You can see all of the many options with `git pull` in [git-scm's documentation](https://git-scm.com/docs/git-pull).
 
@@ -41,7 +41,7 @@ You can see all of the many options with `git pull` in [git-scm's documentation]
 
 If you're already working on a branch, it is a good idea to run `git pull` before starting work and introducing new commits. Even if you take a small break from development, there's a chance that one of your collaborators has made changes to your branch. This change could even come from updating your branch with new changes from `main`.
 
-It is always a good idea to run `git status` - especially before `git pull`. Changes that are not committed can be overwritten during a `git pull`. Or, they can block the `git merge` portion of the `git pull` from executing. If you have files that are changed, but not committed, and the changes on the remote also change those same parts of the same file, Git must make a choice. Since they are not committed changes, there is no possibility for a merge conflict. Git will either overwrite the changes in your working or staging directories, or the `merge` will not complete, and you will not be able to include any of the updates from the remote.
+It is always a good idea to run `git status` – especially before `git pull`. Changes that are not committed can be overwritten during a `git pull`. Or, they can block the `git merge` portion of the `git pull` from executing. If you have files that are changed, but not committed, and the changes on the remote also change those same parts of the same file, Git must make a choice. Since they are not committed changes, there is no possibility for a merge conflict. Git will either overwrite the changes in your working or staging directories, or the `merge` will not complete, and you will not be able to include any of the updates from the remote.
 
 If this happens, use `git status` to identify what changes are causing the problem. Either delete or commit those changes, then `git pull` or `git merge` again.
 
@@ -53,9 +53,9 @@ For example, let's say you have cloned a repository. After you clone, someone me
 
 ### Undo A `git pull`
 
-To effectively "undo" a `git pull`, you cannot undo the `git fetch` - but you can undo the `git merge` that changed your local working branch.
+To effectively "undo" a `git pull`, you cannot undo the `git fetch` – but you can undo the `git merge` that changed your local working branch.
 
-To do this, you will need to `git reset` to the commit you made _before_ you merged. You can find this commit by searching the `git reflog`. The reflog is a log of every place that HEAD has pointed - every place that you have ever been checked out to. This reflog is only kept for 30 to 90 days, depending on the commit, and is only stored locally. *(The reflog is a great reason not to delete a repository if you think you've made a mistake!)*
+To do this, you will need to `git reset` to the commit you made _before_ you merged. You can find this commit by searching the `git reflog`. The reflog is a log of every place that HEAD has pointed – every place that you have ever been checked out to. This reflog is only kept for 30 to 90 days, depending on the commit, and is only stored locally. *(The reflog is a great reason not to delete a repository if you think you've made a mistake!)*
 
 Run `git reflog` and search for the commit that you would like to return to. Then, run `git reset --hard <SHA>` to reset HEAD and your current branch to the SHA of the commit from before the merge.
 

@@ -2,18 +2,18 @@
 layout: cheat-sheet
 redirect_to: false
 title: GitHub Git Ściąga
-byline: Git to otwartoźródłowy rozproszony system kontroli wersji który umożliwia działanie GitHub'a na twoim laptopie lub komputerze stacjonarnym. Ta ściąga podsumowuje najczęściej używane komendy wiersza poleceń Git'a w celu szybkiego dostępu.
+byline: Git to otwartoźródłowy rozproszony system kontroli wersji który umożliwia działanie GitHuba na twoim laptopie lub komputerze stacjonarnym. Ta ściąga podsumowuje najczęściej używane komendy wiersza poleceń Gita w celu szybkiego dostępu.
 leadingpath: ../../../
 ---
 
 {% capture colOne %}
-## Instalacja Git'a
-GitHub dostarcza klienta dla komputerów który zawiera interfejs graficzny dla najbardziej powszechnych akcji w repozytorium i automatycznie aktualizuje edycje Git'a w lini komend dla zaawansowanych scenariuszy.
+## Instalacja Gita
+GitHub dostarcza klienta dla komputerów który zawiera interfejs graficzny dla najbardziej powszechnych akcji w repozytorium i automatycznie aktualizuje edycje Gita w lini komend dla zaawansowanych scenariuszy.
 
 ### GitHub Desktop
 [desktop.github.com](https://desktop.github.com)
 
-Dystrybucje Git'a dla systemu Linux i POSIX dostępne są na oficjalnej stronie Git SCM.
+Dystrybucje Gita dla systemu Linux i POSIX dostępne są na oficjalnej stronie Git SCM.
 
 ### Git dla wszystkich platform
 [git-scm.com](https://git-scm.com)
@@ -234,7 +234,7 @@ Pobiera całą historię ze zdalnego repozytorium
 
 ```$ git push [remote] [gałąź]```
 
-Przesyła lokalną gałąź do GitHub'a
+Przesyła lokalną gałąź do GitHuba
 
 
 ```$ git pull```

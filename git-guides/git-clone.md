@@ -10,7 +10,7 @@ Git is a distributed version control system. Maximize the advantages of a full r
 git clone https://github.com/github/training-kit.git
 ```
 
-When you clone a repository, you don't get one file, as you may in other centralized version control systems. By cloning with Git, you get the entire repository - all files, all branches, and all commits.
+When you clone a repository, you don't get one file, as you may in other centralized version control systems. By cloning with Git, you get the entire repository – all files, all branches, and all commits.
 
 Cloning a repository is typically only done once, at the beginning of your interaction with a project. Once a repository already exists on a remote, like on GitHub, then you would clone that repository so you could interact with it locally. Once you have cloned a repository, you won't need to clone it again to do regular development.
 
@@ -28,7 +28,7 @@ The ability to work with the entire repository means that all developers can wor
 * `git clone --mirror`: Clone a repository but without the ability to edit any of the files. This includes the refs or branches. You may want to use this if you are trying to create a secondary copy of a repository on a separate remote and you want to match all of the branches. This may occur during configuration using a new remote for your Git hosting, or when using Git during automated testing.
 * `git clone --single-branch`: Clone only a single branch
 * `git clone --sparse`: Instead of populating the working directory with all of the files in the current commit recursively, only populate the files present in the root directory. This could help with performance when cloning large repositories with many directories and sub-directories.
-*   `git clone --recurse-submodules[=<pathspec]: After the clone is created, initialize and clone submodules within based on the provided pathspec. This may be a good option if you are cloning a repository that you know to have submodules, and you will be working with those submodules as dependencies in your local development.
+*   `git clone --recurse-submodules[=<pathspec]`: After the clone is created, initialize and clone submodules within based on the provided pathspec (or all submodules if no pathspec is given). This may be a good option if you are cloning a repository that you know to have submodules, and you will be working with those submodules as dependencies in your local development.
 
 You can see all of the many options with `git clone` in [git-scm's documentation](https://git-scm.com/docs/git-clone).
 
@@ -57,7 +57,7 @@ _Cloning only one branch does not add any benefits unless the repository is very
 
 Depending on how you authenticate with the remote server, you may choose to clone using SSH.
 
-If you choose to clone with SSH, you would use a specific SSH path for the repository instead of a URL. Typically, developers are authenticated with SSH from the machine level. This means that you would probably clone with HTTPS or with SSH - not a mix of both for your repositories.
+If you choose to clone with SSH, you would use a specific SSH path for the repository instead of a URL. Typically, developers are authenticated with SSH from the machine level. This means that you would probably clone with HTTPS or with SSH – not a mix of both for your repositories.
 
 ## Related Terms
 
