@@ -90,11 +90,11 @@ Clone（下载）一个已存在于 GitHub 上的仓库，包括所有的文件�
 
 将远端跟踪分支合并到当前本地分支
 
-```$ git pull```
+```$ git push```
 
 将所有本地分支提交上传到 GitHub
 
-```$ git push```
+```$ git pull```
 
 使用来自 GitHub 的对应远端分支的所有新提交更新你当前的本地工作分支。`git pull` 是 `git fetch` 和 `git merge` 的结合
 
