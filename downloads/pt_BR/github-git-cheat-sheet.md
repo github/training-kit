@@ -198,7 +198,7 @@ Lista o histórico de versões para o branch atual
 Lista o histórico de versões para um arquivo, incluindo mudanças de nome
 
 
-```$ git diff [primerio-branch]...[segundo-branch]```
+```$ git diff [primeiro-branch]...[segundo-branch]```
 
 Mostra a diferença de conteúdo entre dois branches
 
