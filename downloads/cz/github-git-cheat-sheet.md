@@ -24,7 +24,7 @@ Nastaví jméno, které bude nastavené u commitu
 
 ```$ git config --global user.email "[emilová adresa]"```
 
-Nastaví emailovou adresuu, kter bude nastavena u commitu
+Nastaví emailovou adresu, která bude nastavena u commitu
 
 ```$ git config --global color.ui auto```
 
