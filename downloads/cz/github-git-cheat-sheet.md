@@ -146,7 +146,7 @@ Vrátí všechny revize po `[commit]`, zachová lokální změny
 
 Zahodí celou historii a změny k zadanému commitu
 
-> CAUTION! Změna historie může mít nepříjemné vedlejší účinky. Pokud potřebujete změnit revize, které existují na GitHubu (vzdáleném serveru), postupujte opatrně. Pokud potřebujete pomoc, obraťte se na adresu [github.community](https://github.community) nebo kontaktujte podporu.
+> UPOZORNĚNÍ! Změna historie může mít nepříjemné vedlejší účinky. Pokud potřebujete změnit revize, které existují na GitHubu (vzdáleném serveru), postupujte opatrně. Pokud potřebujete pomoc, obraťte se na adresu [github.community](https://github.community) nebo kontaktujte podporu.
 
 {% endcapture %}
 <div class="col-md-6">
