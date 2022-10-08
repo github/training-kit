@@ -9,6 +9,13 @@ redirect_to: false
 @import "timeline";
 @import "curriculum";
 @import "github_contribution_graph";
+footer{
+  background-color:#A7FFEB;
+  height:100vh;
+  display:flex;
+  flex-direction:row; align-items:center;
+  justify-content:space-evenly;
+  }
 
 details.flash {
   ol, ul {
