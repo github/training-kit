@@ -23,35 +23,35 @@ Configuring bash aliases
 
 ```$ alias ls='ls -lGh'```
 
-Sets the ls command to list, colorize, and provide file size suffixes
+                    Sets the ls command to list, colorize, and provide file size suffixes
 
 ## Working with directories
 Navigate, create, and delete directory folders and files
 
-```$ pwd```
+1.  ```$ pwd```
 
-Display path of current working directory
+                    Display path of current working directory
 
-```$ cd [directory]```
+2. ```$ cd [directory]```
 
-Change working directory to [directory]
+                    Change working directory to [directory]
 
-```$ cd ..```
+3. ```$ cd ..```
 
-Navigate to the parent directory
+                    Navigate to the parent directory
 
-```$ ls```
+4. ```$ ls```
 
-List directory contents
+                    List directory contents
 
-```$ ls -la```
+5. ```$ ls -la```
 
-List detailed directory contents, including hidden files
+                    List detailed directory contents, including hidden files
 
 
-```$ mkdir [directory]```
+6. ```$ mkdir [directory]```
 
-Create a new directory named [directory]
+                    Create a new directory named [directory]
 
 {% endcapture %}
 <div class="col-md-6">
@@ -63,74 +63,74 @@ Create a new directory named [directory]
 ## Handling output
 Control the flow of data from a file
 
-```$ cat [file]```
+1. ```$ cat [file]```
 
-Output the contents of [file]
-
-
-```$ less [file]```
-
-Output the contents of [file] which supports pagination
+                    Output the contents of [file]
 
 
-```$ head [file]```
+2. ```$ less [file]```
 
-Output the first 10 lines of [file]
-
-
-```$ [cmd] > [file] ```
-
-Direct the output of [cmd] into [file]
+                    Output the contents of [file] which supports pagination
 
 
-```$ [cmd] >> [file]```
+3. ```$ head [file]```
 
-Append the output of [cmd] to [file]
-
-
-```$ [cmd1] | [cmd2]```
-
-Direct the output of [cmd1] to the input of [cmd2]
+                    Output the first 10 lines of [file]
 
 
-```$ clear```
+4. ```$ [cmd] > [file] ```
 
-Clear the bash window
+                    Direct the output of [cmd] into [file]
+
+
+5. ```$ [cmd] >> [file]```
+
+                     Append the output of [cmd] to [file]
+
+
+6. ```$ [cmd1] | [cmd2]```
+
+                      Direct the output of [cmd1] to the input of [cmd2]
+
+
+7. ```$ clear```
+
+                       Clear the bash window
 
 ## Working with files
 Moving, renaming, creating and deleting files
 
-```$ rm [file]```
+1. ```$ rm [file]```
 
-Delete [file]
-
-
-```$ rm -r [directory]```
-
-Delete [directory]
-
-```$ rm -f [file]```
-
-Force-delete [file] (add -r to force-delete a directory)
+                        Delete [file]
 
 
-```$ mv [file-old] [file-new]```
+2. ```$ rm -r [directory]```
 
-Rename [file-old] to [file-new]
+                         Delete [directory]
+
+3. ```$ rm -f [file]```
+
+                          Force-delete [file] (add -r to force-delete a directory)
 
 
-```$ cp [file] [directory]```
+4. ```$ mv [file-old] [file-new]```
 
-Copy [file] to [directory] (possibly overwriting an existing file)
+                          Rename [file-old] to [file-new]
 
 
-```$ cp -r [src-directory] [dest-directory]```
+5. ```$ cp [file] [directory]```
 
-Copy [src-directory] and it's contents to [dest-directory] (possibly overwriting files in an existing directory)
+                         Copy [file] to [directory] (possibly overwriting an existing file)
 
-```$ touch [file]```
 
-Update file access and modification time (and create [file] if it does not exist)
+6. ```$ cp -r [src-directory] [dest-directory]```
+
+                         Copy [src-directory] and it's contents to [dest-directory] (possibly overwriting files in an existing directory)
+
+7. ```$ touch [file]```
+
+                        Update file access and modification time (and create [file] if it does not exist)
 
 {% endcapture %}
 <div class="col-md-6">
@@ -144,78 +144,77 @@ Update file access and modification time (and create [file] if it does not exist
 Change read, write, and execute permissions on files and folders
 
 
-```$ chmod 755 [file]```
+1. ```$ chmod 755 [file]```
 
-Change permissions of [file] to 755
-
-> Octal representation of permissions are group of permissions for User (u), Group (g) and Others (o) with values that are sum of read (4), write (2) and execute (1) permissions. For example, 755 is:
-> - Owner = 7; read (4) + write (2) + execute (1)
-> - Group = 5; read (4) + execute (1)
-> - Others = 5; read (4) + execute (1)
-
+                  Change permissions of [file] to 755
+                    > Octal representation of permissions are group of permissions for User (u), Group (g) and Others (o) with values that are sum of read (4), write (2) and execute (1) permissions. For example, 755 is:
+                    > - Owner = 7; read (4) + write (2) + execute (1)
+                    > - Group = 5; read (4) + execute (1)
+                    > - Others = 5; read (4) + execute (1)
 
 
-```$ chmod -R 600```
 
-Change permissions of [directory] (and its contents to 600)
+2. ```$ chmod -R 600```
+
+                    Change permissions of [directory] (and its contents to 600)
 
 
-```$ chown [user]:[group] [file]```
+3. ```$ chown [user]:[group] [file]```
 
-Change ownership of [tile] to [user] and [group] (add -R to include a directory's contents)
+                    Change ownership of [tile] to [user] and [group] (add -R to include a directory's contents)
 
 ## Networking and Internet
-```$ ping [ip/host]```
+1. ```$ ping [ip/host]```
 
-Ping the [ip/host] and displays time, among other things
+                     Ping the [ip/host] and displays time, among other things
 
-```$ curl -O [url]```
+2. ```$ curl -O [url]```
 
-Downloads [url] to current working directory
+                     Downloads [url] to current working directory
 
-```$ ssh [user]@[ip/host]```
+3. ```$ ssh [user]@[ip/host]```
 
-Starts an SSH connection to [host] using [user]
+                     Starts an SSH connection to [host] using [user]
 
-```$ ssh-copy-id [user]@[host]```
+4. ```$ ssh-copy-id [user]@[host]```
 
-Adds your SSH key to the host file for [user] to enable a keyed or passwordless login
+                     Adds your SSH key to the host file for [user] to enable a keyed or passwordless login
 
-```$ scp [file] [user]@[ip/host]:/path/to/file```
+5. ```$ scp [file] [user]@[ip/host]:/path/to/file```
 
-Securely copies [file] to a remote [host]
+                      Securely copies [file] to a remote [host]
 
-```$ wget [file]```
+6. ```$ wget [file]```
 
-Downloads [file] to your current working directory
+                      Downloads [file] to your current working directory
 
 ## System Tasks
 
 Find important information related to your currently running system
 
-```$ ps ax```
+1. ```$ ps ax```
 
-List currently running processes
+        List currently running processes
 
-```$ top```
+2. ```$ top```
 
-Displays live information on your currently running processes
+        Displays live information on your currently running processes
 
-```$ kill [pid]```
+3. ```$ kill [pid]```
 
-Ends the process using the provided process ID [pid]
+        Ends the process using the provided process ID [pid]
 
-```$ killall [processname]```
+4. ```$ killall [processname]```
 
-Ends all processes with the given [processname]
+        Ends all processes with the given [processname]
 
-```$ df```
+5. ```$ df```
 
-Shows disk usage
+        Shows disk usage
 
-```$ du [filename]```
+6. ```$ du [filename]```
 
-Shows disk usage of all files and folders in [filename]
+        Shows disk usage of all files and folders in [filename]
 
 {% endcapture %}
 <div class="col-md-6">
