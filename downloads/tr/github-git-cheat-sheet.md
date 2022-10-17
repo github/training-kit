@@ -18,7 +18,7 @@ Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesin
 ### Tüm platformlar için Git
 [git-scm.com](https://git-scm.com)
 
-## Takım yapılandırna
+## Takım yapılandırma
 Tüm yerel depolar için kullanıcı bilgilerini yapılandırın
 
 ```$ git config --global user.name "[name]"```
@@ -32,7 +32,7 @@ Tüm yerel depolar için kullanıcı bilgilerini yapılandırın
 Tüm yerel depolar için eposta bilgilerini yapılandırın
 
 
-## Create repositories
+## Depolar oluşturun
 Yeni bir depo başlatın veya mevcut bir URL’den bir tane edinin
 
 
