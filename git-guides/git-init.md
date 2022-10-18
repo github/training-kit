@@ -32,7 +32,7 @@ Starting a new project can be confusing. Sometimes, it's unclear if you should u
 
 Your project may already exist locally, but it doesn't have Git yet. `git init` is probably the right choice for you. This is only run once, even if other collaborators share the project. 
 
-- First, initialize the repository and make at least one commit. 
+- First, initialize the repository. 
 - Once you have initialized the repository, create a remote repository somewhere like GitHub.com.
 - Then, add the remote URL to your local git repository with `git remote add origin <URL>`. This stores the remote URL under a more human-friendly name, `origin`.
 - Shape your history into at least one commit by using `git add` to stage the existing files, and `git commit` to make the snapshot.
