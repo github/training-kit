@@ -17,14 +17,12 @@ jobs:
 
     # Ruby-specific steps
     - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
+      uses: ruby/setup-ruby@ece82769428359c077b5a5eaff268902a303c101
       with:
         ruby-version: 2.6.x
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Build and test with Rake
-      run: |
-        gem install bundler
-        bundle install --jobs 4 --retry 3
-        bundle exec rake
+      run: bundle exec rake
 
     # Jekyll-specific steps
     - name: Build the site in the jekyll/builder container
