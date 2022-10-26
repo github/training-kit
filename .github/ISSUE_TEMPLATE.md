@@ -2,7 +2,7 @@
 
 <!-- One to two sentence description of the issue you are encountering or trying to solve. -->
 
-### Extra Detail
+### Extra detail
 
 <!-- Please include any additional details that may be helpful in understanding the issue. -->
 #### Screenshots
@@ -13,7 +13,7 @@
 
 <!-- If new idea or direction, please create a checklist of proposed ideas or next steps. [Example](https://github.com/github/training-kit/issues/415). -->
 
-### How to Contribute
+### How to contribute
 
 - Comment on this issue if you'd like to work/collaborate on it!
 - Fork the [repository](https://github.com/github/training-kit).
@@ -23,7 +23,7 @@
   - Base Dropdown: github/training-kit
   - Compare Dropdown: Your fork
 
-#### Testing Locally
+#### Testing locally
 
 If you'd like to make and test changes locally (and see how they would look if merged), do the following:
 

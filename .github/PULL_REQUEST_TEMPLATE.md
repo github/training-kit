@@ -10,7 +10,7 @@ Link to related issue. Type `closes #RELATED_ISSUE_NUMBER` to establish a link.
 
 <!-- If relevant, write a list of questions that you would like to discuss related to the changes that you have made. -->
 
-## Next Steps
+## Next steps
 
 <!-- If incomplete, create a task list of items that are still being worked on within the Pull Request. -->
 
