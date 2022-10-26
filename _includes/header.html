@@ -5,9 +5,9 @@
 {% endif %}
 {% assign nav = site.data.navigation["main"][lang] %}
 
-<div class="bg-blue-darker py-3 f5 flex-none text-white">
+<div class="bg-blue-darker py-3 f5 flex-none color-fg-on-emphasis">
   <header class="container-lg p-responsive site-header js-site-header d-block clearfix">
-    <a class="no-underline text-inherit text-bold d-flex flex-items-center lh-condensed-ultra float-left" href="{{ site.baseurl }}/{{site.data.navigation['banner'][lang].url}}" aria-label="Git Cheat Sheets Main Page">
+    <a class="no-underline color-fg-inherit text-bold d-flex flex-items-center lh-condensed-ultra float-left" href="{{ site.baseurl }}/{{site.data.navigation['banner'][lang].url}}" aria-label="Git Cheat Sheets Main Page">
       <div class="mr-3">{% octicon mark-github %}</div>
       {{ site.data.navigation["banner"][lang].title }}
     </a>
@@ -19,7 +19,7 @@
     <nav class="site-header-menu float-none float-md-right py-1 mt-4 mt-md-0">
       <ul class="d-block d-md-flex list-style-none">
         {% for link in nav %}
-          <li class="ml-0 ml-md-3"><a class="text-inherit py-3 py-md-0 d-block" href="{% if link.abs %}{{link.abs}}{% else %}{{ site.baseurl }}{{ link.url }}{% endif %}">{{ link.title }}</a></li>
+          <li class="ml-0 ml-md-3"><a class="color-fg-inherit py-3 py-md-0 d-block" href="{% if link.abs %}{{link.abs}}{% else %}{{ site.baseurl }}{{ link.url }}{% endif %}">{{ link.title }}</a></li>
         {% endfor %}
       </ul>
     </nav>

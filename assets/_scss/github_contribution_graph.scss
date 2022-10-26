@@ -1,9 +1,9 @@
 .contribution_graph {
   font-size: $font-size-small;
-  color: $gray-700;
+  color: var(--color-scale-gray-7);
   padding: $spacer-2;
   border-radius: 4px;
-  border: 1px solid $gray-300;
+  border: 1px solid var(--color-border-tertiary);
 }
 
 .svg-tip {
