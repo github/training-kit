@@ -16,16 +16,15 @@ jobs:
         node-version: 16
         cache: 'npm'
 
-    # Ruby-specific steps
-    - name: Set up Ruby 3.0
+    - name: Set up Ruby
       uses: ruby/setup-ruby@ece82769428359c077b5a5eaff268902a303c101
       with:
         ruby-version: '3.0'
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
     - name: Build and test with Rake
       run: bundle exec rake
 
-    # Jekyll-specific steps
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
