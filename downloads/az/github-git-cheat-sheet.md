@@ -16,7 +16,7 @@ GitHub, repozitarla əsas əməliyyatların icra edilməsi üçün qrafik interf
 Linux və POSIX sistemləri üçün Git distribusiyalarını Git SCM rəsmi saytında tapa bilərsiniz.
 
 ### Bütün platformalar üçün Git
-[git-scm.com](http://git-scm.com)
+[git-scm.com](https://git-scm.com)
 
 ## İlkin quraşdırma
 İstifadəçi haqqında informasiyanın bütün lokal repozitarlar üçün konfiqurasiyası

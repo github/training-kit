@@ -3,38 +3,25 @@ domain: services.github.com
 author: GitHub, Inc.
 email: services@github.com
 
-
 # Site Settings
-locale                   : "en-US"
+locale: "en-US"
 # Keep original, do not replace
-title                    : "GitHub Cheatsheets"
-title_separator          : "-"
-name                     : "GitHub, Inc."
-description              : 
-baseurl                  :  # the subpath of your site, e.g. "/blog"
-gh_repo                  : github/training-kit
-teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : true # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-
-
-
+title: "GitHub Cheatsheets"
+title_separator: "-"
+name: "GitHub, Inc."
+description:
+url: "https://training.github.com"
+baseurl: "" # the subpath of your site, e.g. "/blog"
+gh_repo: github/training-kit
+repository: github/training-kit
+teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+breadcrumbs: true # true, false (default)
+words_per_minute: 200
 
 analytics:
-  provider               : google # false (default), "google", "google-universal", "custom"
+  provider: google # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-3769691-2
+    tracking_id: UA-3769691-2
 
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
@@ -59,18 +46,19 @@ plugins:
   - jekyll-octicons
 
 exclude:
-- bin
-- config.rb
-- Gemfile
-- Gemfile.lock
-- gems
-- Procfile
-- Rakefile
-- README.md
-- script
-- vendor
-- package.json
-- package-lock.json
+  - bin
+  - config.rb
+  - Gemfile
+  - Gemfile.lock
+  - gems
+  - node_modules
+  - Procfile
+  - Rakefile
+  - README.md
+  - script
+  - vendor
+  - package.json
+  - package-lock.json
 
 collections:
   modules:
@@ -79,22 +67,21 @@ collections:
     output: true
 
 include:
-- _stylesheets
-- _javascript
+  - _stylesheets
+  - _javascript
 sass:
   load_paths:
     - assets/_scss
     - node_modules
-  style: :compressed
+  style: compressed
 
 # Custom site configuration
 lang: en
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       lang: "en"
       redirect_to:
-        - https://lab.github.com
+        - https://training.github.com
