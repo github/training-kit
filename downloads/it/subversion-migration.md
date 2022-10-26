@@ -18,7 +18,7 @@ Il processo è semplice: basta che tu acceda al tuo account GitHub (se non lo se
 
 A seconda del sistema di controllo della versione rilevato, Importer potrebbe richiedere ulteriori informazioni per la migrazione. Questo comprende un file di mappatura per associare i nomi utente di Subversion con i campi Git.
 
-Leggi di più su come importare il tuo progetto in GitHub guardando la [documentazione di GitHub Importer](https://help.github.com/articles/importing-a-repository-with-github-importer/).
+Leggi di più su come importare il tuo progetto in GitHub guardando la [documentazione di GitHub Importer](https://docs.github.com/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer).
 
 ### SVN2Git Utility
 
