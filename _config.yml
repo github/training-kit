@@ -10,6 +10,7 @@ title: "GitHub Cheatsheets"
 title_separator: "-"
 name: "GitHub, Inc."
 description:
+url: "https://training.github.com"
 baseurl: # the subpath of your site, e.g. "/blog"
 gh_repo: github/training-kit
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -82,4 +83,4 @@ defaults:
     values:
       lang: "en"
       redirect_to:
-        - https://lab.github.com
+        - https://training.github.com
