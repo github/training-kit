@@ -27,7 +27,7 @@ This means if you `git add` a deleted file the _deletion_ is staged for commit. 
 ### Common usages and options for `git add`
 
 * `git add <path>`: Stage a specific directory or file
-* `git add .`: Stage all files (that are not listed in the `.gitignore`) in the entire repository
+* `git add -A`: Stage all files (that are not listed in the `.gitignore`) in the entire repository
 * `git add -p`: Interactively stage hunks of changes
 
 You can see all of the many options with `git add` in [git-scm's documentation](https://git-scm.com/docs/git-add).
