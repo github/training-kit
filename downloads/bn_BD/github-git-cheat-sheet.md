@@ -123,7 +123,7 @@ Name a series of commits and combine completed efforts
 
 
 {% capture colThree %}
-## ফাইলের নাম Refactor করুন
+## ফাইলের নাম পরিবর্তন (Refactor) করুন
 versioned ফাইল নতুন স্থানে স্থাপন বা মুছে ফেলুন
 
 
@@ -150,7 +150,7 @@ build/
 temp-*
 ```
 
-A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
+`.gitignore` নামের একটি পাঠ্য ফাইল নির্দিষ্ট প্যাটার্নের সাথে মিলে যাওয়া ফাইল এবং পাথগুলির দুর্ঘটনাজনিত সংস্করণকে দমন করে
 
 
 ```$ git ls-files --others --ignored --exclude-standard```

@@ -337,7 +337,7 @@
   }
 
   /* GitHub Book Links, Guide Links */
-  a[href^="http://git-scm.com/book"],
+  a[href^="https://git-scm.com/book"],
   a[href^="https://guides.github.com"]
   {
     @include octicon-link("\f007");

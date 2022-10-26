@@ -10,6 +10,11 @@ task :test do
   HTMLProofer.check_directories(
     ["./_site"], {
       :empty_alt_ignore => false,
+      typhoeus: {
+        headers: {
+          "Accept-Encoding" => "gzip",
+        }
+      }
     }).run
 end
 

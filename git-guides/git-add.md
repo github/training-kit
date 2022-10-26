@@ -4,8 +4,6 @@ The `git add` command adds new or changed files in your working directory to the
 
 `git add` is an important command – without it, no `git commit` would ever do anything. Sometimes, `git add` can have a reputation for being an unnecessary step in development. But in reality, `git add` is an important and powerful tool. `git add` allows you to shape history without changing how you work.
 
-![image of working directory, staging area, and committed history with commands shown and visualized]()
-
 ## When do you use `git add`?
 
 ```sh
@@ -13,7 +11,7 @@ git add README.md
 ```
 
 As you're working, you change and save a file, or multiple files. Then, before you commit, you must `git add`. This step allows you to choose what you are going to commit. Commits should be logical, atomic units of change – but not everyone works that way. Maybe you are making changes to files that _aren't_ logical or atomic units of change.  `git add` allows you to systematically shape your commits and your history anyway.
- 
+
 ### What Does Git Add Do?
 
 `git add [filename]` selects that file, and moves it to the staging area, marking it for inclusion in the next commit. You can select all files, a directory, specific files, or even specific parts of a file for staging and commit.
@@ -27,7 +25,7 @@ This means if you `git add` a deleted file the _deletion_ is staged for commit. 
 ### Common usages and options for `git add`
 
 * `git add <path>`: Stage a specific directory or file
-* `git add .`: Stage all files (that are not listed in the `.gitignore`) in the entire repository
+* `git add -A`: Stage all files (that are not listed in the `.gitignore`) in the entire repository
 * `git add -p`: Interactively stage hunks of changes
 
 You can see all of the many options with `git add` in [git-scm's documentation](https://git-scm.com/docs/git-add).
@@ -79,7 +77,7 @@ If the time is right to stage all files, there are several commands that you can
 
 | | New files | Modified files | Deleted files | Files with names beginning with a dot | Current directory | Higher directories|
 | ------------- | ------------- | ---- | ---- | ------ | ----- | ----- |
-| `git add -A ` | Yes | Yes | Yes | Yes | Yes | Yes |
+| `git add -A` | Yes | Yes | Yes | Yes | Yes | Yes |
 | `git add .` | Yes | Yes | Yes | Yes | Yes | No |
 | `git add -u` | No | Yes | Yes | Yes | Yes | Yes |
 
@@ -92,7 +90,7 @@ The safest and clearest way to use `git add` is by designating the specific file
 
 ### Undo Added Files
 
-Before undoing a `git add`, you should first be sure that you won't lose any work. There's no way to "revert" an add in the same way you can revert a commit, but you can move the files out of the staging area. 
+Before undoing a `git add`, you should first be sure that you won't lose any work. There's no way to "revert" an add in the same way you can revert a commit, but you can move the files out of the staging area.
 
 For example, if you have a staged file, and then you make more changes to that file in your working directory. Now, the versions in your working directory and your staging area are different. If you take action to remove the changed version of the file from the staging area, the changes that were in your working directory _but not_ staged will be overwritten.
 
@@ -106,7 +104,7 @@ To move staged changes from the staging area to the working directory without af
 
 ## Related Terms
 
-- `git status`: Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
-- `git checkout [branch-name]`: Switches to the specified branch and updates the working directory.
-- `git commit -m "descriptive message"`: Records file snapshots permanently in version history.
-- `git push`: Uploads all local branch commits to the remote.
+* `git status`: Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
+* `git checkout [branch-name]`: Switches to the specified branch and updates the working directory.
+* `git commit -m "descriptive message"`: Records file snapshots permanently in version history.
+* `git push`: Uploads all local branch commits to the remote.

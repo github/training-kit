@@ -11,6 +11,7 @@ leadingpath: ../../
 </div>
 
 {% capture submodule %}
+
 ### Submodule
 
     git submodule add https://github.com/githubtraining/example-submodule
@@ -25,8 +26,7 @@ The `submodule add` command adds a new file called `.gitmodules` along with a su
 
 ### Subtree
 
-
-    git subtree add --prefix=example-submodule https://github.com/githubtraining/example-submodule master --squash
+    git subtree add --prefix=example-submodule https://github.com/githubtraining/example-submodule main --squash
 
 The subtree command adds a subdirectory containing the files from `example-submodule`. The most common practice is to use the `--squash` option to combine the subproject's history into a single commit, which is then grafted onto the existing tree of the parent project. You can omit the `--squash` option to maintain all of the history from the designated branch of the subproject.
 
@@ -45,6 +45,7 @@ The subtree command adds a subdirectory containing the files from `example-submo
 </div>
 
 {% capture submodule %}
+
 ### Submodule
 
 To view a diff of the submodule:
@@ -81,6 +82,7 @@ No special command required
 </div>
 
 {% capture submodule %}
+
 ### Submodule
 
 To clone a repository along with its submodules:
@@ -116,9 +118,10 @@ No special command required
 </div>
 
 {% capture submodule %}
+
 ### Submodule
 
-By default, the submodule repository is fetched, but not updated when you run `git pull` in the superproject. You need to use ` git submodule update`, or add the `--recurse-submodules` flag to `pull` :
+By default, the submodule repository is fetched, but not updated when you run `git pull` in the superproject. You need to use `git submodule update`, or add the `--recurse-submodules` flag to `pull` :
 
 ```bash
 git pull
@@ -163,11 +166,12 @@ No special command required
 </div>
 
 {% capture submodule %}
+
 ### Submodule
 
 By default, the submodule working tree is not updated to match the commit recorded in the superproject when changing branches. You need to use `git submodule update`, or add the `--recurse-submodules` flag to `switch` :
 
-```bash 
+```bash
 git switch <branch>
 git submodule update --recursive
 # or, in one step (Git >= 2.13)
@@ -197,6 +201,7 @@ No special command required
 </div>
 
 {% capture submodule %}
+
 ### Submodule
 
 ```bash
@@ -208,7 +213,7 @@ git commit -am "Update submodule"
 
 If you have more than one submodule, you can add the path to the submodule at the end of the `git submodule update --remote` command to specify which subproject to update.
 
-By default, `git submodule update --remote` will update the submodule to the latest commit on the `master` branch of the submodule remote.
+By default, `git submodule update --remote` will update the submodule to the latest commit on the `main` branch of the submodule remote.
 
 You can change the default branch for future calls with:
 
@@ -224,13 +229,14 @@ git config -f .gitmodules submodule.example-submodule.branch other-branch
 {% capture subtree %}
 
 ### Subtree
-    git subtree pull --prefix=example-submodule https://github.com/githubtraining/example-submodule master --squash
+
+    git subtree pull --prefix=example-submodule https://github.com/githubtraining/example-submodule main --squash
 
 You can shorten the command by adding the subtree URL as a remote:
 
     git remote add sub-remote https://github.com/githubtraining/example-submodule.git
 
-You can add/pull from other refs by replacing `master` with the desired ref (e.g. `stable`, `v1.0`).
+You can add/pull from other refs by replacing `main` with the desired ref (e.g. `stable`, `v1.0`).
 
 {% endcapture %}
 
@@ -249,12 +255,13 @@ In most cases, it is considered best practice to make changes in a separate clon
 </div>
 
 {% capture submodule %}
+
 ### Submodule
 
 Access the submodule directory and create a branch:
 
     cd example-submodule
-    git switch -c branch-name master
+    git switch -c branch-name main
 
 Changes require two commits, one in the subproject repository and one in the parent repository.
 Don't forget to push in both the submodule and the superproject!
@@ -283,6 +290,7 @@ It is possible to create commits mixing changes to the subproject and the parent
 </div>
 
 {% capture submodule %}
+
 ### Submodule
 
 While in the submodule directory:
@@ -298,7 +306,8 @@ Or while in the parent directory:
 {% capture subtree %}
 
 ### Subtree
-    git subtree push --prefix=example-submodule https://github.com/githubtraining/example-submodule master
+
+    git subtree push --prefix=example-submodule https://github.com/githubtraining/example-submodule main
 {% endcapture %}
 
 <div class="col-md-6">
