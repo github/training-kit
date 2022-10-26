@@ -2,7 +2,7 @@
 
 Open source courseware from the GitHub Professional Services team.
 
-## We :heart: contributors like you
+## We ❤️ contributors like you
 
 **We’re eager to work with you**, our user community, to improve these materials and develop new ones. Please check out our [CONTRIBUTING guide](CONTRIBUTING.md) for more information on getting started.
 
