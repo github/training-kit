@@ -10,11 +10,12 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Install node modules
-      uses: actions/setup-node@v3
+    - uses: actions/setup-node@v3
       with:
         node-version: 16
         cache: 'npm'
+    - name: Install node modules
+      run: npm install
 
     - name: Set up Ruby
       uses: ruby/setup-ruby@ece82769428359c077b5a5eaff268902a303c101
