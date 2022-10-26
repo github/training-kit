@@ -10,10 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    # Node-specific steps
     - name: Install node modules
-      run: |
-        npm install
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'npm'
 
     # Ruby-specific steps
     - name: Set up Ruby 3.0
