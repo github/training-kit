@@ -13,7 +13,6 @@ description:
 url: "https://training.github.com"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 gh_repo: github/training-kit
-github: [metadata]
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
@@ -35,6 +34,7 @@ incremental: false
 # standard jekyll configuration
 
 parentsite: https://services.github.com
+permalink: /articles/:title/
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
