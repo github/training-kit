@@ -16,10 +16,10 @@ jobs:
         npm install
 
     # Ruby-specific steps
-    - name: Set up Ruby 2.6
+    - name: Set up Ruby 3.0
       uses: ruby/setup-ruby@ece82769428359c077b5a5eaff268902a303c101
       with:
-        ruby-version: 2.6.x
+        ruby-version: '3.0'
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Build and test with Rake
       run: bundle exec rake
