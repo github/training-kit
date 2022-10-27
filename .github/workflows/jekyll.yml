@@ -8,25 +8,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
-    # Node-specific steps
-    - name: Install node modules
-      run: |
-        npm install
-
-    # Ruby-specific steps
-    - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
+    - uses: actions/setup-node@v3
       with:
-        ruby-version: 2.6.x
-    - name: Build and test with Rake
-      run: |
-        gem install bundler
-        bundle install --jobs 4 --retry 3
-        bundle exec rake
+        node-version: 16
+        cache: 'npm'
+    - name: Install node modules
+      run: npm install
 
-    # Jekyll-specific steps
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@ece82769428359c077b5a5eaff268902a303c101
+      with:
+        ruby-version: '3.0'
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+    - name: Build and test with Rake
+      run: bundle exec rake
+
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \

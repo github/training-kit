@@ -2,9 +2,7 @@
 redirect_to: false
 ---
 
-@import "primer-core/index.scss";
-@import "primer-product/index.scss";
-@import "primer-marketing/index.scss";
+@import "@primer/css/index.scss";
 
 @import "timeline";
 @import "curriculum";
@@ -21,11 +19,11 @@ details.flash {
 }
 
 .bg-blue-dark {
-  background-color: $blue-600 !important;
+  background-color: var(--color-scale-blue-6) !important;
 }
 
 .bg-blue-darker {
-  background-color: $blue-700 !important;
+  background-color: var(--color-scale-blue-7) !important;
 }
 
 .octicon { fill: currentColor; }
@@ -36,7 +34,7 @@ details.flash {
 
   .site-header-menu {
     li {
-      border-bottom: 1px solid $gray-300;
+      border-bottom: 1px solid var(--color-border-tertiary);
 
       @include breakpoint(md) {
         border-bottom: none;
@@ -55,13 +53,23 @@ details.flash {
 
   h1, h2, h3, h4, h5, h6 {
     -webkit-font-smoothing: antialiased;
-    font-family: $alt-body-font;
+    font-family: $font-mktg;
   }
 
-  h1 { @include alt-h1; }
+  @mixin h1-mktg {
+    font-size: $h1-size-mobile !important;
+    @include breakpoint(md) { font-size: $h1-size !important; }
+  }
+
+  h1 { @include h1-mktg; }
+
+  @mixin h2-mktg {
+    font-size: $h2-size-mobile !important;
+    @include breakpoint(md) { font-size: $h2-size !important; }
+  }
 
   h2 {
-    @include alt-h2;
+    @include h2-mktg;
     margin-top: $spacer-6;
     margin-bottom: $spacer-3;
     line-height: 1.25;
@@ -73,8 +81,13 @@ details.flash {
     }
   }
 
+  @mixin h3-mktg {
+    font-size: $h3-size-mobile !important;
+    @include breakpoint(md) { font-size: $h3-size !important; }
+  }
+
   h3 {
-    @include alt-h3;
+    @include h3-mktg;
     margin-top: $spacer-4;
     margin-bottom: $spacer-3;
 
@@ -111,10 +124,10 @@ details.flash {
 
   @media (max-width: $width-md) {
     display: flex;
-    color: $gray-400;
+    color: var(--color-scale-gray-4);
 
     &:hover {
-      color: $gray-300;
+      color: var(--color-scale-gray-3);
     }
   }
 }
@@ -129,7 +142,7 @@ details.flash {
   transition: box-shadow 0.2s ease-in-out;
 
   &:hover {
-    box-shadow: $box-shadow-large;
+    box-shadow: var(--color-shadow-large);
     text-decoration: none;
   }
 }

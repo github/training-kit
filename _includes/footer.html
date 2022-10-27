@@ -1,18 +1,18 @@
-<footer class="bg-gray-light border-top py-4 text-gray text-center mt-6 flex-none">
+<footer class="color-bg-subtle border-top py-4 color-fg-muted text-center mt-6 flex-none">
   <span aria-label="Made with love by GitHub and friends">
-    <a href="https://github.com/{{ site.gh_repo }}" class="text-gray-dark mb-2">
+    <a href="https://github.com/{{ site.gh_repo }}" class="color-fg-default mb-2">
       Made with :heart: by :octocat:s and friends
     </a>
   </span>
   <div class="d-flex flex-justify-center text-uppercase text-bold my-1">
-    <a href="{{ site.baseurl }}/feed.xml" aria-label="Feed xml" class="d-flex flex-items-center text-gray text-uppercase mr-4">
-      <div class="d-flex mr-1">{% octicon rss %}</div> 
+    <a href="{{ site.baseurl }}/feed.xml" aria-label="Feed xml" class="d-flex flex-items-center color-fg-muted text-uppercase mr-4">
+      <div class="d-flex mr-1">{% octicon rss %}</div>
       {{ site.data.ui-text[site.locale].feed_label }}
     </a>
-    <a href="https://github.community" class="d-flex flex-items-center text-gray text-uppercase"><div class="d-flex mr-1">{% octicon organization %}</div> Community</a>
+    <a href="https://github.community" class="d-flex flex-items-center color-fg-muted text-uppercase"><div class="d-flex mr-1">{% octicon organization %}</div> Community</a>
   </div>
-  
-  <p>&copy; {{ site.time | date: '%Y' }} {{ site.name }} {{ site.data.ui-text[site.locale].powered_by }}  <a href="https://jekyllrb.com" rel="nofollow" class="text-gray-dark">Jekyll</a> &amp; 
-    <a href="https://github.com/primer/primer-css" rel="nofollow" class="text-gray-dark">Primer</a>.
+
+  <p>&copy; {{ site.time | date: '%Y' }} {{ site.name }} {{ site.data.ui-text[site.locale].powered_by }}  <a href="https://jekyllrb.com" rel="nofollow" class="color-fg-default">Jekyll</a> &amp;
+    <a href="https://github.com/primer/primer-css" rel="nofollow" class="color-fg-default">Primer</a>.
   </p>
 </footer>
