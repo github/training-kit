@@ -47,8 +47,7 @@ plugins:
 exclude:
   - bin
   - config.rb
-  - Gemfile
-  - Gemfile.lock
+  - Gemfile*
   - gems
   - node_modules
   - Procfile
