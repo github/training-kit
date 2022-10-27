@@ -76,6 +76,7 @@ sass:
     - assets/_scss
     - node_modules
   style: compressed
+  implementation: sass-embedded
 
 # Custom site configuration
 lang: en
