@@ -13,6 +13,7 @@ To see if you already have Git installed, open up your terminal application.
 
 Once you've opened your terminal application, type `git version`. The output will either tell you which version of Git is installed, or it will alert you that `git` is an unknown command. If it's an unknown command, read further and find out how to install Git.
 
+
 ## Install Git Using GitHub Desktop
 
 Installing GitHub Desktop will also install the latest version of Git if you don't already have it. With GitHub Desktop, you get a command-line version of Git with a robust GUI. Regardless of if you have Git installed or not, GitHub Desktop offers a simple collaboration tool for Git. You can [learn more here](https://desktop.github.com/).
