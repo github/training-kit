@@ -4,6 +4,9 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
+  # Runs on pull requests targeting the default branch
+  pull_request:
+    branches: [ "main" ]
 
   # Allows us to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -40,7 +43,13 @@ jobs:
     - name: Set up Pages
       id: pages
       uses: actions/configure-pages@v2
+    - name: Build and test with Rake
+      # Only run in pull requests
+      if: github.event_name == 'pull_request'
+      run: bundle exec rake
     - name: Build with Jekyll
+      # Only run on pushes or manual runs
+      if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
       # Outputs to the './_site' directory by default
       run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       env:
@@ -51,6 +60,8 @@ jobs:
 
   # Deployment job
   deploy:
+    # Only run on pushes or manual runs
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
