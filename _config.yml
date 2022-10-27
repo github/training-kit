@@ -32,8 +32,7 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-# standard jekyll configuration
-
+# Standard jekyll configuration
 parentsite: https://services.github.com
 permalink: /articles/:title/
 plugins:
@@ -69,7 +68,10 @@ collections:
 include:
   - _stylesheets
   - _javascript
+
+# Primer CSS (https://primer.style/css/getting-started#for-a-jekyll-site)
 sass:
+  sass_dir: assets/css
   load_paths:
     - assets/_scss
     - node_modules
