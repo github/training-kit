@@ -48,8 +48,8 @@ jobs:
       if: github.event_name == 'pull_request'
       run: bundle exec rake
     - name: Build with Jekyll
-      # Only run on pushes or manual runs
-      if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+      # Don't run in pull requests
+      if: github.event_name != 'pull_request'
       # Outputs to the './_site' directory by default
       run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       env:
@@ -60,8 +60,8 @@ jobs:
 
   # Deployment job
   deploy:
-    # Only run on pushes or manual runs
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    # Only run on pushes to the default branch
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
