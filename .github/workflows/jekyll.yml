@@ -36,7 +36,6 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@ece82769428359c077b5a5eaff268902a303c101
       with:
-        ruby-version: '3.1'
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Set up Pages
       id: pages
