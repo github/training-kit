@@ -69,7 +69,7 @@ If you just want to help out, but don't have a particular change in mind, check 
 
 This site uses GitHub's CSS toolkit called [Primer](https://github.com/primer/primer-css). It's easy to use, and if your contribution requires some design or front-end work you should check out the [Primer Docs](http://primercss.io/).
 
-For writing style guides, we lean on the [GitHub Brand Guide](https://brand.github.com/). The [Content](https://brand.github.com/content/) section is a great place to start.
+For writing style guides, we lean on the [GitHub Brand Guide](https://brand.github.com/). The [Guidelines](https://brand.github.com/#guidelines) section is a great place to start.
 
 ### Building and testing
 
