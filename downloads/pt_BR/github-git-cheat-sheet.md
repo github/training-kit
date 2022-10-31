@@ -243,7 +243,78 @@ Envia todos os commits do branch local para o GitHub
 
 Baixa o histórico e incorpora as mudanças
 
+Atualiza sua branch de trabalho local atual com todos os novos commits do branch remoto correspondente no GitHub. git pull é uma combinação de git fetch e git merge
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colTwo | markdownify }}
+</div>
+<div class="clearfix"></div>
+
+{% capture colThree %}
+## Faça mudanças
+
+Navegue e inspecione a evolução dos arquivos do projeto
+
+```$ git log```
+
+Lista o histórico de versões do branch atual
+
+```$ git log --follow [arquivo]```
+
+Lista o histórico de versões de um arquivo, além de renomeações (funciona apenas para um único arquivo)
+
+```$ git diff [primeira branch]...[segunda branch]```
+
+Mostra as diferenças de conteúdo entre duas branchs
+
+```$ git show [commit]```
+
+Saídas de metadados e contendo alterações do commit especificado
+
+```$ git add [arquivo]```
+
+Snapshots do arquivo em preparação para controle de versão
+
+```$ git commit -m "[mensagem descritiva]"```
+
+Grava Snapshots de arquivos permanentemente no histórico de versões
+
+## Refazer commits
+
+Apague os erros e o histórico de substituição de artesanato
+
+```$ git reset [commit]```
+
+Desfaz todos os commits após `[commit]`, preservando as alterações localmente
+
+```$ git reset --hard [commit]```
+
+Descarta todo o histórico e muda de volta para o commit especificado
+
+> CUIDADO! Mudar a história pode ter efeitos colaterais desagradáveis. Se você precisar alterar os commits que existem no GitHub (o remoto), prossiga com cuidado. Se precisar de ajuda, entre em contato com [github.community](https://github.community) ou entre em contato com o suporte.
+
+{% endcapture %}
+<div class="col-md-6">
+{{ colThree | markdownify }}
+</div>
+
+{% capture colFour %}
+
+## Glossário
+
+- **git**: um sistema de controle de versão distribuído de código aberto
+- **GitHub**: uma plataforma para hospedar e colaborar em repositórios Git
+- **commit**: um objeto Git, um instantâneo de todo o seu repositório compactado em um SHA
+- **branch**: um ponteiro móvel leve para um commit
+- **clone**: uma versão local de um repositório, incluindo todos os commits e branches
+- **remoto**: um repositório comum no GitHub que todos os membros da equipe usam para trocar suas alterações
+- **fork**: uma cópia de um repositório no GitHub pertencente a um usuário diferente
+- **pull request**: um lugar para comparar e discutir as diferenças introduzidas em uma filial com análises, comentários, testes integrados e muito mais
+- **HEAD**: representando seu diretório de trabalho atual, o ponteiro HEAD pode ser movido para diferentes branches, tags ou commits ao usar o `git switch`
+
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}
 </div>
+<div class="clearfix"></div>
