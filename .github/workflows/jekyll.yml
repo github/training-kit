@@ -1,4 +1,6 @@
-name: Deploy Jekyll site to Pages
+defaults:
+   run:
+     shell: name: Deploy Jekyll site to Pages
 
 on:
   # Runs on pushes targeting the default branch
