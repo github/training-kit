@@ -42,7 +42,7 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Set up Pages
       id: pages
-      uses: actions/configure-pages@v2
+      uses: actions/configure-pages@v3
     - name: Build and test with Rake
       # Only run in pull requests
       if: github.event_name == 'pull_request'
