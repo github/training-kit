@@ -30,6 +30,9 @@ iframe[src^="//player.vimeo"]{
         margin: 1em;
         padding: 1em;
         opacity: .9;
+		color: $mono-bright;
+        text-decoration: none;
+		font-size: 5em;
       }
 
       &:hover{
