@@ -30,6 +30,10 @@ iframe[src^="//player.vimeo"]{
         margin: 1em;
         padding: 1em;
         opacity: .9;
+		border-left: 20px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid $mono-light;
+        bottom: 20px;
       }
 
       &:hover{
