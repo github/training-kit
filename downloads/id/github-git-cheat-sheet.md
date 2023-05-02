@@ -8,10 +8,7 @@ leadingpath: ../
 
 {% capture colOne %}
 ## Memasang Git
-GitHub menyediakan klien untuk komputer yang di dalamnya termasuk sebuah
-antarmuka grafis untuk tindakan-tindakan yang paling umum dilakukan pada suatu
-repositori dan sebuah edisi konsol pembaruan otomatis dari Git untuk skenario
-lanjutan.
+GitHub menyediakan aplikasi klien yang dapat diinstal pada komputer pengguna. Aplikasi ini memiliki antarmuka grafis yang memudahkan pengguna melakukan tindakan-tindakan umum pada repositori mereka. Selain itu, aplikasi ini juga menyediakan edisi konsol pembaruan otomatis dari Git untuk skenario yang lebih lanjut. Dengan demikian, pengguna dapat lebih mudah mengelola repositori mereka melalui antarmuka yang lebih intuitif dan efisien.
 
 ### GitHub untuk Windows
 [windows.github.com](https://windows.github.com)
