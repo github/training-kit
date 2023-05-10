@@ -17,6 +17,7 @@ git remote -v
 - `git remote -v`: List the current remotes associated with the local repository
 - `git remote add [name] [URL]`: Add a remote
 - `git remote remove [name]`: Remove a remote
+- `git remote set-url [name] [URL]`: To change the URL of an existing remote repository
 
 ### What is `origin`?
 
