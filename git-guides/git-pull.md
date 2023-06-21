@@ -86,7 +86,7 @@ Using `git pull --rebase` does not affect the integrity of the changes or the co
 
 - `git clone [url]`: Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
 - `git status`: Always a good idea, this command shows you what branch you're on, what files are in the working or staging directory, and any other important information.
-- `git branch`: This shows the existing branches in your local repository. You can also use `git branch [banch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
+- `git branch`: This shows the existing branches in your local repository. You can also use `git branch [branch-name]` to create a branch from your current location, or `git branch --all` to see all branches, both the local ones on your machine, and the remote tracking branches stored from the last `git pull` or `git fetch` from the remote.
 - `git push`: Uploads all local branch commits to the remote.
 - `git log`: Browse and inspect the evolution of project files.
 - `git remote -v`: Show the associated remote repositories and their stored name, like `origin`.
