@@ -37,7 +37,7 @@ jobs:
     - name: Install node modules
       run: npm install
     - name: Set up Ruby
-      uses: ruby/setup-ruby@ece82769428359c077b5a5eaff268902a303c101
+      uses: ruby/setup-ruby@52b8784594ec115fd17094752708121dc5dabb47
       with:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Set up Pages
