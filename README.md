@@ -3,7 +3,7 @@
 Open source courseware from the GitHub Professional Services team.
 
 ## We ❤️ contributors like you
-
+Such as 임성혁
 **We’re eager to work with you**, our user community, to improve these materials and develop new ones. Please check out our [CONTRIBUTING guide](CONTRIBUTING.md) for more information on getting started.
 
 ## Looking for a resource that was once housed in training-kit?
