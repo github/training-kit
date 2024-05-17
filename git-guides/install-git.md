@@ -29,7 +29,7 @@ Note: [`git-scm`](https://git-scm.com/download/win) is a popular and recommended
 ## Install Git on Windows through Visual Studio Code
 
 GitHub integration is provided through the [GitHub Pull Requests and Issues extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github).
-To get started with the GitHub in VS Code, you'll need to create an account and install the GitHub Pull Requests and Issues extension. 
+To get started with the GitHub in VS Code, you'll need to create an account and install the GitHub Pull Requests and Issues extension.
 Once you've installed the [GitHub Pull Requests and Issues extension](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github), you'll need to sign in. Follow the prompts to authenticate with GitHub and return to VS Code.
 
 
@@ -44,7 +44,7 @@ Note: You can perform actions like, you can search for and clone a repository fr
 
 Most versions of MacOS will already have `Git` installed, and you can activate it through the terminal with `git version`. However, if you don't have Git installed for whatever reason, you can install the latest version of Git using one of several popular methods as listed below:
 
-#### Install Git From an Installer
+### Install Git From an Installer
 
 1. Navigate to the latest [macOS Git Installer](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect) and download the latest version.
 2. Once the installer has started, follow the instructions as provided until the installation is complete.
@@ -52,7 +52,7 @@ Most versions of MacOS will already have `Git` installed, and you can activate i
 
 Note: [`git-scm`](https://git-scm.com/download/mac) is a popular and recommended resource for downloading Git on a Mac. The advantage of downloading Git from `git-scm` is that your download automatically starts with the latest version of Git. The download source is the same [macOS Git Installer](https://sourceforge.net/projects/git-osx-installer/files/git-2.23.0-intel-universal-mavericks.dmg/download?use_mirror=autoselect) as referenced in the steps above.
 
-#### Install Git from Homebrew
+### Install Git from Homebrew
 
 [Homebrew](https://brew.sh/) is a popular package manager for macOS. If you already have Homebrew installed, you can follow the below steps to install Git:
 
@@ -66,14 +66,14 @@ Fun fact: Git was originally developed to version the Linux operating system! So
 
 You can install `Git` on Linux through the package management tool that comes with your distribution.
 
-#### Debian/Ubuntu
+### Debian/Ubuntu
 
 1. Git packages are available using `apt`.
 2. It's a good idea to make sure you're running the latest version. To do so, Navigate to your command prompt shell and run the following command to make sure everything is up-to-date: `sudo apt-get update`.
 3. To install Git, run the following command: `sudo apt-get install git-all`.
 4. Once the command output has been completed, you can verify the installation by typing: `git version`.
 
-#### Fedora
+### Fedora
 
 1. Git packages are available using `dnf`.
 2. To install Git, navigate to your command prompt shell and run the following command: `sudo dnf install git-all`.
