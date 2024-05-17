@@ -75,7 +75,7 @@ If the time is right to stage all files, there are several commands that you can
 * `git add .`: adds the entire directory recursively, including files whose names begin with a dot
 * `git add -u`: stages modified and deleted files only, NOT new files
 
-| | New files | Modified files | Deleted files | Files with names beginning with a dot | Current directory | Higher directories|
+| Command | New files | Modified files | Deleted files | Files with names beginning with a dot | Current directory | Higher directories|
 | ------------- | ------------- | ---- | ---- | ------ | ----- | ----- |
 | `git add -A` | Yes | Yes | Yes | Yes | Yes | Yes |
 | `git add .` | Yes | Yes | Yes | Yes | Yes | No |
