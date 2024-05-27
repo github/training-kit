@@ -13,9 +13,13 @@ To see if you already have Git installed, open up your terminal application.
 
 Once you've opened your terminal application, type `git version`. The output will either tell you which version of Git is installed, or it will alert you that `git` is an unknown command. If it's an unknown command, read further and find out how to install Git.
 
-## Install Git Using GitHub Desktop
 
-Installing GitHub Desktop will also install the latest version of Git if you don't already have it. With GitHub Desktop, you get a command-line version of Git with a robust GUI. Regardless of if you have Git installed or not, GitHub Desktop offers a simple collaboration tool for Git. You can [learn more here](https://desktop.github.com/).
+## Install Git Before Installing GitHub Desktop
+
+You must install Git before installing GitHub Desktop.
+You can do so by following this link:  https://git-scm.com/downloads, or see below instructions for in-depth instructions for Windows vs. Mac vs. Linux.
+
+Regardless of if you have Git installed or not, GitHub Desktop offers a simple collaboration tool for Git. You can [learn more here](https://desktop.github.com/).
 
 ## Install Git on Windows
 
@@ -42,7 +46,7 @@ Note: You can perform actions like, you can search for and clone a repository fr
 
 ## Install Git on Mac
 
-Most versions of MacOS will already have `Git` installed, and you can activate it through the terminal with `git version`. However, if you don't have Git installed for whatever reason, you can install the latest version of Git using one of several popular methods as listed below:
+Most versions of MacOS will already have `Git` installed if Apple's Command Line Developer tools are installed (see Apple's Developer site here: https://developer.apple.com/download/more/), and you can activate it through the terminal with `git version`. However, if you don't have Git installed for whatever reason, you can install the latest version of Git using one of several popular methods as listed below:
 
 ### Install Git From an Installer
 
