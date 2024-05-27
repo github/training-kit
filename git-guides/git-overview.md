@@ -43,7 +43,7 @@ There are many version control systems out there – but Git has some major adva
 
 ### Speed
 
-Like we mentioned above, Git uses SHA compression, which makes it very fast.
+Like we mentioned above, Git leverages SHA hashing and uses a compression technique called  zlib, which makes it very fast.
 
 ### Merge conflicts
 
