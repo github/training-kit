@@ -148,6 +148,26 @@ Discards all history and changes back to the specified commit
 
 > CAUTION! Changing history can have nasty side effects. If you need to change commits that exist on GitHub (the remote), proceed with caution. If you need help, reach out at [github.community](https://github.community) or contact support.
 
+## Temporary Commits
+
+Temporarily store the modified files in order to change the branch.
+
+```$ git stash```
+
+Save the uncommitted changes.
+
+```$ git stash list```
+
+List the stashed files.
+
+```$ git stash pop```
+
+Write working from top of stash stack.
+
+```$ git stash drop```
+
+Discard the changes from top of stash stack.
+
 {% endcapture %}
 <div class="col-md-6">
 {{ colThree | markdownify }}
