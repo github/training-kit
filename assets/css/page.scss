@@ -30,6 +30,13 @@ iframe[src^="//player.vimeo"]{
         margin: 1em;
         padding: 1em;
         opacity: .9;
+		color: $mono-bright;
+        text-decoration: none;
+		font-size: 5em;
+		border-left: 20px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid $mono-light;
+        bottom: 20px;
       }
 
       &:hover{
@@ -66,7 +73,7 @@ header{
   }
 
   .nav{
-    line-height: 50px;
+    line-height: 200px;
     text-align: center;
 
     li{
