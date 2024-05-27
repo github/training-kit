@@ -4,7 +4,7 @@ The `git clone` command is used to create a copy of a specific repository or bra
 
 Git is a distributed version control system. Maximize the advantages of a full repository on your own machine by cloning.
 
-### What Does `git clone` Do?
+## What Does `git clone` Do?
 
 ```sh
 git clone https://github.com/github/training-kit.git

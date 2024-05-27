@@ -4,7 +4,7 @@
 
 Without `git pull`, (or the effect of it,) your local branch wouldn't have any of the updates that are present on the remote.
 
-### What Does `git pull` Do?
+## What Does `git pull` Do?
 
 ```sh
 git pull
@@ -20,7 +20,7 @@ git pull
 
 However, you may want to use `git fetch` instead. One reason to do this may be that you expect conflicts. Conflicts can occur in this way if you have new local commits and new commits on the remote. Just like a merge conflict that would happen between two different branches, these two different lines of history could contain changes to the same parts of the same file. If you first operate `git fetch`, the merge won't be initiated, and you won't be prompted to solve the conflict. This gives you the flexibility to resolve the conflict later without the need for network connectivity.
 
-Another reason you may want to run `git fetch` is to update to all remote tracking branches before losing network connectivity. If you run `git fetch`, and then later try to run `git pull` without any network connectivity, the `git fetch` portion of the `git pull` operation will fail. 
+Another reason you may want to run `git fetch` is to update to all remote tracking branches before losing network connectivity. If you run `git fetch`, and then later try to run `git pull` without any network connectivity, the `git fetch` portion of the `git pull` operation will fail.
 
 If you do use `git fetch` instead of `git pull`, make sure you remember to `git merge`. Merging the remote tracking branch into your own branch ensures you will be working with any updates or changes.
 
@@ -90,4 +90,3 @@ Using `git pull --rebase` does not affect the integrity of the changes or the co
 - `git push`: Uploads all local branch commits to the remote.
 - `git log`: Browse and inspect the evolution of project files.
 - `git remote -v`: Show the associated remote repositories and their stored name, like `origin`.
-
