@@ -42,6 +42,10 @@ Creates a new branch
 
 Switches to the specified branch and updates the working directory
 
+```$ git checkout [branch-name]```
+
+Switches to the specifies branch with all the files from the current branch copied to the new branch. Also allows to create a new branch as well while simultaneously switching to it.
+
 ```$ git merge [branch]```
 
 Combines the specified branch's history into the current branch. This is usually done in pull requests, but is an important Git operation.
@@ -49,6 +53,10 @@ Combines the specified branch's history into the current branch. This is usually
 ```$ git branch -d [branch-name]```
 
 Deletes the specified branch
+
+```$ git status```
+
+Provides information about what branch you are currently on and any changes made that are yet to be staged/pushed or are ready to commit.
 
 {% endcapture %}
 <div class="col-md-6">
@@ -93,6 +101,10 @@ Combines remote tracking branches into current local branch
 ```$ git push```
 
 Uploads all local branch commits to GitHub
+
+```$ git push origin HEAD```
+
+If local branch does not exist on remote, this command creates new branch with same name as that of local branch and pushes all local files to remote.
 
 ```$ git pull```
 
