@@ -88,7 +88,7 @@ If you're looking for more GitHub-specific technical guidance, check out [GitHub
 
 Depending on your operating system, you may already have [Git installed](/git-guides/install-git). But, getting started means more than having the software! To get started, it's important to know the basics of how Git works. You may choose to do the actual work within a terminal, an app like GitHub Desktop, or through GitHub.com. (*Note: while you can interact with Git through GitHub.com, your experience may be limited. Many local tools can give you access to the most widely used Git functionalities, though only the terminal will give you access to them all.*)
 
-There are _many_ ways to use Git, which doesn't necessarily make it easier! But, the fundamental Git workflow has a few main steps. You can practice all of these in the [Introduction to GitHub Learning Lab course](https://lab.github.com/githubtraining/introduction-to-github).
+There are _many_ ways to use Git, which doesn't necessarily make it easier! But, the fundamental Git workflow has a few main steps. You can practice all of these in the [Introduction to GitHub Skills course](https://skills.github.com/).
 
 #### Create a branch
 
