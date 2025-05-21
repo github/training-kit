@@ -6,6 +6,7 @@
 - Tomato
 - Cucumber
 - Olive oil
+- Feta cheese
 
 ## Instructions
 
