@@ -10,3 +10,4 @@ bundle config set --local path 'vendor/gems' > /dev/null 2>&1 || {
 
 echo "==> Installing node dependencies…"
 npm install
+ update
