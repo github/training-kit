@@ -1,5 +1,5 @@
 #!/bin/sh
-
+test
 set -e
 export CC=gcc
 
