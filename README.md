@@ -1,39 +1,40 @@
-# GitHub Training Kit
+# Kit de Treinamento do GitHub
 
-Open source courseware from the GitHub Professional Services team.
+Material didático de código aberto da equipe de Serviços Profissionais do GitHub.
 
-## We ❤️ contributors like you
+## Nós ❤️ colaboradores como você
 
-**We’re eager to work with you**, our user community, to improve these materials and develop new ones. Please check out our [CONTRIBUTING guide](CONTRIBUTING.md) for more information on getting started.
+**Estamos ansiosos para trabalhar com você**, nossa comunidade de usuários, para aprimorar estes materiais e desenvolver novos. Confira nosso [guia de CONTRIBUIÇÃO](CONTRIBUTING.md) para obter mais informações sobre como começar.
 
-## Looking for a resource that was once housed in training-kit?
+## Procurando um recurso que já esteve hospedado no training-kit?
 
-This repository currently contains Git and GitHub cheat sheets. If you're looking for a project that used to be housed here, such as On-Demand training, reading lists, videos, and book recommendations, see [this commit](https://github.com/github/training-kit/tree/4fbf180e980ef973ba4cc4b8ef3d5f278ddc8c08) in the repository's history.
+Este repositório atualmente contém folhas de dicas do Git e do GitHub. Se você estiver procurando por um projeto que costumava estar hospedado aqui, como treinamento sob demanda, listas de leitura, vídeos e recomendações de livros, consulte [este commit](https://github.com/github/training-kit/tree/4fbf180e980ef973ba4cc4b8ef3d5f278ddc8c08) no histórico do repositório.
 
-## Projects used in training-kit
+## Projetos usados ​​no kit de treinamento
 
-- We use [Jekyll](https://jekyllrb.com/) and [Markdown](https://guides.github.com/features/mastering-markdown/).
-- Our content is styled using the [Primer CSS toolkit](https://github.com/primer/primer-css).
+- Usamos [Jekyll](https://jekyllrb.com/) e [Markdown](https://guides.github.com/features/mastering-markdown/).
+- Nosso conteúdo é estilizado usando o [kit de ferramentas CSS Primer](https://github.com/primer/primer-css).
 
-## Packaging for viewing behind your firewall
+## Empacotamento para visualização atrás do seu firewall
 
-If you'd like to have a copy of the files to be served from a web server inside your firewall, start by running `script/package`.
+Se você quiser ter uma cópia dos arquivos a serem servidos de um servidor web dentro do seu firewall, comece executando `script/pacote`.
 
-1. Run `script/package` to create a release tarball. This will be in the format `release-XXXXXXX.tgz` for you to take wherever you want.
-2. To test this looks okay, create some folders `mkdir -p test_site/kit`.
-3. Extract the release, `tar -xzf release-XXXXXXX.tgz -C test_site/kit`.
-4. Switch into the test_site directory, `cd test_site`.
-5. View the site:
-    - For python version 2.x, run: `python -m SimpleHTTPServer`
-    - For python version 3.x, run: `python -m http.server`
-    - _Note: Some servers are more advanced than others and can handle redirects, smart recognition of `.html` files, etc_
+1. Execute `script/pacote` para criar um tarball de lançamento. Ele estará no formato `release-XXXXXXX.tgz` para você levar para onde quiser.
+2. Para testar se está tudo certo, crie algumas pastas `mkdir -p test_site/kit`.
+3. Extraia a versão, `tar -xzf release-XXXXXXX.tgz -C test_site/kit`.
+4. Acesse o diretório test_site, `cd test_site`.
+5. Visualize o site:
 
-Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use the content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
+- Para a versão 2.x do Python, execute: `python -m SimpleHTTPServer`
+- Para a versão 3.x do Python, execute: `python -m http.server`
+- _Observação: Alguns servidores são mais avançados que outros e podem lidar com redirecionamentos, reconhecimento inteligente de arquivos `.html`, etc._
 
-> Content based on [github.github.com/training-kit/](https://github.github.com/training-kit) used under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
+O conteúdo do site é licenciado sob [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). A CC-BY-4.0 concede a você permissão para usar o conteúdo para praticamente qualquer finalidade, mas não lhe concede nenhuma permissão de marca registrada, desde que você mencione a licença e dê os devidos créditos, como a seguir:
 
-Code used to build and test the site as well as code samples on the site, if any, are licensed under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode). CC0 waives all copyright restrictions but does not grant you any trademark permissions.
+> Conteúdo baseado em [github.github.com/training-kit/](https://github.github.com/training-kit) usado sob a licença [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
 
-This means you can use the content and code in this repository except for GitHub trademarks in your projects.
+O código usado para construir e testar o site, bem como os exemplos de código no site, se houver, são licenciados sob [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode). A CC0 renuncia a todas as restrições de direitos autorais, mas não lhe concede nenhuma permissão de marca registrada.
 
-When you contribute to this repository you are doing so under the above licenses.
+Isso significa que você pode usar o conteúdo e o código deste repositório, exceto as marcas registradas do GitHub, em seus projetos.
+
+Ao contribuir para este repositório, você o faz sob as licenças acima.
