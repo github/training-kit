@@ -1,4 +1,5 @@
 // Essa é uma alteração solicitada para a atividade prática da matéria de engenharia de software do curso de sistemas de informação.
+// Segunda alteração feita.
 
 # GitHub Training Kit
 
