@@ -1,3 +1,5 @@
+// Essa é uma alteração solicitada para a atividade prática da matéria de engenharia de software do curso de sistemas de informação.
+
 # GitHub Training Kit
 
 Open source courseware from the GitHub Professional Services team.
