@@ -50,6 +50,7 @@ Several community members have been kind enough to translate the Git Cheat Sheet
 - Open a pull request against the `main` branch of this repository.
 - Be sure to @ mention a couple of your friends who are native speakers and ask them to review the translation.
 - Update your translation based on feedback from your friends.
+- Don't forget to look for typos and potential grammar
 
 When this process is complete, we will be happy to merge the completed document.
 
