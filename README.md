@@ -37,3 +37,11 @@ Code used to build and test the site as well as code samples on the site, if any
 This means you can use the content and code in this repository except for GitHub trademarks in your projects.
 
 When you contribute to this repository you are doing so under the above licenses.
+
+## Boas práticas de versionamento
+
+- Criar branches para novas funcionalidades ou correções.
+- Usar mensagens de commit claras e descritivas.
+- Fazer revisão de código antes de mesclar (pull request).
+- Evitar commits grandes — prefira pequenos e frequentes.
+
