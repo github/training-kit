@@ -1,4 +1,5 @@
 # GitHub Training Kit
+Welcome to my GitHub practice repo! 👋
 
 Open source courseware from the GitHub Professional Services team.
 
