@@ -1,39 +1,93 @@
-# GitHub Training Kit
+GitHub Training Kit
 
-Open source courseware from the GitHub Professional Services team.
+O GitHub Training Kit fornece materiais de treinamento open source desenvolvidos pela equipe de GitHub Professional Services. Este repositório contém recursos destinados a auxiliar usuários e equipes a aprender e aplicar práticas recomendadas no uso do Git e do GitHub.
 
-## We ❤️ contributors like you
+Visão Geral
 
-**We’re eager to work with you**, our user community, to improve these materials and develop new ones. Please check out our [CONTRIBUTING guide](CONTRIBUTING.md) for more information on getting started.
+Este repositório atualmente disponibiliza:
 
-## Looking for a resource that was once housed in training-kit?
+Guias rápidos (cheat sheets) de Git e GitHub
 
-This repository currently contains Git and GitHub cheat sheets. If you're looking for a project that used to be housed here, such as On-Demand training, reading lists, videos, and book recommendations, see [this commit](https://github.com/github/training-kit/tree/4fbf180e980ef973ba4cc4b8ef3d5f278ddc8c08) in the repository's history.
+Recursos básicos de referência
 
-## Projects used in training-kit
+Materiais padronizados utilizados em treinamentos presenciais e remotos
 
-- We use [Jekyll](https://jekyllrb.com/) and [Markdown](https://guides.github.com/features/mastering-markdown/).
-- Our content is styled using the [Primer CSS toolkit](https://github.com/primer/primer-css).
+Recursos anteriormente hospedados aqui, como treinamentos On-Demand, listas de leitura e recomendações adicionais, podem ser encontrados no seguinte commit histórico:
 
-## Packaging for viewing behind your firewall
+👉 https://github.com/github/training-kit/tree/4fbf180e980ef973ba4cc4b8ef3d5f278ddc8c08
 
-If you'd like to have a copy of the files to be served from a web server inside your firewall, start by running `script/package`.
+Contribuindo
 
-1. Run `script/package` to create a release tarball. This will be in the format `release-XXXXXXX.tgz` for you to take wherever you want.
-2. To test this looks okay, create some folders `mkdir -p test_site/kit`.
-3. Extract the release, `tar -xzf release-XXXXXXX.tgz -C test_site/kit`.
-4. Switch into the test_site directory, `cd test_site`.
-5. View the site:
-    - For python version 2.x, run: `python -m SimpleHTTPServer`
-    - For python version 3.x, run: `python -m http.server`
-    - _Note: Some servers are more advanced than others and can handle redirects, smart recognition of `.html` files, etc_
+Agradecemos sua contribuição para melhorar e expandir este projeto.
+Para começar:
 
-Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use the content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
+Leia o arquivo CONTRIBUTING.md
 
-> Content based on [github.github.com/training-kit/](https://github.github.com/training-kit) used under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
+Siga as diretrizes de formatação e envio
 
-Code used to build and test the site as well as code samples on the site, if any, are licensed under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode). CC0 waives all copyright restrictions but does not grant you any trademark permissions.
+Abra um pull request com a descrição clara das alterações
 
-This means you can use the content and code in this repository except for GitHub trademarks in your projects.
+Valorizamos contribuições de qualquer tipo — correções, melhorias de conteúdo, revisões técnicas ou novos materiais.
 
-When you contribute to this repository you are doing so under the above licenses.
+Tecnologias Utilizadas
+
+Este projeto utiliza:
+
+Jekyll — geração estática do site
+
+Markdown — criação de conteúdo simples e legível
+
+Primer CSS — estilização consistente com a identidade visual do GitHub
+
+Empacotando para Ambientes Internos
+
+Para servir o conteúdo atrás de um firewall corporativo, você pode gerar um pacote estático do site:
+
+1. Gerar o pacote
+script/package
+
+
+Esse comando cria um arquivo no formato release-XXXXXXX.tgz.
+
+2. Preparar o ambiente de teste
+mkdir -p test_site/kit
+tar -xzf release-XXXXXXX.tgz -C test_site/kit
+cd test_site
+
+3. Iniciar o servidor local
+
+Escolha o comando compatível com sua versão do Python:
+
+Python 2.x
+
+python -m SimpleHTTPServer
+
+
+Python 3.x
+
+python -m http.server
+
+
+O site estará disponível localmente para inspeção e testes.
+
+Licenciamento
+
+O conteúdo do GitHub Training Kit está licenciado sob CC-BY-4.0, permitindo que você:
+
+copie
+
+redistribua
+
+adapte
+
+utilize comercialmente
+
+desde que forneça atribuição apropriada.
+
+Exemplo de atribuição recomendada:
+
+Conteúdo baseado em github.github.com/training-kit, utilizado sob a licença CC-BY-4.0.
+
+O código deste repositório é licenciado sob CC0-1.0, renunciando a direitos autorais de forma a permitir livre reutilização.
+
+⚠️ Importante: nenhum dos conteúdos ou códigos concede permissão para uso de marcas registradas do GitHub.
