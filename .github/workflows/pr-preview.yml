@@ -1,0 +1,120 @@
+name: PR Preview Deployment
+
+on:
+  pull_request_target:
+    branches: ["main"]
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  # Only run for PRs from forks
+  check-fork:
+    runs-on: ubuntu-latest
+    outputs:
+      is-fork: ${{ steps.check.outputs.is-fork }}
+    steps:
+      - name: Check if PR is from fork
+        id: check
+        run: |
+          if [ "${{ github.event.pull_request.head.repo.full_name }}" != "${{ github.repository }}" ]; then
+            echo "is-fork=true" >> $GITHUB_OUTPUT
+          else
+            echo "is-fork=false" >> $GITHUB_OUTPUT
+          fi
+
+  build-and-deploy-preview:
+    needs: check-fork
+    if: needs.check-fork.outputs.is-fork == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+
+      - name: Install node modules
+        run: npm install
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@ece82769428359c077b5a5eaff268902a303c101
+        with:
+          bundler-cache: true
+
+      - name: Build with Jekyll
+        run: |
+          # Build with baseurl including pr path for correct asset/link URLs
+          bundle exec jekyll build --baseurl "/${{ github.event.pull_request.head.repo.name }}/pr-${{ github.event.pull_request.number }}"
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy to fork's GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # This requires the fork to have a fine-grained PAT as a secret
+          # The fork owner needs to set up PREVIEW_DEPLOY_TOKEN in their repo secrets
+          personal_token: ${{ secrets.PREVIEW_DEPLOY_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          destination_dir: pr-${{ github.event.pull_request.number }}
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          # Create gh-pages branch if it doesn't exist
+          force_orphan: true
+
+      - name: Comment preview URL
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const forkOwner = context.payload.pull_request.head.repo.owner.login;
+            const forkRepo = context.payload.pull_request.head.repo.name;
+            const previewUrl = `https://${forkOwner}.github.io/${forkRepo}/pr-${prNumber}/`;
+            
+            const comment = `## 📝 Preview Deployment
+            
+            Your preview is ready! 🎉
+            
+            🔗 **Preview URL:** ${previewUrl}
+            
+            This preview will be updated automatically when you push new commits to this PR.
+            
+            > **Note:** The preview is deployed to the fork's GitHub Pages. Make sure GitHub Pages is enabled in your fork's settings.`;
+            
+            // Find existing preview comment
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+            });
+            
+            const botComment = comments.find(comment => 
+              comment.user.type === 'Bot' && 
+              comment.body.includes('Preview Deployment')
+            );
+            
+            if (botComment) {
+              // Update existing comment
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: comment
+              });
+            } else {
+              // Create new comment
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: comment
+              });
+            }

@@ -1,0 +1,83 @@
+name: Fork Preview Deployment
+
+# This workflow runs on the FORK repository when contributors push changes
+# It builds and deploys previews to the fork's GitHub Pages
+# Contributors can review their changes before creating a PR to the main project
+
+on:
+  push:
+    branches:
+      - '**'  # Run on all branches
+      - '!main'  # Except main branch
+      - '!gh-pages'  # Except gh-pages branch
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy-preview:
+    # Only run if this is a fork (not the main github/training-kit repo)
+    if: github.repository != 'github/training-kit'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
+
+      - name: Install node modules
+        run: npm install
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Extract branch name
+        id: branch
+        run: |
+          BRANCH_NAME="${GITHUB_REF#refs/heads/}"
+          # Sanitize branch name for use in URL (replace / with -)
+          SAFE_BRANCH=$(echo "$BRANCH_NAME" | sed 's/\//-/g')
+          echo "name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+          echo "safe=$SAFE_BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Build with Jekyll
+        run: |
+          # Build with baseurl including preview path for correct asset/link URLs
+          bundle exec jekyll build --baseurl "/${{ github.event.repository.name }}/preview/${{ steps.branch.outputs.safe }}"
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          destination_dir: preview/${{ steps.branch.outputs.safe }}
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          force_orphan: true
+
+      - name: Display preview URL
+        run: |
+          echo "::notice title=Preview Deployed::Preview URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/preview/${{ steps.branch.outputs.safe }}/"
+          echo ""
+          echo "========================================="
+          echo "🎉 Preview Deployment Successful!"
+          echo "========================================="
+          echo ""
+          echo "📝 Branch: ${{ steps.branch.outputs.name }}"
+          echo "🔗 Preview URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/preview/${{ steps.branch.outputs.safe }}/"
+          echo ""
+          echo "ℹ️  Note: It may take a few minutes for GitHub Pages to update."
+          echo "ℹ️  Make sure GitHub Pages is enabled in your repository settings."
+          echo ""
+          echo "========================================="
