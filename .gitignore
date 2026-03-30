@@ -10,4 +10,5 @@ _release
 *.map
 .jekyll-metadata
 node_modules/
+temp.txt
 # *.resume-burger-jokes
