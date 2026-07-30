@@ -1,51 +1,101 @@
----
-ref: index
-lang: en
-permalink: /
-layout: timeline
-title: On Demand Training
-excerpt: "You're in control. We're with you along the way."
-timeline:
-  showWelcome: true
-courses:
-  - title: "GitHub 101: Introduction to GitHub"
-    description: If you are looking for a quick and fun introduction to GitHub, you’ve found it. This class will get you started using GitHub in less than an hour.
-    image: images/about/repo.png
-    imageAlt: The 'repo' octocat, cartoon of five octocats inside of a metal box
-    link: /intro-to-github
-  - title: "GitHub 102: GitHub Pages from GitHub Desktop"
-    description: Learn how to **use GitHub Desktop** to copy a repository to your computer, track changes and communicate with GitHub.
-    image: images/about/forktocat.jpg
-    imageAlt: The 'forktocat' octocat, cartoon of two octocats joined at the head
-    link: /github-desktop
-  - title: "GitHub 103: GitHub Pages from the Command Line"
-    description: Learn how to **use the Command Line** to copy a repository to your computer, track changes and communicate with GitHub.
-    image: images/about/collabocats.jpg
-    imageAlt: The 'collabocats', cartoon of octocats pictured on two laptops with symbols showing they're collaborating on code
-    link: /github-cli    
-  - title: GitHub for Windows Users
-    description: Learn how to configure your local git environment to work with GitHub and how to complete GitHub flow using the GitHub Extension for Visual Studio.
-    image: images/red-polo.png
-    imageAlt: The 'red polo' octocat, a cartoon of an octocat wearing a red polo
-    link: /windows
-  - title: Managing Merge Conflicts
-    description: First you had issues, now you have conflicts. Learn how to resolve at least one of them.
-    image: ./images/skatetocat.png
-    imageAlt: The 'skatetocat', a cartoon of an octocat using a skateboard and having fun
-    link: /merge-conflicts      
-  - title: Git Out of Trouble
-    description: Quick guides to git out of sticky situations.
-    image: images/about/inspectocat.jpg
-    imageAlt: The 'inspectocat', a cartoon of an octocat wearing a trenchcoat and holding a magnifying glass
-    link: /git-trouble
-  - title: Introduction to GraphQL
-    description: Learn how to create seamless integrations by directly accessing and updating GitHub data using GraphQL.
-    image: images/graphql-logo.svg
-    imageAlt: The pink symbol for GraphQL, a triangle inside of a hexagon
-    link: /graphql
-  - title: Electron
-    description: An entire suite of courses that will get you up and running with Electron.
-    image: images/atom.png
-    imageAlt: Electron logo
-    link: /electron
----
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kentro ERP</title>
+  <meta name="description" content="Kentro business operations dashboard">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/erp.css">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" aria-label="Kentro home"><span class="brand-mark">K</span><span>Kentro</span></a>
+    <nav aria-label="Primary navigation">
+      <p class="nav-label">Workspace</p>
+      <a class="nav-item active" data-view="overview" href="#overview"><span>O</span>Overview</a>
+      <a class="nav-item" data-view="orders" href="#orders"><span>▤</span>Orders <b id="orderCount">3</b></a>
+      <a class="nav-item" data-view="inventory" href="#inventory"><span>I</span>Inventory</a>
+      <a class="nav-item" data-view="customers" href="#customers"><span>C</span>Customers</a>
+      <p class="nav-label">Management</p>
+      <a class="nav-item" data-view="finance" href="#finance"><span>F</span>Finance</a>
+      <a class="nav-item" data-view="team" href="#team"><span>T</span>Team</a>
+      <a class="nav-item" data-view="reports" href="#reports"><span>R</span>Reports</a>
+      <a class="nav-item" data-view="settings" href="#settings"><span>S</span>Settings</a>
+    </nav>
+    <div class="upgrade">
+      <span class="spark">✦</span>
+      <strong>Unlock more insights</strong>
+      <p>Upgrade your workspace to access advanced reports.</p>
+      <button>View plans</button>
+    </div>
+    <div class="profile">
+      <div class="avatar">AM</div><div><strong>Alex Morgan</strong><small>Administrator</small></div><button aria-label="Profile options">•••</button>
+    </div>
+  </aside>
+
+  <main>
+    <header class="topbar">
+      <button class="menu" id="menu" aria-label="Toggle navigation">☰</button>
+      <div class="search"><span>⌕</span><input id="globalSearch" aria-label="Search" placeholder="Search orders, customers, products..."><kbd>⌘ K</kbd></div>
+      <div class="top-actions"><button class="icon-button" aria-label="Notifications">♢<i></i></button><button class="date-button">Today, 24 May <span>⌄</span></button></div>
+    </header>
+
+    <div class="content" id="appContent">
+      <section class="welcome">
+        <div><p class="eyebrow">FRIDAY, 24 MAY</p><h1>Good morning, Alex</h1><p>Here's what's happening with your business today.</p></div>
+        <div class="welcome-actions"><button class="secondary" id="exportReport">Export report</button><button class="primary" id="newOrder">New order</button></div>
+      </section>
+
+      <section class="metrics" aria-label="Key metrics">
+        <article class="metric"><div class="metric-head"><span class="metric-icon green">↗</span><span class="trend up">↑ 12.5%</span></div><p>Total revenue</p><h2>$284,592</h2><small>vs. $253,000 last month</small></article>
+        <article class="metric"><div class="metric-head"><span class="metric-icon purple">▤</span><span class="trend up">↑ 8.2%</span></div><p>Total orders</p><h2>1,429</h2><small>vs. 1,320 last month</small></article>
+        <article class="metric"><div class="metric-head"><span class="metric-icon orange">◎</span><span class="trend down">↓ 2.4%</span></div><p>Avg. order value</p><h2>$199.15</h2><small>vs. $204.00 last month</small></article>
+        <article class="metric"><div class="metric-head"><span class="metric-icon blue">♙</span><span class="trend up">↑ 18.9%</span></div><p>New customers</p><h2>384</h2><small>vs. 323 last month</small></article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel performance">
+          <div class="panel-head"><div><h3>Revenue performance</h3><p>Your income over the last 6 months</p></div><button class="select">Last 6 months⌄</button></div>
+          <div class="chart-summary"><div><span class="legend actual"></span><small>Revenue</small><strong>$284,592</strong></div><div><span class="legend target"></span><small>Target</small><strong>$260,000</strong></div></div>
+          <div class="chart" aria-label="Revenue line chart">
+            <div class="y-labels"><span>$300k</span><span>$200k</span><span>$100k</span><span>$0</span></div>
+            <div class="chart-lines"><i></i><i></i><i></i><i></i><svg viewBox="0 0 600 190" preserveAspectRatio="none" role="img"><defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6657d8" stop-opacity=".2"/><stop offset="1" stop-color="#6657d8" stop-opacity="0"/></linearGradient></defs><path class="area" d="M0 154 C55 142 65 120 120 128 S190 105 240 111 S310 75 360 91 S430 62 480 66 S545 35 600 25 V190 H0Z"/><path class="target-line" d="M0 139 C90 126 150 119 240 105 S390 88 600 58"/><path class="revenue-line" d="M0 154 C55 142 65 120 120 128 S190 105 240 111 S310 75 360 91 S430 62 480 66 S545 35 600 25"/><circle cx="600" cy="25" r="5"/></svg><div class="months"><span>Dec</span><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span></div></div>
+          </div>
+        </article>
+
+        <article class="panel inventory">
+          <div class="panel-head"><div><h3>Inventory status</h3><p>Stock levels across products</p></div><button class="more">•••</button></div>
+          <div class="donut-wrap"><div class="donut"><div><strong>1,284</strong><small>Total items</small></div></div></div>
+          <div class="stock-list"><div><span><i class="dot in"></i>In stock</span><strong>982 <small>76%</small></strong></div><div><span><i class="dot low"></i>Low stock</span><strong>214 <small>17%</small></strong></div><div><span><i class="dot out"></i>Out of stock</span><strong>88 <small>7%</small></strong></div></div>
+          <button class="full-button">View inventory <span>→</span></button>
+        </article>
+      </section>
+
+      <section class="panel orders-panel">
+        <div class="panel-head"><div><h3>Recent orders</h3><p>Latest transactions from your customers</p></div><a href="#">View all orders →</a></div>
+        <div class="table-wrap"><table><thead><tr><th>Order</th><th>Customer</th><th>Date</th><th>Amount</th><th>Status</th><th></th></tr></thead><tbody>
+          <tr><td><strong>#KT-2048</strong></td><td><div class="customer"><span class="avatar peach">OW</span><span><strong>Olivia Wilson</strong><small>olivia@northstar.co</small></span></div></td><td>24 May, 10:42</td><td><strong>$2,485.00</strong></td><td><span class="status paid">Paid</span></td><td>•••</td></tr>
+          <tr><td><strong>#KT-2047</strong></td><td><div class="customer"><span class="avatar lilac">JM</span><span><strong>James Miller</strong><small>james@vertex.io</small></span></div></td><td>24 May, 09:18</td><td><strong>$1,290.50</strong></td><td><span class="status pending">Pending</span></td><td>•••</td></tr>
+          <tr><td><strong>#KT-2046</strong></td><td><div class="customer"><span class="avatar mint">SC</span><span><strong>Sophia Chen</strong><small>sophia@greenline.com</small></span></div></td><td>23 May, 16:05</td><td><strong>$3,842.00</strong></td><td><span class="status paid">Paid</span></td><td>•••</td></tr>
+        </tbody></table></div>
+      </section>
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status">New order draft created <button aria-label="Dismiss">×</button></div>
+  <dialog id="recordDialog" class="record-dialog">
+    <form method="dialog" id="recordForm">
+      <div class="dialog-head"><div><p class="eyebrow">ORDER MANAGEMENT</p><h2>Create new order</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Close">×</button></div>
+      <label>Customer name<input name="customer" required placeholder="e.g. Taylor Reed"></label>
+      <label>Email address<input name="email" type="email" required placeholder="taylor@company.com"></label>
+      <div class="form-row"><label>Order amount<input name="amount" type="number" min="1" step="0.01" required placeholder="0.00"></label><label>Status<select name="status"><option>Pending</option><option>Paid</option><option>Processing</option></select></label></div>
+      <label>Product<input name="product" required placeholder="Product or service"></label>
+      <div class="dialog-actions"><button class="secondary" type="button" data-close-dialog>Cancel</button><button class="primary" type="submit" id="saveOrder">Save order</button></div>
+    </form>
+  </dialog>
+  <script src="assets/js/erp.js"></script>
+</body>
+</html>
