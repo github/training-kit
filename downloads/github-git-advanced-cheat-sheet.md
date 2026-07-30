@@ -38,15 +38,15 @@ Apply the stash at the nth index
 
 Discards all the changes
 
-`$ git checkout .`
+`$ git restore .`
 
-Create a new branch and checkout to that branch
+Create a new branch and switch to that branch
 
-`$ git checkout -b <branch name>`
+`$ git switch -c <branch name>`
 
 Bring a single file to the working space from the stash
 
-`$ git checkout <stash@{0}> — <filename>`
+`$ git restore --source=<stash@{0}> <filename>`
 
 ## Patch commands
 

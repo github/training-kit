@@ -42,15 +42,15 @@ Terapkan penyimpanan di indeks tumpukan ke-n
 
 Singkirkan semua perubahan
 
-`$ git checkout .`
+`$ git restore .`
 
 Membuat cabang baru dan pindah ke cabang tersebut
 
-`$ git checkout -b <branch name>`
+`$ git switch -c <branch name>`
 
 Membawa satu berkas ke lokasi saat ini dari simpanan
 
-`$ git checkout <stash@{0}> — <filename>`
+`$ git restore --source=<stash@{0}> <filename>`
 
 ## Perintah tambalan
 

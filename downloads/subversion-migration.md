@@ -1,5 +1,6 @@
 ---
 layout: cheat-sheet
+redirect_to: false
 title: Subversion to Git Migration
 byline: When migrating from Subversion to Git, there’s a vocabulary and command set to learn, in addition to the new capabilities only afforded by Git. This cheat sheet aims to help you in your transition between the classic Subversion technology and the modern use of Git with the GitHub collaboration platform.
 leadingpath: ../../
@@ -17,7 +18,7 @@ The process is as simple, needing only you to sign into your GitHub account, if 
 
 Depending on the detected version control system, Importer may request additional information for migration. This includes a mapping file for associating Subversion usernames with Git fields.
 
-Read more about how to import your project into GitHub by looking at the full [GitHub Importer documentation](https://help.github.com/articles/importing-a-repository-with-github-importer/).
+Read more about how to import your project into GitHub by looking at the full [GitHub Importer documentation](https://docs.github.com/get-started/importing-your-projects-to-github/importing-source-code-to-github/importing-a-repository-with-github-importer).
 
 ### SVN2Git Utility
 
@@ -29,14 +30,14 @@ Notable features of SVN2Git include:
 
 - Converting all SVN conventions to traditional Git structure
 - Providing SVN users field to  name and email data in Git commits
-- Permiting exclusion patterns for precise Git repository content
+- Permitting exclusion patterns for precise Git repository content
 
 Learn more about SVN2Git at the project’s official home page:
 
 [https://github.com/nirvdrum/svn2git](https://github.com/nirvdrum/svn2git)
 {% endcapture %}
 
-<div class="col-md-6">
+<div class="col-md-6 col-12">
 {{ migration | markdownify }}
 </div>
 
@@ -45,9 +46,9 @@ Learn more about SVN2Git at the project’s official home page:
 
 ### Leveraging Git’s support of SVN
 
-Often times, during a transition to Git, the Subversion infrastructure remains in place while users become acquianted with local Git repository interactions, local workflows, and desktop applications.
+Often times, during a transition to Git, the Subversion infrastructure remains in place while users become acquainted with local Git repository interactions, local workflows, and desktop applications.
 
-The `git svn` command permits users to synchronize with a centralized Subversion repository host while taking advantage of all the benefits local Git  command line and graphical clients have to offer.
+The `git svn` command permits users to synchronize with a centralized Subversion repository host while taking advantage of all the benefits local Git command line and graphical clients have to offer.
 
 To acquire a Subversion repository as a resulting local Git repository, download the project in its entirety with this command:
 
@@ -80,7 +81,7 @@ git svn rebase
 Keep in mind this action rewrites your local Git history and your commit identifiers will be different.
 {% endcapture %}
 
-<div class="col-md-6">
+<div class="col-md-6 col-12">
 {{ bridging | markdownify }}
 </div>
 
@@ -97,7 +98,7 @@ Subversion and Git share similar vocabularies, but the commonality often is only
 | `commit`        | `commit`     | Store prepared changes in local revision history                      |
 | `rm`, `delete`   | `rm`        | Prepare paths for deletion in next commit                             |
 | `move`          | `mv`        | Prepare relocated content for next commit                             |
-| `checkout`      | `clone`     | Acquire the entire history of a project locally for the first tim     |
+| `checkout`      | `clone`     | Acquire the entire history of a project locally for the first time     |
 |                 | `branch`    | Create local context for commits                                      |
 |                 | `merge`     | Join branch histories and changes to working tree                     |
 |                 | `log`       | No network required                                                   |

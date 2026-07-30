@@ -1,0 +1,31 @@
+---
+redirect_from:
+    - /on-demand/downloads/github-bash-cheat-sheet/
+    - /on-demand/downloads/it/github-git-cheat-sheet/
+    - /on-demand/downloads/sk/github-git-cheat-sheet/
+    - /on-demand/downloads/bn_BD/github-git-cheat-sheet/
+    - /on-demand/downloads/pt_BR/github-git-cheat-sheet/
+    - /on-demand/downloads/ja/github-git-cheat-sheet/
+    - /on-demand/downloads/pt_PT/github-git-cheat-sheet/
+    - /on-demand/downloads/ru/github-git-cheat-sheet/
+    - /on-demand/downloads/zh_CN/github-git-cheat-sheet/
+    - /on-demand/downloads/ko/github-git-cheat-sheet/
+    - /on-demand/downloads/ar/github-git-cheat-sheet/
+    - /on-demand/downloads/de/github-git-cheat-sheet/
+    - /on-demand/downloads/id/github-git-cheat-sheet/
+    - /on-demand/downloads/fr/github-git-cheat-sheet/
+    - /on-demand/downloads/fa/github-git-cheat-sheet/
+    - /on-demand/downloads/es_ES/github-git-cheat-sheet/
+    - /on-demand/downloads/github-git-cheat-sheet/
+    - /on-demand/resources/
+    - /on-demand/resources/cheatsheets/
+    - /on-demand/downloads/submodule-vs-subtree-cheat-sheet/
+    - /on-demand/downloads/subversion-migration/
+    - /on-demand/downloads/es_ES/github-git-cheat-sheet.pdf
+    - /on-demand/downloads/fr/github-git-cheat-sheet.pdf
+    - /on-demand/downloads/github-git-cheat-sheet.pdf
+    - /on-demand/downloads/ja/github-git-cheat-sheet.pdf
+    - /on-demand/downloads/pt_BR/github-git-cheat-sheet.pdf
+    - /on-demand/downloads/pt_PT/github-git-cheat-sheet.pdf
+redirect_to: "/"
+---

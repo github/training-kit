@@ -1,7 +1,8 @@
 ---
 layout: cheat-sheet
+redirect_to: false
 title: গিটহাব গিট চিট শীট
-byline: গিট হচ্ছে একটি ওপেন সোর্স ড্রিস্ট্রিবিউটেড ভার্শন কন্ট্রোল সিস্টেম যা আপনার ল্যাপটপ বা ডেস্কটপে গিটহাব সুবিধাদি প্রদান করে। এই চিট শীটে সাধারনভাবে ব্যবহৃত গিট কমান্ড লাইনের নির্দেশনা দেওয়া আছে । 
+byline: গিট হচ্ছে একটি ওপেন সোর্স ড্রিস্ট্রিবিউটেড ভার্শন কন্ট্রোল সিস্টেম যা আপনার ল্যাপটপ বা ডেস্কটপে গিটহাব সুবিধাদি প্রদান করে। এই চিট শীটে সাধারনভাবে ব্যবহৃত গিট কমান্ড লাইনের নির্দেশনা দেওয়া আছে ।
 leadingpath: ../../../
 ---
 
@@ -10,15 +11,15 @@ leadingpath: ../../../
 গিটহাবের রিপোজিটরির  সাধারন অ্যাকশন ও  উন্নত পরিস্থিতিতে জন্য Git এর একটি স্বয়ংক্রিয়ভাবে আপডেট করার কমান্ড লাইন সংস্করণসহ  ডেস্কটপের জন্য গ্রাফিকাল ইউজার ইন্টারফেস সুবিধাযুক্ত ক্লায়েন্ট আছে।
 
 ### উইন্ডোজের জন্য গিটহাব
-http://windows.github.com
+[windows.github.com](https://windows.github.com)
 
 ### ম্যাকের জন্য গিটহাব
-http://mac.github.com
+[mac.github.com](https://mac.github.com)
 
 লিনাক্স ও POSIX সিস্টেমের জন্য গিট অফিশিয়াল Git SCM ওয়েবসাইটে উপলব্ধ।
 
 ### সকল প্ল্যাটফরমের জন্য গিটহাব
-http://git-scm.com
+[git-scm.com](https://git-scm.com)
 
 ## টুল কনফিগার করা
 সকল লোকাল রিপোজিটরির জন্য টুল কনফিগার করা
@@ -39,12 +40,12 @@ http://git-scm.com
 
 ```$ git init [project-name]```
 
-নির্দিষ্ট নাম দিয়ে একটি নতুন  রিপোসিটোরি তৈরি করুন। 
+নির্দিষ্ট নাম দিয়ে একটি নতুন  রিপোসিটোরি তৈরি করুন।
 
 
 ```$ git clone [url]```
 
-একটি প্রকল্প এবং তার সম্পূর্ণ সংস্করণ ইতিহাস ডাউনলোড করুন। 
+একটি প্রকল্প এবং তার সম্পূর্ণ সংস্করণ ইতিহাস ডাউনলোড করুন।
 
 {% endcapture %}
 <div class="col-md-6">
@@ -93,7 +94,7 @@ Name a series of commits and combine completed efforts
 
 ```$ git branch```
 
-বর্তমান রিপোসিটোরির মধ্যে সব লোকাল ব্রাঞ্চ তালিকাভুক্ত করুন। 
+বর্তমান রিপোসিটোরির মধ্যে সব লোকাল ব্রাঞ্চ তালিকাভুক্ত করুন।
 
 
 ```$ git branch [branch-name]```
@@ -101,7 +102,7 @@ Name a series of commits and combine completed efforts
 একটি নতুন ব্রাঞ্চ তৈরি করুন
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 নির্দিষ্ট শাখায় সুইচ এবং আপডেট ওয়ার্কিং ডিরেক্টরি
 
@@ -122,7 +123,7 @@ Name a series of commits and combine completed efforts
 
 
 {% capture colThree %}
-## ফাইলের নাম Refactor করুন
+## ফাইলের নাম পরিবর্তন (Refactor) করুন
 versioned ফাইল নতুন স্থানে স্থাপন বা মুছে ফেলুন
 
 
@@ -149,7 +150,7 @@ build/
 temp-*
 ```
 
-A text file named `.gitignore` suppresses accidental versioning of files and paths matching the specified patterns
+`.gitignore` নামের একটি পাঠ্য ফাইল নির্দিষ্ট প্যাটার্নের সাথে মিলে যাওয়া ফাইল এবং পাথগুলির দুর্ঘটনাজনিত সংস্করণকে দমন করে
 
 
 ```$ git ls-files --others --ignored --exclude-standard```
@@ -185,7 +186,7 @@ A text file named `.gitignore` suppresses accidental versioning of files and pat
 
 {% capture colFour %}
 ## হিস্টোরি রিভিউ
-ব্রাউজ করুন এবং প্রকল্পের ফাইল এর বিবর্তন পরিদর্শন করুন 
+ব্রাউজ করুন এবং প্রকল্পের ফাইল এর বিবর্তন পরিদর্শন করুন
 
 
 ```$ git log```
@@ -221,17 +222,17 @@ Undoes all commits after `[commit]`, preserving changes locally
 সব ইতিহাস এবং করা পরিবর্তনগুলি ফিরে নির্দিষ্ট কমিটে অস্বীকার করুন
 
 ## সিঙ্ক্রোনাইজড  পরিবর্তনগুলি
-একটি দূরবর্তী (URL) নিবন্ধন করুন এবং রিপোসিটোরি ইতিহাস এক্সচেঞ্জ করুন 
+একটি দূরবর্তী (URL) নিবন্ধন করুন এবং রিপোসিটোরি ইতিহাস এক্সচেঞ্জ করুন
 
 
 ```$ git fetch [remote]```
 
-দূরবর্তী রিপোসিটোরি  থেকে সব ইতিহাস ডাউনলোড করুন 
+দূরবর্তী রিপোসিটোরি  থেকে সব ইতিহাস ডাউনলোড করুন
 
 
 ```$ git merge [remote]/[branch]```
 
-বর্তমান স্থানীয় শাখা ও  দূরবর্তী শাখা একত্রিত করুন 
+বর্তমান স্থানীয় শাখা ও  দূরবর্তী শাখা একত্রিত করুন
 
 
 ```$ git push [remote] [branch]```
@@ -241,7 +242,7 @@ Undoes all commits after `[commit]`, preserving changes locally
 
 ```$ git pull```
 
-বুকমার্ক হিস্টোরি ও অন্তর্ভুক্ত পরিবর্তনগুলো ডাউনলোড করুন 
+বুকমার্ক হিস্টোরি ও অন্তর্ভুক্ত পরিবর্তনগুলো ডাউনলোড করুন
 {% endcapture %}
 <div class="col-md-6">
 {{ colFour | markdownify }}

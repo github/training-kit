@@ -1,5 +1,6 @@
 ---
 layout: cheat-sheet
+redirect_to: false
 title: <div dir="rtl"> برشامة أوامر Git لنظام GitHub</div>
 byline: <p dir="rtl"> أمر Git هو نظام تحكم بالنسخ الموزعة المفتوحة المصدر التي توظف أنشطة GitHub في الحواسيب الشخصية. هذه "البرشامة" تلخص تعليمات Git الأكثر استخداماً على سطر الأوامر كمرجع سري</p>
 leadingpath: ../../../
@@ -10,15 +11,15 @@ leadingpath: ../../../
 <p dir="rtl">نظام GitHub يوفر برنامج عميل لسطح المكتب يشمل واجهة مستخدم رسومية لنشاطات المستودعات الأكثر شيوعاً وتحديث نسخة سطر أوامر Git تلقائياً للحالات المتقدمة.</p>
 
 <h3 dir="rtl"> GitHub لنظام تشغيل وندوز</h3>
-<p dir="rtl">http://windows.github.com</p>
+<p dir="rtl"><a href="https://windows.github.com">windows.github.com</a></p>
 
 <h3 dir="rtl"> GitHub لنظام تشغيل ماك</h3>
-<p dir="rtl">http://mac.github.com</p>
+<p dir="rtl"><a href="https://mac.github.com">mac.github.com</a></p>
 
 <p dir="rtl">توزيعات Git لأنظمة لينكس وPosix متوفرة في موقع Git SCM الرسمي.</p>
 
 <h3 dir="rtl"> Git لكل أنظمة التشغيل</h3>
-<p dir="rtl">http://git-scm.com</p>
+<p dir="rtl"><a href="https://git-scm.com">git-scm.com</a></p>
 
 <h2 dir="rtl"> إعادة تكوين الأدوات</h2>
 <p dir="rtl">إعداد معلومات المستخدم لجميع المستودعات المحلية</p>
@@ -99,7 +100,7 @@ leadingpath: ../../../
 <p dir="rtl">تكوين فرع جديد</p>
 
 
-<p align="right"><code align="right">$ git checkout [اسم الفرع]</code></p>
+<p align="right"><code align="right">$ git switch -c [اسم الفرع]</code></p>
 
 <p dir="rtl">التغيير إلى فرع معين وتحديث المسار الحالي</p>
 

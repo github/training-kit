@@ -1,5 +1,6 @@
 ---
 layout: cheat-sheet
+redirect_to: false
 title: Hoja de referencia para Git de Github
 byline: Git es el sistema de control de versiones distribuido de código abierto que facilita realizar actividades de Github en tu computadora portátil o de escritorio. Esta hoja de referencia resume las instrucciones de línea de comandos comúnmente usadas para una rápida referencia.
 leadingpath: ../../../
@@ -11,15 +12,15 @@ leadingpath: ../../../
 GitHub proporciona clientes de escritorio que incluyen una interfaz gráfica de usuario para las acciones más comunes que se pueden realizar en un repositorio y una edición de Git en la línea de comandos actualizada automáticamente para escenarios más avanzados.
 
 ### GitHub para Windows
-http://windows.github.com
+[windows.github.com](https://windows.github.com)
 
 ### GitHub para Mac
-http://mac.github.com
+[mac.github.com](https://mac.github.com)
 
 Distribuciones de Git para sistemas Linux y POSIX se encuentran disponibles en el sitio web oficial Git SCM.
 
 ### Git para todas las plataformas
-http://git-scm.com
+[git-scm.com](https://git-scm.com)
 
 ## Configurar herramientas
 Configura la información del usuario para todos los respositorios locales
@@ -102,7 +103,7 @@ Enumera todas las ramas en el repositorio actual
 Crea una nueva rama
 
 
-```$ git checkout [branch-name]```
+```$ git switch -c [branch-name]```
 
 Cambia a la rama especificada y actualiza el directorio activo
 

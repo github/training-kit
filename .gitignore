@@ -1,7 +1,7 @@
 _site/
 .DS_Store
 /.rbenv-version
-/vendor/gems/
+/vendor/
 /bin/
 /.bundle/
 .sass-cache/
@@ -9,4 +9,5 @@ _site/
 _release
 *.map
 .jekyll-metadata
+node_modules/
 # *.resume-burger-jokes

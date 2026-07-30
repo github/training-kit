@@ -1,5 +1,6 @@
 ---
 layout: cheat-sheet
+redirect_to: false
 title: Folha de Dicas de Git do GitHub (pt-BR)
 byline: Git é um sistema de controle de versão distribuído open source que facilita ações com o GitHub em seu notebook ou desktop. Esta folha de dicas resume instruções comumente usadas via linha de comando do Git para referência rápida.
 leadingpath: ../../../
@@ -10,15 +11,15 @@ leadingpath: ../../../
 GitHub fornece clientes desktop que incluem uma interface gráfica para as ações mais comuns em um repositório e atualiza automaticamente para a linha de comando do Git para cenários avançados.
 
 ### GitHub para Windows
-[http://windows.github.com](http://windows.github.com)
+[windows.github.com](https://windows.github.com)
 
 ### GitHub para Mac
-[http://mac.github.com](http://mac.github.com)
+[mac.github.com](https://mac.github.com)
 
 Distribuições do Git para Linux e sistemas POSIX são disponíveis no site oficial do Git SCM.
 
 ### Git para todas as plataformas
-[http://git-scm.com](http://git-scm.com)
+[git-scm.com](https://git-scm.com)
 
 ## Configure a ferramenta
 Configure informações de usuário para todos os repositórios locais
@@ -100,7 +101,7 @@ Lista todos os branches locais no repositório atual
 Cria um novo branch
 
 
-```$ git checkout [nome-do-branch]```
+```$ git switch -c [nome-do-branch]```
 
 Muda para o branch especificado e atualiza o diretório de trabalho
 
