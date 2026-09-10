@@ -9,6 +9,8 @@ updates:
     directory: "/" 
     schedule:
       interval: "monthly"
+    cooldown:
+      default-days: 7
 
   # Maintain dependencies for Bundler
   - package-ecosystem: "bundler"

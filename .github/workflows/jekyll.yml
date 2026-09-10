@@ -28,9 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3.7.0
     - name: Set up Node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
       with:
         node-version: 16
         cache: 'npm'
@@ -42,7 +42,7 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Set up Pages
       id: pages
-      uses: actions/configure-pages@v2
+      uses: actions/configure-pages@c5a3e1159e0cbdf0845eb8811bd39e39fc3099c2 # v2.1.3
     - name: Build and test with Rake
       # Only run in pull requests
       if: github.event_name == 'pull_request'
@@ -56,7 +56,7 @@ jobs:
         JEKYLL_ENV: production
     - name: Upload artifact
       # Automatically uploads an artifact from the './_site' directory by default
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@84bb4cd4b733d5c320c9c9cfbc354937524f4d64 # v1.0.10
 
   # Deployment job
   deploy:
@@ -70,4 +70,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@f27bcc15848fdcdcc02f01754eb838e44bcf389b # v1.2.9
