@@ -10,6 +10,10 @@ Open source courseware from the GitHub Professional Services team.
 
 This repository currently contains Git and GitHub cheat sheets. If you're looking for a project that used to be housed here, such as On-Demand training, reading lists, videos, and book recommendations, see [this commit](https://github.com/github/training-kit/tree/4fbf180e980ef973ba4cc4b8ef3d5f278ddc8c08) in the repository's history.
 
+## Related community resources
+
+- [The Ultimate Git & GitHub Tutorial](https://github.com/livelyfun/Git-Github_Tutorial) — a practical beginner-to-advanced roadmap covering Git architecture, branching & merging, rebasing, recovery with reflog/bisect, and a high-density command cheat sheet with an emergency triage guide.
+
 ## Projects used in training-kit
 
 - We use [Jekyll](https://jekyllrb.com/) and [Markdown](https://guides.github.com/features/mastering-markdown/).
