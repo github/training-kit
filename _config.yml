@@ -15,6 +15,7 @@ baseurl: "" # the subpath of your site, e.g. "/blog"
 gh_repo: github/training-kit
 repository: github/training-kit
 teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+og_image: og-image.png # default social preview image placed in /images/
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
 
