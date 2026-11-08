@@ -1,0 +1,80 @@
+# GitHub Training Kit
+
+Open source courseware from the GitHub Professional Services team.
+
+## We ❤️ contributors like you
+
+**We’re eager to work with you**, our user community, to improve these materials and develop new ones. Please check out our [CONTRIBUTING guide](CONTRIBUTING.md) for more information on getting started.
+
+## Looking for a resource that was once housed in training-kit?
+
+This repository currently contains Git and GitHub cheat sheets. If you're looking for a project that used to be housed here, such as On-Demand training, reading lists, videos, and book recommendations, see [this commit](https://github.com/github/training-kit/tree/4fbf180e980ef973ba4cc4b8ef3d5f278ddc8c08) in the repository's history.
+
+## Projects used in training-kit
+
+- We use [Jekyll](https://jekyllrb.com/) and [Markdown](https://guides.github.com/features/mastering-markdown/).
+- Our content is styled using the [Primer CSS toolkit](https://github.com/primer/primer-css).
+
+## Packaging for viewing behind your firewall
+
+If you'd like to have a copy of the files to be served from a web server inside your firewall, start by running `script/package`.
+
+1. Run `script/package` to create a release tarball. This will be in the format `release-XXXXXXX.tgz` for you to take wherever you want.
+2. To test this looks okay, create some folders `mkdir -p test_site/kit`.
+3. Extract the release, `tar -xzf release-XXXXXXX.tgz -C test_site/kit`.
+4. Switch into the test_site directory, `cd test_site`.
+5. View the site:
+    - For python version 2.x, run: `python -m SimpleHTTPServer`
+    - For python version 3.x, run: `python -m http.server`
+    - _Note: Some servers are more advanced than others and can handle redirects, smart recognition of `.html` files, etc_
+
+Site content is licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). CC-BY-4.0 gives you permission to use the content for almost any purpose but does not grant you any trademark permissions, so long as you note the license and give credit, such as follows:
+
+> Content based on [github.github.com/training-kit/](https://github.github.com/training-kit) used under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
+
+Code used to build and test the site as well as code samples on the site, if any, are licensed under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode). CC0 waives all copyright restrictions but does not grant you any trademark permissions.
+
+This means you can use the content and code in this repository except for GitHub trademarks in your projects.
+
+When you contribute to this repository you are doing so under the above licenses. 
+O Agroamigo do Banco do Nordeste é o programa de microcrédito rural orientado voltado para agricultores familiares enquadrados no Pronaf (Programa Nacional de Fortalecimento da Agricultura Familiar).
+
+Principais Linhas e Condições
+
+• Agroamigo Crescer (Pronaf B): Focado na expansão da produção para agricultores com renda bruta anual de até R$ 60 mil. Os limites de financiamento são de até R$ 12.000 para homens, R$ 15.000 para mulheres e R$ 15.000 para Pronaf B Agroecologia.
+• Agroamigo Mais: Crédito complementar para atividades de geração de renda (agricultura, pecuária, agroindústria, artesanato e turismo) com prazos e carências variáveis conforme a modalidade do Pronaf.
+• Agroamigo Jovem: Direcionado a jovens agricultores familiares (entre 16 e 29 anos) para apoiar projetos de sucessão rural, empreendedorismo e modernização.
+• Outras modalidades: Incluem o Agroamigo Água (infraestrutura hídrica), Agroamigo Quintais Produtivos para Mulheres e Agroamigo Net (inclusão digital).
+
+Requisitos e Benefícios
+
+• Público-alvo: Agricultores familiares com CAF (Cadastro Nacional da Agricultura Familiar) ou DAP ativa.
+• Bônus de adimplência: O programa oferece descontos que podem chegar de 25% a 40% para quem realiza o pagamento das parcelas em dia.
+• Atendimento: É realizado de forma orientada nas próprias comunidades rurais por meio de agentes de microcrédito e em parceria com o Instituto Nordeste Cidadania (Inec). Você também pode gerenciar propostas e boletos pelo aplicativo oficial do Agroamigo no Google Play.
+Banco do Nordeste
+Agroamigo – microcrédito rural para agricultura familiar - BNB
+Microcrédito rural para agricultores familiares enquadrados no Grupo Variável do Pronaf com renda de até R$ 360 mil por ano. Saiba mais. Agroamigo Água. Crédito...
+Banco do Nordeste
+Agroamigo Mais – crédito complementar para produtores – Banco do Nordeste - Portal Banco do Nordeste
+Agroamigo Mais: Banco do Nordeste microcredit for family farmers (Pronaf Grupo Variável, active DAP/CAF, no Pronaf A, gross annual income up to R$ 360k). Fund: ...
+Banco do Nordeste
+Agroamigo Jovem – microcrédito para jovens produtores – Banco do Nordeste - Portal Banco do Nordeste
+Agroamigo Jovem: microcredit by Banco do Nordeste for family farmers aged 16-29 in Pronaf Group B or V. Objectives: Rural family succession, entrepreneurship, m...
+GOV.BR
+Saiba como acessar o AgroAmigo e garantir crédito para fortalecer sua produção — Ministério da Integração e do Desenvolvimento Regional
+Programa AgroAmigo: microcrédito rural (MIDR + Caixa) para Norte/Centro-Oeste. Crédito: até R$ 1 bi. Público: agricultores/pecuaristas familiares, pescadores, i...
+Banco do Nordeste
+Agroamigo Crescer – microcrédito para expansão da produção – Banco do Nordeste - Portal Banco do Nordeste
+- Target: Family farmers with gross annual income up to R$ 60k, area up to 4 fiscal modules, family labor, active CAF, Pronaf B eligibility, no Pronaf A option.
+Instagram·Secretaria de Agricultura de Conceição do Almeida | SATICMA
+1:35
+O AgroAmigo é uma linha de crédito do Banco do Nordeste criada ...
+Google Play
+Agroamigo - Apps on Google Play
+arrow_forward. Agroamigo – Banco do Nordeste. Agroamigo is one of Banco do Nordeste's (BNB) main programs focused on rural microcredit. Created to support small...
+INEC - Instituto Nordeste Cidadania
+Agroamigo Banco do Nordeste - INEC
+O Agroamigo é o Programa de Microfinança Rural do Banco do Nordeste que tem como objetivo melhorar o perfil social e econômico famílias agricultoras do Nordeste...
+YouTube·Agro - SE
+3m
+Agroamigo e Pronaf B ampliam crédito com juros reduzidos 45900trilhões dólar em livros e-books
