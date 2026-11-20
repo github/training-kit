@@ -14,12 +14,10 @@ on:
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 # Allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -42,7 +40,8 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Set up Pages
       id: pages
-      uses: actions/configure-pages@v2
+      if: github.event_name != 'pull_request'
+      uses: actions/configure-pages@v5
     - name: Build and test with Rake
       # Only run in pull requests
       if: github.event_name == 'pull_request'
@@ -56,12 +55,16 @@ jobs:
         JEKYLL_ENV: production
     - name: Upload artifact
       # Automatically uploads an artifact from the './_site' directory by default
-      uses: actions/upload-pages-artifact@v1
+      if: github.event_name != 'pull_request'
+      uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
     # Only run on pushes to the default branch
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -70,4 +73,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
