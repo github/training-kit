@@ -180,5 +180,5 @@ redirect_from:
     - /on-demand/resources/learning-path/es/
     - /on-demand/community/us-holidays/
     - /on-demand/github-cli/98
-redirect_to: "https://lab.github.com"
+redirect_to: "https://learn.github.com/skills"
 ---
